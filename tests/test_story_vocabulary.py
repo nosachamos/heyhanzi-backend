@@ -67,6 +67,22 @@ def test_story_lexemes_are_visible_on_real_prior_cards_and_acknowledged_separate
         simultaneous = next(word for word in WORDS if word['course_word_id'] == 'W-R5-YIBIAN')
         assert simultaneous['translations']['en'] == 'while; marks one of two simultaneous activities'
 
+
+
+@pytest.mark.integration
+def test_early_story_sense_history_does_not_replace_current_teaching(postgres_config, run_cli):
+    result = run_cli(postgres_config, 'scripts/bootstrap_database.py')
+    assert result.returncode == 0, result.stderr
+    with psycopg2.connect(postgres_config['DATABASE']['Url']) as connection:
+        with connection.cursor() as cursor:
+            cursor.execute("SELECT b.id,b.text,b.sequence FROM learning_word_blocks b "
+                           "JOIN learning_stages s ON s.id=b.stage_id "
+                           "WHERE s.track_id=%s AND b.kind='word' ORDER BY b.sequence", (TRACK,))
+            cards = cursor.fetchall()
+    mail = FakeEmailProvider()
+    with browser(create_app(postgres_config, email_provider=mail)) as client:
+        verified_signup(client, mail, 'early-story-history@example.com')
+        account = client.get('/auth/session').json()['id']
         # Familiar characters do not expose later grammatical senses during
         # warm-up. The pinned introduction must be reached before display/ack.
         focus = next(word for word in WORDS if word['course_word_id'] == 'W-R5-DE-FOCUS')
@@ -75,9 +91,16 @@ def test_story_lexemes_are_visible_on_real_prior_cards_and_acknowledged_separate
         displayed = client.post('/learning/guest/lesson', json={**early, 'operation': 'vocabulary', 'blockId': early_id})
         assert displayed.status_code == 200, displayed.text
         assert focus['id'] not in {item['id'] for item in displayed.json()['items']}
+        assert client.post('/learning/guest/import', json={**early, 'accountId': account}).status_code == 200
         rejected = client.post(f'/learning/tracks/{TRACK}/blocks/{early_id}/vocabulary/seen',
                                json={'vocabularyIds': [focus['id']]})
         assert rejected.status_code == 422
         forged = client.post('/learning/guest/import', json={**early, 'accountId': account,
                              'exposures': {early_id: [focus['id']]}})
-        assert forged.status_code == 422
+        # Legacy displays are retained as history; they cannot teach this sense.
+        assert forged.status_code == 200, forged.text
+        current = client.get(f'/learning/tracks/{TRACK}/blocks/{early_id}/vocabulary')
+        assert current.status_code == 200, current.text
+        assert focus['id'] not in {item['id'] for item in current.json()['items']}
+        assert client.post(f'/learning/tracks/{TRACK}/blocks/{early_id}/vocabulary/seen',
+                           json={'vocabularyIds': [focus['id']]}).status_code == 422

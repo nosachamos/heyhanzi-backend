@@ -7,7 +7,8 @@ VENV_BIN := environment/bin
 VENV_PYTHON := $(VENV_BIN)/python3
 VENV_PIP := $(VENV_BIN)/pip3
 PYTHON := $(shell if [ -x "$(VENV_PYTHON)" ]; then echo "$(VENV_PYTHON)"; else echo python3; fi)
-PIP := $(shell if [ -x "$(VENV_PIP)" ]; then echo "$(VENV_PIP)"; else echo pip3; fi)
+# Resolve after env creation when both setup targets share one make call.
+PIP = $(shell if [ -x "$(VENV_PIP)" ]; then echo "$(VENV_PIP)"; else echo pip3; fi)
 ALEMBIC := $(VENV_BIN)/alembic
 PYTEST := $(VENV_BIN)/pytest
 PYTHON_VERSION ?= python3.12

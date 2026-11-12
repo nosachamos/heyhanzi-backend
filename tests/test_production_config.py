@@ -1,12 +1,13 @@
 import json
 import os
+import subprocess
+import sys
 
 import boto3
 import pytest
 from botocore.stub import Stubber
 
 from scripts.load_production_config import load_production_config
-from scripts.stage_production_config import main as stage_production_config
 
 
 def test_reads_only_encrypted_heyhanzi_parameter():
@@ -40,6 +41,7 @@ def test_staging_transfers_live_billing_securely_to_fly(app_config, monkeypatch,
     app_config["TURNSTILE"] = {"SiteKey": "production-site-fixture", "SecretKey": "production-secret-fixture", "Hostnames": ["heyhanzi.com"]}
     app_config["AWS"] = {"AccessKeyId": "test-access", "SecretAccessKey": "test-secret"}
     app_config["OAUTH"] = {}
+    app_config["RENDER"] = {"ApiKey": "management_private"}
     app_config["STRIPE"] = {"SecretKey": "sk_live_fake_private", "AnnualPriceId": "price_annual",
                             "PortalConfigurationId": "bpc_portal", "WebhookSecret": "whsec_fake_private"}
     # Replace the external CLI boundary with an executable receiving the same stdin/argv.
@@ -53,16 +55,27 @@ def test_staging_transfers_live_billing_securely_to_fly(app_config, monkeypatch,
     monkeypatch.setenv("FLY_CAPTURE", str(capture))
     monkeypatch.setenv("GITHUB_SHA", "release123")
     monkeypatch.setenv("DEPLOYMENT_TIMESTAMP", "2026-10-14T12:00:00Z")
-    client = boto3.client("ssm", region_name="us-east-1", aws_access_key_id="test", aws_secret_access_key="test")
-    with Stubber(client) as stub:
-        stub.add_response("get_parameter", {"Parameter": {
-            "Type": "SecureString", "Value": json.dumps(app_config),
-        }}, {"Name": "/HeyHanzi/Env/PROD/Configs", "WithDecryption": True})
-        stage_production_config(client)
+    # Run a cold deployment process, with no app document or local-file fallback.
+    child_environment = {**os.environ, "APP_ENV": "PROD", "HEYHANZI_DISABLE_DOTENV": "true"}
+    child_environment.pop("APP_CONFIGS", None)
+    result = subprocess.run([sys.executable, "-c", """
+import json, sys, boto3
+from botocore.stub import Stubber
+from scripts.stage_production_config import main
+config = json.load(sys.stdin)
+client = boto3.client('ssm', region_name='us-east-1', aws_access_key_id='test', aws_secret_access_key='test')
+with Stubber(client) as stub:
+    stub.add_response('get_parameter', {'Parameter': {'Type': 'SecureString', 'Value': json.dumps(config)}},
+                      {'Name': '/HeyHanzi/Env/PROD/Configs', 'WithDecryption': True})
+    main(client)
+"""], input=json.dumps(app_config), env=child_environment, text=True, capture_output=True)
+    assert result.returncode == 0, result.stderr
+    assert "private" not in result.stdout + result.stderr
     sent = json.loads(capture.read_text())
     assert sent["arguments"] == ["secrets", "import", "--stage", "--app", "heyhanzi-backend"]
     assert sent["stdin"].startswith("APP_CONFIGS=")
     runtime = json.loads(sent["stdin"].removeprefix("APP_CONFIGS="))
+    assert "RENDER" not in runtime
     assert runtime["STRIPE"] == app_config["STRIPE"]
     assert runtime["TURNSTILE"] == app_config["TURNSTILE"]
     assert runtime["GENERAL"]["ReleaseSha"] == "release123"

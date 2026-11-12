@@ -13,13 +13,16 @@ from scripts.load_production_config import load_production_config  # noqa: E402
 
 def main(ssm_client=None):
     config = load_production_config(ssm_client)
-    validate_runtime_config(config)
+    # Validation imports legacy consumers of the global loader. Bootstrap them
+    # from this same runtime document, without requiring a local secret file.
+    runtime = {key: config[key] for key in ("GENERAL", "URLS", "DATABASE", "AUTH", "EMAIL", "OAUTH", "AWS", "STRIPE", "TURNSTILE")}
+    os.environ.setdefault("APP_CONFIGS", json.dumps(runtime, separators=(",", ":")))
+    validate_runtime_config(runtime)
     if not config.get("STRIPE", {}).get("SecretKey"):
         raise ValueError("Production billing configuration is required")
     config["GENERAL"]["ReleaseSha"] = os.environ["GITHUB_SHA"]
     config["GENERAL"]["DeploymentTimestamp"] = os.environ["DEPLOYMENT_TIMESTAMP"]
     # Runtime SES credentials are explicit; no ambient/default AWS identity fallback.
-    runtime = {key: config[key] for key in ("GENERAL", "URLS", "DATABASE", "AUTH", "EMAIL", "OAUTH", "AWS", "STRIPE", "TURNSTILE")}
     payload = "APP_CONFIGS=" + json.dumps(runtime, separators=(",", ":")) + "\n"
     subprocess.run(
         ["flyctl", "secrets", "import", "--stage", "--app", "heyhanzi-backend"],

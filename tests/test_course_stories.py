@@ -53,6 +53,8 @@ def story_catalog(tmp_path, monkeypatch):
     # A synthetic authored replacement is not a media-only release of the real
     # course; never carry production aliases into this changed teaching fixture.
     catalog.pop('media_compatibility', None)
+    catalog.pop('definition_storage', None)
+    catalog.pop('indexSha256', None)
     path = tmp_path / "course-exercises.json"
     path.write_text(json.dumps(catalog, ensure_ascii=False))
     monkeypatch.setattr(course_content, "CONTENT", path)
@@ -236,7 +238,7 @@ def test_required_story_recovers_skipped_words_before_patterns_for_guests_and_ac
     block = 'mandarin-simplified-v1-warmup-hao'
     word = {'id': 'W0007', 'text': '你好', 'pinyin': 'nǐhǎo', 'meaning': 'hello; hi',
             'source_id': 'cmn-32ddf4d4a6f5effadab4f4f8', 'primary_block_ids': [],
-            'introduction_block_id': block, 'introduction_block_sequence': 3, 'introduction_level_id': 'warmup'}
+            'introduction_block_id': block, 'introduction_block_sequence': 7, 'introduction_level_id': 'warmup'}
     data = json.loads(course_content.CONTENT.read_text())
     for entry in [item, optional]:
         data['learner_policy']['lexical_requirements'][entry['id']].append(word)
@@ -258,7 +260,8 @@ def test_required_story_recovers_skipped_words_before_patterns_for_guests_and_ac
         assert vocabulary.status_code == 200
         assert any(entry['id'] == word['source_id'] for entry in vocabulary.json()['items'])
         assert item['id'] not in guest('state', initial).json()['eligible']
-        with_words = {**initial, 'exposures': {block: [word['source_id']]}}
+        lexical = [entry['lexicalUseReference'] for entry in vocabulary.json()['items'] if entry['id'] == word['source_id'] and entry.get('lexicalUseReference')]
+        with_words = {**initial, 'exposures': {block: [word['source_id']]}, 'lexicalUseExposures': {block: lexical}}
         review = guest('state', with_words).json()['grammarReviews'][item['id']]
         assert review['grammarId'] == 'G-warmup-identity'
         notes = client.post('/learning/guest/lesson', json={**with_words, 'operation': 'vocabulary', 'blockId': review['blockId']}).json()['grammarNotes']
@@ -272,7 +275,7 @@ def test_required_story_recovers_skipped_words_before_patterns_for_guests_and_ac
         assert client.post(f"/learning/tracks/{NOTEBOOK['trackId']}/blocks/{next_id}/complete", json={}).status_code == 409
         endpoint = f"/learning/tracks/{NOTEBOOK['trackId']}/blocks/{block}/vocabulary"
         assert client.get(endpoint).status_code == 200
-        assert client.post(endpoint + '/seen', json={'vocabularyIds': [word['source_id']]}).status_code == 200
+        assert client.post(endpoint + '/seen', json={'vocabularyIds': [word['source_id']], 'lexicalUses': lexical}).status_code == 200
         review = client.get(BASE).json()['grammarReviews'][item['id']]
         assert review['grammarId'] == 'G-warmup-identity'
         endpoint = f"/learning/tracks/{NOTEBOOK['trackId']}/blocks/{review['blockId']}/vocabulary"

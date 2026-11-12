@@ -8,6 +8,7 @@ import pytest
 from app.main import create_app
 from app.services.learning_examples import entry_available, example_sentence, valid_common_target
 from app.services.learning_glosses import primary_translations, word_translations
+from tests.notebook_history import current_introductions
 from tests.test_auth_flows import browser
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,6 +49,8 @@ def test_identical_hanzi_preserves_the_requested_meaning():
 
 
 def test_wrong_identity_or_reading_cannot_borrow_a_same_written_form_example():
+    cup = render_target('course-lexeme-W0056')
+    assert cup['text'] == '我喝了一杯水。' and cup['english'] == 'I drank a cup of water.'
     assert render_target('course-lexeme-W0056', identity_changes={'sense_key': ''}) is None
     assert render_target('course-lexeme-W0056', identity_changes={'id': 'unknown-word'}) is None
     assert render_target('course-lexeme-W0056', pronunciation={'scheme': 'pinyin', 'value': 'bèi'}) is None
@@ -156,6 +159,7 @@ def test_guest_notebook_displays_authored_sense_example_without_recording_exposu
     assert result.returncode == 0, result.stderr
     target = next(word for word in json.loads((ROOT / 'alembic/data/0020_story_vocabulary.json').read_text())
                   if word['id'] == 'course-lexeme-W0056')
+    target = current_introductions(postgres_config, [target])[0]
     with psycopg2.connect(postgres_config['DATABASE']['Url']) as connection:
         with connection.cursor() as cursor:
             cursor.execute("SELECT b.id FROM learning_word_blocks b JOIN learning_stages s ON s.id=b.stage_id "
@@ -168,9 +172,10 @@ def test_guest_notebook_displays_authored_sense_example_without_recording_exposu
         response = client.post('/learning/guest/lesson', json=request)
         assert response.status_code == 200, response.text
         shown = next(word for word in response.json()['items'] if word['id'] == target['id'])
-        assert shown['example']['text'] == '我喝了一杯水。'
-        assert shown['example']['english'] == 'I drank a cup of water.'
-        assert next(token for token in shown['example']['tokens'] if token['text'] == '杯')['meaning'] == 'cup; cupful'
+        assert shown['text'] == '杯' and shown['pronunciation']['value'] == 'bēi'
+        # The current earlier introduction precedes this example's aspect rule.
+        # A read-only visit must withhold it until those actual displays exist.
+        assert shown['example'] is None
         # The read-only response remains reproducible without fabricated exposure.
         assert client.post('/learning/guest/lesson', json=request).json()['items'] == response.json()['items']
     with psycopg2.connect(postgres_config['DATABASE']['Url']) as connection:

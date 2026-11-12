@@ -18,7 +18,7 @@ app = "python run.py"
 [deploy]
 strategy = "rolling"
 release_command = "python scripts/migrate_release.py"
-release_command_timeout = "5m"
+release_command_timeout = "20m"
 
 [deploy.release_command_vm]
 size = "shared-cpu-1x"

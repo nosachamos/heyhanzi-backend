@@ -7,6 +7,7 @@ import psycopg2
 import pytest
 
 from app.main import create_app
+from tests.notebook_history import current_introductions
 from tests.test_auth_flows import browser
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,10 +17,10 @@ TRACK = 'mandarin-simplified-v1'
 
 
 @pytest.mark.integration
-def test_grammar_senses_are_visible_without_displacing_prior_introductions(postgres_config, run_cli):
+def test_grammar_senses_are_visible_without_displacing_prior_introductions(postgres_config, run_cli, tmp_path):
     result = run_cli(postgres_config, 'scripts/bootstrap_database.py')
     assert result.returncode == 0, result.stderr
-    rows = json.loads(SEED.read_text())
+    rows = current_introductions(postgres_config, json.loads(SEED.read_text()))
     prior_path = UI / 'artifacts/learning/story-first-page-exposure-audit.json'
     prior = json.loads(prior_path.read_text()) if prior_path.exists() else {'first_display': {}}
     with psycopg2.connect(postgres_config['DATABASE']['Url']) as connection:
@@ -50,6 +51,6 @@ def test_grammar_senses_are_visible_without_displacing_prior_introductions(postg
                              'exposures': {}, 'operation': 'vocabulary', 'blockId': early[0]})
         assert result.status_code == 200
         assert 'course-lexeme-W-SYL-4854' not in {item['id'] for item in result.json()['items']}
-    artifact = UI / 'artifacts/learning/notebook-grammar-vocabulary-audit.json'
+    artifact = tmp_path / 'notebook-grammar-vocabulary-audit.json'
     artifact.parent.mkdir(parents=True, exist_ok=True)
     artifact.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + '\n')

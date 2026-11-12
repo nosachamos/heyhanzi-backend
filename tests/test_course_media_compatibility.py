@@ -61,6 +61,8 @@ def media_catalog(tmp_path, monkeypatch):
         'trail_placements': {key: value for key,value in original['trail_placements'].items() if key in identifiers}}
     document = {**MANIFEST, 'exercises': items, 'learner_policy': policy}
     document.pop('media_compatibility', None)
+    document.pop('definition_storage', None)
+    document.pop('indexSha256', None)
     path = tmp_path/'media-course.json'
     path.write_text(json.dumps(document, ensure_ascii=False))
     monkeypatch.setattr(course_content, 'CONTENT', path)
@@ -142,7 +144,7 @@ def test_guest_completion_draft_and_import_use_current_fingerprint(course_app, m
         finished = guest_call(client, 'check', progress, runId=second_id, check=check_payload(SECOND))
         assert finished['run']['fingerprint'] == updated[SECOND['id']]['fingerprint']
         assert guest_call(client, 'state', finished['progress'])['completed'] == [FIRST['id'], SECOND['id']]
-        forged = copy.deepcopy(progress)
+        forged = {'runs': copy.deepcopy(progress['runs'])}
         forged['runs'][0]['fingerprint'] = '0' * 64
         rejected = guest_call(client, 'state', forged)
         assert rejected['completed'] == []

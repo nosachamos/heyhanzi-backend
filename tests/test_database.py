@@ -41,7 +41,7 @@ def test_schema_matches_models_and_destructive_downgrade_is_rejected(postgres_co
         result = run_cli(postgres_config, '-m', 'alembic', *arguments)
         assert result.returncode == 0, result.stderr
     rejected = run_cli(postgres_config, '-m', 'alembic', 'downgrade', 'base')
-    assert rejected.returncode != 0 and 'permanent' in rejected.stderr
+    assert rejected.returncode != 0 and 'forward migration' in rejected.stderr
     # Failed destructive rollback leaves the schema current and reusable.
     for arguments in [('upgrade', 'head'), ('check',)]:
         result = run_cli(postgres_config, '-m', 'alembic', *arguments)

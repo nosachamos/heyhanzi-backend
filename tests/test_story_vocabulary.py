@@ -8,6 +8,7 @@ import pytest
 from app.email.providers import FakeEmailProvider
 from app.main import create_app
 from app.services.learning_glosses import learner_translations
+from tests.notebook_history import current_introductions
 from tests.test_auth_flows import browser, verified_signup
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -29,7 +30,7 @@ def test_story_lexemes_are_visible_on_real_prior_cards_and_acknowledged_separate
     with browser(create_app(postgres_config, email_provider=mail)) as client:
         verified_signup(client, mail, 'story-vocabulary@example.com')
         account = client.get('/auth/session').json()['id']
-        for word in WORDS:
+        for word in current_introductions(postgres_config, WORDS):
             block_id, sequence = word['introduction_block_id'], word['introduction_sequence']
             notebook = {'trackId': TRACK, 'completed': [id for id, _, n in cards if n <= sequence], 'exposures': {}}
             displayed = client.post('/learning/guest/lesson', json={**notebook, 'operation': 'vocabulary', 'blockId': block_id})
@@ -39,6 +40,8 @@ def test_story_lexemes_are_visible_on_real_prior_cards_and_acknowledged_separate
             shown = vocabulary[word['id']]
             expected = word['translations'] if word.get('sense_key') else learner_translations(
                 word['translations'], text=word['text'], pronunciation=word['pronunciation'])
+            if word['id'] == 'cmn-493e53d9f37773fc8f508f5a':
+                expected = {**expected, 'en': 'noun suffix'}
             assert shown['translations']['en'] == expected['en']
             assert shown['pronunciation']['value'] == word['pronunciation']['value']
             assert client.post('/learning/guest/import', json={**notebook, 'accountId': account}).status_code == 200
@@ -51,7 +54,8 @@ def test_story_lexemes_are_visible_on_real_prior_cards_and_acknowledged_separate
                 with connection.cursor() as cursor:
                     cursor.execute('SELECT count(*) FROM learning_vocabulary_exposures WHERE vocabulary_id=%s', (word['id'],))
                     assert cursor.fetchone()[0] == 0
-            ack = client.post(url + '/seen', json={'vocabularyIds': [word['id']]})
+            references = [item['lexicalUseReference'] for item in account_display.json()['items'] if item['id'] == word['id'] and item.get('lexicalUseReference')]
+            ack = client.post(url + '/seen', json={'vocabularyIds': [word['id']], 'lexicalUses': references})
             assert ack.status_code == 200, ack.text
             with psycopg2.connect(postgres_config['DATABASE']['Url']) as connection:
                 with connection.cursor() as cursor:

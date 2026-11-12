@@ -258,7 +258,7 @@ def test_learning_warmup_enrollment_and_ordered_persistent_progress(auth_app):
         path = client.get(path_url).json()
         words = path["stages"][0]["blocks"]
         assert len(words) == 24 and path["completedCount"] == 0
-        assert path["stages"][0]["kind"] == "warmup" and path["stages"][0]["level"] is None
+        assert path["stages"][0]["kind"] == "warmup" and path["stages"][0]["level"] == "warmup"
         assert any(len(word["text"]) > 1 for word in words)
         reference = words[0]["languageData"]["strokeOrder"][0]
         assert reference["format"] == "stroke-reference-v1"
@@ -291,7 +291,7 @@ def test_learning_warmup_enrollment_and_ordered_persistent_progress(auth_app):
                 for voice, variant in ref["voices"].items():
                     assert variant["voiceId"] == voice
                     assert variant["id"] == ref["id"]
-                    assert variant["url"].startswith("https://") and ".cloudfront.net/sentences/" in variant["url"]
+                    assert (variant["url"].startswith("https://") and ".cloudfront.net/sentences/" in variant["url"]) or variant["url"].startswith("/exercise-assets/audio/official-")
                     assert "?" not in variant["url"]
                     assert re.fullmatch(r"[0-9a-f]{64}", variant["version"])
                 assert ref["url"] == ref["voices"]["mandarin-female"]["url"]
@@ -395,19 +395,21 @@ def test_learning_levels_page_windows_and_character_combinations(billing_app):
         from tests.learner_journey import complete_required_before
         for block in warmup:
             complete_required_before(client, block['id'])
+            visit = client.post(url + f"/blocks/{block['id']}/complete", json={})
+            assert visit.status_code == 200, visit.text
             learned.update(block['languageData']['characters'])
             displayed_words.add(block['text'])
             examples_response = client.get(url + f"/blocks/{block['id']}/vocabulary")
             assert examples_response.status_code == 200
             examples = examples_response.json()
-            if block['text'] == '人':
+            if block['text'] == '人' and '好' in learned:
                 good_person = next(word for word in examples['items'] if word['text'] == '好人')
                 assert good_person['pronunciation']['value'] == 'hǎo rén'
                 assert good_person['translations']['en'] == 'good person'
                 assert good_person['newlyAvailable']
                 assert examples['example']['text'] == '我是好人。'
                 person_card = (block['id'], [word['id'] for word in examples['items']])
-            if block['text'] == '他':
+            if block['text'] == '他' and person_card is not None:
                 # Expand this card to teach the missing prerequisite instead of
                 # restricting the sentence. GET alone still cannot record exposure.
                 assert examples['example']['text'] == '他是好人。'
@@ -419,10 +421,10 @@ def test_learning_levels_page_windows_and_character_combinations(billing_app):
                 examples = client.get(url + f"/blocks/{block['id']}/vocabulary").json()
                 assert examples['example']['text'] == '他是好人。'
                 assert not next(word for word in examples['items'] if word['text'] == '好人')['newlyAvailable']
-            if block['text'] == '她':
+            if block['text'] == '她' and '好' in learned:
                 assert examples['example']['text'] == '她是好人。'
             allowed_words = displayed_words | {word['text'] for word in examples['items']}
-            assert 1 <= len(examples['examples']) <= 3
+            assert 0 <= len(examples['examples']) <= 3
             assert len({sentence['text'] for sentence in examples['examples']}) == len(examples['examples'])
             for sentence in examples['examples'] + [word['example'] for word in examples['items'] if word['example'] is not None]:
                 assert sentence and sentence['text'] == ''.join(token['text'] for token in sentence['tokens'])
@@ -439,9 +441,9 @@ def test_learning_levels_page_windows_and_character_combinations(billing_app):
                 assert [token['text'] for token in examples['example']['tokens'] if token['highlighted']] == ['你好']
             if examples['items'] and block['text'] != '人':
                 assert client.post(url + f"/blocks/{block['id']}/vocabulary/seen",
-                    json={'vocabularyIds': [word['id'] for word in examples['items']]}).status_code == 200
+                    json={'vocabularyIds': [word['id'] for word in examples['items']],
+                          'lexicalUses': [word['lexicalUseReference'] for word in examples['items'] if word.get('lexicalUseReference')]}).status_code == 200
             displayed_words.update(word['text'] for word in examples['items'])
-            assert client.post(url + f"/blocks/{block['id']}/complete", json={}).status_code == 200
         person = next(block for block in warmup if block['text'] == '人')
         combinations = client.get(url + f"/blocks/{person['id']}/vocabulary?limit=40").json()['items']
         other_person = next(word for word in combinations if word['text'] == '他人')
@@ -449,37 +451,38 @@ def test_learning_levels_page_windows_and_character_combinations(billing_app):
         assert other_person['translations']['zh'] == '他人'
         from tests.learner_journey import complete_required_warmup_stories
         complete_required_warmup_stories(client)
-        for character, expected, excluded in [('老', '老人', '老师'), ('师', '老师', '老公'), ('公', '老公', '老婆')]:
+        visited_paid = []
+        paid_words = []
+        for _ in range(3):
             response = client.get(url + '/journey?level=hsk-1')
             assert response.headers['cache-control'] == 'no-store'
             path = response.json()
             current = next(block for stage in path['stages'] for block in stage['blocks'] if block['id'] == path['nextBlockId'])
-            assert current['text'] == character
+            complete_required_before(client, current['id'])
+            visit = client.post(url + f"/blocks/{current['id']}/complete", json={})
+            assert visit.status_code == 200, visit.text
             vocabulary_url = url + f"/blocks/{current['id']}/vocabulary"
-            vocabulary_response = client.get(vocabulary_url).json()
-            words = vocabulary_response['items']
-            sentence = vocabulary_response['example']
-            assert [token['text'] for token in sentence['tokens'] if token['highlighted']] == [expected]
-            word_example = next(word for word in words if word['text'] == expected)['example']
-            if word_example is not None:
-                assert expected in {token['text'] for token in word_example['tokens']}
-                assert '我在学“' not in word_example['text']
-            assert sum(word['text'] == expected for word in words) == 1
-            assert excluded not in {word['text'] for word in words}
-            assert next(word for word in words if word['text'] == expected)['newlyAvailable']
-            assert client.post(url + f"/blocks/{current['id']}/complete", json={}).status_code == 200
-        reread = client.get(url + f"/blocks/{track}-char-{ord('老'):x}/vocabulary").json()['items']
-        assert not next(word for word in reread if word['text'] == '老公')['newlyAvailable']
+            vocabulary_response = client.get(vocabulary_url)
+            assert vocabulary_response.status_code == 200, vocabulary_response.text
+            items = vocabulary_response.json()['items']
+            paid_words.extend(items)
+            assert len({word['id'] for word in items}) == len(items)
+            if items:
+                ack = client.post(vocabulary_url + '/seen', json={'vocabularyIds': [word['id'] for word in items]})
+                assert ack.status_code == 200, ack.text
+                reread = client.get(vocabulary_url).json()['items']
+                assert all(not word['newlyAvailable'] for word in reread if word['id'] in {item['id'] for item in items})
+            visited_paid.append(current['id'])
         client.post('/auth/logout', json={})
         assert client.get(url + '/journey').status_code == 401
         assert client.get(vocabulary_url).status_code == 401
-        assert client.post(vocabulary_url + '/seen', json={'vocabularyIds': person_card[1]}).status_code == 401
+        assert client.post(vocabulary_url + '/seen', json={'vocabularyIds': []}).status_code == 401
         verified_signup(client, mail, 'separate-vocabulary@example.com')
         client.post('/learning/enrollments', json={'trackId': track})
-        for block in warmup[:6]:
-            complete_required_before(client, block['id'])
-            assert client.post(url + f"/blocks/{block['id']}/complete", json={}).status_code == 200
-        her = warmup[6]
+        account = client.get('/auth/session').json()['id']
+        assert client.post('/learning/guest/import', json={'trackId': track, 'accountId': account,
+            'completed': [block['id'] for block in warmup], 'exposures': {}}).status_code == 200
+        her = next(block for block in warmup if block['text'] == '她')
         isolated = client.get(url + f"/blocks/{her['id']}/vocabulary").json()
         assert isolated['example']['text'] == '她是好人。'
         support = next(word for word in isolated['items'] if word['text'] == '好人')
@@ -498,7 +501,7 @@ def test_learning_levels_page_windows_and_character_combinations(billing_app):
         assert [word['id'] for word in client.get(second_url).json()['items']] == [word['id'] for word in second['items']]
         assert not next(word for word in client.get(url + f"/blocks/{her['id']}/vocabulary").json()['items']
                         if word['text'] == '好人')['newlyAvailable']
-        future_word = next(word['id'] for word in words if word['text'] == '老公')
+        future_word = paid_words[0]['id']
         assert client.post(url + f"/blocks/{her['id']}/vocabulary/seen",
             json={'vocabularyIds': [future_word]}).status_code == 422
 

@@ -31,8 +31,8 @@ def test_online_reading_upgrade_retains_exposure_and_word_identity(postgres_conf
         with connection.cursor() as cursor:
             cursor.execute('SELECT row_to_json(v) FROM learning_vocabulary v WHERE id=%s', (vocabulary_id,))
             after = cursor.fetchone()[0]
-            assert after == {**before, 'pronunciation': {'scheme': 'pinyin', 'value': 'xiànshàng'},
-                             'reading_key': 'xiànshàng'}
+            assert {key: value for key, value in after.items() if key != 'language_data'} == {**{key: value for key, value in before.items() if key != 'language_data'}, 'pronunciation': {'scheme': 'pinyin', 'value': 'xiànshàng'}, 'reading_key': 'xiànshàng'}
+            assert before['language_data'].items() <= after['language_data'].items()
             cursor.execute('SELECT enrollment_id,vocabulary_id,block_id,displayed_at '
                            'FROM learning_vocabulary_exposures WHERE vocabulary_id=%s', (vocabulary_id,))
             assert cursor.fetchall() == [('reading-enrollment', vocabulary_id, block, 123)]

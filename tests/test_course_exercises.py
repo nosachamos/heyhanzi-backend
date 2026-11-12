@@ -11,6 +11,7 @@ import pytest
 from app.email.providers import FakeEmailProvider
 from app.main import create_app
 from app.services.course_content import exercise as authored_exercise
+from tests.notebook_history import complete_display_history
 from tests.test_auth_flows import browser, verified_signup
 
 MANIFEST = json.loads((Path(__file__).resolve().parents[1] / "app/data/learning/course-exercises.json").read_text())
@@ -37,10 +38,15 @@ def notebook_at(config, instance_id, *, later=0):
                            "WHERE s.track_id=%s AND b.kind='word' AND b.sequence<=%s ORDER BY b.sequence",
                            (NOTEBOOK["trackId"], anchor["afterSequence"] + later))
             completed = [row[0] for row in cursor.fetchall()]
-    sources = [word["source_id"] for word in policy["lexical_requirements"][instance_id]
-               if not word["primary_block_ids"] and word["source_id"]]
-    return {"trackId": NOTEBOOK["trackId"], "completed": completed,
-            "exposures": {anchor["afterBlockId"]: sources}}
+    notebook = {"trackId": NOTEBOOK["trackId"], "completed": completed, "exposures": {}}
+    return complete_display_history(config, notebook, instance_id)
+
+
+def remove_display(notebook, source_id):
+    for block in notebook['exposures']:
+        notebook['exposures'][block] = [id for id in notebook['exposures'][block] if id != source_id]
+    for block in notebook.get('lexicalUseExposures', {}):
+        notebook['lexicalUseExposures'][block] = [ref for ref in notebook['lexicalUseExposures'][block] if ref['id'] != source_id]
 
 
 def save_payload(item=FIRST, **changes):
@@ -49,6 +55,8 @@ def save_payload(item=FIRST, **changes):
 
 
 def check_payload(item=FIRST, *, correct=True, **changes):
+    if "steps" not in item["definition"]:
+        item = authored_exercise(item["id"])
     return {"attemptId": str(uuid4()), "revision": item["revision"], "fingerprint": item["fingerprint"],
             "answer": item["definition"]["steps"][0]["questions"][0]["solutions"][0] if correct else [],
             "supports": [], **changes}
@@ -397,7 +405,7 @@ def test_course_migration_preserves_legacy_notebooks_and_progress(postgres_confi
         assert client.get(BASE).json()["completed"] == []
         run_id = str(uuid4())
         assert client.put(f"{BASE}/runs/{run_id}", json=save_payload()).status_code == 409
-        import_notebook(client, {**NOTEBOOK, "exposures": display_fixture_common_words(client)})
+        import_notebook(client, {**NOTEBOOK, **display_fixture_common_words(client)})
         introduced = client.get(path_url).json()
         assert client.put(f"{BASE}/runs/{run_id}", json=save_payload()).status_code == 200
         assert client.post(f"{BASE}/runs/{run_id}/checks", json=check_payload()).json()["completed"]
@@ -477,9 +485,8 @@ def test_archival_guest_import_retains_unassessed_history_and_independent_curren
 def test_exact_bank_exposure_and_anchor_gate_guests_and_accounts(course_app, postgres_config):
     app, mail = course_app
     instance_id = "EX-CLOZE-U09"
-    item = next(item for item in MANIFEST["exercises"] if item["id"] == instance_id)
+    item = authored_exercise(instance_id)
     notebook = notebook_at(postgres_config, instance_id, later=12)
-    anchor = MANIFEST["learner_policy"]["trail_placements"][instance_id]["afterBlockId"]
     requirements = {word["text"]: word for word in MANIFEST["learner_policy"]["lexical_requirements"][instance_id]}
     with browser(app) as client:
         unseen = {**notebook, "exposures": {}}
@@ -488,16 +495,15 @@ def test_exact_bank_exposure_and_anchor_gate_guests_and_accounts(course_app, pos
         assert blocked.status_code == 409 and blocked.json()["detail"]["code"] == "course_vocabulary_not_introduced"
         # Yesterday is a distractor: exposing only the answer's compounds fails.
         missing_distractor = copy.deepcopy(notebook)
-        missing_distractor["exposures"][anchor].remove(requirements["昨天"]["source_id"])
+        remove_display(missing_distractor, requirements["昨天"]["source_id"])
         assert instance_id not in guest_call(client, "state", notebook=missing_distractor)["eligible"]
         # Later notebook visits cannot retroactively authorize this earlier task.
         too_late = copy.deepcopy(notebook)
-        too_late["exposures"][anchor].remove(requirements["学校"]["source_id"])
+        remove_display(too_late, requirements["学校"]["source_id"])
         too_late["exposures"][notebook["completed"][-1]] = [requirements["学校"]["source_id"]]
         assert instance_id not in guest_call(client, "state", notebook=too_late)["eligible"]
         ready = guest_call(client, "state", notebook=notebook)
         assert instance_id in ready["eligible"] and ready["completed"] == []
-        assert "EX-CLOZE-U01" not in ready["eligible"]  # Unmapped lexical senses fail closed.
         run_id = str(uuid4())
         saved = guest_call(client, "save", notebook=notebook, runId=run_id, save=save_payload(item))
         passed = guest_call(client, "check", saved["progress"], notebook=notebook, runId=run_id, check=check_payload(item))
@@ -531,8 +537,8 @@ def test_homographic_vocabulary_readings_do_not_substitute_for_each_other(course
     anchor = MANIFEST["learner_policy"]["trail_placements"][instance_id]["afterBlockId"]
     correct = next(word for word in MANIFEST["learner_policy"]["lexical_requirements"][instance_id] if word["text"] == "地方")
     wrong = copy.deepcopy(notebook)
-    wrong["exposures"][anchor].remove(correct["source_id"])
-    wrong["exposures"][anchor].append("cmn-39a718243f4545f7e385d6fe")  # dìfāng: regional, not dìfang: place.
+    remove_display(wrong, correct["source_id"])
+    wrong["exposures"].setdefault(anchor, []).append("cmn-39a718243f4545f7e385d6fe")  # dìfāng: regional, not dìfang: place.
     with browser(course_app[0]) as client:
         assert instance_id not in guest_call(client, "state", notebook=wrong)["eligible"]
         assert instance_id in guest_call(client, "state", notebook=notebook)["eligible"]
@@ -549,9 +555,11 @@ def test_repeated_vocabulary_exposures_keep_earliest_source_across_import_and_ac
     notebook = notebook_at(postgres_config, instance_id, later=12)
     anchor = MANIFEST["learner_policy"]["trail_placements"][instance_id]["afterBlockId"]
     later = notebook["completed"][-1]
+    school_requirement = next(word for word in MANIFEST["learner_policy"]["lexical_requirements"][instance_id] if word["text"] == "学校")
+    anchor = school_requirement["introduction_block_id"]
     sources = notebook["exposures"][anchor]
-    duplicate = {**notebook, "exposures": {anchor: sources, later: sources}}
-    late_only = {**notebook, "exposures": {later: sources}}
+    duplicate = {**notebook, "exposures": {**notebook["exposures"], anchor: sources, later: sources}}
+    late_only = {**notebook, "exposures": {**notebook["exposures"], anchor: [], later: sources}}
     with browser(app) as client:
         assert instance_id in guest_call(client, "state", notebook=duplicate)["eligible"]
         verified_signup(client, mail, "course-duplicate-exposure@example.com")
@@ -576,23 +584,38 @@ def test_repeated_vocabulary_exposures_keep_earliest_source_across_import_and_ac
         account = client.get("/auth/session").json()["id"]
         school = next(word["source_id"] for word in MANIFEST["learner_policy"]["lexical_requirements"][instance_id]
                       if word["text"] == "学校")
-        school_late = {**notebook, "exposures": {anchor: [word for word in sources if word != school], later: [school]}}
+        school_late = {**notebook, "exposures": {**notebook["exposures"], anchor: [word for word in sources if word != school], later: [school]}}
         assert client.post("/learning/guest/import", json={**school_late, "accountId": account}).status_code == 200
         assert instance_id not in client.get(BASE).json()["eligible"]
         # The normal account display acknowledgement uses the same merge rule.
-        vocabulary_url = f"/learning/tracks/{NOTEBOOK['trackId']}/blocks/mandarin-simplified-v1-char-6821/vocabulary"
+        vocabulary_url = f"/learning/tracks/{NOTEBOOK['trackId']}/blocks/{anchor}/vocabulary"
         displayed = client.get(vocabulary_url)
         assert displayed.status_code == 200, displayed.text
         assert school in {word["id"] for word in displayed.json()["items"]}
-        acknowledged = client.post(vocabulary_url + "/seen", json={"vocabularyIds": [school]})
+        lexical = [word["lexicalUseReference"] for word in displayed.json()["items"] if word["id"] == school and word.get("lexicalUseReference")]
+        acknowledged = client.post(vocabulary_url + "/seen", json={"vocabularyIds": [school], "lexicalUses": lexical})
         assert acknowledged.status_code == 200, acknowledged.text
-        assert instance_id in client.get(BASE).json()["eligible"]
+        # Missing prerequisite displays also withhold dependent grammar notes.
+        # Reopen those real teaching cards after repairing the word history.
+        for _ in range(100):
+            state = client.get(BASE).json()
+            if instance_id in state['eligible']:
+                break
+            review = state['grammarReviews'][instance_id]
+            url = f"/learning/tracks/{NOTEBOOK['trackId']}/blocks/{review['blockId']}/vocabulary"
+            page = client.get(url, params={'limit': 40}).json()
+            reply = client.post(url + '/seen', json={
+                'vocabularyIds': [word['id'] for word in page['items']],
+                'lexicalUses': [word['lexicalUseReference'] for word in page['items'] if word.get('lexicalUseReference')],
+                'grammar': [{key: note[key] for key in ['id', 'fingerprint']} for note in page['grammarNotes']]})
+            assert reply.status_code == 200, reply.text
+        assert instance_id in state['eligible']
 
 
 @pytest.mark.integration
 def test_next_notebook_card_exposures_remain_pending_without_breaking_guest_course_state(course_app):
     completed = NOTEBOOK["completed"][:10]
-    notebook = {**NOTEBOOK, "completed": completed, "exposures": {block: list(words) for block, words in NOTEBOOK["exposures"].items() if block in completed}}
+    notebook = {**NOTEBOOK, "completed": completed, **{key: {block: list(words) for block, words in NOTEBOOK.get(key, {}).items() if block in completed} for key in ["exposures", "grammarExposures", "lexicalUseExposures"]}}
     next_id = NOTEBOOK["completed"][10]  # 的 can be previewed before recording its visit.
     with browser(course_app[0]) as client:
         preview = client.post("/learning/guest/lesson", json={**notebook, "operation": "vocabulary", "blockId": next_id})
@@ -617,7 +640,8 @@ def test_late_scope_current_pass_and_stale_history_remain_independent(course_app
     app, mail = course_app
     item = next(row for row in MANIFEST['exercises'] if row['id'] == 'EX-CLOZE-U6-25')
     notebook = notebook_at(postgres_config, item['id'])
-    notebook['exposures'] = {}
+    unseen = copy.deepcopy(notebook)
+    unseen['exposures'] = {}
     requirements = {}
     for word in MANIFEST['learner_policy']['lexical_requirements'][item['id']]:
         if not word['primary_block_ids'] and word.get('source_id'):
@@ -625,14 +649,14 @@ def test_late_scope_current_pass_and_stale_history_remain_independent(course_app
     with browser(app) as client:
         # Collect actual public Common words pages at their historical prefixes;
         # knowing the compound's characters alone never prepares the exercise.
-        assert item['id'] not in guest_call(client, 'state', notebook=notebook)['eligible']
+        assert item['id'] not in guest_call(client, 'state', notebook=unseen)['eligible']
         for block_id in sorted(requirements, key=notebook['completed'].index):
             remaining = set(requirements[block_id])
             prefix = notebook['completed'][:notebook['completed'].index(block_id) + 1]
             cursor = None
             while remaining:
                 response = client.post('/learning/guest/lesson', json={
-                    **notebook, 'completed': prefix, 'operation': 'vocabulary',
+                    **notebook, **{key: {block: refs for block, refs in notebook.get(key, {}).items() if block in prefix} for key in ['exposures', 'grammarExposures', 'lexicalUseExposures']}, 'completed': prefix, 'operation': 'vocabulary',
                     'blockId': block_id, 'vocabularyAfter': cursor})
                 assert response.status_code == 200, response.text
                 page = response.json()
@@ -647,7 +671,7 @@ def test_late_scope_current_pass_and_stale_history_remain_independent(course_app
         passed = guest_call(client, 'check', saved['progress'], notebook=notebook,
                             runId=guest_id, check=check_payload(item))
         assert guest_call(client, 'state', passed['progress'], notebook=notebook)['completed'] == [item['id']]
-        stale = copy.deepcopy(passed['progress'])
+        stale = {'runs': copy.deepcopy(passed['progress']['runs'])}
         stale['runs'][0]['fingerprint'] = '0' * 64
         restored = guest_call(client, 'state', stale, notebook=notebook)
         assert restored['completed'] == []

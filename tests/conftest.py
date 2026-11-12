@@ -14,8 +14,7 @@ from sqlalchemy.engine import make_url
 ROOT = Path(__file__).resolve().parents[1]
 
 
-@pytest.fixture
-def app_config():
+def _isolated_app_config():
     return {
         "GENERAL": {"Environment": "TEST", "DeploymentTimestamp": "test", "ReleaseSha": "abc123"},
         "URLS": {"FrontendUrl": "https://local.heyhanzi.com:3002", "BackendUrl": "https://local-api.heyhanzi.com:8002"},
@@ -24,6 +23,18 @@ def app_config():
         "EMAIL": {"Provider": "fake"},
         "DATABASE": {"Url": "postgresql://test:secret@127.0.0.1:1/unavailable?sslmode=disable"},
     }
+
+
+# Collection imports the ASGI module before fixtures run. Give that unused
+# default app an isolated TEST configuration instead of requiring local secrets.
+os.environ.setdefault('APP_CONFIGS', json.dumps(_isolated_app_config()))
+os.environ.setdefault('APP_ENV', 'TEST')
+os.environ.setdefault('HEYHANZI_DISABLE_DOTENV', 'true')
+
+
+@pytest.fixture
+def app_config():
+    return _isolated_app_config()
 
 
 @pytest.fixture

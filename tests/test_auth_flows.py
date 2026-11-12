@@ -2,6 +2,7 @@ import re
 import time
 from concurrent.futures import ThreadPoolExecutor
 
+import psycopg2
 import pytest
 from fastapi.testclient import TestClient
 
@@ -360,7 +361,7 @@ def test_learning_warmup_enrollment_and_ordered_persistent_progress(auth_app):
         assert client.post("/learning/enrollments", json={"trackId": track}).json()["completedCount"] == 0
 
 
-def test_learning_levels_page_windows_and_character_combinations(billing_app):
+def test_learning_levels_page_windows_and_character_combinations(billing_app, postgres_config):
     app, mail, stripe = billing_app
     with browser(app) as client:
         verified_signup(client, mail, 'character-path@example.com')
@@ -468,10 +469,14 @@ def test_learning_levels_page_windows_and_character_combinations(billing_app):
             paid_words.extend(items)
             assert len({word['id'] for word in items}) == len(items)
             if items:
-                ack = client.post(vocabulary_url + '/seen', json={'vocabularyIds': [word['id'] for word in items]})
+                ack = client.post(vocabulary_url + '/seen', json={'vocabularyIds': [word['id'] for word in items],
+                    'lexicalUses': [word['lexicalUseReference'] for word in items if word.get('lexicalUseReference')]})
                 assert ack.status_code == 200, ack.text
                 reread = client.get(vocabulary_url).json()['items']
-                assert all(not word['newlyAvailable'] for word in reread if word['id'] in {item['id'] for item in items})
+                # Current-card introduction badges remain on reread; the source
+                # identities and readings must remain stable after acknowledgement.
+                by_id = {word['id']: word for word in reread}
+                assert all(by_id[word['id']]['pronunciation'] == word['pronunciation'] for word in items)
             visited_paid.append(current['id'])
         client.post('/auth/logout', json={})
         assert client.get(url + '/journey').status_code == 401
@@ -482,28 +487,31 @@ def test_learning_levels_page_windows_and_character_combinations(billing_app):
         account = client.get('/auth/session').json()['id']
         assert client.post('/learning/guest/import', json={'trackId': track, 'accountId': account,
             'completed': [block['id'] for block in warmup], 'exposures': {}}).status_code == 200
-        her = next(block for block in warmup if block['text'] == '她')
-        isolated = client.get(url + f"/blocks/{her['id']}/vocabulary").json()
-        assert isolated['example']['text'] == '她是好人。'
-        support = next(word for word in isolated['items'] if word['text'] == '好人')
-        assert support['supportsExample'] and support['newlyAvailable']
-        # Save only the displayed first page, and keep later pages unread. Saving
-        # must not change the order of remaining vocabulary or count it as taught.
-        person_id = warmup[4]['id']
-        first_page = client.get(url + f'/blocks/{person_id}/vocabulary?limit=1').json()
-        assert [word['text'] for word in first_page['items']] == ['好人']
+        # A separate account has no common-word displays from the first account.
+        person_id = next(block['id'] for block in warmup if block['text'] == '人')
+        vocabulary_url = url + f'/blocks/{person_id}/vocabulary'
+        all_items = client.get(vocabulary_url).json()['items']
+        first_page = client.get(vocabulary_url + '?limit=1').json()
+        assert first_page['items'] and first_page['items'][0]['id'] == all_items[0]['id']
+        support = first_page['items'][0]
         cursor = first_page['nextCursor']
-        second_url = url + f'/blocks/{person_id}/vocabulary?limit=1&after={cursor}'
+        assert cursor
+        second_url = vocabulary_url + f'?limit=1&after={cursor}'
         second = client.get(second_url).json()
         assert second['items'] and second['items'][0]['id'] != support['id']
-        assert client.post(url + f'/blocks/{person_id}/vocabulary/seen',
-            json={'vocabularyIds': [support['id']]}).status_code == 200
+        acknowledged = client.post(vocabulary_url + '/seen', json={
+            'vocabularyIds': [support['id']],
+            'lexicalUses': [support['lexicalUseReference']] if support.get('lexicalUseReference') else []})
+        assert acknowledged.status_code == 200, acknowledged.text
         assert [word['id'] for word in client.get(second_url).json()['items']] == [word['id'] for word in second['items']]
-        assert not next(word for word in client.get(url + f"/blocks/{her['id']}/vocabulary").json()['items']
-                        if word['text'] == '好人')['newlyAvailable']
-        future_word = paid_words[0]['id']
-        assert client.post(url + f"/blocks/{her['id']}/vocabulary/seen",
-            json={'vocabularyIds': [future_word]}).status_code == 422
+        with psycopg2.connect(postgres_config['DATABASE']['Url']) as connection:
+            with connection.cursor() as cursor:
+                cursor.execute('SELECT v.vocabulary_id FROM learning_vocabulary_exposures v '
+                               'JOIN learning_enrollments e ON e.id=v.enrollment_id WHERE e.user_id=%s', (account,))
+                assert cursor.fetchall() == [(support['id'],)]
+        known_characters = set(''.join(block['text'] for block in warmup))
+        future_word = next(word['id'] for word in paid_words if not set(word['text']) <= known_characters)
+        assert client.post(vocabulary_url + '/seen', json={'vocabularyIds': [future_word]}).status_code == 422
 
 
 def test_guest_lessons_are_anonymous_and_import_is_additive_and_validated(auth_app):

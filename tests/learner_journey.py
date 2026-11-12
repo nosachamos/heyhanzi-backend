@@ -25,6 +25,11 @@ def complete_occurrence(client, instance_id):
         assert result.status_code == 200, result.text
 
     for step in definition['steps']:
+        if step['kind'] == 'reading':
+            response = client.put('/learning/course/runs/' + run, json={**common,
+                'instanceId': instance_id, 'prepared': True, 'draft': [step['id']], 'supports': []})
+            assert response.status_code == 200, response.text
+            continue
         prefix = ['set-v1', step['id']]
         if definition.get('setActivity'):
             if step['kind'] == 'stroke':
@@ -95,52 +100,5 @@ def complete_required_before(client, sequence):
 
 
 def complete_required_warmup_stories(client):
-    document = json.loads((Path(__file__).resolve().parents[1] / 'app/data/learning/course-exercises.json').read_text())
-    policy = document['learner_policy']
-    optional = set(policy['optional_exercise_ids'])
-    items = [item for item in document['exercises']
-             if item['id'] not in optional
-             and policy['trail_placements'][item['id']]['levelId'] == 'warmup'
-             and item['definition']['id'] in {'ACT-STORY', 'ACT-STORY-COMP'}]
-    for item in items:
-        for _ in range(100):
-            state = client.get('/learning/course').json()
-            if item['id'] in state['eligible']:
-                break
-            review = state['grammarReviews'].get(item['id'])
-            assert review, (item['id'], state)
-            url = f"/learning/tracks/mandarin-simplified-v1/blocks/{review['blockId']}/vocabulary"
-            cursor = None
-            while True:
-                response = client.get(url, params={'limit': 40, **({'after': cursor} if cursor else {})})
-                assert response.status_code == 200, response.text
-                page = response.json()
-                if 'vocabularyId' in review:
-                    if review['vocabularyId'] not in {word['id'] for word in page['items']}:
-                        cursor = page['nextCursor']
-                        assert cursor, review
-                        continue
-                    payload = {'vocabularyIds': [review['vocabularyId']]}
-                else:
-                    payload = {'grammar': [{key: note[key] for key in ['id', 'fingerprint']}
-                                           for note in page['grammarNotes']]}
-                    assert payload['grammar'], review
-                acknowledged = client.post(url + '/seen', json=payload)
-                assert acknowledged.status_code == 200, acknowledged.text
-                break
-        else:
-            raise AssertionError('Required story prerequisites did not converge')
-        run = str(uuid4())
-        common = {key: item[key] for key in ['revision', 'fingerprint']}
-        for step in item['definition']['steps']:
-            if step['kind'] == 'reading':
-                response = client.put('/learning/course/runs/' + run, json={**common,
-                    'instanceId': item['id'], 'prepared': True, 'draft': [step['id']], 'supports': []})
-                assert response.status_code == 200, response.text
-            else:
-                for question in step['questions']:
-                    answer = next(choice['id'] for choice in question['choices'] if choice['correct'])
-                    response = client.post('/learning/course/runs/' + run + '/checks', json={**common,
-                        'attemptId': str(uuid4()), 'answer': [question['id'], answer], 'supports': []})
-                    assert response.status_code == 200, response.text
-        assert item['id'] in client.get('/learning/course').json()['completed']
+    # Stories now share their main trail with the other approved required types.
+    complete_required_before(client, 'warmup-end')

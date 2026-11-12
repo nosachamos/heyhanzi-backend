@@ -1,0 +1,721 @@
+{
+  "id": "EX-CHAR-char-7403",
+  "revision": 2,
+  "unit": "U17-P01",
+  "stage": "ST-HSK2",
+  "after": "S-U17-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "球",
+  "sourceBlockId": "mandarin-simplified-v1-char-7403",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7403",
+        "text": "球",
+        "pinyin": "qiú",
+        "meaning": "ball used for playing games",
+        "characters": [
+          {
+            "id": "C-7403",
+            "text": "球"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-0f27d1fe3274a1e3ea7068ca",
+        "text": "还好",
+        "pinyin": "hái hǎo",
+        "meaning": "not bad; fortunately",
+        "characters": [
+          {
+            "id": "C-8FD8",
+            "text": "还"
+          },
+          {
+            "id": "C-597D",
+            "text": "好"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-68e47415919f7069dd9c3dd0",
+        "text": "打球",
+        "pinyin": "dǎ qiú",
+        "meaning": "to play a ball sport",
+        "characters": [
+          {
+            "id": "C-6253",
+            "text": "打"
+          },
+          {
+            "id": "C-7403",
+            "text": "球"
+          }
+        ]
+      },
+      {
+        "id": "W0916",
+        "text": "上衣",
+        "pinyin": "shàngyī",
+        "meaning": "jacket; upper outer garment",
+        "characters": [
+          {
+            "id": "C-4E0A",
+            "text": "上"
+          },
+          {
+            "id": "C-8863",
+            "text": "衣"
+          }
+        ]
+      },
+      {
+        "id": "W3059",
+        "text": "事先",
+        "pinyin": "shìxiān",
+        "meaning": "in advance; before the event",
+        "characters": [
+          {
+            "id": "C-4E8B",
+            "text": "事"
+          },
+          {
+            "id": "C-5148",
+            "text": "先"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "e7ec503b7cd4b75e8b7af21abb163bbb6725715090f94793f2eb2d57491837aa",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7403",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "球",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7403-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-68e47415919f7069dd9c3dd0",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to play a ball sport",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "打球"
+              },
+              {
+                "value": "dǎ qiú",
+                "mode": "pinyin"
+              },
+              {
+                "value": "da3qiu2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "打球",
+              "pinyin": "dǎ qiú",
+              "meaning": "to play a ball sport",
+              "audio": "47e0f47bf8bdba6bc96303d781ac99746c7b74e86e8dec06ca2d623b360ef380",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7403-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7403",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "球",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-0f27d1fe3274a1e3ea7068ca",
+                "label": "not bad; fortunately",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-7403",
+                "label": "ball used for playing games",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W3059",
+                "label": "in advance; before the event",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7403-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "球",
+        "pinyin": "qiú",
+        "meaning": "ball used for playing games",
+        "source": "/stroke-data/7403.json",
+        "reference": {
+          "character": "球",
+          "sha256": "6e24c3d7a0ccdead93c4b5bb57391a435a3df0866e5cc5f71f692baea0c05302",
+          "medians": [
+            [
+              [
+                147,
+                616
+              ],
+              [
+                208,
+                616
+              ],
+              [
+                332,
+                654
+              ],
+              [
+                380,
+                655
+              ]
+            ],
+            [
+              [
+                139,
+                397
+              ],
+              [
+                169,
+                394
+              ],
+              [
+                218,
+                403
+              ],
+              [
+                328,
+                440
+              ],
+              [
+                366,
+                437
+              ]
+            ],
+            [
+              [
+                293,
+                596
+              ],
+              [
+                266,
+                579
+              ],
+              [
+                266,
+                288
+              ],
+              [
+                260,
+                253
+              ],
+              [
+                249,
+                241
+              ]
+            ],
+            [
+              [
+                87,
+                176
+              ],
+              [
+                140,
+                162
+              ],
+              [
+                384,
+                272
+              ]
+            ],
+            [
+              [
+                430,
+                546
+              ],
+              [
+                474,
+                542
+              ],
+              [
+                683,
+                590
+              ],
+              [
+                729,
+                596
+              ],
+              [
+                759,
+                592
+              ]
+            ],
+            [
+              [
+                560,
+                814
+              ],
+              [
+                601,
+                783
+              ],
+              [
+                606,
+                769
+              ],
+              [
+                598,
+                623
+              ],
+              [
+                604,
+                101
+              ],
+              [
+                599,
+                71
+              ],
+              [
+                583,
+                40
+              ],
+              [
+                466,
+                83
+              ]
+            ],
+            [
+              [
+                429,
+                440
+              ],
+              [
+                480,
+                409
+              ],
+              [
+                509,
+                376
+              ]
+            ],
+            [
+              [
+                344,
+                184
+              ],
+              [
+                385,
+                176
+              ],
+              [
+                396,
+                182
+              ],
+              [
+                540,
+                304
+              ]
+            ],
+            [
+              [
+                825,
+                468
+              ],
+              [
+                790,
+                479
+              ],
+              [
+                669,
+                365
+              ],
+              [
+                661,
+                368
+              ]
+            ],
+            [
+              [
+                623,
+                386
+              ],
+              [
+                637,
+                356
+              ],
+              [
+                690,
+                302
+              ],
+              [
+                803,
+                207
+              ],
+              [
+                853,
+                190
+              ],
+              [
+                982,
+                168
+              ]
+            ],
+            [
+              [
+                730,
+                753
+              ],
+              [
+                806,
+                712
+              ],
+              [
+                839,
+                672
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7403-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0916",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "jacket; upper outer garment",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "上衣"
+              },
+              {
+                "value": "shàngyī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shang4yi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "上衣",
+              "pinyin": "shàngyī",
+              "meaning": "jacket; upper outer garment",
+              "audio": "e19621702d1f8739d33f37de2c4b6ef1cc454aea70557a900c376b816a43861a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7403-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7403",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "ball used for playing games",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "球"
+              },
+              {
+                "value": "qiú",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qiu2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "球",
+              "pinyin": "qiú",
+              "meaning": "ball used for playing games",
+              "audio": "467f58ef168cea9dc945789161ea3cda0c71fc57d91972f7713452cb0dd56a35",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "467f58ef168cea9dc945789161ea3cda0c71fc57d91972f7713452cb0dd56a35"
+            ],
+            "transcript": [
+              {
+                "text": "球",
+                "pinyin": "qiú",
+                "meaning": "ball used for playing games",
+                "audio": "467f58ef168cea9dc945789161ea3cda0c71fc57d91972f7713452cb0dd56a35",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7403",
+      "character": "球",
+      "lessonIds": [
+        "LESSON-C-7403"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7403-word",
+        "EX-CHAR-char-7403-recognize",
+        "EX-CHAR-char-7403-write",
+        "EX-CHAR-char-7403-familiar",
+        "EX-CHAR-char-7403-recall"
+      ]
+    },
+    "audio": {
+      "467f58ef168cea9dc945789161ea3cda0c71fc57d91972f7713452cb0dd56a35": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b0de0861dd4b2d5bd4b5d1d27dc0745d55349f15afa8ddf68876ff43842f1099.mp3",
+          "sha256": "b0de0861dd4b2d5bd4b5d1d27dc0745d55349f15afa8ddf68876ff43842f1099",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "b0de0861dd4b2d5bd4b5d1d27dc0745d55349f15afa8ddf68876ff43842f1099",
+            "text": "球",
+            "words": [
+              {
+                "text": "球",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-84f4a3361c5c5a70dfdaa592c51530c246d2aad4b3cc569edab57111b854aa9a.mp3",
+          "sha256": "84f4a3361c5c5a70dfdaa592c51530c246d2aad4b3cc569edab57111b854aa9a",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "84f4a3361c5c5a70dfdaa592c51530c246d2aad4b3cc569edab57111b854aa9a",
+            "text": "球",
+            "words": [
+              {
+                "text": "球",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "9ff5923134643678cae11e60f0641ab4a26dd58e267667dfa54b5cf3a4a5fee3": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b24507fc1ef19455788960a6651e3be9b2c66e4cb0d68bc99260dbe6f59b4484.mp3",
+          "sha256": "b24507fc1ef19455788960a6651e3be9b2c66e4cb0d68bc99260dbe6f59b4484",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "b24507fc1ef19455788960a6651e3be9b2c66e4cb0d68bc99260dbe6f59b4484",
+            "text": "还好",
+            "words": [
+              {
+                "text": "还好",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/645bb3538398f11abc368ba22ab9c8a7e6185068f8a544afee7955ab8cdfbe5a.mp3",
+          "sha256": "645bb3538398f11abc368ba22ab9c8a7e6185068f8a544afee7955ab8cdfbe5a",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "645bb3538398f11abc368ba22ab9c8a7e6185068f8a544afee7955ab8cdfbe5a",
+            "text": "还好",
+            "words": [
+              {
+                "text": "还好",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "47e0f47bf8bdba6bc96303d781ac99746c7b74e86e8dec06ca2d623b360ef380": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1757f2eda3b34a9f813ed2c726b387596c8b03ada6c0986e5b68d630cd8d5f30.mp3",
+          "sha256": "1757f2eda3b34a9f813ed2c726b387596c8b03ada6c0986e5b68d630cd8d5f30",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "1757f2eda3b34a9f813ed2c726b387596c8b03ada6c0986e5b68d630cd8d5f30",
+            "text": "打球",
+            "words": [
+              {
+                "text": "打球",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-7369e63f657b3130d6019a9f2fad218e5891920619666b68d36d2fe06edbb6d7.mp3",
+          "sha256": "7369e63f657b3130d6019a9f2fad218e5891920619666b68d36d2fe06edbb6d7",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "7369e63f657b3130d6019a9f2fad218e5891920619666b68d36d2fe06edbb6d7",
+            "text": "打球",
+            "words": [
+              {
+                "text": "打球",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "e19621702d1f8739d33f37de2c4b6ef1cc454aea70557a900c376b816a43861a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1df8625301444738c361971f8d574922a084fa804d6b0a5ac38c832ea6248c7a.mp3",
+          "sha256": "1df8625301444738c361971f8d574922a084fa804d6b0a5ac38c832ea6248c7a",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "1df8625301444738c361971f8d574922a084fa804d6b0a5ac38c832ea6248c7a",
+            "text": "上衣",
+            "words": [
+              {
+                "text": "上衣",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/6729a1d3bddcfe6201e20d88a625793ccd56b57e4ed261b15a64aea4f08c8741.mp3",
+          "sha256": "6729a1d3bddcfe6201e20d88a625793ccd56b57e4ed261b15a64aea4f08c8741",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "6729a1d3bddcfe6201e20d88a625793ccd56b57e4ed261b15a64aea4f08c8741",
+            "text": "上衣",
+            "words": [
+              {
+                "text": "上衣",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "bd0d58e5694a5e5fcbc9c3aa77cae623965cc108945b9490a7a49e3a8c1c9e91": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-495297e458efdc999818068afa91031cc9ce5edab964a41a233fbe37abd93282.mp3",
+          "sha256": "495297e458efdc999818068afa91031cc9ce5edab964a41a233fbe37abd93282",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "495297e458efdc999818068afa91031cc9ce5edab964a41a233fbe37abd93282",
+            "text": "事先",
+            "words": [
+              {
+                "text": "事先",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4bfd6741cf7e5dfe76b2dc3be525ac39ae7c13488788d373b820c5953f3513ee.mp3",
+          "sha256": "4bfd6741cf7e5dfe76b2dc3be525ac39ae7c13488788d373b820c5953f3513ee",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "4bfd6741cf7e5dfe76b2dc3be525ac39ae7c13488788d373b820c5953f3513ee",
+            "text": "事先",
+            "words": [
+              {
+                "text": "事先",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

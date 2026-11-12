@@ -1,0 +1,723 @@
+{
+  "id": "EX-CHAR-char-9876",
+  "revision": 2,
+  "unit": "U6-13",
+  "stage": "ST-HSK6",
+  "after": "S-U6-13-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "顶",
+  "sourceBlockId": "mandarin-simplified-v1-char-9876",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7eaa",
+        "text": "纪",
+        "pinyin": "jì",
+        "meaning": "order; discipline",
+        "characters": [
+          {
+            "id": "C-7EAA",
+            "text": "纪"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-9876",
+        "text": "顶",
+        "pinyin": "dǐng",
+        "meaning": "apex; crown of the head",
+        "characters": [
+          {
+            "id": "C-9876",
+            "text": "顶"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-fa2435fb24569a4773f335fa",
+        "text": "行李箱",
+        "pinyin": "xíng li xiāng",
+        "meaning": "suitcase",
+        "characters": [
+          {
+            "id": "C-884C",
+            "text": "行"
+          },
+          {
+            "id": "C-674E",
+            "text": "李"
+          },
+          {
+            "id": "C-7BB1",
+            "text": "箱"
+          }
+        ]
+      },
+      {
+        "id": "W2752",
+        "text": "领取",
+        "pinyin": "lǐngqǔ",
+        "meaning": "to receive; to draw",
+        "characters": [
+          {
+            "id": "C-9886",
+            "text": "领"
+          },
+          {
+            "id": "C-53D6",
+            "text": "取"
+          }
+        ]
+      },
+      {
+        "id": "W4750",
+        "text": "山顶",
+        "pinyin": "shāndǐng",
+        "meaning": "hilltop",
+        "characters": [
+          {
+            "id": "C-5C71",
+            "text": "山"
+          },
+          {
+            "id": "C-9876",
+            "text": "顶"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "b69725cb2b515ebc18a3e4862a53677839a8ba3bfb0506d19e68376e7efd07d0",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-9876",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "顶",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-9876-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W4750",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "hilltop",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "山顶"
+              },
+              {
+                "value": "shāndǐng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shan1ding3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "山顶",
+              "pinyin": "shāndǐng",
+              "meaning": "hilltop",
+              "audio": "073bff1ac22ab208bb31b088a8e3fe26d02e5637a90982b63501b34d5b404ea4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9876-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-9876",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "顶",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-9876",
+                "label": "apex; crown of the head",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-fa2435fb24569a4773f335fa",
+                "label": "suitcase",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W2752",
+                "label": "to receive; to draw",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9876-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "顶",
+        "pinyin": "dǐng",
+        "meaning": "apex; crown of the head",
+        "source": "/stroke-data/9876.json",
+        "reference": {
+          "character": "顶",
+          "sha256": "432eeff700b956f336a209bceb833b340c45a95df14f3969568368184dc71208",
+          "medians": [
+            [
+              [
+                122,
+                663
+              ],
+              [
+                157,
+                656
+              ],
+              [
+                196,
+                658
+              ],
+              [
+                394,
+                698
+              ],
+              [
+                448,
+                698
+              ]
+            ],
+            [
+              [
+                283,
+                644
+              ],
+              [
+                324,
+                616
+              ],
+              [
+                323,
+                312
+              ],
+              [
+                314,
+                171
+              ],
+              [
+                298,
+                139
+              ],
+              [
+                260,
+                150
+              ],
+              [
+                174,
+                193
+              ]
+            ],
+            [
+              [
+                493,
+                732
+              ],
+              [
+                521,
+                726
+              ],
+              [
+                802,
+                773
+              ],
+              [
+                847,
+                772
+              ],
+              [
+                889,
+                760
+              ]
+            ],
+            [
+              [
+                610,
+                714
+              ],
+              [
+                631,
+                689
+              ],
+              [
+                580,
+                595
+              ],
+              [
+                563,
+                581
+              ]
+            ],
+            [
+              [
+                485,
+                590
+              ],
+              [
+                519,
+                556
+              ],
+              [
+                523,
+                544
+              ],
+              [
+                526,
+                412
+              ],
+              [
+                523,
+                342
+              ],
+              [
+                509,
+                256
+              ],
+              [
+                511,
+                196
+              ]
+            ],
+            [
+              [
+                545,
+                568
+              ],
+              [
+                560,
+                562
+              ],
+              [
+                593,
+                567
+              ],
+              [
+                747,
+                601
+              ],
+              [
+                778,
+                589
+              ],
+              [
+                793,
+                571
+              ],
+              [
+                798,
+                562
+              ],
+              [
+                793,
+                406
+              ],
+              [
+                798,
+                282
+              ],
+              [
+                791,
+                205
+              ]
+            ],
+            [
+              [
+                605,
+                506
+              ],
+              [
+                626,
+                498
+              ],
+              [
+                657,
+                468
+              ],
+              [
+                646,
+                277
+              ],
+              [
+                619,
+                169
+              ],
+              [
+                582,
+                100
+              ],
+              [
+                536,
+                54
+              ],
+              [
+                473,
+                15
+              ],
+              [
+                412,
+                -9
+              ]
+            ],
+            [
+              [
+                717,
+                159
+              ],
+              [
+                772,
+                114
+              ],
+              [
+                836,
+                48
+              ],
+              [
+                850,
+                21
+              ],
+              [
+                858,
+                -13
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-9876-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-PRIMARY-char-7eaa",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "order; discipline",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "纪"
+              },
+              {
+                "value": "jì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ji4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "纪",
+              "pinyin": "jì",
+              "meaning": "order; discipline",
+              "audio": "e0211e7905f2c1a6a1440e2f4b78a2f86cbddb1e4d9cee158fd27ee70a5d4e56",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9876-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-9876",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "apex; crown of the head",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "顶"
+              },
+              {
+                "value": "dǐng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ding3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "顶",
+              "pinyin": "dǐng",
+              "meaning": "apex; crown of the head",
+              "audio": "c6ab07ef5b301cf2b92bfba52d29dc42301d0952da36bd27c9ff4784dc7dda48",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "c6ab07ef5b301cf2b92bfba52d29dc42301d0952da36bd27c9ff4784dc7dda48"
+            ],
+            "transcript": [
+              {
+                "text": "顶",
+                "pinyin": "dǐng",
+                "meaning": "apex; crown of the head",
+                "audio": "c6ab07ef5b301cf2b92bfba52d29dc42301d0952da36bd27c9ff4784dc7dda48",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-9876",
+      "character": "顶",
+      "lessonIds": [
+        "LESSON-C-9876"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-9876-word",
+        "EX-CHAR-char-9876-recognize",
+        "EX-CHAR-char-9876-write",
+        "EX-CHAR-char-9876-familiar",
+        "EX-CHAR-char-9876-recall"
+      ]
+    },
+    "audio": {
+      "e0211e7905f2c1a6a1440e2f4b78a2f86cbddb1e4d9cee158fd27ee70a5d4e56": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-a5ae8683904888c64346aa0ffb5245d1f373af4bd1685336357f33f794e7572c.mp3",
+          "sha256": "a5ae8683904888c64346aa0ffb5245d1f373af4bd1685336357f33f794e7572c",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "a5ae8683904888c64346aa0ffb5245d1f373af4bd1685336357f33f794e7572c",
+            "text": "纪",
+            "words": [
+              {
+                "text": "纪",
+                "start": 0.2,
+                "end": 0.3
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-c5da889c4ca0a90be2ee572eec90d8a7a2a7762bb714251e7f96505827e1aeb8.mp3",
+          "sha256": "c5da889c4ca0a90be2ee572eec90d8a7a2a7762bb714251e7f96505827e1aeb8",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "c5da889c4ca0a90be2ee572eec90d8a7a2a7762bb714251e7f96505827e1aeb8",
+            "text": "纪",
+            "words": [
+              {
+                "text": "纪",
+                "start": 0.2,
+                "end": 0.3
+              }
+            ]
+          }
+        }
+      },
+      "c6ab07ef5b301cf2b92bfba52d29dc42301d0952da36bd27c9ff4784dc7dda48": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f72e02fe7efb040fc5b53109de6cf0670804f0f46858763c10e0fe6e09c6150a.mp3",
+          "sha256": "f72e02fe7efb040fc5b53109de6cf0670804f0f46858763c10e0fe6e09c6150a",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "f72e02fe7efb040fc5b53109de6cf0670804f0f46858763c10e0fe6e09c6150a",
+            "text": "顶",
+            "words": [
+              {
+                "text": "顶",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ee2bba9b345d7687d0a0f31df14296d46a20b6283cb562dfa20eb856a634411b.mp3",
+          "sha256": "ee2bba9b345d7687d0a0f31df14296d46a20b6283cb562dfa20eb856a634411b",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "ee2bba9b345d7687d0a0f31df14296d46a20b6283cb562dfa20eb856a634411b",
+            "text": "顶",
+            "words": [
+              {
+                "text": "顶",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "a328aa1732074fcb5d03ce3987b83e9141d51f4ccd828a5ee24c8cd756b83479": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/af323a3899883031429bfba383747db9ac440788d8a16a215c8136e3a603b921.mp3",
+          "sha256": "af323a3899883031429bfba383747db9ac440788d8a16a215c8136e3a603b921",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "af323a3899883031429bfba383747db9ac440788d8a16a215c8136e3a603b921",
+            "text": "行李箱",
+            "words": [
+              {
+                "text": "行李箱",
+                "start": 0.21,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/784468d65c45c9598ffe7ddd613ea1bcb59ccd0196fb30ce4e534eb310c85d23.mp3",
+          "sha256": "784468d65c45c9598ffe7ddd613ea1bcb59ccd0196fb30ce4e534eb310c85d23",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "784468d65c45c9598ffe7ddd613ea1bcb59ccd0196fb30ce4e534eb310c85d23",
+            "text": "行李箱",
+            "words": [
+              {
+                "text": "行李箱",
+                "start": 0.21,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "3c43c470c794f941b90eec45343ccc6fe63a6ac636f852d7e5ebfa5ac00b2ec9": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f0c56350225fc99cef4ce82b16580a4686faa40f01d9635d56ecd10e7b24b076.mp3",
+          "sha256": "f0c56350225fc99cef4ce82b16580a4686faa40f01d9635d56ecd10e7b24b076",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "f0c56350225fc99cef4ce82b16580a4686faa40f01d9635d56ecd10e7b24b076",
+            "text": "领取",
+            "words": [
+              {
+                "text": "领取",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b42d6e13401d3db1b4737565af36caff88878afc40d14fdc187842a6cb64b7c4.mp3",
+          "sha256": "b42d6e13401d3db1b4737565af36caff88878afc40d14fdc187842a6cb64b7c4",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "b42d6e13401d3db1b4737565af36caff88878afc40d14fdc187842a6cb64b7c4",
+            "text": "领取",
+            "words": [
+              {
+                "text": "领取",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "073bff1ac22ab208bb31b088a8e3fe26d02e5637a90982b63501b34d5b404ea4": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9e657b13863bf07140e0683cd5e3c5cf153bcce560b6861972ad651f1f849583.mp3",
+          "sha256": "9e657b13863bf07140e0683cd5e3c5cf153bcce560b6861972ad651f1f849583",
+          "byteLength": 17325,
+          "readAlong": {
+            "audioSha256": "9e657b13863bf07140e0683cd5e3c5cf153bcce560b6861972ad651f1f849583",
+            "text": "山顶",
+            "words": [
+              {
+                "text": "山顶",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/23f91d2a0dd6ff86c283fc5d290827c1fe4885df63ae5c6fc5d5a165bf50403f.mp3",
+          "sha256": "23f91d2a0dd6ff86c283fc5d290827c1fe4885df63ae5c6fc5d5a165bf50403f",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "23f91d2a0dd6ff86c283fc5d290827c1fe4885df63ae5c6fc5d5a165bf50403f",
+            "text": "山顶",
+            "words": [
+              {
+                "text": "山顶",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

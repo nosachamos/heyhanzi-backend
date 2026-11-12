@@ -1,0 +1,275 @@
+{
+  "id": "BANK-W3925",
+  "targetId": "W3925",
+  "steps": [
+    {
+      "id": "BANK-W3925-W3925",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3925-W3925",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "top; to support; classifier for hats",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "顶"
+            },
+            {
+              "value": "dǐng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ding3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "顶",
+            "pinyin": "dǐng",
+            "meaning": "top; to support; classifier for hats",
+            "singleWord": true,
+            "audio": "c6ab07ef5b301cf2b92bfba52d29dc42301d0952da36bd27c9ff4784dc7dda48"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W3925-W3925-use-top",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W3925-W3925-use-top",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 顶 fits this context?",
+          "context": "The speaker identifies the highest part of a mountain.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W3925-W3925-use-top-meaning",
+              "label": "The top.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "顶 can name the top or highest part of something."
+            },
+            {
+              "id": "BANK-W3925-W3925-use-top-contrast-2",
+              "label": "The inside of a closed box.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "顶 can name the top or highest part of something."
+            },
+            {
+              "id": "BANK-W3925-W3925-use-top-contrast-1",
+              "label": "The bottom.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "顶 can name the top or highest part of something."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "顶",
+            "pinyin": "dǐng",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "c6ab07ef5b301cf2b92bfba52d29dc42301d0952da36bd27c9ff4784dc7dda48"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W3925-W3925-use-support",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W3925-W3925-use-support",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 顶 fits this context?",
+          "context": "A prop holds an object up from below.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W3925-W3925-use-support-contrast-2",
+              "label": "To count its hats.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a verb, 顶 can mean to support or prop something from beneath."
+            },
+            {
+              "id": "BANK-W3925-W3925-use-support-meaning",
+              "label": "To support or prop it up.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "As a verb, 顶 can mean to support or prop something from beneath."
+            },
+            {
+              "id": "BANK-W3925-W3925-use-support-contrast-1",
+              "label": "To let it fall.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a verb, 顶 can mean to support or prop something from beneath."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "顶",
+            "pinyin": "dǐng",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "c6ab07ef5b301cf2b92bfba52d29dc42301d0952da36bd27c9ff4784dc7dda48"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W3925-W3925-use-hat-counter",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W3925-W3925-use-hat-counter",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 顶 fits this context?",
+          "context": "The speaker counts three separate hats.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W3925-W3925-use-hat-counter-contrast-2",
+              "label": "The weight of the hats.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "After a number, 顶 counts individual hats or similar headwear."
+            },
+            {
+              "id": "BANK-W3925-W3925-use-hat-counter-meaning",
+              "label": "A classifier counting hats.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "After a number, 顶 counts individual hats or similar headwear."
+            },
+            {
+              "id": "BANK-W3925-W3925-use-hat-counter-contrast-1",
+              "label": "The highest point of one mountain.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "After a number, 顶 counts individual hats or similar headwear."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "顶",
+            "pinyin": "dǐng",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "c6ab07ef5b301cf2b92bfba52d29dc42301d0952da36bd27c9ff4784dc7dda48"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c6ab07ef5b301cf2b92bfba52d29dc42301d0952da36bd27c9ff4784dc7dda48": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f72e02fe7efb040fc5b53109de6cf0670804f0f46858763c10e0fe6e09c6150a.mp3",
+        "sha256": "f72e02fe7efb040fc5b53109de6cf0670804f0f46858763c10e0fe6e09c6150a",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "f72e02fe7efb040fc5b53109de6cf0670804f0f46858763c10e0fe6e09c6150a",
+          "text": "顶",
+          "words": [
+            {
+              "text": "顶",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ee2bba9b345d7687d0a0f31df14296d46a20b6283cb562dfa20eb856a634411b.mp3",
+        "sha256": "ee2bba9b345d7687d0a0f31df14296d46a20b6283cb562dfa20eb856a634411b",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "ee2bba9b345d7687d0a0f31df14296d46a20b6283cb562dfa20eb856a634411b",
+          "text": "顶",
+          "words": [
+            {
+              "text": "顶",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3925",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3925-W3925",
+      "question_ids": [
+        "BANK-W3925-W3925"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W3925",
+      "facet_id": "lexical-use-top",
+      "part_id": "BANK-W3925-W3925-use-top",
+      "question_ids": [
+        "BANK-W3925-W3925-use-top"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W3925",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W3925",
+      "facet_id": "lexical-use-support",
+      "part_id": "BANK-W3925-W3925-use-support",
+      "question_ids": [
+        "BANK-W3925-W3925-use-support"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W3925",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W3925",
+      "facet_id": "lexical-use-hat-counter",
+      "part_id": "BANK-W3925-W3925-use-hat-counter",
+      "question_ids": [
+        "BANK-W3925-W3925-use-hat-counter"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W3925",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-13",
+    "stepId": "S-U6-13-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9876"
+    ],
+    "grammarLessonIds": []
+  }
+}

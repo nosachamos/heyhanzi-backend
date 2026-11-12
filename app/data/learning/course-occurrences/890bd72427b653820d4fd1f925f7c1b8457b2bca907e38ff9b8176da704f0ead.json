@@ -1,0 +1,593 @@
+{
+  "id": "EX-CHAR-char-4e4b",
+  "revision": 2,
+  "unit": "U18",
+  "stage": "ST-HSK2",
+  "after": "S-U18-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "之",
+  "sourceBlockId": "mandarin-simplified-v1-char-4e4b",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-4e4b",
+        "text": "之",
+        "pinyin": "zhī",
+        "meaning": "possessive particle in formal writing; it; him",
+        "characters": [
+          {
+            "id": "C-4E4B",
+            "text": "之"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-529de07a26582a0ef2755be0",
+        "text": "上年",
+        "pinyin": "shàng nián",
+        "meaning": "last year",
+        "characters": [
+          {
+            "id": "C-4E0A",
+            "text": "上"
+          },
+          {
+            "id": "C-5E74",
+            "text": "年"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-8c1cd44441c927145bc78a63",
+        "text": "对话",
+        "pinyin": "duìhuà",
+        "meaning": "to talk (with somebody); dialogue; conversation",
+        "characters": [
+          {
+            "id": "C-5BF9",
+            "text": "对"
+          },
+          {
+            "id": "C-8BDD",
+            "text": "话"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-94f21da705f41e58b98b4a72",
+        "text": "不了了之",
+        "pinyin": "bù liǎo liǎo zhī",
+        "meaning": "to settle a matter by leaving it unsettled",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-4E86",
+            "text": "了"
+          },
+          {
+            "id": "C-4E4B",
+            "text": "之"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-e40be9f3b589178fc645309d",
+        "text": "上下",
+        "pinyin": "shàngxià",
+        "meaning": "the top and bottom of something; the full vertical extent of something; from top to bottom",
+        "characters": [
+          {
+            "id": "C-4E0A",
+            "text": "上"
+          },
+          {
+            "id": "C-4E0B",
+            "text": "下"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "330bf14b0a243667b984c3061b447eb264fdc601954f54e771638e5725d4c73e",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4e4b",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "之",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4e4b-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-94f21da705f41e58b98b4a72",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to settle a matter by leaving it unsettled",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "不了了之"
+              },
+              {
+                "value": "bù liǎo liǎo zhī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu4liao3liao3zhi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "不了了之",
+              "pinyin": "bù liǎo liǎo zhī",
+              "meaning": "to settle a matter by leaving it unsettled",
+              "audio": "b3364e0713915ef82a7fec7e86e5e0700e1d2a4eb95f2eb4dcea0cbf30c34371",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e4b-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-4e4b",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "之",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-4e4b",
+                "label": "possessive particle in formal writing; it",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-8c1cd44441c927145bc78a63",
+                "label": "to talk (with someone); dialogue",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-e40be9f3b589178fc645309d",
+                "label": "the top and bottom of something; the full vertical extent of something",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e4b-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "之",
+        "pinyin": "zhī",
+        "meaning": "possessive particle in formal writing; it",
+        "source": "/stroke-data/4e4b.json",
+        "reference": {
+          "character": "之",
+          "sha256": "daab0868750d37db896fca81edfaa0f55df9c21b73217c3a49c8d7b07568cf1d",
+          "medians": [
+            [
+              [
+                423,
+                810
+              ],
+              [
+                515,
+                755
+              ],
+              [
+                545,
+                712
+              ]
+            ],
+            [
+              [
+                223,
+                541
+              ],
+              [
+                274,
+                524
+              ],
+              [
+                590,
+                592
+              ],
+              [
+                644,
+                582
+              ],
+              [
+                609,
+                528
+              ],
+              [
+                531,
+                463
+              ],
+              [
+                309,
+                299
+              ],
+              [
+                265,
+                285
+              ]
+            ],
+            [
+              [
+                86,
+                247
+              ],
+              [
+                106,
+                236
+              ],
+              [
+                141,
+                231
+              ],
+              [
+                241,
+                261
+              ],
+              [
+                337,
+                256
+              ],
+              [
+                458,
+                208
+              ],
+              [
+                688,
+                87
+              ],
+              [
+                752,
+                66
+              ],
+              [
+                838,
+                70
+              ],
+              [
+                947,
+                89
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4e4b-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-529de07a26582a0ef2755be0",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "last year",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "上年"
+              },
+              {
+                "value": "shàng nián",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shang4nian2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "上年",
+              "pinyin": "shàng nián",
+              "meaning": "last year",
+              "audio": "e94f7ddb1c50a84bc2814e71db44168fd667f641c7c8884d4bb04034abf07c5c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e4b-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-4e4b",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "possessive particle in formal writing; it",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "之"
+              },
+              {
+                "value": "zhī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "之",
+              "pinyin": "zhī",
+              "meaning": "possessive particle in formal writing; it",
+              "audio": "93415ef6ca45905f6752676ea50dbe3b4258c18b028b1eadde8919a7fd8e18ab",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "93415ef6ca45905f6752676ea50dbe3b4258c18b028b1eadde8919a7fd8e18ab"
+            ],
+            "transcript": [
+              {
+                "text": "之",
+                "pinyin": "zhī",
+                "meaning": "possessive particle in formal writing; it",
+                "audio": "93415ef6ca45905f6752676ea50dbe3b4258c18b028b1eadde8919a7fd8e18ab",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4E4B",
+      "character": "之",
+      "lessonIds": [
+        "LESSON-C-4E4B"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4e4b-word",
+        "EX-CHAR-char-4e4b-recognize",
+        "EX-CHAR-char-4e4b-write",
+        "EX-CHAR-char-4e4b-familiar",
+        "EX-CHAR-char-4e4b-recall"
+      ]
+    },
+    "audio": {
+      "93415ef6ca45905f6752676ea50dbe3b4258c18b028b1eadde8919a7fd8e18ab": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-6c3e7b2c71b7727a3f801002ee4c45fcd20b14fe96d70a020b0b05d38963d742.mp3",
+          "sha256": "6c3e7b2c71b7727a3f801002ee4c45fcd20b14fe96d70a020b0b05d38963d742",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "6c3e7b2c71b7727a3f801002ee4c45fcd20b14fe96d70a020b0b05d38963d742",
+            "text": "之",
+            "words": [
+              {
+                "text": "之",
+                "start": 0.18,
+                "end": 0.32
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-2f7ce9a8a687d4c72ac86f00c850729dac34911b10753b1020c89b42e73fe5bd.mp3",
+          "sha256": "2f7ce9a8a687d4c72ac86f00c850729dac34911b10753b1020c89b42e73fe5bd",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "2f7ce9a8a687d4c72ac86f00c850729dac34911b10753b1020c89b42e73fe5bd",
+            "text": "之",
+            "words": [
+              {
+                "text": "之",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "e94f7ddb1c50a84bc2814e71db44168fd667f641c7c8884d4bb04034abf07c5c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f31c716f56d438c000e166772b0f77bab122e3bda26424404ad4072727c3664e.mp3",
+          "sha256": "f31c716f56d438c000e166772b0f77bab122e3bda26424404ad4072727c3664e",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "f31c716f56d438c000e166772b0f77bab122e3bda26424404ad4072727c3664e",
+            "text": "上年",
+            "words": [
+              {
+                "text": "上年",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/fe1aa1c04596b9d464f63d8fa136c663ef30df65bf1a647e275afdd9503975b2.mp3",
+          "sha256": "fe1aa1c04596b9d464f63d8fa136c663ef30df65bf1a647e275afdd9503975b2",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "fe1aa1c04596b9d464f63d8fa136c663ef30df65bf1a647e275afdd9503975b2",
+            "text": "上年",
+            "words": [
+              {
+                "text": "上年",
+                "start": 0.22,
+                "end": 0.58
+              }
+            ]
+          }
+        }
+      },
+      "d2468fad89d3bf4bc5b065a7a67a51fafe564d6ab2008185f125983f35ce622b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-69ad3e5518b12087fe86b7e36111557cfebeb1a8609af7ebc12170004d032524.mp3",
+          "sha256": "69ad3e5518b12087fe86b7e36111557cfebeb1a8609af7ebc12170004d032524",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "69ad3e5518b12087fe86b7e36111557cfebeb1a8609af7ebc12170004d032524",
+            "text": "对话",
+            "words": [
+              {
+                "text": "对话",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-a1e405f239672c429f9b52ce95c5502e6f3f19eb1568800d587303e6f83fdd1b.mp3",
+          "sha256": "a1e405f239672c429f9b52ce95c5502e6f3f19eb1568800d587303e6f83fdd1b",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "a1e405f239672c429f9b52ce95c5502e6f3f19eb1568800d587303e6f83fdd1b",
+            "text": "对话",
+            "words": [
+              {
+                "text": "对话",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "b3364e0713915ef82a7fec7e86e5e0700e1d2a4eb95f2eb4dcea0cbf30c34371": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/47b90c9170fde613641e40783b5ad46c3ef1b888bb170eeea1154e850f04da0b.mp3",
+          "sha256": "47b90c9170fde613641e40783b5ad46c3ef1b888bb170eeea1154e850f04da0b",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "47b90c9170fde613641e40783b5ad46c3ef1b888bb170eeea1154e850f04da0b",
+            "text": "不了了之",
+            "words": [
+              {
+                "text": "不了了之",
+                "start": 0.15,
+                "end": 0.75
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/47797cfcd3a34c08efe47102aafb97fb607f8f20a8540b02f64a23a2629ffcf4.mp3",
+          "sha256": "47797cfcd3a34c08efe47102aafb97fb607f8f20a8540b02f64a23a2629ffcf4",
+          "byteLength": 17325,
+          "readAlong": {
+            "audioSha256": "47797cfcd3a34c08efe47102aafb97fb607f8f20a8540b02f64a23a2629ffcf4",
+            "text": "不了了之",
+            "words": [
+              {
+                "text": "不了了之",
+                "start": 0.15,
+                "end": 0.8699999999999999
+              }
+            ]
+          }
+        }
+      },
+      "0660d9756f24e88fc7faf3a21636ca5c83774475300ebc50a213cdb407810731": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0f3443eb9f0b7b30e2d8b906e421caa394c35f27a7924e7a3a477abc0f1e48d4.mp3",
+          "sha256": "0f3443eb9f0b7b30e2d8b906e421caa394c35f27a7924e7a3a477abc0f1e48d4",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "0f3443eb9f0b7b30e2d8b906e421caa394c35f27a7924e7a3a477abc0f1e48d4",
+            "text": "上下",
+            "words": [
+              {
+                "text": "上下",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d8c2e04446ce543054d02a55305c5e6d6bec2dc0c9f01559321b637191103c8f.mp3",
+          "sha256": "d8c2e04446ce543054d02a55305c5e6d6bec2dc0c9f01559321b637191103c8f",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "d8c2e04446ce543054d02a55305c5e6d6bec2dc0c9f01559321b637191103c8f",
+            "text": "上下",
+            "words": [
+              {
+                "text": "上下",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

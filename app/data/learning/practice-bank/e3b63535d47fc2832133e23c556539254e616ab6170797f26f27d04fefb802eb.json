@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1769",
+  "targetId": "W1769",
+  "steps": [
+    {
+      "id": "BANK-W1769-W1769",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1769-W1769",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "medical examination",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "体检"
+            },
+            {
+              "value": "tǐjiǎn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ti3jian3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "体检",
+            "pinyin": "tǐjiǎn",
+            "meaning": "medical examination",
+            "singleWord": true,
+            "audio": "64d9a19f2855a77fc3c92e504068db94a05a0c83071da30cf9b0d6c9850e637e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "64d9a19f2855a77fc3c92e504068db94a05a0c83071da30cf9b0d6c9850e637e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-cc2619bbfa9698d19630d8523b42249bfdf4089c74db41ae633d88e3fd4e1f61.mp3",
+        "sha256": "cc2619bbfa9698d19630d8523b42249bfdf4089c74db41ae633d88e3fd4e1f61",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "cc2619bbfa9698d19630d8523b42249bfdf4089c74db41ae633d88e3fd4e1f61",
+          "text": "体检",
+          "words": [
+            {
+              "text": "体检",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-302d296c4e0a1d0a4c23c5f775973fa78b50c78ba865ef02f6f8ad9f13a7dfd7.mp3",
+        "sha256": "302d296c4e0a1d0a4c23c5f775973fa78b50c78ba865ef02f6f8ad9f13a7dfd7",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "302d296c4e0a1d0a4c23c5f775973fa78b50c78ba865ef02f6f8ad9f13a7dfd7",
+          "text": "体检",
+          "words": [
+            {
+              "text": "体检",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1769",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1769-W1769",
+      "question_ids": [
+        "BANK-W1769-W1769"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-13",
+    "stepId": "S-U4-13-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-68c0"
+    ],
+    "grammarLessonIds": []
+  }
+}

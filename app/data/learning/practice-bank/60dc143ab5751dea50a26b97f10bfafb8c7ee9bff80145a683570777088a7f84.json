@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1529",
+  "targetId": "W1529",
+  "steps": [
+    {
+      "id": "BANK-W1529-W1529",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1529-W1529",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "hotel",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "旅馆"
+            },
+            {
+              "value": "lǚguǎn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "lü3guan3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "旅馆",
+            "pinyin": "lǚguǎn",
+            "meaning": "hotel",
+            "singleWord": true,
+            "audio": "4124e280ba38fbd3dccfd4317769d70f9499a39a3fd25af612fb016920f50f19"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "4124e280ba38fbd3dccfd4317769d70f9499a39a3fd25af612fb016920f50f19": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-18da6fc46f0e42a77c2ebf704c11b7ce508820b84e7f8295fa81862d3007f833.mp3",
+        "sha256": "18da6fc46f0e42a77c2ebf704c11b7ce508820b84e7f8295fa81862d3007f833",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "18da6fc46f0e42a77c2ebf704c11b7ce508820b84e7f8295fa81862d3007f833",
+          "text": "旅馆",
+          "words": [
+            {
+              "text": "旅馆",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-69fa5f1639039cf897ac982896083e5acafa7973e52d4232cedce8e4ffcdfbee.mp3",
+        "sha256": "69fa5f1639039cf897ac982896083e5acafa7973e52d4232cedce8e4ffcdfbee",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "69fa5f1639039cf897ac982896083e5acafa7973e52d4232cedce8e4ffcdfbee",
+          "text": "旅馆",
+          "words": [
+            {
+              "text": "旅馆",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1529",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1529-W1529",
+      "question_ids": [
+        "BANK-W1529-W1529"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-04",
+    "stepId": "S-U4-04-words-r4-24",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9986"
+    ],
+    "grammarLessonIds": []
+  }
+}

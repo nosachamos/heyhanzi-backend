@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1245",
+  "targetId": "W1245",
+  "steps": [
+    {
+      "id": "BANK-W1245-W1245",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1245-W1245",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "landlord",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "房东"
+            },
+            {
+              "value": "fángdōng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fang2dong1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "房东",
+            "pinyin": "fángdōng",
+            "meaning": "landlord",
+            "singleWord": true,
+            "audio": "bcf7791e4c3f20e65103d82975c662df5816fa62ea832b36e67200add79ede37"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "bcf7791e4c3f20e65103d82975c662df5816fa62ea832b36e67200add79ede37": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ba83dbbcbf4f83b19dc919c561a349b509a3b944722ed9c75b51787759061813.mp3",
+        "sha256": "ba83dbbcbf4f83b19dc919c561a349b509a3b944722ed9c75b51787759061813",
+        "byteLength": 14157,
+        "readAlong": {
+          "audioSha256": "ba83dbbcbf4f83b19dc919c561a349b509a3b944722ed9c75b51787759061813",
+          "text": "房东",
+          "words": [
+            {
+              "text": "房东",
+              "start": 0.27,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-13ee62d9882c53e99675eba0429d3007158847f6f2363f249d6c529d8c254fd6.mp3",
+        "sha256": "13ee62d9882c53e99675eba0429d3007158847f6f2363f249d6c529d8c254fd6",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "13ee62d9882c53e99675eba0429d3007158847f6f2363f249d6c529d8c254fd6",
+          "text": "房东",
+          "words": [
+            {
+              "text": "房东",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1245",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1245-W1245",
+      "question_ids": [
+        "BANK-W1245-W1245"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-04",
+    "stepId": "S-U4-04-words-r4-14",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4e1c"
+    ],
+    "grammarLessonIds": []
+  }
+}

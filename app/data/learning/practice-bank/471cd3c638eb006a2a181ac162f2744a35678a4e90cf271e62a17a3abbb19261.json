@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0923",
+  "targetId": "W0923",
+  "steps": [
+    {
+      "id": "BANK-W0923-W0923",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0923-W0923",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "market; city",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "市"
+            },
+            {
+              "value": "shì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shi4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "市",
+            "pinyin": "shì",
+            "meaning": "market; city",
+            "singleWord": true,
+            "audio": "c8d978d832d56902530a63505f9bcca6dd0e87bb80e0b49bdb90589d2f981635"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c8d978d832d56902530a63505f9bcca6dd0e87bb80e0b49bdb90589d2f981635": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/aeb559a4ec1cc1c142c4b27469643509ff424c9c4ac35a9db20fd88c4f8db270.mp3",
+        "sha256": "aeb559a4ec1cc1c142c4b27469643509ff424c9c4ac35a9db20fd88c4f8db270",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "aeb559a4ec1cc1c142c4b27469643509ff424c9c4ac35a9db20fd88c4f8db270",
+          "text": "市",
+          "words": [
+            {
+              "text": "市",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/bdc98e75ff7f5f64b4e86ea4d142837d13bfb3eed0e872a219e7acf47acd386d.mp3",
+        "sha256": "bdc98e75ff7f5f64b4e86ea4d142837d13bfb3eed0e872a219e7acf47acd386d",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "bdc98e75ff7f5f64b4e86ea4d142837d13bfb3eed0e872a219e7acf47acd386d",
+          "text": "市",
+          "words": [
+            {
+              "text": "市",
+              "start": 0.32,
+              "end": 0.4
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0923",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0923-W0923",
+      "question_ids": [
+        "BANK-W0923-W0923"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-11",
+    "stepId": "S-U3-11-words-r4-15",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e02"
+    ],
+    "grammarLessonIds": []
+  }
+}

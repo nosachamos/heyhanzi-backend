@@ -1,0 +1,813 @@
+{
+  "id": "EX-CHAR-char-84c4",
+  "revision": 2,
+  "unit": "U6-32",
+  "stage": "ST-HSK6",
+  "after": "S-U6-32-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "蓄",
+  "sourceBlockId": "mandarin-simplified-v1-char-84c4",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-84c4",
+        "text": "蓄",
+        "pinyin": "xù",
+        "meaning": "to store up; to grow (for example a beard)",
+        "characters": [
+          {
+            "id": "C-84C4",
+            "text": "蓄"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-75d64fcea838961a260f52df",
+        "text": "积蓄",
+        "pinyin": "jī xù",
+        "meaning": "savings",
+        "characters": [
+          {
+            "id": "C-79EF",
+            "text": "积"
+          },
+          {
+            "id": "C-84C4",
+            "text": "蓄"
+          }
+        ]
+      },
+      {
+        "id": "W1825",
+        "text": "西红柿",
+        "pinyin": "xīhóngshì",
+        "meaning": "tomato",
+        "characters": [
+          {
+            "id": "C-897F",
+            "text": "西"
+          },
+          {
+            "id": "C-7EA2",
+            "text": "红"
+          },
+          {
+            "id": "C-67FF",
+            "text": "柿"
+          }
+        ]
+      },
+      {
+        "id": "W2254",
+        "text": "大爷",
+        "pinyin": "dàye",
+        "meaning": "uncle (familiar address for an older man)",
+        "characters": [
+          {
+            "id": "C-5927",
+            "text": "大"
+          },
+          {
+            "id": "C-7237",
+            "text": "爷"
+          }
+        ]
+      },
+      {
+        "id": "W4777",
+        "text": "深夜",
+        "pinyin": "shēnyè",
+        "meaning": "very late at night",
+        "characters": [
+          {
+            "id": "C-6DF1",
+            "text": "深"
+          },
+          {
+            "id": "C-591C",
+            "text": "夜"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "1bd4fb96793d81615096d509b426a4dd3f047f17f22f2148919a9957ad188306",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-84c4",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "蓄",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-84c4-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-75d64fcea838961a260f52df",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "savings",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "积蓄"
+              },
+              {
+                "value": "jī xù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ji1xu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "积蓄",
+              "pinyin": "jī xù",
+              "meaning": "savings",
+              "audio": "bf731fecd4b3b4392232dfdaa99402bb5042218153e873b7ea77368468984849",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-84c4-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-84c4",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "蓄",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W2254",
+                "label": "uncle (familiar address for an older man)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-84c4",
+                "label": "to store up; to grow (for example a beard)",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1825",
+                "label": "tomato",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-84c4-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "蓄",
+        "pinyin": "xù",
+        "meaning": "to store up; to grow (for example a beard)",
+        "source": "/stroke-data/84c4.json",
+        "reference": {
+          "character": "蓄",
+          "sha256": "757c04db71340e90c0007409b58d7f56291e4af76376b8df9f716ecac72bac8b",
+          "medians": [
+            [
+              [
+                196,
+                699
+              ],
+              [
+                280,
+                695
+              ],
+              [
+                491,
+                725
+              ],
+              [
+                750,
+                750
+              ],
+              [
+                786,
+                746
+              ],
+              [
+                823,
+                733
+              ]
+            ],
+            [
+              [
+                347,
+                799
+              ],
+              [
+                386,
+                772
+              ],
+              [
+                416,
+                631
+              ]
+            ],
+            [
+              [
+                608,
+                851
+              ],
+              [
+                622,
+                844
+              ],
+              [
+                640,
+                813
+              ],
+              [
+                612,
+                716
+              ],
+              [
+                579,
+                639
+              ]
+            ],
+            [
+              [
+                448,
+                667
+              ],
+              [
+                494,
+                642
+              ],
+              [
+                534,
+                607
+              ]
+            ],
+            [
+              [
+                130,
+                545
+              ],
+              [
+                186,
+                536
+              ],
+              [
+                394,
+                569
+              ],
+              [
+                810,
+                610
+              ],
+              [
+                852,
+                604
+              ],
+              [
+                893,
+                590
+              ]
+            ],
+            [
+              [
+                435,
+                548
+              ],
+              [
+                451,
+                527
+              ],
+              [
+                392,
+                469
+              ],
+              [
+                381,
+                454
+              ],
+              [
+                380,
+                436
+              ],
+              [
+                413,
+                428
+              ],
+              [
+                471,
+                431
+              ],
+              [
+                500,
+                445
+              ]
+            ],
+            [
+              [
+                577,
+                534
+              ],
+              [
+                584,
+                493
+              ],
+              [
+                538,
+                444
+              ],
+              [
+                418,
+                344
+              ],
+              [
+                407,
+                315
+              ],
+              [
+                428,
+                308
+              ],
+              [
+                589,
+                345
+              ],
+              [
+                605,
+                347
+              ],
+              [
+                615,
+                339
+              ]
+            ],
+            [
+              [
+                591,
+                405
+              ],
+              [
+                654,
+                338
+              ],
+              [
+                662,
+                309
+              ]
+            ],
+            [
+              [
+                256,
+                221
+              ],
+              [
+                287,
+                198
+              ],
+              [
+                295,
+                181
+              ],
+              [
+                347,
+                -25
+              ]
+            ],
+            [
+              [
+                316,
+                218
+              ],
+              [
+                338,
+                208
+              ],
+              [
+                600,
+                253
+              ],
+              [
+                681,
+                258
+              ],
+              [
+                703,
+                252
+              ],
+              [
+                732,
+                214
+              ],
+              [
+                687,
+                50
+              ],
+              [
+                676,
+                29
+              ],
+              [
+                650,
+                44
+              ]
+            ],
+            [
+              [
+                388,
+                111
+              ],
+              [
+                483,
+                122
+              ],
+              [
+                554,
+                139
+              ],
+              [
+                601,
+                142
+              ],
+              [
+                622,
+                136
+              ]
+            ],
+            [
+              [
+                474,
+                216
+              ],
+              [
+                502,
+                190
+              ],
+              [
+                501,
+                63
+              ],
+              [
+                486,
+                41
+              ]
+            ],
+            [
+              [
+                367,
+                0
+              ],
+              [
+                383,
+                9
+              ],
+              [
+                596,
+                32
+              ],
+              [
+                620,
+                32
+              ],
+              [
+                634,
+                21
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-84c4-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4777",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "very late at night",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "深夜"
+              },
+              {
+                "value": "shēnyè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shen1ye4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "深夜",
+              "pinyin": "shēnyè",
+              "meaning": "very late at night",
+              "audio": "390e22057d01f116a956d885c3fed1470d1981a661f4cd01466cbb15571cc909",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-84c4-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-84c4",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to store up; to grow (for example a beard)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "蓄"
+              },
+              {
+                "value": "xù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "蓄",
+              "pinyin": "xù",
+              "meaning": "to store up; to grow (for example a beard)",
+              "audio": "d25566627a321fa6aa293e9fd6e24501ea26ad317da7af57ed333cc20ec98ba0",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "d25566627a321fa6aa293e9fd6e24501ea26ad317da7af57ed333cc20ec98ba0"
+            ],
+            "transcript": [
+              {
+                "text": "蓄",
+                "pinyin": "xù",
+                "meaning": "to store up; to grow (for example a beard)",
+                "audio": "d25566627a321fa6aa293e9fd6e24501ea26ad317da7af57ed333cc20ec98ba0",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-84C4",
+      "character": "蓄",
+      "lessonIds": [
+        "LESSON-C-84C4"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-84c4-word",
+        "EX-CHAR-char-84c4-recognize",
+        "EX-CHAR-char-84c4-write",
+        "EX-CHAR-char-84c4-familiar",
+        "EX-CHAR-char-84c4-recall"
+      ]
+    },
+    "audio": {
+      "d25566627a321fa6aa293e9fd6e24501ea26ad317da7af57ed333cc20ec98ba0": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-548ac73442b1ed78105145f391a6b22b1931a58f163786443870d2fe872def1c.mp3",
+          "sha256": "548ac73442b1ed78105145f391a6b22b1931a58f163786443870d2fe872def1c",
+          "byteLength": 8109,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "548ac73442b1ed78105145f391a6b22b1931a58f163786443870d2fe872def1c",
+            "text": "蓄",
+            "words": [
+              {
+                "text": "蓄",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-19c162afe885a4ad9b8cb335ce1227af3887ec6a9839a54be9ad8ef5a8865aa5.mp3",
+          "sha256": "19c162afe885a4ad9b8cb335ce1227af3887ec6a9839a54be9ad8ef5a8865aa5",
+          "byteLength": 10701,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "19c162afe885a4ad9b8cb335ce1227af3887ec6a9839a54be9ad8ef5a8865aa5",
+            "text": "蓄",
+            "words": [
+              {
+                "text": "蓄",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "bf731fecd4b3b4392232dfdaa99402bb5042218153e873b7ea77368468984849": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b5603529a6ed7d145007680bc4226f9519316d95d8e33fd4da74180627139be0.mp3",
+          "sha256": "b5603529a6ed7d145007680bc4226f9519316d95d8e33fd4da74180627139be0",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "b5603529a6ed7d145007680bc4226f9519316d95d8e33fd4da74180627139be0",
+            "text": "积蓄",
+            "words": [
+              {
+                "text": "积蓄",
+                "start": 0.22,
+                "end": 0.74
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/4f60b25251f3a58658b8d610f4df13c1a03b871fba52f469450c5282514dd96c.mp3",
+          "sha256": "4f60b25251f3a58658b8d610f4df13c1a03b871fba52f469450c5282514dd96c",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "4f60b25251f3a58658b8d610f4df13c1a03b871fba52f469450c5282514dd96c",
+            "text": "积蓄",
+            "words": [
+              {
+                "text": "积蓄",
+                "start": 0.22,
+                "end": 0.54
+              }
+            ]
+          }
+        }
+      },
+      "1186f22200aad9de5d854c5f3c30fd2bf89048543f3c8dcdab51a640271f788c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/53b3f8b94b72865fe910285cc4409c32a37c7823e3f07373d32114c9260154e5.mp3",
+          "sha256": "53b3f8b94b72865fe910285cc4409c32a37c7823e3f07373d32114c9260154e5",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "53b3f8b94b72865fe910285cc4409c32a37c7823e3f07373d32114c9260154e5",
+            "text": "西红柿",
+            "words": [
+              {
+                "text": "西红柿",
+                "start": 0.21,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/150618f172c08093d813e07a99a5e2e3bf3768e9852ae73743ea036d04d10ce2.mp3",
+          "sha256": "150618f172c08093d813e07a99a5e2e3bf3768e9852ae73743ea036d04d10ce2",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "150618f172c08093d813e07a99a5e2e3bf3768e9852ae73743ea036d04d10ce2",
+            "text": "西红柿",
+            "words": [
+              {
+                "text": "西红柿",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "97af619499118694bc3d6d32c139831d63749f0f6b5b9c78cb22dc134cf98c99": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-84228959b38954df06bb518f9f086131ce7f7798a70ea1f28fb313b7f07845ed.mp3",
+          "sha256": "84228959b38954df06bb518f9f086131ce7f7798a70ea1f28fb313b7f07845ed",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "84228959b38954df06bb518f9f086131ce7f7798a70ea1f28fb313b7f07845ed",
+            "text": "大爷",
+            "words": [
+              {
+                "text": "大爷",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-74e8e53e0deb17a929e6cc76bc91240894b48cc90e803fe84f4ff5f787a66dfe.mp3",
+          "sha256": "74e8e53e0deb17a929e6cc76bc91240894b48cc90e803fe84f4ff5f787a66dfe",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "74e8e53e0deb17a929e6cc76bc91240894b48cc90e803fe84f4ff5f787a66dfe",
+            "text": "大爷",
+            "words": [
+              {
+                "text": "大爷",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "390e22057d01f116a956d885c3fed1470d1981a661f4cd01466cbb15571cc909": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b77b802c7c5174dceb571223e37fc1f9a6ee03a82d8dfff9e7c0cb74be4bde93.mp3",
+          "sha256": "b77b802c7c5174dceb571223e37fc1f9a6ee03a82d8dfff9e7c0cb74be4bde93",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "b77b802c7c5174dceb571223e37fc1f9a6ee03a82d8dfff9e7c0cb74be4bde93",
+            "text": "深夜",
+            "words": [
+              {
+                "text": "深夜",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-409aa8710274e83f2f05f68f3e93f809c534fb8ef7ba4c43069dd11ceb9107bd.mp3",
+          "sha256": "409aa8710274e83f2f05f68f3e93f809c534fb8ef7ba4c43069dd11ceb9107bd",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "409aa8710274e83f2f05f68f3e93f809c534fb8ef7ba4c43069dd11ceb9107bd",
+            "text": "深夜",
+            "words": [
+              {
+                "text": "深夜",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

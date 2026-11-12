@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1078",
+  "targetId": "W1078",
+  "steps": [
+    {
+      "id": "BANK-W1078-W1078",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1078-W1078",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "knapsack; rucksack",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "背包"
+            },
+            {
+              "value": "bēibāo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bei1bao1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "背包",
+            "pinyin": "bēibāo",
+            "meaning": "knapsack; rucksack",
+            "singleWord": true,
+            "audio": "6d19f8d292874fd4a15335cfd4373c8b731e28dbb5342d2f3ac1130a2fc05f5b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "6d19f8d292874fd4a15335cfd4373c8b731e28dbb5342d2f3ac1130a2fc05f5b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-0ad146a5bd904b0cd6ad440f5ccc0f0ed187cdabe27ee451030bd20c20c884d1.mp3",
+        "sha256": "0ad146a5bd904b0cd6ad440f5ccc0f0ed187cdabe27ee451030bd20c20c884d1",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "0ad146a5bd904b0cd6ad440f5ccc0f0ed187cdabe27ee451030bd20c20c884d1",
+          "text": "背包",
+          "words": [
+            {
+              "text": "背包",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-efb9d0924f1232277d6c51bc3a40ad71474a122cf3cd38579b81043917d64e74.mp3",
+        "sha256": "efb9d0924f1232277d6c51bc3a40ad71474a122cf3cd38579b81043917d64e74",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "efb9d0924f1232277d6c51bc3a40ad71474a122cf3cd38579b81043917d64e74",
+          "text": "背包",
+          "words": [
+            {
+              "text": "背包",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1078",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1078-W1078",
+      "question_ids": [
+        "BANK-W1078-W1078"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-10-P01",
+    "stepId": "S-U4-10-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-80cc"
+    ],
+    "grammarLessonIds": []
+  }
+}

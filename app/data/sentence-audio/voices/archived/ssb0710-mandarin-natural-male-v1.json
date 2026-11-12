@@ -1,0 +1,167 @@
+{
+  "model": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+  "modelWeightsRevision": "29e01c4e8d000f4bcd70751be16fa94bf3d85a18",
+  "codeRevision": "074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc",
+  "encoding": {
+    "format": "mp3",
+    "bitrate": "96k",
+    "channels": 1,
+    "sampleRate": 24000
+  },
+  "inputPolicy": "Connected Mandarin preserves natural phrasing and sandhi. Unambiguous lexical targets may use native spelling; explicitly selected nondefault readings keep lexical controls. Neutral targets may retry romanized spelling; de may use the phonemically identical 的 with recorded provenance. Quoted default readings may use a short punctuation boundary without adding spoken syllables. Never concatenate recordings. Explicit authored contextual controls preserve selected readings where native synthesis repeatedly misreads them. All explicitly authored word practices can retry the selected lexical pinyin; phonemic quoted targets can use a short boundary without additional syllables. Native 一/不 prefixes preserve connected-speech sandhi when a following lexical syllable is controlled. For quoted or isolated 乒, the clear-reading retry supplies explicit posterior-nasal guidance; all other inputs keep the same strategy. Selected 乒 practices try lexical phonemes before native spelling. Isolated characters may retry quoted lexical phonemes; quotation marks change presentation only, never add spoken words. For explicitly authored quoted lexical targets, a variant can remove silent quotation marks while retaining native default readings or selected phonemes; no syllables are added or removed.",
+  "voiceId": "mandarin-male",
+  "voiceProfile": "mandarin-natural-male-v1",
+  "languageTag": "cmn-Hans",
+  "mode": "zero_shot",
+  "speed": 1.0,
+  "seed": 254,
+  "instruction": "You are a helpful assistant. 请用自然、清晰的普通话读准声调，不要拖长停顿。<|endofprompt|>",
+  "referenceVoice": {
+    "type": "recorded-reference-only",
+    "file": "SSB07100001.wav",
+    "speaker": "SSB0710",
+    "ageGroup": "C (26–40 years)",
+    "gender": "male",
+    "accent": "north",
+    "transcript": "甜心特工国语版",
+    "sourceUrl": "https://huggingface.co/datasets/AISHELL/AISHELL-3/resolve/f20d5db4a31fe779ef07bb1af4ea92da5c786622/train/wav/SSB0710/SSB07100001.wav",
+    "sha256": "159d9194f96708908bfaa8fa1dda24a706452a701fa53aea5eef7ef92f8aff21",
+    "license": "Apache-2.0",
+    "dataset": "AISHELL/AISHELL-3",
+    "datasetRevision": "f20d5db4a31fe779ef07bb1af4ea92da5c786622",
+    "datasetUrl": "https://huggingface.co/datasets/AISHELL/AISHELL-3",
+    "publisher": "Beijing Shell Shell Technology Co.,Ltd.",
+    "artifact": "external synthesis reference (download using sourceUrl)",
+    "purpose": "Short voice-conditioning sample only. CosyVoice generates the complete target utterance; no recorded-word lookup or concatenation."
+  },
+  "processing": {
+    "timeStretch": false,
+    "losslessRetention": false
+  },
+  "precision": "float32-highest",
+  "tokenLimitPolicy": "min(2250, max(120, 2 * upstream_limit))",
+  "qualityPolicy": {
+    "version": "mandarin-clean-v5",
+    "paddingMs": 80,
+    "fadeMs": 6,
+    "targetSpeechRmsDb": -22,
+    "maxGainDb": 15,
+    "peakCeiling": 0.82,
+    "maxPauseSeconds": 0.75,
+    "secondsPerCharacter": [
+      0.13,
+      0.65
+    ],
+    "singleCharacterSeconds": [
+      0.22,
+      1.35
+    ],
+    "maxAttempts": 24,
+    "maxSeconds": 90,
+    "vad": "silero-vad==6.2.0",
+    "asr": "FunAudioLLM/SenseVoiceSmall",
+    "asrRevision": "3847d57b6bdf2dd8875cb1508d2af43d80a16bf7",
+    "dnsmosRevision": "591184a9fcb2cbdec02520fed81a32bbbf9d73ff",
+    "dnsmosSha256": "269fbebdb513aa23cddfbb593542ecc540284a91849ac50516870e1ac78f6edd",
+    "shortMos": {
+      "maxCharacters": 3,
+      "signal": 2.5,
+      "background": 3.3,
+      "overall": 2.2
+    },
+    "minimumMosSignal": 3.0,
+    "minimumMosBackground": 3.5,
+    "minimumMosOverall": 2.8,
+    "acceptance": "automated; not a native-speaker certification",
+    "phoneticFallback": {
+      "model": "walston/whisper-pinyin",
+      "modelRevision": "7840ab2afafecd7b03aa66c7517d756c180dbb43",
+      "source": "walston/whisper-pinyin-demo",
+      "sourceRevision": "eb69fe62c021e46d5bd34d1da17c23cecedea484",
+      "sourceSha256": "3db4a99d148cdeabd49cf84774756a250874e4d98361f5fa8cc559a4472fd5c0",
+      "checkpointSha256": "7bd0ca47d3f916870d887e64c173da336f18c2222751aa4b7296c4439a8f66c6",
+      "tokensSha256": "ab3746fbdb23fe8891cb2a8c125bace0c4344c165abd5ad5a13b04387ccdd7b8",
+      "minimumTokenProbability": 0.98,
+      "maximumSeconds": 30
+    },
+    "punctuation": {
+      "version": "mandarin-punctuation-v1",
+      "minimumIntervalSeconds": {
+        "sentence": 0.24,
+        "clause": 0.12,
+        "list": 0.08,
+        "semicolon": 0.18
+      },
+      "minimumQuietSeconds": {
+        "sentence": 0.06,
+        "clause": 0.0,
+        "list": 0.0,
+        "semicolon": 0.03
+      },
+      "frameSeconds": 0.01,
+      "quietRelativeRms": 0.08,
+      "quietAbsoluteRms": 0.00015,
+      "minimumBaseTokenProbability": 0.98,
+      "minimumToneTokenProbability": 0.5,
+      "maximumSeconds": 30,
+      "durationToleranceSeconds": 0.025,
+      "scope": "Internal punctuation phrasing; terminal completeness uses existing EOS gates. Does not certify question/exclamation intonation or lexical tones."
+    },
+    "endings": {
+      "version": "mandarin-clean-endings-v1",
+      "frameSeconds": 0.005,
+      "leftGuardSeconds": 0.04,
+      "nextSpeechGuardSeconds": 0.18,
+      "quietSeconds": 0.03,
+      "quietAbsoluteRms": 0.0002,
+      "quietRelativeRms": 0.0075,
+      "noiseAbsoluteRms": 0.001,
+      "noiseRelativeRms": 0.03,
+      "noiseSeconds": 0.01,
+      "clickAbsolutePeak": 0.015,
+      "clickRelativePeak": 0.045,
+      "maximumSeconds": 30,
+      "scope": "Detached audible activity following real quiet at internal sentence boundaries and after the last spoken syllable. Preserve connected vowel/nasal decay and the next sentence's consonants; never trim to CTC ends."
+    },
+    "characterTiming": {
+      "version": "sensevoice-greedy-character-timing-v3",
+      "model": "FunAudioLLM/SenseVoiceSmall",
+      "revision": "3847d57b6bdf2dd8875cb1508d2af43d80a16bf7",
+      "frameSeconds": 0.06,
+      "frameOffsetSeconds": -0.03,
+      "metadataFrames": 4,
+      "minimumPeakProbability": 0.9,
+      "confidence": "Top-8 posterior mass for authored homophonic spellings at the greedy event peak",
+      "maximumSeconds": 30,
+      "scope": "Unprompted primary-ASR character observations; not a second tone check",
+      "rhoticContinuity": {
+        "frameSeconds": 0.005,
+        "quietSeconds": 0.03,
+        "quietAbsoluteRms": 0.0002,
+        "quietRelativeRms": 0.0075,
+        "scope": "Observed non-syllabic 儿 may share a reliable base only within one acoustically continuous syllable"
+      },
+      "posteriorIdentity": "Unique raw tokenizer IDs; decoded spellings may coincide"
+    }
+  },
+  "retryPolicy": "At most24 attempts. Cycle native or lexical phonemes, optional unquoted/quoted boundary forms, through zero-shot, natural instruction, clear reading and unprompted text mode. Each attempt advances seed254 onward and retains the same adult speaker and strict QA gates.",
+  "pipelineCodeSha256": "ad799121191b8ebbaa7a9ae8e360939ccac449b3ff3ca35e4369711ff14eb3b2",
+  "clearInstruction": "You are a helpful assistant. 请用标准普通话清晰地朗读，声调准确，区分前后鼻音，节奏自然。<|endofprompt|>",
+  "clearInstructionByTarget": {
+    "乒": "You are a helpful assistant. 请用标准普通话朗读。乒字是乒乓球的乒，要读清后鼻音，保持自然连贯的语速。<|endofprompt|>",
+    "洒": "You are a helpful assistant. 请用清楚自然的普通话读洒，第三声，声调先低后升，舌尖平伸。<|endofprompt|>",
+    "撒": "You are a helpful assistant. 请用清楚自然的普通话读撒，第三声，声调先低后升，舌尖平伸。<|endofprompt|>",
+    "捧": "You are a helpful assistant. 请用清楚自然的普通话读捧，第三声，后鼻音，声音饱满自然。<|endofprompt|>",
+    "闯": "You are a helpful assistant. 请用清楚自然的普通话读闯，第三声，翘舌音，后鼻音，声音饱满自然。<|endofprompt|>",
+    "匹": "You are a helpful assistant. 请用清楚自然的普通话读匹，第三声，声调先低后升，声音饱满自然。<|endofprompt|>",
+    "头": "You are a helpful assistant. 头在这里是名词后缀，读轻声，发音短而轻，保持自然的普通话语气。<|endofprompt|>",
+    "哦": "You are a helpful assistant. 哦在这里表示明白了，读第四声，声调由高自然下降，口形保持圆润。<|endofprompt|>"
+  },
+  "retryModes": [
+    "zero_shot",
+    "instruct2",
+    "clear",
+    "cross_lingual"
+  ],
+  "seedsPerInputVariant": 1
+}

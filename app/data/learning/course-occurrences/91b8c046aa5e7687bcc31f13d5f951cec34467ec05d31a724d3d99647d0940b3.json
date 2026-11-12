@@ -1,0 +1,733 @@
+{
+  "id": "EX-CHAR-char-6d74",
+  "revision": 2,
+  "unit": "U6-04",
+  "stage": "ST-HSK6",
+  "after": "S-U6-04-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "浴",
+  "sourceBlockId": "mandarin-simplified-v1-char-6d74",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-4e16",
+        "text": "世",
+        "pinyin": "shì",
+        "meaning": "life; age",
+        "characters": [
+          {
+            "id": "C-4E16",
+            "text": "世"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-6d74",
+        "text": "浴",
+        "pinyin": "yù",
+        "meaning": "bath; to bathe",
+        "characters": [
+          {
+            "id": "C-6D74",
+            "text": "浴"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-3fdd72eb7b905f23e3584666",
+        "text": "浴室",
+        "pinyin": "yùshì",
+        "meaning": "bathroom; shower room; bathhouse",
+        "characters": [
+          {
+            "id": "C-6D74",
+            "text": "浴"
+          },
+          {
+            "id": "C-5BA4",
+            "text": "室"
+          }
+        ]
+      },
+      {
+        "id": "W0661",
+        "text": "比如",
+        "pinyin": "bǐrú",
+        "meaning": "for example; for instance",
+        "characters": [
+          {
+            "id": "C-6BD4",
+            "text": "比"
+          },
+          {
+            "id": "C-5982",
+            "text": "如"
+          }
+        ]
+      },
+      {
+        "id": "W1283",
+        "text": "感谢",
+        "pinyin": "gǎnxiè",
+        "meaning": "to thank; to be grateful",
+        "characters": [
+          {
+            "id": "C-611F",
+            "text": "感"
+          },
+          {
+            "id": "C-8C22",
+            "text": "谢"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "2dd2cc24fab8cbc8c7e4a803a26ca1aa5ba3f671af57edc5c606e8f903d5c903",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6d74",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "浴",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6d74-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-3fdd72eb7b905f23e3584666",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "bathroom; shower room",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "浴室"
+              },
+              {
+                "value": "yùshì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yu4shi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "浴室",
+              "pinyin": "yùshì",
+              "meaning": "bathroom; shower room",
+              "audio": "634c8f8ee61582f9d7375b68f0d3f420186f2f47056005351771ed6bad1a712a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6d74-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6d74",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "浴",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-6d74",
+                "label": "bath; to bathe",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0661",
+                "label": "for example; for instance",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-4e16",
+                "label": "life; age",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6d74-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "浴",
+        "pinyin": "yù",
+        "meaning": "bath; to bathe",
+        "source": "/stroke-data/6d74.json",
+        "reference": {
+          "character": "浴",
+          "sha256": "542c3d27039cd9ce3db2791463d10245cfa2a4bbccb58c24408cfbe32aa7113b",
+          "medians": [
+            [
+              [
+                177,
+                755
+              ],
+              [
+                261,
+                701
+              ],
+              [
+                282,
+                663
+              ]
+            ],
+            [
+              [
+                110,
+                539
+              ],
+              [
+                174,
+                502
+              ],
+              [
+                193,
+                486
+              ],
+              [
+                202,
+                469
+              ]
+            ],
+            [
+              [
+                161,
+                73
+              ],
+              [
+                145,
+                112
+              ],
+              [
+                143,
+                147
+              ],
+              [
+                167,
+                188
+              ],
+              [
+                265,
+                407
+              ]
+            ],
+            [
+              [
+                454,
+                768
+              ],
+              [
+                478,
+                728
+              ],
+              [
+                456,
+                685
+              ],
+              [
+                398,
+                607
+              ],
+              [
+                327,
+                554
+              ]
+            ],
+            [
+              [
+                633,
+                761
+              ],
+              [
+                734,
+                709
+              ],
+              [
+                768,
+                671
+              ]
+            ],
+            [
+              [
+                527,
+                617
+              ],
+              [
+                551,
+                583
+              ],
+              [
+                521,
+                518
+              ],
+              [
+                469,
+                439
+              ],
+              [
+                415,
+                373
+              ],
+              [
+                345,
+                305
+              ],
+              [
+                296,
+                266
+              ],
+              [
+                245,
+                235
+              ],
+              [
+                238,
+                236
+              ],
+              [
+                235,
+                229
+              ]
+            ],
+            [
+              [
+                580,
+                537
+              ],
+              [
+                578,
+                527
+              ],
+              [
+                585,
+                518
+              ],
+              [
+                652,
+                453
+              ],
+              [
+                776,
+                357
+              ],
+              [
+                852,
+                336
+              ],
+              [
+                968,
+                319
+              ]
+            ],
+            [
+              [
+                380,
+                251
+              ],
+              [
+                404,
+                231
+              ],
+              [
+                416,
+                210
+              ],
+              [
+                452,
+                24
+              ]
+            ],
+            [
+              [
+                436,
+                249
+              ],
+              [
+                446,
+                240
+              ],
+              [
+                467,
+                239
+              ],
+              [
+                652,
+                276
+              ],
+              [
+                683,
+                267
+              ],
+              [
+                710,
+                240
+              ],
+              [
+                674,
+                142
+              ],
+              [
+                647,
+                124
+              ]
+            ],
+            [
+              [
+                472,
+                56
+              ],
+              [
+                487,
+                71
+              ],
+              [
+                639,
+                95
+              ],
+              [
+                683,
+                95
+              ],
+              [
+                710,
+                86
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6d74-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1283",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to thank; to be grateful",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "感谢"
+              },
+              {
+                "value": "gǎnxiè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gan3xie4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "感谢",
+              "pinyin": "gǎnxiè",
+              "meaning": "to thank; to be grateful",
+              "audio": "5ab62d6a6970cddd540f0e3ef6b4b9d6cc4700ae3ffd55a86a426956c96b6374",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6d74-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6d74",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "bath; to bathe",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "浴"
+              },
+              {
+                "value": "yù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "浴",
+              "pinyin": "yù",
+              "meaning": "bath; to bathe",
+              "audio": "6d14601e19ada2f97760125a26802643b419d7f9c452edd189e1c7e6ed524cc1",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "6d14601e19ada2f97760125a26802643b419d7f9c452edd189e1c7e6ed524cc1"
+            ],
+            "transcript": [
+              {
+                "text": "浴",
+                "pinyin": "yù",
+                "meaning": "bath; to bathe",
+                "audio": "6d14601e19ada2f97760125a26802643b419d7f9c452edd189e1c7e6ed524cc1",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6D74",
+      "character": "浴",
+      "lessonIds": [
+        "LESSON-C-6D74"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6d74-word",
+        "EX-CHAR-char-6d74-recognize",
+        "EX-CHAR-char-6d74-write",
+        "EX-CHAR-char-6d74-familiar",
+        "EX-CHAR-char-6d74-recall"
+      ]
+    },
+    "audio": {
+      "1619bcd5154f6e32ee5cadb8ed4a7fabe7f9144445275dd788f48257a6c1db8d": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-e12dd6edbfb8254b48f34f5a332fb1652f83095d5d872088523d05c18fc9d24c.mp3",
+          "sha256": "e12dd6edbfb8254b48f34f5a332fb1652f83095d5d872088523d05c18fc9d24c",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "e12dd6edbfb8254b48f34f5a332fb1652f83095d5d872088523d05c18fc9d24c",
+            "text": "世",
+            "words": [
+              {
+                "text": "世",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-27d431bd055a95672fd35c0eaa68840bbc64d17e237ed5adc2fc596f6dd3f45e.mp3",
+          "sha256": "27d431bd055a95672fd35c0eaa68840bbc64d17e237ed5adc2fc596f6dd3f45e",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "27d431bd055a95672fd35c0eaa68840bbc64d17e237ed5adc2fc596f6dd3f45e",
+            "text": "世",
+            "words": [
+              {
+                "text": "世",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "6d14601e19ada2f97760125a26802643b419d7f9c452edd189e1c7e6ed524cc1": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-7c65a3164f444c58aaaf6748cd980009f942c808fd3e27c34042cb3598e6c719.mp3",
+          "sha256": "7c65a3164f444c58aaaf6748cd980009f942c808fd3e27c34042cb3598e6c719",
+          "byteLength": 9261,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "7c65a3164f444c58aaaf6748cd980009f942c808fd3e27c34042cb3598e6c719",
+            "text": "浴",
+            "words": [
+              {
+                "text": "浴",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-af5e288caa67328edb3dc51c31b2a4672b1e16213940f854f1d5a22ec73c9d6f.mp3",
+          "sha256": "af5e288caa67328edb3dc51c31b2a4672b1e16213940f854f1d5a22ec73c9d6f",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "af5e288caa67328edb3dc51c31b2a4672b1e16213940f854f1d5a22ec73c9d6f",
+            "text": "浴",
+            "words": [
+              {
+                "text": "浴",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "634c8f8ee61582f9d7375b68f0d3f420186f2f47056005351771ed6bad1a712a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/564189218005492d9076f74c870f9c96d8080adc16cc874a91f08c070d01f760.mp3",
+          "sha256": "564189218005492d9076f74c870f9c96d8080adc16cc874a91f08c070d01f760",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "564189218005492d9076f74c870f9c96d8080adc16cc874a91f08c070d01f760",
+            "text": "浴室",
+            "words": [
+              {
+                "text": "浴室",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a58bfa753a8f8b90594faccd983b3256931e008fa2ef46f65728a6d3cff0a431.mp3",
+          "sha256": "a58bfa753a8f8b90594faccd983b3256931e008fa2ef46f65728a6d3cff0a431",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "a58bfa753a8f8b90594faccd983b3256931e008fa2ef46f65728a6d3cff0a431",
+            "text": "浴室",
+            "words": [
+              {
+                "text": "浴室",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "038cab8782fdf47bc52a40b6968103b74640a0eeefb4db97e09ec4f1431594cd": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-902037f978822b14075ff7e2ac8620bd41b438c35845a239fc981a95b7180b05.mp3",
+          "sha256": "902037f978822b14075ff7e2ac8620bd41b438c35845a239fc981a95b7180b05",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "902037f978822b14075ff7e2ac8620bd41b438c35845a239fc981a95b7180b05",
+            "text": "比如",
+            "words": [
+              {
+                "text": "比如",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f5ba93b756c2a66077e663a63e42b0f2cb6b3f932d8ea86b3483a845866656df.mp3",
+          "sha256": "f5ba93b756c2a66077e663a63e42b0f2cb6b3f932d8ea86b3483a845866656df",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "f5ba93b756c2a66077e663a63e42b0f2cb6b3f932d8ea86b3483a845866656df",
+            "text": "比如",
+            "words": [
+              {
+                "text": "比如",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "5ab62d6a6970cddd540f0e3ef6b4b9d6cc4700ae3ffd55a86a426956c96b6374": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-04f9adf6f196f73fc1eec54cefa700d48bf27b09b16f722c782322845eb328b5.mp3",
+          "sha256": "04f9adf6f196f73fc1eec54cefa700d48bf27b09b16f722c782322845eb328b5",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "04f9adf6f196f73fc1eec54cefa700d48bf27b09b16f722c782322845eb328b5",
+            "text": "感谢",
+            "words": [
+              {
+                "text": "感谢",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f620211078227ddecc065717ec4443e643280ab58969f8cab1c9274b9cdd2cbc.mp3",
+          "sha256": "f620211078227ddecc065717ec4443e643280ab58969f8cab1c9274b9cdd2cbc",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "f620211078227ddecc065717ec4443e643280ab58969f8cab1c9274b9cdd2cbc",
+            "text": "感谢",
+            "words": [
+              {
+                "text": "感谢",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

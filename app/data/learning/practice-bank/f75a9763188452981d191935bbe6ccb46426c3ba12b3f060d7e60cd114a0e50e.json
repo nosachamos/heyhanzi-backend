@@ -1,0 +1,217 @@
+{
+  "id": "BANK-W0529",
+  "targetId": "W0529",
+  "steps": [
+    {
+      "id": "BANK-W0529-W0529",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0529-W0529",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to open; to turn on (a device)",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "打开"
+            },
+            {
+              "value": "dǎkāi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "da3kai1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "打开",
+            "pinyin": "dǎkāi",
+            "meaning": "to open; to turn on (a device)",
+            "singleWord": true,
+            "audio": "b3b7d238a52a4ec258a79ec409f15b2208efa9c6a52a9b5bb7f893d37bdd803b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W0529-W0529-use-open",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W0529-W0529-use-open",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 打开 fits this context?",
+          "context": "A closed door is moved into an open position.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W0529-W0529-use-open-contrast-1",
+              "label": "To close the door.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "打开 can mean to open a closed object, such as a door."
+            },
+            {
+              "id": "BANK-W0529-W0529-use-open-contrast-2",
+              "label": "To lock the door shut.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "打开 can mean to open a closed object, such as a door."
+            },
+            {
+              "id": "BANK-W0529-W0529-use-open-meaning",
+              "label": "To open the door.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "打开 can mean to open a closed object, such as a door."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "打开",
+            "pinyin": "dǎkāi",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "b3b7d238a52a4ec258a79ec409f15b2208efa9c6a52a9b5bb7f893d37bdd803b"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W0529-W0529-use-turn-on",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W0529-W0529-use-turn-on",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 打开 fits this context?",
+          "context": "A device is switched from off to operating.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W0529-W0529-use-turn-on-meaning",
+              "label": "To turn the device on.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "For a device, 打开 can mean to turn it on so that it operates. It does not necessarily mean opening the casing."
+            },
+            {
+              "id": "BANK-W0529-W0529-use-turn-on-contrast-2",
+              "label": "To take the casing apart.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "For a device, 打开 can mean to turn it on so that it operates. It does not necessarily mean opening the casing."
+            },
+            {
+              "id": "BANK-W0529-W0529-use-turn-on-contrast-1",
+              "label": "To turn the device off.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "For a device, 打开 can mean to turn it on so that it operates. It does not necessarily mean opening the casing."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "打开",
+            "pinyin": "dǎkāi",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "b3b7d238a52a4ec258a79ec409f15b2208efa9c6a52a9b5bb7f893d37bdd803b"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b3b7d238a52a4ec258a79ec409f15b2208efa9c6a52a9b5bb7f893d37bdd803b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-4767b9634c33e8c5d2c9fda84b65d172a08df636d96b9f2de6f110328dda57a1.mp3",
+        "sha256": "4767b9634c33e8c5d2c9fda84b65d172a08df636d96b9f2de6f110328dda57a1",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "4767b9634c33e8c5d2c9fda84b65d172a08df636d96b9f2de6f110328dda57a1",
+          "text": "打开",
+          "words": [
+            {
+              "text": "打开",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-521285f1359561d94839262ec47fb8ce1025721eec301e185f7e830c9440a55d.mp3",
+        "sha256": "521285f1359561d94839262ec47fb8ce1025721eec301e185f7e830c9440a55d",
+        "byteLength": 16461,
+        "readAlong": {
+          "audioSha256": "521285f1359561d94839262ec47fb8ce1025721eec301e185f7e830c9440a55d",
+          "text": "打开",
+          "words": [
+            {
+              "text": "打开",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0529",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0529-W0529",
+      "question_ids": [
+        "BANK-W0529-W0529"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W0529",
+      "facet_id": "lexical-use-open",
+      "part_id": "BANK-W0529-W0529-use-open",
+      "question_ids": [
+        "BANK-W0529-W0529-use-open"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W0529",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W0529",
+      "facet_id": "lexical-use-turn-on",
+      "part_id": "BANK-W0529-W0529-use-turn-on",
+      "question_ids": [
+        "BANK-W0529-W0529-use-turn-on"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W0529",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U20",
+    "stepId": "S-U20-words-r4-15",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5f00"
+    ],
+    "grammarLessonIds": []
+  }
+}

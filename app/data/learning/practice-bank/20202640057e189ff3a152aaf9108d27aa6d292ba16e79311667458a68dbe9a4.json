@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0831",
+  "targetId": "W0831",
+  "steps": [
+    {
+      "id": "BANK-W0831-W0831",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0831-W0831",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "card",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "卡"
+            },
+            {
+              "value": "kǎ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ka3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "卡",
+            "pinyin": "kǎ",
+            "meaning": "card",
+            "singleWord": true,
+            "audio": "0857357c5783996ed8a9e16f559c85ed8ab5d288c80f2330b914cae7026f3872"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "0857357c5783996ed8a9e16f559c85ed8ab5d288c80f2330b914cae7026f3872": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d3ba63ae0dd32c8acf7df771a394e7d52de620efe4086259ef55db74057aeebf.mp3",
+        "sha256": "d3ba63ae0dd32c8acf7df771a394e7d52de620efe4086259ef55db74057aeebf",
+        "byteLength": 8109,
+        "readAlong": {
+          "audioSha256": "d3ba63ae0dd32c8acf7df771a394e7d52de620efe4086259ef55db74057aeebf",
+          "text": "卡",
+          "words": [
+            {
+              "text": "卡",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-14c303844659c6ba7919ca610f4daaadfd19655b5000a67623b7a398f9f4ad2e.mp3",
+        "sha256": "14c303844659c6ba7919ca610f4daaadfd19655b5000a67623b7a398f9f4ad2e",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "14c303844659c6ba7919ca610f4daaadfd19655b5000a67623b7a398f9f4ad2e",
+          "text": "卡",
+          "words": [
+            {
+              "text": "卡",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0831",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0831-W0831",
+      "question_ids": [
+        "BANK-W0831-W0831"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-08",
+    "stepId": "S-U3-08-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-84dd"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "id": "BANK-W4419",
+  "targetId": "W4419",
+  "steps": [
+    {
+      "id": "BANK-W4419-W4419",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4419-W4419",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "clause; style; classifier for designs or models",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "款"
+            },
+            {
+              "value": "kuǎn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "kuan3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "款",
+            "pinyin": "kuǎn",
+            "meaning": "clause; style; classifier for designs or models",
+            "singleWord": true,
+            "audio": "d0a840d06d8b418bc1cab8815c89241b09ab0da15802b0bcf2162c22d6a5c4e0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W4419-W4419-use-clause",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W4419-W4419-use-clause",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 款 fits this context?",
+          "context": "The speaker refers to a numbered provision in a written agreement.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W4419-W4419-use-clause-meaning",
+              "label": "A clause or provision.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "款 can name an individual clause or numbered provision in a document."
+            },
+            {
+              "id": "BANK-W4419-W4419-use-clause-contrast-1",
+              "label": "A physical hat.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "款 can name an individual clause or numbered provision in a document."
+            },
+            {
+              "id": "BANK-W4419-W4419-use-clause-contrast-2",
+              "label": "A color of ink.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "款 can name an individual clause or numbered provision in a document."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "款",
+            "pinyin": "kuǎn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "d0a840d06d8b418bc1cab8815c89241b09ab0da15802b0bcf2162c22d6a5c4e0"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W4419-W4419-use-style",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W4419-W4419-use-style",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 款 fits this context?",
+          "context": "A shop compares different designs of the same kind of product.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W4419-W4419-use-style-meaning",
+              "label": "A style or model.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "款 can also refer to a product style or model."
+            },
+            {
+              "id": "BANK-W4419-W4419-use-style-contrast-2",
+              "label": "A payment already made.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "款 can also refer to a product style or model."
+            },
+            {
+              "id": "BANK-W4419-W4419-use-style-contrast-1",
+              "label": "A numbered clause in a contract.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "款 can also refer to a product style or model."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "款",
+            "pinyin": "kuǎn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "d0a840d06d8b418bc1cab8815c89241b09ab0da15802b0bcf2162c22d6a5c4e0"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W4419-W4419-use-design-counter",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W4419-W4419-use-design-counter",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 款 fits this context?",
+          "context": "A shop offers three different designs of the same product.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W4419-W4419-use-design-counter-meaning",
+              "label": "Three styles or models.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "After a number, 款 counts styles, designs or models. Several identical items of one design are not several different designs."
+            },
+            {
+              "id": "BANK-W4419-W4419-use-design-counter-contrast-2",
+              "label": "Three numbered clauses in a contract.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "After a number, 款 counts styles, designs or models. Several identical items of one design are not several different designs."
+            },
+            {
+              "id": "BANK-W4419-W4419-use-design-counter-contrast-1",
+              "label": "Three identical units of one design.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "After a number, 款 counts styles, designs or models. Several identical items of one design are not several different designs."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "款",
+            "pinyin": "kuǎn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "d0a840d06d8b418bc1cab8815c89241b09ab0da15802b0bcf2162c22d6a5c4e0"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d0a840d06d8b418bc1cab8815c89241b09ab0da15802b0bcf2162c22d6a5c4e0": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5395b70b9c1f2e5ddfc6d4247e2bdaae2cf6da90ae7d3778814e33280a7f86d4.mp3",
+        "sha256": "5395b70b9c1f2e5ddfc6d4247e2bdaae2cf6da90ae7d3778814e33280a7f86d4",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "5395b70b9c1f2e5ddfc6d4247e2bdaae2cf6da90ae7d3778814e33280a7f86d4",
+          "text": "款",
+          "words": [
+            {
+              "text": "款",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c4337159ec70635ce550f4646f830ed705c00324fe639ce1bab0e61fba077016.mp3",
+        "sha256": "c4337159ec70635ce550f4646f830ed705c00324fe639ce1bab0e61fba077016",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "c4337159ec70635ce550f4646f830ed705c00324fe639ce1bab0e61fba077016",
+          "text": "款",
+          "words": [
+            {
+              "text": "款",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4419",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4419-W4419",
+      "question_ids": [
+        "BANK-W4419-W4419"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W4419",
+      "facet_id": "lexical-use-clause",
+      "part_id": "BANK-W4419-W4419-use-clause",
+      "question_ids": [
+        "BANK-W4419-W4419-use-clause"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W4419",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W4419",
+      "facet_id": "lexical-use-style",
+      "part_id": "BANK-W4419-W4419-use-style",
+      "question_ids": [
+        "BANK-W4419-W4419-use-style"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W4419",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W4419",
+      "facet_id": "lexical-use-design-counter",
+      "part_id": "BANK-W4419-W4419-use-design-counter",
+      "question_ids": [
+        "BANK-W4419-W4419-use-design-counter"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W4419",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-13",
+    "stepId": "S-U6-13-words-r4-4",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6b3e"
+    ],
+    "grammarLessonIds": []
+  }
+}

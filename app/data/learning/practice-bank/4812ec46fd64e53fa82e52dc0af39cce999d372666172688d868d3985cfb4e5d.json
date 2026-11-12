@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1002",
+  "targetId": "W1002",
+  "steps": [
+    {
+      "id": "BANK-W1002-W1002",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1002-W1002",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "sheep; goat",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "羊"
+            },
+            {
+              "value": "yáng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yang2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "羊",
+            "pinyin": "yáng",
+            "meaning": "sheep; goat",
+            "singleWord": true,
+            "audio": "f070a49887cfd516b57c6f24313f5b9eaeabe6e6c930d0e6f94e69ffb59d5954"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f070a49887cfd516b57c6f24313f5b9eaeabe6e6c930d0e6f94e69ffb59d5954": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/72bba0302fb0ede96b589be63aaff33884c8de322347218fa7befebf3b80c6ee.mp3",
+        "sha256": "72bba0302fb0ede96b589be63aaff33884c8de322347218fa7befebf3b80c6ee",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "72bba0302fb0ede96b589be63aaff33884c8de322347218fa7befebf3b80c6ee",
+          "text": "羊",
+          "words": [
+            {
+              "text": "羊",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3c1c053935eb0efdd5d54fc8ff61acb06c5a3aa439d79308ac9fa851b952cc67.mp3",
+        "sha256": "3c1c053935eb0efdd5d54fc8ff61acb06c5a3aa439d79308ac9fa851b952cc67",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "3c1c053935eb0efdd5d54fc8ff61acb06c5a3aa439d79308ac9fa851b952cc67",
+          "text": "羊",
+          "words": [
+            {
+              "text": "羊",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1002",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1002-W1002",
+      "question_ids": [
+        "BANK-W1002-W1002"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-17",
+    "stepId": "S-U3-17-words-r4-26",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7f8a"
+    ],
+    "grammarLessonIds": []
+  }
+}

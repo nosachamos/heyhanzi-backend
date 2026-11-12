@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0006",
+  "targetId": "W0006",
+  "steps": [
+    {
+      "id": "BANK-W0006-W0006",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0006-W0006",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "be",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "是"
+            },
+            {
+              "value": "shì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shi4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "是",
+            "pinyin": "shì",
+            "meaning": "be",
+            "singleWord": true,
+            "audio": "7940c81ffb1e91957744588fa3aeea82d09d9d422020f67f6e9d7f3b4ed610b8"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7940c81ffb1e91957744588fa3aeea82d09d9d422020f67f6e9d7f3b4ed610b8": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f30695f82f2c7735b6813ef2c9c71395b631456f0371d01baf7c7ce6bab698f0.mp3",
+        "sha256": "f30695f82f2c7735b6813ef2c9c71395b631456f0371d01baf7c7ce6bab698f0",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "f30695f82f2c7735b6813ef2c9c71395b631456f0371d01baf7c7ce6bab698f0",
+          "text": "是",
+          "words": [
+            {
+              "text": "是",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-bdc98e75ff7f5f64b4e86ea4d142837d13bfb3eed0e872a219e7acf47acd386d.mp3",
+        "sha256": "bdc98e75ff7f5f64b4e86ea4d142837d13bfb3eed0e872a219e7acf47acd386d",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "bdc98e75ff7f5f64b4e86ea4d142837d13bfb3eed0e872a219e7acf47acd386d",
+          "text": "是",
+          "words": [
+            {
+              "text": "是",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0006",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0006-W0006",
+      "question_ids": [
+        "BANK-W0006-W0006"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU01",
+    "stepId": "S-WU01-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-shi"
+    ],
+    "grammarLessonIds": []
+  }
+}

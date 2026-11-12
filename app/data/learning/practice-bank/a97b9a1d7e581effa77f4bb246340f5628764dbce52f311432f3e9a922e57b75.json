@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3548",
+  "targetId": "W3548",
+  "steps": [
+    {
+      "id": "BANK-W3548-W3548",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3548-W3548",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "seed",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "种子"
+            },
+            {
+              "value": "zhǒngzi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhong3zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "种子",
+            "pinyin": "zhǒngzi",
+            "meaning": "seed",
+            "singleWord": true,
+            "audio": "e00c821a92bad3eff0a3e339de6b02d0d507789429fb4d1a04845644e0b5f829"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e00c821a92bad3eff0a3e339de6b02d0d507789429fb4d1a04845644e0b5f829": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-6b7f0781ab624d7c64f38f517c4f024449765cd4f9bdb53dc6d590a7711fad20.mp3",
+        "sha256": "6b7f0781ab624d7c64f38f517c4f024449765cd4f9bdb53dc6d590a7711fad20",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "6b7f0781ab624d7c64f38f517c4f024449765cd4f9bdb53dc6d590a7711fad20",
+          "text": "种子",
+          "words": [
+            {
+              "text": "种子",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c032bd694522f48f7c59d0e29bc454ecbfb400df9b4da553a76edc1c7a25b49c.mp3",
+        "sha256": "c032bd694522f48f7c59d0e29bc454ecbfb400df9b4da553a76edc1c7a25b49c",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "c032bd694522f48f7c59d0e29bc454ecbfb400df9b4da553a76edc1c7a25b49c",
+          "text": "种子",
+          "words": [
+            {
+              "text": "种子",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3548",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3548-W3548",
+      "question_ids": [
+        "BANK-W3548-W3548"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-29",
+    "stepId": "S-U5-29-words-r4-24",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-79cd"
+    ],
+    "grammarLessonIds": []
+  }
+}

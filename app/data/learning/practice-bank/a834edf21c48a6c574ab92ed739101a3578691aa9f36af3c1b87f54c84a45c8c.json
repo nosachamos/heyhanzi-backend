@@ -1,0 +1,217 @@
+{
+  "id": "BANK-W3709",
+  "targetId": "W3709",
+  "steps": [
+    {
+      "id": "BANK-W3709-W3709",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3709-W3709",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "not only; more than",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "不止"
+            },
+            {
+              "value": "bùzhǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bu4zhi3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "不止",
+            "pinyin": "bùzhǐ",
+            "meaning": "not only; more than",
+            "singleWord": true,
+            "audio": "3b576e778434a6032dfc61e98c0bccfeed0c44faf27bd5828529d00adf908e86"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W3709-W3709-use-not-only",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W3709-W3709-use-not-only",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 不止 fits this context?",
+          "context": "Someone does the named activity and also another activity.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W3709-W3709-use-not-only-meaning",
+              "label": "Not only the first activity.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "不止 can mean not only: what follows extends beyond the first named item or activity."
+            },
+            {
+              "id": "BANK-W3709-W3709-use-not-only-contrast-2",
+              "label": "Neither activity at all.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "不止 can mean not only: what follows extends beyond the first named item or activity."
+            },
+            {
+              "id": "BANK-W3709-W3709-use-not-only-contrast-1",
+              "label": "Only the first activity.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "不止 can mean not only: what follows extends beyond the first named item or activity."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "不止",
+            "pinyin": "bùzhǐ",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "3b576e778434a6032dfc61e98c0bccfeed0c44faf27bd5828529d00adf908e86"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W3709-W3709-use-more-than",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W3709-W3709-use-more-than",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 不止 fits this context?",
+          "context": "The true total exceeds the stated number.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W3709-W3709-use-more-than-contrast-1",
+              "label": "Exactly that number.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "Before a stated quantity or limit, 不止 can mean more than. It says that the total exceeds that point."
+            },
+            {
+              "id": "BANK-W3709-W3709-use-more-than-contrast-2",
+              "label": "Less than that number.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "Before a stated quantity or limit, 不止 can mean more than. It says that the total exceeds that point."
+            },
+            {
+              "id": "BANK-W3709-W3709-use-more-than-meaning",
+              "label": "More than that number.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "Before a stated quantity or limit, 不止 can mean more than. It says that the total exceeds that point."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "不止",
+            "pinyin": "bùzhǐ",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "3b576e778434a6032dfc61e98c0bccfeed0c44faf27bd5828529d00adf908e86"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3b576e778434a6032dfc61e98c0bccfeed0c44faf27bd5828529d00adf908e86": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-eadfb2b7a3e686cc7e51a3bb64d44e44bee4ad6131baa256681def82ce655b90.mp3",
+        "sha256": "eadfb2b7a3e686cc7e51a3bb64d44e44bee4ad6131baa256681def82ce655b90",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "eadfb2b7a3e686cc7e51a3bb64d44e44bee4ad6131baa256681def82ce655b90",
+          "text": "不止",
+          "words": [
+            {
+              "text": "不止",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-aaea17454c202bf59a3791234d1e1bad56c8a36baac1fa72e5aec8da2c62de4a.mp3",
+        "sha256": "aaea17454c202bf59a3791234d1e1bad56c8a36baac1fa72e5aec8da2c62de4a",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "aaea17454c202bf59a3791234d1e1bad56c8a36baac1fa72e5aec8da2c62de4a",
+          "text": "不止",
+          "words": [
+            {
+              "text": "不止",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3709",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3709-W3709",
+      "question_ids": [
+        "BANK-W3709-W3709"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W3709",
+      "facet_id": "lexical-use-not-only",
+      "part_id": "BANK-W3709-W3709-use-not-only",
+      "question_ids": [
+        "BANK-W3709-W3709-use-not-only"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W3709",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W3709",
+      "facet_id": "lexical-use-more-than",
+      "part_id": "BANK-W3709-W3709-use-more-than",
+      "question_ids": [
+        "BANK-W3709-W3709-use-more-than"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W3709",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-50",
+    "stepId": "S-U6-50-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6b62"
+    ],
+    "grammarLessonIds": []
+  }
+}

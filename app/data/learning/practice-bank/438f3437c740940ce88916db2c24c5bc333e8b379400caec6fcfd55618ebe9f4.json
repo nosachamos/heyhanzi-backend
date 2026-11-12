@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3200",
+  "targetId": "W3200",
+  "steps": [
+    {
+      "id": "BANK-W3200-W3200",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3200-W3200",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "network; Internet",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "网络"
+            },
+            {
+              "value": "wǎngluò",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wang3luo4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "网络",
+            "pinyin": "wǎngluò",
+            "meaning": "network; Internet",
+            "singleWord": true,
+            "audio": "ff1bdec9423d288bf538f898251a8eaeca6d6cdd19d5cf201b81ec78746593c4"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ff1bdec9423d288bf538f898251a8eaeca6d6cdd19d5cf201b81ec78746593c4": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ad4a736c1bdb42af11a6a8f9a296730e118f52189419051b096182136710c9f9.mp3",
+        "sha256": "ad4a736c1bdb42af11a6a8f9a296730e118f52189419051b096182136710c9f9",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "ad4a736c1bdb42af11a6a8f9a296730e118f52189419051b096182136710c9f9",
+          "text": "网络",
+          "words": [
+            {
+              "text": "网络",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-8631dd506923f8fd22b7e441212787c30a2d563736beebaee2c25484c24653a2.mp3",
+        "sha256": "8631dd506923f8fd22b7e441212787c30a2d563736beebaee2c25484c24653a2",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "8631dd506923f8fd22b7e441212787c30a2d563736beebaee2c25484c24653a2",
+          "text": "网络",
+          "words": [
+            {
+              "text": "网络",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3200",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3200-W3200",
+      "question_ids": [
+        "BANK-W3200-W3200"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-30",
+    "stepId": "S-U5-30-words-r4-20",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7edc"
+    ],
+    "grammarLessonIds": []
+  }
+}

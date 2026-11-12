@@ -1,0 +1,275 @@
+{
+  "id": "BANK-W0900",
+  "targetId": "W0900",
+  "steps": [
+    {
+      "id": "BANK-W0900-W0900",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0900-W0900",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "rise; raise; start; starting from a specified time or place",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "起"
+            },
+            {
+              "value": "qǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qi3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "起",
+            "pinyin": "qǐ",
+            "meaning": "rise; raise; start; starting from a specified time or place",
+            "singleWord": true,
+            "audio": "3119b6deac94631e7ee7898386ac7ce950e565a5132a2ffc5a8b2dc9b2d9c572"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W0900-W0900-use-rise-raise",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W0900-W0900-use-rise-raise",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 起 fits this context?",
+          "context": "A person changes from sitting to being up on their feet.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W0900-W0900-use-rise-raise-meaning",
+              "label": "Rising or getting up.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "起 can mean to rise or raise something. It describes upward movement or getting up."
+            },
+            {
+              "id": "BANK-W0900-W0900-use-rise-raise-contrast-1",
+              "label": "Lying down to sleep.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "起 can mean to rise or raise something. It describes upward movement or getting up."
+            },
+            {
+              "id": "BANK-W0900-W0900-use-rise-raise-contrast-2",
+              "label": "Remaining in the same seated position.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "起 can mean to rise or raise something. It describes upward movement or getting up."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "起",
+            "pinyin": "qǐ",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "3119b6deac94631e7ee7898386ac7ce950e565a5132a2ffc5a8b2dc9b2d9c572"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W0900-W0900-use-start",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W0900-W0900-use-start",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 起 fits this context?",
+          "context": "An activity begins rather than continuing or ending.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W0900-W0900-use-start-contrast-1",
+              "label": "The activity finishes.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "起 can mark the start or beginning of an activity or state."
+            },
+            {
+              "id": "BANK-W0900-W0900-use-start-meaning",
+              "label": "The activity starts.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "起 can mark the start or beginning of an activity or state."
+            },
+            {
+              "id": "BANK-W0900-W0900-use-start-contrast-2",
+              "label": "The activity never begins.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "起 can mark the start or beginning of an activity or state."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "起",
+            "pinyin": "qǐ",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "3119b6deac94631e7ee7898386ac7ce950e565a5132a2ffc5a8b2dc9b2d9c572"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W0900-W0900-use-starting-point",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W0900-W0900-use-starting-point",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 起 fits this context?",
+          "context": "A rule starts applying from a stated date. The use identifies where its application begins.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W0900-W0900-use-starting-point-contrast-2",
+              "label": "Only a time before that point.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "起 can identify a specified time or place as the starting point: from that point onward."
+            },
+            {
+              "id": "BANK-W0900-W0900-use-starting-point-meaning",
+              "label": "Starting from that specified point.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "起 can identify a specified time or place as the starting point: from that point onward."
+            },
+            {
+              "id": "BANK-W0900-W0900-use-starting-point-contrast-1",
+              "label": "Ending at that point.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "起 can identify a specified time or place as the starting point: from that point onward."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "起",
+            "pinyin": "qǐ",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "3119b6deac94631e7ee7898386ac7ce950e565a5132a2ffc5a8b2dc9b2d9c572"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3119b6deac94631e7ee7898386ac7ce950e565a5132a2ffc5a8b2dc9b2d9c572": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-bae33af836822aedf5233562692a6b2733eb1657c826a3ed0369e5cd53625431.mp3",
+        "sha256": "bae33af836822aedf5233562692a6b2733eb1657c826a3ed0369e5cd53625431",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "bae33af836822aedf5233562692a6b2733eb1657c826a3ed0369e5cd53625431",
+          "text": "起",
+          "words": [
+            {
+              "text": "起",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-f9bd6a9e49a67cf1f87706fc7d0638ca84265d6ec5c28a07ace1740f5df8690a.mp3",
+        "sha256": "f9bd6a9e49a67cf1f87706fc7d0638ca84265d6ec5c28a07ace1740f5df8690a",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "f9bd6a9e49a67cf1f87706fc7d0638ca84265d6ec5c28a07ace1740f5df8690a",
+          "text": "起",
+          "words": [
+            {
+              "text": "起",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0900",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0900-W0900",
+      "question_ids": [
+        "BANK-W0900-W0900"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W0900",
+      "facet_id": "lexical-use-rise-raise",
+      "part_id": "BANK-W0900-W0900-use-rise-raise",
+      "question_ids": [
+        "BANK-W0900-W0900-use-rise-raise"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W0900",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W0900",
+      "facet_id": "lexical-use-start",
+      "part_id": "BANK-W0900-W0900-use-start",
+      "question_ids": [
+        "BANK-W0900-W0900-use-start"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W0900",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W0900",
+      "facet_id": "lexical-use-starting-point",
+      "part_id": "BANK-W0900-W0900-use-starting-point",
+      "question_ids": [
+        "BANK-W0900-W0900-use-starting-point"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W0900",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-11",
+    "stepId": "S-U3-11-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8d77"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,623 @@
+{
+  "id": "EX-CHAR-char-4ee5",
+  "revision": 2,
+  "unit": "U10",
+  "stage": "ST-HSK1",
+  "after": "S-U10-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "以",
+  "sourceBlockId": "mandarin-simplified-v1-char-4ee5",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-4e66",
+        "text": "书",
+        "pinyin": "shū",
+        "meaning": "book; letter",
+        "characters": [
+          {
+            "id": "C-4E66",
+            "text": "书"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-4c87437647c807e41d9ed320",
+        "text": "会见",
+        "pinyin": "huìjiàn",
+        "meaning": "to meet with (somebody who is paying a visit)",
+        "characters": [
+          {
+            "id": "C-4F1A",
+            "text": "会"
+          },
+          {
+            "id": "C-89C1",
+            "text": "见"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-c4f86120732064d9f0a93fa2",
+        "text": "可以",
+        "pinyin": "kěyǐ",
+        "meaning": "can; may",
+        "characters": [
+          {
+            "id": "C-53EF",
+            "text": "可"
+          },
+          {
+            "id": "C-4EE5",
+            "text": "以"
+          }
+        ]
+      },
+      {
+        "id": "W3381",
+        "text": "以",
+        "pinyin": "yǐ",
+        "meaning": "to use; by means of",
+        "characters": [
+          {
+            "id": "C-4EE5",
+            "text": "以"
+          }
+        ]
+      },
+      {
+        "id": "W4384",
+        "text": "看好",
+        "pinyin": "kànhǎo",
+        "meaning": "to regard as having good prospects",
+        "characters": [
+          {
+            "id": "C-770B",
+            "text": "看"
+          },
+          {
+            "id": "C-597D",
+            "text": "好"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "13f2785318f03fe186f44866390b4a62062ebd3d94bc3fc746d6c6a2d084f894",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4ee5",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "以",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4ee5-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-c4f86120732064d9f0a93fa2",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "can; may",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "可以"
+              },
+              {
+                "value": "kěyǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ke3yi3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "可以",
+              "pinyin": "kěyǐ",
+              "meaning": "can; may",
+              "audio": "c35e930c1ba4cd1f23e25f38f1543c3a96ee8db1764dd6d4188bcf2c506fd3f8",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ee5-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W3381",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "以",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-4e66",
+                "label": "book; letter",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W4384",
+                "label": "to regard as having good prospects",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W3381",
+                "label": "to use; by means of",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ee5-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "以",
+        "pinyin": "yǐ",
+        "meaning": "to use; by means of",
+        "source": "/stroke-data/4ee5.json",
+        "reference": {
+          "character": "以",
+          "sha256": "05ebc1ff07acf343d0e45ba0579dff8e281059aa4d5285d10c8e25c58d333c5d",
+          "medians": [
+            [
+              [
+                200,
+                602
+              ],
+              [
+                243,
+                569
+              ],
+              [
+                251,
+                554
+              ],
+              [
+                254,
+                397
+              ],
+              [
+                243,
+                278
+              ],
+              [
+                252,
+                253
+              ],
+              [
+                299,
+                273
+              ],
+              [
+                488,
+                462
+              ]
+            ],
+            [
+              [
+                442,
+                689
+              ],
+              [
+                525,
+                625
+              ],
+              [
+                539,
+                601
+              ]
+            ],
+            [
+              [
+                720,
+                737
+              ],
+              [
+                741,
+                721
+              ],
+              [
+                762,
+                691
+              ],
+              [
+                758,
+                659
+              ],
+              [
+                742,
+                552
+              ],
+              [
+                726,
+                489
+              ],
+              [
+                691,
+                389
+              ],
+              [
+                668,
+                342
+              ],
+              [
+                628,
+                277
+              ],
+              [
+                537,
+                186
+              ],
+              [
+                490,
+                152
+              ],
+              [
+                395,
+                104
+              ]
+            ],
+            [
+              [
+                703,
+                324
+              ],
+              [
+                708,
+                307
+              ],
+              [
+                784,
+                248
+              ],
+              [
+                851,
+                181
+              ],
+              [
+                870,
+                152
+              ],
+              [
+                881,
+                114
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4ee5-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-4c87437647c807e41d9ed320",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to meet with (someone who is paying a visit)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "会见"
+              },
+              {
+                "value": "huìjiàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hui4jian4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "会见",
+              "pinyin": "huìjiàn",
+              "meaning": "to meet with (someone who is paying a visit)",
+              "audio": "925290854e58d87c89a32c3fe2a9adfe0f8badfe58ea3b6899ea6201d781f6ac",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ee5-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W3381",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to use; by means of",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "以"
+              },
+              {
+                "value": "yǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yi3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "以",
+              "pinyin": "yǐ",
+              "meaning": "to use; by means of",
+              "audio": "b98120b64f3d5a31757cf2d30dc070f97f81b4555572761ec81f4dcc27f0b21d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "b98120b64f3d5a31757cf2d30dc070f97f81b4555572761ec81f4dcc27f0b21d"
+            ],
+            "transcript": [
+              {
+                "text": "以",
+                "pinyin": "yǐ",
+                "meaning": "to use; by means of",
+                "audio": "b98120b64f3d5a31757cf2d30dc070f97f81b4555572761ec81f4dcc27f0b21d",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4EE5",
+      "character": "以",
+      "lessonIds": [
+        "LESSON-C-4EE5"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4ee5-word",
+        "EX-CHAR-char-4ee5-recognize",
+        "EX-CHAR-char-4ee5-write",
+        "EX-CHAR-char-4ee5-familiar",
+        "EX-CHAR-char-4ee5-recall"
+      ]
+    },
+    "audio": {
+      "d4a6c8ed7412bd44f50bcd45a2db6d86bde4d0e761235731defc150218253ab4": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-af6424d2065762cf6ac5328e54f884bfa9b7bfa87d86456fbc5840f354d09a0a.mp3",
+          "sha256": "af6424d2065762cf6ac5328e54f884bfa9b7bfa87d86456fbc5840f354d09a0a",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "af6424d2065762cf6ac5328e54f884bfa9b7bfa87d86456fbc5840f354d09a0a",
+            "text": "书",
+            "words": [
+              {
+                "text": "书",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b26b78b93bf0fe4bdf92cf14ca6eca86f5b4b8552a2529d5f5f16681c02de5be.mp3",
+          "sha256": "b26b78b93bf0fe4bdf92cf14ca6eca86f5b4b8552a2529d5f5f16681c02de5be",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "b26b78b93bf0fe4bdf92cf14ca6eca86f5b4b8552a2529d5f5f16681c02de5be",
+            "text": "书",
+            "words": [
+              {
+                "text": "书",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "925290854e58d87c89a32c3fe2a9adfe0f8badfe58ea3b6899ea6201d781f6ac": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/525c9951a7affd6c65bff2308595819cbf3abe09e3a01081ccafed12cac4cfa6.mp3",
+          "sha256": "525c9951a7affd6c65bff2308595819cbf3abe09e3a01081ccafed12cac4cfa6",
+          "byteLength": 22509,
+          "readAlong": {
+            "audioSha256": "525c9951a7affd6c65bff2308595819cbf3abe09e3a01081ccafed12cac4cfa6",
+            "text": "会见",
+            "words": [
+              {
+                "text": "会见",
+                "start": 0.99,
+                "end": 1.2899999999999998
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/cd9a7be088a9188080f1302fb5a2a36797170ddbe0a93ee1e43d60c44859f043.mp3",
+          "sha256": "cd9a7be088a9188080f1302fb5a2a36797170ddbe0a93ee1e43d60c44859f043",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "cd9a7be088a9188080f1302fb5a2a36797170ddbe0a93ee1e43d60c44859f043",
+            "text": "会见",
+            "words": [
+              {
+                "text": "会见",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "c35e930c1ba4cd1f23e25f38f1543c3a96ee8db1764dd6d4188bcf2c506fd3f8": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-40e77b5c63ba4ec6ec299b923dcf46efc25879f55ab60b582587a1bcec9bfbf9.mp3",
+          "sha256": "40e77b5c63ba4ec6ec299b923dcf46efc25879f55ab60b582587a1bcec9bfbf9",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "40e77b5c63ba4ec6ec299b923dcf46efc25879f55ab60b582587a1bcec9bfbf9",
+            "text": "可以",
+            "words": [
+              {
+                "text": "可以",
+                "start": 0.44999999999999996,
+                "end": 0.75
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-2a19974f7cc9e2997dc5efb00877a0222679b2b88c174a62d88e22cded6f7bf4.mp3",
+          "sha256": "2a19974f7cc9e2997dc5efb00877a0222679b2b88c174a62d88e22cded6f7bf4",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "2a19974f7cc9e2997dc5efb00877a0222679b2b88c174a62d88e22cded6f7bf4",
+            "text": "可以",
+            "words": [
+              {
+                "text": "可以",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "b98120b64f3d5a31757cf2d30dc070f97f81b4555572761ec81f4dcc27f0b21d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-9e9f11bc83e3a37e22a8c613c340228067a675efc2476f058965bab25b499cef.mp3",
+          "sha256": "9e9f11bc83e3a37e22a8c613c340228067a675efc2476f058965bab25b499cef",
+          "byteLength": 8109,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "9e9f11bc83e3a37e22a8c613c340228067a675efc2476f058965bab25b499cef",
+            "text": "以",
+            "words": [
+              {
+                "text": "以",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-58a1b4c5cab5149eed847dc7d4dd72c3c68ea05e44b3bc02f49303c0a35c1817.mp3",
+          "sha256": "58a1b4c5cab5149eed847dc7d4dd72c3c68ea05e44b3bc02f49303c0a35c1817",
+          "byteLength": 12141,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "58a1b4c5cab5149eed847dc7d4dd72c3c68ea05e44b3bc02f49303c0a35c1817",
+            "text": "以",
+            "words": [
+              {
+                "text": "以",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "cb1720c35f708c8325ce62f6068c5b0cd0189f4fa376a0807f5c72961634a29f": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9bbf74f5dd80a427c45b1ca5d5876aff477bec28d5c70ef73915df3deae0ea4d.mp3",
+          "sha256": "9bbf74f5dd80a427c45b1ca5d5876aff477bec28d5c70ef73915df3deae0ea4d",
+          "byteLength": 17901,
+          "readAlong": {
+            "audioSha256": "9bbf74f5dd80a427c45b1ca5d5876aff477bec28d5c70ef73915df3deae0ea4d",
+            "text": "看好",
+            "words": [
+              {
+                "text": "看好",
+                "start": 0.09,
+                "end": 0.8099999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/70afc1c3e346507986227befcdb52c162b89db4958f2e2b45740a6eb39b7c1f3.mp3",
+          "sha256": "70afc1c3e346507986227befcdb52c162b89db4958f2e2b45740a6eb39b7c1f3",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "70afc1c3e346507986227befcdb52c162b89db4958f2e2b45740a6eb39b7c1f3",
+            "text": "看好",
+            "words": [
+              {
+                "text": "看好",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

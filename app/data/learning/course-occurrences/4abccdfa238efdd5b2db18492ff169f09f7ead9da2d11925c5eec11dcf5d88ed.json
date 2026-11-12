@@ -1,0 +1,595 @@
+{
+  "id": "EX-CHAR-char-5dfe",
+  "revision": 2,
+  "unit": "U4-04",
+  "stage": "ST-HSK4",
+  "after": "S-U4-04-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "巾",
+  "sourceBlockId": "mandarin-simplified-v1-char-5dfe",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5dfe",
+        "text": "巾",
+        "pinyin": "jīn",
+        "meaning": "towel; general purpose cloth",
+        "characters": [
+          {
+            "id": "C-5DFE",
+            "text": "巾"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-152b024dbfddcc96f20f659a",
+        "text": "学时",
+        "pinyin": "xué shí",
+        "meaning": "class hour",
+        "characters": [
+          {
+            "id": "C-5B66",
+            "text": "学"
+          },
+          {
+            "id": "C-65F6",
+            "text": "时"
+          }
+        ]
+      },
+      {
+        "id": "W1045",
+        "text": "中间",
+        "pinyin": "zhōngjiān",
+        "meaning": "the middle; the inside",
+        "characters": [
+          {
+            "id": "C-4E2D",
+            "text": "中"
+          },
+          {
+            "id": "C-95F4",
+            "text": "间"
+          }
+        ]
+      },
+      {
+        "id": "W1536",
+        "text": "毛巾",
+        "pinyin": "máojīn",
+        "meaning": "towel",
+        "characters": [
+          {
+            "id": "C-6BDB",
+            "text": "毛"
+          },
+          {
+            "id": "C-5DFE",
+            "text": "巾"
+          }
+        ]
+      },
+      {
+        "id": "W4552",
+        "text": "母语",
+        "pinyin": "mǔyǔ",
+        "meaning": "native language; mother tongue",
+        "characters": [
+          {
+            "id": "C-6BCD",
+            "text": "母"
+          },
+          {
+            "id": "C-8BED",
+            "text": "语"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "021f36c6d58ef56c8a8baaf277110b0e87a39ecbe7bdad701991e7bf61017561",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5dfe",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "巾",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5dfe-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1536",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "towel",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "毛巾"
+              },
+              {
+                "value": "máojīn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "mao2jin1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "毛巾",
+              "pinyin": "máojīn",
+              "meaning": "towel",
+              "audio": "66d96c6cba72f5c9156da8d838d09abe8514c462cf30dae30f207fba41a50e1c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5dfe-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5dfe",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "巾",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W4552",
+                "label": "native language; mother tongue",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5dfe",
+                "label": "towel; general purpose cloth",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1045",
+                "label": "the middle; the inside",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5dfe-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "巾",
+        "pinyin": "jīn",
+        "meaning": "towel; general purpose cloth",
+        "source": "/stroke-data/5dfe.json",
+        "reference": {
+          "character": "巾",
+          "sha256": "2071db18db5c1a11c2b1085a54ca6e2766e0b8cd2d9aeef0dd3ee38cb136bf71",
+          "medians": [
+            [
+              [
+                247,
+                561
+              ],
+              [
+                275,
+                538
+              ],
+              [
+                285,
+                493
+              ],
+              [
+                284,
+                386
+              ],
+              [
+                270,
+                280
+              ],
+              [
+                269,
+                221
+              ]
+            ],
+            [
+              [
+                307,
+                550
+              ],
+              [
+                324,
+                539
+              ],
+              [
+                604,
+                584
+              ],
+              [
+                674,
+                591
+              ],
+              [
+                721,
+                583
+              ],
+              [
+                741,
+                567
+              ],
+              [
+                743,
+                556
+              ],
+              [
+                746,
+                314
+              ],
+              [
+                725,
+                274
+              ],
+              [
+                616,
+                309
+              ]
+            ],
+            [
+              [
+                456,
+                803
+              ],
+              [
+                469,
+                803
+              ],
+              [
+                494,
+                788
+              ],
+              [
+                521,
+                759
+              ],
+              [
+                511,
+                592
+              ],
+              [
+                503,
+                -37
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5dfe-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-152b024dbfddcc96f20f659a",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "class hour",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "学时"
+              },
+              {
+                "value": "xué shí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xue2shi2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "学时",
+              "pinyin": "xué shí",
+              "meaning": "class hour",
+              "audio": "9c3c6aa3e251daa589d9a69859e7c0f63b7c8d6b3dab25269cefee5563ffd1c8",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5dfe-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5dfe",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "towel; general purpose cloth",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "巾"
+              },
+              {
+                "value": "jīn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jin1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "巾",
+              "pinyin": "jīn",
+              "meaning": "towel; general purpose cloth",
+              "audio": "8884685c07aace05bd1fd01a9d7af9a31632416fde790effa6acfe595b0a1c5d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "8884685c07aace05bd1fd01a9d7af9a31632416fde790effa6acfe595b0a1c5d"
+            ],
+            "transcript": [
+              {
+                "text": "巾",
+                "pinyin": "jīn",
+                "meaning": "towel; general purpose cloth",
+                "audio": "8884685c07aace05bd1fd01a9d7af9a31632416fde790effa6acfe595b0a1c5d",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5DFE",
+      "character": "巾",
+      "lessonIds": [
+        "LESSON-C-5DFE"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5dfe-word",
+        "EX-CHAR-char-5dfe-recognize",
+        "EX-CHAR-char-5dfe-write",
+        "EX-CHAR-char-5dfe-familiar",
+        "EX-CHAR-char-5dfe-recall"
+      ]
+    },
+    "audio": {
+      "8884685c07aace05bd1fd01a9d7af9a31632416fde790effa6acfe595b0a1c5d": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-2ec761e3afda54ac4cab6fb37f986cb225d305dc7c6b24a8ae6e5314a60efafb.mp3",
+          "sha256": "2ec761e3afda54ac4cab6fb37f986cb225d305dc7c6b24a8ae6e5314a60efafb",
+          "byteLength": 7245,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "2ec761e3afda54ac4cab6fb37f986cb225d305dc7c6b24a8ae6e5314a60efafb",
+            "text": "巾",
+            "words": [
+              {
+                "text": "巾",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-c195e31c15bc5a26effe7ab40401a9cc3db0b99b9443ea94b7bbb5c76725d06a.mp3",
+          "sha256": "c195e31c15bc5a26effe7ab40401a9cc3db0b99b9443ea94b7bbb5c76725d06a",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "c195e31c15bc5a26effe7ab40401a9cc3db0b99b9443ea94b7bbb5c76725d06a",
+            "text": "巾",
+            "words": [
+              {
+                "text": "巾",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "9c3c6aa3e251daa589d9a69859e7c0f63b7c8d6b3dab25269cefee5563ffd1c8": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/603a312065d2ec8246888f0ae2da355be2c65dd45458c3854cfbbaa870a5da6b.mp3",
+          "sha256": "603a312065d2ec8246888f0ae2da355be2c65dd45458c3854cfbbaa870a5da6b",
+          "byteLength": 16749,
+          "readAlong": {
+            "audioSha256": "603a312065d2ec8246888f0ae2da355be2c65dd45458c3854cfbbaa870a5da6b",
+            "text": "学时",
+            "words": [
+              {
+                "text": "学时",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5b575a01b0e2c245cfecbd9ea634b2ef0ff10c1245b1116f676835fbf6824632.mp3",
+          "sha256": "5b575a01b0e2c245cfecbd9ea634b2ef0ff10c1245b1116f676835fbf6824632",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "5b575a01b0e2c245cfecbd9ea634b2ef0ff10c1245b1116f676835fbf6824632",
+            "text": "学时",
+            "words": [
+              {
+                "text": "学时",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "51105ad7672a3ff65d5357502b8e2c28f9ff88437d013173e13a1bd0eff8b700": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-e0704ef997702de34ae50031c7370e34d577ffe5f14b647111fc575997952a86.mp3",
+          "sha256": "e0704ef997702de34ae50031c7370e34d577ffe5f14b647111fc575997952a86",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "e0704ef997702de34ae50031c7370e34d577ffe5f14b647111fc575997952a86",
+            "text": "中间",
+            "words": [
+              {
+                "text": "中间",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-a9b6d8a668b8fbac61daad1488eb00802c3b1165f2f48ac3fe38378270324b3a.mp3",
+          "sha256": "a9b6d8a668b8fbac61daad1488eb00802c3b1165f2f48ac3fe38378270324b3a",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "a9b6d8a668b8fbac61daad1488eb00802c3b1165f2f48ac3fe38378270324b3a",
+            "text": "中间",
+            "words": [
+              {
+                "text": "中间",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "66d96c6cba72f5c9156da8d838d09abe8514c462cf30dae30f207fba41a50e1c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-115c099863812cce5d2c41200776caf21fe43f3c956f227441b6e0be57ab457d.mp3",
+          "sha256": "115c099863812cce5d2c41200776caf21fe43f3c956f227441b6e0be57ab457d",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "115c099863812cce5d2c41200776caf21fe43f3c956f227441b6e0be57ab457d",
+            "text": "毛巾",
+            "words": [
+              {
+                "text": "毛巾",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d4a030156a74f399c6c782611e80fdf291232cf97ac647fbaac37a3b76da16c0.mp3",
+          "sha256": "d4a030156a74f399c6c782611e80fdf291232cf97ac647fbaac37a3b76da16c0",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "d4a030156a74f399c6c782611e80fdf291232cf97ac647fbaac37a3b76da16c0",
+            "text": "毛巾",
+            "words": [
+              {
+                "text": "毛巾",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "6f398dda9ab4ad0593e7ea9240e3c3b6b3d7c453bc44f415dcab135b39a02bd4": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f45562780edbeba2e815799b290228a696172f82ec3ed3aba011408a6af6845c.mp3",
+          "sha256": "f45562780edbeba2e815799b290228a696172f82ec3ed3aba011408a6af6845c",
+          "byteLength": 15597,
+          "readAlong": {
+            "audioSha256": "f45562780edbeba2e815799b290228a696172f82ec3ed3aba011408a6af6845c",
+            "text": "母语",
+            "words": [
+              {
+                "text": "母语",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-1f81f57e3461a31304e18145ee424e890da805178f2bf2ae80e3b6e63b1e4b38.mp3",
+          "sha256": "1f81f57e3461a31304e18145ee424e890da805178f2bf2ae80e3b6e63b1e4b38",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "1f81f57e3461a31304e18145ee424e890da805178f2bf2ae80e3b6e63b1e4b38",
+            "text": "母语",
+            "words": [
+              {
+                "text": "母语",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

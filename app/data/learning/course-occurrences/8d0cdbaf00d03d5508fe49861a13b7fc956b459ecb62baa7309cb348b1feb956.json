@@ -1,0 +1,813 @@
+{
+  "id": "EX-CHAR-char-66ff",
+  "revision": 2,
+  "unit": "U5-16-P01",
+  "stage": "ST-HSK5",
+  "after": "S-U5-16-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "替",
+  "sourceBlockId": "mandarin-simplified-v1-char-66ff",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-841ff527a08de66865e96aef",
+        "text": "体面",
+        "pinyin": "tǐ miàn",
+        "meaning": "dignity",
+        "characters": [
+          {
+            "id": "C-4F53",
+            "text": "体"
+          },
+          {
+            "id": "C-9762",
+            "text": "面"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d1a81e4d789551c0cbc32c68",
+        "text": "乘车",
+        "pinyin": "chéng chē",
+        "meaning": "to ride (in a car or carriage)",
+        "characters": [
+          {
+            "id": "C-4E58",
+            "text": "乘"
+          },
+          {
+            "id": "C-8F66",
+            "text": "车"
+          }
+        ]
+      },
+      {
+        "id": "W0410",
+        "text": "好玩儿",
+        "pinyin": "hǎowánr",
+        "meaning": "fun; enjoyable",
+        "characters": [
+          {
+            "id": "C-597D",
+            "text": "好"
+          },
+          {
+            "id": "C-73A9",
+            "text": "玩"
+          },
+          {
+            "id": "C-513F",
+            "text": "儿"
+          }
+        ]
+      },
+      {
+        "id": "W2260",
+        "text": "代替",
+        "pinyin": "dàitì",
+        "meaning": "to replace; to take the place of",
+        "characters": [
+          {
+            "id": "C-4EE3",
+            "text": "代"
+          },
+          {
+            "id": "C-66FF",
+            "text": "替"
+          }
+        ]
+      },
+      {
+        "id": "W3144",
+        "text": "替",
+        "pinyin": "tì",
+        "meaning": "to substitute for; to take the place of",
+        "characters": [
+          {
+            "id": "C-66FF",
+            "text": "替"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "93b2d06a158eda3a47be16e4fd50eae6ebb4138b510c43252237949b61604983",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-66ff",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "替",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-66ff-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W2260",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to replace; to take the place of",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "代替"
+              },
+              {
+                "value": "dàitì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "dai4ti4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "代替",
+              "pinyin": "dàitì",
+              "meaning": "to replace; to take the place of",
+              "audio": "986c11a91cff6f77d9c0a624f47d588e7dc866a7f15d8c4ed86cb816cd1c26b2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-66ff-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W3144",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "替",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-841ff527a08de66865e96aef",
+                "label": "dignity",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W3144",
+                "label": "to substitute for; to take the place of",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0410",
+                "label": "fun; enjoyable",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-66ff-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "替",
+        "pinyin": "tì",
+        "meaning": "to substitute for; to take the place of",
+        "source": "/stroke-data/66ff.json",
+        "reference": {
+          "character": "替",
+          "sha256": "e7fd8ba51830270b12aefbc39143c3f78f1957d0d7e5139ddbb6e2358d10b176",
+          "medians": [
+            [
+              [
+                208,
+                659
+              ],
+              [
+                271,
+                656
+              ],
+              [
+                404,
+                687
+              ],
+              [
+                456,
+                689
+              ]
+            ],
+            [
+              [
+                114,
+                505
+              ],
+              [
+                138,
+                499
+              ],
+              [
+                185,
+                502
+              ],
+              [
+                392,
+                558
+              ],
+              [
+                434,
+                564
+              ],
+              [
+                459,
+                561
+              ]
+            ],
+            [
+              [
+                310,
+                808
+              ],
+              [
+                349,
+                778
+              ],
+              [
+                345,
+                631
+              ],
+              [
+                329,
+                538
+              ],
+              [
+                301,
+                458
+              ],
+              [
+                264,
+                396
+              ],
+              [
+                215,
+                339
+              ],
+              [
+                130,
+                273
+              ]
+            ],
+            [
+              [
+                333,
+                461
+              ],
+              [
+                397,
+                420
+              ],
+              [
+                422,
+                383
+              ]
+            ],
+            [
+              [
+                531,
+                693
+              ],
+              [
+                553,
+                688
+              ],
+              [
+                605,
+                693
+              ],
+              [
+                738,
+                731
+              ],
+              [
+                777,
+                731
+              ]
+            ],
+            [
+              [
+                511,
+                569
+              ],
+              [
+                554,
+                570
+              ],
+              [
+                765,
+                613
+              ],
+              [
+                802,
+                614
+              ],
+              [
+                845,
+                605
+              ]
+            ],
+            [
+              [
+                602,
+                842
+              ],
+              [
+                639,
+                804
+              ],
+              [
+                631,
+                680
+              ],
+              [
+                617,
+                593
+              ],
+              [
+                599,
+                530
+              ],
+              [
+                575,
+                476
+              ],
+              [
+                520,
+                398
+              ],
+              [
+                480,
+                362
+              ],
+              [
+                434,
+                336
+              ]
+            ],
+            [
+              [
+                635,
+                548
+              ],
+              [
+                637,
+                533
+              ],
+              [
+                700,
+                467
+              ],
+              [
+                809,
+                374
+              ],
+              [
+                888,
+                357
+              ],
+              [
+                947,
+                355
+              ]
+            ],
+            [
+              [
+                320,
+                297
+              ],
+              [
+                341,
+                278
+              ],
+              [
+                352,
+                250
+              ],
+              [
+                355,
+                122
+              ],
+              [
+                344,
+                20
+              ],
+              [
+                347,
+                -24
+              ]
+            ],
+            [
+              [
+                363,
+                288
+              ],
+              [
+                398,
+                279
+              ],
+              [
+                600,
+                321
+              ],
+              [
+                627,
+                305
+              ],
+              [
+                647,
+                284
+              ],
+              [
+                648,
+                47
+              ],
+              [
+                641,
+                6
+              ],
+              [
+                634,
+                -5
+              ],
+              [
+                568,
+                14
+              ]
+            ],
+            [
+              [
+                383,
+                140
+              ],
+              [
+                394,
+                150
+              ],
+              [
+                457,
+                162
+              ],
+              [
+                521,
+                170
+              ],
+              [
+                557,
+                163
+              ]
+            ],
+            [
+              [
+                374,
+                9
+              ],
+              [
+                398,
+                26
+              ],
+              [
+                503,
+                38
+              ],
+              [
+                569,
+                39
+              ],
+              [
+                591,
+                30
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-66ff-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-d1a81e4d789551c0cbc32c68",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to ride (in a car or carriage)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "乘车"
+              },
+              {
+                "value": "chéng chē",
+                "mode": "pinyin"
+              },
+              {
+                "value": "cheng2che1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "乘车",
+              "pinyin": "chéng chē",
+              "meaning": "to ride (in a car or carriage)",
+              "audio": "3a7e9a73a06363358d68f166b0669ab3aefad87f661c584865659865c6a6af51",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-66ff-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W3144",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to substitute for; to take the place of",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "替"
+              },
+              {
+                "value": "tì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ti4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "替",
+              "pinyin": "tì",
+              "meaning": "to substitute for; to take the place of",
+              "audio": "27c7f35f21524dfe07eb783f6b2112f38a57e36d2d240f181fa7d460d5e63131",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "27c7f35f21524dfe07eb783f6b2112f38a57e36d2d240f181fa7d460d5e63131"
+            ],
+            "transcript": [
+              {
+                "text": "替",
+                "pinyin": "tì",
+                "meaning": "to substitute for; to take the place of",
+                "audio": "27c7f35f21524dfe07eb783f6b2112f38a57e36d2d240f181fa7d460d5e63131",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-66FF",
+      "character": "替",
+      "lessonIds": [
+        "LESSON-C-66FF"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-66ff-word",
+        "EX-CHAR-char-66ff-recognize",
+        "EX-CHAR-char-66ff-write",
+        "EX-CHAR-char-66ff-familiar",
+        "EX-CHAR-char-66ff-recall"
+      ]
+    },
+    "audio": {
+      "3e42b2be496c472672dcc7fa573e77e9c88b0c2a6d06f5f21cec87e5c783d4e5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b0f3b3ed43da5e84c2496e8ee71d01871dc423a43995638fc6e88ccc5aef53e7.mp3",
+          "sha256": "b0f3b3ed43da5e84c2496e8ee71d01871dc423a43995638fc6e88ccc5aef53e7",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "b0f3b3ed43da5e84c2496e8ee71d01871dc423a43995638fc6e88ccc5aef53e7",
+            "text": "体面",
+            "words": [
+              {
+                "text": "体面",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d5b94c0c08482cd42cc04a17b79e27e3dd26712ff282bfa1feeb5178f705ecb1.mp3",
+          "sha256": "d5b94c0c08482cd42cc04a17b79e27e3dd26712ff282bfa1feeb5178f705ecb1",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "d5b94c0c08482cd42cc04a17b79e27e3dd26712ff282bfa1feeb5178f705ecb1",
+            "text": "体面",
+            "words": [
+              {
+                "text": "体面",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "3a7e9a73a06363358d68f166b0669ab3aefad87f661c584865659865c6a6af51": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-00bba934306fb3920832ec3d903f5ba4a6203729822946daea4d51ef47d2a373.mp3",
+          "sha256": "00bba934306fb3920832ec3d903f5ba4a6203729822946daea4d51ef47d2a373",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "00bba934306fb3920832ec3d903f5ba4a6203729822946daea4d51ef47d2a373",
+            "text": "乘车",
+            "words": [
+              {
+                "text": "乘车",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-2b72dade28c757fc4f547c948e4a3d0ed9a149bb790d90a1395774a691130779.mp3",
+          "sha256": "2b72dade28c757fc4f547c948e4a3d0ed9a149bb790d90a1395774a691130779",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "2b72dade28c757fc4f547c948e4a3d0ed9a149bb790d90a1395774a691130779",
+            "text": "乘车",
+            "words": [
+              {
+                "text": "乘车",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "f584441aa40d972027bd75a01ad5495a60d2fae27f132fdb73f71ccefd267ca9": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/743770b4465740cd1ddea053d88f90fefac5b836f1508760e235345f5f102ec0.mp3",
+          "sha256": "743770b4465740cd1ddea053d88f90fefac5b836f1508760e235345f5f102ec0",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "743770b4465740cd1ddea053d88f90fefac5b836f1508760e235345f5f102ec0",
+            "text": "好玩儿",
+            "words": [
+              {
+                "text": "好玩儿",
+                "start": 0.09,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/95643eec7d44f83d1ce40f181a37e3dcb58e747d42e50e20ac0103ac5af9fb59.mp3",
+          "sha256": "95643eec7d44f83d1ce40f181a37e3dcb58e747d42e50e20ac0103ac5af9fb59",
+          "byteLength": 15597,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "95643eec7d44f83d1ce40f181a37e3dcb58e747d42e50e20ac0103ac5af9fb59",
+            "text": "好玩儿",
+            "words": [
+              {
+                "text": "好玩儿",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "986c11a91cff6f77d9c0a624f47d588e7dc866a7f15d8c4ed86cb816cd1c26b2": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-59b6beabe9b33b198ff2a5fc6bfec356ff92512e85b3fda44150c90492e591df.mp3",
+          "sha256": "59b6beabe9b33b198ff2a5fc6bfec356ff92512e85b3fda44150c90492e591df",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "59b6beabe9b33b198ff2a5fc6bfec356ff92512e85b3fda44150c90492e591df",
+            "text": "代替",
+            "words": [
+              {
+                "text": "代替",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-40d0a64719f46a6dc9449a733c70d2d8dc81d3ea94367eea70e07f83b5208d3d.mp3",
+          "sha256": "40d0a64719f46a6dc9449a733c70d2d8dc81d3ea94367eea70e07f83b5208d3d",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "40d0a64719f46a6dc9449a733c70d2d8dc81d3ea94367eea70e07f83b5208d3d",
+            "text": "代替",
+            "words": [
+              {
+                "text": "代替",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "27c7f35f21524dfe07eb783f6b2112f38a57e36d2d240f181fa7d460d5e63131": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b3ade4b3f60272851b350a3918841823abdbe5b7b4af32774e53005ed3049e91.mp3",
+          "sha256": "b3ade4b3f60272851b350a3918841823abdbe5b7b4af32774e53005ed3049e91",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "b3ade4b3f60272851b350a3918841823abdbe5b7b4af32774e53005ed3049e91",
+            "text": "替",
+            "words": [
+              {
+                "text": "替",
+                "start": 0.26,
+                "end": 0.34
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-a476ee581655d95bb7b0de45a2419201814e477b5056ee8140cce2885bcdd388.mp3",
+          "sha256": "a476ee581655d95bb7b0de45a2419201814e477b5056ee8140cce2885bcdd388",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "a476ee581655d95bb7b0de45a2419201814e477b5056ee8140cce2885bcdd388",
+            "text": "替",
+            "words": [
+              {
+                "text": "替",
+                "start": 0.22,
+                "end": 0.32
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

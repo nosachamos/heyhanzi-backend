@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0462",
+  "targetId": "W0462",
+  "steps": [
+    {
+      "id": "BANK-W0462-W0462",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0462-W0462",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "fruit",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "水果"
+            },
+            {
+              "value": "shuǐguǒ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shui3guo3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "水果",
+            "pinyin": "shuǐguǒ",
+            "meaning": "fruit",
+            "singleWord": true,
+            "audio": "ab7fc9fd639ad25c0897cec1f2dfe1d0402a2226c6eb355ff28b2a22edf2c8a8"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ab7fc9fd639ad25c0897cec1f2dfe1d0402a2226c6eb355ff28b2a22edf2c8a8": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-bfee05a30d0b47215a2d5f292d98c62224b51b6e766459c44d2ba67d898cc80d.mp3",
+        "sha256": "bfee05a30d0b47215a2d5f292d98c62224b51b6e766459c44d2ba67d898cc80d",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "bfee05a30d0b47215a2d5f292d98c62224b51b6e766459c44d2ba67d898cc80d",
+          "text": "水果",
+          "words": [
+            {
+              "text": "水果",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-4884923bc656504f001068b6543f80ab9b5cf6e8de7c14cc38589e47bace6874.mp3",
+        "sha256": "4884923bc656504f001068b6543f80ab9b5cf6e8de7c14cc38589e47bace6874",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "4884923bc656504f001068b6543f80ab9b5cf6e8de7c14cc38589e47bace6874",
+          "text": "水果",
+          "words": [
+            {
+              "text": "水果",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0462",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0462-W0462",
+      "question_ids": [
+        "BANK-W0462-W0462"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U08-P01",
+    "stepId": "S-U08-words-r4-31",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-679c"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,711 @@
+{
+  "id": "EX-CHAR-char-73a9",
+  "revision": 2,
+  "unit": "U08-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U08-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "玩",
+  "sourceBlockId": "mandarin-simplified-v1-char-73a9",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-0552245c8f008174f8085752",
+        "text": "玩儿",
+        "pinyin": "wán r",
+        "meaning": "to play",
+        "characters": [
+          {
+            "id": "C-73A9",
+            "text": "玩"
+          },
+          {
+            "id": "C-513F",
+            "text": "儿"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-9ff59e096c797ca5110d3a8a",
+        "text": "再说",
+        "pinyin": "zàishuō",
+        "meaning": "to say again; to put off a discussion until later",
+        "characters": [
+          {
+            "id": "C-518D",
+            "text": "再"
+          },
+          {
+            "id": "C-8BF4",
+            "text": "说"
+          }
+        ]
+      },
+      {
+        "id": "W0180",
+        "text": "做饭",
+        "pinyin": "zuòfàn",
+        "meaning": "to prepare a meal; to cook",
+        "characters": [
+          {
+            "id": "C-505A",
+            "text": "做"
+          },
+          {
+            "id": "C-996D",
+            "text": "饭"
+          }
+        ]
+      },
+      {
+        "id": "W0474",
+        "text": "玩",
+        "pinyin": "wán",
+        "meaning": "to play; to have fun",
+        "characters": [
+          {
+            "id": "C-73A9",
+            "text": "玩"
+          }
+        ]
+      },
+      {
+        "id": "W0822",
+        "text": "姐妹",
+        "pinyin": "jiěmèi",
+        "meaning": "sisters; siblings",
+        "characters": [
+          {
+            "id": "C-59D0",
+            "text": "姐"
+          },
+          {
+            "id": "C-59B9",
+            "text": "妹"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "505a8b6bf29d9a2b15379ffc212f23155bc9bad17d85607e15259f0d23faaa6a",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-73a9",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "玩",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-73a9-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-0552245c8f008174f8085752",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to play",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "玩儿"
+              },
+              {
+                "value": "wán r",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wanr2",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wan2r",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "玩儿",
+              "pinyin": "wán r",
+              "meaning": "to play",
+              "audio": "be732e74109c3de5ae5da82adca4ceec2d153aa4cda81ed56c29a92f6ffa1044",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-73a9-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0474",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "玩",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-9ff59e096c797ca5110d3a8a",
+                "label": "to say again; to put off a discussion until later",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0180",
+                "label": "to prepare a meal; to cook",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0474",
+                "label": "to play; to have fun",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-73a9-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "玩",
+        "pinyin": "wán",
+        "meaning": "to play; to have fun",
+        "source": "/stroke-data/73a9.json",
+        "reference": {
+          "character": "玩",
+          "sha256": "ed673526712e1a82b97354f32f0c2b97582e25f6caf3d3132d58a83e1cf4c50d",
+          "medians": [
+            [
+              [
+                167,
+                655
+              ],
+              [
+                212,
+                653
+              ],
+              [
+                248,
+                659
+              ],
+              [
+                350,
+                697
+              ],
+              [
+                398,
+                705
+              ],
+              [
+                414,
+                701
+              ]
+            ],
+            [
+              [
+                157,
+                435
+              ],
+              [
+                229,
+                444
+              ],
+              [
+                324,
+                482
+              ],
+              [
+                379,
+                490
+              ]
+            ],
+            [
+              [
+                256,
+                631
+              ],
+              [
+                287,
+                607
+              ],
+              [
+                278,
+                281
+              ],
+              [
+                260,
+                257
+              ]
+            ],
+            [
+              [
+                106,
+                184
+              ],
+              [
+                163,
+                174
+              ],
+              [
+                404,
+                302
+              ]
+            ],
+            [
+              [
+                503,
+                687
+              ],
+              [
+                536,
+                684
+              ],
+              [
+                575,
+                691
+              ],
+              [
+                696,
+                731
+              ],
+              [
+                759,
+                738
+              ]
+            ],
+            [
+              [
+                432,
+                484
+              ],
+              [
+                490,
+                485
+              ],
+              [
+                590,
+                514
+              ],
+              [
+                764,
+                551
+              ],
+              [
+                814,
+                551
+              ],
+              [
+                847,
+                544
+              ]
+            ],
+            [
+              [
+                510,
+                432
+              ],
+              [
+                531,
+                395
+              ],
+              [
+                503,
+                307
+              ],
+              [
+                476,
+                253
+              ],
+              [
+                431,
+                189
+              ],
+              [
+                378,
+                134
+              ],
+              [
+                276,
+                60
+              ]
+            ],
+            [
+              [
+                619,
+                490
+              ],
+              [
+                652,
+                467
+              ],
+              [
+                643,
+                266
+              ],
+              [
+                651,
+                187
+              ],
+              [
+                671,
+                132
+              ],
+              [
+                697,
+                109
+              ],
+              [
+                736,
+                93
+              ],
+              [
+                812,
+                84
+              ],
+              [
+                853,
+                89
+              ],
+              [
+                906,
+                111
+              ],
+              [
+                929,
+                135
+              ],
+              [
+                944,
+                283
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-73a9-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0822",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "sisters; siblings",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "姐妹"
+              },
+              {
+                "value": "jiěmèi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jie3mei4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "姐妹",
+              "pinyin": "jiěmèi",
+              "meaning": "sisters; siblings",
+              "audio": "0f6f6b1a97d7ddcb848c2d6c151c92c5267377612d9423f488f0c4798e6fab5b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-73a9-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0474",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to play; to have fun",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "玩"
+              },
+              {
+                "value": "wán",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wan2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "玩",
+              "pinyin": "wán",
+              "meaning": "to play; to have fun",
+              "audio": "69b1eda73c66881699864b1518db6f5e8027291bcd91cbbe913078ac3dff0c91",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "69b1eda73c66881699864b1518db6f5e8027291bcd91cbbe913078ac3dff0c91"
+            ],
+            "transcript": [
+              {
+                "text": "玩",
+                "pinyin": "wán",
+                "meaning": "to play; to have fun",
+                "audio": "69b1eda73c66881699864b1518db6f5e8027291bcd91cbbe913078ac3dff0c91",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-73A9",
+      "character": "玩",
+      "lessonIds": [
+        "LESSON-C-73A9"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-73a9-word",
+        "EX-CHAR-char-73a9-recognize",
+        "EX-CHAR-char-73a9-write",
+        "EX-CHAR-char-73a9-familiar",
+        "EX-CHAR-char-73a9-recall"
+      ]
+    },
+    "audio": {
+      "be732e74109c3de5ae5da82adca4ceec2d153aa4cda81ed56c29a92f6ffa1044": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/33621c696070a6cca8796eb8b6bce2cb806c83e5aa813f75936123c035a1a6d0.mp3",
+          "sha256": "33621c696070a6cca8796eb8b6bce2cb806c83e5aa813f75936123c035a1a6d0",
+          "byteLength": 11565,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "33621c696070a6cca8796eb8b6bce2cb806c83e5aa813f75936123c035a1a6d0",
+            "text": "玩儿",
+            "words": [
+              {
+                "text": "玩儿",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/48b77b6f749d68e952df0c23df65960294a80028b1b3a9835056c79879c286e4.mp3",
+          "sha256": "48b77b6f749d68e952df0c23df65960294a80028b1b3a9835056c79879c286e4",
+          "byteLength": 11565,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "48b77b6f749d68e952df0c23df65960294a80028b1b3a9835056c79879c286e4",
+            "text": "玩儿",
+            "words": [
+              {
+                "text": "玩儿",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "64aef8342f7ce1f7462e5665ddaaf1008f93aec8f247b5c2b6b9e078d7a2479d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-fea9170b26431ff2980f4a2d96ef94c148825e2da1f6d6ca21fcfa8dd5a0b53f.mp3",
+          "sha256": "fea9170b26431ff2980f4a2d96ef94c148825e2da1f6d6ca21fcfa8dd5a0b53f",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "fea9170b26431ff2980f4a2d96ef94c148825e2da1f6d6ca21fcfa8dd5a0b53f",
+            "text": "再说",
+            "words": [
+              {
+                "text": "再说",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-74cdf7ca19d09f42028855089b288a275cb1b0ec781dade357073c9925d976d1.mp3",
+          "sha256": "74cdf7ca19d09f42028855089b288a275cb1b0ec781dade357073c9925d976d1",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "74cdf7ca19d09f42028855089b288a275cb1b0ec781dade357073c9925d976d1",
+            "text": "再说",
+            "words": [
+              {
+                "text": "再说",
+                "start": 0.03,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "4e8ecb983864695be86b09041e81b96cc6188762c87e5f128368d8e2492eeae6": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b9ffda3cc15ab178bfaed2b756b1e005f9be5e132be07b85d0abb0ba8a0298e3.mp3",
+          "sha256": "b9ffda3cc15ab178bfaed2b756b1e005f9be5e132be07b85d0abb0ba8a0298e3",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "b9ffda3cc15ab178bfaed2b756b1e005f9be5e132be07b85d0abb0ba8a0298e3",
+            "text": "做饭",
+            "words": [
+              {
+                "text": "做饭",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-005ef32da0270ab2ded7df8b39dfbb8c7dc758f10aec112f2c46b820907663b1.mp3",
+          "sha256": "005ef32da0270ab2ded7df8b39dfbb8c7dc758f10aec112f2c46b820907663b1",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "005ef32da0270ab2ded7df8b39dfbb8c7dc758f10aec112f2c46b820907663b1",
+            "text": "做饭",
+            "words": [
+              {
+                "text": "做饭",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "69b1eda73c66881699864b1518db6f5e8027291bcd91cbbe913078ac3dff0c91": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-be5b9a3faa6fc0634db7ba1807ec03819f26df9a8ec4c91e42518f1174ce3ee8.mp3",
+          "sha256": "be5b9a3faa6fc0634db7ba1807ec03819f26df9a8ec4c91e42518f1174ce3ee8",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "be5b9a3faa6fc0634db7ba1807ec03819f26df9a8ec4c91e42518f1174ce3ee8",
+            "text": "玩",
+            "words": [
+              {
+                "text": "玩",
+                "start": 0.22,
+                "end": 0.32
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-834e2395e30a6d957b536db170933bc7d341cc3cc2cdc9eae3b41488ede98f34.mp3",
+          "sha256": "834e2395e30a6d957b536db170933bc7d341cc3cc2cdc9eae3b41488ede98f34",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "834e2395e30a6d957b536db170933bc7d341cc3cc2cdc9eae3b41488ede98f34",
+            "text": "玩",
+            "words": [
+              {
+                "text": "玩",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "0f6f6b1a97d7ddcb848c2d6c151c92c5267377612d9423f488f0c4798e6fab5b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-8bd6270a45e98aae17673423a209c2f52b33d60f0b6dd24810d28ae4d72b686d.mp3",
+          "sha256": "8bd6270a45e98aae17673423a209c2f52b33d60f0b6dd24810d28ae4d72b686d",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "8bd6270a45e98aae17673423a209c2f52b33d60f0b6dd24810d28ae4d72b686d",
+            "text": "姐妹",
+            "words": [
+              {
+                "text": "姐妹",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f3ae116696dc00903e5c476e2d34027cf4bf4cf15545f8cff0183f18fdf3dc92.mp3",
+          "sha256": "f3ae116696dc00903e5c476e2d34027cf4bf4cf15545f8cff0183f18fdf3dc92",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "f3ae116696dc00903e5c476e2d34027cf4bf4cf15545f8cff0183f18fdf3dc92",
+            "text": "姐妹",
+            "words": [
+              {
+                "text": "姐妹",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,761 @@
+{
+  "id": "EX-CHAR-char-7edf",
+  "revision": 2,
+  "unit": "U5-27",
+  "stage": "ST-HSK5",
+  "after": "S-U5-27-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "统",
+  "sourceBlockId": "mandarin-simplified-v1-char-7edf",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7edf",
+        "text": "统",
+        "pinyin": "tǒng",
+        "meaning": "to gather; to unite",
+        "characters": [
+          {
+            "id": "C-7EDF",
+            "text": "统"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-5515c81056a4ad457db2e4a8",
+        "text": "统一",
+        "pinyin": "tǒngyī",
+        "meaning": "to unify; to integrate; unified; integrated",
+        "characters": [
+          {
+            "id": "C-7EDF",
+            "text": "统"
+          },
+          {
+            "id": "C-4E00",
+            "text": "一"
+          }
+        ]
+      },
+      {
+        "id": "W1592",
+        "text": "皮鞋",
+        "pinyin": "píxié",
+        "meaning": "leather shoes",
+        "characters": [
+          {
+            "id": "C-76AE",
+            "text": "皮"
+          },
+          {
+            "id": "C-978B",
+            "text": "鞋"
+          }
+        ]
+      },
+      {
+        "id": "W2145",
+        "text": "超速",
+        "pinyin": "chāosù",
+        "meaning": "to exceed the speed limit; to speed",
+        "characters": [
+          {
+            "id": "C-8D85",
+            "text": "超"
+          },
+          {
+            "id": "C-901F",
+            "text": "速"
+          }
+        ]
+      },
+      {
+        "id": "W2428",
+        "text": "根本",
+        "pinyin": "gēnběn",
+        "meaning": "fundamental; basic; not at all (emphatic negation)",
+        "characters": [
+          {
+            "id": "C-6839",
+            "text": "根"
+          },
+          {
+            "id": "C-672C",
+            "text": "本"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "e23f3fec473505957620f833bff8d0cb716c3cd2699573e55944954a335bcc3e",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7edf",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "统",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7edf-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-5515c81056a4ad457db2e4a8",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to unify; to integrate",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "统一"
+              },
+              {
+                "value": "tǒngyī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tong3yi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "统一",
+              "pinyin": "tǒngyī",
+              "meaning": "to unify; to integrate",
+              "audio": "dae7a625fb970b47b6921f6c5596264a5c14924d1196d251627ee0a828c55b37",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7edf-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7edf",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "统",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W2428",
+                "label": "fundamental; basic",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W2145",
+                "label": "to exceed the speed limit; to speed",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-7edf",
+                "label": "to gather; to unite",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7edf-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "统",
+        "pinyin": "tǒng",
+        "meaning": "to gather; to unite",
+        "source": "/stroke-data/7edf.json",
+        "reference": {
+          "character": "统",
+          "sha256": "37f5199d1b8c9af7efa42ba77cc91cdf217dd205b39164551fe60d5571fa2967",
+          "medians": [
+            [
+              [
+                266,
+                792
+              ],
+              [
+                282,
+                775
+              ],
+              [
+                296,
+                742
+              ],
+              [
+                236,
+                633
+              ],
+              [
+                166,
+                525
+              ],
+              [
+                150,
+                484
+              ],
+              [
+                177,
+                479
+              ],
+              [
+                247,
+                482
+              ],
+              [
+                271,
+                485
+              ],
+              [
+                285,
+                495
+              ]
+            ],
+            [
+              [
+                368,
+                631
+              ],
+              [
+                387,
+                593
+              ],
+              [
+                299,
+                470
+              ],
+              [
+                206,
+                359
+              ],
+              [
+                200,
+                326
+              ],
+              [
+                235,
+                323
+              ],
+              [
+                374,
+                365
+              ]
+            ],
+            [
+              [
+                106,
+                135
+              ],
+              [
+                158,
+                127
+              ],
+              [
+                402,
+                252
+              ]
+            ],
+            [
+              [
+                565,
+                809
+              ],
+              [
+                651,
+                765
+              ],
+              [
+                679,
+                730
+              ]
+            ],
+            [
+              [
+                465,
+                605
+              ],
+              [
+                475,
+                600
+              ],
+              [
+                528,
+                602
+              ],
+              [
+                645,
+                626
+              ],
+              [
+                748,
+                656
+              ],
+              [
+                790,
+                655
+              ]
+            ],
+            [
+              [
+                547,
+                580
+              ],
+              [
+                577,
+                556
+              ],
+              [
+                551,
+                501
+              ],
+              [
+                499,
+                431
+              ],
+              [
+                489,
+                402
+              ],
+              [
+                521,
+                399
+              ],
+              [
+                663,
+                444
+              ],
+              [
+                705,
+                454
+              ],
+              [
+                717,
+                448
+              ]
+            ],
+            [
+              [
+                700,
+                509
+              ],
+              [
+                753,
+                459
+              ],
+              [
+                770,
+                416
+              ]
+            ],
+            [
+              [
+                512,
+                333
+              ],
+              [
+                531,
+                300
+              ],
+              [
+                517,
+                259
+              ],
+              [
+                485,
+                198
+              ],
+              [
+                450,
+                150
+              ],
+              [
+                400,
+                101
+              ],
+              [
+                319,
+                51
+              ]
+            ],
+            [
+              [
+                626,
+                409
+              ],
+              [
+                645,
+                398
+              ],
+              [
+                656,
+                380
+              ],
+              [
+                643,
+                171
+              ],
+              [
+                653,
+                89
+              ],
+              [
+                663,
+                66
+              ],
+              [
+                677,
+                52
+              ],
+              [
+                713,
+                34
+              ],
+              [
+                765,
+                25
+              ],
+              [
+                834,
+                29
+              ],
+              [
+                891,
+                45
+              ],
+              [
+                924,
+                72
+              ],
+              [
+                928,
+                211
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7edf-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1592",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "leather shoes",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "皮鞋"
+              },
+              {
+                "value": "píxié",
+                "mode": "pinyin"
+              },
+              {
+                "value": "pi2xie2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "皮鞋",
+              "pinyin": "píxié",
+              "meaning": "leather shoes",
+              "audio": "8072c9d32aadff84eafa76a5a55bd82f42edeb4635dbd27feec990b71b5ff373",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7edf-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7edf",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to gather; to unite",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "统"
+              },
+              {
+                "value": "tǒng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tong3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "统",
+              "pinyin": "tǒng",
+              "meaning": "to gather; to unite",
+              "audio": "c401a0efe12c4d2b1144eef859bb88b48d63e76ca1ae3f61379fe8a877ffc16d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "c401a0efe12c4d2b1144eef859bb88b48d63e76ca1ae3f61379fe8a877ffc16d"
+            ],
+            "transcript": [
+              {
+                "text": "统",
+                "pinyin": "tǒng",
+                "meaning": "to gather; to unite",
+                "audio": "c401a0efe12c4d2b1144eef859bb88b48d63e76ca1ae3f61379fe8a877ffc16d",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7EDF",
+      "character": "统",
+      "lessonIds": [
+        "LESSON-C-7EDF"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7edf-word",
+        "EX-CHAR-char-7edf-recognize",
+        "EX-CHAR-char-7edf-write",
+        "EX-CHAR-char-7edf-familiar",
+        "EX-CHAR-char-7edf-recall"
+      ]
+    },
+    "audio": {
+      "c401a0efe12c4d2b1144eef859bb88b48d63e76ca1ae3f61379fe8a877ffc16d": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-3562758de90ea3c2aaa15db5c75fb8bfa63d9d30f957371af79691bc10590dd8.mp3",
+          "sha256": "3562758de90ea3c2aaa15db5c75fb8bfa63d9d30f957371af79691bc10590dd8",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "3562758de90ea3c2aaa15db5c75fb8bfa63d9d30f957371af79691bc10590dd8",
+            "text": "统",
+            "words": [
+              {
+                "text": "统",
+                "start": 0.16,
+                "end": 0.26
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-193d84412bbfeefc2461124244218d02987977307d3726272cfff13cc6f2b935.mp3",
+          "sha256": "193d84412bbfeefc2461124244218d02987977307d3726272cfff13cc6f2b935",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "193d84412bbfeefc2461124244218d02987977307d3726272cfff13cc6f2b935",
+            "text": "统",
+            "words": [
+              {
+                "text": "统",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "dae7a625fb970b47b6921f6c5596264a5c14924d1196d251627ee0a828c55b37": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-a19a2dfe4cc4967cd05ff68c56bc3bf061a93f038e0b15d7dce39d7f256c3570.mp3",
+          "sha256": "a19a2dfe4cc4967cd05ff68c56bc3bf061a93f038e0b15d7dce39d7f256c3570",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "a19a2dfe4cc4967cd05ff68c56bc3bf061a93f038e0b15d7dce39d7f256c3570",
+            "text": "统一",
+            "words": [
+              {
+                "text": "统一",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-19fb6745b23ec7ff692d874ad726694fe23130f4b5742c92323aab6c42b96681.mp3",
+          "sha256": "19fb6745b23ec7ff692d874ad726694fe23130f4b5742c92323aab6c42b96681",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "19fb6745b23ec7ff692d874ad726694fe23130f4b5742c92323aab6c42b96681",
+            "text": "统一",
+            "words": [
+              {
+                "text": "统一",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "8072c9d32aadff84eafa76a5a55bd82f42edeb4635dbd27feec990b71b5ff373": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5a09f22638b50e79f7eb5a47f05c49d3eca00a9d784065a9692e977ff30ea8f1.mp3",
+          "sha256": "5a09f22638b50e79f7eb5a47f05c49d3eca00a9d784065a9692e977ff30ea8f1",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "5a09f22638b50e79f7eb5a47f05c49d3eca00a9d784065a9692e977ff30ea8f1",
+            "text": "皮鞋",
+            "words": [
+              {
+                "text": "皮鞋",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/26557718068959468803cb8f02e0b4346e4b9836da4198df3f9014fbd88bde77.mp3",
+          "sha256": "26557718068959468803cb8f02e0b4346e4b9836da4198df3f9014fbd88bde77",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "26557718068959468803cb8f02e0b4346e4b9836da4198df3f9014fbd88bde77",
+            "text": "皮鞋",
+            "words": [
+              {
+                "text": "皮鞋",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "330c538c5dc75fb2fb7d5960f787041d29e13a4e913461b071f757798bce64d1": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a852368c435632de7e820d905cb50288f90afc65e120795e706e5b12d21501cd.mp3",
+          "sha256": "a852368c435632de7e820d905cb50288f90afc65e120795e706e5b12d21501cd",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "a852368c435632de7e820d905cb50288f90afc65e120795e706e5b12d21501cd",
+            "text": "超速",
+            "words": [
+              {
+                "text": "超速",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c6e40404d70b12513a658017d92aa0786aea6fda2499f01a71f5c41eb88e5dd3.mp3",
+          "sha256": "c6e40404d70b12513a658017d92aa0786aea6fda2499f01a71f5c41eb88e5dd3",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "c6e40404d70b12513a658017d92aa0786aea6fda2499f01a71f5c41eb88e5dd3",
+            "text": "超速",
+            "words": [
+              {
+                "text": "超速",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "c989ac07a1b7c6693a17a59c148dd32dc46696652ae008923c23caff4c8a8568": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-84f31a86af95aea1f51f01b50a849e23a28aefad627d88bdfea4b14ecefbea70.mp3",
+          "sha256": "84f31a86af95aea1f51f01b50a849e23a28aefad627d88bdfea4b14ecefbea70",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "84f31a86af95aea1f51f01b50a849e23a28aefad627d88bdfea4b14ecefbea70",
+            "text": "根本",
+            "words": [
+              {
+                "text": "根本",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-00110a5f2ba2b4527805137117d1d5999798a1197f463e6b6afa2e3fcb3b50fe.mp3",
+          "sha256": "00110a5f2ba2b4527805137117d1d5999798a1197f463e6b6afa2e3fcb3b50fe",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "00110a5f2ba2b4527805137117d1d5999798a1197f463e6b6afa2e3fcb3b50fe",
+            "text": "根本",
+            "words": [
+              {
+                "text": "根本",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

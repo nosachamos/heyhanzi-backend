@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0340",
+  "targetId": "W0340",
+  "steps": [
+    {
+      "id": "BANK-W0340-W0340",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0340-W0340",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "sorry",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "对不起"
+            },
+            {
+              "value": "duìbuqǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dui4bu5qi3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "对不起",
+            "pinyin": "duìbuqǐ",
+            "meaning": "sorry",
+            "singleWord": true,
+            "audio": "70793902a26c9a6674a77d286ad9de4025f3b0b0b7c66447408967470dd22456"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "70793902a26c9a6674a77d286ad9de4025f3b0b0b7c66447408967470dd22456": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ee83d5427d7f4cd78e8e43412d373e42eaa40bc1c879f8ccc56a9be4cc53e0d4.mp3",
+        "sha256": "ee83d5427d7f4cd78e8e43412d373e42eaa40bc1c879f8ccc56a9be4cc53e0d4",
+        "byteLength": 16749,
+        "readAlong": {
+          "audioSha256": "ee83d5427d7f4cd78e8e43412d373e42eaa40bc1c879f8ccc56a9be4cc53e0d4",
+          "text": "对不起",
+          "words": [
+            {
+              "text": "对不起",
+              "start": 0.09,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-74d55597f279e2287d282b89109ad9b5f61406189db609405330e050d60e2819.mp3",
+        "sha256": "74d55597f279e2287d282b89109ad9b5f61406189db609405330e050d60e2819",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "74d55597f279e2287d282b89109ad9b5f61406189db609405330e050d60e2819",
+          "text": "对不起",
+          "words": [
+            {
+              "text": "对不起",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0340",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0340-W0340",
+      "question_ids": [
+        "BANK-W0340-W0340"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U01",
+    "stepId": "S-U01-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8d77"
+    ],
+    "grammarLessonIds": []
+  }
+}

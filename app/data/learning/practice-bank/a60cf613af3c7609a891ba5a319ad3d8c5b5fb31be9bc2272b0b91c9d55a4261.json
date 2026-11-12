@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1350",
+  "targetId": "W1350",
+  "steps": [
+    {
+      "id": "BANK-W1350-W1350",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1350-W1350",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "nurse",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "护士"
+            },
+            {
+              "value": "hùshi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hu4shi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "护士",
+            "pinyin": "hùshi",
+            "meaning": "nurse",
+            "singleWord": true,
+            "audio": "cbfc5af6343d924f29be66f3b75ae325c51efbd6166044e8d319c17a5830d728"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "cbfc5af6343d924f29be66f3b75ae325c51efbd6166044e8d319c17a5830d728": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-c574b71bd7a8c2bc8aad7411cf6f243d5f7426286337278376e37b20e45ffa6d.mp3",
+        "sha256": "c574b71bd7a8c2bc8aad7411cf6f243d5f7426286337278376e37b20e45ffa6d",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "c574b71bd7a8c2bc8aad7411cf6f243d5f7426286337278376e37b20e45ffa6d",
+          "text": "护士",
+          "words": [
+            {
+              "text": "护士",
+              "start": 0.27,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2dbc26ac9bdfbf074ba1b89548da9178b1637cc5f7fc39f5de8e2744ad2611cc.mp3",
+        "sha256": "2dbc26ac9bdfbf074ba1b89548da9178b1637cc5f7fc39f5de8e2744ad2611cc",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "2dbc26ac9bdfbf074ba1b89548da9178b1637cc5f7fc39f5de8e2744ad2611cc",
+          "text": "护士",
+          "words": [
+            {
+              "text": "护士",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1350",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1350-W1350",
+      "question_ids": [
+        "BANK-W1350-W1350"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-13",
+    "stepId": "S-U4-13-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-62a4"
+    ],
+    "grammarLessonIds": []
+  }
+}

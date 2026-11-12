@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1833",
+  "targetId": "W1833",
+  "steps": [
+    {
+      "id": "BANK-W1833-W1833",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1833-W1833",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "cash",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "现金"
+            },
+            {
+              "value": "xiànjīn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xian4jin1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "现金",
+            "pinyin": "xiànjīn",
+            "meaning": "cash",
+            "singleWord": true,
+            "audio": "c58bfcd532bb1e2ea1ee0465c4682788a5773ea8e84af02f7f1dfc48e51965fa"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c58bfcd532bb1e2ea1ee0465c4682788a5773ea8e84af02f7f1dfc48e51965fa": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7820b67fa0b6c58a43003b28ad766f02d2692e71efdbdbf2bd26cc062001e52b.mp3",
+        "sha256": "7820b67fa0b6c58a43003b28ad766f02d2692e71efdbdbf2bd26cc062001e52b",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "7820b67fa0b6c58a43003b28ad766f02d2692e71efdbdbf2bd26cc062001e52b",
+          "text": "现金",
+          "words": [
+            {
+              "text": "现金",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c4c4590d10e6d117d1b8204752e2decfee90d5ece1ccfd5814d9d960c3de8d16.mp3",
+        "sha256": "c4c4590d10e6d117d1b8204752e2decfee90d5ece1ccfd5814d9d960c3de8d16",
+        "byteLength": 16461,
+        "readAlong": {
+          "audioSha256": "c4c4590d10e6d117d1b8204752e2decfee90d5ece1ccfd5814d9d960c3de8d16",
+          "text": "现金",
+          "words": [
+            {
+              "text": "现金",
+              "start": 0.21,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1833",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1833-W1833",
+      "question_ids": [
+        "BANK-W1833-W1833"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-11",
+    "stepId": "S-U4-11-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-91d1"
+    ],
+    "grammarLessonIds": []
+  }
+}

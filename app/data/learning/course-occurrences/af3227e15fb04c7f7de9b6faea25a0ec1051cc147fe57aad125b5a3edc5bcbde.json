@@ -1,0 +1,641 @@
+{
+  "id": "EX-CHAR-char-5e08",
+  "revision": 2,
+  "unit": "U02-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U02-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "师",
+  "sourceBlockId": "mandarin-simplified-v1-char-5e08",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-c634bac0751b212237f787bd",
+        "text": "老好人",
+        "pinyin": "lǎo hǎo rén",
+        "meaning": "someone who avoids offending others",
+        "characters": [
+          {
+            "id": "C-8001",
+            "text": "老"
+          },
+          {
+            "id": "C-597D",
+            "text": "好"
+          },
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      },
+      {
+        "id": "W0021",
+        "text": "老师",
+        "pinyin": "lǎoshī",
+        "meaning": "teacher",
+        "characters": [
+          {
+            "id": "C-8001",
+            "text": "老"
+          },
+          {
+            "id": "C-5E08",
+            "text": "师"
+          }
+        ]
+      },
+      {
+        "id": "W0509",
+        "text": "中学",
+        "pinyin": "zhōngxué",
+        "meaning": "middle school",
+        "characters": [
+          {
+            "id": "C-4E2D",
+            "text": "中"
+          },
+          {
+            "id": "C-5B66",
+            "text": "学"
+          }
+        ]
+      },
+      {
+        "id": "W1017",
+        "text": "有关",
+        "pinyin": "yǒuguān",
+        "meaning": "to have something to do with; to relate to",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          },
+          {
+            "id": "C-5173",
+            "text": "关"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "cdf9129a03cee8f94a9f138d4db897487d8a04425e0aceff5b4945119a95307e",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5e08",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "师",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5e08-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0021",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "teacher",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "老师"
+              },
+              {
+                "value": "lǎoshī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lao3shi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "老师",
+              "pinyin": "lǎoshī",
+              "meaning": "teacher",
+              "audio": "310e6b5e11de6adedbeb20515e73ec6357cf47c84ba79ce43f7858f24ded0eb2",
+              "singleWord": true,
+              "focus": "师"
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5e08-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0021",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "老师",
+              "meaning": "",
+              "focus": "师"
+            },
+            "choices": [
+              {
+                "id": "W0021",
+                "label": "teacher",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0509",
+                "label": "middle school",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1017",
+                "label": "to have something to do with; to relate to",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5e08-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "师",
+        "pinyin": "shī",
+        "meaning": "teacher; master",
+        "source": "/stroke-data/5e08.json",
+        "reference": {
+          "character": "师",
+          "sha256": "7dd4fee124f2eaa1f73dd181fbcef96ddc0d4748360464a3da31000e18ed43e2",
+          "medians": [
+            [
+              [
+                184,
+                626
+              ],
+              [
+                202,
+                611
+              ],
+              [
+                215,
+                584
+              ],
+              [
+                217,
+                449
+              ],
+              [
+                205,
+                354
+              ],
+              [
+                208,
+                314
+              ]
+            ],
+            [
+              [
+                335,
+                734
+              ],
+              [
+                363,
+                714
+              ],
+              [
+                380,
+                686
+              ],
+              [
+                381,
+                521
+              ],
+              [
+                373,
+                412
+              ],
+              [
+                361,
+                340
+              ],
+              [
+                342,
+                270
+              ],
+              [
+                292,
+                167
+              ],
+              [
+                251,
+                113
+              ],
+              [
+                201,
+                62
+              ],
+              [
+                149,
+                26
+              ]
+            ],
+            [
+              [
+                483,
+                672
+              ],
+              [
+                532,
+                665
+              ],
+              [
+                800,
+                718
+              ],
+              [
+                866,
+                714
+              ]
+            ],
+            [
+              [
+                467,
+                495
+              ],
+              [
+                491,
+                476
+              ],
+              [
+                499,
+                453
+              ],
+              [
+                498,
+                353
+              ],
+              [
+                485,
+                282
+              ],
+              [
+                486,
+                233
+              ]
+            ],
+            [
+              [
+                518,
+                489
+              ],
+              [
+                540,
+                477
+              ],
+              [
+                786,
+                517
+              ],
+              [
+                806,
+                514
+              ],
+              [
+                816,
+                506
+              ],
+              [
+                829,
+                483
+              ],
+              [
+                831,
+                334
+              ],
+              [
+                816,
+                276
+              ],
+              [
+                811,
+                271
+              ],
+              [
+                787,
+                273
+              ],
+              [
+                706,
+                295
+              ]
+            ],
+            [
+              [
+                607,
+                648
+              ],
+              [
+                651,
+                626
+              ],
+              [
+                653,
+                604
+              ],
+              [
+                643,
+                -36
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5e08-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-c634bac0751b212237f787bd",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "someone who avoids offending others",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "老好人"
+              },
+              {
+                "value": "lǎo hǎo rén",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lao3hao3ren2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "老好人",
+              "pinyin": "lǎo hǎo rén",
+              "meaning": "someone who avoids offending others",
+              "audio": "c294864de57e959374e78b35333711dc7cd41f016e391e32352b046449b7d48e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5e08-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0021",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "teacher",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "老师"
+              },
+              {
+                "value": "lǎoshī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lao3shi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "老师",
+              "pinyin": "lǎoshī",
+              "meaning": "teacher",
+              "audio": "310e6b5e11de6adedbeb20515e73ec6357cf47c84ba79ce43f7858f24ded0eb2",
+              "singleWord": true,
+              "focus": "师"
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "310e6b5e11de6adedbeb20515e73ec6357cf47c84ba79ce43f7858f24ded0eb2"
+            ],
+            "transcript": [
+              {
+                "text": "老师",
+                "pinyin": "lǎoshī",
+                "meaning": "teacher",
+                "audio": "310e6b5e11de6adedbeb20515e73ec6357cf47c84ba79ce43f7858f24ded0eb2",
+                "singleWord": true,
+                "focus": "师"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5E08",
+      "character": "师",
+      "lessonIds": [
+        "LESSON-C-5E08"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5e08-word",
+        "EX-CHAR-char-5e08-recognize",
+        "EX-CHAR-char-5e08-write",
+        "EX-CHAR-char-5e08-familiar",
+        "EX-CHAR-char-5e08-recall"
+      ]
+    },
+    "audio": {
+      "c294864de57e959374e78b35333711dc7cd41f016e391e32352b046449b7d48e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/4e5ee751ad885e34d7fa77c819f859b36278abed63d7862e4874df0f5606a196.mp3",
+          "sha256": "4e5ee751ad885e34d7fa77c819f859b36278abed63d7862e4874df0f5606a196",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "4e5ee751ad885e34d7fa77c819f859b36278abed63d7862e4874df0f5606a196",
+            "text": "老好人",
+            "words": [
+              {
+                "text": "老好人",
+                "start": 0.15,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/094bd5e274d57e5fa2913e6a3142c8d2ae14dd35456a72e1ac0d12a0d9e0a329.mp3",
+          "sha256": "094bd5e274d57e5fa2913e6a3142c8d2ae14dd35456a72e1ac0d12a0d9e0a329",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "094bd5e274d57e5fa2913e6a3142c8d2ae14dd35456a72e1ac0d12a0d9e0a329",
+            "text": "老好人",
+            "words": [
+              {
+                "text": "老好人",
+                "start": 0.21,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "310e6b5e11de6adedbeb20515e73ec6357cf47c84ba79ce43f7858f24ded0eb2": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-81befe6c08690636646c536b11a68e305c9ce9885d5d3adbae6a8eec396515f8.mp3",
+          "sha256": "81befe6c08690636646c536b11a68e305c9ce9885d5d3adbae6a8eec396515f8",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "81befe6c08690636646c536b11a68e305c9ce9885d5d3adbae6a8eec396515f8",
+            "text": "老师",
+            "words": [
+              {
+                "text": "老师",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8bbd44f0b49f6ccdc89e10257daa7bb6d7d6e33d3e6957f116a8986682d0644d.mp3",
+          "sha256": "8bbd44f0b49f6ccdc89e10257daa7bb6d7d6e33d3e6957f116a8986682d0644d",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "8bbd44f0b49f6ccdc89e10257daa7bb6d7d6e33d3e6957f116a8986682d0644d",
+            "text": "老师",
+            "words": [
+              {
+                "text": "老师",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "9b50957dbe79c786ba3632a0d22c1ed65a7c1f555eb1dd3c979fd1e6b118e19d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-46b8ac77e016fe24b3b099a604c350a4a929d0ac8804f5b56d3656edf3a13e0f.mp3",
+          "sha256": "46b8ac77e016fe24b3b099a604c350a4a929d0ac8804f5b56d3656edf3a13e0f",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "46b8ac77e016fe24b3b099a604c350a4a929d0ac8804f5b56d3656edf3a13e0f",
+            "text": "中学",
+            "words": [
+              {
+                "text": "中学",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-9c9ef6714a978af22a7b663df6f701a9c781c24ccdc6d5326d71c493181fddc3.mp3",
+          "sha256": "9c9ef6714a978af22a7b663df6f701a9c781c24ccdc6d5326d71c493181fddc3",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "9c9ef6714a978af22a7b663df6f701a9c781c24ccdc6d5326d71c493181fddc3",
+            "text": "中学",
+            "words": [
+              {
+                "text": "中学",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "a073af818b6875fab523ad66bcf9a9cc6e9796262e59e4581b8763be4fabcd08": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-640d10f75f6d874e69b8f57643fa10320de14f26639d28c5067f4b670aa58fec.mp3",
+          "sha256": "640d10f75f6d874e69b8f57643fa10320de14f26639d28c5067f4b670aa58fec",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "640d10f75f6d874e69b8f57643fa10320de14f26639d28c5067f4b670aa58fec",
+            "text": "有关",
+            "words": [
+              {
+                "text": "有关",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4d145b23ec851ff0eedd4d8654f73543ab4d294e4cdd464f441c37cb360208f0.mp3",
+          "sha256": "4d145b23ec851ff0eedd4d8654f73543ab4d294e4cdd464f441c37cb360208f0",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "4d145b23ec851ff0eedd4d8654f73543ab4d294e4cdd464f441c37cb360208f0",
+            "text": "有关",
+            "words": [
+              {
+                "text": "有关",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

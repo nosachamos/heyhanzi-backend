@@ -1,0 +1,709 @@
+{
+  "id": "EX-CHAR-char-517b",
+  "revision": 2,
+  "unit": "U3-24",
+  "stage": "ST-HSK3",
+  "after": "S-U3-24-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "养",
+  "sourceBlockId": "mandarin-simplified-v1-char-517b",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-517b",
+        "text": "养",
+        "pinyin": "yǎng",
+        "meaning": "to raise (animals); to bring up (children)",
+        "characters": [
+          {
+            "id": "C-517B",
+            "text": "养"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-695a",
+        "text": "楚",
+        "pinyin": "chǔ",
+        "meaning": "distinct; clear",
+        "characters": [
+          {
+            "id": "C-695A",
+            "text": "楚"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-7ecf",
+        "text": "经",
+        "pinyin": "jīng",
+        "meaning": "classics; sacred book",
+        "characters": [
+          {
+            "id": "C-7ECF",
+            "text": "经"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-5d989dd370a68f4edda0b7ad",
+        "text": "收养",
+        "pinyin": "shōu yǎng",
+        "meaning": "to take in and care for (an elderly person, a dog etc)",
+        "characters": [
+          {
+            "id": "C-6536",
+            "text": "收"
+          },
+          {
+            "id": "C-517B",
+            "text": "养"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ae8b249e29d80025b9d0115f",
+        "text": "名言",
+        "pinyin": "míng yán",
+        "meaning": "saying",
+        "characters": [
+          {
+            "id": "C-540D",
+            "text": "名"
+          },
+          {
+            "id": "C-8A00",
+            "text": "言"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "7caf36dcfedee8e1380a4b2f71a200b8c88e76730bcbad8f384008e198288743",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-517b",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "养",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-517b-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-5d989dd370a68f4edda0b7ad",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to take in and care for (an elderly person, a dog etc)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "收养"
+              },
+              {
+                "value": "shōu yǎng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shou1yang3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "收养",
+              "pinyin": "shōu yǎng",
+              "meaning": "to take in and care for (an elderly person, a dog etc)",
+              "audio": "bd750d0c418bebff90cfa27fce1ba80edd36e3aea6da1fca69b3620752b6f008",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-517b-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-517b",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "养",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-ae8b249e29d80025b9d0115f",
+                "label": "saying",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-517b",
+                "label": "to raise (animals); to bring up (children)",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-PRIMARY-char-695a",
+                "label": "distinct; clear",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-517b-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "养",
+        "pinyin": "yǎng",
+        "meaning": "to raise (animals); to bring up (children)",
+        "source": "/stroke-data/517b.json",
+        "reference": {
+          "character": "养",
+          "sha256": "3bacebc3b1200d6301355062e3bb22d24cbbe04939ac2fefeec181de5dcf7dbf",
+          "medians": [
+            [
+              [
+                353,
+                797
+              ],
+              [
+                426,
+                755
+              ],
+              [
+                447,
+                725
+              ]
+            ],
+            [
+              [
+                623,
+                840
+              ],
+              [
+                640,
+                808
+              ],
+              [
+                537,
+                713
+              ]
+            ],
+            [
+              [
+                300,
+                645
+              ],
+              [
+                337,
+                637
+              ],
+              [
+                396,
+                639
+              ],
+              [
+                656,
+                678
+              ],
+              [
+                697,
+                676
+              ]
+            ],
+            [
+              [
+                308,
+                521
+              ],
+              [
+                367,
+                515
+              ],
+              [
+                636,
+                557
+              ],
+              [
+                686,
+                550
+              ]
+            ],
+            [
+              [
+                178,
+                405
+              ],
+              [
+                227,
+                395
+              ],
+              [
+                468,
+                432
+              ],
+              [
+                748,
+                459
+              ],
+              [
+                795,
+                458
+              ],
+              [
+                852,
+                442
+              ]
+            ],
+            [
+              [
+                455,
+                620
+              ],
+              [
+                479,
+                588
+              ],
+              [
+                406,
+                411
+              ],
+              [
+                355,
+                335
+              ],
+              [
+                298,
+                276
+              ],
+              [
+                233,
+                229
+              ],
+              [
+                139,
+                187
+              ],
+              [
+                90,
+                175
+              ]
+            ],
+            [
+              [
+                573,
+                421
+              ],
+              [
+                595,
+                410
+              ],
+              [
+                691,
+                305
+              ],
+              [
+                749,
+                250
+              ],
+              [
+                809,
+                204
+              ],
+              [
+                864,
+                189
+              ],
+              [
+                968,
+                176
+              ]
+            ],
+            [
+              [
+                392,
+                291
+              ],
+              [
+                407,
+                285
+              ],
+              [
+                430,
+                259
+              ],
+              [
+                424,
+                193
+              ],
+              [
+                407,
+                124
+              ],
+              [
+                386,
+                82
+              ],
+              [
+                360,
+                48
+              ],
+              [
+                293,
+                0
+              ]
+            ],
+            [
+              [
+                561,
+                318
+              ],
+              [
+                585,
+                291
+              ],
+              [
+                591,
+                272
+              ],
+              [
+                591,
+                62
+              ],
+              [
+                605,
+                -48
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-517b-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-PRIMARY-char-7ecf",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "classics; sacred book",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "经"
+              },
+              {
+                "value": "jīng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jing1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "经",
+              "pinyin": "jīng",
+              "meaning": "classics; sacred book",
+              "audio": "6e497ca7626a5a2c4ac60665220a6c7790b02eab7bd2cd651eab8845e71c1d51",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-517b-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-517b",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to raise (animals); to bring up (children)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "养"
+              },
+              {
+                "value": "yǎng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yang3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "养",
+              "pinyin": "yǎng",
+              "meaning": "to raise (animals); to bring up (children)",
+              "audio": "b59d19d383dc2f18dda0f958e28a2211ff5fc1fb68457d1a4e739bb00cfdd222",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "b59d19d383dc2f18dda0f958e28a2211ff5fc1fb68457d1a4e739bb00cfdd222"
+            ],
+            "transcript": [
+              {
+                "text": "养",
+                "pinyin": "yǎng",
+                "meaning": "to raise (animals); to bring up (children)",
+                "audio": "b59d19d383dc2f18dda0f958e28a2211ff5fc1fb68457d1a4e739bb00cfdd222",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-517B",
+      "character": "养",
+      "lessonIds": [
+        "LESSON-C-517B"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-517b-word",
+        "EX-CHAR-char-517b-recognize",
+        "EX-CHAR-char-517b-write",
+        "EX-CHAR-char-517b-familiar",
+        "EX-CHAR-char-517b-recall"
+      ]
+    },
+    "audio": {
+      "b59d19d383dc2f18dda0f958e28a2211ff5fc1fb68457d1a4e739bb00cfdd222": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-24ef8d3c98d037964d2573dea119736eabbd840c8624375e6c98de5e7cbd78de.mp3",
+          "sha256": "24ef8d3c98d037964d2573dea119736eabbd840c8624375e6c98de5e7cbd78de",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "24ef8d3c98d037964d2573dea119736eabbd840c8624375e6c98de5e7cbd78de",
+            "text": "养",
+            "words": [
+              {
+                "text": "养",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-88b39584e53f274e73cc569f9860e690d39d1d53f46f4f63a4035ebf91bd02a2.mp3",
+          "sha256": "88b39584e53f274e73cc569f9860e690d39d1d53f46f4f63a4035ebf91bd02a2",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "88b39584e53f274e73cc569f9860e690d39d1d53f46f4f63a4035ebf91bd02a2",
+            "text": "养",
+            "words": [
+              {
+                "text": "养",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "84ff7d6f36889e4fad7589eee1ac2bf7fd376dc978322faddb8c0da25c4446c7": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-8def9a87b3ee184dcfd6551d13b664d05e26c626bf9b23276d23ff0ff3ab31c6.mp3",
+          "sha256": "8def9a87b3ee184dcfd6551d13b664d05e26c626bf9b23276d23ff0ff3ab31c6",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "8def9a87b3ee184dcfd6551d13b664d05e26c626bf9b23276d23ff0ff3ab31c6",
+            "text": "楚",
+            "words": [
+              {
+                "text": "楚",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-e92aaa823317d04bcdfb82b55b11940885cef32e6a8164418add34da0693403e.mp3",
+          "sha256": "e92aaa823317d04bcdfb82b55b11940885cef32e6a8164418add34da0693403e",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "e92aaa823317d04bcdfb82b55b11940885cef32e6a8164418add34da0693403e",
+            "text": "楚",
+            "words": [
+              {
+                "text": "楚",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "6e497ca7626a5a2c4ac60665220a6c7790b02eab7bd2cd651eab8845e71c1d51": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-a4758377fdd73714a7e56a0c608bef8b4d2298cb4828c53a37a6fb1fda94eb35.mp3",
+          "sha256": "a4758377fdd73714a7e56a0c608bef8b4d2298cb4828c53a37a6fb1fda94eb35",
+          "byteLength": 6669,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "a4758377fdd73714a7e56a0c608bef8b4d2298cb4828c53a37a6fb1fda94eb35",
+            "text": "经",
+            "words": [
+              {
+                "text": "经",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-8be85b3d039e0687716b7a079a9ed72082d0e56e84863170f3403ecf1b513771.mp3",
+          "sha256": "8be85b3d039e0687716b7a079a9ed72082d0e56e84863170f3403ecf1b513771",
+          "byteLength": 7245,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "8be85b3d039e0687716b7a079a9ed72082d0e56e84863170f3403ecf1b513771",
+            "text": "经",
+            "words": [
+              {
+                "text": "经",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "bd750d0c418bebff90cfa27fce1ba80edd36e3aea6da1fca69b3620752b6f008": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c3a6567a6731623b38386dc27066d7ef80325d106a9e1935b70a61d5a6e235e6.mp3",
+          "sha256": "c3a6567a6731623b38386dc27066d7ef80325d106a9e1935b70a61d5a6e235e6",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "c3a6567a6731623b38386dc27066d7ef80325d106a9e1935b70a61d5a6e235e6",
+            "text": "收养",
+            "words": [
+              {
+                "text": "收养",
+                "start": 0.22,
+                "end": 0.56
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/bf92e9ba4bd07684e7bc3c79c3462eff1b8cb8659b5b55e7ad6dbe3d51054c86.mp3",
+          "sha256": "bf92e9ba4bd07684e7bc3c79c3462eff1b8cb8659b5b55e7ad6dbe3d51054c86",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "bf92e9ba4bd07684e7bc3c79c3462eff1b8cb8659b5b55e7ad6dbe3d51054c86",
+            "text": "收养",
+            "words": [
+              {
+                "text": "收养",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "693b9bec7843b2a76d4eee55182a02452e5e21f1cefc6bc9482c0eb0202a63d8": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/91ea2e7fd7e818cb92f2b2391453c5d30d53a0e1bdac04b4e79ec0ee965e6d98.mp3",
+          "sha256": "91ea2e7fd7e818cb92f2b2391453c5d30d53a0e1bdac04b4e79ec0ee965e6d98",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "91ea2e7fd7e818cb92f2b2391453c5d30d53a0e1bdac04b4e79ec0ee965e6d98",
+            "text": "名言",
+            "words": [
+              {
+                "text": "名言",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9eebaf1c503fcb7441b7d1ec7f455060239b9912224a6e077dffed2c1e3649ca.mp3",
+          "sha256": "9eebaf1c503fcb7441b7d1ec7f455060239b9912224a6e077dffed2c1e3649ca",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "9eebaf1c503fcb7441b7d1ec7f455060239b9912224a6e077dffed2c1e3649ca",
+            "text": "名言",
+            "words": [
+              {
+                "text": "名言",
+                "start": 0.18,
+                "end": 0.58
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

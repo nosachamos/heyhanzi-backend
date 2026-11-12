@@ -1,0 +1,703 @@
+{
+  "id": "EX-CHAR-char-53d6",
+  "revision": 2,
+  "unit": "U4-32",
+  "stage": "ST-HSK4",
+  "after": "S-U4-32-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "取",
+  "sourceBlockId": "mandarin-simplified-v1-char-53d6",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-af969107a95dc3e98961067f",
+        "text": "自始至终",
+        "pinyin": "zì shǐ zhì zhōng",
+        "meaning": "from start to finish (idiom)",
+        "characters": [
+          {
+            "id": "C-81EA",
+            "text": "自"
+          },
+          {
+            "id": "C-59CB",
+            "text": "始"
+          },
+          {
+            "id": "C-81F3",
+            "text": "至"
+          },
+          {
+            "id": "C-7EC8",
+            "text": "终"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d8379ace671edbd335016de9",
+        "text": "取得",
+        "pinyin": "qǔdé",
+        "meaning": "to acquire; to get; to obtain",
+        "characters": [
+          {
+            "id": "C-53D6",
+            "text": "取"
+          },
+          {
+            "id": "C-5F97",
+            "text": "得"
+          }
+        ]
+      },
+      {
+        "id": "W0121",
+        "text": "知道",
+        "pinyin": "zhīdào",
+        "meaning": "know information",
+        "characters": [
+          {
+            "id": "C-77E5",
+            "text": "知"
+          },
+          {
+            "id": "C-9053",
+            "text": "道"
+          }
+        ]
+      },
+      {
+        "id": "W0654",
+        "text": "半天",
+        "pinyin": "bàntiān",
+        "meaning": "half of the day; a long time",
+        "characters": [
+          {
+            "id": "C-534A",
+            "text": "半"
+          },
+          {
+            "id": "C-5929",
+            "text": "天"
+          }
+        ]
+      },
+      {
+        "id": "W1634",
+        "text": "取",
+        "pinyin": "qǔ",
+        "meaning": "to take; to get",
+        "characters": [
+          {
+            "id": "C-53D6",
+            "text": "取"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "5d53dd7e6b0c61a9d0ae5339b13ed14706431b9e71f26f250bdcea6c7ac52cfc",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-53d6",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "取",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-53d6-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-d8379ace671edbd335016de9",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to acquire; to get",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "取得"
+              },
+              {
+                "value": "qǔdé",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qu3de2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "取得",
+              "pinyin": "qǔdé",
+              "meaning": "to acquire; to get",
+              "audio": "2fc4882accf2a6076afb0c26f13afda32dd6ebac859bfcfc71956e4d67ad885b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-53d6-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W1634",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "取",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1634",
+                "label": "to take; to get",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0654",
+                "label": "half of the day; a long time",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-af969107a95dc3e98961067f",
+                "label": "from start to finish (idiom)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-53d6-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "取",
+        "pinyin": "qǔ",
+        "meaning": "to take; to get",
+        "source": "/stroke-data/53d6.json",
+        "reference": {
+          "character": "取",
+          "sha256": "951b52495ab6392888878d1f11f7b53385fac569470121a7aaf70161a2d948ba",
+          "medians": [
+            [
+              [
+                131,
+                718
+              ],
+              [
+                182,
+                711
+              ],
+              [
+                472,
+                766
+              ],
+              [
+                527,
+                760
+              ]
+            ],
+            [
+              [
+                198,
+                686
+              ],
+              [
+                230,
+                669
+              ],
+              [
+                231,
+                657
+              ],
+              [
+                229,
+                300
+              ],
+              [
+                212,
+                285
+              ]
+            ],
+            [
+              [
+                398,
+                726
+              ],
+              [
+                424,
+                699
+              ],
+              [
+                427,
+                609
+              ],
+              [
+                422,
+                -24
+              ]
+            ],
+            [
+              [
+                261,
+                553
+              ],
+              [
+                272,
+                566
+              ],
+              [
+                293,
+                572
+              ],
+              [
+                322,
+                577
+              ],
+              [
+                356,
+                571
+              ]
+            ],
+            [
+              [
+                253,
+                429
+              ],
+              [
+                268,
+                441
+              ],
+              [
+                306,
+                452
+              ],
+              [
+                352,
+                451
+              ]
+            ],
+            [
+              [
+                89,
+                235
+              ],
+              [
+                146,
+                218
+              ],
+              [
+                504,
+                357
+              ]
+            ],
+            [
+              [
+                520,
+                592
+              ],
+              [
+                591,
+                595
+              ],
+              [
+                701,
+                630
+              ],
+              [
+                739,
+                630
+              ],
+              [
+                763,
+                622
+              ],
+              [
+                755,
+                561
+              ],
+              [
+                726,
+                451
+              ],
+              [
+                689,
+                356
+              ],
+              [
+                665,
+                313
+              ],
+              [
+                627,
+                266
+              ],
+              [
+                584,
+                227
+              ],
+              [
+                541,
+                201
+              ],
+              [
+                504,
+                186
+              ],
+              [
+                479,
+                184
+              ]
+            ],
+            [
+              [
+                506,
+                518
+              ],
+              [
+                548,
+                492
+              ],
+              [
+                682,
+                314
+              ],
+              [
+                765,
+                232
+              ],
+              [
+                813,
+                201
+              ],
+              [
+                959,
+                174
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-53d6-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0121",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "know information",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "知道"
+              },
+              {
+                "value": "zhīdào",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhi1dao4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "知道",
+              "pinyin": "zhīdào",
+              "meaning": "know information",
+              "audio": "e67a7d2511fee7f342c4717093d3bf29ab12e4f9bc6863cf250b8bb7e3e97246",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-53d6-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W1634",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to take; to get",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "取"
+              },
+              {
+                "value": "qǔ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qu3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "取",
+              "pinyin": "qǔ",
+              "meaning": "to take; to get",
+              "audio": "c94c12db50d9629b1c63dcab3d649670b55b6816ec2dc731c4d983ec27542cc4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "c94c12db50d9629b1c63dcab3d649670b55b6816ec2dc731c4d983ec27542cc4"
+            ],
+            "transcript": [
+              {
+                "text": "取",
+                "pinyin": "qǔ",
+                "meaning": "to take; to get",
+                "audio": "c94c12db50d9629b1c63dcab3d649670b55b6816ec2dc731c4d983ec27542cc4",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-53D6",
+      "character": "取",
+      "lessonIds": [
+        "LESSON-C-53D6"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-53d6-word",
+        "EX-CHAR-char-53d6-recognize",
+        "EX-CHAR-char-53d6-write",
+        "EX-CHAR-char-53d6-familiar",
+        "EX-CHAR-char-53d6-recall"
+      ]
+    },
+    "audio": {
+      "1a66994fcc745c13233a70c1c1d72fba6d66a7d7ba91c34a92586b2093040afb": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9f059da756cb7ee4ad5eb547aefc519a07a28f359d44b0d2ac4c4b90678d40b4.mp3",
+          "sha256": "9f059da756cb7ee4ad5eb547aefc519a07a28f359d44b0d2ac4c4b90678d40b4",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "9f059da756cb7ee4ad5eb547aefc519a07a28f359d44b0d2ac4c4b90678d40b4",
+            "text": "自始至终",
+            "words": [
+              {
+                "text": "自始至终",
+                "start": 0.15,
+                "end": 0.8099999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d5b878d61fe38f778ac0a348ee0744fb8a3097cce95873249910dcd4972fe730.mp3",
+          "sha256": "d5b878d61fe38f778ac0a348ee0744fb8a3097cce95873249910dcd4972fe730",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "d5b878d61fe38f778ac0a348ee0744fb8a3097cce95873249910dcd4972fe730",
+            "text": "自始至终",
+            "words": [
+              {
+                "text": "自始至终",
+                "start": 0.15,
+                "end": 0.8699999999999999
+              }
+            ]
+          }
+        }
+      },
+      "2fc4882accf2a6076afb0c26f13afda32dd6ebac859bfcfc71956e4d67ad885b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-cb89cd67d06d0eeeefa0991e481b3cd1ddafd74a0bfc345364eed7893a4ec0d0.mp3",
+          "sha256": "cb89cd67d06d0eeeefa0991e481b3cd1ddafd74a0bfc345364eed7893a4ec0d0",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "cb89cd67d06d0eeeefa0991e481b3cd1ddafd74a0bfc345364eed7893a4ec0d0",
+            "text": "取得",
+            "words": [
+              {
+                "text": "取得",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-0f2f3bb55f6af73471ac770ab31252ea9602c2d788126ad49e45b30cd42aa937.mp3",
+          "sha256": "0f2f3bb55f6af73471ac770ab31252ea9602c2d788126ad49e45b30cd42aa937",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "0f2f3bb55f6af73471ac770ab31252ea9602c2d788126ad49e45b30cd42aa937",
+            "text": "取得",
+            "words": [
+              {
+                "text": "取得",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "e67a7d2511fee7f342c4717093d3bf29ab12e4f9bc6863cf250b8bb7e3e97246": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-991191d9f9f2dacc9536cd03d155c21b17e87196ff95ca31980a42c086215fc9.mp3",
+          "sha256": "991191d9f9f2dacc9536cd03d155c21b17e87196ff95ca31980a42c086215fc9",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "991191d9f9f2dacc9536cd03d155c21b17e87196ff95ca31980a42c086215fc9",
+            "text": "知道",
+            "words": [
+              {
+                "text": "知道",
+                "start": 0.22,
+                "end": 0.52
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-64ccd490071c3a5f862eb60fa78660fe38016e41018898acfd20dffa9754a59c.mp3",
+          "sha256": "64ccd490071c3a5f862eb60fa78660fe38016e41018898acfd20dffa9754a59c",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "64ccd490071c3a5f862eb60fa78660fe38016e41018898acfd20dffa9754a59c",
+            "text": "知道",
+            "words": [
+              {
+                "text": "知道",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "4cafa3374a1c5763db6b921677f4925ff0482426753ed82d75104fd8db2f24c2": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-9d9e02822f17aa3c9b78c42282657f2c5204d528d432964838edb053c47ed774.mp3",
+          "sha256": "9d9e02822f17aa3c9b78c42282657f2c5204d528d432964838edb053c47ed774",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "9d9e02822f17aa3c9b78c42282657f2c5204d528d432964838edb053c47ed774",
+            "text": "半天",
+            "words": [
+              {
+                "text": "半天",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-37f23ac65edff70e8555647a4f2205344a278adbff0ea6dbb21b224058d7cb3f.mp3",
+          "sha256": "37f23ac65edff70e8555647a4f2205344a278adbff0ea6dbb21b224058d7cb3f",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "37f23ac65edff70e8555647a4f2205344a278adbff0ea6dbb21b224058d7cb3f",
+            "text": "半天",
+            "words": [
+              {
+                "text": "半天",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "c94c12db50d9629b1c63dcab3d649670b55b6816ec2dc731c4d983ec27542cc4": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-eb0cf8dc8e22ccdc214e6f746bb7095427b431bb8731ee05cf8696bfa03c89bd.mp3",
+          "sha256": "eb0cf8dc8e22ccdc214e6f746bb7095427b431bb8731ee05cf8696bfa03c89bd",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "eb0cf8dc8e22ccdc214e6f746bb7095427b431bb8731ee05cf8696bfa03c89bd",
+            "text": "取",
+            "words": [
+              {
+                "text": "取",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d4a8d75d03eb17e00230aa12f4df2a212a9ec3409f81a3c70f0e332417ebab97.mp3",
+          "sha256": "d4a8d75d03eb17e00230aa12f4df2a212a9ec3409f81a3c70f0e332417ebab97",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "d4a8d75d03eb17e00230aa12f4df2a212a9ec3409f81a3c70f0e332417ebab97",
+            "text": "取",
+            "words": [
+              {
+                "text": "取",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

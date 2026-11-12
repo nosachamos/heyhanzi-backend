@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0800",
+  "targetId": "W0800",
+  "steps": [
+    {
+      "id": "BANK-W0800-W0800",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0800-W0800",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "almost; nearly",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "几乎"
+            },
+            {
+              "value": "jīhū",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ji1hu1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "几乎",
+            "pinyin": "jīhū",
+            "meaning": "almost; nearly",
+            "singleWord": true,
+            "audio": "38e02d13509133299c72256d08804f4ae4444d7fa0f1c8f7c9198e8bf55933b8"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "38e02d13509133299c72256d08804f4ae4444d7fa0f1c8f7c9198e8bf55933b8": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-c985a5c22508c2da0c4033eab9955477ad7131006b8514368d2d12bce2b77119.mp3",
+        "sha256": "c985a5c22508c2da0c4033eab9955477ad7131006b8514368d2d12bce2b77119",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "c985a5c22508c2da0c4033eab9955477ad7131006b8514368d2d12bce2b77119",
+          "text": "几乎",
+          "words": [
+            {
+              "text": "几乎",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b0dbfcc661f220450568ad82ec273d0c25962e2e2ed536b35d4d976f4ffdd070.mp3",
+        "sha256": "b0dbfcc661f220450568ad82ec273d0c25962e2e2ed536b35d4d976f4ffdd070",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "b0dbfcc661f220450568ad82ec273d0c25962e2e2ed536b35d4d976f4ffdd070",
+          "text": "几乎",
+          "words": [
+            {
+              "text": "几乎",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0800",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0800-W0800",
+      "question_ids": [
+        "BANK-W0800-W0800"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-15-P01",
+    "stepId": "S-U3-15-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4e4e"
+    ],
+    "grammarLessonIds": []
+  }
+}

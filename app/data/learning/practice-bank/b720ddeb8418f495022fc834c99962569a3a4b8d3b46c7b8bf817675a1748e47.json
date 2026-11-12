@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W1200",
+  "targetId": "W1200",
+  "steps": [
+    {
+      "id": "BANK-W1200-W1200",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1200-W1200",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "low; beneath",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "低"
+            },
+            {
+              "value": "dī",
+              "mode": "pinyin"
+            },
+            {
+              "value": "di1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "低",
+            "pinyin": "dī",
+            "meaning": "low; beneath",
+            "singleWord": true,
+            "audio": "1c5ac3f8be5e2e5c7387e008136d2e000579fa96ddd5143566b8923b13c8f835"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1c5ac3f8be5e2e5c7387e008136d2e000579fa96ddd5143566b8923b13c8f835": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-3dd8e13838e5ca1ee3361b4586b4352c6828a3cb566afd923e2ed12a689f9e8c.mp3",
+        "sha256": "3dd8e13838e5ca1ee3361b4586b4352c6828a3cb566afd923e2ed12a689f9e8c",
+        "byteLength": 9837,
+        "readAlong": {
+          "audioSha256": "3dd8e13838e5ca1ee3361b4586b4352c6828a3cb566afd923e2ed12a689f9e8c",
+          "text": "低",
+          "words": [
+            {
+              "text": "低",
+              "start": 0.18,
+              "end": 0.26
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-85955ce67c8c6a6c150894f3e0102a4d240d49405f8858576a44d0d1e1e411d7.mp3",
+        "sha256": "85955ce67c8c6a6c150894f3e0102a4d240d49405f8858576a44d0d1e1e411d7",
+        "byteLength": 11565,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "85955ce67c8c6a6c150894f3e0102a4d240d49405f8858576a44d0d1e1e411d7",
+          "text": "低",
+          "words": [
+            {
+              "text": "低",
+              "start": 0.12,
+              "end": 0.655
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1200",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1200-W1200",
+      "question_ids": [
+        "BANK-W1200-W1200"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-26",
+    "stepId": "S-U4-26-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4f4e"
+    ],
+    "grammarLessonIds": []
+  }
+}

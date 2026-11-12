@@ -1,0 +1,615 @@
+{
+  "id": "EX-CHAR-char-5385",
+  "revision": 2,
+  "unit": "U4-04",
+  "stage": "ST-HSK4",
+  "after": "S-U4-04-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "厅",
+  "sourceBlockId": "mandarin-simplified-v1-char-5385",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5385",
+        "text": "厅",
+        "pinyin": "tīng",
+        "meaning": "(reception) hall; living room",
+        "characters": [
+          {
+            "id": "C-5385",
+            "text": "厅"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-e9152e15b17912379d8fa7d0",
+        "text": "大厅",
+        "pinyin": "dàtīng",
+        "meaning": "hall; concourse; public lounge; (hotel) lobby",
+        "characters": [
+          {
+            "id": "C-5927",
+            "text": "大"
+          },
+          {
+            "id": "C-5385",
+            "text": "厅"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f1d5e5d79d9f4a9ce93ec3a4",
+        "text": "然而",
+        "pinyin": "rán’ér",
+        "meaning": "however; but; yet",
+        "characters": [
+          {
+            "id": "C-7136",
+            "text": "然"
+          },
+          {
+            "id": "C-800C",
+            "text": "而"
+          }
+        ]
+      },
+      {
+        "id": "W0299",
+        "text": "愿意",
+        "pinyin": "yuànyì",
+        "meaning": "be willing to",
+        "characters": [
+          {
+            "id": "C-613F",
+            "text": "愿"
+          },
+          {
+            "id": "C-610F",
+            "text": "意"
+          }
+        ]
+      },
+      {
+        "id": "W2022",
+        "text": "作家",
+        "pinyin": "zuòjiā",
+        "meaning": "author",
+        "characters": [
+          {
+            "id": "C-4F5C",
+            "text": "作"
+          },
+          {
+            "id": "C-5BB6",
+            "text": "家"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "73fd32d7c5870681b4a55e508d9b8f0c2e4e8929eaec36e8945fbc6ab00b3e64",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5385",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "厅",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5385-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-e9152e15b17912379d8fa7d0",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "hall; concourse",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "大厅"
+              },
+              {
+                "value": "dàtīng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "da4ting1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "大厅",
+              "pinyin": "dàtīng",
+              "meaning": "hall; concourse",
+              "audio": "e1c8934311e95f99965c5790a8548edb035cacf2de96171ed3bf9a8240d92d08",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5385-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5385",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "厅",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-5385",
+                "label": "(reception) hall; living room",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-f1d5e5d79d9f4a9ce93ec3a4",
+                "label": "however; but",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0299",
+                "label": "be willing to",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5385-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "厅",
+        "pinyin": "tīng",
+        "meaning": "(reception) hall; living room",
+        "source": "/stroke-data/5385.json",
+        "reference": {
+          "character": "厅",
+          "sha256": "cad367754f460411797245549f4e078a0c3d949358d1f2fa451936398ace1ce8",
+          "medians": [
+            [
+              [
+                334,
+                718
+              ],
+              [
+                354,
+                706
+              ],
+              [
+                459,
+                711
+              ],
+              [
+                711,
+                763
+              ],
+              [
+                759,
+                761
+              ]
+            ],
+            [
+              [
+                263,
+                738
+              ],
+              [
+                298,
+                697
+              ],
+              [
+                300,
+                675
+              ],
+              [
+                281,
+                524
+              ],
+              [
+                246,
+                372
+              ],
+              [
+                208,
+                269
+              ],
+              [
+                167,
+                190
+              ],
+              [
+                109,
+                109
+              ],
+              [
+                69,
+                66
+              ]
+            ],
+            [
+              [
+                352,
+                493
+              ],
+              [
+                392,
+                482
+              ],
+              [
+                417,
+                483
+              ],
+              [
+                764,
+                537
+              ],
+              [
+                800,
+                539
+              ],
+              [
+                848,
+                529
+              ]
+            ],
+            [
+              [
+                566,
+                478
+              ],
+              [
+                604,
+                459
+              ],
+              [
+                617,
+                440
+              ],
+              [
+                611,
+                107
+              ],
+              [
+                592,
+                71
+              ],
+              [
+                555,
+                80
+              ],
+              [
+                439,
+                137
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5385-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2022",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "author",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "作家"
+              },
+              {
+                "value": "zuòjiā",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zuo4jia1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "作家",
+              "pinyin": "zuòjiā",
+              "meaning": "author",
+              "audio": "8db34a3ccee79ca6a01a2a209876813e80fcd789fb4f201581541f926188b2af",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5385-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5385",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "(reception) hall; living room",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "厅"
+              },
+              {
+                "value": "tīng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ting1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "厅",
+              "pinyin": "tīng",
+              "meaning": "(reception) hall; living room",
+              "audio": "3175fc2f58e5cef65bc7ea96a9aadee47a9e797849c9bc9c0d1b8ee4dd48ca29",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "3175fc2f58e5cef65bc7ea96a9aadee47a9e797849c9bc9c0d1b8ee4dd48ca29"
+            ],
+            "transcript": [
+              {
+                "text": "厅",
+                "pinyin": "tīng",
+                "meaning": "(reception) hall; living room",
+                "audio": "3175fc2f58e5cef65bc7ea96a9aadee47a9e797849c9bc9c0d1b8ee4dd48ca29",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5385",
+      "character": "厅",
+      "lessonIds": [
+        "LESSON-C-5385"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5385-word",
+        "EX-CHAR-char-5385-recognize",
+        "EX-CHAR-char-5385-write",
+        "EX-CHAR-char-5385-familiar",
+        "EX-CHAR-char-5385-recall"
+      ]
+    },
+    "audio": {
+      "3175fc2f58e5cef65bc7ea96a9aadee47a9e797849c9bc9c0d1b8ee4dd48ca29": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-c85e7e9715defddb0d6de07d3062350e0dadddbb6c613f856dfd0643b9f93b40.mp3",
+          "sha256": "c85e7e9715defddb0d6de07d3062350e0dadddbb6c613f856dfd0643b9f93b40",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "c85e7e9715defddb0d6de07d3062350e0dadddbb6c613f856dfd0643b9f93b40",
+            "text": "厅",
+            "words": [
+              {
+                "text": "厅",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-4f181381bf90e33baf15764596c7bd8029dd62c58d0b4894e3dd0bc4160e5d4b.mp3",
+          "sha256": "4f181381bf90e33baf15764596c7bd8029dd62c58d0b4894e3dd0bc4160e5d4b",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "4f181381bf90e33baf15764596c7bd8029dd62c58d0b4894e3dd0bc4160e5d4b",
+            "text": "厅",
+            "words": [
+              {
+                "text": "厅",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "e1c8934311e95f99965c5790a8548edb035cacf2de96171ed3bf9a8240d92d08": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/36d2c10232bfda057007bb1efd20d2d7fa03fafe724978e148971d28d6baed1d.mp3",
+          "sha256": "36d2c10232bfda057007bb1efd20d2d7fa03fafe724978e148971d28d6baed1d",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "36d2c10232bfda057007bb1efd20d2d7fa03fafe724978e148971d28d6baed1d",
+            "text": "大厅",
+            "words": [
+              {
+                "text": "大厅",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d1657024ffa4e314fcd883d9b4d75a205702637b4d9d03306d2849a02b877476.mp3",
+          "sha256": "d1657024ffa4e314fcd883d9b4d75a205702637b4d9d03306d2849a02b877476",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "d1657024ffa4e314fcd883d9b4d75a205702637b4d9d03306d2849a02b877476",
+            "text": "大厅",
+            "words": [
+              {
+                "text": "大厅",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "2978ce1e8e63983d6bf94adc8446410a1b9591fcccfdf097aa05a8d46ff0f5c1": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/495ee9c4dddb291444bfc23a35b1997c2da308cdb6f5d7534889fbd05fb0d7af.mp3",
+          "sha256": "495ee9c4dddb291444bfc23a35b1997c2da308cdb6f5d7534889fbd05fb0d7af",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "495ee9c4dddb291444bfc23a35b1997c2da308cdb6f5d7534889fbd05fb0d7af",
+            "text": "然而",
+            "words": [
+              {
+                "text": "然而",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b7abd45d54fbcde6c2200d4b74003426d1875d68ae2b78d36d27da47ff1467a8.mp3",
+          "sha256": "b7abd45d54fbcde6c2200d4b74003426d1875d68ae2b78d36d27da47ff1467a8",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "b7abd45d54fbcde6c2200d4b74003426d1875d68ae2b78d36d27da47ff1467a8",
+            "text": "然而",
+            "words": [
+              {
+                "text": "然而",
+                "start": 0.32999999999999996,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "e331af5a7b8e3539d162c7704d7e8f6b3a7336d5e4552f744f9f4c069fee64c7": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-4c7382a5404c8a94848cea9382b6d47e953b3137e9aa4b9065d5b8207e6b154f.mp3",
+          "sha256": "4c7382a5404c8a94848cea9382b6d47e953b3137e9aa4b9065d5b8207e6b154f",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "4c7382a5404c8a94848cea9382b6d47e953b3137e9aa4b9065d5b8207e6b154f",
+            "text": "愿意",
+            "words": [
+              {
+                "text": "愿意",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b8ba2f6593580d805fefdda4edac9f6b09da92d9232ffbf2c7e63ae800c7975a.mp3",
+          "sha256": "b8ba2f6593580d805fefdda4edac9f6b09da92d9232ffbf2c7e63ae800c7975a",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "b8ba2f6593580d805fefdda4edac9f6b09da92d9232ffbf2c7e63ae800c7975a",
+            "text": "愿意",
+            "words": [
+              {
+                "text": "愿意",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "8db34a3ccee79ca6a01a2a209876813e80fcd789fb4f201581541f926188b2af": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/464238ea7b1822a52159fd69b88140bb79b97f84c84d622ddfe9cbba12169abb.mp3",
+          "sha256": "464238ea7b1822a52159fd69b88140bb79b97f84c84d622ddfe9cbba12169abb",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "464238ea7b1822a52159fd69b88140bb79b97f84c84d622ddfe9cbba12169abb",
+            "text": "作家",
+            "words": [
+              {
+                "text": "作家",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e53222692dcc8b8bfc9d96c56c8ab495b74b03c09b465639f60b92811906df3d.mp3",
+          "sha256": "e53222692dcc8b8bfc9d96c56c8ab495b74b03c09b465639f60b92811906df3d",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "e53222692dcc8b8bfc9d96c56c8ab495b74b03c09b465639f60b92811906df3d",
+            "text": "作家",
+            "words": [
+              {
+                "text": "作家",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

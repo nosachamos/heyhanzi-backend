@@ -1,0 +1,715 @@
+{
+  "id": "EX-CHAR-char-53c2",
+  "revision": 2,
+  "unit": "U3-23",
+  "stage": "ST-HSK3",
+  "after": "S-U3-23-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "参",
+  "sourceBlockId": "mandarin-simplified-v1-char-53c2",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-53c2",
+        "text": "参",
+        "pinyin": "cān",
+        "meaning": "to take part in; to participate",
+        "characters": [
+          {
+            "id": "C-53C2",
+            "text": "参"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-415d194f841a85aa9d169e11",
+        "text": "听从",
+        "pinyin": "tīng cóng",
+        "meaning": "to listen and obey",
+        "characters": [
+          {
+            "id": "C-542C",
+            "text": "听"
+          },
+          {
+            "id": "C-4ECE",
+            "text": "从"
+          }
+        ]
+      },
+      {
+        "id": "W0862",
+        "text": "了解",
+        "pinyin": "liǎojiě",
+        "meaning": "to understand; to know about",
+        "characters": [
+          {
+            "id": "C-4E86",
+            "text": "了"
+          },
+          {
+            "id": "C-89E3",
+            "text": "解"
+          }
+        ]
+      },
+      {
+        "id": "W1119",
+        "text": "参赛",
+        "pinyin": "cānsài",
+        "meaning": "to compete; to take part in a competition",
+        "characters": [
+          {
+            "id": "C-53C2",
+            "text": "参"
+          },
+          {
+            "id": "C-8D5B",
+            "text": "赛"
+          }
+        ]
+      },
+      {
+        "id": "W3671",
+        "text": "必修",
+        "pinyin": "bìxiū",
+        "meaning": "required; compulsory",
+        "characters": [
+          {
+            "id": "C-5FC5",
+            "text": "必"
+          },
+          {
+            "id": "C-4FEE",
+            "text": "修"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "31494655d88822adc7a7269ebb763c331b52de60de008e184e6ab48927a8ddb3",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-53c2",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "参",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-53c2-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1119",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to compete; to take part in a competition",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "参赛"
+              },
+              {
+                "value": "cānsài",
+                "mode": "pinyin"
+              },
+              {
+                "value": "can1sai4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "参赛",
+              "pinyin": "cānsài",
+              "meaning": "to compete; to take part in a competition",
+              "audio": "e5b4e55653ccd0e9548040d0566dfb1bb8b81cdffd86c394ae28ac535040d2d5",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-53c2-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-53c2",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "参",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0862",
+                "label": "to understand; to know about",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-415d194f841a85aa9d169e11",
+                "label": "to listen and obey",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-53c2",
+                "label": "to take part in; to participate",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-53c2-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "参",
+        "pinyin": "cān",
+        "meaning": "to take part in; to participate",
+        "source": "/stroke-data/53c2.json",
+        "reference": {
+          "character": "参",
+          "sha256": "8dd690f1c1325a4c8a51f4638f73c64cffd4c46305329ae6fc8ff87343bee8a8",
+          "medians": [
+            [
+              [
+                477,
+                836
+              ],
+              [
+                498,
+                796
+              ],
+              [
+                493,
+                784
+              ],
+              [
+                439,
+                710
+              ],
+              [
+                357,
+                629
+              ],
+              [
+                337,
+                594
+              ],
+              [
+                372,
+                588
+              ],
+              [
+                608,
+                642
+              ],
+              [
+                621,
+                633
+              ]
+            ],
+            [
+              [
+                582,
+                716
+              ],
+              [
+                670,
+                637
+              ],
+              [
+                688,
+                597
+              ]
+            ],
+            [
+              [
+                145,
+                441
+              ],
+              [
+                182,
+                433
+              ],
+              [
+                404,
+                464
+              ],
+              [
+                489,
+                482
+              ],
+              [
+                744,
+                511
+              ],
+              [
+                789,
+                508
+              ],
+              [
+                838,
+                493
+              ]
+            ],
+            [
+              [
+                422,
+                576
+              ],
+              [
+                447,
+                552
+              ],
+              [
+                389,
+                452
+              ],
+              [
+                324,
+                362
+              ],
+              [
+                234,
+                273
+              ],
+              [
+                154,
+                220
+              ],
+              [
+                114,
+                203
+              ]
+            ],
+            [
+              [
+                550,
+                468
+              ],
+              [
+                572,
+                458
+              ],
+              [
+                688,
+                348
+              ],
+              [
+                771,
+                283
+              ],
+              [
+                850,
+                261
+              ],
+              [
+                958,
+                247
+              ]
+            ],
+            [
+              [
+                527,
+                396
+              ],
+              [
+                498,
+                391
+              ],
+              [
+                470,
+                351
+              ],
+              [
+                414,
+                297
+              ],
+              [
+                330,
+                240
+              ]
+            ],
+            [
+              [
+                572,
+                300
+              ],
+              [
+                545,
+                295
+              ],
+              [
+                491,
+                228
+              ],
+              [
+                423,
+                170
+              ],
+              [
+                338,
+                121
+              ]
+            ],
+            [
+              [
+                595,
+                237
+              ],
+              [
+                606,
+                218
+              ],
+              [
+                610,
+                194
+              ],
+              [
+                565,
+                137
+              ],
+              [
+                521,
+                94
+              ],
+              [
+                417,
+                13
+              ],
+              [
+                337,
+                -29
+              ],
+              [
+                301,
+                -40
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-53c2-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3671",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "required; compulsory",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "必修"
+              },
+              {
+                "value": "bìxiū",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bi4xiu1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "必修",
+              "pinyin": "bìxiū",
+              "meaning": "required; compulsory",
+              "audio": "92194c4a145f9c34b657a77ec7c54300c66b3a61cdad5e2741a306b6b0644ad8",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-53c2-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-53c2",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to take part in; to participate",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "参"
+              },
+              {
+                "value": "cān",
+                "mode": "pinyin"
+              },
+              {
+                "value": "can1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "参",
+              "pinyin": "cān",
+              "meaning": "to take part in; to participate",
+              "audio": "ee46d0a7c198410fd25b36247fa04b53452883d2b8d833967dfd2eda77f20fc1",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "ee46d0a7c198410fd25b36247fa04b53452883d2b8d833967dfd2eda77f20fc1"
+            ],
+            "transcript": [
+              {
+                "text": "参",
+                "pinyin": "cān",
+                "meaning": "to take part in; to participate",
+                "audio": "ee46d0a7c198410fd25b36247fa04b53452883d2b8d833967dfd2eda77f20fc1",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-53C2",
+      "character": "参",
+      "lessonIds": [
+        "LESSON-C-53C2"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-53c2-word",
+        "EX-CHAR-char-53c2-recognize",
+        "EX-CHAR-char-53c2-write",
+        "EX-CHAR-char-53c2-familiar",
+        "EX-CHAR-char-53c2-recall"
+      ]
+    },
+    "audio": {
+      "ee46d0a7c198410fd25b36247fa04b53452883d2b8d833967dfd2eda77f20fc1": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-5ccc12c1285c4f9702e8e85f570127bc8a474a7dfac8b29b9d8edab313fe6c0d.mp3",
+          "sha256": "5ccc12c1285c4f9702e8e85f570127bc8a474a7dfac8b29b9d8edab313fe6c0d",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "5ccc12c1285c4f9702e8e85f570127bc8a474a7dfac8b29b9d8edab313fe6c0d",
+            "text": "参",
+            "words": [
+              {
+                "text": "参",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-807c7401be9655b860e09c9274c02a4f1c65fc73a24f79149df8ac984508d752.mp3",
+          "sha256": "807c7401be9655b860e09c9274c02a4f1c65fc73a24f79149df8ac984508d752",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "807c7401be9655b860e09c9274c02a4f1c65fc73a24f79149df8ac984508d752",
+            "text": "参",
+            "words": [
+              {
+                "text": "参",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "9fc71ee3678e3ee8a439af5cb0985367d94b182498b600b7b3b57c4a5113be7a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d6e240584d90751c4116a0e32d0a0dec78e1297acb5382eb278657c19f5483ff.mp3",
+          "sha256": "d6e240584d90751c4116a0e32d0a0dec78e1297acb5382eb278657c19f5483ff",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "d6e240584d90751c4116a0e32d0a0dec78e1297acb5382eb278657c19f5483ff",
+            "text": "听从",
+            "words": [
+              {
+                "text": "听从",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5b2e912560506627356938aede766006f2e0267c0f581ba061cfcd9204c1fdfb.mp3",
+          "sha256": "5b2e912560506627356938aede766006f2e0267c0f581ba061cfcd9204c1fdfb",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "5b2e912560506627356938aede766006f2e0267c0f581ba061cfcd9204c1fdfb",
+            "text": "听从",
+            "words": [
+              {
+                "text": "听从",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "7c56ad281087e786f75cab10185502a9181464ebf1f1c61a9ab82d941f360d1c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-16bfc15eef1301c90a72fbf9c8d1e2bb5208c89f498699054a12ecb5eea14695.mp3",
+          "sha256": "16bfc15eef1301c90a72fbf9c8d1e2bb5208c89f498699054a12ecb5eea14695",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "16bfc15eef1301c90a72fbf9c8d1e2bb5208c89f498699054a12ecb5eea14695",
+            "text": "了解",
+            "words": [
+              {
+                "text": "了解",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8cd2ac8465442366a6ba21dfb2d2b9574312feaa820b79fcc9c1f8f761189e2c.mp3",
+          "sha256": "8cd2ac8465442366a6ba21dfb2d2b9574312feaa820b79fcc9c1f8f761189e2c",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "8cd2ac8465442366a6ba21dfb2d2b9574312feaa820b79fcc9c1f8f761189e2c",
+            "text": "了解",
+            "words": [
+              {
+                "text": "了解",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "e5b4e55653ccd0e9548040d0566dfb1bb8b81cdffd86c394ae28ac535040d2d5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3f6e3c519b1062fc6299baae54bb963d08c69725fdfeca1b4d32a4557afcc30a.mp3",
+          "sha256": "3f6e3c519b1062fc6299baae54bb963d08c69725fdfeca1b4d32a4557afcc30a",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "3f6e3c519b1062fc6299baae54bb963d08c69725fdfeca1b4d32a4557afcc30a",
+            "text": "参赛",
+            "words": [
+              {
+                "text": "参赛",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/189e6b524109d45205188aa9199736eea4206807ea1f7be681f3fce708a43959.mp3",
+          "sha256": "189e6b524109d45205188aa9199736eea4206807ea1f7be681f3fce708a43959",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "189e6b524109d45205188aa9199736eea4206807ea1f7be681f3fce708a43959",
+            "text": "参赛",
+            "words": [
+              {
+                "text": "参赛",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "92194c4a145f9c34b657a77ec7c54300c66b3a61cdad5e2741a306b6b0644ad8": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-54f345c2ae3c6d94381be419996d20678e41acebf5e6ee0bdd47f9fd7d1ef391.mp3",
+          "sha256": "54f345c2ae3c6d94381be419996d20678e41acebf5e6ee0bdd47f9fd7d1ef391",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "54f345c2ae3c6d94381be419996d20678e41acebf5e6ee0bdd47f9fd7d1ef391",
+            "text": "必修",
+            "words": [
+              {
+                "text": "必修",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6cba59ea1eca02931633fcdab4dca7668c5063ff52ee67e6e10c2285873c9e70.mp3",
+          "sha256": "6cba59ea1eca02931633fcdab4dca7668c5063ff52ee67e6e10c2285873c9e70",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "6cba59ea1eca02931633fcdab4dca7668c5063ff52ee67e6e10c2285873c9e70",
+            "text": "必修",
+            "words": [
+              {
+                "text": "必修",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

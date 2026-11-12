@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4316",
+  "targetId": "W4316",
+  "steps": [
+    {
+      "id": "BANK-W4316-W4316",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4316-W4316",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "gold medal",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "金牌"
+            },
+            {
+              "value": "jīnpái",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jin1pai2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "金牌",
+            "pinyin": "jīnpái",
+            "meaning": "gold medal",
+            "singleWord": true,
+            "audio": "2871699cc8699c12dc5317db3557ed39a868feeb9a380848b8295a898f9a6b61"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2871699cc8699c12dc5317db3557ed39a868feeb9a380848b8295a898f9a6b61": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-bc27836e4be04c9bae6d4955d7cd718baac274f01e1908aff7a172a3c2a86255.mp3",
+        "sha256": "bc27836e4be04c9bae6d4955d7cd718baac274f01e1908aff7a172a3c2a86255",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "bc27836e4be04c9bae6d4955d7cd718baac274f01e1908aff7a172a3c2a86255",
+          "text": "金牌",
+          "words": [
+            {
+              "text": "金牌",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-09a60e0c66f228eacae89200ff008ffe5ebd0159161fc160ef153fbf8389d2be.mp3",
+        "sha256": "09a60e0c66f228eacae89200ff008ffe5ebd0159161fc160ef153fbf8389d2be",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "09a60e0c66f228eacae89200ff008ffe5ebd0159161fc160ef153fbf8389d2be",
+          "text": "金牌",
+          "words": [
+            {
+              "text": "金牌",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4316",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4316-W4316",
+      "question_ids": [
+        "BANK-W4316-W4316"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-19",
+    "stepId": "S-U6-19-words-r4-6",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-91d1"
+    ],
+    "grammarLessonIds": []
+  }
+}

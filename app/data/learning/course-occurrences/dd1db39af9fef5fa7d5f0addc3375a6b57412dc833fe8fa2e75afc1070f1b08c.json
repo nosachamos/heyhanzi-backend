@@ -1,0 +1,727 @@
+{
+  "id": "EX-CHAR-char-67d4",
+  "revision": 2,
+  "unit": "U6-45-P02",
+  "stage": "ST-HSK6",
+  "after": "S-U6-45-P02-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "柔",
+  "sourceBlockId": "mandarin-simplified-v1-char-67d4",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-67d4",
+        "text": "柔",
+        "pinyin": "róu",
+        "meaning": "soft; flexible",
+        "characters": [
+          {
+            "id": "C-67D4",
+            "text": "柔"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-7edf",
+        "text": "统",
+        "pinyin": "tǒng",
+        "meaning": "to gather; to unite",
+        "characters": [
+          {
+            "id": "C-7EDF",
+            "text": "统"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-981ecaa32efd96a01ffb4bcc",
+        "text": "柔和",
+        "pinyin": "róu hé",
+        "meaning": "soft",
+        "characters": [
+          {
+            "id": "C-67D4",
+            "text": "柔"
+          },
+          {
+            "id": "C-548C",
+            "text": "和"
+          }
+        ]
+      },
+      {
+        "id": "W1489",
+        "text": "困难",
+        "pinyin": "kùnnan",
+        "meaning": "difficult; challenging",
+        "characters": [
+          {
+            "id": "C-56F0",
+            "text": "困"
+          },
+          {
+            "id": "C-96BE",
+            "text": "难"
+          }
+        ]
+      },
+      {
+        "id": "W4998",
+        "text": "文具",
+        "pinyin": "wénjù",
+        "meaning": "stationery; item of stationery",
+        "characters": [
+          {
+            "id": "C-6587",
+            "text": "文"
+          },
+          {
+            "id": "C-5177",
+            "text": "具"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "853746963b87df20884ce6b64fb9ff61a39a7f3640db34ebd37f304200615569",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-67d4",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "柔",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-67d4-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-981ecaa32efd96a01ffb4bcc",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "soft",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "柔和"
+              },
+              {
+                "value": "róu hé",
+                "mode": "pinyin"
+              },
+              {
+                "value": "rou2he2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "柔和",
+              "pinyin": "róu hé",
+              "meaning": "soft",
+              "audio": "f5858f42e7d12dff9d468a5a2c1363db447f47f6065ee20784854c34cc8f153a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-67d4-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-67d4",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "柔",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-7edf",
+                "label": "to gather; to unite",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1489",
+                "label": "difficult; challenging",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-67d4",
+                "label": "soft; flexible",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-67d4-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "柔",
+        "pinyin": "róu",
+        "meaning": "soft; flexible",
+        "source": "/stroke-data/67d4.json",
+        "reference": {
+          "character": "柔",
+          "sha256": "58c23a1bd03f739ab1ab22292320089bf637ad6e3718ac0c1e4d1954b4c69018",
+          "medians": [
+            [
+              [
+                315,
+                783
+              ],
+              [
+                364,
+                767
+              ],
+              [
+                555,
+                814
+              ],
+              [
+                596,
+                821
+              ],
+              [
+                618,
+                816
+              ],
+              [
+                640,
+                790
+              ],
+              [
+                637,
+                784
+              ],
+              [
+                547,
+                688
+              ],
+              [
+                537,
+                689
+              ]
+            ],
+            [
+              [
+                453,
+                699
+              ],
+              [
+                510,
+                670
+              ],
+              [
+                540,
+                639
+              ]
+            ],
+            [
+              [
+                206,
+                577
+              ],
+              [
+                250,
+                572
+              ],
+              [
+                671,
+                640
+              ],
+              [
+                740,
+                641
+              ],
+              [
+                767,
+                615
+              ],
+              [
+                692,
+                527
+              ]
+            ],
+            [
+              [
+                517,
+                580
+              ],
+              [
+                538,
+                576
+              ],
+              [
+                554,
+                534
+              ],
+              [
+                557,
+                481
+              ],
+              [
+                544,
+                429
+              ],
+              [
+                517,
+                399
+              ],
+              [
+                448,
+                431
+              ]
+            ],
+            [
+              [
+                523,
+                593
+              ],
+              [
+                517,
+                596
+              ],
+              [
+                465,
+                566
+              ],
+              [
+                416,
+                506
+              ],
+              [
+                325,
+                434
+              ],
+              [
+                281,
+                408
+              ],
+              [
+                217,
+                383
+              ]
+            ],
+            [
+              [
+                151,
+                253
+              ],
+              [
+                204,
+                243
+              ],
+              [
+                537,
+                287
+              ],
+              [
+                797,
+                309
+              ],
+              [
+                883,
+                288
+              ]
+            ],
+            [
+              [
+                485,
+                339
+              ],
+              [
+                499,
+                330
+              ],
+              [
+                513,
+                302
+              ],
+              [
+                499,
+                32
+              ],
+              [
+                510,
+                -53
+              ]
+            ],
+            [
+              [
+                478,
+                256
+              ],
+              [
+                412,
+                178
+              ],
+              [
+                341,
+                120
+              ],
+              [
+                240,
+                62
+              ],
+              [
+                153,
+                31
+              ]
+            ],
+            [
+              [
+                539,
+                262
+              ],
+              [
+                551,
+                238
+              ],
+              [
+                609,
+                187
+              ],
+              [
+                743,
+                88
+              ],
+              [
+                809,
+                72
+              ],
+              [
+                925,
+                63
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-67d4-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4998",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "stationery; item of stationery",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "文具"
+              },
+              {
+                "value": "wénjù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wen2ju4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "文具",
+              "pinyin": "wénjù",
+              "meaning": "stationery; item of stationery",
+              "audio": "359d50fbea017fd4862664f04c96c305a186b35baa119ef5e87f68481fa99f75",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-67d4-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-67d4",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "soft; flexible",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "柔"
+              },
+              {
+                "value": "róu",
+                "mode": "pinyin"
+              },
+              {
+                "value": "rou2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "柔",
+              "pinyin": "róu",
+              "meaning": "soft; flexible",
+              "audio": "c3fa5dc0c482c3721bced655b10023642eb7b4efc9ac3127e8e3fc7db8430644",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "c3fa5dc0c482c3721bced655b10023642eb7b4efc9ac3127e8e3fc7db8430644"
+            ],
+            "transcript": [
+              {
+                "text": "柔",
+                "pinyin": "róu",
+                "meaning": "soft; flexible",
+                "audio": "c3fa5dc0c482c3721bced655b10023642eb7b4efc9ac3127e8e3fc7db8430644",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-67D4",
+      "character": "柔",
+      "lessonIds": [
+        "LESSON-C-67D4"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-67d4-word",
+        "EX-CHAR-char-67d4-recognize",
+        "EX-CHAR-char-67d4-write",
+        "EX-CHAR-char-67d4-familiar",
+        "EX-CHAR-char-67d4-recall"
+      ]
+    },
+    "audio": {
+      "c3fa5dc0c482c3721bced655b10023642eb7b4efc9ac3127e8e3fc7db8430644": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-0b0dc11b5cbe6e0b488106194727c4af83fb78882fee2e9dd3a32b17b3c23efc.mp3",
+          "sha256": "0b0dc11b5cbe6e0b488106194727c4af83fb78882fee2e9dd3a32b17b3c23efc",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "0b0dc11b5cbe6e0b488106194727c4af83fb78882fee2e9dd3a32b17b3c23efc",
+            "text": "柔",
+            "words": [
+              {
+                "text": "柔",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-04174a986164777ea487da4891fb6108d93f1942f6b8e94dd37cd14cbf9a8c47.mp3",
+          "sha256": "04174a986164777ea487da4891fb6108d93f1942f6b8e94dd37cd14cbf9a8c47",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "04174a986164777ea487da4891fb6108d93f1942f6b8e94dd37cd14cbf9a8c47",
+            "text": "柔",
+            "words": [
+              {
+                "text": "柔",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "c401a0efe12c4d2b1144eef859bb88b48d63e76ca1ae3f61379fe8a877ffc16d": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-3562758de90ea3c2aaa15db5c75fb8bfa63d9d30f957371af79691bc10590dd8.mp3",
+          "sha256": "3562758de90ea3c2aaa15db5c75fb8bfa63d9d30f957371af79691bc10590dd8",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "3562758de90ea3c2aaa15db5c75fb8bfa63d9d30f957371af79691bc10590dd8",
+            "text": "统",
+            "words": [
+              {
+                "text": "统",
+                "start": 0.16,
+                "end": 0.26
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-193d84412bbfeefc2461124244218d02987977307d3726272cfff13cc6f2b935.mp3",
+          "sha256": "193d84412bbfeefc2461124244218d02987977307d3726272cfff13cc6f2b935",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "193d84412bbfeefc2461124244218d02987977307d3726272cfff13cc6f2b935",
+            "text": "统",
+            "words": [
+              {
+                "text": "统",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "f5858f42e7d12dff9d468a5a2c1363db447f47f6065ee20784854c34cc8f153a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/081e2c0469d630918295fc2363ec335722a685d481b6229b1ab8b160534e0d7c.mp3",
+          "sha256": "081e2c0469d630918295fc2363ec335722a685d481b6229b1ab8b160534e0d7c",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "081e2c0469d630918295fc2363ec335722a685d481b6229b1ab8b160534e0d7c",
+            "text": "柔和",
+            "words": [
+              {
+                "text": "柔和",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/43b5df6b29dcb6d1a25e5218bf0e01eaae9b49244ee6f92f86b6c18251692e1b.mp3",
+          "sha256": "43b5df6b29dcb6d1a25e5218bf0e01eaae9b49244ee6f92f86b6c18251692e1b",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "43b5df6b29dcb6d1a25e5218bf0e01eaae9b49244ee6f92f86b6c18251692e1b",
+            "text": "柔和",
+            "words": [
+              {
+                "text": "柔和",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "96b128c7ca6617e01382afcbb51fc676687e2402868969c2e2c0118ba050f5a2": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-da27e33c03f23ada0864ecb49854ca5ef835a57c892789f6c48c81bfbcff02a3.mp3",
+          "sha256": "da27e33c03f23ada0864ecb49854ca5ef835a57c892789f6c48c81bfbcff02a3",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "da27e33c03f23ada0864ecb49854ca5ef835a57c892789f6c48c81bfbcff02a3",
+            "text": "困难",
+            "words": [
+              {
+                "text": "困难",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-718484f26cabd3c5a1b5863df8a7d21693a7daffba14ffbe4b1323f7b381891d.mp3",
+          "sha256": "718484f26cabd3c5a1b5863df8a7d21693a7daffba14ffbe4b1323f7b381891d",
+          "byteLength": 13581,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "718484f26cabd3c5a1b5863df8a7d21693a7daffba14ffbe4b1323f7b381891d",
+            "text": "困难",
+            "words": [
+              {
+                "text": "困难",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "359d50fbea017fd4862664f04c96c305a186b35baa119ef5e87f68481fa99f75": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/75e9d6fba36c2182d296317c7e3386849e29e68082e8a512512e761cd28ed113.mp3",
+          "sha256": "75e9d6fba36c2182d296317c7e3386849e29e68082e8a512512e761cd28ed113",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "75e9d6fba36c2182d296317c7e3386849e29e68082e8a512512e761cd28ed113",
+            "text": "文具",
+            "words": [
+              {
+                "text": "文具",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/89f70ce5d44f23c8bec2cb142c9fc2c8f67e183b1facca25ac5f025788dabda7.mp3",
+          "sha256": "89f70ce5d44f23c8bec2cb142c9fc2c8f67e183b1facca25ac5f025788dabda7",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "89f70ce5d44f23c8bec2cb142c9fc2c8f67e183b1facca25ac5f025788dabda7",
+            "text": "文具",
+            "words": [
+              {
+                "text": "文具",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

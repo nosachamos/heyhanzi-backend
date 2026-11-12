@@ -1,0 +1,755 @@
+{
+  "id": "EX-CHAR-char-7ae5",
+  "revision": 2,
+  "unit": "U4-03",
+  "stage": "ST-HSK4",
+  "after": "S-U4-03-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "童",
+  "sourceBlockId": "mandarin-simplified-v1-char-7ae5",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7ae5",
+        "text": "童",
+        "pinyin": "tóng",
+        "meaning": "child",
+        "characters": [
+          {
+            "id": "C-7AE5",
+            "text": "童"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-3c7545ee2f6693cf316cef2d",
+        "text": "激动",
+        "pinyin": "jīdòng",
+        "meaning": "to move emotionally; to stir up (emotions)",
+        "characters": [
+          {
+            "id": "C-6FC0",
+            "text": "激"
+          },
+          {
+            "id": "C-52A8",
+            "text": "动"
+          }
+        ]
+      },
+      {
+        "id": "W0841",
+        "text": "课本",
+        "pinyin": "kèběn",
+        "meaning": "textbook",
+        "characters": [
+          {
+            "id": "C-8BFE",
+            "text": "课"
+          },
+          {
+            "id": "C-672C",
+            "text": "本"
+          }
+        ]
+      },
+      {
+        "id": "W1783",
+        "text": "童年",
+        "pinyin": "tóngnián",
+        "meaning": "childhood",
+        "characters": [
+          {
+            "id": "C-7AE5",
+            "text": "童"
+          },
+          {
+            "id": "C-5E74",
+            "text": "年"
+          }
+        ]
+      },
+      {
+        "id": "W5000",
+        "text": "文明",
+        "pinyin": "wénmíng",
+        "meaning": "civilized; civilization",
+        "characters": [
+          {
+            "id": "C-6587",
+            "text": "文"
+          },
+          {
+            "id": "C-660E",
+            "text": "明"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "83d0449c84b6efd077a907348de0e9d9ef5036215a0f957b908c00c8a22f8b6d",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7ae5",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "童",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7ae5-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1783",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "childhood",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "童年"
+              },
+              {
+                "value": "tóngnián",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tong2nian2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "童年",
+              "pinyin": "tóngnián",
+              "meaning": "childhood",
+              "audio": "df3a4ffde87d063a3991e267c323b3d60e51d8bd0a61453cc8ff8fec1362c863",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7ae5-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7ae5",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "童",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-3c7545ee2f6693cf316cef2d",
+                "label": "to move emotionally; to stir up (emotions)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-7ae5",
+                "label": "child",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W5000",
+                "label": "civilized; civilization",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7ae5-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "童",
+        "pinyin": "tóng",
+        "meaning": "child",
+        "source": "/stroke-data/7ae5.json",
+        "reference": {
+          "character": "童",
+          "sha256": "458dd6f405223e0342e0202579a46693f65a11bd77ab155ae0280dedf7cf6094",
+          "medians": [
+            [
+              [
+                453,
+                849
+              ],
+              [
+                527,
+                815
+              ],
+              [
+                558,
+                779
+              ]
+            ],
+            [
+              [
+                340,
+                691
+              ],
+              [
+                375,
+                682
+              ],
+              [
+                424,
+                684
+              ],
+              [
+                637,
+                721
+              ],
+              [
+                707,
+                723
+              ]
+            ],
+            [
+              [
+                373,
+                621
+              ],
+              [
+                405,
+                590
+              ],
+              [
+                425,
+                558
+              ]
+            ],
+            [
+              [
+                588,
+                681
+              ],
+              [
+                612,
+                651
+              ],
+              [
+                564,
+                562
+              ],
+              [
+                543,
+                541
+              ]
+            ],
+            [
+              [
+                106,
+                469
+              ],
+              [
+                144,
+                460
+              ],
+              [
+                175,
+                462
+              ],
+              [
+                400,
+                501
+              ],
+              [
+                828,
+                551
+              ],
+              [
+                863,
+                550
+              ],
+              [
+                923,
+                533
+              ]
+            ],
+            [
+              [
+                286,
+                418
+              ],
+              [
+                317,
+                393
+              ],
+              [
+                364,
+                194
+              ]
+            ],
+            [
+              [
+                354,
+                388
+              ],
+              [
+                360,
+                401
+              ],
+              [
+                385,
+                409
+              ],
+              [
+                476,
+                424
+              ],
+              [
+                639,
+                448
+              ],
+              [
+                697,
+                440
+              ],
+              [
+                725,
+                406
+              ],
+              [
+                685,
+                295
+              ],
+              [
+                661,
+                248
+              ],
+              [
+                661,
+                220
+              ]
+            ],
+            [
+              [
+                408,
+                315
+              ],
+              [
+                556,
+                344
+              ],
+              [
+                599,
+                339
+              ]
+            ],
+            [
+              [
+                385,
+                213
+              ],
+              [
+                392,
+                222
+              ],
+              [
+                609,
+                252
+              ],
+              [
+                626,
+                262
+              ]
+            ],
+            [
+              [
+                474,
+                401
+              ],
+              [
+                501,
+                385
+              ],
+              [
+                505,
+                367
+              ],
+              [
+                497,
+                42
+              ],
+              [
+                482,
+                26
+              ]
+            ],
+            [
+              [
+                358,
+                116
+              ],
+              [
+                380,
+                109
+              ],
+              [
+                433,
+                110
+              ],
+              [
+                605,
+                141
+              ],
+              [
+                655,
+                140
+              ]
+            ],
+            [
+              [
+                214,
+                -11
+              ],
+              [
+                266,
+                -23
+              ],
+              [
+                456,
+                -1
+              ],
+              [
+                755,
+                17
+              ],
+              [
+                797,
+                12
+              ],
+              [
+                845,
+                -6
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7ae5-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0841",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "textbook",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "课本"
+              },
+              {
+                "value": "kèběn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ke4ben3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "课本",
+              "pinyin": "kèběn",
+              "meaning": "textbook",
+              "audio": "901a72ba8c7da31211bba1ad8da26115ed1c529fb84859f53d746aaf931f7511",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7ae5-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7ae5",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "child",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "童"
+              },
+              {
+                "value": "tóng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tong2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "童",
+              "pinyin": "tóng",
+              "meaning": "child",
+              "audio": "6e7f5bded951179c024b354f60d1a5c4079c7c457e601cc0343ec337ca85b2c5",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "6e7f5bded951179c024b354f60d1a5c4079c7c457e601cc0343ec337ca85b2c5"
+            ],
+            "transcript": [
+              {
+                "text": "童",
+                "pinyin": "tóng",
+                "meaning": "child",
+                "audio": "6e7f5bded951179c024b354f60d1a5c4079c7c457e601cc0343ec337ca85b2c5",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7AE5",
+      "character": "童",
+      "lessonIds": [
+        "LESSON-C-7AE5"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7ae5-word",
+        "EX-CHAR-char-7ae5-recognize",
+        "EX-CHAR-char-7ae5-write",
+        "EX-CHAR-char-7ae5-familiar",
+        "EX-CHAR-char-7ae5-recall"
+      ]
+    },
+    "audio": {
+      "6e7f5bded951179c024b354f60d1a5c4079c7c457e601cc0343ec337ca85b2c5": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-6d1192e58b3c5e1fec824659db33aa4b105419855e446c862a9db08dda0d1ef9.mp3",
+          "sha256": "6d1192e58b3c5e1fec824659db33aa4b105419855e446c862a9db08dda0d1ef9",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "6d1192e58b3c5e1fec824659db33aa4b105419855e446c862a9db08dda0d1ef9",
+            "text": "童",
+            "words": [
+              {
+                "text": "童",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-428063b93ebf2267c7a4137511865e7c30b186a1446a830e4cc794ba0e5292f0.mp3",
+          "sha256": "428063b93ebf2267c7a4137511865e7c30b186a1446a830e4cc794ba0e5292f0",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "428063b93ebf2267c7a4137511865e7c30b186a1446a830e4cc794ba0e5292f0",
+            "text": "童",
+            "words": [
+              {
+                "text": "童",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "243822b041145f53d13c91b56092c916551db40f4b34e35cdcdb9a1674aa84e2": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/61bf0d16eb62fe802eaeb391e8b543b2fc096a6f9273d17079deb0b4a453b01e.mp3",
+          "sha256": "61bf0d16eb62fe802eaeb391e8b543b2fc096a6f9273d17079deb0b4a453b01e",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "61bf0d16eb62fe802eaeb391e8b543b2fc096a6f9273d17079deb0b4a453b01e",
+            "text": "激动",
+            "words": [
+              {
+                "text": "激动",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/7c167f315c6f394a5f0ca8429d5b3e8e472021dcdf6ba4f27b6ddf2390667b5b.mp3",
+          "sha256": "7c167f315c6f394a5f0ca8429d5b3e8e472021dcdf6ba4f27b6ddf2390667b5b",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "7c167f315c6f394a5f0ca8429d5b3e8e472021dcdf6ba4f27b6ddf2390667b5b",
+            "text": "激动",
+            "words": [
+              {
+                "text": "激动",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "901a72ba8c7da31211bba1ad8da26115ed1c529fb84859f53d746aaf931f7511": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-d2e58914cbfeb95ad6b139a0efd100a39969f4a9090992a22ef7cd198275d11e.mp3",
+          "sha256": "d2e58914cbfeb95ad6b139a0efd100a39969f4a9090992a22ef7cd198275d11e",
+          "byteLength": 16461,
+          "readAlong": {
+            "audioSha256": "d2e58914cbfeb95ad6b139a0efd100a39969f4a9090992a22ef7cd198275d11e",
+            "text": "课本",
+            "words": [
+              {
+                "text": "课本",
+                "start": 0.44999999999999996,
+                "end": 0.75
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-7276e62e59c8d6e70195e5c6574a55b94e5413ce557bf8a0645e8f5e78bec335.mp3",
+          "sha256": "7276e62e59c8d6e70195e5c6574a55b94e5413ce557bf8a0645e8f5e78bec335",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "7276e62e59c8d6e70195e5c6574a55b94e5413ce557bf8a0645e8f5e78bec335",
+            "text": "课本",
+            "words": [
+              {
+                "text": "课本",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "df3a4ffde87d063a3991e267c323b3d60e51d8bd0a61453cc8ff8fec1362c863": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7cc2f682ec37a8278a7ab07ac98581bd3cd60839946e4883900125c1281636c2.mp3",
+          "sha256": "7cc2f682ec37a8278a7ab07ac98581bd3cd60839946e4883900125c1281636c2",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "7cc2f682ec37a8278a7ab07ac98581bd3cd60839946e4883900125c1281636c2",
+            "text": "童年",
+            "words": [
+              {
+                "text": "童年",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2fff09a0327aa149283f333bd3a2c8e587245dd105870214f27fac2f96e119b7.mp3",
+          "sha256": "2fff09a0327aa149283f333bd3a2c8e587245dd105870214f27fac2f96e119b7",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "2fff09a0327aa149283f333bd3a2c8e587245dd105870214f27fac2f96e119b7",
+            "text": "童年",
+            "words": [
+              {
+                "text": "童年",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "fe3300dd266fe15d8917a90659de758857dba6a460ccc418e498a43f1844eecc": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/286e692e200c26470ed7f443c7e1c32da175ca034e3e445a46aaf3f41263114d.mp3",
+          "sha256": "286e692e200c26470ed7f443c7e1c32da175ca034e3e445a46aaf3f41263114d",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "286e692e200c26470ed7f443c7e1c32da175ca034e3e445a46aaf3f41263114d",
+            "text": "文明",
+            "words": [
+              {
+                "text": "文明",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/17cd5551a213f1be5e9c6c535d7148ecab0272029c62af2621370c70e905fa4b.mp3",
+          "sha256": "17cd5551a213f1be5e9c6c535d7148ecab0272029c62af2621370c70e905fa4b",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "17cd5551a213f1be5e9c6c535d7148ecab0272029c62af2621370c70e905fa4b",
+            "text": "文明",
+            "words": [
+              {
+                "text": "文明",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,769 @@
+{
+  "id": "EX-CHAR-char-68b0",
+  "revision": 2,
+  "unit": "U6-30-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-30-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "械",
+  "sourceBlockId": "mandarin-simplified-v1-char-68b0",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-632b",
+        "text": "挫",
+        "pinyin": "cuò",
+        "meaning": "obstructed; to fail",
+        "characters": [
+          {
+            "id": "C-632B",
+            "text": "挫"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-68b0",
+        "text": "械",
+        "pinyin": "xiè",
+        "meaning": "appliance; tool",
+        "characters": [
+          {
+            "id": "C-68B0",
+            "text": "械"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-43967149e29a211c9088e762",
+        "text": "器械",
+        "pinyin": "qì xiè",
+        "meaning": "equipment",
+        "characters": [
+          {
+            "id": "C-5668",
+            "text": "器"
+          },
+          {
+            "id": "C-68B0",
+            "text": "械"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-69398db8c1510b510b75158b",
+        "text": "有意",
+        "pinyin": "yǒu yì",
+        "meaning": "to intend",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          },
+          {
+            "id": "C-610F",
+            "text": "意"
+          }
+        ]
+      },
+      {
+        "id": "W0017",
+        "text": "他们",
+        "pinyin": "tāmen",
+        "meaning": "they; them",
+        "characters": [
+          {
+            "id": "C-4ED6",
+            "text": "他"
+          },
+          {
+            "id": "C-4EEC",
+            "text": "们"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "6182a34dd85124dbda0f0f0909386d160a074076c03b61a6f4b70247ac4d486b",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-68b0",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "械",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-68b0-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-43967149e29a211c9088e762",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "equipment",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "器械"
+              },
+              {
+                "value": "qì xiè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qi4xie4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "器械",
+              "pinyin": "qì xiè",
+              "meaning": "equipment",
+              "audio": "1b696b5ff35a6130a233e58195c71d337bc392dae389b25b635e5e25ab3ca47c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-68b0-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-68b0",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "械",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-68b0",
+                "label": "appliance; tool",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0017",
+                "label": "they; them",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-632b",
+                "label": "obstructed; to fail",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-68b0-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "械",
+        "pinyin": "xiè",
+        "meaning": "appliance; tool",
+        "source": "/stroke-data/68b0.json",
+        "reference": {
+          "character": "械",
+          "sha256": "99698a33899a7e68ed8398f4e553b9580fe6ae56a907aeabea17f28bfc687db9",
+          "medians": [
+            [
+              [
+                99,
+                498
+              ],
+              [
+                136,
+                496
+              ],
+              [
+                178,
+                504
+              ],
+              [
+                324,
+                553
+              ],
+              [
+                378,
+                558
+              ]
+            ],
+            [
+              [
+                237,
+                797
+              ],
+              [
+                277,
+                758
+              ],
+              [
+                286,
+                735
+              ],
+              [
+                272,
+                277
+              ],
+              [
+                263,
+                141
+              ],
+              [
+                254,
+                89
+              ],
+              [
+                256,
+                4
+              ]
+            ],
+            [
+              [
+                255,
+                497
+              ],
+              [
+                232,
+                395
+              ],
+              [
+                217,
+                362
+              ],
+              [
+                167,
+                271
+              ],
+              [
+                96,
+                171
+              ],
+              [
+                68,
+                141
+              ]
+            ],
+            [
+              [
+                304,
+                439
+              ],
+              [
+                315,
+                416
+              ],
+              [
+                344,
+                384
+              ]
+            ],
+            [
+              [
+                428,
+                522
+              ],
+              [
+                494,
+                521
+              ],
+              [
+                707,
+                583
+              ],
+              [
+                770,
+                591
+              ]
+            ],
+            [
+              [
+                343,
+                283
+              ],
+              [
+                376,
+                278
+              ],
+              [
+                575,
+                326
+              ],
+              [
+                626,
+                324
+              ]
+            ],
+            [
+              [
+                412,
+                413
+              ],
+              [
+                440,
+                382
+              ],
+              [
+                436,
+                276
+              ],
+              [
+                413,
+                179
+              ],
+              [
+                367,
+                105
+              ]
+            ],
+            [
+              [
+                526,
+                454
+              ],
+              [
+                560,
+                416
+              ],
+              [
+                554,
+                221
+              ],
+              [
+                544,
+                144
+              ],
+              [
+                546,
+                94
+              ]
+            ],
+            [
+              [
+                571,
+                810
+              ],
+              [
+                592,
+                802
+              ],
+              [
+                626,
+                772
+              ],
+              [
+                638,
+                589
+              ],
+              [
+                662,
+                448
+              ],
+              [
+                693,
+                327
+              ],
+              [
+                728,
+                229
+              ],
+              [
+                762,
+                163
+              ],
+              [
+                804,
+                104
+              ],
+              [
+                833,
+                72
+              ],
+              [
+                885,
+                41
+              ],
+              [
+                899,
+                41
+              ],
+              [
+                913,
+                70
+              ],
+              [
+                931,
+                207
+              ]
+            ],
+            [
+              [
+                787,
+                481
+              ],
+              [
+                808,
+                452
+              ],
+              [
+                786,
+                362
+              ],
+              [
+                758,
+                294
+              ],
+              [
+                697,
+                204
+              ],
+              [
+                628,
+                138
+              ],
+              [
+                597,
+                119
+              ]
+            ],
+            [
+              [
+                737,
+                777
+              ],
+              [
+                820,
+                727
+              ],
+              [
+                847,
+                691
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-68b0-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-69398db8c1510b510b75158b",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to intend",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "有意"
+              },
+              {
+                "value": "yǒu yì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "you3yi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "有意",
+              "pinyin": "yǒu yì",
+              "meaning": "to intend",
+              "audio": "541806b4498108d8b53ae9050c44cb037f750036e30967c08c70b904ed2e80f5",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-68b0-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-68b0",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "appliance; tool",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "械"
+              },
+              {
+                "value": "xiè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xie4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "械",
+              "pinyin": "xiè",
+              "meaning": "appliance; tool",
+              "audio": "9ac64077448aed378bf4f0865fa84efce46255aee038cfec560dea2f0d02e7bf",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "9ac64077448aed378bf4f0865fa84efce46255aee038cfec560dea2f0d02e7bf"
+            ],
+            "transcript": [
+              {
+                "text": "械",
+                "pinyin": "xiè",
+                "meaning": "appliance; tool",
+                "audio": "9ac64077448aed378bf4f0865fa84efce46255aee038cfec560dea2f0d02e7bf",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-68B0",
+      "character": "械",
+      "lessonIds": [
+        "LESSON-C-68B0"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-68b0-word",
+        "EX-CHAR-char-68b0-recognize",
+        "EX-CHAR-char-68b0-write",
+        "EX-CHAR-char-68b0-familiar",
+        "EX-CHAR-char-68b0-recall"
+      ]
+    },
+    "audio": {
+      "9a5acb9785b560f7552719756d02790564fe00968301f5397ed7c60616f75f54": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-83504b6560ea666aeecdc270a261996e47eb73e623b1e457881a2a7cf7aa73c3.mp3",
+          "sha256": "83504b6560ea666aeecdc270a261996e47eb73e623b1e457881a2a7cf7aa73c3",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "83504b6560ea666aeecdc270a261996e47eb73e623b1e457881a2a7cf7aa73c3",
+            "text": "挫",
+            "words": [
+              {
+                "text": "挫",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-47d2ad912a27b4b644308ade94426cc136237389ca106071ae5a759b7e7a6cd6.mp3",
+          "sha256": "47d2ad912a27b4b644308ade94426cc136237389ca106071ae5a759b7e7a6cd6",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "47d2ad912a27b4b644308ade94426cc136237389ca106071ae5a759b7e7a6cd6",
+            "text": "挫",
+            "words": [
+              {
+                "text": "挫",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "9ac64077448aed378bf4f0865fa84efce46255aee038cfec560dea2f0d02e7bf": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-1e5f6283bcbe2b3cef5e4950bdb03497bb547ca244343d61a0436ca67ba9ecc0.mp3",
+          "sha256": "1e5f6283bcbe2b3cef5e4950bdb03497bb547ca244343d61a0436ca67ba9ecc0",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "1e5f6283bcbe2b3cef5e4950bdb03497bb547ca244343d61a0436ca67ba9ecc0",
+            "text": "械",
+            "words": [
+              {
+                "text": "械",
+                "start": 0.32,
+                "end": 0.42
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-ab70f36e643feb23538374e9a81eb852c6fa562941d6b2e7c4f2a306828bdd1a.mp3",
+          "sha256": "ab70f36e643feb23538374e9a81eb852c6fa562941d6b2e7c4f2a306828bdd1a",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "ab70f36e643feb23538374e9a81eb852c6fa562941d6b2e7c4f2a306828bdd1a",
+            "text": "械",
+            "words": [
+              {
+                "text": "械",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "1b696b5ff35a6130a233e58195c71d337bc392dae389b25b635e5e25ab3ca47c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/17a902cdc9d48984a1208349b7f6753a606c3e8dd62247f6a0871889e7be9a40.mp3",
+          "sha256": "17a902cdc9d48984a1208349b7f6753a606c3e8dd62247f6a0871889e7be9a40",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "17a902cdc9d48984a1208349b7f6753a606c3e8dd62247f6a0871889e7be9a40",
+            "text": "器械",
+            "words": [
+              {
+                "text": "器械",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a358eddcf11b44086b69390c44705a82def8e9d5381e0e47dec8cb8e91c36511.mp3",
+          "sha256": "a358eddcf11b44086b69390c44705a82def8e9d5381e0e47dec8cb8e91c36511",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "a358eddcf11b44086b69390c44705a82def8e9d5381e0e47dec8cb8e91c36511",
+            "text": "器械",
+            "words": [
+              {
+                "text": "器械",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "541806b4498108d8b53ae9050c44cb037f750036e30967c08c70b904ed2e80f5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2a19cb59cee50cdeaacb3eb2f0ac2b1ffd80391a268337d0ad44b03e4e256fa4.mp3",
+          "sha256": "2a19cb59cee50cdeaacb3eb2f0ac2b1ffd80391a268337d0ad44b03e4e256fa4",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "2a19cb59cee50cdeaacb3eb2f0ac2b1ffd80391a268337d0ad44b03e4e256fa4",
+            "text": "有意",
+            "words": [
+              {
+                "text": "有意",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/47d01722a540d720696b42cad197947e684791eed103ddf62fb4ac1a52e9f5d3.mp3",
+          "sha256": "47d01722a540d720696b42cad197947e684791eed103ddf62fb4ac1a52e9f5d3",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "47d01722a540d720696b42cad197947e684791eed103ddf62fb4ac1a52e9f5d3",
+            "text": "有意",
+            "words": [
+              {
+                "text": "有意",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "0b3e37d9fd37c55c587cc0d41b88a7e0202f7a278c713bc0812baf87ac351e37": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-77e4a3f5dcfcb0d9fbb2dbdab0c718b66e3cff006478202b9134aa9703199edb.mp3",
+          "sha256": "77e4a3f5dcfcb0d9fbb2dbdab0c718b66e3cff006478202b9134aa9703199edb",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "77e4a3f5dcfcb0d9fbb2dbdab0c718b66e3cff006478202b9134aa9703199edb",
+            "text": "他们",
+            "words": [
+              {
+                "text": "他们",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d8e2a6125a838210f57a2f583ab29535215716188de3fa4b7242e046489b7c9f.mp3",
+          "sha256": "d8e2a6125a838210f57a2f583ab29535215716188de3fa4b7242e046489b7c9f",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "d8e2a6125a838210f57a2f583ab29535215716188de3fa4b7242e046489b7c9f",
+            "text": "他们",
+            "words": [
+              {
+                "text": "他们",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

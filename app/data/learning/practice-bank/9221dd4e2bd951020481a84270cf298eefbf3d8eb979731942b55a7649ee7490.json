@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0022",
+  "targetId": "W0022",
+  "steps": [
+    {
+      "id": "BANK-W0022-W0022",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0022-W0022",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "friend",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "朋友"
+            },
+            {
+              "value": "péngyou",
+              "mode": "pinyin"
+            },
+            {
+              "value": "peng2you5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "朋友",
+            "pinyin": "péngyou",
+            "meaning": "friend",
+            "singleWord": true,
+            "audio": "f772b918d4d9562d8a1c0140ad213fc2ca4daac6bbb19999720e1dce3209c9cf"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f772b918d4d9562d8a1c0140ad213fc2ca4daac6bbb19999720e1dce3209c9cf": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-7d8f3278e3abbe6b65eee3e532c13316039ea5f1587c3cfd232e7340f57e649e.mp3",
+        "sha256": "7d8f3278e3abbe6b65eee3e532c13316039ea5f1587c3cfd232e7340f57e649e",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "7d8f3278e3abbe6b65eee3e532c13316039ea5f1587c3cfd232e7340f57e649e",
+          "text": "朋友",
+          "words": [
+            {
+              "text": "朋友",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ee876680ccec5e08f38fd5028fc9c704466b2a0e96d1a78d4f3954faa46724ca.mp3",
+        "sha256": "ee876680ccec5e08f38fd5028fc9c704466b2a0e96d1a78d4f3954faa46724ca",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "ee876680ccec5e08f38fd5028fc9c704466b2a0e96d1a78d4f3954faa46724ca",
+          "text": "朋友",
+          "words": [
+            {
+              "text": "朋友",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0022",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0022-W0022",
+      "question_ids": [
+        "BANK-W0022-W0022"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U02-P01",
+    "stepId": "S-U02-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-53cb"
+    ],
+    "grammarLessonIds": []
+  }
+}

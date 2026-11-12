@@ -1,0 +1,673 @@
+{
+  "id": "EX-CHAR-char-5f03",
+  "revision": 2,
+  "unit": "U4-33",
+  "stage": "ST-HSK4",
+  "after": "S-U4-33-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "弃",
+  "sourceBlockId": "mandarin-simplified-v1-char-5f03",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5f03",
+        "text": "弃",
+        "pinyin": "qì",
+        "meaning": "to abandon; to relinquish",
+        "characters": [
+          {
+            "id": "C-5F03",
+            "text": "弃"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ddb716ff5ea079bb1b305a5c",
+        "text": "胖子",
+        "pinyin": "pàng zi",
+        "meaning": "fat person",
+        "characters": [
+          {
+            "id": "C-80D6",
+            "text": "胖"
+          },
+          {
+            "id": "C-5B50",
+            "text": "子"
+          }
+        ]
+      },
+      {
+        "id": "W1035",
+        "text": "着急",
+        "pinyin": "zháojí",
+        "meaning": "to worry; to feel anxious",
+        "characters": [
+          {
+            "id": "C-7740",
+            "text": "着"
+          },
+          {
+            "id": "C-6025",
+            "text": "急"
+          }
+        ]
+      },
+      {
+        "id": "W1247",
+        "text": "放弃",
+        "pinyin": "fàngqì",
+        "meaning": "to renounce; to abandon",
+        "characters": [
+          {
+            "id": "C-653E",
+            "text": "放"
+          },
+          {
+            "id": "C-5F03",
+            "text": "弃"
+          }
+        ]
+      },
+      {
+        "id": "W1676",
+        "text": "少数",
+        "pinyin": "shǎoshù",
+        "meaning": "small number; few",
+        "characters": [
+          {
+            "id": "C-5C11",
+            "text": "少"
+          },
+          {
+            "id": "C-6570",
+            "text": "数"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "1f29554040da52cd0fb66c53d557be4d8c1c571efa74a212306a03f7f44a9796",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5f03",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "弃",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5f03-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1247",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to renounce; to abandon",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "放弃"
+              },
+              {
+                "value": "fàngqì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "fang4qi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "放弃",
+              "pinyin": "fàngqì",
+              "meaning": "to renounce; to abandon",
+              "audio": "919631a5b56bf6b6d39f94c9d3a847629e55a88c4885d37967404e96f407d5be",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5f03-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5f03",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "弃",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1035",
+                "label": "to worry; to feel anxious",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5f03",
+                "label": "to abandon; to relinquish",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-ddb716ff5ea079bb1b305a5c",
+                "label": "fat person",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5f03-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "弃",
+        "pinyin": "qì",
+        "meaning": "to abandon; to relinquish",
+        "source": "/stroke-data/5f03.json",
+        "reference": {
+          "character": "弃",
+          "sha256": "e98b02705de066d81e4e3a3fca7fe80b491a228a60099d01eeb08ac4a18c1e1a",
+          "medians": [
+            [
+              [
+                426,
+                837
+              ],
+              [
+                517,
+                798
+              ],
+              [
+                535,
+                785
+              ],
+              [
+                553,
+                760
+              ]
+            ],
+            [
+              [
+                252,
+                657
+              ],
+              [
+                300,
+                646
+              ],
+              [
+                683,
+                707
+              ],
+              [
+                741,
+                709
+              ],
+              [
+                777,
+                701
+              ]
+            ],
+            [
+              [
+                454,
+                640
+              ],
+              [
+                481,
+                613
+              ],
+              [
+                429,
+                541
+              ],
+              [
+                382,
+                491
+              ],
+              [
+                365,
+                457
+              ],
+              [
+                399,
+                452
+              ],
+              [
+                624,
+                504
+              ],
+              [
+                636,
+                494
+              ]
+            ],
+            [
+              [
+                595,
+                581
+              ],
+              [
+                668,
+                517
+              ],
+              [
+                691,
+                486
+              ],
+              [
+                703,
+                455
+              ]
+            ],
+            [
+              [
+                100,
+                271
+              ],
+              [
+                163,
+                255
+              ],
+              [
+                481,
+                300
+              ],
+              [
+                832,
+                332
+              ],
+              [
+                887,
+                323
+              ],
+              [
+                932,
+                304
+              ]
+            ],
+            [
+              [
+                347,
+                363
+              ],
+              [
+                385,
+                330
+              ],
+              [
+                378,
+                240
+              ],
+              [
+                356,
+                152
+              ],
+              [
+                306,
+                73
+              ],
+              [
+                274,
+                43
+              ],
+              [
+                217,
+                10
+              ]
+            ],
+            [
+              [
+                589,
+                401
+              ],
+              [
+                601,
+                393
+              ],
+              [
+                621,
+                363
+              ],
+              [
+                624,
+                153
+              ],
+              [
+                619,
+                47
+              ],
+              [
+                635,
+                -42
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5f03-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1676",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "small number; few",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "少数"
+              },
+              {
+                "value": "shǎoshù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shao3shu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "少数",
+              "pinyin": "shǎoshù",
+              "meaning": "small number; few",
+              "audio": "1a65cb4957c2e545320a8d72ad168380108e713ebd6437729404837b51b1bcb8",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5f03-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5f03",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to abandon; to relinquish",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "弃"
+              },
+              {
+                "value": "qì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "弃",
+              "pinyin": "qì",
+              "meaning": "to abandon; to relinquish",
+              "audio": "9a02c16567cd5cae3afa19fd7be1f76913fbd73cc8c5dae1fcc7519883178e85",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "9a02c16567cd5cae3afa19fd7be1f76913fbd73cc8c5dae1fcc7519883178e85"
+            ],
+            "transcript": [
+              {
+                "text": "弃",
+                "pinyin": "qì",
+                "meaning": "to abandon; to relinquish",
+                "audio": "9a02c16567cd5cae3afa19fd7be1f76913fbd73cc8c5dae1fcc7519883178e85",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5F03",
+      "character": "弃",
+      "lessonIds": [
+        "LESSON-C-5F03"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5f03-word",
+        "EX-CHAR-char-5f03-recognize",
+        "EX-CHAR-char-5f03-write",
+        "EX-CHAR-char-5f03-familiar",
+        "EX-CHAR-char-5f03-recall"
+      ]
+    },
+    "audio": {
+      "9a02c16567cd5cae3afa19fd7be1f76913fbd73cc8c5dae1fcc7519883178e85": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-ef50d5c22b4f5b4e307148b941089a24060a1e5a69588fadd5b48bae8f9c3cc5.mp3",
+          "sha256": "ef50d5c22b4f5b4e307148b941089a24060a1e5a69588fadd5b48bae8f9c3cc5",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "ef50d5c22b4f5b4e307148b941089a24060a1e5a69588fadd5b48bae8f9c3cc5",
+            "text": "弃",
+            "words": [
+              {
+                "text": "弃",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-8b5180cad478b42313b36799cb2a7d82bdc1c687caaea0898041bf836af3e0f9.mp3",
+          "sha256": "8b5180cad478b42313b36799cb2a7d82bdc1c687caaea0898041bf836af3e0f9",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "8b5180cad478b42313b36799cb2a7d82bdc1c687caaea0898041bf836af3e0f9",
+            "text": "弃",
+            "words": [
+              {
+                "text": "弃",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "e84b0d1517279510961f1c26c64b6999750b858b536f16da8716fb623a499183": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/cb9d29296a441bff858e93cfd9b4ce6866511b7df07f98b2187fbd3cbcb8f1fc.mp3",
+          "sha256": "cb9d29296a441bff858e93cfd9b4ce6866511b7df07f98b2187fbd3cbcb8f1fc",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "cb9d29296a441bff858e93cfd9b4ce6866511b7df07f98b2187fbd3cbcb8f1fc",
+            "text": "胖子",
+            "words": [
+              {
+                "text": "胖子",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/79d98a4fe8eef031f082f74a24dc1a77ee745511551f42dd9df3dd4604433ace.mp3",
+          "sha256": "79d98a4fe8eef031f082f74a24dc1a77ee745511551f42dd9df3dd4604433ace",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "79d98a4fe8eef031f082f74a24dc1a77ee745511551f42dd9df3dd4604433ace",
+            "text": "胖子",
+            "words": [
+              {
+                "text": "胖子",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "32665dbb437a8d296d73918f3cbc318b5c4da7e2fffa02d6846525889eef2aee": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-93d3efd0d29182891b22adf8f7dbc3b11793aa1c7de4fa8b6b4edc7de9bb3269.mp3",
+          "sha256": "93d3efd0d29182891b22adf8f7dbc3b11793aa1c7de4fa8b6b4edc7de9bb3269",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "93d3efd0d29182891b22adf8f7dbc3b11793aa1c7de4fa8b6b4edc7de9bb3269",
+            "text": "着急",
+            "words": [
+              {
+                "text": "着急",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-fa8829ff715364202350ee60de793c1c511f3dc097d73b28d7b56af6d8e85598.mp3",
+          "sha256": "fa8829ff715364202350ee60de793c1c511f3dc097d73b28d7b56af6d8e85598",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "fa8829ff715364202350ee60de793c1c511f3dc097d73b28d7b56af6d8e85598",
+            "text": "着急",
+            "words": [
+              {
+                "text": "着急",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "919631a5b56bf6b6d39f94c9d3a847629e55a88c4885d37967404e96f407d5be": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5880fd69ec04101570934f91d2b994cfd83b51a22fffbca106cf12b6602f85b5.mp3",
+          "sha256": "5880fd69ec04101570934f91d2b994cfd83b51a22fffbca106cf12b6602f85b5",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "5880fd69ec04101570934f91d2b994cfd83b51a22fffbca106cf12b6602f85b5",
+            "text": "放弃",
+            "words": [
+              {
+                "text": "放弃",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-3ae975cebe068eeb7b3acbe300647f9a07d15b88713dbc49642aeca077ac90f5.mp3",
+          "sha256": "3ae975cebe068eeb7b3acbe300647f9a07d15b88713dbc49642aeca077ac90f5",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "3ae975cebe068eeb7b3acbe300647f9a07d15b88713dbc49642aeca077ac90f5",
+            "text": "放弃",
+            "words": [
+              {
+                "text": "放弃",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "1a65cb4957c2e545320a8d72ad168380108e713ebd6437729404837b51b1bcb8": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/cd9230089ac7e06526801159ab3edb81e727a3b0193f8e2b604ec3d2bc03835b.mp3",
+          "sha256": "cd9230089ac7e06526801159ab3edb81e727a3b0193f8e2b604ec3d2bc03835b",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "cd9230089ac7e06526801159ab3edb81e727a3b0193f8e2b604ec3d2bc03835b",
+            "text": "少数",
+            "words": [
+              {
+                "text": "少数",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/76dc76e6e40b5650a29cb1c00b8e40a9c997f51fce4ab4c1d076ac25ac5209c4.mp3",
+          "sha256": "76dc76e6e40b5650a29cb1c00b8e40a9c997f51fce4ab4c1d076ac25ac5209c4",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "76dc76e6e40b5650a29cb1c00b8e40a9c997f51fce4ab4c1d076ac25ac5209c4",
+            "text": "少数",
+            "words": [
+              {
+                "text": "少数",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

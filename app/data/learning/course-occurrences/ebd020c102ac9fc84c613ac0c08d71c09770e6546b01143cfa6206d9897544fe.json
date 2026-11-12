@@ -1,0 +1,713 @@
+{
+  "id": "EX-CHAR-char-7ec6",
+  "revision": 2,
+  "unit": "U4-36-P02",
+  "stage": "ST-HSK4",
+  "after": "S-U4-36-P02-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "细",
+  "sourceBlockId": "mandarin-simplified-v1-char-7ec6",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "W-R5-JIU-ONLY",
+        "text": "就",
+        "pinyin": "jiù",
+        "meaning": "only; limits attention to one item or amount",
+        "characters": [
+          {
+            "id": "C-5C31",
+            "text": "就"
+          }
+        ]
+      },
+      {
+        "id": "W1111",
+        "text": "不仅",
+        "pinyin": "bùjǐn",
+        "meaning": "not just; not limited to",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-4EC5",
+            "text": "仅"
+          }
+        ]
+      },
+      {
+        "id": "W1827",
+        "text": "细",
+        "pinyin": "xì",
+        "meaning": "thin or slender; finely particulate",
+        "characters": [
+          {
+            "id": "C-7EC6",
+            "text": "细"
+          }
+        ]
+      },
+      {
+        "id": "W3113",
+        "text": "随意",
+        "pinyin": "suíyì",
+        "meaning": "as one wishes; according to one's wishes",
+        "characters": [
+          {
+            "id": "C-968F",
+            "text": "随"
+          },
+          {
+            "id": "C-610F",
+            "text": "意"
+          }
+        ]
+      },
+      {
+        "id": "W3246",
+        "text": "细节",
+        "pinyin": "xìjié",
+        "meaning": "details; particulars",
+        "characters": [
+          {
+            "id": "C-7EC6",
+            "text": "细"
+          },
+          {
+            "id": "C-8282",
+            "text": "节"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "23d6db93f083b6d4cd0a20eebf830441ee000996868af08f17339f89713aab48",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7ec6",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "细",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7ec6-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3246",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "details; particulars",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "细节"
+              },
+              {
+                "value": "xìjié",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xi4jie2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "细节",
+              "pinyin": "xìjié",
+              "meaning": "details; particulars",
+              "audio": "28bf283d4d7d9e1cb0ae91c7392af949454e947a80dc6d24d038a53815919792",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7ec6-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W1827",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "细",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W-R5-JIU-ONLY",
+                "label": "only; limits attention to one item or amount",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1827",
+                "label": "thin or slender; finely particulate",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1111",
+                "label": "not just; not limited to",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7ec6-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "细",
+        "pinyin": "xì",
+        "meaning": "thin or slender; finely particulate",
+        "source": "/stroke-data/7ec6.json",
+        "reference": {
+          "character": "细",
+          "sha256": "07f4f52f24c44b211b6439e18fe42bda5f06b9e17d01f866c231286f9dac703d",
+          "medians": [
+            [
+              [
+                282,
+                781
+              ],
+              [
+                302,
+                756
+              ],
+              [
+                307,
+                729
+              ],
+              [
+                241,
+                605
+              ],
+              [
+                179,
+                505
+              ],
+              [
+                172,
+                479
+              ],
+              [
+                252,
+                475
+              ],
+              [
+                301,
+                485
+              ],
+              [
+                309,
+                493
+              ]
+            ],
+            [
+              [
+                381,
+                624
+              ],
+              [
+                398,
+                584
+              ],
+              [
+                319,
+                465
+              ],
+              [
+                237,
+                360
+              ],
+              [
+                221,
+                333
+              ],
+              [
+                217,
+                310
+              ],
+              [
+                247,
+                310
+              ],
+              [
+                402,
+                357
+              ]
+            ],
+            [
+              [
+                127,
+                130
+              ],
+              [
+                184,
+                121
+              ],
+              [
+                432,
+                253
+              ]
+            ],
+            [
+              [
+                445,
+                532
+              ],
+              [
+                472,
+                510
+              ],
+              [
+                493,
+                469
+              ],
+              [
+                510,
+                339
+              ],
+              [
+                515,
+                244
+              ],
+              [
+                536,
+                145
+              ]
+            ],
+            [
+              [
+                499,
+                526
+              ],
+              [
+                527,
+                511
+              ],
+              [
+                544,
+                513
+              ],
+              [
+                827,
+                565
+              ],
+              [
+                857,
+                556
+              ],
+              [
+                877,
+                536
+              ],
+              [
+                882,
+                529
+              ],
+              [
+                861,
+                280
+              ],
+              [
+                850,
+                210
+              ],
+              [
+                829,
+                169
+              ],
+              [
+                830,
+                114
+              ]
+            ],
+            [
+              [
+                565,
+                344
+              ],
+              [
+                716,
+                377
+              ],
+              [
+                746,
+                379
+              ],
+              [
+                771,
+                373
+              ]
+            ],
+            [
+              [
+                640,
+                508
+              ],
+              [
+                667,
+                487
+              ],
+              [
+                666,
+                241
+              ],
+              [
+                662,
+                228
+              ],
+              [
+                650,
+                218
+              ]
+            ],
+            [
+              [
+                553,
+                168
+              ],
+              [
+                563,
+                179
+              ],
+              [
+                585,
+                185
+              ],
+              [
+                800,
+                212
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7ec6-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3113",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "as one wishes; according to one's wishes",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "随意"
+              },
+              {
+                "value": "suíyì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "sui2yi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "随意",
+              "pinyin": "suíyì",
+              "meaning": "as one wishes; according to one's wishes",
+              "audio": "4f05c6d28de8f7443e574319b4cdc3b26ec612dd826d9779f91c4474b91fb43a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7ec6-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W1827",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "thin or slender; finely particulate",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "细"
+              },
+              {
+                "value": "xì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "细",
+              "pinyin": "xì",
+              "meaning": "thin or slender; finely particulate",
+              "audio": "bfef22c577d0a25564f8e41d3b4dd7c7d8844e66ab90cfb90fedd6b017c1085d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "bfef22c577d0a25564f8e41d3b4dd7c7d8844e66ab90cfb90fedd6b017c1085d"
+            ],
+            "transcript": [
+              {
+                "text": "细",
+                "pinyin": "xì",
+                "meaning": "thin or slender; finely particulate",
+                "audio": "bfef22c577d0a25564f8e41d3b4dd7c7d8844e66ab90cfb90fedd6b017c1085d",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7EC6",
+      "character": "细",
+      "lessonIds": [
+        "LESSON-C-7EC6"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7ec6-word",
+        "EX-CHAR-char-7ec6-recognize",
+        "EX-CHAR-char-7ec6-write",
+        "EX-CHAR-char-7ec6-familiar",
+        "EX-CHAR-char-7ec6-recall"
+      ]
+    },
+    "audio": {
+      "f0e99437a6dd05e9ef5bd2ba16b98e7755d755bff2b6c65215812fd123508721": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b197e77e2121f6c9de3074edc7a210dec53a4a8a7374da0ccf3fefdb79797a40.mp3",
+          "sha256": "b197e77e2121f6c9de3074edc7a210dec53a4a8a7374da0ccf3fefdb79797a40",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "b197e77e2121f6c9de3074edc7a210dec53a4a8a7374da0ccf3fefdb79797a40",
+            "text": "就",
+            "words": [
+              {
+                "text": "就",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8280bb70b758150d6af8396ce6ab90642ed1ea0c5aa8e67a1c37c67b3f381c1d.mp3",
+          "sha256": "8280bb70b758150d6af8396ce6ab90642ed1ea0c5aa8e67a1c37c67b3f381c1d",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "8280bb70b758150d6af8396ce6ab90642ed1ea0c5aa8e67a1c37c67b3f381c1d",
+            "text": "就",
+            "words": [
+              {
+                "text": "就",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "7911e0aaa8bdf823acd444d67094db5a86aa619c104bcbec8dd4a932a6b1be09": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b84b07db5ae92e5d522640b6675a69ab37bc642df50bacd580970fd87ef1b30b.mp3",
+          "sha256": "b84b07db5ae92e5d522640b6675a69ab37bc642df50bacd580970fd87ef1b30b",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "b84b07db5ae92e5d522640b6675a69ab37bc642df50bacd580970fd87ef1b30b",
+            "text": "不仅",
+            "words": [
+              {
+                "text": "不仅",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-63c2da9254b84235ad20d44503d5e723d644289c70133d0adf72dd58a6279383.mp3",
+          "sha256": "63c2da9254b84235ad20d44503d5e723d644289c70133d0adf72dd58a6279383",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "63c2da9254b84235ad20d44503d5e723d644289c70133d0adf72dd58a6279383",
+            "text": "不仅",
+            "words": [
+              {
+                "text": "不仅",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "bfef22c577d0a25564f8e41d3b4dd7c7d8844e66ab90cfb90fedd6b017c1085d": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/caa45d0ce7a3a570479497f49d16ceba22edfc7b7bf95f2c10f4aaa2d08ef031.mp3",
+          "sha256": "caa45d0ce7a3a570479497f49d16ceba22edfc7b7bf95f2c10f4aaa2d08ef031",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "caa45d0ce7a3a570479497f49d16ceba22edfc7b7bf95f2c10f4aaa2d08ef031",
+            "text": "细",
+            "words": [
+              {
+                "text": "细",
+                "start": 0.3,
+                "end": 0.38
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/eb3910e92352dd56530374f5ab6df039c16250c4ee821b9afbf674f10a835aad.mp3",
+          "sha256": "eb3910e92352dd56530374f5ab6df039c16250c4ee821b9afbf674f10a835aad",
+          "byteLength": 10125,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "eb3910e92352dd56530374f5ab6df039c16250c4ee821b9afbf674f10a835aad",
+            "text": "细",
+            "words": [
+              {
+                "text": "细",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "4f05c6d28de8f7443e574319b4cdc3b26ec612dd826d9779f91c4474b91fb43a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-6e742c78985a03c69522bae1f060f7fe3c4bc2c144ed60ebbc5572356a4b084c.mp3",
+          "sha256": "6e742c78985a03c69522bae1f060f7fe3c4bc2c144ed60ebbc5572356a4b084c",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "6e742c78985a03c69522bae1f060f7fe3c4bc2c144ed60ebbc5572356a4b084c",
+            "text": "随意",
+            "words": [
+              {
+                "text": "随意",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-5a4dd1923199d15b94256c3b39875e3cdba9408cb4b55d2e8a0484c0b65dbed7.mp3",
+          "sha256": "5a4dd1923199d15b94256c3b39875e3cdba9408cb4b55d2e8a0484c0b65dbed7",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "5a4dd1923199d15b94256c3b39875e3cdba9408cb4b55d2e8a0484c0b65dbed7",
+            "text": "随意",
+            "words": [
+              {
+                "text": "随意",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "28bf283d4d7d9e1cb0ae91c7392af949454e947a80dc6d24d038a53815919792": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-238807fb17695c0114973e08f1d5ddf5cf7bdf341fa16b3b13186f53391437ad.mp3",
+          "sha256": "238807fb17695c0114973e08f1d5ddf5cf7bdf341fa16b3b13186f53391437ad",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "238807fb17695c0114973e08f1d5ddf5cf7bdf341fa16b3b13186f53391437ad",
+            "text": "细节",
+            "words": [
+              {
+                "text": "细节",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-0bd57c570dd0cbcce3dc51ea1cff9982252c21fac2e4f4c3c50d645ac7c889ac.mp3",
+          "sha256": "0bd57c570dd0cbcce3dc51ea1cff9982252c21fac2e4f4c3c50d645ac7c889ac",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "0bd57c570dd0cbcce3dc51ea1cff9982252c21fac2e4f4c3c50d645ac7c889ac",
+            "text": "细节",
+            "words": [
+              {
+                "text": "细节",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

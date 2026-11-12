@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3650",
+  "targetId": "W3650",
+  "steps": [
+    {
+      "id": "BANK-W3650-W3650",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3650-W3650",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "newspaper",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "报社"
+            },
+            {
+              "value": "bàoshè",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bao4she4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "报社",
+            "pinyin": "bàoshè",
+            "meaning": "newspaper",
+            "singleWord": true,
+            "audio": "2e117fcd43d62fd3550bed51b94df0b2cc16e35738a8ed66261831c08aac24f8"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2e117fcd43d62fd3550bed51b94df0b2cc16e35738a8ed66261831c08aac24f8": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d9c639d22ea2c81033e7adc4dd8e1cc06bac4a6dab76aaeb8041fd68ebd08ffb.mp3",
+        "sha256": "d9c639d22ea2c81033e7adc4dd8e1cc06bac4a6dab76aaeb8041fd68ebd08ffb",
+        "byteLength": 14733,
+        "readAlong": {
+          "audioSha256": "d9c639d22ea2c81033e7adc4dd8e1cc06bac4a6dab76aaeb8041fd68ebd08ffb",
+          "text": "报社",
+          "words": [
+            {
+              "text": "报社",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-eb750a9986a83ae5bb9c8a3132eb1b7667bca1ec2633b598dbd970824863fa6a.mp3",
+        "sha256": "eb750a9986a83ae5bb9c8a3132eb1b7667bca1ec2633b598dbd970824863fa6a",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "eb750a9986a83ae5bb9c8a3132eb1b7667bca1ec2633b598dbd970824863fa6a",
+          "text": "报社",
+          "words": [
+            {
+              "text": "报社",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3650",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3650-W3650",
+      "question_ids": [
+        "BANK-W3650-W3650"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-31-P01",
+    "stepId": "S-U6-31-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-793e"
+    ],
+    "grammarLessonIds": []
+  }
+}

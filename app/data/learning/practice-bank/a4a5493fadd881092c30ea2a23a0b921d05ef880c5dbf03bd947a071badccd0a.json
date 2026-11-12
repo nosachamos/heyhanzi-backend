@@ -1,0 +1,540 @@
+{
+  "id": "BANK-G-hsk1-existence",
+  "targetId": "G-hsk1-existence",
+  "steps": [
+    {
+      "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-1-meaning",
+      "kind": "check",
+      "title": "Understand the pattern",
+      "questions": [
+        {
+          "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-1-meaning",
+          "kind": "choice",
+          "prompt": "Choose the meaning of this sentence.",
+          "label": "Understand the pattern",
+          "display": {
+            "text": "书在桌子上。",
+            "pinyin": "shū zài zhuōzi shàng 。",
+            "meaning": "The book is on the table.",
+            "audio": "6f7b1f49705a349329670624330f209933cda6ea18f4bcb115605d3dae393e6f"
+          },
+          "resultDomain": "Grammar comprehension",
+          "choices": [
+            {
+              "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-1-meaning-c1",
+              "label": "The book is on the table.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "Entity + 在 says where something is. Place + 有 introduces an entity there; place + 是 identifies what occupies that place."
+            },
+            {
+              "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-1-meaning-c2",
+              "label": "The book is under the table.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "The book is on the table. Entity + 在 says where something is. Place + 有 introduces an entity there; place + 是 identifies what occupies that place."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-1-produce",
+      "kind": "check",
+      "title": "Use the pattern",
+      "questions": [
+        {
+          "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-1-produce",
+          "kind": "text",
+          "prompt": "Write this meaning in Chinese using the pattern and words just introduced.",
+          "label": "Use the pattern",
+          "context": "The book is on the table.",
+          "contextLanguage": "en",
+          "resultDomain": "Constrained grammar use",
+          "accepted": [
+            {
+              "value": "书在桌子上。",
+              "mode": "hanzi"
+            },
+            {
+              "value": "shū zài zhuōzi shàng 。",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shu1zai4zhuo1zi5shang4",
+              "mode": "pinyin"
+            }
+          ],
+          "rule": "sentence",
+          "pinyin": true,
+          "model": {
+            "text": "书在桌子上。",
+            "pinyin": "shū zài zhuōzi shàng 。",
+            "meaning": "The book is on the table.",
+            "audio": "6f7b1f49705a349329670624330f209933cda6ea18f4bcb115605d3dae393e6f"
+          },
+          "hint": "Entity + 在 says where something is. Place + 有 introduces an entity there; place + 是 identifies what occupies that place."
+        }
+      ]
+    },
+    {
+      "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-2-meaning",
+      "kind": "check",
+      "title": "Understand the pattern",
+      "questions": [
+        {
+          "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-2-meaning",
+          "kind": "choice",
+          "prompt": "Choose the meaning of this sentence.",
+          "label": "Understand the pattern",
+          "display": {
+            "text": "桌子上有一本书。",
+            "pinyin": "zhuōzi shàng yǒu yī běn shū 。",
+            "meaning": "There is a book on the table.",
+            "audio": "a44d8624c3db6d441b7920978bd9469b17086f4063ebde5e877d0800b9880898"
+          },
+          "resultDomain": "Grammar comprehension",
+          "choices": [
+            {
+              "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-2-meaning-c1",
+              "label": "There are no books on the table.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "There is a book on the table. Entity + 在 says where something is. Place + 有 introduces an entity there; place + 是 identifies what occupies that place."
+            },
+            {
+              "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-2-meaning-c2",
+              "label": "There is a book on the table.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "Entity + 在 says where something is. Place + 有 introduces an entity there; place + 是 identifies what occupies that place."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-2-produce",
+      "kind": "check",
+      "title": "Use the pattern",
+      "questions": [
+        {
+          "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-2-produce",
+          "kind": "text",
+          "prompt": "Write this meaning in Chinese using the pattern and words just introduced.",
+          "label": "Use the pattern",
+          "context": "There is a book on the table.",
+          "contextLanguage": "en",
+          "resultDomain": "Constrained grammar use",
+          "accepted": [
+            {
+              "value": "桌子上有一本书。",
+              "mode": "hanzi"
+            },
+            {
+              "value": "zhuōzi shàng yǒu yī běn shū 。",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhuo1zi5shang4you3yi1ben3shu1",
+              "mode": "pinyin"
+            }
+          ],
+          "rule": "sentence",
+          "pinyin": true,
+          "model": {
+            "text": "桌子上有一本书。",
+            "pinyin": "zhuōzi shàng yǒu yī běn shū 。",
+            "meaning": "There is a book on the table.",
+            "audio": "a44d8624c3db6d441b7920978bd9469b17086f4063ebde5e877d0800b9880898"
+          },
+          "hint": "Entity + 在 says where something is. Place + 有 introduces an entity there; place + 是 identifies what occupies that place."
+        }
+      ]
+    },
+    {
+      "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-3-meaning",
+      "kind": "check",
+      "title": "Understand the pattern",
+      "questions": [
+        {
+          "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-3-meaning",
+          "kind": "choice",
+          "prompt": "Choose the meaning of this sentence.",
+          "label": "Understand the pattern",
+          "display": {
+            "text": "前面是学校。",
+            "pinyin": "qiánmiàn shì xuéxiào 。",
+            "meaning": "The place ahead is a school.",
+            "audio": "0f1b05700c2a55021e49c01e1ad9708ac6993c614730515e1c3407631a652d17"
+          },
+          "resultDomain": "Grammar comprehension",
+          "choices": [
+            {
+              "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-3-meaning-c1",
+              "label": "The place ahead is a school.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "Entity + 在 says where something is. Place + 有 introduces an entity there; place + 是 identifies what occupies that place."
+            },
+            {
+              "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-3-meaning-c2",
+              "label": "The place behind us is a school.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "The place ahead is a school. Entity + 在 says where something is. Place + 有 introduces an entity there; place + 是 identifies what occupies that place."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-3-produce",
+      "kind": "check",
+      "title": "Use the pattern",
+      "questions": [
+        {
+          "id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-3-produce",
+          "kind": "text",
+          "prompt": "Write this meaning in Chinese using the pattern and words just introduced.",
+          "label": "Use the pattern",
+          "context": "The place ahead is a school.",
+          "contextLanguage": "en",
+          "resultDomain": "Constrained grammar use",
+          "accepted": [
+            {
+              "value": "前面是学校。",
+              "mode": "hanzi"
+            },
+            {
+              "value": "qiánmiàn shì xuéxiào 。",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qian2mian4shi4xue2xiao4",
+              "mode": "pinyin"
+            }
+          ],
+          "rule": "sentence",
+          "pinyin": true,
+          "model": {
+            "text": "前面是学校。",
+            "pinyin": "qiánmiàn shì xuéxiào 。",
+            "meaning": "The place ahead is a school.",
+            "audio": "0f1b05700c2a55021e49c01e1ad9708ac6993c614730515e1c3407631a652d17"
+          },
+          "hint": "Entity + 在 says where something is. Place + 有 introduces an entity there; place + 是 identifies what occupies that place."
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "6f7b1f49705a349329670624330f209933cda6ea18f4bcb115605d3dae393e6f": {
+      "male": {
+        "url": "/exercise-assets/audio/course-male-7593aa6521dd8d9fe743fcd97db009aa5a2103e090aa7f91110aa5fef5a61f2e.mp3",
+        "sha256": "7593aa6521dd8d9fe743fcd97db009aa5a2103e090aa7f91110aa5fef5a61f2e",
+        "byteLength": 18189,
+        "readAlong": {
+          "audioSha256": "7593aa6521dd8d9fe743fcd97db009aa5a2103e090aa7f91110aa5fef5a61f2e",
+          "text": "书在桌子上。",
+          "words": [
+            {
+              "text": "书",
+              "start": 0.21,
+              "end": 0.27
+            },
+            {
+              "text": "在",
+              "start": 0.39,
+              "end": 0.44999999999999996
+            },
+            {
+              "text": "桌子",
+              "start": 0.6299999999999999,
+              "end": 0.8099999999999999
+            },
+            {
+              "text": "上",
+              "start": 0.9299999999999999,
+              "end": 0.99
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      },
+      "female": {
+        "url": "/exercise-assets/audio/course-female-cb348ae3e7a390cc170afe3a82ce462ea23651fe8f6d2d9b605daeea99c0e74c.mp3",
+        "sha256": "cb348ae3e7a390cc170afe3a82ce462ea23651fe8f6d2d9b605daeea99c0e74c",
+        "byteLength": 28845,
+        "readAlong": {
+          "audioSha256": "cb348ae3e7a390cc170afe3a82ce462ea23651fe8f6d2d9b605daeea99c0e74c",
+          "text": "书在桌子上。",
+          "words": [
+            {
+              "text": "书",
+              "start": 0.27,
+              "end": 0.32999999999999996
+            },
+            {
+              "text": "在",
+              "start": 0.69,
+              "end": 0.75
+            },
+            {
+              "text": "桌子",
+              "start": 1.3499999999999999,
+              "end": 1.65
+            },
+            {
+              "text": "上",
+              "start": 1.7699999999999998,
+              "end": 1.8299999999999998
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      }
+    },
+    "a44d8624c3db6d441b7920978bd9469b17086f4063ebde5e877d0800b9880898": {
+      "male": {
+        "url": "/exercise-assets/audio/course-male-14f9070d424c4e22682b957a90a7f2758dff2e8acd8a13afad916a8d388d40f0.mp3",
+        "sha256": "14f9070d424c4e22682b957a90a7f2758dff2e8acd8a13afad916a8d388d40f0",
+        "byteLength": 25101,
+        "readAlong": {
+          "audioSha256": "14f9070d424c4e22682b957a90a7f2758dff2e8acd8a13afad916a8d388d40f0",
+          "text": "桌子上有一本书。",
+          "words": [
+            {
+              "text": "桌子",
+              "start": 0.15,
+              "end": 0.39
+            },
+            {
+              "text": "上",
+              "start": 0.51,
+              "end": 0.57
+            },
+            {
+              "text": "有",
+              "start": 0.8099999999999999,
+              "end": 0.8699999999999999
+            },
+            {
+              "text": "一",
+              "start": 1.1099999999999999,
+              "end": 1.17
+            },
+            {
+              "text": "本",
+              "start": 1.2899999999999998,
+              "end": 1.3499999999999999
+            },
+            {
+              "text": "书",
+              "start": 1.47,
+              "end": 1.53
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      },
+      "female": {
+        "url": "/exercise-assets/audio/course-female-c386296aba490b9246112c7d3419f4d09f512e39362f8b0d86605271f501cd3b.mp3",
+        "sha256": "c386296aba490b9246112c7d3419f4d09f512e39362f8b0d86605271f501cd3b",
+        "byteLength": 25677,
+        "readAlong": {
+          "audioSha256": "c386296aba490b9246112c7d3419f4d09f512e39362f8b0d86605271f501cd3b",
+          "text": "桌子上有一本书。",
+          "words": [
+            {
+              "text": "桌子",
+              "start": 0.15,
+              "end": 0.39
+            },
+            {
+              "text": "上",
+              "start": 0.51,
+              "end": 0.57
+            },
+            {
+              "text": "有",
+              "start": 0.8699999999999999,
+              "end": 0.9299999999999999
+            },
+            {
+              "text": "一",
+              "start": 1.1099999999999999,
+              "end": 1.17
+            },
+            {
+              "text": "本",
+              "start": 1.2899999999999998,
+              "end": 1.3499999999999999
+            },
+            {
+              "text": "书",
+              "start": 1.47,
+              "end": 1.53
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      }
+    },
+    "0f1b05700c2a55021e49c01e1ad9708ac6993c614730515e1c3407631a652d17": {
+      "male": {
+        "url": "/exercise-assets/audio/course-male-f29d65e62b79666b120df6d271cc2e2c011449144b12f7daa81f2edf9c2ef8b1.mp3",
+        "sha256": "f29d65e62b79666b120df6d271cc2e2c011449144b12f7daa81f2edf9c2ef8b1",
+        "byteLength": 19341,
+        "readAlong": {
+          "audioSha256": "f29d65e62b79666b120df6d271cc2e2c011449144b12f7daa81f2edf9c2ef8b1",
+          "text": "前面是学校。",
+          "words": [
+            {
+              "text": "前面",
+              "start": 0.15,
+              "end": 0.39
+            },
+            {
+              "text": "是",
+              "start": 0.57,
+              "end": 0.6299999999999999
+            },
+            {
+              "text": "学校",
+              "start": 0.8699999999999999,
+              "end": 1.1099999999999999
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      },
+      "female": {
+        "url": "/exercise-assets/audio/course-female-32b335e8ad6a0fa03567ee07eb56439a6bfa213c4fd9a56e82779c9f56b3dc0d.mp3",
+        "sha256": "32b335e8ad6a0fa03567ee07eb56439a6bfa213c4fd9a56e82779c9f56b3dc0d",
+        "byteLength": 23949,
+        "readAlong": {
+          "audioSha256": "32b335e8ad6a0fa03567ee07eb56439a6bfa213c4fd9a56e82779c9f56b3dc0d",
+          "text": "前面是学校。",
+          "words": [
+            {
+              "text": "前面",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            },
+            {
+              "text": "是",
+              "start": 0.8099999999999999,
+              "end": 0.8699999999999999
+            },
+            {
+              "text": "学校",
+              "start": 1.1099999999999999,
+              "end": 1.41
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "G-hsk1-existence",
+      "facet_id": "EX-GRAM-G-hsk1-existence-facet-1",
+      "part_id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-1-meaning",
+      "question_ids": [
+        "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-1-meaning"
+      ],
+      "evidence": "checked",
+      "source_ref": "EX-GRAM-G-hsk1-existence"
+    },
+    {
+      "target_id": "G-hsk1-existence",
+      "facet_id": "EX-GRAM-G-hsk1-existence-facet-1",
+      "part_id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-1-produce",
+      "question_ids": [
+        "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-1-produce"
+      ],
+      "evidence": "checked",
+      "source_ref": "EX-GRAM-G-hsk1-existence"
+    },
+    {
+      "target_id": "G-hsk1-existence",
+      "facet_id": "EX-GRAM-G-hsk1-existence-facet-2",
+      "part_id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-2-meaning",
+      "question_ids": [
+        "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-2-meaning"
+      ],
+      "evidence": "checked",
+      "source_ref": "EX-GRAM-G-hsk1-existence"
+    },
+    {
+      "target_id": "G-hsk1-existence",
+      "facet_id": "EX-GRAM-G-hsk1-existence-facet-2",
+      "part_id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-2-produce",
+      "question_ids": [
+        "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-2-produce"
+      ],
+      "evidence": "checked",
+      "source_ref": "EX-GRAM-G-hsk1-existence"
+    },
+    {
+      "target_id": "G-hsk1-existence",
+      "facet_id": "EX-GRAM-G-hsk1-existence-facet-3",
+      "part_id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-3-meaning",
+      "question_ids": [
+        "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-3-meaning"
+      ],
+      "evidence": "checked",
+      "source_ref": "EX-GRAM-G-hsk1-existence"
+    },
+    {
+      "target_id": "G-hsk1-existence",
+      "facet_id": "EX-GRAM-G-hsk1-existence-facet-3",
+      "part_id": "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-3-produce",
+      "question_ids": [
+        "BANK-G-hsk1-existence-EX-GRAM-G-hsk1-existence-facet-3-produce"
+      ],
+      "evidence": "checked",
+      "source_ref": "EX-GRAM-G-hsk1-existence"
+    }
+  ],
+  "remediation": {
+    "unitId": "U06",
+    "stepId": "S-U06-grammar-r4-G-hsk1-existence",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4e66",
+      "mandarin-simplified-v1-warmup-zai",
+      "mandarin-simplified-v1-char-684c",
+      "mandarin-simplified-v1-char-4e0a",
+      "mandarin-simplified-v1-warmup-you",
+      "mandarin-simplified-v1-char-4e00",
+      "mandarin-simplified-v1-char-672c",
+      "mandarin-simplified-v1-char-524d",
+      "mandarin-simplified-v1-warmup-shi",
+      "mandarin-simplified-v1-char-6821",
+      "mandarin-simplified-v1-char-4e2a",
+      "mandarin-simplified-v1-char-4e0b",
+      "mandarin-simplified-v1-char-91cc",
+      "mandarin-simplified-v1-char-5916",
+      "mandarin-simplified-v1-char-524d",
+      "mandarin-simplified-v1-char-540e"
+    ],
+    "grammarLessonIds": [
+      "EX-GRAM-G-hsk1-existence"
+    ]
+  }
+}

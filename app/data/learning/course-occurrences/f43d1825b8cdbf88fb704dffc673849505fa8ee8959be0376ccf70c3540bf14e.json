@@ -1,0 +1,815 @@
+{
+  "id": "EX-CHAR-char-5c5e",
+  "revision": 2,
+  "unit": "U5-41",
+  "stage": "ST-HSK5",
+  "after": "S-U5-41-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "属",
+  "sourceBlockId": "mandarin-simplified-v1-char-5c5e",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5c5e",
+        "text": "属",
+        "pinyin": "shǔ",
+        "meaning": "category; genus (taxonomy)",
+        "characters": [
+          {
+            "id": "C-5C5E",
+            "text": "属"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-1f0e9c4bd8bc964cea7e3d37",
+        "text": "管教",
+        "pinyin": "guǎn jiào",
+        "meaning": "to discipline",
+        "characters": [
+          {
+            "id": "C-7BA1",
+            "text": "管"
+          },
+          {
+            "id": "C-6559",
+            "text": "教"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d6988654c5babdf5736acc94",
+        "text": "家属",
+        "pinyin": "jiāshǔ",
+        "meaning": "family member; (family) dependent",
+        "characters": [
+          {
+            "id": "C-5BB6",
+            "text": "家"
+          },
+          {
+            "id": "C-5C5E",
+            "text": "属"
+          }
+        ]
+      },
+      {
+        "id": "W0922",
+        "text": "声音",
+        "pinyin": "shēngyīn",
+        "meaning": "sound; voice",
+        "characters": [
+          {
+            "id": "C-58F0",
+            "text": "声"
+          },
+          {
+            "id": "C-97F3",
+            "text": "音"
+          }
+        ]
+      },
+      {
+        "id": "W1788",
+        "text": "头痛",
+        "pinyin": "tóutòng",
+        "meaning": "to have a headache",
+        "characters": [
+          {
+            "id": "C-5934",
+            "text": "头"
+          },
+          {
+            "id": "C-75DB",
+            "text": "痛"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "7761565988773b83445fa403b3ca8582876030ae6551b368f60a30bfa00c2b68",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5c5e",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "属",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5c5e-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-d6988654c5babdf5736acc94",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "family member; (family) dependent",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "家属"
+              },
+              {
+                "value": "jiāshǔ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jia1shu3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "家属",
+              "pinyin": "jiāshǔ",
+              "meaning": "family member; (family) dependent",
+              "audio": "4162e1a4049bfe70115fc88bb27b29b36fb7d3e99e6b2d418c45651641e920cc",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5c5e-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5c5e",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "属",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-5c5e",
+                "label": "category; genus (taxonomy)",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1788",
+                "label": "to have a headache",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-1f0e9c4bd8bc964cea7e3d37",
+                "label": "to discipline",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5c5e-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "属",
+        "pinyin": "shǔ",
+        "meaning": "category; genus (taxonomy)",
+        "source": "/stroke-data/5c5e.json",
+        "reference": {
+          "character": "属",
+          "sha256": "c3c7ddafa91e17a310ec7e388fc3a51b30c89f48cd530e83b1771cefc3e491d8",
+          "medians": [
+            [
+              [
+                391,
+                754
+              ],
+              [
+                406,
+                743
+              ],
+              [
+                616,
+                789
+              ],
+              [
+                650,
+                790
+              ],
+              [
+                684,
+                760
+              ],
+              [
+                660,
+                701
+              ],
+              [
+                636,
+                683
+              ]
+            ],
+            [
+              [
+                374,
+                605
+              ],
+              [
+                384,
+                612
+              ],
+              [
+                626,
+                657
+              ],
+              [
+                677,
+                660
+              ],
+              [
+                695,
+                652
+              ]
+            ],
+            [
+              [
+                323,
+                772
+              ],
+              [
+                336,
+                763
+              ],
+              [
+                359,
+                725
+              ],
+              [
+                325,
+                548
+              ],
+              [
+                292,
+                423
+              ],
+              [
+                245,
+                309
+              ],
+              [
+                211,
+                249
+              ],
+              [
+                167,
+                184
+              ],
+              [
+                122,
+                130
+              ],
+              [
+                90,
+                102
+              ]
+            ],
+            [
+              [
+                660,
+                590
+              ],
+              [
+                607,
+                601
+              ],
+              [
+                528,
+                559
+              ],
+              [
+                393,
+                513
+              ]
+            ],
+            [
+              [
+                361,
+                457
+              ],
+              [
+                380,
+                441
+              ],
+              [
+                394,
+                414
+              ],
+              [
+                416,
+                305
+              ]
+            ],
+            [
+              [
+                400,
+                457
+              ],
+              [
+                421,
+                447
+              ],
+              [
+                441,
+                449
+              ],
+              [
+                666,
+                492
+              ],
+              [
+                686,
+                484
+              ],
+              [
+                707,
+                459
+              ],
+              [
+                683,
+                408
+              ],
+              [
+                658,
+                393
+              ]
+            ],
+            [
+              [
+                434,
+                324
+              ],
+              [
+                448,
+                335
+              ],
+              [
+                647,
+                368
+              ],
+              [
+                692,
+                369
+              ],
+              [
+                710,
+                363
+              ]
+            ],
+            [
+              [
+                278,
+                256
+              ],
+              [
+                301,
+                231
+              ],
+              [
+                312,
+                196
+              ],
+              [
+                313,
+                48
+              ],
+              [
+                324,
+                4
+              ]
+            ],
+            [
+              [
+                329,
+                239
+              ],
+              [
+                353,
+                227
+              ],
+              [
+                515,
+                265
+              ],
+              [
+                680,
+                288
+              ],
+              [
+                798,
+                294
+              ],
+              [
+                816,
+                283
+              ],
+              [
+                836,
+                256
+              ],
+              [
+                823,
+                202
+              ],
+              [
+                814,
+                91
+              ],
+              [
+                802,
+                51
+              ],
+              [
+                788,
+                31
+              ],
+              [
+                697,
+                76
+              ]
+            ],
+            [
+              [
+                513,
+                530
+              ],
+              [
+                539,
+                515
+              ],
+              [
+                546,
+                481
+              ],
+              [
+                542,
+                189
+              ],
+              [
+                538,
+                174
+              ],
+              [
+                527,
+                165
+              ]
+            ],
+            [
+              [
+                391,
+                125
+              ],
+              [
+                440,
+                107
+              ],
+              [
+                635,
+                166
+              ],
+              [
+                639,
+                176
+              ]
+            ],
+            [
+              [
+                638,
+                225
+              ],
+              [
+                689,
+                153
+              ],
+              [
+                694,
+                114
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5c5e-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0922",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "sound; voice",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "声音"
+              },
+              {
+                "value": "shēngyīn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "sheng1yin1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "声音",
+              "pinyin": "shēngyīn",
+              "meaning": "sound; voice",
+              "audio": "31fe8979beb69d87d8ad632d37d87b5599a677ade21dac26cd4df3377a4e5f12",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5c5e-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5c5e",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "category; genus (taxonomy)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "属"
+              },
+              {
+                "value": "shǔ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shu3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "属",
+              "pinyin": "shǔ",
+              "meaning": "category; genus (taxonomy)",
+              "audio": "87c0cc29315cecb6de39971fa6647192e87d15a4e6b01a94c42530aec4b24630",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "87c0cc29315cecb6de39971fa6647192e87d15a4e6b01a94c42530aec4b24630"
+            ],
+            "transcript": [
+              {
+                "text": "属",
+                "pinyin": "shǔ",
+                "meaning": "category; genus (taxonomy)",
+                "audio": "87c0cc29315cecb6de39971fa6647192e87d15a4e6b01a94c42530aec4b24630",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5C5E",
+      "character": "属",
+      "lessonIds": [
+        "LESSON-C-5C5E"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5c5e-word",
+        "EX-CHAR-char-5c5e-recognize",
+        "EX-CHAR-char-5c5e-write",
+        "EX-CHAR-char-5c5e-familiar",
+        "EX-CHAR-char-5c5e-recall"
+      ]
+    },
+    "audio": {
+      "87c0cc29315cecb6de39971fa6647192e87d15a4e6b01a94c42530aec4b24630": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/4c730806f0a3e5a36af77fcbe7252c6d1052dbcccc97a50812390691102d2d65.mp3",
+          "sha256": "4c730806f0a3e5a36af77fcbe7252c6d1052dbcccc97a50812390691102d2d65",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "4c730806f0a3e5a36af77fcbe7252c6d1052dbcccc97a50812390691102d2d65",
+            "text": "属",
+            "words": [
+              {
+                "text": "属",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e8d6634545ee3802de166c29a5b81d7beac7858e62a66950c3bdfcbbaf8c0598.mp3",
+          "sha256": "e8d6634545ee3802de166c29a5b81d7beac7858e62a66950c3bdfcbbaf8c0598",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "e8d6634545ee3802de166c29a5b81d7beac7858e62a66950c3bdfcbbaf8c0598",
+            "text": "属",
+            "words": [
+              {
+                "text": "属",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "521c32a8e3481c334ae82e01e575cfb056c3d46c33036e4c5d07fc756bd695e8": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/95a83b6c5cde55236d34a62e7ef296d345b438000849857eb6ebdb4394370c5c.mp3",
+          "sha256": "95a83b6c5cde55236d34a62e7ef296d345b438000849857eb6ebdb4394370c5c",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "95a83b6c5cde55236d34a62e7ef296d345b438000849857eb6ebdb4394370c5c",
+            "text": "管教",
+            "words": [
+              {
+                "text": "管教",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1c5ed6b415c237b6fef2e0774f660428fdd958b621870e6804f63eaf96c0f949.mp3",
+          "sha256": "1c5ed6b415c237b6fef2e0774f660428fdd958b621870e6804f63eaf96c0f949",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "1c5ed6b415c237b6fef2e0774f660428fdd958b621870e6804f63eaf96c0f949",
+            "text": "管教",
+            "words": [
+              {
+                "text": "管教",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "4162e1a4049bfe70115fc88bb27b29b36fb7d3e99e6b2d418c45651641e920cc": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-445b7761c56e4b8399ba41f86e529c399bb8b26a0c9648b0ee17ab10a5635c71.mp3",
+          "sha256": "445b7761c56e4b8399ba41f86e529c399bb8b26a0c9648b0ee17ab10a5635c71",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "445b7761c56e4b8399ba41f86e529c399bb8b26a0c9648b0ee17ab10a5635c71",
+            "text": "家属",
+            "words": [
+              {
+                "text": "家属",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f76e40fd76a29177eda0178cbe44077725964198ee4bcb2e87e433c9503add04.mp3",
+          "sha256": "f76e40fd76a29177eda0178cbe44077725964198ee4bcb2e87e433c9503add04",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "f76e40fd76a29177eda0178cbe44077725964198ee4bcb2e87e433c9503add04",
+            "text": "家属",
+            "words": [
+              {
+                "text": "家属",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "31fe8979beb69d87d8ad632d37d87b5599a677ade21dac26cd4df3377a4e5f12": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b680fc3392986d0e5f71a5f64f644aaa8e8ed8a3b1efd7a8397bd14a258c0b7d.mp3",
+          "sha256": "b680fc3392986d0e5f71a5f64f644aaa8e8ed8a3b1efd7a8397bd14a258c0b7d",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "b680fc3392986d0e5f71a5f64f644aaa8e8ed8a3b1efd7a8397bd14a258c0b7d",
+            "text": "声音",
+            "words": [
+              {
+                "text": "声音",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-70a74e4699b31ff782034235fe6f5ea485751ee6fdf6056ae8f3099c3ed5c5ca.mp3",
+          "sha256": "70a74e4699b31ff782034235fe6f5ea485751ee6fdf6056ae8f3099c3ed5c5ca",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "70a74e4699b31ff782034235fe6f5ea485751ee6fdf6056ae8f3099c3ed5c5ca",
+            "text": "声音",
+            "words": [
+              {
+                "text": "声音",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "8c41a15670f216f78259993bda983c4397cfce1282cc30322e2ae4733edcd8d3": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2aefa1a50a9ef8dc7c6c8fab644c59dccd5d17e8d635fe51196570eb45ddbcf9.mp3",
+          "sha256": "2aefa1a50a9ef8dc7c6c8fab644c59dccd5d17e8d635fe51196570eb45ddbcf9",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "2aefa1a50a9ef8dc7c6c8fab644c59dccd5d17e8d635fe51196570eb45ddbcf9",
+            "text": "头痛",
+            "words": [
+              {
+                "text": "头痛",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1983ce09c3dfa81c4648da29f066a29a6f75c2c63a2f5a41474aec97aa8e5eb2.mp3",
+          "sha256": "1983ce09c3dfa81c4648da29f066a29a6f75c2c63a2f5a41474aec97aa8e5eb2",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "1983ce09c3dfa81c4648da29f066a29a6f75c2c63a2f5a41474aec97aa8e5eb2",
+            "text": "头痛",
+            "words": [
+              {
+                "text": "头痛",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

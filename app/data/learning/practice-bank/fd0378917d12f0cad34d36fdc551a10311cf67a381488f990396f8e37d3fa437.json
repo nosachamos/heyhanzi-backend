@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0201",
+  "targetId": "W0201",
+  "steps": [
+    {
+      "id": "BANK-W0201-W0201",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0201-W0201",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "year",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "年"
+            },
+            {
+              "value": "nián",
+              "mode": "pinyin"
+            },
+            {
+              "value": "nian2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "年",
+            "pinyin": "nián",
+            "meaning": "year",
+            "singleWord": true,
+            "audio": "1e243403e11587e45ff719f610625f3076534dc4b51ebd08da4847193c6a3858"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1e243403e11587e45ff719f610625f3076534dc4b51ebd08da4847193c6a3858": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2d34a10c3b6ff946b866ef0f2efe476cbe4959713ec862baf427c1fdbde8baed.mp3",
+        "sha256": "2d34a10c3b6ff946b866ef0f2efe476cbe4959713ec862baf427c1fdbde8baed",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "2d34a10c3b6ff946b866ef0f2efe476cbe4959713ec862baf427c1fdbde8baed",
+          "text": "年",
+          "words": [
+            {
+              "text": "年",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-27c7d78b60d275091fac9d56d7fe18489e5b3d9db4873599f65706b0b975faed.mp3",
+        "sha256": "27c7d78b60d275091fac9d56d7fe18489e5b3d9db4873599f65706b0b975faed",
+        "byteLength": 6669,
+        "readAlong": {
+          "audioSha256": "27c7d78b60d275091fac9d56d7fe18489e5b3d9db4873599f65706b0b975faed",
+          "text": "年",
+          "words": [
+            {
+              "text": "年",
+              "start": 0.14,
+              "end": 0.26
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0201",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0201-W0201",
+      "question_ids": [
+        "BANK-W0201-W0201"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U13",
+    "stepId": "S-U13-words-r4-15",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e74"
+    ],
+    "grammarLessonIds": []
+  }
+}

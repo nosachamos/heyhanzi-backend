@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0989",
+  "targetId": "W0989",
+  "steps": [
+    {
+      "id": "BANK-W0989-W0989",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0989-W0989",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "New Year",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "新年"
+            },
+            {
+              "value": "xīnnián",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xin1nian2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "新年",
+            "pinyin": "xīnnián",
+            "meaning": "New Year",
+            "singleWord": true,
+            "audio": "04edf87b8dafdb8b4c16132cbdfd326181ef79f01f733e6390c1c73f812c9302"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "04edf87b8dafdb8b4c16132cbdfd326181ef79f01f733e6390c1c73f812c9302": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f0c7bc78928d41732d8438060c9ccc043e38b386a68dfc2aac9dd7bf438b3953.mp3",
+        "sha256": "f0c7bc78928d41732d8438060c9ccc043e38b386a68dfc2aac9dd7bf438b3953",
+        "byteLength": 15309,
+        "readAlong": {
+          "audioSha256": "f0c7bc78928d41732d8438060c9ccc043e38b386a68dfc2aac9dd7bf438b3953",
+          "text": "新年",
+          "words": [
+            {
+              "text": "新年",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ab307dac6357fad6db29439e4bcd66270fc3d29e7909fe7b34636237493b58f6.mp3",
+        "sha256": "ab307dac6357fad6db29439e4bcd66270fc3d29e7909fe7b34636237493b58f6",
+        "byteLength": 14733,
+        "readAlong": {
+          "audioSha256": "ab307dac6357fad6db29439e4bcd66270fc3d29e7909fe7b34636237493b58f6",
+          "text": "新年",
+          "words": [
+            {
+              "text": "新年",
+              "start": 0.27,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0989",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0989-W0989",
+      "question_ids": [
+        "BANK-W0989-W0989"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-04-P01",
+    "stepId": "S-U3-04-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e74"
+    ],
+    "grammarLessonIds": []
+  }
+}

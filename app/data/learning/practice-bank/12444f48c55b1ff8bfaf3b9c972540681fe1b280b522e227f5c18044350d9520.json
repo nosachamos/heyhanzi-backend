@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2530",
+  "targetId": "W2530",
+  "steps": [
+    {
+      "id": "BANK-W2530-W2530",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2530-W2530",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "gold; golden",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "黄金"
+            },
+            {
+              "value": "huángjīn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "huang2jin1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "黄金",
+            "pinyin": "huángjīn",
+            "meaning": "gold; golden",
+            "singleWord": true,
+            "audio": "919739761f330d4b6eebe7a9a04c5f9cc968c84b3e6bcaf7c6671659fd7d8be0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "919739761f330d4b6eebe7a9a04c5f9cc968c84b3e6bcaf7c6671659fd7d8be0": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e118e3f3b572107557349962813745428b9f701c6101992deaf3731f9d581708.mp3",
+        "sha256": "e118e3f3b572107557349962813745428b9f701c6101992deaf3731f9d581708",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "e118e3f3b572107557349962813745428b9f701c6101992deaf3731f9d581708",
+          "text": "黄金",
+          "words": [
+            {
+              "text": "黄金",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e1a19b4eb3bcf717ed9616712e06fd1f69d5cab2d4178889936028b703413841.mp3",
+        "sha256": "e1a19b4eb3bcf717ed9616712e06fd1f69d5cab2d4178889936028b703413841",
+        "byteLength": 15309,
+        "readAlong": {
+          "audioSha256": "e1a19b4eb3bcf717ed9616712e06fd1f69d5cab2d4178889936028b703413841",
+          "text": "黄金",
+          "words": [
+            {
+              "text": "黄金",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2530",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2530-W2530",
+      "question_ids": [
+        "BANK-W2530-W2530"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-11",
+    "stepId": "S-U5-11-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-80a5"
+    ],
+    "grammarLessonIds": []
+  }
+}

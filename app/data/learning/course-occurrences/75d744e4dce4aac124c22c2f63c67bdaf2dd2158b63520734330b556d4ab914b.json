@@ -1,0 +1,643 @@
+{
+  "id": "EX-CHAR-char-4eec",
+  "revision": 2,
+  "unit": "U02-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U02-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "们",
+  "sourceBlockId": "mandarin-simplified-v1-char-4eec",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7cfb",
+        "text": "系",
+        "pinyin": "xì",
+        "meaning": "to connect; to relate to",
+        "characters": [
+          {
+            "id": "C-7CFB",
+            "text": "系"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-0a00f6da22f9b9f37c9ad886",
+        "text": "有人",
+        "pinyin": "yǒu rén",
+        "meaning": "someone; there is someone",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          },
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-84d9b4b03d4ff3c4a3e1f5c5",
+        "text": "你们",
+        "pinyin": "nǐmen",
+        "meaning": "you (plural)",
+        "characters": [
+          {
+            "id": "C-4F60",
+            "text": "你"
+          },
+          {
+            "id": "C-4EEC",
+            "text": "们"
+          }
+        ]
+      },
+      {
+        "id": "W0430",
+        "text": "们",
+        "pinyin": "men",
+        "meaning": "plural marker for pronouns, and nouns referring to individuals",
+        "characters": [
+          {
+            "id": "C-4EEC",
+            "text": "们"
+          }
+        ]
+      },
+      {
+        "id": "W4386",
+        "text": "看中",
+        "pinyin": "kànzhòng",
+        "meaning": "to have a preference for; to fancy",
+        "characters": [
+          {
+            "id": "C-770B",
+            "text": "看"
+          },
+          {
+            "id": "C-4E2D",
+            "text": "中"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "a88bba35ff378356d3b7f68e18826825910e48bdb414af5c2b4be32bd9e9a34a",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4eec",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "们",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4eec-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-84d9b4b03d4ff3c4a3e1f5c5",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "you (plural)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "你们"
+              },
+              {
+                "value": "nǐmen",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ni3men5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "你们",
+              "pinyin": "nǐmen",
+              "meaning": "you (plural)",
+              "audio": "41d3d75458f75b2329a2028caa23369b69bfeddeb33bbd9125057c34dfffaf9c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4eec-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0430",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "们",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0430",
+                "label": "plural marker for pronouns, and nouns referring to individuals",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-PRIMARY-char-7cfb",
+                "label": "to connect; to relate to",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-0a00f6da22f9b9f37c9ad886",
+                "label": "someone; there is someone",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4eec-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "们",
+        "pinyin": "men",
+        "meaning": "plural marker for pronouns, and nouns referring to individuals",
+        "source": "/stroke-data/4eec.json",
+        "reference": {
+          "character": "们",
+          "sha256": "43ee1c5d1bd31617b0df63bdd8ed26db0a56aaf199b5e2d507810efaf3fd64ca",
+          "medians": [
+            [
+              [
+                290,
+                807
+              ],
+              [
+                307,
+                792
+              ],
+              [
+                326,
+                757
+              ],
+              [
+                279,
+                662
+              ],
+              [
+                165,
+                491
+              ],
+              [
+                112,
+                427
+              ],
+              [
+                55,
+                375
+              ]
+            ],
+            [
+              [
+                209,
+                505
+              ],
+              [
+                212,
+                483
+              ],
+              [
+                241,
+                428
+              ],
+              [
+                236,
+                241
+              ],
+              [
+                218,
+                74
+              ],
+              [
+                224,
+                21
+              ]
+            ],
+            [
+              [
+                455,
+                699
+              ],
+              [
+                510,
+                655
+              ],
+              [
+                528,
+                627
+              ]
+            ],
+            [
+              [
+                361,
+                617
+              ],
+              [
+                399,
+                572
+              ],
+              [
+                401,
+                523
+              ],
+              [
+                396,
+                269
+              ],
+              [
+                391,
+                199
+              ],
+              [
+                374,
+                104
+              ],
+              [
+                375,
+                49
+              ]
+            ],
+            [
+              [
+                589,
+                664
+              ],
+              [
+                644,
+                658
+              ],
+              [
+                746,
+                682
+              ],
+              [
+                787,
+                674
+              ],
+              [
+                816,
+                645
+              ],
+              [
+                812,
+                594
+              ],
+              [
+                821,
+                127
+              ],
+              [
+                815,
+                75
+              ],
+              [
+                801,
+                43
+              ],
+              [
+                752,
+                51
+              ],
+              [
+                662,
+                83
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4eec-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4386",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to have a preference for; to fancy",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "看中"
+              },
+              {
+                "value": "kànzhòng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "kan4zhong4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "看中",
+              "pinyin": "kànzhòng",
+              "meaning": "to have a preference for; to fancy",
+              "audio": "864d03c7c49baab35fcbbf6879bec5767150026a844fee960d67b950ace2dbf5",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4eec-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0430",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "plural marker for pronouns, and nouns referring to individuals",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "们"
+              },
+              {
+                "value": "men",
+                "mode": "pinyin"
+              },
+              {
+                "value": "men5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "们",
+              "pinyin": "men",
+              "meaning": "plural marker for pronouns, and nouns referring to individuals",
+              "audio": "fb993afc0ee2769796b4d6837782868faa0bca9edefc20ca87f6eb8e809bb200",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "fb993afc0ee2769796b4d6837782868faa0bca9edefc20ca87f6eb8e809bb200"
+            ],
+            "transcript": [
+              {
+                "text": "们",
+                "pinyin": "men",
+                "meaning": "plural marker for pronouns, and nouns referring to individuals",
+                "audio": "fb993afc0ee2769796b4d6837782868faa0bca9edefc20ca87f6eb8e809bb200",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4EEC",
+      "character": "们",
+      "lessonIds": [
+        "LESSON-C-4EEC"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4eec-word",
+        "EX-CHAR-char-4eec-recognize",
+        "EX-CHAR-char-4eec-write",
+        "EX-CHAR-char-4eec-familiar",
+        "EX-CHAR-char-4eec-recall"
+      ]
+    },
+    "audio": {
+      "c2e4760d7afc8ec861c0cb3982c3533e8b1228ee5dd63fe90816924e1dd8ba22": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0548ef900de6d7fa67b9be73759083429e6746d286605d8986f6c00552dd7a79.mp3",
+          "sha256": "0548ef900de6d7fa67b9be73759083429e6746d286605d8986f6c00552dd7a79",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "0548ef900de6d7fa67b9be73759083429e6746d286605d8986f6c00552dd7a79",
+            "text": "系",
+            "words": [
+              {
+                "text": "系",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/be6514ecb68bbdb52435f76dcdde6e7696a54756eb2e7b5a77e2204114797c0a.mp3",
+          "sha256": "be6514ecb68bbdb52435f76dcdde6e7696a54756eb2e7b5a77e2204114797c0a",
+          "byteLength": 9261,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "be6514ecb68bbdb52435f76dcdde6e7696a54756eb2e7b5a77e2204114797c0a",
+            "text": "系",
+            "words": [
+              {
+                "text": "系",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "4fc5f3a9e2db4889acc9e8541a74c094259f6cb9f564bade8bbe199d840513ff": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f89216b462614db9378458b35ed8af39ad1e79ab22e78943f5725d7b72384d33.mp3",
+          "sha256": "f89216b462614db9378458b35ed8af39ad1e79ab22e78943f5725d7b72384d33",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "f89216b462614db9378458b35ed8af39ad1e79ab22e78943f5725d7b72384d33",
+            "text": "有人",
+            "words": [
+              {
+                "text": "有人",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-0383ea51f1b9fc7cd8f0aa8a0e718e27758559b03b73118268717f44fe82a7b8.mp3",
+          "sha256": "0383ea51f1b9fc7cd8f0aa8a0e718e27758559b03b73118268717f44fe82a7b8",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "0383ea51f1b9fc7cd8f0aa8a0e718e27758559b03b73118268717f44fe82a7b8",
+            "text": "有人",
+            "words": [
+              {
+                "text": "有人",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "41d3d75458f75b2329a2028caa23369b69bfeddeb33bbd9125057c34dfffaf9c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2137dea6891910053c1b4857aa5e55c60c0d82de8989cefe5f8b24167fa29894.mp3",
+          "sha256": "2137dea6891910053c1b4857aa5e55c60c0d82de8989cefe5f8b24167fa29894",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "2137dea6891910053c1b4857aa5e55c60c0d82de8989cefe5f8b24167fa29894",
+            "text": "你们",
+            "words": [
+              {
+                "text": "你们",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-2258cf5c7bbea1169890a1a8ff158def000eca04b300291844069717b72679e1.mp3",
+          "sha256": "2258cf5c7bbea1169890a1a8ff158def000eca04b300291844069717b72679e1",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "2258cf5c7bbea1169890a1a8ff158def000eca04b300291844069717b72679e1",
+            "text": "你们",
+            "words": [
+              {
+                "text": "你们",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "fb993afc0ee2769796b4d6837782868faa0bca9edefc20ca87f6eb8e809bb200": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-226f2409b40f6762b0ee48edb461b480b6d71df472638c0fcad09a123e875bb6.mp3",
+          "sha256": "226f2409b40f6762b0ee48edb461b480b6d71df472638c0fcad09a123e875bb6",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "226f2409b40f6762b0ee48edb461b480b6d71df472638c0fcad09a123e875bb6",
+            "text": "们",
+            "words": [
+              {
+                "text": "们",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f38daf50941d56621c9419aa8e1f512f9a502003da972dd1fa78d5467fe852ac.mp3",
+          "sha256": "f38daf50941d56621c9419aa8e1f512f9a502003da972dd1fa78d5467fe852ac",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "f38daf50941d56621c9419aa8e1f512f9a502003da972dd1fa78d5467fe852ac",
+            "text": "们",
+            "words": [
+              {
+                "text": "们",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "864d03c7c49baab35fcbbf6879bec5767150026a844fee960d67b950ace2dbf5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5a8685909fdcd7f92ce961a98596d89596fbee462c6e261dc1380221cf4c4cf9.mp3",
+          "sha256": "5a8685909fdcd7f92ce961a98596d89596fbee462c6e261dc1380221cf4c4cf9",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "5a8685909fdcd7f92ce961a98596d89596fbee462c6e261dc1380221cf4c4cf9",
+            "text": "看中",
+            "words": [
+              {
+                "text": "看中",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0f6e2f734af9ad9189525dd0c208cf8016d4e709d56c6179fad2ba88419df8bc.mp3",
+          "sha256": "0f6e2f734af9ad9189525dd0c208cf8016d4e709d56c6179fad2ba88419df8bc",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "0f6e2f734af9ad9189525dd0c208cf8016d4e709d56c6179fad2ba88419df8bc",
+            "text": "看中",
+            "words": [
+              {
+                "text": "看中",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

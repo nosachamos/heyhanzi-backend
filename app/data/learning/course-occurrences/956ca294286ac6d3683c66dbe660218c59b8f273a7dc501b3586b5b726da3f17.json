@@ -1,0 +1,669 @@
+{
+  "id": "EX-CHAR-char-6d0b",
+  "revision": 2,
+  "unit": "U4-26",
+  "stage": "ST-HSK4",
+  "after": "S-U4-26-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "洋",
+  "sourceBlockId": "mandarin-simplified-v1-char-6d0b",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-6d0b",
+        "text": "洋",
+        "pinyin": "yáng",
+        "meaning": "ocean; vast",
+        "characters": [
+          {
+            "id": "C-6D0B",
+            "text": "洋"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d0a7a2c386b569a92a940bcb",
+        "text": "上司",
+        "pinyin": "shàng si",
+        "meaning": "superior",
+        "characters": [
+          {
+            "id": "C-4E0A",
+            "text": "上"
+          },
+          {
+            "id": "C-53F8",
+            "text": "司"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ee4cfd84f47c90833dde8cdb",
+        "text": "整顿",
+        "pinyin": "zhěng dùn",
+        "meaning": "to tidy up",
+        "characters": [
+          {
+            "id": "C-6574",
+            "text": "整"
+          },
+          {
+            "id": "C-987F",
+            "text": "顿"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f30ecbc71c30056c7314c605",
+        "text": "喜洋洋",
+        "pinyin": "xǐ yáng yáng",
+        "meaning": "radiant with joy",
+        "characters": [
+          {
+            "id": "C-559C",
+            "text": "喜"
+          },
+          {
+            "id": "C-6D0B",
+            "text": "洋"
+          }
+        ]
+      },
+      {
+        "id": "W2924",
+        "text": "全体",
+        "pinyin": "quántǐ",
+        "meaning": "all; entire",
+        "characters": [
+          {
+            "id": "C-5168",
+            "text": "全"
+          },
+          {
+            "id": "C-4F53",
+            "text": "体"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "b0131c24355b0c5e34858b08861026af8a83e5ca5a07bf7bb923e8d98e156a4f",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6d0b",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "洋",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6d0b-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-f30ecbc71c30056c7314c605",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "radiant with joy",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "喜洋洋"
+              },
+              {
+                "value": "xǐ yáng yáng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xi3yang2yang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "喜洋洋",
+              "pinyin": "xǐ yáng yáng",
+              "meaning": "radiant with joy",
+              "audio": "18040435ae15d525eea477eea8722d6618af64dd111f3ee956efbea68ffd738b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6d0b-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6d0b",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "洋",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-ee4cfd84f47c90833dde8cdb",
+                "label": "to tidy up",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W2924",
+                "label": "all; entire",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-6d0b",
+                "label": "ocean; vast",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6d0b-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "洋",
+        "pinyin": "yáng",
+        "meaning": "ocean; vast",
+        "source": "/stroke-data/6d0b.json",
+        "reference": {
+          "character": "洋",
+          "sha256": "2e183dba9d6bf9df426ba488a90a1074ec34969447b30b4510b7375336536c42",
+          "medians": [
+            [
+              [
+                235,
+                775
+              ],
+              [
+                304,
+                738
+              ],
+              [
+                333,
+                701
+              ]
+            ],
+            [
+              [
+                144,
+                587
+              ],
+              [
+                211,
+                551
+              ],
+              [
+                238,
+                520
+              ]
+            ],
+            [
+              [
+                191,
+                110
+              ],
+              [
+                177,
+                153
+              ],
+              [
+                177,
+                190
+              ],
+              [
+                317,
+                459
+              ]
+            ],
+            [
+              [
+                459,
+                782
+              ],
+              [
+                518,
+                721
+              ],
+              [
+                534,
+                694
+              ]
+            ],
+            [
+              [
+                725,
+                853
+              ],
+              [
+                746,
+                831
+              ],
+              [
+                753,
+                814
+              ],
+              [
+                699,
+                752
+              ],
+              [
+                617,
+                680
+              ]
+            ],
+            [
+              [
+                417,
+                586
+              ],
+              [
+                448,
+                579
+              ],
+              [
+                492,
+                580
+              ],
+              [
+                722,
+                623
+              ],
+              [
+                787,
+                628
+              ]
+            ],
+            [
+              [
+                424,
+                433
+              ],
+              [
+                483,
+                428
+              ],
+              [
+                694,
+                466
+              ],
+              [
+                738,
+                468
+              ],
+              [
+                767,
+                462
+              ]
+            ],
+            [
+              [
+                326,
+                277
+              ],
+              [
+                346,
+                270
+              ],
+              [
+                382,
+                269
+              ],
+              [
+                631,
+                307
+              ],
+              [
+                845,
+                329
+              ],
+              [
+                926,
+                310
+              ]
+            ],
+            [
+              [
+                544,
+                561
+              ],
+              [
+                563,
+                555
+              ],
+              [
+                595,
+                531
+              ],
+              [
+                587,
+                -69
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6d0b-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-d0a7a2c386b569a92a940bcb",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "superior",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "上司"
+              },
+              {
+                "value": "shàng si",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shang4si5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "上司",
+              "pinyin": "shàng si",
+              "meaning": "superior",
+              "audio": "b72f95df9455d1d55c5cef38c7de9a3b7dc5ee70e1c8b988b3ca0599ccd1bf6c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6d0b-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6d0b",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "ocean; vast",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "洋"
+              },
+              {
+                "value": "yáng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "洋",
+              "pinyin": "yáng",
+              "meaning": "ocean; vast",
+              "audio": "452a137a076348650446c896f1170fb51172fe38a0ca9a54d56a7cd2cb551ab9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "452a137a076348650446c896f1170fb51172fe38a0ca9a54d56a7cd2cb551ab9"
+            ],
+            "transcript": [
+              {
+                "text": "洋",
+                "pinyin": "yáng",
+                "meaning": "ocean; vast",
+                "audio": "452a137a076348650446c896f1170fb51172fe38a0ca9a54d56a7cd2cb551ab9",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6D0B",
+      "character": "洋",
+      "lessonIds": [
+        "LESSON-C-6D0B"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6d0b-word",
+        "EX-CHAR-char-6d0b-recognize",
+        "EX-CHAR-char-6d0b-write",
+        "EX-CHAR-char-6d0b-familiar",
+        "EX-CHAR-char-6d0b-recall"
+      ]
+    },
+    "audio": {
+      "452a137a076348650446c896f1170fb51172fe38a0ca9a54d56a7cd2cb551ab9": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-0890800faf284d1e0ac70b22e969ef0d5ee4db43bb99ce171e09f95f42941dc3.mp3",
+          "sha256": "0890800faf284d1e0ac70b22e969ef0d5ee4db43bb99ce171e09f95f42941dc3",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "0890800faf284d1e0ac70b22e969ef0d5ee4db43bb99ce171e09f95f42941dc3",
+            "text": "洋",
+            "words": [
+              {
+                "text": "洋",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-adbe8593d9977c3b783c1e02cd9c373437e2c01e5f908251b7396b37b91c262f.mp3",
+          "sha256": "adbe8593d9977c3b783c1e02cd9c373437e2c01e5f908251b7396b37b91c262f",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "adbe8593d9977c3b783c1e02cd9c373437e2c01e5f908251b7396b37b91c262f",
+            "text": "洋",
+            "words": [
+              {
+                "text": "洋",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "b72f95df9455d1d55c5cef38c7de9a3b7dc5ee70e1c8b988b3ca0599ccd1bf6c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/bd704ab9657b81d7aad00f7279aaade40b0ce32221d4010bbbe9c052adcf71ac.mp3",
+          "sha256": "bd704ab9657b81d7aad00f7279aaade40b0ce32221d4010bbbe9c052adcf71ac",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "bd704ab9657b81d7aad00f7279aaade40b0ce32221d4010bbbe9c052adcf71ac",
+            "text": "上司",
+            "words": [
+              {
+                "text": "上司",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/27641ba835429e171fd89b4fc02e36322a5d83ac5f1a25e9d2411c1928bb1fe5.mp3",
+          "sha256": "27641ba835429e171fd89b4fc02e36322a5d83ac5f1a25e9d2411c1928bb1fe5",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "27641ba835429e171fd89b4fc02e36322a5d83ac5f1a25e9d2411c1928bb1fe5",
+            "text": "上司",
+            "words": [
+              {
+                "text": "上司",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "8c9a013194f3efa2c5568fdf170f1c58af4b1a00fdf8292b2fe483fff6d72b72": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/72826f84d2ff0db2389c2af0351d2b0488103782157cd3bcd8efa49ca5053b11.mp3",
+          "sha256": "72826f84d2ff0db2389c2af0351d2b0488103782157cd3bcd8efa49ca5053b11",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "72826f84d2ff0db2389c2af0351d2b0488103782157cd3bcd8efa49ca5053b11",
+            "text": "整顿",
+            "words": [
+              {
+                "text": "整顿",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/93d003e286a2f387df6897d34afaeb76d2ec7e6bcfbf0449f10d2997a08e605b.mp3",
+          "sha256": "93d003e286a2f387df6897d34afaeb76d2ec7e6bcfbf0449f10d2997a08e605b",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "93d003e286a2f387df6897d34afaeb76d2ec7e6bcfbf0449f10d2997a08e605b",
+            "text": "整顿",
+            "words": [
+              {
+                "text": "整顿",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "18040435ae15d525eea477eea8722d6618af64dd111f3ee956efbea68ffd738b": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/89c690daf1b5229676266b66ee16a3902e58eb6b7a6f346ac0676971863ea634.mp3",
+          "sha256": "89c690daf1b5229676266b66ee16a3902e58eb6b7a6f346ac0676971863ea634",
+          "byteLength": 20493,
+          "readAlong": {
+            "audioSha256": "89c690daf1b5229676266b66ee16a3902e58eb6b7a6f346ac0676971863ea634",
+            "text": "喜洋洋",
+            "words": [
+              {
+                "text": "喜洋洋",
+                "start": 0.32999999999999996,
+                "end": 0.99
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a288bbe28cbf094e7f906f623ee32191f1ef1ea2b4615ee08b15d7ddc1f92105.mp3",
+          "sha256": "a288bbe28cbf094e7f906f623ee32191f1ef1ea2b4615ee08b15d7ddc1f92105",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "a288bbe28cbf094e7f906f623ee32191f1ef1ea2b4615ee08b15d7ddc1f92105",
+            "text": "喜洋洋",
+            "words": [
+              {
+                "text": "喜洋洋",
+                "start": 0.15,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "adc2a591388c527f48256cd988ff09ef13dc36a884966c7a63a8373646ac4af0": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c6083ac978df50db1445d8750ff9650491fd6253352a91ce486f4261c9e841da.mp3",
+          "sha256": "c6083ac978df50db1445d8750ff9650491fd6253352a91ce486f4261c9e841da",
+          "byteLength": 23085,
+          "readAlong": {
+            "audioSha256": "c6083ac978df50db1445d8750ff9650491fd6253352a91ce486f4261c9e841da",
+            "text": "全体",
+            "words": [
+              {
+                "text": "全体",
+                "start": 0.99,
+                "end": 1.2899999999999998
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/aff91b908b081ec2694311db9ed9c1f1324ef8d25b6b9e844035b9b4c9d062bd.mp3",
+          "sha256": "aff91b908b081ec2694311db9ed9c1f1324ef8d25b6b9e844035b9b4c9d062bd",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "aff91b908b081ec2694311db9ed9c1f1324ef8d25b6b9e844035b9b4c9d062bd",
+            "text": "全体",
+            "words": [
+              {
+                "text": "全体",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

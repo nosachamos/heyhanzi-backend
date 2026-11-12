@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1228",
+  "targetId": "W1228",
+  "steps": [
+    {
+      "id": "BANK-W1228-W1228",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1228-W1228",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "captain; team leader",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "队长"
+            },
+            {
+              "value": "duìzhǎng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dui4zhang3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "队长",
+            "pinyin": "duìzhǎng",
+            "meaning": "captain; team leader",
+            "singleWord": true,
+            "audio": "4d228f2be601a28fa9856b106142832552970b5aa31259c0140969ecb4629d07"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "4d228f2be601a28fa9856b106142832552970b5aa31259c0140969ecb4629d07": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-cfdb4e4c954ee4499690a26531df80251bf8103e4bfbc61000ce1de224896b00.mp3",
+        "sha256": "cfdb4e4c954ee4499690a26531df80251bf8103e4bfbc61000ce1de224896b00",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "cfdb4e4c954ee4499690a26531df80251bf8103e4bfbc61000ce1de224896b00",
+          "text": "队长",
+          "words": [
+            {
+              "text": "队长",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d431951a19a085d45a37b8de75f973fe41aaf3eb7e75418d827573338c8bf403.mp3",
+        "sha256": "d431951a19a085d45a37b8de75f973fe41aaf3eb7e75418d827573338c8bf403",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "d431951a19a085d45a37b8de75f973fe41aaf3eb7e75418d827573338c8bf403",
+          "text": "队长",
+          "words": [
+            {
+              "text": "队长",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1228",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1228-W1228",
+      "question_ids": [
+        "BANK-W1228-W1228"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-18",
+    "stepId": "S-U4-18-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-961f"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1943",
+  "targetId": "W1943",
+  "steps": [
+    {
+      "id": "BANK-W1943-W1943",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1943-W1943",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "cloud",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "云"
+            },
+            {
+              "value": "yún",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yun2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "云",
+            "pinyin": "yún",
+            "meaning": "cloud",
+            "singleWord": true,
+            "audio": "d917cf2332c323c3e02637f5635bd4332a6d18b53d14327214345ab5be5b03a9"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d917cf2332c323c3e02637f5635bd4332a6d18b53d14327214345ab5be5b03a9": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-81d3381a68c6dcf5e28542c07f4319bd0892ce7fdb15d32fc026b8d04a6ee6a0.mp3",
+        "sha256": "81d3381a68c6dcf5e28542c07f4319bd0892ce7fdb15d32fc026b8d04a6ee6a0",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "81d3381a68c6dcf5e28542c07f4319bd0892ce7fdb15d32fc026b8d04a6ee6a0",
+          "text": "云",
+          "words": [
+            {
+              "text": "云",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-a1db816672a3a15c3bd111e3ecb82c064407057de5f0fb14490c58fb0c6fa83d.mp3",
+        "sha256": "a1db816672a3a15c3bd111e3ecb82c064407057de5f0fb14490c58fb0c6fa83d",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "a1db816672a3a15c3bd111e3ecb82c064407057de5f0fb14490c58fb0c6fa83d",
+          "text": "云",
+          "words": [
+            {
+              "text": "云",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1943",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1943-W1943",
+      "question_ids": [
+        "BANK-W1943-W1943"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-26",
+    "stepId": "S-U4-26-words-r4-25",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4e91"
+    ],
+    "grammarLessonIds": []
+  }
+}

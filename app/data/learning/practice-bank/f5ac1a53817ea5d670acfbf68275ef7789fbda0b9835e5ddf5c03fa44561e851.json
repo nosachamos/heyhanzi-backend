@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1312",
+  "targetId": "W1312",
+  "steps": [
+    {
+      "id": "BANK-W1312-W1312",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1312-W1312",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "shopping",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "购物"
+            },
+            {
+              "value": "gòuwù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gou4wu4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "购物",
+            "pinyin": "gòuwù",
+            "meaning": "shopping",
+            "singleWord": true,
+            "audio": "483ab6f0d1b4dfeb3b2a96ccb108cebcd8507961b521a55c5e012bba421d44e1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "483ab6f0d1b4dfeb3b2a96ccb108cebcd8507961b521a55c5e012bba421d44e1": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a00171983bbaa71e210d3934a4f492a891e1bb13a860754ad1462ff8f510301f.mp3",
+        "sha256": "a00171983bbaa71e210d3934a4f492a891e1bb13a860754ad1462ff8f510301f",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "a00171983bbaa71e210d3934a4f492a891e1bb13a860754ad1462ff8f510301f",
+          "text": "购物",
+          "words": [
+            {
+              "text": "购物",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-231892f0a2234ac6c8b098abf78588a91b4a7b894b689a7a7cbe9844fa454a81.mp3",
+        "sha256": "231892f0a2234ac6c8b098abf78588a91b4a7b894b689a7a7cbe9844fa454a81",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "231892f0a2234ac6c8b098abf78588a91b4a7b894b689a7a7cbe9844fa454a81",
+          "text": "购物",
+          "words": [
+            {
+              "text": "购物",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1312",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1312-W1312",
+      "question_ids": [
+        "BANK-W1312-W1312"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-11",
+    "stepId": "S-U4-11-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8d2d"
+    ],
+    "grammarLessonIds": []
+  }
+}

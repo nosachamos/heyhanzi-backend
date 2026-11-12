@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3030",
+  "targetId": "W3030",
+  "steps": [
+    {
+      "id": "BANK-W3030-W3030",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3030-W3030",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "unemployment; to lose one's job",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "失业"
+            },
+            {
+              "value": "shīyè",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shi1ye4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "失业",
+            "pinyin": "shīyè",
+            "meaning": "unemployment; to lose one's job",
+            "singleWord": true,
+            "audio": "302485aa39780560c55b230288a7d1f285ef6711702211567b784e3b47940f33"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "302485aa39780560c55b230288a7d1f285ef6711702211567b784e3b47940f33": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/22aa120a22463680c96abe7cd1721de44e9224db76399b2e2a948a9c4f7ba8cb.mp3",
+        "sha256": "22aa120a22463680c96abe7cd1721de44e9224db76399b2e2a948a9c4f7ba8cb",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "22aa120a22463680c96abe7cd1721de44e9224db76399b2e2a948a9c4f7ba8cb",
+          "text": "失业",
+          "words": [
+            {
+              "text": "失业",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d68afc7f4801e3e19e6b2c978a35e32fd72419526e279d4d03dcf77481f1d03b.mp3",
+        "sha256": "d68afc7f4801e3e19e6b2c978a35e32fd72419526e279d4d03dcf77481f1d03b",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "d68afc7f4801e3e19e6b2c978a35e32fd72419526e279d4d03dcf77481f1d03b",
+          "text": "失业",
+          "words": [
+            {
+              "text": "失业",
+              "start": 0.26,
+              "end": 0.48
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3030",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3030-W3030",
+      "question_ids": [
+        "BANK-W3030-W3030"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-18",
+    "stepId": "S-U5-18-words-r4-18",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5931"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W5420",
+  "targetId": "W5420",
+  "steps": [
+    {
+      "id": "BANK-W5420-W5420",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5420-W5420",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "box; classifier for boxes or boxed quantities",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "盒"
+            },
+            {
+              "value": "hé",
+              "mode": "pinyin"
+            },
+            {
+              "value": "he2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "盒",
+            "pinyin": "hé",
+            "meaning": "box; classifier for boxes or boxed quantities",
+            "singleWord": true,
+            "audio": "9000f382602b7f603de7f486e9ba4584886cf0a529a12434bb4c5bf3cd47532e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "9000f382602b7f603de7f486e9ba4584886cf0a529a12434bb4c5bf3cd47532e": {
+      "female": {
+        "url": "/exercise-assets/audio/course-female-98e4319775e338e6e2b0ef67e5c1e89c8f9c083ef085f31745d66952e0c922c9.mp3",
+        "sha256": "98e4319775e338e6e2b0ef67e5c1e89c8f9c083ef085f31745d66952e0c922c9",
+        "byteLength": 10989,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-best-available",
+        "readAlong": {
+          "audioSha256": "98e4319775e338e6e2b0ef67e5c1e89c8f9c083ef085f31745d66952e0c922c9",
+          "text": "盒",
+          "words": [
+            {
+              "text": "盒",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/course-male-8d4b9857df7c861c79935b18790d9f5394e761dab089d24cffb40f8a364a199e.mp3",
+        "sha256": "8d4b9857df7c861c79935b18790d9f5394e761dab089d24cffb40f8a364a199e",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "8d4b9857df7c861c79935b18790d9f5394e761dab089d24cffb40f8a364a199e",
+          "text": "盒",
+          "words": [
+            {
+              "text": "盒",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5420",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5420-W5420",
+      "question_ids": [
+        "BANK-W5420-W5420"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-10-P01",
+    "stepId": "S-U4-10-words-r4-31",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-889c"
+    ],
+    "grammarLessonIds": []
+  }
+}

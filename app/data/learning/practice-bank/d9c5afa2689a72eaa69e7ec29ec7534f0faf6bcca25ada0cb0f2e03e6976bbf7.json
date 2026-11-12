@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0485",
+  "targetId": "W0485",
+  "steps": [
+    {
+      "id": "BANK-W0485-W0485",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0485-W0485",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "elementary school; primary school",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "小学"
+            },
+            {
+              "value": "xiǎoxué",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xiao3xue2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "小学",
+            "pinyin": "xiǎoxué",
+            "meaning": "elementary school; primary school",
+            "singleWord": true,
+            "audio": "1ae8e7a2ad33cfe1a028c6dcd6f65e655ee83937fd73e6a73e45bc34035341bc"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1ae8e7a2ad33cfe1a028c6dcd6f65e655ee83937fd73e6a73e45bc34035341bc": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-cce9e84e6b0fa612ed99196cc135fa4a9887f231da5692fd4139277b6e2bf177.mp3",
+        "sha256": "cce9e84e6b0fa612ed99196cc135fa4a9887f231da5692fd4139277b6e2bf177",
+        "byteLength": 16749,
+        "readAlong": {
+          "audioSha256": "cce9e84e6b0fa612ed99196cc135fa4a9887f231da5692fd4139277b6e2bf177",
+          "text": "小学",
+          "words": [
+            {
+              "text": "小学",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-afcfd3715f1af7e15935c44264387c4973f85a087fb237b5d0bd43239dc9835c.mp3",
+        "sha256": "afcfd3715f1af7e15935c44264387c4973f85a087fb237b5d0bd43239dc9835c",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "afcfd3715f1af7e15935c44264387c4973f85a087fb237b5d0bd43239dc9835c",
+          "text": "小学",
+          "words": [
+            {
+              "text": "小学",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0485",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0485-W0485",
+      "question_ids": [
+        "BANK-W0485-W0485"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U02",
+    "stepId": "S-U02-words-r4-41",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5c0f"
+    ],
+    "grammarLessonIds": []
+  }
+}

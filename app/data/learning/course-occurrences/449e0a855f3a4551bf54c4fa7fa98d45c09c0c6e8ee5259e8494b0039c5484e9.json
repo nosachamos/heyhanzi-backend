@@ -1,0 +1,643 @@
+{
+  "id": "EX-CHAR-char-6bd4",
+  "revision": 2,
+  "unit": "U23-P01",
+  "stage": "ST-HSK2",
+  "after": "S-U23-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "比",
+  "sourceBlockId": "mandarin-simplified-v1-char-6bd4",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-6bd4",
+        "text": "比",
+        "pinyin": "bǐ",
+        "meaning": "to compare; (followed by a noun and adjective) more {adj.} than {noun}",
+        "characters": [
+          {
+            "id": "C-6BD4",
+            "text": "比"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-8fdb",
+        "text": "进",
+        "pinyin": "jìn",
+        "meaning": "to go forward; to advance",
+        "characters": [
+          {
+            "id": "C-8FDB",
+            "text": "进"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-6385c82a846b9f6538e20dcc",
+        "text": "比不上",
+        "pinyin": "bǐ bù shàng",
+        "meaning": "can't compare with",
+        "characters": [
+          {
+            "id": "C-6BD4",
+            "text": "比"
+          },
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-4E0A",
+            "text": "上"
+          }
+        ]
+      },
+      {
+        "id": "W0464",
+        "text": "说话",
+        "pinyin": "shuōhuà",
+        "meaning": "to speak; to say",
+        "characters": [
+          {
+            "id": "C-8BF4",
+            "text": "说"
+          },
+          {
+            "id": "C-8BDD",
+            "text": "话"
+          }
+        ]
+      },
+      {
+        "id": "W4046",
+        "text": "高超",
+        "pinyin": "gāochāo",
+        "meaning": "excellent; superlative",
+        "characters": [
+          {
+            "id": "C-9AD8",
+            "text": "高"
+          },
+          {
+            "id": "C-8D85",
+            "text": "超"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "a39e1bd492a352c69720e2ef74869525fc734e15f81cfa3aa98eb8db562fb634",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6bd4",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "比",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6bd4-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-6385c82a846b9f6538e20dcc",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "can't compare with",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "比不上"
+              },
+              {
+                "value": "bǐ bù shàng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bi3bu4shang4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "比不上",
+              "pinyin": "bǐ bù shàng",
+              "meaning": "can't compare with",
+              "audio": "1a0f277ce8f325b25670c92e963584e4ed5c2db73590da65945d8237ac116b7c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6bd4-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6bd4",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "比",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-6bd4",
+                "label": "to compare; (followed by a noun and adjective) more {adj.} than {noun}",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W4046",
+                "label": "excellent; superlative",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-8fdb",
+                "label": "to go forward; to advance",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6bd4-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "比",
+        "pinyin": "bǐ",
+        "meaning": "to compare; (followed by a noun and adjective) more {adj.} than {noun}",
+        "source": "/stroke-data/6bd4.json",
+        "reference": {
+          "character": "比",
+          "sha256": "199e8eae5f49397ec1748f9bca58a9203b735f1ba79a78a03d9fb646352dc065",
+          "medians": [
+            [
+              [
+                273,
+                425
+              ],
+              [
+                289,
+                439
+              ],
+              [
+                323,
+                444
+              ],
+              [
+                390,
+                467
+              ],
+              [
+                427,
+                475
+              ],
+              [
+                453,
+                471
+              ]
+            ],
+            [
+              [
+                196,
+                651
+              ],
+              [
+                245,
+                608
+              ],
+              [
+                247,
+                590
+              ],
+              [
+                245,
+                400
+              ],
+              [
+                226,
+                215
+              ],
+              [
+                228,
+                171
+              ],
+              [
+                273,
+                178
+              ],
+              [
+                431,
+                287
+              ]
+            ],
+            [
+              [
+                778,
+                625
+              ],
+              [
+                788,
+                611
+              ],
+              [
+                795,
+                576
+              ],
+              [
+                695,
+                509
+              ],
+              [
+                588,
+                452
+              ],
+              [
+                578,
+                438
+              ]
+            ],
+            [
+              [
+                501,
+                774
+              ],
+              [
+                535,
+                748
+              ],
+              [
+                561,
+                711
+              ],
+              [
+                544,
+                282
+              ],
+              [
+                553,
+                202
+              ],
+              [
+                574,
+                148
+              ],
+              [
+                617,
+                118
+              ],
+              [
+                689,
+                102
+              ],
+              [
+                789,
+                102
+              ],
+              [
+                860,
+                122
+              ],
+              [
+                884,
+                137
+              ],
+              [
+                886,
+                145
+              ],
+              [
+                890,
+                303
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6bd4-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0464",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to speak; to say",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "说话"
+              },
+              {
+                "value": "shuōhuà",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shuo1hua4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "说话",
+              "pinyin": "shuōhuà",
+              "meaning": "to speak; to say",
+              "audio": "51d0523131b3be113731aa76d84c9d18a6e80e3582fd4ff55c57109babe187e3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6bd4-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6bd4",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to compare; (followed by a noun and adjective) more {adj.} than {noun}",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "比"
+              },
+              {
+                "value": "bǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bi3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "比",
+              "pinyin": "bǐ",
+              "meaning": "to compare; (followed by a noun and adjective) more {adj.} than {noun}",
+              "audio": "5b2307f8587b0184dfe3488cf8b16eb27fa5353d625af4ff931c5c72776b32c0",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "5b2307f8587b0184dfe3488cf8b16eb27fa5353d625af4ff931c5c72776b32c0"
+            ],
+            "transcript": [
+              {
+                "text": "比",
+                "pinyin": "bǐ",
+                "meaning": "to compare; (followed by a noun and adjective) more {adj.} than {noun}",
+                "audio": "5b2307f8587b0184dfe3488cf8b16eb27fa5353d625af4ff931c5c72776b32c0",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6BD4",
+      "character": "比",
+      "lessonIds": [
+        "LESSON-C-6BD4"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6bd4-word",
+        "EX-CHAR-char-6bd4-recognize",
+        "EX-CHAR-char-6bd4-write",
+        "EX-CHAR-char-6bd4-familiar",
+        "EX-CHAR-char-6bd4-recall"
+      ]
+    },
+    "audio": {
+      "5b2307f8587b0184dfe3488cf8b16eb27fa5353d625af4ff931c5c72776b32c0": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2e89094f8ea9e7ee171e5d42397203e515f8df1063c5b0d0f10d0fe6a8a91ff0.mp3",
+          "sha256": "2e89094f8ea9e7ee171e5d42397203e515f8df1063c5b0d0f10d0fe6a8a91ff0",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "2e89094f8ea9e7ee171e5d42397203e515f8df1063c5b0d0f10d0fe6a8a91ff0",
+            "text": "比",
+            "words": [
+              {
+                "text": "比",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b70daaf29f209fbb721673226c81b9e06a561c4c3757363193e84e9bcaf4b5ec.mp3",
+          "sha256": "b70daaf29f209fbb721673226c81b9e06a561c4c3757363193e84e9bcaf4b5ec",
+          "byteLength": 8397,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "b70daaf29f209fbb721673226c81b9e06a561c4c3757363193e84e9bcaf4b5ec",
+            "text": "比",
+            "words": [
+              {
+                "text": "比",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "9f87e9cba51ac035e9acd1451f9db471b5983af621279d747099d4c0c2b2477a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f17efed3bf2bc029d3e6cd5599a220e94e882ced76d5b36d69920bc3a1f5803c.mp3",
+          "sha256": "f17efed3bf2bc029d3e6cd5599a220e94e882ced76d5b36d69920bc3a1f5803c",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "f17efed3bf2bc029d3e6cd5599a220e94e882ced76d5b36d69920bc3a1f5803c",
+            "text": "进",
+            "words": [
+              {
+                "text": "进",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-147587c0554a6e4111e5f5da0ad89448104190fc9d2b959d7c5a779d534402f6.mp3",
+          "sha256": "147587c0554a6e4111e5f5da0ad89448104190fc9d2b959d7c5a779d534402f6",
+          "byteLength": 9549,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "147587c0554a6e4111e5f5da0ad89448104190fc9d2b959d7c5a779d534402f6",
+            "text": "进",
+            "words": [
+              {
+                "text": "进",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "1a0f277ce8f325b25670c92e963584e4ed5c2db73590da65945d8237ac116b7c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7dccff96f0e210f485b4c5ae65b1d5493ec065b883ad7c59cb270056c67d7c08.mp3",
+          "sha256": "7dccff96f0e210f485b4c5ae65b1d5493ec065b883ad7c59cb270056c67d7c08",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "7dccff96f0e210f485b4c5ae65b1d5493ec065b883ad7c59cb270056c67d7c08",
+            "text": "比不上",
+            "words": [
+              {
+                "text": "比不上",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/7e6cc462e5ed88ec6ec41a86158087d28a21499ca66fa58b5ecf1e8805b5eff3.mp3",
+          "sha256": "7e6cc462e5ed88ec6ec41a86158087d28a21499ca66fa58b5ecf1e8805b5eff3",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "7e6cc462e5ed88ec6ec41a86158087d28a21499ca66fa58b5ecf1e8805b5eff3",
+            "text": "比不上",
+            "words": [
+              {
+                "text": "比不上",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "51d0523131b3be113731aa76d84c9d18a6e80e3582fd4ff55c57109babe187e3": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-cda31884c7cb58c5e771af9b7fef56f5a63382ed43e5f0a61d878aadbc215c0b.mp3",
+          "sha256": "cda31884c7cb58c5e771af9b7fef56f5a63382ed43e5f0a61d878aadbc215c0b",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "cda31884c7cb58c5e771af9b7fef56f5a63382ed43e5f0a61d878aadbc215c0b",
+            "text": "说话",
+            "words": [
+              {
+                "text": "说话",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-901e4652a9af1d4b16fe3532f00a0b7702f576e5ac5da0ed838148ed2b025c5b.mp3",
+          "sha256": "901e4652a9af1d4b16fe3532f00a0b7702f576e5ac5da0ed838148ed2b025c5b",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "901e4652a9af1d4b16fe3532f00a0b7702f576e5ac5da0ed838148ed2b025c5b",
+            "text": "说话",
+            "words": [
+              {
+                "text": "说话",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "c8ac15bff53ebf213d342b035af034ae972d35599a7c1c7c7aaecb4adc24f70f": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c5927bb3a9511339c86fb3f5a91dd1f648b76f426a267738a847e9600428811b.mp3",
+          "sha256": "c5927bb3a9511339c86fb3f5a91dd1f648b76f426a267738a847e9600428811b",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "c5927bb3a9511339c86fb3f5a91dd1f648b76f426a267738a847e9600428811b",
+            "text": "高超",
+            "words": [
+              {
+                "text": "高超",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/59b8b2c9f151a57719a05bce7fd160ed809084e7ba9713b2a02ff90dd1f0050f.mp3",
+          "sha256": "59b8b2c9f151a57719a05bce7fd160ed809084e7ba9713b2a02ff90dd1f0050f",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "59b8b2c9f151a57719a05bce7fd160ed809084e7ba9713b2a02ff90dd1f0050f",
+            "text": "高超",
+            "words": [
+              {
+                "text": "高超",
+                "start": 0.18,
+                "end": 0.66
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

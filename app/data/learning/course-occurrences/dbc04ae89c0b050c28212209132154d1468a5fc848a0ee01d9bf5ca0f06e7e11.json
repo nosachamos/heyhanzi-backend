@@ -1,0 +1,515 @@
+{
+  "id": "EX-CHAR-char-4e00",
+  "revision": 2,
+  "unit": "WU03",
+  "stage": "ST-WARMUP",
+  "after": "S-WU03-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "一",
+  "sourceBlockId": "mandarin-simplified-v1-char-4e00",
+  "sourceLevelId": "warmup",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Connect meaning and sound",
+    "Write the character",
+    "Use the whole word",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-4e00",
+        "text": "一",
+        "pinyin": "yī",
+        "meaning": "one; single",
+        "characters": [
+          {
+            "id": "C-4E00",
+            "text": "一"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-0a00f6da22f9b9f37c9ad886",
+        "text": "有人",
+        "pinyin": "yǒu rén",
+        "meaning": "someone; there is someone",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          },
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      },
+      {
+        "id": "W0002",
+        "text": "你",
+        "pinyin": "nǐ",
+        "meaning": "you",
+        "characters": [
+          {
+            "id": "C-4F60",
+            "text": "你"
+          }
+        ]
+      },
+      {
+        "id": "W5152",
+        "text": "一一",
+        "pinyin": "yīyī",
+        "meaning": "one by one; one after another",
+        "characters": [
+          {
+            "id": "C-4E00",
+            "text": "一"
+          }
+        ]
+      },
+      {
+        "id": "W5424",
+        "text": "不是",
+        "pinyin": "bùshì",
+        "meaning": "is not; no",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-662F",
+            "text": "是"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "7867d6e6344b1b53ef28cbf3490e9a273dc620372f8a49976b66631a4297dd60",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4e00",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "一",
+    "variant": "lesson-meaning-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4e00-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-4e00",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "一",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W5424",
+                "label": "is not; no",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-4e00",
+                "label": "one; single",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-0a00f6da22f9b9f37c9ad886",
+                "label": "someone; there is someone",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e00-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "一",
+        "pinyin": "yī",
+        "meaning": "one; single",
+        "source": "/stroke-data/4e00.json",
+        "reference": {
+          "character": "一",
+          "sha256": "c988218761456001e17c6808e1d8bd49e0e1da1705671b42a80b232cc995860c",
+          "medians": [
+            [
+              [
+                121,
+                393
+              ],
+              [
+                193,
+                372
+              ],
+              [
+                417,
+                402
+              ],
+              [
+                827,
+                434
+              ],
+              [
+                920,
+                401
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4e00-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W5152",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "one by one; one after another",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "一一"
+              },
+              {
+                "value": "yīyī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yi1yi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "一一",
+              "pinyin": "yīyī",
+              "meaning": "one by one; one after another",
+              "audio": "32f74684c346eaf10f16e29e00aa58131fbd3ef48b95748c76276dbba0bd9d2b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e00-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0002",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "you",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "你"
+              },
+              {
+                "value": "nǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ni3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "你",
+              "pinyin": "nǐ",
+              "meaning": "you",
+              "audio": "b316ac0dd167bd8bef2048818a93b55be5371efb0af3024556cf9b5c93799d4d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e00-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-4e00",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "one; single",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "一"
+              },
+              {
+                "value": "yī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "一",
+              "pinyin": "yī",
+              "meaning": "one; single",
+              "audio": "49935700473fdf4ca3617d5d0264dde10971df6ac18088e917fc29b268088207",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "49935700473fdf4ca3617d5d0264dde10971df6ac18088e917fc29b268088207"
+            ],
+            "transcript": [
+              {
+                "text": "一",
+                "pinyin": "yī",
+                "meaning": "one; single",
+                "audio": "49935700473fdf4ca3617d5d0264dde10971df6ac18088e917fc29b268088207",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4E00",
+      "character": "一",
+      "lessonIds": [
+        "LESSON-C-4E00"
+      ],
+      "profile": "meaning-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4e00-recognize",
+        "EX-CHAR-char-4e00-write",
+        "EX-CHAR-char-4e00-word",
+        "EX-CHAR-char-4e00-familiar",
+        "EX-CHAR-char-4e00-recall"
+      ]
+    },
+    "audio": {
+      "49935700473fdf4ca3617d5d0264dde10971df6ac18088e917fc29b268088207": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-94737cbc7353f2dbc2565182be988469a62a3431070b777257bc36de324d9377.mp3",
+          "sha256": "94737cbc7353f2dbc2565182be988469a62a3431070b777257bc36de324d9377",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "94737cbc7353f2dbc2565182be988469a62a3431070b777257bc36de324d9377",
+            "text": "一",
+            "words": [
+              {
+                "text": "一",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-88189345e8f1e3ebdeb90097326abbbb277688c919e7227407a2385f19108f03.mp3",
+          "sha256": "88189345e8f1e3ebdeb90097326abbbb277688c919e7227407a2385f19108f03",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "88189345e8f1e3ebdeb90097326abbbb277688c919e7227407a2385f19108f03",
+            "text": "一",
+            "words": [
+              {
+                "text": "一",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "4fc5f3a9e2db4889acc9e8541a74c094259f6cb9f564bade8bbe199d840513ff": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f89216b462614db9378458b35ed8af39ad1e79ab22e78943f5725d7b72384d33.mp3",
+          "sha256": "f89216b462614db9378458b35ed8af39ad1e79ab22e78943f5725d7b72384d33",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "f89216b462614db9378458b35ed8af39ad1e79ab22e78943f5725d7b72384d33",
+            "text": "有人",
+            "words": [
+              {
+                "text": "有人",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-0383ea51f1b9fc7cd8f0aa8a0e718e27758559b03b73118268717f44fe82a7b8.mp3",
+          "sha256": "0383ea51f1b9fc7cd8f0aa8a0e718e27758559b03b73118268717f44fe82a7b8",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "0383ea51f1b9fc7cd8f0aa8a0e718e27758559b03b73118268717f44fe82a7b8",
+            "text": "有人",
+            "words": [
+              {
+                "text": "有人",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "b316ac0dd167bd8bef2048818a93b55be5371efb0af3024556cf9b5c93799d4d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-005431e11bb3e8561c027f48ace733d78533f3b8d46a15ec48297ecd6d5fdda3.mp3",
+          "sha256": "005431e11bb3e8561c027f48ace733d78533f3b8d46a15ec48297ecd6d5fdda3",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "005431e11bb3e8561c027f48ace733d78533f3b8d46a15ec48297ecd6d5fdda3",
+            "text": "你",
+            "words": [
+              {
+                "text": "你",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4a920870d212f2f41fcc0396f1b7f5edc548727f716658319f054daf6f69066c.mp3",
+          "sha256": "4a920870d212f2f41fcc0396f1b7f5edc548727f716658319f054daf6f69066c",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "4a920870d212f2f41fcc0396f1b7f5edc548727f716658319f054daf6f69066c",
+            "text": "你",
+            "words": [
+              {
+                "text": "你",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "32f74684c346eaf10f16e29e00aa58131fbd3ef48b95748c76276dbba0bd9d2b": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/89e2040f0d61892a0222e9e641c663b9f5222a10b9c877b1e2613ef63a51b0b2.mp3",
+          "sha256": "89e2040f0d61892a0222e9e641c663b9f5222a10b9c877b1e2613ef63a51b0b2",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "89e2040f0d61892a0222e9e641c663b9f5222a10b9c877b1e2613ef63a51b0b2",
+            "text": "一一",
+            "words": [
+              {
+                "text": "一一",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/48337f8e02fa6cb6df685ca0903cdb20f435cc34823efdfe87318147e70c0fd6.mp3",
+          "sha256": "48337f8e02fa6cb6df685ca0903cdb20f435cc34823efdfe87318147e70c0fd6",
+          "byteLength": 10125,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "48337f8e02fa6cb6df685ca0903cdb20f435cc34823efdfe87318147e70c0fd6",
+            "text": "一一",
+            "words": [
+              {
+                "text": "一一",
+                "start": 0.165,
+                "end": 0.565
+              }
+            ]
+          }
+        }
+      },
+      "95f87af578ed45ba4f9addae32c6ecbd2b79f1b7f156bb21a6f82797d63e83bc": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-660cfb107285b7e2e63f4d966279214ec2fcb97f5d279840880954b12471a3e4.mp3",
+          "sha256": "660cfb107285b7e2e63f4d966279214ec2fcb97f5d279840880954b12471a3e4",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "660cfb107285b7e2e63f4d966279214ec2fcb97f5d279840880954b12471a3e4",
+            "text": "不是",
+            "words": [
+              {
+                "text": "不是",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-512b22e1e81738ea22075b0adf1895badb64b9c99c52189aa7ff8b62fc95e8b7.mp3",
+          "sha256": "512b22e1e81738ea22075b0adf1895badb64b9c99c52189aa7ff8b62fc95e8b7",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "512b22e1e81738ea22075b0adf1895badb64b9c99c52189aa7ff8b62fc95e8b7",
+            "text": "不是",
+            "words": [
+              {
+                "text": "不是",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

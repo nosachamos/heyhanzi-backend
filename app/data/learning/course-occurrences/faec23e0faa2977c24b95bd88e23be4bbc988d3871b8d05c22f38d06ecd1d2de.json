@@ -1,0 +1,759 @@
+{
+  "id": "EX-CHAR-char-7720",
+  "revision": 2,
+  "unit": "U5-13",
+  "stage": "ST-HSK5",
+  "after": "S-U5-13-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "眠",
+  "sourceBlockId": "mandarin-simplified-v1-char-7720",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7720",
+        "text": "眠",
+        "pinyin": "mián",
+        "meaning": "to sleep; to hibernate",
+        "characters": [
+          {
+            "id": "C-7720",
+            "text": "眠"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-7b80",
+        "text": "简",
+        "pinyin": "jiǎn",
+        "meaning": "simple; uncomplicated",
+        "characters": [
+          {
+            "id": "C-7B80",
+            "text": "简"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-163ad7749c4d2174e227e08d",
+        "text": "处在",
+        "pinyin": "chǔ zài",
+        "meaning": "to be situated at",
+        "characters": [
+          {
+            "id": "C-5904",
+            "text": "处"
+          },
+          {
+            "id": "C-5728",
+            "text": "在"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-b4d05e042d7b303a40d16ab7",
+        "text": "休眠",
+        "pinyin": "xiū mián",
+        "meaning": "(biology) dormant",
+        "characters": [
+          {
+            "id": "C-4F11",
+            "text": "休"
+          },
+          {
+            "id": "C-7720",
+            "text": "眠"
+          }
+        ]
+      },
+      {
+        "id": "W0669",
+        "text": "宾馆",
+        "pinyin": "bīnguǎn",
+        "meaning": "hotel; guesthouse",
+        "characters": [
+          {
+            "id": "C-5BBE",
+            "text": "宾"
+          },
+          {
+            "id": "C-9986",
+            "text": "馆"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "cd01097b6d4e14711681bbb8af971e97e653eac644b5f0c0513e485e9a6a452a",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7720",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "眠",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7720-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-b4d05e042d7b303a40d16ab7",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "(biology) dormant",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "休眠"
+              },
+              {
+                "value": "xiū mián",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiu1mian2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "休眠",
+              "pinyin": "xiū mián",
+              "meaning": "(biology) dormant",
+              "audio": "c075994c7c78df23461412089494e766b0a84e2dcf500657e4d7700298fcdc43",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7720-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7720",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "眠",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-163ad7749c4d2174e227e08d",
+                "label": "to be situated at",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-7b80",
+                "label": "simple; uncomplicated",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-7720",
+                "label": "to sleep; to hibernate",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7720-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "眠",
+        "pinyin": "mián",
+        "meaning": "to sleep; to hibernate",
+        "source": "/stroke-data/7720.json",
+        "reference": {
+          "character": "眠",
+          "sha256": "cb0d0d02e7adf238c709893e811360ad7c376fe3c20175fffb7debda32a8b4f0",
+          "medians": [
+            [
+              [
+                118,
+                705
+              ],
+              [
+                147,
+                675
+              ],
+              [
+                155,
+                634
+              ],
+              [
+                156,
+                352
+              ],
+              [
+                143,
+                210
+              ],
+              [
+                148,
+                142
+              ]
+            ],
+            [
+              [
+                174,
+                689
+              ],
+              [
+                193,
+                685
+              ],
+              [
+                288,
+                716
+              ],
+              [
+                317,
+                708
+              ],
+              [
+                337,
+                690
+              ],
+              [
+                346,
+                266
+              ],
+              [
+                335,
+                211
+              ],
+              [
+                340,
+                159
+              ]
+            ],
+            [
+              [
+                180,
+                510
+              ],
+              [
+                212,
+                529
+              ],
+              [
+                275,
+                530
+              ]
+            ],
+            [
+              [
+                179,
+                372
+              ],
+              [
+                211,
+                390
+              ],
+              [
+                242,
+                395
+              ],
+              [
+                280,
+                390
+              ]
+            ],
+            [
+              [
+                180,
+                196
+              ],
+              [
+                190,
+                208
+              ],
+              [
+                274,
+                218
+              ],
+              [
+                293,
+                229
+              ]
+            ],
+            [
+              [
+                493,
+                727
+              ],
+              [
+                507,
+                717
+              ],
+              [
+                724,
+                769
+              ],
+              [
+                762,
+                738
+              ],
+              [
+                736,
+                671
+              ],
+              [
+                706,
+                648
+              ]
+            ],
+            [
+              [
+                497,
+                569
+              ],
+              [
+                508,
+                578
+              ],
+              [
+                695,
+                620
+              ],
+              [
+                748,
+                626
+              ],
+              [
+                771,
+                620
+              ]
+            ],
+            [
+              [
+                425,
+                745
+              ],
+              [
+                462,
+                700
+              ],
+              [
+                472,
+                568
+              ],
+              [
+                471,
+                367
+              ],
+              [
+                454,
+                167
+              ],
+              [
+                460,
+                136
+              ],
+              [
+                493,
+                146
+              ],
+              [
+                615,
+                241
+              ]
+            ],
+            [
+              [
+                501,
+                395
+              ],
+              [
+                536,
+                393
+              ],
+              [
+                597,
+                401
+              ],
+              [
+                758,
+                449
+              ],
+              [
+                820,
+                455
+              ]
+            ],
+            [
+              [
+                604,
+                583
+              ],
+              [
+                607,
+                576
+              ],
+              [
+                637,
+                564
+              ],
+              [
+                648,
+                549
+              ],
+              [
+                657,
+                443
+              ],
+              [
+                678,
+                357
+              ],
+              [
+                733,
+                239
+              ],
+              [
+                793,
+                158
+              ],
+              [
+                840,
+                116
+              ],
+              [
+                887,
+                99
+              ],
+              [
+                909,
+                138
+              ],
+              [
+                941,
+                241
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7720-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0669",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "hotel; guesthouse",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "宾馆"
+              },
+              {
+                "value": "bīnguǎn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bin1guan3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "宾馆",
+              "pinyin": "bīnguǎn",
+              "meaning": "hotel; guesthouse",
+              "audio": "3e3ae82592f2151826353b764fe4bb6278a5a2eb4ed9675c58ae6ed3e8a67f29",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7720-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7720",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to sleep; to hibernate",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "眠"
+              },
+              {
+                "value": "mián",
+                "mode": "pinyin"
+              },
+              {
+                "value": "mian2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "眠",
+              "pinyin": "mián",
+              "meaning": "to sleep; to hibernate",
+              "audio": "42c70d9bfcaee7930ab8aa317cfab09f41ac8765c30a99117c95167dcb25e7ac",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "42c70d9bfcaee7930ab8aa317cfab09f41ac8765c30a99117c95167dcb25e7ac"
+            ],
+            "transcript": [
+              {
+                "text": "眠",
+                "pinyin": "mián",
+                "meaning": "to sleep; to hibernate",
+                "audio": "42c70d9bfcaee7930ab8aa317cfab09f41ac8765c30a99117c95167dcb25e7ac",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7720",
+      "character": "眠",
+      "lessonIds": [
+        "LESSON-C-7720"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7720-word",
+        "EX-CHAR-char-7720-recognize",
+        "EX-CHAR-char-7720-write",
+        "EX-CHAR-char-7720-familiar",
+        "EX-CHAR-char-7720-recall"
+      ]
+    },
+    "audio": {
+      "42c70d9bfcaee7930ab8aa317cfab09f41ac8765c30a99117c95167dcb25e7ac": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-3b0eab1ad381b5e9508a7c98323e4c1eb86b81f633bb5135a30e2b7cf8144661.mp3",
+          "sha256": "3b0eab1ad381b5e9508a7c98323e4c1eb86b81f633bb5135a30e2b7cf8144661",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "3b0eab1ad381b5e9508a7c98323e4c1eb86b81f633bb5135a30e2b7cf8144661",
+            "text": "眠",
+            "words": [
+              {
+                "text": "眠",
+                "start": 0.18,
+                "end": 0.3
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-94719c609414d0ef2cd25dc6f2fbbe95ab8492ac3d5c33db0dee6927e8c2eb13.mp3",
+          "sha256": "94719c609414d0ef2cd25dc6f2fbbe95ab8492ac3d5c33db0dee6927e8c2eb13",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "94719c609414d0ef2cd25dc6f2fbbe95ab8492ac3d5c33db0dee6927e8c2eb13",
+            "text": "眠",
+            "words": [
+              {
+                "text": "眠",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "a81b4850d7e09a55dc0c2354a6e66d1ffb153b17bb71a596de1e4b41d0c2629f": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-fd7c42177d8bfbe36f09965dac9ae8037845596a64824b9b45b8b7c8cfff256f.mp3",
+          "sha256": "fd7c42177d8bfbe36f09965dac9ae8037845596a64824b9b45b8b7c8cfff256f",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "fd7c42177d8bfbe36f09965dac9ae8037845596a64824b9b45b8b7c8cfff256f",
+            "text": "简",
+            "words": [
+              {
+                "text": "简",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-881c93d1baad8f817bbe4d455d6e9a1bd2b1e4ea5ceebaaef0463627f8041a90.mp3",
+          "sha256": "881c93d1baad8f817bbe4d455d6e9a1bd2b1e4ea5ceebaaef0463627f8041a90",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "881c93d1baad8f817bbe4d455d6e9a1bd2b1e4ea5ceebaaef0463627f8041a90",
+            "text": "简",
+            "words": [
+              {
+                "text": "简",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "cecf512ca9cadb7b5f648e3f999c1ec296af47c425d4aba52bfb766bdbb3f764": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b3f5adb0b8e97abb6b4b9d4c4769170adc20196e436f0e756c8b1826a531bda1.mp3",
+          "sha256": "b3f5adb0b8e97abb6b4b9d4c4769170adc20196e436f0e756c8b1826a531bda1",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "b3f5adb0b8e97abb6b4b9d4c4769170adc20196e436f0e756c8b1826a531bda1",
+            "text": "处在",
+            "words": [
+              {
+                "text": "处在",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b04609ad815b609adde41629003dddee79d93b1e97a57064fe0131dbfa1cfc48.mp3",
+          "sha256": "b04609ad815b609adde41629003dddee79d93b1e97a57064fe0131dbfa1cfc48",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "b04609ad815b609adde41629003dddee79d93b1e97a57064fe0131dbfa1cfc48",
+            "text": "处在",
+            "words": [
+              {
+                "text": "处在",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "c075994c7c78df23461412089494e766b0a84e2dcf500657e4d7700298fcdc43": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a29fd8f59cb07a879097261c7111903609cafc353a86e899a5c00f57d9cb9675.mp3",
+          "sha256": "a29fd8f59cb07a879097261c7111903609cafc353a86e899a5c00f57d9cb9675",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "a29fd8f59cb07a879097261c7111903609cafc353a86e899a5c00f57d9cb9675",
+            "text": "休眠",
+            "words": [
+              {
+                "text": "休眠",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0aa38b465654b2092cfee77a2e1f03d68cf7c8f4453697a56465f50a4273e87c.mp3",
+          "sha256": "0aa38b465654b2092cfee77a2e1f03d68cf7c8f4453697a56465f50a4273e87c",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "0aa38b465654b2092cfee77a2e1f03d68cf7c8f4453697a56465f50a4273e87c",
+            "text": "休眠",
+            "words": [
+              {
+                "text": "休眠",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "3e3ae82592f2151826353b764fe4bb6278a5a2eb4ed9675c58ae6ed3e8a67f29": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7d831bfab061d574834ee02bb0019742aaff4e992762389f4bc90610f4c4a964.mp3",
+          "sha256": "7d831bfab061d574834ee02bb0019742aaff4e992762389f4bc90610f4c4a964",
+          "byteLength": 16461,
+          "readAlong": {
+            "audioSha256": "7d831bfab061d574834ee02bb0019742aaff4e992762389f4bc90610f4c4a964",
+            "text": "宾馆",
+            "words": [
+              {
+                "text": "宾馆",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/10218ad7ff976fa9950bf3a2f2066a477a942ab57d916da996283e39fe4cb55a.mp3",
+          "sha256": "10218ad7ff976fa9950bf3a2f2066a477a942ab57d916da996283e39fe4cb55a",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "10218ad7ff976fa9950bf3a2f2066a477a942ab57d916da996283e39fe4cb55a",
+            "text": "宾馆",
+            "words": [
+              {
+                "text": "宾馆",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

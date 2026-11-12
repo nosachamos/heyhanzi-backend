@@ -1,0 +1,729 @@
+{
+  "id": "EX-CHAR-char-6cc9",
+  "revision": 2,
+  "unit": "U3-17",
+  "stage": "ST-HSK3",
+  "after": "S-U3-17-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "泉",
+  "sourceBlockId": "mandarin-simplified-v1-char-6cc9",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-6cc9",
+        "text": "泉",
+        "pinyin": "quán",
+        "meaning": "spring (small stream); mouth of a spring",
+        "characters": [
+          {
+            "id": "C-6CC9",
+            "text": "泉"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f6d5a5f7a8dec62a22c8e93e",
+        "text": "计算机",
+        "pinyin": "jìsuànjī",
+        "meaning": "computer; (Tw) calculator",
+        "characters": [
+          {
+            "id": "C-8BA1",
+            "text": "计"
+          },
+          {
+            "id": "C-7B97",
+            "text": "算"
+          },
+          {
+            "id": "C-673A",
+            "text": "机"
+          }
+        ]
+      },
+      {
+        "id": "W0847",
+        "text": "矿泉水",
+        "pinyin": "kuàngquánshuǐ",
+        "meaning": "mineral water",
+        "characters": [
+          {
+            "id": "C-77FF",
+            "text": "矿"
+          },
+          {
+            "id": "C-6CC9",
+            "text": "泉"
+          },
+          {
+            "id": "C-6C34",
+            "text": "水"
+          }
+        ]
+      },
+      {
+        "id": "W2142",
+        "text": "超",
+        "pinyin": "chāo",
+        "meaning": "to exceed; to overtake",
+        "characters": [
+          {
+            "id": "C-8D85",
+            "text": "超"
+          }
+        ]
+      },
+      {
+        "id": "W3056",
+        "text": "事实",
+        "pinyin": "shìshí",
+        "meaning": "fact",
+        "characters": [
+          {
+            "id": "C-4E8B",
+            "text": "事"
+          },
+          {
+            "id": "C-5B9E",
+            "text": "实"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "afcc481c98ee7cbcbb689b8cab6bdfc4ce5e901cb7e73b164d5ed0b204efaa17",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6cc9",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "泉",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6cc9-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0847",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "mineral water",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "矿泉水"
+              },
+              {
+                "value": "kuàngquánshuǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "kuang4quan2shui3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "矿泉水",
+              "pinyin": "kuàngquánshuǐ",
+              "meaning": "mineral water",
+              "audio": "49f1ea10343455f3e3a6790cdef1bf0b061d6d7975c4b652c9afe3b33a3c46d3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6cc9-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6cc9",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "泉",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-6cc9",
+                "label": "spring (small stream); mouth of a spring",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W2142",
+                "label": "to exceed; to overtake",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W3056",
+                "label": "fact",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6cc9-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "泉",
+        "pinyin": "quán",
+        "meaning": "spring (small stream); mouth of a spring",
+        "source": "/stroke-data/6cc9.json",
+        "reference": {
+          "character": "泉",
+          "sha256": "5cc31337a9d4ef7a155c8a8cee427f58b38770d2eb04c1c28d11ddce9f5b9a8e",
+          "medians": [
+            [
+              [
+                482,
+                854
+              ],
+              [
+                494,
+                847
+              ],
+              [
+                512,
+                817
+              ],
+              [
+                407,
+                678
+              ],
+              [
+                381,
+                665
+              ]
+            ],
+            [
+              [
+                294,
+                654
+              ],
+              [
+                323,
+                632
+              ],
+              [
+                330,
+                616
+              ],
+              [
+                383,
+                407
+              ]
+            ],
+            [
+              [
+                353,
+                651
+              ],
+              [
+                370,
+                641
+              ],
+              [
+                614,
+                687
+              ],
+              [
+                667,
+                677
+              ],
+              [
+                691,
+                641
+              ],
+              [
+                634,
+                463
+              ],
+              [
+                621,
+                438
+              ],
+              [
+                596,
+                437
+              ]
+            ],
+            [
+              [
+                383,
+                530
+              ],
+              [
+                392,
+                539
+              ],
+              [
+                492,
+                558
+              ],
+              [
+                544,
+                565
+              ],
+              [
+                565,
+                560
+              ]
+            ],
+            [
+              [
+                401,
+                420
+              ],
+              [
+                413,
+                433
+              ],
+              [
+                434,
+                438
+              ],
+              [
+                588,
+                460
+              ]
+            ],
+            [
+              [
+                446,
+                417
+              ],
+              [
+                474,
+                404
+              ],
+              [
+                496,
+                374
+              ],
+              [
+                487,
+                38
+              ],
+              [
+                471,
+                7
+              ],
+              [
+                358,
+                49
+              ]
+            ],
+            [
+              [
+                148,
+                310
+              ],
+              [
+                208,
+                299
+              ],
+              [
+                339,
+                321
+              ],
+              [
+                370,
+                303
+              ],
+              [
+                329,
+                221
+              ],
+              [
+                253,
+                122
+              ],
+              [
+                173,
+                58
+              ],
+              [
+                107,
+                24
+              ]
+            ],
+            [
+              [
+                723,
+                443
+              ],
+              [
+                734,
+                432
+              ],
+              [
+                744,
+                401
+              ],
+              [
+                650,
+                319
+              ],
+              [
+                603,
+                287
+              ],
+              [
+                596,
+                290
+              ]
+            ],
+            [
+              [
+                525,
+                329
+              ],
+              [
+                534,
+                303
+              ],
+              [
+                620,
+                223
+              ],
+              [
+                715,
+                143
+              ],
+              [
+                790,
+                92
+              ],
+              [
+                971,
+                76
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6cc9-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-f6d5a5f7a8dec62a22c8e93e",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "computer; (Tw) calculator",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "计算机"
+              },
+              {
+                "value": "jìsuànjī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ji4suan4ji1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "计算机",
+              "pinyin": "jìsuànjī",
+              "meaning": "computer; (Tw) calculator",
+              "audio": "c005e2950b645fc00118382ea8e2d401b3d5803afe4dbad95df7a2b9c4f7028b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6cc9-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6cc9",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "spring (small stream); mouth of a spring",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "泉"
+              },
+              {
+                "value": "quán",
+                "mode": "pinyin"
+              },
+              {
+                "value": "quan2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "泉",
+              "pinyin": "quán",
+              "meaning": "spring (small stream); mouth of a spring",
+              "audio": "a4bd1eb5fb965ca636765fc4c024b3178f772bec2809e4412b24080adea79468",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "a4bd1eb5fb965ca636765fc4c024b3178f772bec2809e4412b24080adea79468"
+            ],
+            "transcript": [
+              {
+                "text": "泉",
+                "pinyin": "quán",
+                "meaning": "spring (small stream); mouth of a spring",
+                "audio": "a4bd1eb5fb965ca636765fc4c024b3178f772bec2809e4412b24080adea79468",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6CC9",
+      "character": "泉",
+      "lessonIds": [
+        "LESSON-C-6CC9"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6cc9-word",
+        "EX-CHAR-char-6cc9-recognize",
+        "EX-CHAR-char-6cc9-write",
+        "EX-CHAR-char-6cc9-familiar",
+        "EX-CHAR-char-6cc9-recall"
+      ]
+    },
+    "audio": {
+      "a4bd1eb5fb965ca636765fc4c024b3178f772bec2809e4412b24080adea79468": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-d76c20607917bb350d85e28affb73ce548f98205d37a35aeb8dca5262f41d3cb.mp3",
+          "sha256": "d76c20607917bb350d85e28affb73ce548f98205d37a35aeb8dca5262f41d3cb",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "d76c20607917bb350d85e28affb73ce548f98205d37a35aeb8dca5262f41d3cb",
+            "text": "泉",
+            "words": [
+              {
+                "text": "泉",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-718b2bea246a4ea5ffa99640a16fc9e44bb381c34b21f173fbc18f46010a2f48.mp3",
+          "sha256": "718b2bea246a4ea5ffa99640a16fc9e44bb381c34b21f173fbc18f46010a2f48",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "718b2bea246a4ea5ffa99640a16fc9e44bb381c34b21f173fbc18f46010a2f48",
+            "text": "泉",
+            "words": [
+              {
+                "text": "泉",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "c005e2950b645fc00118382ea8e2d401b3d5803afe4dbad95df7a2b9c4f7028b": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1e05dc7e134d107adb29d7e9858f543fcb881bdc47fa59e5afc74c6223488e26.mp3",
+          "sha256": "1e05dc7e134d107adb29d7e9858f543fcb881bdc47fa59e5afc74c6223488e26",
+          "byteLength": 17613,
+          "readAlong": {
+            "audioSha256": "1e05dc7e134d107adb29d7e9858f543fcb881bdc47fa59e5afc74c6223488e26",
+            "text": "计算机",
+            "words": [
+              {
+                "text": "计算机",
+                "start": 0.15,
+                "end": 0.75
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/902ecdd105ef0d7c5b238bcf867655aabb17dd1b875bb9b82ffe0e2c6f99ec93.mp3",
+          "sha256": "902ecdd105ef0d7c5b238bcf867655aabb17dd1b875bb9b82ffe0e2c6f99ec93",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "902ecdd105ef0d7c5b238bcf867655aabb17dd1b875bb9b82ffe0e2c6f99ec93",
+            "text": "计算机",
+            "words": [
+              {
+                "text": "计算机",
+                "start": 0.21,
+                "end": 0.69
+              }
+            ]
+          }
+        }
+      },
+      "49f1ea10343455f3e3a6790cdef1bf0b061d6d7975c4b652c9afe3b33a3c46d3": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f94e05b3d885d456519d4163cf678bbfa6a199a5811148b8f481ba1c08fb78f2.mp3",
+          "sha256": "f94e05b3d885d456519d4163cf678bbfa6a199a5811148b8f481ba1c08fb78f2",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "f94e05b3d885d456519d4163cf678bbfa6a199a5811148b8f481ba1c08fb78f2",
+            "text": "矿泉水",
+            "words": [
+              {
+                "text": "矿泉水",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d78c2aaf7676832609da9c14bedfc52fc1d9c945f146710e1d4b7df0f62291ec.mp3",
+          "sha256": "d78c2aaf7676832609da9c14bedfc52fc1d9c945f146710e1d4b7df0f62291ec",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "d78c2aaf7676832609da9c14bedfc52fc1d9c945f146710e1d4b7df0f62291ec",
+            "text": "矿泉水",
+            "words": [
+              {
+                "text": "矿泉水",
+                "start": 0.09,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "f34a8279c20753d6a0c59ebb42002d72bf899aebcb4e947b85038f233945e00e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c29cdc9eb1cd0394c945117af69d3668aae983077cbb525369c765fd9c9ea22c.mp3",
+          "sha256": "c29cdc9eb1cd0394c945117af69d3668aae983077cbb525369c765fd9c9ea22c",
+          "byteLength": 7245,
+          "readAlong": {
+            "audioSha256": "c29cdc9eb1cd0394c945117af69d3668aae983077cbb525369c765fd9c9ea22c",
+            "text": "超",
+            "words": [
+              {
+                "text": "超",
+                "start": 0.18,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/cf2cbafafca22c587411578088e33a755482c3ab568260ce1bbc532f93c164ab.mp3",
+          "sha256": "cf2cbafafca22c587411578088e33a755482c3ab568260ce1bbc532f93c164ab",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "cf2cbafafca22c587411578088e33a755482c3ab568260ce1bbc532f93c164ab",
+            "text": "超",
+            "words": [
+              {
+                "text": "超",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "a9dbb6fc69e2e612788d73550a93139fa777667be5635b527d6e629b22ab575f": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-528674bd71c4f19e1d5e636fe9d125c50c412134bb65030420ef8338da3725b9.mp3",
+          "sha256": "528674bd71c4f19e1d5e636fe9d125c50c412134bb65030420ef8338da3725b9",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "528674bd71c4f19e1d5e636fe9d125c50c412134bb65030420ef8338da3725b9",
+            "text": "事实",
+            "words": [
+              {
+                "text": "事实",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b9a81b72e8414caa1e6b3a04ad6a3601efe5a5b03b774079c99500d2e13dcae5.mp3",
+          "sha256": "b9a81b72e8414caa1e6b3a04ad6a3601efe5a5b03b774079c99500d2e13dcae5",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "b9a81b72e8414caa1e6b3a04ad6a3601efe5a5b03b774079c99500d2e13dcae5",
+            "text": "事实",
+            "words": [
+              {
+                "text": "事实",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

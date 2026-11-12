@@ -1,0 +1,707 @@
+{
+  "id": "EX-CHAR-char-67ff",
+  "revision": 2,
+  "unit": "U4-08",
+  "stage": "ST-HSK4",
+  "after": "S-U4-08-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "柿",
+  "sourceBlockId": "mandarin-simplified-v1-char-67ff",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-67ff",
+        "text": "柿",
+        "pinyin": "shì",
+        "meaning": "persimmon",
+        "characters": [
+          {
+            "id": "C-67FF",
+            "text": "柿"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-0c8e97546383024aa2125732",
+        "text": "接到",
+        "pinyin": "jiē dào",
+        "meaning": "to receive (letter etc)",
+        "characters": [
+          {
+            "id": "C-63A5",
+            "text": "接"
+          },
+          {
+            "id": "C-5230",
+            "text": "到"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-a3e2d9b2467b1e21e1bd5e65",
+        "text": "医药",
+        "pinyin": "yīyào",
+        "meaning": "medical care and medicines; medicine (drug)",
+        "characters": [
+          {
+            "id": "C-533B",
+            "text": "医"
+          },
+          {
+            "id": "C-836F",
+            "text": "药"
+          }
+        ]
+      },
+      {
+        "id": "W1825",
+        "text": "西红柿",
+        "pinyin": "xīhóngshì",
+        "meaning": "tomato",
+        "characters": [
+          {
+            "id": "C-897F",
+            "text": "西"
+          },
+          {
+            "id": "C-7EA2",
+            "text": "红"
+          },
+          {
+            "id": "C-67FF",
+            "text": "柿"
+          }
+        ]
+      },
+      {
+        "id": "W2885",
+        "text": "前进",
+        "pinyin": "qiánjìn",
+        "meaning": "to go forward; to forge ahead",
+        "characters": [
+          {
+            "id": "C-524D",
+            "text": "前"
+          },
+          {
+            "id": "C-8FDB",
+            "text": "进"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "ef440d329e3c1bb146e1babc5e048a49fb64b33c4f8a09a6b4d6f6466e630370",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-67ff",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "柿",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-67ff-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1825",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "tomato",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "西红柿"
+              },
+              {
+                "value": "xīhóngshì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xi1hong2shi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "西红柿",
+              "pinyin": "xīhóngshì",
+              "meaning": "tomato",
+              "audio": "1186f22200aad9de5d854c5f3c30fd2bf89048543f3c8dcdab51a640271f788c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-67ff-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-67ff",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "柿",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-a3e2d9b2467b1e21e1bd5e65",
+                "label": "medical care and medicines; medicine (drug)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-0c8e97546383024aa2125732",
+                "label": "to receive (letter etc)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-67ff",
+                "label": "persimmon",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-67ff-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "柿",
+        "pinyin": "shì",
+        "meaning": "persimmon",
+        "source": "/stroke-data/67ff.json",
+        "reference": {
+          "character": "柿",
+          "sha256": "ab375a22f78152dc78601e11289e556401e39f855227a38dc31bf0b36465b15a",
+          "medians": [
+            [
+              [
+                108,
+                526
+              ],
+              [
+                169,
+                525
+              ],
+              [
+                358,
+                578
+              ],
+              [
+                414,
+                583
+              ]
+            ],
+            [
+              [
+                266,
+                829
+              ],
+              [
+                317,
+                775
+              ],
+              [
+                307,
+                378
+              ],
+              [
+                289,
+                137
+              ],
+              [
+                288,
+                34
+              ]
+            ],
+            [
+              [
+                281,
+                524
+              ],
+              [
+                261,
+                446
+              ],
+              [
+                214,
+                368
+              ],
+              [
+                142,
+                271
+              ],
+              [
+                78,
+                202
+              ]
+            ],
+            [
+              [
+                330,
+                445
+              ],
+              [
+                346,
+                426
+              ],
+              [
+                394,
+                394
+              ],
+              [
+                411,
+                365
+              ]
+            ],
+            [
+              [
+                589,
+                829
+              ],
+              [
+                670,
+                777
+              ],
+              [
+                699,
+                737
+              ]
+            ],
+            [
+              [
+                476,
+                588
+              ],
+              [
+                522,
+                583
+              ],
+              [
+                674,
+                619
+              ],
+              [
+                823,
+                643
+              ],
+              [
+                858,
+                643
+              ],
+              [
+                910,
+                632
+              ]
+            ],
+            [
+              [
+                483,
+                433
+              ],
+              [
+                502,
+                417
+              ],
+              [
+                512,
+                380
+              ],
+              [
+                502,
+                193
+              ]
+            ],
+            [
+              [
+                526,
+                433
+              ],
+              [
+                536,
+                424
+              ],
+              [
+                555,
+                420
+              ],
+              [
+                803,
+                465
+              ],
+              [
+                832,
+                454
+              ],
+              [
+                845,
+                433
+              ],
+              [
+                846,
+                294
+              ],
+              [
+                838,
+                245
+              ],
+              [
+                827,
+                226
+              ],
+              [
+                817,
+                227
+              ],
+              [
+                726,
+                258
+              ]
+            ],
+            [
+              [
+                621,
+                585
+              ],
+              [
+                659,
+                560
+              ],
+              [
+                667,
+                547
+              ],
+              [
+                663,
+                -52
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-67ff-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2885",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to go forward; to forge ahead",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "前进"
+              },
+              {
+                "value": "qiánjìn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qian2jin4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "前进",
+              "pinyin": "qiánjìn",
+              "meaning": "to go forward; to forge ahead",
+              "audio": "e5a83a9bf8ccbba0d9ad2bbc82c081fb98647fa800ba54ffe632809cc52a3ea9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-67ff-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-67ff",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "persimmon",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "柿"
+              },
+              {
+                "value": "shì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "柿",
+              "pinyin": "shì",
+              "meaning": "persimmon",
+              "audio": "a1e8f893e12ad69fd30f85749312decd9209b590b433fad7309a4a02b50f0f27",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "a1e8f893e12ad69fd30f85749312decd9209b590b433fad7309a4a02b50f0f27"
+            ],
+            "transcript": [
+              {
+                "text": "柿",
+                "pinyin": "shì",
+                "meaning": "persimmon",
+                "audio": "a1e8f893e12ad69fd30f85749312decd9209b590b433fad7309a4a02b50f0f27",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-67FF",
+      "character": "柿",
+      "lessonIds": [
+        "LESSON-C-67FF"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-67ff-word",
+        "EX-CHAR-char-67ff-recognize",
+        "EX-CHAR-char-67ff-write",
+        "EX-CHAR-char-67ff-familiar",
+        "EX-CHAR-char-67ff-recall"
+      ]
+    },
+    "audio": {
+      "a1e8f893e12ad69fd30f85749312decd9209b590b433fad7309a4a02b50f0f27": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-284409d84dcf8e6b22092fb346891cd9f8bb061006068dee3a601d04ea6fc17a.mp3",
+          "sha256": "284409d84dcf8e6b22092fb346891cd9f8bb061006068dee3a601d04ea6fc17a",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "284409d84dcf8e6b22092fb346891cd9f8bb061006068dee3a601d04ea6fc17a",
+            "text": "柿",
+            "words": [
+              {
+                "text": "柿",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-fb9e1caff60e9898bae2942e616f387fd7c86bccc1aa386173d447e7e91d2197.mp3",
+          "sha256": "fb9e1caff60e9898bae2942e616f387fd7c86bccc1aa386173d447e7e91d2197",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "fb9e1caff60e9898bae2942e616f387fd7c86bccc1aa386173d447e7e91d2197",
+            "text": "柿",
+            "words": [
+              {
+                "text": "柿",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "68e97adf9b99e79d047628a04445ef7d2183434503392b4c763d5a19258c9c09": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-bc31d95bb607ec241d704d66d5f2f56eda7680c905a6830d2b56cc124e75167f.mp3",
+          "sha256": "bc31d95bb607ec241d704d66d5f2f56eda7680c905a6830d2b56cc124e75167f",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "bc31d95bb607ec241d704d66d5f2f56eda7680c905a6830d2b56cc124e75167f",
+            "text": "接到",
+            "words": [
+              {
+                "text": "接到",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-5d625d564710ad43c5d9925fa8768d74805215c9291d3cd2da975c163b461669.mp3",
+          "sha256": "5d625d564710ad43c5d9925fa8768d74805215c9291d3cd2da975c163b461669",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "5d625d564710ad43c5d9925fa8768d74805215c9291d3cd2da975c163b461669",
+            "text": "接到",
+            "words": [
+              {
+                "text": "接到",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "43ef2cc46e32fe9fefa803f246658f4c3ce57897d784424d9db0cc9c0440dc9d": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f01eb891b051fcf9c8bc3f773852f1eca579cc8ed8432c84b1305426dbbc8ba4.mp3",
+          "sha256": "f01eb891b051fcf9c8bc3f773852f1eca579cc8ed8432c84b1305426dbbc8ba4",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "f01eb891b051fcf9c8bc3f773852f1eca579cc8ed8432c84b1305426dbbc8ba4",
+            "text": "医药",
+            "words": [
+              {
+                "text": "医药",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-878994a240481cf6ef909bcc3697e1699cbef9774088eb5eebd89771875729a9.mp3",
+          "sha256": "878994a240481cf6ef909bcc3697e1699cbef9774088eb5eebd89771875729a9",
+          "byteLength": 9261,
+          "qualityWarning": "too-fast",
+          "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+          "readAlong": {
+            "audioSha256": "878994a240481cf6ef909bcc3697e1699cbef9774088eb5eebd89771875729a9",
+            "text": "医药",
+            "words": [
+              {
+                "text": "医药",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "1186f22200aad9de5d854c5f3c30fd2bf89048543f3c8dcdab51a640271f788c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/53b3f8b94b72865fe910285cc4409c32a37c7823e3f07373d32114c9260154e5.mp3",
+          "sha256": "53b3f8b94b72865fe910285cc4409c32a37c7823e3f07373d32114c9260154e5",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "53b3f8b94b72865fe910285cc4409c32a37c7823e3f07373d32114c9260154e5",
+            "text": "西红柿",
+            "words": [
+              {
+                "text": "西红柿",
+                "start": 0.21,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/150618f172c08093d813e07a99a5e2e3bf3768e9852ae73743ea036d04d10ce2.mp3",
+          "sha256": "150618f172c08093d813e07a99a5e2e3bf3768e9852ae73743ea036d04d10ce2",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "150618f172c08093d813e07a99a5e2e3bf3768e9852ae73743ea036d04d10ce2",
+            "text": "西红柿",
+            "words": [
+              {
+                "text": "西红柿",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "e5a83a9bf8ccbba0d9ad2bbc82c081fb98647fa800ba54ffe632809cc52a3ea9": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d817c34f6899ae6f074a2c6a380490c5dfdbd85d1e462dc5e97a1177e5b3d92b.mp3",
+          "sha256": "d817c34f6899ae6f074a2c6a380490c5dfdbd85d1e462dc5e97a1177e5b3d92b",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "d817c34f6899ae6f074a2c6a380490c5dfdbd85d1e462dc5e97a1177e5b3d92b",
+            "text": "前进",
+            "words": [
+              {
+                "text": "前进",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9105710eeb1dde7ac46942920428fa262e3ba79534d234c570c932c99242fe90.mp3",
+          "sha256": "9105710eeb1dde7ac46942920428fa262e3ba79534d234c570c932c99242fe90",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "9105710eeb1dde7ac46942920428fa262e3ba79534d234c570c932c99242fe90",
+            "text": "前进",
+            "words": [
+              {
+                "text": "前进",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

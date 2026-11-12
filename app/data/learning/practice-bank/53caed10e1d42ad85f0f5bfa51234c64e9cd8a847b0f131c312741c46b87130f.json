@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1514",
+  "targetId": "W1514",
+  "steps": [
+    {
+      "id": "BANK-W1514-W1514",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1514-W1514",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to measure",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "量"
+            },
+            {
+              "value": "liáng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "liang2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "量",
+            "pinyin": "liáng",
+            "meaning": "to measure",
+            "singleWord": true,
+            "audio": "fd6adf87b6541e3790aa1877c290ba0f4928fa51a94bad13d4b00b35505d3ca3"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "fd6adf87b6541e3790aa1877c290ba0f4928fa51a94bad13d4b00b35505d3ca3": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-58212d7bc8f91e547855802a516bc65520183e14adb06389352d825868b16032.mp3",
+        "sha256": "58212d7bc8f91e547855802a516bc65520183e14adb06389352d825868b16032",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "58212d7bc8f91e547855802a516bc65520183e14adb06389352d825868b16032",
+          "text": "量",
+          "words": [
+            {
+              "text": "量",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-67920fad3c1d9a16f2873af19907308a242f4300e68897725536cebb3dea9a52.mp3",
+        "sha256": "67920fad3c1d9a16f2873af19907308a242f4300e68897725536cebb3dea9a52",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "67920fad3c1d9a16f2873af19907308a242f4300e68897725536cebb3dea9a52",
+          "text": "量",
+          "words": [
+            {
+              "text": "量",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1514",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1514-W1514",
+      "question_ids": [
+        "BANK-W1514-W1514"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-12",
+    "stepId": "S-U4-12-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-91cf"
+    ],
+    "grammarLessonIds": []
+  }
+}

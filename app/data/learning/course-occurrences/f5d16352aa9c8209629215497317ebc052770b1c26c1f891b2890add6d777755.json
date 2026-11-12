@@ -1,0 +1,619 @@
+{
+  "id": "EX-CHAR-char-592a",
+  "revision": 2,
+  "unit": "U03",
+  "stage": "ST-HSK1",
+  "after": "S-U03-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "太",
+  "sourceBlockId": "mandarin-simplified-v1-char-592a",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-592a",
+        "text": "太",
+        "pinyin": "tài",
+        "meaning": "too; very; excessively",
+        "characters": [
+          {
+            "id": "C-592A",
+            "text": "太"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d49c4a8fbe51f27440551d5e",
+        "text": "在家",
+        "pinyin": "zài jiā",
+        "meaning": "to be at home",
+        "characters": [
+          {
+            "id": "C-5728",
+            "text": "在"
+          },
+          {
+            "id": "C-5BB6",
+            "text": "家"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-da83ab642f22a6ca129af36f",
+        "text": "高大",
+        "pinyin": "gāodà",
+        "meaning": "tall; lofty; towering",
+        "characters": [
+          {
+            "id": "C-9AD8",
+            "text": "高"
+          },
+          {
+            "id": "C-5927",
+            "text": "大"
+          }
+        ]
+      },
+      {
+        "id": "W1850",
+        "text": "小说",
+        "pinyin": "xiǎoshuō",
+        "meaning": "novel; fiction",
+        "characters": [
+          {
+            "id": "C-5C0F",
+            "text": "小"
+          },
+          {
+            "id": "C-8BF4",
+            "text": "说"
+          }
+        ]
+      },
+      {
+        "id": "W3124",
+        "text": "太太",
+        "pinyin": "tàitai",
+        "meaning": "married woman; Mrs.",
+        "characters": [
+          {
+            "id": "C-592A",
+            "text": "太"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "8db8dcffedba70452dbbc2476f8908f11adb16f59b046ad0221e6f9aad55db8b",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-592a",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "太",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-592a-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3124",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "married woman; Mrs.",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "太太"
+              },
+              {
+                "value": "tàitai",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tai4tai5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "太太",
+              "pinyin": "tàitai",
+              "meaning": "married woman; Mrs.",
+              "audio": "35c4a7732f8ebc9356c75a968bef2972e56ccb57d9dfc174c966e1292f7a0fb4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-592a-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-592a",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "太",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-d49c4a8fbe51f27440551d5e",
+                "label": "to be at home",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-592a",
+                "label": "too; very",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-da83ab642f22a6ca129af36f",
+                "label": "tall; lofty",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-592a-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "太",
+        "pinyin": "tài",
+        "meaning": "too; very",
+        "source": "/stroke-data/592a.json",
+        "reference": {
+          "character": "太",
+          "sha256": "950776d35942a2f07eaf6d6b3c0964df3b6e48753a09f4a7f7811ffa135f58a4",
+          "medians": [
+            [
+              [
+                203,
+                478
+              ],
+              [
+                258,
+                470
+              ],
+              [
+                375,
+                494
+              ],
+              [
+                729,
+                544
+              ],
+              [
+                763,
+                544
+              ],
+              [
+                832,
+                527
+              ]
+            ],
+            [
+              [
+                444,
+                812
+              ],
+              [
+                470,
+                801
+              ],
+              [
+                500,
+                772
+              ],
+              [
+                503,
+                747
+              ],
+              [
+                478,
+                492
+              ],
+              [
+                456,
+                381
+              ],
+              [
+                427,
+                289
+              ],
+              [
+                384,
+                201
+              ],
+              [
+                332,
+                142
+              ],
+              [
+                232,
+                65
+              ],
+              [
+                133,
+                20
+              ]
+            ],
+            [
+              [
+                503,
+                458
+              ],
+              [
+                510,
+                422
+              ],
+              [
+                596,
+                281
+              ],
+              [
+                673,
+                172
+              ],
+              [
+                722,
+                115
+              ],
+              [
+                773,
+                78
+              ],
+              [
+                958,
+                27
+              ]
+            ],
+            [
+              [
+                398,
+                162
+              ],
+              [
+                423,
+                159
+              ],
+              [
+                460,
+                131
+              ],
+              [
+                483,
+                108
+              ],
+              [
+                499,
+                73
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-592a-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1850",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "novel; fiction",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "小说"
+              },
+              {
+                "value": "xiǎoshuō",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiao3shuo1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "小说",
+              "pinyin": "xiǎoshuō",
+              "meaning": "novel; fiction",
+              "audio": "13e35af7ab9ead96def0e72afc3e5fd12bc29681a9d97f03a83c9661cadbb5cd",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-592a-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-592a",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "too; very",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "太"
+              },
+              {
+                "value": "tài",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tai4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "太",
+              "pinyin": "tài",
+              "meaning": "too; very",
+              "audio": "18232fdd592a0c69a37dbe8a1b9d3b0523a4b868fff17b4679b4768211f1a92d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "18232fdd592a0c69a37dbe8a1b9d3b0523a4b868fff17b4679b4768211f1a92d"
+            ],
+            "transcript": [
+              {
+                "text": "太",
+                "pinyin": "tài",
+                "meaning": "too; very",
+                "audio": "18232fdd592a0c69a37dbe8a1b9d3b0523a4b868fff17b4679b4768211f1a92d",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-592A",
+      "character": "太",
+      "lessonIds": [
+        "LESSON-C-592A"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-592a-word",
+        "EX-CHAR-char-592a-recognize",
+        "EX-CHAR-char-592a-write",
+        "EX-CHAR-char-592a-familiar",
+        "EX-CHAR-char-592a-recall"
+      ]
+    },
+    "audio": {
+      "18232fdd592a0c69a37dbe8a1b9d3b0523a4b868fff17b4679b4768211f1a92d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1e949f21c4bcf59eda6d0c05737e3bacbe93e6f7c49bbcf2b2d3ac245c9f7212.mp3",
+          "sha256": "1e949f21c4bcf59eda6d0c05737e3bacbe93e6f7c49bbcf2b2d3ac245c9f7212",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "1e949f21c4bcf59eda6d0c05737e3bacbe93e6f7c49bbcf2b2d3ac245c9f7212",
+            "text": "太",
+            "words": [
+              {
+                "text": "太",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-be8f24df295d87789f3d4a023d7827a7f399dbac9741ced24592b650862cfcc8.mp3",
+          "sha256": "be8f24df295d87789f3d4a023d7827a7f399dbac9741ced24592b650862cfcc8",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "be8f24df295d87789f3d4a023d7827a7f399dbac9741ced24592b650862cfcc8",
+            "text": "太",
+            "words": [
+              {
+                "text": "太",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "0b14cd75ae112b6b1d7bcbfc22cecf9b43299a5bc57ad1914fe141a9231bf6ea": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/73b932c3591a7b8025abadcc9c48bf66d7ea164da2f1b0a44350457f40bb2584.mp3",
+          "sha256": "73b932c3591a7b8025abadcc9c48bf66d7ea164da2f1b0a44350457f40bb2584",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "73b932c3591a7b8025abadcc9c48bf66d7ea164da2f1b0a44350457f40bb2584",
+            "text": "在家",
+            "words": [
+              {
+                "text": "在家",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/430d6a038ed1cd8942edff199a6c37c2d543d92e200612a1dce91bf3a3c6b7ce.mp3",
+          "sha256": "430d6a038ed1cd8942edff199a6c37c2d543d92e200612a1dce91bf3a3c6b7ce",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "430d6a038ed1cd8942edff199a6c37c2d543d92e200612a1dce91bf3a3c6b7ce",
+            "text": "在家",
+            "words": [
+              {
+                "text": "在家",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "f9363e27c6d85b300493f6cfce47ef0d95bb52968ef407da385e7fda65be9015": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0a634f3be69b8f8c82e519927af3baf3510e8cc8f439231f6751ece699b6ed01.mp3",
+          "sha256": "0a634f3be69b8f8c82e519927af3baf3510e8cc8f439231f6751ece699b6ed01",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "0a634f3be69b8f8c82e519927af3baf3510e8cc8f439231f6751ece699b6ed01",
+            "text": "高大",
+            "words": [
+              {
+                "text": "高大",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/66c0d4528e1f340072b2ddf1008019d1221a69370cc939fbbc52e3614916bfa4.mp3",
+          "sha256": "66c0d4528e1f340072b2ddf1008019d1221a69370cc939fbbc52e3614916bfa4",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "66c0d4528e1f340072b2ddf1008019d1221a69370cc939fbbc52e3614916bfa4",
+            "text": "高大",
+            "words": [
+              {
+                "text": "高大",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "13e35af7ab9ead96def0e72afc3e5fd12bc29681a9d97f03a83c9661cadbb5cd": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-97879a291fe34afbc48443afe084efe811ecd34b38eff5b39574dc1bb4ad6687.mp3",
+          "sha256": "97879a291fe34afbc48443afe084efe811ecd34b38eff5b39574dc1bb4ad6687",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "97879a291fe34afbc48443afe084efe811ecd34b38eff5b39574dc1bb4ad6687",
+            "text": "小说",
+            "words": [
+              {
+                "text": "小说",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c59fb8f4d17636614f9221a2d40f6ac6d6020e88fd3d722893d7d4fc01b00b4c.mp3",
+          "sha256": "c59fb8f4d17636614f9221a2d40f6ac6d6020e88fd3d722893d7d4fc01b00b4c",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "c59fb8f4d17636614f9221a2d40f6ac6d6020e88fd3d722893d7d4fc01b00b4c",
+            "text": "小说",
+            "words": [
+              {
+                "text": "小说",
+                "start": 0.21,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "35c4a7732f8ebc9356c75a968bef2972e56ccb57d9dfc174c966e1292f7a0fb4": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6d68ddec41f0c0b1743cb4bebdee02882ac0bc3fae7898fb2a8441bdd3016d91.mp3",
+          "sha256": "6d68ddec41f0c0b1743cb4bebdee02882ac0bc3fae7898fb2a8441bdd3016d91",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "6d68ddec41f0c0b1743cb4bebdee02882ac0bc3fae7898fb2a8441bdd3016d91",
+            "text": "太太",
+            "words": [
+              {
+                "text": "太太",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/4617ed65db87954aeb6853f7279f6a991c0f6c6fa6f87677f5a07a48f8a58294.mp3",
+          "sha256": "4617ed65db87954aeb6853f7279f6a991c0f6c6fa6f87677f5a07a48f8a58294",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "4617ed65db87954aeb6853f7279f6a991c0f6c6fa6f87677f5a07a48f8a58294",
+            "text": "太太",
+            "words": [
+              {
+                "text": "太太",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

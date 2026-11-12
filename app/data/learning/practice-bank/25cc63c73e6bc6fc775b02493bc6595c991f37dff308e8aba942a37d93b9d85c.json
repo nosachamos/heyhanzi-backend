@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3440",
+  "targetId": "W3440",
+  "steps": [
+    {
+      "id": "BANK-W3440-W3440",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3440-W3440",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "forecast",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "预报"
+            },
+            {
+              "value": "yùbào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yu4bao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "预报",
+            "pinyin": "yùbào",
+            "meaning": "forecast",
+            "singleWord": true,
+            "audio": "c6cd7e8d1edd3a1116a4981333733e96137201ec37efee335ec22cdf4b75ddc4"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c6cd7e8d1edd3a1116a4981333733e96137201ec37efee335ec22cdf4b75ddc4": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-9dcaa9b8c0b59564389f5c32fc2ec5c25661e7b1a394857e0a25a0f41912e084.mp3",
+        "sha256": "9dcaa9b8c0b59564389f5c32fc2ec5c25661e7b1a394857e0a25a0f41912e084",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "9dcaa9b8c0b59564389f5c32fc2ec5c25661e7b1a394857e0a25a0f41912e084",
+          "text": "预报",
+          "words": [
+            {
+              "text": "预报",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d1887c8476d474213b2141d12b7bcb2d1fe6f360cd7b2eec3609ca8febc6f0db.mp3",
+        "sha256": "d1887c8476d474213b2141d12b7bcb2d1fe6f360cd7b2eec3609ca8febc6f0db",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "d1887c8476d474213b2141d12b7bcb2d1fe6f360cd7b2eec3609ca8febc6f0db",
+          "text": "预报",
+          "words": [
+            {
+              "text": "预报",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3440",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3440-W3440",
+      "question_ids": [
+        "BANK-W3440-W3440"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-28",
+    "stepId": "S-U5-28-words-r4-21",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-62a5"
+    ],
+    "grammarLessonIds": []
+  }
+}

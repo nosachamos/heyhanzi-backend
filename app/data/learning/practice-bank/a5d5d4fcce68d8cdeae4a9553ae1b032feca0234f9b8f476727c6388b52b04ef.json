@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1470",
+  "targetId": "W1470",
+  "steps": [
+    {
+      "id": "BANK-W1470-W1470",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1470-W1470",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "cough",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "咳"
+            },
+            {
+              "value": "ké",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ke2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "咳",
+            "pinyin": "ké",
+            "meaning": "cough",
+            "singleWord": true,
+            "audio": "d39ce08797da0a27cf0ec5466f60a163f67eda891f8e79c54dfe6a65d17d914c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d39ce08797da0a27cf0ec5466f60a163f67eda891f8e79c54dfe6a65d17d914c": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/74cfeecc8b70265ef2cf2df9600388ced3f461f12ee2999f28139fb062f4b1f8.mp3",
+        "sha256": "74cfeecc8b70265ef2cf2df9600388ced3f461f12ee2999f28139fb062f4b1f8",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "74cfeecc8b70265ef2cf2df9600388ced3f461f12ee2999f28139fb062f4b1f8",
+          "text": "咳",
+          "words": [
+            {
+              "text": "咳",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0f346ee1cac62f9af123872cae76924e4ee9d090c59542e61dffb5c06d00b16e.mp3",
+        "sha256": "0f346ee1cac62f9af123872cae76924e4ee9d090c59542e61dffb5c06d00b16e",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "0f346ee1cac62f9af123872cae76924e4ee9d090c59542e61dffb5c06d00b16e",
+          "text": "咳",
+          "words": [
+            {
+              "text": "咳",
+              "start": 0.24,
+              "end": 0.32
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1470",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1470-W1470",
+      "question_ids": [
+        "BANK-W1470-W1470"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-14",
+    "stepId": "S-U4-14-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-54b3"
+    ],
+    "grammarLessonIds": []
+  }
+}

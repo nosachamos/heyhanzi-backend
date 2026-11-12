@@ -1,0 +1,527 @@
+{
+  "id": "EX-CHAR-char-4e0a",
+  "revision": 2,
+  "unit": "U06",
+  "stage": "ST-HSK1",
+  "after": "S-U06-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "上",
+  "sourceBlockId": "mandarin-simplified-v1-char-4e0a",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Write the character",
+    "Connect meaning and sound",
+    "Use the whole word",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-592a",
+        "text": "太",
+        "pinyin": "tài",
+        "meaning": "too; very; excessively",
+        "characters": [
+          {
+            "id": "C-592A",
+            "text": "太"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-219327e9a03f1cd7021d0a44",
+        "text": "上边",
+        "pinyin": "shàng bian",
+        "meaning": "above",
+        "characters": [
+          {
+            "id": "C-4E0A",
+            "text": "上"
+          },
+          {
+            "id": "C-8FB9",
+            "text": "边"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-33b70c815f613b58d7e69bbd",
+        "text": "买不起",
+        "pinyin": "mǎi bu qǐ",
+        "meaning": "can't afford buying",
+        "characters": [
+          {
+            "id": "C-4E70",
+            "text": "买"
+          },
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-8D77",
+            "text": "起"
+          }
+        ]
+      },
+      {
+        "id": "W0775",
+        "text": "国家",
+        "pinyin": "guójiā",
+        "meaning": "country; nation",
+        "characters": [
+          {
+            "id": "C-56FD",
+            "text": "国"
+          },
+          {
+            "id": "C-5BB6",
+            "text": "家"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "52e22adfcbded6b94b25796c2b3aebc0332d42e6296a47ac47a2a0e27106e54a",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4e0a",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "上",
+    "variant": "lesson-movement-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4e0a-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "上",
+        "pinyin": "shàng",
+        "meaning": "(bound form) up; upper",
+        "source": "/stroke-data/4e0a.json",
+        "reference": {
+          "character": "上",
+          "sha256": "480c524c74bca578c7fa6e2520ff15ad15a0e7010134591dbf293598d967afd2",
+          "medians": [
+            [
+              [
+                446,
+                781
+              ],
+              [
+                462,
+                775
+              ],
+              [
+                498,
+                734
+              ],
+              [
+                493,
+                159
+              ],
+              [
+                472,
+                136
+              ]
+            ],
+            [
+              [
+                531,
+                448
+              ],
+              [
+                551,
+                462
+              ],
+              [
+                627,
+                473
+              ],
+              [
+                698,
+                493
+              ],
+              [
+                768,
+                496
+              ]
+            ],
+            [
+              [
+                134,
+                92
+              ],
+              [
+                171,
+                76
+              ],
+              [
+                212,
+                72
+              ],
+              [
+                458,
+                103
+              ],
+              [
+                841,
+                132
+              ],
+              [
+                932,
+                99
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4e0a-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-cmn-219327e9a03f1cd7021d0a44",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "上边",
+              "meaning": "",
+              "focus": "上"
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-592a",
+                "label": "too; very",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-219327e9a03f1cd7021d0a44",
+                "label": "above",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0775",
+                "label": "country; nation",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e0a-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-219327e9a03f1cd7021d0a44",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "above",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "上边"
+              },
+              {
+                "value": "shàng bian",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shang4bian5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "上边",
+              "pinyin": "shàng bian",
+              "meaning": "above",
+              "audio": "a647a33373d16db8ecc67acae353db8ce5b7189f25b44b9474b7e2a173545580",
+              "singleWord": true,
+              "focus": "上"
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e0a-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-33b70c815f613b58d7e69bbd",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "can't afford buying",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "买不起"
+              },
+              {
+                "value": "mǎi bu qǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "mai3bu5qi3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "买不起",
+              "pinyin": "mǎi bu qǐ",
+              "meaning": "can't afford buying",
+              "audio": "bece676150b837662207d37d0e90dbc4123ed938c086ff399a6190d48b804d11",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e0a-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-cmn-219327e9a03f1cd7021d0a44",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "above",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "上边"
+              },
+              {
+                "value": "shàng bian",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shang4bian5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "上边",
+              "pinyin": "shàng bian",
+              "meaning": "above",
+              "audio": "a647a33373d16db8ecc67acae353db8ce5b7189f25b44b9474b7e2a173545580",
+              "singleWord": true,
+              "focus": "上"
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "a647a33373d16db8ecc67acae353db8ce5b7189f25b44b9474b7e2a173545580"
+            ],
+            "transcript": [
+              {
+                "text": "上边",
+                "pinyin": "shàng bian",
+                "meaning": "above",
+                "audio": "a647a33373d16db8ecc67acae353db8ce5b7189f25b44b9474b7e2a173545580",
+                "singleWord": true,
+                "focus": "上"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4E0A",
+      "character": "上",
+      "lessonIds": [
+        "LESSON-C-4E0A"
+      ],
+      "profile": "movement-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4e0a-write",
+        "EX-CHAR-char-4e0a-recognize",
+        "EX-CHAR-char-4e0a-word",
+        "EX-CHAR-char-4e0a-familiar",
+        "EX-CHAR-char-4e0a-recall"
+      ]
+    },
+    "audio": {
+      "18232fdd592a0c69a37dbe8a1b9d3b0523a4b868fff17b4679b4768211f1a92d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1e949f21c4bcf59eda6d0c05737e3bacbe93e6f7c49bbcf2b2d3ac245c9f7212.mp3",
+          "sha256": "1e949f21c4bcf59eda6d0c05737e3bacbe93e6f7c49bbcf2b2d3ac245c9f7212",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "1e949f21c4bcf59eda6d0c05737e3bacbe93e6f7c49bbcf2b2d3ac245c9f7212",
+            "text": "太",
+            "words": [
+              {
+                "text": "太",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-be8f24df295d87789f3d4a023d7827a7f399dbac9741ced24592b650862cfcc8.mp3",
+          "sha256": "be8f24df295d87789f3d4a023d7827a7f399dbac9741ced24592b650862cfcc8",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "be8f24df295d87789f3d4a023d7827a7f399dbac9741ced24592b650862cfcc8",
+            "text": "太",
+            "words": [
+              {
+                "text": "太",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "a647a33373d16db8ecc67acae353db8ce5b7189f25b44b9474b7e2a173545580": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/47417e1cb6e98f52fe1af7ba29dfef059de091d097ce8b2b7b21db6ab3946369.mp3",
+          "sha256": "47417e1cb6e98f52fe1af7ba29dfef059de091d097ce8b2b7b21db6ab3946369",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "47417e1cb6e98f52fe1af7ba29dfef059de091d097ce8b2b7b21db6ab3946369",
+            "text": "上边",
+            "words": [
+              {
+                "text": "上边",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/4b8f217be15f268d798f840ef295264541e3ac55e75a04af1147b95dc705cde4.mp3",
+          "sha256": "4b8f217be15f268d798f840ef295264541e3ac55e75a04af1147b95dc705cde4",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "4b8f217be15f268d798f840ef295264541e3ac55e75a04af1147b95dc705cde4",
+            "text": "上边",
+            "words": [
+              {
+                "text": "上边",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "bece676150b837662207d37d0e90dbc4123ed938c086ff399a6190d48b804d11": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d631f05c42fcab2bee572c166fe74734c93c94888112200e2f702da352811886.mp3",
+          "sha256": "d631f05c42fcab2bee572c166fe74734c93c94888112200e2f702da352811886",
+          "byteLength": 16461,
+          "readAlong": {
+            "audioSha256": "d631f05c42fcab2bee572c166fe74734c93c94888112200e2f702da352811886",
+            "text": "买不起",
+            "words": [
+              {
+                "text": "买不起",
+                "start": 0.15,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/ef3a8cc231f47e03fc896ba91f6c8c09b0cb26a8235967a0f23495db9c019df0.mp3",
+          "sha256": "ef3a8cc231f47e03fc896ba91f6c8c09b0cb26a8235967a0f23495db9c019df0",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "ef3a8cc231f47e03fc896ba91f6c8c09b0cb26a8235967a0f23495db9c019df0",
+            "text": "买不起",
+            "words": [
+              {
+                "text": "买不起",
+                "start": 0.15,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "2848355c29df9ad1988fe3c74d6b8ab73a419470ea980b109d0bf0c3a6db6b72": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-0a3e321af6dfada5a549406536271a74747807e4461202386f76d236a90b2396.mp3",
+          "sha256": "0a3e321af6dfada5a549406536271a74747807e4461202386f76d236a90b2396",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "0a3e321af6dfada5a549406536271a74747807e4461202386f76d236a90b2396",
+            "text": "国家",
+            "words": [
+              {
+                "text": "国家",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-2cfd29ec9dd593a23a2db43a93a7970c81bc4dde5bbd0015db03df1dc04df313.mp3",
+          "sha256": "2cfd29ec9dd593a23a2db43a93a7970c81bc4dde5bbd0015db03df1dc04df313",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "2cfd29ec9dd593a23a2db43a93a7970c81bc4dde5bbd0015db03df1dc04df313",
+            "text": "国家",
+            "words": [
+              {
+                "text": "国家",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

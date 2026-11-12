@@ -1,0 +1,759 @@
+{
+  "id": "EX-CHAR-char-633a",
+  "revision": 2,
+  "unit": "U3-25-P01",
+  "stage": "ST-HSK3",
+  "after": "S-U3-25-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "挺",
+  "sourceBlockId": "mandarin-simplified-v1-char-633a",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-633a",
+        "text": "挺",
+        "pinyin": "tǐng",
+        "meaning": "straight; erect",
+        "characters": [
+          {
+            "id": "C-633A",
+            "text": "挺"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-024c0b4a2b3fef2723e74a47",
+        "text": "挺好",
+        "pinyin": "tǐng hǎo",
+        "meaning": "very good",
+        "characters": [
+          {
+            "id": "C-633A",
+            "text": "挺"
+          },
+          {
+            "id": "C-597D",
+            "text": "好"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ba2bda2c48c6f737fe9ade07",
+        "text": "简短",
+        "pinyin": "jiǎn duǎn",
+        "meaning": "brevity",
+        "characters": [
+          {
+            "id": "C-7B80",
+            "text": "简"
+          },
+          {
+            "id": "C-77ED",
+            "text": "短"
+          }
+        ]
+      },
+      {
+        "id": "W0750",
+        "text": "夫妻",
+        "pinyin": "fūqī",
+        "meaning": "husband and wife; married couple",
+        "characters": [
+          {
+            "id": "C-592B",
+            "text": "夫"
+          },
+          {
+            "id": "C-59BB",
+            "text": "妻"
+          }
+        ]
+      },
+      {
+        "id": "W3102",
+        "text": "四处",
+        "pinyin": "sìchù",
+        "meaning": "all over the place; everywhere and all directions",
+        "characters": [
+          {
+            "id": "C-56DB",
+            "text": "四"
+          },
+          {
+            "id": "C-5904",
+            "text": "处"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "6089bb8684d00fdf924927e2294ebbce92af1e09f406882c8dd1541e95741324",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-633a",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "挺",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-633a-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-024c0b4a2b3fef2723e74a47",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "very good",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "挺好"
+              },
+              {
+                "value": "tǐng hǎo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ting3hao3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "挺好",
+              "pinyin": "tǐng hǎo",
+              "meaning": "very good",
+              "audio": "9b9e3c659614aa7a99fe9d957321da8b9e7bdcdb969ed53a77f0e341ddf97dbc",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-633a-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-633a",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "挺",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W3102",
+                "label": "all over the place; everywhere and all directions",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-633a",
+                "label": "straight; erect",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-ba2bda2c48c6f737fe9ade07",
+                "label": "brevity",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-633a-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "挺",
+        "pinyin": "tǐng",
+        "meaning": "straight; erect",
+        "source": "/stroke-data/633a.json",
+        "reference": {
+          "character": "挺",
+          "sha256": "0e0fb978b2ae8ffb9e9e829e73ac889f4fa367e773da7e4af84caaa264e6b63e",
+          "medians": [
+            [
+              [
+                123,
+                526
+              ],
+              [
+                191,
+                528
+              ],
+              [
+                330,
+                569
+              ],
+              [
+                377,
+                571
+              ]
+            ],
+            [
+              [
+                241,
+                826
+              ],
+              [
+                258,
+                818
+              ],
+              [
+                289,
+                783
+              ],
+              [
+                279,
+                581
+              ],
+              [
+                280,
+                101
+              ],
+              [
+                274,
+                69
+              ],
+              [
+                258,
+                39
+              ],
+              [
+                162,
+                79
+              ],
+              [
+                160,
+                86
+              ],
+              [
+                149,
+                86
+              ]
+            ],
+            [
+              [
+                35,
+                244
+              ],
+              [
+                67,
+                238
+              ],
+              [
+                85,
+                241
+              ],
+              [
+                364,
+                429
+              ]
+            ],
+            [
+              [
+                813,
+                680
+              ],
+              [
+                747,
+                679
+              ],
+              [
+                692,
+                630
+              ],
+              [
+                605,
+                575
+              ],
+              [
+                598,
+                576
+              ],
+              [
+                593,
+                568
+              ],
+              [
+                574,
+                566
+              ],
+              [
+                571,
+                555
+              ]
+            ],
+            [
+              [
+                578,
+                432
+              ],
+              [
+                605,
+                427
+              ],
+              [
+                635,
+                430
+              ],
+              [
+                801,
+                470
+              ],
+              [
+                848,
+                466
+              ]
+            ],
+            [
+              [
+                674,
+                588
+              ],
+              [
+                694,
+                577
+              ],
+              [
+                700,
+                546
+              ],
+              [
+                698,
+                306
+              ],
+              [
+                694,
+                291
+              ],
+              [
+                683,
+                282
+              ]
+            ],
+            [
+              [
+                589,
+                244
+              ],
+              [
+                613,
+                241
+              ],
+              [
+                784,
+                272
+              ],
+              [
+                850,
+                262
+              ]
+            ],
+            [
+              [
+                409,
+                599
+              ],
+              [
+                500,
+                627
+              ],
+              [
+                520,
+                614
+              ],
+              [
+                494,
+                527
+              ],
+              [
+                444,
+                410
+              ],
+              [
+                452,
+                401
+              ],
+              [
+                508,
+                382
+              ],
+              [
+                510,
+                376
+              ],
+              [
+                486,
+                281
+              ],
+              [
+                449,
+                198
+              ],
+              [
+                397,
+                125
+              ],
+              [
+                356,
+                87
+              ]
+            ],
+            [
+              [
+                353,
+                271
+              ],
+              [
+                386,
+                270
+              ],
+              [
+                428,
+                257
+              ],
+              [
+                651,
+                123
+              ],
+              [
+                766,
+                75
+              ],
+              [
+                830,
+                69
+              ],
+              [
+                984,
+                86
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-633a-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0750",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "husband and wife; married couple",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "夫妻"
+              },
+              {
+                "value": "fūqī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "fu1qi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "夫妻",
+              "pinyin": "fūqī",
+              "meaning": "husband and wife; married couple",
+              "audio": "19afc521a0439f4139c20562b56ff2ef7d683d414ec9b2b0a5b8699980018d75",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-633a-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-633a",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "straight; erect",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "挺"
+              },
+              {
+                "value": "tǐng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ting3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "挺",
+              "pinyin": "tǐng",
+              "meaning": "straight; erect",
+              "audio": "ff4beb1232957db8dae0d491b91d8955b75efad70592e2ef6bfe9b6b273fb234",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "ff4beb1232957db8dae0d491b91d8955b75efad70592e2ef6bfe9b6b273fb234"
+            ],
+            "transcript": [
+              {
+                "text": "挺",
+                "pinyin": "tǐng",
+                "meaning": "straight; erect",
+                "audio": "ff4beb1232957db8dae0d491b91d8955b75efad70592e2ef6bfe9b6b273fb234",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-633A",
+      "character": "挺",
+      "lessonIds": [
+        "LESSON-C-633A"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-633a-word",
+        "EX-CHAR-char-633a-recognize",
+        "EX-CHAR-char-633a-write",
+        "EX-CHAR-char-633a-familiar",
+        "EX-CHAR-char-633a-recall"
+      ]
+    },
+    "audio": {
+      "ff4beb1232957db8dae0d491b91d8955b75efad70592e2ef6bfe9b6b273fb234": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c779acf724f526d3a5bc5d609deb4c877edc0b82162d17b072664b7961be8734.mp3",
+          "sha256": "c779acf724f526d3a5bc5d609deb4c877edc0b82162d17b072664b7961be8734",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "c779acf724f526d3a5bc5d609deb4c877edc0b82162d17b072664b7961be8734",
+            "text": "挺",
+            "words": [
+              {
+                "text": "挺",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4c7bc5595b1bd1580487433e3773483e9292165594a82df92ce902a3cbb48d5c.mp3",
+          "sha256": "4c7bc5595b1bd1580487433e3773483e9292165594a82df92ce902a3cbb48d5c",
+          "byteLength": 7245,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "4c7bc5595b1bd1580487433e3773483e9292165594a82df92ce902a3cbb48d5c",
+            "text": "挺",
+            "words": [
+              {
+                "text": "挺",
+                "start": 0.2,
+                "end": 0.28
+              }
+            ]
+          }
+        }
+      },
+      "9b9e3c659614aa7a99fe9d957321da8b9e7bdcdb969ed53a77f0e341ddf97dbc": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5aa11df8a4998ebee09bcb19ca0d9d9d251cf6afa33d4a3be33d348d26505e21.mp3",
+          "sha256": "5aa11df8a4998ebee09bcb19ca0d9d9d251cf6afa33d4a3be33d348d26505e21",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "5aa11df8a4998ebee09bcb19ca0d9d9d251cf6afa33d4a3be33d348d26505e21",
+            "text": "挺好",
+            "words": [
+              {
+                "text": "挺好",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2a9d398dc22f4434829067cd83d76274b30a8a7de0babec32de0ff58432a4946.mp3",
+          "sha256": "2a9d398dc22f4434829067cd83d76274b30a8a7de0babec32de0ff58432a4946",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "2a9d398dc22f4434829067cd83d76274b30a8a7de0babec32de0ff58432a4946",
+            "text": "挺好",
+            "words": [
+              {
+                "text": "挺好",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "fe286ab01902c6f8d17410487bb75943d0b474e73e3768a900baa3c26d408142": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-593e69e47e5d73ffb03140ee6bb61656f452184086821c9e633973dffefa341d.mp3",
+          "sha256": "593e69e47e5d73ffb03140ee6bb61656f452184086821c9e633973dffefa341d",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "593e69e47e5d73ffb03140ee6bb61656f452184086821c9e633973dffefa341d",
+            "text": "简短",
+            "words": [
+              {
+                "text": "简短",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-514824e3c77fd288463db22ad8cf6eba875a38c060b4396f4506d109b00d83bf.mp3",
+          "sha256": "514824e3c77fd288463db22ad8cf6eba875a38c060b4396f4506d109b00d83bf",
+          "byteLength": 16749,
+          "readAlong": {
+            "audioSha256": "514824e3c77fd288463db22ad8cf6eba875a38c060b4396f4506d109b00d83bf",
+            "text": "简短",
+            "words": [
+              {
+                "text": "简短",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "19afc521a0439f4139c20562b56ff2ef7d683d414ec9b2b0a5b8699980018d75": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6ffc5ebd7211aea9de422c0a68cbb86d02524438bb58128c71688d6d7e9906a8.mp3",
+          "sha256": "6ffc5ebd7211aea9de422c0a68cbb86d02524438bb58128c71688d6d7e9906a8",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "6ffc5ebd7211aea9de422c0a68cbb86d02524438bb58128c71688d6d7e9906a8",
+            "text": "夫妻",
+            "words": [
+              {
+                "text": "夫妻",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d57bfb3b7e588b2248f947fddd0abe6d29f938ff97faeac684baffd9cd14324e.mp3",
+          "sha256": "d57bfb3b7e588b2248f947fddd0abe6d29f938ff97faeac684baffd9cd14324e",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "d57bfb3b7e588b2248f947fddd0abe6d29f938ff97faeac684baffd9cd14324e",
+            "text": "夫妻",
+            "words": [
+              {
+                "text": "夫妻",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "875ec3d96e535e0611fd18854f857704a4590908bc74b232696a303fadc30251": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/fee5e1296bfb789b2a1ff00012b9133edf9c3b74c22f07cb9eeb9217bd96b26c.mp3",
+          "sha256": "fee5e1296bfb789b2a1ff00012b9133edf9c3b74c22f07cb9eeb9217bd96b26c",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "fee5e1296bfb789b2a1ff00012b9133edf9c3b74c22f07cb9eeb9217bd96b26c",
+            "text": "四处",
+            "words": [
+              {
+                "text": "四处",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c16dd668d345fffddb803535abde9ef9965f63ef3c425315e32846f4ce8da14a.mp3",
+          "sha256": "c16dd668d345fffddb803535abde9ef9965f63ef3c425315e32846f4ce8da14a",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "c16dd668d345fffddb803535abde9ef9965f63ef3c425315e32846f4ce8da14a",
+            "text": "四处",
+            "words": [
+              {
+                "text": "四处",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

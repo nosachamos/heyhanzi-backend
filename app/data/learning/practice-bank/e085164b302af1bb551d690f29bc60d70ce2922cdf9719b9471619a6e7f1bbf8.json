@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0226",
+  "targetId": "W0226",
+  "steps": [
+    {
+      "id": "BANK-W0226-W0226",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0226-W0226",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "car; automobile",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "汽车"
+            },
+            {
+              "value": "qìchē",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qi4che1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "汽车",
+            "pinyin": "qìchē",
+            "meaning": "car; automobile",
+            "singleWord": true,
+            "audio": "9b4acb5c610a2b6b21667ae1eead631468bd62b73cef7515b7bc0ee391ec71f0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "9b4acb5c610a2b6b21667ae1eead631468bd62b73cef7515b7bc0ee391ec71f0": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-200320ab8dfd9f1170dfc921de8f7fa07849f11e5e208e4eaca2b4d5843858f5.mp3",
+        "sha256": "200320ab8dfd9f1170dfc921de8f7fa07849f11e5e208e4eaca2b4d5843858f5",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "200320ab8dfd9f1170dfc921de8f7fa07849f11e5e208e4eaca2b4d5843858f5",
+          "text": "汽车",
+          "words": [
+            {
+              "text": "汽车",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-1db4f7d15a26f18342f4598696c5cb3f62a6ea873f43bd4090b8af9f798f0450.mp3",
+        "sha256": "1db4f7d15a26f18342f4598696c5cb3f62a6ea873f43bd4090b8af9f798f0450",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "1db4f7d15a26f18342f4598696c5cb3f62a6ea873f43bd4090b8af9f798f0450",
+          "text": "汽车",
+          "words": [
+            {
+              "text": "汽车",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0226",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0226-W0226",
+      "question_ids": [
+        "BANK-W0226-W0226"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U19",
+    "stepId": "S-U19-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6c7d"
+    ],
+    "grammarLessonIds": []
+  }
+}

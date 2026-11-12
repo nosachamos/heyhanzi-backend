@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1658",
+  "targetId": "W1658",
+  "steps": [
+    {
+      "id": "BANK-W1658-W1658",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1658-W1658",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "diary",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "日记"
+            },
+            {
+              "value": "rìjì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ri4ji4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "日记",
+            "pinyin": "rìjì",
+            "meaning": "diary",
+            "singleWord": true,
+            "audio": "346b46214a4d097bfd40e576abfe2d685f189cd9bc0c4ba1ce04a9416a4cbb64"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "346b46214a4d097bfd40e576abfe2d685f189cd9bc0c4ba1ce04a9416a4cbb64": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-9eb99be8f9d4b61720c2c860625a1cf657a703bcbbc9682d16c4d4137943d8d4.mp3",
+        "sha256": "9eb99be8f9d4b61720c2c860625a1cf657a703bcbbc9682d16c4d4137943d8d4",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "9eb99be8f9d4b61720c2c860625a1cf657a703bcbbc9682d16c4d4137943d8d4",
+          "text": "日记",
+          "words": [
+            {
+              "text": "日记",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-587d15de61143c7b553d93e2b25e424c48ae80daa336fff14d080ab2ef819856.mp3",
+        "sha256": "587d15de61143c7b553d93e2b25e424c48ae80daa336fff14d080ab2ef819856",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "587d15de61143c7b553d93e2b25e424c48ae80daa336fff14d080ab2ef819856",
+          "text": "日记",
+          "words": [
+            {
+              "text": "日记",
+              "start": 0.09,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1658",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1658-W1658",
+      "question_ids": [
+        "BANK-W1658-W1658"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-28",
+    "stepId": "S-U4-28-words-r4-6",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8bb0"
+    ],
+    "grammarLessonIds": []
+  }
+}

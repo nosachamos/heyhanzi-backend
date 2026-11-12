@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1711",
+  "targetId": "W1711",
+  "steps": [
+    {
+      "id": "BANK-W1711-W1711",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1711-W1711",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "urban district; downtown",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "市区"
+            },
+            {
+              "value": "shìqū",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shi4qu1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "市区",
+            "pinyin": "shìqū",
+            "meaning": "urban district; downtown",
+            "singleWord": true,
+            "audio": "f3d872b1857c34791ef899a86f9900d3b00c3e69437da8dad9b67d0ac7be1846"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f3d872b1857c34791ef899a86f9900d3b00c3e69437da8dad9b67d0ac7be1846": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-b390b113738c9b8437dd410e769d829698eeed549e3d5d1d9d79f1006879d82f.mp3",
+        "sha256": "b390b113738c9b8437dd410e769d829698eeed549e3d5d1d9d79f1006879d82f",
+        "byteLength": 15597,
+        "readAlong": {
+          "audioSha256": "b390b113738c9b8437dd410e769d829698eeed549e3d5d1d9d79f1006879d82f",
+          "text": "市区",
+          "words": [
+            {
+              "text": "市区",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-587f71834aebb7b029ea237f1033b29daee75ae0c45817bbb704d9812c35311b.mp3",
+        "sha256": "587f71834aebb7b029ea237f1033b29daee75ae0c45817bbb704d9812c35311b",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "587f71834aebb7b029ea237f1033b29daee75ae0c45817bbb704d9812c35311b",
+          "text": "市区",
+          "words": [
+            {
+              "text": "市区",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1711",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1711-W1711",
+      "question_ids": [
+        "BANK-W1711-W1711"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-15",
+    "stepId": "S-U4-15-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-533a"
+    ],
+    "grammarLessonIds": []
+  }
+}

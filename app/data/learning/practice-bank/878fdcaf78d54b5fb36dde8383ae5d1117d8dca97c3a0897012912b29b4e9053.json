@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1223",
+  "targetId": "W1223",
+  "steps": [
+    {
+      "id": "BANK-W1223-W1223",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1223-W1223",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "squadron; team",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "队"
+            },
+            {
+              "value": "duì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dui4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "队",
+            "pinyin": "duì",
+            "meaning": "squadron; team",
+            "singleWord": true,
+            "audio": "ba86f30fdbe6c904834fb499903a0ea50a084137a334f686530b7a791c0a11dc"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ba86f30fdbe6c904834fb499903a0ea50a084137a334f686530b7a791c0a11dc": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a0d617fadd293d591820174788e1770805e3faa35f853e8dae78105b0dc7799a.mp3",
+        "sha256": "a0d617fadd293d591820174788e1770805e3faa35f853e8dae78105b0dc7799a",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "a0d617fadd293d591820174788e1770805e3faa35f853e8dae78105b0dc7799a",
+          "text": "队",
+          "words": [
+            {
+              "text": "队",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-edabec91b53156c4c74fc0146e19f1b852756f9ed0f98b80c6b852ba10b03df1.mp3",
+        "sha256": "edabec91b53156c4c74fc0146e19f1b852756f9ed0f98b80c6b852ba10b03df1",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "edabec91b53156c4c74fc0146e19f1b852756f9ed0f98b80c6b852ba10b03df1",
+          "text": "队",
+          "words": [
+            {
+              "text": "队",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1223",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1223-W1223",
+      "question_ids": [
+        "BANK-W1223-W1223"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-18",
+    "stepId": "S-U4-18-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-961f"
+    ],
+    "grammarLessonIds": []
+  }
+}

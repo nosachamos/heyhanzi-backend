@@ -1,0 +1,631 @@
+{
+  "id": "EX-CHAR-char-4ed4",
+  "revision": 2,
+  "unit": "U4-36-P02",
+  "stage": "ST-HSK4",
+  "after": "S-U4-36-P02-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "仔",
+  "sourceBlockId": "mandarin-simplified-v1-char-4ed4",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-623b1b52f894aeec3cb10a3b",
+        "text": "仔细",
+        "pinyin": "zǐxì",
+        "meaning": "careful; attentive; cautious; to be careful; to look out",
+        "characters": [
+          {
+            "id": "C-4ED4",
+            "text": "仔"
+          },
+          {
+            "id": "C-7EC6",
+            "text": "细"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-a5ccbb66643ff7bb7947bf09",
+        "text": "交谈",
+        "pinyin": "jiāotán",
+        "meaning": "to discuss; to converse; chat; discussion",
+        "characters": [
+          {
+            "id": "C-4EA4",
+            "text": "交"
+          },
+          {
+            "id": "C-8C08",
+            "text": "谈"
+          }
+        ]
+      },
+      {
+        "id": "W3433",
+        "text": "有助于",
+        "pinyin": "yǒuzhùyú",
+        "meaning": "to contribute to; to promote",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          },
+          {
+            "id": "C-52A9",
+            "text": "助"
+          },
+          {
+            "id": "C-4E8E",
+            "text": "于"
+          }
+        ]
+      },
+      {
+        "id": "W3786",
+        "text": "持久",
+        "pinyin": "chíjiǔ",
+        "meaning": "lasting; enduring",
+        "characters": [
+          {
+            "id": "C-6301",
+            "text": "持"
+          },
+          {
+            "id": "C-4E45",
+            "text": "久"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "5f452ac048c4216b1d6173b6ad14b8946f904a29479e57c95d4b1454f8d7c44d",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4ed4",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "仔",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4ed4-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-623b1b52f894aeec3cb10a3b",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "careful; attentive",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "仔细"
+              },
+              {
+                "value": "zǐxì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zi3xi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "仔细",
+              "pinyin": "zǐxì",
+              "meaning": "careful; attentive",
+              "audio": "827ae13bb46f65a1de1bb3bba24cfdbd50b4818a97f1496ed38e116e45554c33",
+              "singleWord": true,
+              "focus": "仔"
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ed4-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-cmn-623b1b52f894aeec3cb10a3b",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "仔细",
+              "meaning": "",
+              "focus": "仔"
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-623b1b52f894aeec3cb10a3b",
+                "label": "careful; attentive",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W3433",
+                "label": "to contribute to; to promote",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W3786",
+                "label": "lasting; enduring",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ed4-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "仔",
+        "pinyin": "zǐ",
+        "meaning": "(bound form) used in the word for careful or meticulous",
+        "source": "/stroke-data/4ed4.json",
+        "reference": {
+          "character": "仔",
+          "sha256": "86a9c1a188a0ee7f9505197b727c3957ba1aee08d241e930e228ad2a21a9b3b6",
+          "medians": [
+            [
+              [
+                310,
+                789
+              ],
+              [
+                327,
+                774
+              ],
+              [
+                346,
+                739
+              ],
+              [
+                295,
+                643
+              ],
+              [
+                181,
+                477
+              ],
+              [
+                116,
+                400
+              ],
+              [
+                59,
+                351
+              ]
+            ],
+            [
+              [
+                251,
+                527
+              ],
+              [
+                256,
+                495
+              ],
+              [
+                267,
+                475
+              ],
+              [
+                270,
+                396
+              ],
+              [
+                252,
+                130
+              ],
+              [
+                258,
+                70
+              ]
+            ],
+            [
+              [
+                433,
+                656
+              ],
+              [
+                457,
+                646
+              ],
+              [
+                490,
+                643
+              ],
+              [
+                662,
+                703
+              ],
+              [
+                687,
+                704
+              ],
+              [
+                710,
+                692
+              ],
+              [
+                726,
+                673
+              ],
+              [
+                721,
+                662
+              ],
+              [
+                629,
+                554
+              ],
+              [
+                627,
+                543
+              ],
+              [
+                615,
+                535
+              ]
+            ],
+            [
+              [
+                578,
+                546
+              ],
+              [
+                601,
+                519
+              ],
+              [
+                623,
+                477
+              ],
+              [
+                639,
+                409
+              ],
+              [
+                650,
+                242
+              ],
+              [
+                636,
+                131
+              ],
+              [
+                616,
+                84
+              ],
+              [
+                600,
+                68
+              ],
+              [
+                465,
+                122
+              ]
+            ],
+            [
+              [
+                346,
+                401
+              ],
+              [
+                386,
+                391
+              ],
+              [
+                416,
+                393
+              ],
+              [
+                543,
+                416
+              ],
+              [
+                852,
+                445
+              ],
+              [
+                894,
+                440
+              ],
+              [
+                933,
+                426
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4ed4-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-a5ccbb66643ff7bb7947bf09",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to discuss; to converse",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "交谈"
+              },
+              {
+                "value": "jiāotán",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jiao1tan2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "交谈",
+              "pinyin": "jiāotán",
+              "meaning": "to discuss; to converse",
+              "audio": "7036a6657812f80c922c6b379fb26bfcb417f848d721e86c4bd70591a570dbb4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ed4-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-cmn-623b1b52f894aeec3cb10a3b",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "careful; attentive",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "仔细"
+              },
+              {
+                "value": "zǐxì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zi3xi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "仔细",
+              "pinyin": "zǐxì",
+              "meaning": "careful; attentive",
+              "audio": "827ae13bb46f65a1de1bb3bba24cfdbd50b4818a97f1496ed38e116e45554c33",
+              "singleWord": true,
+              "focus": "仔"
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "827ae13bb46f65a1de1bb3bba24cfdbd50b4818a97f1496ed38e116e45554c33"
+            ],
+            "transcript": [
+              {
+                "text": "仔细",
+                "pinyin": "zǐxì",
+                "meaning": "careful; attentive",
+                "audio": "827ae13bb46f65a1de1bb3bba24cfdbd50b4818a97f1496ed38e116e45554c33",
+                "singleWord": true,
+                "focus": "仔"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4ED4",
+      "character": "仔",
+      "lessonIds": [
+        "LESSON-C-4ED4"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4ed4-word",
+        "EX-CHAR-char-4ed4-recognize",
+        "EX-CHAR-char-4ed4-write",
+        "EX-CHAR-char-4ed4-familiar",
+        "EX-CHAR-char-4ed4-recall"
+      ]
+    },
+    "audio": {
+      "827ae13bb46f65a1de1bb3bba24cfdbd50b4818a97f1496ed38e116e45554c33": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-45667cd4b2fc333548f3b4fd5150603eb57fb7b384066229d2f90cd2bb59c089.mp3",
+          "sha256": "45667cd4b2fc333548f3b4fd5150603eb57fb7b384066229d2f90cd2bb59c089",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "45667cd4b2fc333548f3b4fd5150603eb57fb7b384066229d2f90cd2bb59c089",
+            "text": "仔细",
+            "words": [
+              {
+                "text": "仔细",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-491670e8817cda8645c0d1baa10cd50bf76ab4b849b6cb4b96bee45e0a351075.mp3",
+          "sha256": "491670e8817cda8645c0d1baa10cd50bf76ab4b849b6cb4b96bee45e0a351075",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "491670e8817cda8645c0d1baa10cd50bf76ab4b849b6cb4b96bee45e0a351075",
+            "text": "仔细",
+            "words": [
+              {
+                "text": "仔细",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "7036a6657812f80c922c6b379fb26bfcb417f848d721e86c4bd70591a570dbb4": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d29245713ec00e6de6e3e7a3abe4a835303b267d4ba7604944f6f605640bea6f.mp3",
+          "sha256": "d29245713ec00e6de6e3e7a3abe4a835303b267d4ba7604944f6f605640bea6f",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "d29245713ec00e6de6e3e7a3abe4a835303b267d4ba7604944f6f605640bea6f",
+            "text": "交谈",
+            "words": [
+              {
+                "text": "交谈",
+                "start": 0.2,
+                "end": 0.72
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/46f45f05668c1f21879b3b81313e9b4d7fcc1fece6e4efe54b7a4759612bbdbd.mp3",
+          "sha256": "46f45f05668c1f21879b3b81313e9b4d7fcc1fece6e4efe54b7a4759612bbdbd",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "46f45f05668c1f21879b3b81313e9b4d7fcc1fece6e4efe54b7a4759612bbdbd",
+            "text": "交谈",
+            "words": [
+              {
+                "text": "交谈",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "203db9db9ae8fce884ab5c1254a70dc111173cfe1ab2e886eb4274f5947caa75": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/21aec7486121b6e14716b6663ef6dafdd1a7fdcff201b83ded52851e8846fdda.mp3",
+          "sha256": "21aec7486121b6e14716b6663ef6dafdd1a7fdcff201b83ded52851e8846fdda",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "21aec7486121b6e14716b6663ef6dafdd1a7fdcff201b83ded52851e8846fdda",
+            "text": "有助于",
+            "words": [
+              {
+                "text": "有助于",
+                "start": 0.21,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/cb6bb272b19891a2f992a25931dba602173cfa59870c365edda58f0ed98cafbf.mp3",
+          "sha256": "cb6bb272b19891a2f992a25931dba602173cfa59870c365edda58f0ed98cafbf",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "cb6bb272b19891a2f992a25931dba602173cfa59870c365edda58f0ed98cafbf",
+            "text": "有助于",
+            "words": [
+              {
+                "text": "有助于",
+                "start": 0.09,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "f73fae3dbf4784d1485897ff7a4a40d2dde05012a0d56ecd628e576aad2a492f": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6e56abbf17b78761dec88c3a0d2e2872bec6fb9683e90ecb121d26f2d1f681b8.mp3",
+          "sha256": "6e56abbf17b78761dec88c3a0d2e2872bec6fb9683e90ecb121d26f2d1f681b8",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "6e56abbf17b78761dec88c3a0d2e2872bec6fb9683e90ecb121d26f2d1f681b8",
+            "text": "持久",
+            "words": [
+              {
+                "text": "持久",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5e8419b134f130b309b4c0686313ff2b8b1ec0aa142bbb9b09735242bdbe82c9.mp3",
+          "sha256": "5e8419b134f130b309b4c0686313ff2b8b1ec0aa142bbb9b09735242bdbe82c9",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "5e8419b134f130b309b4c0686313ff2b8b1ec0aa142bbb9b09735242bdbe82c9",
+            "text": "持久",
+            "words": [
+              {
+                "text": "持久",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

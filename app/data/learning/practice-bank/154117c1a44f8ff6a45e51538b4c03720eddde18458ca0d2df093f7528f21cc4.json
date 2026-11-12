@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0425",
+  "targetId": "W0425",
+  "steps": [
+    {
+      "id": "BANK-W0425-W0425",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0425-W0425",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to sell",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "卖"
+            },
+            {
+              "value": "mài",
+              "mode": "pinyin"
+            },
+            {
+              "value": "mai4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "卖",
+            "pinyin": "mài",
+            "meaning": "to sell",
+            "singleWord": true,
+            "audio": "4b436350bdd8fdf3d448343a4553ab196b49c4eff52e94b1a24a9c32c92b2003"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "4b436350bdd8fdf3d448343a4553ab196b49c4eff52e94b1a24a9c32c92b2003": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1d927bd1c8190d4dedc8982d68fa064245625e524e466d45969b1b8b81f6849e.mp3",
+        "sha256": "1d927bd1c8190d4dedc8982d68fa064245625e524e466d45969b1b8b81f6849e",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "1d927bd1c8190d4dedc8982d68fa064245625e524e466d45969b1b8b81f6849e",
+          "text": "卖",
+          "words": [
+            {
+              "text": "卖",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-f8ee6c49bdd55c96578b820dbef3918ef6e0b6380b1dfa11f405f57c3445d0eb.mp3",
+        "sha256": "f8ee6c49bdd55c96578b820dbef3918ef6e0b6380b1dfa11f405f57c3445d0eb",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "f8ee6c49bdd55c96578b820dbef3918ef6e0b6380b1dfa11f405f57c3445d0eb",
+          "text": "卖",
+          "words": [
+            {
+              "text": "卖",
+              "start": 0.14,
+              "end": 0.24
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0425",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0425-W0425",
+      "question_ids": [
+        "BANK-W0425-W0425"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U05-P02",
+    "stepId": "S-U05-words-r4-64",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5356"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0855",
+  "targetId": "W0855",
+  "steps": [
+    {
+      "id": "BANK-W0855-W0855",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0855-W0855",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "face",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "脸"
+            },
+            {
+              "value": "liǎn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "lian3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "脸",
+            "pinyin": "liǎn",
+            "meaning": "face",
+            "singleWord": true,
+            "audio": "6f7c8df51240c6d930fe0097f54f796076559724dec99a8e65926d615578d6a9"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "6f7c8df51240c6d930fe0097f54f796076559724dec99a8e65926d615578d6a9": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-bb8b0027b4ed381d89e01342d418edc404ae35889efbe7c175ae776b052eb913.mp3",
+        "sha256": "bb8b0027b4ed381d89e01342d418edc404ae35889efbe7c175ae776b052eb913",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "bb8b0027b4ed381d89e01342d418edc404ae35889efbe7c175ae776b052eb913",
+          "text": "脸",
+          "words": [
+            {
+              "text": "脸",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c5f8c2692beee00798d3eed32635107eaf2c585fae845c1ec1a25d5f07f2492a.mp3",
+        "sha256": "c5f8c2692beee00798d3eed32635107eaf2c585fae845c1ec1a25d5f07f2492a",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "c5f8c2692beee00798d3eed32635107eaf2c585fae845c1ec1a25d5f07f2492a",
+          "text": "脸",
+          "words": [
+            {
+              "text": "脸",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0855",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0855-W0855",
+      "question_ids": [
+        "BANK-W0855-W0855"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-09",
+    "stepId": "S-U3-09-words-r4-6",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8138"
+    ],
+    "grammarLessonIds": []
+  }
+}

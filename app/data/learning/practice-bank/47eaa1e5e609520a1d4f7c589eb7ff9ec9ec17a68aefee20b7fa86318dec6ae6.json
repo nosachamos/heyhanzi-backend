@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0018",
+  "targetId": "W0018",
+  "steps": [
+    {
+      "id": "BANK-W0018-W0018",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0018-W0018",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "and; with",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "和"
+            },
+            {
+              "value": "hé",
+              "mode": "pinyin"
+            },
+            {
+              "value": "he2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "和",
+            "pinyin": "hé",
+            "meaning": "and; with",
+            "singleWord": true,
+            "audio": "e26f4e4b0299989d1174c33eb17c7efb8b19f09153329d1191d29c23a6afdd96"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e26f4e4b0299989d1174c33eb17c7efb8b19f09153329d1191d29c23a6afdd96": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f5c41de246e00d51edf4392dd011918bda49b9ab6904c4e617610a510054f247.mp3",
+        "sha256": "f5c41de246e00d51edf4392dd011918bda49b9ab6904c4e617610a510054f247",
+        "byteLength": 8397,
+        "readAlong": {
+          "audioSha256": "f5c41de246e00d51edf4392dd011918bda49b9ab6904c4e617610a510054f247",
+          "text": "和",
+          "words": [
+            {
+              "text": "和",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-93b5b6dbd74ff5ecac8d22a52514520b66fb9520c9d3e5b7e3a42dc2796a33ec.mp3",
+        "sha256": "93b5b6dbd74ff5ecac8d22a52514520b66fb9520c9d3e5b7e3a42dc2796a33ec",
+        "byteLength": 7533,
+        "readAlong": {
+          "audioSha256": "93b5b6dbd74ff5ecac8d22a52514520b66fb9520c9d3e5b7e3a42dc2796a33ec",
+          "text": "和",
+          "words": [
+            {
+              "text": "和",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0018",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0018-W0018",
+      "question_ids": [
+        "BANK-W0018-W0018"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU03",
+    "stepId": "S-WU03-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-he"
+    ],
+    "grammarLessonIds": []
+  }
+}

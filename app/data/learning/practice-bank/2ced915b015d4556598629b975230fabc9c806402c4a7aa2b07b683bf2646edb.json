@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0102",
+  "targetId": "W0102",
+  "steps": [
+    {
+      "id": "BANK-W0102-W0102",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0102-W0102",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "today",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "今天"
+            },
+            {
+              "value": "jīntiān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jin1tian1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "今天",
+            "pinyin": "jīntiān",
+            "meaning": "today",
+            "singleWord": true,
+            "audio": "19cdcccbdcd0a5dd96140148c937d98e141d15ec317e962930413a1ccd18939e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "19cdcccbdcd0a5dd96140148c937d98e141d15ec317e962930413a1ccd18939e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a85ce7c214f169bc32f35a3cc0ab3484d551fa3adaf800e8425706e5d7368b1e.mp3",
+        "sha256": "a85ce7c214f169bc32f35a3cc0ab3484d551fa3adaf800e8425706e5d7368b1e",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "a85ce7c214f169bc32f35a3cc0ab3484d551fa3adaf800e8425706e5d7368b1e",
+          "text": "今天",
+          "words": [
+            {
+              "text": "今天",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-43a6b0a9c39f2296cb1fa6e1e212b9840f89df615b90bf9040c26c7974f467ec.mp3",
+        "sha256": "43a6b0a9c39f2296cb1fa6e1e212b9840f89df615b90bf9040c26c7974f467ec",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "43a6b0a9c39f2296cb1fa6e1e212b9840f89df615b90bf9040c26c7974f467ec",
+          "text": "今天",
+          "words": [
+            {
+              "text": "今天",
+              "start": 0.22,
+              "end": 0.56
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0102",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0102-W0102",
+      "question_ids": [
+        "BANK-W0102-W0102"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U09",
+    "stepId": "S-U09-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5929"
+    ],
+    "grammarLessonIds": []
+  }
+}

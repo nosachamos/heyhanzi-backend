@@ -1,0 +1,827 @@
+{
+  "id": "EX-CHAR-char-9505",
+  "revision": 2,
+  "unit": "U5-09",
+  "stage": "ST-HSK5",
+  "after": "S-U5-09-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "锅",
+  "sourceBlockId": "mandarin-simplified-v1-char-9505",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7840",
+        "text": "础",
+        "pinyin": "chǔ",
+        "meaning": "foundation; base",
+        "characters": [
+          {
+            "id": "C-7840",
+            "text": "础"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-9505",
+        "text": "锅",
+        "pinyin": "guō",
+        "meaning": "pot; pan; wok; cauldron; pot-shaped thing",
+        "characters": [
+          {
+            "id": "C-9505",
+            "text": "锅"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-50eaefc706619d9076dd8b16",
+        "text": "办公",
+        "pinyin": "bàngōng",
+        "meaning": "to handle official business (usually in an office); to do (office) work",
+        "characters": [
+          {
+            "id": "C-529E",
+            "text": "办"
+          },
+          {
+            "id": "C-516C",
+            "text": "公"
+          }
+        ]
+      },
+      {
+        "id": "W2666",
+        "text": "具体",
+        "pinyin": "jùtǐ",
+        "meaning": "concrete; specific",
+        "characters": [
+          {
+            "id": "C-5177",
+            "text": "具"
+          },
+          {
+            "id": "C-4F53",
+            "text": "体"
+          }
+        ]
+      },
+      {
+        "id": "W3917",
+        "text": "电饭锅",
+        "pinyin": "diànfànguō",
+        "meaning": "electric rice cooker",
+        "characters": [
+          {
+            "id": "C-7535",
+            "text": "电"
+          },
+          {
+            "id": "C-996D",
+            "text": "饭"
+          },
+          {
+            "id": "C-9505",
+            "text": "锅"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "ac86ee2bbea6218f94c55fbf5a1f77f393ad691a9750dbef63a854ff004bd770",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-9505",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "锅",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-9505-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3917",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "electric rice cooker",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "电饭锅"
+              },
+              {
+                "value": "diànfànguō",
+                "mode": "pinyin"
+              },
+              {
+                "value": "dian4fan4guo1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "电饭锅",
+              "pinyin": "diànfànguō",
+              "meaning": "electric rice cooker",
+              "audio": "25c053158df5c3597f6113daab2a8d046d4af6761952bc41e15082d159c2f0db",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9505-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-9505",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "锅",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-7840",
+                "label": "foundation; base",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-9505",
+                "label": "pot; pan",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-50eaefc706619d9076dd8b16",
+                "label": "to handle official business (usually in an office); to do (office) work",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9505-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "锅",
+        "pinyin": "guō",
+        "meaning": "pot; pan",
+        "source": "/stroke-data/9505.json",
+        "reference": {
+          "character": "锅",
+          "sha256": "cd2822fc629e7cb6e305662a5dbbf1deb9bdd4e662ccd560ae020ae233793df3",
+          "medians": [
+            [
+              [
+                296,
+                803
+              ],
+              [
+                321,
+                780
+              ],
+              [
+                332,
+                756
+              ],
+              [
+                288,
+                666
+              ],
+              [
+                231,
+                569
+              ],
+              [
+                164,
+                478
+              ],
+              [
+                80,
+                380
+              ],
+              [
+                54,
+                362
+              ]
+            ],
+            [
+              [
+                284,
+                601
+              ],
+              [
+                431,
+                633
+              ],
+              [
+                464,
+                631
+              ]
+            ],
+            [
+              [
+                206,
+                458
+              ],
+              [
+                260,
+                458
+              ],
+              [
+                368,
+                495
+              ],
+              [
+                414,
+                498
+              ]
+            ],
+            [
+              [
+                156,
+                303
+              ],
+              [
+                177,
+                299
+              ],
+              [
+                229,
+                304
+              ],
+              [
+                362,
+                344
+              ],
+              [
+                415,
+                345
+              ]
+            ],
+            [
+              [
+                267,
+                432
+              ],
+              [
+                298,
+                416
+              ],
+              [
+                300,
+                384
+              ],
+              [
+                297,
+                259
+              ],
+              [
+                282,
+                146
+              ],
+              [
+                286,
+                125
+              ],
+              [
+                327,
+                134
+              ],
+              [
+                421,
+                193
+              ]
+            ],
+            [
+              [
+                522,
+                707
+              ],
+              [
+                551,
+                683
+              ],
+              [
+                554,
+                674
+              ],
+              [
+                592,
+                487
+              ]
+            ],
+            [
+              [
+                584,
+                700
+              ],
+              [
+                593,
+                691
+              ],
+              [
+                620,
+                694
+              ],
+              [
+                735,
+                717
+              ],
+              [
+                758,
+                708
+              ],
+              [
+                776,
+                685
+              ],
+              [
+                769,
+                659
+              ],
+              [
+                748,
+                594
+              ],
+              [
+                720,
+                572
+              ]
+            ],
+            [
+              [
+                611,
+                521
+              ],
+              [
+                628,
+                532
+              ],
+              [
+                691,
+                545
+              ],
+              [
+                763,
+                552
+              ],
+              [
+                783,
+                546
+              ]
+            ],
+            [
+              [
+                461,
+                406
+              ],
+              [
+                486,
+                376
+              ],
+              [
+                497,
+                345
+              ],
+              [
+                491,
+                104
+              ],
+              [
+                500,
+                60
+              ]
+            ],
+            [
+              [
+                509,
+                390
+              ],
+              [
+                535,
+                380
+              ],
+              [
+                713,
+                421
+              ],
+              [
+                823,
+                435
+              ],
+              [
+                842,
+                433
+              ],
+              [
+                870,
+                411
+              ],
+              [
+                878,
+                401
+              ],
+              [
+                869,
+                319
+              ],
+              [
+                874,
+                168
+              ],
+              [
+                867,
+                104
+              ],
+              [
+                857,
+                82
+              ],
+              [
+                822,
+                85
+              ],
+              [
+                728,
+                118
+              ]
+            ],
+            [
+              [
+                636,
+                514
+              ],
+              [
+                664,
+                490
+              ],
+              [
+                675,
+                466
+              ],
+              [
+                653,
+                320
+              ],
+              [
+                641,
+                283
+              ],
+              [
+                616,
+                242
+              ],
+              [
+                572,
+                198
+              ],
+              [
+                539,
+                179
+              ]
+            ],
+            [
+              [
+                687,
+                309
+              ],
+              [
+                695,
+                294
+              ],
+              [
+                777,
+                238
+              ],
+              [
+                799,
+                200
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-9505-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2666",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "concrete; specific",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "具体"
+              },
+              {
+                "value": "jùtǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ju4ti3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "具体",
+              "pinyin": "jùtǐ",
+              "meaning": "concrete; specific",
+              "audio": "1a91ed4316b1ed1f2e7a3d4d7a28554c0cc3a226c42eb90a8bf5e8e2847f2391",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9505-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-9505",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "pot; pan",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "锅"
+              },
+              {
+                "value": "guō",
+                "mode": "pinyin"
+              },
+              {
+                "value": "guo1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "锅",
+              "pinyin": "guō",
+              "meaning": "pot; pan",
+              "audio": "68e4a8773156dade8681ca6f724df16f4eefd249c2817ef4a5e8aaa59fbce7ad",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "68e4a8773156dade8681ca6f724df16f4eefd249c2817ef4a5e8aaa59fbce7ad"
+            ],
+            "transcript": [
+              {
+                "text": "锅",
+                "pinyin": "guō",
+                "meaning": "pot; pan",
+                "audio": "68e4a8773156dade8681ca6f724df16f4eefd249c2817ef4a5e8aaa59fbce7ad",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-9505",
+      "character": "锅",
+      "lessonIds": [
+        "LESSON-C-9505"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-9505-word",
+        "EX-CHAR-char-9505-recognize",
+        "EX-CHAR-char-9505-write",
+        "EX-CHAR-char-9505-familiar",
+        "EX-CHAR-char-9505-recall"
+      ]
+    },
+    "audio": {
+      "04099619d1709953be34b7d7d3e323d2fcc7e7ba2b52e4516d122e228d3a0d12": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-3683820b8a076b337f48682a01d269d8b41ae2de25fc17831ed0b43a4557945d.mp3",
+          "sha256": "3683820b8a076b337f48682a01d269d8b41ae2de25fc17831ed0b43a4557945d",
+          "byteLength": 7533,
+          "readAlong": {
+            "audioSha256": "3683820b8a076b337f48682a01d269d8b41ae2de25fc17831ed0b43a4557945d",
+            "text": "础",
+            "words": [
+              {
+                "text": "础",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-263086e25ecf264114cff689e85ca713b40cdc1630e08f588b73b39fa19e6234.mp3",
+          "sha256": "263086e25ecf264114cff689e85ca713b40cdc1630e08f588b73b39fa19e6234",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "263086e25ecf264114cff689e85ca713b40cdc1630e08f588b73b39fa19e6234",
+            "text": "础",
+            "words": [
+              {
+                "text": "础",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "68e4a8773156dade8681ca6f724df16f4eefd249c2817ef4a5e8aaa59fbce7ad": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-26fafc93d9373098694385a00a3505597932a8296a13ef7496e64d34b14c6c61.mp3",
+          "sha256": "26fafc93d9373098694385a00a3505597932a8296a13ef7496e64d34b14c6c61",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "26fafc93d9373098694385a00a3505597932a8296a13ef7496e64d34b14c6c61",
+            "text": "锅",
+            "words": [
+              {
+                "text": "锅",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-9633813064569538be8704a4f9228918bbe86bf77a2190f8b9bc2c8f26fadab1.mp3",
+          "sha256": "9633813064569538be8704a4f9228918bbe86bf77a2190f8b9bc2c8f26fadab1",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "9633813064569538be8704a4f9228918bbe86bf77a2190f8b9bc2c8f26fadab1",
+            "text": "锅",
+            "words": [
+              {
+                "text": "锅",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "6823befbf7272506ff93cef18205c688bbec86b6ac6f2a2d01888117beb2447c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-038cd809eb1c1ad04510a18cbd479ca559f7b2c9eb49b07a1fbc1a6a25eb42ec.mp3",
+          "sha256": "038cd809eb1c1ad04510a18cbd479ca559f7b2c9eb49b07a1fbc1a6a25eb42ec",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "038cd809eb1c1ad04510a18cbd479ca559f7b2c9eb49b07a1fbc1a6a25eb42ec",
+            "text": "办公",
+            "words": [
+              {
+                "text": "办公",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-2e8872dc8ebabaf7df4376c34a883277782c9a0c34be6dff0c0910aa24b55337.mp3",
+          "sha256": "2e8872dc8ebabaf7df4376c34a883277782c9a0c34be6dff0c0910aa24b55337",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "2e8872dc8ebabaf7df4376c34a883277782c9a0c34be6dff0c0910aa24b55337",
+            "text": "办公",
+            "words": [
+              {
+                "text": "办公",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "1a91ed4316b1ed1f2e7a3d4d7a28554c0cc3a226c42eb90a8bf5e8e2847f2391": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-caa399abf05dac32ceee4f3e7bc6087f49c461d973ad7741a4d354ece8ff389d.mp3",
+          "sha256": "caa399abf05dac32ceee4f3e7bc6087f49c461d973ad7741a4d354ece8ff389d",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "caa399abf05dac32ceee4f3e7bc6087f49c461d973ad7741a4d354ece8ff389d",
+            "text": "具体",
+            "words": [
+              {
+                "text": "具体",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-e571c0f380d13aa3d0e47f746ffebb1b1d446599c2e946ff8cfd8a9c6e6b86b1.mp3",
+          "sha256": "e571c0f380d13aa3d0e47f746ffebb1b1d446599c2e946ff8cfd8a9c6e6b86b1",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "e571c0f380d13aa3d0e47f746ffebb1b1d446599c2e946ff8cfd8a9c6e6b86b1",
+            "text": "具体",
+            "words": [
+              {
+                "text": "具体",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "25c053158df5c3597f6113daab2a8d046d4af6761952bc41e15082d159c2f0db": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-e3dc8262a79befc8f91eef622b679a637d4c93b4b3698a250280fd55dff8873e.mp3",
+          "sha256": "e3dc8262a79befc8f91eef622b679a637d4c93b4b3698a250280fd55dff8873e",
+          "byteLength": 16173,
+          "readAlong": {
+            "audioSha256": "e3dc8262a79befc8f91eef622b679a637d4c93b4b3698a250280fd55dff8873e",
+            "text": "电饭锅",
+            "words": [
+              {
+                "text": "电饭锅",
+                "start": 0.15,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-5eb63776a6496853cd5f652468fbdd9ff9f4a378eb8d89ff5ace40080d55f559.mp3",
+          "sha256": "5eb63776a6496853cd5f652468fbdd9ff9f4a378eb8d89ff5ace40080d55f559",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "5eb63776a6496853cd5f652468fbdd9ff9f4a378eb8d89ff5ace40080d55f559",
+            "text": "电饭锅",
+            "words": [
+              {
+                "text": "电饭锅",
+                "start": 0.09,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

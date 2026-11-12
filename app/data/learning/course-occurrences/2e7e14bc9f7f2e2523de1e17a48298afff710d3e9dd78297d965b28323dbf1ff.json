@@ -1,0 +1,713 @@
+{
+  "id": "EX-CHAR-char-5ba4",
+  "revision": 2,
+  "unit": "U24-P01",
+  "stage": "ST-HSK2",
+  "after": "S-U24-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "室",
+  "sourceBlockId": "mandarin-simplified-v1-char-5ba4",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-2d2f9fd0b7e2db0c5c55e33c",
+        "text": "地下室",
+        "pinyin": "dì xià shì",
+        "meaning": "basement",
+        "characters": [
+          {
+            "id": "C-5730",
+            "text": "地"
+          },
+          {
+            "id": "C-4E0B",
+            "text": "下"
+          },
+          {
+            "id": "C-5BA4",
+            "text": "室"
+          }
+        ]
+      },
+      {
+        "id": "W0593",
+        "text": "手",
+        "pinyin": "shǒu",
+        "meaning": "hand",
+        "characters": [
+          {
+            "id": "C-624B",
+            "text": "手"
+          }
+        ]
+      },
+      {
+        "id": "W0925",
+        "text": "室",
+        "pinyin": "shì",
+        "meaning": "room; work unit",
+        "characters": [
+          {
+            "id": "C-5BA4",
+            "text": "室"
+          }
+        ]
+      },
+      {
+        "id": "W0962",
+        "text": "网站",
+        "pinyin": "wǎngzhàn",
+        "meaning": "website",
+        "characters": [
+          {
+            "id": "C-7F51",
+            "text": "网"
+          },
+          {
+            "id": "C-7AD9",
+            "text": "站"
+          }
+        ]
+      },
+      {
+        "id": "W5142",
+        "text": "也好",
+        "pinyin": "yěhǎo",
+        "meaning": "that's fine; may as well",
+        "characters": [
+          {
+            "id": "C-4E5F",
+            "text": "也"
+          },
+          {
+            "id": "C-597D",
+            "text": "好"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "05e4d03cb3d06a4fe0fbc804b9576f65b8b09b138caf661665d8a680710ee11d",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5ba4",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "室",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5ba4-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-2d2f9fd0b7e2db0c5c55e33c",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "basement",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "地下室"
+              },
+              {
+                "value": "dì xià shì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "di4xia4shi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "地下室",
+              "pinyin": "dì xià shì",
+              "meaning": "basement",
+              "audio": "a590a2a1d00bb7ab439757fc687e758e9892f5e2320e6c599bebd43e6d50fc0d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5ba4-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0925",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "室",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0593",
+                "label": "hand",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0962",
+                "label": "website",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0925",
+                "label": "room; work unit",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5ba4-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "室",
+        "pinyin": "shì",
+        "meaning": "room; work unit",
+        "source": "/stroke-data/5ba4.json",
+        "reference": {
+          "character": "室",
+          "sha256": "02fc691575d938e6e342e2ace0ab87e8182d8c5dcab9ae027055b052d2360047",
+          "medians": [
+            [
+              [
+                463,
+                835
+              ],
+              [
+                544,
+                788
+              ],
+              [
+                574,
+                748
+              ]
+            ],
+            [
+              [
+                252,
+                671
+              ],
+              [
+                261,
+                641
+              ],
+              [
+                257,
+                621
+              ],
+              [
+                205,
+                524
+              ],
+              [
+                195,
+                474
+              ]
+            ],
+            [
+              [
+                288,
+                614
+              ],
+              [
+                309,
+                622
+              ],
+              [
+                503,
+                654
+              ],
+              [
+                764,
+                681
+              ],
+              [
+                801,
+                662
+              ],
+              [
+                812,
+                638
+              ],
+              [
+                754,
+                564
+              ],
+              [
+                744,
+                561
+              ]
+            ],
+            [
+              [
+                361,
+                504
+              ],
+              [
+                392,
+                498
+              ],
+              [
+                444,
+                500
+              ],
+              [
+                636,
+                538
+              ],
+              [
+                682,
+                535
+              ]
+            ],
+            [
+              [
+                508,
+                454
+              ],
+              [
+                473,
+                449
+              ],
+              [
+                431,
+                389
+              ],
+              [
+                391,
+                348
+              ],
+              [
+                369,
+                309
+              ],
+              [
+                404,
+                305
+              ],
+              [
+                602,
+                353
+              ],
+              [
+                630,
+                358
+              ],
+              [
+                641,
+                354
+              ]
+            ],
+            [
+              [
+                612,
+                429
+              ],
+              [
+                684,
+                356
+              ],
+              [
+                699,
+                315
+              ]
+            ],
+            [
+              [
+                316,
+                174
+              ],
+              [
+                350,
+                166
+              ],
+              [
+                402,
+                170
+              ],
+              [
+                639,
+                208
+              ],
+              [
+                706,
+                201
+              ]
+            ],
+            [
+              [
+                479,
+                306
+              ],
+              [
+                508,
+                284
+              ],
+              [
+                514,
+                245
+              ],
+              [
+                510,
+                78
+              ],
+              [
+                493,
+                57
+              ]
+            ],
+            [
+              [
+                187,
+                16
+              ],
+              [
+                220,
+                2
+              ],
+              [
+                252,
+                -3
+              ],
+              [
+                478,
+                26
+              ],
+              [
+                780,
+                48
+              ],
+              [
+                863,
+                20
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5ba4-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W5142",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "that's fine; may as well",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "也好"
+              },
+              {
+                "value": "yěhǎo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ye3hao3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "也好",
+              "pinyin": "yěhǎo",
+              "meaning": "that's fine; may as well",
+              "audio": "4ad3ffc79f7ee725c2d6ca14655475bc65119a86925bee05df3b563a08d2f9ff",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5ba4-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0925",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "room; work unit",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "室"
+              },
+              {
+                "value": "shì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "室",
+              "pinyin": "shì",
+              "meaning": "room; work unit",
+              "audio": "e90d21a1bb468550d5b77fe25ce3e43d963f0a7039aa3bd8257d95ec92616525",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "e90d21a1bb468550d5b77fe25ce3e43d963f0a7039aa3bd8257d95ec92616525"
+            ],
+            "transcript": [
+              {
+                "text": "室",
+                "pinyin": "shì",
+                "meaning": "room; work unit",
+                "audio": "e90d21a1bb468550d5b77fe25ce3e43d963f0a7039aa3bd8257d95ec92616525",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5BA4",
+      "character": "室",
+      "lessonIds": [
+        "LESSON-C-5BA4"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5ba4-word",
+        "EX-CHAR-char-5ba4-recognize",
+        "EX-CHAR-char-5ba4-write",
+        "EX-CHAR-char-5ba4-familiar",
+        "EX-CHAR-char-5ba4-recall"
+      ]
+    },
+    "audio": {
+      "a590a2a1d00bb7ab439757fc687e758e9892f5e2320e6c599bebd43e6d50fc0d": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/be277a9367de7fb18738ce6c1c462783af5edfcd2c57070e3ddd8e1efa151bec.mp3",
+          "sha256": "be277a9367de7fb18738ce6c1c462783af5edfcd2c57070e3ddd8e1efa151bec",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "be277a9367de7fb18738ce6c1c462783af5edfcd2c57070e3ddd8e1efa151bec",
+            "text": "地下室",
+            "words": [
+              {
+                "text": "地下室",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3ac6a0dc0d688582a8095acfe638488ca3e426a68ddcbcd57b07e69a08a7ad0c.mp3",
+          "sha256": "3ac6a0dc0d688582a8095acfe638488ca3e426a68ddcbcd57b07e69a08a7ad0c",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "3ac6a0dc0d688582a8095acfe638488ca3e426a68ddcbcd57b07e69a08a7ad0c",
+            "text": "地下室",
+            "words": [
+              {
+                "text": "地下室",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "dccd5233018584843db92e86e3604441110a048fa1723cc197fcad1f83f4b160": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1482e4206de6ad246f43b9741dd512e3518dccfebb246dc160bb2be4090ab603.mp3",
+          "sha256": "1482e4206de6ad246f43b9741dd512e3518dccfebb246dc160bb2be4090ab603",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "1482e4206de6ad246f43b9741dd512e3518dccfebb246dc160bb2be4090ab603",
+            "text": "手",
+            "words": [
+              {
+                "text": "手",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b82ef260559f99b404a308c4daaca221771da439fdc451f0923fefc01478b7b9.mp3",
+          "sha256": "b82ef260559f99b404a308c4daaca221771da439fdc451f0923fefc01478b7b9",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "b82ef260559f99b404a308c4daaca221771da439fdc451f0923fefc01478b7b9",
+            "text": "手",
+            "words": [
+              {
+                "text": "手",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "e90d21a1bb468550d5b77fe25ce3e43d963f0a7039aa3bd8257d95ec92616525": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-be87b0b65d14f7958fea7766143498864b8ee6747525a493928cb7846fe14883.mp3",
+          "sha256": "be87b0b65d14f7958fea7766143498864b8ee6747525a493928cb7846fe14883",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "be87b0b65d14f7958fea7766143498864b8ee6747525a493928cb7846fe14883",
+            "text": "室",
+            "words": [
+              {
+                "text": "室",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-2d97a9739e99ac1a0808aecef953b1ad9899d57fd1ec0818051373280c172f58.mp3",
+          "sha256": "2d97a9739e99ac1a0808aecef953b1ad9899d57fd1ec0818051373280c172f58",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "2d97a9739e99ac1a0808aecef953b1ad9899d57fd1ec0818051373280c172f58",
+            "text": "室",
+            "words": [
+              {
+                "text": "室",
+                "start": 0.3,
+                "end": 0.4
+              }
+            ]
+          }
+        }
+      },
+      "70e6755a1613e586fb54afa86360061346d6d787e3fd03a5f975e6671b9926d8": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7a45ea1db75e3da243bec74315bb97c4990774de11a9357d713888ff26aee03b.mp3",
+          "sha256": "7a45ea1db75e3da243bec74315bb97c4990774de11a9357d713888ff26aee03b",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "7a45ea1db75e3da243bec74315bb97c4990774de11a9357d713888ff26aee03b",
+            "text": "网站",
+            "words": [
+              {
+                "text": "网站",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/811d3d995481b3e8b3de63ec3f0dfec297341e4ae6b4e2191384513fa9f5c456.mp3",
+          "sha256": "811d3d995481b3e8b3de63ec3f0dfec297341e4ae6b4e2191384513fa9f5c456",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "811d3d995481b3e8b3de63ec3f0dfec297341e4ae6b4e2191384513fa9f5c456",
+            "text": "网站",
+            "words": [
+              {
+                "text": "网站",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "4ad3ffc79f7ee725c2d6ca14655475bc65119a86925bee05df3b563a08d2f9ff": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/917e820f83365d209dc00fcbb5ed774783b8f4c5366d64241f26e97284bcf267.mp3",
+          "sha256": "917e820f83365d209dc00fcbb5ed774783b8f4c5366d64241f26e97284bcf267",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "917e820f83365d209dc00fcbb5ed774783b8f4c5366d64241f26e97284bcf267",
+            "text": "也好",
+            "words": [
+              {
+                "text": "也好",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2e309956ce7b9436f641dde33847ee6a24d18b948051dfe8893d2a1932415360.mp3",
+          "sha256": "2e309956ce7b9436f641dde33847ee6a24d18b948051dfe8893d2a1932415360",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "2e309956ce7b9436f641dde33847ee6a24d18b948051dfe8893d2a1932415360",
+            "text": "也好",
+            "words": [
+              {
+                "text": "也好",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "id": "BANK-W0398",
+  "targetId": "W0398",
+  "steps": [
+    {
+      "id": "BANK-W0398-W0398",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0398-W0398",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "minute; one hundredth of a yuan",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "分"
+            },
+            {
+              "value": "fēn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fen1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "分",
+            "pinyin": "fēn",
+            "meaning": "minute; one hundredth of a yuan",
+            "singleWord": true,
+            "audio": "2482eea3759db0c6106bb1aafcdb9746181c978a6d0ae51e7983378dab01b74f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W0398-W0398-use-minute",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W0398-W0398-use-minute",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 分 fits this context?",
+          "context": "A clock interval lasts one sixtieth of an hour.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W0398-W0398-use-minute-contrast-2",
+              "label": "One day.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "分 can name a minute, one sixtieth of an hour."
+            },
+            {
+              "id": "BANK-W0398-W0398-use-minute-contrast-1",
+              "label": "One hour.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "分 can name a minute, one sixtieth of an hour."
+            },
+            {
+              "id": "BANK-W0398-W0398-use-minute-meaning",
+              "label": "One minute.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "分 can name a minute, one sixtieth of an hour."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "分",
+            "pinyin": "fēn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "2482eea3759db0c6106bb1aafcdb9746181c978a6d0ae51e7983378dab01b74f"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W0398-W0398-use-cent",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W0398-W0398-use-cent",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 分 fits this context?",
+          "context": "A price is measured in hundredths of a yuan.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W0398-W0398-use-cent-contrast-1",
+              "label": "A minute of time.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a currency unit, 分 is one hundredth of a yuan. It names money rather than elapsed time."
+            },
+            {
+              "id": "BANK-W0398-W0398-use-cent-contrast-2",
+              "label": "A whole yuan for each unit.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a currency unit, 分 is one hundredth of a yuan. It names money rather than elapsed time."
+            },
+            {
+              "id": "BANK-W0398-W0398-use-cent-meaning",
+              "label": "The currency unit cent.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "As a currency unit, 分 is one hundredth of a yuan. It names money rather than elapsed time."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "分",
+            "pinyin": "fēn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "2482eea3759db0c6106bb1aafcdb9746181c978a6d0ae51e7983378dab01b74f"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2482eea3759db0c6106bb1aafcdb9746181c978a6d0ae51e7983378dab01b74f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ee0fda70ff6aef5c3bf6b120a3bfe304bc64a4235f5f619031934c049ac4e517.mp3",
+        "sha256": "ee0fda70ff6aef5c3bf6b120a3bfe304bc64a4235f5f619031934c049ac4e517",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "ee0fda70ff6aef5c3bf6b120a3bfe304bc64a4235f5f619031934c049ac4e517",
+          "text": "分",
+          "words": [
+            {
+              "text": "分",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-bc938afac2a08377991c69e9ae5fe7649691be1574f144b1ca9390e74edc2851.mp3",
+        "sha256": "bc938afac2a08377991c69e9ae5fe7649691be1574f144b1ca9390e74edc2851",
+        "byteLength": 10125,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "bc938afac2a08377991c69e9ae5fe7649691be1574f144b1ca9390e74edc2851",
+          "text": "分",
+          "words": [
+            {
+              "text": "分",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0398",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0398-W0398",
+      "question_ids": [
+        "BANK-W0398-W0398"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W0398",
+      "facet_id": "lexical-use-minute",
+      "part_id": "BANK-W0398-W0398-use-minute",
+      "question_ids": [
+        "BANK-W0398-W0398-use-minute"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W0398",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W0398",
+      "facet_id": "lexical-use-cent",
+      "part_id": "BANK-W0398-W0398-use-cent",
+      "question_ids": [
+        "BANK-W0398-W0398-use-cent"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W0398",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U13",
+    "stepId": "S-U13-words-r4-19",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5206"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1003",
+  "targetId": "W1003",
+  "steps": [
+    {
+      "id": "BANK-W1003-W1003",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1003-W1003",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to raise; to bring up",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "养"
+            },
+            {
+              "value": "yǎng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yang3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "养",
+            "pinyin": "yǎng",
+            "meaning": "to raise; to bring up",
+            "singleWord": true,
+            "audio": "b59d19d383dc2f18dda0f958e28a2211ff5fc1fb68457d1a4e739bb00cfdd222"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b59d19d383dc2f18dda0f958e28a2211ff5fc1fb68457d1a4e739bb00cfdd222": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-24ef8d3c98d037964d2573dea119736eabbd840c8624375e6c98de5e7cbd78de.mp3",
+        "sha256": "24ef8d3c98d037964d2573dea119736eabbd840c8624375e6c98de5e7cbd78de",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "24ef8d3c98d037964d2573dea119736eabbd840c8624375e6c98de5e7cbd78de",
+          "text": "养",
+          "words": [
+            {
+              "text": "养",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-88b39584e53f274e73cc569f9860e690d39d1d53f46f4f63a4035ebf91bd02a2.mp3",
+        "sha256": "88b39584e53f274e73cc569f9860e690d39d1d53f46f4f63a4035ebf91bd02a2",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "88b39584e53f274e73cc569f9860e690d39d1d53f46f4f63a4035ebf91bd02a2",
+          "text": "养",
+          "words": [
+            {
+              "text": "养",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1003",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1003-W1003",
+      "question_ids": [
+        "BANK-W1003-W1003"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-24",
+    "stepId": "S-U3-24-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-517b"
+    ],
+    "grammarLessonIds": []
+  }
+}

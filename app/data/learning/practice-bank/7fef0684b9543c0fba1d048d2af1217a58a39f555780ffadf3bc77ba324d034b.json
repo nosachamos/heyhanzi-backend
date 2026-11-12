@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1811",
+  "targetId": "W1811",
+  "steps": [
+    {
+      "id": "BANK-W1811-W1811",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1811-W1811",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "hygienic; sanitary",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "卫生"
+            },
+            {
+              "value": "wèishēng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wei4sheng1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "卫生",
+            "pinyin": "wèishēng",
+            "meaning": "hygienic; sanitary",
+            "singleWord": true,
+            "audio": "606a1023d70376a5faa4ae3cae7348b6556b8a42d399711b068d156cea4949fd"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "606a1023d70376a5faa4ae3cae7348b6556b8a42d399711b068d156cea4949fd": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/940ba9c53eceb10cc589df8e1bd55fba72c4e10a31fc55b5306b0caca9645890.mp3",
+        "sha256": "940ba9c53eceb10cc589df8e1bd55fba72c4e10a31fc55b5306b0caca9645890",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "940ba9c53eceb10cc589df8e1bd55fba72c4e10a31fc55b5306b0caca9645890",
+          "text": "卫生",
+          "words": [
+            {
+              "text": "卫生",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2ff7615ed1e17abc16e1aaeb5d3c735e77a58166903491a385a293574911a261.mp3",
+        "sha256": "2ff7615ed1e17abc16e1aaeb5d3c735e77a58166903491a385a293574911a261",
+        "byteLength": 16749,
+        "readAlong": {
+          "audioSha256": "2ff7615ed1e17abc16e1aaeb5d3c735e77a58166903491a385a293574911a261",
+          "text": "卫生",
+          "words": [
+            {
+              "text": "卫生",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1811",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1811-W1811",
+      "question_ids": [
+        "BANK-W1811-W1811"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-14",
+    "stepId": "S-U4-14-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8840"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2822",
+  "targetId": "W2822",
+  "steps": [
+    {
+      "id": "BANK-W2822-W2822",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2822-W2822",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "age",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "年纪"
+            },
+            {
+              "value": "niánjì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "nian2ji4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "年纪",
+            "pinyin": "niánjì",
+            "meaning": "age",
+            "singleWord": true,
+            "audio": "ac9542e57fec88f54b5e4792fbc035ddadf4c6d99e5f9f20b0a6e59a51c1d30b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ac9542e57fec88f54b5e4792fbc035ddadf4c6d99e5f9f20b0a6e59a51c1d30b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-014d44b69ee38342b9d7e04b6b21724edf4f85f7d49b346fd2d01cce53eccc92.mp3",
+        "sha256": "014d44b69ee38342b9d7e04b6b21724edf4f85f7d49b346fd2d01cce53eccc92",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "014d44b69ee38342b9d7e04b6b21724edf4f85f7d49b346fd2d01cce53eccc92",
+          "text": "年纪",
+          "words": [
+            {
+              "text": "年纪",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-50798bec03cce06edabd85532b8729a2340c76e4c07b609adcbd77bf5ae1bedd.mp3",
+        "sha256": "50798bec03cce06edabd85532b8729a2340c76e4c07b609adcbd77bf5ae1bedd",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "50798bec03cce06edabd85532b8729a2340c76e4c07b609adcbd77bf5ae1bedd",
+          "text": "年纪",
+          "words": [
+            {
+              "text": "年纪",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2822",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2822-W2822",
+      "question_ids": [
+        "BANK-W2822-W2822"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-05-P01",
+    "stepId": "S-U5-05-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7eaa"
+    ],
+    "grammarLessonIds": []
+  }
+}

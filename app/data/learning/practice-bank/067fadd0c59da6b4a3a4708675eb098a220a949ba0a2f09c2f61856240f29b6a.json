@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0444",
+  "targetId": "W0444",
+  "steps": [
+    {
+      "id": "BANK-W0444-W0444",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0444-W0444",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "cow's milk",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "牛奶"
+            },
+            {
+              "value": "niúnǎi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "niu2nai3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "牛奶",
+            "pinyin": "niúnǎi",
+            "meaning": "cow's milk",
+            "singleWord": true,
+            "audio": "25134cfae0e7e7bc9413ed85cfe826aa0c5c6dc930fcf500e35ea55b6616e61d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "25134cfae0e7e7bc9413ed85cfe826aa0c5c6dc930fcf500e35ea55b6616e61d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-44011bf8797093d589f9d78e29d33e1b59ece8933fda959f604fda476a90e28e.mp3",
+        "sha256": "44011bf8797093d589f9d78e29d33e1b59ece8933fda959f604fda476a90e28e",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "44011bf8797093d589f9d78e29d33e1b59ece8933fda959f604fda476a90e28e",
+          "text": "牛奶",
+          "words": [
+            {
+              "text": "牛奶",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-83fb2a63cad5f274fe10f4c2689960214d30947f5a0d387ac9fc5d7f7cb2de22.mp3",
+        "sha256": "83fb2a63cad5f274fe10f4c2689960214d30947f5a0d387ac9fc5d7f7cb2de22",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "83fb2a63cad5f274fe10f4c2689960214d30947f5a0d387ac9fc5d7f7cb2de22",
+          "text": "牛奶",
+          "words": [
+            {
+              "text": "牛奶",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0444",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0444-W0444",
+      "question_ids": [
+        "BANK-W0444-W0444"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U08-P01",
+    "stepId": "S-U08-words-r4-31",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5976"
+    ],
+    "grammarLessonIds": []
+  }
+}

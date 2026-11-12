@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1000",
+  "targetId": "W1000",
+  "steps": [
+    {
+      "id": "BANK-W1000-W1000",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1000-W1000",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "tooth",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "牙"
+            },
+            {
+              "value": "yá",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ya2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "牙",
+            "pinyin": "yá",
+            "meaning": "tooth",
+            "singleWord": true,
+            "audio": "1de76d9d782b5c6688d04aee6f16dceb174effaca2bc259291ac1baceaf119d1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1de76d9d782b5c6688d04aee6f16dceb174effaca2bc259291ac1baceaf119d1": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/cb1a68f17e0870c2d83a41ba4909ab276d021dd8030014e596f73d68d2cb40ce.mp3",
+        "sha256": "cb1a68f17e0870c2d83a41ba4909ab276d021dd8030014e596f73d68d2cb40ce",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "cb1a68f17e0870c2d83a41ba4909ab276d021dd8030014e596f73d68d2cb40ce",
+          "text": "牙",
+          "words": [
+            {
+              "text": "牙",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a0bdf06580b09353f353baf53230cc6dba2c023a665e3854a3ba540276b26389.mp3",
+        "sha256": "a0bdf06580b09353f353baf53230cc6dba2c023a665e3854a3ba540276b26389",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "a0bdf06580b09353f353baf53230cc6dba2c023a665e3854a3ba540276b26389",
+          "text": "牙",
+          "words": [
+            {
+              "text": "牙",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1000",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1000-W1000",
+      "question_ids": [
+        "BANK-W1000-W1000"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-09",
+    "stepId": "S-U3-09-words-r4-18",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5634"
+    ],
+    "grammarLessonIds": []
+  }
+}

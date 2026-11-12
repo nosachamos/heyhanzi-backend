@@ -1,0 +1,214 @@
+{
+  "id": "BANK-W1473",
+  "targetId": "W1473",
+  "steps": [
+    {
+      "id": "BANK-W1473-W1473",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1473-W1473",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "gram",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "克"
+            },
+            {
+              "value": "kè",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ke4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "克",
+            "pinyin": "kè",
+            "meaning": "gram",
+            "singleWord": true,
+            "audio": "0716636206bf566968f3e0713d27f44bfcadd2b8196796b13704f9514c8cde40"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1473-W1473-use-gram",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1473-W1473-use-gram",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 克 fits this context?",
+          "context": "The phrase gives a small measured mass of sugar.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1473-W1473-use-gram-meaning",
+              "label": "Three grams of sugar.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "克 after a number is the mass unit gram. A separate classifier is not inserted between the number and this unit."
+            },
+            {
+              "id": "BANK-W1473-W1473-use-gram-contrast-2",
+              "label": "Three sugar cubes.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "克 after a number is the mass unit gram. A separate classifier is not inserted between the number and this unit."
+            },
+            {
+              "id": "BANK-W1473-W1473-use-gram-contrast-1",
+              "label": "Three spoonfuls of sugar.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "克 after a number is the mass unit gram. A separate classifier is not inserted between the number and this unit."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "三克糖",
+            "pinyin": "sān kè táng",
+            "meaning": "",
+            "audio": "4d6b3e48ec6e7e810a504f6cb187656074ac268ee51a553c11170de7342b050b"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "0716636206bf566968f3e0713d27f44bfcadd2b8196796b13704f9514c8cde40": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f3c8b6d27a0539476e598210b79fb3472e775d27396a732164e343100f5436c4.mp3",
+        "sha256": "f3c8b6d27a0539476e598210b79fb3472e775d27396a732164e343100f5436c4",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "f3c8b6d27a0539476e598210b79fb3472e775d27396a732164e343100f5436c4",
+          "text": "克",
+          "words": [
+            {
+              "text": "克",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d827515ec510d9af8ab50e798d6e8439cd15fb3589764e2863e725910b29fd83.mp3",
+        "sha256": "d827515ec510d9af8ab50e798d6e8439cd15fb3589764e2863e725910b29fd83",
+        "byteLength": 7245,
+        "readAlong": {
+          "audioSha256": "d827515ec510d9af8ab50e798d6e8439cd15fb3589764e2863e725910b29fd83",
+          "text": "克",
+          "words": [
+            {
+              "text": "克",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    },
+    "4d6b3e48ec6e7e810a504f6cb187656074ac268ee51a553c11170de7342b050b": {
+      "male": {
+        "url": "/exercise-assets/audio/course-male-843c2331b50e8e6d003da17082fb8b68d796ef456fad968c5289cee170e2aa0d.mp3",
+        "sha256": "843c2331b50e8e6d003da17082fb8b68d796ef456fad968c5289cee170e2aa0d",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "843c2331b50e8e6d003da17082fb8b68d796ef456fad968c5289cee170e2aa0d",
+          "text": "三克糖",
+          "words": [
+            {
+              "text": "三",
+              "start": 0.26,
+              "end": 0.34
+            },
+            {
+              "text": "克",
+              "start": 0.48,
+              "end": 0.54
+            },
+            {
+              "text": "糖",
+              "start": 0.64,
+              "end": 0.74
+            }
+          ]
+        }
+      },
+      "female": {
+        "url": "/exercise-assets/audio/course-female-ebbfed0ef504acd1d5c0ebf0504039b93f93fd1551f79e3ca1f20e6cd0b6281d.mp3",
+        "sha256": "ebbfed0ef504acd1d5c0ebf0504039b93f93fd1551f79e3ca1f20e6cd0b6281d",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "ebbfed0ef504acd1d5c0ebf0504039b93f93fd1551f79e3ca1f20e6cd0b6281d",
+          "text": "三克糖",
+          "words": [
+            {
+              "text": "三",
+              "start": 0.15,
+              "end": 0.21
+            },
+            {
+              "text": "克",
+              "start": 0.44999999999999996,
+              "end": 0.51
+            },
+            {
+              "text": "糖",
+              "start": 0.6299999999999999,
+              "end": 0.69
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1473",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1473-W1473",
+      "question_ids": [
+        "BANK-W1473-W1473"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W1473",
+      "facet_id": "lexical-use-gram",
+      "part_id": "BANK-W1473-W1473-use-gram",
+      "question_ids": [
+        "BANK-W1473-W1473-use-gram"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1473",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-12",
+    "stepId": "S-U4-12-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-514b",
+      "mandarin-simplified-v1-char-4e09",
+      "mandarin-simplified-v1-char-7cd6"
+    ],
+    "grammarLessonIds": []
+  }
+}

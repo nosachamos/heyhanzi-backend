@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0123",
+  "targetId": "W0123",
+  "steps": [
+    {
+      "id": "BANK-W0123-W0123",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0123-W0123",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "understand",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "懂"
+            },
+            {
+              "value": "dǒng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dong3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "懂",
+            "pinyin": "dǒng",
+            "meaning": "understand",
+            "singleWord": true,
+            "audio": "6d1709fcd310e2e41c743f6f4b1acd0ce27477059aac0f1e52a6123733e58bc0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "6d1709fcd310e2e41c743f6f4b1acd0ce27477059aac0f1e52a6123733e58bc0": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-9a13579e86fe86875d1cdc25b7c305f8ef8930ae7d981c21b66b9f2b1ba08a36.mp3",
+        "sha256": "9a13579e86fe86875d1cdc25b7c305f8ef8930ae7d981c21b66b9f2b1ba08a36",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "9a13579e86fe86875d1cdc25b7c305f8ef8930ae7d981c21b66b9f2b1ba08a36",
+          "text": "懂",
+          "words": [
+            {
+              "text": "懂",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-f2c007a7a7c6d2cfa871836ecee4f0ba60b47b85e3bd2ec6045cca1e904f8767.mp3",
+        "sha256": "f2c007a7a7c6d2cfa871836ecee4f0ba60b47b85e3bd2ec6045cca1e904f8767",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "f2c007a7a7c6d2cfa871836ecee4f0ba60b47b85e3bd2ec6045cca1e904f8767",
+          "text": "懂",
+          "words": [
+            {
+              "text": "懂",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0123",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0123-W0123",
+      "question_ids": [
+        "BANK-W0123-W0123"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U11",
+    "stepId": "S-U11-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-61c2"
+    ],
+    "grammarLessonIds": []
+  }
+}

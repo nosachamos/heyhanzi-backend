@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1862",
+  "targetId": "W1862",
+  "steps": [
+    {
+      "id": "BANK-W1862-W1862",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1862-W1862",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "a star; the stars in the sky",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "星星"
+            },
+            {
+              "value": "xīngxing",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xing1xing5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "星星",
+            "pinyin": "xīngxing",
+            "meaning": "a star; the stars in the sky",
+            "singleWord": true,
+            "audio": "b3084d63dd70430724507b3401c732a207c2a4e7af357fa99aad85976c042e08"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b3084d63dd70430724507b3401c732a207c2a4e7af357fa99aad85976c042e08": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-6521b6fb4a4bb02479d5c243f34ef9d75591e0e585055c8b006a1f38075d9812.mp3",
+        "sha256": "6521b6fb4a4bb02479d5c243f34ef9d75591e0e585055c8b006a1f38075d9812",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "6521b6fb4a4bb02479d5c243f34ef9d75591e0e585055c8b006a1f38075d9812",
+          "text": "星星",
+          "words": [
+            {
+              "text": "星星",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-cb24695a1ee4a6db1d639b51f3ae2fd54e5a25a2b206c79d6a3a32161cae6699.mp3",
+        "sha256": "cb24695a1ee4a6db1d639b51f3ae2fd54e5a25a2b206c79d6a3a32161cae6699",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "cb24695a1ee4a6db1d639b51f3ae2fd54e5a25a2b206c79d6a3a32161cae6699",
+          "text": "星星",
+          "words": [
+            {
+              "text": "星星",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1862",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1862-W1862",
+      "question_ids": [
+        "BANK-W1862-W1862"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-26",
+    "stepId": "S-U4-26-words-r4-19",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-661f"
+    ],
+    "grammarLessonIds": []
+  }
+}

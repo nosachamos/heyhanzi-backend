@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2269",
+  "targetId": "W2269",
+  "steps": [
+    {
+      "id": "BANK-W2269-W2269",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2269-W2269",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "local",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "当地"
+            },
+            {
+              "value": "dāngdì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dang1di4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "当地",
+            "pinyin": "dāngdì",
+            "meaning": "local",
+            "singleWord": true,
+            "audio": "cad9e6735e765e3c869f72cddd01efc9ffb82abef9c807cce2ea396d7ba01158"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "cad9e6735e765e3c869f72cddd01efc9ffb82abef9c807cce2ea396d7ba01158": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-e5f87df6fcda411aef7f03d0538502dac931ae2c809f1c849a8c37d37e6d0073.mp3",
+        "sha256": "e5f87df6fcda411aef7f03d0538502dac931ae2c809f1c849a8c37d37e6d0073",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "e5f87df6fcda411aef7f03d0538502dac931ae2c809f1c849a8c37d37e6d0073",
+          "text": "当地",
+          "words": [
+            {
+              "text": "当地",
+              "start": 0.12,
+              "end": 0.46
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-8ce91cd0a257ca194d8cf75fff970af874bddfe34313e47cbbbd0386f104bc1d.mp3",
+        "sha256": "8ce91cd0a257ca194d8cf75fff970af874bddfe34313e47cbbbd0386f104bc1d",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "8ce91cd0a257ca194d8cf75fff970af874bddfe34313e47cbbbd0386f104bc1d",
+          "text": "当地",
+          "words": [
+            {
+              "text": "当地",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2269",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2269-W2269",
+      "question_ids": [
+        "BANK-W2269-W2269"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-45-P01",
+    "stepId": "S-U5-45-words-r4-14",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5f53"
+    ],
+    "grammarLessonIds": []
+  }
+}

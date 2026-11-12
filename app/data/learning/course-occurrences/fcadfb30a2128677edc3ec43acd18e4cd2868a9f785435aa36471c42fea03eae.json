@@ -1,0 +1,699 @@
+{
+  "id": "EX-CHAR-char-77e5",
+  "revision": 2,
+  "unit": "U11",
+  "stage": "ST-HSK1",
+  "after": "S-U11-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "知",
+  "sourceBlockId": "mandarin-simplified-v1-char-77e5",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-77e5",
+        "text": "知",
+        "pinyin": "zhī",
+        "meaning": "to know; to be aware",
+        "characters": [
+          {
+            "id": "C-77E5",
+            "text": "知"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-4b848d5eeb4e2379c974edf3",
+        "text": "少见",
+        "pinyin": "shǎojiàn",
+        "meaning": "rare; seldom seen; (formal) it's a rare pleasure to see you",
+        "characters": [
+          {
+            "id": "C-5C11",
+            "text": "少"
+          },
+          {
+            "id": "C-89C1",
+            "text": "见"
+          }
+        ]
+      },
+      {
+        "id": "W0379",
+        "text": "打电话",
+        "pinyin": "dǎdiànhuà",
+        "meaning": "to make a telephone call",
+        "characters": [
+          {
+            "id": "C-6253",
+            "text": "打"
+          },
+          {
+            "id": "C-7535",
+            "text": "电"
+          },
+          {
+            "id": "C-8BDD",
+            "text": "话"
+          }
+        ]
+      },
+      {
+        "id": "W3518",
+        "text": "知名",
+        "pinyin": "zhīmíng",
+        "meaning": "well-known; famous",
+        "characters": [
+          {
+            "id": "C-77E5",
+            "text": "知"
+          },
+          {
+            "id": "C-540D",
+            "text": "名"
+          }
+        ]
+      },
+      {
+        "id": "W4604",
+        "text": "漂",
+        "pinyin": "piāo",
+        "meaning": "to float; to drift",
+        "characters": [
+          {
+            "id": "C-6F02",
+            "text": "漂"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "227e0f3a3e9e3970851536071746a0bf5d1ac876affc028a3178753b8e004cee",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-77e5",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "知",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-77e5-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3518",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "well-known; famous",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "知名"
+              },
+              {
+                "value": "zhīmíng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhi1ming2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "知名",
+              "pinyin": "zhīmíng",
+              "meaning": "well-known; famous",
+              "audio": "d24e8207d7f7d2f7da338c0cb9e9b125fe119e086a2f994dcf7d275b0c039b7e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-77e5-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-77e5",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "知",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0379",
+                "label": "to make a telephone call",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-77e5",
+                "label": "to know; to be aware",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-4b848d5eeb4e2379c974edf3",
+                "label": "rare; seldom seen",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-77e5-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "知",
+        "pinyin": "zhī",
+        "meaning": "to know; to be aware",
+        "source": "/stroke-data/77e5.json",
+        "reference": {
+          "character": "知",
+          "sha256": "c9084498917e906b268454caa15ca89690ad865d605f2b954b14c03aa942e2ad",
+          "medians": [
+            [
+              [
+                303,
+                796
+              ],
+              [
+                335,
+                756
+              ],
+              [
+                307,
+                672
+              ],
+              [
+                238,
+                553
+              ],
+              [
+                153,
+                467
+              ]
+            ],
+            [
+              [
+                267,
+                550
+              ],
+              [
+                330,
+                552
+              ],
+              [
+                382,
+                561
+              ],
+              [
+                460,
+                588
+              ],
+              [
+                510,
+                596
+              ],
+              [
+                534,
+                593
+              ]
+            ],
+            [
+              [
+                93,
+                319
+              ],
+              [
+                126,
+                311
+              ],
+              [
+                166,
+                312
+              ],
+              [
+                452,
+                380
+              ],
+              [
+                519,
+                387
+              ],
+              [
+                542,
+                382
+              ]
+            ],
+            [
+              [
+                334,
+                527
+              ],
+              [
+                368,
+                504
+              ],
+              [
+                379,
+                486
+              ],
+              [
+                357,
+                326
+              ],
+              [
+                333,
+                250
+              ],
+              [
+                286,
+                164
+              ],
+              [
+                226,
+                99
+              ],
+              [
+                170,
+                58
+              ],
+              [
+                123,
+                35
+              ]
+            ],
+            [
+              [
+                413,
+                260
+              ],
+              [
+                498,
+                186
+              ],
+              [
+                515,
+                157
+              ],
+              [
+                522,
+                122
+              ]
+            ],
+            [
+              [
+                554,
+                469
+              ],
+              [
+                581,
+                443
+              ],
+              [
+                593,
+                410
+              ],
+              [
+                632,
+                143
+              ]
+            ],
+            [
+              [
+                610,
+                464
+              ],
+              [
+                634,
+                453
+              ],
+              [
+                809,
+                491
+              ],
+              [
+                851,
+                470
+              ],
+              [
+                862,
+                457
+              ],
+              [
+                827,
+                289
+              ],
+              [
+                803,
+                273
+              ]
+            ],
+            [
+              [
+                654,
+                204
+              ],
+              [
+                666,
+                218
+              ],
+              [
+                786,
+                240
+              ],
+              [
+                839,
+                241
+              ],
+              [
+                866,
+                233
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-77e5-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4604",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to float; to drift",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "漂"
+              },
+              {
+                "value": "piāo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "piao1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "漂",
+              "pinyin": "piāo",
+              "meaning": "to float; to drift",
+              "audio": "08973c7f3400080adf6d6cabaaab035ff42c690ec2deb912c0988a5e5eb25754",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-77e5-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-77e5",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to know; to be aware",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "知"
+              },
+              {
+                "value": "zhī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "知",
+              "pinyin": "zhī",
+              "meaning": "to know; to be aware",
+              "audio": "037c9f38b55b4cb2f15e965336c26daa73792255926c40322813f9b5fb949de4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "037c9f38b55b4cb2f15e965336c26daa73792255926c40322813f9b5fb949de4"
+            ],
+            "transcript": [
+              {
+                "text": "知",
+                "pinyin": "zhī",
+                "meaning": "to know; to be aware",
+                "audio": "037c9f38b55b4cb2f15e965336c26daa73792255926c40322813f9b5fb949de4",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-77E5",
+      "character": "知",
+      "lessonIds": [
+        "LESSON-C-77E5"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-77e5-word",
+        "EX-CHAR-char-77e5-recognize",
+        "EX-CHAR-char-77e5-write",
+        "EX-CHAR-char-77e5-familiar",
+        "EX-CHAR-char-77e5-recall"
+      ]
+    },
+    "audio": {
+      "037c9f38b55b4cb2f15e965336c26daa73792255926c40322813f9b5fb949de4": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-227cc0fb483dbb1f21e2a1461e02494f2093cc1a6007313d2798bdafef3e9b1b.mp3",
+          "sha256": "227cc0fb483dbb1f21e2a1461e02494f2093cc1a6007313d2798bdafef3e9b1b",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "227cc0fb483dbb1f21e2a1461e02494f2093cc1a6007313d2798bdafef3e9b1b",
+            "text": "知",
+            "words": [
+              {
+                "text": "知",
+                "start": 0.16,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-e0a3c6ef767f900cf07771ab4acbe5e66cce1e78fbfd6235033ed7abf7820916.mp3",
+          "sha256": "e0a3c6ef767f900cf07771ab4acbe5e66cce1e78fbfd6235033ed7abf7820916",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "e0a3c6ef767f900cf07771ab4acbe5e66cce1e78fbfd6235033ed7abf7820916",
+            "text": "知",
+            "words": [
+              {
+                "text": "知",
+                "start": 0.14,
+                "end": 0.26
+              }
+            ]
+          }
+        }
+      },
+      "0b0f3b30b07cddb832a79773fddd546aaf61ab5474a34fbb2c09a6d945c15d01": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b5ac7b1b9ad6058a47ae7d7c813a076ea62e04b1d2fbb31b172176c132a461fc.mp3",
+          "sha256": "b5ac7b1b9ad6058a47ae7d7c813a076ea62e04b1d2fbb31b172176c132a461fc",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "b5ac7b1b9ad6058a47ae7d7c813a076ea62e04b1d2fbb31b172176c132a461fc",
+            "text": "少见",
+            "words": [
+              {
+                "text": "少见",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3008f2cc2c59b58d51aae13b963cc2ffb90cf651d1cb100f286d939e6ca1cddc.mp3",
+          "sha256": "3008f2cc2c59b58d51aae13b963cc2ffb90cf651d1cb100f286d939e6ca1cddc",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "3008f2cc2c59b58d51aae13b963cc2ffb90cf651d1cb100f286d939e6ca1cddc",
+            "text": "少见",
+            "words": [
+              {
+                "text": "少见",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "00b1e560e2e5957321300ed4528f90553acd5b22f3a7540a7350cd9274e5e99d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3328d11777439ba42b9c086b017f8869c0ed4507e50db353a59181293fd9180a.mp3",
+          "sha256": "3328d11777439ba42b9c086b017f8869c0ed4507e50db353a59181293fd9180a",
+          "byteLength": 16461,
+          "readAlong": {
+            "audioSha256": "3328d11777439ba42b9c086b017f8869c0ed4507e50db353a59181293fd9180a",
+            "text": "打电话",
+            "words": [
+              {
+                "text": "打电话",
+                "start": 0.21,
+                "end": 0.8699999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-418a9446e5c5a0d5aa00476875e39098e1797874e88e75f47cb79b3d9fd66dfe.mp3",
+          "sha256": "418a9446e5c5a0d5aa00476875e39098e1797874e88e75f47cb79b3d9fd66dfe",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "418a9446e5c5a0d5aa00476875e39098e1797874e88e75f47cb79b3d9fd66dfe",
+            "text": "打电话",
+            "words": [
+              {
+                "text": "打电话",
+                "start": 0.09,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "d24e8207d7f7d2f7da338c0cb9e9b125fe119e086a2f994dcf7d275b0c039b7e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c7bd105d587c57d4dbaf573680953a28b900746c5268a05c671ee52cb6cb342c.mp3",
+          "sha256": "c7bd105d587c57d4dbaf573680953a28b900746c5268a05c671ee52cb6cb342c",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "c7bd105d587c57d4dbaf573680953a28b900746c5268a05c671ee52cb6cb342c",
+            "text": "知名",
+            "words": [
+              {
+                "text": "知名",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/fc33f30ef03d928eceb66beac38b3cfd0354be926cd31491d75cea0e46feb1ee.mp3",
+          "sha256": "fc33f30ef03d928eceb66beac38b3cfd0354be926cd31491d75cea0e46feb1ee",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "fc33f30ef03d928eceb66beac38b3cfd0354be926cd31491d75cea0e46feb1ee",
+            "text": "知名",
+            "words": [
+              {
+                "text": "知名",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "08973c7f3400080adf6d6cabaaab035ff42c690ec2deb912c0988a5e5eb25754": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b28f6fb3c62eacf65cd5a3532d0c6c5cc1b35e1bb861fd46e0c1178572340e2a.mp3",
+          "sha256": "b28f6fb3c62eacf65cd5a3532d0c6c5cc1b35e1bb861fd46e0c1178572340e2a",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "b28f6fb3c62eacf65cd5a3532d0c6c5cc1b35e1bb861fd46e0c1178572340e2a",
+            "text": "漂",
+            "words": [
+              {
+                "text": "漂",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/fc8a893c717e8cd117a70b60cf0fbe27d8ccc9a0191f1822a3a739a09d5cbd09.mp3",
+          "sha256": "fc8a893c717e8cd117a70b60cf0fbe27d8ccc9a0191f1822a3a739a09d5cbd09",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "fc8a893c717e8cd117a70b60cf0fbe27d8ccc9a0191f1822a3a739a09d5cbd09",
+            "text": "漂",
+            "words": [
+              {
+                "text": "漂",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

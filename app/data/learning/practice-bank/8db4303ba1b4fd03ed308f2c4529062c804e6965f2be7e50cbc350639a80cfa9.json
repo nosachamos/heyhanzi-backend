@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0047",
+  "targetId": "W0047",
+  "steps": [
+    {
+      "id": "BANK-W0047-W0047",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0047-W0047",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "five",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "五"
+            },
+            {
+              "value": "wǔ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wu3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "五",
+            "pinyin": "wǔ",
+            "meaning": "five",
+            "singleWord": true,
+            "audio": "7dbca73ab2410987dbc9bfe76e8bb7eaf98663605fa6d5331e5c220ddb85582a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7dbca73ab2410987dbc9bfe76e8bb7eaf98663605fa6d5331e5c220ddb85582a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a1ca72684ff932474d9adba30e9ebe64731baa47063ad6efb77e842bfcd4fc47.mp3",
+        "sha256": "a1ca72684ff932474d9adba30e9ebe64731baa47063ad6efb77e842bfcd4fc47",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "a1ca72684ff932474d9adba30e9ebe64731baa47063ad6efb77e842bfcd4fc47",
+          "text": "五",
+          "words": [
+            {
+              "text": "五",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-7fa0d626b19f0c48bd3bb1ef440437d32773aaf030e3b9c80e911353a378419c.mp3",
+        "sha256": "7fa0d626b19f0c48bd3bb1ef440437d32773aaf030e3b9c80e911353a378419c",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "7fa0d626b19f0c48bd3bb1ef440437d32773aaf030e3b9c80e911353a378419c",
+          "text": "五",
+          "words": [
+            {
+              "text": "五",
+              "start": 0.32,
+              "end": 0.4
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0047",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0047-W0047",
+      "question_ids": [
+        "BANK-W0047-W0047"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U05-P01",
+    "stepId": "S-U05-words-r4-8",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4e94"
+    ],
+    "grammarLessonIds": []
+  }
+}

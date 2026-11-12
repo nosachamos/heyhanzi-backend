@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1940",
+  "targetId": "W1940",
+  "steps": [
+    {
+      "id": "BANK-W1940-W1940",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1940-W1940",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "mooncake",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "月饼"
+            },
+            {
+              "value": "yuèbing",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yue4bing5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "月饼",
+            "pinyin": "yuèbing",
+            "meaning": "mooncake",
+            "singleWord": true,
+            "audio": "5ded5abebef9f04040c41fe33ca36a99703ccf25248534bd2a0048ef8d604198"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5ded5abebef9f04040c41fe33ca36a99703ccf25248534bd2a0048ef8d604198": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/beb580e2f324835ef0b216d3101fb2afef707e688763e25cdfd54bfdf746ad6f.mp3",
+        "sha256": "beb580e2f324835ef0b216d3101fb2afef707e688763e25cdfd54bfdf746ad6f",
+        "byteLength": 15885,
+        "readAlong": {
+          "audioSha256": "beb580e2f324835ef0b216d3101fb2afef707e688763e25cdfd54bfdf746ad6f",
+          "text": "月饼",
+          "words": [
+            {
+              "text": "月饼",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/66c941794b31f229df60e7c9dae91235e936700076c0c1863473d0a3e0a2f793.mp3",
+        "sha256": "66c941794b31f229df60e7c9dae91235e936700076c0c1863473d0a3e0a2f793",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "66c941794b31f229df60e7c9dae91235e936700076c0c1863473d0a3e0a2f793",
+          "text": "月饼",
+          "words": [
+            {
+              "text": "月饼",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1940",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1940-W1940",
+      "question_ids": [
+        "BANK-W1940-W1940"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-08",
+    "stepId": "S-U4-08-words-r4-17",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-67ff"
+    ],
+    "grammarLessonIds": []
+  }
+}

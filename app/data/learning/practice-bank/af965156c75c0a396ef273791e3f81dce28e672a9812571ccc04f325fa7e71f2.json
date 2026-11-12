@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1500",
+  "targetId": "W1500",
+  "steps": [
+    {
+      "id": "BANK-W1500-W1500",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1500-W1500",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "elderly; old age",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "老年"
+            },
+            {
+              "value": "lǎonián",
+              "mode": "pinyin"
+            },
+            {
+              "value": "lao3nian2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "老年",
+            "pinyin": "lǎonián",
+            "meaning": "elderly; old age",
+            "singleWord": true,
+            "audio": "e32d5a3705b0459bf60bf2f6674af47f8742da1b511aae24d88daf9cceb49414"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e32d5a3705b0459bf60bf2f6674af47f8742da1b511aae24d88daf9cceb49414": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/dc82a33d9c34ba1048d84fe432e742d2163d69f1505df8f45c646c5a61242b79.mp3",
+        "sha256": "dc82a33d9c34ba1048d84fe432e742d2163d69f1505df8f45c646c5a61242b79",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "dc82a33d9c34ba1048d84fe432e742d2163d69f1505df8f45c646c5a61242b79",
+          "text": "老年",
+          "words": [
+            {
+              "text": "老年",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5c53a1e5ba3dbb203e5d53c5c757c1e5e29f2bc86470460367e4cc183d6be54f.mp3",
+        "sha256": "5c53a1e5ba3dbb203e5d53c5c757c1e5e29f2bc86470460367e4cc183d6be54f",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "5c53a1e5ba3dbb203e5d53c5c757c1e5e29f2bc86470460367e4cc183d6be54f",
+          "text": "老年",
+          "words": [
+            {
+              "text": "老年",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1500",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1500-W1500",
+      "question_ids": [
+        "BANK-W1500-W1500"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-02",
+    "stepId": "S-U4-02-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e74"
+    ],
+    "grammarLessonIds": []
+  }
+}

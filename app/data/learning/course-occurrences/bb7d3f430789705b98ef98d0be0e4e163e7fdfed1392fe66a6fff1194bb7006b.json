@@ -1,0 +1,621 @@
+{
+  "id": "EX-CHAR-char-6251",
+  "revision": 2,
+  "unit": "U6-37-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-37-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "扑",
+  "sourceBlockId": "mandarin-simplified-v1-char-6251",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-1d0c42572901b2f65e07430b",
+        "text": "红扑扑",
+        "pinyin": "hóng pū pū",
+        "meaning": "red",
+        "characters": [
+          {
+            "id": "C-7EA2",
+            "text": "红"
+          },
+          {
+            "id": "C-6251",
+            "text": "扑"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ee2251de5a9a747cf576bb98",
+        "text": "队形",
+        "pinyin": "duì xíng",
+        "meaning": "formation",
+        "characters": [
+          {
+            "id": "C-961F",
+            "text": "队"
+          },
+          {
+            "id": "C-5F62",
+            "text": "形"
+          }
+        ]
+      },
+      {
+        "id": "W0570",
+        "text": "门口",
+        "pinyin": "ménkǒu",
+        "meaning": "doorway; gate",
+        "characters": [
+          {
+            "id": "C-95E8",
+            "text": "门"
+          },
+          {
+            "id": "C-53E3",
+            "text": "口"
+          }
+        ]
+      },
+      {
+        "id": "W3399",
+        "text": "营养",
+        "pinyin": "yíngyǎng",
+        "meaning": "nutrition; nourishment",
+        "characters": [
+          {
+            "id": "C-8425",
+            "text": "营"
+          },
+          {
+            "id": "C-517B",
+            "text": "养"
+          }
+        ]
+      },
+      {
+        "id": "W4621",
+        "text": "扑",
+        "pinyin": "pū",
+        "meaning": "to throw oneself at; to pounce on",
+        "characters": [
+          {
+            "id": "C-6251",
+            "text": "扑"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "c53574b8e49bc2259be5b52546ad371203a1e0f439bdd4987046bfa858f52f30",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6251",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "扑",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6251-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-1d0c42572901b2f65e07430b",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "red",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "红扑扑"
+              },
+              {
+                "value": "hóng pū pū",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hong2pu1pu1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "红扑扑",
+              "pinyin": "hóng pū pū",
+              "meaning": "red",
+              "audio": "57b9f3517072d8230afb42aea918ccb5a9fc7901678918d1ddac51115ef45aba",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6251-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W4621",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "扑",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W3399",
+                "label": "nutrition; nourishment",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W4621",
+                "label": "to throw oneself at; to pounce on",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0570",
+                "label": "doorway; gate",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6251-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "扑",
+        "pinyin": "pū",
+        "meaning": "to throw oneself at; to pounce on",
+        "source": "/stroke-data/6251.json",
+        "reference": {
+          "character": "扑",
+          "sha256": "46aa4eeb62e52ccc999f430bd47c572ba1e4a57cb60a69157ba7b278677f94c2",
+          "medians": [
+            [
+              [
+                155,
+                488
+              ],
+              [
+                185,
+                484
+              ],
+              [
+                241,
+                492
+              ],
+              [
+                437,
+                551
+              ],
+              [
+                486,
+                553
+              ]
+            ],
+            [
+              [
+                320,
+                782
+              ],
+              [
+                345,
+                766
+              ],
+              [
+                365,
+                740
+              ],
+              [
+                353,
+                427
+              ],
+              [
+                356,
+                133
+              ],
+              [
+                350,
+                103
+              ],
+              [
+                335,
+                74
+              ],
+              [
+                229,
+                115
+              ]
+            ],
+            [
+              [
+                71,
+                212
+              ],
+              [
+                125,
+                206
+              ],
+              [
+                247,
+                287
+              ],
+              [
+                437,
+                401
+              ]
+            ],
+            [
+              [
+                597,
+                788
+              ],
+              [
+                640,
+                746
+              ],
+              [
+                650,
+                722
+              ],
+              [
+                647,
+                284
+              ],
+              [
+                633,
+                75
+              ],
+              [
+                636,
+                -16
+              ]
+            ],
+            [
+              [
+                716,
+                487
+              ],
+              [
+                856,
+                426
+              ],
+              [
+                883,
+                407
+              ],
+              [
+                912,
+                365
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6251-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-ee2251de5a9a747cf576bb98",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "formation",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "队形"
+              },
+              {
+                "value": "duì xíng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "dui4xing2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "队形",
+              "pinyin": "duì xíng",
+              "meaning": "formation",
+              "audio": "a04930e0a8e7ac6398ab4fa5ce6b94e2896d958f81878b57178d733251b71ede",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6251-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W4621",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to throw oneself at; to pounce on",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "扑"
+              },
+              {
+                "value": "pū",
+                "mode": "pinyin"
+              },
+              {
+                "value": "pu1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "扑",
+              "pinyin": "pū",
+              "meaning": "to throw oneself at; to pounce on",
+              "audio": "63a2d45e388709995d67279f540b5808527ce5826ccb5f976e6e8cc1603e1c92",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "63a2d45e388709995d67279f540b5808527ce5826ccb5f976e6e8cc1603e1c92"
+            ],
+            "transcript": [
+              {
+                "text": "扑",
+                "pinyin": "pū",
+                "meaning": "to throw oneself at; to pounce on",
+                "audio": "63a2d45e388709995d67279f540b5808527ce5826ccb5f976e6e8cc1603e1c92",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6251",
+      "character": "扑",
+      "lessonIds": [
+        "LESSON-C-6251"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6251-word",
+        "EX-CHAR-char-6251-recognize",
+        "EX-CHAR-char-6251-write",
+        "EX-CHAR-char-6251-familiar",
+        "EX-CHAR-char-6251-recall"
+      ]
+    },
+    "audio": {
+      "57b9f3517072d8230afb42aea918ccb5a9fc7901678918d1ddac51115ef45aba": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/51a45c8743b50c2e928f0f5f9285f57294d9ff01b456ecd2bbe6e0c6e2a7d15d.mp3",
+          "sha256": "51a45c8743b50c2e928f0f5f9285f57294d9ff01b456ecd2bbe6e0c6e2a7d15d",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "51a45c8743b50c2e928f0f5f9285f57294d9ff01b456ecd2bbe6e0c6e2a7d15d",
+            "text": "红扑扑",
+            "words": [
+              {
+                "text": "红扑扑",
+                "start": 0.15,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/06c854a8958760ea77fe5beefec51903b765d037da22cfdfafe3c5eb3efe217e.mp3",
+          "sha256": "06c854a8958760ea77fe5beefec51903b765d037da22cfdfafe3c5eb3efe217e",
+          "byteLength": 12141,
+          "qualityWarning": "too-fast",
+          "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+          "readAlong": {
+            "audioSha256": "06c854a8958760ea77fe5beefec51903b765d037da22cfdfafe3c5eb3efe217e",
+            "text": "红扑扑",
+            "words": [
+              {
+                "text": "红扑扑",
+                "start": 0.15,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "a04930e0a8e7ac6398ab4fa5ce6b94e2896d958f81878b57178d733251b71ede": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1dfd3a6f900f0afb0611fed1dcab4cefba9f287ca28aa921489b48361e73c5ef.mp3",
+          "sha256": "1dfd3a6f900f0afb0611fed1dcab4cefba9f287ca28aa921489b48361e73c5ef",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "1dfd3a6f900f0afb0611fed1dcab4cefba9f287ca28aa921489b48361e73c5ef",
+            "text": "队形",
+            "words": [
+              {
+                "text": "队形",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0227d364da404fc3112c7777cc84ca5adaf507232d2397dd561db8262dde5f47.mp3",
+          "sha256": "0227d364da404fc3112c7777cc84ca5adaf507232d2397dd561db8262dde5f47",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "0227d364da404fc3112c7777cc84ca5adaf507232d2397dd561db8262dde5f47",
+            "text": "队形",
+            "words": [
+              {
+                "text": "队形",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "4a70d23d7b5c0ff47eb457164ed1e5c80d02c6af31f8b80e1f8964fb5e5cbebf": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-30a299bd2af95d72f35e819249669a42bce859a2bb9504155a88102a8d92edaa.mp3",
+          "sha256": "30a299bd2af95d72f35e819249669a42bce859a2bb9504155a88102a8d92edaa",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "30a299bd2af95d72f35e819249669a42bce859a2bb9504155a88102a8d92edaa",
+            "text": "门口",
+            "words": [
+              {
+                "text": "门口",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-a271986008e6c25c6d359f2d2d2c74a0039b63188fa4e8e7a7dd6ff5ef9d95ef.mp3",
+          "sha256": "a271986008e6c25c6d359f2d2d2c74a0039b63188fa4e8e7a7dd6ff5ef9d95ef",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "a271986008e6c25c6d359f2d2d2c74a0039b63188fa4e8e7a7dd6ff5ef9d95ef",
+            "text": "门口",
+            "words": [
+              {
+                "text": "门口",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "b5090ff2cf49ee68c10129877c70a430eedcba33e77f3f46715810f7e6f139ec": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-0728c3b4340f8fd33e60d04d3a813bd7ed462391ae520ba862c77c9ffd5896a0.mp3",
+          "sha256": "0728c3b4340f8fd33e60d04d3a813bd7ed462391ae520ba862c77c9ffd5896a0",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "0728c3b4340f8fd33e60d04d3a813bd7ed462391ae520ba862c77c9ffd5896a0",
+            "text": "营养",
+            "words": [
+              {
+                "text": "营养",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-76647928b277ab69a2364058978a1d69d947945923dcf76d19a8d87649de68ea.mp3",
+          "sha256": "76647928b277ab69a2364058978a1d69d947945923dcf76d19a8d87649de68ea",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "76647928b277ab69a2364058978a1d69d947945923dcf76d19a8d87649de68ea",
+            "text": "营养",
+            "words": [
+              {
+                "text": "营养",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "63a2d45e388709995d67279f540b5808527ce5826ccb5f976e6e8cc1603e1c92": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/cb23dd5b8f5680e32a5d53421f564e1b0dc672065c136029abb638ede1ab5b65.mp3",
+          "sha256": "cb23dd5b8f5680e32a5d53421f564e1b0dc672065c136029abb638ede1ab5b65",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "cb23dd5b8f5680e32a5d53421f564e1b0dc672065c136029abb638ede1ab5b65",
+            "text": "扑",
+            "words": [
+              {
+                "text": "扑",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f71af88759eb885e052f575b7d79ac620797ea0ed897dbb9ad7000d8217f3196.mp3",
+          "sha256": "f71af88759eb885e052f575b7d79ac620797ea0ed897dbb9ad7000d8217f3196",
+          "byteLength": 10125,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "f71af88759eb885e052f575b7d79ac620797ea0ed897dbb9ad7000d8217f3196",
+            "text": "扑",
+            "words": [
+              {
+                "text": "扑",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

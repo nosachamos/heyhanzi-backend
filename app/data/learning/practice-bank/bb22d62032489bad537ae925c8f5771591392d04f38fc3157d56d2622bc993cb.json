@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3079",
+  "targetId": "W3079",
+  "steps": [
+    {
+      "id": "BANK-W3079-W3079",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3079-W3079",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "bookshelf",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "书架"
+            },
+            {
+              "value": "shūjià",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shu1jia4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "书架",
+            "pinyin": "shūjià",
+            "meaning": "bookshelf",
+            "singleWord": true,
+            "audio": "a47ce81e0a33707e074276e70437b593ba4470bf43d241c12533416595dcf19f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a47ce81e0a33707e074276e70437b593ba4470bf43d241c12533416595dcf19f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-718ede6c85f4bd183640430b7270c60471da457e993d12adb7641c8046955c16.mp3",
+        "sha256": "718ede6c85f4bd183640430b7270c60471da457e993d12adb7641c8046955c16",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "718ede6c85f4bd183640430b7270c60471da457e993d12adb7641c8046955c16",
+          "text": "书架",
+          "words": [
+            {
+              "text": "书架",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-4e8567b136afa3b83e1c140e6ce85f3726658eca5a3891a6d0f892f7250f9e91.mp3",
+        "sha256": "4e8567b136afa3b83e1c140e6ce85f3726658eca5a3891a6d0f892f7250f9e91",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "4e8567b136afa3b83e1c140e6ce85f3726658eca5a3891a6d0f892f7250f9e91",
+          "text": "书架",
+          "words": [
+            {
+              "text": "书架",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3079",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3079-W3079",
+      "question_ids": [
+        "BANK-W3079-W3079"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-03",
+    "stepId": "S-U5-03-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-67b6"
+    ],
+    "grammarLessonIds": []
+  }
+}

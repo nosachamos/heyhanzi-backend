@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5400",
+  "targetId": "W5400",
+  "steps": [
+    {
+      "id": "BANK-W5400-W5400",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5400-W5400",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "at long last; finally",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "总算"
+            },
+            {
+              "value": "zǒngsuàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zong3suan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "总算",
+            "pinyin": "zǒngsuàn",
+            "meaning": "at long last; finally",
+            "singleWord": true,
+            "audio": "fa9a46452ff3096be5d307230f99a4a976f034118e53fe003dd912da23978f31"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "fa9a46452ff3096be5d307230f99a4a976f034118e53fe003dd912da23978f31": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-16611cbcc1749edea810bf707626b421d171bffcd7eb6ff98c6a760240bae043.mp3",
+        "sha256": "16611cbcc1749edea810bf707626b421d171bffcd7eb6ff98c6a760240bae043",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "16611cbcc1749edea810bf707626b421d171bffcd7eb6ff98c6a760240bae043",
+          "text": "总算",
+          "words": [
+            {
+              "text": "总算",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-af5c8b71b391930e668f30c34bedab84f441e411a4e9581875c60df69f4f8373.mp3",
+        "sha256": "af5c8b71b391930e668f30c34bedab84f441e411a4e9581875c60df69f4f8373",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "af5c8b71b391930e668f30c34bedab84f441e411a4e9581875c60df69f4f8373",
+          "text": "总算",
+          "words": [
+            {
+              "text": "总算",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5400",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5400-W5400",
+      "question_ids": [
+        "BANK-W5400-W5400"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-24-P02",
+    "stepId": "S-U6-24-words-r4-29",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-603b"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3270",
+  "targetId": "W3270",
+  "steps": [
+    {
+      "id": "BANK-W3270-W3270",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3270-W3270",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "related; relevant",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "相关"
+            },
+            {
+              "value": "xiāngguān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xiang1guan1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "相关",
+            "pinyin": "xiāngguān",
+            "meaning": "related; relevant",
+            "singleWord": true,
+            "audio": "5d4537db13b36e512fe42e0b29a16856489d7ff97170144d9bb6912b78925a44"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5d4537db13b36e512fe42e0b29a16856489d7ff97170144d9bb6912b78925a44": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-6186d4d94307386d137baa84cc8083b256752e05e37af396ef3f974b889749df.mp3",
+        "sha256": "6186d4d94307386d137baa84cc8083b256752e05e37af396ef3f974b889749df",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "6186d4d94307386d137baa84cc8083b256752e05e37af396ef3f974b889749df",
+          "text": "相关",
+          "words": [
+            {
+              "text": "相关",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2fa405adc6b8221d9fb2a88bc470c19cc9a7527afe78fff8d7c8323b40cfd072.mp3",
+        "sha256": "2fa405adc6b8221d9fb2a88bc470c19cc9a7527afe78fff8d7c8323b40cfd072",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "2fa405adc6b8221d9fb2a88bc470c19cc9a7527afe78fff8d7c8323b40cfd072",
+          "text": "相关",
+          "words": [
+            {
+              "text": "相关",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3270",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3270-W3270",
+      "question_ids": [
+        "BANK-W3270-W3270"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-35-P02",
+    "stepId": "S-U5-35-P02-working-word-2",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-76f8"
+    ],
+    "grammarLessonIds": []
+  }
+}

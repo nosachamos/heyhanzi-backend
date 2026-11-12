@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0671",
+  "targetId": "W0671",
+  "steps": [
+    {
+      "id": "BANK-W0671-W0671",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0671-W0671",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "ice cream",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "冰激凌"
+            },
+            {
+              "value": "bīngjīlíng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bing1ji1ling2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "冰激凌",
+            "pinyin": "bīngjīlíng",
+            "meaning": "ice cream",
+            "singleWord": true,
+            "audio": "e8f66b37b5509a3b2d6bb13d2ecb36762baa37be07f48f87627a741b4aa4c1ab"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e8f66b37b5509a3b2d6bb13d2ecb36762baa37be07f48f87627a741b4aa4c1ab": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/89aacf9896c3091d09a09ced147b03cc39068759395781b965efe42584eba095.mp3",
+        "sha256": "89aacf9896c3091d09a09ced147b03cc39068759395781b965efe42584eba095",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "89aacf9896c3091d09a09ced147b03cc39068759395781b965efe42584eba095",
+          "text": "冰激凌",
+          "words": [
+            {
+              "text": "冰激凌",
+              "start": 0.15,
+              "end": 0.6299999999999999
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d2ce672222fce54c3dab6f8aea1f61b020aca655c35f6d55377289149ca64e06.mp3",
+        "sha256": "d2ce672222fce54c3dab6f8aea1f61b020aca655c35f6d55377289149ca64e06",
+        "byteLength": 16749,
+        "readAlong": {
+          "audioSha256": "d2ce672222fce54c3dab6f8aea1f61b020aca655c35f6d55377289149ca64e06",
+          "text": "冰激凌",
+          "words": [
+            {
+              "text": "冰激凌",
+              "start": 0.15,
+              "end": 0.69
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0671",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0671-W0671",
+      "question_ids": [
+        "BANK-W0671-W0671"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-05",
+    "stepId": "S-U3-05-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-51cc"
+    ],
+    "grammarLessonIds": []
+  }
+}

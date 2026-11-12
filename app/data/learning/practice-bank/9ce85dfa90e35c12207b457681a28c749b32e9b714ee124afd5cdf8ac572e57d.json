@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1083",
+  "targetId": "W1083",
+  "steps": [
+    {
+      "id": "BANK-W1083-W1083",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1083-W1083",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "stupid; foolish",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "笨"
+            },
+            {
+              "value": "bèn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ben4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "笨",
+            "pinyin": "bèn",
+            "meaning": "stupid; foolish",
+            "singleWord": true,
+            "audio": "39d27b45c96764197c8582704703742d1ce9d17eb0fdd1dec826097cd23ce388"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "39d27b45c96764197c8582704703742d1ce9d17eb0fdd1dec826097cd23ce388": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6c21206c32b20b09e55dc14885eab50fa21904fe68aaaa1683737b555d4513ab.mp3",
+        "sha256": "6c21206c32b20b09e55dc14885eab50fa21904fe68aaaa1683737b555d4513ab",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "6c21206c32b20b09e55dc14885eab50fa21904fe68aaaa1683737b555d4513ab",
+          "text": "笨",
+          "words": [
+            {
+              "text": "笨",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9698e205ed807d8600c6043bba285e6b0260fbfdac7a416f43acc1de50b5e56d.mp3",
+        "sha256": "9698e205ed807d8600c6043bba285e6b0260fbfdac7a416f43acc1de50b5e56d",
+        "byteLength": 8109,
+        "readAlong": {
+          "audioSha256": "9698e205ed807d8600c6043bba285e6b0260fbfdac7a416f43acc1de50b5e56d",
+          "text": "笨",
+          "words": [
+            {
+              "text": "笨",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1083",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1083-W1083",
+      "question_ids": [
+        "BANK-W1083-W1083"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-37-P01",
+    "stepId": "S-U4-37-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7b28"
+    ],
+    "grammarLessonIds": []
+  }
+}

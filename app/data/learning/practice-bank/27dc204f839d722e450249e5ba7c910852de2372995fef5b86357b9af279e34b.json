@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3641",
+  "targetId": "W3641",
+  "steps": [
+    {
+      "id": "BANK-W3641-W3641",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3641-W3641",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "health protection; health care",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "保健"
+            },
+            {
+              "value": "bǎojiàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bao3jian4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "保健",
+            "pinyin": "bǎojiàn",
+            "meaning": "health protection; health care",
+            "singleWord": true,
+            "audio": "85269a3bd17bb2bcec478fe5027f85f7738975d7a8eef718a1f1e53487c9342a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "85269a3bd17bb2bcec478fe5027f85f7738975d7a8eef718a1f1e53487c9342a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-e42140e01d373d8b74ea3353148a825b54bf749b65679f40e8904face73cf6f5.mp3",
+        "sha256": "e42140e01d373d8b74ea3353148a825b54bf749b65679f40e8904face73cf6f5",
+        "byteLength": 14733,
+        "readAlong": {
+          "audioSha256": "e42140e01d373d8b74ea3353148a825b54bf749b65679f40e8904face73cf6f5",
+          "text": "保健",
+          "words": [
+            {
+              "text": "保健",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-acc265b7aeb953fb917e5e205e9e405c62d78fcd47420f36e6faf0528f96fdb7.mp3",
+        "sha256": "acc265b7aeb953fb917e5e205e9e405c62d78fcd47420f36e6faf0528f96fdb7",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "acc265b7aeb953fb917e5e205e9e405c62d78fcd47420f36e6faf0528f96fdb7",
+          "text": "保健",
+          "words": [
+            {
+              "text": "保健",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3641",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3641-W3641",
+      "question_ids": [
+        "BANK-W3641-W3641"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-15",
+    "stepId": "S-U6-15-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4fdd"
+    ],
+    "grammarLessonIds": []
+  }
+}

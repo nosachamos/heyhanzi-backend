@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0409",
+  "targetId": "W0409",
+  "steps": [
+    {
+      "id": "BANK-W0409-W0409",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0409-W0409",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "pleasant to hear",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "好听"
+            },
+            {
+              "value": "hǎotīng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hao3ting1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "好听",
+            "pinyin": "hǎotīng",
+            "meaning": "pleasant to hear",
+            "singleWord": true,
+            "audio": "5506b725226a845b4fb1eac3bfda3d102b8295ff1a58d9b17a9af75e402adb60"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5506b725226a845b4fb1eac3bfda3d102b8295ff1a58d9b17a9af75e402adb60": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-7de55db0a598fe75d6acef09a3cd26a7f439ea2dd4877898ef8870fff4865f89.mp3",
+        "sha256": "7de55db0a598fe75d6acef09a3cd26a7f439ea2dd4877898ef8870fff4865f89",
+        "byteLength": 20493,
+        "readAlong": {
+          "audioSha256": "7de55db0a598fe75d6acef09a3cd26a7f439ea2dd4877898ef8870fff4865f89",
+          "text": "好听",
+          "words": [
+            {
+              "text": "好听",
+              "start": 0.8099999999999999,
+              "end": 1.05
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-fe7a7c09ff179e5fe66232cc96d97386c13df923491dd015d9b1f447a2ebc0e5.mp3",
+        "sha256": "fe7a7c09ff179e5fe66232cc96d97386c13df923491dd015d9b1f447a2ebc0e5",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "fe7a7c09ff179e5fe66232cc96d97386c13df923491dd015d9b1f447a2ebc0e5",
+          "text": "好听",
+          "words": [
+            {
+              "text": "好听",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0409",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0409-W0409",
+      "question_ids": [
+        "BANK-W0409-W0409"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U03",
+    "stepId": "S-U03-words-r4-20",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-542c"
+    ],
+    "grammarLessonIds": []
+  }
+}

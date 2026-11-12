@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3072",
+  "targetId": "W3072",
+  "steps": [
+    {
+      "id": "BANK-W3072-W3072",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3072-W3072",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "glove; mitten",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "手套"
+            },
+            {
+              "value": "shǒutào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shou3tao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "手套",
+            "pinyin": "shǒutào",
+            "meaning": "glove; mitten",
+            "singleWord": true,
+            "audio": "d03019582b732ad144679feaa1f1c2a09db35b88d89c6504a5d6ddd5f17c61d1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d03019582b732ad144679feaa1f1c2a09db35b88d89c6504a5d6ddd5f17c61d1": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-7801b7eaa901db47b2de9d8cbacef32bceeba8be9a98604314ca4f5572ee13ed.mp3",
+        "sha256": "7801b7eaa901db47b2de9d8cbacef32bceeba8be9a98604314ca4f5572ee13ed",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "7801b7eaa901db47b2de9d8cbacef32bceeba8be9a98604314ca4f5572ee13ed",
+          "text": "手套",
+          "words": [
+            {
+              "text": "手套",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-5f6e3cb4df35311864287b38c46e6aac8f14adf2c724c0b0c90a316f1c67fbdb.mp3",
+        "sha256": "5f6e3cb4df35311864287b38c46e6aac8f14adf2c724c0b0c90a316f1c67fbdb",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "5f6e3cb4df35311864287b38c46e6aac8f14adf2c724c0b0c90a316f1c67fbdb",
+          "text": "手套",
+          "words": [
+            {
+              "text": "手套",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3072",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3072-W3072",
+      "question_ids": [
+        "BANK-W3072-W3072"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-10-P01",
+    "stepId": "S-U5-10-words-r4-20",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5957"
+    ],
+    "grammarLessonIds": []
+  }
+}

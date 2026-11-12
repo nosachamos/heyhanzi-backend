@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1393",
+  "targetId": "W1393",
+  "steps": [
+    {
+      "id": "BANK-W1393-W1393",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1393-W1393",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "price",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "价格"
+            },
+            {
+              "value": "jiàgé",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jia4ge2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "价格",
+            "pinyin": "jiàgé",
+            "meaning": "price",
+            "singleWord": true,
+            "audio": "58db81d2a35040f8c9b979b497978b743b1bac25053af01bbe97feb5b1614977"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "58db81d2a35040f8c9b979b497978b743b1bac25053af01bbe97feb5b1614977": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-945a5e9be48313c83b5fd48c53cac58d9487f0e484f71e4740b2b8a361913a0c.mp3",
+        "sha256": "945a5e9be48313c83b5fd48c53cac58d9487f0e484f71e4740b2b8a361913a0c",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "945a5e9be48313c83b5fd48c53cac58d9487f0e484f71e4740b2b8a361913a0c",
+          "text": "价格",
+          "words": [
+            {
+              "text": "价格",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2bb5779da66825c317f79bdf60d54b35f8c8d5f9a618a46da775d2363801d99e.mp3",
+        "sha256": "2bb5779da66825c317f79bdf60d54b35f8c8d5f9a618a46da775d2363801d99e",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "2bb5779da66825c317f79bdf60d54b35f8c8d5f9a618a46da775d2363801d99e",
+          "text": "价格",
+          "words": [
+            {
+              "text": "价格",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1393",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1393-W1393",
+      "question_ids": [
+        "BANK-W1393-W1393"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-11",
+    "stepId": "S-U4-11-words-r4-7",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4ef7"
+    ],
+    "grammarLessonIds": []
+  }
+}

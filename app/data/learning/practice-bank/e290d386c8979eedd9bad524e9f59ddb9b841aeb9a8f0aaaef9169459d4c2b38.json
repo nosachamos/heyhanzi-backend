@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0722",
+  "targetId": "W0722",
+  "steps": [
+    {
+      "id": "BANK-W0722-W0722",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0722-W0722",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "east",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "东方"
+            },
+            {
+              "value": "dōngfāng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dong1fang1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "东方",
+            "pinyin": "dōngfāng",
+            "meaning": "east",
+            "singleWord": true,
+            "audio": "471642974cbd2b0499cacd541e0033157d23b8f365ac1994c8d077e810b4e9db"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "471642974cbd2b0499cacd541e0033157d23b8f365ac1994c8d077e810b4e9db": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/43e0ee343f153f8783092c0d03d822c6fac716ff07e273e9a36abddedb682381.mp3",
+        "sha256": "43e0ee343f153f8783092c0d03d822c6fac716ff07e273e9a36abddedb682381",
+        "byteLength": 15309,
+        "readAlong": {
+          "audioSha256": "43e0ee343f153f8783092c0d03d822c6fac716ff07e273e9a36abddedb682381",
+          "text": "东方",
+          "words": [
+            {
+              "text": "东方",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/93536cef523d8998b7a92f84ec29814cef1272816519cea5603a3ee3c19d6dd2.mp3",
+        "sha256": "93536cef523d8998b7a92f84ec29814cef1272816519cea5603a3ee3c19d6dd2",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "93536cef523d8998b7a92f84ec29814cef1272816519cea5603a3ee3c19d6dd2",
+          "text": "东方",
+          "words": [
+            {
+              "text": "东方",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0722",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0722-W0722",
+      "question_ids": [
+        "BANK-W0722-W0722"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-10",
+    "stepId": "S-U3-10-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-65b9"
+    ],
+    "grammarLessonIds": []
+  }
+}

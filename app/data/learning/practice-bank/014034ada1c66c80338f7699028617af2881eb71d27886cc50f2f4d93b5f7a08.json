@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W0025",
+  "targetId": "W0025",
+  "steps": [
+    {
+      "id": "BANK-W0025-W0025",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0025-W0025",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "big; large",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "大"
+            },
+            {
+              "value": "dà",
+              "mode": "pinyin"
+            },
+            {
+              "value": "da4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "大",
+            "pinyin": "dà",
+            "meaning": "big; large",
+            "singleWord": true,
+            "audio": "a54d89df02c2a0828a36bc2c87d0a3adbf8bfb44b282ae8bfc73be8e1c4dd0f4"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a54d89df02c2a0828a36bc2c87d0a3adbf8bfb44b282ae8bfc73be8e1c4dd0f4": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-db6d40f6130c4b73c18f48a14eea12f71c933844b5e1edf1d48a7778e3f5466d.mp3",
+        "sha256": "db6d40f6130c4b73c18f48a14eea12f71c933844b5e1edf1d48a7778e3f5466d",
+        "byteLength": 8109,
+        "readAlong": {
+          "audioSha256": "db6d40f6130c4b73c18f48a14eea12f71c933844b5e1edf1d48a7778e3f5466d",
+          "text": "大",
+          "words": [
+            {
+              "text": "大",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c56aa7c8ae8cd632ca8092c6942a99b9b055041699113941706d3b08b651fb84.mp3",
+        "sha256": "c56aa7c8ae8cd632ca8092c6942a99b9b055041699113941706d3b08b651fb84",
+        "byteLength": 8109,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "c56aa7c8ae8cd632ca8092c6942a99b9b055041699113941706d3b08b651fb84",
+          "text": "大",
+          "words": [
+            {
+              "text": "大",
+              "start": 0.14,
+              "end": 0.22
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0025",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0025-W0025",
+      "question_ids": [
+        "BANK-W0025-W0025"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U03",
+    "stepId": "S-U03-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5927"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,426 @@
+{
+  "id": "BANK-W1090",
+  "targetId": "W1090",
+  "steps": [
+    {
+      "id": "BANK-W1090-W1090",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1090-W1090",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "watch; table or form",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "表"
+            },
+            {
+              "value": "biǎo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "biao3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "表",
+            "pinyin": "biǎo",
+            "meaning": "watch; table or form",
+            "singleWord": true,
+            "audio": "e3f2dc2ff708c343e7cbfae640bb007b23fd0ee4c3b720aab55f41033d5e6f3c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1090-W1090-use-watch",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1090-W1090-use-watch",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 表 fits this context?",
+          "context": "The speaker points to a newly acquired timepiece.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1090-W1090-use-watch-meaning",
+              "label": "A watch.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "表 can name a watch used to tell the time."
+            },
+            {
+              "id": "BANK-W1090-W1090-use-watch-contrast-1",
+              "label": "A written form.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "表 can name a watch used to tell the time."
+            },
+            {
+              "id": "BANK-W1090-W1090-use-watch-contrast-2",
+              "label": "The outside surface of an object.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "表 can name a watch used to tell the time."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "我的表很新。",
+            "pinyin": "wǒ de biǎo hěn xīn 。",
+            "meaning": "",
+            "audio": "59dce77089692b5e57f828d30d59d5c75dd2d86893ed9464fd9363238f8d7a04"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1090-W1090-use-table-form",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1090-W1090-use-table-form",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 表 fits this context?",
+          "context": "A sheet arranges three people’s names as entries.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1090-W1090-use-table-form-meaning",
+              "label": "A table or form containing names.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "表 can also name a table, chart or form that arranges information. A flat sheet uses 张; it is not a timepiece in this context."
+            },
+            {
+              "id": "BANK-W1090-W1090-use-table-form-contrast-2",
+              "label": "A family relationship through a woman.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "表 can also name a table, chart or form that arranges information. A flat sheet uses 张; it is not a timepiece in this context."
+            },
+            {
+              "id": "BANK-W1090-W1090-use-table-form-contrast-1",
+              "label": "A watch that tells the time.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "表 can also name a table, chart or form that arranges information. A flat sheet uses 张; it is not a timepiece in this context."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "这张表有三个人的名字。",
+            "pinyin": "zhè zhāng biǎo yǒu sān ge rén de míngzi 。",
+            "meaning": "",
+            "audio": "e868286b6b91323121a0489f731407a66f2cb8d02b69ced2144922e51ad3561a"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e3f2dc2ff708c343e7cbfae640bb007b23fd0ee4c3b720aab55f41033d5e6f3c": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-b25911cafb7b2bf60bc55d836cf5782ea6981e05f66cbfb07d738b0981c66065.mp3",
+        "sha256": "b25911cafb7b2bf60bc55d836cf5782ea6981e05f66cbfb07d738b0981c66065",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "b25911cafb7b2bf60bc55d836cf5782ea6981e05f66cbfb07d738b0981c66065",
+          "text": "表",
+          "words": [
+            {
+              "text": "表",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-44a6dbf78ac3b4e85cb7b1c4163b32dfbe18fb7e30f37e5a8b7eed1619df5bf8.mp3",
+        "sha256": "44a6dbf78ac3b4e85cb7b1c4163b32dfbe18fb7e30f37e5a8b7eed1619df5bf8",
+        "byteLength": 8109,
+        "readAlong": {
+          "audioSha256": "44a6dbf78ac3b4e85cb7b1c4163b32dfbe18fb7e30f37e5a8b7eed1619df5bf8",
+          "text": "表",
+          "words": [
+            {
+              "text": "表",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    },
+    "59dce77089692b5e57f828d30d59d5c75dd2d86893ed9464fd9363238f8d7a04": {
+      "male": {
+        "url": "/exercise-assets/audio/course-male-333cdc697500cf879f6473febc7475e07d99b67b7d37e82c68332e722dd728cc.mp3",
+        "sha256": "333cdc697500cf879f6473febc7475e07d99b67b7d37e82c68332e722dd728cc",
+        "byteLength": 19629,
+        "readAlong": {
+          "audioSha256": "333cdc697500cf879f6473febc7475e07d99b67b7d37e82c68332e722dd728cc",
+          "text": "我的表很新。",
+          "words": [
+            {
+              "text": "我",
+              "start": 0.09,
+              "end": 0.15
+            },
+            {
+              "text": "的",
+              "start": 0.27,
+              "end": 0.32999999999999996
+            },
+            {
+              "text": "表",
+              "start": 0.39,
+              "end": 0.44999999999999996
+            },
+            {
+              "text": "很",
+              "start": 0.8099999999999999,
+              "end": 0.8699999999999999
+            },
+            {
+              "text": "新",
+              "start": 1.05,
+              "end": 1.1099999999999999
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      },
+      "female": {
+        "url": "/exercise-assets/audio/course-female-d3d0bfcba64e3b2a44219d9b586c8c388f3963f7b091e0fd325beca097bcbc15.mp3",
+        "sha256": "d3d0bfcba64e3b2a44219d9b586c8c388f3963f7b091e0fd325beca097bcbc15",
+        "byteLength": 19629,
+        "readAlong": {
+          "audioSha256": "d3d0bfcba64e3b2a44219d9b586c8c388f3963f7b091e0fd325beca097bcbc15",
+          "text": "我的表很新。",
+          "words": [
+            {
+              "text": "我",
+              "start": 0.03,
+              "end": 0.09
+            },
+            {
+              "text": "的",
+              "start": 0.21,
+              "end": 0.27
+            },
+            {
+              "text": "表",
+              "start": 0.39,
+              "end": 0.44999999999999996
+            },
+            {
+              "text": "很",
+              "start": 0.69,
+              "end": 0.75
+            },
+            {
+              "text": "新",
+              "start": 0.9299999999999999,
+              "end": 0.99
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      }
+    },
+    "e868286b6b91323121a0489f731407a66f2cb8d02b69ced2144922e51ad3561a": {
+      "male": {
+        "url": "/exercise-assets/audio/course-male-8ba4aef1572924ef3b38a7e4af03fb3730542f3ba9407e980d305d2ac7bcdcc0.mp3",
+        "sha256": "8ba4aef1572924ef3b38a7e4af03fb3730542f3ba9407e980d305d2ac7bcdcc0",
+        "byteLength": 31149,
+        "readAlong": {
+          "audioSha256": "8ba4aef1572924ef3b38a7e4af03fb3730542f3ba9407e980d305d2ac7bcdcc0",
+          "text": "这张表有三个人的名字。",
+          "words": [
+            {
+              "text": "这",
+              "start": 0.09,
+              "end": 0.15
+            },
+            {
+              "text": "张",
+              "start": 0.27,
+              "end": 0.32999999999999996
+            },
+            {
+              "text": "表",
+              "start": 0.51,
+              "end": 0.57
+            },
+            {
+              "text": "有",
+              "start": 0.8699999999999999,
+              "end": 0.9299999999999999
+            },
+            {
+              "text": "三",
+              "start": 1.17,
+              "end": 1.23
+            },
+            {
+              "text": "个",
+              "start": 1.41,
+              "end": 1.47
+            },
+            {
+              "text": "人",
+              "start": 1.53,
+              "end": 1.5899999999999999
+            },
+            {
+              "text": "的",
+              "start": 1.71,
+              "end": 1.7699999999999998
+            },
+            {
+              "text": "名字",
+              "start": 1.89,
+              "end": 2.0700000000000003
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      },
+      "female": {
+        "url": "/exercise-assets/audio/course-female-5f47b58d90fb572090f0615fa9bd5d6ce37a326a4f4b0bf39a23bd7a69c20bd7.mp3",
+        "sha256": "5f47b58d90fb572090f0615fa9bd5d6ce37a326a4f4b0bf39a23bd7a69c20bd7",
+        "byteLength": 33165,
+        "readAlong": {
+          "audioSha256": "5f47b58d90fb572090f0615fa9bd5d6ce37a326a4f4b0bf39a23bd7a69c20bd7",
+          "text": "这张表有三个人的名字。",
+          "words": [
+            {
+              "text": "这",
+              "start": 0.09,
+              "end": 0.15
+            },
+            {
+              "text": "张",
+              "start": 0.32999999999999996,
+              "end": 0.39
+            },
+            {
+              "text": "表",
+              "start": 0.57,
+              "end": 0.6299999999999999
+            },
+            {
+              "text": "有",
+              "start": 0.99,
+              "end": 1.05
+            },
+            {
+              "text": "三",
+              "start": 1.2899999999999998,
+              "end": 1.3499999999999999
+            },
+            {
+              "text": "个",
+              "start": 1.53,
+              "end": 1.5899999999999999
+            },
+            {
+              "text": "人",
+              "start": 1.71,
+              "end": 1.7699999999999998
+            },
+            {
+              "text": "的",
+              "start": 1.8299999999999998,
+              "end": 1.89
+            },
+            {
+              "text": "名字",
+              "start": 2.0100000000000002,
+              "end": 2.19
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1090",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1090-W1090",
+      "question_ids": [
+        "BANK-W1090-W1090"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W1090",
+      "facet_id": "lexical-use-watch",
+      "part_id": "BANK-W1090-W1090-use-watch",
+      "question_ids": [
+        "BANK-W1090-W1090-use-watch"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1090",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W1090",
+      "facet_id": "lexical-use-table-form",
+      "part_id": "BANK-W1090-W1090-use-table-form",
+      "question_ids": [
+        "BANK-W1090-W1090-use-table-form"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1090",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-04",
+    "stepId": "S-U4-04-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8868",
+      "mandarin-simplified-v1-warmup-wo",
+      "mandarin-simplified-v1-warmup-de",
+      "mandarin-simplified-v1-warmup-hen",
+      "mandarin-simplified-v1-char-65b0",
+      "mandarin-simplified-v1-warmup-zhe",
+      "mandarin-simplified-v1-char-676f",
+      "mandarin-simplified-v1-warmup-you",
+      "mandarin-simplified-v1-char-4e09",
+      "mandarin-simplified-v1-char-4e2a",
+      "mandarin-simplified-v1-warmup-ren",
+      "mandarin-simplified-v1-char-5b57"
+    ],
+    "grammarLessonIds": []
+  }
+}

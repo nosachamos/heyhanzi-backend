@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0315",
+  "targetId": "W0315",
+  "steps": [
+    {
+      "id": "BANK-W0315-W0315",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0315-W0315",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "decide; decision",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "决定"
+            },
+            {
+              "value": "juédìng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jue2ding4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "决定",
+            "pinyin": "juédìng",
+            "meaning": "decide; decision",
+            "singleWord": true,
+            "audio": "e3362207be04193056f9fe140659e6cd4128a4d1405fd3cf4643a4a1983c8790"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e3362207be04193056f9fe140659e6cd4128a4d1405fd3cf4643a4a1983c8790": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-88872ca9fd919b11aa403a1ed2db8f7d03ce72431d34d26dfa0c6b9bc836d34f.mp3",
+        "sha256": "88872ca9fd919b11aa403a1ed2db8f7d03ce72431d34d26dfa0c6b9bc836d34f",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "88872ca9fd919b11aa403a1ed2db8f7d03ce72431d34d26dfa0c6b9bc836d34f",
+          "text": "决定",
+          "words": [
+            {
+              "text": "决定",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-16248c44685c11ec4bfc3999945fff7549d9e8bee4d4bd7ab315f24f2f6f64bd.mp3",
+        "sha256": "16248c44685c11ec4bfc3999945fff7549d9e8bee4d4bd7ab315f24f2f6f64bd",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "16248c44685c11ec4bfc3999945fff7549d9e8bee4d4bd7ab315f24f2f6f64bd",
+          "text": "决定",
+          "words": [
+            {
+              "text": "决定",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0315",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0315-W0315",
+      "question_ids": [
+        "BANK-W0315-W0315"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U27",
+    "stepId": "S-U27-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-51b3"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2508",
+  "targetId": "W2508",
+  "steps": [
+    {
+      "id": "BANK-W2508-W2508",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2508-W2508",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "monkey",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "猴子"
+            },
+            {
+              "value": "hóuzi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hou2zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "猴子",
+            "pinyin": "hóuzi",
+            "meaning": "monkey",
+            "singleWord": true,
+            "audio": "c7a27ab3172a47110580297ae332b6fdbeab75f0349309984f3b4ac683cefea1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c7a27ab3172a47110580297ae332b6fdbeab75f0349309984f3b4ac683cefea1": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ddd966cc733ebcb41613f91d50a217829f82a62a69ab1eabdcb633b5b0e6a406.mp3",
+        "sha256": "ddd966cc733ebcb41613f91d50a217829f82a62a69ab1eabdcb633b5b0e6a406",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "ddd966cc733ebcb41613f91d50a217829f82a62a69ab1eabdcb633b5b0e6a406",
+          "text": "猴子",
+          "words": [
+            {
+              "text": "猴子",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1ef857607d597e674974d0dbed7c7393af292274ec624d2d4a866b0714f85281.mp3",
+        "sha256": "1ef857607d597e674974d0dbed7c7393af292274ec624d2d4a866b0714f85281",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "1ef857607d597e674974d0dbed7c7393af292274ec624d2d4a866b0714f85281",
+          "text": "猴子",
+          "words": [
+            {
+              "text": "猴子",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2508",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2508-W2508",
+      "question_ids": [
+        "BANK-W2508-W2508"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-28",
+    "stepId": "S-U5-28-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7334"
+    ],
+    "grammarLessonIds": []
+  }
+}

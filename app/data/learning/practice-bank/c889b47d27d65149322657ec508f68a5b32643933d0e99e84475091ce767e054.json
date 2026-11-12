@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0533",
+  "targetId": "W0533",
+  "steps": [
+    {
+      "id": "BANK-W0533-W0533",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0533-W0533",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "restaurant",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "饭馆"
+            },
+            {
+              "value": "fànguǎn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fan4guan3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "饭馆",
+            "pinyin": "fànguǎn",
+            "meaning": "restaurant",
+            "singleWord": true,
+            "audio": "9fe9e8bce316d0a739d6cc1838e4c913f283188e210eb66c39fc4afca1801ac1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "9fe9e8bce316d0a739d6cc1838e4c913f283188e210eb66c39fc4afca1801ac1": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/47d348ced4eb5f5e345dcbb8646935f7a141382d0a29542bd0750d27afbd914e.mp3",
+        "sha256": "47d348ced4eb5f5e345dcbb8646935f7a141382d0a29542bd0750d27afbd914e",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "47d348ced4eb5f5e345dcbb8646935f7a141382d0a29542bd0750d27afbd914e",
+          "text": "饭馆",
+          "words": [
+            {
+              "text": "饭馆",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/16629e29ea0091fa9142edc682d4515e91ea0be847a54e466c608376847fc376.mp3",
+        "sha256": "16629e29ea0091fa9142edc682d4515e91ea0be847a54e466c608376847fc376",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "16629e29ea0091fa9142edc682d4515e91ea0be847a54e466c608376847fc376",
+          "text": "饭馆",
+          "words": [
+            {
+              "text": "饭馆",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0533",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0533-W0533",
+      "question_ids": [
+        "BANK-W0533-W0533"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U19",
+    "stepId": "S-U19-words-r4-7",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9986"
+    ],
+    "grammarLessonIds": []
+  }
+}

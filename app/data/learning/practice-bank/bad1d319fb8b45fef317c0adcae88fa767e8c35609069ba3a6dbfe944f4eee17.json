@@ -1,0 +1,161 @@
+{
+  "id": "BANK-W1070",
+  "targetId": "W1070",
+  "steps": [
+    {
+      "id": "BANK-W1070-W1070",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1070-W1070",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "great; excellent",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "棒"
+            },
+            {
+              "value": "bàng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bang4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "棒",
+            "pinyin": "bàng",
+            "meaning": "great; excellent",
+            "singleWord": true,
+            "audio": "fa4babc358e7917d4e6e20cd690f25ce7c5e8c68a8f8a510aa3021b0db8f4025"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1070-W1070-use-excellent",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1070-W1070-use-excellent",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 棒 fits this context?",
+          "context": "A listener praises someone’s successful performance.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1070-W1070-use-excellent-contrast-1",
+              "label": "The listener names a wooden stick.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a positive evaluation, 棒 means great or excellent."
+            },
+            {
+              "id": "BANK-W1070-W1070-use-excellent-contrast-2",
+              "label": "The performance was unsuccessful.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a positive evaluation, 棒 means great or excellent."
+            },
+            {
+              "id": "BANK-W1070-W1070-use-excellent-meaning",
+              "label": "The performance was excellent.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "As a positive evaluation, 棒 means great or excellent."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "棒",
+            "pinyin": "bàng",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "fa4babc358e7917d4e6e20cd690f25ce7c5e8c68a8f8a510aa3021b0db8f4025"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "fa4babc358e7917d4e6e20cd690f25ce7c5e8c68a8f8a510aa3021b0db8f4025": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-54be5a0291bea00c0b309091f7f9f15591405a0237927d9908750f92ca718c4b.mp3",
+        "sha256": "54be5a0291bea00c0b309091f7f9f15591405a0237927d9908750f92ca718c4b",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "54be5a0291bea00c0b309091f7f9f15591405a0237927d9908750f92ca718c4b",
+          "text": "棒",
+          "words": [
+            {
+              "text": "棒",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b5e9dc99d1cd9729c9ca60caf203b0a3d709c80420bd33a44c3e5bfc1b78055f.mp3",
+        "sha256": "b5e9dc99d1cd9729c9ca60caf203b0a3d709c80420bd33a44c3e5bfc1b78055f",
+        "byteLength": 9549,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "b5e9dc99d1cd9729c9ca60caf203b0a3d709c80420bd33a44c3e5bfc1b78055f",
+          "text": "棒",
+          "words": [
+            {
+              "text": "棒",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1070",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1070-W1070",
+      "question_ids": [
+        "BANK-W1070-W1070"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W1070",
+      "facet_id": "lexical-use-excellent",
+      "part_id": "BANK-W1070-W1070-use-excellent",
+      "question_ids": [
+        "BANK-W1070-W1070-use-excellent"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1070",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-37-P01",
+    "stepId": "S-U4-37-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-68d2"
+    ],
+    "grammarLessonIds": []
+  }
+}

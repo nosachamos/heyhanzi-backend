@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3020",
+  "targetId": "W3020",
+  "steps": [
+    {
+      "id": "BANK-W3020-W3020",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3020-W3020",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "province",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "省份"
+            },
+            {
+              "value": "shěngfèn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "sheng3fen4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "省份",
+            "pinyin": "shěngfèn",
+            "meaning": "province",
+            "singleWord": true,
+            "audio": "984d6401cc5a9a60100004e3ce8d11413c6836d4ffb44d5a9939235d6e722f9a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "984d6401cc5a9a60100004e3ce8d11413c6836d4ffb44d5a9939235d6e722f9a": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/555bb65c4922cc5bf2a93ca8a6535c4f53f69a12e6266eff238f9c2230664152.mp3",
+        "sha256": "555bb65c4922cc5bf2a93ca8a6535c4f53f69a12e6266eff238f9c2230664152",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "555bb65c4922cc5bf2a93ca8a6535c4f53f69a12e6266eff238f9c2230664152",
+          "text": "省份",
+          "words": [
+            {
+              "text": "省份",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b9c60af5237b54d2eeab51887eef45f84e06d95b7a881da7dd82151a7523a2b1.mp3",
+        "sha256": "b9c60af5237b54d2eeab51887eef45f84e06d95b7a881da7dd82151a7523a2b1",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "b9c60af5237b54d2eeab51887eef45f84e06d95b7a881da7dd82151a7523a2b1",
+          "text": "省份",
+          "words": [
+            {
+              "text": "省份",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3020",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3020-W3020",
+      "question_ids": [
+        "BANK-W3020-W3020"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-28",
+    "stepId": "S-U5-28-words-r4-17",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7701"
+    ],
+    "grammarLessonIds": []
+  }
+}

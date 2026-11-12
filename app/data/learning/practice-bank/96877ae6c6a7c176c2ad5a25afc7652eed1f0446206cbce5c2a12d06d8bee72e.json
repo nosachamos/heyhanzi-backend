@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0576",
+  "targetId": "W0576",
+  "steps": [
+    {
+      "id": "BANK-W0576-W0576",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0576-W0576",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "grandma; mistress of the house",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "奶奶"
+            },
+            {
+              "value": "nǎinai",
+              "mode": "pinyin"
+            },
+            {
+              "value": "nai3nai5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "奶奶",
+            "pinyin": "nǎinai",
+            "meaning": "grandma; mistress of the house",
+            "singleWord": true,
+            "audio": "1c873e19f8566e60ed2a697270820c85b39660ba89ce842b4653ee85ffbad280"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1c873e19f8566e60ed2a697270820c85b39660ba89ce842b4653ee85ffbad280": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d7e0237d7f409e81242bfb79b1c19a1e3954df46410bef4e91e9009c1c6de6aa.mp3",
+        "sha256": "d7e0237d7f409e81242bfb79b1c19a1e3954df46410bef4e91e9009c1c6de6aa",
+        "byteLength": 14733,
+        "readAlong": {
+          "audioSha256": "d7e0237d7f409e81242bfb79b1c19a1e3954df46410bef4e91e9009c1c6de6aa",
+          "text": "奶奶",
+          "words": [
+            {
+              "text": "奶奶",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-07187b9b7123b4b8bb32797265445b08133eacb9ebfb628dfa52a362e59bfa8f.mp3",
+        "sha256": "07187b9b7123b4b8bb32797265445b08133eacb9ebfb628dfa52a362e59bfa8f",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "07187b9b7123b4b8bb32797265445b08133eacb9ebfb628dfa52a362e59bfa8f",
+          "text": "奶奶",
+          "words": [
+            {
+              "text": "奶奶",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0576",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0576-W0576",
+      "question_ids": [
+        "BANK-W0576-W0576"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U16",
+    "stepId": "S-U16-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5976"
+    ],
+    "grammarLessonIds": []
+  }
+}

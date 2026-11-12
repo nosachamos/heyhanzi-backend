@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W1211",
+  "targetId": "W1211",
+  "steps": [
+    {
+      "id": "BANK-W1211-W1211",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1211-W1211",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to fall; to drop",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "掉"
+            },
+            {
+              "value": "diào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "diao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "掉",
+            "pinyin": "diào",
+            "meaning": "to fall; to drop",
+            "singleWord": true,
+            "audio": "48d713eb56baf06fbb670a4a2ab4fc7f9c21e9e307812cc711a30ea332e2aadb"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "48d713eb56baf06fbb670a4a2ab4fc7f9c21e9e307812cc711a30ea332e2aadb": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-51d6693fe915d1a383767da83be241d1f88612ce3a4ebd125e5708cc18bc3f78.mp3",
+        "sha256": "51d6693fe915d1a383767da83be241d1f88612ce3a4ebd125e5708cc18bc3f78",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "51d6693fe915d1a383767da83be241d1f88612ce3a4ebd125e5708cc18bc3f78",
+          "text": "掉",
+          "words": [
+            {
+              "text": "掉",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-7ef0b2af52f75c6ade10ada9e61253db5fdf5ec1ab4c33ccc5c4bd3b88cd4fc3.mp3",
+        "sha256": "7ef0b2af52f75c6ade10ada9e61253db5fdf5ec1ab4c33ccc5c4bd3b88cd4fc3",
+        "byteLength": 9549,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "7ef0b2af52f75c6ade10ada9e61253db5fdf5ec1ab4c33ccc5c4bd3b88cd4fc3",
+          "text": "掉",
+          "words": [
+            {
+              "text": "掉",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1211",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1211-W1211",
+      "question_ids": [
+        "BANK-W1211-W1211"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-35",
+    "stepId": "S-U4-35-words-r4-8",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6389"
+    ],
+    "grammarLessonIds": []
+  }
+}

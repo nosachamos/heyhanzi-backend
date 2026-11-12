@@ -1,0 +1,637 @@
+{
+  "id": "EX-CHAR-char-6c99",
+  "revision": 2,
+  "unit": "U3-03",
+  "stage": "ST-HSK3",
+  "after": "S-U3-03-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "沙",
+  "sourceBlockId": "mandarin-simplified-v1-char-6c99",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5f1f",
+        "text": "弟",
+        "pinyin": "dì",
+        "meaning": "younger brother; junior male",
+        "characters": [
+          {
+            "id": "C-5F1F",
+            "text": "弟"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-6c99",
+        "text": "沙",
+        "pinyin": "shā",
+        "meaning": "granule; hoarse",
+        "characters": [
+          {
+            "id": "C-6C99",
+            "text": "沙"
+          }
+        ]
+      },
+      {
+        "id": "W1245",
+        "text": "房东",
+        "pinyin": "fángdōng",
+        "meaning": "landlord",
+        "characters": [
+          {
+            "id": "C-623F",
+            "text": "房"
+          },
+          {
+            "id": "C-4E1C",
+            "text": "东"
+          }
+        ]
+      },
+      {
+        "id": "W2967",
+        "text": "沙子",
+        "pinyin": "shāzi",
+        "meaning": "sand; grit",
+        "characters": [
+          {
+            "id": "C-6C99",
+            "text": "沙"
+          },
+          {
+            "id": "C-5B50",
+            "text": "子"
+          }
+        ]
+      },
+      {
+        "id": "W4248",
+        "text": "家居",
+        "pinyin": "jiājū",
+        "meaning": "home; home living",
+        "characters": [
+          {
+            "id": "C-5BB6",
+            "text": "家"
+          },
+          {
+            "id": "C-5C45",
+            "text": "居"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "b4a6ed4933d431572354c826e4cf57f6d6e0443b05e9e8c905130f594c03d8c8",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6c99",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "沙",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6c99-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W2967",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "sand; grit",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "沙子"
+              },
+              {
+                "value": "shāzi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "sha1zi5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "沙子",
+              "pinyin": "shāzi",
+              "meaning": "sand; grit",
+              "audio": "9f689a83f227c10c52ea13f0902d58f53771297cf68aaf97be9dc6cc88d719a2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6c99-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6c99",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "沙",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1245",
+                "label": "landlord",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5f1f",
+                "label": "younger brother; junior male",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-6c99",
+                "label": "granule; hoarse",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6c99-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "沙",
+        "pinyin": "shā",
+        "meaning": "granule; hoarse",
+        "source": "/stroke-data/6c99.json",
+        "reference": {
+          "character": "沙",
+          "sha256": "082a039326c0962d0f915337b2d059bd6ce78653a364716ccf1716897c075d17",
+          "medians": [
+            [
+              [
+                210,
+                767
+              ],
+              [
+                301,
+                707
+              ],
+              [
+                325,
+                668
+              ]
+            ],
+            [
+              [
+                136,
+                543
+              ],
+              [
+                223,
+                485
+              ],
+              [
+                240,
+                462
+              ]
+            ],
+            [
+              [
+                189,
+                64
+              ],
+              [
+                177,
+                97
+              ],
+              [
+                175,
+                148
+              ],
+              [
+                324,
+                422
+              ]
+            ],
+            [
+              [
+                576,
+                800
+              ],
+              [
+                600,
+                784
+              ],
+              [
+                621,
+                754
+              ],
+              [
+                609,
+                503
+              ],
+              [
+                612,
+                375
+              ]
+            ],
+            [
+              [
+                460,
+                565
+              ],
+              [
+                441,
+                479
+              ],
+              [
+                408,
+                397
+              ]
+            ],
+            [
+              [
+                761,
+                631
+              ],
+              [
+                869,
+                587
+              ],
+              [
+                896,
+                567
+              ],
+              [
+                928,
+                524
+              ]
+            ],
+            [
+              [
+                736,
+                487
+              ],
+              [
+                754,
+                456
+              ],
+              [
+                756,
+                437
+              ],
+              [
+                690,
+                288
+              ],
+              [
+                626,
+                193
+              ],
+              [
+                560,
+                119
+              ],
+              [
+                481,
+                53
+              ],
+              [
+                357,
+                -24
+              ],
+              [
+                305,
+                -47
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6c99-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4248",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "home; home living",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "家居"
+              },
+              {
+                "value": "jiājū",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jia1ju1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "家居",
+              "pinyin": "jiājū",
+              "meaning": "home; home living",
+              "audio": "7f03bdef031825a3d16c9257d1bd69c0cdcd61592ca72ca21d428489ce7eb6d3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6c99-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6c99",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "granule; hoarse",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "沙"
+              },
+              {
+                "value": "shā",
+                "mode": "pinyin"
+              },
+              {
+                "value": "sha1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "沙",
+              "pinyin": "shā",
+              "meaning": "granule; hoarse",
+              "audio": "b832706e0ae300d467feb5cd2034cc4f4b384872a4bcb74bed9691035fbf24ef",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "b832706e0ae300d467feb5cd2034cc4f4b384872a4bcb74bed9691035fbf24ef"
+            ],
+            "transcript": [
+              {
+                "text": "沙",
+                "pinyin": "shā",
+                "meaning": "granule; hoarse",
+                "audio": "b832706e0ae300d467feb5cd2034cc4f4b384872a4bcb74bed9691035fbf24ef",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6C99",
+      "character": "沙",
+      "lessonIds": [
+        "LESSON-C-6C99"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6c99-word",
+        "EX-CHAR-char-6c99-recognize",
+        "EX-CHAR-char-6c99-write",
+        "EX-CHAR-char-6c99-familiar",
+        "EX-CHAR-char-6c99-recall"
+      ]
+    },
+    "audio": {
+      "b997a10f0fc44ab5ad1c5857e62f79105073d3f8d7ef69a8e9f0c75827a8ccc8": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-8a8ef67670310903a7efbf686600aa6730f57725d91b03e879bec6f4d2edc413.mp3",
+          "sha256": "8a8ef67670310903a7efbf686600aa6730f57725d91b03e879bec6f4d2edc413",
+          "byteLength": 8685,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "8a8ef67670310903a7efbf686600aa6730f57725d91b03e879bec6f4d2edc413",
+            "text": "弟",
+            "words": [
+              {
+                "text": "弟",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-c712b6622163bf351c209ce35cf212bc4ab9466d5aac2423701593c4e1904e89.mp3",
+          "sha256": "c712b6622163bf351c209ce35cf212bc4ab9466d5aac2423701593c4e1904e89",
+          "byteLength": 8109,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "c712b6622163bf351c209ce35cf212bc4ab9466d5aac2423701593c4e1904e89",
+            "text": "弟",
+            "words": [
+              {
+                "text": "弟",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "b832706e0ae300d467feb5cd2034cc4f4b384872a4bcb74bed9691035fbf24ef": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-01c7dd38f09ad46037305b066f3aec857d060f4d58ec8e353992417441e44318.mp3",
+          "sha256": "01c7dd38f09ad46037305b066f3aec857d060f4d58ec8e353992417441e44318",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "01c7dd38f09ad46037305b066f3aec857d060f4d58ec8e353992417441e44318",
+            "text": "沙",
+            "words": [
+              {
+                "text": "沙",
+                "start": 0.2,
+                "end": 0.3
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-e07604779bb490f63d588dae697b5612a4e785d004759fccaaad58a419eca030.mp3",
+          "sha256": "e07604779bb490f63d588dae697b5612a4e785d004759fccaaad58a419eca030",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "e07604779bb490f63d588dae697b5612a4e785d004759fccaaad58a419eca030",
+            "text": "沙",
+            "words": [
+              {
+                "text": "沙",
+                "start": 0.24,
+                "end": 0.36
+              }
+            ]
+          }
+        }
+      },
+      "bcf7791e4c3f20e65103d82975c662df5816fa62ea832b36e67200add79ede37": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ba83dbbcbf4f83b19dc919c561a349b509a3b944722ed9c75b51787759061813.mp3",
+          "sha256": "ba83dbbcbf4f83b19dc919c561a349b509a3b944722ed9c75b51787759061813",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "ba83dbbcbf4f83b19dc919c561a349b509a3b944722ed9c75b51787759061813",
+            "text": "房东",
+            "words": [
+              {
+                "text": "房东",
+                "start": 0.27,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-13ee62d9882c53e99675eba0429d3007158847f6f2363f249d6c529d8c254fd6.mp3",
+          "sha256": "13ee62d9882c53e99675eba0429d3007158847f6f2363f249d6c529d8c254fd6",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "13ee62d9882c53e99675eba0429d3007158847f6f2363f249d6c529d8c254fd6",
+            "text": "房东",
+            "words": [
+              {
+                "text": "房东",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "9f689a83f227c10c52ea13f0902d58f53771297cf68aaf97be9dc6cc88d719a2": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/53b11194b15f6d74dd763854275e0fbc610a115918745858b6e1423aa0a73f8e.mp3",
+          "sha256": "53b11194b15f6d74dd763854275e0fbc610a115918745858b6e1423aa0a73f8e",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "53b11194b15f6d74dd763854275e0fbc610a115918745858b6e1423aa0a73f8e",
+            "text": "沙子",
+            "words": [
+              {
+                "text": "沙子",
+                "start": 0.27,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0a5b9a27fb0888db1f35514b62af4ca7b886cf500e864ae4a23247d638f89127.mp3",
+          "sha256": "0a5b9a27fb0888db1f35514b62af4ca7b886cf500e864ae4a23247d638f89127",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "0a5b9a27fb0888db1f35514b62af4ca7b886cf500e864ae4a23247d638f89127",
+            "text": "沙子",
+            "words": [
+              {
+                "text": "沙子",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "7f03bdef031825a3d16c9257d1bd69c0cdcd61592ca72ca21d428489ce7eb6d3": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-a132ec1ce6c8b35de02c47f01a119437caf3c5822ff3c6329d403c6bd43b0659.mp3",
+          "sha256": "a132ec1ce6c8b35de02c47f01a119437caf3c5822ff3c6329d403c6bd43b0659",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "a132ec1ce6c8b35de02c47f01a119437caf3c5822ff3c6329d403c6bd43b0659",
+            "text": "家居",
+            "words": [
+              {
+                "text": "家居",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-12b453afd121401ed60b405cb316fb969103773316bf608e5814512e2e18e5f5.mp3",
+          "sha256": "12b453afd121401ed60b405cb316fb969103773316bf608e5814512e2e18e5f5",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "12b453afd121401ed60b405cb316fb969103773316bf608e5814512e2e18e5f5",
+            "text": "家居",
+            "words": [
+              {
+                "text": "家居",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

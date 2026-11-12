@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1222",
+  "targetId": "W1222",
+  "steps": [
+    {
+      "id": "BANK-W1222-W1222",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1222-W1222",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "text message; SMS",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "短信"
+            },
+            {
+              "value": "duǎnxìn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "duan3xin4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "短信",
+            "pinyin": "duǎnxìn",
+            "meaning": "text message; SMS",
+            "singleWord": true,
+            "audio": "2be55a63184ec907a028a1e2ecccc1f6d56decd7bcdc523f37bec19f9eb87e69"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2be55a63184ec907a028a1e2ecccc1f6d56decd7bcdc523f37bec19f9eb87e69": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-05f4ad80119aa2eef872de5576023ae0c65f6411e601f177073ca4228acd84be.mp3",
+        "sha256": "05f4ad80119aa2eef872de5576023ae0c65f6411e601f177073ca4228acd84be",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "05f4ad80119aa2eef872de5576023ae0c65f6411e601f177073ca4228acd84be",
+          "text": "短信",
+          "words": [
+            {
+              "text": "短信",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-54f09db26f17961e65e4d1f3a4e3c33a32ad272166f6b957c917627c6d7b9e3b.mp3",
+        "sha256": "54f09db26f17961e65e4d1f3a4e3c33a32ad272166f6b957c917627c6d7b9e3b",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "54f09db26f17961e65e4d1f3a4e3c33a32ad272166f6b957c917627c6d7b9e3b",
+          "text": "短信",
+          "words": [
+            {
+              "text": "短信",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1222",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1222-W1222",
+      "question_ids": [
+        "BANK-W1222-W1222"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-28",
+    "stepId": "S-U4-28-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-77ed"
+    ],
+    "grammarLessonIds": []
+  }
+}

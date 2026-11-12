@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2190",
+  "targetId": "W2190",
+  "steps": [
+    {
+      "id": "BANK-W2190-W2190",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2190-W2190",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "house pet",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "宠物"
+            },
+            {
+              "value": "chǒngwù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chong3wu4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "宠物",
+            "pinyin": "chǒngwù",
+            "meaning": "house pet",
+            "singleWord": true,
+            "audio": "b73a7dc3a5a35e6e9596cb33e47d851f0c16a2d9b9a2403dbb1fe907bc2722c0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b73a7dc3a5a35e6e9596cb33e47d851f0c16a2d9b9a2403dbb1fe907bc2722c0": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/fabab6c398f25eef90009b66c877667ab7e0934ade5192786e8500829eae29b6.mp3",
+        "sha256": "fabab6c398f25eef90009b66c877667ab7e0934ade5192786e8500829eae29b6",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "fabab6c398f25eef90009b66c877667ab7e0934ade5192786e8500829eae29b6",
+          "text": "宠物",
+          "words": [
+            {
+              "text": "宠物",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/68609c4810acd1eb787a8176f2bb38f3faf79173d75a651beace05434e9f5eaa.mp3",
+        "sha256": "68609c4810acd1eb787a8176f2bb38f3faf79173d75a651beace05434e9f5eaa",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "68609c4810acd1eb787a8176f2bb38f3faf79173d75a651beace05434e9f5eaa",
+          "text": "宠物",
+          "words": [
+            {
+              "text": "宠物",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2190",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2190-W2190",
+      "question_ids": [
+        "BANK-W2190-W2190"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-03",
+    "stepId": "S-U5-03-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5ba0"
+    ],
+    "grammarLessonIds": []
+  }
+}

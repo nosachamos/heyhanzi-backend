@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1890",
+  "targetId": "W1890",
+  "steps": [
+    {
+      "id": "BANK-W1890-W1890",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1890-W1890",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "actor; actress",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "演员"
+            },
+            {
+              "value": "yǎnyuán",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yan3yuan2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "演员",
+            "pinyin": "yǎnyuán",
+            "meaning": "actor; actress",
+            "singleWord": true,
+            "audio": "529706415818cfe6e2f2d5e4864678ef0ef510000369f206fc37852930c800aa"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "529706415818cfe6e2f2d5e4864678ef0ef510000369f206fc37852930c800aa": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-65fad223435e47b12d8b16f614285e7ace4a879409f043895921bc4943e47783.mp3",
+        "sha256": "65fad223435e47b12d8b16f614285e7ace4a879409f043895921bc4943e47783",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "65fad223435e47b12d8b16f614285e7ace4a879409f043895921bc4943e47783",
+          "text": "演员",
+          "words": [
+            {
+              "text": "演员",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-51690b9b4f5a0263f7d0b7c88cc35cf5069588ae55a45b86c2dfbe0d9a23d391.mp3",
+        "sha256": "51690b9b4f5a0263f7d0b7c88cc35cf5069588ae55a45b86c2dfbe0d9a23d391",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "51690b9b4f5a0263f7d0b7c88cc35cf5069588ae55a45b86c2dfbe0d9a23d391",
+          "text": "演员",
+          "words": [
+            {
+              "text": "演员",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1890",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1890-W1890",
+      "question_ids": [
+        "BANK-W1890-W1890"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-25",
+    "stepId": "S-U4-25-words-r4-6",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6f14"
+    ],
+    "grammarLessonIds": []
+  }
+}

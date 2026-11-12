@@ -1,0 +1,57 @@
+{
+  "id": "BANK-K-SOUND-repair",
+  "targetId": "K-SOUND-repair",
+  "steps": [
+    {
+      "id": "BANK-K-SOUND-repair-K-SOUND-repair-perform",
+      "kind": "check",
+      "title": "Use the skill in context",
+      "questions": [
+        {
+          "id": "BANK-K-SOUND-repair-K-SOUND-repair-perform",
+          "kind": "production",
+          "response": "spoken",
+          "prompt": "Your partner spoke while you were distracted. Ask them to repeat using the taught whole chunk, pause, then acknowledge the repeated message.",
+          "promptLanguage": "en",
+          "context": "Your partner spoke while you were distracted; you did not hear the message. Its content is unspecified. Ask for repetition with the taught chunk, wait, then acknowledge hearing the repeated turn without inventing its content.\nFamiliar meanings available: please say it once more.",
+          "contextLanguage": "en",
+          "label": "Take your speaking turn",
+          "resultDomain": "Self-reviewed speaking practice",
+          "rubric": [
+            {
+              "id": "r1",
+              "text": "I used the taught repetition-request chunk for the missed message."
+            },
+            {
+              "id": "r2",
+              "text": "I left a turn for the partner and distinguished missing sound from an unknown word."
+            }
+          ]
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {},
+  "coverage": [
+    {
+      "target_id": "K-SOUND-repair",
+      "facet_id": "K-SOUND-repair-situated-performance",
+      "part_id": "BANK-K-SOUND-repair-K-SOUND-repair-perform",
+      "question_ids": [
+        "BANK-K-SOUND-repair-K-SOUND-repair-perform"
+      ],
+      "evidence": "self-reviewed",
+      "scope": "Request repetition with the explicitly taught whole chunk; distinguish a sound-production problem from a missing word. Grammar inside the chunk is analyzed later.",
+      "stage_outcome_mastery": false
+    }
+  ],
+  "remediation": {
+    "unitId": "WU04",
+    "stepId": "S-WU04-skill-K-SOUND-repair",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-904d"
+    ],
+    "grammarLessonIds": []
+  }
+}

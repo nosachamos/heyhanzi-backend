@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1129",
+  "targetId": "W1129",
+  "steps": [
+    {
+      "id": "BANK-W1129-W1129",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1129-W1129",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "counter for events; field or venue",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "场"
+            },
+            {
+              "value": "chǎng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chang3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "场",
+            "pinyin": "chǎng",
+            "meaning": "counter for events; field or venue",
+            "singleWord": true,
+            "audio": "cec6ea3db233991d393bdb41d18b5d47c38962f495c08f1a60729b8a964856e8"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "cec6ea3db233991d393bdb41d18b5d47c38962f495c08f1a60729b8a964856e8": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d83f936b0837ca629381267242d6ed096bdcd6395a018ebdba4f2d9d4ac87f31.mp3",
+        "sha256": "d83f936b0837ca629381267242d6ed096bdcd6395a018ebdba4f2d9d4ac87f31",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "d83f936b0837ca629381267242d6ed096bdcd6395a018ebdba4f2d9d4ac87f31",
+          "text": "场",
+          "words": [
+            {
+              "text": "场",
+              "start": 0.22,
+              "end": 0.3
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-6210e1e85bea318c7a6f5a15176fc71f3b0947ea12a73d512b39da861ba6504e.mp3",
+        "sha256": "6210e1e85bea318c7a6f5a15176fc71f3b0947ea12a73d512b39da861ba6504e",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "6210e1e85bea318c7a6f5a15176fc71f3b0947ea12a73d512b39da861ba6504e",
+          "text": "场",
+          "words": [
+            {
+              "text": "场",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1129",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1129-W1129",
+      "question_ids": [
+        "BANK-W1129-W1129"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-10-P01",
+    "stepId": "S-U4-10-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6298"
+    ],
+    "grammarLessonIds": []
+  }
+}

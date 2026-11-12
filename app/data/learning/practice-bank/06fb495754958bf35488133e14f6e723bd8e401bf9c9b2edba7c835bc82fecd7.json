@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4012",
+  "targetId": "W4012",
+  "steps": [
+    {
+      "id": "BANK-W4012-W4012",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4012-W4012",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "wind and rain; the elements",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "风雨"
+            },
+            {
+              "value": "fēngyǔ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "feng1yu3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "风雨",
+            "pinyin": "fēngyǔ",
+            "meaning": "wind and rain; the elements",
+            "singleWord": true,
+            "audio": "3d00b6193722b0c1526fde0e833cf7fb67a830e81aa961d68031a1dab8e6534d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3d00b6193722b0c1526fde0e833cf7fb67a830e81aa961d68031a1dab8e6534d": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5ba510a978c9a63273103a539f7f9d4a37fef195d370c24dd1311a54bb7054e4.mp3",
+        "sha256": "5ba510a978c9a63273103a539f7f9d4a37fef195d370c24dd1311a54bb7054e4",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "5ba510a978c9a63273103a539f7f9d4a37fef195d370c24dd1311a54bb7054e4",
+          "text": "风雨",
+          "words": [
+            {
+              "text": "风雨",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d827c8759e5aff5c994921a943d520c28e6177f725101beae43f98ad94c596e4.mp3",
+        "sha256": "d827c8759e5aff5c994921a943d520c28e6177f725101beae43f98ad94c596e4",
+        "byteLength": 15309,
+        "readAlong": {
+          "audioSha256": "d827c8759e5aff5c994921a943d520c28e6177f725101beae43f98ad94c596e4",
+          "text": "风雨",
+          "words": [
+            {
+              "text": "风雨",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4012",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4012-W4012",
+      "question_ids": [
+        "BANK-W4012-W4012"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-28-P01",
+    "stepId": "S-U6-28-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-98ce"
+    ],
+    "grammarLessonIds": []
+  }
+}

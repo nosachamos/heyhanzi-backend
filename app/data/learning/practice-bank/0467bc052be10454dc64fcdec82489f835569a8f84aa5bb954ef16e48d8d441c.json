@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1181",
+  "targetId": "W1181",
+  "steps": [
+    {
+      "id": "BANK-W1181-W1181",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1181-W1181",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "grand contest",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "大赛"
+            },
+            {
+              "value": "dàsài",
+              "mode": "pinyin"
+            },
+            {
+              "value": "da4sai4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "大赛",
+            "pinyin": "dàsài",
+            "meaning": "grand contest",
+            "singleWord": true,
+            "audio": "5237f4aa30824f555337e5afa213fb94a73ca927ec8cad4026be93e37840e0cf"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5237f4aa30824f555337e5afa213fb94a73ca927ec8cad4026be93e37840e0cf": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-6a098ab488c941eb9917352e601c3cf534c71bc3b2542fbb7d81a80d1fb462a4.mp3",
+        "sha256": "6a098ab488c941eb9917352e601c3cf534c71bc3b2542fbb7d81a80d1fb462a4",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "6a098ab488c941eb9917352e601c3cf534c71bc3b2542fbb7d81a80d1fb462a4",
+          "text": "大赛",
+          "words": [
+            {
+              "text": "大赛",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-343769af7680eab8bd0162a705f12599dbf644a132aaaa4eec1d683438bdc03c.mp3",
+        "sha256": "343769af7680eab8bd0162a705f12599dbf644a132aaaa4eec1d683438bdc03c",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "343769af7680eab8bd0162a705f12599dbf644a132aaaa4eec1d683438bdc03c",
+          "text": "大赛",
+          "words": [
+            {
+              "text": "大赛",
+              "start": 0.16,
+              "end": 0.56
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1181",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1181-W1181",
+      "question_ids": [
+        "BANK-W1181-W1181"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-18",
+    "stepId": "S-U4-18-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8d5b"
+    ],
+    "grammarLessonIds": []
+  }
+}

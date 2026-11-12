@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1831",
+  "targetId": "W1831",
+  "steps": [
+    {
+      "id": "BANK-W1831-W1831",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1831-W1831",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "flower; fresh flowers",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "鲜花"
+            },
+            {
+              "value": "xiānhuā",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xian1hua1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "鲜花",
+            "pinyin": "xiānhuā",
+            "meaning": "flower; fresh flowers",
+            "singleWord": true,
+            "audio": "8f49b1f5c22098d4baa28dd801565bd5b1b5079356eeee23645154d599550815"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8f49b1f5c22098d4baa28dd801565bd5b1b5079356eeee23645154d599550815": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1cdc0fc73a3a2d33337f3140bbca326bfb9b987427e63ac257a60493e0863002.mp3",
+        "sha256": "1cdc0fc73a3a2d33337f3140bbca326bfb9b987427e63ac257a60493e0863002",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "1cdc0fc73a3a2d33337f3140bbca326bfb9b987427e63ac257a60493e0863002",
+          "text": "鲜花",
+          "words": [
+            {
+              "text": "鲜花",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-7315e8c1331b336174c1d89b853719eaddf0e496234294ec5f8b0b8a8d46e8c0.mp3",
+        "sha256": "7315e8c1331b336174c1d89b853719eaddf0e496234294ec5f8b0b8a8d46e8c0",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "7315e8c1331b336174c1d89b853719eaddf0e496234294ec5f8b0b8a8d46e8c0",
+          "text": "鲜花",
+          "words": [
+            {
+              "text": "鲜花",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1831",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1831-W1831",
+      "question_ids": [
+        "BANK-W1831-W1831"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-26",
+    "stepId": "S-U4-26-words-r4-17",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9c9c"
+    ],
+    "grammarLessonIds": []
+  }
+}

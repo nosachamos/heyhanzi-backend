@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0470",
+  "targetId": "W0470",
+  "steps": [
+    {
+      "id": "BANK-W0470-W0470",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0470-W0470",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "weather",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "天气"
+            },
+            {
+              "value": "tiānqì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "tian1qi4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "天气",
+            "pinyin": "tiānqì",
+            "meaning": "weather",
+            "singleWord": true,
+            "audio": "18bcf4cb3cdda31099a0cf4cc47b17bf995a7953b9469fb9adfb58830b9d62e2"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "18bcf4cb3cdda31099a0cf4cc47b17bf995a7953b9469fb9adfb58830b9d62e2": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d06b00eaf9328b023fd7ddfea9f65b6a6ed302081980c7b0eea8e00d885f48cf.mp3",
+        "sha256": "d06b00eaf9328b023fd7ddfea9f65b6a6ed302081980c7b0eea8e00d885f48cf",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "d06b00eaf9328b023fd7ddfea9f65b6a6ed302081980c7b0eea8e00d885f48cf",
+          "text": "天气",
+          "words": [
+            {
+              "text": "天气",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-9798c43f26096d5e8ae31cc195276fcf1b3b7d27f0626a7d3fd9ee90f7dfe767.mp3",
+        "sha256": "9798c43f26096d5e8ae31cc195276fcf1b3b7d27f0626a7d3fd9ee90f7dfe767",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "9798c43f26096d5e8ae31cc195276fcf1b3b7d27f0626a7d3fd9ee90f7dfe767",
+          "text": "天气",
+          "words": [
+            {
+              "text": "天气",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0470",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0470-W0470",
+      "question_ids": [
+        "BANK-W0470-W0470"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U14",
+    "stepId": "S-U14-words-r4-9",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5929"
+    ],
+    "grammarLessonIds": []
+  }
+}

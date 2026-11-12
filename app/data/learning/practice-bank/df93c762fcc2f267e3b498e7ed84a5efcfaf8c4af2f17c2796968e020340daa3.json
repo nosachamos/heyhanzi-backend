@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2760",
+  "targetId": "W2760",
+  "steps": [
+    {
+      "id": "BANK-W2760-W2760",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2760-W2760",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "Chinese dragon; loong",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "龙"
+            },
+            {
+              "value": "lóng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "long2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "龙",
+            "pinyin": "lóng",
+            "meaning": "Chinese dragon; loong",
+            "singleWord": true,
+            "audio": "a4cfaf20e687734c8cf2ca4f9ebaf14de40e1d1214c8af36060d0b84c6aba37b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a4cfaf20e687734c8cf2ca4f9ebaf14de40e1d1214c8af36060d0b84c6aba37b": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/4f01edf00f460e512aeebbebc222152d1ebfdf36a60a076ad1e350035e20157a.mp3",
+        "sha256": "4f01edf00f460e512aeebbebc222152d1ebfdf36a60a076ad1e350035e20157a",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "4f01edf00f460e512aeebbebc222152d1ebfdf36a60a076ad1e350035e20157a",
+          "text": "龙",
+          "words": [
+            {
+              "text": "龙",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/66afdcaad8c15f3a0c37219744d49df11bbec188d035eb42a9189700eb4b763e.mp3",
+        "sha256": "66afdcaad8c15f3a0c37219744d49df11bbec188d035eb42a9189700eb4b763e",
+        "byteLength": 7245,
+        "readAlong": {
+          "audioSha256": "66afdcaad8c15f3a0c37219744d49df11bbec188d035eb42a9189700eb4b763e",
+          "text": "龙",
+          "words": [
+            {
+              "text": "龙",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2760",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2760-W2760",
+      "question_ids": [
+        "BANK-W2760-W2760"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-29",
+    "stepId": "S-U5-29-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7470"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1929",
+  "targetId": "W1929",
+  "steps": [
+    {
+      "id": "BANK-W1929-W1929",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1929-W1929",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "thereupon; as a result",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "于是"
+            },
+            {
+              "value": "yúshì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yu2shi4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "于是",
+            "pinyin": "yúshì",
+            "meaning": "thereupon; as a result",
+            "singleWord": true,
+            "audio": "cf637511a278ed3d81f89827be6f63682c0eab1bb07617881777ca1162974822"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "cf637511a278ed3d81f89827be6f63682c0eab1bb07617881777ca1162974822": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-3b7c42f4add914de00fc4b439768b159edf94064f5bf2ad7b1f9f83e5986b140.mp3",
+        "sha256": "3b7c42f4add914de00fc4b439768b159edf94064f5bf2ad7b1f9f83e5986b140",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "3b7c42f4add914de00fc4b439768b159edf94064f5bf2ad7b1f9f83e5986b140",
+          "text": "于是",
+          "words": [
+            {
+              "text": "于是",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-333eafff56b1683cc26af1600943f60a97d673019a999c87a7a7b39d3dc73663.mp3",
+        "sha256": "333eafff56b1683cc26af1600943f60a97d673019a999c87a7a7b39d3dc73663",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "333eafff56b1683cc26af1600943f60a97d673019a999c87a7a7b39d3dc73663",
+          "text": "于是",
+          "words": [
+            {
+              "text": "于是",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1929",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1929-W1929",
+      "question_ids": [
+        "BANK-W1929-W1929"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-06",
+    "stepId": "S-U4-06-words-r4-9",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4e8e"
+    ],
+    "grammarLessonIds": []
+  }
+}

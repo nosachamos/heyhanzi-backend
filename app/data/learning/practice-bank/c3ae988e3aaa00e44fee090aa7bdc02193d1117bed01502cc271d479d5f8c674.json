@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3071",
+  "targetId": "W3071",
+  "steps": [
+    {
+      "id": "BANK-W3071-W3071",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3071-W3071",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "operation; surgery",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "手术"
+            },
+            {
+              "value": "shǒushù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shou3shu4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "手术",
+            "pinyin": "shǒushù",
+            "meaning": "operation; surgery",
+            "singleWord": true,
+            "audio": "8bf6cf780ba391e12cdeab7a5c1cffdc8428b2aae3ec36f4996cd676f65f053d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8bf6cf780ba391e12cdeab7a5c1cffdc8428b2aae3ec36f4996cd676f65f053d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-6ecd2006b229b209ebc37949c33f88aeedb60c9cb7d044114626acdb29c06c24.mp3",
+        "sha256": "6ecd2006b229b209ebc37949c33f88aeedb60c9cb7d044114626acdb29c06c24",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "6ecd2006b229b209ebc37949c33f88aeedb60c9cb7d044114626acdb29c06c24",
+          "text": "手术",
+          "words": [
+            {
+              "text": "手术",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-88543782c9f4b2a510815673746c11a323aa61132e929262e65c8d9298ac9f3f.mp3",
+        "sha256": "88543782c9f4b2a510815673746c11a323aa61132e929262e65c8d9298ac9f3f",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "88543782c9f4b2a510815673746c11a323aa61132e929262e65c8d9298ac9f3f",
+          "text": "手术",
+          "words": [
+            {
+              "text": "手术",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3071",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3071-W3071",
+      "question_ids": [
+        "BANK-W3071-W3071"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-15",
+    "stepId": "S-U5-15-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-672f"
+    ],
+    "grammarLessonIds": []
+  }
+}

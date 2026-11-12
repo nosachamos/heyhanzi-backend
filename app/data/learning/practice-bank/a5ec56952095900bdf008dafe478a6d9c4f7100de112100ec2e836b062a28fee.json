@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1311",
+  "targetId": "W1311",
+  "steps": [
+    {
+      "id": "BANK-W1311-W1311",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1311-W1311",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to purchase; to buy",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "购买"
+            },
+            {
+              "value": "gòumǎi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gou4mai3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "购买",
+            "pinyin": "gòumǎi",
+            "meaning": "to purchase; to buy",
+            "singleWord": true,
+            "audio": "f352c4a5105ac563097421f06b7abe7fb12c27dc5ef3d565e4b63eae5aa9dda3"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f352c4a5105ac563097421f06b7abe7fb12c27dc5ef3d565e4b63eae5aa9dda3": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d8a2b6ef0c6cef7268fbbca36c47e08152c963c832773faee11fc9bd0e87308c.mp3",
+        "sha256": "d8a2b6ef0c6cef7268fbbca36c47e08152c963c832773faee11fc9bd0e87308c",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "d8a2b6ef0c6cef7268fbbca36c47e08152c963c832773faee11fc9bd0e87308c",
+          "text": "购买",
+          "words": [
+            {
+              "text": "购买",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-0ca507688f9c56478e3844bf030bd1198099629315b31a9a386fd6e9a8da6f29.mp3",
+        "sha256": "0ca507688f9c56478e3844bf030bd1198099629315b31a9a386fd6e9a8da6f29",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "0ca507688f9c56478e3844bf030bd1198099629315b31a9a386fd6e9a8da6f29",
+          "text": "购买",
+          "words": [
+            {
+              "text": "购买",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1311",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1311-W1311",
+      "question_ids": [
+        "BANK-W1311-W1311"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-11",
+    "stepId": "S-U4-11-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8d2d"
+    ],
+    "grammarLessonIds": []
+  }
+}

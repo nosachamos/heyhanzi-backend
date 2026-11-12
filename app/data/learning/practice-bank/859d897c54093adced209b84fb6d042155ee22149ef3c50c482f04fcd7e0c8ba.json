@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1004",
+  "targetId": "W1004",
+  "steps": [
+    {
+      "id": "BANK-W1004-W1004",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1004-W1004",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to request; to require",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "要求"
+            },
+            {
+              "value": "yāoqiú",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yao1qiu2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "要求",
+            "pinyin": "yāoqiú",
+            "meaning": "to request; to require",
+            "singleWord": true,
+            "audio": "59340ed6395541d79f25c9c9f398af1b59649c5fa2a8df8c2028356bde4cec9d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "59340ed6395541d79f25c9c9f398af1b59649c5fa2a8df8c2028356bde4cec9d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-455695c6e716189c2b26e9a21a34979150dcc8969ee94c296d75d38a380b14bb.mp3",
+        "sha256": "455695c6e716189c2b26e9a21a34979150dcc8969ee94c296d75d38a380b14bb",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "455695c6e716189c2b26e9a21a34979150dcc8969ee94c296d75d38a380b14bb",
+          "text": "要求",
+          "words": [
+            {
+              "text": "要求",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-6f36b7ab691a1e178267100eca722c250aa1224ede2a73728e338406de304621.mp3",
+        "sha256": "6f36b7ab691a1e178267100eca722c250aa1224ede2a73728e338406de304621",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "6f36b7ab691a1e178267100eca722c250aa1224ede2a73728e338406de304621",
+          "text": "要求",
+          "words": [
+            {
+              "text": "要求",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1004",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1004-W1004",
+      "question_ids": [
+        "BANK-W1004-W1004"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-19",
+    "stepId": "S-U3-19-words-r4-9",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6c42"
+    ],
+    "grammarLessonIds": []
+  }
+}

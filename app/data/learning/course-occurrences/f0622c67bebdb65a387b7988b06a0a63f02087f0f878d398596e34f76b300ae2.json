@@ -1,0 +1,785 @@
+{
+  "id": "EX-CHAR-char-50b2",
+  "revision": 2,
+  "unit": "U4-23-P01",
+  "stage": "ST-HSK4",
+  "after": "S-U4-23-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "傲",
+  "sourceBlockId": "mandarin-simplified-v1-char-50b2",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "W0210",
+        "text": "下个星期",
+        "pinyin": "xiàgexīngqī",
+        "meaning": "next week",
+        "characters": [
+          {
+            "id": "C-4E0B",
+            "text": "下"
+          },
+          {
+            "id": "C-4E2A",
+            "text": "个"
+          },
+          {
+            "id": "C-661F",
+            "text": "星"
+          },
+          {
+            "id": "C-671F",
+            "text": "期"
+          }
+        ]
+      },
+      {
+        "id": "W1413",
+        "text": "骄傲",
+        "pinyin": "jiāo'ào",
+        "meaning": "pride; arrogance",
+        "characters": [
+          {
+            "id": "C-9A84",
+            "text": "骄"
+          },
+          {
+            "id": "C-50B2",
+            "text": "傲"
+          }
+        ]
+      },
+      {
+        "id": "W1872",
+        "text": "许多",
+        "pinyin": "xǔduō",
+        "meaning": "many; a lot of",
+        "characters": [
+          {
+            "id": "C-8BB8",
+            "text": "许"
+          },
+          {
+            "id": "C-591A",
+            "text": "多"
+          }
+        ]
+      },
+      {
+        "id": "W3836",
+        "text": "此刻",
+        "pinyin": "cǐkè",
+        "meaning": "this moment; now",
+        "characters": [
+          {
+            "id": "C-6B64",
+            "text": "此"
+          },
+          {
+            "id": "C-523B",
+            "text": "刻"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "db2df5e8fb649a0234aa58f6fb25feb975bb5ff3abc4616863b10e7fc0187872",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-50b2",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "傲",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-50b2-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1413",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "pride; arrogance",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "骄傲"
+              },
+              {
+                "value": "jiāo'ào",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jiao1ao4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "骄傲",
+              "pinyin": "jiāo'ào",
+              "meaning": "pride; arrogance",
+              "audio": "404355bc317851ddf92713677f6d3b72f128af1daf04a26ffb5a633210534ee2",
+              "singleWord": true,
+              "focus": "傲"
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-50b2-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W1413",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "骄傲",
+              "meaning": "",
+              "focus": "傲"
+            },
+            "choices": [
+              {
+                "id": "W1413",
+                "label": "pride; arrogance",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W3836",
+                "label": "this moment; now",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0210",
+                "label": "next week",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-50b2-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "傲",
+        "pinyin": "ào",
+        "meaning": "proud; arrogant",
+        "source": "/stroke-data/50b2.json",
+        "reference": {
+          "character": "傲",
+          "sha256": "a6c5c6f49a371facdb73488315330fb21ce0dd801daf6892fafab9e6c134e98b",
+          "medians": [
+            [
+              [
+                268,
+                777
+              ],
+              [
+                285,
+                764
+              ],
+              [
+                303,
+                731
+              ],
+              [
+                277,
+                668
+              ],
+              [
+                165,
+                479
+              ],
+              [
+                102,
+                400
+              ],
+              [
+                63,
+                362
+              ]
+            ],
+            [
+              [
+                209,
+                501
+              ],
+              [
+                213,
+                472
+              ],
+              [
+                229,
+                447
+              ],
+              [
+                233,
+                388
+              ],
+              [
+                227,
+                228
+              ],
+              [
+                212,
+                98
+              ],
+              [
+                218,
+                38
+              ]
+            ],
+            [
+              [
+                351,
+                601
+              ],
+              [
+                411,
+                601
+              ],
+              [
+                524,
+                641
+              ],
+              [
+                577,
+                641
+              ]
+            ],
+            [
+              [
+                330,
+                491
+              ],
+              [
+                388,
+                493
+              ],
+              [
+                527,
+                536
+              ],
+              [
+                575,
+                535
+              ]
+            ],
+            [
+              [
+                434,
+                779
+              ],
+              [
+                472,
+                747
+              ],
+              [
+                474,
+                733
+              ],
+              [
+                459,
+                454
+              ],
+              [
+                444,
+                429
+              ]
+            ],
+            [
+              [
+                283,
+                381
+              ],
+              [
+                326,
+                377
+              ],
+              [
+                530,
+                432
+              ],
+              [
+                577,
+                431
+              ]
+            ],
+            [
+              [
+                457,
+                324
+              ],
+              [
+                473,
+                328
+              ],
+              [
+                510,
+                321
+              ],
+              [
+                535,
+                308
+              ],
+              [
+                553,
+                283
+              ],
+              [
+                490,
+                111
+              ],
+              [
+                459,
+                64
+              ],
+              [
+                434,
+                48
+              ],
+              [
+                338,
+                94
+              ]
+            ],
+            [
+              [
+                420,
+                375
+              ],
+              [
+                432,
+                362
+              ],
+              [
+                435,
+                347
+              ],
+              [
+                401,
+                281
+              ],
+              [
+                339,
+                205
+              ],
+              [
+                308,
+                175
+              ],
+              [
+                267,
+                149
+              ]
+            ],
+            [
+              [
+                703,
+                786
+              ],
+              [
+                726,
+                769
+              ],
+              [
+                739,
+                749
+              ],
+              [
+                729,
+                709
+              ],
+              [
+                676,
+                578
+              ],
+              [
+                648,
+                525
+              ],
+              [
+                609,
+                470
+              ]
+            ],
+            [
+              [
+                646,
+                490
+              ],
+              [
+                745,
+                508
+              ],
+              [
+                852,
+                542
+              ],
+              [
+                905,
+                547
+              ]
+            ],
+            [
+              [
+                713,
+                468
+              ],
+              [
+                741,
+                445
+              ],
+              [
+                739,
+                393
+              ],
+              [
+                726,
+                311
+              ],
+              [
+                698,
+                229
+              ],
+              [
+                670,
+                182
+              ],
+              [
+                627,
+                136
+              ],
+              [
+                598,
+                115
+              ],
+              [
+                540,
+                90
+              ]
+            ],
+            [
+              [
+                583,
+                375
+              ],
+              [
+                604,
+                367
+              ],
+              [
+                624,
+                348
+              ],
+              [
+                750,
+                171
+              ],
+              [
+                838,
+                77
+              ],
+              [
+                921,
+                53
+              ],
+              [
+                985,
+                42
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-50b2-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1872",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "many; a lot of",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "许多"
+              },
+              {
+                "value": "xǔduō",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xu3duo1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "许多",
+              "pinyin": "xǔduō",
+              "meaning": "many; a lot of",
+              "audio": "265ed6fb25b8ac8114ec680022ef12d4e637cfa7a2e0ba2c3708e90e00a357de",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-50b2-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W1413",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "pride; arrogance",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "骄傲"
+              },
+              {
+                "value": "jiāo'ào",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jiao1ao4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "骄傲",
+              "pinyin": "jiāo'ào",
+              "meaning": "pride; arrogance",
+              "audio": "404355bc317851ddf92713677f6d3b72f128af1daf04a26ffb5a633210534ee2",
+              "singleWord": true,
+              "focus": "傲"
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "404355bc317851ddf92713677f6d3b72f128af1daf04a26ffb5a633210534ee2"
+            ],
+            "transcript": [
+              {
+                "text": "骄傲",
+                "pinyin": "jiāo'ào",
+                "meaning": "pride; arrogance",
+                "audio": "404355bc317851ddf92713677f6d3b72f128af1daf04a26ffb5a633210534ee2",
+                "singleWord": true,
+                "focus": "傲"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-50B2",
+      "character": "傲",
+      "lessonIds": [
+        "LESSON-C-50B2"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-50b2-word",
+        "EX-CHAR-char-50b2-recognize",
+        "EX-CHAR-char-50b2-write",
+        "EX-CHAR-char-50b2-familiar",
+        "EX-CHAR-char-50b2-recall"
+      ]
+    },
+    "audio": {
+      "cb43c8afa3ba43399f212344c4ab4802dff52e6812bb550878ab5100e1e5c0a7": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ce9aa73b2b88d6af03ca5f2a8ebf177d8bc82fabe4dae645267891475ea0ea45.mp3",
+          "sha256": "ce9aa73b2b88d6af03ca5f2a8ebf177d8bc82fabe4dae645267891475ea0ea45",
+          "byteLength": 18189,
+          "readAlong": {
+            "audioSha256": "ce9aa73b2b88d6af03ca5f2a8ebf177d8bc82fabe4dae645267891475ea0ea45",
+            "text": "下个星期",
+            "words": [
+              {
+                "text": "下个星期",
+                "start": 0.09,
+                "end": 0.8699999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-2a3acf67c042c1447ac3322711d4cf830ef174f8f0cf351c4f4da695f603294c.mp3",
+          "sha256": "2a3acf67c042c1447ac3322711d4cf830ef174f8f0cf351c4f4da695f603294c",
+          "byteLength": 18189,
+          "readAlong": {
+            "audioSha256": "2a3acf67c042c1447ac3322711d4cf830ef174f8f0cf351c4f4da695f603294c",
+            "text": "下个星期",
+            "words": [
+              {
+                "text": "下个星期",
+                "start": 0.09,
+                "end": 0.75
+              }
+            ]
+          }
+        }
+      },
+      "404355bc317851ddf92713677f6d3b72f128af1daf04a26ffb5a633210534ee2": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/aa7d296986e93cb9cd04afa93e205c18740382767b0f916a1901f4176e31c4d4.mp3",
+          "sha256": "aa7d296986e93cb9cd04afa93e205c18740382767b0f916a1901f4176e31c4d4",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "aa7d296986e93cb9cd04afa93e205c18740382767b0f916a1901f4176e31c4d4",
+            "text": "骄傲",
+            "words": [
+              {
+                "text": "骄傲",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9fc4d79063fd02bdd7fb852ef372ef3a991941e65df1a4e82517a8a546a2d8b8.mp3",
+          "sha256": "9fc4d79063fd02bdd7fb852ef372ef3a991941e65df1a4e82517a8a546a2d8b8",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "9fc4d79063fd02bdd7fb852ef372ef3a991941e65df1a4e82517a8a546a2d8b8",
+            "text": "骄傲",
+            "words": [
+              {
+                "text": "骄傲",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "265ed6fb25b8ac8114ec680022ef12d4e637cfa7a2e0ba2c3708e90e00a357de": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5fa86565b34cf7291f80890fb02c2d68ba7deb91370712ebec2c44b099c3a3f2.mp3",
+          "sha256": "5fa86565b34cf7291f80890fb02c2d68ba7deb91370712ebec2c44b099c3a3f2",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "5fa86565b34cf7291f80890fb02c2d68ba7deb91370712ebec2c44b099c3a3f2",
+            "text": "许多",
+            "words": [
+              {
+                "text": "许多",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-cb30853c75f607ca529027ef8f107d15f3e217480c96f119aa3bed4dadfb9c5c.mp3",
+          "sha256": "cb30853c75f607ca529027ef8f107d15f3e217480c96f119aa3bed4dadfb9c5c",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "cb30853c75f607ca529027ef8f107d15f3e217480c96f119aa3bed4dadfb9c5c",
+            "text": "许多",
+            "words": [
+              {
+                "text": "许多",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "1cb2658491613107d219d226bbbb0572bdfe5a28dbcca5f92c6e030232a35d48": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-71e6d1ac8652063a6331dd9ed7ad79f8a5da2b2c94ac64db9978899554121525.mp3",
+          "sha256": "71e6d1ac8652063a6331dd9ed7ad79f8a5da2b2c94ac64db9978899554121525",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "71e6d1ac8652063a6331dd9ed7ad79f8a5da2b2c94ac64db9978899554121525",
+            "text": "此刻",
+            "words": [
+              {
+                "text": "此刻",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-5ecb09a2c465fc4b2de14633f6e0c1cf6036a8b84df217a6e3c742bfe1ee7b1e.mp3",
+          "sha256": "5ecb09a2c465fc4b2de14633f6e0c1cf6036a8b84df217a6e3c742bfe1ee7b1e",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "5ecb09a2c465fc4b2de14633f6e0c1cf6036a8b84df217a6e3c742bfe1ee7b1e",
+            "text": "此刻",
+            "words": [
+              {
+                "text": "此刻",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

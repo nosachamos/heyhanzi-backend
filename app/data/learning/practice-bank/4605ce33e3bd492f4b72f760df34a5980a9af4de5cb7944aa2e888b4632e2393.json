@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0100",
+  "targetId": "W0100",
+  "steps": [
+    {
+      "id": "BANK-W0100-W0100",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0100-W0100",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "apple",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "苹果"
+            },
+            {
+              "value": "píngguǒ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ping2guo3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "苹果",
+            "pinyin": "píngguǒ",
+            "meaning": "apple",
+            "singleWord": true,
+            "audio": "a5502f27d271f1c388fa6e811893715bea592f4bc7ae99a8d1e483f4c607fd89"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a5502f27d271f1c388fa6e811893715bea592f4bc7ae99a8d1e483f4c607fd89": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-94302fbe131f47f549fe375e37adda019fadec1734dc0c91fa05ffc58cafb6a3.mp3",
+        "sha256": "94302fbe131f47f549fe375e37adda019fadec1734dc0c91fa05ffc58cafb6a3",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "94302fbe131f47f549fe375e37adda019fadec1734dc0c91fa05ffc58cafb6a3",
+          "text": "苹果",
+          "words": [
+            {
+              "text": "苹果",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-4cc35e72886ab0199dbb11a4ea748232317807498edd3c72df5c3d7257b6bc90.mp3",
+        "sha256": "4cc35e72886ab0199dbb11a4ea748232317807498edd3c72df5c3d7257b6bc90",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "4cc35e72886ab0199dbb11a4ea748232317807498edd3c72df5c3d7257b6bc90",
+          "text": "苹果",
+          "words": [
+            {
+              "text": "苹果",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0100",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0100-W0100",
+      "question_ids": [
+        "BANK-W0100-W0100"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U08-P01",
+    "stepId": "S-U08-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-679c"
+    ],
+    "grammarLessonIds": []
+  }
+}

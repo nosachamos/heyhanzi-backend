@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4128",
+  "targetId": "W4128",
+  "steps": [
+    {
+      "id": "BANK-W4128-W4128",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4128-W4128",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "king",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "国王"
+            },
+            {
+              "value": "guówáng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "guo2wang2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "国王",
+            "pinyin": "guówáng",
+            "meaning": "king",
+            "singleWord": true,
+            "audio": "53aeac5cf51f22027a239d319dd39e81dd79c5be76004e3cec895153b02a5769"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "53aeac5cf51f22027a239d319dd39e81dd79c5be76004e3cec895153b02a5769": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-0c5746c96885c363ff55efb1e9e953a03cddda39c1d318e75921a63396c8dd3d.mp3",
+        "sha256": "0c5746c96885c363ff55efb1e9e953a03cddda39c1d318e75921a63396c8dd3d",
+        "byteLength": 14157,
+        "readAlong": {
+          "audioSha256": "0c5746c96885c363ff55efb1e9e953a03cddda39c1d318e75921a63396c8dd3d",
+          "text": "国王",
+          "words": [
+            {
+              "text": "国王",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c5c8bcfe0e02b3ac32e605afbf383117aafa549c6bac82f1b15afb8b9b74bd45.mp3",
+        "sha256": "c5c8bcfe0e02b3ac32e605afbf383117aafa549c6bac82f1b15afb8b9b74bd45",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "c5c8bcfe0e02b3ac32e605afbf383117aafa549c6bac82f1b15afb8b9b74bd45",
+          "text": "国王",
+          "words": [
+            {
+              "text": "国王",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4128",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4128-W4128",
+      "question_ids": [
+        "BANK-W4128-W4128"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-34-P01",
+    "stepId": "S-U6-34-words-r4-16",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-56fd"
+    ],
+    "grammarLessonIds": []
+  }
+}

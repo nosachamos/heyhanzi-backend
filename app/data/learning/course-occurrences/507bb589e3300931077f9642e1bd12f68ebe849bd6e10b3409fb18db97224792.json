@@ -1,0 +1,685 @@
+{
+  "id": "EX-CHAR-char-70c2",
+  "revision": 2,
+  "unit": "U6-46-P02",
+  "stage": "ST-HSK6",
+  "after": "S-U6-46-P02-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "烂",
+  "sourceBlockId": "mandarin-simplified-v1-char-70c2",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-70c2",
+        "text": "烂",
+        "pinyin": "làn",
+        "meaning": "soft; mushy; well-cooked and soft",
+        "characters": [
+          {
+            "id": "C-70C2",
+            "text": "烂"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-17577553067fb14f72750ff6",
+        "text": "腐烂",
+        "pinyin": "fǔ làn",
+        "meaning": "to putrefy",
+        "characters": [
+          {
+            "id": "C-8150",
+            "text": "腐"
+          },
+          {
+            "id": "C-70C2",
+            "text": "烂"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-3746612def0cf0bce5404ea2",
+        "text": "话筒",
+        "pinyin": "huàtǒng",
+        "meaning": "microphone; (telephone) receiver; handset",
+        "characters": [
+          {
+            "id": "C-8BDD",
+            "text": "话"
+          },
+          {
+            "id": "C-7B52",
+            "text": "筒"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-4cbe243f55b0e853dd480ef4",
+        "text": "关节",
+        "pinyin": "guān jié",
+        "meaning": "critical phase",
+        "characters": [
+          {
+            "id": "C-5173",
+            "text": "关"
+          },
+          {
+            "id": "C-8282",
+            "text": "节"
+          }
+        ]
+      },
+      {
+        "id": "W4451",
+        "text": "立场",
+        "pinyin": "lìchǎng",
+        "meaning": "position; standpoint",
+        "characters": [
+          {
+            "id": "C-7ACB",
+            "text": "立"
+          },
+          {
+            "id": "C-573A",
+            "text": "场"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "443e5634e510b19495f50a8adc30f44e8c0e8f2dd520b1088d32d1e78d02a433",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-70c2",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "烂",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-70c2-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-17577553067fb14f72750ff6",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to putrefy",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "腐烂"
+              },
+              {
+                "value": "fǔ làn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "fu3lan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "腐烂",
+              "pinyin": "fǔ làn",
+              "meaning": "to putrefy",
+              "audio": "99c6e8bbbbc7db4bf457176258ee3479f1c41240bba7391ecb10a38ce0c358b3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-70c2-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-70c2",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "烂",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-4cbe243f55b0e853dd480ef4",
+                "label": "critical phase",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-3746612def0cf0bce5404ea2",
+                "label": "microphone; (telephone) receiver",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-70c2",
+                "label": "soft; mushy",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-70c2-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "烂",
+        "pinyin": "làn",
+        "meaning": "soft; mushy",
+        "source": "/stroke-data/70c2.json",
+        "reference": {
+          "character": "烂",
+          "sha256": "78aa99f93d38aa2bf815a0ed55927160fee898f5bb99a4834cab8ff730ef79bc",
+          "medians": [
+            [
+              [
+                122,
+                559
+              ],
+              [
+                147,
+                479
+              ],
+              [
+                159,
+                391
+              ]
+            ],
+            [
+              [
+                384,
+                668
+              ],
+              [
+                404,
+                638
+              ],
+              [
+                318,
+                534
+              ]
+            ],
+            [
+              [
+                238,
+                782
+              ],
+              [
+                266,
+                765
+              ],
+              [
+                292,
+                738
+              ],
+              [
+                287,
+                491
+              ],
+              [
+                271,
+                314
+              ],
+              [
+                247,
+                222
+              ],
+              [
+                206,
+                142
+              ],
+              [
+                153,
+                87
+              ],
+              [
+                79,
+                43
+              ]
+            ],
+            [
+              [
+                302,
+                331
+              ],
+              [
+                316,
+                312
+              ],
+              [
+                353,
+                283
+              ],
+              [
+                375,
+                242
+              ]
+            ],
+            [
+              [
+                488,
+                681
+              ],
+              [
+                550,
+                636
+              ],
+              [
+                574,
+                597
+              ]
+            ],
+            [
+              [
+                725,
+                765
+              ],
+              [
+                759,
+                730
+              ],
+              [
+                735,
+                691
+              ],
+              [
+                651,
+                586
+              ]
+            ],
+            [
+              [
+                467,
+                493
+              ],
+              [
+                490,
+                486
+              ],
+              [
+                541,
+                486
+              ],
+              [
+                765,
+                530
+              ],
+              [
+                811,
+                529
+              ]
+            ],
+            [
+              [
+                483,
+                325
+              ],
+              [
+                528,
+                316
+              ],
+              [
+                573,
+                319
+              ],
+              [
+                730,
+                347
+              ],
+              [
+                779,
+                345
+              ]
+            ],
+            [
+              [
+                395,
+                121
+              ],
+              [
+                447,
+                112
+              ],
+              [
+                567,
+                133
+              ],
+              [
+                798,
+                158
+              ],
+              [
+                844,
+                155
+              ],
+              [
+                895,
+                140
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-70c2-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4451",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "position; standpoint",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "立场"
+              },
+              {
+                "value": "lìchǎng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "li4chang3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "立场",
+              "pinyin": "lìchǎng",
+              "meaning": "position; standpoint",
+              "audio": "250a554881358186a33679f71fbde72e4c5ec456a81ed155a3de7ee430f05fb6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-70c2-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-70c2",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "soft; mushy",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "烂"
+              },
+              {
+                "value": "làn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "烂",
+              "pinyin": "làn",
+              "meaning": "soft; mushy",
+              "audio": "c55ff961be5bfb0aed41f94984d72f709e646c0ea6d904610fe655dd627018aa",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "c55ff961be5bfb0aed41f94984d72f709e646c0ea6d904610fe655dd627018aa"
+            ],
+            "transcript": [
+              {
+                "text": "烂",
+                "pinyin": "làn",
+                "meaning": "soft; mushy",
+                "audio": "c55ff961be5bfb0aed41f94984d72f709e646c0ea6d904610fe655dd627018aa",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-70C2",
+      "character": "烂",
+      "lessonIds": [
+        "LESSON-C-70C2"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-70c2-word",
+        "EX-CHAR-char-70c2-recognize",
+        "EX-CHAR-char-70c2-write",
+        "EX-CHAR-char-70c2-familiar",
+        "EX-CHAR-char-70c2-recall"
+      ]
+    },
+    "audio": {
+      "c55ff961be5bfb0aed41f94984d72f709e646c0ea6d904610fe655dd627018aa": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/cad3d8d86f0bb757e8094c9a10094f8b931a29d1078ec6142f99e2e9dfd4e36b.mp3",
+          "sha256": "cad3d8d86f0bb757e8094c9a10094f8b931a29d1078ec6142f99e2e9dfd4e36b",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "cad3d8d86f0bb757e8094c9a10094f8b931a29d1078ec6142f99e2e9dfd4e36b",
+            "text": "烂",
+            "words": [
+              {
+                "text": "烂",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/76301e49e0d34e3ffb0d4e0383e06925c492421e809f37a73fddb5e0084b22c5.mp3",
+          "sha256": "76301e49e0d34e3ffb0d4e0383e06925c492421e809f37a73fddb5e0084b22c5",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "76301e49e0d34e3ffb0d4e0383e06925c492421e809f37a73fddb5e0084b22c5",
+            "text": "烂",
+            "words": [
+              {
+                "text": "烂",
+                "start": 0.22,
+                "end": 0.3
+              }
+            ]
+          }
+        }
+      },
+      "99c6e8bbbbc7db4bf457176258ee3479f1c41240bba7391ecb10a38ce0c358b3": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c595c844ef894b1076a89f660c587bdc61258aa852b7308ba0199f7dc2755f4d.mp3",
+          "sha256": "c595c844ef894b1076a89f660c587bdc61258aa852b7308ba0199f7dc2755f4d",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "c595c844ef894b1076a89f660c587bdc61258aa852b7308ba0199f7dc2755f4d",
+            "text": "腐烂",
+            "words": [
+              {
+                "text": "腐烂",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f9694c9dea5929dd72dfdd7d4bb589a551c70f47ba637c0e3caecf113cb1fe91.mp3",
+          "sha256": "f9694c9dea5929dd72dfdd7d4bb589a551c70f47ba637c0e3caecf113cb1fe91",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "f9694c9dea5929dd72dfdd7d4bb589a551c70f47ba637c0e3caecf113cb1fe91",
+            "text": "腐烂",
+            "words": [
+              {
+                "text": "腐烂",
+                "start": 0.44999999999999996,
+                "end": 0.75
+              }
+            ]
+          }
+        }
+      },
+      "1cea39d01da02cccdea471d8accea0a4ba52512056ff3137f3f507539f7e7fac": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0e1b7f55f85a592b48d24c71d69f5962072f126b28290b969c6e526583512a94.mp3",
+          "sha256": "0e1b7f55f85a592b48d24c71d69f5962072f126b28290b969c6e526583512a94",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "0e1b7f55f85a592b48d24c71d69f5962072f126b28290b969c6e526583512a94",
+            "text": "话筒",
+            "words": [
+              {
+                "text": "话筒",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/de82916a23f26ad4778969b514e60b40174a67abd033fae3b5a132a42a931f50.mp3",
+          "sha256": "de82916a23f26ad4778969b514e60b40174a67abd033fae3b5a132a42a931f50",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "de82916a23f26ad4778969b514e60b40174a67abd033fae3b5a132a42a931f50",
+            "text": "话筒",
+            "words": [
+              {
+                "text": "话筒",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "43a01bc063112353a3d44e7f3bae9c573ae521530822f3abda5af965bcf0bd46": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a7bfcee19bba67f9b408b7e88beca5407bd7ee2a7f159949250a3c4e7da8429b.mp3",
+          "sha256": "a7bfcee19bba67f9b408b7e88beca5407bd7ee2a7f159949250a3c4e7da8429b",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "a7bfcee19bba67f9b408b7e88beca5407bd7ee2a7f159949250a3c4e7da8429b",
+            "text": "关节",
+            "words": [
+              {
+                "text": "关节",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1f8cebfc0db569acab94475875bf247e65d0fd2e9171d8abd94a07eaf7a7b0d0.mp3",
+          "sha256": "1f8cebfc0db569acab94475875bf247e65d0fd2e9171d8abd94a07eaf7a7b0d0",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "1f8cebfc0db569acab94475875bf247e65d0fd2e9171d8abd94a07eaf7a7b0d0",
+            "text": "关节",
+            "words": [
+              {
+                "text": "关节",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "250a554881358186a33679f71fbde72e4c5ec456a81ed155a3de7ee430f05fb6": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-a2bfb9623c5f24728ad4e4aa5dca4533cdb30124c1b93da2124fd4ea9a2ee593.mp3",
+          "sha256": "a2bfb9623c5f24728ad4e4aa5dca4533cdb30124c1b93da2124fd4ea9a2ee593",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "a2bfb9623c5f24728ad4e4aa5dca4533cdb30124c1b93da2124fd4ea9a2ee593",
+            "text": "立场",
+            "words": [
+              {
+                "text": "立场",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-27a42a80f0b874a27d3f06dc592129b144e8c5081d49c0bb13352b576f788601.mp3",
+          "sha256": "27a42a80f0b874a27d3f06dc592129b144e8c5081d49c0bb13352b576f788601",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "27a42a80f0b874a27d3f06dc592129b144e8c5081d49c0bb13352b576f788601",
+            "text": "立场",
+            "words": [
+              {
+                "text": "立场",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

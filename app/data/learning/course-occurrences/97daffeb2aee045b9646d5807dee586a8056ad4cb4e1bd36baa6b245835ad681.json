@@ -1,0 +1,663 @@
+{
+  "id": "EX-CHAR-char-6c42",
+  "revision": 2,
+  "unit": "U3-19",
+  "stage": "ST-HSK3",
+  "after": "S-U3-19-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "求",
+  "sourceBlockId": "mandarin-simplified-v1-char-6c42",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "W0136",
+        "text": "应该",
+        "pinyin": "yīnggāi",
+        "meaning": "should",
+        "characters": [
+          {
+            "id": "C-5E94",
+            "text": "应"
+          },
+          {
+            "id": "C-8BE5",
+            "text": "该"
+          }
+        ]
+      },
+      {
+        "id": "W2265",
+        "text": "单一",
+        "pinyin": "dānyī",
+        "meaning": "single; only",
+        "characters": [
+          {
+            "id": "C-5355",
+            "text": "单"
+          },
+          {
+            "id": "C-4E00",
+            "text": "一"
+          }
+        ]
+      },
+      {
+        "id": "W2776",
+        "text": "毛笔",
+        "pinyin": "máobǐ",
+        "meaning": "writing brush",
+        "characters": [
+          {
+            "id": "C-6BDB",
+            "text": "毛"
+          },
+          {
+            "id": "C-7B14",
+            "text": "笔"
+          }
+        ]
+      },
+      {
+        "id": "W3323",
+        "text": "需求",
+        "pinyin": "xūqiú",
+        "meaning": "requirement; to require",
+        "characters": [
+          {
+            "id": "C-9700",
+            "text": "需"
+          },
+          {
+            "id": "C-6C42",
+            "text": "求"
+          }
+        ]
+      },
+      {
+        "id": "W4681",
+        "text": "求",
+        "pinyin": "qiú",
+        "meaning": "to seek; to look for",
+        "characters": [
+          {
+            "id": "C-6C42",
+            "text": "求"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "76d1b65d1a98694c5339dfda2c76a460fe83ffa54f760210e7a2a651cefc48cb",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6c42",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "求",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6c42-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3323",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "requirement; to require",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "需求"
+              },
+              {
+                "value": "xūqiú",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xu1qiu2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "需求",
+              "pinyin": "xūqiú",
+              "meaning": "requirement; to require",
+              "audio": "41e8fa07b557749942c7982b66f2ba650628e58889da3ae2850c3b3a22fb18ff",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6c42-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W4681",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "求",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0136",
+                "label": "should",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W4681",
+                "label": "to seek; to look for",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W2265",
+                "label": "single; only",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6c42-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "求",
+        "pinyin": "qiú",
+        "meaning": "to seek; to look for",
+        "source": "/stroke-data/6c42.json",
+        "reference": {
+          "character": "求",
+          "sha256": "7334023245479b90d15aa6596b535c7c8ad258843d2045bab1d9bc931e10c569",
+          "medians": [
+            [
+              [
+                299,
+                585
+              ],
+              [
+                327,
+                578
+              ],
+              [
+                398,
+                581
+              ],
+              [
+                549,
+                609
+              ],
+              [
+                645,
+                636
+              ],
+              [
+                711,
+                637
+              ]
+            ],
+            [
+              [
+                472,
+                813
+              ],
+              [
+                489,
+                805
+              ],
+              [
+                521,
+                773
+              ],
+              [
+                512,
+                460
+              ],
+              [
+                516,
+                95
+              ],
+              [
+                510,
+                63
+              ],
+              [
+                493,
+                31
+              ],
+              [
+                450,
+                44
+              ],
+              [
+                379,
+                79
+              ],
+              [
+                377,
+                86
+              ],
+              [
+                366,
+                86
+              ]
+            ],
+            [
+              [
+                252,
+                485
+              ],
+              [
+                326,
+                436
+              ],
+              [
+                356,
+                394
+              ]
+            ],
+            [
+              [
+                156,
+                183
+              ],
+              [
+                217,
+                182
+              ],
+              [
+                431,
+                341
+              ]
+            ],
+            [
+              [
+                751,
+                572
+              ],
+              [
+                762,
+                550
+              ],
+              [
+                761,
+                525
+              ],
+              [
+                584,
+                405
+              ]
+            ],
+            [
+              [
+                543,
+                395
+              ],
+              [
+                554,
+                367
+              ],
+              [
+                632,
+                298
+              ],
+              [
+                704,
+                238
+              ],
+              [
+                803,
+                171
+              ],
+              [
+                856,
+                162
+              ],
+              [
+                987,
+                155
+              ]
+            ],
+            [
+              [
+                701,
+                793
+              ],
+              [
+                793,
+                744
+              ],
+              [
+                829,
+                698
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6c42-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2776",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "writing brush",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "毛笔"
+              },
+              {
+                "value": "máobǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "mao2bi3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "毛笔",
+              "pinyin": "máobǐ",
+              "meaning": "writing brush",
+              "audio": "6d8cbd3b213c582a2b592be0c70aac0637b2c4d4bd07ab3ecccd859d19435c42",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6c42-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W4681",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to seek; to look for",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "求"
+              },
+              {
+                "value": "qiú",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qiu2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "求",
+              "pinyin": "qiú",
+              "meaning": "to seek; to look for",
+              "audio": "bda594319bb77a3b92ec6419542d9da9d6699b93b60d9904047a9b6219c1e740",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "bda594319bb77a3b92ec6419542d9da9d6699b93b60d9904047a9b6219c1e740"
+            ],
+            "transcript": [
+              {
+                "text": "求",
+                "pinyin": "qiú",
+                "meaning": "to seek; to look for",
+                "audio": "bda594319bb77a3b92ec6419542d9da9d6699b93b60d9904047a9b6219c1e740",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6C42",
+      "character": "求",
+      "lessonIds": [
+        "LESSON-C-6C42"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6c42-word",
+        "EX-CHAR-char-6c42-recognize",
+        "EX-CHAR-char-6c42-write",
+        "EX-CHAR-char-6c42-familiar",
+        "EX-CHAR-char-6c42-recall"
+      ]
+    },
+    "audio": {
+      "f6cd01ed6f40a9795c25596d303719e92b6c7eb544ca417b7380d727b5b1378e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c6adf2879f8beb9d696edb2462318460b5a4b544b64fba4e54aa7c3a5c2b2c64.mp3",
+          "sha256": "c6adf2879f8beb9d696edb2462318460b5a4b544b64fba4e54aa7c3a5c2b2c64",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "c6adf2879f8beb9d696edb2462318460b5a4b544b64fba4e54aa7c3a5c2b2c64",
+            "text": "应该",
+            "words": [
+              {
+                "text": "应该",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f6142852047f871253644110ffd8c39cfa9e1b43ba8f3a211b6c3197f2a27145.mp3",
+          "sha256": "f6142852047f871253644110ffd8c39cfa9e1b43ba8f3a211b6c3197f2a27145",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "f6142852047f871253644110ffd8c39cfa9e1b43ba8f3a211b6c3197f2a27145",
+            "text": "应该",
+            "words": [
+              {
+                "text": "应该",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "1492671f6cfba927e35e0ba31588d55fc7b1cc5f4f71616fdcae7095c5dfacf7": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5a76becf7c35b79d04f18b751325eaa4881619a88419258e56b73f3c46e6a2ba.mp3",
+          "sha256": "5a76becf7c35b79d04f18b751325eaa4881619a88419258e56b73f3c46e6a2ba",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "5a76becf7c35b79d04f18b751325eaa4881619a88419258e56b73f3c46e6a2ba",
+            "text": "单一",
+            "words": [
+              {
+                "text": "单一",
+                "start": 0.16,
+                "end": 0.52
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e8c13b7ae8bac5704341226d34ffe2a567a1fe482fd1dd72c05bd8c660e5503a.mp3",
+          "sha256": "e8c13b7ae8bac5704341226d34ffe2a567a1fe482fd1dd72c05bd8c660e5503a",
+          "byteLength": 10989,
+          "qualityWarning": "too-fast",
+          "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+          "readAlong": {
+            "audioSha256": "e8c13b7ae8bac5704341226d34ffe2a567a1fe482fd1dd72c05bd8c660e5503a",
+            "text": "单一",
+            "words": [
+              {
+                "text": "单一",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "6d8cbd3b213c582a2b592be0c70aac0637b2c4d4bd07ab3ecccd859d19435c42": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-8782f12c42726a7446935c9a4339d93fff7889e128a1228e2a4eba74ceeef21d.mp3",
+          "sha256": "8782f12c42726a7446935c9a4339d93fff7889e128a1228e2a4eba74ceeef21d",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "8782f12c42726a7446935c9a4339d93fff7889e128a1228e2a4eba74ceeef21d",
+            "text": "毛笔",
+            "words": [
+              {
+                "text": "毛笔",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4792d554732365eb0e8ecc0351d90f8d28e5973420375a356f8a819fc2543fd5.mp3",
+          "sha256": "4792d554732365eb0e8ecc0351d90f8d28e5973420375a356f8a819fc2543fd5",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "4792d554732365eb0e8ecc0351d90f8d28e5973420375a356f8a819fc2543fd5",
+            "text": "毛笔",
+            "words": [
+              {
+                "text": "毛笔",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "41e8fa07b557749942c7982b66f2ba650628e58889da3ae2850c3b3a22fb18ff": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-da5780b4ca54547e6f9acbdfc3cc762cea8729d23885bfc58ea261f59179207c.mp3",
+          "sha256": "da5780b4ca54547e6f9acbdfc3cc762cea8729d23885bfc58ea261f59179207c",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "da5780b4ca54547e6f9acbdfc3cc762cea8729d23885bfc58ea261f59179207c",
+            "text": "需求",
+            "words": [
+              {
+                "text": "需求",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-57d0d1af0cc0b270d839308d20991e110cafa4c42f09def7e6feec76ddfc61b7.mp3",
+          "sha256": "57d0d1af0cc0b270d839308d20991e110cafa4c42f09def7e6feec76ddfc61b7",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "57d0d1af0cc0b270d839308d20991e110cafa4c42f09def7e6feec76ddfc61b7",
+            "text": "需求",
+            "words": [
+              {
+                "text": "需求",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "bda594319bb77a3b92ec6419542d9da9d6699b93b60d9904047a9b6219c1e740": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-628bd7016c37bb1ccf1441c31a6681c1b19e5cec443743885c4d747a204ed5ba.mp3",
+          "sha256": "628bd7016c37bb1ccf1441c31a6681c1b19e5cec443743885c4d747a204ed5ba",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "628bd7016c37bb1ccf1441c31a6681c1b19e5cec443743885c4d747a204ed5ba",
+            "text": "求",
+            "words": [
+              {
+                "text": "求",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-e48df3316fc5cc0ad2556d060d9312308311eefb902e391ac2c607868d734c8f.mp3",
+          "sha256": "e48df3316fc5cc0ad2556d060d9312308311eefb902e391ac2c607868d734c8f",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "e48df3316fc5cc0ad2556d060d9312308311eefb902e391ac2c607868d734c8f",
+            "text": "求",
+            "words": [
+              {
+                "text": "求",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

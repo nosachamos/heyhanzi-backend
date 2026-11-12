@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2337",
+  "targetId": "W2337",
+  "steps": [
+    {
+      "id": "BANK-W2337-W2337",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2337-W2337",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "children; sons and daughters",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "儿女"
+            },
+            {
+              "value": "érnǚ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "er2nü3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "儿女",
+            "pinyin": "érnǚ",
+            "meaning": "children; sons and daughters",
+            "singleWord": true,
+            "audio": "43df328a95a7caa7b07c026aafea1c763859a5b42bb0d324443b7d44426805d9"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "43df328a95a7caa7b07c026aafea1c763859a5b42bb0d324443b7d44426805d9": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-44ff6df486475cbf37d2a6fb6c7c3b7d5f191855345d5fb5ed9aadf4966f7844.mp3",
+        "sha256": "44ff6df486475cbf37d2a6fb6c7c3b7d5f191855345d5fb5ed9aadf4966f7844",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "44ff6df486475cbf37d2a6fb6c7c3b7d5f191855345d5fb5ed9aadf4966f7844",
+          "text": "儿女",
+          "words": [
+            {
+              "text": "儿女",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-4d35195241c975fa34d57bee7d7267f0da5f3a28e199f183cdeda3dff778cfab.mp3",
+        "sha256": "4d35195241c975fa34d57bee7d7267f0da5f3a28e199f183cdeda3dff778cfab",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "4d35195241c975fa34d57bee7d7267f0da5f3a28e199f183cdeda3dff778cfab",
+          "text": "儿女",
+          "words": [
+            {
+              "text": "儿女",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2337",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2337-W2337",
+      "question_ids": [
+        "BANK-W2337-W2337"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-01",
+    "stepId": "S-U5-01-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-513f"
+    ],
+    "grammarLessonIds": []
+  }
+}

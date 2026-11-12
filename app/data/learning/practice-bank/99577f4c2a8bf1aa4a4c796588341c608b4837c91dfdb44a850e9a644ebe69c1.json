@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3219",
+  "targetId": "W3219",
+  "steps": [
+    {
+      "id": "BANK-W3219-W3219",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3219-W3219",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "literature",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "文学"
+            },
+            {
+              "value": "wénxué",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wen2xue2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "文学",
+            "pinyin": "wénxué",
+            "meaning": "literature",
+            "singleWord": true,
+            "audio": "56e7fae2c639f5c46b5c51e3b39af0eefabbe7f603bae6a61ec7b2e05c41a885"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "56e7fae2c639f5c46b5c51e3b39af0eefabbe7f603bae6a61ec7b2e05c41a885": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1fcd5627a2f0ee15329187909e225297b78231864ded20b4fd4f69efe9227683.mp3",
+        "sha256": "1fcd5627a2f0ee15329187909e225297b78231864ded20b4fd4f69efe9227683",
+        "byteLength": 14157,
+        "readAlong": {
+          "audioSha256": "1fcd5627a2f0ee15329187909e225297b78231864ded20b4fd4f69efe9227683",
+          "text": "文学",
+          "words": [
+            {
+              "text": "文学",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-aec95334a835f569a5e081dc45e0f08fb0d90e2526c94908fc96b54eaa6d6e33.mp3",
+        "sha256": "aec95334a835f569a5e081dc45e0f08fb0d90e2526c94908fc96b54eaa6d6e33",
+        "byteLength": 9837,
+        "readAlong": {
+          "audioSha256": "aec95334a835f569a5e081dc45e0f08fb0d90e2526c94908fc96b54eaa6d6e33",
+          "text": "文学",
+          "words": [
+            {
+              "text": "文学",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3219",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3219-W3219",
+      "question_ids": [
+        "BANK-W3219-W3219"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-27",
+    "stepId": "S-U5-27-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-zhongwen"
+    ],
+    "grammarLessonIds": []
+  }
+}

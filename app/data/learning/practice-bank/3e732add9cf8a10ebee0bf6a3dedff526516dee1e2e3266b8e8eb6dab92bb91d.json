@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2945",
+  "targetId": "W2945",
+  "steps": [
+    {
+      "id": "BANK-W2945-W2945",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2945-W2945",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "the people",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "人民"
+            },
+            {
+              "value": "rénmín",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ren2min2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "人民",
+            "pinyin": "rénmín",
+            "meaning": "the people",
+            "singleWord": true,
+            "audio": "aad9d0d31d8b9a7b7877592deac0cac83220eec1016a7b2b7b0284c68bf2e897"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "aad9d0d31d8b9a7b7877592deac0cac83220eec1016a7b2b7b0284c68bf2e897": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/03634e753ae85778670401437fb058e3f24e6739138e420cbe5822c145894eea.mp3",
+        "sha256": "03634e753ae85778670401437fb058e3f24e6739138e420cbe5822c145894eea",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "03634e753ae85778670401437fb058e3f24e6739138e420cbe5822c145894eea",
+          "text": "人民",
+          "words": [
+            {
+              "text": "人民",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/98079b41bee9c68dc2d7bd179d30297b41937eaaff383bbd5e744306c56a7dfc.mp3",
+        "sha256": "98079b41bee9c68dc2d7bd179d30297b41937eaaff383bbd5e744306c56a7dfc",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "98079b41bee9c68dc2d7bd179d30297b41937eaaff383bbd5e744306c56a7dfc",
+          "text": "人民",
+          "words": [
+            {
+              "text": "人民",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2945",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2945-W2945",
+      "question_ids": [
+        "BANK-W2945-W2945"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-34",
+    "stepId": "S-U5-34-words-r4-6",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6c11"
+    ],
+    "grammarLessonIds": []
+  }
+}

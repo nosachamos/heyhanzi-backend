@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5014",
+  "targetId": "W5014",
+  "steps": [
+    {
+      "id": "BANK-W5014-W5014",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5014-W5014",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "daughter-in-law; wife (regional usage)",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "媳妇"
+            },
+            {
+              "value": "xífu",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xi2fu5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "媳妇",
+            "pinyin": "xífu",
+            "meaning": "daughter-in-law; wife (regional usage)",
+            "singleWord": true,
+            "audio": "93012d9acb360b02515f28c5cba15635d38a110065dbe7240c206dc9763e02aa"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "93012d9acb360b02515f28c5cba15635d38a110065dbe7240c206dc9763e02aa": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/77bb3ceda51fe0267fcb8160917f3476a47f09b3dae7c75cec9e8565086972bc.mp3",
+        "sha256": "77bb3ceda51fe0267fcb8160917f3476a47f09b3dae7c75cec9e8565086972bc",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "77bb3ceda51fe0267fcb8160917f3476a47f09b3dae7c75cec9e8565086972bc",
+          "text": "媳妇",
+          "words": [
+            {
+              "text": "媳妇",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3991287be1f99e906676f5361bef0cf5cdb3d8ef08d2511ffaf7ef323980e6f2.mp3",
+        "sha256": "3991287be1f99e906676f5361bef0cf5cdb3d8ef08d2511ffaf7ef323980e6f2",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "3991287be1f99e906676f5361bef0cf5cdb3d8ef08d2511ffaf7ef323980e6f2",
+          "text": "媳妇",
+          "words": [
+            {
+              "text": "媳妇",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5014",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5014-W5014",
+      "question_ids": [
+        "BANK-W5014-W5014"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-02",
+    "stepId": "S-U6-02-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5ab3"
+    ],
+    "grammarLessonIds": []
+  }
+}

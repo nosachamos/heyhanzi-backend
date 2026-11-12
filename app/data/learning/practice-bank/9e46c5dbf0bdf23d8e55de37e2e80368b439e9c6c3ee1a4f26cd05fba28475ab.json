@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0056",
+  "targetId": "W0056",
+  "steps": [
+    {
+      "id": "BANK-W0056-W0056",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0056-W0056",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "cup; cupful",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "杯"
+            },
+            {
+              "value": "bēi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bei1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "杯",
+            "pinyin": "bēi",
+            "meaning": "cup; cupful",
+            "singleWord": true,
+            "audio": "85daef4e600b1df06a0a46d484afba6887983782f6d7cc7cab31da53917dc948"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "85daef4e600b1df06a0a46d484afba6887983782f6d7cc7cab31da53917dc948": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d31d4806ef4d9a434e114a5c188c71b27d5fd86c58e1329372c735866d31cc1a.mp3",
+        "sha256": "d31d4806ef4d9a434e114a5c188c71b27d5fd86c58e1329372c735866d31cc1a",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "d31d4806ef4d9a434e114a5c188c71b27d5fd86c58e1329372c735866d31cc1a",
+          "text": "杯",
+          "words": [
+            {
+              "text": "杯",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-a2687626b2f6eb1d1daa2007730be49bd92d8ceb1fb2faead9fa131c3336b7bd.mp3",
+        "sha256": "a2687626b2f6eb1d1daa2007730be49bd92d8ceb1fb2faead9fa131c3336b7bd",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "a2687626b2f6eb1d1daa2007730be49bd92d8ceb1fb2faead9fa131c3336b7bd",
+          "text": "杯",
+          "words": [
+            {
+              "text": "杯",
+              "start": 0.14,
+              "end": 0.24
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0056",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0056-W0056",
+      "question_ids": [
+        "BANK-W0056-W0056"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U05-P01",
+    "stepId": "S-U05-words-r4-24",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-676f"
+    ],
+    "grammarLessonIds": []
+  }
+}

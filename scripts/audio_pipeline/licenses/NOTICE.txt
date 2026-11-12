@@ -1,0 +1,25 @@
+DNSMOS scoring procedure adapted from Microsoft DNS-Challenge.
+Copyright Microsoft Corporation. Licensed under CC BY 4.0.
+https://github.com/microsoft/DNS-Challenge/tree/591184a9fcb2cbdec02520fed81a32bbbf9d73ff/DNSMOS
+Changes: bounded single-process evaluation, pinned model checksum, explicit
+acceptance metrics, and integration with HeyHanzi's offline generation pipeline.
+This evaluation tool and its model are not distributed to browsers.
+
+SenseVoiceSmall, FunAudioLLM / Alibaba Group.
+https://huggingface.co/FunAudioLLM/SenseVoiceSmall
+Pinned revision: 3847d57b6bdf2dd8875cb1508d2af43d80a16bf7.
+Used locally for automated speech-content checks under the accompanying
+FunASR Model Open Source License Agreement. Model weights are not shipped in
+HeyHanzi's application image or browser bundle.
+
+Whisper-Pinyin, published by walston (model and modified Whisper source).
+https://huggingface.co/walston/whisper-pinyin
+Model revision: 7840ab2afafecd7b03aa66c7517d756c180dbb43.
+https://huggingface.co/spaces/walston/whisper-pinyin-demo
+Source revision: eb69fe62c021e46d5bd34d1da17c23cecedea484.
+Both upstream repository cards declare MIT; their pinned cards are retained here.
+Underlying Whisper: Copyright (c) 2022 OpenAI, MIT; full license in Whisper-MIT.txt.
+Used only for optional offline phonetic verification of ambiguous primary ASR.
+HeyHanzi loads the pinned encoder and CTC head directly, validates hashes, uses
+weights-only deserialization, and adds strict full-utterance pinyin checks.
+The demo app is not executed; no model/source is shipped in the API or browser.

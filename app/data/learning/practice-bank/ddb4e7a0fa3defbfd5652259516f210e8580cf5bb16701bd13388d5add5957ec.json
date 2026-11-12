@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0615",
+  "targetId": "W0615",
+  "steps": [
+    {
+      "id": "BANK-W0615-W0615",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0615-W0615",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to laugh; to smile",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "笑"
+            },
+            {
+              "value": "xiào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xiao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "笑",
+            "pinyin": "xiào",
+            "meaning": "to laugh; to smile",
+            "singleWord": true,
+            "audio": "77ebaaceb22134bc0cc4b221119983c597bfb3f456c8220f6a09e1700ebb61dc"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "77ebaaceb22134bc0cc4b221119983c597bfb3f456c8220f6a09e1700ebb61dc": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-79e572f1a7a32083256c4b053aec847f9d1ca2afc4ac747069cdc1694a9311b8.mp3",
+        "sha256": "79e572f1a7a32083256c4b053aec847f9d1ca2afc4ac747069cdc1694a9311b8",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "79e572f1a7a32083256c4b053aec847f9d1ca2afc4ac747069cdc1694a9311b8",
+          "text": "笑",
+          "words": [
+            {
+              "text": "笑",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-bd858e7d7b6f30cc94235a0696cf9addcfbdda52952db675d4b0a8bc9ae02295.mp3",
+        "sha256": "bd858e7d7b6f30cc94235a0696cf9addcfbdda52952db675d4b0a8bc9ae02295",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "bd858e7d7b6f30cc94235a0696cf9addcfbdda52952db675d4b0a8bc9ae02295",
+          "text": "笑",
+          "words": [
+            {
+              "text": "笑",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0615",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0615-W0615",
+      "question_ids": [
+        "BANK-W0615-W0615"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U21",
+    "stepId": "S-U21-words-r4-8",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7b11"
+    ],
+    "grammarLessonIds": []
+  }
+}

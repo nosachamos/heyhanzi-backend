@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4123",
+  "targetId": "W4123",
+  "steps": [
+    {
+      "id": "BANK-W4123-W4123",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4123-W4123",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "national treasure",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "国宝"
+            },
+            {
+              "value": "guóbǎo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "guo2bao3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "国宝",
+            "pinyin": "guóbǎo",
+            "meaning": "national treasure",
+            "singleWord": true,
+            "audio": "2ee5066f534630b16afa48c9e4732063dbf78691e328b1255ef357ff77d1b250"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2ee5066f534630b16afa48c9e4732063dbf78691e328b1255ef357ff77d1b250": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/579471a82b4ea7d37c5da506b3b7eeac54656962aa795ae1fb3c309a88e7e3bb.mp3",
+        "sha256": "579471a82b4ea7d37c5da506b3b7eeac54656962aa795ae1fb3c309a88e7e3bb",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "579471a82b4ea7d37c5da506b3b7eeac54656962aa795ae1fb3c309a88e7e3bb",
+          "text": "国宝",
+          "words": [
+            {
+              "text": "国宝",
+              "start": 0.18,
+              "end": 0.52
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/4c6691696f9901ab0e6d50b2ee2bc7416eee8ab16d86c4c47fb25c1cfb06bd94.mp3",
+        "sha256": "4c6691696f9901ab0e6d50b2ee2bc7416eee8ab16d86c4c47fb25c1cfb06bd94",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "4c6691696f9901ab0e6d50b2ee2bc7416eee8ab16d86c4c47fb25c1cfb06bd94",
+          "text": "国宝",
+          "words": [
+            {
+              "text": "国宝",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4123",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4123-W4123",
+      "question_ids": [
+        "BANK-W4123-W4123"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-34-P01",
+    "stepId": "S-U6-34-words-r4-14",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5b9d"
+    ],
+    "grammarLessonIds": []
+  }
+}

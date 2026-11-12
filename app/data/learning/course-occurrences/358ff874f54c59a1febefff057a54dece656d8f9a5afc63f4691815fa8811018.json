@@ -1,0 +1,745 @@
+{
+  "id": "EX-CHAR-char-8d2b",
+  "revision": 2,
+  "unit": "U6-33",
+  "stage": "ST-HSK6",
+  "after": "S-U6-33-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "贫",
+  "sourceBlockId": "mandarin-simplified-v1-char-8d2b",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-8d2b",
+        "text": "贫",
+        "pinyin": "pín",
+        "meaning": "poor; inadequate",
+        "characters": [
+          {
+            "id": "C-8D2B",
+            "text": "贫"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-8afe1c979f6e5fe341467bb3",
+        "text": "贫富",
+        "pinyin": "pín fù",
+        "meaning": "poor and rich",
+        "characters": [
+          {
+            "id": "C-8D2B",
+            "text": "贫"
+          },
+          {
+            "id": "C-5BCC",
+            "text": "富"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ad61861681cda07699e3fd01",
+        "text": "忽高忽低",
+        "pinyin": "hū gāo hū dī",
+        "meaning": "alternately soaring and plunging",
+        "characters": [
+          {
+            "id": "C-5FFD",
+            "text": "忽"
+          },
+          {
+            "id": "C-9AD8",
+            "text": "高"
+          },
+          {
+            "id": "C-4F4E",
+            "text": "低"
+          }
+        ]
+      },
+      {
+        "id": "W3490",
+        "text": "涨价",
+        "pinyin": "zhǎngjià",
+        "meaning": "to appreciate; to increase in price",
+        "characters": [
+          {
+            "id": "C-6DA8",
+            "text": "涨"
+          },
+          {
+            "id": "C-4EF7",
+            "text": "价"
+          }
+        ]
+      },
+      {
+        "id": "W5039",
+        "text": "现存",
+        "pinyin": "xiàncún",
+        "meaning": "extant; existent",
+        "characters": [
+          {
+            "id": "C-73B0",
+            "text": "现"
+          },
+          {
+            "id": "C-5B58",
+            "text": "存"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "cb7b4ea3c4872c4b935d55629e48abe7f909193102f7b5924436cd6a7e7a111f",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8d2b",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "贫",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8d2b-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-8afe1c979f6e5fe341467bb3",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "poor and rich",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "贫富"
+              },
+              {
+                "value": "pín fù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "pin2fu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "贫富",
+              "pinyin": "pín fù",
+              "meaning": "poor and rich",
+              "audio": "88cea3145b2d23342e525d64f30df9be13a97a550d0b5998b516f4948a131f5a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8d2b-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-8d2b",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "贫",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-8d2b",
+                "label": "poor; inadequate",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W5039",
+                "label": "extant; existent",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W3490",
+                "label": "to appreciate; to increase in price",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8d2b-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "贫",
+        "pinyin": "pín",
+        "meaning": "poor; inadequate",
+        "source": "/stroke-data/8d2b.json",
+        "reference": {
+          "character": "贫",
+          "sha256": "5bddbc0d145b3f7429483b815f378867f5645973c485b4a9473f1d38ce44665c",
+          "medians": [
+            [
+              [
+                354,
+                786
+              ],
+              [
+                372,
+                748
+              ],
+              [
+                371,
+                738
+              ],
+              [
+                356,
+                720
+              ],
+              [
+                267,
+                631
+              ],
+              [
+                197,
+                578
+              ],
+              [
+                165,
+                563
+              ]
+            ],
+            [
+              [
+                548,
+                845
+              ],
+              [
+                575,
+                836
+              ],
+              [
+                592,
+                823
+              ],
+              [
+                704,
+                708
+              ],
+              [
+                792,
+                642
+              ],
+              [
+                834,
+                625
+              ],
+              [
+                955,
+                618
+              ]
+            ],
+            [
+              [
+                343,
+                644
+              ],
+              [
+                386,
+                639
+              ],
+              [
+                580,
+                689
+              ],
+              [
+                609,
+                683
+              ],
+              [
+                621,
+                670
+              ],
+              [
+                613,
+                611
+              ],
+              [
+                599,
+                554
+              ],
+              [
+                584,
+                527
+              ],
+              [
+                559,
+                504
+              ],
+              [
+                492,
+                543
+              ]
+            ],
+            [
+              [
+                433,
+                631
+              ],
+              [
+                446,
+                610
+              ],
+              [
+                446,
+                599
+              ],
+              [
+                420,
+                560
+              ],
+              [
+                354,
+                490
+              ],
+              [
+                283,
+                445
+              ]
+            ],
+            [
+              [
+                322,
+                425
+              ],
+              [
+                344,
+                404
+              ],
+              [
+                355,
+                381
+              ],
+              [
+                347,
+                140
+              ]
+            ],
+            [
+              [
+                382,
+                390
+              ],
+              [
+                400,
+                401
+              ],
+              [
+                483,
+                410
+              ],
+              [
+                600,
+                438
+              ],
+              [
+                621,
+                438
+              ],
+              [
+                645,
+                426
+              ],
+              [
+                665,
+                397
+              ],
+              [
+                661,
+                322
+              ],
+              [
+                666,
+                213
+              ],
+              [
+                659,
+                149
+              ]
+            ],
+            [
+              [
+                450,
+                355
+              ],
+              [
+                482,
+                337
+              ],
+              [
+                501,
+                311
+              ],
+              [
+                490,
+                167
+              ],
+              [
+                461,
+                83
+              ],
+              [
+                436,
+                52
+              ],
+              [
+                376,
+                15
+              ],
+              [
+                289,
+                -16
+              ],
+              [
+                216,
+                -27
+              ]
+            ],
+            [
+              [
+                598,
+                115
+              ],
+              [
+                712,
+                29
+              ],
+              [
+                741,
+                -33
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8d2b-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-ad61861681cda07699e3fd01",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "alternately soaring and plunging",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "忽高忽低"
+              },
+              {
+                "value": "hū gāo hū dī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hu1gao1hu1di1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "忽高忽低",
+              "pinyin": "hū gāo hū dī",
+              "meaning": "alternately soaring and plunging",
+              "audio": "e825ced1979f50eb1b95d606243315f7028ea0993d2388a419ece6e66bf2f044",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8d2b-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-8d2b",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "poor; inadequate",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "贫"
+              },
+              {
+                "value": "pín",
+                "mode": "pinyin"
+              },
+              {
+                "value": "pin2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "贫",
+              "pinyin": "pín",
+              "meaning": "poor; inadequate",
+              "audio": "1c5af6f1ec698688de789009d410fb643a691c82b2324736864221bedec82453",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "1c5af6f1ec698688de789009d410fb643a691c82b2324736864221bedec82453"
+            ],
+            "transcript": [
+              {
+                "text": "贫",
+                "pinyin": "pín",
+                "meaning": "poor; inadequate",
+                "audio": "1c5af6f1ec698688de789009d410fb643a691c82b2324736864221bedec82453",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8D2B",
+      "character": "贫",
+      "lessonIds": [
+        "LESSON-C-8D2B"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8d2b-word",
+        "EX-CHAR-char-8d2b-recognize",
+        "EX-CHAR-char-8d2b-write",
+        "EX-CHAR-char-8d2b-familiar",
+        "EX-CHAR-char-8d2b-recall"
+      ]
+    },
+    "audio": {
+      "1c5af6f1ec698688de789009d410fb643a691c82b2324736864221bedec82453": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-d04a26c7b66ab0c5b0e3655c2048cff843d489340c902799ba088ebfc9c79f36.mp3",
+          "sha256": "d04a26c7b66ab0c5b0e3655c2048cff843d489340c902799ba088ebfc9c79f36",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "d04a26c7b66ab0c5b0e3655c2048cff843d489340c902799ba088ebfc9c79f36",
+            "text": "贫",
+            "words": [
+              {
+                "text": "贫",
+                "start": 0.16,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-59b0d046316c2c447a5c78b18ce39708e7c8d2716a7fbef6cf6f291056710dc0.mp3",
+          "sha256": "59b0d046316c2c447a5c78b18ce39708e7c8d2716a7fbef6cf6f291056710dc0",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "59b0d046316c2c447a5c78b18ce39708e7c8d2716a7fbef6cf6f291056710dc0",
+            "text": "贫",
+            "words": [
+              {
+                "text": "贫",
+                "start": 0.2,
+                "end": 0.28
+              }
+            ]
+          }
+        }
+      },
+      "88cea3145b2d23342e525d64f30df9be13a97a550d0b5998b516f4948a131f5a": {
+        "female": {
+          "url": "/exercise-assets/audio/course-female-c1cd8338bd482f536f91ccb9e4ef3db1ae46eb66f45d2f9891e7157f6fab799b.mp3",
+          "sha256": "c1cd8338bd482f536f91ccb9e4ef3db1ae46eb66f45d2f9891e7157f6fab799b",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "c1cd8338bd482f536f91ccb9e4ef3db1ae46eb66f45d2f9891e7157f6fab799b",
+            "text": "贫富",
+            "words": [
+              {
+                "text": "贫富",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-47fb1c7ddc2b582139b8ba6429108d3bc68e46505ffa77252530955c58ba6368.mp3",
+          "sha256": "47fb1c7ddc2b582139b8ba6429108d3bc68e46505ffa77252530955c58ba6368",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "47fb1c7ddc2b582139b8ba6429108d3bc68e46505ffa77252530955c58ba6368",
+            "text": "贫富",
+            "words": [
+              {
+                "text": "贫富",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "e825ced1979f50eb1b95d606243315f7028ea0993d2388a419ece6e66bf2f044": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/64a92e260c26e22677a7a1c73e1048b26af9b555dc60de5a0bc12dec51d6c107.mp3",
+          "sha256": "64a92e260c26e22677a7a1c73e1048b26af9b555dc60de5a0bc12dec51d6c107",
+          "byteLength": 17325,
+          "readAlong": {
+            "audioSha256": "64a92e260c26e22677a7a1c73e1048b26af9b555dc60de5a0bc12dec51d6c107",
+            "text": "忽高忽低",
+            "words": [
+              {
+                "text": "忽高忽低",
+                "start": 0.21,
+                "end": 0.8699999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/092a5f4a5b3b6964de2a9a943fc3b4cd0a153621c546a99acbc7637ed373cbd9.mp3",
+          "sha256": "092a5f4a5b3b6964de2a9a943fc3b4cd0a153621c546a99acbc7637ed373cbd9",
+          "byteLength": 15309,
+          "qualityWarning": "too-fast",
+          "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+          "readAlong": {
+            "audioSha256": "092a5f4a5b3b6964de2a9a943fc3b4cd0a153621c546a99acbc7637ed373cbd9",
+            "text": "忽高忽低",
+            "words": [
+              {
+                "text": "忽高忽低",
+                "start": 0.21,
+                "end": 0.8099999999999999
+              }
+            ]
+          }
+        }
+      },
+      "af51baf4804263b0126235a99b3e3afe42e088c7120415b5cbd8a09d646e9e39": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f101f80a6afe9ee36b54d20c3e3634e934d94b70a3f348f729841643b3653933.mp3",
+          "sha256": "f101f80a6afe9ee36b54d20c3e3634e934d94b70a3f348f729841643b3653933",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "f101f80a6afe9ee36b54d20c3e3634e934d94b70a3f348f729841643b3653933",
+            "text": "涨价",
+            "words": [
+              {
+                "text": "涨价",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d82d01fda8a421d3ca6b82a818ca9f9662f065c0555f40e213c573e43b703018.mp3",
+          "sha256": "d82d01fda8a421d3ca6b82a818ca9f9662f065c0555f40e213c573e43b703018",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "d82d01fda8a421d3ca6b82a818ca9f9662f065c0555f40e213c573e43b703018",
+            "text": "涨价",
+            "words": [
+              {
+                "text": "涨价",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "87f07718adf8b3a6567d6328eadc9227392cb2900effd24fdcf4b514f5d6b75d": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/dd5dd47fe96e51a15826ef1bfa449f66065aba4c4544b78638c3548184ec54b9.mp3",
+          "sha256": "dd5dd47fe96e51a15826ef1bfa449f66065aba4c4544b78638c3548184ec54b9",
+          "byteLength": 16461,
+          "readAlong": {
+            "audioSha256": "dd5dd47fe96e51a15826ef1bfa449f66065aba4c4544b78638c3548184ec54b9",
+            "text": "现存",
+            "words": [
+              {
+                "text": "现存",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/74c8160a46eb9b82509577e117564ed513317772d265bf6e046a1940e88b3f0b.mp3",
+          "sha256": "74c8160a46eb9b82509577e117564ed513317772d265bf6e046a1940e88b3f0b",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "74c8160a46eb9b82509577e117564ed513317772d265bf6e046a1940e88b3f0b",
+            "text": "现存",
+            "words": [
+              {
+                "text": "现存",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

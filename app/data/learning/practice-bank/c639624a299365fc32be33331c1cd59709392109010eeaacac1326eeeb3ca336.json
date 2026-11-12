@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1100",
+  "targetId": "W1100",
+  "steps": [
+    {
+      "id": "BANK-W1100-W1100",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1100-W1100",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "inconvenient; inappropriate",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "不便"
+            },
+            {
+              "value": "bùbiàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bu4bian4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "不便",
+            "pinyin": "bùbiàn",
+            "meaning": "inconvenient; inappropriate",
+            "singleWord": true,
+            "audio": "b27b7b7032db5880a86e1a9a309184ac7a8400aa285959ae11180ae29d9e578e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b27b7b7032db5880a86e1a9a309184ac7a8400aa285959ae11180ae29d9e578e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-b7715e2d47086b889c196040cc891463bb751034c0692faed1402e7dc19441e5.mp3",
+        "sha256": "b7715e2d47086b889c196040cc891463bb751034c0692faed1402e7dc19441e5",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "b7715e2d47086b889c196040cc891463bb751034c0692faed1402e7dc19441e5",
+          "text": "不便",
+          "words": [
+            {
+              "text": "不便",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-70d19df7b4d796f4a385ac2379dd5e08e62ba1f80a3be70e004f5e2ea876491f.mp3",
+        "sha256": "70d19df7b4d796f4a385ac2379dd5e08e62ba1f80a3be70e004f5e2ea876491f",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "70d19df7b4d796f4a385ac2379dd5e08e62ba1f80a3be70e004f5e2ea876491f",
+          "text": "不便",
+          "words": [
+            {
+              "text": "不便",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1100",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1100-W1100",
+      "question_ids": [
+        "BANK-W1100-W1100"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-37-P01",
+    "stepId": "S-U4-37-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4fbf"
+    ],
+    "grammarLessonIds": []
+  }
+}

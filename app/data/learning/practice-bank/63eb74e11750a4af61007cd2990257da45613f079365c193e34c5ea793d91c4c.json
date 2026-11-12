@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0582",
+  "targetId": "W0582",
+  "steps": [
+    {
+      "id": "BANK-W0582-W0582",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0582-W0582",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "wife",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "妻子"
+            },
+            {
+              "value": "qīzi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qi1zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "妻子",
+            "pinyin": "qīzi",
+            "meaning": "wife",
+            "singleWord": true,
+            "audio": "ba2c5a434474d1d05d9fe1ed351d85545ae241c3d11ff5435db9ce6da81cc3af"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ba2c5a434474d1d05d9fe1ed351d85545ae241c3d11ff5435db9ce6da81cc3af": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-43c0280060ab1e1cd7a963ddd978bfdb582518fab34a6330aab53066fffb161e.mp3",
+        "sha256": "43c0280060ab1e1cd7a963ddd978bfdb582518fab34a6330aab53066fffb161e",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "43c0280060ab1e1cd7a963ddd978bfdb582518fab34a6330aab53066fffb161e",
+          "text": "妻子",
+          "words": [
+            {
+              "text": "妻子",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-acbb3b81f5de00a194c8c7d489d9b7ce73004a5f38df21525c74d00b7bf4b23d.mp3",
+        "sha256": "acbb3b81f5de00a194c8c7d489d9b7ce73004a5f38df21525c74d00b7bf4b23d",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "acbb3b81f5de00a194c8c7d489d9b7ce73004a5f38df21525c74d00b7bf4b23d",
+          "text": "妻子",
+          "words": [
+            {
+              "text": "妻子",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0582",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0582-W0582",
+      "question_ids": [
+        "BANK-W0582-W0582"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U16",
+    "stepId": "S-U16-words-r4-16",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-59bb"
+    ],
+    "grammarLessonIds": []
+  }
+}

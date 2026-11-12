@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0970",
+  "targetId": "W0970",
+  "steps": [
+    {
+      "id": "BANK-W0970-W0970",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0970-W0970",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "watermelon",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "西瓜"
+            },
+            {
+              "value": "xīguā",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xi1gua1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "西瓜",
+            "pinyin": "xīguā",
+            "meaning": "watermelon",
+            "singleWord": true,
+            "audio": "e6b4539b0a0469f9d823ec849c321e8e5cdb68beef2e97c0bc7455c12804ae7a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e6b4539b0a0469f9d823ec849c321e8e5cdb68beef2e97c0bc7455c12804ae7a": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ef888eeb2acfd9844c345aef45e368a595e9b8c965785c3dfd7e9649534d411a.mp3",
+        "sha256": "ef888eeb2acfd9844c345aef45e368a595e9b8c965785c3dfd7e9649534d411a",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "ef888eeb2acfd9844c345aef45e368a595e9b8c965785c3dfd7e9649534d411a",
+          "text": "西瓜",
+          "words": [
+            {
+              "text": "西瓜",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d9b70cd4485b7d5d8348aa8607a6736da5dcd9720f12164ee63add87acd4fae3.mp3",
+        "sha256": "d9b70cd4485b7d5d8348aa8607a6736da5dcd9720f12164ee63add87acd4fae3",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "d9b70cd4485b7d5d8348aa8607a6736da5dcd9720f12164ee63add87acd4fae3",
+          "text": "西瓜",
+          "words": [
+            {
+              "text": "西瓜",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0970",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0970-W0970",
+      "question_ids": [
+        "BANK-W0970-W0970"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-05",
+    "stepId": "S-U3-05-words-r4-27",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-74dc"
+    ],
+    "grammarLessonIds": []
+  }
+}

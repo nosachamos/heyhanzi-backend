@@ -1,0 +1,849 @@
+{
+  "id": "EX-CHAR-char-952e",
+  "revision": 2,
+  "unit": "U4-37-P01",
+  "stage": "ST-HSK4",
+  "after": "S-U4-37-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "键",
+  "sourceBlockId": "mandarin-simplified-v1-char-952e",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-60f3",
+        "text": "想",
+        "pinyin": "xiǎng",
+        "meaning": "to think (about); to think of; to devise",
+        "characters": [
+          {
+            "id": "C-60F3",
+            "text": "想"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-952e",
+        "text": "键",
+        "pinyin": "jiàn",
+        "meaning": "key (on a piano or computer keyboard); button (on a mouse or other device)",
+        "characters": [
+          {
+            "id": "C-952E",
+            "text": "键"
+          }
+        ]
+      },
+      {
+        "id": "W1319",
+        "text": "关键",
+        "pinyin": "guānjiàn",
+        "meaning": "crucial point; crux",
+        "characters": [
+          {
+            "id": "C-5173",
+            "text": "关"
+          },
+          {
+            "id": "C-952E",
+            "text": "键"
+          }
+        ]
+      },
+      {
+        "id": "W1376",
+        "text": "既",
+        "pinyin": "jì",
+        "meaning": "already; since",
+        "characters": [
+          {
+            "id": "C-65E2",
+            "text": "既"
+          }
+        ]
+      },
+      {
+        "id": "W1819",
+        "text": "无法",
+        "pinyin": "wúfǎ",
+        "meaning": "unable to; incapable of",
+        "characters": [
+          {
+            "id": "C-65E0",
+            "text": "无"
+          },
+          {
+            "id": "C-6CD5",
+            "text": "法"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "6cf30184d8083551c90bf7477733ccd68ca82e843d344a99417776ad5ab5046b",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-952e",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "键",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-952e-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1319",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "crucial point; crux",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "关键"
+              },
+              {
+                "value": "guānjiàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "guan1jian4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "关键",
+              "pinyin": "guānjiàn",
+              "meaning": "crucial point; crux",
+              "audio": "7864e616ca4dfba1a398ff64ad0ce8a88e9fdc7775b72f6c007338af82b34648",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-952e-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-952e",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "键",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-60f3",
+                "label": "to think (about); to think of",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-952e",
+                "label": "key (on a piano or computer keyboard); button (on a mouse or other device)",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1376",
+                "label": "already; since",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-952e-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "键",
+        "pinyin": "jiàn",
+        "meaning": "key (on a piano or computer keyboard); button (on a mouse or other device)",
+        "source": "/stroke-data/952e.json",
+        "reference": {
+          "character": "键",
+          "sha256": "cdf00f6a0807f60e36c510012cb19a1be969ce1cecb4b8c152d6fe5a030a8e1c",
+          "medians": [
+            [
+              [
+                273,
+                809
+              ],
+              [
+                298,
+                786
+              ],
+              [
+                311,
+                763
+              ],
+              [
+                275,
+                678
+              ],
+              [
+                216,
+                570
+              ],
+              [
+                150,
+                469
+              ],
+              [
+                74,
+                371
+              ],
+              [
+                47,
+                347
+              ]
+            ],
+            [
+              [
+                268,
+                609
+              ],
+              [
+                293,
+                623
+              ],
+              [
+                380,
+                645
+              ],
+              [
+                418,
+                646
+              ]
+            ],
+            [
+              [
+                179,
+                471
+              ],
+              [
+                210,
+                470
+              ],
+              [
+                329,
+                505
+              ],
+              [
+                364,
+                506
+              ]
+            ],
+            [
+              [
+                138,
+                315
+              ],
+              [
+                172,
+                314
+              ],
+              [
+                209,
+                322
+              ],
+              [
+                320,
+                361
+              ],
+              [
+                357,
+                364
+              ]
+            ],
+            [
+              [
+                227,
+                452
+              ],
+              [
+                253,
+                437
+              ],
+              [
+                265,
+                414
+              ],
+              [
+                265,
+                292
+              ],
+              [
+                253,
+                181
+              ],
+              [
+                257,
+                160
+              ],
+              [
+                288,
+                169
+              ],
+              [
+                370,
+                237
+              ]
+            ],
+            [
+              [
+                566,
+                628
+              ],
+              [
+                597,
+                627
+              ],
+              [
+                659,
+                640
+              ],
+              [
+                775,
+                675
+              ],
+              [
+                807,
+                670
+              ],
+              [
+                821,
+                658
+              ],
+              [
+                829,
+                639
+              ],
+              [
+                793,
+                507
+              ],
+              [
+                773,
+                493
+              ]
+            ],
+            [
+              [
+                553,
+                516
+              ],
+              [
+                595,
+                518
+              ],
+              [
+                766,
+                561
+              ],
+              [
+                901,
+                586
+              ],
+              [
+                963,
+                578
+              ]
+            ],
+            [
+              [
+                578,
+                429
+              ],
+              [
+                628,
+                431
+              ],
+              [
+                771,
+                468
+              ],
+              [
+                823,
+                465
+              ]
+            ],
+            [
+              [
+                579,
+                335
+              ],
+              [
+                609,
+                337
+              ],
+              [
+                756,
+                376
+              ],
+              [
+                794,
+                380
+              ],
+              [
+                816,
+                375
+              ]
+            ],
+            [
+              [
+                553,
+                236
+              ],
+              [
+                575,
+                234
+              ],
+              [
+                791,
+                283
+              ],
+              [
+                829,
+                287
+              ],
+              [
+                882,
+                279
+              ]
+            ],
+            [
+              [
+                646,
+                811
+              ],
+              [
+                670,
+                805
+              ],
+              [
+                699,
+                777
+              ],
+              [
+                692,
+                607
+              ],
+              [
+                690,
+                116
+              ]
+            ],
+            [
+              [
+                384,
+                527
+              ],
+              [
+                418,
+                537
+              ],
+              [
+                459,
+                560
+              ],
+              [
+                476,
+                561
+              ],
+              [
+                492,
+                551
+              ],
+              [
+                473,
+                467
+              ],
+              [
+                445,
+                391
+              ],
+              [
+                455,
+                380
+              ],
+              [
+                495,
+                370
+              ],
+              [
+                507,
+                355
+              ],
+              [
+                497,
+                300
+              ],
+              [
+                446,
+                173
+              ],
+              [
+                397,
+                101
+              ],
+              [
+                356,
+                58
+              ]
+            ],
+            [
+              [
+                398,
+                218
+              ],
+              [
+                430,
+                218
+              ],
+              [
+                484,
+                199
+              ],
+              [
+                669,
+                87
+              ],
+              [
+                776,
+                44
+              ],
+              [
+                848,
+                41
+              ],
+              [
+                976,
+                58
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-952e-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1819",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "unable to; incapable of",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "无法"
+              },
+              {
+                "value": "wúfǎ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wu2fa3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "无法",
+              "pinyin": "wúfǎ",
+              "meaning": "unable to; incapable of",
+              "audio": "2d2df57e26bfdfc55617609fef328ff1d1c6b52dd836358f4b1a36d63eb9675e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-952e-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-952e",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "key (on a piano or computer keyboard); button (on a mouse or other device)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "键"
+              },
+              {
+                "value": "jiàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jian4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "键",
+              "pinyin": "jiàn",
+              "meaning": "key (on a piano or computer keyboard); button (on a mouse or other device)",
+              "audio": "111b47eda1aa86b4247d81a93a6ddd97d877899df1cc9f7610522f355807b4c6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "111b47eda1aa86b4247d81a93a6ddd97d877899df1cc9f7610522f355807b4c6"
+            ],
+            "transcript": [
+              {
+                "text": "键",
+                "pinyin": "jiàn",
+                "meaning": "key (on a piano or computer keyboard); button (on a mouse or other device)",
+                "audio": "111b47eda1aa86b4247d81a93a6ddd97d877899df1cc9f7610522f355807b4c6",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-952E",
+      "character": "键",
+      "lessonIds": [
+        "LESSON-C-952E"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-952e-word",
+        "EX-CHAR-char-952e-recognize",
+        "EX-CHAR-char-952e-write",
+        "EX-CHAR-char-952e-familiar",
+        "EX-CHAR-char-952e-recall"
+      ]
+    },
+    "audio": {
+      "0f7888a867fcf48892fc19934077db46ab08aef906f027d1d74d145f2b123d27": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f1ffcab31d639caddcc68d66b7b37ac43bc1f713af71edaf28c963da23f3e528.mp3",
+          "sha256": "f1ffcab31d639caddcc68d66b7b37ac43bc1f713af71edaf28c963da23f3e528",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "f1ffcab31d639caddcc68d66b7b37ac43bc1f713af71edaf28c963da23f3e528",
+            "text": "想",
+            "words": [
+              {
+                "text": "想",
+                "start": 0.44999999999999996,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c39ef8c4ccb3ec7f85b8e64886fe7cebac72b9a59439a326402631a8706f303b.mp3",
+          "sha256": "c39ef8c4ccb3ec7f85b8e64886fe7cebac72b9a59439a326402631a8706f303b",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "c39ef8c4ccb3ec7f85b8e64886fe7cebac72b9a59439a326402631a8706f303b",
+            "text": "想",
+            "words": [
+              {
+                "text": "想",
+                "start": 0.24,
+                "end": 0.36
+              }
+            ]
+          }
+        }
+      },
+      "111b47eda1aa86b4247d81a93a6ddd97d877899df1cc9f7610522f355807b4c6": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/103554da2778a52dc8b6e4582efb13e32ae386c9bcd7055ecbe118561598f6d9.mp3",
+          "sha256": "103554da2778a52dc8b6e4582efb13e32ae386c9bcd7055ecbe118561598f6d9",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "103554da2778a52dc8b6e4582efb13e32ae386c9bcd7055ecbe118561598f6d9",
+            "text": "键",
+            "words": [
+              {
+                "text": "键",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/196c0cb02723edd11add7299adc81826d49b34acaa5ece1a9177252182e066d6.mp3",
+          "sha256": "196c0cb02723edd11add7299adc81826d49b34acaa5ece1a9177252182e066d6",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "196c0cb02723edd11add7299adc81826d49b34acaa5ece1a9177252182e066d6",
+            "text": "键",
+            "words": [
+              {
+                "text": "键",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "7864e616ca4dfba1a398ff64ad0ce8a88e9fdc7775b72f6c007338af82b34648": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2bc2a39b9a916f2b294158a6ae646de57e011760ea297094b28341c23cc667ec.mp3",
+          "sha256": "2bc2a39b9a916f2b294158a6ae646de57e011760ea297094b28341c23cc667ec",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "2bc2a39b9a916f2b294158a6ae646de57e011760ea297094b28341c23cc667ec",
+            "text": "关键",
+            "words": [
+              {
+                "text": "关键",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-995bf62e18d3533facda99b809567c419f9e4f6a4e9fe612be757a7419702f7f.mp3",
+          "sha256": "995bf62e18d3533facda99b809567c419f9e4f6a4e9fe612be757a7419702f7f",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "995bf62e18d3533facda99b809567c419f9e4f6a4e9fe612be757a7419702f7f",
+            "text": "关键",
+            "words": [
+              {
+                "text": "关键",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "0dc067bfd792f309f19f7abae1e2bdb3adb27034af691f9a4c00855656747ff2": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1438b98ffa670125ecf22c67578f8d0fee0f71e8a8bc3432b9126a865e2fa783.mp3",
+          "sha256": "1438b98ffa670125ecf22c67578f8d0fee0f71e8a8bc3432b9126a865e2fa783",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "1438b98ffa670125ecf22c67578f8d0fee0f71e8a8bc3432b9126a865e2fa783",
+            "text": "既",
+            "words": [
+              {
+                "text": "既",
+                "start": 0.24,
+                "end": 0.34
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-9badd6ff78a26466068fa62c253ec9850eaa45f2fa1fa67f50070f3db91782ee.mp3",
+          "sha256": "9badd6ff78a26466068fa62c253ec9850eaa45f2fa1fa67f50070f3db91782ee",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "9badd6ff78a26466068fa62c253ec9850eaa45f2fa1fa67f50070f3db91782ee",
+            "text": "既",
+            "words": [
+              {
+                "text": "既",
+                "start": 0.22,
+                "end": 0.32
+              }
+            ]
+          }
+        }
+      },
+      "2d2df57e26bfdfc55617609fef328ff1d1c6b52dd836358f4b1a36d63eb9675e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-bfb334e086a4790b606f1309e2ad2d72be392d958211912f872703a78b8f84bc.mp3",
+          "sha256": "bfb334e086a4790b606f1309e2ad2d72be392d958211912f872703a78b8f84bc",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "bfb334e086a4790b606f1309e2ad2d72be392d958211912f872703a78b8f84bc",
+            "text": "无法",
+            "words": [
+              {
+                "text": "无法",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4a483fbd09a466526da1f9af32e58f55a99570685af215cc1fc402b8cb149cf2.mp3",
+          "sha256": "4a483fbd09a466526da1f9af32e58f55a99570685af215cc1fc402b8cb149cf2",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "4a483fbd09a466526da1f9af32e58f55a99570685af215cc1fc402b8cb149cf2",
+            "text": "无法",
+            "words": [
+              {
+                "text": "无法",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

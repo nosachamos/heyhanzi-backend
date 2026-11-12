@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1271",
+  "targetId": "W1271",
+  "steps": [
+    {
+      "id": "BANK-W1271-W1271",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1271-W1271",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to drink a toast; Cheers!",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "干杯"
+            },
+            {
+              "value": "gānbēi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gan1bei1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "干杯",
+            "pinyin": "gānbēi",
+            "meaning": "to drink a toast; Cheers!",
+            "singleWord": true,
+            "audio": "d8ed13f73647e4e864b54b1971a055e6e3f9288eb4653abdc0fe74dfcd9d432a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d8ed13f73647e4e864b54b1971a055e6e3f9288eb4653abdc0fe74dfcd9d432a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a9191ac0a8f88a1b57363a41c99ec5762f6025b81ef1b71d3a8f91c77548c987.mp3",
+        "sha256": "a9191ac0a8f88a1b57363a41c99ec5762f6025b81ef1b71d3a8f91c77548c987",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "a9191ac0a8f88a1b57363a41c99ec5762f6025b81ef1b71d3a8f91c77548c987",
+          "text": "干杯",
+          "words": [
+            {
+              "text": "干杯",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-97a1c6dbe60158d3deef3286d9022350552a49fa2d12bbaabd18946bfea1be61.mp3",
+        "sha256": "97a1c6dbe60158d3deef3286d9022350552a49fa2d12bbaabd18946bfea1be61",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "97a1c6dbe60158d3deef3286d9022350552a49fa2d12bbaabd18946bfea1be61",
+          "text": "干杯",
+          "words": [
+            {
+              "text": "干杯",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1271",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1271-W1271",
+      "question_ids": [
+        "BANK-W1271-W1271"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-08",
+    "stepId": "S-U4-08-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e72"
+    ],
+    "grammarLessonIds": []
+  }
+}

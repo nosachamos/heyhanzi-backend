@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2069",
+  "targetId": "W2069",
+  "steps": [
+    {
+      "id": "BANK-W2069-W2069",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2069-W2069",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "local; this locality",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "本地"
+            },
+            {
+              "value": "běndì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ben3di4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "本地",
+            "pinyin": "běndì",
+            "meaning": "local; this locality",
+            "singleWord": true,
+            "audio": "74b46ca8906c121fbb432e1f99cfe5425f13d5f5f82f2786bc916c6019aa91a1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "74b46ca8906c121fbb432e1f99cfe5425f13d5f5f82f2786bc916c6019aa91a1": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-011c3f6f5af01dc69e61899f4e4cae3f4eb60a3a804ca3ab8d4cb1a935681ddb.mp3",
+        "sha256": "011c3f6f5af01dc69e61899f4e4cae3f4eb60a3a804ca3ab8d4cb1a935681ddb",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "011c3f6f5af01dc69e61899f4e4cae3f4eb60a3a804ca3ab8d4cb1a935681ddb",
+          "text": "本地",
+          "words": [
+            {
+              "text": "本地",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-303dd4c056970b3338577a6aa70fa6c267e2d07bc2f0eacaf04a42a2f85ee3fd.mp3",
+        "sha256": "303dd4c056970b3338577a6aa70fa6c267e2d07bc2f0eacaf04a42a2f85ee3fd",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "303dd4c056970b3338577a6aa70fa6c267e2d07bc2f0eacaf04a42a2f85ee3fd",
+          "text": "本地",
+          "words": [
+            {
+              "text": "本地",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2069",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2069-W2069",
+      "question_ids": [
+        "BANK-W2069-W2069"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-44-P01",
+    "stepId": "S-U5-44-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5730"
+    ],
+    "grammarLessonIds": []
+  }
+}

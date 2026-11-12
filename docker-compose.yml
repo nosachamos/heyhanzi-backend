@@ -1,0 +1,79 @@
+name: heyhanzi-backend
+
+x-app: &app
+  image: heyhanzi-backend:dev
+  build: .
+  env_file: .env
+  # Match the host owner so mkcert private keys stay mode 0600 and migrations
+  # generated in the bind mount are not root-owned. Production uses uid 10001.
+  user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+  volumes:
+    - .:/app
+  environment: &app-env
+    APP_ENV: DEV
+    APP_CONFIGS: ""
+    DATABASE_URL: postgresql://postgres:postgres@postgres:5432/heyhanzi-dev?sslmode=disable
+    MIGRATION_DATABASE_URL: postgresql://postgres:postgres@postgres:5432/heyhanzi-dev?sslmode=disable
+    DATABASE_NAME: heyhanzi-dev
+    LOCAL_HTTPS: "true"
+    PORT: "8000"
+    EMAIL_PROVIDER: smtp_capture
+    SMTP_HOST: mailpit
+    SMTP_PORT: "1025"
+
+services:
+  backend:
+    <<: *app
+    init: true
+    command: python run.py --https
+    ports:
+      - "127.0.0.1:${BACKEND_PORT:-8002}:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      database-bootstrap:
+        condition: service_completed_successfully
+      mailpit:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "python", "scripts/container_healthcheck.py", "--https"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 15s
+
+  database-bootstrap:
+    <<: *app
+    command: python scripts/bootstrap_database.py
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  postgres:
+    image: postgres:16-bookworm
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: heyhanzi-dev
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d heyhanzi-dev"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+
+  mailpit:
+    image: axllent/mailpit:v1.27
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8026:8025"
+      - "127.0.0.1:1026:1025"
+    environment:
+      MP_MAX_MESSAGES: "500"
+
+volumes:
+  postgres-data:

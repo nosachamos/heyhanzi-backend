@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1599",
+  "targetId": "W1599",
+  "steps": [
+    {
+      "id": "BANK-W1599-W1599",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1599-W1599",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "wine",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "葡萄酒"
+            },
+            {
+              "value": "pútaojiǔ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "pu2tao5jiu3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "葡萄酒",
+            "pinyin": "pútaojiǔ",
+            "meaning": "wine",
+            "singleWord": true,
+            "audio": "efc95bbdb916708b12891755bfe7e34eb41f5b4bcd827c05d55cdfcf0942dfb2"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "efc95bbdb916708b12891755bfe7e34eb41f5b4bcd827c05d55cdfcf0942dfb2": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/97bd5bd82ec1e5f2899e255d684682f80337d3a59fc8ed83e93318c63e1ca24c.mp3",
+        "sha256": "97bd5bd82ec1e5f2899e255d684682f80337d3a59fc8ed83e93318c63e1ca24c",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "97bd5bd82ec1e5f2899e255d684682f80337d3a59fc8ed83e93318c63e1ca24c",
+          "text": "葡萄酒",
+          "words": [
+            {
+              "text": "葡萄酒",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a9d6718e764ca93d7574ae8633b56770eb72719d402176f4afafc383d986b6ce.mp3",
+        "sha256": "a9d6718e764ca93d7574ae8633b56770eb72719d402176f4afafc383d986b6ce",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "a9d6718e764ca93d7574ae8633b56770eb72719d402176f4afafc383d986b6ce",
+          "text": "葡萄酒",
+          "words": [
+            {
+              "text": "葡萄酒",
+              "start": 0.15,
+              "end": 0.6299999999999999
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1599",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1599-W1599",
+      "question_ids": [
+        "BANK-W1599-W1599"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-08",
+    "stepId": "S-U4-08-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9992"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2127",
+  "targetId": "W2127",
+  "steps": [
+    {
+      "id": "BANK-W2127-W2127",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2127-W2127",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "fork",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "叉子"
+            },
+            {
+              "value": "chāzi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "cha1zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "叉子",
+            "pinyin": "chāzi",
+            "meaning": "fork",
+            "singleWord": true,
+            "audio": "7be1d63d9ce19288429039c25c5946a44b5d78c03d1ba92bdd63e1d06f2897a4"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7be1d63d9ce19288429039c25c5946a44b5d78c03d1ba92bdd63e1d06f2897a4": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/78f63e8e882b63e4dfdf3d4df6b9cc02acbd378968e541b2781eb5f291b360fe.mp3",
+        "sha256": "78f63e8e882b63e4dfdf3d4df6b9cc02acbd378968e541b2781eb5f291b360fe",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "78f63e8e882b63e4dfdf3d4df6b9cc02acbd378968e541b2781eb5f291b360fe",
+          "text": "叉子",
+          "words": [
+            {
+              "text": "叉子",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/272a6722c787a242eb50da0283bdcda6a3412adb58630cd847abb6827e873e7c.mp3",
+        "sha256": "272a6722c787a242eb50da0283bdcda6a3412adb58630cd847abb6827e873e7c",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "272a6722c787a242eb50da0283bdcda6a3412adb58630cd847abb6827e873e7c",
+          "text": "叉子",
+          "words": [
+            {
+              "text": "叉子",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2127",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2127-W2127",
+      "question_ids": [
+        "BANK-W2127-W2127"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-08",
+    "stepId": "S-U5-08-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-53c9"
+    ],
+    "grammarLessonIds": []
+  }
+}

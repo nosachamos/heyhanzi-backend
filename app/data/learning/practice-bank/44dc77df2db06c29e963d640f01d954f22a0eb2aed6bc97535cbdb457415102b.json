@@ -1,0 +1,244 @@
+{
+  "id": "BANK-W0555",
+  "targetId": "W0555",
+  "steps": [
+    {
+      "id": "BANK-W0555-W0555",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0555-W0555",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "hotel",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "酒店"
+            },
+            {
+              "value": "jiǔdiàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jiu3dian4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "酒店",
+            "pinyin": "jiǔdiàn",
+            "meaning": "hotel",
+            "singleWord": true,
+            "audio": "8285389b316eb6b1f4812b7c638239abbb5c3175c1a33b9a0c6b01572c42e85e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W0555-W0555-use-hotel",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W0555-W0555-use-hotel",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 酒店 fits this context?",
+          "context": "The speaker is describing a large business that accommodates overnight guests.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W0555-W0555-use-hotel-contrast-2",
+              "label": "A shop selling books.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "酒店 commonly means a hotel: a business where guests can stay overnight."
+            },
+            {
+              "id": "BANK-W0555-W0555-use-hotel-meaning",
+              "label": "A hotel.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "酒店 commonly means a hotel: a business where guests can stay overnight."
+            },
+            {
+              "id": "BANK-W0555-W0555-use-hotel-contrast-1",
+              "label": "A private family home.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "酒店 commonly means a hotel: a business where guests can stay overnight."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "这家酒店很大。",
+            "pinyin": "zhè jiā jiǔdiàn hěn dà 。",
+            "meaning": "",
+            "audio": "d99240d90051365ad26723e1d9e1905f5574c38d83797196c550fc7956693088"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8285389b316eb6b1f4812b7c638239abbb5c3175c1a33b9a0c6b01572c42e85e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-68b2f790c09e310c49dc887c79d09c131c6690e720cebeacbfdaf4bf8c4ffa78.mp3",
+        "sha256": "68b2f790c09e310c49dc887c79d09c131c6690e720cebeacbfdaf4bf8c4ffa78",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "68b2f790c09e310c49dc887c79d09c131c6690e720cebeacbfdaf4bf8c4ffa78",
+          "text": "酒店",
+          "words": [
+            {
+              "text": "酒店",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-297d2b531ef854358c302d558306f425eeecd66c97a56f5d10bf0f34ff56432c.mp3",
+        "sha256": "297d2b531ef854358c302d558306f425eeecd66c97a56f5d10bf0f34ff56432c",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "297d2b531ef854358c302d558306f425eeecd66c97a56f5d10bf0f34ff56432c",
+          "text": "酒店",
+          "words": [
+            {
+              "text": "酒店",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    },
+    "d99240d90051365ad26723e1d9e1905f5574c38d83797196c550fc7956693088": {
+      "female": {
+        "url": "/exercise-assets/audio/course-female-30012550b0b54824de7403aea4cc0be5659c7c5b28f3f6e4b6d885d4aff9b7ae.mp3",
+        "sha256": "30012550b0b54824de7403aea4cc0be5659c7c5b28f3f6e4b6d885d4aff9b7ae",
+        "byteLength": 25101,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-best-available",
+        "readAlong": {
+          "audioSha256": "30012550b0b54824de7403aea4cc0be5659c7c5b28f3f6e4b6d885d4aff9b7ae",
+          "text": "这家酒店很大。",
+          "words": [
+            {
+              "text": "这",
+              "start": 0.09,
+              "end": 0.15
+            },
+            {
+              "text": "家",
+              "start": 0.32999999999999996,
+              "end": 0.39
+            },
+            {
+              "text": "酒店",
+              "start": 0.69,
+              "end": 0.9299999999999999
+            },
+            {
+              "text": "很",
+              "start": 1.17,
+              "end": 1.23
+            },
+            {
+              "text": "大",
+              "start": 1.41,
+              "end": 1.47
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/course-male-8bb287a50877d37b38817fa17dc9640eaa75c9a06c0abf622af25ab7c0f8a2a3.mp3",
+        "sha256": "8bb287a50877d37b38817fa17dc9640eaa75c9a06c0abf622af25ab7c0f8a2a3",
+        "byteLength": 21933,
+        "readAlong": {
+          "audioSha256": "8bb287a50877d37b38817fa17dc9640eaa75c9a06c0abf622af25ab7c0f8a2a3",
+          "text": "这家酒店很大。",
+          "words": [
+            {
+              "text": "这",
+              "start": 0.09,
+              "end": 0.15
+            },
+            {
+              "text": "家",
+              "start": 0.32999999999999996,
+              "end": 0.39
+            },
+            {
+              "text": "酒店",
+              "start": 0.57,
+              "end": 0.8099999999999999
+            },
+            {
+              "text": "很",
+              "start": 0.99,
+              "end": 1.05
+            },
+            {
+              "text": "大",
+              "start": 1.17,
+              "end": 1.23
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0555",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0555-W0555",
+      "question_ids": [
+        "BANK-W0555-W0555"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W0555",
+      "facet_id": "lexical-use-hotel",
+      "part_id": "BANK-W0555-W0555-use-hotel",
+      "question_ids": [
+        "BANK-W0555-W0555-use-hotel"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W0555",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U19",
+    "stepId": "S-U19-words-r4-17",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9152",
+      "mandarin-simplified-v1-warmup-zhe",
+      "mandarin-simplified-v1-char-5988",
+      "mandarin-simplified-v1-warmup-hen",
+      "mandarin-simplified-v1-char-5927"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1133",
+  "targetId": "W1133",
+  "steps": [
+    {
+      "id": "BANK-W1133-W1133",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1133-W1133",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "city",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "城"
+            },
+            {
+              "value": "chéng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "cheng2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "城",
+            "pinyin": "chéng",
+            "meaning": "city",
+            "singleWord": true,
+            "audio": "25fd9cdf04cce546f14fbc4948bbf1ece713f72943cc0df3a47a08a3e4b295c9"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "25fd9cdf04cce546f14fbc4948bbf1ece713f72943cc0df3a47a08a3e4b295c9": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-3aeb21c35e8a4d12c3388c5f25a0dc621f31b8f370f43f1f6b7a65a87fa6a3fb.mp3",
+        "sha256": "3aeb21c35e8a4d12c3388c5f25a0dc621f31b8f370f43f1f6b7a65a87fa6a3fb",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "3aeb21c35e8a4d12c3388c5f25a0dc621f31b8f370f43f1f6b7a65a87fa6a3fb",
+          "text": "城",
+          "words": [
+            {
+              "text": "城",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c947f62a038196a2e04d048590b056ccb651717e9974a6290a69223378f530e1.mp3",
+        "sha256": "c947f62a038196a2e04d048590b056ccb651717e9974a6290a69223378f530e1",
+        "byteLength": 8109,
+        "readAlong": {
+          "audioSha256": "c947f62a038196a2e04d048590b056ccb651717e9974a6290a69223378f530e1",
+          "text": "城",
+          "words": [
+            {
+              "text": "城",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1133",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1133-W1133",
+      "question_ids": [
+        "BANK-W1133-W1133"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-17",
+    "stepId": "S-U4-17-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-57ce"
+    ],
+    "grammarLessonIds": []
+  }
+}

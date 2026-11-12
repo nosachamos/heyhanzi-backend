@@ -1,0 +1,687 @@
+{
+  "id": "EX-CHAR-char-523b",
+  "revision": 2,
+  "unit": "U3-04-P01",
+  "stage": "ST-HSK3",
+  "after": "S-U3-04-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "刻",
+  "sourceBlockId": "mandarin-simplified-v1-char-523b",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-523b",
+        "text": "刻",
+        "pinyin": "kè",
+        "meaning": "quarter (hour); moment",
+        "characters": [
+          {
+            "id": "C-523B",
+            "text": "刻"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-053809886432dbdf2546fc9e",
+        "text": "语法",
+        "pinyin": "yǔfǎ",
+        "meaning": "grammar; (computing) syntax",
+        "characters": [
+          {
+            "id": "C-8BED",
+            "text": "语"
+          },
+          {
+            "id": "C-6CD5",
+            "text": "法"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-128007e3b5b0174769acbdff",
+        "text": "刻意",
+        "pinyin": "kè yì",
+        "meaning": "intentionally",
+        "characters": [
+          {
+            "id": "C-523B",
+            "text": "刻"
+          },
+          {
+            "id": "C-610F",
+            "text": "意"
+          }
+        ]
+      },
+      {
+        "id": "W0027",
+        "text": "忙",
+        "pinyin": "máng",
+        "meaning": "busy",
+        "characters": [
+          {
+            "id": "C-5FD9",
+            "text": "忙"
+          }
+        ]
+      },
+      {
+        "id": "W0924",
+        "text": "试",
+        "pinyin": "shì",
+        "meaning": "to test; to try",
+        "characters": [
+          {
+            "id": "C-8BD5",
+            "text": "试"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "89b5ffd5f7c45c6693810590ac6c542e716ade6d80c5df4c9d773044dfef7371",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-523b",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "刻",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-523b-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-128007e3b5b0174769acbdff",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "intentionally",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "刻意"
+              },
+              {
+                "value": "kè yì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ke4yi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "刻意",
+              "pinyin": "kè yì",
+              "meaning": "intentionally",
+              "audio": "0b444050e4781a7ae0ee42cdb99a4d93f2cae85b62d7f9d19bb01f287679b2ad",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-523b-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-523b",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "刻",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-523b",
+                "label": "quarter (hour); moment",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0027",
+                "label": "busy",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-053809886432dbdf2546fc9e",
+                "label": "grammar; (computing) syntax",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-523b-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "刻",
+        "pinyin": "kè",
+        "meaning": "quarter (hour); moment",
+        "source": "/stroke-data/523b.json",
+        "reference": {
+          "character": "刻",
+          "sha256": "826bfcd5ef477481c25156dc94f708b1faeb8ac3f0143fdfe23dd853aa4e3427",
+          "medians": [
+            [
+              [
+                330,
+                815
+              ],
+              [
+                418,
+                761
+              ],
+              [
+                445,
+                720
+              ]
+            ],
+            [
+              [
+                128,
+                580
+              ],
+              [
+                181,
+                571
+              ],
+              [
+                500,
+                625
+              ],
+              [
+                569,
+                618
+              ]
+            ],
+            [
+              [
+                273,
+                556
+              ],
+              [
+                291,
+                538
+              ],
+              [
+                294,
+                525
+              ],
+              [
+                199,
+                392
+              ],
+              [
+                186,
+                360
+              ],
+              [
+                208,
+                355
+              ],
+              [
+                305,
+                358
+              ],
+              [
+                328,
+                369
+              ]
+            ],
+            [
+              [
+                468,
+                502
+              ],
+              [
+                439,
+                494
+              ],
+              [
+                355,
+                358
+              ],
+              [
+                258,
+                249
+              ],
+              [
+                146,
+                150
+              ],
+              [
+                94,
+                119
+              ]
+            ],
+            [
+              [
+                453,
+                373
+              ],
+              [
+                472,
+                348
+              ],
+              [
+                474,
+                336
+              ],
+              [
+                444,
+                276
+              ],
+              [
+                406,
+                219
+              ],
+              [
+                325,
+                126
+              ],
+              [
+                254,
+                68
+              ],
+              [
+                207,
+                41
+              ]
+            ],
+            [
+              [
+                404,
+                176
+              ],
+              [
+                421,
+                175
+              ],
+              [
+                513,
+                112
+              ],
+              [
+                539,
+                84
+              ],
+              [
+                552,
+                56
+              ]
+            ],
+            [
+              [
+                620,
+                582
+              ],
+              [
+                650,
+                540
+              ],
+              [
+                641,
+                321
+              ],
+              [
+                645,
+                268
+              ]
+            ],
+            [
+              [
+                764,
+                817
+              ],
+              [
+                821,
+                770
+              ],
+              [
+                812,
+                402
+              ],
+              [
+                815,
+                106
+              ],
+              [
+                793,
+                52
+              ],
+              [
+                734,
+                74
+              ],
+              [
+                662,
+                111
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-523b-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0924",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to test; to try",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "试"
+              },
+              {
+                "value": "shì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "试",
+              "pinyin": "shì",
+              "meaning": "to test; to try",
+              "audio": "b10fd260a3c7feee280a7e3a2411c777413e129264d7ae20dfe357fd974631b9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-523b-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-523b",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "quarter (hour); moment",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "刻"
+              },
+              {
+                "value": "kè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ke4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "刻",
+              "pinyin": "kè",
+              "meaning": "quarter (hour); moment",
+              "audio": "7b0b9b71abc287f4aac32c88fe70c36e1de5ef974dc96fb4e5efd8e0b4bef06c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "7b0b9b71abc287f4aac32c88fe70c36e1de5ef974dc96fb4e5efd8e0b4bef06c"
+            ],
+            "transcript": [
+              {
+                "text": "刻",
+                "pinyin": "kè",
+                "meaning": "quarter (hour); moment",
+                "audio": "7b0b9b71abc287f4aac32c88fe70c36e1de5ef974dc96fb4e5efd8e0b4bef06c",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-523B",
+      "character": "刻",
+      "lessonIds": [
+        "LESSON-C-523B"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-523b-word",
+        "EX-CHAR-char-523b-recognize",
+        "EX-CHAR-char-523b-write",
+        "EX-CHAR-char-523b-familiar",
+        "EX-CHAR-char-523b-recall"
+      ]
+    },
+    "audio": {
+      "7b0b9b71abc287f4aac32c88fe70c36e1de5ef974dc96fb4e5efd8e0b4bef06c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2bcc4cbf398bbc48230a7b80b1351d5998690109e674d75e76a6ac79230d8c75.mp3",
+          "sha256": "2bcc4cbf398bbc48230a7b80b1351d5998690109e674d75e76a6ac79230d8c75",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "2bcc4cbf398bbc48230a7b80b1351d5998690109e674d75e76a6ac79230d8c75",
+            "text": "刻",
+            "words": [
+              {
+                "text": "刻",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f2fc6c2d309d2bd475db235c3ad9a4b8d7fbee823b2eab1dc23f9e4e386b9dd4.mp3",
+          "sha256": "f2fc6c2d309d2bd475db235c3ad9a4b8d7fbee823b2eab1dc23f9e4e386b9dd4",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "f2fc6c2d309d2bd475db235c3ad9a4b8d7fbee823b2eab1dc23f9e4e386b9dd4",
+            "text": "刻",
+            "words": [
+              {
+                "text": "刻",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "041027ee4474c7d934df0d95ab6c27fdf4e9a33cccc9c0c89cf02e63a301372c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8a5d7ec37a4849a8672094449d4fcb8b225a9c1c2fba355b51fe9a70f4e6ba5f.mp3",
+          "sha256": "8a5d7ec37a4849a8672094449d4fcb8b225a9c1c2fba355b51fe9a70f4e6ba5f",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "8a5d7ec37a4849a8672094449d4fcb8b225a9c1c2fba355b51fe9a70f4e6ba5f",
+            "text": "语法",
+            "words": [
+              {
+                "text": "语法",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5b8608cb190cd07fc855bc4c19bbb2280bee41a6f961467a75d7caba8e879da8.mp3",
+          "sha256": "5b8608cb190cd07fc855bc4c19bbb2280bee41a6f961467a75d7caba8e879da8",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "5b8608cb190cd07fc855bc4c19bbb2280bee41a6f961467a75d7caba8e879da8",
+            "text": "语法",
+            "words": [
+              {
+                "text": "语法",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "0b444050e4781a7ae0ee42cdb99a4d93f2cae85b62d7f9d19bb01f287679b2ad": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e0ae7f7852941b414232697fc7558e670160710e51bd65c937b865062c2eef99.mp3",
+          "sha256": "e0ae7f7852941b414232697fc7558e670160710e51bd65c937b865062c2eef99",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "e0ae7f7852941b414232697fc7558e670160710e51bd65c937b865062c2eef99",
+            "text": "刻意",
+            "words": [
+              {
+                "text": "刻意",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/59f1d6cf52756290d82d9deb3e1233c8f0cdb22e9f44e7a29a9c37e98ccf6a1d.mp3",
+          "sha256": "59f1d6cf52756290d82d9deb3e1233c8f0cdb22e9f44e7a29a9c37e98ccf6a1d",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "59f1d6cf52756290d82d9deb3e1233c8f0cdb22e9f44e7a29a9c37e98ccf6a1d",
+            "text": "刻意",
+            "words": [
+              {
+                "text": "刻意",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "34df31af258900062c57906080950abee0d530ead7baecebf06fb0daaac6f776": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-08d17c6b606e08936c395d481e037d0d6ab989731881e98b4b6c36f2b590b644.mp3",
+          "sha256": "08d17c6b606e08936c395d481e037d0d6ab989731881e98b4b6c36f2b590b644",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "08d17c6b606e08936c395d481e037d0d6ab989731881e98b4b6c36f2b590b644",
+            "text": "忙",
+            "words": [
+              {
+                "text": "忙",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-75fd1722dfc5bee5d46513c390980b2ad5a1b45c3353d91b79dc30c0fff6f34d.mp3",
+          "sha256": "75fd1722dfc5bee5d46513c390980b2ad5a1b45c3353d91b79dc30c0fff6f34d",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "75fd1722dfc5bee5d46513c390980b2ad5a1b45c3353d91b79dc30c0fff6f34d",
+            "text": "忙",
+            "words": [
+              {
+                "text": "忙",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "b10fd260a3c7feee280a7e3a2411c777413e129264d7ae20dfe357fd974631b9": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-9ed92c47fe37b71d74552e48ea1d4ca4eb7d8563a718ca168e857ab3d60d6e4a.mp3",
+          "sha256": "9ed92c47fe37b71d74552e48ea1d4ca4eb7d8563a718ca168e857ab3d60d6e4a",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "9ed92c47fe37b71d74552e48ea1d4ca4eb7d8563a718ca168e857ab3d60d6e4a",
+            "text": "试",
+            "words": [
+              {
+                "text": "试",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-3cafa0616ecaa5cf3f5f8dca732c7aebdb367e2f3216493b6bb628b2449d2636.mp3",
+          "sha256": "3cafa0616ecaa5cf3f5f8dca732c7aebdb367e2f3216493b6bb628b2449d2636",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "3cafa0616ecaa5cf3f5f8dca732c7aebdb367e2f3216493b6bb628b2449d2636",
+            "text": "试",
+            "words": [
+              {
+                "text": "试",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

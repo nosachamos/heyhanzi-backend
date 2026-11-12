@@ -1,0 +1,275 @@
+{
+  "id": "BANK-W1451",
+  "targetId": "W1451",
+  "steps": [
+    {
+      "id": "BANK-W1451-W1451",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1451-W1451",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "exactly; precisely; either (in paired alternatives); even if (with a concession)",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "就是"
+            },
+            {
+              "value": "jiùshì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jiu4shi4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "就是",
+            "pinyin": "jiùshì",
+            "meaning": "exactly; precisely; either (in paired alternatives); even if (with a concession)",
+            "singleWord": true,
+            "audio": "71ee07bb3171a62d3cec05c26b0a52dc91682a8578fe884b10dbbfac40b8f395"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1451-W1451-use-exact-identity",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1451-W1451-use-exact-identity",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 就是 fits this context?",
+          "context": "A speaker confirms that this is precisely the person being sought.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1451-W1451-use-exact-identity-contrast-1",
+              "label": "Definitely a different person.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "就是 can stress an exact identity: exactly or precisely the person or thing meant."
+            },
+            {
+              "id": "BANK-W1451-W1451-use-exact-identity-meaning",
+              "label": "Exactly that person.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "就是 can stress an exact identity: exactly or precisely the person or thing meant."
+            },
+            {
+              "id": "BANK-W1451-W1451-use-exact-identity-contrast-2",
+              "label": "No person is being identified.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "就是 can stress an exact identity: exactly or precisely the person or thing meant."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "就是",
+            "pinyin": "jiùshì",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "71ee07bb3171a62d3cec05c26b0a52dc91682a8578fe884b10dbbfac40b8f395"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1451-W1451-use-paired-alternatives",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1451-W1451-use-paired-alternatives",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 就是 fits this context?",
+          "context": "Two alternatives are presented: if the first is not the case, the second is.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1451-W1451-use-paired-alternatives-contrast-2",
+              "label": "An unrelated third possibility.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "In a paired either-or construction, 就是 introduces the alternative to the first possibility. It is the construction as a whole that gives the either-or relation."
+            },
+            {
+              "id": "BANK-W1451-W1451-use-paired-alternatives-meaning",
+              "label": "The second of two alternatives.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "In a paired either-or construction, 就是 introduces the alternative to the first possibility. It is the construction as a whole that gives the either-or relation."
+            },
+            {
+              "id": "BANK-W1451-W1451-use-paired-alternatives-contrast-1",
+              "label": "Both alternatives are denied.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "In a paired either-or construction, 就是 introduces the alternative to the first possibility. It is the construction as a whole that gives the either-or relation."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "就是",
+            "pinyin": "jiùshì",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "71ee07bb3171a62d3cec05c26b0a52dc91682a8578fe884b10dbbfac40b8f395"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1451-W1451-use-even-if",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1451-W1451-use-even-if",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 就是 fits this context?",
+          "context": "The speaker says that even if a difficulty occurs, the planned action will still happen.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1451-W1451-use-even-if-contrast-2",
+              "label": "The condition guarantees cancellation.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "In a concessive construction, 就是 can mean even if: a stated condition does not prevent the main outcome."
+            },
+            {
+              "id": "BANK-W1451-W1451-use-even-if-contrast-1",
+              "label": "Only if the difficulty never occurs.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "In a concessive construction, 就是 can mean even if: a stated condition does not prevent the main outcome."
+            },
+            {
+              "id": "BANK-W1451-W1451-use-even-if-meaning",
+              "label": "Even if that condition holds.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "In a concessive construction, 就是 can mean even if: a stated condition does not prevent the main outcome."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "就是",
+            "pinyin": "jiùshì",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "71ee07bb3171a62d3cec05c26b0a52dc91682a8578fe884b10dbbfac40b8f395"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "71ee07bb3171a62d3cec05c26b0a52dc91682a8578fe884b10dbbfac40b8f395": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-4dba911f986a67657861581df7d1ef0e98621485a12f3d05a9584b9263133881.mp3",
+        "sha256": "4dba911f986a67657861581df7d1ef0e98621485a12f3d05a9584b9263133881",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "4dba911f986a67657861581df7d1ef0e98621485a12f3d05a9584b9263133881",
+          "text": "就是",
+          "words": [
+            {
+              "text": "就是",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-e55f302c2fa7576e6203da94721ce6db86103b518ca0baa2ad7c05e2354815a1.mp3",
+        "sha256": "e55f302c2fa7576e6203da94721ce6db86103b518ca0baa2ad7c05e2354815a1",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "e55f302c2fa7576e6203da94721ce6db86103b518ca0baa2ad7c05e2354815a1",
+          "text": "就是",
+          "words": [
+            {
+              "text": "就是",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1451",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1451-W1451",
+      "question_ids": [
+        "BANK-W1451-W1451"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W1451",
+      "facet_id": "lexical-use-exact-identity",
+      "part_id": "BANK-W1451-W1451-use-exact-identity",
+      "question_ids": [
+        "BANK-W1451-W1451-use-exact-identity"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1451",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W1451",
+      "facet_id": "lexical-use-paired-alternatives",
+      "part_id": "BANK-W1451-W1451-use-paired-alternatives",
+      "question_ids": [
+        "BANK-W1451-W1451-use-paired-alternatives"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1451",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W1451",
+      "facet_id": "lexical-use-even-if",
+      "part_id": "BANK-W1451-W1451-use-even-if",
+      "question_ids": [
+        "BANK-W1451-W1451-use-even-if"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1451",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-39-P01",
+    "stepId": "S-U4-39-P01-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5c31"
+    ],
+    "grammarLessonIds": []
+  }
+}

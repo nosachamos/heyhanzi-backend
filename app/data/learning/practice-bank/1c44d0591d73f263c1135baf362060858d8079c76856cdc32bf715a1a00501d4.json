@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3639",
+  "targetId": "W3639",
+  "steps": [
+    {
+      "id": "BANK-W3639-W3639",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3639-W3639",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "baseball",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "棒球"
+            },
+            {
+              "value": "bàngqiú",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bang4qiu2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "棒球",
+            "pinyin": "bàngqiú",
+            "meaning": "baseball",
+            "singleWord": true,
+            "audio": "1e41751703727a30d626f8a76eedf10d4ca9bb965287c7ea53612ddfa1294a2a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1e41751703727a30d626f8a76eedf10d4ca9bb965287c7ea53612ddfa1294a2a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-3d0ff6f88c5d08b2f4c786fbb87ec74bfd2ecc1ffd65bb8f6e7314fb2d90906c.mp3",
+        "sha256": "3d0ff6f88c5d08b2f4c786fbb87ec74bfd2ecc1ffd65bb8f6e7314fb2d90906c",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "3d0ff6f88c5d08b2f4c786fbb87ec74bfd2ecc1ffd65bb8f6e7314fb2d90906c",
+          "text": "棒球",
+          "words": [
+            {
+              "text": "棒球",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-e3d16c945e35a37aab5379e46bfe7983335011b0f9f707e095d332efff8c52ee.mp3",
+        "sha256": "e3d16c945e35a37aab5379e46bfe7983335011b0f9f707e095d332efff8c52ee",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "e3d16c945e35a37aab5379e46bfe7983335011b0f9f707e095d332efff8c52ee",
+          "text": "棒球",
+          "words": [
+            {
+              "text": "棒球",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3639",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3639-W3639",
+      "question_ids": [
+        "BANK-W3639-W3639"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-19",
+    "stepId": "S-U6-19-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-68d2"
+    ],
+    "grammarLessonIds": []
+  }
+}

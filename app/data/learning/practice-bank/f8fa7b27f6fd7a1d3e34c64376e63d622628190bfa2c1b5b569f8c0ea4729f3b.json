@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2160",
+  "targetId": "W2160",
+  "steps": [
+    {
+      "id": "BANK-W2160-W2160",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2160-W2160",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "costs",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "成本"
+            },
+            {
+              "value": "chéngběn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "cheng2ben3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "成本",
+            "pinyin": "chéngběn",
+            "meaning": "costs",
+            "singleWord": true,
+            "audio": "06b8a38215a94c51644b406b5a73367e6d8970cc55ba5c6c008220c76d28db2b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "06b8a38215a94c51644b406b5a73367e6d8970cc55ba5c6c008220c76d28db2b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-6b631720e6a154fdcd6f2cfbad3b3933fc7b677017e90ee86a7029c090b87ce9.mp3",
+        "sha256": "6b631720e6a154fdcd6f2cfbad3b3933fc7b677017e90ee86a7029c090b87ce9",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "6b631720e6a154fdcd6f2cfbad3b3933fc7b677017e90ee86a7029c090b87ce9",
+          "text": "成本",
+          "words": [
+            {
+              "text": "成本",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-18621a5aced24ec35d83645791fc3e67b38f48c3d48ebb64400d7ac39a96b018.mp3",
+        "sha256": "18621a5aced24ec35d83645791fc3e67b38f48c3d48ebb64400d7ac39a96b018",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "18621a5aced24ec35d83645791fc3e67b38f48c3d48ebb64400d7ac39a96b018",
+          "text": "成本",
+          "words": [
+            {
+              "text": "成本",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2160",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2160-W2160",
+      "question_ids": [
+        "BANK-W2160-W2160"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-32-P01",
+    "stepId": "S-U5-32-P01-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6210"
+    ],
+    "grammarLessonIds": []
+  }
+}

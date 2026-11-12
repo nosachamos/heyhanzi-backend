@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1999",
+  "targetId": "W1999",
+  "steps": [
+    {
+      "id": "BANK-W1999-W1999",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1999-W1999",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to turn; to change direction",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "转"
+            },
+            {
+              "value": "zhuǎn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhuan3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "转",
+            "pinyin": "zhuǎn",
+            "meaning": "to turn; to change direction",
+            "singleWord": true,
+            "audio": "f9efbe6e9061762905acb37b1345ef21b393c2cccf2c0cb09a4160ab0b25ee8f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f9efbe6e9061762905acb37b1345ef21b393c2cccf2c0cb09a4160ab0b25ee8f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d4788d7ec8d66775eea151f08e9cd0987ed193d765cbd930e1d61ae14b82af32.mp3",
+        "sha256": "d4788d7ec8d66775eea151f08e9cd0987ed193d765cbd930e1d61ae14b82af32",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "d4788d7ec8d66775eea151f08e9cd0987ed193d765cbd930e1d61ae14b82af32",
+          "text": "转",
+          "words": [
+            {
+              "text": "转",
+              "start": 0.22,
+              "end": 0.34
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-95fb8d8d7461b9e2140812544a25da5d984732880b993c29bdbc9f23d1ed3892.mp3",
+        "sha256": "95fb8d8d7461b9e2140812544a25da5d984732880b993c29bdbc9f23d1ed3892",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "95fb8d8d7461b9e2140812544a25da5d984732880b993c29bdbc9f23d1ed3892",
+          "text": "转",
+          "words": [
+            {
+              "text": "转",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1999",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1999-W1999",
+      "question_ids": [
+        "BANK-W1999-W1999"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-17",
+    "stepId": "S-U4-17-words-r4-14",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8f6c"
+    ],
+    "grammarLessonIds": []
+  }
+}

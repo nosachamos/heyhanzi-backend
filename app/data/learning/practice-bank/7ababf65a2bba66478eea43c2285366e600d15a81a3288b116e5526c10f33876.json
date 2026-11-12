@@ -1,0 +1,421 @@
+{
+  "id": "BANK-W0324",
+  "targetId": "W0324",
+  "steps": [
+    {
+      "id": "BANK-W0324-W0324",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0324-W0324",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "all; both; even or already (emphatic adverb)",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "都"
+            },
+            {
+              "value": "dōu",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dou1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "都",
+            "pinyin": "dōu",
+            "meaning": "all; both; even or already (emphatic adverb)",
+            "singleWord": true,
+            "audio": "da17b909d7d863e9cc3c51e69d506f9cdda127a9ed2d8448108af5e3de2faa7d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W0324-W0324-use-all-both",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W0324-W0324-use-all-both",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 都 fits this context?",
+          "context": "Two friends are speaking together about the books each of them has.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W0324-W0324-use-all-both-meaning",
+              "label": "Both speakers have a book.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "Put 都 before the predicate to include every member of the stated group. For a group of two, this means both."
+            },
+            {
+              "id": "BANK-W0324-W0324-use-all-both-contrast-1",
+              "label": "Only one speaker has a book.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "Put 都 before the predicate to include every member of the stated group. For a group of two, this means both."
+            },
+            {
+              "id": "BANK-W0324-W0324-use-all-both-contrast-2",
+              "label": "Neither speaker has a book.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "Put 都 before the predicate to include every member of the stated group. For a group of two, this means both."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "我们都有书。",
+            "pinyin": "wǒmen dōu yǒu shū 。",
+            "meaning": "",
+            "audio": "1caa40567f607a915b418b9ef5258c6d4171c6ade65255a62ec29eee41889efa"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W0324-W0324-use-even",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W0324-W0324-use-even",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 都 fits this context?",
+          "context": "Everyone else has a book. The speaker had expected you to be the person without one, but discovers that you have one too.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W0324-W0324-use-even-meaning",
+              "label": "Even you have a book.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "When the context singles out an unlikely participant, 都 can emphasize even that person. The context determines who is unexpected."
+            },
+            {
+              "id": "BANK-W0324-W0324-use-even-contrast-2",
+              "label": "You do not have a book.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "When the context singles out an unlikely participant, 都 can emphasize even that person. The context determines who is unexpected."
+            },
+            {
+              "id": "BANK-W0324-W0324-use-even-contrast-1",
+              "label": "You are the only person with a book.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "When the context singles out an unlikely participant, 都 can emphasize even that person. The context determines who is unexpected."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "你都有书。",
+            "pinyin": "nǐ dōu yǒu shū 。",
+            "meaning": "",
+            "audio": "5316d24e3b7b4e462c2a9171f7958042f50d8648b6d2dd6ae066a2fb69c26adf"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W0324-W0324-use-already",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W0324-W0324-use-already",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 都 fits this context?",
+          "context": "A speaker notices that the clock has reached a later hour than expected and uses 都 to emphasize already.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W0324-W0324-use-already-contrast-2",
+              "label": "The expected point has not been reached.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "都 can emphasize that an expected point or state has already been reached, often with surprise about how early or late it is. This use does not count every member of a group."
+            },
+            {
+              "id": "BANK-W0324-W0324-use-already-meaning",
+              "label": "An expected point has already been reached.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "都 can emphasize that an expected point or state has already been reached, often with surprise about how early or late it is. This use does not count every member of a group."
+            },
+            {
+              "id": "BANK-W0324-W0324-use-already-contrast-1",
+              "label": "Every person is included in an action.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "都 can emphasize that an expected point or state has already been reached, often with surprise about how early or late it is. This use does not count every member of a group."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "都",
+            "pinyin": "dōu",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "da17b909d7d863e9cc3c51e69d506f9cdda127a9ed2d8448108af5e3de2faa7d"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "da17b909d7d863e9cc3c51e69d506f9cdda127a9ed2d8448108af5e3de2faa7d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-3a4c244adeaad4723564b4cf8b59cbf381633e3303c2a37fe6156608f0e6043b.mp3",
+        "sha256": "3a4c244adeaad4723564b4cf8b59cbf381633e3303c2a37fe6156608f0e6043b",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "3a4c244adeaad4723564b4cf8b59cbf381633e3303c2a37fe6156608f0e6043b",
+          "text": "都",
+          "words": [
+            {
+              "text": "都",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d4f08440e2700757c6a16807edfde4095eebacc6eafa5655d6b9e9ca3e6c9dd2.mp3",
+        "sha256": "d4f08440e2700757c6a16807edfde4095eebacc6eafa5655d6b9e9ca3e6c9dd2",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "d4f08440e2700757c6a16807edfde4095eebacc6eafa5655d6b9e9ca3e6c9dd2",
+          "text": "都",
+          "words": [
+            {
+              "text": "都",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    },
+    "1caa40567f607a915b418b9ef5258c6d4171c6ade65255a62ec29eee41889efa": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-469c95fd39532c0fce14e327acfff12fe250e43c69f64b021b46b2b77fb8e28b.mp3",
+        "sha256": "469c95fd39532c0fce14e327acfff12fe250e43c69f64b021b46b2b77fb8e28b",
+        "byteLength": 21069,
+        "readAlong": {
+          "audioSha256": "469c95fd39532c0fce14e327acfff12fe250e43c69f64b021b46b2b77fb8e28b",
+          "text": "我们都有书。",
+          "words": [
+            {
+              "text": "我们",
+              "start": 0.15,
+              "end": 0.39
+            },
+            {
+              "text": "都",
+              "start": 0.6299999999999999,
+              "end": 0.69
+            },
+            {
+              "text": "有",
+              "start": 0.8699999999999999,
+              "end": 0.9299999999999999
+            },
+            {
+              "text": "书",
+              "start": 1.05,
+              "end": 1.1099999999999999
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-683ae811223507681cea12ffe73ed18edf828ee7402f50c340c98142be642ac5.mp3",
+        "sha256": "683ae811223507681cea12ffe73ed18edf828ee7402f50c340c98142be642ac5",
+        "byteLength": 17325,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "683ae811223507681cea12ffe73ed18edf828ee7402f50c340c98142be642ac5",
+          "text": "我们都有书。",
+          "words": [
+            {
+              "text": "我们",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            },
+            {
+              "text": "都",
+              "start": 0.39,
+              "end": 0.44999999999999996
+            },
+            {
+              "text": "有",
+              "start": 0.6299999999999999,
+              "end": 0.69
+            },
+            {
+              "text": "书",
+              "start": 0.8699999999999999,
+              "end": 0.9299999999999999
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      }
+    },
+    "5316d24e3b7b4e462c2a9171f7958042f50d8648b6d2dd6ae066a2fb69c26adf": {
+      "male": {
+        "url": "/exercise-assets/audio/course-male-038e88fbea939b86e487aa1946d8eed5afcd2aaf962a8c895ce616fd2832fb82.mp3",
+        "sha256": "038e88fbea939b86e487aa1946d8eed5afcd2aaf962a8c895ce616fd2832fb82",
+        "byteLength": 15021,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-best-available",
+        "readAlong": {
+          "audioSha256": "038e88fbea939b86e487aa1946d8eed5afcd2aaf962a8c895ce616fd2832fb82",
+          "text": "你都有书。",
+          "words": [
+            {
+              "text": "你",
+              "start": 0.03,
+              "end": 0.09
+            },
+            {
+              "text": "都",
+              "start": 0.21,
+              "end": 0.27
+            },
+            {
+              "text": "有",
+              "start": 0.39,
+              "end": 0.44999999999999996
+            },
+            {
+              "text": "书",
+              "start": 0.57,
+              "end": 0.6299999999999999
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      },
+      "female": {
+        "url": "/exercise-assets/audio/course-female-380d10d614708c322568c176fcf46de3900cdfea6c6b2e9badf9c16fabfc8b7e.mp3",
+        "sha256": "380d10d614708c322568c176fcf46de3900cdfea6c6b2e9badf9c16fabfc8b7e",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "380d10d614708c322568c176fcf46de3900cdfea6c6b2e9badf9c16fabfc8b7e",
+          "text": "你都有书。",
+          "words": [
+            {
+              "text": "你",
+              "start": 0.09,
+              "end": 0.15
+            },
+            {
+              "text": "都",
+              "start": 0.27,
+              "end": 0.32999999999999996
+            },
+            {
+              "text": "有",
+              "start": 0.44999999999999996,
+              "end": 0.51
+            },
+            {
+              "text": "书",
+              "start": 0.6299999999999999,
+              "end": 0.69
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0324",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0324-W0324",
+      "question_ids": [
+        "BANK-W0324-W0324"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W0324",
+      "facet_id": "lexical-use-all-both",
+      "part_id": "BANK-W0324-W0324-use-all-both",
+      "question_ids": [
+        "BANK-W0324-W0324-use-all-both"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W0324",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W0324",
+      "facet_id": "lexical-use-even",
+      "part_id": "BANK-W0324-W0324-use-even",
+      "question_ids": [
+        "BANK-W0324-W0324-use-even"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W0324",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W0324",
+      "facet_id": "lexical-use-already",
+      "part_id": "BANK-W0324-W0324-use-already",
+      "question_ids": [
+        "BANK-W0324-W0324-use-already"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W0324",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U05-P02",
+    "stepId": "S-U05-words-r4-52",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-90fd",
+      "mandarin-simplified-v1-char-4eec",
+      "mandarin-simplified-v1-warmup-you",
+      "mandarin-simplified-v1-char-4e66",
+      "mandarin-simplified-v1-warmup-ni"
+    ],
+    "grammarLessonIds": []
+  }
+}

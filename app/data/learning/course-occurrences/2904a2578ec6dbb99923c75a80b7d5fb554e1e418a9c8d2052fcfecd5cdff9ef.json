@@ -1,0 +1,741 @@
+{
+  "id": "EX-CHAR-char-7ed8",
+  "revision": 2,
+  "unit": "U6-26",
+  "stage": "ST-HSK6",
+  "after": "S-U6-26-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "绘",
+  "sourceBlockId": "mandarin-simplified-v1-char-7ed8",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5c0a",
+        "text": "尊",
+        "pinyin": "zūn",
+        "meaning": "senior; of a senior generation",
+        "characters": [
+          {
+            "id": "C-5C0A",
+            "text": "尊"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-7ed8",
+        "text": "绘",
+        "pinyin": "huì",
+        "meaning": "to draw; to paint; to depict; to portray",
+        "characters": [
+          {
+            "id": "C-7ED8",
+            "text": "绘"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-2c66dbc4b8586bff1b163bdf",
+        "text": "描绘",
+        "pinyin": "miáohuì",
+        "meaning": "to describe; to depict; to portray",
+        "characters": [
+          {
+            "id": "C-63CF",
+            "text": "描"
+          },
+          {
+            "id": "C-7ED8",
+            "text": "绘"
+          }
+        ]
+      },
+      {
+        "id": "W1361",
+        "text": "活动",
+        "pinyin": "huódòng",
+        "meaning": "activity; to move about",
+        "characters": [
+          {
+            "id": "C-6D3B",
+            "text": "活"
+          },
+          {
+            "id": "C-52A8",
+            "text": "动"
+          }
+        ]
+      },
+      {
+        "id": "W4409",
+        "text": "口腔",
+        "pinyin": "kǒuqiāng",
+        "meaning": "oral cavity",
+        "characters": [
+          {
+            "id": "C-53E3",
+            "text": "口"
+          },
+          {
+            "id": "C-8154",
+            "text": "腔"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "cec060b22b61eee97d998335a598ad8c11f9d9aff0a227ea12edca4e8ca25d61",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7ed8",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "绘",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7ed8-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-2c66dbc4b8586bff1b163bdf",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to describe; to depict",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "描绘"
+              },
+              {
+                "value": "miáohuì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "miao2hui4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "描绘",
+              "pinyin": "miáohuì",
+              "meaning": "to describe; to depict",
+              "audio": "73b50d02f95485b75d0d8b5be586dcbe5a5a5356ea4b83ddcca826794d8c7866",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7ed8-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7ed8",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "绘",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-7ed8",
+                "label": "to draw; to paint",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W4409",
+                "label": "oral cavity",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5c0a",
+                "label": "senior; of a senior generation",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7ed8-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "绘",
+        "pinyin": "huì",
+        "meaning": "to draw; to paint",
+        "source": "/stroke-data/7ed8.json",
+        "reference": {
+          "character": "绘",
+          "sha256": "a72181b7801651bae92b485f1bff2b5fefa59b0536a96f5b8c79083a49352ec9",
+          "medians": [
+            [
+              [
+                262,
+                777
+              ],
+              [
+                287,
+                750
+              ],
+              [
+                294,
+                724
+              ],
+              [
+                162,
+                481
+              ],
+              [
+                156,
+                460
+              ],
+              [
+                207,
+                457
+              ],
+              [
+                259,
+                463
+              ],
+              [
+                279,
+                474
+              ]
+            ],
+            [
+              [
+                360,
+                635
+              ],
+              [
+                382,
+                599
+              ],
+              [
+                334,
+                513
+              ],
+              [
+                211,
+                341
+              ],
+              [
+                198,
+                314
+              ],
+              [
+                196,
+                293
+              ],
+              [
+                230,
+                296
+              ],
+              [
+                363,
+                341
+              ]
+            ],
+            [
+              [
+                112,
+                141
+              ],
+              [
+                168,
+                133
+              ],
+              [
+                388,
+                257
+              ]
+            ],
+            [
+              [
+                569,
+                797
+              ],
+              [
+                601,
+                762
+              ],
+              [
+                562,
+                659
+              ],
+              [
+                508,
+                568
+              ],
+              [
+                471,
+                521
+              ],
+              [
+                414,
+                461
+              ],
+              [
+                370,
+                426
+              ]
+            ],
+            [
+              [
+                623,
+                704
+              ],
+              [
+                624,
+                687
+              ],
+              [
+                692,
+                611
+              ],
+              [
+                771,
+                535
+              ],
+              [
+                814,
+                503
+              ],
+              [
+                871,
+                488
+              ],
+              [
+                957,
+                476
+              ]
+            ],
+            [
+              [
+                479,
+                432
+              ],
+              [
+                537,
+                429
+              ],
+              [
+                641,
+                457
+              ],
+              [
+                690,
+                457
+              ]
+            ],
+            [
+              [
+                424,
+                296
+              ],
+              [
+                452,
+                290
+              ],
+              [
+                482,
+                294
+              ],
+              [
+                731,
+                341
+              ],
+              [
+                774,
+                340
+              ],
+              [
+                821,
+                330
+              ]
+            ],
+            [
+              [
+                602,
+                269
+              ],
+              [
+                570,
+                260
+              ],
+              [
+                543,
+                204
+              ],
+              [
+                492,
+                138
+              ],
+              [
+                481,
+                96
+              ],
+              [
+                523,
+                97
+              ],
+              [
+                712,
+                143
+              ],
+              [
+                720,
+                136
+              ]
+            ],
+            [
+              [
+                692,
+                225
+              ],
+              [
+                742,
+                169
+              ],
+              [
+                795,
+                95
+              ],
+              [
+                806,
+                59
+              ],
+              [
+                805,
+                34
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7ed8-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1361",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "activity; to move about",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "活动"
+              },
+              {
+                "value": "huódòng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "huo2dong4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "活动",
+              "pinyin": "huódòng",
+              "meaning": "activity; to move about",
+              "audio": "767bada8161fd2b26229a634a34050c7040fbaf44547a1621f53d052c8d6ebde",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7ed8-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7ed8",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to draw; to paint",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "绘"
+              },
+              {
+                "value": "huì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hui4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "绘",
+              "pinyin": "huì",
+              "meaning": "to draw; to paint",
+              "audio": "24b5b98f4a21cef7eb3032b6c5080571704beba7a902b3f6b4b1652b0bed02d6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "24b5b98f4a21cef7eb3032b6c5080571704beba7a902b3f6b4b1652b0bed02d6"
+            ],
+            "transcript": [
+              {
+                "text": "绘",
+                "pinyin": "huì",
+                "meaning": "to draw; to paint",
+                "audio": "24b5b98f4a21cef7eb3032b6c5080571704beba7a902b3f6b4b1652b0bed02d6",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7ED8",
+      "character": "绘",
+      "lessonIds": [
+        "LESSON-C-7ED8"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7ed8-word",
+        "EX-CHAR-char-7ed8-recognize",
+        "EX-CHAR-char-7ed8-write",
+        "EX-CHAR-char-7ed8-familiar",
+        "EX-CHAR-char-7ed8-recall"
+      ]
+    },
+    "audio": {
+      "42c5021cc8f99b6756c6bbb24ee18c26c5879e1b799dad18e3c9f5616fc8541c": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-987dae2240e954d7baae5260c70222919e4aa04d476fa7a3aaf433a35cd66a4a.mp3",
+          "sha256": "987dae2240e954d7baae5260c70222919e4aa04d476fa7a3aaf433a35cd66a4a",
+          "byteLength": 8109,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "987dae2240e954d7baae5260c70222919e4aa04d476fa7a3aaf433a35cd66a4a",
+            "text": "尊",
+            "words": [
+              {
+                "text": "尊",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-3124bd8fd713e881dbbf0418699a43d4f8c19a835ee40a19c0174f5a00008c92.mp3",
+          "sha256": "3124bd8fd713e881dbbf0418699a43d4f8c19a835ee40a19c0174f5a00008c92",
+          "byteLength": 8109,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "3124bd8fd713e881dbbf0418699a43d4f8c19a835ee40a19c0174f5a00008c92",
+            "text": "尊",
+            "words": [
+              {
+                "text": "尊",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "24b5b98f4a21cef7eb3032b6c5080571704beba7a902b3f6b4b1652b0bed02d6": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-935389e2d1f7881acc19a0a99f3e10b0e266458882233b6bb07c23fdf8992e5d.mp3",
+          "sha256": "935389e2d1f7881acc19a0a99f3e10b0e266458882233b6bb07c23fdf8992e5d",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "935389e2d1f7881acc19a0a99f3e10b0e266458882233b6bb07c23fdf8992e5d",
+            "text": "绘",
+            "words": [
+              {
+                "text": "绘",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-894713c974089ee9e562652116723fcea045fa56a0f71b5a8f44d7e2999b1267.mp3",
+          "sha256": "894713c974089ee9e562652116723fcea045fa56a0f71b5a8f44d7e2999b1267",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "894713c974089ee9e562652116723fcea045fa56a0f71b5a8f44d7e2999b1267",
+            "text": "绘",
+            "words": [
+              {
+                "text": "绘",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "73b50d02f95485b75d0d8b5be586dcbe5a5a5356ea4b83ddcca826794d8c7866": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a4b6e3d8443592d98421dea28efb7c5921c426db446d65ecb78ed154261a9eec.mp3",
+          "sha256": "a4b6e3d8443592d98421dea28efb7c5921c426db446d65ecb78ed154261a9eec",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "a4b6e3d8443592d98421dea28efb7c5921c426db446d65ecb78ed154261a9eec",
+            "text": "描绘",
+            "words": [
+              {
+                "text": "描绘",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/7e9163c6499d1187d46fd96cdb9491e8b1a20229496a5580a9b5951d19b36192.mp3",
+          "sha256": "7e9163c6499d1187d46fd96cdb9491e8b1a20229496a5580a9b5951d19b36192",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "7e9163c6499d1187d46fd96cdb9491e8b1a20229496a5580a9b5951d19b36192",
+            "text": "描绘",
+            "words": [
+              {
+                "text": "描绘",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "767bada8161fd2b26229a634a34050c7040fbaf44547a1621f53d052c8d6ebde": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-4ccadaebad0cf933a272a3d5a436fce0a7935392949001cbde2dc14de0443592.mp3",
+          "sha256": "4ccadaebad0cf933a272a3d5a436fce0a7935392949001cbde2dc14de0443592",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "4ccadaebad0cf933a272a3d5a436fce0a7935392949001cbde2dc14de0443592",
+            "text": "活动",
+            "words": [
+              {
+                "text": "活动",
+                "start": 0.32999999999999996,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-e605444fb64ea27c82913881692ee006b841983c4f36f51ad91671a65cfd491c.mp3",
+          "sha256": "e605444fb64ea27c82913881692ee006b841983c4f36f51ad91671a65cfd491c",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "e605444fb64ea27c82913881692ee006b841983c4f36f51ad91671a65cfd491c",
+            "text": "活动",
+            "words": [
+              {
+                "text": "活动",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "de65f187abc402f66c5c89a985fd2a7ff70d4575300620dbb5c8992c87b59e5a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ac2f32ae361abab172746091072e47dbe2aaaa23d1971910f583b9b18aadd974.mp3",
+          "sha256": "ac2f32ae361abab172746091072e47dbe2aaaa23d1971910f583b9b18aadd974",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "ac2f32ae361abab172746091072e47dbe2aaaa23d1971910f583b9b18aadd974",
+            "text": "口腔",
+            "words": [
+              {
+                "text": "口腔",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/fc93068e7a4a6f7faa3d7d8cbcf816ea3a4190fd884874f93233651e3f05861f.mp3",
+          "sha256": "fc93068e7a4a6f7faa3d7d8cbcf816ea3a4190fd884874f93233651e3f05861f",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "fc93068e7a4a6f7faa3d7d8cbcf816ea3a4190fd884874f93233651e3f05861f",
+            "text": "口腔",
+            "words": [
+              {
+                "text": "口腔",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,763 @@
+{
+  "id": "EX-CHAR-char-79d8",
+  "revision": 2,
+  "unit": "U5-21",
+  "stage": "ST-HSK5",
+  "after": "S-U5-21-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "秘",
+  "sourceBlockId": "mandarin-simplified-v1-char-79d8",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-79d8",
+        "text": "秘",
+        "pinyin": "mì",
+        "meaning": "secret; secretary",
+        "characters": [
+          {
+            "id": "C-79D8",
+            "text": "秘"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-5eb12b1517cac3df8ecdac94",
+        "text": "秘密",
+        "pinyin": "mìmì",
+        "meaning": "secret; private; confidential; clandestine; a secret",
+        "characters": [
+          {
+            "id": "C-79D8",
+            "text": "秘"
+          },
+          {
+            "id": "C-5BC6",
+            "text": "密"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-e6d5a693592f6b2ca81944f1",
+        "text": "简体字",
+        "pinyin": "jiǎn tǐ zì",
+        "meaning": "simplified Chinese character, as opposed to traditional Chinese character",
+        "characters": [
+          {
+            "id": "C-7B80",
+            "text": "简"
+          },
+          {
+            "id": "C-4F53",
+            "text": "体"
+          },
+          {
+            "id": "C-5B57",
+            "text": "字"
+          }
+        ]
+      },
+      {
+        "id": "W3535",
+        "text": "志愿者",
+        "pinyin": "zhìyuànzhě",
+        "meaning": "volunteer",
+        "characters": [
+          {
+            "id": "C-5FD7",
+            "text": "志"
+          },
+          {
+            "id": "C-613F",
+            "text": "愿"
+          },
+          {
+            "id": "C-8005",
+            "text": "者"
+          }
+        ]
+      },
+      {
+        "id": "W3760",
+        "text": "朝代",
+        "pinyin": "cháodài",
+        "meaning": "dynasty; reign",
+        "characters": [
+          {
+            "id": "C-671D",
+            "text": "朝"
+          },
+          {
+            "id": "C-4EE3",
+            "text": "代"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "880664caf326c160c902d5a6d312f9fda38aff1e6463135f8014dbf615b5339c",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-79d8",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "秘",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-79d8-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-5eb12b1517cac3df8ecdac94",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "secret; private",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "秘密"
+              },
+              {
+                "value": "mìmì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "mi4mi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "秘密",
+              "pinyin": "mìmì",
+              "meaning": "secret; private",
+              "audio": "895afaf73b331ee0f48962d41d4047dd5285b3f780d904a6ace505b8bd8652c5",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-79d8-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-79d8",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "秘",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W3760",
+                "label": "dynasty; reign",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-79d8",
+                "label": "secret; secretary",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W3535",
+                "label": "volunteer",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-79d8-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "秘",
+        "pinyin": "mì",
+        "meaning": "secret; secretary",
+        "source": "/stroke-data/79d8.json",
+        "reference": {
+          "character": "秘",
+          "sha256": "36367b2a2f3e0d604ab9771a76801e0ef17925d50b47b3d64a6318d9fe830ffc",
+          "medians": [
+            [
+              [
+                469,
+                748
+              ],
+              [
+                401,
+                754
+              ],
+              [
+                316,
+                696
+              ],
+              [
+                227,
+                655
+              ],
+              [
+                219,
+                657
+              ],
+              [
+                212,
+                648
+              ],
+              [
+                193,
+                648
+              ],
+              [
+                184,
+                639
+              ]
+            ],
+            [
+              [
+                83,
+                470
+              ],
+              [
+                101,
+                464
+              ],
+              [
+                151,
+                464
+              ],
+              [
+                370,
+                522
+              ],
+              [
+                417,
+                528
+              ],
+              [
+                444,
+                524
+              ]
+            ],
+            [
+              [
+                289,
+                664
+              ],
+              [
+                318,
+                633
+              ],
+              [
+                316,
+                285
+              ],
+              [
+                306,
+                103
+              ],
+              [
+                318,
+                26
+              ]
+            ],
+            [
+              [
+                330,
+                485
+              ],
+              [
+                272,
+                389
+              ],
+              [
+                212,
+                310
+              ],
+              [
+                129,
+                231
+              ],
+              [
+                70,
+                191
+              ]
+            ],
+            [
+              [
+                340,
+                438
+              ],
+              [
+                352,
+                422
+              ],
+              [
+                390,
+                398
+              ],
+              [
+                406,
+                376
+              ]
+            ],
+            [
+              [
+                465,
+                393
+              ],
+              [
+                460,
+                337
+              ],
+              [
+                430,
+                236
+              ]
+            ],
+            [
+              [
+                533,
+                438
+              ],
+              [
+                551,
+                407
+              ],
+              [
+                571,
+                307
+              ],
+              [
+                591,
+                257
+              ],
+              [
+                632,
+                202
+              ],
+              [
+                677,
+                175
+              ],
+              [
+                743,
+                157
+              ],
+              [
+                791,
+                154
+              ],
+              [
+                826,
+                159
+              ],
+              [
+                860,
+                179
+              ],
+              [
+                850,
+                223
+              ],
+              [
+                814,
+                316
+              ]
+            ],
+            [
+              [
+                535,
+                628
+              ],
+              [
+                591,
+                565
+              ],
+              [
+                611,
+                516
+              ]
+            ],
+            [
+              [
+                728,
+                745
+              ],
+              [
+                750,
+                731
+              ],
+              [
+                777,
+                692
+              ],
+              [
+                721,
+                459
+              ],
+              [
+                678,
+                345
+              ],
+              [
+                632,
+                258
+              ],
+              [
+                585,
+                194
+              ],
+              [
+                486,
+                110
+              ],
+              [
+                421,
+                79
+              ]
+            ],
+            [
+              [
+                817,
+                509
+              ],
+              [
+                918,
+                437
+              ],
+              [
+                935,
+                418
+              ],
+              [
+                952,
+                380
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-79d8-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-e6d5a693592f6b2ca81944f1",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "simplified Chinese character, as opposed to traditional Chinese character",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "简体字"
+              },
+              {
+                "value": "jiǎn tǐ zì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jian3ti3zi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "简体字",
+              "pinyin": "jiǎn tǐ zì",
+              "meaning": "simplified Chinese character, as opposed to traditional Chinese character",
+              "audio": "da663ab4dd95212232b8d534906bdeb7f162a1ad42a2912f3525702a961f6c66",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-79d8-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-79d8",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "secret; secretary",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "秘"
+              },
+              {
+                "value": "mì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "mi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "秘",
+              "pinyin": "mì",
+              "meaning": "secret; secretary",
+              "audio": "381d5dc9d4638001b3a4ea9aa6d5b9048b97173f9e4f180a14f4ec8c86755db4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "381d5dc9d4638001b3a4ea9aa6d5b9048b97173f9e4f180a14f4ec8c86755db4"
+            ],
+            "transcript": [
+              {
+                "text": "秘",
+                "pinyin": "mì",
+                "meaning": "secret; secretary",
+                "audio": "381d5dc9d4638001b3a4ea9aa6d5b9048b97173f9e4f180a14f4ec8c86755db4",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-79D8",
+      "character": "秘",
+      "lessonIds": [
+        "LESSON-C-79D8"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-79d8-word",
+        "EX-CHAR-char-79d8-recognize",
+        "EX-CHAR-char-79d8-write",
+        "EX-CHAR-char-79d8-familiar",
+        "EX-CHAR-char-79d8-recall"
+      ]
+    },
+    "audio": {
+      "381d5dc9d4638001b3a4ea9aa6d5b9048b97173f9e4f180a14f4ec8c86755db4": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-82b58a06c6c59b432b7e9cb44ed65ee3dceb54fb79bdf7a1440e62c170e28a39.mp3",
+          "sha256": "82b58a06c6c59b432b7e9cb44ed65ee3dceb54fb79bdf7a1440e62c170e28a39",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "82b58a06c6c59b432b7e9cb44ed65ee3dceb54fb79bdf7a1440e62c170e28a39",
+            "text": "秘",
+            "words": [
+              {
+                "text": "秘",
+                "start": 0.18,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-2ac4a8b257fe8ff338715ebb0c8983ddfb5db8b8fb91644d33a4d86abb4cce07.mp3",
+          "sha256": "2ac4a8b257fe8ff338715ebb0c8983ddfb5db8b8fb91644d33a4d86abb4cce07",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "2ac4a8b257fe8ff338715ebb0c8983ddfb5db8b8fb91644d33a4d86abb4cce07",
+            "text": "秘",
+            "words": [
+              {
+                "text": "秘",
+                "start": 0.2,
+                "end": 0.3
+              }
+            ]
+          }
+        }
+      },
+      "895afaf73b331ee0f48962d41d4047dd5285b3f780d904a6ace505b8bd8652c5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8a6bb4d46230e06761cef6dd447fe9b8d46b705c4714eda392ae952e998447df.mp3",
+          "sha256": "8a6bb4d46230e06761cef6dd447fe9b8d46b705c4714eda392ae952e998447df",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "8a6bb4d46230e06761cef6dd447fe9b8d46b705c4714eda392ae952e998447df",
+            "text": "秘密",
+            "words": [
+              {
+                "text": "秘密",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0ceceece7ae150bda7298c8945296362394dced140d5dd2e57d3e12b0041c143.mp3",
+          "sha256": "0ceceece7ae150bda7298c8945296362394dced140d5dd2e57d3e12b0041c143",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "0ceceece7ae150bda7298c8945296362394dced140d5dd2e57d3e12b0041c143",
+            "text": "秘密",
+            "words": [
+              {
+                "text": "秘密",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "da663ab4dd95212232b8d534906bdeb7f162a1ad42a2912f3525702a961f6c66": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b40746fbca32fcacc7ac73573a7970a3472120c958b0c2b184b2607b443beb6e.mp3",
+          "sha256": "b40746fbca32fcacc7ac73573a7970a3472120c958b0c2b184b2607b443beb6e",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "b40746fbca32fcacc7ac73573a7970a3472120c958b0c2b184b2607b443beb6e",
+            "text": "简体字",
+            "words": [
+              {
+                "text": "简体字",
+                "start": 0.21,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/94447d68fbcff5503d2222de9c3897dc5bb2cfa0d803b493123fdabdbbd14cfc.mp3",
+          "sha256": "94447d68fbcff5503d2222de9c3897dc5bb2cfa0d803b493123fdabdbbd14cfc",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "94447d68fbcff5503d2222de9c3897dc5bb2cfa0d803b493123fdabdbbd14cfc",
+            "text": "简体字",
+            "words": [
+              {
+                "text": "简体字",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "87d89fc21c332eaeb2311e9ff1002a963dcecada196f97c885b7ffe0a45efa80": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-121d01224328bd1295a0603510487269d9458ab5443572d677f4b628d16a4f43.mp3",
+          "sha256": "121d01224328bd1295a0603510487269d9458ab5443572d677f4b628d16a4f43",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "121d01224328bd1295a0603510487269d9458ab5443572d677f4b628d16a4f43",
+            "text": "志愿者",
+            "words": [
+              {
+                "text": "志愿者",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8ebfbfd9095091b41d623c4321ef089a2271ea17851de4e76131d847ce98da31.mp3",
+          "sha256": "8ebfbfd9095091b41d623c4321ef089a2271ea17851de4e76131d847ce98da31",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "8ebfbfd9095091b41d623c4321ef089a2271ea17851de4e76131d847ce98da31",
+            "text": "志愿者",
+            "words": [
+              {
+                "text": "志愿者",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "2631383a1d328458ce81b59ecaa75889d7a3ef4b39dc22eed2df8a98522e6617": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-55aad1cfea975b3c5fcf5f7e54bdea84763a4a6a36f230b2fa70a319b90e1a2a.mp3",
+          "sha256": "55aad1cfea975b3c5fcf5f7e54bdea84763a4a6a36f230b2fa70a319b90e1a2a",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "55aad1cfea975b3c5fcf5f7e54bdea84763a4a6a36f230b2fa70a319b90e1a2a",
+            "text": "朝代",
+            "words": [
+              {
+                "text": "朝代",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-066e707112533436eaf813d7d129c5ac88f1bc42f85901b3ea6cb221f27c8526.mp3",
+          "sha256": "066e707112533436eaf813d7d129c5ac88f1bc42f85901b3ea6cb221f27c8526",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "066e707112533436eaf813d7d129c5ac88f1bc42f85901b3ea6cb221f27c8526",
+            "text": "朝代",
+            "words": [
+              {
+                "text": "朝代",
+                "start": 0.27,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

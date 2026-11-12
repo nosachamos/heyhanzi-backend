@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1132",
+  "targetId": "W1132",
+  "steps": [
+    {
+      "id": "BANK-W1132-W1132",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1132-W1132",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "parking spot; unloading point",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "车位"
+            },
+            {
+              "value": "chēwèi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "che1wei4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "车位",
+            "pinyin": "chēwèi",
+            "meaning": "parking spot; unloading point",
+            "singleWord": true,
+            "audio": "5af16a5994f2bc8840e5b2bab4ba164226d6494eb794cd37fc7243e818e2f45f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5af16a5994f2bc8840e5b2bab4ba164226d6494eb794cd37fc7243e818e2f45f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f9817f751a796d38f064e53b6aeca4c610e0b863e810c0a2b832e3d6834705ea.mp3",
+        "sha256": "f9817f751a796d38f064e53b6aeca4c610e0b863e810c0a2b832e3d6834705ea",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "f9817f751a796d38f064e53b6aeca4c610e0b863e810c0a2b832e3d6834705ea",
+          "text": "车位",
+          "words": [
+            {
+              "text": "车位",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-21dc4a9ebd890d955446cf10476964562f4f2a9a401da91b51345e6c6963062e.mp3",
+        "sha256": "21dc4a9ebd890d955446cf10476964562f4f2a9a401da91b51345e6c6963062e",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "21dc4a9ebd890d955446cf10476964562f4f2a9a401da91b51345e6c6963062e",
+          "text": "车位",
+          "words": [
+            {
+              "text": "车位",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1132",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1132-W1132",
+      "question_ids": [
+        "BANK-W1132-W1132"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-15",
+    "stepId": "S-U4-15-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4f4d"
+    ],
+    "grammarLessonIds": []
+  }
+}

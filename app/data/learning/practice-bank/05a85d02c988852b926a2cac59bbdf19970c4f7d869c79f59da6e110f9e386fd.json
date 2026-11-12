@@ -1,0 +1,217 @@
+{
+  "id": "BANK-W2900",
+  "targetId": "W2900",
+  "steps": [
+    {
+      "id": "BANK-W2900-W2900",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2900-W2900",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "close; dear; to kiss",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "亲"
+            },
+            {
+              "value": "qīn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qin1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "亲",
+            "pinyin": "qīn",
+            "meaning": "close; dear; to kiss",
+            "singleWord": true,
+            "audio": "bfbdf55af450409c09c23a844aa221b6bcb8c012b02465da591da716485ad49f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W2900-W2900-use-close-dear",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W2900-W2900-use-close-dear",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 亲 fits this context?",
+          "context": "The speaker describes an affectionate personal relationship.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W2900-W2900-use-close-dear-contrast-1",
+              "label": "An unfamiliar and distant relationship.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "亲 can express closeness or affection: close or dear."
+            },
+            {
+              "id": "BANK-W2900-W2900-use-close-dear-contrast-2",
+              "label": "An unpleasant smell.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "亲 can express closeness or affection: close or dear."
+            },
+            {
+              "id": "BANK-W2900-W2900-use-close-dear-meaning",
+              "label": "A close or dear relationship.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "亲 can express closeness or affection: close or dear."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "亲",
+            "pinyin": "qīn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "bfbdf55af450409c09c23a844aa221b6bcb8c012b02465da591da716485ad49f"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W2900-W2900-use-kiss",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W2900-W2900-use-kiss",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 亲 fits this context?",
+          "context": "A parent gives their child a kiss.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W2900-W2900-use-kiss-contrast-1",
+              "label": "The action of writing.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a verb, 亲 means to kiss someone."
+            },
+            {
+              "id": "BANK-W2900-W2900-use-kiss-meaning",
+              "label": "The action of kissing.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "As a verb, 亲 means to kiss someone."
+            },
+            {
+              "id": "BANK-W2900-W2900-use-kiss-contrast-2",
+              "label": "The action of leaving the room.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a verb, 亲 means to kiss someone."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "亲",
+            "pinyin": "qīn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "bfbdf55af450409c09c23a844aa221b6bcb8c012b02465da591da716485ad49f"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "bfbdf55af450409c09c23a844aa221b6bcb8c012b02465da591da716485ad49f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-8ce19fecb0b8f245991c37a2182cdbfdd27a7a83b5326d6cc281fe3012c772f7.mp3",
+        "sha256": "8ce19fecb0b8f245991c37a2182cdbfdd27a7a83b5326d6cc281fe3012c772f7",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "8ce19fecb0b8f245991c37a2182cdbfdd27a7a83b5326d6cc281fe3012c772f7",
+          "text": "亲",
+          "words": [
+            {
+              "text": "亲",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-23c6aba8a3f0544f4068b57ea88ffc9f0bff82df7ed6f0fdac56f3bb5e03163f.mp3",
+        "sha256": "23c6aba8a3f0544f4068b57ea88ffc9f0bff82df7ed6f0fdac56f3bb5e03163f",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "23c6aba8a3f0544f4068b57ea88ffc9f0bff82df7ed6f0fdac56f3bb5e03163f",
+          "text": "亲",
+          "words": [
+            {
+              "text": "亲",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2900",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2900-W2900",
+      "question_ids": [
+        "BANK-W2900-W2900"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W2900",
+      "facet_id": "lexical-use-close-dear",
+      "part_id": "BANK-W2900-W2900-use-close-dear",
+      "question_ids": [
+        "BANK-W2900-W2900-use-close-dear"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W2900",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W2900",
+      "facet_id": "lexical-use-kiss",
+      "part_id": "BANK-W2900-W2900-use-kiss",
+      "question_ids": [
+        "BANK-W2900-W2900-use-kiss"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W2900",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-25",
+    "stepId": "S-U5-25-words-r4-8",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4eb2"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1113",
+  "targetId": "W1113",
+  "steps": [
+    {
+      "id": "BANK-W1113-W1113",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1113-W1113",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "department; branch",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "部门"
+            },
+            {
+              "value": "bùmén",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bu4men2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "部门",
+            "pinyin": "bùmén",
+            "meaning": "department; branch",
+            "singleWord": true,
+            "audio": "4c3845f2e89c6068a862e080a9e86540a8b2849f4718615b9beb1db1c5c5eb90"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "4c3845f2e89c6068a862e080a9e86540a8b2849f4718615b9beb1db1c5c5eb90": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3e16271a5d7a8168b4e95924b7f79996401133d72b20331f98f5212bc832c9e9.mp3",
+        "sha256": "3e16271a5d7a8168b4e95924b7f79996401133d72b20331f98f5212bc832c9e9",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "3e16271a5d7a8168b4e95924b7f79996401133d72b20331f98f5212bc832c9e9",
+          "text": "部门",
+          "words": [
+            {
+              "text": "部门",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/39563f837344dbf2384b1b669a607d11464ce5bd1b7f788ab1ce4927a02957b9.mp3",
+        "sha256": "39563f837344dbf2384b1b669a607d11464ce5bd1b7f788ab1ce4927a02957b9",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "39563f837344dbf2384b1b669a607d11464ce5bd1b7f788ab1ce4927a02957b9",
+          "text": "部门",
+          "words": [
+            {
+              "text": "部门",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1113",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1113-W1113",
+      "question_ids": [
+        "BANK-W1113-W1113"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-30",
+    "stepId": "S-U4-30-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-90e8"
+    ],
+    "grammarLessonIds": []
+  }
+}

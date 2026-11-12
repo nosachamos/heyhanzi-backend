@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0358",
+  "targetId": "W0358",
+  "steps": [
+    {
+      "id": "BANK-W0358-W0358",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0358-W0358",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "address",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "地址"
+            },
+            {
+              "value": "dìzhǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "di4zhi3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "地址",
+            "pinyin": "dìzhǐ",
+            "meaning": "address",
+            "singleWord": true,
+            "audio": "c98fd674ccc67293773e5e5afb5156bce02d10469767b86a876c56cbb9026f6f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c98fd674ccc67293773e5e5afb5156bce02d10469767b86a876c56cbb9026f6f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-454423a010db2c169978bd7ce19b268befdff81d51b5234b21a8d179b4bd371c.mp3",
+        "sha256": "454423a010db2c169978bd7ce19b268befdff81d51b5234b21a8d179b4bd371c",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "454423a010db2c169978bd7ce19b268befdff81d51b5234b21a8d179b4bd371c",
+          "text": "地址",
+          "words": [
+            {
+              "text": "地址",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-20ef870d2effcb84556023cc0f078d8d9ae75f9674eff20644df2f05861f5919.mp3",
+        "sha256": "20ef870d2effcb84556023cc0f078d8d9ae75f9674eff20644df2f05861f5919",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "20ef870d2effcb84556023cc0f078d8d9ae75f9674eff20644df2f05861f5919",
+          "text": "地址",
+          "words": [
+            {
+              "text": "地址",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0358",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0358-W0358",
+      "question_ids": [
+        "BANK-W0358-W0358"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U32",
+    "stepId": "S-U32-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5740"
+    ],
+    "grammarLessonIds": []
+  }
+}

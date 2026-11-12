@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1812",
+  "targetId": "W1812",
+  "steps": [
+    {
+      "id": "BANK-W1812-W1812",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1812-W1812",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "temperature",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "温度"
+            },
+            {
+              "value": "wēndù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wen1du4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "温度",
+            "pinyin": "wēndù",
+            "meaning": "temperature",
+            "singleWord": true,
+            "audio": "075edfea12935e84b8e832ffb28add28c612fd0bfc8e32dd6b710a2ab24db77f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "075edfea12935e84b8e832ffb28add28c612fd0bfc8e32dd6b710a2ab24db77f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-94d335e3cfa1ff1be3eb7b3e664ba58bd6da8277aec850431e1bc6b638f92e52.mp3",
+        "sha256": "94d335e3cfa1ff1be3eb7b3e664ba58bd6da8277aec850431e1bc6b638f92e52",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "94d335e3cfa1ff1be3eb7b3e664ba58bd6da8277aec850431e1bc6b638f92e52",
+          "text": "温度",
+          "words": [
+            {
+              "text": "温度",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-91a6f973ede8353c6c7b3019cf68299f7a85f469864f3ff5a1f7f7144015fd94.mp3",
+        "sha256": "91a6f973ede8353c6c7b3019cf68299f7a85f469864f3ff5a1f7f7144015fd94",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "91a6f973ede8353c6c7b3019cf68299f7a85f469864f3ff5a1f7f7144015fd94",
+          "text": "温度",
+          "words": [
+            {
+              "text": "温度",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1812",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1812-W1812",
+      "question_ids": [
+        "BANK-W1812-W1812"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-26",
+    "stepId": "S-U4-26-words-r4-17",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6e29"
+    ],
+    "grammarLessonIds": []
+  }
+}

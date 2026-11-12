@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2150",
+  "targetId": "W2150",
+  "steps": [
+    {
+      "id": "BANK-W2150-W2150",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2150-W2150",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "garage",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "车库"
+            },
+            {
+              "value": "chēkù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "che1ku4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "车库",
+            "pinyin": "chēkù",
+            "meaning": "garage",
+            "singleWord": true,
+            "audio": "e4913d7b34081691247d2391c801fbfc20ddee5c1bc1f8373620640dddbc4c6b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e4913d7b34081691247d2391c801fbfc20ddee5c1bc1f8373620640dddbc4c6b": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/84c3e68fb58701954f086364145b79063c78345df5a1d5b14aaf5cddd11f7e21.mp3",
+        "sha256": "84c3e68fb58701954f086364145b79063c78345df5a1d5b14aaf5cddd11f7e21",
+        "byteLength": 14733,
+        "readAlong": {
+          "audioSha256": "84c3e68fb58701954f086364145b79063c78345df5a1d5b14aaf5cddd11f7e21",
+          "text": "车库",
+          "words": [
+            {
+              "text": "车库",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1dfd53e9a9d0c258c8752cfa5fb5a00206bce59385c4aab39cb27cc5c8b72d63.mp3",
+        "sha256": "1dfd53e9a9d0c258c8752cfa5fb5a00206bce59385c4aab39cb27cc5c8b72d63",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "1dfd53e9a9d0c258c8752cfa5fb5a00206bce59385c4aab39cb27cc5c8b72d63",
+          "text": "车库",
+          "words": [
+            {
+              "text": "车库",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2150",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2150-W2150",
+      "question_ids": [
+        "BANK-W2150-W2150"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-16-P01",
+    "stepId": "S-U5-16-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e93"
+    ],
+    "grammarLessonIds": []
+  }
+}

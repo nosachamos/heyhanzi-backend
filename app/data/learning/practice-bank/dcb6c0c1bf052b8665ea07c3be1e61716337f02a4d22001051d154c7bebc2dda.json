@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3603",
+  "targetId": "W3603",
+  "steps": [
+    {
+      "id": "BANK-W3603-W3603",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3603-W3603",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "president",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "总统"
+            },
+            {
+              "value": "zǒngtǒng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zong3tong3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "总统",
+            "pinyin": "zǒngtǒng",
+            "meaning": "president",
+            "singleWord": true,
+            "audio": "2e809edbf0571c77771594683e889d175223241872f10fb9a758bba57b321bf5"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2e809edbf0571c77771594683e889d175223241872f10fb9a758bba57b321bf5": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2bbe6656422e1e6292203693abe2e4e35548838dc1a2141ed41fca48ce4a9438.mp3",
+        "sha256": "2bbe6656422e1e6292203693abe2e4e35548838dc1a2141ed41fca48ce4a9438",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "2bbe6656422e1e6292203693abe2e4e35548838dc1a2141ed41fca48ce4a9438",
+          "text": "总统",
+          "words": [
+            {
+              "text": "总统",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/fb78fecd263c9b188c735ac9b6414836085a8d93d3f3e0d18a41870ab29c453d.mp3",
+        "sha256": "fb78fecd263c9b188c735ac9b6414836085a8d93d3f3e0d18a41870ab29c453d",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "fb78fecd263c9b188c735ac9b6414836085a8d93d3f3e0d18a41870ab29c453d",
+          "text": "总统",
+          "words": [
+            {
+              "text": "总统",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3603",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3603-W3603",
+      "question_ids": [
+        "BANK-W3603-W3603"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-33",
+    "stepId": "S-U5-33-words-r4-18",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e2d"
+    ],
+    "grammarLessonIds": []
+  }
+}

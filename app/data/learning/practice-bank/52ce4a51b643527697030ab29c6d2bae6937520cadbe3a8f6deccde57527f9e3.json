@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2815",
+  "targetId": "W2815",
+  "steps": [
+    {
+      "id": "BANK-W2815-W2815",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2815-W2815",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "a man; a male",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "男子"
+            },
+            {
+              "value": "nánzǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "nan2zi3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "男子",
+            "pinyin": "nánzǐ",
+            "meaning": "a man; a male",
+            "singleWord": true,
+            "audio": "b0e1222d9a82c750f7ecd79fa77dc2228af6ec8437cd54ad6d02ef9ddb2f465b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b0e1222d9a82c750f7ecd79fa77dc2228af6ec8437cd54ad6d02ef9ddb2f465b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d458ee8f1fd72849e765467bd778337731aacde4e7311b3f82d34b83da7c1067.mp3",
+        "sha256": "d458ee8f1fd72849e765467bd778337731aacde4e7311b3f82d34b83da7c1067",
+        "byteLength": 15885,
+        "readAlong": {
+          "audioSha256": "d458ee8f1fd72849e765467bd778337731aacde4e7311b3f82d34b83da7c1067",
+          "text": "男子",
+          "words": [
+            {
+              "text": "男子",
+              "start": 0.27,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-eca4d05d172f93a54d352f721f220b5f3a42a6c1dcac6779f783f7c85c6174bd.mp3",
+        "sha256": "eca4d05d172f93a54d352f721f220b5f3a42a6c1dcac6779f783f7c85c6174bd",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "eca4d05d172f93a54d352f721f220b5f3a42a6c1dcac6779f783f7c85c6174bd",
+          "text": "男子",
+          "words": [
+            {
+              "text": "男子",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2815",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2815-W2815",
+      "question_ids": [
+        "BANK-W2815-W2815"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-02",
+    "stepId": "S-U5-02-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7537"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,541 @@
+{
+  "id": "EX-GRAM-G-hsk3-change-frames",
+  "revision": 6,
+  "unit": "U3-04-P01",
+  "stage": "ST-HSK3",
+  "after": "S-U3-04-grammar-1",
+  "activity": "ACT-GRAM",
+  "title": "Say it is time for an expected action",
+  "optional": false,
+  "partCount": 5,
+  "partTitles": [
+    "Say it is time for an expected action",
+    "Understand the pattern",
+    "Use the pattern",
+    "Understand the pattern",
+    "Use the pattern"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "W0754",
+        "text": "该",
+        "pinyin": "gāi",
+        "meaning": "should; ought to",
+        "characters": [
+          {
+            "id": "C-8BE5",
+            "text": "该"
+          }
+        ]
+      },
+      {
+        "id": "W0096",
+        "text": "吃",
+        "pinyin": "chī",
+        "meaning": "eat",
+        "characters": [
+          {
+            "id": "C-5403",
+            "text": "吃"
+          }
+        ]
+      },
+      {
+        "id": "W0394",
+        "text": "饭",
+        "pinyin": "fàn",
+        "meaning": "cooked rice; meal",
+        "characters": [
+          {
+            "id": "C-996D",
+            "text": "饭"
+          }
+        ]
+      },
+      {
+        "id": "W0178",
+        "text": "了",
+        "pinyin": "le",
+        "meaning": "aspect or change-of-situation particle; not a past-tense ending",
+        "characters": [
+          {
+            "id": "C-4E86",
+            "text": "了"
+          }
+        ]
+      },
+      {
+        "id": "W0250",
+        "text": "回",
+        "pinyin": "huí",
+        "meaning": "to go back; to return",
+        "characters": [
+          {
+            "id": "C-56DE",
+            "text": "回"
+          }
+        ]
+      },
+      {
+        "id": "W0038",
+        "text": "家",
+        "pinyin": "jiā",
+        "meaning": "home; family; classifier for businesses or households",
+        "characters": [
+          {
+            "id": "C-5BB6",
+            "text": "家"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [
+        "G-change-le",
+        "G-event-order"
+      ],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "coverage": [],
+  "sourceStepId": "S-U3-04-grammar-1",
+  "fingerprint": "50d419f2e84ee37d48f746fd843ad01f959cf313ee0fffc53ae17fb7d606fb38",
+  "definition": {
+    "id": "ACT-GRAM",
+    "revision": 6,
+    "title": "Say it is time for an expected action",
+    "subtitle": "Learn, understand, and use a Mandarin pattern.",
+    "context": "Use the introduced pattern in a bounded sentence. Other wording may be valid Chinese; this task checks this pattern and these words.",
+    "steps": [
+      {
+        "id": "EX-GRAM-G-hsk3-change-frames-teach",
+        "kind": "teach",
+        "title": "Say it is time for an expected action",
+        "blocks": [
+          {
+            "text": "该 + action + 了 says an action is now due or appropriate. It does not report that the action has already happened.",
+            "examples": [
+              {
+                "text": "该吃饭了。",
+                "pinyin": "gāi chī fàn le 。",
+                "meaning": "It is time to eat.",
+                "audio": "36670d18430d508fdf19a8ffe9941fe54db08192a0a519ea7ab14c92f5d4b377"
+              },
+              {
+                "text": "该回家了。",
+                "pinyin": "gāi huí jiā le 。",
+                "meaning": "It is time to go home.",
+                "audio": "a549787db5c5375d0c163f6c87abb5c8ff57ea2ab0103b6962009d343deeca3b"
+              }
+            ]
+          },
+          {
+            "title": "Words used in this pattern",
+            "examples": [
+              {
+                "text": "该",
+                "pinyin": "gāi",
+                "meaning": "should; ought to",
+                "singleWord": true,
+                "audio": "455a30c7bcf25f240a03389107c8723cc4a12e1e690b279a52758a85c510490a"
+              },
+              {
+                "text": "了",
+                "pinyin": "le",
+                "meaning": "aspect or change-of-situation particle; not a past-tense ending",
+                "singleWord": true,
+                "audio": "90e3611d8b6518d478d1242948ff62d4fa8f51abdebc5a7fcc8a631a7665ece6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EX-GRAM-G-hsk3-change-frames-facet-1-meaning",
+        "kind": "check",
+        "title": "Understand the pattern",
+        "questions": [
+          {
+            "id": "EX-GRAM-G-hsk3-change-frames-facet-1-meaning",
+            "kind": "choice",
+            "prompt": "Choose the meaning of this sentence.",
+            "label": "Understand the pattern",
+            "display": {
+              "text": "该吃饭了。",
+              "pinyin": "gāi chī fàn le 。",
+              "meaning": "It is time to eat.",
+              "audio": "36670d18430d508fdf19a8ffe9941fe54db08192a0a519ea7ab14c92f5d4b377"
+            },
+            "resultDomain": "Grammar comprehension",
+            "choices": [
+              {
+                "id": "meaning",
+                "label": "It is time to eat.",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "该 + action + 了 says an action is now due or appropriate. It does not report that the action has already happened."
+              },
+              {
+                "id": "contrast",
+                "label": "It is not time to eat yet.",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "It is time to eat. 该 + action + 了 says an action is now due or appropriate. It does not report that the action has already happened."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EX-GRAM-G-hsk3-change-frames-facet-1-produce",
+        "kind": "check",
+        "title": "Use the pattern",
+        "questions": [
+          {
+            "id": "EX-GRAM-G-hsk3-change-frames-facet-1-produce",
+            "kind": "text",
+            "prompt": "Write this meaning in Chinese using the pattern and words just introduced.",
+            "label": "Use the pattern",
+            "context": "It is time to eat.",
+            "contextLanguage": "en",
+            "resultDomain": "Constrained grammar use",
+            "accepted": [
+              {
+                "value": "该吃饭了。",
+                "mode": "hanzi"
+              },
+              {
+                "value": "gāi chī fàn le 。",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gai1chi1fan4le5",
+                "mode": "pinyin"
+              }
+            ],
+            "rule": "sentence",
+            "pinyin": true,
+            "model": {
+              "text": "该吃饭了。",
+              "pinyin": "gāi chī fàn le 。",
+              "meaning": "It is time to eat.",
+              "audio": "36670d18430d508fdf19a8ffe9941fe54db08192a0a519ea7ab14c92f5d4b377"
+            },
+            "hint": "该 + action + 了 says an action is now due or appropriate. It does not report that the action has already happened."
+          }
+        ]
+      },
+      {
+        "id": "EX-GRAM-G-hsk3-change-frames-facet-2-meaning",
+        "kind": "check",
+        "title": "Understand the pattern",
+        "questions": [
+          {
+            "id": "EX-GRAM-G-hsk3-change-frames-facet-2-meaning",
+            "kind": "choice",
+            "prompt": "Choose the meaning of this sentence.",
+            "label": "Understand the pattern",
+            "display": {
+              "text": "该回家了。",
+              "pinyin": "gāi huí jiā le 。",
+              "meaning": "It is time to go home.",
+              "audio": "a549787db5c5375d0c163f6c87abb5c8ff57ea2ab0103b6962009d343deeca3b"
+            },
+            "resultDomain": "Grammar comprehension",
+            "choices": [
+              {
+                "id": "meaning",
+                "label": "It is time to go home.",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "该 + action + 了 says an action is now due or appropriate. It does not report that the action has already happened."
+              },
+              {
+                "id": "contrast",
+                "label": "It is not time to go home yet.",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "It is time to go home. 该 + action + 了 says an action is now due or appropriate. It does not report that the action has already happened."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EX-GRAM-G-hsk3-change-frames-facet-2-produce",
+        "kind": "check",
+        "title": "Use the pattern",
+        "questions": [
+          {
+            "id": "EX-GRAM-G-hsk3-change-frames-facet-2-produce",
+            "kind": "text",
+            "prompt": "Write this meaning in Chinese using the pattern and words just introduced.",
+            "label": "Use the pattern",
+            "context": "It is time to go home.",
+            "contextLanguage": "en",
+            "resultDomain": "Constrained grammar use",
+            "accepted": [
+              {
+                "value": "该回家了。",
+                "mode": "hanzi"
+              },
+              {
+                "value": "gāi huí jiā le 。",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gai1hui2jia1le5",
+                "mode": "pinyin"
+              }
+            ],
+            "rule": "sentence",
+            "pinyin": true,
+            "model": {
+              "text": "该回家了。",
+              "pinyin": "gāi huí jiā le 。",
+              "meaning": "It is time to go home.",
+              "audio": "a549787db5c5375d0c163f6c87abb5c8ff57ea2ab0103b6962009d343deeca3b"
+            },
+            "hint": "该 + action + 了 says an action is now due or appropriate. It does not report that the action has already happened."
+          }
+        ]
+      }
+    ],
+    "summary": "You practiced this grammar pattern. This result does not grant mastery of other lessons.",
+    "instanceId": "EX-GRAM-G-hsk3-change-frames",
+    "setActivity": {
+      "schema": "course-practice-v1",
+      "partIds": [
+        "EX-GRAM-G-hsk3-change-frames-teach",
+        "EX-GRAM-G-hsk3-change-frames-facet-1-meaning",
+        "EX-GRAM-G-hsk3-change-frames-facet-1-produce",
+        "EX-GRAM-G-hsk3-change-frames-facet-2-meaning",
+        "EX-GRAM-G-hsk3-change-frames-facet-2-produce"
+      ],
+      "targets": [
+        "G-hsk3-change-frames"
+      ],
+      "completion": "checked-practice"
+    },
+    "audio": {
+      "36670d18430d508fdf19a8ffe9941fe54db08192a0a519ea7ab14c92f5d4b377": {
+        "female": {
+          "url": "/exercise-assets/audio/course-female-2b4a40701695799443c841be17c49e8f67ed30aee9b5cdcf0cc0d92e677f91b5.mp3",
+          "sha256": "2b4a40701695799443c841be17c49e8f67ed30aee9b5cdcf0cc0d92e677f91b5",
+          "byteLength": 19629,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "2b4a40701695799443c841be17c49e8f67ed30aee9b5cdcf0cc0d92e677f91b5",
+            "text": "该吃饭了。",
+            "words": [
+              {
+                "text": "该",
+                "start": 0.09,
+                "end": 0.15
+              },
+              {
+                "text": "吃",
+                "start": 0.44999999999999996,
+                "end": 0.51
+              },
+              {
+                "text": "饭",
+                "start": 0.69,
+                "end": 0.75
+              },
+              {
+                "text": "了",
+                "start": 0.99,
+                "end": 1.05
+              },
+              {
+                "text": "。"
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-71ee4a056d2ed584d5a8af7a62a2492fc8213d570adc13dfdaabd74d69169994.mp3",
+          "sha256": "71ee4a056d2ed584d5a8af7a62a2492fc8213d570adc13dfdaabd74d69169994",
+          "byteLength": 16749,
+          "readAlong": {
+            "audioSha256": "71ee4a056d2ed584d5a8af7a62a2492fc8213d570adc13dfdaabd74d69169994",
+            "text": "该吃饭了。",
+            "words": [
+              {
+                "text": "该",
+                "start": 0.09,
+                "end": 0.15
+              },
+              {
+                "text": "吃",
+                "start": 0.32999999999999996,
+                "end": 0.39
+              },
+              {
+                "text": "饭",
+                "start": 0.57,
+                "end": 0.6299999999999999
+              },
+              {
+                "text": "了",
+                "start": 0.8699999999999999,
+                "end": 0.9299999999999999
+              },
+              {
+                "text": "。"
+              }
+            ]
+          }
+        }
+      },
+      "a549787db5c5375d0c163f6c87abb5c8ff57ea2ab0103b6962009d343deeca3b": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-f92e6ad1421275376192d5e6eecffc3e761ee0bc92f0e8ba68a0f5bc12f8d73a.mp3",
+          "sha256": "f92e6ad1421275376192d5e6eecffc3e761ee0bc92f0e8ba68a0f5bc12f8d73a",
+          "byteLength": 20781,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "f92e6ad1421275376192d5e6eecffc3e761ee0bc92f0e8ba68a0f5bc12f8d73a",
+            "text": "该回家了。",
+            "words": [
+              {
+                "text": "该",
+                "start": 0.09,
+                "end": 0.15
+              },
+              {
+                "text": "回",
+                "start": 0.6299999999999999,
+                "end": 0.69
+              },
+              {
+                "text": "家",
+                "start": 0.9299999999999999,
+                "end": 0.99
+              },
+              {
+                "text": "了",
+                "start": 1.17,
+                "end": 1.23
+              },
+              {
+                "text": "。"
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-55d2837859e91600afdd0cec6b70dfc6aa8e05533f3146cbc9e89f33a8d193e8.mp3",
+          "sha256": "55d2837859e91600afdd0cec6b70dfc6aa8e05533f3146cbc9e89f33a8d193e8",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "55d2837859e91600afdd0cec6b70dfc6aa8e05533f3146cbc9e89f33a8d193e8",
+            "text": "该回家了。",
+            "words": [
+              {
+                "text": "该",
+                "start": 0.03,
+                "end": 0.09
+              },
+              {
+                "text": "回",
+                "start": 0.27,
+                "end": 0.32999999999999996
+              },
+              {
+                "text": "家",
+                "start": 0.44999999999999996,
+                "end": 0.51
+              },
+              {
+                "text": "了",
+                "start": 0.6299999999999999,
+                "end": 0.69
+              },
+              {
+                "text": "。"
+              }
+            ]
+          }
+        }
+      },
+      "455a30c7bcf25f240a03389107c8723cc4a12e1e690b279a52758a85c510490a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5131f6ddc1938fdef9243c0873ec47c15bb2649a36007444f22d9df84c1bcc2c.mp3",
+          "sha256": "5131f6ddc1938fdef9243c0873ec47c15bb2649a36007444f22d9df84c1bcc2c",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "5131f6ddc1938fdef9243c0873ec47c15bb2649a36007444f22d9df84c1bcc2c",
+            "text": "该",
+            "words": [
+              {
+                "text": "该",
+                "start": 0.14,
+                "end": 0.26
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c123f894b9c58442ae1bb8d82187780a432de34c4f6fa2b333d8ca5e06f9ad29.mp3",
+          "sha256": "c123f894b9c58442ae1bb8d82187780a432de34c4f6fa2b333d8ca5e06f9ad29",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "c123f894b9c58442ae1bb8d82187780a432de34c4f6fa2b333d8ca5e06f9ad29",
+            "text": "该",
+            "words": [
+              {
+                "text": "该",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "90e3611d8b6518d478d1242948ff62d4fa8f51abdebc5a7fcc8a631a7665ece6": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2c0c613a7701ea8765caf0c5954fba77b314e5a5cbfe1e11e24396ff93be4e05.mp3",
+          "sha256": "2c0c613a7701ea8765caf0c5954fba77b314e5a5cbfe1e11e24396ff93be4e05",
+          "byteLength": 7821,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "2c0c613a7701ea8765caf0c5954fba77b314e5a5cbfe1e11e24396ff93be4e05",
+            "text": "了",
+            "words": [
+              {
+                "text": "了",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-7150fa1c330e63cf12fedb82ce25841d196cc2e5f5362e53b7d0f435a1e528dd.mp3",
+          "sha256": "7150fa1c330e63cf12fedb82ce25841d196cc2e5f5362e53b7d0f435a1e528dd",
+          "byteLength": 9549,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "7150fa1c330e63cf12fedb82ce25841d196cc2e5f5362e53b7d0f435a1e528dd",
+            "text": "了",
+            "words": [
+              {
+                "text": "了",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

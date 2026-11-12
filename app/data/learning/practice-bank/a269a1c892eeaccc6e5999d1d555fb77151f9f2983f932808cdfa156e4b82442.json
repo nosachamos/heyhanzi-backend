@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W1748",
+  "targetId": "W1748",
+  "steps": [
+    {
+      "id": "BANK-W1748-W1748",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1748-W1748",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "son's daughter; granddaughter",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "孙女"
+            },
+            {
+              "value": "sūnnǚ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "sun1nü3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "孙女",
+            "pinyin": "sūnnǚ",
+            "meaning": "son's daughter; granddaughter",
+            "singleWord": true,
+            "audio": "f2cdb53d25dc29831cb1430f99e64c30b8a1b342a8a1fe7efeac99612793e843"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f2cdb53d25dc29831cb1430f99e64c30b8a1b342a8a1fe7efeac99612793e843": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ea1e653e079af8b2b0349df046b7146e981ddb274fec0874f8cf9bb91b51b458.mp3",
+        "sha256": "ea1e653e079af8b2b0349df046b7146e981ddb274fec0874f8cf9bb91b51b458",
+        "byteLength": 13869,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "ea1e653e079af8b2b0349df046b7146e981ddb274fec0874f8cf9bb91b51b458",
+          "text": "孙女",
+          "words": [
+            {
+              "text": "孙女",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-aa76b3cdb36d6e428b4c3c06080e4793555160669e9add3acd79bcf1daac2acd.mp3",
+        "sha256": "aa76b3cdb36d6e428b4c3c06080e4793555160669e9add3acd79bcf1daac2acd",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "aa76b3cdb36d6e428b4c3c06080e4793555160669e9add3acd79bcf1daac2acd",
+          "text": "孙女",
+          "words": [
+            {
+              "text": "孙女",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1748",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1748-W1748",
+      "question_ids": [
+        "BANK-W1748-W1748"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-01",
+    "stepId": "S-U4-01-words-r4-17",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5b59"
+    ],
+    "grammarLessonIds": []
+  }
+}

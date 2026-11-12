@@ -1,0 +1,783 @@
+{
+  "id": "EX-CHAR-char-96c6",
+  "revision": 2,
+  "unit": "U5-10-P01",
+  "stage": "ST-HSK5",
+  "after": "S-U5-10-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "集",
+  "sourceBlockId": "mandarin-simplified-v1-char-96c6",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-96c6",
+        "text": "集",
+        "pinyin": "jí",
+        "meaning": "to gather; to collect",
+        "characters": [
+          {
+            "id": "C-96C6",
+            "text": "集"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-3f00e7762fd9c09b793e78fd",
+        "text": "场合",
+        "pinyin": "chǎnghé",
+        "meaning": "occasion; situation; context; setting; venue",
+        "characters": [
+          {
+            "id": "C-573A",
+            "text": "场"
+          },
+          {
+            "id": "C-5408",
+            "text": "合"
+          }
+        ]
+      },
+      {
+        "id": "W1858",
+        "text": "信号",
+        "pinyin": "xìnhào",
+        "meaning": "signal",
+        "characters": [
+          {
+            "id": "C-4FE1",
+            "text": "信"
+          },
+          {
+            "id": "C-53F7",
+            "text": "号"
+          }
+        ]
+      },
+      {
+        "id": "W2322",
+        "text": "独自",
+        "pinyin": "dúzì",
+        "meaning": "alone",
+        "characters": [
+          {
+            "id": "C-72EC",
+            "text": "独"
+          },
+          {
+            "id": "C-81EA",
+            "text": "自"
+          }
+        ]
+      },
+      {
+        "id": "W3065",
+        "text": "收集",
+        "pinyin": "shōují",
+        "meaning": "to gather; to collect",
+        "characters": [
+          {
+            "id": "C-6536",
+            "text": "收"
+          },
+          {
+            "id": "C-96C6",
+            "text": "集"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "3ad3d6fa4381d250d339a7be1c15a4142c0841ed5d0ebff72ed60b3db43cd61c",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-96c6",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "集",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-96c6-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3065",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to gather; to collect",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "收集"
+              },
+              {
+                "value": "shōují",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shou1ji2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "收集",
+              "pinyin": "shōují",
+              "meaning": "to gather; to collect",
+              "audio": "fede1f26511c40c2240958c81f4202c3ce0a765eb844fc879911403702b8e7c1",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-96c6-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-96c6",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "集",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-96c6",
+                "label": "to gather; to collect",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W2322",
+                "label": "alone",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-3f00e7762fd9c09b793e78fd",
+                "label": "occasion; situation",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-96c6-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "集",
+        "pinyin": "jí",
+        "meaning": "to gather; to collect",
+        "source": "/stroke-data/96c6.json",
+        "reference": {
+          "character": "集",
+          "sha256": "8ee5f37230bc2b890134505189131d26904d5bbf85f7399cbe2703aade3b2886",
+          "medians": [
+            [
+              [
+                367,
+                838
+              ],
+              [
+                385,
+                815
+              ],
+              [
+                392,
+                792
+              ],
+              [
+                364,
+                751
+              ],
+              [
+                265,
+                635
+              ],
+              [
+                195,
+                573
+              ],
+              [
+                153,
+                545
+              ]
+            ],
+            [
+              [
+                330,
+                660
+              ],
+              [
+                329,
+                639
+              ],
+              [
+                342,
+                614
+              ],
+              [
+                340,
+                507
+              ],
+              [
+                329,
+                408
+              ],
+              [
+                335,
+                357
+              ]
+            ],
+            [
+              [
+                509,
+                850
+              ],
+              [
+                573,
+                811
+              ],
+              [
+                595,
+                780
+              ]
+            ],
+            [
+              [
+                405,
+                715
+              ],
+              [
+                427,
+                709
+              ],
+              [
+                477,
+                710
+              ],
+              [
+                570,
+                725
+              ],
+              [
+                679,
+                754
+              ],
+              [
+                728,
+                753
+              ]
+            ],
+            [
+              [
+                433,
+                592
+              ],
+              [
+                464,
+                592
+              ],
+              [
+                657,
+                632
+              ],
+              [
+                691,
+                626
+              ]
+            ],
+            [
+              [
+                426,
+                504
+              ],
+              [
+                458,
+                503
+              ],
+              [
+                639,
+                539
+              ],
+              [
+                679,
+                542
+              ],
+              [
+                702,
+                535
+              ]
+            ],
+            [
+              [
+                526,
+                697
+              ],
+              [
+                555,
+                676
+              ],
+              [
+                559,
+                653
+              ],
+              [
+                553,
+                459
+              ],
+              [
+                538,
+                441
+              ]
+            ],
+            [
+              [
+                370,
+                404
+              ],
+              [
+                375,
+                397
+              ],
+              [
+                393,
+                395
+              ],
+              [
+                688,
+                437
+              ],
+              [
+                724,
+                438
+              ],
+              [
+                778,
+                424
+              ]
+            ],
+            [
+              [
+                156,
+                253
+              ],
+              [
+                208,
+                244
+              ],
+              [
+                440,
+                280
+              ],
+              [
+                811,
+                318
+              ],
+              [
+                847,
+                317
+              ],
+              [
+                907,
+                300
+              ]
+            ],
+            [
+              [
+                502,
+                375
+              ],
+              [
+                511,
+                369
+              ],
+              [
+                528,
+                337
+              ],
+              [
+                528,
+                173
+              ],
+              [
+                519,
+                20
+              ],
+              [
+                529,
+                -48
+              ]
+            ],
+            [
+              [
+                499,
+                262
+              ],
+              [
+                469,
+                238
+              ],
+              [
+                412,
+                169
+              ],
+              [
+                318,
+                91
+              ],
+              [
+                246,
+                49
+              ],
+              [
+                177,
+                20
+              ]
+            ],
+            [
+              [
+                560,
+                269
+              ],
+              [
+                655,
+                167
+              ],
+              [
+                769,
+                77
+              ],
+              [
+                827,
+                59
+              ],
+              [
+                942,
+                40
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-96c6-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1858",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "signal",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "信号"
+              },
+              {
+                "value": "xìnhào",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xin4hao4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "信号",
+              "pinyin": "xìnhào",
+              "meaning": "signal",
+              "audio": "3878dd0a9daafab3475ca6f9814546d3ae6912fa61d5792e64aa1ec52fef1ca4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-96c6-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-96c6",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to gather; to collect",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "集"
+              },
+              {
+                "value": "jí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ji2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "集",
+              "pinyin": "jí",
+              "meaning": "to gather; to collect",
+              "audio": "a6619a66e4e2466fa7bf94571f2eaa6ed9fc08b910b47b9fdf97e0cd980e0bdd",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "a6619a66e4e2466fa7bf94571f2eaa6ed9fc08b910b47b9fdf97e0cd980e0bdd"
+            ],
+            "transcript": [
+              {
+                "text": "集",
+                "pinyin": "jí",
+                "meaning": "to gather; to collect",
+                "audio": "a6619a66e4e2466fa7bf94571f2eaa6ed9fc08b910b47b9fdf97e0cd980e0bdd",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-96C6",
+      "character": "集",
+      "lessonIds": [
+        "LESSON-C-96C6"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-96c6-word",
+        "EX-CHAR-char-96c6-recognize",
+        "EX-CHAR-char-96c6-write",
+        "EX-CHAR-char-96c6-familiar",
+        "EX-CHAR-char-96c6-recall"
+      ]
+    },
+    "audio": {
+      "a6619a66e4e2466fa7bf94571f2eaa6ed9fc08b910b47b9fdf97e0cd980e0bdd": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f740e7999e0216155fde89e9573fdbfddf95facdbe7a2be038415436f0bccb92.mp3",
+          "sha256": "f740e7999e0216155fde89e9573fdbfddf95facdbe7a2be038415436f0bccb92",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "f740e7999e0216155fde89e9573fdbfddf95facdbe7a2be038415436f0bccb92",
+            "text": "集",
+            "words": [
+              {
+                "text": "集",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3f83eead6beb70a3a83ffe487ef9491b59cf85e81c654a36662590ff9dd187b8.mp3",
+          "sha256": "3f83eead6beb70a3a83ffe487ef9491b59cf85e81c654a36662590ff9dd187b8",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "3f83eead6beb70a3a83ffe487ef9491b59cf85e81c654a36662590ff9dd187b8",
+            "text": "集",
+            "words": [
+              {
+                "text": "集",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "54dc6e85e526b298b83e398410753c3f4b75d9896e64d879a022771c1f591d94": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-4c781faa969e441c37183e2c681e1493dfe0d99a029499ccbd0332e5f781281e.mp3",
+          "sha256": "4c781faa969e441c37183e2c681e1493dfe0d99a029499ccbd0332e5f781281e",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "4c781faa969e441c37183e2c681e1493dfe0d99a029499ccbd0332e5f781281e",
+            "text": "场合",
+            "words": [
+              {
+                "text": "场合",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-336dc316d4faa7e9cef0eb1f26823bc8aa1a9d31dc1ad756d35957879b01dd97.mp3",
+          "sha256": "336dc316d4faa7e9cef0eb1f26823bc8aa1a9d31dc1ad756d35957879b01dd97",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "336dc316d4faa7e9cef0eb1f26823bc8aa1a9d31dc1ad756d35957879b01dd97",
+            "text": "场合",
+            "words": [
+              {
+                "text": "场合",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "3878dd0a9daafab3475ca6f9814546d3ae6912fa61d5792e64aa1ec52fef1ca4": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-08be6d842bd5d3328583d2691bdbdd02a5310a48fe24fedf5369289e43d228f3.mp3",
+          "sha256": "08be6d842bd5d3328583d2691bdbdd02a5310a48fe24fedf5369289e43d228f3",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "08be6d842bd5d3328583d2691bdbdd02a5310a48fe24fedf5369289e43d228f3",
+            "text": "信号",
+            "words": [
+              {
+                "text": "信号",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-988cd486b9e2058c8f38fddb65dcb93d42d05b909f5307b66f0a69949a3226b4.mp3",
+          "sha256": "988cd486b9e2058c8f38fddb65dcb93d42d05b909f5307b66f0a69949a3226b4",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "988cd486b9e2058c8f38fddb65dcb93d42d05b909f5307b66f0a69949a3226b4",
+            "text": "信号",
+            "words": [
+              {
+                "text": "信号",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "e26b9571e6904ee74728dd131ae27d648d7e7c2810858d148455ff201c998fa0": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9ec1ba8818785a6fe2f7f422ec951fb16791c0d59091f7c6aa5ed3fc60d90755.mp3",
+          "sha256": "9ec1ba8818785a6fe2f7f422ec951fb16791c0d59091f7c6aa5ed3fc60d90755",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "9ec1ba8818785a6fe2f7f422ec951fb16791c0d59091f7c6aa5ed3fc60d90755",
+            "text": "独自",
+            "words": [
+              {
+                "text": "独自",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/899b517f6b36829c11ecd309c27a7c1335860cf09e1f8270d9c0405c3c3e8f72.mp3",
+          "sha256": "899b517f6b36829c11ecd309c27a7c1335860cf09e1f8270d9c0405c3c3e8f72",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "899b517f6b36829c11ecd309c27a7c1335860cf09e1f8270d9c0405c3c3e8f72",
+            "text": "独自",
+            "words": [
+              {
+                "text": "独自",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "fede1f26511c40c2240958c81f4202c3ce0a765eb844fc879911403702b8e7c1": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2769fa9620b1794a8784d288c1973567f8865cf52d1ee41b461465593855b0cd.mp3",
+          "sha256": "2769fa9620b1794a8784d288c1973567f8865cf52d1ee41b461465593855b0cd",
+          "byteLength": 21933,
+          "readAlong": {
+            "audioSha256": "2769fa9620b1794a8784d288c1973567f8865cf52d1ee41b461465593855b0cd",
+            "text": "收集",
+            "words": [
+              {
+                "text": "收集",
+                "start": 0.8099999999999999,
+                "end": 1.1099999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-e9ab3a03b62580f93c5ec548f319f9dd44045543d61c3fd6996950f46bbb49b7.mp3",
+          "sha256": "e9ab3a03b62580f93c5ec548f319f9dd44045543d61c3fd6996950f46bbb49b7",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "e9ab3a03b62580f93c5ec548f319f9dd44045543d61c3fd6996950f46bbb49b7",
+            "text": "收集",
+            "words": [
+              {
+                "text": "收集",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

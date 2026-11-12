@@ -1,0 +1,761 @@
+{
+  "id": "EX-CHAR-char-8138",
+  "revision": 2,
+  "unit": "U3-09",
+  "stage": "ST-HSK3",
+  "after": "S-U3-09-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "脸",
+  "sourceBlockId": "mandarin-simplified-v1-char-8138",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-01a8e55dbd726616dc1de85e",
+        "text": "本钱",
+        "pinyin": "běn qián",
+        "meaning": "capital",
+        "characters": [
+          {
+            "id": "C-672C",
+            "text": "本"
+          },
+          {
+            "id": "C-94B1",
+            "text": "钱"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-817eadb808b3e67a394c7f46",
+        "text": "笑脸",
+        "pinyin": "xiào liǎn",
+        "meaning": "smiling face",
+        "characters": [
+          {
+            "id": "C-7B11",
+            "text": "笑"
+          },
+          {
+            "id": "C-8138",
+            "text": "脸"
+          }
+        ]
+      },
+      {
+        "id": "W0304",
+        "text": "一起",
+        "pinyin": "yīqǐ",
+        "meaning": "together",
+        "characters": [
+          {
+            "id": "C-4E00",
+            "text": "一"
+          },
+          {
+            "id": "C-8D77",
+            "text": "起"
+          }
+        ]
+      },
+      {
+        "id": "W0318",
+        "text": "被",
+        "pinyin": "bèi",
+        "meaning": "marks an action done to someone or something",
+        "characters": [
+          {
+            "id": "C-88AB",
+            "text": "被"
+          }
+        ]
+      },
+      {
+        "id": "W0855",
+        "text": "脸",
+        "pinyin": "liǎn",
+        "meaning": "face",
+        "characters": [
+          {
+            "id": "C-8138",
+            "text": "脸"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "64062fce984e6b2f7e4638d3677f9ad19a77be6c68bc543f276539e2a04c3812",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8138",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "脸",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8138-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-817eadb808b3e67a394c7f46",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "smiling face",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "笑脸"
+              },
+              {
+                "value": "xiào liǎn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiao4lian3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "笑脸",
+              "pinyin": "xiào liǎn",
+              "meaning": "smiling face",
+              "audio": "973d91d33a12dd557207161d78b288de1bbae5aa0ab187e8e11f01ba83b6e51c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8138-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0855",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "脸",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0855",
+                "label": "face",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-01a8e55dbd726616dc1de85e",
+                "label": "capital",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0304",
+                "label": "together",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8138-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "脸",
+        "pinyin": "liǎn",
+        "meaning": "face",
+        "source": "/stroke-data/8138.json",
+        "reference": {
+          "character": "脸",
+          "sha256": "c7ac2f89501ca7f9ffc2ab99cabdaeb3346905d101e67acc7be54dcc364994be",
+          "medians": [
+            [
+              [
+                145,
+                706
+              ],
+              [
+                180,
+                675
+              ],
+              [
+                184,
+                662
+              ],
+              [
+                181,
+                481
+              ],
+              [
+                164,
+                341
+              ],
+              [
+                120,
+                202
+              ],
+              [
+                69,
+                105
+              ],
+              [
+                39,
+                62
+              ]
+            ],
+            [
+              [
+                213,
+                694
+              ],
+              [
+                226,
+                686
+              ],
+              [
+                309,
+                716
+              ],
+              [
+                334,
+                703
+              ],
+              [
+                347,
+                683
+              ],
+              [
+                351,
+                265
+              ],
+              [
+                345,
+                115
+              ],
+              [
+                327,
+                85
+              ],
+              [
+                225,
+                129
+              ]
+            ],
+            [
+              [
+                214,
+                496
+              ],
+              [
+                220,
+                508
+              ],
+              [
+                239,
+                518
+              ],
+              [
+                271,
+                523
+              ],
+              [
+                292,
+                519
+              ]
+            ],
+            [
+              [
+                195,
+                349
+              ],
+              [
+                212,
+                368
+              ],
+              [
+                262,
+                376
+              ],
+              [
+                284,
+                370
+              ]
+            ],
+            [
+              [
+                589,
+                768
+              ],
+              [
+                606,
+                755
+              ],
+              [
+                627,
+                724
+              ],
+              [
+                605,
+                670
+              ],
+              [
+                562,
+                579
+              ],
+              [
+                506,
+                486
+              ],
+              [
+                435,
+                389
+              ],
+              [
+                399,
+                355
+              ]
+            ],
+            [
+              [
+                636,
+                654
+              ],
+              [
+                636,
+                639
+              ],
+              [
+                692,
+                571
+              ],
+              [
+                764,
+                491
+              ],
+              [
+                829,
+                432
+              ],
+              [
+                981,
+                396
+              ]
+            ],
+            [
+              [
+                504,
+                398
+              ],
+              [
+                524,
+                394
+              ],
+              [
+                579,
+                399
+              ],
+              [
+                664,
+                422
+              ],
+              [
+                710,
+                423
+              ]
+            ],
+            [
+              [
+                447,
+                266
+              ],
+              [
+                510,
+                214
+              ],
+              [
+                531,
+                170
+              ]
+            ],
+            [
+              [
+                556,
+                315
+              ],
+              [
+                604,
+                265
+              ],
+              [
+                618,
+                234
+              ]
+            ],
+            [
+              [
+                707,
+                351
+              ],
+              [
+                722,
+                341
+              ],
+              [
+                738,
+                309
+              ],
+              [
+                669,
+                133
+              ],
+              [
+                641,
+                100
+              ]
+            ],
+            [
+              [
+                410,
+                60
+              ],
+              [
+                466,
+                52
+              ],
+              [
+                581,
+                70
+              ],
+              [
+                795,
+                90
+              ],
+              [
+                883,
+                71
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8138-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0318",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "marks an action done to someone or something",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "被"
+              },
+              {
+                "value": "bèi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bei4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "被",
+              "pinyin": "bèi",
+              "meaning": "marks an action done to someone or something",
+              "audio": "c0d59c368ade50e2bab9f6bc2c1aabee0b378b23c17a90872aa2058086324354",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8138-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0855",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "face",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "脸"
+              },
+              {
+                "value": "liǎn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lian3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "脸",
+              "pinyin": "liǎn",
+              "meaning": "face",
+              "audio": "6f7c8df51240c6d930fe0097f54f796076559724dec99a8e65926d615578d6a9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "6f7c8df51240c6d930fe0097f54f796076559724dec99a8e65926d615578d6a9"
+            ],
+            "transcript": [
+              {
+                "text": "脸",
+                "pinyin": "liǎn",
+                "meaning": "face",
+                "audio": "6f7c8df51240c6d930fe0097f54f796076559724dec99a8e65926d615578d6a9",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8138",
+      "character": "脸",
+      "lessonIds": [
+        "LESSON-C-8138"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8138-word",
+        "EX-CHAR-char-8138-recognize",
+        "EX-CHAR-char-8138-write",
+        "EX-CHAR-char-8138-familiar",
+        "EX-CHAR-char-8138-recall"
+      ]
+    },
+    "audio": {
+      "81ad451f3bfc94d930f741d3d9065a98cad6af23dcdbd14bbef683feccca49cb": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/19d1cb1ee5375576d2e26a50cca2ff53bfd07e21d299310df4c0fa6f14deed1a.mp3",
+          "sha256": "19d1cb1ee5375576d2e26a50cca2ff53bfd07e21d299310df4c0fa6f14deed1a",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "19d1cb1ee5375576d2e26a50cca2ff53bfd07e21d299310df4c0fa6f14deed1a",
+            "text": "本钱",
+            "words": [
+              {
+                "text": "本钱",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c1b411f6b56c2521e8a8e38579d1558120a0bb3b54066a2165e31d67dec0bbd8.mp3",
+          "sha256": "c1b411f6b56c2521e8a8e38579d1558120a0bb3b54066a2165e31d67dec0bbd8",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "c1b411f6b56c2521e8a8e38579d1558120a0bb3b54066a2165e31d67dec0bbd8",
+            "text": "本钱",
+            "words": [
+              {
+                "text": "本钱",
+                "start": 0.18,
+                "end": 0.54
+              }
+            ]
+          }
+        }
+      },
+      "973d91d33a12dd557207161d78b288de1bbae5aa0ab187e8e11f01ba83b6e51c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0f9e2fca8ca7322f3592eef7ec1df0cbc93fe379b3a8cc90c6ddffb85effdc28.mp3",
+          "sha256": "0f9e2fca8ca7322f3592eef7ec1df0cbc93fe379b3a8cc90c6ddffb85effdc28",
+          "byteLength": 17325,
+          "readAlong": {
+            "audioSha256": "0f9e2fca8ca7322f3592eef7ec1df0cbc93fe379b3a8cc90c6ddffb85effdc28",
+            "text": "笑脸",
+            "words": [
+              {
+                "text": "笑脸",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1c8283e6c82c7e213b24e37c9de675ab91ea8c213d9e64eb2ce9710aa5313951.mp3",
+          "sha256": "1c8283e6c82c7e213b24e37c9de675ab91ea8c213d9e64eb2ce9710aa5313951",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "1c8283e6c82c7e213b24e37c9de675ab91ea8c213d9e64eb2ce9710aa5313951",
+            "text": "笑脸",
+            "words": [
+              {
+                "text": "笑脸",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "ee59c81f3ca9628eb7934c58fb49010e49d924ca59766c27d4743e60b8b1d3bf": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-cc8ba684d92878ed10200390d70012f0365d0a78e0dfbd0f8f90c294215e117e.mp3",
+          "sha256": "cc8ba684d92878ed10200390d70012f0365d0a78e0dfbd0f8f90c294215e117e",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "cc8ba684d92878ed10200390d70012f0365d0a78e0dfbd0f8f90c294215e117e",
+            "text": "一起",
+            "words": [
+              {
+                "text": "一起",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-0ce64034937a6ae6ce6421c46ec815178a45103a2259cbf71dd00f58ca389f1d.mp3",
+          "sha256": "0ce64034937a6ae6ce6421c46ec815178a45103a2259cbf71dd00f58ca389f1d",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "0ce64034937a6ae6ce6421c46ec815178a45103a2259cbf71dd00f58ca389f1d",
+            "text": "一起",
+            "words": [
+              {
+                "text": "一起",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "c0d59c368ade50e2bab9f6bc2c1aabee0b378b23c17a90872aa2058086324354": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-00e6c11127f34b8d9938ea02d4e9aef9faa43c7821822554fc01ee66a32d2722.mp3",
+          "sha256": "00e6c11127f34b8d9938ea02d4e9aef9faa43c7821822554fc01ee66a32d2722",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "00e6c11127f34b8d9938ea02d4e9aef9faa43c7821822554fc01ee66a32d2722",
+            "text": "被",
+            "words": [
+              {
+                "text": "被",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b238efcd2840e759fb1c6fd23b06faae0689df7941d5eade7ebfed9bc46fd709.mp3",
+          "sha256": "b238efcd2840e759fb1c6fd23b06faae0689df7941d5eade7ebfed9bc46fd709",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "b238efcd2840e759fb1c6fd23b06faae0689df7941d5eade7ebfed9bc46fd709",
+            "text": "被",
+            "words": [
+              {
+                "text": "被",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "6f7c8df51240c6d930fe0097f54f796076559724dec99a8e65926d615578d6a9": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-bb8b0027b4ed381d89e01342d418edc404ae35889efbe7c175ae776b052eb913.mp3",
+          "sha256": "bb8b0027b4ed381d89e01342d418edc404ae35889efbe7c175ae776b052eb913",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "bb8b0027b4ed381d89e01342d418edc404ae35889efbe7c175ae776b052eb913",
+            "text": "脸",
+            "words": [
+              {
+                "text": "脸",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c5f8c2692beee00798d3eed32635107eaf2c585fae845c1ec1a25d5f07f2492a.mp3",
+          "sha256": "c5f8c2692beee00798d3eed32635107eaf2c585fae845c1ec1a25d5f07f2492a",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "c5f8c2692beee00798d3eed32635107eaf2c585fae845c1ec1a25d5f07f2492a",
+            "text": "脸",
+            "words": [
+              {
+                "text": "脸",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

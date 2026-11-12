@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0179",
+  "targetId": "W0179",
+  "steps": [
+    {
+      "id": "BANK-W0179-W0179",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0179-W0179",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "yesterday",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "昨天"
+            },
+            {
+              "value": "zuótiān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zuo2tian1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "昨天",
+            "pinyin": "zuótiān",
+            "meaning": "yesterday",
+            "singleWord": true,
+            "audio": "ac33c093746d73011afeae62822ed2a52bb79743f82c9d909ec60876543bf1da"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ac33c093746d73011afeae62822ed2a52bb79743f82c9d909ec60876543bf1da": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5232fbd3dc02f0186cd749a7004aea0a5cf0d1640d5c903c0fcd36cf653fe7bc.mp3",
+        "sha256": "5232fbd3dc02f0186cd749a7004aea0a5cf0d1640d5c903c0fcd36cf653fe7bc",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "5232fbd3dc02f0186cd749a7004aea0a5cf0d1640d5c903c0fcd36cf653fe7bc",
+          "text": "昨天",
+          "words": [
+            {
+              "text": "昨天",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b1043852057b3f68e80dc2f6717ec2c247da8e07deada79e80c53bf670d9f912.mp3",
+        "sha256": "b1043852057b3f68e80dc2f6717ec2c247da8e07deada79e80c53bf670d9f912",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "b1043852057b3f68e80dc2f6717ec2c247da8e07deada79e80c53bf670d9f912",
+          "text": "昨天",
+          "words": [
+            {
+              "text": "昨天",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0179",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0179-W0179",
+      "question_ids": [
+        "BANK-W0179-W0179"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U09",
+    "stepId": "S-U09-words-r4-17",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6628"
+    ],
+    "grammarLessonIds": []
+  }
+}

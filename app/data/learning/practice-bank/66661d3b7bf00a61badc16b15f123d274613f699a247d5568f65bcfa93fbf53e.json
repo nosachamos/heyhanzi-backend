@@ -1,0 +1,217 @@
+{
+  "id": "BANK-W1233",
+  "targetId": "W1233",
+  "steps": [
+    {
+      "id": "BANK-W1233-W1233",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1233-W1233",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "and; but; whereas (connects compatible predicates or clauses)",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "而"
+            },
+            {
+              "value": "ér",
+              "mode": "pinyin"
+            },
+            {
+              "value": "er2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "而",
+            "pinyin": "ér",
+            "meaning": "and; but; whereas (connects compatible predicates or clauses)",
+            "singleWord": true,
+            "audio": "5637057e4b31ce8ed3efbc65ec42679604e3be9c5c1a4e73a74fed8bdc325a61"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1233-W1233-use-and",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1233-W1233-use-and",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 而 fits this context?",
+          "context": "A second compatible description is added to the first.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1233-W1233-use-and-contrast-2",
+              "label": "The second description cancels the first.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "而 can link compatible descriptions or predicates, adding one to another."
+            },
+            {
+              "id": "BANK-W1233-W1233-use-and-contrast-1",
+              "label": "Neither description is true.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "而 can link compatible descriptions or predicates, adding one to another."
+            },
+            {
+              "id": "BANK-W1233-W1233-use-and-meaning",
+              "label": "And; an additional compatible description.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "而 can link compatible descriptions or predicates, adding one to another."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "而",
+            "pinyin": "ér",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "5637057e4b31ce8ed3efbc65ec42679604e3be9c5c1a4e73a74fed8bdc325a61"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1233-W1233-use-contrast",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1233-W1233-use-contrast",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 而 fits this context?",
+          "context": "One person prefers one option, whereas a second person prefers a different option.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1233-W1233-use-contrast-contrast-1",
+              "label": "Both preferences must be identical.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "而 can also mark a contrast: but or whereas. It sets one description or clause against another."
+            },
+            {
+              "id": "BANK-W1233-W1233-use-contrast-contrast-2",
+              "label": "The second preference causes the first.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "而 can also mark a contrast: but or whereas. It sets one description or clause against another."
+            },
+            {
+              "id": "BANK-W1233-W1233-use-contrast-meaning",
+              "label": "But; whereas, contrasting the two preferences.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "而 can also mark a contrast: but or whereas. It sets one description or clause against another."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "而",
+            "pinyin": "ér",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "5637057e4b31ce8ed3efbc65ec42679604e3be9c5c1a4e73a74fed8bdc325a61"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5637057e4b31ce8ed3efbc65ec42679604e3be9c5c1a4e73a74fed8bdc325a61": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a402a9a6d224a770b944ba695a21f42db740bf533c9e5110bff6e0fa0bb92b63.mp3",
+        "sha256": "a402a9a6d224a770b944ba695a21f42db740bf533c9e5110bff6e0fa0bb92b63",
+        "byteLength": 8397,
+        "readAlong": {
+          "audioSha256": "a402a9a6d224a770b944ba695a21f42db740bf533c9e5110bff6e0fa0bb92b63",
+          "text": "而",
+          "words": [
+            {
+              "text": "而",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-e25d8bb79fa21cfc8076b5ab0bd294609cd759a675e6bee1acfa30e659627703.mp3",
+        "sha256": "e25d8bb79fa21cfc8076b5ab0bd294609cd759a675e6bee1acfa30e659627703",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "e25d8bb79fa21cfc8076b5ab0bd294609cd759a675e6bee1acfa30e659627703",
+          "text": "而",
+          "words": [
+            {
+              "text": "而",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1233",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1233-W1233",
+      "question_ids": [
+        "BANK-W1233-W1233"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W1233",
+      "facet_id": "lexical-use-and",
+      "part_id": "BANK-W1233-W1233-use-and",
+      "question_ids": [
+        "BANK-W1233-W1233-use-and"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1233",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W1233",
+      "facet_id": "lexical-use-contrast",
+      "part_id": "BANK-W1233-W1233-use-contrast",
+      "question_ids": [
+        "BANK-W1233-W1233-use-contrast"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1233",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-21",
+    "stepId": "S-U4-21-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-800c"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3742",
+  "targetId": "W3742",
+  "steps": [
+    {
+      "id": "BANK-W3742-W3742",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3742-W3742",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "intestines",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "肠"
+            },
+            {
+              "value": "cháng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chang2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "肠",
+            "pinyin": "cháng",
+            "meaning": "intestines",
+            "singleWord": true,
+            "audio": "b3bff910c2a4c95ff9b757531bb269545ba4852e619cb068ccd2e9fe99ec8651"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b3bff910c2a4c95ff9b757531bb269545ba4852e619cb068ccd2e9fe99ec8651": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a40c0d9c76dbf6231069cc2633d4af5e9ab7cd0af59d0814aeb93f48a90fd3b7.mp3",
+        "sha256": "a40c0d9c76dbf6231069cc2633d4af5e9ab7cd0af59d0814aeb93f48a90fd3b7",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "a40c0d9c76dbf6231069cc2633d4af5e9ab7cd0af59d0814aeb93f48a90fd3b7",
+          "text": "肠",
+          "words": [
+            {
+              "text": "肠",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/fab7fab5901b35b76ddd8e2d7a9585e65070e4d8241ddf457d4bf7acfec7d960.mp3",
+        "sha256": "fab7fab5901b35b76ddd8e2d7a9585e65070e4d8241ddf457d4bf7acfec7d960",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "fab7fab5901b35b76ddd8e2d7a9585e65070e4d8241ddf457d4bf7acfec7d960",
+          "text": "肠",
+          "words": [
+            {
+              "text": "肠",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3742",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3742-W3742",
+      "question_ids": [
+        "BANK-W3742-W3742"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-16",
+    "stepId": "S-U6-16-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-80a0"
+    ],
+    "grammarLessonIds": []
+  }
+}

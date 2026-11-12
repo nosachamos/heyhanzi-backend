@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1279",
+  "targetId": "W1279",
+  "steps": [
+    {
+      "id": "BANK-W1279-W1279",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1279-W1279",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "emotion; sentiment",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "感情"
+            },
+            {
+              "value": "gǎnqíng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gan3qing2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "感情",
+            "pinyin": "gǎnqíng",
+            "meaning": "emotion; sentiment",
+            "singleWord": true,
+            "audio": "881e15d89698eddf662d0d0529f65bcaef2a678ca5d395ae651ce466d44f346a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "881e15d89698eddf662d0d0529f65bcaef2a678ca5d395ae651ce466d44f346a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a79dda5031bafd19ce550348d8b6628864bc03ffbf9b5f5a601b7f93432b2829.mp3",
+        "sha256": "a79dda5031bafd19ce550348d8b6628864bc03ffbf9b5f5a601b7f93432b2829",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "a79dda5031bafd19ce550348d8b6628864bc03ffbf9b5f5a601b7f93432b2829",
+          "text": "感情",
+          "words": [
+            {
+              "text": "感情",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-8dc45f023d01a41a6e269570e87626d274830cbdc4f60e225043564b31b5e722.mp3",
+        "sha256": "8dc45f023d01a41a6e269570e87626d274830cbdc4f60e225043564b31b5e722",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "8dc45f023d01a41a6e269570e87626d274830cbdc4f60e225043564b31b5e722",
+          "text": "感情",
+          "words": [
+            {
+              "text": "感情",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1279",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1279-W1279",
+      "question_ids": [
+        "BANK-W1279-W1279"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-24",
+    "stepId": "S-U4-24-words-r4-2",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-611f"
+    ],
+    "grammarLessonIds": []
+  }
+}

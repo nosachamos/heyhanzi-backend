@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W-ZHONGSHI",
+  "targetId": "W-ZHONGSHI",
+  "steps": [
+    {
+      "id": "BANK-W-ZHONGSHI-W-ZHONGSHI",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W-ZHONGSHI-W-ZHONGSHI",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "Chinese-style; in Chinese style",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "中式"
+            },
+            {
+              "value": "zhōngshì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhong1shi4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "中式",
+            "pinyin": "zhōngshì",
+            "meaning": "Chinese-style; in Chinese style",
+            "singleWord": true,
+            "audio": "d949b119c42725d739efe17acc1cf692a809ef79877dfd1309465b10f3ef1e6b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d949b119c42725d739efe17acc1cf692a809ef79877dfd1309465b10f3ef1e6b": {
+      "male": {
+        "url": "/exercise-assets/audio/course-male-8dce1a9d9a03b004984b4237c4c5671e8b6f5032b6aca35ec0e64340c57c3df0.mp3",
+        "sha256": "8dce1a9d9a03b004984b4237c4c5671e8b6f5032b6aca35ec0e64340c57c3df0",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "8dce1a9d9a03b004984b4237c4c5671e8b6f5032b6aca35ec0e64340c57c3df0",
+          "text": "中式",
+          "words": [
+            {
+              "text": "中式",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "female": {
+        "url": "/exercise-assets/audio/course-female-9cc28d2709b9e442cc3390815855367e2de3721c3e01ade530a99a61934371d8.mp3",
+        "sha256": "9cc28d2709b9e442cc3390815855367e2de3721c3e01ade530a99a61934371d8",
+        "byteLength": 15597,
+        "readAlong": {
+          "audioSha256": "9cc28d2709b9e442cc3390815855367e2de3721c3e01ade530a99a61934371d8",
+          "text": "中式",
+          "words": [
+            {
+              "text": "中式",
+              "start": 0.27,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W-ZHONGSHI",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W-ZHONGSHI-W-ZHONGSHI",
+      "question_ids": [
+        "BANK-W-ZHONGSHI-W-ZHONGSHI"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-35-P01",
+    "stepId": "S-U5-35-words-r4-16",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8861"
+    ],
+    "grammarLessonIds": []
+  }
+}

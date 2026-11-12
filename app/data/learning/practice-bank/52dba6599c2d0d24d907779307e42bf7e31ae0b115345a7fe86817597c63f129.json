@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0621",
+  "targetId": "W0621",
+  "steps": [
+    {
+      "id": "BANK-W0621-W0621",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0621-W0621",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "pharmacy; drugstore",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "药店"
+            },
+            {
+              "value": "yàodiàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yao4dian4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "药店",
+            "pinyin": "yàodiàn",
+            "meaning": "pharmacy; drugstore",
+            "singleWord": true,
+            "audio": "8bcab14fe071c7c2af5c47987f17f2894b4bfaf3dacd0e356316b7c784a3b63d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8bcab14fe071c7c2af5c47987f17f2894b4bfaf3dacd0e356316b7c784a3b63d": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/57d42061a4a4f56f9b9c0f6f2fbeacf1f61394484639d36939a750f6bced6bc4.mp3",
+        "sha256": "57d42061a4a4f56f9b9c0f6f2fbeacf1f61394484639d36939a750f6bced6bc4",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "57d42061a4a4f56f9b9c0f6f2fbeacf1f61394484639d36939a750f6bced6bc4",
+          "text": "药店",
+          "words": [
+            {
+              "text": "药店",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2c9cba5b75fbf806994e8171acbb51f7a1d5c5c8f2a4327a48cbe690c236ad33.mp3",
+        "sha256": "2c9cba5b75fbf806994e8171acbb51f7a1d5c5c8f2a4327a48cbe690c236ad33",
+        "byteLength": 14733,
+        "readAlong": {
+          "audioSha256": "2c9cba5b75fbf806994e8171acbb51f7a1d5c5c8f2a4327a48cbe690c236ad33",
+          "text": "药店",
+          "words": [
+            {
+              "text": "药店",
+              "start": 0.27,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0621",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0621-W0621",
+      "question_ids": [
+        "BANK-W0621-W0621"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U17-P01",
+    "stepId": "S-U17-words-r4-37",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-836f"
+    ],
+    "grammarLessonIds": []
+  }
+}

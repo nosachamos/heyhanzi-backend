@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1155",
+  "targetId": "W1155",
+  "steps": [
+    {
+      "id": "BANK-W1155-W1155",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1155-W1155",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "this time",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "此次"
+            },
+            {
+              "value": "cǐcì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ci3ci4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "此次",
+            "pinyin": "cǐcì",
+            "meaning": "this time",
+            "singleWord": true,
+            "audio": "bf0f03516caa507bfc2cd45b9f99dade46cd9c451ca7cf6984b9088949befe81"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "bf0f03516caa507bfc2cd45b9f99dade46cd9c451ca7cf6984b9088949befe81": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ee8f0e84b6425408d2d8c203be5ba65a4c4049c52a398e0244e53eb05b529e23.mp3",
+        "sha256": "ee8f0e84b6425408d2d8c203be5ba65a4c4049c52a398e0244e53eb05b529e23",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "ee8f0e84b6425408d2d8c203be5ba65a4c4049c52a398e0244e53eb05b529e23",
+          "text": "此次",
+          "words": [
+            {
+              "text": "此次",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b06dee211ce8045109be16b9a17b15166458854e29beacd7570e6c174363fcf4.mp3",
+        "sha256": "b06dee211ce8045109be16b9a17b15166458854e29beacd7570e6c174363fcf4",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "b06dee211ce8045109be16b9a17b15166458854e29beacd7570e6c174363fcf4",
+          "text": "此次",
+          "words": [
+            {
+              "text": "此次",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1155",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1155-W1155",
+      "question_ids": [
+        "BANK-W1155-W1155"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-07",
+    "stepId": "S-U4-07-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-500d"
+    ],
+    "grammarLessonIds": []
+  }
+}

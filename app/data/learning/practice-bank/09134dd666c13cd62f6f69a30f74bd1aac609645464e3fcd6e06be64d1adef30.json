@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5019",
+  "targetId": "W5019",
+  "steps": [
+    {
+      "id": "BANK-W5019-W5019",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5019-W5019",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "cell",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "细胞"
+            },
+            {
+              "value": "xìbāo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xi4bao1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "细胞",
+            "pinyin": "xìbāo",
+            "meaning": "cell",
+            "singleWord": true,
+            "audio": "09c80ffe36efd08885ed52030c72578bdf523c25d6c8457e7338e1c4c3f98631"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "09c80ffe36efd08885ed52030c72578bdf523c25d6c8457e7338e1c4c3f98631": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-86dbe04a69abaee0f8500d02670061abd6ae74ba81148f202c525d404db618e8.mp3",
+        "sha256": "86dbe04a69abaee0f8500d02670061abd6ae74ba81148f202c525d404db618e8",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "86dbe04a69abaee0f8500d02670061abd6ae74ba81148f202c525d404db618e8",
+          "text": "细胞",
+          "words": [
+            {
+              "text": "细胞",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-60a8d42e92b5cc239ac82f8f7d5f587826b85872bfb74666cb45afc91c5f3dd6.mp3",
+        "sha256": "60a8d42e92b5cc239ac82f8f7d5f587826b85872bfb74666cb45afc91c5f3dd6",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "60a8d42e92b5cc239ac82f8f7d5f587826b85872bfb74666cb45afc91c5f3dd6",
+          "text": "细胞",
+          "words": [
+            {
+              "text": "细胞",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5019",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5019-W5019",
+      "question_ids": [
+        "BANK-W5019-W5019"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-16",
+    "stepId": "S-U6-16-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-80de"
+    ],
+    "grammarLessonIds": []
+  }
+}

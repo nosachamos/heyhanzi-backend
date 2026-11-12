@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4220",
+  "targetId": "W4220",
+  "steps": [
+    {
+      "id": "BANK-W4220-W4220",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4220-W4220",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "motor vehicle",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "机动车"
+            },
+            {
+              "value": "jīdòngchē",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ji1dong4che1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "机动车",
+            "pinyin": "jīdòngchē",
+            "meaning": "motor vehicle",
+            "singleWord": true,
+            "audio": "77a00c016be51adf42ff3d411cb36120feae377b045a85e9320538d6b5d4b5f7"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "77a00c016be51adf42ff3d411cb36120feae377b045a85e9320538d6b5d4b5f7": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/99307ad88e07b3a148fb46044250f3fd62a41bcb4f513b5c7e002287993cd3d1.mp3",
+        "sha256": "99307ad88e07b3a148fb46044250f3fd62a41bcb4f513b5c7e002287993cd3d1",
+        "byteLength": 15597,
+        "readAlong": {
+          "audioSha256": "99307ad88e07b3a148fb46044250f3fd62a41bcb4f513b5c7e002287993cd3d1",
+          "text": "机动车",
+          "words": [
+            {
+              "text": "机动车",
+              "start": 0.15,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/896269b5942027f6f6e9cb1eb99e5c214f34747d58a3b47b5cd419a4fb50a1b5.mp3",
+        "sha256": "896269b5942027f6f6e9cb1eb99e5c214f34747d58a3b47b5cd419a4fb50a1b5",
+        "byteLength": 18765,
+        "readAlong": {
+          "audioSha256": "896269b5942027f6f6e9cb1eb99e5c214f34747d58a3b47b5cd419a4fb50a1b5",
+          "text": "机动车",
+          "words": [
+            {
+              "text": "机动车",
+              "start": 0.15,
+              "end": 0.69
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4220",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4220-W4220",
+      "question_ids": [
+        "BANK-W4220-W4220"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-18-P01",
+    "stepId": "S-U6-18-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-52a8"
+    ],
+    "grammarLessonIds": []
+  }
+}

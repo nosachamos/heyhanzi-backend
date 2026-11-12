@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1148",
+  "targetId": "W1148",
+  "steps": [
+    {
+      "id": "BANK-W1148-W1148",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1148-W1148",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "kitchen",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "厨房"
+            },
+            {
+              "value": "chúfáng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chu2fang2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "厨房",
+            "pinyin": "chúfáng",
+            "meaning": "kitchen",
+            "singleWord": true,
+            "audio": "4ff2dd8412b90b36e37989f416fcb996c9f9e16e7d617085b04a6749fe64b21a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "4ff2dd8412b90b36e37989f416fcb996c9f9e16e7d617085b04a6749fe64b21a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a6530562b501fb74b8a9e8e24d9d352a2b075a0486dfd10c06aedf520b4c4861.mp3",
+        "sha256": "a6530562b501fb74b8a9e8e24d9d352a2b075a0486dfd10c06aedf520b4c4861",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "a6530562b501fb74b8a9e8e24d9d352a2b075a0486dfd10c06aedf520b4c4861",
+          "text": "厨房",
+          "words": [
+            {
+              "text": "厨房",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c8e898018f24bcfbf0310002e67fbd8f7b31da8b64beb165c8fc2ba759a41808.mp3",
+        "sha256": "c8e898018f24bcfbf0310002e67fbd8f7b31da8b64beb165c8fc2ba759a41808",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "c8e898018f24bcfbf0310002e67fbd8f7b31da8b64beb165c8fc2ba759a41808",
+          "text": "厨房",
+          "words": [
+            {
+              "text": "厨房",
+              "start": 0.09,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1148",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1148-W1148",
+      "question_ids": [
+        "BANK-W1148-W1148"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-04",
+    "stepId": "S-U4-04-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-53a8"
+    ],
+    "grammarLessonIds": []
+  }
+}

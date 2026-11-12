@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3012",
+  "targetId": "W3012",
+  "steps": [
+    {
+      "id": "BANK-W3012-W3012",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3012-W3012",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to produce; to manufacture",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "生产"
+            },
+            {
+              "value": "shēngchǎn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "sheng1chan3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "生产",
+            "pinyin": "shēngchǎn",
+            "meaning": "to produce; to manufacture",
+            "singleWord": true,
+            "audio": "c7d3f9211d36f3b79facf80a06e409a2bf6ff89780737705bf93c289135b321c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c7d3f9211d36f3b79facf80a06e409a2bf6ff89780737705bf93c289135b321c": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-9cd152ad749cd7fa8dfb56152dc3484a658468ba89c44455e19cb5b2b562ece5.mp3",
+        "sha256": "9cd152ad749cd7fa8dfb56152dc3484a658468ba89c44455e19cb5b2b562ece5",
+        "byteLength": 16173,
+        "readAlong": {
+          "audioSha256": "9cd152ad749cd7fa8dfb56152dc3484a658468ba89c44455e19cb5b2b562ece5",
+          "text": "生产",
+          "words": [
+            {
+              "text": "生产",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-6c81da776c8d6fc49531c46f01a09d1d04324df8fee5034c6593529a9cde357d.mp3",
+        "sha256": "6c81da776c8d6fc49531c46f01a09d1d04324df8fee5034c6593529a9cde357d",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "6c81da776c8d6fc49531c46f01a09d1d04324df8fee5034c6593529a9cde357d",
+          "text": "生产",
+          "words": [
+            {
+              "text": "生产",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3012",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3012-W3012",
+      "question_ids": [
+        "BANK-W3012-W3012"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-32-P01",
+    "stepId": "S-U5-32-words-r4-15",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4ea7"
+    ],
+    "grammarLessonIds": []
+  }
+}

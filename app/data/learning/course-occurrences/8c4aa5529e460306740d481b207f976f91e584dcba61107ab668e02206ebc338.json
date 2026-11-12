@@ -1,0 +1,815 @@
+{
+  "id": "EX-CHAR-char-9988",
+  "revision": 2,
+  "unit": "U6-31-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-31-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "馈",
+  "sourceBlockId": "mandarin-simplified-v1-char-9988",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-805a",
+        "text": "聚",
+        "pinyin": "jù",
+        "meaning": "to assemble; to gather (transitive or intransitive); (chemistry) poly-",
+        "characters": [
+          {
+            "id": "C-805A",
+            "text": "聚"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-9988",
+        "text": "馈",
+        "pinyin": "kuì",
+        "meaning": "to give; to present; to return a benefit",
+        "characters": [
+          {
+            "id": "C-9988",
+            "text": "馈"
+          }
+        ]
+      },
+      {
+        "id": "W-USE-0266-3",
+        "text": "有些",
+        "pinyin": "yǒuxiē",
+        "meaning": "somewhat",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          },
+          {
+            "id": "C-4E9B",
+            "text": "些"
+          }
+        ]
+      },
+      {
+        "id": "W0675",
+        "text": "不同",
+        "pinyin": "bùtóng",
+        "meaning": "different; distinct",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-540C",
+            "text": "同"
+          }
+        ]
+      },
+      {
+        "id": "W3983",
+        "text": "反馈",
+        "pinyin": "fǎnkuì",
+        "meaning": "to send back information; feedback",
+        "characters": [
+          {
+            "id": "C-53CD",
+            "text": "反"
+          },
+          {
+            "id": "C-9988",
+            "text": "馈"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "8a9015fb7a3ba375621ea34da81cbbd48aebfa856a522961f21d578c7b6599ea",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-9988",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "馈",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-9988-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3983",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to send back information; feedback",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "反馈"
+              },
+              {
+                "value": "fǎnkuì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "fan3kui4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "反馈",
+              "pinyin": "fǎnkuì",
+              "meaning": "to send back information; feedback",
+              "audio": "fe04078effcdb60b20ede7615034c552d337893384e19bc459e4f03beef45107",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9988-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-9988",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "馈",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-805a",
+                "label": "to assemble; to gather (transitive or intransitive)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-9988",
+                "label": "to give; to present",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W-USE-0266-3",
+                "label": "somewhat",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9988-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "馈",
+        "pinyin": "kuì",
+        "meaning": "to give; to present",
+        "source": "/stroke-data/9988.json",
+        "reference": {
+          "character": "馈",
+          "sha256": "74e582919f6f0f7423ffcfaf6c4e6c4995fde2d4e6f1b7d424ae21255920b91d",
+          "medians": [
+            [
+              [
+                270,
+                788
+              ],
+              [
+                302,
+                758
+              ],
+              [
+                293,
+                715
+              ],
+              [
+                246,
+                592
+              ],
+              [
+                181,
+                476
+              ],
+              [
+                111,
+                389
+              ],
+              [
+                53,
+                335
+              ]
+            ],
+            [
+              [
+                255,
+                560
+              ],
+              [
+                363,
+                591
+              ],
+              [
+                391,
+                593
+              ],
+              [
+                416,
+                583
+              ],
+              [
+                366,
+                495
+              ],
+              [
+                329,
+                446
+              ]
+            ],
+            [
+              [
+                231,
+                442
+              ],
+              [
+                253,
+                421
+              ],
+              [
+                267,
+                394
+              ],
+              [
+                267,
+                256
+              ],
+              [
+                256,
+                177
+              ],
+              [
+                263,
+                142
+              ],
+              [
+                302,
+                153
+              ],
+              [
+                410,
+                229
+              ]
+            ],
+            [
+              [
+                489,
+                700
+              ],
+              [
+                520,
+                670
+              ],
+              [
+                548,
+                560
+              ]
+            ],
+            [
+              [
+                535,
+                697
+              ],
+              [
+                564,
+                693
+              ],
+              [
+                757,
+                734
+              ],
+              [
+                774,
+                728
+              ],
+              [
+                792,
+                705
+              ],
+              [
+                777,
+                666
+              ],
+              [
+                754,
+                652
+              ]
+            ],
+            [
+              [
+                563,
+                580
+              ],
+              [
+                578,
+                590
+              ],
+              [
+                726,
+                619
+              ],
+              [
+                767,
+                624
+              ],
+              [
+                803,
+                619
+              ]
+            ],
+            [
+              [
+                612,
+                826
+              ],
+              [
+                651,
+                791
+              ],
+              [
+                646,
+                558
+              ],
+              [
+                631,
+                537
+              ]
+            ],
+            [
+              [
+                424,
+                491
+              ],
+              [
+                473,
+                486
+              ],
+              [
+                606,
+                513
+              ],
+              [
+                869,
+                549
+              ],
+              [
+                937,
+                535
+              ]
+            ],
+            [
+              [
+                507,
+                442
+              ],
+              [
+                530,
+                418
+              ],
+              [
+                535,
+                404
+              ],
+              [
+                535,
+                271
+              ],
+              [
+                525,
+                204
+              ],
+              [
+                528,
+                156
+              ]
+            ],
+            [
+              [
+                554,
+                430
+              ],
+              [
+                566,
+                422
+              ],
+              [
+                609,
+                426
+              ],
+              [
+                729,
+                453
+              ],
+              [
+                747,
+                445
+              ],
+              [
+                769,
+                420
+              ],
+              [
+                764,
+                330
+              ],
+              [
+                769,
+                203
+              ],
+              [
+                762,
+                150
+              ]
+            ],
+            [
+              [
+                601,
+                347
+              ],
+              [
+                618,
+                341
+              ],
+              [
+                644,
+                315
+              ],
+              [
+                632,
+                172
+              ],
+              [
+                605,
+                92
+              ],
+              [
+                577,
+                55
+              ],
+              [
+                537,
+                27
+              ],
+              [
+                473,
+                -1
+              ],
+              [
+                430,
+                -7
+              ]
+            ],
+            [
+              [
+                700,
+                121
+              ],
+              [
+                804,
+                32
+              ],
+              [
+                820,
+                6
+              ],
+              [
+                828,
+                -24
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-9988-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0675",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "different; distinct",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "不同"
+              },
+              {
+                "value": "bùtóng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu4tong2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "不同",
+              "pinyin": "bùtóng",
+              "meaning": "different; distinct",
+              "audio": "93351b89046a885fc45c22ce93a4403ad58f5f360d6f7e3997aeb09e12539a79",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9988-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-9988",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to give; to present",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "馈"
+              },
+              {
+                "value": "kuì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "kui4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "馈",
+              "pinyin": "kuì",
+              "meaning": "to give; to present",
+              "audio": "b6fa076e32ba1c6cc1836245c825a02b6db1ec8734107a0f499d228a91a159e0",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "b6fa076e32ba1c6cc1836245c825a02b6db1ec8734107a0f499d228a91a159e0"
+            ],
+            "transcript": [
+              {
+                "text": "馈",
+                "pinyin": "kuì",
+                "meaning": "to give; to present",
+                "audio": "b6fa076e32ba1c6cc1836245c825a02b6db1ec8734107a0f499d228a91a159e0",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-9988",
+      "character": "馈",
+      "lessonIds": [
+        "LESSON-C-9988"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-9988-word",
+        "EX-CHAR-char-9988-recognize",
+        "EX-CHAR-char-9988-write",
+        "EX-CHAR-char-9988-familiar",
+        "EX-CHAR-char-9988-recall"
+      ]
+    },
+    "audio": {
+      "821cd21ae95b007baf589687af1e5e0099a9e128006a8f5a7a3aa4b9b57be65d": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/fbb0033a44a193983317185b6320f81a85e86f1babe491c69a4af158acde7d33.mp3",
+          "sha256": "fbb0033a44a193983317185b6320f81a85e86f1babe491c69a4af158acde7d33",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "fbb0033a44a193983317185b6320f81a85e86f1babe491c69a4af158acde7d33",
+            "text": "聚",
+            "words": [
+              {
+                "text": "聚",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/05871aceaa3b48ad8cb47a6691c5a00a645d74a8a2c302e90693c84fec061a78.mp3",
+          "sha256": "05871aceaa3b48ad8cb47a6691c5a00a645d74a8a2c302e90693c84fec061a78",
+          "byteLength": 6669,
+          "qualityWarning": "too-fast",
+          "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+          "readAlong": {
+            "audioSha256": "05871aceaa3b48ad8cb47a6691c5a00a645d74a8a2c302e90693c84fec061a78",
+            "text": "聚",
+            "words": [
+              {
+                "text": "聚",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "b6fa076e32ba1c6cc1836245c825a02b6db1ec8734107a0f499d228a91a159e0": {
+        "female": {
+          "url": "/exercise-assets/audio/course-female-76cb866a6c13b1b83d2736cf98c9dcd56f53e26b8f4dbf397eb471f57b308262.mp3",
+          "sha256": "76cb866a6c13b1b83d2736cf98c9dcd56f53e26b8f4dbf397eb471f57b308262",
+          "byteLength": 8973,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "76cb866a6c13b1b83d2736cf98c9dcd56f53e26b8f4dbf397eb471f57b308262",
+            "text": "馈",
+            "words": [
+              {
+                "text": "馈",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-bd65e81cf7b0d77c797466e085e995568983321522c1bf351d5f3486148f526b.mp3",
+          "sha256": "bd65e81cf7b0d77c797466e085e995568983321522c1bf351d5f3486148f526b",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "bd65e81cf7b0d77c797466e085e995568983321522c1bf351d5f3486148f526b",
+            "text": "馈",
+            "words": [
+              {
+                "text": "馈",
+                "start": 0.18,
+                "end": 0.26
+              }
+            ]
+          }
+        }
+      },
+      "524057b90512d2838a51c473d568bafc7af8fc5568b3ea927f35c6787cd1593c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-06e01ce40586b3524db6a9c1fd1dfe3cdfd54ade31a5736fbb80279ea4cec7d4.mp3",
+          "sha256": "06e01ce40586b3524db6a9c1fd1dfe3cdfd54ade31a5736fbb80279ea4cec7d4",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "06e01ce40586b3524db6a9c1fd1dfe3cdfd54ade31a5736fbb80279ea4cec7d4",
+            "text": "有些",
+            "words": [
+              {
+                "text": "有些",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-088c050c2c11213b7e9d2264baa00587f4576056f864548f9adb5aa4b5266711.mp3",
+          "sha256": "088c050c2c11213b7e9d2264baa00587f4576056f864548f9adb5aa4b5266711",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "088c050c2c11213b7e9d2264baa00587f4576056f864548f9adb5aa4b5266711",
+            "text": "有些",
+            "words": [
+              {
+                "text": "有些",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "93351b89046a885fc45c22ce93a4403ad58f5f360d6f7e3997aeb09e12539a79": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-a17158386741ace7be30481589438bf8f58257b628f7af9134c6c077baeaa72f.mp3",
+          "sha256": "a17158386741ace7be30481589438bf8f58257b628f7af9134c6c077baeaa72f",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "a17158386741ace7be30481589438bf8f58257b628f7af9134c6c077baeaa72f",
+            "text": "不同",
+            "words": [
+              {
+                "text": "不同",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-7b215caa25fcae5cdc4cbacd6d2d62a0ff7b55ab551d18323c6dde2824163d1d.mp3",
+          "sha256": "7b215caa25fcae5cdc4cbacd6d2d62a0ff7b55ab551d18323c6dde2824163d1d",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "7b215caa25fcae5cdc4cbacd6d2d62a0ff7b55ab551d18323c6dde2824163d1d",
+            "text": "不同",
+            "words": [
+              {
+                "text": "不同",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "fe04078effcdb60b20ede7615034c552d337893384e19bc459e4f03beef45107": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/adf4d8902c70fd6c30bf9b537ba28414492cfb7995229dabe5d2d3957f3bd52c.mp3",
+          "sha256": "adf4d8902c70fd6c30bf9b537ba28414492cfb7995229dabe5d2d3957f3bd52c",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "adf4d8902c70fd6c30bf9b537ba28414492cfb7995229dabe5d2d3957f3bd52c",
+            "text": "反馈",
+            "words": [
+              {
+                "text": "反馈",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/be40fd62e70a2d910a4f754f2dadcacb69aefc357ec1a56784b7557f107c9e75.mp3",
+          "sha256": "be40fd62e70a2d910a4f754f2dadcacb69aefc357ec1a56784b7557f107c9e75",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "be40fd62e70a2d910a4f754f2dadcacb69aefc357ec1a56784b7557f107c9e75",
+            "text": "反馈",
+            "words": [
+              {
+                "text": "反馈",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

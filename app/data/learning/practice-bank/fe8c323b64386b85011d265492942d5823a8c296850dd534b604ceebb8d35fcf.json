@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W-SYL-1473",
+  "targetId": "W-SYL-1473",
+  "steps": [
+    {
+      "id": "BANK-W-SYL-1473-W-SYL-1473",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W-SYL-1473-W-SYL-1473",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "liang (50-gram weight unit in mainland usage)",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "两"
+            },
+            {
+              "value": "liǎng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "liang3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "两",
+            "pinyin": "liǎng",
+            "meaning": "liang (50-gram weight unit in mainland usage)",
+            "singleWord": true,
+            "audio": "cb06084eb71b00913d28b443480e0dbd02f87639275bd2d807b132a533e0b84b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "cb06084eb71b00913d28b443480e0dbd02f87639275bd2d807b132a533e0b84b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-12114ff467e2dabbe13af8b6947127dcf7e2c6a98fb515cf8ebf13908f0b117c.mp3",
+        "sha256": "12114ff467e2dabbe13af8b6947127dcf7e2c6a98fb515cf8ebf13908f0b117c",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "12114ff467e2dabbe13af8b6947127dcf7e2c6a98fb515cf8ebf13908f0b117c",
+          "text": "两",
+          "words": [
+            {
+              "text": "两",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-506908522937668afc1d5b67990cd348ddd1e2ce6a730c8aa2538d03fe372c0c.mp3",
+        "sha256": "506908522937668afc1d5b67990cd348ddd1e2ce6a730c8aa2538d03fe372c0c",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "506908522937668afc1d5b67990cd348ddd1e2ce6a730c8aa2538d03fe372c0c",
+          "text": "两",
+          "words": [
+            {
+              "text": "两",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W-SYL-1473",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W-SYL-1473-W-SYL-1473",
+      "question_ids": [
+        "BANK-W-SYL-1473-W-SYL-1473"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-38",
+    "stepId": "S-U4-38-r5-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6a21"
+    ],
+    "grammarLessonIds": []
+  }
+}

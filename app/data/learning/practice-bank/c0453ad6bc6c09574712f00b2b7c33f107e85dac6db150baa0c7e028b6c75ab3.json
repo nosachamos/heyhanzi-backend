@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1848",
+  "targetId": "W1848",
+  "steps": [
+    {
+      "id": "BANK-W1848-W1848",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1848-W1848",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "street food; snack",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "小吃"
+            },
+            {
+              "value": "xiǎochī",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xiao3chi1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "小吃",
+            "pinyin": "xiǎochī",
+            "meaning": "street food; snack",
+            "singleWord": true,
+            "audio": "28be58b2a9b377eef373d2f437f1f466b2b714ebeca85f54775e9b9342f190d9"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "28be58b2a9b377eef373d2f437f1f466b2b714ebeca85f54775e9b9342f190d9": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5f6919bcedeccb7cd95f0ca5dba27963abd659ce842f9162305c7375efca64ed.mp3",
+        "sha256": "5f6919bcedeccb7cd95f0ca5dba27963abd659ce842f9162305c7375efca64ed",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "5f6919bcedeccb7cd95f0ca5dba27963abd659ce842f9162305c7375efca64ed",
+          "text": "小吃",
+          "words": [
+            {
+              "text": "小吃",
+              "start": 0.2,
+              "end": 0.6
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-41f94cf8db177c6818994959cbd119898b4802102a5d52d739fef5a58154e30c.mp3",
+        "sha256": "41f94cf8db177c6818994959cbd119898b4802102a5d52d739fef5a58154e30c",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "41f94cf8db177c6818994959cbd119898b4802102a5d52d739fef5a58154e30c",
+          "text": "小吃",
+          "words": [
+            {
+              "text": "小吃",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1848",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1848-W1848",
+      "question_ids": [
+        "BANK-W1848-W1848"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-08",
+    "stepId": "S-U4-08-words-r4-15",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5403"
+    ],
+    "grammarLessonIds": []
+  }
+}

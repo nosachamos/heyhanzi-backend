@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2175",
+  "targetId": "W2175",
+  "steps": [
+    {
+      "id": "BANK-W2175-W2175",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2175-W2175",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "member",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "成员"
+            },
+            {
+              "value": "chéngyuán",
+              "mode": "pinyin"
+            },
+            {
+              "value": "cheng2yuan2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "成员",
+            "pinyin": "chéngyuán",
+            "meaning": "member",
+            "singleWord": true,
+            "audio": "9cb9a6a445cda6b3f8c7e42d15baeb3c4de831d3cb9fc52e5bb5e621056e9076"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "9cb9a6a445cda6b3f8c7e42d15baeb3c4de831d3cb9fc52e5bb5e621056e9076": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-7f5ff79ff63093800ccf278614ce871aa51bf0ee090b133eccea4c4e07e414a0.mp3",
+        "sha256": "7f5ff79ff63093800ccf278614ce871aa51bf0ee090b133eccea4c4e07e414a0",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "7f5ff79ff63093800ccf278614ce871aa51bf0ee090b133eccea4c4e07e414a0",
+          "text": "成员",
+          "words": [
+            {
+              "text": "成员",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-7a4fb234245d301fca447405eb92b6c741d15a9a32d9dfa43d952a2554080012.mp3",
+        "sha256": "7a4fb234245d301fca447405eb92b6c741d15a9a32d9dfa43d952a2554080012",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "7a4fb234245d301fca447405eb92b6c741d15a9a32d9dfa43d952a2554080012",
+          "text": "成员",
+          "words": [
+            {
+              "text": "成员",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2175",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2175-W2175",
+      "question_ids": [
+        "BANK-W2175-W2175"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-02",
+    "stepId": "S-U5-02-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5458"
+    ],
+    "grammarLessonIds": []
+  }
+}

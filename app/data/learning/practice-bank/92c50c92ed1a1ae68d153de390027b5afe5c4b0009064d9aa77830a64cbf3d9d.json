@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5020",
+  "targetId": "W5020",
+  "steps": [
+    {
+      "id": "BANK-W5020-W5020",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5020-W5020",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "bacterium; germ",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "细菌"
+            },
+            {
+              "value": "xìjūn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xi4jun1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "细菌",
+            "pinyin": "xìjūn",
+            "meaning": "bacterium; germ",
+            "singleWord": true,
+            "audio": "f4ef2541878320d84e7649eeefd6f72c0f3333952f537a51225f40ca4e9d83ea"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f4ef2541878320d84e7649eeefd6f72c0f3333952f537a51225f40ca4e9d83ea": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c79f915403048a2cfe372c4d185cc914122b02299745d22febaea3a0e99886d0.mp3",
+        "sha256": "c79f915403048a2cfe372c4d185cc914122b02299745d22febaea3a0e99886d0",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "c79f915403048a2cfe372c4d185cc914122b02299745d22febaea3a0e99886d0",
+          "text": "细菌",
+          "words": [
+            {
+              "text": "细菌",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/33849f9152de106c678d61454c6f0ce886f973a084673f12ee5bc4f2fbd87558.mp3",
+        "sha256": "33849f9152de106c678d61454c6f0ce886f973a084673f12ee5bc4f2fbd87558",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "33849f9152de106c678d61454c6f0ce886f973a084673f12ee5bc4f2fbd87558",
+          "text": "细菌",
+          "words": [
+            {
+              "text": "细菌",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5020",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5020-W5020",
+      "question_ids": [
+        "BANK-W5020-W5020"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-15",
+    "stepId": "S-U6-15-words-r4-15",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-83cc"
+    ],
+    "grammarLessonIds": []
+  }
+}

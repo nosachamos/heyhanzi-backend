@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1613",
+  "targetId": "W1613",
+  "steps": [
+    {
+      "id": "BANK-W1613-W1613",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1613-W1613",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "kilogram",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "千克"
+            },
+            {
+              "value": "qiānkè",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qian1ke4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "千克",
+            "pinyin": "qiānkè",
+            "meaning": "kilogram",
+            "singleWord": true,
+            "audio": "e2e0ca6ed63d2c4c46179f7088ef55368b9306a7329f33ea98c10fa99f1271f1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e2e0ca6ed63d2c4c46179f7088ef55368b9306a7329f33ea98c10fa99f1271f1": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/df93707acbd7fc3f6d0c119f656a682e222a231243e76e7e96236d208a5f70a7.mp3",
+        "sha256": "df93707acbd7fc3f6d0c119f656a682e222a231243e76e7e96236d208a5f70a7",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "df93707acbd7fc3f6d0c119f656a682e222a231243e76e7e96236d208a5f70a7",
+          "text": "千克",
+          "words": [
+            {
+              "text": "千克",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9ae940dd00fa60ce4094f34c3164b7566753050e62488bc5c7e0cb12cc076147.mp3",
+        "sha256": "9ae940dd00fa60ce4094f34c3164b7566753050e62488bc5c7e0cb12cc076147",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "9ae940dd00fa60ce4094f34c3164b7566753050e62488bc5c7e0cb12cc076147",
+          "text": "千克",
+          "words": [
+            {
+              "text": "千克",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1613",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1613-W1613",
+      "question_ids": [
+        "BANK-W1613-W1613"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-10-P01",
+    "stepId": "S-U4-10-words-r4-15",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-514b"
+    ],
+    "grammarLessonIds": []
+  }
+}

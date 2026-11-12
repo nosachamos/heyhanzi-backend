@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3070",
+  "targetId": "W3070",
+  "steps": [
+    {
+      "id": "BANK-W3070-W3070",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3070-W3070",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "handwork; manual",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "手工"
+            },
+            {
+              "value": "shǒugōng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shou3gong1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "手工",
+            "pinyin": "shǒugōng",
+            "meaning": "handwork; manual",
+            "singleWord": true,
+            "audio": "e775d9280daf554bd930c98a3aa9965ec39a37fd2840c8b102721d1060920a45"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e775d9280daf554bd930c98a3aa9965ec39a37fd2840c8b102721d1060920a45": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f00e9b34c301627bf49cac4595f017caeb29925a42390db2bc0aff470bf50e0c.mp3",
+        "sha256": "f00e9b34c301627bf49cac4595f017caeb29925a42390db2bc0aff470bf50e0c",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "f00e9b34c301627bf49cac4595f017caeb29925a42390db2bc0aff470bf50e0c",
+          "text": "手工",
+          "words": [
+            {
+              "text": "手工",
+              "start": 0.21,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-6f35824a47d39b7ff2552989f9d9fc7f49e6f6315928d9ce983162e459d4bc74.mp3",
+        "sha256": "6f35824a47d39b7ff2552989f9d9fc7f49e6f6315928d9ce983162e459d4bc74",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "6f35824a47d39b7ff2552989f9d9fc7f49e6f6315928d9ce983162e459d4bc74",
+          "text": "手工",
+          "words": [
+            {
+              "text": "手工",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3070",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3070-W3070",
+      "question_ids": [
+        "BANK-W3070-W3070"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-03",
+    "stepId": "S-U5-03-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5de5"
+    ],
+    "grammarLessonIds": []
+  }
+}

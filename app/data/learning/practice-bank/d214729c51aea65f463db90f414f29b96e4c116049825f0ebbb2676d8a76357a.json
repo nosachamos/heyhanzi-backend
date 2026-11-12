@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0020",
+  "targetId": "W0020",
+  "steps": [
+    {
+      "id": "BANK-W0020-W0020",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0020-W0020",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "student; schoolchild",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "学生"
+            },
+            {
+              "value": "xuéshēng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xue2sheng1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "学生",
+            "pinyin": "xuéshēng",
+            "meaning": "student; schoolchild",
+            "singleWord": true,
+            "audio": "3a595882d466c8b7a59f2ff0b72dbf61cb896d106d43e5462367c735b4260cbb"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3a595882d466c8b7a59f2ff0b72dbf61cb896d106d43e5462367c735b4260cbb": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a278a1851ff432acc6cdad1fb6578dcff0a3d53ee79ca92eaa401ee69bb23b1e.mp3",
+        "sha256": "a278a1851ff432acc6cdad1fb6578dcff0a3d53ee79ca92eaa401ee69bb23b1e",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "a278a1851ff432acc6cdad1fb6578dcff0a3d53ee79ca92eaa401ee69bb23b1e",
+          "text": "学生",
+          "words": [
+            {
+              "text": "学生",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3d6b5aa9966ff2b1e895415e187e1f99b1f7ae4ef20763bde54bb03ab7aa04b1.mp3",
+        "sha256": "3d6b5aa9966ff2b1e895415e187e1f99b1f7ae4ef20763bde54bb03ab7aa04b1",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "3d6b5aa9966ff2b1e895415e187e1f99b1f7ae4ef20763bde54bb03ab7aa04b1",
+          "text": "学生",
+          "words": [
+            {
+              "text": "学生",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0020",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0020-W0020",
+      "question_ids": [
+        "BANK-W0020-W0020"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U02-P01",
+    "stepId": "S-U02-words-r4-5",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-751f"
+    ],
+    "grammarLessonIds": []
+  }
+}

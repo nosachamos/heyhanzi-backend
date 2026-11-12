@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1081",
+  "targetId": "W1081",
+  "steps": [
+    {
+      "id": "BANK-W1081-W1081",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1081-W1081",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "undergraduate course; undergraduate",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "本科"
+            },
+            {
+              "value": "běnkē",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ben3ke1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "本科",
+            "pinyin": "běnkē",
+            "meaning": "undergraduate course; undergraduate",
+            "singleWord": true,
+            "audio": "1c3b511fc666e478694ca3bea3198431e949c9641c2fb02b823bbb70e7eabdbd"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1c3b511fc666e478694ca3bea3198431e949c9641c2fb02b823bbb70e7eabdbd": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/aeede94eb83406e99bdcc589d52c750735d872f20c659f2439610ca5c63a4d82.mp3",
+        "sha256": "aeede94eb83406e99bdcc589d52c750735d872f20c659f2439610ca5c63a4d82",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "aeede94eb83406e99bdcc589d52c750735d872f20c659f2439610ca5c63a4d82",
+          "text": "本科",
+          "words": [
+            {
+              "text": "本科",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2cbb5a1f824be25bc0787f0f5e3e6643797fb857b50791be87b0f9e922516dae.mp3",
+        "sha256": "2cbb5a1f824be25bc0787f0f5e3e6643797fb857b50791be87b0f9e922516dae",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "2cbb5a1f824be25bc0787f0f5e3e6643797fb857b50791be87b0f9e922516dae",
+          "text": "本科",
+          "words": [
+            {
+              "text": "本科",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1081",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1081-W1081",
+      "question_ids": [
+        "BANK-W1081-W1081"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-19",
+    "stepId": "S-U4-19-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-79d1"
+    ],
+    "grammarLessonIds": []
+  }
+}

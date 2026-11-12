@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0826",
+  "targetId": "W0826",
+  "steps": [
+    {
+      "id": "BANK-W0826-W0826",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0826-W0826",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "manager; director",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "经理"
+            },
+            {
+              "value": "jīnglǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jing1li3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "经理",
+            "pinyin": "jīnglǐ",
+            "meaning": "manager; director",
+            "singleWord": true,
+            "audio": "68626ed4b87c84053a666ced3c969f9de80d86708509dc073fa6bd88e159c878"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "68626ed4b87c84053a666ced3c969f9de80d86708509dc073fa6bd88e159c878": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-8649bca3488751c0174239ef41ca1ec7e208a118285bf393e3475130a2246602.mp3",
+        "sha256": "8649bca3488751c0174239ef41ca1ec7e208a118285bf393e3475130a2246602",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "8649bca3488751c0174239ef41ca1ec7e208a118285bf393e3475130a2246602",
+          "text": "经理",
+          "words": [
+            {
+              "text": "经理",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-47937df4fa8ec85fc46684eff8f6c10bb36ba5feb47aba3b95d7ee8b1a3c3643.mp3",
+        "sha256": "47937df4fa8ec85fc46684eff8f6c10bb36ba5feb47aba3b95d7ee8b1a3c3643",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "47937df4fa8ec85fc46684eff8f6c10bb36ba5feb47aba3b95d7ee8b1a3c3643",
+          "text": "经理",
+          "words": [
+            {
+              "text": "经理",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0826",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0826-W0826",
+      "question_ids": [
+        "BANK-W0826-W0826"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-14",
+    "stepId": "S-U3-14-words-r4-4",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7406"
+    ],
+    "grammarLessonIds": []
+  }
+}

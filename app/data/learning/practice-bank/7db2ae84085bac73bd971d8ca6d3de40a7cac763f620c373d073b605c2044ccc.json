@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5310",
+  "targetId": "W5310",
+  "steps": [
+    {
+      "id": "BANK-W5310-W5310",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5310-W5310",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to work a shift; on duty",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "值班"
+            },
+            {
+              "value": "zhíbān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhi2ban1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "值班",
+            "pinyin": "zhíbān",
+            "meaning": "to work a shift; on duty",
+            "singleWord": true,
+            "audio": "f5cedbd8c88a4b375c4e9e35590d9b546034550477ef3b07f64e03f7a7c6ca6d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f5cedbd8c88a4b375c4e9e35590d9b546034550477ef3b07f64e03f7a7c6ca6d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d155f6cbca64e510fe15a3b0e74043429131621c99fa6a14d4fb3ae0ffbb05b2.mp3",
+        "sha256": "d155f6cbca64e510fe15a3b0e74043429131621c99fa6a14d4fb3ae0ffbb05b2",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "d155f6cbca64e510fe15a3b0e74043429131621c99fa6a14d4fb3ae0ffbb05b2",
+          "text": "值班",
+          "words": [
+            {
+              "text": "值班",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-a24aff7ffd54f62fa8437e230c08310719f588d2a318ace507274ad09854b30e.mp3",
+        "sha256": "a24aff7ffd54f62fa8437e230c08310719f588d2a318ace507274ad09854b30e",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "a24aff7ffd54f62fa8437e230c08310719f588d2a318ace507274ad09854b30e",
+          "text": "值班",
+          "words": [
+            {
+              "text": "值班",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5310",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5310-W5310",
+      "question_ids": [
+        "BANK-W5310-W5310"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-22",
+    "stepId": "S-U6-22-working-word-2",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-503c"
+    ],
+    "grammarLessonIds": []
+  }
+}

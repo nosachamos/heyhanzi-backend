@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1381",
+  "targetId": "W1381",
+  "steps": [
+    {
+      "id": "BANK-W1381-W1381",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1381-W1381",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to work overtime",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "加班"
+            },
+            {
+              "value": "jiābān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jia1ban1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "加班",
+            "pinyin": "jiābān",
+            "meaning": "to work overtime",
+            "singleWord": true,
+            "audio": "47dd0c7cde7e921a37fe52d53b193472257632a3ecc436d8265208588990d551"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "47dd0c7cde7e921a37fe52d53b193472257632a3ecc436d8265208588990d551": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1b6f915d77242296ebb93ab30879746462d7f8e5fb4a2cfedd762001c27b88b3.mp3",
+        "sha256": "1b6f915d77242296ebb93ab30879746462d7f8e5fb4a2cfedd762001c27b88b3",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "1b6f915d77242296ebb93ab30879746462d7f8e5fb4a2cfedd762001c27b88b3",
+          "text": "加班",
+          "words": [
+            {
+              "text": "加班",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-5c83898424bcd9e0eb28f1189a0a6d3ba8a0702089a1ebcb4f3e6916495df6be.mp3",
+        "sha256": "5c83898424bcd9e0eb28f1189a0a6d3ba8a0702089a1ebcb4f3e6916495df6be",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "5c83898424bcd9e0eb28f1189a0a6d3ba8a0702089a1ebcb4f3e6916495df6be",
+          "text": "加班",
+          "words": [
+            {
+              "text": "加班",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1381",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1381-W1381",
+      "question_ids": [
+        "BANK-W1381-W1381"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-21",
+    "stepId": "S-U4-21-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-52a0"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "id": "EX-GRAM-G-hsk5-distributed-actions",
+  "revision": 4,
+  "unit": "U5-47",
+  "stage": "ST-HSK5",
+  "after": "S-U5-47-working-gram-1",
+  "activity": "ACT-GRAM",
+  "title": "Different people, different activities",
+  "optional": false,
+  "partCount": 3,
+  "partTitles": [
+    "Different people, different activities",
+    "Understand the pattern",
+    "Use the pattern"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "W0380",
+        "text": "大家",
+        "pinyin": "dàjiā",
+        "meaning": "everyone",
+        "characters": [
+          {
+            "id": "C-5927",
+            "text": "大"
+          },
+          {
+            "id": "C-5BB6",
+            "text": "家"
+          }
+        ]
+      },
+      {
+        "id": "W0012",
+        "text": "看",
+        "pinyin": "kàn",
+        "meaning": "to see; to look at",
+        "characters": [
+          {
+            "id": "C-770B",
+            "text": "看"
+          }
+        ]
+      },
+      {
+        "id": "W0030",
+        "text": "的",
+        "pinyin": "de",
+        "meaning": "of; ’s",
+        "characters": [
+          {
+            "id": "C-7684",
+            "text": "的"
+          }
+        ]
+      },
+      {
+        "id": "W0239",
+        "text": "写",
+        "pinyin": "xiě",
+        "meaning": "to write",
+        "characters": [
+          {
+            "id": "C-5199",
+            "text": "写"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [
+        "G-nominal-de"
+      ],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "coverage": [],
+  "sourceStepId": "S-U5-47-working-gram-1",
+  "fingerprint": "4a6fed0116df7aec830eb91c00b0b25a4db3593335e3d2f3b14671edcf3c4e92",
+  "definition": {
+    "id": "ACT-GRAM",
+    "revision": 4,
+    "title": "Different people, different activities",
+    "subtitle": "Learn, understand, and use a Mandarin pattern.",
+    "context": "Use the introduced pattern in a bounded sentence. Other wording may be valid Chinese; this task checks this pattern and these words.",
+    "steps": [
+      {
+        "id": "EX-GRAM-G-hsk5-distributed-actions-teach",
+        "kind": "teach",
+        "title": "Different people, different activities",
+        "blocks": [
+          {
+            "text": "The repeated nominalised groups divide participants by their respective activity. It does not say that every participant does both actions.",
+            "examples": [
+              {
+                "text": "大家看的看，写的写。",
+                "pinyin": "dàjiā kàn de kàn ， xiě de xiě 。",
+                "meaning": "Some read while others write.",
+                "audio": "8412853d646bf4019f6fdaa71bd66e9e63b03f6b294f6dd3ce03dbb94fcde07f"
+              }
+            ]
+          },
+          {
+            "title": "Words used in this pattern",
+            "examples": [
+              {
+                "text": "的",
+                "pinyin": "de",
+                "meaning": "of; ’s",
+                "singleWord": true,
+                "audio": "bda436099e942c6cf4b9d1250f2cd9f0c5ed1d3ffab99f43e219abcbf5324cab"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EX-GRAM-G-hsk5-distributed-actions-facet-1-meaning",
+        "kind": "check",
+        "title": "Understand the pattern",
+        "questions": [
+          {
+            "id": "EX-GRAM-G-hsk5-distributed-actions-facet-1-meaning",
+            "kind": "choice",
+            "prompt": "Choose the meaning of this sentence.",
+            "label": "Understand the pattern",
+            "display": {
+              "text": "大家看的看，写的写。",
+              "pinyin": "dàjiā kàn de kàn ， xiě de xiě 。",
+              "meaning": "Some read while others write.",
+              "audio": "8412853d646bf4019f6fdaa71bd66e9e63b03f6b294f6dd3ce03dbb94fcde07f"
+            },
+            "resultDomain": "Grammar comprehension",
+            "choices": [
+              {
+                "id": "contrast",
+                "label": "Everyone reads and writes at the same time, with no division of activities.",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Some read while others write. The repeated nominalised groups divide participants by their respective activity. It does not say that every participant does both actions."
+              },
+              {
+                "id": "meaning",
+                "label": "Some read while others write.",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "The repeated nominalised groups divide participants by their respective activity. It does not say that every participant does both actions."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EX-GRAM-G-hsk5-distributed-actions-facet-1-produce",
+        "kind": "check",
+        "title": "Use the pattern",
+        "questions": [
+          {
+            "id": "EX-GRAM-G-hsk5-distributed-actions-facet-1-produce",
+            "kind": "text",
+            "prompt": "Write this meaning in Chinese using the pattern and words just introduced.",
+            "label": "Use the pattern",
+            "context": "Some read while others write.",
+            "contextLanguage": "en",
+            "resultDomain": "Constrained grammar use",
+            "accepted": [
+              {
+                "value": "大家看的看，写的写。",
+                "mode": "hanzi"
+              },
+              {
+                "value": "dàjiā kàn de kàn ， xiě de xiě 。",
+                "mode": "pinyin"
+              },
+              {
+                "value": "da4jia1kan4de5kan4xie3de5xie3",
+                "mode": "pinyin"
+              }
+            ],
+            "rule": "sentence",
+            "pinyin": true,
+            "model": {
+              "text": "大家看的看，写的写。",
+              "pinyin": "dàjiā kàn de kàn ， xiě de xiě 。",
+              "meaning": "Some read while others write.",
+              "audio": "8412853d646bf4019f6fdaa71bd66e9e63b03f6b294f6dd3ce03dbb94fcde07f"
+            },
+            "hint": "The repeated nominalised groups divide participants by their respective activity. It does not say that every participant does both actions."
+          }
+        ]
+      }
+    ],
+    "summary": "You practiced this grammar pattern. This result does not grant mastery of other lessons.",
+    "instanceId": "EX-GRAM-G-hsk5-distributed-actions",
+    "setActivity": {
+      "schema": "course-practice-v1",
+      "partIds": [
+        "EX-GRAM-G-hsk5-distributed-actions-teach",
+        "EX-GRAM-G-hsk5-distributed-actions-facet-1-meaning",
+        "EX-GRAM-G-hsk5-distributed-actions-facet-1-produce"
+      ],
+      "targets": [
+        "G-hsk5-distributed-actions"
+      ],
+      "completion": "checked-practice"
+    },
+    "audio": {
+      "8412853d646bf4019f6fdaa71bd66e9e63b03f6b294f6dd3ce03dbb94fcde07f": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1c79e4ba764b26bdc19b5b13f379049de0387d714051aabe1e2e1dc226a01c4f.mp3",
+          "sha256": "1c79e4ba764b26bdc19b5b13f379049de0387d714051aabe1e2e1dc226a01c4f",
+          "byteLength": 40077,
+          "readAlong": {
+            "audioSha256": "1c79e4ba764b26bdc19b5b13f379049de0387d714051aabe1e2e1dc226a01c4f",
+            "text": "大家看的看，写的写。",
+            "words": [
+              {
+                "text": "大家",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              },
+              {
+                "text": "看",
+                "start": 0.69,
+                "end": 0.75
+              },
+              {
+                "text": "的",
+                "start": 1.05,
+                "end": 1.1099999999999999
+              },
+              {
+                "text": "看",
+                "start": 1.23,
+                "end": 1.2899999999999998
+              },
+              {
+                "text": "，"
+              },
+              {
+                "text": "写",
+                "start": 2.0100000000000002,
+                "end": 2.0700000000000003
+              },
+              {
+                "text": "的",
+                "start": 2.43,
+                "end": 2.49
+              },
+              {
+                "text": "写",
+                "start": 2.61,
+                "end": 2.67
+              },
+              {
+                "text": "。"
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d406614d7f2148a8544ee3788a1a4bf4f4d197fe5ddfdc8060813f2e27e7bc2e.mp3",
+          "sha256": "d406614d7f2148a8544ee3788a1a4bf4f4d197fe5ddfdc8060813f2e27e7bc2e",
+          "byteLength": 30285,
+          "readAlong": {
+            "audioSha256": "d406614d7f2148a8544ee3788a1a4bf4f4d197fe5ddfdc8060813f2e27e7bc2e",
+            "text": "大家看的看，写的写。",
+            "words": [
+              {
+                "text": "大家",
+                "start": 0.2,
+                "end": 0.52
+              },
+              {
+                "text": "看",
+                "start": 0.7000000000000001,
+                "end": 0.78
+              },
+              {
+                "text": "的",
+                "start": 0.88,
+                "end": 0.96
+              },
+              {
+                "text": "看",
+                "start": 1.06,
+                "end": 1.16
+              },
+              {
+                "text": "，"
+              },
+              {
+                "text": "写",
+                "start": 1.56,
+                "end": 1.68
+              },
+              {
+                "text": "的",
+                "start": 1.78,
+                "end": 1.86
+              },
+              {
+                "text": "写",
+                "start": 1.96,
+                "end": 2.08
+              },
+              {
+                "text": "。"
+              }
+            ]
+          }
+        }
+      },
+      "bda436099e942c6cf4b9d1250f2cd9f0c5ed1d3ffab99f43e219abcbf5324cab": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-4b2c467bab20d2c70bdafc657f37f1bee5a5dbc7083eb71222215f4d02f66b62.mp3",
+          "sha256": "4b2c467bab20d2c70bdafc657f37f1bee5a5dbc7083eb71222215f4d02f66b62",
+          "byteLength": 8973,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "4b2c467bab20d2c70bdafc657f37f1bee5a5dbc7083eb71222215f4d02f66b62",
+            "text": "的",
+            "words": [
+              {
+                "text": "的",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-bc9de007b848d16c698da0a6c23224dfb7c407d0e12ccc47b4a4782f71b379b3.mp3",
+          "sha256": "bc9de007b848d16c698da0a6c23224dfb7c407d0e12ccc47b4a4782f71b379b3",
+          "byteLength": 9549,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "bc9de007b848d16c698da0a6c23224dfb7c407d0e12ccc47b4a4782f71b379b3",
+            "text": "的",
+            "words": [
+              {
+                "text": "的",
+                "start": 0.115,
+                "end": 0.525
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

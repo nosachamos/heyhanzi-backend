@@ -1,0 +1,92 @@
+{
+  "id": "BANK-C-6587",
+  "targetId": "C-6587",
+  "steps": [
+    {
+      "id": "BANK-C-6587-C-6587",
+      "kind": "check",
+      "title": "Recall a familiar character",
+      "questions": [
+        {
+          "id": "BANK-C-6587-C-6587",
+          "kind": "text",
+          "prompt": "Recall the introduced character. Type the Hanzi; handwriting is practised separately.",
+          "label": "Retrieve the character",
+          "context": "Second character of the familiar word meaning: Chinese (language)",
+          "contextLanguage": "en",
+          "resultDomain": "Typed character-form retrieval",
+          "rule": "word",
+          "accepted": [
+            {
+              "value": "文"
+            }
+          ],
+          "model": {
+            "text": "中文",
+            "pinyin": "Zhōngwén",
+            "meaning": "Chinese (language)",
+            "audio": "eedd214ca778fd3640ff550989bc8bb96258bb5ac84bb2bbc0d2fee204e46194",
+            "singleWord": true,
+            "focus": "文"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "eedd214ca778fd3640ff550989bc8bb96258bb5ac84bb2bbc0d2fee204e46194": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f6c0c419470d4d633f5923ffc7677df9f2bedcb20cd80fdae0102ba291fffd1a.mp3",
+        "sha256": "f6c0c419470d4d633f5923ffc7677df9f2bedcb20cd80fdae0102ba291fffd1a",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "f6c0c419470d4d633f5923ffc7677df9f2bedcb20cd80fdae0102ba291fffd1a",
+          "text": "中文",
+          "words": [
+            {
+              "text": "中文",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-a8467d7955c3181549ff2ff961506983f34e564f53f0ef0bf102c71cb2c9911c.mp3",
+        "sha256": "a8467d7955c3181549ff2ff961506983f34e564f53f0ef0bf102c71cb2c9911c",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "a8467d7955c3181549ff2ff961506983f34e564f53f0ef0bf102c71cb2c9911c",
+          "text": "中文",
+          "words": [
+            {
+              "text": "中文",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "C-6587",
+      "facet_id": "typed-character-form-retrieval",
+      "part_id": "BANK-C-6587-C-6587",
+      "question_ids": [
+        "BANK-C-6587-C-6587"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU03",
+    "stepId": "S-WU03-characters-r4-7",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-zhongwen"
+    ],
+    "grammarLessonIds": []
+  }
+}

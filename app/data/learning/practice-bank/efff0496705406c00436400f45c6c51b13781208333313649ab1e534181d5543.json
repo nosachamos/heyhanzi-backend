@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0516",
+  "targetId": "W0516",
+  "steps": [
+    {
+      "id": "BANK-W0516-W0516",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0516-W0516",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to wrap; package; counter for packages",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "包"
+            },
+            {
+              "value": "bāo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bao1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "包",
+            "pinyin": "bāo",
+            "meaning": "to wrap; package; counter for packages",
+            "singleWord": true,
+            "audio": "f32c8187adce3e3f408fb4176b3be7892a77a9fe8e27a8836f5842181d12efb0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f32c8187adce3e3f408fb4176b3be7892a77a9fe8e27a8836f5842181d12efb0": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2702b94081b46aac89df50c3014103a7f554bc36ba6aa2e4b84f725983bfb76a.mp3",
+        "sha256": "2702b94081b46aac89df50c3014103a7f554bc36ba6aa2e4b84f725983bfb76a",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "2702b94081b46aac89df50c3014103a7f554bc36ba6aa2e4b84f725983bfb76a",
+          "text": "包",
+          "words": [
+            {
+              "text": "包",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ddf8add54794baf2254e9ab28c3d90c3dac841a69a7ddbe6e28c4316e0cb4a36.mp3",
+        "sha256": "ddf8add54794baf2254e9ab28c3d90c3dac841a69a7ddbe6e28c4316e0cb4a36",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "ddf8add54794baf2254e9ab28c3d90c3dac841a69a7ddbe6e28c4316e0cb4a36",
+          "text": "包",
+          "words": [
+            {
+              "text": "包",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0516",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0516-W0516",
+      "question_ids": [
+        "BANK-W0516-W0516"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U20",
+    "stepId": "S-U20-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4e50"
+    ],
+    "grammarLessonIds": []
+  }
+}

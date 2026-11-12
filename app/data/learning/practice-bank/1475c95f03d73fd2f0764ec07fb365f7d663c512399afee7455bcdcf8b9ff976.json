@@ -1,0 +1,68 @@
+{
+  "id": "BANK-K-HSK1-interact",
+  "targetId": "K-HSK1-interact",
+  "steps": [
+    {
+      "id": "BANK-K-HSK1-interact-K-HSK1-interact-perform",
+      "kind": "check",
+      "title": "Use the skill in context",
+      "questions": [
+        {
+          "id": "BANK-K-HSK1-interact-K-HSK1-interact-perform",
+          "kind": "production",
+          "response": "spoken",
+          "prompt": "A teacher asks whether you are a student. Answer for yourself, then ask a peer the corresponding familiar identity question.",
+          "promptLanguage": "en",
+          "context": "A teacher asks whether you are a student. In this scene you are a student; the peer next to you has not stated their role. Answer the teacher, then ask the peer whether they are a student and pause for their reply.\nFamiliar meanings available: teacher; student; schoolchild; you, used respectfully; you.",
+          "contextLanguage": "en",
+          "label": "Take your speaking turn",
+          "resultDomain": "Self-reviewed speaking practice",
+          "rubric": [
+            {
+              "id": "r1",
+              "text": "I answered the question that was asked."
+            },
+            {
+              "id": "r2",
+              "text": "I changed speaker and listener roles when asking my question."
+            }
+          ]
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {},
+  "coverage": [
+    {
+      "target_id": "K-HSK1-interact",
+      "facet_id": "K-HSK1-interact-situated-performance",
+      "part_id": "BANK-K-HSK1-interact-K-HSK1-interact-perform",
+      "question_ids": [
+        "BANK-K-HSK1-interact-K-HSK1-interact-perform"
+      ],
+      "evidence": "self-reviewed",
+      "scope": "Exchange greetings and short identity questions with a teacher or peer; respond to the other turn.",
+      "stage_outcome_mastery": false
+    }
+  ],
+  "remediation": {
+    "unitId": "U02-P01",
+    "stepId": "S-U02-skill-K-HSK1-interact",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e08",
+      "mandarin-simplified-v1-char-751f",
+      "mandarin-simplified-v1-char-60a8",
+      "mandarin-simplified-v1-warmup-ni",
+      "mandarin-simplified-v1-warmup-ye",
+      "mandarin-simplified-v1-warmup-xue",
+      "mandarin-simplified-v1-warmup-zhongwen",
+      "mandarin-simplified-v1-warmup-ma",
+      "mandarin-simplified-v1-warmup-wo",
+      "mandarin-simplified-v1-warmup-bu"
+    ],
+    "grammarLessonIds": [
+      "EX-GRAM-G-question-ma"
+    ]
+  }
+}

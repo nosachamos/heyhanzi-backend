@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5242",
+  "targetId": "W5242",
+  "steps": [
+    {
+      "id": "BANK-W5242-W5242",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5242-W5242",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "the moon",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "月球"
+            },
+            {
+              "value": "yuèqiú",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yue4qiu2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "月球",
+            "pinyin": "yuèqiú",
+            "meaning": "the moon",
+            "singleWord": true,
+            "audio": "143f590b6ac3c1df75497e0e46da0fc72925768142d977744a8344712ce4cf0d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "143f590b6ac3c1df75497e0e46da0fc72925768142d977744a8344712ce4cf0d": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/4e51ff981152b86bc6489ea832400d6a59f8891e50d2c60db87a039ad867cb18.mp3",
+        "sha256": "4e51ff981152b86bc6489ea832400d6a59f8891e50d2c60db87a039ad867cb18",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "4e51ff981152b86bc6489ea832400d6a59f8891e50d2c60db87a039ad867cb18",
+          "text": "月球",
+          "words": [
+            {
+              "text": "月球",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5439a69bcb125446c5ce8d82cdadf155f290c0f824a0fb9fe097425f4d47caf0.mp3",
+        "sha256": "5439a69bcb125446c5ce8d82cdadf155f290c0f824a0fb9fe097425f4d47caf0",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "5439a69bcb125446c5ce8d82cdadf155f290c0f824a0fb9fe097425f4d47caf0",
+          "text": "月球",
+          "words": [
+            {
+              "text": "月球",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5242",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5242-W5242",
+      "question_ids": [
+        "BANK-W5242-W5242"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-28",
+    "stepId": "S-U6-28-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7403"
+    ],
+    "grammarLessonIds": []
+  }
+}

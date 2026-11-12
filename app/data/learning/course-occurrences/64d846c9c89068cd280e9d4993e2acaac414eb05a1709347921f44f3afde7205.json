@@ -1,0 +1,697 @@
+{
+  "id": "EX-CHAR-char-53bf",
+  "revision": 2,
+  "unit": "U5-17",
+  "stage": "ST-HSK5",
+  "after": "S-U5-17-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "县",
+  "sourceBlockId": "mandarin-simplified-v1-char-53bf",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-53bf",
+        "text": "县",
+        "pinyin": "xiàn",
+        "meaning": "county; (Japan) prefecture",
+        "characters": [
+          {
+            "id": "C-53BF",
+            "text": "县"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-93f29520f64642ed3f080cff",
+        "text": "县城",
+        "pinyin": "xiàn chéng",
+        "meaning": "county seat",
+        "characters": [
+          {
+            "id": "C-53BF",
+            "text": "县"
+          },
+          {
+            "id": "C-57CE",
+            "text": "城"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-c6d0891c7541b5123d1231d6",
+        "text": "掉头",
+        "pinyin": "diào tóu",
+        "meaning": "to turn about",
+        "characters": [
+          {
+            "id": "C-6389",
+            "text": "掉"
+          },
+          {
+            "id": "C-5934",
+            "text": "头"
+          }
+        ]
+      },
+      {
+        "id": "W2499",
+        "text": "合法",
+        "pinyin": "héfǎ",
+        "meaning": "lawful; legitimate",
+        "characters": [
+          {
+            "id": "C-5408",
+            "text": "合"
+          },
+          {
+            "id": "C-6CD5",
+            "text": "法"
+          }
+        ]
+      },
+      {
+        "id": "W4550",
+        "text": "模样",
+        "pinyin": "múyàng",
+        "meaning": "look; style",
+        "characters": [
+          {
+            "id": "C-6A21",
+            "text": "模"
+          },
+          {
+            "id": "C-6837",
+            "text": "样"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "221a5f5beca804f8f76a975e258a2159f8d724485493784086bc66fae8714923",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-53bf",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "县",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-53bf-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-93f29520f64642ed3f080cff",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "county seat",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "县城"
+              },
+              {
+                "value": "xiàn chéng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xian4cheng2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "县城",
+              "pinyin": "xiàn chéng",
+              "meaning": "county seat",
+              "audio": "5788e246de4721db94d24098bc62d227481eb826004677b91fc1360bccf0a3a4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-53bf-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-53bf",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "县",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-53bf",
+                "label": "county; (Japan) prefecture",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-c6d0891c7541b5123d1231d6",
+                "label": "to turn about",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W4550",
+                "label": "look; style",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-53bf-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "县",
+        "pinyin": "xiàn",
+        "meaning": "county; (Japan) prefecture",
+        "source": "/stroke-data/53bf.json",
+        "reference": {
+          "character": "县",
+          "sha256": "ff2258611360a50d6aed3c75fb2ce013315b12e679c73e95f9270302d5d9e83c",
+          "medians": [
+            [
+              [
+                341,
+                748
+              ],
+              [
+                373,
+                718
+              ],
+              [
+                383,
+                687
+              ],
+              [
+                389,
+                338
+              ],
+              [
+                391,
+                320
+              ],
+              [
+                406,
+                308
+              ]
+            ],
+            [
+              [
+                404,
+                730
+              ],
+              [
+                424,
+                719
+              ],
+              [
+                615,
+                759
+              ],
+              [
+                632,
+                757
+              ],
+              [
+                658,
+                731
+              ],
+              [
+                666,
+                716
+              ],
+              [
+                654,
+                578
+              ],
+              [
+                649,
+                355
+              ],
+              [
+                626,
+                339
+              ]
+            ],
+            [
+              [
+                417,
+                562
+              ],
+              [
+                427,
+                573
+              ],
+              [
+                503,
+                590
+              ],
+              [
+                543,
+                596
+              ],
+              [
+                572,
+                591
+              ]
+            ],
+            [
+              [
+                417,
+                430
+              ],
+              [
+                428,
+                439
+              ],
+              [
+                500,
+                457
+              ],
+              [
+                558,
+                465
+              ],
+              [
+                579,
+                459
+              ]
+            ],
+            [
+              [
+                111,
+                261
+              ],
+              [
+                163,
+                251
+              ],
+              [
+                455,
+                290
+              ],
+              [
+                812,
+                319
+              ],
+              [
+                875,
+                315
+              ],
+              [
+                922,
+                300
+              ]
+            ],
+            [
+              [
+                512,
+                250
+              ],
+              [
+                493,
+                250
+              ],
+              [
+                473,
+                241
+              ],
+              [
+                403,
+                144
+              ],
+              [
+                355,
+                95
+              ],
+              [
+                338,
+                54
+              ],
+              [
+                394,
+                53
+              ],
+              [
+                670,
+                97
+              ],
+              [
+                684,
+                98
+              ],
+              [
+                697,
+                91
+              ]
+            ],
+            [
+              [
+                648,
+                194
+              ],
+              [
+                714,
+                127
+              ],
+              [
+                758,
+                72
+              ],
+              [
+                780,
+                23
+              ],
+              [
+                780,
+                -2
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-53bf-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2499",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "lawful; legitimate",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "合法"
+              },
+              {
+                "value": "héfǎ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "he2fa3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "合法",
+              "pinyin": "héfǎ",
+              "meaning": "lawful; legitimate",
+              "audio": "e570c746f8ca2e83fb5e98ce77bcc28601673fdeb835f0b98ed61e680741d1ca",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-53bf-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-53bf",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "county; (Japan) prefecture",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "县"
+              },
+              {
+                "value": "xiàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xian4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "县",
+              "pinyin": "xiàn",
+              "meaning": "county; (Japan) prefecture",
+              "audio": "befe438794e111842b14703ec5f2f5acd6b08f8807f0abbdf7b5233a36df748b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "befe438794e111842b14703ec5f2f5acd6b08f8807f0abbdf7b5233a36df748b"
+            ],
+            "transcript": [
+              {
+                "text": "县",
+                "pinyin": "xiàn",
+                "meaning": "county; (Japan) prefecture",
+                "audio": "befe438794e111842b14703ec5f2f5acd6b08f8807f0abbdf7b5233a36df748b",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-53BF",
+      "character": "县",
+      "lessonIds": [
+        "LESSON-C-53BF"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-53bf-word",
+        "EX-CHAR-char-53bf-recognize",
+        "EX-CHAR-char-53bf-write",
+        "EX-CHAR-char-53bf-familiar",
+        "EX-CHAR-char-53bf-recall"
+      ]
+    },
+    "audio": {
+      "befe438794e111842b14703ec5f2f5acd6b08f8807f0abbdf7b5233a36df748b": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/600a50b874939d9dadf26b44cb19407a339e0f9e880f09dbf3cd846605a7c5b6.mp3",
+          "sha256": "600a50b874939d9dadf26b44cb19407a339e0f9e880f09dbf3cd846605a7c5b6",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "600a50b874939d9dadf26b44cb19407a339e0f9e880f09dbf3cd846605a7c5b6",
+            "text": "县",
+            "words": [
+              {
+                "text": "县",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a971160abaa6675ca67f1a157fb9de204bf5c91c7bb621925357e3ba2ea56342.mp3",
+          "sha256": "a971160abaa6675ca67f1a157fb9de204bf5c91c7bb621925357e3ba2ea56342",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "a971160abaa6675ca67f1a157fb9de204bf5c91c7bb621925357e3ba2ea56342",
+            "text": "县",
+            "words": [
+              {
+                "text": "县",
+                "start": 0.26,
+                "end": 0.38
+              }
+            ]
+          }
+        }
+      },
+      "5788e246de4721db94d24098bc62d227481eb826004677b91fc1360bccf0a3a4": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/acc4c911779a0d0363a67f4d11e637e756c43067c5d09e31f77a6b4c2536cf28.mp3",
+          "sha256": "acc4c911779a0d0363a67f4d11e637e756c43067c5d09e31f77a6b4c2536cf28",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "acc4c911779a0d0363a67f4d11e637e756c43067c5d09e31f77a6b4c2536cf28",
+            "text": "县城",
+            "words": [
+              {
+                "text": "县城",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5d83093588a148b43eba2bf7fbd868fbccf729dfc50ac6a3ca6a8f2d778ee1f6.mp3",
+          "sha256": "5d83093588a148b43eba2bf7fbd868fbccf729dfc50ac6a3ca6a8f2d778ee1f6",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "5d83093588a148b43eba2bf7fbd868fbccf729dfc50ac6a3ca6a8f2d778ee1f6",
+            "text": "县城",
+            "words": [
+              {
+                "text": "县城",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "a2647f9a70f8574df1cc05309b04054c6fbd255185ed05cf20ea4d7627df2f4e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3cfd54accd6ae16383365d824352f4f00a80df36a57254a8bad4c8b6dabc1721.mp3",
+          "sha256": "3cfd54accd6ae16383365d824352f4f00a80df36a57254a8bad4c8b6dabc1721",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "3cfd54accd6ae16383365d824352f4f00a80df36a57254a8bad4c8b6dabc1721",
+            "text": "掉头",
+            "words": [
+              {
+                "text": "掉头",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/35ea5f002fbe6f7006af23becfe6ce6cd7a3ba32d6820767e1880fa856497db8.mp3",
+          "sha256": "35ea5f002fbe6f7006af23becfe6ce6cd7a3ba32d6820767e1880fa856497db8",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "35ea5f002fbe6f7006af23becfe6ce6cd7a3ba32d6820767e1880fa856497db8",
+            "text": "掉头",
+            "words": [
+              {
+                "text": "掉头",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "e570c746f8ca2e83fb5e98ce77bcc28601673fdeb835f0b98ed61e680741d1ca": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f4648de63bd3a5f950f8db84a5e20bc58efce3a1da97c116d62d0e36c9e2e457.mp3",
+          "sha256": "f4648de63bd3a5f950f8db84a5e20bc58efce3a1da97c116d62d0e36c9e2e457",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "f4648de63bd3a5f950f8db84a5e20bc58efce3a1da97c116d62d0e36c9e2e457",
+            "text": "合法",
+            "words": [
+              {
+                "text": "合法",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d9a3c200cb4bc423c2af06f460b05318a8864234de4b97bfc043afaa72ffd499.mp3",
+          "sha256": "d9a3c200cb4bc423c2af06f460b05318a8864234de4b97bfc043afaa72ffd499",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "d9a3c200cb4bc423c2af06f460b05318a8864234de4b97bfc043afaa72ffd499",
+            "text": "合法",
+            "words": [
+              {
+                "text": "合法",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "23f116ebbdb848661714dbbc6ef1c428f8b781a27a3fba72f050571187232ea6": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/84c705463319c7d38c139674759fb8a9d8727b79a802455f1110ce4db19a46ed.mp3",
+          "sha256": "84c705463319c7d38c139674759fb8a9d8727b79a802455f1110ce4db19a46ed",
+          "byteLength": 15597,
+          "readAlong": {
+            "audioSha256": "84c705463319c7d38c139674759fb8a9d8727b79a802455f1110ce4db19a46ed",
+            "text": "模样",
+            "words": [
+              {
+                "text": "模样",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1eb297a7f28256643e30604f2fb5acf99e6f749afccd8f833da4ff526b15e923.mp3",
+          "sha256": "1eb297a7f28256643e30604f2fb5acf99e6f749afccd8f833da4ff526b15e923",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "1eb297a7f28256643e30604f2fb5acf99e6f749afccd8f833da4ff526b15e923",
+            "text": "模样",
+            "words": [
+              {
+                "text": "模样",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,621 @@
+{
+  "id": "EX-CHAR-char-5360",
+  "revision": 2,
+  "unit": "U5-43",
+  "stage": "ST-HSK5",
+  "after": "S-U5-43-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "占",
+  "sourceBlockId": "mandarin-simplified-v1-char-5360",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-653f",
+        "text": "政",
+        "pinyin": "zhèng",
+        "meaning": "political; politics",
+        "characters": [
+          {
+            "id": "C-653F",
+            "text": "政"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-32b1c66cb423ebc71250af98",
+        "text": "大幅",
+        "pinyin": "dàfú",
+        "meaning": "large-format (picture, banner, photo etc); substantially; by a wide margin",
+        "characters": [
+          {
+            "id": "C-5927",
+            "text": "大"
+          },
+          {
+            "id": "C-5E45",
+            "text": "幅"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-4b667975c17f4d121ad2705b",
+        "text": "招标",
+        "pinyin": "zhāo biāo",
+        "meaning": "to invite bids",
+        "characters": [
+          {
+            "id": "C-62DB",
+            "text": "招"
+          },
+          {
+            "id": "C-6807",
+            "text": "标"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-9df7dbf5b0a7a060e8e993fe",
+        "text": "占用",
+        "pinyin": "zhàn yòng",
+        "meaning": "to occupy",
+        "characters": [
+          {
+            "id": "C-5360",
+            "text": "占"
+          },
+          {
+            "id": "C-7528",
+            "text": "用"
+          }
+        ]
+      },
+      {
+        "id": "W3486",
+        "text": "占",
+        "pinyin": "zhàn",
+        "meaning": "to take possession of; to occupy",
+        "characters": [
+          {
+            "id": "C-5360",
+            "text": "占"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "8dd2ca679d8aa255adaf4dcb665f423ef216e60c24722be103abeb033227aee2",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5360",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "占",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5360-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-9df7dbf5b0a7a060e8e993fe",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to occupy",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "占用"
+              },
+              {
+                "value": "zhàn yòng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhan4yong4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "占用",
+              "pinyin": "zhàn yòng",
+              "meaning": "to occupy",
+              "audio": "62ba6a513661aa9fb43583442da2dff73bb8aa88daec58b2f3bfa7d9025ae661",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5360-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W3486",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "占",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-32b1c66cb423ebc71250af98",
+                "label": "large-format (picture, banner, photo etc); substantially",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-653f",
+                "label": "political; politics",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W3486",
+                "label": "to take possession of; to occupy",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5360-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "占",
+        "pinyin": "zhàn",
+        "meaning": "to take possession of; to occupy",
+        "source": "/stroke-data/5360.json",
+        "reference": {
+          "character": "占",
+          "sha256": "75e924d5faff023c579113cc95a2246eb020788f1c5dcd80c943b6923e53b9e2",
+          "medians": [
+            [
+              [
+                452,
+                796
+              ],
+              [
+                509,
+                750
+              ],
+              [
+                510,
+                736
+              ],
+              [
+                501,
+                357
+              ],
+              [
+                479,
+                332
+              ]
+            ],
+            [
+              [
+                542,
+                555
+              ],
+              [
+                563,
+                570
+              ],
+              [
+                644,
+                583
+              ],
+              [
+                729,
+                606
+              ],
+              [
+                794,
+                606
+              ]
+            ],
+            [
+              [
+                241,
+                307
+              ],
+              [
+                276,
+                279
+              ],
+              [
+                290,
+                247
+              ],
+              [
+                347,
+                -31
+              ]
+            ],
+            [
+              [
+                308,
+                302
+              ],
+              [
+                333,
+                287
+              ],
+              [
+                347,
+                288
+              ],
+              [
+                487,
+                305
+              ],
+              [
+                656,
+                339
+              ],
+              [
+                698,
+                338
+              ],
+              [
+                736,
+                307
+              ],
+              [
+                743,
+                287
+              ],
+              [
+                698,
+                128
+              ],
+              [
+                666,
+                101
+              ]
+            ],
+            [
+              [
+                371,
+                17
+              ],
+              [
+                383,
+                34
+              ],
+              [
+                651,
+                67
+              ],
+              [
+                714,
+                65
+              ],
+              [
+                739,
+                55
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5360-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-4b667975c17f4d121ad2705b",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to invite bids",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "招标"
+              },
+              {
+                "value": "zhāo biāo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhao1biao1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "招标",
+              "pinyin": "zhāo biāo",
+              "meaning": "to invite bids",
+              "audio": "80009528299dc70cff548ff3609349a0e17c5f35bc7c8c3361559215bbe7e797",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5360-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W3486",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to take possession of; to occupy",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "占"
+              },
+              {
+                "value": "zhàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "占",
+              "pinyin": "zhàn",
+              "meaning": "to take possession of; to occupy",
+              "audio": "25e803254afb640d1ca5a94ee9e184d1e5a6453156f202f20889879cebf967f4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "25e803254afb640d1ca5a94ee9e184d1e5a6453156f202f20889879cebf967f4"
+            ],
+            "transcript": [
+              {
+                "text": "占",
+                "pinyin": "zhàn",
+                "meaning": "to take possession of; to occupy",
+                "audio": "25e803254afb640d1ca5a94ee9e184d1e5a6453156f202f20889879cebf967f4",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5360",
+      "character": "占",
+      "lessonIds": [
+        "LESSON-C-5360"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5360-word",
+        "EX-CHAR-char-5360-recognize",
+        "EX-CHAR-char-5360-write",
+        "EX-CHAR-char-5360-familiar",
+        "EX-CHAR-char-5360-recall"
+      ]
+    },
+    "audio": {
+      "e52c8cc5efa14adb64f0e9a42e49b121a3b6f3b53b026ca2d528ef4ff0e0b311": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-da400e564c6a92743ef4c3aeef89f903d5da3fce977bfe70b30057e2115b45cc.mp3",
+          "sha256": "da400e564c6a92743ef4c3aeef89f903d5da3fce977bfe70b30057e2115b45cc",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "da400e564c6a92743ef4c3aeef89f903d5da3fce977bfe70b30057e2115b45cc",
+            "text": "政",
+            "words": [
+              {
+                "text": "政",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-409afc6e0859392b7cf829d915deafb6f3b2acb516b093f352ef9271bdbc4f8a.mp3",
+          "sha256": "409afc6e0859392b7cf829d915deafb6f3b2acb516b093f352ef9271bdbc4f8a",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "409afc6e0859392b7cf829d915deafb6f3b2acb516b093f352ef9271bdbc4f8a",
+            "text": "政",
+            "words": [
+              {
+                "text": "政",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "5fe70a71094bceef06d48774f22407e572b548dedef3b03af77de6e6716043c9": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/96c70aeab0a78644d2d126ff15aeacbc961a39cc3681aea602bfe95cc9de4db8.mp3",
+          "sha256": "96c70aeab0a78644d2d126ff15aeacbc961a39cc3681aea602bfe95cc9de4db8",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "96c70aeab0a78644d2d126ff15aeacbc961a39cc3681aea602bfe95cc9de4db8",
+            "text": "大幅",
+            "words": [
+              {
+                "text": "大幅",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/37035fed696ea83f32aeb1b7548f1b08332168f291ec7dc205e402fc1a9df71e.mp3",
+          "sha256": "37035fed696ea83f32aeb1b7548f1b08332168f291ec7dc205e402fc1a9df71e",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "37035fed696ea83f32aeb1b7548f1b08332168f291ec7dc205e402fc1a9df71e",
+            "text": "大幅",
+            "words": [
+              {
+                "text": "大幅",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "80009528299dc70cff548ff3609349a0e17c5f35bc7c8c3361559215bbe7e797": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/fd565b44fcd23da20644229efe3a76bd5f35dcb70b1f962701f1b703aedc22fd.mp3",
+          "sha256": "fd565b44fcd23da20644229efe3a76bd5f35dcb70b1f962701f1b703aedc22fd",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "fd565b44fcd23da20644229efe3a76bd5f35dcb70b1f962701f1b703aedc22fd",
+            "text": "招标",
+            "words": [
+              {
+                "text": "招标",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b82706234205e9caff04af6d74b7eebe18f1f79baf1807d7b550040937f7ae94.mp3",
+          "sha256": "b82706234205e9caff04af6d74b7eebe18f1f79baf1807d7b550040937f7ae94",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "b82706234205e9caff04af6d74b7eebe18f1f79baf1807d7b550040937f7ae94",
+            "text": "招标",
+            "words": [
+              {
+                "text": "招标",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "62ba6a513661aa9fb43583442da2dff73bb8aa88daec58b2f3bfa7d9025ae661": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d783c213508cc9be65be2004cf4763d59a3a6814b401c60136cbf0d9428451a1.mp3",
+          "sha256": "d783c213508cc9be65be2004cf4763d59a3a6814b401c60136cbf0d9428451a1",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "d783c213508cc9be65be2004cf4763d59a3a6814b401c60136cbf0d9428451a1",
+            "text": "占用",
+            "words": [
+              {
+                "text": "占用",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e4753e41350cbd41e8b516dd29c0e4828fffea543bb0f35062430747e22d6f16.mp3",
+          "sha256": "e4753e41350cbd41e8b516dd29c0e4828fffea543bb0f35062430747e22d6f16",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "e4753e41350cbd41e8b516dd29c0e4828fffea543bb0f35062430747e22d6f16",
+            "text": "占用",
+            "words": [
+              {
+                "text": "占用",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "25e803254afb640d1ca5a94ee9e184d1e5a6453156f202f20889879cebf967f4": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9c57cbd92d051b47c747bae71e57afbfd40490de2f21c14898adc2568fe40dc8.mp3",
+          "sha256": "9c57cbd92d051b47c747bae71e57afbfd40490de2f21c14898adc2568fe40dc8",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "9c57cbd92d051b47c747bae71e57afbfd40490de2f21c14898adc2568fe40dc8",
+            "text": "占",
+            "words": [
+              {
+                "text": "占",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0f797172029a26713e5a5a90618a6d826b8136922956d89dde43656d287ebe36.mp3",
+          "sha256": "0f797172029a26713e5a5a90618a6d826b8136922956d89dde43656d287ebe36",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "0f797172029a26713e5a5a90618a6d826b8136922956d89dde43656d287ebe36",
+            "text": "占",
+            "words": [
+              {
+                "text": "占",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

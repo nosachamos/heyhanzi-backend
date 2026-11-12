@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2095",
+  "targetId": "W2095",
+  "steps": [
+    {
+      "id": "BANK-W2095-W2095",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2095-W2095",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "ward; sickroom",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "病房"
+            },
+            {
+              "value": "bìngfáng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bing4fang2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "病房",
+            "pinyin": "bìngfáng",
+            "meaning": "ward; sickroom",
+            "singleWord": true,
+            "audio": "c1fc04e91748a16f1562f84d0787cd715afe2a9aa2d5ffb34fddadaeb9536a14"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c1fc04e91748a16f1562f84d0787cd715afe2a9aa2d5ffb34fddadaeb9536a14": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f577e4916609b707f78e8342491813785cad2f182cab2ee823299cacf3b4be1d.mp3",
+        "sha256": "f577e4916609b707f78e8342491813785cad2f182cab2ee823299cacf3b4be1d",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "f577e4916609b707f78e8342491813785cad2f182cab2ee823299cacf3b4be1d",
+          "text": "病房",
+          "words": [
+            {
+              "text": "病房",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-576eef99e9241cf3e5f1bc60f28c7b2ec7e42975a046fb87963f89a20b0c63b6.mp3",
+        "sha256": "576eef99e9241cf3e5f1bc60f28c7b2ec7e42975a046fb87963f89a20b0c63b6",
+        "byteLength": 15309,
+        "readAlong": {
+          "audioSha256": "576eef99e9241cf3e5f1bc60f28c7b2ec7e42975a046fb87963f89a20b0c63b6",
+          "text": "病房",
+          "words": [
+            {
+              "text": "病房",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2095",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2095-W2095",
+      "question_ids": [
+        "BANK-W2095-W2095"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-13",
+    "stepId": "S-U5-13-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-75c5"
+    ],
+    "grammarLessonIds": []
+  }
+}

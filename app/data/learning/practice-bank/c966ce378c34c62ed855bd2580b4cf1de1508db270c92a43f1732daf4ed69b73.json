@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1512",
+  "targetId": "W1512",
+  "steps": [
+    {
+      "id": "BANK-W1512-W1512",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1512-W1512",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "connection; contact",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "联系"
+            },
+            {
+              "value": "liánxì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "lian2xi4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "联系",
+            "pinyin": "liánxì",
+            "meaning": "connection; contact",
+            "singleWord": true,
+            "audio": "651bfb762210180e712362ca6164410d84525c667ee904a8fbd1d7e5c7636ade"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "651bfb762210180e712362ca6164410d84525c667ee904a8fbd1d7e5c7636ade": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d8ae54cff3ae96eb7d0c81a793d4c68f0d881d99a281e1601057b0573a0565ae.mp3",
+        "sha256": "d8ae54cff3ae96eb7d0c81a793d4c68f0d881d99a281e1601057b0573a0565ae",
+        "byteLength": 16749,
+        "readAlong": {
+          "audioSha256": "d8ae54cff3ae96eb7d0c81a793d4c68f0d881d99a281e1601057b0573a0565ae",
+          "text": "联系",
+          "words": [
+            {
+              "text": "联系",
+              "start": 0.15,
+              "end": 0.6299999999999999
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-feb779cc8af598cc72a94571380283ca04bc304cbb2c4a08719eddc33dfab5e3.mp3",
+        "sha256": "feb779cc8af598cc72a94571380283ca04bc304cbb2c4a08719eddc33dfab5e3",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "feb779cc8af598cc72a94571380283ca04bc304cbb2c4a08719eddc33dfab5e3",
+          "text": "联系",
+          "words": [
+            {
+              "text": "联系",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1512",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1512-W1512",
+      "question_ids": [
+        "BANK-W1512-W1512"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-03",
+    "stepId": "S-U4-03-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8054"
+    ],
+    "grammarLessonIds": []
+  }
+}

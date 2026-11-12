@@ -1,0 +1,739 @@
+{
+  "id": "EX-CHAR-char-90e8",
+  "revision": 2,
+  "unit": "U4-12",
+  "stage": "ST-HSK4",
+  "after": "S-U4-12-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "部",
+  "sourceBlockId": "mandarin-simplified-v1-char-90e8",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-90e8",
+        "text": "部",
+        "pinyin": "bù",
+        "meaning": "ministry; department",
+        "characters": [
+          {
+            "id": "C-90E8",
+            "text": "部"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-0c22ff76046b3ba278e6848b",
+        "text": "忘不了",
+        "pinyin": "wàng bu liǎo",
+        "meaning": "cannot forget",
+        "characters": [
+          {
+            "id": "C-5FD8",
+            "text": "忘"
+          },
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-4E86",
+            "text": "了"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-4b25afbd31a50a6dc1b25756",
+        "text": "多元",
+        "pinyin": "duōyuán",
+        "meaning": "poly-; multi-",
+        "characters": [
+          {
+            "id": "C-591A",
+            "text": "多"
+          },
+          {
+            "id": "C-5143",
+            "text": "元"
+          }
+        ]
+      },
+      {
+        "id": "W1638",
+        "text": "全部",
+        "pinyin": "quánbù",
+        "meaning": "whole; all",
+        "characters": [
+          {
+            "id": "C-5168",
+            "text": "全"
+          },
+          {
+            "id": "C-90E8",
+            "text": "部"
+          }
+        ]
+      },
+      {
+        "id": "W2434",
+        "text": "工具",
+        "pinyin": "gōngjù",
+        "meaning": "tool; instrument",
+        "characters": [
+          {
+            "id": "C-5DE5",
+            "text": "工"
+          },
+          {
+            "id": "C-5177",
+            "text": "具"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "3ac11c2643614de06d99ae15be05e061b0801a4fb6a7b41065ce915d3c12507d",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-90e8",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "部",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-90e8-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1638",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "whole; all",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "全部"
+              },
+              {
+                "value": "quánbù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "quan2bu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "全部",
+              "pinyin": "quánbù",
+              "meaning": "whole; all",
+              "audio": "1cad0f14295f76f0f10477a8bfc17068e84d5316c696d1057a270085ff08af0c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-90e8-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-90e8",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "部",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-0c22ff76046b3ba278e6848b",
+                "label": "cannot forget",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-90e8",
+                "label": "ministry; department",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-4b25afbd31a50a6dc1b25756",
+                "label": "poly-; multi-",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-90e8-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "部",
+        "pinyin": "bù",
+        "meaning": "ministry; department",
+        "source": "/stroke-data/90e8.json",
+        "reference": {
+          "character": "部",
+          "sha256": "b300d501893f9e15f9b52221e1f267612bf86f9ebb34a206e056ba2ee2d5d03d",
+          "medians": [
+            [
+              [
+                333,
+                822
+              ],
+              [
+                409,
+                778
+              ],
+              [
+                430,
+                747
+              ]
+            ],
+            [
+              [
+                197,
+                631
+              ],
+              [
+                257,
+                625
+              ],
+              [
+                440,
+                668
+              ],
+              [
+                500,
+                670
+              ]
+            ],
+            [
+              [
+                238,
+                557
+              ],
+              [
+                276,
+                507
+              ],
+              [
+                283,
+                488
+              ]
+            ],
+            [
+              [
+                430,
+                616
+              ],
+              [
+                451,
+                580
+              ],
+              [
+                411,
+                486
+              ],
+              [
+                388,
+                460
+              ]
+            ],
+            [
+              [
+                82,
+                395
+              ],
+              [
+                145,
+                385
+              ],
+              [
+                485,
+                456
+              ],
+              [
+                519,
+                461
+              ],
+              [
+                561,
+                454
+              ]
+            ],
+            [
+              [
+                194,
+                303
+              ],
+              [
+                219,
+                281
+              ],
+              [
+                227,
+                266
+              ],
+              [
+                260,
+                103
+              ]
+            ],
+            [
+              [
+                242,
+                302
+              ],
+              [
+                268,
+                295
+              ],
+              [
+                406,
+                333
+              ],
+              [
+                436,
+                326
+              ],
+              [
+                459,
+                303
+              ],
+              [
+                436,
+                222
+              ],
+              [
+                448,
+                206
+              ]
+            ],
+            [
+              [
+                278,
+                139
+              ],
+              [
+                294,
+                157
+              ],
+              [
+                387,
+                177
+              ],
+              [
+                441,
+                179
+              ],
+              [
+                464,
+                174
+              ]
+            ],
+            [
+              [
+                663,
+                643
+              ],
+              [
+                676,
+                662
+              ],
+              [
+                755,
+                691
+              ],
+              [
+                794,
+                695
+              ],
+              [
+                820,
+                668
+              ],
+              [
+                743,
+                536
+              ],
+              [
+                729,
+                490
+              ],
+              [
+                741,
+                473
+              ],
+              [
+                808,
+                418
+              ],
+              [
+                837,
+                379
+              ],
+              [
+                857,
+                332
+              ],
+              [
+                856,
+                279
+              ],
+              [
+                833,
+                241
+              ],
+              [
+                707,
+                280
+              ]
+            ],
+            [
+              [
+                584,
+                683
+              ],
+              [
+                602,
+                674
+              ],
+              [
+                626,
+                647
+              ],
+              [
+                630,
+                615
+              ],
+              [
+                627,
+                -69
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-90e8-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2434",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "tool; instrument",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "工具"
+              },
+              {
+                "value": "gōngjù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gong1ju4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "工具",
+              "pinyin": "gōngjù",
+              "meaning": "tool; instrument",
+              "audio": "7045a5a5a0166091047863ec8710e8a9acb947a5404df84adbff115be627964c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-90e8-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-90e8",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "ministry; department",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "部"
+              },
+              {
+                "value": "bù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "部",
+              "pinyin": "bù",
+              "meaning": "ministry; department",
+              "audio": "7c96735864101bbb65f7190f2e0b4246ac32065756bffb1b8fce3ea677c652fe",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "7c96735864101bbb65f7190f2e0b4246ac32065756bffb1b8fce3ea677c652fe"
+            ],
+            "transcript": [
+              {
+                "text": "部",
+                "pinyin": "bù",
+                "meaning": "ministry; department",
+                "audio": "7c96735864101bbb65f7190f2e0b4246ac32065756bffb1b8fce3ea677c652fe",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-90E8",
+      "character": "部",
+      "lessonIds": [
+        "LESSON-C-90E8"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-90e8-word",
+        "EX-CHAR-char-90e8-recognize",
+        "EX-CHAR-char-90e8-write",
+        "EX-CHAR-char-90e8-familiar",
+        "EX-CHAR-char-90e8-recall"
+      ]
+    },
+    "audio": {
+      "7c96735864101bbb65f7190f2e0b4246ac32065756bffb1b8fce3ea677c652fe": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-e35d2ba5a2398fbbed58bc42955cbf816045418d30843d78d042106271707da7.mp3",
+          "sha256": "e35d2ba5a2398fbbed58bc42955cbf816045418d30843d78d042106271707da7",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "e35d2ba5a2398fbbed58bc42955cbf816045418d30843d78d042106271707da7",
+            "text": "部",
+            "words": [
+              {
+                "text": "部",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-aa0a8b37f4b562c99e696174505c98a0b43194b174ae280817c98cbdc14dc363.mp3",
+          "sha256": "aa0a8b37f4b562c99e696174505c98a0b43194b174ae280817c98cbdc14dc363",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "aa0a8b37f4b562c99e696174505c98a0b43194b174ae280817c98cbdc14dc363",
+            "text": "部",
+            "words": [
+              {
+                "text": "部",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "ed419e3253e0aaf143d4d9f59bf32b417e67d073a043a3f04e7ec0d6605489c9": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7635ce30ab30355dfb35a5177eb6fe26124fba27c69c52e6159bd0d623598b8a.mp3",
+          "sha256": "7635ce30ab30355dfb35a5177eb6fe26124fba27c69c52e6159bd0d623598b8a",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "7635ce30ab30355dfb35a5177eb6fe26124fba27c69c52e6159bd0d623598b8a",
+            "text": "忘不了",
+            "words": [
+              {
+                "text": "忘不了",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a1c3225eed8a9106a3d30b74b4cb65ccf69e616322c94b197cc1aa34d053e601.mp3",
+          "sha256": "a1c3225eed8a9106a3d30b74b4cb65ccf69e616322c94b197cc1aa34d053e601",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "a1c3225eed8a9106a3d30b74b4cb65ccf69e616322c94b197cc1aa34d053e601",
+            "text": "忘不了",
+            "words": [
+              {
+                "text": "忘不了",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "4aecfa8d017bd395b55eeebbc69ddfcb516ba23c97ccbc140268a74da2eb36e0": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ec00d328e2067afb2906d44fba75a10fabd6722913d3fcf43d94c9a2e85507b2.mp3",
+          "sha256": "ec00d328e2067afb2906d44fba75a10fabd6722913d3fcf43d94c9a2e85507b2",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "ec00d328e2067afb2906d44fba75a10fabd6722913d3fcf43d94c9a2e85507b2",
+            "text": "多元",
+            "words": [
+              {
+                "text": "多元",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e0c9e4cc716cb294df59b3c5ab29cc30bfada8609cadf1cd9ad8766129b6e067.mp3",
+          "sha256": "e0c9e4cc716cb294df59b3c5ab29cc30bfada8609cadf1cd9ad8766129b6e067",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "e0c9e4cc716cb294df59b3c5ab29cc30bfada8609cadf1cd9ad8766129b6e067",
+            "text": "多元",
+            "words": [
+              {
+                "text": "多元",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "1cad0f14295f76f0f10477a8bfc17068e84d5316c696d1057a270085ff08af0c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-03479681e39df56cdf46ba2de5151d11c3497e0ebc7629e59d9a25b3f515ff23.mp3",
+          "sha256": "03479681e39df56cdf46ba2de5151d11c3497e0ebc7629e59d9a25b3f515ff23",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "03479681e39df56cdf46ba2de5151d11c3497e0ebc7629e59d9a25b3f515ff23",
+            "text": "全部",
+            "words": [
+              {
+                "text": "全部",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6709165b77abc51450f4ef157efa1a18f58a47ca4a0117e865f8d6792d4cd888.mp3",
+          "sha256": "6709165b77abc51450f4ef157efa1a18f58a47ca4a0117e865f8d6792d4cd888",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "6709165b77abc51450f4ef157efa1a18f58a47ca4a0117e865f8d6792d4cd888",
+            "text": "全部",
+            "words": [
+              {
+                "text": "全部",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "7045a5a5a0166091047863ec8710e8a9acb947a5404df84adbff115be627964c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3be7f90b023a9bf9bf348958d5efa5e39bcfbbf5ecddc75e8f057cec57057a8d.mp3",
+          "sha256": "3be7f90b023a9bf9bf348958d5efa5e39bcfbbf5ecddc75e8f057cec57057a8d",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "3be7f90b023a9bf9bf348958d5efa5e39bcfbbf5ecddc75e8f057cec57057a8d",
+            "text": "工具",
+            "words": [
+              {
+                "text": "工具",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-10f47bbe456312c67b139a03a9d27ca5e41879a0f817537ac5d4a2ac4db9e535.mp3",
+          "sha256": "10f47bbe456312c67b139a03a9d27ca5e41879a0f817537ac5d4a2ac4db9e535",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "10f47bbe456312c67b139a03a9d27ca5e41879a0f817537ac5d4a2ac4db9e535",
+            "text": "工具",
+            "words": [
+              {
+                "text": "工具",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

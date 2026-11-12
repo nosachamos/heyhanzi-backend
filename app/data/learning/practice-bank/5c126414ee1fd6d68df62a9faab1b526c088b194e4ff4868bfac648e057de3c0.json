@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1333",
+  "targetId": "W1333",
+  "steps": [
+    {
+      "id": "BANK-W1333-W1333",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1333-W1333",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "ocean",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "海洋"
+            },
+            {
+              "value": "hǎiyáng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hai3yang2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "海洋",
+            "pinyin": "hǎiyáng",
+            "meaning": "ocean",
+            "singleWord": true,
+            "audio": "c7227d4062ced05ad57a2d1ad3ec3161da403e5728d9a582e5224f48a3951edc"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c7227d4062ced05ad57a2d1ad3ec3161da403e5728d9a582e5224f48a3951edc": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/59977e6a8e2d0e30c8a71cb55930262982aeca8df626a7ff2818ca49dc38df52.mp3",
+        "sha256": "59977e6a8e2d0e30c8a71cb55930262982aeca8df626a7ff2818ca49dc38df52",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "59977e6a8e2d0e30c8a71cb55930262982aeca8df626a7ff2818ca49dc38df52",
+          "text": "海洋",
+          "words": [
+            {
+              "text": "海洋",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c1ef220096e958983606c82c0dc398c0fac657e55ac4388b8a80281e68cdb353.mp3",
+        "sha256": "c1ef220096e958983606c82c0dc398c0fac657e55ac4388b8a80281e68cdb353",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "c1ef220096e958983606c82c0dc398c0fac657e55ac4388b8a80281e68cdb353",
+          "text": "海洋",
+          "words": [
+            {
+              "text": "海洋",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1333",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1333-W1333",
+      "question_ids": [
+        "BANK-W1333-W1333"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-26",
+    "stepId": "S-U4-26-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6d0b"
+    ],
+    "grammarLessonIds": []
+  }
+}

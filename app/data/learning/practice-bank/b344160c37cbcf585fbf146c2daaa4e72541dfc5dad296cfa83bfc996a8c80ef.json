@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W2038",
+  "targetId": "W2038",
+  "steps": [
+    {
+      "id": "BANK-W2038-W2038",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2038-W2038",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "dark; to turn dark",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "暗"
+            },
+            {
+              "value": "àn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "an4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "暗",
+            "pinyin": "àn",
+            "meaning": "dark; to turn dark",
+            "singleWord": true,
+            "audio": "c54ea387d221d5e3539d26b51a5977828457a57aec3b3bc2cf1c02e9f565a0a3"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c54ea387d221d5e3539d26b51a5977828457a57aec3b3bc2cf1c02e9f565a0a3": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-cfe7af7e3d1b9270ac310de2893e4175094f643ff43c624d646b25582cae0f60.mp3",
+        "sha256": "cfe7af7e3d1b9270ac310de2893e4175094f643ff43c624d646b25582cae0f60",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "cfe7af7e3d1b9270ac310de2893e4175094f643ff43c624d646b25582cae0f60",
+          "text": "暗",
+          "words": [
+            {
+              "text": "暗",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-0d884a8d943c786f939b5c6b14906c2a9d49638cc967dd333c397f8d5c3a624b.mp3",
+        "sha256": "0d884a8d943c786f939b5c6b14906c2a9d49638cc967dd333c397f8d5c3a624b",
+        "byteLength": 10989,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "0d884a8d943c786f939b5c6b14906c2a9d49638cc967dd333c397f8d5c3a624b",
+          "text": "暗",
+          "words": [
+            {
+              "text": "暗",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2038",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2038-W2038",
+      "question_ids": [
+        "BANK-W2038-W2038"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-45-P01",
+    "stepId": "S-U5-45-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6697"
+    ],
+    "grammarLessonIds": []
+  }
+}

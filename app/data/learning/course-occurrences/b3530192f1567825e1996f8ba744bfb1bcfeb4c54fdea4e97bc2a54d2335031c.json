@@ -1,0 +1,715 @@
+{
+  "id": "EX-CHAR-char-6cbf",
+  "revision": 2,
+  "unit": "U5-16-P02",
+  "stage": "ST-HSK5",
+  "after": "S-U5-16-P02-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "沿",
+  "sourceBlockId": "mandarin-simplified-v1-char-6cbf",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-6cbf",
+        "text": "沿",
+        "pinyin": "yán",
+        "meaning": "along; to follow (a line, tradition etc)",
+        "characters": [
+          {
+            "id": "C-6CBF",
+            "text": "沿"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ce3b265a0ddf02d08bc7985b",
+        "text": "画展",
+        "pinyin": "huà zhǎn",
+        "meaning": "art exhibition",
+        "characters": [
+          {
+            "id": "C-753B",
+            "text": "画"
+          },
+          {
+            "id": "C-5C55",
+            "text": "展"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f274123497bff30571545a0e",
+        "text": "沿着",
+        "pinyin": "yán zhe",
+        "meaning": "to go along",
+        "characters": [
+          {
+            "id": "C-6CBF",
+            "text": "沿"
+          },
+          {
+            "id": "C-7740",
+            "text": "着"
+          }
+        ]
+      },
+      {
+        "id": "W1332",
+        "text": "过程",
+        "pinyin": "guòchéng",
+        "meaning": "course of events; process",
+        "characters": [
+          {
+            "id": "C-8FC7",
+            "text": "过"
+          },
+          {
+            "id": "C-7A0B",
+            "text": "程"
+          }
+        ]
+      },
+      {
+        "id": "W1659",
+        "text": "日期",
+        "pinyin": "rìqī",
+        "meaning": "date",
+        "characters": [
+          {
+            "id": "C-65E5",
+            "text": "日"
+          },
+          {
+            "id": "C-671F",
+            "text": "期"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "c8a834d1fcd87d6068e23d85c9bed4c85249d5eda3007c9d3af578dedb0cc8c1",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6cbf",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "沿",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6cbf-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-f274123497bff30571545a0e",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to go along",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "沿着"
+              },
+              {
+                "value": "yán zhe",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yan2zhe5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "沿着",
+              "pinyin": "yán zhe",
+              "meaning": "to go along",
+              "audio": "4e4c2c35cec13aec05e571c010356cc8af49044c0ff3d3a02e50cba196e014ff",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6cbf-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6cbf",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "沿",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-6cbf",
+                "label": "along; to follow (a line, tradition etc)",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-ce3b265a0ddf02d08bc7985b",
+                "label": "art exhibition",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1659",
+                "label": "date",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6cbf-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "沿",
+        "pinyin": "yán",
+        "meaning": "along; to follow (a line, tradition etc)",
+        "source": "/stroke-data/6cbf.json",
+        "reference": {
+          "character": "沿",
+          "sha256": "cb82f88d3738551edc30e57f7a8934f1457d3c007052e29ae5e91b0bcb1a3bc1",
+          "medians": [
+            [
+              [
+                207,
+                739
+              ],
+              [
+                287,
+                692
+              ],
+              [
+                316,
+                652
+              ]
+            ],
+            [
+              [
+                123,
+                524
+              ],
+              [
+                193,
+                481
+              ],
+              [
+                221,
+                448
+              ]
+            ],
+            [
+              [
+                179,
+                19
+              ],
+              [
+                164,
+                56
+              ],
+              [
+                160,
+                106
+              ],
+              [
+                293,
+                395
+              ]
+            ],
+            [
+              [
+                441,
+                707
+              ],
+              [
+                470,
+                692
+              ],
+              [
+                483,
+                667
+              ],
+              [
+                483,
+                578
+              ],
+              [
+                471,
+                506
+              ],
+              [
+                455,
+                462
+              ],
+              [
+                417,
+                405
+              ],
+              [
+                346,
+                341
+              ]
+            ],
+            [
+              [
+                511,
+                703
+              ],
+              [
+                524,
+                693
+              ],
+              [
+                542,
+                694
+              ],
+              [
+                623,
+                721
+              ],
+              [
+                653,
+                725
+              ],
+              [
+                670,
+                722
+              ],
+              [
+                686,
+                708
+              ],
+              [
+                665,
+                613
+              ],
+              [
+                660,
+                489
+              ],
+              [
+                667,
+                436
+              ],
+              [
+                684,
+                406
+              ],
+              [
+                699,
+                394
+              ],
+              [
+                757,
+                381
+              ],
+              [
+                822,
+                385
+              ],
+              [
+                867,
+                398
+              ],
+              [
+                907,
+                391
+              ]
+            ],
+            [
+              [
+                384,
+                274
+              ],
+              [
+                419,
+                241
+              ],
+              [
+                456,
+                12
+              ]
+            ],
+            [
+              [
+                457,
+                261
+              ],
+              [
+                470,
+                248
+              ],
+              [
+                682,
+                286
+              ],
+              [
+                696,
+                287
+              ],
+              [
+                718,
+                277
+              ],
+              [
+                745,
+                244
+              ],
+              [
+                706,
+                116
+              ],
+              [
+                680,
+                103
+              ]
+            ],
+            [
+              [
+                477,
+                37
+              ],
+              [
+                491,
+                47
+              ],
+              [
+                671,
+                69
+              ],
+              [
+                716,
+                67
+              ],
+              [
+                743,
+                58
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6cbf-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1332",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "course of events; process",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "过程"
+              },
+              {
+                "value": "guòchéng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "guo4cheng2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "过程",
+              "pinyin": "guòchéng",
+              "meaning": "course of events; process",
+              "audio": "737ddfe1d414f78e0de92672e34ec15f611616ae775bde65269a2a69445b4d2f",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6cbf-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6cbf",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "along; to follow (a line, tradition etc)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "沿"
+              },
+              {
+                "value": "yán",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yan2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "沿",
+              "pinyin": "yán",
+              "meaning": "along; to follow (a line, tradition etc)",
+              "audio": "bf86fcaeffc33b856e093aaf69216e22c920a2e4e84a1749d962479ed495a02b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "bf86fcaeffc33b856e093aaf69216e22c920a2e4e84a1749d962479ed495a02b"
+            ],
+            "transcript": [
+              {
+                "text": "沿",
+                "pinyin": "yán",
+                "meaning": "along; to follow (a line, tradition etc)",
+                "audio": "bf86fcaeffc33b856e093aaf69216e22c920a2e4e84a1749d962479ed495a02b",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6CBF",
+      "character": "沿",
+      "lessonIds": [
+        "LESSON-C-6CBF"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6cbf-word",
+        "EX-CHAR-char-6cbf-recognize",
+        "EX-CHAR-char-6cbf-write",
+        "EX-CHAR-char-6cbf-familiar",
+        "EX-CHAR-char-6cbf-recall"
+      ]
+    },
+    "audio": {
+      "bf86fcaeffc33b856e093aaf69216e22c920a2e4e84a1749d962479ed495a02b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-11077ffb8b324238549cfb3aff46e6b09504438f5a0650acd994cb4f820d045c.mp3",
+          "sha256": "11077ffb8b324238549cfb3aff46e6b09504438f5a0650acd994cb4f820d045c",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "11077ffb8b324238549cfb3aff46e6b09504438f5a0650acd994cb4f820d045c",
+            "text": "沿",
+            "words": [
+              {
+                "text": "沿",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-7c7e9e390739f743cb0fddfab3d9ee00f90902c014d0ead0b8ddd6ad3c9a1ad0.mp3",
+          "sha256": "7c7e9e390739f743cb0fddfab3d9ee00f90902c014d0ead0b8ddd6ad3c9a1ad0",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "7c7e9e390739f743cb0fddfab3d9ee00f90902c014d0ead0b8ddd6ad3c9a1ad0",
+            "text": "沿",
+            "words": [
+              {
+                "text": "沿",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "c3cc85d133b35c95bc55e8652cc72ba8bf95f7596406ff0c5c57fc6f87935877": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/fb30de19328d36e6435abaf206e762d0a9478e0e25e0614cdc38eb5d6a5c75db.mp3",
+          "sha256": "fb30de19328d36e6435abaf206e762d0a9478e0e25e0614cdc38eb5d6a5c75db",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "fb30de19328d36e6435abaf206e762d0a9478e0e25e0614cdc38eb5d6a5c75db",
+            "text": "画展",
+            "words": [
+              {
+                "text": "画展",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b679e8d57576c364ddab605fcf194023acb4d8b2b63125338d18ec9eee0bcf32.mp3",
+          "sha256": "b679e8d57576c364ddab605fcf194023acb4d8b2b63125338d18ec9eee0bcf32",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "b679e8d57576c364ddab605fcf194023acb4d8b2b63125338d18ec9eee0bcf32",
+            "text": "画展",
+            "words": [
+              {
+                "text": "画展",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "4e4c2c35cec13aec05e571c010356cc8af49044c0ff3d3a02e50cba196e014ff": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/facfcc9e42555416ae6f0a61110b6cc257caa7f728dbaff1b37826d21f983f4d.mp3",
+          "sha256": "facfcc9e42555416ae6f0a61110b6cc257caa7f728dbaff1b37826d21f983f4d",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "facfcc9e42555416ae6f0a61110b6cc257caa7f728dbaff1b37826d21f983f4d",
+            "text": "沿着",
+            "words": [
+              {
+                "text": "沿着",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9023c83b38e4d8858ecdce151c353f1dab0c8b4f5f08942eaef2c8e5d49ebb3d.mp3",
+          "sha256": "9023c83b38e4d8858ecdce151c353f1dab0c8b4f5f08942eaef2c8e5d49ebb3d",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "9023c83b38e4d8858ecdce151c353f1dab0c8b4f5f08942eaef2c8e5d49ebb3d",
+            "text": "沿着",
+            "words": [
+              {
+                "text": "沿着",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "737ddfe1d414f78e0de92672e34ec15f611616ae775bde65269a2a69445b4d2f": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2aacdbdf9e6cbec7ac747e5bcd5d7abc645b38ce38907c0bad5c0062d6b1051e.mp3",
+          "sha256": "2aacdbdf9e6cbec7ac747e5bcd5d7abc645b38ce38907c0bad5c0062d6b1051e",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "2aacdbdf9e6cbec7ac747e5bcd5d7abc645b38ce38907c0bad5c0062d6b1051e",
+            "text": "过程",
+            "words": [
+              {
+                "text": "过程",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6f2d4609afc74a88ae56d12d72c05aab735a4d18e0a4570586b89c5d9df4132c.mp3",
+          "sha256": "6f2d4609afc74a88ae56d12d72c05aab735a4d18e0a4570586b89c5d9df4132c",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "6f2d4609afc74a88ae56d12d72c05aab735a4d18e0a4570586b89c5d9df4132c",
+            "text": "过程",
+            "words": [
+              {
+                "text": "过程",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "d3d0e8cbefcb3bb70a326cea403166e4fdf92233be8948baedb5a83cef33cf0b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-87678fc16d9cd8bf817eeff44e7a5dd4fc7ff0b1111960a3dbb91985c61f66e9.mp3",
+          "sha256": "87678fc16d9cd8bf817eeff44e7a5dd4fc7ff0b1111960a3dbb91985c61f66e9",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "87678fc16d9cd8bf817eeff44e7a5dd4fc7ff0b1111960a3dbb91985c61f66e9",
+            "text": "日期",
+            "words": [
+              {
+                "text": "日期",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-9ee54fd05f5a4863fc9e4eb2b48faf20e56e3422d536bdc1fff83becf2671857.mp3",
+          "sha256": "9ee54fd05f5a4863fc9e4eb2b48faf20e56e3422d536bdc1fff83becf2671857",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "9ee54fd05f5a4863fc9e4eb2b48faf20e56e3422d536bdc1fff83becf2671857",
+            "text": "日期",
+            "words": [
+              {
+                "text": "日期",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

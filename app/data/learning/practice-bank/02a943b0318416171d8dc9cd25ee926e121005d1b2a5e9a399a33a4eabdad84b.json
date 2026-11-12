@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0395",
+  "targetId": "W0395",
+  "steps": [
+    {
+      "id": "BANK-W0395-W0395",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0395-W0395",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "restaurant; hotel",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "饭店"
+            },
+            {
+              "value": "fàndiàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fan4dian4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "饭店",
+            "pinyin": "fàndiàn",
+            "meaning": "restaurant; hotel",
+            "singleWord": true,
+            "audio": "cce0393f1ff49292189be46375646ecd7b5d4e4984886294db828fa5d2aed281"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "cce0393f1ff49292189be46375646ecd7b5d4e4984886294db828fa5d2aed281": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-b7afa920e0d5f7046dad9d996ff682907ef5f0d309a5b5fb55c75be252fe5b77.mp3",
+        "sha256": "b7afa920e0d5f7046dad9d996ff682907ef5f0d309a5b5fb55c75be252fe5b77",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "b7afa920e0d5f7046dad9d996ff682907ef5f0d309a5b5fb55c75be252fe5b77",
+          "text": "饭店",
+          "words": [
+            {
+              "text": "饭店",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-8b46c9653752a072945d6944ffe70d50b6081ec87fe7242f2e048efcf8e4ad93.mp3",
+        "sha256": "8b46c9653752a072945d6944ffe70d50b6081ec87fe7242f2e048efcf8e4ad93",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "8b46c9653752a072945d6944ffe70d50b6081ec87fe7242f2e048efcf8e4ad93",
+          "text": "饭店",
+          "words": [
+            {
+              "text": "饭店",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0395",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0395-W0395",
+      "question_ids": [
+        "BANK-W0395-W0395"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U06",
+    "stepId": "S-U06-words-r4-31",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-996d"
+    ],
+    "grammarLessonIds": []
+  }
+}

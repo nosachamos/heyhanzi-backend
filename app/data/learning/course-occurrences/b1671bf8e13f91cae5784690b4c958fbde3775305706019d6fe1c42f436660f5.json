@@ -1,0 +1,789 @@
+{
+  "id": "EX-CHAR-char-7eff",
+  "revision": 2,
+  "unit": "U23-P01",
+  "stage": "ST-HSK2",
+  "after": "S-U23-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "绿",
+  "sourceBlockId": "mandarin-simplified-v1-char-7eff",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7eff",
+        "text": "绿",
+        "pinyin": "lǜ",
+        "meaning": "green",
+        "characters": [
+          {
+            "id": "C-7EFF",
+            "text": "绿"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-2d8be01f170b20dca532323c",
+        "text": "也就是说",
+        "pinyin": "yě jiù shì shuō",
+        "meaning": "in other words",
+        "characters": [
+          {
+            "id": "C-4E5F",
+            "text": "也"
+          },
+          {
+            "id": "C-5C31",
+            "text": "就"
+          },
+          {
+            "id": "C-662F",
+            "text": "是"
+          },
+          {
+            "id": "C-8BF4",
+            "text": "说"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-3bdb60657ea4ad4f8a412a4e",
+        "text": "笔记本",
+        "pinyin": "bǐjìběn",
+        "meaning": "notebook (stationery); (computing) laptop; notebook",
+        "characters": [
+          {
+            "id": "C-7B14",
+            "text": "笔"
+          },
+          {
+            "id": "C-8BB0",
+            "text": "记"
+          },
+          {
+            "id": "C-672C",
+            "text": "本"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-cf000584b801811ea7129a89",
+        "text": "上市",
+        "pinyin": "shàngshì",
+        "meaning": "to hit the market (of a new product); to float (a company on the stock market)",
+        "characters": [
+          {
+            "id": "C-4E0A",
+            "text": "上"
+          },
+          {
+            "id": "C-5E02",
+            "text": "市"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d5b4bc4432b9329e9bd37cfc",
+        "text": "绿茶",
+        "pinyin": "lǜchá",
+        "meaning": "green tea; (slang) (of a girl) seemingly innocent and charming but actually calculating and manipulative; a girl who has these qualities",
+        "characters": [
+          {
+            "id": "C-7EFF",
+            "text": "绿"
+          },
+          {
+            "id": "C-8336",
+            "text": "茶"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "ca1322e73d855daa5938a43a93822bec5ce2bb3432baa622d31d64de40fd8698",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7eff",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "绿",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7eff-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-d5b4bc4432b9329e9bd37cfc",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "green tea; (slang) (of a girl) seemingly innocent and charming but actually calculating and manipulative",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "绿茶"
+              },
+              {
+                "value": "lǜchá",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lü4cha2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "绿茶",
+              "pinyin": "lǜchá",
+              "meaning": "green tea; (slang) (of a girl) seemingly innocent and charming but actually calculating and manipulative",
+              "audio": "ad10ca9a8742c6fe7e217a54210ae1f7592e6880cd0860b4c6cf069d93396694",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7eff-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7eff",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "绿",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-2d8be01f170b20dca532323c",
+                "label": "in other words",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-7eff",
+                "label": "green",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-3bdb60657ea4ad4f8a412a4e",
+                "label": "notebook (stationery); (computing) laptop",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7eff-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "绿",
+        "pinyin": "lǜ",
+        "meaning": "green",
+        "source": "/stroke-data/7eff.json",
+        "reference": {
+          "character": "绿",
+          "sha256": "96d2b3303f310d883e1477f31e61c0f5d2360ad8d112351abd91844b35fea259",
+          "medians": [
+            [
+              [
+                265,
+                790
+              ],
+              [
+                279,
+                776
+              ],
+              [
+                293,
+                744
+              ],
+              [
+                248,
+                657
+              ],
+              [
+                168,
+                531
+              ],
+              [
+                154,
+                495
+              ],
+              [
+                172,
+                488
+              ],
+              [
+                245,
+                491
+              ],
+              [
+                278,
+                496
+              ],
+              [
+                286,
+                505
+              ]
+            ],
+            [
+              [
+                360,
+                640
+              ],
+              [
+                379,
+                599
+              ],
+              [
+                331,
+                521
+              ],
+              [
+                208,
+                357
+              ],
+              [
+                201,
+                326
+              ],
+              [
+                234,
+                328
+              ],
+              [
+                366,
+                369
+              ]
+            ],
+            [
+              [
+                107,
+                156
+              ],
+              [
+                162,
+                152
+              ],
+              [
+                380,
+                289
+              ]
+            ],
+            [
+              [
+                486,
+                706
+              ],
+              [
+                510,
+                703
+              ],
+              [
+                582,
+                711
+              ],
+              [
+                693,
+                738
+              ],
+              [
+                715,
+                731
+              ],
+              [
+                729,
+                718
+              ],
+              [
+                739,
+                703
+              ],
+              [
+                737,
+                691
+              ],
+              [
+                701,
+                571
+              ],
+              [
+                691,
+                548
+              ],
+              [
+                668,
+                530
+              ]
+            ],
+            [
+              [
+                467,
+                599
+              ],
+              [
+                521,
+                596
+              ],
+              [
+                609,
+                613
+              ],
+              [
+                657,
+                612
+              ]
+            ],
+            [
+              [
+                417,
+                476
+              ],
+              [
+                470,
+                470
+              ],
+              [
+                639,
+                502
+              ],
+              [
+                810,
+                524
+              ],
+              [
+                888,
+                509
+              ]
+            ],
+            [
+              [
+                575,
+                467
+              ],
+              [
+                612,
+                445
+              ],
+              [
+                625,
+                424
+              ],
+              [
+                620,
+                80
+              ],
+              [
+                602,
+                40
+              ],
+              [
+                557,
+                54
+              ],
+              [
+                502,
+                78
+              ],
+              [
+                498,
+                86
+              ],
+              [
+                482,
+                89
+              ]
+            ],
+            [
+              [
+                420,
+                382
+              ],
+              [
+                485,
+                347
+              ],
+              [
+                514,
+                312
+              ]
+            ],
+            [
+              [
+                340,
+                134
+              ],
+              [
+                393,
+                137
+              ],
+              [
+                538,
+                256
+              ]
+            ],
+            [
+              [
+                818,
+                388
+              ],
+              [
+                782,
+                399
+              ],
+              [
+                702,
+                321
+              ],
+              [
+                671,
+                301
+              ]
+            ],
+            [
+              [
+                650,
+                318
+              ],
+              [
+                661,
+                290
+              ],
+              [
+                722,
+                220
+              ],
+              [
+                835,
+                116
+              ],
+              [
+                981,
+                88
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7eff-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-cf000584b801811ea7129a89",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to hit the market (of a new product); to float (a company on the stock market)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "上市"
+              },
+              {
+                "value": "shàngshì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shang4shi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "上市",
+              "pinyin": "shàngshì",
+              "meaning": "to hit the market (of a new product); to float (a company on the stock market)",
+              "audio": "193b9e0503bdd49ca48bb76f9af63af20a07f2c318a14e1fe7f14f6656731fb5",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7eff-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7eff",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "green",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "绿"
+              },
+              {
+                "value": "lǜ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lü4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "绿",
+              "pinyin": "lǜ",
+              "meaning": "green",
+              "audio": "b69c09fc13452ff2723ad54fc918ed7a707e7a41a3095e4a636f0d258f4c4f0d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "b69c09fc13452ff2723ad54fc918ed7a707e7a41a3095e4a636f0d258f4c4f0d"
+            ],
+            "transcript": [
+              {
+                "text": "绿",
+                "pinyin": "lǜ",
+                "meaning": "green",
+                "audio": "b69c09fc13452ff2723ad54fc918ed7a707e7a41a3095e4a636f0d258f4c4f0d",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7EFF",
+      "character": "绿",
+      "lessonIds": [
+        "LESSON-C-7EFF"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7eff-word",
+        "EX-CHAR-char-7eff-recognize",
+        "EX-CHAR-char-7eff-write",
+        "EX-CHAR-char-7eff-familiar",
+        "EX-CHAR-char-7eff-recall"
+      ]
+    },
+    "audio": {
+      "b69c09fc13452ff2723ad54fc918ed7a707e7a41a3095e4a636f0d258f4c4f0d": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-40e380e0b92dd52f89d784f2f228d016ab78de930c994b51dc8ab3e2773961ed.mp3",
+          "sha256": "40e380e0b92dd52f89d784f2f228d016ab78de930c994b51dc8ab3e2773961ed",
+          "byteLength": 7245,
+          "readAlong": {
+            "audioSha256": "40e380e0b92dd52f89d784f2f228d016ab78de930c994b51dc8ab3e2773961ed",
+            "text": "绿",
+            "words": [
+              {
+                "text": "绿",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-b54b1d9d45802701f02a2d76a58dbf0f6046eed0c7885c6766bf883678c74bf8.mp3",
+          "sha256": "b54b1d9d45802701f02a2d76a58dbf0f6046eed0c7885c6766bf883678c74bf8",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "b54b1d9d45802701f02a2d76a58dbf0f6046eed0c7885c6766bf883678c74bf8",
+            "text": "绿",
+            "words": [
+              {
+                "text": "绿",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "cc98622d7333b050dc932e48feab6e722ca32c3de0827b15ff61206ea32749b6": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a6bdf3a2a7b1f4731b6560259847a95c54e0398ebe13ab653f5757929c20c273.mp3",
+          "sha256": "a6bdf3a2a7b1f4731b6560259847a95c54e0398ebe13ab653f5757929c20c273",
+          "byteLength": 16173,
+          "readAlong": {
+            "audioSha256": "a6bdf3a2a7b1f4731b6560259847a95c54e0398ebe13ab653f5757929c20c273",
+            "text": "也就是说",
+            "words": [
+              {
+                "text": "也就是说",
+                "start": 0.09,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2e4c5fdb12c67b1e5f2634ced37f9fa63c9faf2b2603e91f4186d52b982c58bc.mp3",
+          "sha256": "2e4c5fdb12c67b1e5f2634ced37f9fa63c9faf2b2603e91f4186d52b982c58bc",
+          "byteLength": 16173,
+          "readAlong": {
+            "audioSha256": "2e4c5fdb12c67b1e5f2634ced37f9fa63c9faf2b2603e91f4186d52b982c58bc",
+            "text": "也就是说",
+            "words": [
+              {
+                "text": "也就是说",
+                "start": 0.09,
+                "end": 0.75
+              }
+            ]
+          }
+        }
+      },
+      "db75cb7dee5035dd377cdadadf3dc5ff8a5decb28735b9b10a88e983ab034110": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1be98041a28377bd5cdc6ffe9884ca65ed4b4fe2712ecf6d713954edccb8fada.mp3",
+          "sha256": "1be98041a28377bd5cdc6ffe9884ca65ed4b4fe2712ecf6d713954edccb8fada",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "1be98041a28377bd5cdc6ffe9884ca65ed4b4fe2712ecf6d713954edccb8fada",
+            "text": "笔记本",
+            "words": [
+              {
+                "text": "笔记本",
+                "start": 0.09,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-2d0dd25e8684f7600d02348a12c8fb34f9f0d8f6ac02dc1f30e5c564eb2eac7e.mp3",
+          "sha256": "2d0dd25e8684f7600d02348a12c8fb34f9f0d8f6ac02dc1f30e5c564eb2eac7e",
+          "byteLength": 17613,
+          "readAlong": {
+            "audioSha256": "2d0dd25e8684f7600d02348a12c8fb34f9f0d8f6ac02dc1f30e5c564eb2eac7e",
+            "text": "笔记本",
+            "words": [
+              {
+                "text": "笔记本",
+                "start": 0.15,
+                "end": 0.75
+              }
+            ]
+          }
+        }
+      },
+      "193b9e0503bdd49ca48bb76f9af63af20a07f2c318a14e1fe7f14f6656731fb5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f1521eeece86026815fbb4e3507f02119d6c424426a83cade625c52c0ae1a3f1.mp3",
+          "sha256": "f1521eeece86026815fbb4e3507f02119d6c424426a83cade625c52c0ae1a3f1",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "f1521eeece86026815fbb4e3507f02119d6c424426a83cade625c52c0ae1a3f1",
+            "text": "上市",
+            "words": [
+              {
+                "text": "上市",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/19c4074977d1a3d8b11bd923fb87e61b2fa8922b5329ca7780bccbc56e7d27ec.mp3",
+          "sha256": "19c4074977d1a3d8b11bd923fb87e61b2fa8922b5329ca7780bccbc56e7d27ec",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "19c4074977d1a3d8b11bd923fb87e61b2fa8922b5329ca7780bccbc56e7d27ec",
+            "text": "上市",
+            "words": [
+              {
+                "text": "上市",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "ad10ca9a8742c6fe7e217a54210ae1f7592e6880cd0860b4c6cf069d93396694": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1cb4051eb9d1974819f3830ab692ff4539827c4e8f8a7b80d1d9be9c281ff846.mp3",
+          "sha256": "1cb4051eb9d1974819f3830ab692ff4539827c4e8f8a7b80d1d9be9c281ff846",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "1cb4051eb9d1974819f3830ab692ff4539827c4e8f8a7b80d1d9be9c281ff846",
+            "text": "绿茶",
+            "words": [
+              {
+                "text": "绿茶",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/cbd93b9a3231b57bfded8161de84651d05add876064ac1f4f1e59d28efd3e3ce.mp3",
+          "sha256": "cbd93b9a3231b57bfded8161de84651d05add876064ac1f4f1e59d28efd3e3ce",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "cbd93b9a3231b57bfded8161de84651d05add876064ac1f4f1e59d28efd3e3ce",
+            "text": "绿茶",
+            "words": [
+              {
+                "text": "绿茶",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

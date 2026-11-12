@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2656",
+  "targetId": "W2656",
+  "steps": [
+    {
+      "id": "BANK-W2656-W2656",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2656-W2656",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "resident; inhabitant",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "居民"
+            },
+            {
+              "value": "jūmín",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ju1min2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "居民",
+            "pinyin": "jūmín",
+            "meaning": "resident; inhabitant",
+            "singleWord": true,
+            "audio": "7c92bacfb913c92a5def0e7131054a4070bf01ef40b04562bb357c6aa1972584"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7c92bacfb913c92a5def0e7131054a4070bf01ef40b04562bb357c6aa1972584": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5fdd017c0117623e343bcba15dea5af51d98c2562e191be3e4435356c67b807e.mp3",
+        "sha256": "5fdd017c0117623e343bcba15dea5af51d98c2562e191be3e4435356c67b807e",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "5fdd017c0117623e343bcba15dea5af51d98c2562e191be3e4435356c67b807e",
+          "text": "居民",
+          "words": [
+            {
+              "text": "居民",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-bad7bdd2ce0a810efdcc36861bad78f2150448ec2301eb1aaa7d2f4df8eee3fd.mp3",
+        "sha256": "bad7bdd2ce0a810efdcc36861bad78f2150448ec2301eb1aaa7d2f4df8eee3fd",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "bad7bdd2ce0a810efdcc36861bad78f2150448ec2301eb1aaa7d2f4df8eee3fd",
+          "text": "居民",
+          "words": [
+            {
+              "text": "居民",
+              "start": 0.24,
+              "end": 0.48
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2656",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2656-W2656",
+      "question_ids": [
+        "BANK-W2656-W2656"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-02",
+    "stepId": "S-U5-02-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6c11"
+    ],
+    "grammarLessonIds": []
+  }
+}

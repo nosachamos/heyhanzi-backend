@@ -1,0 +1,663 @@
+{
+  "id": "EX-CHAR-char-591a",
+  "revision": 2,
+  "unit": "U05-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U05-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "多",
+  "sourceBlockId": "mandarin-simplified-v1-char-591a",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-591a",
+        "text": "多",
+        "pinyin": "duō",
+        "meaning": "many; much; more; a lot of; too many; in excess",
+        "characters": [
+          {
+            "id": "C-591A",
+            "text": "多"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-a31722ea920e79bc9647afb9",
+        "text": "好多",
+        "pinyin": "hǎoduō",
+        "meaning": "many; quite a lot",
+        "characters": [
+          {
+            "id": "C-597D",
+            "text": "好"
+          },
+          {
+            "id": "C-591A",
+            "text": "多"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-b6eff82d93e2f169ab2a9ad5",
+        "text": "冷水",
+        "pinyin": "lěng shuǐ",
+        "meaning": "cold water",
+        "characters": [
+          {
+            "id": "C-51B7",
+            "text": "冷"
+          },
+          {
+            "id": "C-6C34",
+            "text": "水"
+          }
+        ]
+      },
+      {
+        "id": "W0371",
+        "text": "杯子",
+        "pinyin": "bēizi",
+        "meaning": "cup; glass",
+        "characters": [
+          {
+            "id": "C-676F",
+            "text": "杯"
+          },
+          {
+            "id": "C-5B50",
+            "text": "子"
+          }
+        ]
+      },
+      {
+        "id": "W0535",
+        "text": "高",
+        "pinyin": "gāo",
+        "meaning": "high; tall",
+        "characters": [
+          {
+            "id": "C-9AD8",
+            "text": "高"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "ebfd7afdddfcd2b935dcde0d9107ca2ae89a8de8a1d1ef8c309bfd41089eadcb",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-591a",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "多",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-591a-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-a31722ea920e79bc9647afb9",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "many; quite a lot",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "好多"
+              },
+              {
+                "value": "hǎoduō",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hao3duo1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "好多",
+              "pinyin": "hǎoduō",
+              "meaning": "many; quite a lot",
+              "audio": "25b7a403a57b6f91c135fd43c6e0839987a75ffb17072f8f5dfe04f232d1dd56",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-591a-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-591a",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "多",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-591a",
+                "label": "many; much",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-b6eff82d93e2f169ab2a9ad5",
+                "label": "cold water",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0535",
+                "label": "high; tall",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-591a-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "多",
+        "pinyin": "duō",
+        "meaning": "many; much",
+        "source": "/stroke-data/591a.json",
+        "reference": {
+          "character": "多",
+          "sha256": "b5793db257293dead39914ad2dae9ad473bd29752d328cf9d931d8418e95a119",
+          "medians": [
+            [
+              [
+                476,
+                838
+              ],
+              [
+                494,
+                796
+              ],
+              [
+                452,
+                737
+              ],
+              [
+                366,
+                655
+              ],
+              [
+                336,
+                634
+              ],
+              [
+                262,
+                599
+              ]
+            ],
+            [
+              [
+                484,
+                726
+              ],
+              [
+                630,
+                734
+              ],
+              [
+                666,
+                717
+              ],
+              [
+                645,
+                678
+              ],
+              [
+                606,
+                630
+              ],
+              [
+                494,
+                520
+              ],
+              [
+                354,
+                421
+              ],
+              [
+                250,
+                370
+              ]
+            ],
+            [
+              [
+                358,
+                625
+              ],
+              [
+                407,
+                597
+              ],
+              [
+                421,
+                583
+              ],
+              [
+                432,
+                557
+              ]
+            ],
+            [
+              [
+                596,
+                478
+              ],
+              [
+                567,
+                472
+              ],
+              [
+                505,
+                397
+              ],
+              [
+                398,
+                306
+              ],
+              [
+                331,
+                264
+              ],
+              [
+                295,
+                249
+              ]
+            ],
+            [
+              [
+                531,
+                383
+              ],
+              [
+                672,
+                411
+              ],
+              [
+                722,
+                402
+              ],
+              [
+                734,
+                384
+              ],
+              [
+                682,
+                294
+              ],
+              [
+                619,
+                204
+              ],
+              [
+                510,
+                93
+              ],
+              [
+                428,
+                34
+              ],
+              [
+                338,
+                -13
+              ],
+              [
+                270,
+                -39
+              ],
+              [
+                190,
+                -54
+              ]
+            ],
+            [
+              [
+                382,
+                273
+              ],
+              [
+                402,
+                266
+              ],
+              [
+                460,
+                220
+              ],
+              [
+                486,
+                178
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-591a-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0371",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "cup; glass",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "杯子"
+              },
+              {
+                "value": "bēizi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bei1zi5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "杯子",
+              "pinyin": "bēizi",
+              "meaning": "cup; glass",
+              "audio": "a2035fd77b55b11e794c36237e17c04a84ec702e9eb728b8ba562ccbb01228ed",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-591a-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-591a",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "many; much",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "多"
+              },
+              {
+                "value": "duō",
+                "mode": "pinyin"
+              },
+              {
+                "value": "duo1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "多",
+              "pinyin": "duō",
+              "meaning": "many; much",
+              "audio": "4c051f4d5d3dba36e6303ac51e1e5417829287acc8c1b984d49ecfb5fd649a5a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "4c051f4d5d3dba36e6303ac51e1e5417829287acc8c1b984d49ecfb5fd649a5a"
+            ],
+            "transcript": [
+              {
+                "text": "多",
+                "pinyin": "duō",
+                "meaning": "many; much",
+                "audio": "4c051f4d5d3dba36e6303ac51e1e5417829287acc8c1b984d49ecfb5fd649a5a",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-591A",
+      "character": "多",
+      "lessonIds": [
+        "LESSON-C-591A"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-591a-word",
+        "EX-CHAR-char-591a-recognize",
+        "EX-CHAR-char-591a-write",
+        "EX-CHAR-char-591a-familiar",
+        "EX-CHAR-char-591a-recall"
+      ]
+    },
+    "audio": {
+      "4c051f4d5d3dba36e6303ac51e1e5417829287acc8c1b984d49ecfb5fd649a5a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-e585cc4e0f46e1040e054ab5e2486f9d5893e45d444f842be37d225f0dea914b.mp3",
+          "sha256": "e585cc4e0f46e1040e054ab5e2486f9d5893e45d444f842be37d225f0dea914b",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "e585cc4e0f46e1040e054ab5e2486f9d5893e45d444f842be37d225f0dea914b",
+            "text": "多",
+            "words": [
+              {
+                "text": "多",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8d4843f9177791fa35cd6370057d7f78e61b75de6eacf8abf1db6a232ad4a50f.mp3",
+          "sha256": "8d4843f9177791fa35cd6370057d7f78e61b75de6eacf8abf1db6a232ad4a50f",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "8d4843f9177791fa35cd6370057d7f78e61b75de6eacf8abf1db6a232ad4a50f",
+            "text": "多",
+            "words": [
+              {
+                "text": "多",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "25b7a403a57b6f91c135fd43c6e0839987a75ffb17072f8f5dfe04f232d1dd56": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/81f1f93e6eb77a49155469ae8bd16398c502f1bf1742b1c1c4fc0ce83315cc73.mp3",
+          "sha256": "81f1f93e6eb77a49155469ae8bd16398c502f1bf1742b1c1c4fc0ce83315cc73",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "81f1f93e6eb77a49155469ae8bd16398c502f1bf1742b1c1c4fc0ce83315cc73",
+            "text": "好多",
+            "words": [
+              {
+                "text": "好多",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a858c4e02c4b3c3d092424b96f69a5e39fbc4d474c3a8da12720478f252264c8.mp3",
+          "sha256": "a858c4e02c4b3c3d092424b96f69a5e39fbc4d474c3a8da12720478f252264c8",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "a858c4e02c4b3c3d092424b96f69a5e39fbc4d474c3a8da12720478f252264c8",
+            "text": "好多",
+            "words": [
+              {
+                "text": "好多",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "ffae1b37fc69296ff4ed7c47aae363ae3e1cece4ef8279f11a8e1f86bde3ff9a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-d473426758e9e77af019728b181450f0851991b8696ef089046c1d6c5c32bc53.mp3",
+          "sha256": "d473426758e9e77af019728b181450f0851991b8696ef089046c1d6c5c32bc53",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "d473426758e9e77af019728b181450f0851991b8696ef089046c1d6c5c32bc53",
+            "text": "冷水",
+            "words": [
+              {
+                "text": "冷水",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6b1629f6282b7038e4482fb42c69e91c2f45963ad423c32d866793bf550dd4b0.mp3",
+          "sha256": "6b1629f6282b7038e4482fb42c69e91c2f45963ad423c32d866793bf550dd4b0",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "6b1629f6282b7038e4482fb42c69e91c2f45963ad423c32d866793bf550dd4b0",
+            "text": "冷水",
+            "words": [
+              {
+                "text": "冷水",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "a2035fd77b55b11e794c36237e17c04a84ec702e9eb728b8ba562ccbb01228ed": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ad273d26d8cbf37e8555bfdbf918a585a03bc7865e9aa2e2836cbe59ead32407.mp3",
+          "sha256": "ad273d26d8cbf37e8555bfdbf918a585a03bc7865e9aa2e2836cbe59ead32407",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "ad273d26d8cbf37e8555bfdbf918a585a03bc7865e9aa2e2836cbe59ead32407",
+            "text": "杯子",
+            "words": [
+              {
+                "text": "杯子",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-159a5c369074102bc449b7705506a5d291f1e99d815048d955da7301ced3c810.mp3",
+          "sha256": "159a5c369074102bc449b7705506a5d291f1e99d815048d955da7301ced3c810",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "159a5c369074102bc449b7705506a5d291f1e99d815048d955da7301ced3c810",
+            "text": "杯子",
+            "words": [
+              {
+                "text": "杯子",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "2add000d2bb301f71d1bd9f65f703dd0f31e206aa0b1ee9dd22984ce6d526ad5": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ca526e78ffd6274acbb8c39d758553282c488e95b336ec26efcf12daf1e75ccf.mp3",
+          "sha256": "ca526e78ffd6274acbb8c39d758553282c488e95b336ec26efcf12daf1e75ccf",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "ca526e78ffd6274acbb8c39d758553282c488e95b336ec26efcf12daf1e75ccf",
+            "text": "高",
+            "words": [
+              {
+                "text": "高",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c60e93ddfd4a1fe9e90d95d9068b27200e4f6eae71cabdf20f7c16f02b6d011d.mp3",
+          "sha256": "c60e93ddfd4a1fe9e90d95d9068b27200e4f6eae71cabdf20f7c16f02b6d011d",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "c60e93ddfd4a1fe9e90d95d9068b27200e4f6eae71cabdf20f7c16f02b6d011d",
+            "text": "高",
+            "words": [
+              {
+                "text": "高",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

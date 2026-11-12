@@ -1,0 +1,741 @@
+{
+  "id": "EX-CHAR-char-9001",
+  "revision": 2,
+  "unit": "U12-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U12-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "送",
+  "sourceBlockId": "mandarin-simplified-v1-char-9001",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-9001",
+        "text": "送",
+        "pinyin": "sòng",
+        "meaning": "to send; to deliver; to transmit; to give (as a present)",
+        "characters": [
+          {
+            "id": "C-9001",
+            "text": "送"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d6b5b12042151dd9558c2dd6",
+        "text": "送别",
+        "pinyin": "sòng bié",
+        "meaning": "to see somebody off",
+        "characters": [
+          {
+            "id": "C-9001",
+            "text": "送"
+          },
+          {
+            "id": "C-522B",
+            "text": "别"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-fbf92953ee602f2b57ed8cd6",
+        "text": "时间",
+        "pinyin": "shíjiān",
+        "meaning": "(concept of) time; (duration of) time",
+        "characters": [
+          {
+            "id": "C-65F6",
+            "text": "时"
+          },
+          {
+            "id": "C-95F4",
+            "text": "间"
+          }
+        ]
+      },
+      {
+        "id": "W0705",
+        "text": "大衣",
+        "pinyin": "dàyī",
+        "meaning": "overcoat; topcoat",
+        "characters": [
+          {
+            "id": "C-5927",
+            "text": "大"
+          },
+          {
+            "id": "C-8863",
+            "text": "衣"
+          }
+        ]
+      },
+      {
+        "id": "W5102",
+        "text": "学问",
+        "pinyin": "xuéwen",
+        "meaning": "learning; knowledge",
+        "characters": [
+          {
+            "id": "C-5B66",
+            "text": "学"
+          },
+          {
+            "id": "C-95EE",
+            "text": "问"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "1b81ab9c07b14f338e7393d79bb31f1189c2a24914cd76590a9736aeba2bd1c7",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-9001",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "送",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-9001-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-d6b5b12042151dd9558c2dd6",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to see someone off",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "送别"
+              },
+              {
+                "value": "sòng bié",
+                "mode": "pinyin"
+              },
+              {
+                "value": "song4bie2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "送别",
+              "pinyin": "sòng bié",
+              "meaning": "to see someone off",
+              "audio": "67f58722a8603d3c2306734fd0107831526865e726f6ab479afa759975d0f641",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9001-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-9001",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "送",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W5102",
+                "label": "learning; knowledge",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-9001",
+                "label": "to send; to deliver",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-fbf92953ee602f2b57ed8cd6",
+                "label": "(concept of) time; (duration of) time",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9001-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "送",
+        "pinyin": "sòng",
+        "meaning": "to send; to deliver",
+        "source": "/stroke-data/9001.json",
+        "reference": {
+          "character": "送",
+          "sha256": "8ab8d8dfef44b6c26af922d05ed502e834d8e4adfd65706c8ea9c5176ef06e12",
+          "medians": [
+            [
+              [
+                488,
+                733
+              ],
+              [
+                536,
+                681
+              ],
+              [
+                553,
+                645
+              ]
+            ],
+            [
+              [
+                709,
+                805
+              ],
+              [
+                732,
+                789
+              ],
+              [
+                742,
+                772
+              ],
+              [
+                668,
+                652
+              ],
+              [
+                658,
+                646
+              ],
+              [
+                658,
+                638
+              ]
+            ],
+            [
+              [
+                473,
+                553
+              ],
+              [
+                534,
+                547
+              ],
+              [
+                623,
+                562
+              ],
+              [
+                737,
+                594
+              ],
+              [
+                783,
+                591
+              ]
+            ],
+            [
+              [
+                404,
+                392
+              ],
+              [
+                449,
+                386
+              ],
+              [
+                771,
+                442
+              ],
+              [
+                815,
+                441
+              ],
+              [
+                860,
+                430
+              ]
+            ],
+            [
+              [
+                580,
+                524
+              ],
+              [
+                608,
+                505
+              ],
+              [
+                608,
+                493
+              ],
+              [
+                599,
+                412
+              ],
+              [
+                575,
+                329
+              ],
+              [
+                538,
+                269
+              ],
+              [
+                512,
+                244
+              ],
+              [
+                460,
+                209
+              ],
+              [
+                417,
+                194
+              ]
+            ],
+            [
+              [
+                677,
+                324
+              ],
+              [
+                777,
+                233
+              ],
+              [
+                791,
+                209
+              ],
+              [
+                798,
+                174
+              ]
+            ],
+            [
+              [
+                241,
+                755
+              ],
+              [
+                329,
+                692
+              ],
+              [
+                354,
+                650
+              ]
+            ],
+            [
+              [
+                105,
+                446
+              ],
+              [
+                161,
+                450
+              ],
+              [
+                244,
+                484
+              ],
+              [
+                261,
+                483
+              ],
+              [
+                286,
+                466
+              ],
+              [
+                281,
+                420
+              ],
+              [
+                253,
+                356
+              ],
+              [
+                258,
+                321
+              ],
+              [
+                289,
+                263
+              ],
+              [
+                302,
+                223
+              ],
+              [
+                300,
+                197
+              ],
+              [
+                287,
+                184
+              ]
+            ],
+            [
+              [
+                105,
+                132
+              ],
+              [
+                148,
+                121
+              ],
+              [
+                230,
+                154
+              ],
+              [
+                272,
+                160
+              ],
+              [
+                314,
+                156
+              ],
+              [
+                610,
+                57
+              ],
+              [
+                760,
+                29
+              ],
+              [
+                828,
+                33
+              ],
+              [
+                939,
+                62
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-9001-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0705",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "overcoat; topcoat",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "大衣"
+              },
+              {
+                "value": "dàyī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "da4yi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "大衣",
+              "pinyin": "dàyī",
+              "meaning": "overcoat; topcoat",
+              "audio": "33cfe4d592f403fe75a253331c626c17b290711e02e4b45de1d7b6a4519ce1a3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9001-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-9001",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to send; to deliver",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "送"
+              },
+              {
+                "value": "sòng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "song4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "送",
+              "pinyin": "sòng",
+              "meaning": "to send; to deliver",
+              "audio": "507a5d546c484ab376b4bdf38800214b252ff5a7b34c8ff47f6d54a881417870",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "507a5d546c484ab376b4bdf38800214b252ff5a7b34c8ff47f6d54a881417870"
+            ],
+            "transcript": [
+              {
+                "text": "送",
+                "pinyin": "sòng",
+                "meaning": "to send; to deliver",
+                "audio": "507a5d546c484ab376b4bdf38800214b252ff5a7b34c8ff47f6d54a881417870",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-9001",
+      "character": "送",
+      "lessonIds": [
+        "LESSON-C-9001"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-9001-word",
+        "EX-CHAR-char-9001-recognize",
+        "EX-CHAR-char-9001-write",
+        "EX-CHAR-char-9001-familiar",
+        "EX-CHAR-char-9001-recall"
+      ]
+    },
+    "audio": {
+      "507a5d546c484ab376b4bdf38800214b252ff5a7b34c8ff47f6d54a881417870": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-a998e09273fe7b83997d9c81b05acab38e979955f78f445ece4eb37210948c79.mp3",
+          "sha256": "a998e09273fe7b83997d9c81b05acab38e979955f78f445ece4eb37210948c79",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "a998e09273fe7b83997d9c81b05acab38e979955f78f445ece4eb37210948c79",
+            "text": "送",
+            "words": [
+              {
+                "text": "送",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-16b8e03542c422845781c424d34a0b891f115292eee08f6ac9ebdb8a35673a4c.mp3",
+          "sha256": "16b8e03542c422845781c424d34a0b891f115292eee08f6ac9ebdb8a35673a4c",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "16b8e03542c422845781c424d34a0b891f115292eee08f6ac9ebdb8a35673a4c",
+            "text": "送",
+            "words": [
+              {
+                "text": "送",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "67f58722a8603d3c2306734fd0107831526865e726f6ab479afa759975d0f641": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8ec332357226512fcf006c397e9817d8eba1a99e04a7999a13c23411e917e9c8.mp3",
+          "sha256": "8ec332357226512fcf006c397e9817d8eba1a99e04a7999a13c23411e917e9c8",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "8ec332357226512fcf006c397e9817d8eba1a99e04a7999a13c23411e917e9c8",
+            "text": "送别",
+            "words": [
+              {
+                "text": "送别",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e0d3d40b8a59983d42719647cee94cff054db5c19df26594aba77af77d4907e8.mp3",
+          "sha256": "e0d3d40b8a59983d42719647cee94cff054db5c19df26594aba77af77d4907e8",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "e0d3d40b8a59983d42719647cee94cff054db5c19df26594aba77af77d4907e8",
+            "text": "送别",
+            "words": [
+              {
+                "text": "送别",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "beb17cd02a2bd476b7246ccd470df6898b1f1100a53cdd757526b030e845c3fb": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-6691ae4ffd5fd476c453d113d60bb2c561a851304682710ecb92a9eb892f2891.mp3",
+          "sha256": "6691ae4ffd5fd476c453d113d60bb2c561a851304682710ecb92a9eb892f2891",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "6691ae4ffd5fd476c453d113d60bb2c561a851304682710ecb92a9eb892f2891",
+            "text": "时间",
+            "words": [
+              {
+                "text": "时间",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ad185b18cefcf9f150728811d50c97ba984e09bad6dc0705d48887b54f1f3f7a.mp3",
+          "sha256": "ad185b18cefcf9f150728811d50c97ba984e09bad6dc0705d48887b54f1f3f7a",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "ad185b18cefcf9f150728811d50c97ba984e09bad6dc0705d48887b54f1f3f7a",
+            "text": "时间",
+            "words": [
+              {
+                "text": "时间",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "33cfe4d592f403fe75a253331c626c17b290711e02e4b45de1d7b6a4519ce1a3": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-63996600f67d0e8e5499d76cb82e92b8f112993e78bc5d984c7a69701fe0f291.mp3",
+          "sha256": "63996600f67d0e8e5499d76cb82e92b8f112993e78bc5d984c7a69701fe0f291",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "63996600f67d0e8e5499d76cb82e92b8f112993e78bc5d984c7a69701fe0f291",
+            "text": "大衣",
+            "words": [
+              {
+                "text": "大衣",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ee463a9c8efd32039c37e2dcc53f5500ee7c6906271457ccd6080aff2ebf0a0a.mp3",
+          "sha256": "ee463a9c8efd32039c37e2dcc53f5500ee7c6906271457ccd6080aff2ebf0a0a",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "ee463a9c8efd32039c37e2dcc53f5500ee7c6906271457ccd6080aff2ebf0a0a",
+            "text": "大衣",
+            "words": [
+              {
+                "text": "大衣",
+                "start": 0.18,
+                "end": 0.48
+              }
+            ]
+          }
+        }
+      },
+      "7c8154837a8d858b61d1acc78e9c57d0701734a692d116c74404bc116f3c6bd7": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b69029cf8480b5aa1739771ac92f66b7cd72818b53f06b8b68505a0c2b4eee41.mp3",
+          "sha256": "b69029cf8480b5aa1739771ac92f66b7cd72818b53f06b8b68505a0c2b4eee41",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "b69029cf8480b5aa1739771ac92f66b7cd72818b53f06b8b68505a0c2b4eee41",
+            "text": "学问",
+            "words": [
+              {
+                "text": "学问",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-a8747cfc8ba3abfb894518b6e055896c867b12f1fdef13ed381a313ff70c3429.mp3",
+          "sha256": "a8747cfc8ba3abfb894518b6e055896c867b12f1fdef13ed381a313ff70c3429",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "a8747cfc8ba3abfb894518b6e055896c867b12f1fdef13ed381a313ff70c3429",
+            "text": "学问",
+            "words": [
+              {
+                "text": "学问",
+                "start": 0.15,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

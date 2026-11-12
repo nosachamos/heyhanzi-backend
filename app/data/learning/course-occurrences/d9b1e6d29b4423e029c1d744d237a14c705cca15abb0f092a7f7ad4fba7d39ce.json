@@ -1,0 +1,753 @@
+{
+  "id": "EX-CHAR-char-57ce",
+  "revision": 2,
+  "unit": "U3-11",
+  "stage": "ST-HSK3",
+  "after": "S-U3-11-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "城",
+  "sourceBlockId": "mandarin-simplified-v1-char-57ce",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-57ce",
+        "text": "城",
+        "pinyin": "chéng",
+        "meaning": "city walls; city",
+        "characters": [
+          {
+            "id": "C-57CE",
+            "text": "城"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-1a00c5ab222f01fa929b42dc",
+        "text": "不好",
+        "pinyin": "bù hǎo",
+        "meaning": "not good",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-597D",
+            "text": "好"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ac0be664839678413c86658f",
+        "text": "二手",
+        "pinyin": "èrshǒu",
+        "meaning": "indirectly acquired; second-hand (information, equipment etc)",
+        "characters": [
+          {
+            "id": "C-4E8C",
+            "text": "二"
+          },
+          {
+            "id": "C-624B",
+            "text": "手"
+          }
+        ]
+      },
+      {
+        "id": "W0405",
+        "text": "汉语",
+        "pinyin": "Hànyǔ",
+        "meaning": "Chinese language",
+        "characters": [
+          {
+            "id": "C-6C49",
+            "text": "汉"
+          },
+          {
+            "id": "C-8BED",
+            "text": "语"
+          }
+        ]
+      },
+      {
+        "id": "W2168",
+        "text": "城区",
+        "pinyin": "chéngqū",
+        "meaning": "city district; urban area",
+        "characters": [
+          {
+            "id": "C-57CE",
+            "text": "城"
+          },
+          {
+            "id": "C-533A",
+            "text": "区"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "7fcae53073a5d7c27b7164b15ea4f0f8e2bbf3388e622b4a33c23921acbf706f",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-57ce",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "城",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-57ce-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W2168",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "city district; urban area",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "城区"
+              },
+              {
+                "value": "chéngqū",
+                "mode": "pinyin"
+              },
+              {
+                "value": "cheng2qu1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "城区",
+              "pinyin": "chéngqū",
+              "meaning": "city district; urban area",
+              "audio": "5f008b9608e9a952f80dfcd605a346455b3ecb8efe76fa42972bbcc6fcbf1807",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-57ce-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-57ce",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "城",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-ac0be664839678413c86658f",
+                "label": "indirectly acquired; second-hand (information, equipment etc)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-57ce",
+                "label": "city walls; city",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-1a00c5ab222f01fa929b42dc",
+                "label": "not good",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-57ce-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "城",
+        "pinyin": "chéng",
+        "meaning": "city walls; city",
+        "source": "/stroke-data/57ce.json",
+        "reference": {
+          "character": "城",
+          "sha256": "b0b49c322974e33684e9e18eb508fbb44aec5b5b3843b00fb0804ac8a563fcb2",
+          "medians": [
+            [
+              [
+                91,
+                424
+              ],
+              [
+                149,
+                424
+              ],
+              [
+                306,
+                473
+              ],
+              [
+                346,
+                470
+              ]
+            ],
+            [
+              [
+                198,
+                715
+              ],
+              [
+                250,
+                673
+              ],
+              [
+                251,
+                660
+              ],
+              [
+                242,
+                281
+              ],
+              [
+                239,
+                267
+              ],
+              [
+                221,
+                246
+              ]
+            ],
+            [
+              [
+                74,
+                174
+              ],
+              [
+                131,
+                165
+              ],
+              [
+                360,
+                289
+              ]
+            ],
+            [
+              [
+                467,
+                515
+              ],
+              [
+                479,
+                506
+              ],
+              [
+                521,
+                511
+              ],
+              [
+                702,
+                565
+              ],
+              [
+                750,
+                567
+              ]
+            ],
+            [
+              [
+                396,
+                533
+              ],
+              [
+                416,
+                519
+              ],
+              [
+                431,
+                489
+              ],
+              [
+                425,
+                363
+              ],
+              [
+                409,
+                268
+              ],
+              [
+                381,
+                198
+              ],
+              [
+                358,
+                162
+              ],
+              [
+                313,
+                113
+              ],
+              [
+                266,
+                84
+              ]
+            ],
+            [
+              [
+                451,
+                330
+              ],
+              [
+                482,
+                349
+              ],
+              [
+                524,
+                361
+              ],
+              [
+                549,
+                363
+              ],
+              [
+                566,
+                348
+              ],
+              [
+                558,
+                244
+              ],
+              [
+                535,
+                184
+              ],
+              [
+                516,
+                165
+              ],
+              [
+                460,
+                196
+              ]
+            ],
+            [
+              [
+                532,
+                809
+              ],
+              [
+                555,
+                801
+              ],
+              [
+                591,
+                769
+              ],
+              [
+                600,
+                621
+              ],
+              [
+                636,
+                408
+              ],
+              [
+                684,
+                253
+              ],
+              [
+                743,
+                138
+              ],
+              [
+                810,
+                60
+              ],
+              [
+                839,
+                43
+              ],
+              [
+                868,
+                37
+              ],
+              [
+                893,
+                101
+              ],
+              [
+                910,
+                191
+              ]
+            ],
+            [
+              [
+                767,
+                471
+              ],
+              [
+                795,
+                438
+              ],
+              [
+                777,
+                355
+              ],
+              [
+                749,
+                282
+              ],
+              [
+                730,
+                246
+              ],
+              [
+                675,
+                174
+              ],
+              [
+                629,
+                130
+              ],
+              [
+                593,
+                105
+              ]
+            ],
+            [
+              [
+                690,
+                729
+              ],
+              [
+                767,
+                689
+              ],
+              [
+                790,
+                660
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-57ce-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0405",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "Chinese language",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "汉语"
+              },
+              {
+                "value": "Hànyǔ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "han4yu3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "汉语",
+              "pinyin": "Hànyǔ",
+              "meaning": "Chinese language",
+              "audio": "5bd41ec918890cd69e59c4f3c73cc213a30996712df94546073d1b849e948b9f",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-57ce-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-57ce",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "city walls; city",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "城"
+              },
+              {
+                "value": "chéng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "cheng2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "城",
+              "pinyin": "chéng",
+              "meaning": "city walls; city",
+              "audio": "25fd9cdf04cce546f14fbc4948bbf1ece713f72943cc0df3a47a08a3e4b295c9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "25fd9cdf04cce546f14fbc4948bbf1ece713f72943cc0df3a47a08a3e4b295c9"
+            ],
+            "transcript": [
+              {
+                "text": "城",
+                "pinyin": "chéng",
+                "meaning": "city walls; city",
+                "audio": "25fd9cdf04cce546f14fbc4948bbf1ece713f72943cc0df3a47a08a3e4b295c9",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-57CE",
+      "character": "城",
+      "lessonIds": [
+        "LESSON-C-57CE"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-57ce-word",
+        "EX-CHAR-char-57ce-recognize",
+        "EX-CHAR-char-57ce-write",
+        "EX-CHAR-char-57ce-familiar",
+        "EX-CHAR-char-57ce-recall"
+      ]
+    },
+    "audio": {
+      "25fd9cdf04cce546f14fbc4948bbf1ece713f72943cc0df3a47a08a3e4b295c9": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3aeb21c35e8a4d12c3388c5f25a0dc621f31b8f370f43f1f6b7a65a87fa6a3fb.mp3",
+          "sha256": "3aeb21c35e8a4d12c3388c5f25a0dc621f31b8f370f43f1f6b7a65a87fa6a3fb",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "3aeb21c35e8a4d12c3388c5f25a0dc621f31b8f370f43f1f6b7a65a87fa6a3fb",
+            "text": "城",
+            "words": [
+              {
+                "text": "城",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c947f62a038196a2e04d048590b056ccb651717e9974a6290a69223378f530e1.mp3",
+          "sha256": "c947f62a038196a2e04d048590b056ccb651717e9974a6290a69223378f530e1",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "c947f62a038196a2e04d048590b056ccb651717e9974a6290a69223378f530e1",
+            "text": "城",
+            "words": [
+              {
+                "text": "城",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "3f6cc91ad5939b4f0b35767abae2330a2d34298e573f2660fc7422f5451a1fd2": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3386081c40f8548e1b6c20a1c6f03583e6b8ec9a61c0823658b9a33ce2cf70d3.mp3",
+          "sha256": "3386081c40f8548e1b6c20a1c6f03583e6b8ec9a61c0823658b9a33ce2cf70d3",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "3386081c40f8548e1b6c20a1c6f03583e6b8ec9a61c0823658b9a33ce2cf70d3",
+            "text": "不好",
+            "words": [
+              {
+                "text": "不好",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8606f622dbdbe7658d1c7e03260b9d93fecbf230cf95486404f5bb807a637045.mp3",
+          "sha256": "8606f622dbdbe7658d1c7e03260b9d93fecbf230cf95486404f5bb807a637045",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "8606f622dbdbe7658d1c7e03260b9d93fecbf230cf95486404f5bb807a637045",
+            "text": "不好",
+            "words": [
+              {
+                "text": "不好",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "5ec49bb32d5426a0a1057a3e6d50a3b34171df821d79d64c19aa4e90b2a0957e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3381deb36bc91434f92466a1e2f52dac3de2e74db509889e4a99d65c7a66707d.mp3",
+          "sha256": "3381deb36bc91434f92466a1e2f52dac3de2e74db509889e4a99d65c7a66707d",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "3381deb36bc91434f92466a1e2f52dac3de2e74db509889e4a99d65c7a66707d",
+            "text": "二手",
+            "words": [
+              {
+                "text": "二手",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e25bcf716c134abfbb097d281e151d88db5e6c7834455b1c67fd19166d4fef56.mp3",
+          "sha256": "e25bcf716c134abfbb097d281e151d88db5e6c7834455b1c67fd19166d4fef56",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "e25bcf716c134abfbb097d281e151d88db5e6c7834455b1c67fd19166d4fef56",
+            "text": "二手",
+            "words": [
+              {
+                "text": "二手",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "5bd41ec918890cd69e59c4f3c73cc213a30996712df94546073d1b849e948b9f": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/243a4cfd57f00d811a2ebb8c52b2fe775e2409dd03b10ea06a3c9bae124a2ecc.mp3",
+          "sha256": "243a4cfd57f00d811a2ebb8c52b2fe775e2409dd03b10ea06a3c9bae124a2ecc",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "243a4cfd57f00d811a2ebb8c52b2fe775e2409dd03b10ea06a3c9bae124a2ecc",
+            "text": "汉语",
+            "words": [
+              {
+                "text": "汉语",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d7e22c1410469a28a92adb8a4f8ebbb2aef01a3786cef1c3c9175dc5b98ad39e.mp3",
+          "sha256": "d7e22c1410469a28a92adb8a4f8ebbb2aef01a3786cef1c3c9175dc5b98ad39e",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "d7e22c1410469a28a92adb8a4f8ebbb2aef01a3786cef1c3c9175dc5b98ad39e",
+            "text": "汉语",
+            "words": [
+              {
+                "text": "汉语",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "5f008b9608e9a952f80dfcd605a346455b3ecb8efe76fa42972bbcc6fcbf1807": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b1552f1cabfc393302667bc2b83b8184e532a8a1272b8e5861ae2655cd956a81.mp3",
+          "sha256": "b1552f1cabfc393302667bc2b83b8184e532a8a1272b8e5861ae2655cd956a81",
+          "byteLength": 16749,
+          "readAlong": {
+            "audioSha256": "b1552f1cabfc393302667bc2b83b8184e532a8a1272b8e5861ae2655cd956a81",
+            "text": "城区",
+            "words": [
+              {
+                "text": "城区",
+                "start": 0.32999999999999996,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/7918b30ddd5735359dba118c7665ed1dd5f778f1513242a806dea7c43e8ba4a9.mp3",
+          "sha256": "7918b30ddd5735359dba118c7665ed1dd5f778f1513242a806dea7c43e8ba4a9",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "7918b30ddd5735359dba118c7665ed1dd5f778f1513242a806dea7c43e8ba4a9",
+            "text": "城区",
+            "words": [
+              {
+                "text": "城区",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

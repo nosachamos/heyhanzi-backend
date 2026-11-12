@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2829",
+  "targetId": "W2829",
+  "steps": [
+    {
+      "id": "BANK-W2829-W2829",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2829-W2829",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "woman; female",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "女子"
+            },
+            {
+              "value": "nǚzǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "nü3zi3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "女子",
+            "pinyin": "nǚzǐ",
+            "meaning": "woman; female",
+            "singleWord": true,
+            "audio": "616d68e87f0cf36759e72248fc5b26f4c3bc311c728b98ca6e46b02f5bf511b6"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "616d68e87f0cf36759e72248fc5b26f4c3bc311c728b98ca6e46b02f5bf511b6": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-39539d843db1b3da31061b48e04b388f219fbee91556b6d1d28710f345dfed38.mp3",
+        "sha256": "39539d843db1b3da31061b48e04b388f219fbee91556b6d1d28710f345dfed38",
+        "byteLength": 15885,
+        "readAlong": {
+          "audioSha256": "39539d843db1b3da31061b48e04b388f219fbee91556b6d1d28710f345dfed38",
+          "text": "女子",
+          "words": [
+            {
+              "text": "女子",
+              "start": 0.27,
+              "end": 0.75
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c96d206f446120814998ef17456f7952cd4616b795edda1f2cd5c3b097565d45.mp3",
+        "sha256": "c96d206f446120814998ef17456f7952cd4616b795edda1f2cd5c3b097565d45",
+        "byteLength": 14733,
+        "readAlong": {
+          "audioSha256": "c96d206f446120814998ef17456f7952cd4616b795edda1f2cd5c3b097565d45",
+          "text": "女子",
+          "words": [
+            {
+              "text": "女子",
+              "start": 0.51,
+              "end": 0.69
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2829",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2829-W2829",
+      "question_ids": [
+        "BANK-W2829-W2829"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-02",
+    "stepId": "S-U5-02-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5b50"
+    ],
+    "grammarLessonIds": []
+  }
+}

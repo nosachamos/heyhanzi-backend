@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0052",
+  "targetId": "W0052",
+  "steps": [
+    {
+      "id": "BANK-W0052-W0052",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0052-W0052",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "ten",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "十"
+            },
+            {
+              "value": "shí",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shi2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "十",
+            "pinyin": "shí",
+            "meaning": "ten",
+            "singleWord": true,
+            "audio": "a48f583f26042d2a9851b8c94ccae67650dcbd4e2dbfc1234642b2e02fd0f196"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a48f583f26042d2a9851b8c94ccae67650dcbd4e2dbfc1234642b2e02fd0f196": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-98b3c46f85e631b7d4ee633d5258b49a4ae219ab48e56a80a9a053bf090d30be.mp3",
+        "sha256": "98b3c46f85e631b7d4ee633d5258b49a4ae219ab48e56a80a9a053bf090d30be",
+        "byteLength": 9837,
+        "readAlong": {
+          "audioSha256": "98b3c46f85e631b7d4ee633d5258b49a4ae219ab48e56a80a9a053bf090d30be",
+          "text": "十",
+          "words": [
+            {
+              "text": "十",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-784d5242507536aa50712c6f39eb6ca16cce23f2365fe9b4ac1c4c8e75bb2544.mp3",
+        "sha256": "784d5242507536aa50712c6f39eb6ca16cce23f2365fe9b4ac1c4c8e75bb2544",
+        "byteLength": 7821,
+        "readAlong": {
+          "audioSha256": "784d5242507536aa50712c6f39eb6ca16cce23f2365fe9b4ac1c4c8e75bb2544",
+          "text": "十",
+          "words": [
+            {
+              "text": "十",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0052",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0052-W0052",
+      "question_ids": [
+        "BANK-W0052-W0052"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U05-P01",
+    "stepId": "S-U05-words-r4-20",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5341"
+    ],
+    "grammarLessonIds": []
+  }
+}

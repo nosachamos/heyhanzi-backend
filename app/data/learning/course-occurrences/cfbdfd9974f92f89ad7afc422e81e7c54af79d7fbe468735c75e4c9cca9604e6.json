@@ -1,0 +1,755 @@
+{
+  "id": "EX-CHAR-char-94c1",
+  "revision": 2,
+  "unit": "U19",
+  "stage": "ST-HSK2",
+  "after": "S-U19-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "铁",
+  "sourceBlockId": "mandarin-simplified-v1-char-94c1",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-94c1",
+        "text": "铁",
+        "pinyin": "tiě",
+        "meaning": "iron (metal); arms",
+        "characters": [
+          {
+            "id": "C-94C1",
+            "text": "铁"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-263f9c937810699bcdfe1360",
+        "text": "地铁站",
+        "pinyin": "dì tiě zhàn",
+        "meaning": "metro station",
+        "characters": [
+          {
+            "id": "C-5730",
+            "text": "地"
+          },
+          {
+            "id": "C-94C1",
+            "text": "铁"
+          },
+          {
+            "id": "C-7AD9",
+            "text": "站"
+          }
+        ]
+      },
+      {
+        "id": "W0026",
+        "text": "小",
+        "pinyin": "xiǎo",
+        "meaning": "small; tiny",
+        "characters": [
+          {
+            "id": "C-5C0F",
+            "text": "小"
+          }
+        ]
+      },
+      {
+        "id": "W1207",
+        "text": "点名",
+        "pinyin": "diǎnmíng",
+        "meaning": "roll call; to mention somebody by name",
+        "characters": [
+          {
+            "id": "C-70B9",
+            "text": "点"
+          },
+          {
+            "id": "C-540D",
+            "text": "名"
+          }
+        ]
+      },
+      {
+        "id": "W4835",
+        "text": "书写",
+        "pinyin": "shūxiě",
+        "meaning": "to write",
+        "characters": [
+          {
+            "id": "C-4E66",
+            "text": "书"
+          },
+          {
+            "id": "C-5199",
+            "text": "写"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "ad034462c006a01ea86d21148eedbdd0a2e2ad78ba42eb6af63e235cdb0104f1",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-94c1",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "铁",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-94c1-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-263f9c937810699bcdfe1360",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "metro station",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "地铁站"
+              },
+              {
+                "value": "dì tiě zhàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "di4tie3zhan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "地铁站",
+              "pinyin": "dì tiě zhàn",
+              "meaning": "metro station",
+              "audio": "4502b3a4692d8f0f84e8d8b52eb29b6d7d7fae7cd9bb76b750935b5432063234",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-94c1-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-94c1",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "铁",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0026",
+                "label": "small; tiny",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1207",
+                "label": "roll call; to mention someone by name",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-94c1",
+                "label": "iron (metal); arms",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-94c1-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "铁",
+        "pinyin": "tiě",
+        "meaning": "iron (metal); arms",
+        "source": "/stroke-data/94c1.json",
+        "reference": {
+          "character": "铁",
+          "sha256": "c134733a2a2c3258c52c29bda92b3218f4d15bc88d1e6a71a73d5664254c46a7",
+          "medians": [
+            [
+              [
+                285,
+                804
+              ],
+              [
+                309,
+                780
+              ],
+              [
+                320,
+                758
+              ],
+              [
+                266,
+                653
+              ],
+              [
+                208,
+                561
+              ],
+              [
+                147,
+                479
+              ],
+              [
+                74,
+                396
+              ],
+              [
+                50,
+                378
+              ]
+            ],
+            [
+              [
+                261,
+                594
+              ],
+              [
+                319,
+                604
+              ],
+              [
+                396,
+                631
+              ],
+              [
+                438,
+                635
+              ]
+            ],
+            [
+              [
+                194,
+                463
+              ],
+              [
+                238,
+                462
+              ],
+              [
+                357,
+                502
+              ],
+              [
+                407,
+                508
+              ]
+            ],
+            [
+              [
+                147,
+                313
+              ],
+              [
+                207,
+                313
+              ],
+              [
+                336,
+                355
+              ],
+              [
+                397,
+                364
+              ]
+            ],
+            [
+              [
+                243,
+                439
+              ],
+              [
+                273,
+                424
+              ],
+              [
+                279,
+                414
+              ],
+              [
+                284,
+                269
+              ],
+              [
+                272,
+                168
+              ],
+              [
+                277,
+                142
+              ],
+              [
+                312,
+                149
+              ],
+              [
+                418,
+                225
+              ]
+            ],
+            [
+              [
+                488,
+                638
+              ],
+              [
+                519,
+                612
+              ],
+              [
+                510,
+                562
+              ],
+              [
+                483,
+                488
+              ],
+              [
+                435,
+                419
+              ]
+            ],
+            [
+              [
+                522,
+                512
+              ],
+              [
+                533,
+                520
+              ],
+              [
+                609,
+                524
+              ],
+              [
+                758,
+                565
+              ],
+              [
+                792,
+                560
+              ]
+            ],
+            [
+              [
+                428,
+                348
+              ],
+              [
+                481,
+                344
+              ],
+              [
+                700,
+                389
+              ],
+              [
+                816,
+                406
+              ],
+              [
+                888,
+                392
+              ]
+            ],
+            [
+              [
+                602,
+                793
+              ],
+              [
+                650,
+                750
+              ],
+              [
+                633,
+                427
+              ],
+              [
+                622,
+                329
+              ],
+              [
+                607,
+                267
+              ],
+              [
+                571,
+                185
+              ],
+              [
+                522,
+                122
+              ],
+              [
+                452,
+                74
+              ],
+              [
+                356,
+                34
+              ]
+            ],
+            [
+              [
+                648,
+                340
+              ],
+              [
+                659,
+                297
+              ],
+              [
+                702,
+                232
+              ],
+              [
+                762,
+                148
+              ],
+              [
+                811,
+                96
+              ],
+              [
+                836,
+                77
+              ],
+              [
+                962,
+                44
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-94c1-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4835",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to write",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "书写"
+              },
+              {
+                "value": "shūxiě",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shu1xie3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "书写",
+              "pinyin": "shūxiě",
+              "meaning": "to write",
+              "audio": "ae6a1d6cde8247facc27c9955c8c4b2d280dc8ca8fb4c4471ca1a154e486bf4c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-94c1-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-94c1",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "iron (metal); arms",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "铁"
+              },
+              {
+                "value": "tiě",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tie3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "铁",
+              "pinyin": "tiě",
+              "meaning": "iron (metal); arms",
+              "audio": "689b98c099547db729dbf6334f1671f63c1461af7dd10b7ed8fa446a245d15be",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "689b98c099547db729dbf6334f1671f63c1461af7dd10b7ed8fa446a245d15be"
+            ],
+            "transcript": [
+              {
+                "text": "铁",
+                "pinyin": "tiě",
+                "meaning": "iron (metal); arms",
+                "audio": "689b98c099547db729dbf6334f1671f63c1461af7dd10b7ed8fa446a245d15be",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-94C1",
+      "character": "铁",
+      "lessonIds": [
+        "LESSON-C-94C1"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-94c1-word",
+        "EX-CHAR-char-94c1-recognize",
+        "EX-CHAR-char-94c1-write",
+        "EX-CHAR-char-94c1-familiar",
+        "EX-CHAR-char-94c1-recall"
+      ]
+    },
+    "audio": {
+      "689b98c099547db729dbf6334f1671f63c1461af7dd10b7ed8fa446a245d15be": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-edd1d24203678a2fbb80ea4d57b467ad28be21d9e25d056f0ce40b3e8368ba65.mp3",
+          "sha256": "edd1d24203678a2fbb80ea4d57b467ad28be21d9e25d056f0ce40b3e8368ba65",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "edd1d24203678a2fbb80ea4d57b467ad28be21d9e25d056f0ce40b3e8368ba65",
+            "text": "铁",
+            "words": [
+              {
+                "text": "铁",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-e4719f2b5d40bb8417dab0c5f60fadaab02a4aad52b998db2611feb0f0488379.mp3",
+          "sha256": "e4719f2b5d40bb8417dab0c5f60fadaab02a4aad52b998db2611feb0f0488379",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "e4719f2b5d40bb8417dab0c5f60fadaab02a4aad52b998db2611feb0f0488379",
+            "text": "铁",
+            "words": [
+              {
+                "text": "铁",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "4502b3a4692d8f0f84e8d8b52eb29b6d7d7fae7cd9bb76b750935b5432063234": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e7577b62c99304013581950cdbfcfcc247fec9459ee1bf63e4407c7b1619d85c.mp3",
+          "sha256": "e7577b62c99304013581950cdbfcfcc247fec9459ee1bf63e4407c7b1619d85c",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "e7577b62c99304013581950cdbfcfcc247fec9459ee1bf63e4407c7b1619d85c",
+            "text": "地铁站",
+            "words": [
+              {
+                "text": "地铁站",
+                "start": 0.09,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/32a2e5430e6c9ec7f9a0421b43079e6955e5a6186c418a5985bda377593c5115.mp3",
+          "sha256": "32a2e5430e6c9ec7f9a0421b43079e6955e5a6186c418a5985bda377593c5115",
+          "byteLength": 19629,
+          "readAlong": {
+            "audioSha256": "32a2e5430e6c9ec7f9a0421b43079e6955e5a6186c418a5985bda377593c5115",
+            "text": "地铁站",
+            "words": [
+              {
+                "text": "地铁站",
+                "start": 0.39,
+                "end": 0.99
+              }
+            ]
+          }
+        }
+      },
+      "d60bb25498656c1b43c89f960baa817d30fe05feeec6bbf2f77f94f8ce58bbba": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-7d2be9768288f1be48a74975c4da8e4aa5983665d3a1fb948de68d0e0979c265.mp3",
+          "sha256": "7d2be9768288f1be48a74975c4da8e4aa5983665d3a1fb948de68d0e0979c265",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "7d2be9768288f1be48a74975c4da8e4aa5983665d3a1fb948de68d0e0979c265",
+            "text": "小",
+            "words": [
+              {
+                "text": "小",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-24067f0e7ffcdb6ed9104b9eef9d515ccab6cd0a36ae6a5e91df4628554de4cc.mp3",
+          "sha256": "24067f0e7ffcdb6ed9104b9eef9d515ccab6cd0a36ae6a5e91df4628554de4cc",
+          "byteLength": 7245,
+          "readAlong": {
+            "audioSha256": "24067f0e7ffcdb6ed9104b9eef9d515ccab6cd0a36ae6a5e91df4628554de4cc",
+            "text": "小",
+            "words": [
+              {
+                "text": "小",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "5cf96aa227f2b6a6cbb7a4e11098b9d594049b94cbd4fd7d300d34a31fdce8b8": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-af673eda2a3fa91cead748eb8a9b3a573fb06e88ea18fc80282f2d4205300301.mp3",
+          "sha256": "af673eda2a3fa91cead748eb8a9b3a573fb06e88ea18fc80282f2d4205300301",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "af673eda2a3fa91cead748eb8a9b3a573fb06e88ea18fc80282f2d4205300301",
+            "text": "点名",
+            "words": [
+              {
+                "text": "点名",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-9d93b2c1765f03d4eef7ba90688cf3b7522b309c6eeaded369a96edd3ca048db.mp3",
+          "sha256": "9d93b2c1765f03d4eef7ba90688cf3b7522b309c6eeaded369a96edd3ca048db",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "9d93b2c1765f03d4eef7ba90688cf3b7522b309c6eeaded369a96edd3ca048db",
+            "text": "点名",
+            "words": [
+              {
+                "text": "点名",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "ae6a1d6cde8247facc27c9955c8c4b2d280dc8ca8fb4c4471ca1a154e486bf4c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e8a9821123ed8c7501df0665e06e8ee0cf5a2fa0b5730e9c8ca94c24625da81a.mp3",
+          "sha256": "e8a9821123ed8c7501df0665e06e8ee0cf5a2fa0b5730e9c8ca94c24625da81a",
+          "byteLength": 16173,
+          "readAlong": {
+            "audioSha256": "e8a9821123ed8c7501df0665e06e8ee0cf5a2fa0b5730e9c8ca94c24625da81a",
+            "text": "书写",
+            "words": [
+              {
+                "text": "书写",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0a15ade16dd57d288589e4286bd17d4de71f93059fe327f5d1001e973241989e.mp3",
+          "sha256": "0a15ade16dd57d288589e4286bd17d4de71f93059fe327f5d1001e973241989e",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "0a15ade16dd57d288589e4286bd17d4de71f93059fe327f5d1001e973241989e",
+            "text": "书写",
+            "words": [
+              {
+                "text": "书写",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

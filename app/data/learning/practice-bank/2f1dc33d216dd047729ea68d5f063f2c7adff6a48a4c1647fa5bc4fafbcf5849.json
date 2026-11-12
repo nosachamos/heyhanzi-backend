@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0293",
+  "targetId": "W0293",
+  "steps": [
+    {
+      "id": "BANK-W0293-W0293",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0293-W0293",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "health; healthy",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "健康"
+            },
+            {
+              "value": "jiànkāng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jian4kang1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "健康",
+            "pinyin": "jiànkāng",
+            "meaning": "health; healthy",
+            "singleWord": true,
+            "audio": "75e94c8d8aefd714921292eccc27fce356cbde985b580477227fc779df561db1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "75e94c8d8aefd714921292eccc27fce356cbde985b580477227fc779df561db1": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-362d8393b2f80fa0e37a81444bce11b0187fe91063c2feef871712a1fa9e70e6.mp3",
+        "sha256": "362d8393b2f80fa0e37a81444bce11b0187fe91063c2feef871712a1fa9e70e6",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "362d8393b2f80fa0e37a81444bce11b0187fe91063c2feef871712a1fa9e70e6",
+          "text": "健康",
+          "words": [
+            {
+              "text": "健康",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-72fab4ec3ec2efe8130dc0c61da90145a5831709bdb3cef433f4d901d99c5195.mp3",
+        "sha256": "72fab4ec3ec2efe8130dc0c61da90145a5831709bdb3cef433f4d901d99c5195",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "72fab4ec3ec2efe8130dc0c61da90145a5831709bdb3cef433f4d901d99c5195",
+          "text": "健康",
+          "words": [
+            {
+              "text": "健康",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0293",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0293-W0293",
+      "question_ids": [
+        "BANK-W0293-W0293"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U25",
+    "stepId": "S-U25-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5eb7"
+    ],
+    "grammarLessonIds": []
+  }
+}

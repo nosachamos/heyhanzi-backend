@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1800",
+  "targetId": "W1800",
+  "steps": [
+    {
+      "id": "BANK-W1800-W1800",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1800-W1800",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "Good night!; Good evening!",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "晚安"
+            },
+            {
+              "value": "wǎn'ān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wan3an1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "晚安",
+            "pinyin": "wǎn'ān",
+            "meaning": "Good night!; Good evening!",
+            "singleWord": true,
+            "audio": "adf76deb999edf847dd84259718aca74f39f5396d5e105ddafa2e703b7380a0a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "adf76deb999edf847dd84259718aca74f39f5396d5e105ddafa2e703b7380a0a": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/dc66f4bc1fb8ce5c7bd05c62633b711753967219d5ca1f748ff3f550350ddfd1.mp3",
+        "sha256": "dc66f4bc1fb8ce5c7bd05c62633b711753967219d5ca1f748ff3f550350ddfd1",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "dc66f4bc1fb8ce5c7bd05c62633b711753967219d5ca1f748ff3f550350ddfd1",
+          "text": "晚安",
+          "words": [
+            {
+              "text": "晚安",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/4f27f35894072e4ef0693640e1211b3ef25eb1eb57ec8ef387b05d41c53712f2.mp3",
+        "sha256": "4f27f35894072e4ef0693640e1211b3ef25eb1eb57ec8ef387b05d41c53712f2",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "4f27f35894072e4ef0693640e1211b3ef25eb1eb57ec8ef387b05d41c53712f2",
+          "text": "晚安",
+          "words": [
+            {
+              "text": "晚安",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1800",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1800-W1800",
+      "question_ids": [
+        "BANK-W1800-W1800"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-06",
+    "stepId": "S-U4-06-words-r4-9",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5b89"
+    ],
+    "grammarLessonIds": []
+  }
+}

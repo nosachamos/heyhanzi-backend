@@ -1,0 +1,715 @@
+{
+  "id": "EX-CHAR-char-76d1",
+  "revision": 2,
+  "unit": "U6-42",
+  "stage": "ST-HSK6",
+  "after": "S-U6-42-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "监",
+  "sourceBlockId": "mandarin-simplified-v1-char-76d1",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-76d1",
+        "text": "监",
+        "pinyin": "jiān",
+        "meaning": "to supervise; to inspect",
+        "characters": [
+          {
+            "id": "C-76D1",
+            "text": "监"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-c47240e75720431a793b9935",
+        "text": "监察",
+        "pinyin": "jiān chá",
+        "meaning": "to supervise",
+        "characters": [
+          {
+            "id": "C-76D1",
+            "text": "监"
+          },
+          {
+            "id": "C-5BDF",
+            "text": "察"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-e41a9b11d3842a60e0e19eee",
+        "text": "深受",
+        "pinyin": "shēn shòu",
+        "meaning": "to receive in no small measure",
+        "characters": [
+          {
+            "id": "C-6DF1",
+            "text": "深"
+          },
+          {
+            "id": "C-53D7",
+            "text": "受"
+          }
+        ]
+      },
+      {
+        "id": "W2209",
+        "text": "传递",
+        "pinyin": "chuándì",
+        "meaning": "to transmit; to pass on to somebody else",
+        "characters": [
+          {
+            "id": "C-4F20",
+            "text": "传"
+          },
+          {
+            "id": "C-9012",
+            "text": "递"
+          }
+        ]
+      },
+      {
+        "id": "W2298",
+        "text": "地下",
+        "pinyin": "dìxià",
+        "meaning": "underground; subterranean",
+        "characters": [
+          {
+            "id": "C-5730",
+            "text": "地"
+          },
+          {
+            "id": "C-4E0B",
+            "text": "下"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "869edd1db461c1a7f5d43fcac0437f6815589504ecea33e60217e40a237132a6",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-76d1",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "监",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-76d1-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-c47240e75720431a793b9935",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to supervise",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "监察"
+              },
+              {
+                "value": "jiān chá",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jian1cha2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "监察",
+              "pinyin": "jiān chá",
+              "meaning": "to supervise",
+              "audio": "0c9ae6790b8e56b08d65d44819f12d1404149347ed6f88ef3d310c9cf19e54f6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-76d1-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-76d1",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "监",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-76d1",
+                "label": "to supervise; to inspect",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W2209",
+                "label": "to transmit; to pass on to someone else",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W2298",
+                "label": "underground; subterranean",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-76d1-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "监",
+        "pinyin": "jiān",
+        "meaning": "to supervise; to inspect",
+        "source": "/stroke-data/76d1.json",
+        "reference": {
+          "character": "监",
+          "sha256": "d8c9a06e08a9fddd5f2473ff413098211c68c785b6aff45f67fd911fc5238958",
+          "medians": [
+            [
+              [
+                234,
+                657
+              ],
+              [
+                265,
+                622
+              ],
+              [
+                277,
+                395
+              ]
+            ],
+            [
+              [
+                369,
+                762
+              ],
+              [
+                393,
+                750
+              ],
+              [
+                417,
+                717
+              ],
+              [
+                421,
+                535
+              ],
+              [
+                412,
+                325
+              ]
+            ],
+            [
+              [
+                601,
+                784
+              ],
+              [
+                619,
+                772
+              ],
+              [
+                639,
+                742
+              ],
+              [
+                627,
+                700
+              ],
+              [
+                560,
+                557
+              ],
+              [
+                489,
+                458
+              ]
+            ],
+            [
+              [
+                616,
+                597
+              ],
+              [
+                694,
+                610
+              ],
+              [
+                789,
+                638
+              ],
+              [
+                847,
+                642
+              ]
+            ],
+            [
+              [
+                628,
+                507
+              ],
+              [
+                724,
+                433
+              ],
+              [
+                747,
+                390
+              ]
+            ],
+            [
+              [
+                267,
+                270
+              ],
+              [
+                290,
+                251
+              ],
+              [
+                305,
+                226
+              ],
+              [
+                333,
+                94
+              ],
+              [
+                349,
+                79
+              ]
+            ],
+            [
+              [
+                313,
+                271
+              ],
+              [
+                341,
+                259
+              ],
+              [
+                656,
+                306
+              ],
+              [
+                714,
+                305
+              ],
+              [
+                743,
+                277
+              ],
+              [
+                749,
+                261
+              ],
+              [
+                713,
+                147
+              ],
+              [
+                698,
+                125
+              ],
+              [
+                674,
+                107
+              ]
+            ],
+            [
+              [
+                436,
+                247
+              ],
+              [
+                454,
+                118
+              ],
+              [
+                453,
+                84
+              ]
+            ],
+            [
+              [
+                557,
+                276
+              ],
+              [
+                592,
+                243
+              ],
+              [
+                573,
+                156
+              ],
+              [
+                558,
+                107
+              ],
+              [
+                547,
+                94
+              ]
+            ],
+            [
+              [
+                104,
+                49
+              ],
+              [
+                156,
+                37
+              ],
+              [
+                395,
+                63
+              ],
+              [
+                812,
+                85
+              ],
+              [
+                861,
+                80
+              ],
+              [
+                917,
+                61
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-76d1-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-e41a9b11d3842a60e0e19eee",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to receive in no small measure",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "深受"
+              },
+              {
+                "value": "shēn shòu",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shen1shou4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "深受",
+              "pinyin": "shēn shòu",
+              "meaning": "to receive in no small measure",
+              "audio": "37f8a6cf783c0ca1054b8a00bb3c32ac55e5d2fabdd3a37a097e97551cbecc31",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-76d1-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-76d1",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to supervise; to inspect",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "监"
+              },
+              {
+                "value": "jiān",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jian1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "监",
+              "pinyin": "jiān",
+              "meaning": "to supervise; to inspect",
+              "audio": "112b18524eefebad4d6510521de9597d798f1bb29b35f047150a171779628026",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "112b18524eefebad4d6510521de9597d798f1bb29b35f047150a171779628026"
+            ],
+            "transcript": [
+              {
+                "text": "监",
+                "pinyin": "jiān",
+                "meaning": "to supervise; to inspect",
+                "audio": "112b18524eefebad4d6510521de9597d798f1bb29b35f047150a171779628026",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-76D1",
+      "character": "监",
+      "lessonIds": [
+        "LESSON-C-76D1"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-76d1-word",
+        "EX-CHAR-char-76d1-recognize",
+        "EX-CHAR-char-76d1-write",
+        "EX-CHAR-char-76d1-familiar",
+        "EX-CHAR-char-76d1-recall"
+      ]
+    },
+    "audio": {
+      "112b18524eefebad4d6510521de9597d798f1bb29b35f047150a171779628026": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-4e5828c54ea1be2dcabd72b65ed84d6e330df6844b3f0a7dc51e3a2a7d78ac6d.mp3",
+          "sha256": "4e5828c54ea1be2dcabd72b65ed84d6e330df6844b3f0a7dc51e3a2a7d78ac6d",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "4e5828c54ea1be2dcabd72b65ed84d6e330df6844b3f0a7dc51e3a2a7d78ac6d",
+            "text": "监",
+            "words": [
+              {
+                "text": "监",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-0bce6ee60ff75c759e12544b3e3c90c8d95be479a34acdceb65600654b920f64.mp3",
+          "sha256": "0bce6ee60ff75c759e12544b3e3c90c8d95be479a34acdceb65600654b920f64",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "0bce6ee60ff75c759e12544b3e3c90c8d95be479a34acdceb65600654b920f64",
+            "text": "监",
+            "words": [
+              {
+                "text": "监",
+                "start": 0.16,
+                "end": 0.28
+              }
+            ]
+          }
+        }
+      },
+      "0c9ae6790b8e56b08d65d44819f12d1404149347ed6f88ef3d310c9cf19e54f6": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ba7d3f68a1178e714ad0e74c5d38e4e261956f87deaff0aba4cbc3baf76d002d.mp3",
+          "sha256": "ba7d3f68a1178e714ad0e74c5d38e4e261956f87deaff0aba4cbc3baf76d002d",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "ba7d3f68a1178e714ad0e74c5d38e4e261956f87deaff0aba4cbc3baf76d002d",
+            "text": "监察",
+            "words": [
+              {
+                "text": "监察",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/6dcf43df10f2f1d90a5f61c83e3563feb01afb49fd71ad433a990e924b3656c9.mp3",
+          "sha256": "6dcf43df10f2f1d90a5f61c83e3563feb01afb49fd71ad433a990e924b3656c9",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "6dcf43df10f2f1d90a5f61c83e3563feb01afb49fd71ad433a990e924b3656c9",
+            "text": "监察",
+            "words": [
+              {
+                "text": "监察",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "37f8a6cf783c0ca1054b8a00bb3c32ac55e5d2fabdd3a37a097e97551cbecc31": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/dd0738f54e0727e2370289ad735f55d9260f55c12f7b6c1bbcaac66d9d5a7a0f.mp3",
+          "sha256": "dd0738f54e0727e2370289ad735f55d9260f55c12f7b6c1bbcaac66d9d5a7a0f",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "dd0738f54e0727e2370289ad735f55d9260f55c12f7b6c1bbcaac66d9d5a7a0f",
+            "text": "深受",
+            "words": [
+              {
+                "text": "深受",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/470d923bc178fe92b9220fea8790162e0707bbbffbb3926e844b94d9de490406.mp3",
+          "sha256": "470d923bc178fe92b9220fea8790162e0707bbbffbb3926e844b94d9de490406",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "470d923bc178fe92b9220fea8790162e0707bbbffbb3926e844b94d9de490406",
+            "text": "深受",
+            "words": [
+              {
+                "text": "深受",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "2bd95a70879d1ef66bb813d73f953975f3ad5acefd2789bef0a5c004ab5af807": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c2907707a376f67e80823ce4d7786716cf37a871ba673a1770e843bfebf814d1.mp3",
+          "sha256": "c2907707a376f67e80823ce4d7786716cf37a871ba673a1770e843bfebf814d1",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "c2907707a376f67e80823ce4d7786716cf37a871ba673a1770e843bfebf814d1",
+            "text": "传递",
+            "words": [
+              {
+                "text": "传递",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-7f628321cd3bb20f7f407d19d5ddb15423e12d55a9dfccc93c097520efdc94f8.mp3",
+          "sha256": "7f628321cd3bb20f7f407d19d5ddb15423e12d55a9dfccc93c097520efdc94f8",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "7f628321cd3bb20f7f407d19d5ddb15423e12d55a9dfccc93c097520efdc94f8",
+            "text": "传递",
+            "words": [
+              {
+                "text": "传递",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "7763398861a53d5ff7a508641e1fe0aa6acd13a517e58c756aa0dd9a8a6634c8": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a332faf66c85f279e7c8c03c7c1255f953261d3cc56895930197dc5ea38bdebf.mp3",
+          "sha256": "a332faf66c85f279e7c8c03c7c1255f953261d3cc56895930197dc5ea38bdebf",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "a332faf66c85f279e7c8c03c7c1255f953261d3cc56895930197dc5ea38bdebf",
+            "text": "地下",
+            "words": [
+              {
+                "text": "地下",
+                "start": 0.18,
+                "end": 0.52
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/23f43b58ee89cf584729ba0c8f90efe41f66ac5fedde479022d2ec1132a26032.mp3",
+          "sha256": "23f43b58ee89cf584729ba0c8f90efe41f66ac5fedde479022d2ec1132a26032",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "23f43b58ee89cf584729ba0c8f90efe41f66ac5fedde479022d2ec1132a26032",
+            "text": "地下",
+            "words": [
+              {
+                "text": "地下",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

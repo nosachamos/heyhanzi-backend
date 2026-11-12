@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3700",
+  "targetId": "W3700",
+  "steps": [
+    {
+      "id": "BANK-W3700-W3700",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3700-W3700",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "must not; may not",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "不得"
+            },
+            {
+              "value": "bùdé",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bu4de2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "不得",
+            "pinyin": "bùdé",
+            "meaning": "must not; may not",
+            "singleWord": true,
+            "audio": "cdc46161a0ef4f7b9e789babadd9c0f18435a410f537524faf70903b7ae6a684"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "cdc46161a0ef4f7b9e789babadd9c0f18435a410f537524faf70903b7ae6a684": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-c8abe2b13028466e6db5a6ad74bcf1d444001700e51bc48dc00d450940a42493.mp3",
+        "sha256": "c8abe2b13028466e6db5a6ad74bcf1d444001700e51bc48dc00d450940a42493",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "c8abe2b13028466e6db5a6ad74bcf1d444001700e51bc48dc00d450940a42493",
+          "text": "不得",
+          "words": [
+            {
+              "text": "不得",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-05be3db2370602c666b7adc153a846034f35910a5ff53a362739c558ae41c58c.mp3",
+        "sha256": "05be3db2370602c666b7adc153a846034f35910a5ff53a362739c558ae41c58c",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "05be3db2370602c666b7adc153a846034f35910a5ff53a362739c558ae41c58c",
+          "text": "不得",
+          "words": [
+            {
+              "text": "不得",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3700",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3700-W3700",
+      "question_ids": [
+        "BANK-W3700-W3700"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-37",
+    "stepId": "S-U5-37-words-r4-16",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5f97"
+    ],
+    "grammarLessonIds": []
+  }
+}

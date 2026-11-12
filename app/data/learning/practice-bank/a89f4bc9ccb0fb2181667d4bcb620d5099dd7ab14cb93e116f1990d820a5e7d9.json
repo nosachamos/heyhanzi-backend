@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1179",
+  "targetId": "W1179",
+  "steps": [
+    {
+      "id": "BANK-W1179-W1179",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1179-W1179",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "doctor; physician",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "大夫"
+            },
+            {
+              "value": "dàifu",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dai4fu5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "大夫",
+            "pinyin": "dàifu",
+            "meaning": "doctor; physician",
+            "singleWord": true,
+            "audio": "5e600aa25b0da00cf5fd0fa0f26191622f0f468ba87d48ff3496f5e7896c0c0e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5e600aa25b0da00cf5fd0fa0f26191622f0f468ba87d48ff3496f5e7896c0c0e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-e6366ff4c8a58cb8f602a498a42adface66d61e627c7babdadeb31a5a304c3bd.mp3",
+        "sha256": "e6366ff4c8a58cb8f602a498a42adface66d61e627c7babdadeb31a5a304c3bd",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "e6366ff4c8a58cb8f602a498a42adface66d61e627c7babdadeb31a5a304c3bd",
+          "text": "大夫",
+          "words": [
+            {
+              "text": "大夫",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-56fb3a4243401db4f16f996e1504e9ff24eb87383d8ec2e55149359cc1cc9b78.mp3",
+        "sha256": "56fb3a4243401db4f16f996e1504e9ff24eb87383d8ec2e55149359cc1cc9b78",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "56fb3a4243401db4f16f996e1504e9ff24eb87383d8ec2e55149359cc1cc9b78",
+          "text": "大夫",
+          "words": [
+            {
+              "text": "大夫",
+              "start": 0.16,
+              "end": 0.6
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1179",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1179-W1179",
+      "question_ids": [
+        "BANK-W1179-W1179"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-13",
+    "stepId": "S-U4-13-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-592b"
+    ],
+    "grammarLessonIds": []
+  }
+}

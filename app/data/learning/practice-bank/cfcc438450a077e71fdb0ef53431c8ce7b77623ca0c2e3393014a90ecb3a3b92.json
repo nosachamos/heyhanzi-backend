@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3173",
+  "targetId": "W3173",
+  "steps": [
+    {
+      "id": "BANK-W3173-W3173",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3173-W3173",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "books",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "图书"
+            },
+            {
+              "value": "túshū",
+              "mode": "pinyin"
+            },
+            {
+              "value": "tu2shu1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "图书",
+            "pinyin": "túshū",
+            "meaning": "books",
+            "singleWord": true,
+            "audio": "65702745372e0a3c6cd92db8b906a540825085e1d4060bf04b4047de3da07d4f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "65702745372e0a3c6cd92db8b906a540825085e1d4060bf04b4047de3da07d4f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-99f75045fec83e9fdb9edc4f440cf79ba5b993f455fbc98eac536a3516491930.mp3",
+        "sha256": "99f75045fec83e9fdb9edc4f440cf79ba5b993f455fbc98eac536a3516491930",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "99f75045fec83e9fdb9edc4f440cf79ba5b993f455fbc98eac536a3516491930",
+          "text": "图书",
+          "words": [
+            {
+              "text": "图书",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-34bca26c2e47166af4ed50b0ca44eced310756d773cbe1402226dec48aff72c5.mp3",
+        "sha256": "34bca26c2e47166af4ed50b0ca44eced310756d773cbe1402226dec48aff72c5",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "34bca26c2e47166af4ed50b0ca44eced310756d773cbe1402226dec48aff72c5",
+          "text": "图书",
+          "words": [
+            {
+              "text": "图书",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3173",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3173-W3173",
+      "question_ids": [
+        "BANK-W3173-W3173"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-19",
+    "stepId": "S-U5-19-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-56fe"
+    ],
+    "grammarLessonIds": []
+  }
+}

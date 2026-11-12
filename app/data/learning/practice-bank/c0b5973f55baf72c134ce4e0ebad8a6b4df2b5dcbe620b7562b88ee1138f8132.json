@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0019",
+  "targetId": "W0019",
+  "steps": [
+    {
+      "id": "BANK-W0019-W0019",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0019-W0019",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "also; too",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "也"
+            },
+            {
+              "value": "yě",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ye3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "也",
+            "pinyin": "yě",
+            "meaning": "also; too",
+            "singleWord": true,
+            "audio": "9a59164d8b6244d9b464800c7e8dcf4aaa00958e9a9d52a3193a026a07853bcd"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "9a59164d8b6244d9b464800c7e8dcf4aaa00958e9a9d52a3193a026a07853bcd": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-60ee23c18025d3c4cf7618866ce3f93f27781a5e142c566885f599bf06cb9f5b.mp3",
+        "sha256": "60ee23c18025d3c4cf7618866ce3f93f27781a5e142c566885f599bf06cb9f5b",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "60ee23c18025d3c4cf7618866ce3f93f27781a5e142c566885f599bf06cb9f5b",
+          "text": "也",
+          "words": [
+            {
+              "text": "也",
+              "start": 0.24,
+              "end": 0.34
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-46c60984e0afdc4474f33eb2d9a202abccff2f9c14af4ceb9e16a305ed949327.mp3",
+        "sha256": "46c60984e0afdc4474f33eb2d9a202abccff2f9c14af4ceb9e16a305ed949327",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "46c60984e0afdc4474f33eb2d9a202abccff2f9c14af4ceb9e16a305ed949327",
+          "text": "也",
+          "words": [
+            {
+              "text": "也",
+              "start": 0.32999999999999996,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0019",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0019-W0019",
+      "question_ids": [
+        "BANK-W0019-W0019"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU03",
+    "stepId": "S-WU03-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-ye"
+    ],
+    "grammarLessonIds": []
+  }
+}

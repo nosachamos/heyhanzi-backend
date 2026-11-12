@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2721",
+  "targetId": "W2721",
+  "steps": [
+    {
+      "id": "BANK-W2721-W2721",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2721-W2721",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "pear",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "梨"
+            },
+            {
+              "value": "lí",
+              "mode": "pinyin"
+            },
+            {
+              "value": "li2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "梨",
+            "pinyin": "lí",
+            "meaning": "pear",
+            "singleWord": true,
+            "audio": "8a156a415ebb553c8ee07dbbe5f42c9fe2627b6a4f2f73ff9fff13a4879b98c5"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8a156a415ebb553c8ee07dbbe5f42c9fe2627b6a4f2f73ff9fff13a4879b98c5": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d2329be9992fb7c5743348d41988ded432281399af75fe1f3c9a503eb56234d3.mp3",
+        "sha256": "d2329be9992fb7c5743348d41988ded432281399af75fe1f3c9a503eb56234d3",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "d2329be9992fb7c5743348d41988ded432281399af75fe1f3c9a503eb56234d3",
+          "text": "梨",
+          "words": [
+            {
+              "text": "梨",
+              "start": 0.24,
+              "end": 0.34
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/de1780626e75076db1d6b102977e92f30cd48d16a3123b975d9e2ea0f24b7a5a.mp3",
+        "sha256": "de1780626e75076db1d6b102977e92f30cd48d16a3123b975d9e2ea0f24b7a5a",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "de1780626e75076db1d6b102977e92f30cd48d16a3123b975d9e2ea0f24b7a5a",
+          "text": "梨",
+          "words": [
+            {
+              "text": "梨",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2721",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2721-W2721",
+      "question_ids": [
+        "BANK-W2721-W2721"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-09",
+    "stepId": "S-U5-09-words-r4-6",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-68a8"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1131",
+  "targetId": "W1131",
+  "steps": [
+    {
+      "id": "BANK-W1131-W1131",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1131-W1131",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "vehicle speed",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "车速"
+            },
+            {
+              "value": "chēsù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "che1su4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "车速",
+            "pinyin": "chēsù",
+            "meaning": "vehicle speed",
+            "singleWord": true,
+            "audio": "eb4c0f8f88713f3a93ae691ade539048792094ac345d51524cb578db783222da"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "eb4c0f8f88713f3a93ae691ade539048792094ac345d51524cb578db783222da": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e88054733908c577e4d131f28f775fc46894b1bf21c123d5d73105c521f5d573.mp3",
+        "sha256": "e88054733908c577e4d131f28f775fc46894b1bf21c123d5d73105c521f5d573",
+        "byteLength": 19341,
+        "readAlong": {
+          "audioSha256": "e88054733908c577e4d131f28f775fc46894b1bf21c123d5d73105c521f5d573",
+          "text": "车速",
+          "words": [
+            {
+              "text": "车速",
+              "start": 0.69,
+              "end": 0.99
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/53d130acf6d333fae92b42809d7390dc2d93799db4a1ca33e8e5f072ef40ab5b.mp3",
+        "sha256": "53d130acf6d333fae92b42809d7390dc2d93799db4a1ca33e8e5f072ef40ab5b",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "53d130acf6d333fae92b42809d7390dc2d93799db4a1ca33e8e5f072ef40ab5b",
+          "text": "车速",
+          "words": [
+            {
+              "text": "车速",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1131",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1131-W1131",
+      "question_ids": [
+        "BANK-W1131-W1131"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-15",
+    "stepId": "S-U4-15-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-901f"
+    ],
+    "grammarLessonIds": []
+  }
+}

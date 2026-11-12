@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0591",
+  "targetId": "W0591",
+  "steps": [
+    {
+      "id": "BANK-W0591-W0591",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0591-W0591",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "birthday",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "生日"
+            },
+            {
+              "value": "shēngrì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "sheng1ri4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "生日",
+            "pinyin": "shēngrì",
+            "meaning": "birthday",
+            "singleWord": true,
+            "audio": "f1e012760850edc23392fe5ce720f76cf47e7b9d86d5a6279b92b483c09c843d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f1e012760850edc23392fe5ce720f76cf47e7b9d86d5a6279b92b483c09c843d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a449b69bc43736ed927c9519e16971657c60f2063a46817637a5c1887e7ddf87.mp3",
+        "sha256": "a449b69bc43736ed927c9519e16971657c60f2063a46817637a5c1887e7ddf87",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "a449b69bc43736ed927c9519e16971657c60f2063a46817637a5c1887e7ddf87",
+          "text": "生日",
+          "words": [
+            {
+              "text": "生日",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-5d6ac4ffa42363eb902d332cbf3be5985204d9df5ccbd5e32e8af4b7a56ba65d.mp3",
+        "sha256": "5d6ac4ffa42363eb902d332cbf3be5985204d9df5ccbd5e32e8af4b7a56ba65d",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "5d6ac4ffa42363eb902d332cbf3be5985204d9df5ccbd5e32e8af4b7a56ba65d",
+          "text": "生日",
+          "words": [
+            {
+              "text": "生日",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0591",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0591-W0591",
+      "question_ids": [
+        "BANK-W0591-W0591"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U16",
+    "stepId": "S-U16-words-r4-16",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-65e5"
+    ],
+    "grammarLessonIds": []
+  }
+}

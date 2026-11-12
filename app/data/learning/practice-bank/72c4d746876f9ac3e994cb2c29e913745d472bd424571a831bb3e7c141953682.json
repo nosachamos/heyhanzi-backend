@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2500",
+  "targetId": "W2500",
+  "steps": [
+    {
+      "id": "BANK-W2500-W2500",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2500-W2500",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "meal in a partitioned box",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "盒饭"
+            },
+            {
+              "value": "héfàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "he2fan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "盒饭",
+            "pinyin": "héfàn",
+            "meaning": "meal in a partitioned box",
+            "singleWord": true,
+            "audio": "f690a0046f49d74b5e1e1d68bc85f9e5ff01e17794e6c0e6e133729763dc3168"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f690a0046f49d74b5e1e1d68bc85f9e5ff01e17794e6c0e6e133729763dc3168": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2f86a2c3c10af70070fc0306c9c02ba65c3c94893d0b111e9c73e9747779afd7.mp3",
+        "sha256": "2f86a2c3c10af70070fc0306c9c02ba65c3c94893d0b111e9c73e9747779afd7",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "2f86a2c3c10af70070fc0306c9c02ba65c3c94893d0b111e9c73e9747779afd7",
+          "text": "盒饭",
+          "words": [
+            {
+              "text": "盒饭",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b6efba1456c6567ed371419c0e2c7dc9c12bfd9584e7d17a19b8d9a05c685733.mp3",
+        "sha256": "b6efba1456c6567ed371419c0e2c7dc9c12bfd9584e7d17a19b8d9a05c685733",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "b6efba1456c6567ed371419c0e2c7dc9c12bfd9584e7d17a19b8d9a05c685733",
+          "text": "盒饭",
+          "words": [
+            {
+              "text": "盒饭",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2500",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2500-W2500",
+      "question_ids": [
+        "BANK-W2500-W2500"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-08",
+    "stepId": "S-U5-08-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-76d2"
+    ],
+    "grammarLessonIds": []
+  }
+}

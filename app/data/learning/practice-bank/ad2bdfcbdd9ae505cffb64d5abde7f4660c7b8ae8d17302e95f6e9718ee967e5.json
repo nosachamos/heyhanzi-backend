@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0660",
+  "targetId": "W0660",
+  "steps": [
+    {
+      "id": "BANK-W0660-W0660",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0660-W0660",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "notebook",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "笔记本"
+            },
+            {
+              "value": "bǐjìběn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bi3ji4ben3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "笔记本",
+            "pinyin": "bǐjìběn",
+            "meaning": "notebook",
+            "singleWord": true,
+            "audio": "db75cb7dee5035dd377cdadadf3dc5ff8a5decb28735b9b10a88e983ab034110"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "db75cb7dee5035dd377cdadadf3dc5ff8a5decb28735b9b10a88e983ab034110": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1be98041a28377bd5cdc6ffe9884ca65ed4b4fe2712ecf6d713954edccb8fada.mp3",
+        "sha256": "1be98041a28377bd5cdc6ffe9884ca65ed4b4fe2712ecf6d713954edccb8fada",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "1be98041a28377bd5cdc6ffe9884ca65ed4b4fe2712ecf6d713954edccb8fada",
+          "text": "笔记本",
+          "words": [
+            {
+              "text": "笔记本",
+              "start": 0.09,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2d0dd25e8684f7600d02348a12c8fb34f9f0d8f6ac02dc1f30e5c564eb2eac7e.mp3",
+        "sha256": "2d0dd25e8684f7600d02348a12c8fb34f9f0d8f6ac02dc1f30e5c564eb2eac7e",
+        "byteLength": 17613,
+        "readAlong": {
+          "audioSha256": "2d0dd25e8684f7600d02348a12c8fb34f9f0d8f6ac02dc1f30e5c564eb2eac7e",
+          "text": "笔记本",
+          "words": [
+            {
+              "text": "笔记本",
+              "start": 0.15,
+              "end": 0.75
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0660",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0660-W0660",
+      "question_ids": [
+        "BANK-W0660-W0660"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-13",
+    "stepId": "S-U3-13-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7b14"
+    ],
+    "grammarLessonIds": []
+  }
+}

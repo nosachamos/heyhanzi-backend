@@ -1,0 +1,707 @@
+{
+  "id": "EX-CHAR-char-8be5",
+  "revision": 2,
+  "unit": "U12-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U12-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "该",
+  "sourceBlockId": "mandarin-simplified-v1-char-8be5",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-542c",
+        "text": "听",
+        "pinyin": "tīng",
+        "meaning": "to listen to; to hear; to heed; to obey",
+        "characters": [
+          {
+            "id": "C-542C",
+            "text": "听"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-345bb8659098cc206a378771",
+        "text": "应该",
+        "pinyin": "yīnggāi",
+        "meaning": "ought to; should; must",
+        "characters": [
+          {
+            "id": "C-5E94",
+            "text": "应"
+          },
+          {
+            "id": "C-8BE5",
+            "text": "该"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-9b8da4fd1a866ad36494b99f",
+        "text": "学说",
+        "pinyin": "xué shuō",
+        "meaning": "theory; doctrine",
+        "characters": [
+          {
+            "id": "C-5B66",
+            "text": "学"
+          },
+          {
+            "id": "C-8BF4",
+            "text": "说"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-b180dfa9a02f9cbf1dddeaa3",
+        "text": "便道",
+        "pinyin": "biàn dào",
+        "meaning": "shortcut",
+        "characters": [
+          {
+            "id": "C-4FBF",
+            "text": "便"
+          },
+          {
+            "id": "C-9053",
+            "text": "道"
+          }
+        ]
+      },
+      {
+        "id": "W0754",
+        "text": "该",
+        "pinyin": "gāi",
+        "meaning": "should; ought to",
+        "characters": [
+          {
+            "id": "C-8BE5",
+            "text": "该"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "8654fb3c6f305c13cab3909826f571aba054374520b09f0389a86a95f932b8e6",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8be5",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "该",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8be5-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-345bb8659098cc206a378771",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "ought to; should",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "应该"
+              },
+              {
+                "value": "yīnggāi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ying1gai1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "应该",
+              "pinyin": "yīnggāi",
+              "meaning": "ought to; should",
+              "audio": "f6cd01ed6f40a9795c25596d303719e92b6c7eb544ca417b7380d727b5b1378e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8be5-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0754",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "该",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-542c",
+                "label": "to listen to; to hear",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-b180dfa9a02f9cbf1dddeaa3",
+                "label": "shortcut",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0754",
+                "label": "should; ought to",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8be5-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "该",
+        "pinyin": "gāi",
+        "meaning": "should; ought to",
+        "source": "/stroke-data/8be5.json",
+        "reference": {
+          "character": "该",
+          "sha256": "db123b68d082d179967113668fbd2ff423bf3179adcf8c5e300fbb672df3ce83",
+          "medians": [
+            [
+              [
+                278,
+                819
+              ],
+              [
+                359,
+                768
+              ],
+              [
+                389,
+                724
+              ]
+            ],
+            [
+              [
+                72,
+                497
+              ],
+              [
+                108,
+                489
+              ],
+              [
+                146,
+                495
+              ],
+              [
+                264,
+                538
+              ],
+              [
+                300,
+                536
+              ],
+              [
+                309,
+                528
+              ],
+              [
+                273,
+                234
+              ],
+              [
+                280,
+                195
+              ],
+              [
+                322,
+                206
+              ],
+              [
+                436,
+                298
+              ]
+            ],
+            [
+              [
+                585,
+                809
+              ],
+              [
+                666,
+                762
+              ],
+              [
+                695,
+                725
+              ]
+            ],
+            [
+              [
+                439,
+                596
+              ],
+              [
+                462,
+                590
+              ],
+              [
+                505,
+                591
+              ],
+              [
+                822,
+                654
+              ],
+              [
+                889,
+                648
+              ]
+            ],
+            [
+              [
+                573,
+                567
+              ],
+              [
+                601,
+                545
+              ],
+              [
+                593,
+                523
+              ],
+              [
+                509,
+                403
+              ],
+              [
+                493,
+                365
+              ],
+              [
+                515,
+                359
+              ],
+              [
+                624,
+                366
+              ],
+              [
+                653,
+                377
+              ]
+            ],
+            [
+              [
+                778,
+                479
+              ],
+              [
+                747,
+                470
+              ],
+              [
+                656,
+                333
+              ],
+              [
+                562,
+                228
+              ],
+              [
+                454,
+                132
+              ],
+              [
+                393,
+                88
+              ],
+              [
+                346,
+                63
+              ]
+            ],
+            [
+              [
+                774,
+                369
+              ],
+              [
+                788,
+                355
+              ],
+              [
+                802,
+                325
+              ],
+              [
+                749,
+                238
+              ],
+              [
+                703,
+                181
+              ],
+              [
+                593,
+                78
+              ],
+              [
+                505,
+                19
+              ],
+              [
+                455,
+                -7
+              ]
+            ],
+            [
+              [
+                736,
+                173
+              ],
+              [
+                752,
+                172
+              ],
+              [
+                854,
+                94
+              ],
+              [
+                882,
+                58
+              ],
+              [
+                894,
+                25
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8be5-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-9b8da4fd1a866ad36494b99f",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "theory; doctrine",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "学说"
+              },
+              {
+                "value": "xué shuō",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xue2shuo1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "学说",
+              "pinyin": "xué shuō",
+              "meaning": "theory; doctrine",
+              "audio": "238ae2ae616ed5fb28cf6a684ad491b502e6fde46458924fe74433931519fbb5",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8be5-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0754",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "should; ought to",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "该"
+              },
+              {
+                "value": "gāi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gai1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "该",
+              "pinyin": "gāi",
+              "meaning": "should; ought to",
+              "audio": "455a30c7bcf25f240a03389107c8723cc4a12e1e690b279a52758a85c510490a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "455a30c7bcf25f240a03389107c8723cc4a12e1e690b279a52758a85c510490a"
+            ],
+            "transcript": [
+              {
+                "text": "该",
+                "pinyin": "gāi",
+                "meaning": "should; ought to",
+                "audio": "455a30c7bcf25f240a03389107c8723cc4a12e1e690b279a52758a85c510490a",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8BE5",
+      "character": "该",
+      "lessonIds": [
+        "LESSON-C-8BE5"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8be5-word",
+        "EX-CHAR-char-8be5-recognize",
+        "EX-CHAR-char-8be5-write",
+        "EX-CHAR-char-8be5-familiar",
+        "EX-CHAR-char-8be5-recall"
+      ]
+    },
+    "audio": {
+      "daa17172abf000c32adb2f5f0ddbeb2970ba16c8dba669613dc7aac08877b21a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b2038f63cbf33f87c93ad3bd404d9e6ee318d8acad2747134894b5ec7e4f6219.mp3",
+          "sha256": "b2038f63cbf33f87c93ad3bd404d9e6ee318d8acad2747134894b5ec7e4f6219",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "b2038f63cbf33f87c93ad3bd404d9e6ee318d8acad2747134894b5ec7e4f6219",
+            "text": "听",
+            "words": [
+              {
+                "text": "听",
+                "start": 0.18,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d8df160ac526e57bc9638b1f670e535ae17343d42241372222a3590a61a7e29b.mp3",
+          "sha256": "d8df160ac526e57bc9638b1f670e535ae17343d42241372222a3590a61a7e29b",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "d8df160ac526e57bc9638b1f670e535ae17343d42241372222a3590a61a7e29b",
+            "text": "听",
+            "words": [
+              {
+                "text": "听",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "f6cd01ed6f40a9795c25596d303719e92b6c7eb544ca417b7380d727b5b1378e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c6adf2879f8beb9d696edb2462318460b5a4b544b64fba4e54aa7c3a5c2b2c64.mp3",
+          "sha256": "c6adf2879f8beb9d696edb2462318460b5a4b544b64fba4e54aa7c3a5c2b2c64",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "c6adf2879f8beb9d696edb2462318460b5a4b544b64fba4e54aa7c3a5c2b2c64",
+            "text": "应该",
+            "words": [
+              {
+                "text": "应该",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f6142852047f871253644110ffd8c39cfa9e1b43ba8f3a211b6c3197f2a27145.mp3",
+          "sha256": "f6142852047f871253644110ffd8c39cfa9e1b43ba8f3a211b6c3197f2a27145",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "f6142852047f871253644110ffd8c39cfa9e1b43ba8f3a211b6c3197f2a27145",
+            "text": "应该",
+            "words": [
+              {
+                "text": "应该",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "238ae2ae616ed5fb28cf6a684ad491b502e6fde46458924fe74433931519fbb5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c2049b92d098241900c85bf3feabf27efe0390b3b6a7f64a32fb743b69730c88.mp3",
+          "sha256": "c2049b92d098241900c85bf3feabf27efe0390b3b6a7f64a32fb743b69730c88",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "c2049b92d098241900c85bf3feabf27efe0390b3b6a7f64a32fb743b69730c88",
+            "text": "学说",
+            "words": [
+              {
+                "text": "学说",
+                "start": 0.3,
+                "end": 0.64
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/610e87cdd5d78f5cb2aaa8d5fa2540393666fd6cf4398cb5cc24293b6ffe6805.mp3",
+          "sha256": "610e87cdd5d78f5cb2aaa8d5fa2540393666fd6cf4398cb5cc24293b6ffe6805",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "610e87cdd5d78f5cb2aaa8d5fa2540393666fd6cf4398cb5cc24293b6ffe6805",
+            "text": "学说",
+            "words": [
+              {
+                "text": "学说",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "cf84375998fd553f2f2e16d013f7302685493c4bc5cf634ac9a8f0c67ac8bcc8": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/def75207be9b10e84e18ca0ffe22f6c2e307aee340dddbc5e2898162eebfa0d9.mp3",
+          "sha256": "def75207be9b10e84e18ca0ffe22f6c2e307aee340dddbc5e2898162eebfa0d9",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "def75207be9b10e84e18ca0ffe22f6c2e307aee340dddbc5e2898162eebfa0d9",
+            "text": "便道",
+            "words": [
+              {
+                "text": "便道",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/00659536e5072c2ec73e3c8f6381b15395aaa94336d795f1eb46f1037fc551c2.mp3",
+          "sha256": "00659536e5072c2ec73e3c8f6381b15395aaa94336d795f1eb46f1037fc551c2",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "00659536e5072c2ec73e3c8f6381b15395aaa94336d795f1eb46f1037fc551c2",
+            "text": "便道",
+            "words": [
+              {
+                "text": "便道",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "455a30c7bcf25f240a03389107c8723cc4a12e1e690b279a52758a85c510490a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5131f6ddc1938fdef9243c0873ec47c15bb2649a36007444f22d9df84c1bcc2c.mp3",
+          "sha256": "5131f6ddc1938fdef9243c0873ec47c15bb2649a36007444f22d9df84c1bcc2c",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "5131f6ddc1938fdef9243c0873ec47c15bb2649a36007444f22d9df84c1bcc2c",
+            "text": "该",
+            "words": [
+              {
+                "text": "该",
+                "start": 0.14,
+                "end": 0.26
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c123f894b9c58442ae1bb8d82187780a432de34c4f6fa2b333d8ca5e06f9ad29.mp3",
+          "sha256": "c123f894b9c58442ae1bb8d82187780a432de34c4f6fa2b333d8ca5e06f9ad29",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "c123f894b9c58442ae1bb8d82187780a432de34c4f6fa2b333d8ca5e06f9ad29",
+            "text": "该",
+            "words": [
+              {
+                "text": "该",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,699 @@
+{
+  "id": "EX-CHAR-char-59d1",
+  "revision": 2,
+  "unit": "U4-02",
+  "stage": "ST-HSK4",
+  "after": "S-U4-02-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "姑",
+  "sourceBlockId": "mandarin-simplified-v1-char-59d1",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-59d1",
+        "text": "姑",
+        "pinyin": "gū",
+        "meaning": "paternal aunt; husband's sister",
+        "characters": [
+          {
+            "id": "C-59D1",
+            "text": "姑"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-692026ac0c4df57a367039c3",
+        "text": "干",
+        "pinyin": "gān",
+        "meaning": "dry; dried food",
+        "characters": [
+          {
+            "id": "C-5E72",
+            "text": "干"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-8a9b5e2cde4d9ba868b6fc26",
+        "text": "水平",
+        "pinyin": "shuǐpíng",
+        "meaning": "horizontal; level; a standard; a level (of ability, development etc)",
+        "characters": [
+          {
+            "id": "C-6C34",
+            "text": "水"
+          },
+          {
+            "id": "C-5E73",
+            "text": "平"
+          }
+        ]
+      },
+      {
+        "id": "W0255",
+        "text": "进去",
+        "pinyin": "jìnqù",
+        "meaning": "to go in",
+        "characters": [
+          {
+            "id": "C-8FDB",
+            "text": "进"
+          },
+          {
+            "id": "C-53BB",
+            "text": "去"
+          }
+        ]
+      },
+      {
+        "id": "W4089",
+        "text": "姑姑",
+        "pinyin": "gūgu",
+        "meaning": "paternal aunt",
+        "characters": [
+          {
+            "id": "C-59D1",
+            "text": "姑"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "c02534bdf281deb2285fe922657614af2e367b7f34bff28b2c818d487e83e587",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-59d1",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "姑",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-59d1-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W4089",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "paternal aunt",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "姑姑"
+              },
+              {
+                "value": "gūgu",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gu1gu5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "姑姑",
+              "pinyin": "gūgu",
+              "meaning": "paternal aunt",
+              "audio": "6a134340baf5555eb8715ab01ef8db9c5f2ee436839c129ff6429aa9df8818a7",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-59d1-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-59d1",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "姑",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-692026ac0c4df57a367039c3",
+                "label": "dry; dried food",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-8a9b5e2cde4d9ba868b6fc26",
+                "label": "horizontal; level",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-59d1",
+                "label": "paternal aunt; husband's sister",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-59d1-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "姑",
+        "pinyin": "gū",
+        "meaning": "paternal aunt; husband's sister",
+        "source": "/stroke-data/59d1.json",
+        "reference": {
+          "character": "姑",
+          "sha256": "1e8df45662bc932aa5ccc19ef39a40c413cf67b77c9315c84de6e3fd7ff650e4",
+          "medians": [
+            [
+              [
+                290,
+                759
+              ],
+              [
+                315,
+                741
+              ],
+              [
+                336,
+                706
+              ],
+              [
+                286,
+                452
+              ],
+              [
+                233,
+                272
+              ],
+              [
+                249,
+                247
+              ],
+              [
+                381,
+                156
+              ],
+              [
+                405,
+                131
+              ],
+              [
+                420,
+                92
+              ]
+            ],
+            [
+              [
+                380,
+                479
+              ],
+              [
+                401,
+                464
+              ],
+              [
+                417,
+                441
+              ],
+              [
+                393,
+                313
+              ],
+              [
+                356,
+                217
+              ],
+              [
+                324,
+                164
+              ],
+              [
+                273,
+                113
+              ],
+              [
+                222,
+                75
+              ],
+              [
+                165,
+                50
+              ]
+            ],
+            [
+              [
+                50,
+                393
+              ],
+              [
+                99,
+                371
+              ],
+              [
+                165,
+                392
+              ],
+              [
+                350,
+                432
+              ],
+              [
+                371,
+                445
+              ]
+            ],
+            [
+              [
+                479,
+                460
+              ],
+              [
+                505,
+                453
+              ],
+              [
+                544,
+                453
+              ],
+              [
+                855,
+                508
+              ],
+              [
+                921,
+                502
+              ]
+            ],
+            [
+              [
+                637,
+                779
+              ],
+              [
+                687,
+                736
+              ],
+              [
+                662,
+                334
+              ],
+              [
+                659,
+                311
+              ],
+              [
+                639,
+                291
+              ]
+            ],
+            [
+              [
+                490,
+                277
+              ],
+              [
+                523,
+                247
+              ],
+              [
+                564,
+                24
+              ]
+            ],
+            [
+              [
+                555,
+                267
+              ],
+              [
+                572,
+                257
+              ],
+              [
+                769,
+                296
+              ],
+              [
+                798,
+                293
+              ],
+              [
+                832,
+                257
+              ],
+              [
+                798,
+                146
+              ],
+              [
+                774,
+                136
+              ]
+            ],
+            [
+              [
+                585,
+                59
+              ],
+              [
+                598,
+                74
+              ],
+              [
+                750,
+                98
+              ],
+              [
+                806,
+                96
+              ],
+              [
+                830,
+                89
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-59d1-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0255",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to go in",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "进去"
+              },
+              {
+                "value": "jìnqù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jin4qu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "进去",
+              "pinyin": "jìnqù",
+              "meaning": "to go in",
+              "audio": "aee3648ce90189071b99a5c3272fb8b6c7e3beacfc5ffab5e8efe66c8c2761af",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-59d1-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-59d1",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "paternal aunt; husband's sister",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "姑"
+              },
+              {
+                "value": "gū",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gu1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "姑",
+              "pinyin": "gū",
+              "meaning": "paternal aunt; husband's sister",
+              "audio": "bb51db1fa286949772857edc1fa487836af1dc5a721ebe8c7221e13e792a1e5a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "bb51db1fa286949772857edc1fa487836af1dc5a721ebe8c7221e13e792a1e5a"
+            ],
+            "transcript": [
+              {
+                "text": "姑",
+                "pinyin": "gū",
+                "meaning": "paternal aunt; husband's sister",
+                "audio": "bb51db1fa286949772857edc1fa487836af1dc5a721ebe8c7221e13e792a1e5a",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-59D1",
+      "character": "姑",
+      "lessonIds": [
+        "LESSON-C-59D1"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-59d1-word",
+        "EX-CHAR-char-59d1-recognize",
+        "EX-CHAR-char-59d1-write",
+        "EX-CHAR-char-59d1-familiar",
+        "EX-CHAR-char-59d1-recall"
+      ]
+    },
+    "audio": {
+      "bb51db1fa286949772857edc1fa487836af1dc5a721ebe8c7221e13e792a1e5a": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-9bc81d42c65544feebd3539f8017f85a772bcaf3818ecbaf7db9489b5d12e71e.mp3",
+          "sha256": "9bc81d42c65544feebd3539f8017f85a772bcaf3818ecbaf7db9489b5d12e71e",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "9bc81d42c65544feebd3539f8017f85a772bcaf3818ecbaf7db9489b5d12e71e",
+            "text": "姑",
+            "words": [
+              {
+                "text": "姑",
+                "start": 0.18,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-718104bb2c0133fd2564db7bfa2677c03cc5294b1658ca52d7717ea820b04218.mp3",
+          "sha256": "718104bb2c0133fd2564db7bfa2677c03cc5294b1658ca52d7717ea820b04218",
+          "byteLength": 17037,
+          "readAlong": {
+            "audioSha256": "718104bb2c0133fd2564db7bfa2677c03cc5294b1658ca52d7717ea820b04218",
+            "text": "姑",
+            "words": [
+              {
+                "text": "姑",
+                "start": 0.22,
+                "end": 0.32
+              }
+            ]
+          }
+        }
+      },
+      "7605d90d809e760be3b84007f39e66ab788858d23936011223c23c0f2f5c2222": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-680af37104fe447789f8b96343447cd876fba1e2582abcab349e067f56b92686.mp3",
+          "sha256": "680af37104fe447789f8b96343447cd876fba1e2582abcab349e067f56b92686",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "680af37104fe447789f8b96343447cd876fba1e2582abcab349e067f56b92686",
+            "text": "干",
+            "words": [
+              {
+                "text": "干",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-33df9f4ce1b20d495c37d937fa6442c1ab6fd4f2d5966a22b9c43f0bdd499858.mp3",
+          "sha256": "33df9f4ce1b20d495c37d937fa6442c1ab6fd4f2d5966a22b9c43f0bdd499858",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "33df9f4ce1b20d495c37d937fa6442c1ab6fd4f2d5966a22b9c43f0bdd499858",
+            "text": "干",
+            "words": [
+              {
+                "text": "干",
+                "start": 0.2,
+                "end": 0.26
+              }
+            ]
+          }
+        }
+      },
+      "57c3ef75415d99f69a35e1a262c770bf3c770f2a6d51a2d91c38bfcf353de1fd": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-6bf31a717e0d67a74d24dea5a4017e48808861bbefedc4820eb1beab86783f95.mp3",
+          "sha256": "6bf31a717e0d67a74d24dea5a4017e48808861bbefedc4820eb1beab86783f95",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "6bf31a717e0d67a74d24dea5a4017e48808861bbefedc4820eb1beab86783f95",
+            "text": "水平",
+            "words": [
+              {
+                "text": "水平",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-1ed35c85d5ff76d32a66356d5f8832352201e6db237ad8f1d5fe5abfdec24238.mp3",
+          "sha256": "1ed35c85d5ff76d32a66356d5f8832352201e6db237ad8f1d5fe5abfdec24238",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "1ed35c85d5ff76d32a66356d5f8832352201e6db237ad8f1d5fe5abfdec24238",
+            "text": "水平",
+            "words": [
+              {
+                "text": "水平",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "aee3648ce90189071b99a5c3272fb8b6c7e3beacfc5ffab5e8efe66c8c2761af": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-04452e515441515c33e40052e33c9f64e2c08554dd3ef121c0b59ea9b858b659.mp3",
+          "sha256": "04452e515441515c33e40052e33c9f64e2c08554dd3ef121c0b59ea9b858b659",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "04452e515441515c33e40052e33c9f64e2c08554dd3ef121c0b59ea9b858b659",
+            "text": "进去",
+            "words": [
+              {
+                "text": "进去",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-994301c57f4c0ef70c86eb78bcb463a8164cd55535512b769cf6ce7c19b6ceb8.mp3",
+          "sha256": "994301c57f4c0ef70c86eb78bcb463a8164cd55535512b769cf6ce7c19b6ceb8",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "994301c57f4c0ef70c86eb78bcb463a8164cd55535512b769cf6ce7c19b6ceb8",
+            "text": "进去",
+            "words": [
+              {
+                "text": "进去",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "6a134340baf5555eb8715ab01ef8db9c5f2ee436839c129ff6429aa9df8818a7": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5a1285cdcad5ab96989d14b4f786def900ad9e7a5aedea96ca93213c1a122a1f.mp3",
+          "sha256": "5a1285cdcad5ab96989d14b4f786def900ad9e7a5aedea96ca93213c1a122a1f",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "5a1285cdcad5ab96989d14b4f786def900ad9e7a5aedea96ca93213c1a122a1f",
+            "text": "姑姑",
+            "words": [
+              {
+                "text": "姑姑",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-783c66a3a604b8f49b4fe0bd7ee9bf42abc46e9404d0e9dd2d68b82cd830490b.mp3",
+          "sha256": "783c66a3a604b8f49b4fe0bd7ee9bf42abc46e9404d0e9dd2d68b82cd830490b",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "783c66a3a604b8f49b4fe0bd7ee9bf42abc46e9404d0e9dd2d68b82cd830490b",
+            "text": "姑姑",
+            "words": [
+              {
+                "text": "姑姑",
+                "start": 0.21,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

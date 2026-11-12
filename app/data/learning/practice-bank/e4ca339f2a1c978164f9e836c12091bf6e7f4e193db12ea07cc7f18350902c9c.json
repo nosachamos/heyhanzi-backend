@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1986",
+  "targetId": "W1986",
+  "steps": [
+    {
+      "id": "BANK-W1986-W1986",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1986-W1986",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "Chinese food; Chinese meal",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "中餐"
+            },
+            {
+              "value": "zhōngcān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhong1can1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "中餐",
+            "pinyin": "zhōngcān",
+            "meaning": "Chinese food; Chinese meal",
+            "singleWord": true,
+            "audio": "43a38be259db8aa123c7af3565fdb59fd47c2401a8dbc8b9ee6b5010b794b266"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "43a38be259db8aa123c7af3565fdb59fd47c2401a8dbc8b9ee6b5010b794b266": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-6537b2e3b6c024546b58ef80f05fa7b319d6d9dc6161502c3dc53aa535354a77.mp3",
+        "sha256": "6537b2e3b6c024546b58ef80f05fa7b319d6d9dc6161502c3dc53aa535354a77",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "6537b2e3b6c024546b58ef80f05fa7b319d6d9dc6161502c3dc53aa535354a77",
+          "text": "中餐",
+          "words": [
+            {
+              "text": "中餐",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ff78fee805724fc85a886107ff9cdd92d1f961a97904c7519c3d5f97e3cef5b6.mp3",
+        "sha256": "ff78fee805724fc85a886107ff9cdd92d1f961a97904c7519c3d5f97e3cef5b6",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "ff78fee805724fc85a886107ff9cdd92d1f961a97904c7519c3d5f97e3cef5b6",
+          "text": "中餐",
+          "words": [
+            {
+              "text": "中餐",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1986",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1986-W1986",
+      "question_ids": [
+        "BANK-W1986-W1986"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-08",
+    "stepId": "S-U4-08-words-r4-17",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9910"
+    ],
+    "grammarLessonIds": []
+  }
+}

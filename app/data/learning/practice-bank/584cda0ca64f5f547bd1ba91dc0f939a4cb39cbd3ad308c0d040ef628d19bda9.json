@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0801",
+  "targetId": "W0801",
+  "steps": [
+    {
+      "id": "BANK-W0801-W0801",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0801-W0801",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "opportunity; chance",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "机会"
+            },
+            {
+              "value": "jīhuì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ji1hui4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "机会",
+            "pinyin": "jīhuì",
+            "meaning": "opportunity; chance",
+            "singleWord": true,
+            "audio": "18cf6c14d3cc0273e18b022e8951e19d58e22f244b7e131d4df45b3096223165"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "18cf6c14d3cc0273e18b022e8951e19d58e22f244b7e131d4df45b3096223165": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d8fcfe6c207ebc54d9d7f97848005f36426c7b18cf83282c4ed2e017536d2ed8.mp3",
+        "sha256": "d8fcfe6c207ebc54d9d7f97848005f36426c7b18cf83282c4ed2e017536d2ed8",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "d8fcfe6c207ebc54d9d7f97848005f36426c7b18cf83282c4ed2e017536d2ed8",
+          "text": "机会",
+          "words": [
+            {
+              "text": "机会",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-6b230065180b7171505fcec24adb1c86baf579f86d7ee5fce9b67129458dba21.mp3",
+        "sha256": "6b230065180b7171505fcec24adb1c86baf579f86d7ee5fce9b67129458dba21",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "6b230065180b7171505fcec24adb1c86baf579f86d7ee5fce9b67129458dba21",
+          "text": "机会",
+          "words": [
+            {
+              "text": "机会",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0801",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0801-W0801",
+      "question_ids": [
+        "BANK-W0801-W0801"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-12",
+    "stepId": "S-U3-12-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4f1a"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,483 @@
+{
+  "id": "EX-CHAR-char-4e8c",
+  "revision": 2,
+  "unit": "U05-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U05-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "二",
+  "sourceBlockId": "mandarin-simplified-v1-char-4e8c",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Connect meaning and sound",
+    "Write the character",
+    "Use the whole word",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-4e8c",
+        "text": "二",
+        "pinyin": "èr",
+        "meaning": "two; 2",
+        "characters": [
+          {
+            "id": "C-4E8C",
+            "text": "二"
+          }
+        ]
+      },
+      {
+        "id": "W0025",
+        "text": "大",
+        "pinyin": "dà",
+        "meaning": "big; large",
+        "characters": [
+          {
+            "id": "C-5927",
+            "text": "大"
+          }
+        ]
+      },
+      {
+        "id": "W0445",
+        "text": "女",
+        "pinyin": "nǚ",
+        "meaning": "female; woman",
+        "characters": [
+          {
+            "id": "C-5973",
+            "text": "女"
+          }
+        ]
+      },
+      {
+        "id": "W0703",
+        "text": "大小",
+        "pinyin": "dàxiǎo",
+        "meaning": "large and small; size",
+        "characters": [
+          {
+            "id": "C-5927",
+            "text": "大"
+          },
+          {
+            "id": "C-5C0F",
+            "text": "小"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "d23f74285ce022f8b9a664d64258f61e6c094d405782b77ffc35b0730ce8f1e4",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4e8c",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "二",
+    "variant": "lesson-meaning-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4e8c-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-4e8c",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "二",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0445",
+                "label": "female; woman",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-4e8c",
+                "label": "two; 2",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0703",
+                "label": "large and small; size",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e8c-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "二",
+        "pinyin": "èr",
+        "meaning": "two; 2",
+        "source": "/stroke-data/4e8c.json",
+        "reference": {
+          "character": "二",
+          "sha256": "a22a15bc3ac16e7dc246e97419b969715e43ffc7c5ee655a5766526d67a379a5",
+          "medians": [
+            [
+              [
+                293,
+                587
+              ],
+              [
+                386,
+                581
+              ],
+              [
+                688,
+                633
+              ],
+              [
+                733,
+                629
+              ]
+            ],
+            [
+              [
+                126,
+                219
+              ],
+              [
+                195,
+                200
+              ],
+              [
+                469,
+                236
+              ],
+              [
+                823,
+                263
+              ],
+              [
+                916,
+                230
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4e8c-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-PRIMARY-char-4e8c",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "two; 2",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "二"
+              },
+              {
+                "value": "èr",
+                "mode": "pinyin"
+              },
+              {
+                "value": "er4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "二",
+              "pinyin": "èr",
+              "meaning": "two; 2",
+              "audio": "d87bff832b04cef20e3512358cb6dc47dba7fd5a3f51d13db88dbd0f71476fbf",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e8c-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0025",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "big; large",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "大"
+              },
+              {
+                "value": "dà",
+                "mode": "pinyin"
+              },
+              {
+                "value": "da4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "大",
+              "pinyin": "dà",
+              "meaning": "big; large",
+              "audio": "a54d89df02c2a0828a36bc2c87d0a3adbf8bfb44b282ae8bfc73be8e1c4dd0f4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e8c-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-4e8c",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "two; 2",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "二"
+              },
+              {
+                "value": "èr",
+                "mode": "pinyin"
+              },
+              {
+                "value": "er4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "二",
+              "pinyin": "èr",
+              "meaning": "two; 2",
+              "audio": "d87bff832b04cef20e3512358cb6dc47dba7fd5a3f51d13db88dbd0f71476fbf",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "d87bff832b04cef20e3512358cb6dc47dba7fd5a3f51d13db88dbd0f71476fbf"
+            ],
+            "transcript": [
+              {
+                "text": "二",
+                "pinyin": "èr",
+                "meaning": "two; 2",
+                "audio": "d87bff832b04cef20e3512358cb6dc47dba7fd5a3f51d13db88dbd0f71476fbf",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4E8C",
+      "character": "二",
+      "lessonIds": [
+        "LESSON-C-4E8C"
+      ],
+      "profile": "meaning-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4e8c-recognize",
+        "EX-CHAR-char-4e8c-write",
+        "EX-CHAR-char-4e8c-word",
+        "EX-CHAR-char-4e8c-familiar",
+        "EX-CHAR-char-4e8c-recall"
+      ]
+    },
+    "audio": {
+      "d87bff832b04cef20e3512358cb6dc47dba7fd5a3f51d13db88dbd0f71476fbf": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b6f1985902ec7255aa3f023044c6f28b7f19da808ed244db59ce6347848bc39e.mp3",
+          "sha256": "b6f1985902ec7255aa3f023044c6f28b7f19da808ed244db59ce6347848bc39e",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "b6f1985902ec7255aa3f023044c6f28b7f19da808ed244db59ce6347848bc39e",
+            "text": "二",
+            "words": [
+              {
+                "text": "二",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4e3b08643eef0cb86095b0451d04c09cbbedcbcc3765ea3d546b8309a8329533.mp3",
+          "sha256": "4e3b08643eef0cb86095b0451d04c09cbbedcbcc3765ea3d546b8309a8329533",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "4e3b08643eef0cb86095b0451d04c09cbbedcbcc3765ea3d546b8309a8329533",
+            "text": "二",
+            "words": [
+              {
+                "text": "二",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "a54d89df02c2a0828a36bc2c87d0a3adbf8bfb44b282ae8bfc73be8e1c4dd0f4": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-db6d40f6130c4b73c18f48a14eea12f71c933844b5e1edf1d48a7778e3f5466d.mp3",
+          "sha256": "db6d40f6130c4b73c18f48a14eea12f71c933844b5e1edf1d48a7778e3f5466d",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "db6d40f6130c4b73c18f48a14eea12f71c933844b5e1edf1d48a7778e3f5466d",
+            "text": "大",
+            "words": [
+              {
+                "text": "大",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c56aa7c8ae8cd632ca8092c6942a99b9b055041699113941706d3b08b651fb84.mp3",
+          "sha256": "c56aa7c8ae8cd632ca8092c6942a99b9b055041699113941706d3b08b651fb84",
+          "byteLength": 8109,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "c56aa7c8ae8cd632ca8092c6942a99b9b055041699113941706d3b08b651fb84",
+            "text": "大",
+            "words": [
+              {
+                "text": "大",
+                "start": 0.14,
+                "end": 0.22
+              }
+            ]
+          }
+        }
+      },
+      "17b1709b3f079b1a0a5c58639908d8ea1a6acc9203f4233466353a96f960711c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a705255761c9fd949f55d0316666ef699893e5d53faf41c98fd76ba691cdf6a7.mp3",
+          "sha256": "a705255761c9fd949f55d0316666ef699893e5d53faf41c98fd76ba691cdf6a7",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "a705255761c9fd949f55d0316666ef699893e5d53faf41c98fd76ba691cdf6a7",
+            "text": "女",
+            "words": [
+              {
+                "text": "女",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/30dba48cb5959f171b7d368293e910c98df70c5e893e2d863e02ae336b47930f.mp3",
+          "sha256": "30dba48cb5959f171b7d368293e910c98df70c5e893e2d863e02ae336b47930f",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "30dba48cb5959f171b7d368293e910c98df70c5e893e2d863e02ae336b47930f",
+            "text": "女",
+            "words": [
+              {
+                "text": "女",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "368248979f87e304f38328e82ded550a88745e2e4e9a41dfe26ecdacea7a7e4e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-212665d2c23a584f49578ba4870e667e529579d5334eff99070c4f8f2dfc8e28.mp3",
+          "sha256": "212665d2c23a584f49578ba4870e667e529579d5334eff99070c4f8f2dfc8e28",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "212665d2c23a584f49578ba4870e667e529579d5334eff99070c4f8f2dfc8e28",
+            "text": "大小",
+            "words": [
+              {
+                "text": "大小",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b13b0f4f58a37213d998d022804ff2bfca7b9895522d3d17df8dbd8772d84793.mp3",
+          "sha256": "b13b0f4f58a37213d998d022804ff2bfca7b9895522d3d17df8dbd8772d84793",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "b13b0f4f58a37213d998d022804ff2bfca7b9895522d3d17df8dbd8772d84793",
+            "text": "大小",
+            "words": [
+              {
+                "text": "大小",
+                "start": 0.18,
+                "end": 0.5
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,721 @@
+{
+  "id": "EX-CHAR-char-7a7f",
+  "revision": 2,
+  "unit": "U10",
+  "stage": "ST-HSK1",
+  "after": "S-U10-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "穿",
+  "sourceBlockId": "mandarin-simplified-v1-char-7a7f",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-2e74ec0e4551d5533bb1f6bb",
+        "text": "穿上",
+        "pinyin": "chuān shang",
+        "meaning": "to put on (clothes etc)",
+        "characters": [
+          {
+            "id": "C-7A7F",
+            "text": "穿"
+          },
+          {
+            "id": "C-4E0A",
+            "text": "上"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-6524851621ce836f699194e2",
+        "text": "张开",
+        "pinyin": "zhāng kāi",
+        "meaning": "to open up",
+        "characters": [
+          {
+            "id": "C-5F20",
+            "text": "张"
+          },
+          {
+            "id": "C-5F00",
+            "text": "开"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-e913d8c47c6c768ff6bfd6d6",
+        "text": "不见",
+        "pinyin": "bújiàn",
+        "meaning": "not to see; not to meet",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-89C1",
+            "text": "见"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f7cea944137f10f0062d75f7",
+        "text": "车间",
+        "pinyin": "chē jiān",
+        "meaning": "workshop",
+        "characters": [
+          {
+            "id": "C-8F66",
+            "text": "车"
+          },
+          {
+            "id": "C-95F4",
+            "text": "间"
+          }
+        ]
+      },
+      {
+        "id": "W0280",
+        "text": "穿",
+        "pinyin": "chuān",
+        "meaning": "to wear; to put on",
+        "characters": [
+          {
+            "id": "C-7A7F",
+            "text": "穿"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "29ce6b47186db478fa9b523dada481d3b583d9206794ca0b9db994a53f78e130",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7a7f",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "穿",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7a7f-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-2e74ec0e4551d5533bb1f6bb",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to put on (clothes etc)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "穿上"
+              },
+              {
+                "value": "chuān shang",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chuan1shang5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "穿上",
+              "pinyin": "chuān shang",
+              "meaning": "to put on (clothes etc)",
+              "audio": "38aa7d8b40615cb70db39e297d9236d9b164cb3a52995dc40f76c147912cd593",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7a7f-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0280",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "穿",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0280",
+                "label": "to wear; to put on",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-f7cea944137f10f0062d75f7",
+                "label": "workshop",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-6524851621ce836f699194e2",
+                "label": "to open up",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7a7f-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "穿",
+        "pinyin": "chuān",
+        "meaning": "to wear; to put on",
+        "source": "/stroke-data/7a7f.json",
+        "reference": {
+          "character": "穿",
+          "sha256": "7b625fc381d1ba2a885fcc06942a8ee2cc0c75f1a7473beef26e55b29c42d9c4",
+          "medians": [
+            [
+              [
+                451,
+                867
+              ],
+              [
+                522,
+                830
+              ],
+              [
+                555,
+                791
+              ]
+            ],
+            [
+              [
+                258,
+                727
+              ],
+              [
+                268,
+                697
+              ],
+              [
+                264,
+                675
+              ],
+              [
+                216,
+                598
+              ],
+              [
+                207,
+                550
+              ]
+            ],
+            [
+              [
+                297,
+                696
+              ],
+              [
+                306,
+                685
+              ],
+              [
+                332,
+                685
+              ],
+              [
+                565,
+                723
+              ],
+              [
+                767,
+                741
+              ],
+              [
+                795,
+                731
+              ],
+              [
+                817,
+                701
+              ],
+              [
+                746,
+                633
+              ]
+            ],
+            [
+              [
+                408,
+                650
+              ],
+              [
+                421,
+                616
+              ],
+              [
+                414,
+                601
+              ],
+              [
+                355,
+                549
+              ],
+              [
+                296,
+                516
+              ]
+            ],
+            [
+              [
+                580,
+                675
+              ],
+              [
+                671,
+                618
+              ],
+              [
+                698,
+                581
+              ]
+            ],
+            [
+              [
+                397,
+                464
+              ],
+              [
+                431,
+                464
+              ],
+              [
+                639,
+                504
+              ],
+              [
+                682,
+                498
+              ]
+            ],
+            [
+              [
+                302,
+                426
+              ],
+              [
+                326,
+                395
+              ],
+              [
+                300,
+                295
+              ],
+              [
+                314,
+                289
+              ],
+              [
+                479,
+                320
+              ],
+              [
+                653,
+                341
+              ],
+              [
+                751,
+                348
+              ],
+              [
+                823,
+                332
+              ]
+            ],
+            [
+              [
+                558,
+                460
+              ],
+              [
+                588,
+                442
+              ],
+              [
+                595,
+                431
+              ],
+              [
+                592,
+                76
+              ],
+              [
+                585,
+                17
+              ],
+              [
+                564,
+                -17
+              ],
+              [
+                515,
+                -4
+              ],
+              [
+                448,
+                27
+              ]
+            ],
+            [
+              [
+                557,
+                306
+              ],
+              [
+                445,
+                184
+              ],
+              [
+                370,
+                124
+              ],
+              [
+                268,
+                64
+              ],
+              [
+                178,
+                31
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7a7f-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-e913d8c47c6c768ff6bfd6d6",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "not to see; not to meet",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "不见"
+              },
+              {
+                "value": "bùjiàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu4jian4",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bújiàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu2jian4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "不见",
+              "pinyin": "bújiàn",
+              "meaning": "not to see; not to meet",
+              "audio": "7770897c4eb2d816cd3736848e3ea5063f627f6ba6a608e98f51ad67a69c9bf3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7a7f-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0280",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to wear; to put on",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "穿"
+              },
+              {
+                "value": "chuān",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chuan1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "穿",
+              "pinyin": "chuān",
+              "meaning": "to wear; to put on",
+              "audio": "28d0a518c6ae8ffea75c8c34d015ea31859eb819c6c1891d135c75956d073bb1",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "28d0a518c6ae8ffea75c8c34d015ea31859eb819c6c1891d135c75956d073bb1"
+            ],
+            "transcript": [
+              {
+                "text": "穿",
+                "pinyin": "chuān",
+                "meaning": "to wear; to put on",
+                "audio": "28d0a518c6ae8ffea75c8c34d015ea31859eb819c6c1891d135c75956d073bb1",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7A7F",
+      "character": "穿",
+      "lessonIds": [
+        "LESSON-C-7A7F"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7a7f-word",
+        "EX-CHAR-char-7a7f-recognize",
+        "EX-CHAR-char-7a7f-write",
+        "EX-CHAR-char-7a7f-familiar",
+        "EX-CHAR-char-7a7f-recall"
+      ]
+    },
+    "audio": {
+      "38aa7d8b40615cb70db39e297d9236d9b164cb3a52995dc40f76c147912cd593": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8583c1fa0d92352b946b0ff5667b0771df34368fbada0fca3ad935dcdaa55ebc.mp3",
+          "sha256": "8583c1fa0d92352b946b0ff5667b0771df34368fbada0fca3ad935dcdaa55ebc",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "8583c1fa0d92352b946b0ff5667b0771df34368fbada0fca3ad935dcdaa55ebc",
+            "text": "穿上",
+            "words": [
+              {
+                "text": "穿上",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d51a91a17339ccd5fdd73cc6863fea7ee47d662a64b5d59f10272f63cd586dc2.mp3",
+          "sha256": "d51a91a17339ccd5fdd73cc6863fea7ee47d662a64b5d59f10272f63cd586dc2",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "d51a91a17339ccd5fdd73cc6863fea7ee47d662a64b5d59f10272f63cd586dc2",
+            "text": "穿上",
+            "words": [
+              {
+                "text": "穿上",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "84f43ba31e0cdbfbb702d130426245b628e484de163b2fcfeeb76b0e5e2442e4": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/64ac63d251b61b9d58d8070204557ac73349556db03cadadc186cf8ddd880541.mp3",
+          "sha256": "64ac63d251b61b9d58d8070204557ac73349556db03cadadc186cf8ddd880541",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "64ac63d251b61b9d58d8070204557ac73349556db03cadadc186cf8ddd880541",
+            "text": "张开",
+            "words": [
+              {
+                "text": "张开",
+                "start": 0.18,
+                "end": 0.64
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a53643bad935bf838ffb089e61f481faf5489c22dc9f684419c2283c73b8698f.mp3",
+          "sha256": "a53643bad935bf838ffb089e61f481faf5489c22dc9f684419c2283c73b8698f",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "a53643bad935bf838ffb089e61f481faf5489c22dc9f684419c2283c73b8698f",
+            "text": "张开",
+            "words": [
+              {
+                "text": "张开",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "7770897c4eb2d816cd3736848e3ea5063f627f6ba6a608e98f51ad67a69c9bf3": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0352fe9d9dcaba74e447817ab92d4f7d2d5a05008c2a34a971dbf36a8860e07b.mp3",
+          "sha256": "0352fe9d9dcaba74e447817ab92d4f7d2d5a05008c2a34a971dbf36a8860e07b",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "0352fe9d9dcaba74e447817ab92d4f7d2d5a05008c2a34a971dbf36a8860e07b",
+            "text": "不见",
+            "words": [
+              {
+                "text": "不见",
+                "start": 0.14,
+                "end": 0.58
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/bb85c73c88abf802618eeb2a1d2007444334b09295162b6cc8cacb99e7290a5a.mp3",
+          "sha256": "bb85c73c88abf802618eeb2a1d2007444334b09295162b6cc8cacb99e7290a5a",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "bb85c73c88abf802618eeb2a1d2007444334b09295162b6cc8cacb99e7290a5a",
+            "text": "不见",
+            "words": [
+              {
+                "text": "不见",
+                "start": 0.03,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "8be873aabb0fd5a93e97d304e917fab09d8915a64db5e68a5046a6d168bde240": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ee7f3c967cf582ae7238c6b2e55e7e4d35e74495873754d245fc030ee3fda733.mp3",
+          "sha256": "ee7f3c967cf582ae7238c6b2e55e7e4d35e74495873754d245fc030ee3fda733",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "ee7f3c967cf582ae7238c6b2e55e7e4d35e74495873754d245fc030ee3fda733",
+            "text": "车间",
+            "words": [
+              {
+                "text": "车间",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b1f6c86090e35115a9a9d34a23fa3662d0bef62550343475ba14faa11295d715.mp3",
+          "sha256": "b1f6c86090e35115a9a9d34a23fa3662d0bef62550343475ba14faa11295d715",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "b1f6c86090e35115a9a9d34a23fa3662d0bef62550343475ba14faa11295d715",
+            "text": "车间",
+            "words": [
+              {
+                "text": "车间",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "28d0a518c6ae8ffea75c8c34d015ea31859eb819c6c1891d135c75956d073bb1": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-62ccfa4fb86dde546270e82747618f2a545438ce650fe2d58b038d424c1503bf.mp3",
+          "sha256": "62ccfa4fb86dde546270e82747618f2a545438ce650fe2d58b038d424c1503bf",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "62ccfa4fb86dde546270e82747618f2a545438ce650fe2d58b038d424c1503bf",
+            "text": "穿",
+            "words": [
+              {
+                "text": "穿",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-0ea5a0f69fc29bace3d375b11a0d1dc926aa045bee54a82d3c95f179bf15e428.mp3",
+          "sha256": "0ea5a0f69fc29bace3d375b11a0d1dc926aa045bee54a82d3c95f179bf15e428",
+          "byteLength": 7245,
+          "readAlong": {
+            "audioSha256": "0ea5a0f69fc29bace3d375b11a0d1dc926aa045bee54a82d3c95f179bf15e428",
+            "text": "穿",
+            "words": [
+              {
+                "text": "穿",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

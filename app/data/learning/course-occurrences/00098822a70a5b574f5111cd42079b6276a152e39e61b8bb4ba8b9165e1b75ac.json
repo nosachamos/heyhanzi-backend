@@ -1,0 +1,705 @@
+{
+  "id": "EX-CHAR-char-6d3e",
+  "revision": 2,
+  "unit": "U5-16-P01",
+  "stage": "ST-HSK5",
+  "after": "S-U5-16-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "派",
+  "sourceBlockId": "mandarin-simplified-v1-char-6d3e",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-58eb",
+        "text": "士",
+        "pinyin": "shì",
+        "meaning": "member of the senior ministerial class (old); scholar (old)",
+        "characters": [
+          {
+            "id": "C-58EB",
+            "text": "士"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-6d3e",
+        "text": "派",
+        "pinyin": "pài",
+        "meaning": "(literary) tributary; branch of a river; clique; school; group; faction",
+        "characters": [
+          {
+            "id": "C-6D3E",
+            "text": "派"
+          }
+        ]
+      },
+      {
+        "id": "W2836",
+        "text": "派出所",
+        "pinyin": "pàichūsuǒ",
+        "meaning": "local police station",
+        "characters": [
+          {
+            "id": "C-6D3E",
+            "text": "派"
+          },
+          {
+            "id": "C-51FA",
+            "text": "出"
+          },
+          {
+            "id": "C-6240",
+            "text": "所"
+          }
+        ]
+      },
+      {
+        "id": "W4565",
+        "text": "内衣",
+        "pinyin": "nèiyī",
+        "meaning": "undergarment; underwear",
+        "characters": [
+          {
+            "id": "C-5185",
+            "text": "内"
+          },
+          {
+            "id": "C-8863",
+            "text": "衣"
+          }
+        ]
+      },
+      {
+        "id": "W4579",
+        "text": "排除",
+        "pinyin": "páichú",
+        "meaning": "to eliminate; to remove",
+        "characters": [
+          {
+            "id": "C-6392",
+            "text": "排"
+          },
+          {
+            "id": "C-9664",
+            "text": "除"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "a33a04cda9f1da35ef507b9677ac7442dacb8d71234fe561beb9998f79124cde",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6d3e",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "派",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6d3e-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W2836",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "local police station",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "派出所"
+              },
+              {
+                "value": "pàichūsuǒ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "pai4chu1suo3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "派出所",
+              "pinyin": "pàichūsuǒ",
+              "meaning": "local police station",
+              "audio": "067f783bad2cb45c92b1dc88b5d4a1469c24931762cd0883ea5c0af91ab00525",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6d3e-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6d3e",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "派",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-58eb",
+                "label": "member of the senior ministerial class (old); scholar (old)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W4565",
+                "label": "undergarment; underwear",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-6d3e",
+                "label": "(literary) tributary; branch of a river",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6d3e-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "派",
+        "pinyin": "pài",
+        "meaning": "(literary) tributary; branch of a river",
+        "source": "/stroke-data/6d3e.json",
+        "reference": {
+          "character": "派",
+          "sha256": "ec04b7ae4f3a94ee90afa9152171e8cddfc0e90979b40b5a7cd8e555fde90983",
+          "medians": [
+            [
+              [
+                206,
+                763
+              ],
+              [
+                291,
+                719
+              ],
+              [
+                319,
+                683
+              ]
+            ],
+            [
+              [
+                128,
+                571
+              ],
+              [
+                204,
+                520
+              ],
+              [
+                227,
+                492
+              ]
+            ],
+            [
+              [
+                175,
+                126
+              ],
+              [
+                164,
+                167
+              ],
+              [
+                166,
+                209
+              ],
+              [
+                316,
+                447
+              ]
+            ],
+            [
+              [
+                716,
+                766
+              ],
+              [
+                698,
+                771
+              ],
+              [
+                641,
+                768
+              ],
+              [
+                542,
+                693
+              ],
+              [
+                468,
+                654
+              ],
+              [
+                461,
+                659
+              ]
+            ],
+            [
+              [
+                385,
+                663
+              ],
+              [
+                424,
+                630
+              ],
+              [
+                428,
+                609
+              ],
+              [
+                424,
+                425
+              ],
+              [
+                402,
+                295
+              ],
+              [
+                371,
+                212
+              ],
+              [
+                327,
+                143
+              ],
+              [
+                271,
+                84
+              ],
+              [
+                221,
+                49
+              ]
+            ],
+            [
+              [
+                711,
+                646
+              ],
+              [
+                722,
+                610
+              ],
+              [
+                629,
+                542
+              ],
+              [
+                575,
+                509
+              ],
+              [
+                568,
+                511
+              ]
+            ],
+            [
+              [
+                489,
+                524
+              ],
+              [
+                533,
+                488
+              ],
+              [
+                536,
+                472
+              ],
+              [
+                543,
+                343
+              ],
+              [
+                531,
+                135
+              ],
+              [
+                535,
+                106
+              ],
+              [
+                580,
+                116
+              ],
+              [
+                687,
+                194
+              ]
+            ],
+            [
+              [
+                763,
+                509
+              ],
+              [
+                778,
+                473
+              ],
+              [
+                656,
+                367
+              ]
+            ],
+            [
+              [
+                566,
+                437
+              ],
+              [
+                577,
+                415
+              ],
+              [
+                675,
+                318
+              ],
+              [
+                766,
+                236
+              ],
+              [
+                827,
+                193
+              ],
+              [
+                1000,
+                172
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6d3e-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4579",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to eliminate; to remove",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "排除"
+              },
+              {
+                "value": "páichú",
+                "mode": "pinyin"
+              },
+              {
+                "value": "pai2chu2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "排除",
+              "pinyin": "páichú",
+              "meaning": "to eliminate; to remove",
+              "audio": "b75e6860968e4e5c109060a11896a1efb0ebeaef07d87dd8087d2cb21dd06cb8",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6d3e-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6d3e",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "(literary) tributary; branch of a river",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "派"
+              },
+              {
+                "value": "pài",
+                "mode": "pinyin"
+              },
+              {
+                "value": "pai4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "派",
+              "pinyin": "pài",
+              "meaning": "(literary) tributary; branch of a river",
+              "audio": "12491bda95b9307ab73b269121c8045ccc9d979d3f6e7c2e2522b81af1c98ee1",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "12491bda95b9307ab73b269121c8045ccc9d979d3f6e7c2e2522b81af1c98ee1"
+            ],
+            "transcript": [
+              {
+                "text": "派",
+                "pinyin": "pài",
+                "meaning": "(literary) tributary; branch of a river",
+                "audio": "12491bda95b9307ab73b269121c8045ccc9d979d3f6e7c2e2522b81af1c98ee1",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6D3E",
+      "character": "派",
+      "lessonIds": [
+        "LESSON-C-6D3E"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6d3e-word",
+        "EX-CHAR-char-6d3e-recognize",
+        "EX-CHAR-char-6d3e-write",
+        "EX-CHAR-char-6d3e-familiar",
+        "EX-CHAR-char-6d3e-recall"
+      ]
+    },
+    "audio": {
+      "22e7bfac10a5ba614130bcabe52a4912da8d260d9876758d598c1cb94f8029ee": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-dc7296458bba3888db8dde0d43dc65ea182565a17c1d0267b00cfbead52880ba.mp3",
+          "sha256": "dc7296458bba3888db8dde0d43dc65ea182565a17c1d0267b00cfbead52880ba",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "dc7296458bba3888db8dde0d43dc65ea182565a17c1d0267b00cfbead52880ba",
+            "text": "士",
+            "words": [
+              {
+                "text": "士",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-426bd5e744a9e7bc2f600a626cced7c4ad8c01068d8fc4b12809e9b72ebfb0b0.mp3",
+          "sha256": "426bd5e744a9e7bc2f600a626cced7c4ad8c01068d8fc4b12809e9b72ebfb0b0",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "426bd5e744a9e7bc2f600a626cced7c4ad8c01068d8fc4b12809e9b72ebfb0b0",
+            "text": "士",
+            "words": [
+              {
+                "text": "士",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "12491bda95b9307ab73b269121c8045ccc9d979d3f6e7c2e2522b81af1c98ee1": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c26fd931391e43d87a8006377f88784a43e795a882bdc4e40023af78f32eab84.mp3",
+          "sha256": "c26fd931391e43d87a8006377f88784a43e795a882bdc4e40023af78f32eab84",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "c26fd931391e43d87a8006377f88784a43e795a882bdc4e40023af78f32eab84",
+            "text": "派",
+            "words": [
+              {
+                "text": "派",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1d67580a5e5692f8c2b2f508aefd14e88bfdd4c50a4a8bc90a3e6f76f397845e.mp3",
+          "sha256": "1d67580a5e5692f8c2b2f508aefd14e88bfdd4c50a4a8bc90a3e6f76f397845e",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "1d67580a5e5692f8c2b2f508aefd14e88bfdd4c50a4a8bc90a3e6f76f397845e",
+            "text": "派",
+            "words": [
+              {
+                "text": "派",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "067f783bad2cb45c92b1dc88b5d4a1469c24931762cd0883ea5c0af91ab00525": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/70b57deb5a74f8faeb9892ee04b8cbde33774847cb9a2078b43a18b37cfcb5f1.mp3",
+          "sha256": "70b57deb5a74f8faeb9892ee04b8cbde33774847cb9a2078b43a18b37cfcb5f1",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "70b57deb5a74f8faeb9892ee04b8cbde33774847cb9a2078b43a18b37cfcb5f1",
+            "text": "派出所",
+            "words": [
+              {
+                "text": "派出所",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/bcb99affc11830787cfda10c582f630a63d3b4afc06c14d27f371e8ed55cbde1.mp3",
+          "sha256": "bcb99affc11830787cfda10c582f630a63d3b4afc06c14d27f371e8ed55cbde1",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "bcb99affc11830787cfda10c582f630a63d3b4afc06c14d27f371e8ed55cbde1",
+            "text": "派出所",
+            "words": [
+              {
+                "text": "派出所",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "89cbbf088c47be376074bc8c871f958efc00352d25329fe6e0c8817a43756854": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/599f969cf7987f875b3389e182673eec703da2458e2cc95337514531fe1731c2.mp3",
+          "sha256": "599f969cf7987f875b3389e182673eec703da2458e2cc95337514531fe1731c2",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "599f969cf7987f875b3389e182673eec703da2458e2cc95337514531fe1731c2",
+            "text": "内衣",
+            "words": [
+              {
+                "text": "内衣",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e073031d70ec9d58e12c6c61e2778976656445fcf040c3f1d88a7e669f4cbfc4.mp3",
+          "sha256": "e073031d70ec9d58e12c6c61e2778976656445fcf040c3f1d88a7e669f4cbfc4",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "e073031d70ec9d58e12c6c61e2778976656445fcf040c3f1d88a7e669f4cbfc4",
+            "text": "内衣",
+            "words": [
+              {
+                "text": "内衣",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "b75e6860968e4e5c109060a11896a1efb0ebeaef07d87dd8087d2cb21dd06cb8": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-e6692b60165b7daa289aecf36724eb7111cfc86783b1f917e7bfd8ac8faa8681.mp3",
+          "sha256": "e6692b60165b7daa289aecf36724eb7111cfc86783b1f917e7bfd8ac8faa8681",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "e6692b60165b7daa289aecf36724eb7111cfc86783b1f917e7bfd8ac8faa8681",
+            "text": "排除",
+            "words": [
+              {
+                "text": "排除",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6d920dd78a34ea11e5054d0d16c5cc395cfae3f16333233e5656835eeff6ef02.mp3",
+          "sha256": "6d920dd78a34ea11e5054d0d16c5cc395cfae3f16333233e5656835eeff6ef02",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "6d920dd78a34ea11e5054d0d16c5cc395cfae3f16333233e5656835eeff6ef02",
+            "text": "排除",
+            "words": [
+              {
+                "text": "排除",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1121",
+  "targetId": "W1121",
+  "steps": [
+    {
+      "id": "BANK-W1121-W1121",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1121-W1121",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "playground; sports field",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "操场"
+            },
+            {
+              "value": "cāochǎng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "cao1chang3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "操场",
+            "pinyin": "cāochǎng",
+            "meaning": "playground; sports field",
+            "singleWord": true,
+            "audio": "df5162f033624094ced82e68783e518ad8004c8f14ef13667f50fd3f463beb91"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "df5162f033624094ced82e68783e518ad8004c8f14ef13667f50fd3f463beb91": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5f9eefc83cae54d615903f5e7921fad56a96bb615f5cb3f00b9b1dd4ccaa6ff0.mp3",
+        "sha256": "5f9eefc83cae54d615903f5e7921fad56a96bb615f5cb3f00b9b1dd4ccaa6ff0",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "5f9eefc83cae54d615903f5e7921fad56a96bb615f5cb3f00b9b1dd4ccaa6ff0",
+          "text": "操场",
+          "words": [
+            {
+              "text": "操场",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2df01849f16b179222b2d1fb3734d8511f038cc1439819389e7068adba16a7c9.mp3",
+        "sha256": "2df01849f16b179222b2d1fb3734d8511f038cc1439819389e7068adba16a7c9",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "2df01849f16b179222b2d1fb3734d8511f038cc1439819389e7068adba16a7c9",
+          "text": "操场",
+          "words": [
+            {
+              "text": "操场",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1121",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1121-W1121",
+      "question_ids": [
+        "BANK-W1121-W1121"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-18",
+    "stepId": "S-U4-18-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-64cd"
+    ],
+    "grammarLessonIds": []
+  }
+}

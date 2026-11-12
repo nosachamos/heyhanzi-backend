@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0718",
+  "targetId": "W0718",
+  "steps": [
+    {
+      "id": "BANK-W0718-W0718",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0718-W0718",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "elevator",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "电梯"
+            },
+            {
+              "value": "diàntī",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dian4ti1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "电梯",
+            "pinyin": "diàntī",
+            "meaning": "elevator",
+            "singleWord": true,
+            "audio": "2d3c4a42cc0e9ef86bd0cc09221549e7e543f476dee6f8d644a4f3b65216592c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2d3c4a42cc0e9ef86bd0cc09221549e7e543f476dee6f8d644a4f3b65216592c": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5052f9b53b74acd59d4d08ddb2cb603c196e2181cae830a5daafd536b0080a9f.mp3",
+        "sha256": "5052f9b53b74acd59d4d08ddb2cb603c196e2181cae830a5daafd536b0080a9f",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "5052f9b53b74acd59d4d08ddb2cb603c196e2181cae830a5daafd536b0080a9f",
+          "text": "电梯",
+          "words": [
+            {
+              "text": "电梯",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/974876a387327135b4ba67625166a55551a7891daabe49c3f1e37dd910f78890.mp3",
+        "sha256": "974876a387327135b4ba67625166a55551a7891daabe49c3f1e37dd910f78890",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "974876a387327135b4ba67625166a55551a7891daabe49c3f1e37dd910f78890",
+          "text": "电梯",
+          "words": [
+            {
+              "text": "电梯",
+              "start": 0.09,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0718",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0718-W0718",
+      "question_ids": [
+        "BANK-W0718-W0718"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-03",
+    "stepId": "S-U3-03-words-r4-7",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-68af"
+    ],
+    "grammarLessonIds": []
+  }
+}

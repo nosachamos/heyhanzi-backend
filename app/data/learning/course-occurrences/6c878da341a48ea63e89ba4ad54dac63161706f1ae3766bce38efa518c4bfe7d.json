@@ -1,0 +1,679 @@
+{
+  "id": "EX-CHAR-char-96e8",
+  "revision": 2,
+  "unit": "U14",
+  "stage": "ST-HSK1",
+  "after": "S-U14-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "雨",
+  "sourceBlockId": "mandarin-simplified-v1-char-96e8",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-2550d99b100fef46dc246931",
+        "text": "文",
+        "pinyin": "wén",
+        "meaning": "language",
+        "characters": [
+          {
+            "id": "C-6587",
+            "text": "文"
+          }
+        ]
+      },
+      {
+        "id": "W0324",
+        "text": "都",
+        "pinyin": "dōu",
+        "meaning": "all; both; even or already (emphatic adverb)",
+        "characters": [
+          {
+            "id": "C-90FD",
+            "text": "都"
+          }
+        ]
+      },
+      {
+        "id": "W0496",
+        "text": "雨",
+        "pinyin": "yǔ",
+        "meaning": "rain",
+        "characters": [
+          {
+            "id": "C-96E8",
+            "text": "雨"
+          }
+        ]
+      },
+      {
+        "id": "W0625",
+        "text": "游",
+        "pinyin": "yóu",
+        "meaning": "to swim",
+        "characters": [
+          {
+            "id": "C-6E38",
+            "text": "游"
+          }
+        ]
+      },
+      {
+        "id": "W3437",
+        "text": "雨水",
+        "pinyin": "yǔshuǐ",
+        "meaning": "rainwater; rainfall",
+        "characters": [
+          {
+            "id": "C-96E8",
+            "text": "雨"
+          },
+          {
+            "id": "C-6C34",
+            "text": "水"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "45c64832219330c49e7bc3cf12158d648ea1fea402d528e06168da944667be4c",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-96e8",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "雨",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-96e8-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3437",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "rainwater; rainfall",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "雨水"
+              },
+              {
+                "value": "yǔshuǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yu3shui3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "雨水",
+              "pinyin": "yǔshuǐ",
+              "meaning": "rainwater; rainfall",
+              "audio": "06b0cbafc99c3c83220f426e4b8b00da0373d75f363dbc28b07d20e3c19bbb36",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-96e8-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0496",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "雨",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0324",
+                "label": "all; both",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0496",
+                "label": "rain",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0625",
+                "label": "to swim",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-96e8-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "雨",
+        "pinyin": "yǔ",
+        "meaning": "rain",
+        "source": "/stroke-data/96e8.json",
+        "reference": {
+          "character": "雨",
+          "sha256": "22fb739c542df1a6bddb08bc8e0ff9ccaa284326169c3a54d23c95dafd2c90f2",
+          "medians": [
+            [
+              [
+                312,
+                695
+              ],
+              [
+                343,
+                687
+              ],
+              [
+                396,
+                686
+              ],
+              [
+                520,
+                701
+              ],
+              [
+                698,
+                734
+              ],
+              [
+                747,
+                730
+              ]
+            ],
+            [
+              [
+                162,
+                506
+              ],
+              [
+                196,
+                471
+              ],
+              [
+                209,
+                425
+              ],
+              [
+                217,
+                303
+              ],
+              [
+                218,
+                146
+              ],
+              [
+                232,
+                89
+              ]
+            ],
+            [
+              [
+                232,
+                457
+              ],
+              [
+                246,
+                475
+              ],
+              [
+                259,
+                479
+              ],
+              [
+                510,
+                523
+              ],
+              [
+                813,
+                557
+              ],
+              [
+                845,
+                540
+              ],
+              [
+                855,
+                530
+              ],
+              [
+                858,
+                511
+              ],
+              [
+                840,
+                271
+              ],
+              [
+                826,
+                174
+              ],
+              [
+                808,
+                104
+              ],
+              [
+                780,
+                69
+              ],
+              [
+                679,
+                109
+              ],
+              [
+                661,
+                123
+              ]
+            ],
+            [
+              [
+                465,
+                670
+              ],
+              [
+                498,
+                651
+              ],
+              [
+                511,
+                625
+              ],
+              [
+                507,
+                312
+              ],
+              [
+                499,
+                210
+              ],
+              [
+                502,
+                136
+              ]
+            ],
+            [
+              [
+                318,
+                400
+              ],
+              [
+                372,
+                381
+              ],
+              [
+                405,
+                357
+              ]
+            ],
+            [
+              [
+                310,
+                269
+              ],
+              [
+                373,
+                239
+              ],
+              [
+                396,
+                218
+              ]
+            ],
+            [
+              [
+                598,
+                434
+              ],
+              [
+                670,
+                415
+              ],
+              [
+                697,
+                398
+              ]
+            ],
+            [
+              [
+                598,
+                292
+              ],
+              [
+                663,
+                266
+              ],
+              [
+                687,
+                246
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-96e8-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-2550d99b100fef46dc246931",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "language",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "文"
+              },
+              {
+                "value": "wén",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wen2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "文",
+              "pinyin": "wén",
+              "meaning": "language",
+              "audio": "72f270922ebd7842ac22bb5137c6259c05a7bbdb0b451fc18d327c4692f8a940",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-96e8-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0496",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "rain",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "雨"
+              },
+              {
+                "value": "yǔ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yu3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "雨",
+              "pinyin": "yǔ",
+              "meaning": "rain",
+              "audio": "3905c6173168a5169e5e91b92383831ff4096a4a27d07bf439f881ef0e81423c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "3905c6173168a5169e5e91b92383831ff4096a4a27d07bf439f881ef0e81423c"
+            ],
+            "transcript": [
+              {
+                "text": "雨",
+                "pinyin": "yǔ",
+                "meaning": "rain",
+                "audio": "3905c6173168a5169e5e91b92383831ff4096a4a27d07bf439f881ef0e81423c",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-96E8",
+      "character": "雨",
+      "lessonIds": [
+        "LESSON-C-96E8"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-96e8-word",
+        "EX-CHAR-char-96e8-recognize",
+        "EX-CHAR-char-96e8-write",
+        "EX-CHAR-char-96e8-familiar",
+        "EX-CHAR-char-96e8-recall"
+      ]
+    },
+    "audio": {
+      "72f270922ebd7842ac22bb5137c6259c05a7bbdb0b451fc18d327c4692f8a940": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/845e8208f618764cb1ce06b31d982078c5b80e5a6eea9b325814abb0e1622e5d.mp3",
+          "sha256": "845e8208f618764cb1ce06b31d982078c5b80e5a6eea9b325814abb0e1622e5d",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "845e8208f618764cb1ce06b31d982078c5b80e5a6eea9b325814abb0e1622e5d",
+            "text": "文",
+            "words": [
+              {
+                "text": "文",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3c7bc9e9389561ad0887f71c987bc3246ea224e54058bb0b84e36cfc416a29e9.mp3",
+          "sha256": "3c7bc9e9389561ad0887f71c987bc3246ea224e54058bb0b84e36cfc416a29e9",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "3c7bc9e9389561ad0887f71c987bc3246ea224e54058bb0b84e36cfc416a29e9",
+            "text": "文",
+            "words": [
+              {
+                "text": "文",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "da17b909d7d863e9cc3c51e69d506f9cdda127a9ed2d8448108af5e3de2faa7d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3a4c244adeaad4723564b4cf8b59cbf381633e3303c2a37fe6156608f0e6043b.mp3",
+          "sha256": "3a4c244adeaad4723564b4cf8b59cbf381633e3303c2a37fe6156608f0e6043b",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "3a4c244adeaad4723564b4cf8b59cbf381633e3303c2a37fe6156608f0e6043b",
+            "text": "都",
+            "words": [
+              {
+                "text": "都",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d4f08440e2700757c6a16807edfde4095eebacc6eafa5655d6b9e9ca3e6c9dd2.mp3",
+          "sha256": "d4f08440e2700757c6a16807edfde4095eebacc6eafa5655d6b9e9ca3e6c9dd2",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "d4f08440e2700757c6a16807edfde4095eebacc6eafa5655d6b9e9ca3e6c9dd2",
+            "text": "都",
+            "words": [
+              {
+                "text": "都",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "3905c6173168a5169e5e91b92383831ff4096a4a27d07bf439f881ef0e81423c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c3625938d88b86f0f782e2532b041a03132c5e67f9285725f202d9c4522019b3.mp3",
+          "sha256": "c3625938d88b86f0f782e2532b041a03132c5e67f9285725f202d9c4522019b3",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "c3625938d88b86f0f782e2532b041a03132c5e67f9285725f202d9c4522019b3",
+            "text": "雨",
+            "words": [
+              {
+                "text": "雨",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-60b17b91d85948d7ee69809297985ce449b3f38b76cce318bc39cd12ed6b045d.mp3",
+          "sha256": "60b17b91d85948d7ee69809297985ce449b3f38b76cce318bc39cd12ed6b045d",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "60b17b91d85948d7ee69809297985ce449b3f38b76cce318bc39cd12ed6b045d",
+            "text": "雨",
+            "words": [
+              {
+                "text": "雨",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "c51072d5b6750ebef9a31608eefc4439cc40a1d691fd58645549e5278423cb63": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c82c3edd84c75f47d95e2b9a71d68bdbac96a317b7e53f095918ad00e0710ad6.mp3",
+          "sha256": "c82c3edd84c75f47d95e2b9a71d68bdbac96a317b7e53f095918ad00e0710ad6",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "c82c3edd84c75f47d95e2b9a71d68bdbac96a317b7e53f095918ad00e0710ad6",
+            "text": "游",
+            "words": [
+              {
+                "text": "游",
+                "start": 0.22,
+                "end": 0.34
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-47ca7d921305b334563d857c5434b2b8985af31255ef95d16f5b21a626da8c7c.mp3",
+          "sha256": "47ca7d921305b334563d857c5434b2b8985af31255ef95d16f5b21a626da8c7c",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "47ca7d921305b334563d857c5434b2b8985af31255ef95d16f5b21a626da8c7c",
+            "text": "游",
+            "words": [
+              {
+                "text": "游",
+                "start": 0.26,
+                "end": 0.36
+              }
+            ]
+          }
+        }
+      },
+      "06b0cbafc99c3c83220f426e4b8b00da0373d75f363dbc28b07d20e3c19bbb36": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-4cb5726aad07eeb53b3f20e75081e5c77c497ec9848d3e379109de8709c4b848.mp3",
+          "sha256": "4cb5726aad07eeb53b3f20e75081e5c77c497ec9848d3e379109de8709c4b848",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "4cb5726aad07eeb53b3f20e75081e5c77c497ec9848d3e379109de8709c4b848",
+            "text": "雨水",
+            "words": [
+              {
+                "text": "雨水",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-7006761b307e0e2e75e8c649430fd5a5f211b81c71c1a027a77fb8e2893ff8f4.mp3",
+          "sha256": "7006761b307e0e2e75e8c649430fd5a5f211b81c71c1a027a77fb8e2893ff8f4",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "7006761b307e0e2e75e8c649430fd5a5f211b81c71c1a027a77fb8e2893ff8f4",
+            "text": "雨水",
+            "words": [
+              {
+                "text": "雨水",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

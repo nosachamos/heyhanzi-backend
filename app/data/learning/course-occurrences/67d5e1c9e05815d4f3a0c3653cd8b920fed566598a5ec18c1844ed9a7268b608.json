@@ -1,0 +1,645 @@
+{
+  "id": "EX-CHAR-char-65f1",
+  "revision": 2,
+  "unit": "U6-28-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-28-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "旱",
+  "sourceBlockId": "mandarin-simplified-v1-char-65f1",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-65f1",
+        "text": "旱",
+        "pinyin": "hàn",
+        "meaning": "drought",
+        "characters": [
+          {
+            "id": "C-65F1",
+            "text": "旱"
+          }
+        ]
+      },
+      {
+        "id": "W0419",
+        "text": "课",
+        "pinyin": "kè",
+        "meaning": "subject; course",
+        "characters": [
+          {
+            "id": "C-8BFE",
+            "text": "课"
+          }
+        ]
+      },
+      {
+        "id": "W2904",
+        "text": "亲情",
+        "pinyin": "qīnqíng",
+        "meaning": "affection; family love",
+        "characters": [
+          {
+            "id": "C-4EB2",
+            "text": "亲"
+          },
+          {
+            "id": "C-60C5",
+            "text": "情"
+          }
+        ]
+      },
+      {
+        "id": "W4035",
+        "text": "干旱",
+        "pinyin": "gānhàn",
+        "meaning": "drought; arid",
+        "characters": [
+          {
+            "id": "C-5E72",
+            "text": "干"
+          },
+          {
+            "id": "C-65F1",
+            "text": "旱"
+          }
+        ]
+      },
+      {
+        "id": "W4596",
+        "text": "碰撞",
+        "pinyin": "pèngzhuàng",
+        "meaning": "to collide; collision",
+        "characters": [
+          {
+            "id": "C-78B0",
+            "text": "碰"
+          },
+          {
+            "id": "C-649E",
+            "text": "撞"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "06debac97f47c788fb96ca08f33500b7ec33c16a1913a78ee646b98274263f53",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-65f1",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "旱",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-65f1-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W4035",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "drought; arid",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "干旱"
+              },
+              {
+                "value": "gānhàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gan1han4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "干旱",
+              "pinyin": "gānhàn",
+              "meaning": "drought; arid",
+              "audio": "35cbd8396ed3c4b6546753970b4171a4334b99b393e1f0ef7a522b7742b3c2a9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-65f1-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-65f1",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "旱",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W2904",
+                "label": "affection; family love",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W4596",
+                "label": "to collide; collision",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-65f1",
+                "label": "drought",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-65f1-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "旱",
+        "pinyin": "hàn",
+        "meaning": "drought",
+        "source": "/stroke-data/65f1.json",
+        "reference": {
+          "character": "旱",
+          "sha256": "293227a9074aa0cb3f95b63e44e84daec510349650c5248dea3e8ea17099a48f",
+          "medians": [
+            [
+              [
+                302,
+                754
+              ],
+              [
+                345,
+                707
+              ],
+              [
+                395,
+                511
+              ]
+            ],
+            [
+              [
+                334,
+                760
+              ],
+              [
+                376,
+                749
+              ],
+              [
+                628,
+                785
+              ],
+              [
+                647,
+                785
+              ],
+              [
+                683,
+                773
+              ],
+              [
+                706,
+                740
+              ],
+              [
+                635,
+                554
+              ],
+              [
+                637,
+                532
+              ]
+            ],
+            [
+              [
+                393,
+                656
+              ],
+              [
+                402,
+                648
+              ],
+              [
+                420,
+                647
+              ],
+              [
+                542,
+                665
+              ],
+              [
+                580,
+                662
+              ]
+            ],
+            [
+              [
+                415,
+                531
+              ],
+              [
+                449,
+                545
+              ],
+              [
+                576,
+                563
+              ],
+              [
+                603,
+                577
+              ]
+            ],
+            [
+              [
+                327,
+                429
+              ],
+              [
+                349,
+                421
+              ],
+              [
+                401,
+                421
+              ],
+              [
+                549,
+                440
+              ],
+              [
+                651,
+                460
+              ],
+              [
+                705,
+                460
+              ]
+            ],
+            [
+              [
+                156,
+                262
+              ],
+              [
+                212,
+                252
+              ],
+              [
+                417,
+                284
+              ],
+              [
+                802,
+                319
+              ],
+              [
+                890,
+                296
+              ]
+            ],
+            [
+              [
+                533,
+                410
+              ],
+              [
+                510,
+                373
+              ],
+              [
+                507,
+                -50
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-65f1-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0419",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "subject; course",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "课"
+              },
+              {
+                "value": "kè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ke4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "课",
+              "pinyin": "kè",
+              "meaning": "subject; course",
+              "audio": "21237fd557f1384776e33f3f9d33e3b0e53307d9bda52e92e57c17a090aabfb2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-65f1-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-65f1",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "drought",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "旱"
+              },
+              {
+                "value": "hàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "han4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "旱",
+              "pinyin": "hàn",
+              "meaning": "drought",
+              "audio": "d6b1ab7a2fee86e0d78d685bf5ffa4183dd63e090ac3905298ffd2f787ccc848",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "d6b1ab7a2fee86e0d78d685bf5ffa4183dd63e090ac3905298ffd2f787ccc848"
+            ],
+            "transcript": [
+              {
+                "text": "旱",
+                "pinyin": "hàn",
+                "meaning": "drought",
+                "audio": "d6b1ab7a2fee86e0d78d685bf5ffa4183dd63e090ac3905298ffd2f787ccc848",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-65F1",
+      "character": "旱",
+      "lessonIds": [
+        "LESSON-C-65F1"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-65f1-word",
+        "EX-CHAR-char-65f1-recognize",
+        "EX-CHAR-char-65f1-write",
+        "EX-CHAR-char-65f1-familiar",
+        "EX-CHAR-char-65f1-recall"
+      ]
+    },
+    "audio": {
+      "d6b1ab7a2fee86e0d78d685bf5ffa4183dd63e090ac3905298ffd2f787ccc848": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-0c270c0a30aec37ec40de14f863f99648cb832440dca0eb129faa8f401c9e055.mp3",
+          "sha256": "0c270c0a30aec37ec40de14f863f99648cb832440dca0eb129faa8f401c9e055",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "0c270c0a30aec37ec40de14f863f99648cb832440dca0eb129faa8f401c9e055",
+            "text": "旱",
+            "words": [
+              {
+                "text": "旱",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-79866e05ecad79b6b2dfde1395181bf96c6bbdade497a584531bc7133595fa6a.mp3",
+          "sha256": "79866e05ecad79b6b2dfde1395181bf96c6bbdade497a584531bc7133595fa6a",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "79866e05ecad79b6b2dfde1395181bf96c6bbdade497a584531bc7133595fa6a",
+            "text": "旱",
+            "words": [
+              {
+                "text": "旱",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "21237fd557f1384776e33f3f9d33e3b0e53307d9bda52e92e57c17a090aabfb2": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2bcc4cbf398bbc48230a7b80b1351d5998690109e674d75e76a6ac79230d8c75.mp3",
+          "sha256": "2bcc4cbf398bbc48230a7b80b1351d5998690109e674d75e76a6ac79230d8c75",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "2bcc4cbf398bbc48230a7b80b1351d5998690109e674d75e76a6ac79230d8c75",
+            "text": "课",
+            "words": [
+              {
+                "text": "课",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-93a09082406678fe03add51921f6b9820f4ec31503725fd88a92f11b12045b03.mp3",
+          "sha256": "93a09082406678fe03add51921f6b9820f4ec31503725fd88a92f11b12045b03",
+          "byteLength": 6669,
+          "readAlong": {
+            "audioSha256": "93a09082406678fe03add51921f6b9820f4ec31503725fd88a92f11b12045b03",
+            "text": "课",
+            "words": [
+              {
+                "text": "课",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "6d33079e57d26e47bf8f9296661d0f83b6bdb2210a95b079439a115f1d791b25": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6ca1fc123506166691155795c9dbae17ea387bb3493c9f49880f944dd1f80af6.mp3",
+          "sha256": "6ca1fc123506166691155795c9dbae17ea387bb3493c9f49880f944dd1f80af6",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "6ca1fc123506166691155795c9dbae17ea387bb3493c9f49880f944dd1f80af6",
+            "text": "亲情",
+            "words": [
+              {
+                "text": "亲情",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9ce3d31b89f275a8610b59952b5a301ee6595d33b6237aa651d44bacd8a366cb.mp3",
+          "sha256": "9ce3d31b89f275a8610b59952b5a301ee6595d33b6237aa651d44bacd8a366cb",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "9ce3d31b89f275a8610b59952b5a301ee6595d33b6237aa651d44bacd8a366cb",
+            "text": "亲情",
+            "words": [
+              {
+                "text": "亲情",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "35cbd8396ed3c4b6546753970b4171a4334b99b393e1f0ef7a522b7742b3c2a9": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/28fa5697d1a1414b13bf64239b23d32618dbf64e6a1789addea355bed0dc0c77.mp3",
+          "sha256": "28fa5697d1a1414b13bf64239b23d32618dbf64e6a1789addea355bed0dc0c77",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "28fa5697d1a1414b13bf64239b23d32618dbf64e6a1789addea355bed0dc0c77",
+            "text": "干旱",
+            "words": [
+              {
+                "text": "干旱",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/77a569d1833e53aefe4d09ec9e117709a1dd287b40aeedc05dbb4e674a9c0299.mp3",
+          "sha256": "77a569d1833e53aefe4d09ec9e117709a1dd287b40aeedc05dbb4e674a9c0299",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "77a569d1833e53aefe4d09ec9e117709a1dd287b40aeedc05dbb4e674a9c0299",
+            "text": "干旱",
+            "words": [
+              {
+                "text": "干旱",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "b94a90d1a8db1bd72a40738406d3f267f75ecdc6139bd1b4c5eaf7ebeb0a55be": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/30d81b58f76079c3c016db0cf1b17f5c38f49614ff6baf31fe6b58802a2ebd5a.mp3",
+          "sha256": "30d81b58f76079c3c016db0cf1b17f5c38f49614ff6baf31fe6b58802a2ebd5a",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "30d81b58f76079c3c016db0cf1b17f5c38f49614ff6baf31fe6b58802a2ebd5a",
+            "text": "碰撞",
+            "words": [
+              {
+                "text": "碰撞",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f818c1a79a4465edf4bac0354af28cd55b0aa77d6f625f7d9b59caaea4e28b49.mp3",
+          "sha256": "f818c1a79a4465edf4bac0354af28cd55b0aa77d6f625f7d9b59caaea4e28b49",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "f818c1a79a4465edf4bac0354af28cd55b0aa77d6f625f7d9b59caaea4e28b49",
+            "text": "碰撞",
+            "words": [
+              {
+                "text": "碰撞",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

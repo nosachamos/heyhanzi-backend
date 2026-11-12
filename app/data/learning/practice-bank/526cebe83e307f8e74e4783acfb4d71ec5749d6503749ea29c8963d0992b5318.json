@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0072",
+  "targetId": "W0072",
+  "steps": [
+    {
+      "id": "BANK-W0072-W0072",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0072-W0072",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "school",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "学校"
+            },
+            {
+              "value": "xuéxiào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xue2xiao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "学校",
+            "pinyin": "xuéxiào",
+            "meaning": "school",
+            "singleWord": true,
+            "audio": "0cce39f3073dadbdf43e96b65b855a8117235319ccc6a771778890f5731514b6"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "0cce39f3073dadbdf43e96b65b855a8117235319ccc6a771778890f5731514b6": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-9488573c856e2975bb8fb4204dc256154fa7642df7393c7947386206457a31ae.mp3",
+        "sha256": "9488573c856e2975bb8fb4204dc256154fa7642df7393c7947386206457a31ae",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "9488573c856e2975bb8fb4204dc256154fa7642df7393c7947386206457a31ae",
+          "text": "学校",
+          "words": [
+            {
+              "text": "学校",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-86ef69e3e5ad6bd00a10a0c675d1f2ae5eeebc148511a82acf8581921773d248.mp3",
+        "sha256": "86ef69e3e5ad6bd00a10a0c675d1f2ae5eeebc148511a82acf8581921773d248",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "86ef69e3e5ad6bd00a10a0c675d1f2ae5eeebc148511a82acf8581921773d248",
+          "text": "学校",
+          "words": [
+            {
+              "text": "学校",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0072",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0072-W0072",
+      "question_ids": [
+        "BANK-W0072-W0072"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U02-P01",
+    "stepId": "S-U02-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6821"
+    ],
+    "grammarLessonIds": []
+  }
+}

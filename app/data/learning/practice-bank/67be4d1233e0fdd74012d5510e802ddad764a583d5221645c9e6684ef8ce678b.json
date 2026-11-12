@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0011",
+  "targetId": "W0011",
+  "steps": [
+    {
+      "id": "BANK-W0011-W0011",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0011-W0011",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "Chinese language",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "中文"
+            },
+            {
+              "value": "Zhōngwén",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhong1wen2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "中文",
+            "pinyin": "Zhōngwén",
+            "meaning": "Chinese language",
+            "singleWord": true,
+            "audio": "eedd214ca778fd3640ff550989bc8bb96258bb5ac84bb2bbc0d2fee204e46194"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "eedd214ca778fd3640ff550989bc8bb96258bb5ac84bb2bbc0d2fee204e46194": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f6c0c419470d4d633f5923ffc7677df9f2bedcb20cd80fdae0102ba291fffd1a.mp3",
+        "sha256": "f6c0c419470d4d633f5923ffc7677df9f2bedcb20cd80fdae0102ba291fffd1a",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "f6c0c419470d4d633f5923ffc7677df9f2bedcb20cd80fdae0102ba291fffd1a",
+          "text": "中文",
+          "words": [
+            {
+              "text": "中文",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-a8467d7955c3181549ff2ff961506983f34e564f53f0ef0bf102c71cb2c9911c.mp3",
+        "sha256": "a8467d7955c3181549ff2ff961506983f34e564f53f0ef0bf102c71cb2c9911c",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "a8467d7955c3181549ff2ff961506983f34e564f53f0ef0bf102c71cb2c9911c",
+          "text": "中文",
+          "words": [
+            {
+              "text": "中文",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0011",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0011-W0011",
+      "question_ids": [
+        "BANK-W0011-W0011"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU03",
+    "stepId": "S-WU03-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-zhongwen"
+    ],
+    "grammarLessonIds": []
+  }
+}

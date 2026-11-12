@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0416",
+  "targetId": "W0416",
+  "steps": [
+    {
+      "id": "BANK-W0416-W0416",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0416-W0416",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "older sister",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "姐姐"
+            },
+            {
+              "value": "jiějie",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jie3jie5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "姐姐",
+            "pinyin": "jiějie",
+            "meaning": "older sister",
+            "singleWord": true,
+            "audio": "14433aa5e7a314c44c7d4958a8e9b05a497272b852e9c855e885055bc5458bb6"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "14433aa5e7a314c44c7d4958a8e9b05a497272b852e9c855e885055bc5458bb6": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ac9d0498f4b735086d0c18f3bdc67f447278754c85408df2e4708efaa7dad74a.mp3",
+        "sha256": "ac9d0498f4b735086d0c18f3bdc67f447278754c85408df2e4708efaa7dad74a",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "ac9d0498f4b735086d0c18f3bdc67f447278754c85408df2e4708efaa7dad74a",
+          "text": "姐姐",
+          "words": [
+            {
+              "text": "姐姐",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-8299acf35616e8037a76c91735f38d0319cbaf9113521c46216840009ee7810c.mp3",
+        "sha256": "8299acf35616e8037a76c91735f38d0319cbaf9113521c46216840009ee7810c",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "8299acf35616e8037a76c91735f38d0319cbaf9113521c46216840009ee7810c",
+          "text": "姐姐",
+          "words": [
+            {
+              "text": "姐姐",
+              "start": 0.09,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0416",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0416-W0416",
+      "question_ids": [
+        "BANK-W0416-W0416"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U04",
+    "stepId": "S-U04-words-r4-18",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-59d0"
+    ],
+    "grammarLessonIds": []
+  }
+}

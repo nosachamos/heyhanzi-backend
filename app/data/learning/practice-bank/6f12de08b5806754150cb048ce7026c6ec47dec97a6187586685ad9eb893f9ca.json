@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0822",
+  "targetId": "W0822",
+  "steps": [
+    {
+      "id": "BANK-W0822-W0822",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0822-W0822",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "sisters; siblings",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "姐妹"
+            },
+            {
+              "value": "jiěmèi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jie3mei4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "姐妹",
+            "pinyin": "jiěmèi",
+            "meaning": "sisters; siblings",
+            "singleWord": true,
+            "audio": "0f6f6b1a97d7ddcb848c2d6c151c92c5267377612d9423f488f0c4798e6fab5b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "0f6f6b1a97d7ddcb848c2d6c151c92c5267377612d9423f488f0c4798e6fab5b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-8bd6270a45e98aae17673423a209c2f52b33d60f0b6dd24810d28ae4d72b686d.mp3",
+        "sha256": "8bd6270a45e98aae17673423a209c2f52b33d60f0b6dd24810d28ae4d72b686d",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "8bd6270a45e98aae17673423a209c2f52b33d60f0b6dd24810d28ae4d72b686d",
+          "text": "姐妹",
+          "words": [
+            {
+              "text": "姐妹",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-f3ae116696dc00903e5c476e2d34027cf4bf4cf15545f8cff0183f18fdf3dc92.mp3",
+        "sha256": "f3ae116696dc00903e5c476e2d34027cf4bf4cf15545f8cff0183f18fdf3dc92",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "f3ae116696dc00903e5c476e2d34027cf4bf4cf15545f8cff0183f18fdf3dc92",
+          "text": "姐妹",
+          "words": [
+            {
+              "text": "姐妹",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0822",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0822-W0822",
+      "question_ids": [
+        "BANK-W0822-W0822"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-01",
+    "stepId": "S-U3-01-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-59b9"
+    ],
+    "grammarLessonIds": []
+  }
+}

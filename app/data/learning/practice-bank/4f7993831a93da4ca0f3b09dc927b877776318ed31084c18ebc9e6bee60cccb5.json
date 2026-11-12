@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1219",
+  "targetId": "W1219",
+  "steps": [
+    {
+      "id": "BANK-W1219-W1219",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1219-W1219",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "traffic jam; to get congested",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "堵车"
+            },
+            {
+              "value": "dǔchē",
+              "mode": "pinyin"
+            },
+            {
+              "value": "du3che1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "堵车",
+            "pinyin": "dǔchē",
+            "meaning": "traffic jam; to get congested",
+            "singleWord": true,
+            "audio": "f974fd4915446f378127373c977f8a79d5bc27658296f3ba0d171c4653e34d79"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f974fd4915446f378127373c977f8a79d5bc27658296f3ba0d171c4653e34d79": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/087aa4de4b6a261986d57552a487bf25595368efe8d6fbeb41c466c6db606239.mp3",
+        "sha256": "087aa4de4b6a261986d57552a487bf25595368efe8d6fbeb41c466c6db606239",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "087aa4de4b6a261986d57552a487bf25595368efe8d6fbeb41c466c6db606239",
+          "text": "堵车",
+          "words": [
+            {
+              "text": "堵车",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b4be9cc73d17a9b913859f7be3f65a67fbb9663c7ddff9dbf784dea6703b1eea.mp3",
+        "sha256": "b4be9cc73d17a9b913859f7be3f65a67fbb9663c7ddff9dbf784dea6703b1eea",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "b4be9cc73d17a9b913859f7be3f65a67fbb9663c7ddff9dbf784dea6703b1eea",
+          "text": "堵车",
+          "words": [
+            {
+              "text": "堵车",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1219",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1219-W1219",
+      "question_ids": [
+        "BANK-W1219-W1219"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-15",
+    "stepId": "S-U4-15-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5835"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3605",
+  "targetId": "W3605",
+  "steps": [
+    {
+      "id": "BANK-W3605-W3605",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3605-W3605",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "rent",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "租金"
+            },
+            {
+              "value": "zūjīn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zu1jin1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "租金",
+            "pinyin": "zūjīn",
+            "meaning": "rent",
+            "singleWord": true,
+            "audio": "e16c9982f00b6c43f78c5482d3c1e212f69e9a5fcf74a9332b845ec020d93b9f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e16c9982f00b6c43f78c5482d3c1e212f69e9a5fcf74a9332b845ec020d93b9f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1a1719372ac69fcee935f80effe3d489083f6ab2a334ae81a405ca5ad6af2354.mp3",
+        "sha256": "1a1719372ac69fcee935f80effe3d489083f6ab2a334ae81a405ca5ad6af2354",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "1a1719372ac69fcee935f80effe3d489083f6ab2a334ae81a405ca5ad6af2354",
+          "text": "租金",
+          "words": [
+            {
+              "text": "租金",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-52e94c5db7664a48b4be12f2e439cb90398aca6bda2bac839e97263d5e01a750.mp3",
+        "sha256": "52e94c5db7664a48b4be12f2e439cb90398aca6bda2bac839e97263d5e01a750",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "52e94c5db7664a48b4be12f2e439cb90398aca6bda2bac839e97263d5e01a750",
+          "text": "租金",
+          "words": [
+            {
+              "text": "租金",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3605",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3605-W3605",
+      "question_ids": [
+        "BANK-W3605-W3605"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-03",
+    "stepId": "S-U5-03-words-r4-15",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-91d1"
+    ],
+    "grammarLessonIds": []
+  }
+}

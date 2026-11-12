@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3926",
+  "targetId": "W3926",
+  "steps": [
+    {
+      "id": "BANK-W3926-W3926",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3926-W3926",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "order",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "订单"
+            },
+            {
+              "value": "dìngdān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ding4dan1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "订单",
+            "pinyin": "dìngdān",
+            "meaning": "order",
+            "singleWord": true,
+            "audio": "e4f2b6cdcf35813606bf29268fe5f55730391492167e900a492bda377809c6c4"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e4f2b6cdcf35813606bf29268fe5f55730391492167e900a492bda377809c6c4": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-4c014a85349041812a0824921cbbf6fdafe9e4d8733c6ef7818fcfeef48119b7.mp3",
+        "sha256": "4c014a85349041812a0824921cbbf6fdafe9e4d8733c6ef7818fcfeef48119b7",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "4c014a85349041812a0824921cbbf6fdafe9e4d8733c6ef7818fcfeef48119b7",
+          "text": "订单",
+          "words": [
+            {
+              "text": "订单",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-85d720a9be4010e67dd2c230b16196a6d9e3a5d76037d850e629c9bb2e1d6534.mp3",
+        "sha256": "85d720a9be4010e67dd2c230b16196a6d9e3a5d76037d850e629c9bb2e1d6534",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "85d720a9be4010e67dd2c230b16196a6d9e3a5d76037d850e629c9bb2e1d6534",
+          "text": "订单",
+          "words": [
+            {
+              "text": "订单",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3926",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3926-W3926",
+      "question_ids": [
+        "BANK-W3926-W3926"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-11",
+    "stepId": "S-U6-11-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8ba2"
+    ],
+    "grammarLessonIds": []
+  }
+}

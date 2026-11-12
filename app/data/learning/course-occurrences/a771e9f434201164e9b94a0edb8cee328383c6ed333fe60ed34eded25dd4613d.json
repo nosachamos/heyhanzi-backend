@@ -1,0 +1,681 @@
+{
+  "id": "EX-CHAR-char-8bc6",
+  "revision": 2,
+  "unit": "U11",
+  "stage": "ST-HSK1",
+  "after": "S-U11-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "识",
+  "sourceBlockId": "mandarin-simplified-v1-char-8bc6",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "W0056",
+        "text": "杯",
+        "pinyin": "bēi",
+        "meaning": "cup; cupful",
+        "characters": [
+          {
+            "id": "C-676F",
+            "text": "杯"
+          }
+        ]
+      },
+      {
+        "id": "W0406",
+        "text": "汉字",
+        "pinyin": "Hànzì",
+        "meaning": "Chinese character",
+        "characters": [
+          {
+            "id": "C-6C49",
+            "text": "汉"
+          },
+          {
+            "id": "C-5B57",
+            "text": "字"
+          }
+        ]
+      },
+      {
+        "id": "W1500",
+        "text": "老年",
+        "pinyin": "lǎonián",
+        "meaning": "elderly; old age",
+        "characters": [
+          {
+            "id": "C-8001",
+            "text": "老"
+          },
+          {
+            "id": "C-5E74",
+            "text": "年"
+          }
+        ]
+      },
+      {
+        "id": "W2137",
+        "text": "常识",
+        "pinyin": "chángshí",
+        "meaning": "common sense; general knowledge",
+        "characters": [
+          {
+            "id": "C-5E38",
+            "text": "常"
+          },
+          {
+            "id": "C-8BC6",
+            "text": "识"
+          }
+        ]
+      },
+      {
+        "id": "W4793",
+        "text": "识",
+        "pinyin": "shí",
+        "meaning": "to know; knowledge",
+        "characters": [
+          {
+            "id": "C-8BC6",
+            "text": "识"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "4dacc73cc32ac7333ceb179aed12f132457aa37e2c356e23cdb22310f4159f08",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8bc6",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "识",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8bc6-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W2137",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "common sense; general knowledge",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "常识"
+              },
+              {
+                "value": "chángshí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chang2shi2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "常识",
+              "pinyin": "chángshí",
+              "meaning": "common sense; general knowledge",
+              "audio": "499d4346d67b782cf2ce1a07a6c6bb8934e976579eda79e892aca26608b91655",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bc6-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W4793",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "识",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W4793",
+                "label": "to know; knowledge",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1500",
+                "label": "elderly; old age",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0056",
+                "label": "cup; cupful",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bc6-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "识",
+        "pinyin": "shí",
+        "meaning": "to know; knowledge",
+        "source": "/stroke-data/8bc6.json",
+        "reference": {
+          "character": "识",
+          "sha256": "2b7188718d4d2d6fc72c5940a0b02c6f0e140dbc8abaf4888576713c135723f7",
+          "medians": [
+            [
+              [
+                278,
+                799
+              ],
+              [
+                372,
+                750
+              ],
+              [
+                402,
+                710
+              ]
+            ],
+            [
+              [
+                69,
+                474
+              ],
+              [
+                106,
+                466
+              ],
+              [
+                126,
+                470
+              ],
+              [
+                278,
+                528
+              ],
+              [
+                313,
+                527
+              ],
+              [
+                323,
+                518
+              ],
+              [
+                289,
+                206
+              ],
+              [
+                296,
+                171
+              ],
+              [
+                318,
+                174
+              ],
+              [
+                347,
+                188
+              ],
+              [
+                444,
+                275
+              ]
+            ],
+            [
+              [
+                476,
+                628
+              ],
+              [
+                504,
+                603
+              ],
+              [
+                513,
+                578
+              ],
+              [
+                552,
+                343
+              ]
+            ],
+            [
+              [
+                540,
+                597
+              ],
+              [
+                558,
+                612
+              ],
+              [
+                632,
+                622
+              ],
+              [
+                741,
+                648
+              ],
+              [
+                776,
+                640
+              ],
+              [
+                805,
+                609
+              ],
+              [
+                803,
+                597
+              ],
+              [
+                765,
+                466
+              ],
+              [
+                737,
+                445
+              ]
+            ],
+            [
+              [
+                573,
+                376
+              ],
+              [
+                589,
+                391
+              ],
+              [
+                710,
+                413
+              ],
+              [
+                786,
+                419
+              ],
+              [
+                810,
+                410
+              ]
+            ],
+            [
+              [
+                612,
+                245
+              ],
+              [
+                577,
+                238
+              ],
+              [
+                541,
+                186
+              ],
+              [
+                486,
+                127
+              ],
+              [
+                439,
+                85
+              ],
+              [
+                383,
+                50
+              ]
+            ],
+            [
+              [
+                722,
+                277
+              ],
+              [
+                816,
+                193
+              ],
+              [
+                850,
+                155
+              ],
+              [
+                873,
+                114
+              ],
+              [
+                882,
+                76
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8bc6-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0406",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "Chinese character",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "汉字"
+              },
+              {
+                "value": "Hànzì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "han4zi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "汉字",
+              "pinyin": "Hànzì",
+              "meaning": "Chinese character",
+              "audio": "9aa685de5b3a36289b6f7e813056654248e0e087260b1a5a93b7ac90a91288a3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bc6-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W4793",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to know; knowledge",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "识"
+              },
+              {
+                "value": "shí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shi2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "识",
+              "pinyin": "shí",
+              "meaning": "to know; knowledge",
+              "audio": "8a321755ec2a83c836516256b973197ea41e1d88d26b0bad4a844160738c29fd",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "8a321755ec2a83c836516256b973197ea41e1d88d26b0bad4a844160738c29fd"
+            ],
+            "transcript": [
+              {
+                "text": "识",
+                "pinyin": "shí",
+                "meaning": "to know; knowledge",
+                "audio": "8a321755ec2a83c836516256b973197ea41e1d88d26b0bad4a844160738c29fd",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8BC6",
+      "character": "识",
+      "lessonIds": [
+        "LESSON-C-8BC6"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8bc6-word",
+        "EX-CHAR-char-8bc6-recognize",
+        "EX-CHAR-char-8bc6-write",
+        "EX-CHAR-char-8bc6-familiar",
+        "EX-CHAR-char-8bc6-recall"
+      ]
+    },
+    "audio": {
+      "85daef4e600b1df06a0a46d484afba6887983782f6d7cc7cab31da53917dc948": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-d31d4806ef4d9a434e114a5c188c71b27d5fd86c58e1329372c735866d31cc1a.mp3",
+          "sha256": "d31d4806ef4d9a434e114a5c188c71b27d5fd86c58e1329372c735866d31cc1a",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "d31d4806ef4d9a434e114a5c188c71b27d5fd86c58e1329372c735866d31cc1a",
+            "text": "杯",
+            "words": [
+              {
+                "text": "杯",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-a2687626b2f6eb1d1daa2007730be49bd92d8ceb1fb2faead9fa131c3336b7bd.mp3",
+          "sha256": "a2687626b2f6eb1d1daa2007730be49bd92d8ceb1fb2faead9fa131c3336b7bd",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "a2687626b2f6eb1d1daa2007730be49bd92d8ceb1fb2faead9fa131c3336b7bd",
+            "text": "杯",
+            "words": [
+              {
+                "text": "杯",
+                "start": 0.14,
+                "end": 0.24
+              }
+            ]
+          }
+        }
+      },
+      "9aa685de5b3a36289b6f7e813056654248e0e087260b1a5a93b7ac90a91288a3": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-03fb2a8b471a5989ca84610610f23f4bfd87bb0963723688626b8c06cd37d1ac.mp3",
+          "sha256": "03fb2a8b471a5989ca84610610f23f4bfd87bb0963723688626b8c06cd37d1ac",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "03fb2a8b471a5989ca84610610f23f4bfd87bb0963723688626b8c06cd37d1ac",
+            "text": "汉字",
+            "words": [
+              {
+                "text": "汉字",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-9038da5be7ee8464381e3ed15e33c2044301e868b41d33c1450fb4156405dfa1.mp3",
+          "sha256": "9038da5be7ee8464381e3ed15e33c2044301e868b41d33c1450fb4156405dfa1",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "9038da5be7ee8464381e3ed15e33c2044301e868b41d33c1450fb4156405dfa1",
+            "text": "汉字",
+            "words": [
+              {
+                "text": "汉字",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "e32d5a3705b0459bf60bf2f6674af47f8742da1b511aae24d88daf9cceb49414": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/dc82a33d9c34ba1048d84fe432e742d2163d69f1505df8f45c646c5a61242b79.mp3",
+          "sha256": "dc82a33d9c34ba1048d84fe432e742d2163d69f1505df8f45c646c5a61242b79",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "dc82a33d9c34ba1048d84fe432e742d2163d69f1505df8f45c646c5a61242b79",
+            "text": "老年",
+            "words": [
+              {
+                "text": "老年",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5c53a1e5ba3dbb203e5d53c5c757c1e5e29f2bc86470460367e4cc183d6be54f.mp3",
+          "sha256": "5c53a1e5ba3dbb203e5d53c5c757c1e5e29f2bc86470460367e4cc183d6be54f",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "5c53a1e5ba3dbb203e5d53c5c757c1e5e29f2bc86470460367e4cc183d6be54f",
+            "text": "老年",
+            "words": [
+              {
+                "text": "老年",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "499d4346d67b782cf2ce1a07a6c6bb8934e976579eda79e892aca26608b91655": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1c07f9ccc19e5ea0f110ccc49bcacd14f14908cb0b742b8823e8661b42cb5ff5.mp3",
+          "sha256": "1c07f9ccc19e5ea0f110ccc49bcacd14f14908cb0b742b8823e8661b42cb5ff5",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "1c07f9ccc19e5ea0f110ccc49bcacd14f14908cb0b742b8823e8661b42cb5ff5",
+            "text": "常识",
+            "words": [
+              {
+                "text": "常识",
+                "start": 0.27,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/aa45babe6bc46dc7ac9b5920e9f613aac89686592423be80e2d5afaf2ed3e97f.mp3",
+          "sha256": "aa45babe6bc46dc7ac9b5920e9f613aac89686592423be80e2d5afaf2ed3e97f",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "aa45babe6bc46dc7ac9b5920e9f613aac89686592423be80e2d5afaf2ed3e97f",
+            "text": "常识",
+            "words": [
+              {
+                "text": "常识",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "8a321755ec2a83c836516256b973197ea41e1d88d26b0bad4a844160738c29fd": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/05838b87c04067d44815ccf370131cf9921fb34100e6fa28b42ba0fb870d5780.mp3",
+          "sha256": "05838b87c04067d44815ccf370131cf9921fb34100e6fa28b42ba0fb870d5780",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "05838b87c04067d44815ccf370131cf9921fb34100e6fa28b42ba0fb870d5780",
+            "text": "识",
+            "words": [
+              {
+                "text": "识",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/8b19233a3c1e8cef31052e5ee0187f89b66f03c643b99bf5704a585254878c71.mp3",
+          "sha256": "8b19233a3c1e8cef31052e5ee0187f89b66f03c643b99bf5704a585254878c71",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "8b19233a3c1e8cef31052e5ee0187f89b66f03c643b99bf5704a585254878c71",
+            "text": "识",
+            "words": [
+              {
+                "text": "识",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

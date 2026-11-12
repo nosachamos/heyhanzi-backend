@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1316",
+  "targetId": "W1316",
+  "steps": [
+    {
+      "id": "BANK-W1316-W1316",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1316-W1316",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "customer; client",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "顾客"
+            },
+            {
+              "value": "gùkè",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gu4ke4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "顾客",
+            "pinyin": "gùkè",
+            "meaning": "customer; client",
+            "singleWord": true,
+            "audio": "31f2a4532ac5b37bb0d619585e7aa56d1b03bfd147c2d54d6af08e34445a5b7a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "31f2a4532ac5b37bb0d619585e7aa56d1b03bfd147c2d54d6af08e34445a5b7a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-632bcdb96dbcb4c6270476f1aabf79eec42aa7a15080f87c3a082882d8d7ca0d.mp3",
+        "sha256": "632bcdb96dbcb4c6270476f1aabf79eec42aa7a15080f87c3a082882d8d7ca0d",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "632bcdb96dbcb4c6270476f1aabf79eec42aa7a15080f87c3a082882d8d7ca0d",
+          "text": "顾客",
+          "words": [
+            {
+              "text": "顾客",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3d0eabf03a12147cb5ae2ba996062f04acb35340f4dd3c328d88356df8b5cec6.mp3",
+        "sha256": "3d0eabf03a12147cb5ae2ba996062f04acb35340f4dd3c328d88356df8b5cec6",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "3d0eabf03a12147cb5ae2ba996062f04acb35340f4dd3c328d88356df8b5cec6",
+          "text": "顾客",
+          "words": [
+            {
+              "text": "顾客",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1316",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1316-W1316",
+      "question_ids": [
+        "BANK-W1316-W1316"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-02",
+    "stepId": "S-U4-02-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-987e"
+    ],
+    "grammarLessonIds": []
+  }
+}

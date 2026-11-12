@@ -1,0 +1,76 @@
+{
+  "id": "BANK-K-HSK2-compose",
+  "targetId": "K-HSK2-compose",
+  "steps": [
+    {
+      "id": "BANK-K-HSK2-compose-K-HSK2-compose-perform",
+      "kind": "check",
+      "title": "Use the skill in context",
+      "questions": [
+        {
+          "id": "BANK-K-HSK2-compose-K-HSK2-compose-perform",
+          "kind": "production",
+          "response": "written",
+          "prompt": "Write a brief update about the familiar trip for someone who was absent. Preserve who went and whether the event occurred.",
+          "promptLanguage": "en",
+          "context": "A friend was absent from a travel conversation. You have travelled before; the other person has not. No destination or date was given. Write an update preserving whose experience is positive and whose is negative.\nFamiliar meanings available: before; formerly; travel; go on a trip; not; have not.",
+          "contextLanguage": "en",
+          "label": "Write your own message",
+          "resultDomain": "Self-reviewed writing practice",
+          "rubric": [
+            {
+              "id": "r1",
+              "text": "My account preserves participants and event status."
+            },
+            {
+              "id": "r2",
+              "text": "Its sequence or reason is clear without an unexplained jump."
+            }
+          ],
+          "minLength": 1
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {},
+  "coverage": [
+    {
+      "target_id": "K-HSK2-compose",
+      "facet_id": "K-HSK2-compose-situated-performance",
+      "part_id": "BANK-K-HSK2-compose-K-HSK2-compose-perform",
+      "question_ids": [
+        "BANK-K-HSK2-compose-K-HSK2-compose-perform"
+      ],
+      "evidence": "self-reviewed",
+      "scope": "Compose a brief account of a familiar experience, preserving who acted and whether the event occurred.",
+      "stage_outcome_mastery": false
+    }
+  ],
+  "remediation": {
+    "unitId": "U17-P01",
+    "stepId": "S-U17-skill-K-HSK2-compose",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4ee5",
+      "mandarin-simplified-v1-char-65c5",
+      "mandarin-simplified-v1-char-6ca1",
+      "mandarin-simplified-v1-warmup-wo",
+      "mandarin-simplified-v1-char-53bb",
+      "mandarin-simplified-v1-char-66fe",
+      "mandarin-simplified-v1-char-56fd",
+      "mandarin-simplified-v1-char-6ca1",
+      "mandarin-simplified-v1-warmup-zai",
+      "mandarin-simplified-v1-char-4f4f",
+      "mandarin-simplified-v1-char-66fe",
+      "mandarin-simplified-v1-char-6628",
+      "mandarin-simplified-v1-char-53cb",
+      "mandarin-simplified-v1-char-8fd8",
+      "mandarin-simplified-v1-char-73ed",
+      "mandarin-simplified-v1-char-8fd8"
+    ],
+    "grammarLessonIds": [
+      "EX-GRAM-G-experience-guo",
+      "EX-GRAM-G-past-negative"
+    ]
+  }
+}

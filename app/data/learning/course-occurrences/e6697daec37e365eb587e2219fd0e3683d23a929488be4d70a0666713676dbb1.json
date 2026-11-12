@@ -1,0 +1,665 @@
+{
+  "id": "EX-CHAR-char-95ee",
+  "revision": 2,
+  "unit": "U01",
+  "stage": "ST-HSK1",
+  "after": "S-U01-writing-r4-1",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "问",
+  "sourceBlockId": "mandarin-simplified-v1-char-95ee",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-warmup-you",
+        "text": "有",
+        "pinyin": "yǒu",
+        "meaning": "to have; there is",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          }
+        ]
+      },
+      {
+        "id": "W0091",
+        "text": "呢",
+        "pinyin": "ne",
+        "meaning": "what about ...?; marks a contextually recoverable follow-up",
+        "characters": [
+          {
+            "id": "C-5462",
+            "text": "呢"
+          }
+        ]
+      },
+      {
+        "id": "W0343",
+        "text": "请问",
+        "pinyin": "qǐngwèn",
+        "meaning": "Excuse me, may I ask...?",
+        "characters": [
+          {
+            "id": "C-8BF7",
+            "text": "请"
+          },
+          {
+            "id": "C-95EE",
+            "text": "问"
+          }
+        ]
+      },
+      {
+        "id": "W0478",
+        "text": "问",
+        "pinyin": "wèn",
+        "meaning": "to ask; to inquire",
+        "characters": [
+          {
+            "id": "C-95EE",
+            "text": "问"
+          }
+        ]
+      },
+      {
+        "id": "W1341",
+        "text": "好好",
+        "pinyin": "hǎohǎo",
+        "meaning": "in good condition; well; carefully; properly",
+        "characters": [
+          {
+            "id": "C-597D",
+            "text": "好"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "67724ab23544b6fbf705d68c42e027c041dbd8cb885cbc33aa7e3d1252bc601d",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-95ee",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "问",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-95ee-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0343",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "Excuse me, may I ask...?",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "请问"
+              },
+              {
+                "value": "qǐngwèn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qing3wen4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "请问",
+              "pinyin": "qǐngwèn",
+              "meaning": "Excuse me, may I ask...?",
+              "audio": "a1c15440ad5f46dd2cf9a2b9c0c7ebe0c386b526a98c6a1b244c0e6df3f0f23a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-95ee-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0478",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "问",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-warmup-you",
+                "label": "to have; there is",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0478",
+                "label": "to ask; to inquire",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1341",
+                "label": "in good condition; well",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-95ee-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "问",
+        "pinyin": "wèn",
+        "meaning": "to ask; to inquire",
+        "source": "/stroke-data/95ee.json",
+        "reference": {
+          "character": "问",
+          "sha256": "dfbb5ba6a4e316bd07b0b80bc668b3ae99e29c773662fad887549f7bc88e8d21",
+          "medians": [
+            [
+              [
+                316,
+                783
+              ],
+              [
+                387,
+                725
+              ],
+              [
+                405,
+                702
+              ]
+            ],
+            [
+              [
+                195,
+                675
+              ],
+              [
+                204,
+                671
+              ],
+              [
+                239,
+                626
+              ],
+              [
+                242,
+                577
+              ],
+              [
+                244,
+                430
+              ],
+              [
+                237,
+                263
+              ],
+              [
+                213,
+                108
+              ],
+              [
+                215,
+                48
+              ]
+            ],
+            [
+              [
+                516,
+                733
+              ],
+              [
+                549,
+                725
+              ],
+              [
+                582,
+                727
+              ],
+              [
+                687,
+                754
+              ],
+              [
+                780,
+                766
+              ],
+              [
+                808,
+                757
+              ],
+              [
+                832,
+                726
+              ],
+              [
+                829,
+                671
+              ],
+              [
+                842,
+                224
+              ],
+              [
+                837,
+                87
+              ],
+              [
+                820,
+                48
+              ],
+              [
+                772,
+                56
+              ],
+              [
+                670,
+                95
+              ]
+            ],
+            [
+              [
+                364,
+                483
+              ],
+              [
+                389,
+                462
+              ],
+              [
+                399,
+                443
+              ],
+              [
+                436,
+                252
+              ]
+            ],
+            [
+              [
+                421,
+                481
+              ],
+              [
+                431,
+                473
+              ],
+              [
+                449,
+                471
+              ],
+              [
+                595,
+                506
+              ],
+              [
+                634,
+                500
+              ],
+              [
+                660,
+                474
+              ],
+              [
+                630,
+                372
+              ],
+              [
+                605,
+                354
+              ]
+            ],
+            [
+              [
+                457,
+                292
+              ],
+              [
+                470,
+                307
+              ],
+              [
+                603,
+                327
+              ],
+              [
+                641,
+                328
+              ],
+              [
+                666,
+                319
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-95ee-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0091",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "what about ...?; marks a contextually recoverable follow-up",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "呢"
+              },
+              {
+                "value": "ne",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ne5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "呢",
+              "pinyin": "ne",
+              "meaning": "what about ...?; marks a contextually recoverable follow-up",
+              "audio": "53eb670c6f7180be07ed8a24b51ad3b9e64f2d10a9b6cfe73aee5859b0a98c7e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-95ee-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0478",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to ask; to inquire",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "问"
+              },
+              {
+                "value": "wèn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wen4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "问",
+              "pinyin": "wèn",
+              "meaning": "to ask; to inquire",
+              "audio": "f8aba7591ac42c4f38d19b2c8154ec2d6afef0b14264bd822ef5be99be54304a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "f8aba7591ac42c4f38d19b2c8154ec2d6afef0b14264bd822ef5be99be54304a"
+            ],
+            "transcript": [
+              {
+                "text": "问",
+                "pinyin": "wèn",
+                "meaning": "to ask; to inquire",
+                "audio": "f8aba7591ac42c4f38d19b2c8154ec2d6afef0b14264bd822ef5be99be54304a",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-95EE",
+      "character": "问",
+      "lessonIds": [
+        "LESSON-C-95EE"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-95ee-word",
+        "EX-CHAR-char-95ee-recognize",
+        "EX-CHAR-char-95ee-write",
+        "EX-CHAR-char-95ee-familiar",
+        "EX-CHAR-char-95ee-recall"
+      ]
+    },
+    "audio": {
+      "e05bdf8932363c5c3cef391f352fc9d20839a80952e08cb92fff972633062a8b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-006758fa30a194d8f67506ae5e63dff8d045cfc05ad0d17642833d19d7dc39fd.mp3",
+          "sha256": "006758fa30a194d8f67506ae5e63dff8d045cfc05ad0d17642833d19d7dc39fd",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "006758fa30a194d8f67506ae5e63dff8d045cfc05ad0d17642833d19d7dc39fd",
+            "text": "有",
+            "words": [
+              {
+                "text": "有",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-553fab5233f8379d701937dad0b7be93570ae6dbbc092eb9e2a1596c1a06ea6c.mp3",
+          "sha256": "553fab5233f8379d701937dad0b7be93570ae6dbbc092eb9e2a1596c1a06ea6c",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "553fab5233f8379d701937dad0b7be93570ae6dbbc092eb9e2a1596c1a06ea6c",
+            "text": "有",
+            "words": [
+              {
+                "text": "有",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "53eb670c6f7180be07ed8a24b51ad3b9e64f2d10a9b6cfe73aee5859b0a98c7e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-a6dfbbfbc8730ca495ad6b17e3ba843b99ca9fefde918e689c5503687369ab65.mp3",
+          "sha256": "a6dfbbfbc8730ca495ad6b17e3ba843b99ca9fefde918e689c5503687369ab65",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "a6dfbbfbc8730ca495ad6b17e3ba843b99ca9fefde918e689c5503687369ab65",
+            "text": "呢",
+            "words": [
+              {
+                "text": "呢",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c9d42e4d85fb275039248c0e25d4e08ddb2315a86ae56acbefe69d0c42b652ce.mp3",
+          "sha256": "c9d42e4d85fb275039248c0e25d4e08ddb2315a86ae56acbefe69d0c42b652ce",
+          "byteLength": 12429,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "c9d42e4d85fb275039248c0e25d4e08ddb2315a86ae56acbefe69d0c42b652ce",
+            "text": "呢",
+            "words": [
+              {
+                "text": "呢",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "a1c15440ad5f46dd2cf9a2b9c0c7ebe0c386b526a98c6a1b244c0e6df3f0f23a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/865d64f3e1d0a2210c7d1baf4a9c47b5bbc193bb73c914b7b1b9f3d7d83f006c.mp3",
+          "sha256": "865d64f3e1d0a2210c7d1baf4a9c47b5bbc193bb73c914b7b1b9f3d7d83f006c",
+          "byteLength": 16749,
+          "readAlong": {
+            "audioSha256": "865d64f3e1d0a2210c7d1baf4a9c47b5bbc193bb73c914b7b1b9f3d7d83f006c",
+            "text": "请问",
+            "words": [
+              {
+                "text": "请问",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e50638d2d328c895697411815ac20a7e29eb71f7162477803f6927533685e3e7.mp3",
+          "sha256": "e50638d2d328c895697411815ac20a7e29eb71f7162477803f6927533685e3e7",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "e50638d2d328c895697411815ac20a7e29eb71f7162477803f6927533685e3e7",
+            "text": "请问",
+            "words": [
+              {
+                "text": "请问",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "f8aba7591ac42c4f38d19b2c8154ec2d6afef0b14264bd822ef5be99be54304a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b59b336d645cbee36cbb0389ac7b9b65f1483419fe3a30aca93b2fd6448668fa.mp3",
+          "sha256": "b59b336d645cbee36cbb0389ac7b9b65f1483419fe3a30aca93b2fd6448668fa",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "b59b336d645cbee36cbb0389ac7b9b65f1483419fe3a30aca93b2fd6448668fa",
+            "text": "问",
+            "words": [
+              {
+                "text": "问",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-32aa50257138b98b1e37f0cb237b876da0c58495d4ea5bb9645d35240cf1a0de.mp3",
+          "sha256": "32aa50257138b98b1e37f0cb237b876da0c58495d4ea5bb9645d35240cf1a0de",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "32aa50257138b98b1e37f0cb237b876da0c58495d4ea5bb9645d35240cf1a0de",
+            "text": "问",
+            "words": [
+              {
+                "text": "问",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "296f4162576e9b746cd1b8d848592ef8230b54c94791ded3416d51a35c8a5031": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-9051e66d708a68c839000791d9ef11fd9f000ab1c8fc4925f7ff00ce4f1a42be.mp3",
+          "sha256": "9051e66d708a68c839000791d9ef11fd9f000ab1c8fc4925f7ff00ce4f1a42be",
+          "byteLength": 32013,
+          "readAlong": {
+            "audioSha256": "9051e66d708a68c839000791d9ef11fd9f000ab1c8fc4925f7ff00ce4f1a42be",
+            "text": "好好",
+            "words": [
+              {
+                "text": "好好",
+                "start": 0.15,
+                "end": 1.8299999999999998
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-0e30700a49cce86022f405a93d22a680df5b05bfbab7440d141dea76424fc755.mp3",
+          "sha256": "0e30700a49cce86022f405a93d22a680df5b05bfbab7440d141dea76424fc755",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "0e30700a49cce86022f405a93d22a680df5b05bfbab7440d141dea76424fc755",
+            "text": "好好",
+            "words": [
+              {
+                "text": "好好",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,731 @@
+{
+  "id": "EX-CHAR-char-8bef",
+  "revision": 2,
+  "unit": "U30",
+  "stage": "ST-HSK3",
+  "after": "S-U30-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "误",
+  "sourceBlockId": "mandarin-simplified-v1-char-8bef",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-69daf57e9be28d5b87fae2ef",
+        "text": "交往",
+        "pinyin": "jiāowǎng",
+        "meaning": "to associate (with); to have contact (with)",
+        "characters": [
+          {
+            "id": "C-4EA4",
+            "text": "交"
+          },
+          {
+            "id": "C-5F80",
+            "text": "往"
+          }
+        ]
+      },
+      {
+        "id": "W0205",
+        "text": "见面",
+        "pinyin": "jiànmiàn",
+        "meaning": "to meet; to see each other",
+        "characters": [
+          {
+            "id": "C-89C1",
+            "text": "见"
+          },
+          {
+            "id": "C-9762",
+            "text": "面"
+          }
+        ]
+      },
+      {
+        "id": "W0338",
+        "text": "误会",
+        "pinyin": "wùhuì",
+        "meaning": "to misunderstand; to mistake",
+        "characters": [
+          {
+            "id": "C-8BEF",
+            "text": "误"
+          },
+          {
+            "id": "C-4F1A",
+            "text": "会"
+          }
+        ]
+      },
+      {
+        "id": "W5010",
+        "text": "误",
+        "pinyin": "wù",
+        "meaning": "mistake; error",
+        "characters": [
+          {
+            "id": "C-8BEF",
+            "text": "误"
+          }
+        ]
+      },
+      {
+        "id": "W5421",
+        "text": "有的是",
+        "pinyin": "yǒudeshì",
+        "meaning": "plenty of; no lack of (followed by the thing available)",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          },
+          {
+            "id": "C-7684",
+            "text": "的"
+          },
+          {
+            "id": "C-662F",
+            "text": "是"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "040a8b3700a6b522ce9eea275ed247921eade31c30b7f12e365ad0aad484af7e",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8bef",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "误",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8bef-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0338",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to misunderstand; to mistake",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "误会"
+              },
+              {
+                "value": "wùhuì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wu4hui4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "误会",
+              "pinyin": "wùhuì",
+              "meaning": "to misunderstand; to mistake",
+              "audio": "6a498812dfa136bf78fa476f7f105c21d4f208ec57ffd8d37b701b050ac6a4b0",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bef-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W5010",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "误",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0205",
+                "label": "to meet; to see each other",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W5010",
+                "label": "mistake; error",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-69daf57e9be28d5b87fae2ef",
+                "label": "to associate (with); to have contact (with)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bef-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "误",
+        "pinyin": "wù",
+        "meaning": "mistake; error",
+        "source": "/stroke-data/8bef.json",
+        "reference": {
+          "character": "误",
+          "sha256": "d4fef9723002c8ddc3c394ccfccc5b45e6f793e2ac3a2474b69eac5e11c78f10",
+          "medians": [
+            [
+              [
+                225,
+                764
+              ],
+              [
+                326,
+                707
+              ],
+              [
+                356,
+                664
+              ]
+            ],
+            [
+              [
+                59,
+                436
+              ],
+              [
+                122,
+                436
+              ],
+              [
+                238,
+                487
+              ],
+              [
+                274,
+                487
+              ],
+              [
+                284,
+                478
+              ],
+              [
+                256,
+                175
+              ],
+              [
+                266,
+                132
+              ],
+              [
+                313,
+                153
+              ],
+              [
+                396,
+                234
+              ]
+            ],
+            [
+              [
+                478,
+                742
+              ],
+              [
+                506,
+                720
+              ],
+              [
+                513,
+                704
+              ],
+              [
+                544,
+                558
+              ]
+            ],
+            [
+              [
+                536,
+                740
+              ],
+              [
+                551,
+                731
+              ],
+              [
+                692,
+                768
+              ],
+              [
+                724,
+                763
+              ],
+              [
+                748,
+                738
+              ],
+              [
+                723,
+                660
+              ],
+              [
+                702,
+                645
+              ]
+            ],
+            [
+              [
+                562,
+                578
+              ],
+              [
+                577,
+                592
+              ],
+              [
+                692,
+                617
+              ],
+              [
+                750,
+                611
+              ]
+            ],
+            [
+              [
+                485,
+                462
+              ],
+              [
+                556,
+                457
+              ],
+              [
+                718,
+                497
+              ],
+              [
+                766,
+                494
+              ]
+            ],
+            [
+              [
+                390,
+                304
+              ],
+              [
+                445,
+                298
+              ],
+              [
+                682,
+                339
+              ],
+              [
+                818,
+                355
+              ],
+              [
+                854,
+                354
+              ],
+              [
+                907,
+                339
+              ]
+            ],
+            [
+              [
+                573,
+                438
+              ],
+              [
+                607,
+                414
+              ],
+              [
+                608,
+                383
+              ],
+              [
+                595,
+                292
+              ],
+              [
+                558,
+                196
+              ],
+              [
+                522,
+                146
+              ],
+              [
+                488,
+                115
+              ],
+              [
+                436,
+                83
+              ],
+              [
+                381,
+                66
+              ]
+            ],
+            [
+              [
+                628,
+                300
+              ],
+              [
+                634,
+                281
+              ],
+              [
+                698,
+                197
+              ],
+              [
+                796,
+                90
+              ],
+              [
+                825,
+                76
+              ],
+              [
+                949,
+                45
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8bef-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W5421",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "plenty of; no lack of (followed by the thing available)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "有的是"
+              },
+              {
+                "value": "yǒudeshì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "you3de5shi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "有的是",
+              "pinyin": "yǒudeshì",
+              "meaning": "plenty of; no lack of (followed by the thing available)",
+              "audio": "664113f392df9075ca1f98fa6ea8cd24f3af3d6c85c32d6f2ef0afb5e4cbd1fe",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bef-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W5010",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "mistake; error",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "误"
+              },
+              {
+                "value": "wù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "误",
+              "pinyin": "wù",
+              "meaning": "mistake; error",
+              "audio": "4033069ab8e016703bef89fb6a768f72826348c6fe371c0f0e5139aa550ee05d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "4033069ab8e016703bef89fb6a768f72826348c6fe371c0f0e5139aa550ee05d"
+            ],
+            "transcript": [
+              {
+                "text": "误",
+                "pinyin": "wù",
+                "meaning": "mistake; error",
+                "audio": "4033069ab8e016703bef89fb6a768f72826348c6fe371c0f0e5139aa550ee05d",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8BEF",
+      "character": "误",
+      "lessonIds": [
+        "LESSON-C-8BEF"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8bef-word",
+        "EX-CHAR-char-8bef-recognize",
+        "EX-CHAR-char-8bef-write",
+        "EX-CHAR-char-8bef-familiar",
+        "EX-CHAR-char-8bef-recall"
+      ]
+    },
+    "audio": {
+      "b26a1d37c51f69b2f8a666510228eb02871a2c018ac9fb54b4667e4ce51dcd98": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/4e682420c6459ae2174fe6e41cd7cac5a312181b1fe6b3aef3adbebf51033fae.mp3",
+          "sha256": "4e682420c6459ae2174fe6e41cd7cac5a312181b1fe6b3aef3adbebf51033fae",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "4e682420c6459ae2174fe6e41cd7cac5a312181b1fe6b3aef3adbebf51033fae",
+            "text": "交往",
+            "words": [
+              {
+                "text": "交往",
+                "start": 0.2,
+                "end": 0.54
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a16e2ac3e90105846f042ca85fc0b8e24462afef17b46f8edfa1cd04f58c4b75.mp3",
+          "sha256": "a16e2ac3e90105846f042ca85fc0b8e24462afef17b46f8edfa1cd04f58c4b75",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "a16e2ac3e90105846f042ca85fc0b8e24462afef17b46f8edfa1cd04f58c4b75",
+            "text": "交往",
+            "words": [
+              {
+                "text": "交往",
+                "start": 0.32999999999999996,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "dd1a460a219ad94029dd26e7cde944b63511cfb98b4f9b440710f30e361c30f4": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-dda2b0055dca10e01945a98b0b4510092a830d9b38726df10beb72134f39685a.mp3",
+          "sha256": "dda2b0055dca10e01945a98b0b4510092a830d9b38726df10beb72134f39685a",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "dda2b0055dca10e01945a98b0b4510092a830d9b38726df10beb72134f39685a",
+            "text": "见面",
+            "words": [
+              {
+                "text": "见面",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-1813ae7aa9677bbf78d1335cdbc8832eb1e0905c5615cbc998a4e28156a3082a.mp3",
+          "sha256": "1813ae7aa9677bbf78d1335cdbc8832eb1e0905c5615cbc998a4e28156a3082a",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "1813ae7aa9677bbf78d1335cdbc8832eb1e0905c5615cbc998a4e28156a3082a",
+            "text": "见面",
+            "words": [
+              {
+                "text": "见面",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "6a498812dfa136bf78fa476f7f105c21d4f208ec57ffd8d37b701b050ac6a4b0": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-7b2a9a4bdce63a675dc19af355073a98c979df210d40197407417eba87c6a05e.mp3",
+          "sha256": "7b2a9a4bdce63a675dc19af355073a98c979df210d40197407417eba87c6a05e",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "7b2a9a4bdce63a675dc19af355073a98c979df210d40197407417eba87c6a05e",
+            "text": "误会",
+            "words": [
+              {
+                "text": "误会",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ba61e92e8b5ef1ced735753fc0c90ea892112e591e21fe4c88735b73b9889307.mp3",
+          "sha256": "ba61e92e8b5ef1ced735753fc0c90ea892112e591e21fe4c88735b73b9889307",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "ba61e92e8b5ef1ced735753fc0c90ea892112e591e21fe4c88735b73b9889307",
+            "text": "误会",
+            "words": [
+              {
+                "text": "误会",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "4033069ab8e016703bef89fb6a768f72826348c6fe371c0f0e5139aa550ee05d": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e0dd6804dbf060e5b18df0e9c91a27c9caeb1b3b05913cc6be9e806b008b9175.mp3",
+          "sha256": "e0dd6804dbf060e5b18df0e9c91a27c9caeb1b3b05913cc6be9e806b008b9175",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "e0dd6804dbf060e5b18df0e9c91a27c9caeb1b3b05913cc6be9e806b008b9175",
+            "text": "误",
+            "words": [
+              {
+                "text": "误",
+                "start": 0.2,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/32c64ac98a5d5353698458f9448a1e6d76236b7920a5150e7015f8d7493125d4.mp3",
+          "sha256": "32c64ac98a5d5353698458f9448a1e6d76236b7920a5150e7015f8d7493125d4",
+          "byteLength": 10989,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "32c64ac98a5d5353698458f9448a1e6d76236b7920a5150e7015f8d7493125d4",
+            "text": "误",
+            "words": [
+              {
+                "text": "误",
+                "start": 0.105,
+                "end": 0.63
+              }
+            ]
+          }
+        }
+      },
+      "664113f392df9075ca1f98fa6ea8cd24f3af3d6c85c32d6f2ef0afb5e4cbd1fe": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3ee513a8104500aaf6baa4c813cd2c1f998b327b78ccf2b361e62d5c73149f64.mp3",
+          "sha256": "3ee513a8104500aaf6baa4c813cd2c1f998b327b78ccf2b361e62d5c73149f64",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "3ee513a8104500aaf6baa4c813cd2c1f998b327b78ccf2b361e62d5c73149f64",
+            "text": "有的是",
+            "words": [
+              {
+                "text": "有的是",
+                "start": 0.15,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/452a140d91e7f5e12a36f6d2f2f7293b5b9a592194fd28a336dd5b3c4028786b.mp3",
+          "sha256": "452a140d91e7f5e12a36f6d2f2f7293b5b9a592194fd28a336dd5b3c4028786b",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "452a140d91e7f5e12a36f6d2f2f7293b5b9a592194fd28a336dd5b3c4028786b",
+            "text": "有的是",
+            "words": [
+              {
+                "text": "有的是",
+                "start": 0.03,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

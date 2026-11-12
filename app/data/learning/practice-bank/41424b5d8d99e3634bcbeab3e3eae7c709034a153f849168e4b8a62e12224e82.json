@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1087",
+  "targetId": "W1087",
+  "steps": [
+    {
+      "id": "BANK-W1087-W1087",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1087-W1087",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "graduate",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "毕业生"
+            },
+            {
+              "value": "bìyèshēng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bi4ye4sheng1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "毕业生",
+            "pinyin": "bìyèshēng",
+            "meaning": "graduate",
+            "singleWord": true,
+            "audio": "650981760ed96b21b45c0b15cb5f943bb648c10482573856cd2e8facdebdb6ee"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "650981760ed96b21b45c0b15cb5f943bb648c10482573856cd2e8facdebdb6ee": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-801f118048cc95035da92e6e9ddadc55ca2023035ffa922bf386b20f1f14a01e.mp3",
+        "sha256": "801f118048cc95035da92e6e9ddadc55ca2023035ffa922bf386b20f1f14a01e",
+        "byteLength": 14733,
+        "readAlong": {
+          "audioSha256": "801f118048cc95035da92e6e9ddadc55ca2023035ffa922bf386b20f1f14a01e",
+          "text": "毕业生",
+          "words": [
+            {
+              "text": "毕业生",
+              "start": 0.15,
+              "end": 0.6299999999999999
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-75aa64347d442d3e108784280ab19e7ae5b4af377a31f5f3230b9abc109b9f87.mp3",
+        "sha256": "75aa64347d442d3e108784280ab19e7ae5b4af377a31f5f3230b9abc109b9f87",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "75aa64347d442d3e108784280ab19e7ae5b4af377a31f5f3230b9abc109b9f87",
+          "text": "毕业生",
+          "words": [
+            {
+              "text": "毕业生",
+              "start": 0.09,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1087",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1087-W1087",
+      "question_ids": [
+        "BANK-W1087-W1087"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-20",
+    "stepId": "S-U4-20-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6bd5"
+    ],
+    "grammarLessonIds": []
+  }
+}

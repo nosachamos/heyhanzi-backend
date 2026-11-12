@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1620",
+  "targetId": "W1620",
+  "steps": [
+    {
+      "id": "BANK-W1620-W1620",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1620-W1620",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "bridge",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "桥"
+            },
+            {
+              "value": "qiáo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qiao2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "桥",
+            "pinyin": "qiáo",
+            "meaning": "bridge",
+            "singleWord": true,
+            "audio": "5ec7566b0a85130765794066992c06a25221a084835c1e81dc621b251d5e5c70"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5ec7566b0a85130765794066992c06a25221a084835c1e81dc621b251d5e5c70": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-74dff8e0da4a084758c8f003c6546c73febfd014915965c35359a2a452dfc9e0.mp3",
+        "sha256": "74dff8e0da4a084758c8f003c6546c73febfd014915965c35359a2a452dfc9e0",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "74dff8e0da4a084758c8f003c6546c73febfd014915965c35359a2a452dfc9e0",
+          "text": "桥",
+          "words": [
+            {
+              "text": "桥",
+              "start": 0.14,
+              "end": 0.26
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-4a7c58fdbc86fdb166bd7cdadbec9223fd550a86fe37ee5e4b5f9cec109a0a82.mp3",
+        "sha256": "4a7c58fdbc86fdb166bd7cdadbec9223fd550a86fe37ee5e4b5f9cec109a0a82",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "4a7c58fdbc86fdb166bd7cdadbec9223fd550a86fe37ee5e4b5f9cec109a0a82",
+          "text": "桥",
+          "words": [
+            {
+              "text": "桥",
+              "start": 0.24,
+              "end": 0.36
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1620",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1620-W1620",
+      "question_ids": [
+        "BANK-W1620-W1620"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-17",
+    "stepId": "S-U4-17-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6865"
+    ],
+    "grammarLessonIds": []
+  }
+}

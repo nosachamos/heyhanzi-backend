@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0600",
+  "targetId": "W0600",
+  "steps": [
+    {
+      "id": "BANK-W0600-W0600",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0600-W0600",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "classifier for long, narrow objects or items",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "条"
+            },
+            {
+              "value": "tiáo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "tiao2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "条",
+            "pinyin": "tiáo",
+            "meaning": "classifier for long, narrow objects or items",
+            "singleWord": true,
+            "audio": "60ea1c9dac7ac370cc55118dda10dd07fcbb2e585a69e7cc5af846a71f4eee50"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "60ea1c9dac7ac370cc55118dda10dd07fcbb2e585a69e7cc5af846a71f4eee50": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-030aa4c810108425410307ab91c5d9d154fad6d41b3935fa973ccac8565accd1.mp3",
+        "sha256": "030aa4c810108425410307ab91c5d9d154fad6d41b3935fa973ccac8565accd1",
+        "byteLength": 14733,
+        "readAlong": {
+          "audioSha256": "030aa4c810108425410307ab91c5d9d154fad6d41b3935fa973ccac8565accd1",
+          "text": "条",
+          "words": [
+            {
+              "text": "条",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-40a506ca2ddf59ff8c8a89461b510a635351ec66915dcab58706a40cdf39da9b.mp3",
+        "sha256": "40a506ca2ddf59ff8c8a89461b510a635351ec66915dcab58706a40cdf39da9b",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "40a506ca2ddf59ff8c8a89461b510a635351ec66915dcab58706a40cdf39da9b",
+          "text": "条",
+          "words": [
+            {
+              "text": "条",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0600",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0600-W0600",
+      "question_ids": [
+        "BANK-W0600-W0600"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U23-P01",
+    "stepId": "S-U23-words-r4-21",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-59bb"
+    ],
+    "grammarLessonIds": []
+  }
+}

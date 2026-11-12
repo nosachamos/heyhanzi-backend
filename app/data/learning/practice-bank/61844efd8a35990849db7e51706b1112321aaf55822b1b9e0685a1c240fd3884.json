@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1509",
+  "targetId": "W1509",
+  "steps": [
+    {
+      "id": "BANK-W1509-W1509",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1509-W1509",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "for example; for instance",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "例如"
+            },
+            {
+              "value": "lìrú",
+              "mode": "pinyin"
+            },
+            {
+              "value": "li4ru2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "例如",
+            "pinyin": "lìrú",
+            "meaning": "for example; for instance",
+            "singleWord": true,
+            "audio": "36fb144e08634ddc920221d0f440922c610ef7a4bd28d6be43d29fdd2596a3eb"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "36fb144e08634ddc920221d0f440922c610ef7a4bd28d6be43d29fdd2596a3eb": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e4ceb8bb04184748f4261ebd3cb00970357aa54f1c5ac7795e2e0662fee9237c.mp3",
+        "sha256": "e4ceb8bb04184748f4261ebd3cb00970357aa54f1c5ac7795e2e0662fee9237c",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "e4ceb8bb04184748f4261ebd3cb00970357aa54f1c5ac7795e2e0662fee9237c",
+          "text": "例如",
+          "words": [
+            {
+              "text": "例如",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0b9c74c3921e0821843b237321517bddb883eeefd48c5d6d03715dedccb0a073.mp3",
+        "sha256": "0b9c74c3921e0821843b237321517bddb883eeefd48c5d6d03715dedccb0a073",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "0b9c74c3921e0821843b237321517bddb883eeefd48c5d6d03715dedccb0a073",
+          "text": "例如",
+          "words": [
+            {
+              "text": "例如",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1509",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1509-W1509",
+      "question_ids": [
+        "BANK-W1509-W1509"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-31",
+    "stepId": "S-U4-31-words-r4-8",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4f8b"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0014",
+  "targetId": "W0014",
+  "steps": [
+    {
+      "id": "BANK-W0014-W0014",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0014-W0014",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "listen; hear",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "听"
+            },
+            {
+              "value": "tīng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ting1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "听",
+            "pinyin": "tīng",
+            "meaning": "listen; hear",
+            "singleWord": true,
+            "audio": "daa17172abf000c32adb2f5f0ddbeb2970ba16c8dba669613dc7aac08877b21a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "daa17172abf000c32adb2f5f0ddbeb2970ba16c8dba669613dc7aac08877b21a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-b2038f63cbf33f87c93ad3bd404d9e6ee318d8acad2747134894b5ec7e4f6219.mp3",
+        "sha256": "b2038f63cbf33f87c93ad3bd404d9e6ee318d8acad2747134894b5ec7e4f6219",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "b2038f63cbf33f87c93ad3bd404d9e6ee318d8acad2747134894b5ec7e4f6219",
+          "text": "听",
+          "words": [
+            {
+              "text": "听",
+              "start": 0.18,
+              "end": 0.28
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d8df160ac526e57bc9638b1f670e535ae17343d42241372222a3590a61a7e29b.mp3",
+        "sha256": "d8df160ac526e57bc9638b1f670e535ae17343d42241372222a3590a61a7e29b",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "d8df160ac526e57bc9638b1f670e535ae17343d42241372222a3590a61a7e29b",
+          "text": "听",
+          "words": [
+            {
+              "text": "听",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0014",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0014-W0014",
+      "question_ids": [
+        "BANK-W0014-W0014"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U02-P01",
+    "stepId": "S-U02-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-542c"
+    ],
+    "grammarLessonIds": []
+  }
+}

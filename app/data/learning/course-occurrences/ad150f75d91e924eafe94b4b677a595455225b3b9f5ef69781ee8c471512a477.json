@@ -1,0 +1,719 @@
+{
+  "id": "EX-CHAR-char-8bed",
+  "revision": 2,
+  "unit": "U02-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U02-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "语",
+  "sourceBlockId": "mandarin-simplified-v1-char-8bed",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-8bed",
+        "text": "语",
+        "pinyin": "yǔ",
+        "meaning": "dialect; language",
+        "characters": [
+          {
+            "id": "C-8BED",
+            "text": "语"
+          }
+        ]
+      },
+      {
+        "id": "W0182",
+        "text": "没",
+        "pinyin": "méi",
+        "meaning": "not; have not",
+        "characters": [
+          {
+            "id": "C-6CA1",
+            "text": "没"
+          }
+        ]
+      },
+      {
+        "id": "W0405",
+        "text": "汉语",
+        "pinyin": "Hànyǔ",
+        "meaning": "Chinese language",
+        "characters": [
+          {
+            "id": "C-6C49",
+            "text": "汉"
+          },
+          {
+            "id": "C-8BED",
+            "text": "语"
+          }
+        ]
+      },
+      {
+        "id": "W4381",
+        "text": "看不起",
+        "pinyin": "kànbuqǐ",
+        "meaning": "to look down upon; to despise",
+        "characters": [
+          {
+            "id": "C-770B",
+            "text": "看"
+          },
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-8D77",
+            "text": "起"
+          }
+        ]
+      },
+      {
+        "id": "W4708",
+        "text": "人家",
+        "pinyin": "rénjia",
+        "meaning": "other people; somebody else; I/me in context-dependent conversational self-reference",
+        "characters": [
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          },
+          {
+            "id": "C-5BB6",
+            "text": "家"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "89a85a9b5c126baed71be38f300452fb5d80179bcbd597d80f5c0b963ed1749f",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8bed",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "语",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8bed-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0405",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "Chinese language",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "汉语"
+              },
+              {
+                "value": "Hànyǔ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "han4yu3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "汉语",
+              "pinyin": "Hànyǔ",
+              "meaning": "Chinese language",
+              "audio": "5bd41ec918890cd69e59c4f3c73cc213a30996712df94546073d1b849e948b9f",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bed-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-8bed",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "语",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-8bed",
+                "label": "dialect; language",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W4708",
+                "label": "other people; someone else",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0182",
+                "label": "not; have not",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bed-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "语",
+        "pinyin": "yǔ",
+        "meaning": "dialect; language",
+        "source": "/stroke-data/8bed.json",
+        "reference": {
+          "character": "语",
+          "sha256": "632f4897d392b193aaad97ac6ac6b1e4832c273dec8f09b44901cc8178e25e5d",
+          "medians": [
+            [
+              [
+                235,
+                775
+              ],
+              [
+                329,
+                722
+              ],
+              [
+                353,
+                688
+              ]
+            ],
+            [
+              [
+                46,
+                444
+              ],
+              [
+                87,
+                438
+              ],
+              [
+                149,
+                456
+              ],
+              [
+                241,
+                496
+              ],
+              [
+                279,
+                495
+              ],
+              [
+                288,
+                480
+              ],
+              [
+                256,
+                181
+              ],
+              [
+                264,
+                143
+              ],
+              [
+                304,
+                154
+              ],
+              [
+                404,
+                238
+              ]
+            ],
+            [
+              [
+                491,
+                711
+              ],
+              [
+                536,
+                703
+              ],
+              [
+                575,
+                705
+              ],
+              [
+                763,
+                744
+              ],
+              [
+                808,
+                742
+              ]
+            ],
+            [
+              [
+                581,
+                678
+              ],
+              [
+                615,
+                651
+              ],
+              [
+                571,
+                416
+              ],
+              [
+                552,
+                392
+              ]
+            ],
+            [
+              [
+                474,
+                538
+              ],
+              [
+                518,
+                535
+              ],
+              [
+                708,
+                574
+              ],
+              [
+                735,
+                569
+              ],
+              [
+                762,
+                543
+              ],
+              [
+                731,
+                438
+              ],
+              [
+                703,
+                412
+              ]
+            ],
+            [
+              [
+                361,
+                352
+              ],
+              [
+                417,
+                345
+              ],
+              [
+                511,
+                363
+              ],
+              [
+                844,
+                403
+              ],
+              [
+                878,
+                402
+              ],
+              [
+                931,
+                388
+              ]
+            ],
+            [
+              [
+                463,
+                264
+              ],
+              [
+                495,
+                234
+              ],
+              [
+                532,
+                12
+              ]
+            ],
+            [
+              [
+                527,
+                257
+              ],
+              [
+                542,
+                246
+              ],
+              [
+                728,
+                287
+              ],
+              [
+                758,
+                281
+              ],
+              [
+                786,
+                253
+              ],
+              [
+                756,
+                148
+              ],
+              [
+                730,
+                135
+              ]
+            ],
+            [
+              [
+                553,
+                59
+              ],
+              [
+                566,
+                74
+              ],
+              [
+                720,
+                98
+              ],
+              [
+                776,
+                99
+              ],
+              [
+                801,
+                89
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8bed-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4381",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to look down upon; to despise",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "看不起"
+              },
+              {
+                "value": "kànbuqǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "kan4bu5qi3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "看不起",
+              "pinyin": "kànbuqǐ",
+              "meaning": "to look down upon; to despise",
+              "audio": "38c77cca84c1602dbcb30a0738d369b607820c47e8f531040d79735a7dbf259b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bed-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-8bed",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "dialect; language",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "语"
+              },
+              {
+                "value": "yǔ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yu3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "语",
+              "pinyin": "yǔ",
+              "meaning": "dialect; language",
+              "audio": "b10de8b1a5da7673829691ed094e1c51842d303144cbfd8ef8d9f6b34985772a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "b10de8b1a5da7673829691ed094e1c51842d303144cbfd8ef8d9f6b34985772a"
+            ],
+            "transcript": [
+              {
+                "text": "语",
+                "pinyin": "yǔ",
+                "meaning": "dialect; language",
+                "audio": "b10de8b1a5da7673829691ed094e1c51842d303144cbfd8ef8d9f6b34985772a",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8BED",
+      "character": "语",
+      "lessonIds": [
+        "LESSON-C-8BED"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8bed-word",
+        "EX-CHAR-char-8bed-recognize",
+        "EX-CHAR-char-8bed-write",
+        "EX-CHAR-char-8bed-familiar",
+        "EX-CHAR-char-8bed-recall"
+      ]
+    },
+    "audio": {
+      "b10de8b1a5da7673829691ed094e1c51842d303144cbfd8ef8d9f6b34985772a": {
+        "female": {
+          "url": "/exercise-assets/audio/course-female-d6ef8f6b4d6e0ad482f13e3dbd965f486e7c98d1306caa55fd8230f47f598cc6.mp3",
+          "sha256": "d6ef8f6b4d6e0ad482f13e3dbd965f486e7c98d1306caa55fd8230f47f598cc6",
+          "byteLength": 9261,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "d6ef8f6b4d6e0ad482f13e3dbd965f486e7c98d1306caa55fd8230f47f598cc6",
+            "text": "语",
+            "words": [
+              {
+                "text": "语",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-fbb7df6ecf4b5b9411222fecc277501cf937ae5efdfc9815530a869f077fff3b.mp3",
+          "sha256": "fbb7df6ecf4b5b9411222fecc277501cf937ae5efdfc9815530a869f077fff3b",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "fbb7df6ecf4b5b9411222fecc277501cf937ae5efdfc9815530a869f077fff3b",
+            "text": "语",
+            "words": [
+              {
+                "text": "语",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "07deddfa236cc5e57b509b9f816de093af351a58380872a8556adc5b096821d8": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c785d8e9fb89fb971fd4d19f5fedd0694fd7755a9a236fedb2d35dd309ca2c2e.mp3",
+          "sha256": "c785d8e9fb89fb971fd4d19f5fedd0694fd7755a9a236fedb2d35dd309ca2c2e",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "c785d8e9fb89fb971fd4d19f5fedd0694fd7755a9a236fedb2d35dd309ca2c2e",
+            "text": "没",
+            "words": [
+              {
+                "text": "没",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f69ef6fe0d433792abc25ce1073b6e603cdb2c2c90e242b8d8bfaa5cc8281ff2.mp3",
+          "sha256": "f69ef6fe0d433792abc25ce1073b6e603cdb2c2c90e242b8d8bfaa5cc8281ff2",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "f69ef6fe0d433792abc25ce1073b6e603cdb2c2c90e242b8d8bfaa5cc8281ff2",
+            "text": "没",
+            "words": [
+              {
+                "text": "没",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "5bd41ec918890cd69e59c4f3c73cc213a30996712df94546073d1b849e948b9f": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/243a4cfd57f00d811a2ebb8c52b2fe775e2409dd03b10ea06a3c9bae124a2ecc.mp3",
+          "sha256": "243a4cfd57f00d811a2ebb8c52b2fe775e2409dd03b10ea06a3c9bae124a2ecc",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "243a4cfd57f00d811a2ebb8c52b2fe775e2409dd03b10ea06a3c9bae124a2ecc",
+            "text": "汉语",
+            "words": [
+              {
+                "text": "汉语",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d7e22c1410469a28a92adb8a4f8ebbb2aef01a3786cef1c3c9175dc5b98ad39e.mp3",
+          "sha256": "d7e22c1410469a28a92adb8a4f8ebbb2aef01a3786cef1c3c9175dc5b98ad39e",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "d7e22c1410469a28a92adb8a4f8ebbb2aef01a3786cef1c3c9175dc5b98ad39e",
+            "text": "汉语",
+            "words": [
+              {
+                "text": "汉语",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "38c77cca84c1602dbcb30a0738d369b607820c47e8f531040d79735a7dbf259b": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/21bf801315fa14db77c6c99c70db18143330f604245bf566d71329af74e31c6e.mp3",
+          "sha256": "21bf801315fa14db77c6c99c70db18143330f604245bf566d71329af74e31c6e",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "21bf801315fa14db77c6c99c70db18143330f604245bf566d71329af74e31c6e",
+            "text": "看不起",
+            "words": [
+              {
+                "text": "看不起",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/77b6743901e4191bc36b4806c3e138e1103ff5f40e492b264a07289243f208e2.mp3",
+          "sha256": "77b6743901e4191bc36b4806c3e138e1103ff5f40e492b264a07289243f208e2",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "77b6743901e4191bc36b4806c3e138e1103ff5f40e492b264a07289243f208e2",
+            "text": "看不起",
+            "words": [
+              {
+                "text": "看不起",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "5e531b2f4ab58d3e64aca5be8a215736421c3d355f0c23266ee96f338f9d1901": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3bab564a7f8402c7a415474c20d37c1a5270be7ac334c293e823c53b1e4aec72.mp3",
+          "sha256": "3bab564a7f8402c7a415474c20d37c1a5270be7ac334c293e823c53b1e4aec72",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "3bab564a7f8402c7a415474c20d37c1a5270be7ac334c293e823c53b1e4aec72",
+            "text": "人家",
+            "words": [
+              {
+                "text": "人家",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-a31e69dac99a313b7749f740224734966ed8ee57f1e88398913a3678af83bf28.mp3",
+          "sha256": "a31e69dac99a313b7749f740224734966ed8ee57f1e88398913a3678af83bf28",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "a31e69dac99a313b7749f740224734966ed8ee57f1e88398913a3678af83bf28",
+            "text": "人家",
+            "words": [
+              {
+                "text": "人家",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

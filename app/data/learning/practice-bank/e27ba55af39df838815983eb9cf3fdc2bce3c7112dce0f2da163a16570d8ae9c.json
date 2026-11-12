@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2801",
+  "targetId": "W2801",
+  "steps": [
+    {
+      "id": "BANK-W2801-W2801",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2801-W2801",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "star; celebrity",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "明星"
+            },
+            {
+              "value": "míngxīng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ming2xing1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "明星",
+            "pinyin": "míngxīng",
+            "meaning": "star; celebrity",
+            "singleWord": true,
+            "audio": "ffd3f356423f8f1f355872c4c1dae82cfae37115c0b35b248610104ca4b648c4"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ffd3f356423f8f1f355872c4c1dae82cfae37115c0b35b248610104ca4b648c4": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f5258b49a19dbd03efb1e4c1d2b8fade8a733ecc5e5227f89a07c5aaec069ae3.mp3",
+        "sha256": "f5258b49a19dbd03efb1e4c1d2b8fade8a733ecc5e5227f89a07c5aaec069ae3",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "f5258b49a19dbd03efb1e4c1d2b8fade8a733ecc5e5227f89a07c5aaec069ae3",
+          "text": "明星",
+          "words": [
+            {
+              "text": "明星",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5fecc613af915c5b59b4a4ff9f745a94064b26215c2af8e36f163597680544ea.mp3",
+        "sha256": "5fecc613af915c5b59b4a4ff9f745a94064b26215c2af8e36f163597680544ea",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "5fecc613af915c5b59b4a4ff9f745a94064b26215c2af8e36f163597680544ea",
+          "text": "明星",
+          "words": [
+            {
+              "text": "明星",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2801",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2801-W2801",
+      "question_ids": [
+        "BANK-W2801-W2801"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-29",
+    "stepId": "S-U5-29-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-661f"
+    ],
+    "grammarLessonIds": []
+  }
+}

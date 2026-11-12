@@ -1,0 +1,727 @@
+{
+  "id": "EX-CHAR-char-59d0",
+  "revision": 2,
+  "unit": "U04",
+  "stage": "ST-HSK1",
+  "after": "S-U04-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "姐",
+  "sourceBlockId": "mandarin-simplified-v1-char-59d0",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-59d0",
+        "text": "姐",
+        "pinyin": "jiě",
+        "meaning": "older sister",
+        "characters": [
+          {
+            "id": "C-59D0",
+            "text": "姐"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-c6d8f6890d2d60cdd5536660",
+        "text": "老大",
+        "pinyin": "lǎo dà",
+        "meaning": "old age",
+        "characters": [
+          {
+            "id": "C-8001",
+            "text": "老"
+          },
+          {
+            "id": "C-5927",
+            "text": "大"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f082fb3a12683db4bd92f08a",
+        "text": "话语",
+        "pinyin": "huà yǔ",
+        "meaning": "utterance",
+        "characters": [
+          {
+            "id": "C-8BDD",
+            "text": "话"
+          },
+          {
+            "id": "C-8BED",
+            "text": "语"
+          }
+        ]
+      },
+      {
+        "id": "W0882",
+        "text": "男生",
+        "pinyin": "nánshēng",
+        "meaning": "schoolboy; male student",
+        "characters": [
+          {
+            "id": "C-7537",
+            "text": "男"
+          },
+          {
+            "id": "C-751F",
+            "text": "生"
+          }
+        ]
+      },
+      {
+        "id": "W3288",
+        "text": "小姐",
+        "pinyin": "xiǎojiě",
+        "meaning": "young lady; miss",
+        "characters": [
+          {
+            "id": "C-5C0F",
+            "text": "小"
+          },
+          {
+            "id": "C-59D0",
+            "text": "姐"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "3fe2d7e941f962302528eff131f5d518d13290f296a3ee8b532e29b7c8f62559",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-59d0",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "姐",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-59d0-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3288",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "young lady; miss",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "小姐"
+              },
+              {
+                "value": "xiǎojiě",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiao3jie3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "小姐",
+              "pinyin": "xiǎojiě",
+              "meaning": "young lady; miss",
+              "audio": "f9ec8e25b9f163c65651abb539373844d65246130102f3cd9778e4603278669a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-59d0-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-59d0",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "姐",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-f082fb3a12683db4bd92f08a",
+                "label": "utterance",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-59d0",
+                "label": "older sister",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0882",
+                "label": "schoolboy; male student",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-59d0-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "姐",
+        "pinyin": "jiě",
+        "meaning": "older sister",
+        "source": "/stroke-data/59d0.json",
+        "reference": {
+          "character": "姐",
+          "sha256": "aeeb58315c29ac611b8de950e23a54b459d6a3e44da5efb52c5dfcf27b6e2b44",
+          "medians": [
+            [
+              [
+                286,
+                799
+              ],
+              [
+                312,
+                780
+              ],
+              [
+                332,
+                746
+              ],
+              [
+                267,
+                431
+              ],
+              [
+                220,
+                277
+              ],
+              [
+                241,
+                255
+              ],
+              [
+                390,
+                165
+              ],
+              [
+                406,
+                148
+              ],
+              [
+                422,
+                114
+              ]
+            ],
+            [
+              [
+                391,
+                515
+              ],
+              [
+                410,
+                502
+              ],
+              [
+                426,
+                478
+              ],
+              [
+                401,
+                350
+              ],
+              [
+                376,
+                274
+              ],
+              [
+                350,
+                219
+              ],
+              [
+                315,
+                167
+              ],
+              [
+                272,
+                126
+              ],
+              [
+                220,
+                88
+              ],
+              [
+                157,
+                57
+              ]
+            ],
+            [
+              [
+                61,
+                415
+              ],
+              [
+                114,
+                393
+              ],
+              [
+                190,
+                418
+              ],
+              [
+                360,
+                459
+              ],
+              [
+                385,
+                474
+              ]
+            ],
+            [
+              [
+                525,
+                640
+              ],
+              [
+                558,
+                608
+              ],
+              [
+                570,
+                549
+              ],
+              [
+                566,
+                117
+              ],
+              [
+                546,
+                104
+              ]
+            ],
+            [
+              [
+                585,
+                622
+              ],
+              [
+                609,
+                615
+              ],
+              [
+                626,
+                618
+              ],
+              [
+                689,
+                640
+              ],
+              [
+                758,
+                655
+              ],
+              [
+                774,
+                649
+              ],
+              [
+                799,
+                618
+              ],
+              [
+                789,
+                473
+              ],
+              [
+                785,
+                148
+              ],
+              [
+                761,
+                130
+              ]
+            ],
+            [
+              [
+                601,
+                427
+              ],
+              [
+                621,
+                448
+              ],
+              [
+                683,
+                458
+              ],
+              [
+                707,
+                453
+              ]
+            ],
+            [
+              [
+                599,
+                270
+              ],
+              [
+                610,
+                286
+              ],
+              [
+                635,
+                293
+              ],
+              [
+                680,
+                299
+              ],
+              [
+                715,
+                293
+              ]
+            ],
+            [
+              [
+                410,
+                68
+              ],
+              [
+                460,
+                59
+              ],
+              [
+                675,
+                88
+              ],
+              [
+                879,
+                104
+              ],
+              [
+                959,
+                83
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-59d0-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-c6d8f6890d2d60cdd5536660",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "old age",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "老大"
+              },
+              {
+                "value": "lǎo dà",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lao3da4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "老大",
+              "pinyin": "lǎo dà",
+              "meaning": "old age",
+              "audio": "1fd87eb4dc3c41de9750c1ac1609914fbc9f21c2d5b420ce48dc819eaec75a15",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-59d0-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-59d0",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "older sister",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "姐"
+              },
+              {
+                "value": "jiě",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jie3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "姐",
+              "pinyin": "jiě",
+              "meaning": "older sister",
+              "audio": "514b2b4c125875b2a540c3f642debfe2f4f02934110de6bfdb73e72f6641c583",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "514b2b4c125875b2a540c3f642debfe2f4f02934110de6bfdb73e72f6641c583"
+            ],
+            "transcript": [
+              {
+                "text": "姐",
+                "pinyin": "jiě",
+                "meaning": "older sister",
+                "audio": "514b2b4c125875b2a540c3f642debfe2f4f02934110de6bfdb73e72f6641c583",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-59D0",
+      "character": "姐",
+      "lessonIds": [
+        "LESSON-C-59D0"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-59d0-word",
+        "EX-CHAR-char-59d0-recognize",
+        "EX-CHAR-char-59d0-write",
+        "EX-CHAR-char-59d0-familiar",
+        "EX-CHAR-char-59d0-recall"
+      ]
+    },
+    "audio": {
+      "514b2b4c125875b2a540c3f642debfe2f4f02934110de6bfdb73e72f6641c583": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-7fcbbf1a27dac74b97a5cf1bf11f1dd8752bfdb57b025b6d2036e0653b9c35f9.mp3",
+          "sha256": "7fcbbf1a27dac74b97a5cf1bf11f1dd8752bfdb57b025b6d2036e0653b9c35f9",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "7fcbbf1a27dac74b97a5cf1bf11f1dd8752bfdb57b025b6d2036e0653b9c35f9",
+            "text": "姐",
+            "words": [
+              {
+                "text": "姐",
+                "start": 0.22,
+                "end": 0.34
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-7b6b354c607cf9fe4f1fa75b5e757d60c4cae71e6a9f4d778f8e98ffd137fed4.mp3",
+          "sha256": "7b6b354c607cf9fe4f1fa75b5e757d60c4cae71e6a9f4d778f8e98ffd137fed4",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "7b6b354c607cf9fe4f1fa75b5e757d60c4cae71e6a9f4d778f8e98ffd137fed4",
+            "text": "姐",
+            "words": [
+              {
+                "text": "姐",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "1fd87eb4dc3c41de9750c1ac1609914fbc9f21c2d5b420ce48dc819eaec75a15": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c9d2d7c5dc094749924adcc97ef2289757dd34ffd94a9e80cabc23e7f7395e7b.mp3",
+          "sha256": "c9d2d7c5dc094749924adcc97ef2289757dd34ffd94a9e80cabc23e7f7395e7b",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "c9d2d7c5dc094749924adcc97ef2289757dd34ffd94a9e80cabc23e7f7395e7b",
+            "text": "老大",
+            "words": [
+              {
+                "text": "老大",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/76b46e2ea9e83ad600e6038edbad632e8dadb548f71cc179ad87e21e1b5e1a82.mp3",
+          "sha256": "76b46e2ea9e83ad600e6038edbad632e8dadb548f71cc179ad87e21e1b5e1a82",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "76b46e2ea9e83ad600e6038edbad632e8dadb548f71cc179ad87e21e1b5e1a82",
+            "text": "老大",
+            "words": [
+              {
+                "text": "老大",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "dafe61dadb7903aedc2548c73364ede9a243736b3b9ed471954443646f386afc": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/04997a5327250e9348d12cf141fabb1e7137f7eaa7e63117a4ca534063fff9c0.mp3",
+          "sha256": "04997a5327250e9348d12cf141fabb1e7137f7eaa7e63117a4ca534063fff9c0",
+          "byteLength": 16461,
+          "readAlong": {
+            "audioSha256": "04997a5327250e9348d12cf141fabb1e7137f7eaa7e63117a4ca534063fff9c0",
+            "text": "话语",
+            "words": [
+              {
+                "text": "话语",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/05d8ea32cb851b779b3b97f648784b02eea4dafb79d2cd4df0182d005026f494.mp3",
+          "sha256": "05d8ea32cb851b779b3b97f648784b02eea4dafb79d2cd4df0182d005026f494",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "05d8ea32cb851b779b3b97f648784b02eea4dafb79d2cd4df0182d005026f494",
+            "text": "话语",
+            "words": [
+              {
+                "text": "话语",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "35eb1bf580473151a67689a1f021d3dc57d2b76826e0cac19d41e595feded3e5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b92e9af4f54bd773f45f86a71a02cd93f09748708946ff8e592779b290c56a80.mp3",
+          "sha256": "b92e9af4f54bd773f45f86a71a02cd93f09748708946ff8e592779b290c56a80",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "b92e9af4f54bd773f45f86a71a02cd93f09748708946ff8e592779b290c56a80",
+            "text": "男生",
+            "words": [
+              {
+                "text": "男生",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9dda94463c23e6ea7f81240e7605f024c1df155b3502799b9a5e190a9e9b5034.mp3",
+          "sha256": "9dda94463c23e6ea7f81240e7605f024c1df155b3502799b9a5e190a9e9b5034",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "9dda94463c23e6ea7f81240e7605f024c1df155b3502799b9a5e190a9e9b5034",
+            "text": "男生",
+            "words": [
+              {
+                "text": "男生",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "f9ec8e25b9f163c65651abb539373844d65246130102f3cd9778e4603278669a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/69ad734ab5fa379253cc1da9e908f493ece129559b1966416b6c5850e59cae33.mp3",
+          "sha256": "69ad734ab5fa379253cc1da9e908f493ece129559b1966416b6c5850e59cae33",
+          "byteLength": 15597,
+          "readAlong": {
+            "audioSha256": "69ad734ab5fa379253cc1da9e908f493ece129559b1966416b6c5850e59cae33",
+            "text": "小姐",
+            "words": [
+              {
+                "text": "小姐",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c7b8626069b781a4172e5b1d1f5fb7046dd098626188f66ebca6da65f7927915.mp3",
+          "sha256": "c7b8626069b781a4172e5b1d1f5fb7046dd098626188f66ebca6da65f7927915",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "c7b8626069b781a4172e5b1d1f5fb7046dd098626188f66ebca6da65f7927915",
+            "text": "小姐",
+            "words": [
+              {
+                "text": "小姐",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

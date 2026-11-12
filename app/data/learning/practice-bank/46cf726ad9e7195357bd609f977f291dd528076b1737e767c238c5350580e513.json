@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0607",
+  "targetId": "W0607",
+  "steps": [
+    {
+      "id": "BANK-W0607-W0607",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0607-W0607",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "online",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "网上"
+            },
+            {
+              "value": "wǎngshang",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wang3shang5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "网上",
+            "pinyin": "wǎngshang",
+            "meaning": "online",
+            "singleWord": true,
+            "audio": "804f9efc3211c5974903276ceee25b8634d137b99f4b7ea020239aeb9c796f8b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "804f9efc3211c5974903276ceee25b8634d137b99f4b7ea020239aeb9c796f8b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-7716c3fd961d2a85dc3b867a5922f10ffec5001439a299ffc5e997e6ef1f837a.mp3",
+        "sha256": "7716c3fd961d2a85dc3b867a5922f10ffec5001439a299ffc5e997e6ef1f837a",
+        "byteLength": 8109,
+        "readAlong": {
+          "audioSha256": "7716c3fd961d2a85dc3b867a5922f10ffec5001439a299ffc5e997e6ef1f837a",
+          "text": "网上",
+          "words": [
+            {
+              "text": "网上",
+              "start": 0.09,
+              "end": 0.27
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-6e7a2807508a46931ac2fbfa92196fc090ad9ff7ba1ec8596960723cff24cfec.mp3",
+        "sha256": "6e7a2807508a46931ac2fbfa92196fc090ad9ff7ba1ec8596960723cff24cfec",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "6e7a2807508a46931ac2fbfa92196fc090ad9ff7ba1ec8596960723cff24cfec",
+          "text": "网上",
+          "words": [
+            {
+              "text": "网上",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0607",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0607-W0607",
+      "question_ids": [
+        "BANK-W0607-W0607"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U20",
+    "stepId": "S-U20-words-r4-29",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7f51"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "id": "BANK-W1516",
+  "targetId": "W1516",
+  "steps": [
+    {
+      "id": "BANK-W1516-W1516",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1516-W1516",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to line up; row; classifier for rows",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "列"
+            },
+            {
+              "value": "liè",
+              "mode": "pinyin"
+            },
+            {
+              "value": "lie4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "列",
+            "pinyin": "liè",
+            "meaning": "to line up; row; classifier for rows",
+            "singleWord": true,
+            "audio": "deaa50cbd9a84aa43912ed0057e8c689e09fbf9c2f1969f8637a5ee428be2045"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1516-W1516-use-line-up",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1516-W1516-use-line-up",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 列 fits this context?",
+          "context": "Items are being arranged into an ordered line or list.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1516-W1516-use-line-up-meaning",
+              "label": "To line up or arrange.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "As a verb, 列 means to line up or arrange items in order."
+            },
+            {
+              "id": "BANK-W1516-W1516-use-line-up-contrast-1",
+              "label": "To scatter without order.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a verb, 列 means to line up or arrange items in order."
+            },
+            {
+              "id": "BANK-W1516-W1516-use-line-up-contrast-2",
+              "label": "To erase every item.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a verb, 列 means to line up or arrange items in order."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "列",
+            "pinyin": "liè",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "deaa50cbd9a84aa43912ed0057e8c689e09fbf9c2f1969f8637a5ee428be2045"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1516-W1516-use-row",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1516-W1516-use-row",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 列 fits this context?",
+          "context": "The speaker refers to a line of items arranged together.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1516-W1516-use-row-contrast-2",
+              "label": "An empty space with no items.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a noun, 列 can name a row or column of arranged items."
+            },
+            {
+              "id": "BANK-W1516-W1516-use-row-meaning",
+              "label": "A row or column.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "As a noun, 列 can name a row or column of arranged items."
+            },
+            {
+              "id": "BANK-W1516-W1516-use-row-contrast-1",
+              "label": "A single unarranged item.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a noun, 列 can name a row or column of arranged items."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "列",
+            "pinyin": "liè",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "deaa50cbd9a84aa43912ed0057e8c689e09fbf9c2f1969f8637a5ee428be2045"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1516-W1516-use-row-counter",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1516-W1516-use-row-counter",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 列 fits this context?",
+          "context": "Several rows are counted, each containing multiple items.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1516-W1516-use-row-counter-contrast-1",
+              "label": "The number of individual items only.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "After a number, 列 counts rows or columns as groups, rather than counting each individual item."
+            },
+            {
+              "id": "BANK-W1516-W1516-use-row-counter-contrast-2",
+              "label": "The weight of the items.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "After a number, 列 counts rows or columns as groups, rather than counting each individual item."
+            },
+            {
+              "id": "BANK-W1516-W1516-use-row-counter-meaning",
+              "label": "The number of rows or columns.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "After a number, 列 counts rows or columns as groups, rather than counting each individual item."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "列",
+            "pinyin": "liè",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "deaa50cbd9a84aa43912ed0057e8c689e09fbf9c2f1969f8637a5ee428be2045"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "deaa50cbd9a84aa43912ed0057e8c689e09fbf9c2f1969f8637a5ee428be2045": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a6b1d4196c15913900ba3216ae05ec3e6f601664bfc8037864be1ea000620501.mp3",
+        "sha256": "a6b1d4196c15913900ba3216ae05ec3e6f601664bfc8037864be1ea000620501",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "a6b1d4196c15913900ba3216ae05ec3e6f601664bfc8037864be1ea000620501",
+          "text": "列",
+          "words": [
+            {
+              "text": "列",
+              "start": 0.24,
+              "end": 0.3
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-5746f078a5ed87abeac879231fbe19279f6f61e23ce576510834d9212cf85ba6.mp3",
+        "sha256": "5746f078a5ed87abeac879231fbe19279f6f61e23ce576510834d9212cf85ba6",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "5746f078a5ed87abeac879231fbe19279f6f61e23ce576510834d9212cf85ba6",
+          "text": "列",
+          "words": [
+            {
+              "text": "列",
+              "start": 0.2,
+              "end": 0.26
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1516",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1516-W1516",
+      "question_ids": [
+        "BANK-W1516-W1516"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W1516",
+      "facet_id": "lexical-use-line-up",
+      "part_id": "BANK-W1516-W1516-use-line-up",
+      "question_ids": [
+        "BANK-W1516-W1516-use-line-up"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1516",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W1516",
+      "facet_id": "lexical-use-row",
+      "part_id": "BANK-W1516-W1516-use-row",
+      "question_ids": [
+        "BANK-W1516-W1516-use-row"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1516",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W1516",
+      "facet_id": "lexical-use-row-counter",
+      "part_id": "BANK-W1516-W1516-use-row-counter",
+      "question_ids": [
+        "BANK-W1516-W1516-use-row-counter"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1516",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-11",
+    "stepId": "S-U4-11-words-r4-7",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5217"
+    ],
+    "grammarLessonIds": []
+  }
+}

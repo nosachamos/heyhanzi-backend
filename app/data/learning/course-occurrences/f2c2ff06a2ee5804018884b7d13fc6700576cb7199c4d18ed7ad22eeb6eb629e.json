@@ -1,0 +1,805 @@
+{
+  "id": "EX-CHAR-char-8c61",
+  "revision": 2,
+  "unit": "U4-24",
+  "stage": "ST-HSK4",
+  "after": "S-U4-24-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "象",
+  "sourceBlockId": "mandarin-simplified-v1-char-8c61",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-8c61",
+        "text": "象",
+        "pinyin": "xiàng",
+        "meaning": "elephant; shape",
+        "characters": [
+          {
+            "id": "C-8C61",
+            "text": "象"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-2bc5657f5edbd1aa8b469dd6",
+        "text": "面部",
+        "pinyin": "miànbù",
+        "meaning": "face (body part)",
+        "characters": [
+          {
+            "id": "C-9762",
+            "text": "面"
+          },
+          {
+            "id": "C-90E8",
+            "text": "部"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-5b5d8cad22179f62e17f1058",
+        "text": "想象",
+        "pinyin": "xiǎngxiàng",
+        "meaning": "to imagine; to envision; imagination",
+        "characters": [
+          {
+            "id": "C-60F3",
+            "text": "想"
+          },
+          {
+            "id": "C-8C61",
+            "text": "象"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-a63ee1b190f9d6c3fcc9d348",
+        "text": "全身",
+        "pinyin": "quánshēn",
+        "meaning": "the whole body; (typography) em",
+        "characters": [
+          {
+            "id": "C-5168",
+            "text": "全"
+          },
+          {
+            "id": "C-8EAB",
+            "text": "身"
+          }
+        ]
+      },
+      {
+        "id": "W0823",
+        "text": "借",
+        "pinyin": "jiè",
+        "meaning": "to borrow; to lend in a recipient construction",
+        "characters": [
+          {
+            "id": "C-501F",
+            "text": "借"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "a1a9837fc8af12a8eeaee1ab7c8c62b015a7c58a4d2b6ad396176d64ffad41e4",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8c61",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "象",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8c61-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-5b5d8cad22179f62e17f1058",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to imagine; to envision",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "想象"
+              },
+              {
+                "value": "xiǎngxiàng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiang3xiang4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "想象",
+              "pinyin": "xiǎngxiàng",
+              "meaning": "to imagine; to envision",
+              "audio": "d20ee23f1bd582b6c2658cf877600a3480a56d65e6924cf8d7237e29e5406fca",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8c61-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-8c61",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "象",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0823",
+                "label": "to borrow; to lend in a recipient construction",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-8c61",
+                "label": "elephant; shape",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-a63ee1b190f9d6c3fcc9d348",
+                "label": "the whole body; (typography) em",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8c61-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "象",
+        "pinyin": "xiàng",
+        "meaning": "elephant; shape",
+        "source": "/stroke-data/8c61.json",
+        "reference": {
+          "character": "象",
+          "sha256": "85fc2ba6508f924dd72022e4f61483c13c5ced563370794428f4a44e2b7f57f7",
+          "medians": [
+            [
+              [
+                419,
+                841
+              ],
+              [
+                435,
+                808
+              ],
+              [
+                432,
+                797
+              ],
+              [
+                373,
+                724
+              ],
+              [
+                313,
+                672
+              ],
+              [
+                291,
+                660
+              ]
+            ],
+            [
+              [
+                434,
+                755
+              ],
+              [
+                536,
+                771
+              ],
+              [
+                581,
+                760
+              ],
+              [
+                574,
+                738
+              ],
+              [
+                532,
+                686
+              ],
+              [
+                488,
+                651
+              ]
+            ],
+            [
+              [
+                222,
+                609
+              ],
+              [
+                247,
+                592
+              ],
+              [
+                260,
+                571
+              ],
+              [
+                295,
+                446
+              ]
+            ],
+            [
+              [
+                268,
+                611
+              ],
+              [
+                292,
+                601
+              ],
+              [
+                376,
+                619
+              ],
+              [
+                614,
+                652
+              ],
+              [
+                669,
+                650
+              ],
+              [
+                690,
+                637
+              ],
+              [
+                705,
+                607
+              ],
+              [
+                666,
+                524
+              ],
+              [
+                651,
+                499
+              ],
+              [
+                644,
+                499
+              ]
+            ],
+            [
+              [
+                314,
+                463
+              ],
+              [
+                321,
+                472
+              ],
+              [
+                627,
+                517
+              ]
+            ],
+            [
+              [
+                505,
+                598
+              ],
+              [
+                478,
+                588
+              ],
+              [
+                435,
+                491
+              ],
+              [
+                371,
+                406
+              ],
+              [
+                281,
+                330
+              ],
+              [
+                207,
+                290
+              ]
+            ],
+            [
+              [
+                419,
+                423
+              ],
+              [
+                434,
+                423
+              ],
+              [
+                476,
+                388
+              ],
+              [
+                513,
+                347
+              ],
+              [
+                534,
+                311
+              ],
+              [
+                557,
+                257
+              ],
+              [
+                565,
+                192
+              ],
+              [
+                562,
+                142
+              ],
+              [
+                545,
+                57
+              ],
+              [
+                535,
+                33
+              ],
+              [
+                505,
+                -2
+              ],
+              [
+                373,
+                57
+              ]
+            ],
+            [
+              [
+                449,
+                388
+              ],
+              [
+                448,
+                346
+              ],
+              [
+                397,
+                294
+              ],
+              [
+                305,
+                224
+              ],
+              [
+                245,
+                190
+              ],
+              [
+                209,
+                181
+              ],
+              [
+                206,
+                175
+              ]
+            ],
+            [
+              [
+                505,
+                316
+              ],
+              [
+                497,
+                265
+              ],
+              [
+                406,
+                173
+              ],
+              [
+                304,
+                97
+              ],
+              [
+                191,
+                42
+              ]
+            ],
+            [
+              [
+                723,
+                394
+              ],
+              [
+                686,
+                408
+              ],
+              [
+                592,
+                330
+              ],
+              [
+                577,
+                320
+              ],
+              [
+                569,
+                323
+              ]
+            ],
+            [
+              [
+                568,
+                303
+              ],
+              [
+                568,
+                295
+              ],
+              [
+                577,
+                291
+              ],
+              [
+                607,
+                251
+              ],
+              [
+                678,
+                191
+              ],
+              [
+                752,
+                139
+              ],
+              [
+                817,
+                123
+              ],
+              [
+                942,
+                112
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8c61-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-2bc5657f5edbd1aa8b469dd6",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "face (body part)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "面部"
+              },
+              {
+                "value": "miànbù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "mian4bu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "面部",
+              "pinyin": "miànbù",
+              "meaning": "face (body part)",
+              "audio": "624a0f08296767403b08e13cd39011bfd90a8bfda994fad0991068d51e7dcde3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8c61-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-8c61",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "elephant; shape",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "象"
+              },
+              {
+                "value": "xiàng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiang4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "象",
+              "pinyin": "xiàng",
+              "meaning": "elephant; shape",
+              "audio": "7a894cdd3b2748073a59412fc40155ef6195e2eef147609402886140e944a407",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "7a894cdd3b2748073a59412fc40155ef6195e2eef147609402886140e944a407"
+            ],
+            "transcript": [
+              {
+                "text": "象",
+                "pinyin": "xiàng",
+                "meaning": "elephant; shape",
+                "audio": "7a894cdd3b2748073a59412fc40155ef6195e2eef147609402886140e944a407",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8C61",
+      "character": "象",
+      "lessonIds": [
+        "LESSON-C-8C61"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8c61-word",
+        "EX-CHAR-char-8c61-recognize",
+        "EX-CHAR-char-8c61-write",
+        "EX-CHAR-char-8c61-familiar",
+        "EX-CHAR-char-8c61-recall"
+      ]
+    },
+    "audio": {
+      "7a894cdd3b2748073a59412fc40155ef6195e2eef147609402886140e944a407": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-8fd27c9a242f1c2a6024dfe354430475814f28b3e292ef26e8876f58d678cab7.mp3",
+          "sha256": "8fd27c9a242f1c2a6024dfe354430475814f28b3e292ef26e8876f58d678cab7",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "8fd27c9a242f1c2a6024dfe354430475814f28b3e292ef26e8876f58d678cab7",
+            "text": "象",
+            "words": [
+              {
+                "text": "象",
+                "start": 0.3,
+                "end": 0.42
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-8d18878a2e86858cd5ddd69299fc720d3e05c69f4b34c9b4a6755b081a9435d9.mp3",
+          "sha256": "8d18878a2e86858cd5ddd69299fc720d3e05c69f4b34c9b4a6755b081a9435d9",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "8d18878a2e86858cd5ddd69299fc720d3e05c69f4b34c9b4a6755b081a9435d9",
+            "text": "象",
+            "words": [
+              {
+                "text": "象",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "624a0f08296767403b08e13cd39011bfd90a8bfda994fad0991068d51e7dcde3": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/48732e1ec9906ed03a197c4a7f591080d1922e94317e1c2ff64cd9dd6e618b24.mp3",
+          "sha256": "48732e1ec9906ed03a197c4a7f591080d1922e94317e1c2ff64cd9dd6e618b24",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "48732e1ec9906ed03a197c4a7f591080d1922e94317e1c2ff64cd9dd6e618b24",
+            "text": "面部",
+            "words": [
+              {
+                "text": "面部",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/749cfca41f8391e85213ec484cceeb67c35cab2e5b6247c095a6902797fe425c.mp3",
+          "sha256": "749cfca41f8391e85213ec484cceeb67c35cab2e5b6247c095a6902797fe425c",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "749cfca41f8391e85213ec484cceeb67c35cab2e5b6247c095a6902797fe425c",
+            "text": "面部",
+            "words": [
+              {
+                "text": "面部",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "d20ee23f1bd582b6c2658cf877600a3480a56d65e6924cf8d7237e29e5406fca": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-fc6308c38445ca471d765b107d1241b424547e33f04413a577504c6c3cc0787c.mp3",
+          "sha256": "fc6308c38445ca471d765b107d1241b424547e33f04413a577504c6c3cc0787c",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "fc6308c38445ca471d765b107d1241b424547e33f04413a577504c6c3cc0787c",
+            "text": "想象",
+            "words": [
+              {
+                "text": "想象",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4ba504f452ee20311886f47d8b1cf0fba3be23f225cfabeb870b33efd3092cbd.mp3",
+          "sha256": "4ba504f452ee20311886f47d8b1cf0fba3be23f225cfabeb870b33efd3092cbd",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "4ba504f452ee20311886f47d8b1cf0fba3be23f225cfabeb870b33efd3092cbd",
+            "text": "想象",
+            "words": [
+              {
+                "text": "想象",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "ce6996db40cf444d17564612b1e270342991e100e51973e7158f5bf225318556": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-137123282549e64919563364d2c249022f5ee106d80ccd246a1dc5edfacd9301.mp3",
+          "sha256": "137123282549e64919563364d2c249022f5ee106d80ccd246a1dc5edfacd9301",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "137123282549e64919563364d2c249022f5ee106d80ccd246a1dc5edfacd9301",
+            "text": "全身",
+            "words": [
+              {
+                "text": "全身",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-773529106d611e8d8d920317e1ae97b8212ec1283314d39dfd475a8ccd4ce009.mp3",
+          "sha256": "773529106d611e8d8d920317e1ae97b8212ec1283314d39dfd475a8ccd4ce009",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "773529106d611e8d8d920317e1ae97b8212ec1283314d39dfd475a8ccd4ce009",
+            "text": "全身",
+            "words": [
+              {
+                "text": "全身",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "f7e3d61cce41cee5c4412b24068b1ba9b8a2420f7c07f64c9137760dee72c634": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5d424b31228f1066e42aa76432fd894e8227d769e29c662d10dc26e9b1c46730.mp3",
+          "sha256": "5d424b31228f1066e42aa76432fd894e8227d769e29c662d10dc26e9b1c46730",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "5d424b31228f1066e42aa76432fd894e8227d769e29c662d10dc26e9b1c46730",
+            "text": "借",
+            "words": [
+              {
+                "text": "借",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-87befb03823e9c778d7e98ba7ac1e3f4a7a0fdad223540de6fbc7c0fc4e32b82.mp3",
+          "sha256": "87befb03823e9c778d7e98ba7ac1e3f4a7a0fdad223540de6fbc7c0fc4e32b82",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "87befb03823e9c778d7e98ba7ac1e3f4a7a0fdad223540de6fbc7c0fc4e32b82",
+            "text": "借",
+            "words": [
+              {
+                "text": "借",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

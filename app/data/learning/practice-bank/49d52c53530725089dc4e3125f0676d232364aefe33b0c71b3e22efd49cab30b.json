@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5003",
+  "targetId": "W5003",
+  "steps": [
+    {
+      "id": "BANK-W5003-W5003",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5003-W5003",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "reference material",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "文献"
+            },
+            {
+              "value": "wénxiàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wen2xian4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "文献",
+            "pinyin": "wénxiàn",
+            "meaning": "reference material",
+            "singleWord": true,
+            "audio": "37bbd354926a15709d7d691e3edd1f1cdeea35aea20c57ab5362a17d4bd84ffe"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "37bbd354926a15709d7d691e3edd1f1cdeea35aea20c57ab5362a17d4bd84ffe": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-264f7e764f4da83a5c7489a7456f0938affb92b29f84b377bdd494925e7c0f4a.mp3",
+        "sha256": "264f7e764f4da83a5c7489a7456f0938affb92b29f84b377bdd494925e7c0f4a",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "264f7e764f4da83a5c7489a7456f0938affb92b29f84b377bdd494925e7c0f4a",
+          "text": "文献",
+          "words": [
+            {
+              "text": "文献",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2614676c631bf6268b47db4851e78af4d8be66a06f16c7c4a52044b5441fbe6b.mp3",
+        "sha256": "2614676c631bf6268b47db4851e78af4d8be66a06f16c7c4a52044b5441fbe6b",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "2614676c631bf6268b47db4851e78af4d8be66a06f16c7c4a52044b5441fbe6b",
+          "text": "文献",
+          "words": [
+            {
+              "text": "文献",
+              "start": 0.27,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5003",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5003-W5003",
+      "question_ids": [
+        "BANK-W5003-W5003"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-36",
+    "stepId": "S-U6-36-words-r4-22",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-732e"
+    ],
+    "grammarLessonIds": []
+  }
+}

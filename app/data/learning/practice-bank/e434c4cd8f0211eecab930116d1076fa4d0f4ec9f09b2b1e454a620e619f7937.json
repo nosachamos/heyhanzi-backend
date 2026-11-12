@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0500",
+  "targetId": "W0500",
+  "steps": [
+    {
+      "id": "BANK-W0500-W0500",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0500-W0500",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "breakfast",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "早饭"
+            },
+            {
+              "value": "zǎofàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zao3fan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "早饭",
+            "pinyin": "zǎofàn",
+            "meaning": "breakfast",
+            "singleWord": true,
+            "audio": "408d9112d37abae162ca5f8675666c4f286347dbb62451117df154f500ea0d8a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "408d9112d37abae162ca5f8675666c4f286347dbb62451117df154f500ea0d8a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-4fc734cba938cc4b0fd7e482c49c0ab7854e862834735768404cebe59f28abb8.mp3",
+        "sha256": "4fc734cba938cc4b0fd7e482c49c0ab7854e862834735768404cebe59f28abb8",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "4fc734cba938cc4b0fd7e482c49c0ab7854e862834735768404cebe59f28abb8",
+          "text": "早饭",
+          "words": [
+            {
+              "text": "早饭",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-bf39752775b0e14d08839c3f48d941ccf4e84b1c0b9c6d6848d917b9013ce8a7.mp3",
+        "sha256": "bf39752775b0e14d08839c3f48d941ccf4e84b1c0b9c6d6848d917b9013ce8a7",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "bf39752775b0e14d08839c3f48d941ccf4e84b1c0b9c6d6848d917b9013ce8a7",
+          "text": "早饭",
+          "words": [
+            {
+              "text": "早饭",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0500",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0500-W0500",
+      "question_ids": [
+        "BANK-W0500-W0500"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U08",
+    "stepId": "S-U08-words-r4-39",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-65e9"
+    ],
+    "grammarLessonIds": []
+  }
+}

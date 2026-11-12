@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2001",
+  "targetId": "W2001",
+  "steps": [
+    {
+      "id": "BANK-W2001-W2001",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2001-W2001",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to change planes; connecting flight",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "转机"
+            },
+            {
+              "value": "zhuǎnjī",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhuan3ji1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "转机",
+            "pinyin": "zhuǎnjī",
+            "meaning": "to change planes; connecting flight",
+            "singleWord": true,
+            "audio": "490e0b2fc0d55a2f521cd7554f8087fc50cffa2de6638f935b978d8464255977"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "490e0b2fc0d55a2f521cd7554f8087fc50cffa2de6638f935b978d8464255977": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/175f576875013b322bff686925e9f23ec32c296d833258c699b7badec8454190.mp3",
+        "sha256": "175f576875013b322bff686925e9f23ec32c296d833258c699b7badec8454190",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "175f576875013b322bff686925e9f23ec32c296d833258c699b7badec8454190",
+          "text": "转机",
+          "words": [
+            {
+              "text": "转机",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/fd7a01247d181b152c52e59948862b6f38389b9436530f1274812c083fbb3e38.mp3",
+        "sha256": "fd7a01247d181b152c52e59948862b6f38389b9436530f1274812c083fbb3e38",
+        "byteLength": 16173,
+        "readAlong": {
+          "audioSha256": "fd7a01247d181b152c52e59948862b6f38389b9436530f1274812c083fbb3e38",
+          "text": "转机",
+          "words": [
+            {
+              "text": "转机",
+              "start": 0.21,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2001",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2001-W2001",
+      "question_ids": [
+        "BANK-W2001-W2001"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-15",
+    "stepId": "S-U4-15-words-r4-21",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8f6c"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "BANK-W1718",
+  "targetId": "W1718",
+  "steps": [
+    {
+      "id": "BANK-W1718-W1718",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1718-W1718",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "counter for songs and poems",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "首"
+            },
+            {
+              "value": "shǒu",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shou3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "首",
+            "pinyin": "shǒu",
+            "meaning": "counter for songs and poems",
+            "singleWord": true,
+            "audio": "73d6b02938d936321537b05dc98d3089e047d2cd0dc22318214dade5148baaa5"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1718-W1718-use-song-poem-counter",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1718-W1718-use-song-poem-counter",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 首 fits this context?",
+          "context": "The speaker counts two separate songs or poems.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1718-W1718-use-song-poem-counter-contrast-1",
+              "label": "The leader of a group.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "首 counts individual songs and poems after a number. It does not mean the head or chief in this use."
+            },
+            {
+              "id": "BANK-W1718-W1718-use-song-poem-counter-meaning",
+              "label": "A classifier for songs or poems.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "首 counts individual songs and poems after a number. It does not mean the head or chief in this use."
+            },
+            {
+              "id": "BANK-W1718-W1718-use-song-poem-counter-contrast-2",
+              "label": "A person’s head.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "首 counts individual songs and poems after a number. It does not mean the head or chief in this use."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "首",
+            "pinyin": "shǒu",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "73d6b02938d936321537b05dc98d3089e047d2cd0dc22318214dade5148baaa5"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "73d6b02938d936321537b05dc98d3089e047d2cd0dc22318214dade5148baaa5": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-7c8f6512e2110b6ab585e54d957864a80a3ecce1dbdb768f76300cd7109feb6e.mp3",
+        "sha256": "7c8f6512e2110b6ab585e54d957864a80a3ecce1dbdb768f76300cd7109feb6e",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "7c8f6512e2110b6ab585e54d957864a80a3ecce1dbdb768f76300cd7109feb6e",
+          "text": "首",
+          "words": [
+            {
+              "text": "首",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-92bf419aaccff097156109e09491b6b35934aa65ed395608b4fee26c6c6477c8.mp3",
+        "sha256": "92bf419aaccff097156109e09491b6b35934aa65ed395608b4fee26c6c6477c8",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "92bf419aaccff097156109e09491b6b35934aa65ed395608b4fee26c6c6477c8",
+          "text": "首",
+          "words": [
+            {
+              "text": "首",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1718",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1718-W1718",
+      "question_ids": [
+        "BANK-W1718-W1718"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W1718",
+      "facet_id": "lexical-use-song-poem-counter",
+      "part_id": "BANK-W1718-W1718-use-song-poem-counter",
+      "question_ids": [
+        "BANK-W1718-W1718-use-song-poem-counter"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1718",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-25",
+    "stepId": "S-U4-25-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9996"
+    ],
+    "grammarLessonIds": []
+  }
+}

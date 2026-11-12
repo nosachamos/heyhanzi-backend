@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1345",
+  "targetId": "W1345",
+  "steps": [
+    {
+      "id": "BANK-W1345-W1345",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1345-W1345",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "money wrapped in red as a gift; bonus payment",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "红包"
+            },
+            {
+              "value": "hóngbāo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hong2bao1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "红包",
+            "pinyin": "hóngbāo",
+            "meaning": "money wrapped in red as a gift; bonus payment",
+            "singleWord": true,
+            "audio": "308bd2f6087a90132fc13e65743c414b252da192b532a2dcfd4dc66323b794d8"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "308bd2f6087a90132fc13e65743c414b252da192b532a2dcfd4dc66323b794d8": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/04e0daf126369764e6789b74c764270937e742696b1a0f603fc36e3b00f9eb19.mp3",
+        "sha256": "04e0daf126369764e6789b74c764270937e742696b1a0f603fc36e3b00f9eb19",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "04e0daf126369764e6789b74c764270937e742696b1a0f603fc36e3b00f9eb19",
+          "text": "红包",
+          "words": [
+            {
+              "text": "红包",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/245777cd45dac0f4b9d5d9f6a35bc059d2d62d705d92207717bf6b521e859116.mp3",
+        "sha256": "245777cd45dac0f4b9d5d9f6a35bc059d2d62d705d92207717bf6b521e859116",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "245777cd45dac0f4b9d5d9f6a35bc059d2d62d705d92207717bf6b521e859116",
+          "text": "红包",
+          "words": [
+            {
+              "text": "红包",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1345",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1345-W1345",
+      "question_ids": [
+        "BANK-W1345-W1345"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-11",
+    "stepId": "S-U4-11-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5305"
+    ],
+    "grammarLessonIds": []
+  }
+}

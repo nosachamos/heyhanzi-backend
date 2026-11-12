@@ -1,0 +1,671 @@
+{
+  "id": "EX-CHAR-char-534e",
+  "revision": 2,
+  "unit": "U5-20",
+  "stage": "ST-HSK5",
+  "after": "S-U5-20-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "华",
+  "sourceBlockId": "mandarin-simplified-v1-char-534e",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-534e",
+        "text": "华",
+        "pinyin": "huá",
+        "meaning": "China; Chinese; splendid",
+        "characters": [
+          {
+            "id": "C-534E",
+            "text": "华"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-36e28f53a8628fa9857ebc83",
+        "text": "嘉年华",
+        "pinyin": "jiā nián huá",
+        "meaning": "(loanword) carnival",
+        "characters": [
+          {
+            "id": "C-5609",
+            "text": "嘉"
+          },
+          {
+            "id": "C-5E74",
+            "text": "年"
+          },
+          {
+            "id": "C-534E",
+            "text": "华"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ed153157252b0cf9b67d2462",
+        "text": "讲课",
+        "pinyin": "jiǎng kè",
+        "meaning": "to give a lecture",
+        "characters": [
+          {
+            "id": "C-8BB2",
+            "text": "讲"
+          },
+          {
+            "id": "C-8BFE",
+            "text": "课"
+          }
+        ]
+      },
+      {
+        "id": "W0950",
+        "text": "同事",
+        "pinyin": "tóngshì",
+        "meaning": "colleague; co-worker",
+        "characters": [
+          {
+            "id": "C-540C",
+            "text": "同"
+          },
+          {
+            "id": "C-4E8B",
+            "text": "事"
+          }
+        ]
+      },
+      {
+        "id": "W3383",
+        "text": "以来",
+        "pinyin": "yǐlái",
+        "meaning": "since",
+        "characters": [
+          {
+            "id": "C-4EE5",
+            "text": "以"
+          },
+          {
+            "id": "C-6765",
+            "text": "来"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "5d936bf0e6f66c35cddefdd2b2f31c43d231e125b97f1b59284ba4eed3e65756",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-534e",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "华",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-534e-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-36e28f53a8628fa9857ebc83",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "(loanword) carnival",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "嘉年华"
+              },
+              {
+                "value": "jiā nián huá",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jia1nian2hua2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "嘉年华",
+              "pinyin": "jiā nián huá",
+              "meaning": "(loanword) carnival",
+              "audio": "f3ae49bfa3b1f363a7549dfc3203e011ad8c01db991d112ca690100447617658",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-534e-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-534e",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "华",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W3383",
+                "label": "since",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0950",
+                "label": "colleague; co-worker",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-534e",
+                "label": "China; Chinese",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-534e-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "华",
+        "pinyin": "huá",
+        "meaning": "China; Chinese",
+        "source": "/stroke-data/534e.json",
+        "reference": {
+          "character": "华",
+          "sha256": "01193c4d985188639fc3c4aac2b68f8a95adf573d22fc90ba47f0eb5ef83caac",
+          "medians": [
+            [
+              [
+                360,
+                808
+              ],
+              [
+                378,
+                785
+              ],
+              [
+                387,
+                760
+              ],
+              [
+                359,
+                712
+              ],
+              [
+                274,
+                598
+              ],
+              [
+                152,
+                485
+              ]
+            ],
+            [
+              [
+                321,
+                614
+              ],
+              [
+                331,
+                566
+              ],
+              [
+                317,
+                391
+              ],
+              [
+                323,
+                345
+              ]
+            ],
+            [
+              [
+                725,
+                776
+              ],
+              [
+                739,
+                751
+              ],
+              [
+                742,
+                727
+              ],
+              [
+                719,
+                700
+              ],
+              [
+                571,
+                567
+              ],
+              [
+                466,
+                504
+              ]
+            ],
+            [
+              [
+                520,
+                806
+              ],
+              [
+                557,
+                760
+              ],
+              [
+                544,
+                676
+              ],
+              [
+                538,
+                555
+              ],
+              [
+                548,
+                459
+              ],
+              [
+                570,
+                428
+              ],
+              [
+                615,
+                410
+              ],
+              [
+                673,
+                403
+              ],
+              [
+                771,
+                408
+              ],
+              [
+                830,
+                425
+              ],
+              [
+                840,
+                431
+              ],
+              [
+                842,
+                444
+              ],
+              [
+                848,
+                562
+              ]
+            ],
+            [
+              [
+                142,
+                246
+              ],
+              [
+                166,
+                234
+              ],
+              [
+                210,
+                226
+              ],
+              [
+                442,
+                256
+              ],
+              [
+                789,
+                280
+              ],
+              [
+                839,
+                270
+              ],
+              [
+                885,
+                249
+              ]
+            ],
+            [
+              [
+                474,
+                373
+              ],
+              [
+                513,
+                336
+              ],
+              [
+                507,
+                -45
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-534e-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-ed153157252b0cf9b67d2462",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to give a lecture",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "讲课"
+              },
+              {
+                "value": "jiǎng kè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jiang3ke4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "讲课",
+              "pinyin": "jiǎng kè",
+              "meaning": "to give a lecture",
+              "audio": "86c26229c632ca394947f5958b157472d2bafba90004ed4175df3c574fdd2c86",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-534e-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-534e",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "China; Chinese",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "华"
+              },
+              {
+                "value": "huá",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hua2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "华",
+              "pinyin": "huá",
+              "meaning": "China; Chinese",
+              "audio": "cf3ead40b9fe4e93d5faf3f1845b6489b00a7faefcf4065e275c1317a37b915a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "cf3ead40b9fe4e93d5faf3f1845b6489b00a7faefcf4065e275c1317a37b915a"
+            ],
+            "transcript": [
+              {
+                "text": "华",
+                "pinyin": "huá",
+                "meaning": "China; Chinese",
+                "audio": "cf3ead40b9fe4e93d5faf3f1845b6489b00a7faefcf4065e275c1317a37b915a",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-534E",
+      "character": "华",
+      "lessonIds": [
+        "LESSON-C-534E"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-534e-word",
+        "EX-CHAR-char-534e-recognize",
+        "EX-CHAR-char-534e-write",
+        "EX-CHAR-char-534e-familiar",
+        "EX-CHAR-char-534e-recall"
+      ]
+    },
+    "audio": {
+      "cf3ead40b9fe4e93d5faf3f1845b6489b00a7faefcf4065e275c1317a37b915a": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-a49558ca228b94712df188556f7980017d9476eb2d7c2710c25b9f60d05101d9.mp3",
+          "sha256": "a49558ca228b94712df188556f7980017d9476eb2d7c2710c25b9f60d05101d9",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "a49558ca228b94712df188556f7980017d9476eb2d7c2710c25b9f60d05101d9",
+            "text": "华",
+            "words": [
+              {
+                "text": "华",
+                "start": 0.18,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-3048eecae8232a6f1f650c42c112ae2e3cd6d0ea87ba9ea10ef5b3bb5aed3c58.mp3",
+          "sha256": "3048eecae8232a6f1f650c42c112ae2e3cd6d0ea87ba9ea10ef5b3bb5aed3c58",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "3048eecae8232a6f1f650c42c112ae2e3cd6d0ea87ba9ea10ef5b3bb5aed3c58",
+            "text": "华",
+            "words": [
+              {
+                "text": "华",
+                "start": 0.22,
+                "end": 0.3
+              }
+            ]
+          }
+        }
+      },
+      "f3ae49bfa3b1f363a7549dfc3203e011ad8c01db991d112ca690100447617658": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7d341cb16fb9fdd7f4e15bd7896b228ae1baef01db0a8215c63db259397affb1.mp3",
+          "sha256": "7d341cb16fb9fdd7f4e15bd7896b228ae1baef01db0a8215c63db259397affb1",
+          "byteLength": 17037,
+          "readAlong": {
+            "audioSha256": "7d341cb16fb9fdd7f4e15bd7896b228ae1baef01db0a8215c63db259397affb1",
+            "text": "嘉年华",
+            "words": [
+              {
+                "text": "嘉年华",
+                "start": 0.15,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/15227caac3e0022827e18c42b6cdfe0e1e37b81772b42ec2fab489a3f67a4e39.mp3",
+          "sha256": "15227caac3e0022827e18c42b6cdfe0e1e37b81772b42ec2fab489a3f67a4e39",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "15227caac3e0022827e18c42b6cdfe0e1e37b81772b42ec2fab489a3f67a4e39",
+            "text": "嘉年华",
+            "words": [
+              {
+                "text": "嘉年华",
+                "start": 0.15,
+                "end": 0.69
+              }
+            ]
+          }
+        }
+      },
+      "86c26229c632ca394947f5958b157472d2bafba90004ed4175df3c574fdd2c86": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6115f87897b25f3390d231f6106d5707d845ab1c87b12dfb50056ad6816c3303.mp3",
+          "sha256": "6115f87897b25f3390d231f6106d5707d845ab1c87b12dfb50056ad6816c3303",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "6115f87897b25f3390d231f6106d5707d845ab1c87b12dfb50056ad6816c3303",
+            "text": "讲课",
+            "words": [
+              {
+                "text": "讲课",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/eb2598102b529718060bbe0797de638c92ade1e1c6e5b8e7b0fcecb51760e383.mp3",
+          "sha256": "eb2598102b529718060bbe0797de638c92ade1e1c6e5b8e7b0fcecb51760e383",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "eb2598102b529718060bbe0797de638c92ade1e1c6e5b8e7b0fcecb51760e383",
+            "text": "讲课",
+            "words": [
+              {
+                "text": "讲课",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "5b82c08e3cc191c24bc1b4a57c82ce7920122cf9185f5634575becd20de7959f": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-a8fa9b9c6fcabfbae82f0fe14125b4cd02852c262cd95edfdd544ab7b6e7ffc1.mp3",
+          "sha256": "a8fa9b9c6fcabfbae82f0fe14125b4cd02852c262cd95edfdd544ab7b6e7ffc1",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "a8fa9b9c6fcabfbae82f0fe14125b4cd02852c262cd95edfdd544ab7b6e7ffc1",
+            "text": "同事",
+            "words": [
+              {
+                "text": "同事",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-2b8ada248609a5907ec5556f0f2a7a57f3f8f592178a25c084bc2db8c5edccb4.mp3",
+          "sha256": "2b8ada248609a5907ec5556f0f2a7a57f3f8f592178a25c084bc2db8c5edccb4",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "2b8ada248609a5907ec5556f0f2a7a57f3f8f592178a25c084bc2db8c5edccb4",
+            "text": "同事",
+            "words": [
+              {
+                "text": "同事",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "38c6825b7b323ad2ae26cfeb7d43456d12bd735ee3584099828a2c929a68d573": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1fa765c370162bc7935ceb46f13c8e95d4bbf03093dc1d2c0a9ff5bc5ecec68c.mp3",
+          "sha256": "1fa765c370162bc7935ceb46f13c8e95d4bbf03093dc1d2c0a9ff5bc5ecec68c",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "1fa765c370162bc7935ceb46f13c8e95d4bbf03093dc1d2c0a9ff5bc5ecec68c",
+            "text": "以来",
+            "words": [
+              {
+                "text": "以来",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b1ecce34ec087cee743968f2c4f3cf2a9aece7378bb0335716f9a36e5decb5f1.mp3",
+          "sha256": "b1ecce34ec087cee743968f2c4f3cf2a9aece7378bb0335716f9a36e5decb5f1",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "b1ecce34ec087cee743968f2c4f3cf2a9aece7378bb0335716f9a36e5decb5f1",
+            "text": "以来",
+            "words": [
+              {
+                "text": "以来",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

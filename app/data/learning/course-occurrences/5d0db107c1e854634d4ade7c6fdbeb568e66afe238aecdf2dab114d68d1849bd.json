@@ -1,0 +1,769 @@
+{
+  "id": "EX-CHAR-char-5bd3",
+  "revision": 2,
+  "unit": "U5-03",
+  "stage": "ST-HSK5",
+  "after": "S-U5-03-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "寓",
+  "sourceBlockId": "mandarin-simplified-v1-char-5bd3",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-4f4d7ed5e2e7ee39a42370f3",
+        "text": "公寓",
+        "pinyin": "gōngyù",
+        "meaning": "apartment building; block of flats (may be a public housing block or a condominium etc)",
+        "characters": [
+          {
+            "id": "C-516C",
+            "text": "公"
+          },
+          {
+            "id": "C-5BD3",
+            "text": "寓"
+          }
+        ]
+      },
+      {
+        "id": "W0484",
+        "text": "小朋友",
+        "pinyin": "xiǎopéngyǒu",
+        "meaning": "child; friendly way to address a child",
+        "characters": [
+          {
+            "id": "C-5C0F",
+            "text": "小"
+          },
+          {
+            "id": "C-670B",
+            "text": "朋"
+          },
+          {
+            "id": "C-53CB",
+            "text": "友"
+          }
+        ]
+      },
+      {
+        "id": "W1457",
+        "text": "聚餐",
+        "pinyin": "jùcān",
+        "meaning": "to get together for a meal; to dine together",
+        "characters": [
+          {
+            "id": "C-805A",
+            "text": "聚"
+          },
+          {
+            "id": "C-9910",
+            "text": "餐"
+          }
+        ]
+      },
+      {
+        "id": "W2692",
+        "text": "客服",
+        "pinyin": "kèfú",
+        "meaning": "customer service",
+        "characters": [
+          {
+            "id": "C-5BA2",
+            "text": "客"
+          },
+          {
+            "id": "C-670D",
+            "text": "服"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "5eab7aa69bca457f3cef3eb190731f4310c0c6b31689dd4a2b93fe12e47e6302",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5bd3",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "寓",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5bd3-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-4f4d7ed5e2e7ee39a42370f3",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "apartment building; block of flats (may be a public housing block or a condominium etc)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "公寓"
+              },
+              {
+                "value": "gōngyù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gong1yu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "公寓",
+              "pinyin": "gōngyù",
+              "meaning": "apartment building; block of flats (may be a public housing block or a condominium etc)",
+              "audio": "ab09877b7019f3ffade395750daf874d6372dd5f8a9e934ee054f3187bccd8e9",
+              "singleWord": true,
+              "focus": "寓"
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5bd3-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-cmn-4f4d7ed5e2e7ee39a42370f3",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "公寓",
+              "meaning": "",
+              "focus": "寓"
+            },
+            "choices": [
+              {
+                "id": "W1457",
+                "label": "to get together for a meal; to dine together",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W2692",
+                "label": "customer service",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-4f4d7ed5e2e7ee39a42370f3",
+                "label": "apartment building; block of flats (may be a public housing block or a condominium etc)",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5bd3-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "寓",
+        "pinyin": "yù",
+        "meaning": "(bound form) to reside; to inhabit",
+        "source": "/stroke-data/5bd3.json",
+        "reference": {
+          "character": "寓",
+          "sha256": "0172b5e593ae47baa41c6601f6eba6605273ae3415c2c70a55c6761e778a91a2",
+          "medians": [
+            [
+              [
+                449,
+                857
+              ],
+              [
+                527,
+                820
+              ],
+              [
+                558,
+                784
+              ]
+            ],
+            [
+              [
+                250,
+                721
+              ],
+              [
+                257,
+                706
+              ],
+              [
+                255,
+                676
+              ],
+              [
+                204,
+                586
+              ],
+              [
+                198,
+                538
+              ]
+            ],
+            [
+              [
+                289,
+                687
+              ],
+              [
+                297,
+                678
+              ],
+              [
+                329,
+                678
+              ],
+              [
+                482,
+                709
+              ],
+              [
+                620,
+                729
+              ],
+              [
+                758,
+                744
+              ],
+              [
+                789,
+                736
+              ],
+              [
+                804,
+                725
+              ],
+              [
+                815,
+                704
+              ],
+              [
+                742,
+                633
+              ]
+            ],
+            [
+              [
+                319,
+                576
+              ],
+              [
+                339,
+                561
+              ],
+              [
+                363,
+                529
+              ],
+              [
+                382,
+                412
+              ],
+              [
+                402,
+                342
+              ]
+            ],
+            [
+              [
+                354,
+                580
+              ],
+              [
+                387,
+                571
+              ],
+              [
+                583,
+                607
+              ],
+              [
+                656,
+                610
+              ],
+              [
+                687,
+                575
+              ],
+              [
+                653,
+                442
+              ],
+              [
+                633,
+                391
+              ],
+              [
+                597,
+                402
+              ]
+            ],
+            [
+              [
+                429,
+                472
+              ],
+              [
+                478,
+                475
+              ],
+              [
+                560,
+                494
+              ],
+              [
+                600,
+                490
+              ]
+            ],
+            [
+              [
+                419,
+                355
+              ],
+              [
+                439,
+                367
+              ],
+              [
+                563,
+                389
+              ],
+              [
+                585,
+                387
+              ],
+              [
+                595,
+                378
+              ]
+            ],
+            [
+              [
+                222,
+                280
+              ],
+              [
+                247,
+                254
+              ],
+              [
+                259,
+                225
+              ],
+              [
+                260,
+                56
+              ],
+              [
+                270,
+                11
+              ]
+            ],
+            [
+              [
+                269,
+                266
+              ],
+              [
+                296,
+                254
+              ],
+              [
+                429,
+                283
+              ],
+              [
+                583,
+                305
+              ],
+              [
+                743,
+                318
+              ],
+              [
+                776,
+                314
+              ],
+              [
+                788,
+                307
+              ],
+              [
+                809,
+                277
+              ],
+              [
+                799,
+                224
+              ],
+              [
+                795,
+                118
+              ],
+              [
+                786,
+                55
+              ],
+              [
+                771,
+                26
+              ],
+              [
+                739,
+                34
+              ],
+              [
+                673,
+                65
+              ]
+            ],
+            [
+              [
+                478,
+                570
+              ],
+              [
+                509,
+                550
+              ],
+              [
+                512,
+                519
+              ],
+              [
+                510,
+                192
+              ],
+              [
+                494,
+                171
+              ]
+            ],
+            [
+              [
+                344,
+                135
+              ],
+              [
+                389,
+                116
+              ],
+              [
+                599,
+                172
+              ],
+              [
+                623,
+                170
+              ]
+            ],
+            [
+              [
+                606,
+                233
+              ],
+              [
+                665,
+                166
+              ],
+              [
+                673,
+                135
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5bd3-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0484",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "child; friendly way to address a child",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "小朋友"
+              },
+              {
+                "value": "xiǎopéngyǒu",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiao3peng2you3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "小朋友",
+              "pinyin": "xiǎopéngyǒu",
+              "meaning": "child; friendly way to address a child",
+              "audio": "52293b581fa8343a85400b33ba63cffbcdc8fefa5c3efaf86b8dff77efc9ac43",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5bd3-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-cmn-4f4d7ed5e2e7ee39a42370f3",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "apartment building; block of flats (may be a public housing block or a condominium etc)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "公寓"
+              },
+              {
+                "value": "gōngyù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gong1yu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "公寓",
+              "pinyin": "gōngyù",
+              "meaning": "apartment building; block of flats (may be a public housing block or a condominium etc)",
+              "audio": "ab09877b7019f3ffade395750daf874d6372dd5f8a9e934ee054f3187bccd8e9",
+              "singleWord": true,
+              "focus": "寓"
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "ab09877b7019f3ffade395750daf874d6372dd5f8a9e934ee054f3187bccd8e9"
+            ],
+            "transcript": [
+              {
+                "text": "公寓",
+                "pinyin": "gōngyù",
+                "meaning": "apartment building; block of flats (may be a public housing block or a condominium etc)",
+                "audio": "ab09877b7019f3ffade395750daf874d6372dd5f8a9e934ee054f3187bccd8e9",
+                "singleWord": true,
+                "focus": "寓"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5BD3",
+      "character": "寓",
+      "lessonIds": [
+        "LESSON-C-5BD3"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5bd3-word",
+        "EX-CHAR-char-5bd3-recognize",
+        "EX-CHAR-char-5bd3-write",
+        "EX-CHAR-char-5bd3-familiar",
+        "EX-CHAR-char-5bd3-recall"
+      ]
+    },
+    "audio": {
+      "ab09877b7019f3ffade395750daf874d6372dd5f8a9e934ee054f3187bccd8e9": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f4010a484fd860085e628cfecc38b79a1c575c2281446ae596b2a256c18fd1f4.mp3",
+          "sha256": "f4010a484fd860085e628cfecc38b79a1c575c2281446ae596b2a256c18fd1f4",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "f4010a484fd860085e628cfecc38b79a1c575c2281446ae596b2a256c18fd1f4",
+            "text": "公寓",
+            "words": [
+              {
+                "text": "公寓",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/af8cf4dc9af36de270c86c666e1b8a0b73a04a353753c5621808c1ab4918bfb0.mp3",
+          "sha256": "af8cf4dc9af36de270c86c666e1b8a0b73a04a353753c5621808c1ab4918bfb0",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "af8cf4dc9af36de270c86c666e1b8a0b73a04a353753c5621808c1ab4918bfb0",
+            "text": "公寓",
+            "words": [
+              {
+                "text": "公寓",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "52293b581fa8343a85400b33ba63cffbcdc8fefa5c3efaf86b8dff77efc9ac43": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c0e6b45e2c56c508f13718becb3da25fc89e055d0f91a072e3138a6d5c29c8b3.mp3",
+          "sha256": "c0e6b45e2c56c508f13718becb3da25fc89e055d0f91a072e3138a6d5c29c8b3",
+          "byteLength": 18189,
+          "readAlong": {
+            "audioSha256": "c0e6b45e2c56c508f13718becb3da25fc89e055d0f91a072e3138a6d5c29c8b3",
+            "text": "小朋友",
+            "words": [
+              {
+                "text": "小朋友",
+                "start": 0.15,
+                "end": 0.8099999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/814ed2b760dbeb55b0b2a3ae869dbdcd41edb08545595de78e9eb55e7c1134a1.mp3",
+          "sha256": "814ed2b760dbeb55b0b2a3ae869dbdcd41edb08545595de78e9eb55e7c1134a1",
+          "byteLength": 18189,
+          "readAlong": {
+            "audioSha256": "814ed2b760dbeb55b0b2a3ae869dbdcd41edb08545595de78e9eb55e7c1134a1",
+            "text": "小朋友",
+            "words": [
+              {
+                "text": "小朋友",
+                "start": 0.09,
+                "end": 0.75
+              }
+            ]
+          }
+        }
+      },
+      "826a79ba318e7ff3ae9c93664f51ffce0d2543cbb6f22d2d420d03d547bdf5b3": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f5eff5ce21cfcf5dc1fb0446fc6f99da605d95362b36cfff7105b280098bf8ee.mp3",
+          "sha256": "f5eff5ce21cfcf5dc1fb0446fc6f99da605d95362b36cfff7105b280098bf8ee",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "f5eff5ce21cfcf5dc1fb0446fc6f99da605d95362b36cfff7105b280098bf8ee",
+            "text": "聚餐",
+            "words": [
+              {
+                "text": "聚餐",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-18e521f8dc9d8fb317cdb3db2a6274cc9241fe9f08eaa012a054c9ec2ee280b4.mp3",
+          "sha256": "18e521f8dc9d8fb317cdb3db2a6274cc9241fe9f08eaa012a054c9ec2ee280b4",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "18e521f8dc9d8fb317cdb3db2a6274cc9241fe9f08eaa012a054c9ec2ee280b4",
+            "text": "聚餐",
+            "words": [
+              {
+                "text": "聚餐",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "f50682b5fc13a168436b0a0131f38291f99fa2ece50cc0209db24ab780b071c6": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ed854602912216471619daee54fcb93cf435f06fdbbbf16004136059fac204a3.mp3",
+          "sha256": "ed854602912216471619daee54fcb93cf435f06fdbbbf16004136059fac204a3",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "ed854602912216471619daee54fcb93cf435f06fdbbbf16004136059fac204a3",
+            "text": "客服",
+            "words": [
+              {
+                "text": "客服",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-e91647837abcf0a10b5e002da0a32ff26a375aa51124812c36e4564d504c6c40.mp3",
+          "sha256": "e91647837abcf0a10b5e002da0a32ff26a375aa51124812c36e4564d504c6c40",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "e91647837abcf0a10b5e002da0a32ff26a375aa51124812c36e4564d504c6c40",
+            "text": "客服",
+            "words": [
+              {
+                "text": "客服",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

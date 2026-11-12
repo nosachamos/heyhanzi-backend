@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0104",
+  "targetId": "W0104",
+  "steps": [
+    {
+      "id": "BANK-W0104-W0104",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0104-W0104",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "now",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "现在"
+            },
+            {
+              "value": "xiànzài",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xian4zai4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "现在",
+            "pinyin": "xiànzài",
+            "meaning": "now",
+            "singleWord": true,
+            "audio": "cf6d59eba06bb0e5e96a1ec1bb24fc297f88fb847f2a1886d2d94911bb61c59a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "cf6d59eba06bb0e5e96a1ec1bb24fc297f88fb847f2a1886d2d94911bb61c59a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-15acce9902206adcb1ad246200f0d4027bd664d1fedae2cbfdda4fb720148abe.mp3",
+        "sha256": "15acce9902206adcb1ad246200f0d4027bd664d1fedae2cbfdda4fb720148abe",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "15acce9902206adcb1ad246200f0d4027bd664d1fedae2cbfdda4fb720148abe",
+          "text": "现在",
+          "words": [
+            {
+              "text": "现在",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-bea463387fc5329b61568cea115cb12caa470f0ccb64bf853cbaecba3a94258a.mp3",
+        "sha256": "bea463387fc5329b61568cea115cb12caa470f0ccb64bf853cbaecba3a94258a",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "bea463387fc5329b61568cea115cb12caa470f0ccb64bf853cbaecba3a94258a",
+          "text": "现在",
+          "words": [
+            {
+              "text": "现在",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0104",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0104-W0104",
+      "question_ids": [
+        "BANK-W0104-W0104"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U09",
+    "stepId": "S-U09-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-73b0"
+    ],
+    "grammarLessonIds": []
+  }
+}

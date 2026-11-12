@@ -1,0 +1,733 @@
+{
+  "id": "EX-CHAR-char-9ebb",
+  "revision": 2,
+  "unit": "U30",
+  "stage": "ST-HSK3",
+  "after": "S-U30-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "麻",
+  "sourceBlockId": "mandarin-simplified-v1-char-9ebb",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-9ebb",
+        "text": "麻",
+        "pinyin": "má",
+        "meaning": "hemp",
+        "characters": [
+          {
+            "id": "C-9EBB",
+            "text": "麻"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ca44e86c10ad3f233c50f94b",
+        "text": "麻将",
+        "pinyin": "má jiàng",
+        "meaning": "mahjong",
+        "characters": [
+          {
+            "id": "C-9EBB",
+            "text": "麻"
+          },
+          {
+            "id": "C-5C06",
+            "text": "将"
+          }
+        ]
+      },
+      {
+        "id": "W0084",
+        "text": "哪里",
+        "pinyin": "nǎlǐ",
+        "meaning": "where",
+        "characters": [
+          {
+            "id": "C-54EA",
+            "text": "哪"
+          },
+          {
+            "id": "C-91CC",
+            "text": "里"
+          }
+        ]
+      },
+      {
+        "id": "W0188",
+        "text": "过",
+        "pinyin": "guo",
+        "meaning": "marks previous experience",
+        "characters": [
+          {
+            "id": "C-8FC7",
+            "text": "过"
+          }
+        ]
+      },
+      {
+        "id": "W0387",
+        "text": "电影",
+        "pinyin": "diànyǐng",
+        "meaning": "movie; film",
+        "characters": [
+          {
+            "id": "C-7535",
+            "text": "电"
+          },
+          {
+            "id": "C-5F71",
+            "text": "影"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "0562abb5acc72b8aad746a811ee5e008d83a1e832206822e4fdfbf01720b24f9",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-9ebb",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "麻",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-9ebb-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-ca44e86c10ad3f233c50f94b",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "mahjong",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "麻将"
+              },
+              {
+                "value": "má jiàng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ma2jiang4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "麻将",
+              "pinyin": "má jiàng",
+              "meaning": "mahjong",
+              "audio": "a5013fde921eb425161c969fcc8be40a3286e03aa03637e83f56be5874c78bab",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9ebb-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-9ebb",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "麻",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0387",
+                "label": "movie; film",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-9ebb",
+                "label": "hemp",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0188",
+                "label": "marks previous experience",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9ebb-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "麻",
+        "pinyin": "má",
+        "meaning": "hemp",
+        "source": "/stroke-data/9ebb.json",
+        "reference": {
+          "character": "麻",
+          "sha256": "88fa09adcafe9e1eb136b9b5d2548075230bfd99522ffce7e30478e2df3292e9",
+          "medians": [
+            [
+              [
+                455,
+                848
+              ],
+              [
+                538,
+                806
+              ],
+              [
+                567,
+                777
+              ]
+            ],
+            [
+              [
+                320,
+                675
+              ],
+              [
+                355,
+                663
+              ],
+              [
+                405,
+                666
+              ],
+              [
+                718,
+                726
+              ],
+              [
+                769,
+                726
+              ]
+            ],
+            [
+              [
+                244,
+                701
+              ],
+              [
+                279,
+                663
+              ],
+              [
+                281,
+                649
+              ],
+              [
+                268,
+                493
+              ],
+              [
+                241,
+                355
+              ],
+              [
+                204,
+                244
+              ],
+              [
+                157,
+                146
+              ],
+              [
+                111,
+                78
+              ],
+              [
+                69,
+                30
+              ]
+            ],
+            [
+              [
+                302,
+                412
+              ],
+              [
+                352,
+                410
+              ],
+              [
+                494,
+                445
+              ],
+              [
+                546,
+                442
+              ]
+            ],
+            [
+              [
+                393,
+                589
+              ],
+              [
+                434,
+                545
+              ],
+              [
+                414,
+                4
+              ]
+            ],
+            [
+              [
+                404,
+                396
+              ],
+              [
+                396,
+                390
+              ],
+              [
+                382,
+                321
+              ],
+              [
+                342,
+                242
+              ],
+              [
+                298,
+                170
+              ],
+              [
+                216,
+                65
+              ]
+            ],
+            [
+              [
+                449,
+                349
+              ],
+              [
+                503,
+                308
+              ],
+              [
+                514,
+                291
+              ]
+            ],
+            [
+              [
+                562,
+                465
+              ],
+              [
+                628,
+                464
+              ],
+              [
+                783,
+                503
+              ],
+              [
+                837,
+                501
+              ]
+            ],
+            [
+              [
+                643,
+                639
+              ],
+              [
+                669,
+                618
+              ],
+              [
+                688,
+                591
+              ],
+              [
+                685,
+                202
+              ],
+              [
+                677,
+                -18
+              ]
+            ],
+            [
+              [
+                658,
+                445
+              ],
+              [
+                641,
+                359
+              ],
+              [
+                617,
+                310
+              ],
+              [
+                563,
+                222
+              ],
+              [
+                488,
+                130
+              ]
+            ],
+            [
+              [
+                710,
+                409
+              ],
+              [
+                727,
+                354
+              ],
+              [
+                771,
+                279
+              ],
+              [
+                804,
+                228
+              ],
+              [
+                854,
+                169
+              ],
+              [
+                979,
+                124
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-9ebb-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0084",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "where",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "哪里"
+              },
+              {
+                "value": "nǎlǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "na3li3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "哪里",
+              "pinyin": "nǎlǐ",
+              "meaning": "where",
+              "audio": "02c9ea45372ece12debca5813772fb9cfb43316b9145888c3bb3604288f6d3b9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9ebb-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-9ebb",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "hemp",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "麻"
+              },
+              {
+                "value": "má",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ma2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "麻",
+              "pinyin": "má",
+              "meaning": "hemp",
+              "audio": "62945382af44fb7bc9b6ab770dd4854b5222c47c251e076855e3993e21023442",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "62945382af44fb7bc9b6ab770dd4854b5222c47c251e076855e3993e21023442"
+            ],
+            "transcript": [
+              {
+                "text": "麻",
+                "pinyin": "má",
+                "meaning": "hemp",
+                "audio": "62945382af44fb7bc9b6ab770dd4854b5222c47c251e076855e3993e21023442",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-9EBB",
+      "character": "麻",
+      "lessonIds": [
+        "LESSON-C-9EBB"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-9ebb-word",
+        "EX-CHAR-char-9ebb-recognize",
+        "EX-CHAR-char-9ebb-write",
+        "EX-CHAR-char-9ebb-familiar",
+        "EX-CHAR-char-9ebb-recall"
+      ]
+    },
+    "audio": {
+      "62945382af44fb7bc9b6ab770dd4854b5222c47c251e076855e3993e21023442": {
+        "female": {
+          "url": "/exercise-assets/audio/course-female-8594d98f6a8d108e082591f8af50ced14c59bb4021cd652303ef8f1b7f07ddbe.mp3",
+          "sha256": "8594d98f6a8d108e082591f8af50ced14c59bb4021cd652303ef8f1b7f07ddbe",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "8594d98f6a8d108e082591f8af50ced14c59bb4021cd652303ef8f1b7f07ddbe",
+            "text": "麻",
+            "words": [
+              {
+                "text": "麻",
+                "start": 0.18,
+                "end": 0.24
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-1ae4171c1141b1c60a12111ee06788307f06d82a7306d48d9a05845e654e70e2.mp3",
+          "sha256": "1ae4171c1141b1c60a12111ee06788307f06d82a7306d48d9a05845e654e70e2",
+          "byteLength": 9261,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "1ae4171c1141b1c60a12111ee06788307f06d82a7306d48d9a05845e654e70e2",
+            "text": "麻",
+            "words": [
+              {
+                "text": "麻",
+                "start": 0.2,
+                "end": 0.26
+              }
+            ]
+          }
+        }
+      },
+      "a5013fde921eb425161c969fcc8be40a3286e03aa03637e83f56be5874c78bab": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2705b47c3b206dee194033d67717bb9ecc6cb07cf3741b3b928148b4be3f71c6.mp3",
+          "sha256": "2705b47c3b206dee194033d67717bb9ecc6cb07cf3741b3b928148b4be3f71c6",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "2705b47c3b206dee194033d67717bb9ecc6cb07cf3741b3b928148b4be3f71c6",
+            "text": "麻将",
+            "words": [
+              {
+                "text": "麻将",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/150cb04ed9807da969b5a8593d656c7dca0a7b452e3ee8be26c2c9f0b51a6073.mp3",
+          "sha256": "150cb04ed9807da969b5a8593d656c7dca0a7b452e3ee8be26c2c9f0b51a6073",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "150cb04ed9807da969b5a8593d656c7dca0a7b452e3ee8be26c2c9f0b51a6073",
+            "text": "麻将",
+            "words": [
+              {
+                "text": "麻将",
+                "start": 0.21,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "02c9ea45372ece12debca5813772fb9cfb43316b9145888c3bb3604288f6d3b9": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-e8c3002f7b97a968abb519c356a6cc285fd3b12688bf208dfccaf6e918dd2b85.mp3",
+          "sha256": "e8c3002f7b97a968abb519c356a6cc285fd3b12688bf208dfccaf6e918dd2b85",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "e8c3002f7b97a968abb519c356a6cc285fd3b12688bf208dfccaf6e918dd2b85",
+            "text": "哪里",
+            "words": [
+              {
+                "text": "哪里",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f2bb47095460cd9e5a982469b623a73e29b7978a30a6e1a30a6572bd507662b4.mp3",
+          "sha256": "f2bb47095460cd9e5a982469b623a73e29b7978a30a6e1a30a6572bd507662b4",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "f2bb47095460cd9e5a982469b623a73e29b7978a30a6e1a30a6572bd507662b4",
+            "text": "哪里",
+            "words": [
+              {
+                "text": "哪里",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "47b33150ea6ef1b0d9d76a6afbaee7189b8b305a44e66a2e2534940f1a68b04d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-42d560eea6c4279ffb9249ccb9b57679aba1bbffbcdedf458e957b1c3c22117d.mp3",
+          "sha256": "42d560eea6c4279ffb9249ccb9b57679aba1bbffbcdedf458e957b1c3c22117d",
+          "byteLength": 9549,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "42d560eea6c4279ffb9249ccb9b57679aba1bbffbcdedf458e957b1c3c22117d",
+            "text": "过",
+            "words": [
+              {
+                "text": "过",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-bc9849d3e6586f203c0f362614197ad40caa02e3ac7a528e9afc808529809634.mp3",
+          "sha256": "bc9849d3e6586f203c0f362614197ad40caa02e3ac7a528e9afc808529809634",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "bc9849d3e6586f203c0f362614197ad40caa02e3ac7a528e9afc808529809634",
+            "text": "过",
+            "words": [
+              {
+                "text": "过",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "2acd5fcfa64fef2e25aeccd2d33a7ca4a5b4ea4fa4d60e070d7176fd4c069981": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-894280dec90c81a4503f05fc3ac0350688d27c9f7526bebb2328a5303be23a57.mp3",
+          "sha256": "894280dec90c81a4503f05fc3ac0350688d27c9f7526bebb2328a5303be23a57",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "894280dec90c81a4503f05fc3ac0350688d27c9f7526bebb2328a5303be23a57",
+            "text": "电影",
+            "words": [
+              {
+                "text": "电影",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f99d0f5fa10942d74a3ce46e4934311e2d3e450dd14171634e686de5e5c19e9d.mp3",
+          "sha256": "f99d0f5fa10942d74a3ce46e4934311e2d3e450dd14171634e686de5e5c19e9d",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "f99d0f5fa10942d74a3ce46e4934311e2d3e450dd14171634e686de5e5c19e9d",
+            "text": "电影",
+            "words": [
+              {
+                "text": "电影",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

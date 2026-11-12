@@ -1,0 +1,647 @@
+{
+  "id": "EX-CHAR-char-4ee4",
+  "revision": 2,
+  "unit": "U5-12",
+  "stage": "ST-HSK5",
+  "after": "S-U5-12-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "令",
+  "sourceBlockId": "mandarin-simplified-v1-char-4ee4",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-624d",
+        "text": "才",
+        "pinyin": "cái",
+        "meaning": "only then; only; talent",
+        "characters": [
+          {
+            "id": "C-624D",
+            "text": "才"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-43b6ae9453bd02f03ac7c919",
+        "text": "真是的",
+        "pinyin": "zhēn shi de",
+        "meaning": "Really! (interj. of annoyance or frustration)",
+        "characters": [
+          {
+            "id": "C-771F",
+            "text": "真"
+          },
+          {
+            "id": "C-662F",
+            "text": "是"
+          },
+          {
+            "id": "C-7684",
+            "text": "的"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-6e8707eb9f4d5a2c080ab566",
+        "text": "令人",
+        "pinyin": "lìng rén",
+        "meaning": "to cause one (to do something)",
+        "characters": [
+          {
+            "id": "C-4EE4",
+            "text": "令"
+          },
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      },
+      {
+        "id": "W1205",
+        "text": "底下",
+        "pinyin": "dǐxia",
+        "meaning": "underneath; below",
+        "characters": [
+          {
+            "id": "C-5E95",
+            "text": "底"
+          },
+          {
+            "id": "C-4E0B",
+            "text": "下"
+          }
+        ]
+      },
+      {
+        "id": "W2755",
+        "text": "令",
+        "pinyin": "lìng",
+        "meaning": "to order; to command",
+        "characters": [
+          {
+            "id": "C-4EE4",
+            "text": "令"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "52e30108f975261a95e6e4df677d430a2d98d283c117b4e8e1352055b4788171",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4ee4",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "令",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4ee4-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-6e8707eb9f4d5a2c080ab566",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to cause one (to do something)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "令人"
+              },
+              {
+                "value": "lìng rén",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ling4ren2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "令人",
+              "pinyin": "lìng rén",
+              "meaning": "to cause one (to do something)",
+              "audio": "7089e8fba84b068eb575bc227d32d7eec5e44e035a6ce8ad4c188f07df13dc0d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ee4-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W2755",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "令",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1205",
+                "label": "underneath; below",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W2755",
+                "label": "to order; to command",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-PRIMARY-char-624d",
+                "label": "only then; only",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ee4-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "令",
+        "pinyin": "lìng",
+        "meaning": "to order; to command",
+        "source": "/stroke-data/4ee4.json",
+        "reference": {
+          "character": "令",
+          "sha256": "b31bd3b7bf42656f4e7288aea2f5bd5ce9be2951003772519e280df1fac0ae04",
+          "medians": [
+            [
+              [
+                461,
+                833
+              ],
+              [
+                484,
+                812
+              ],
+              [
+                494,
+                782
+              ],
+              [
+                456,
+                702
+              ],
+              [
+                388,
+                598
+              ],
+              [
+                302,
+                493
+              ],
+              [
+                231,
+                424
+              ],
+              [
+                142,
+                353
+              ],
+              [
+                76,
+                314
+              ]
+            ],
+            [
+              [
+                510,
+                719
+              ],
+              [
+                509,
+                706
+              ],
+              [
+                608,
+                596
+              ],
+              [
+                733,
+                474
+              ],
+              [
+                783,
+                436
+              ],
+              [
+                975,
+                404
+              ]
+            ],
+            [
+              [
+                411,
+                492
+              ],
+              [
+                486,
+                440
+              ],
+              [
+                508,
+                409
+              ]
+            ],
+            [
+              [
+                261,
+                287
+              ],
+              [
+                286,
+                274
+              ],
+              [
+                323,
+                269
+              ],
+              [
+                540,
+                328
+              ],
+              [
+                579,
+                333
+              ],
+              [
+                604,
+                329
+              ],
+              [
+                632,
+                305
+              ],
+              [
+                637,
+                297
+              ],
+              [
+                634,
+                288
+              ],
+              [
+                515,
+                128
+              ],
+              [
+                512,
+                116
+              ],
+              [
+                502,
+                117
+              ]
+            ],
+            [
+              [
+                397,
+                157
+              ],
+              [
+                505,
+                58
+              ],
+              [
+                530,
+                16
+              ],
+              [
+                537,
+                -22
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4ee4-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-43b6ae9453bd02f03ac7c919",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "Really! (interj. of annoyance or frustration)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "真是的"
+              },
+              {
+                "value": "zhēn shi de",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhen1shi5de5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "真是的",
+              "pinyin": "zhēn shi de",
+              "meaning": "Really! (interj. of annoyance or frustration)",
+              "audio": "dd20cc1c14e42fbf213a2a1addd13a71eb5565c8aa613adf2630182d8c9f24fa",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ee4-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W2755",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to order; to command",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "令"
+              },
+              {
+                "value": "lìng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ling4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "令",
+              "pinyin": "lìng",
+              "meaning": "to order; to command",
+              "audio": "fb19e985d73a67bd78a3f4179d350704411feddce3c8829e93a5ba3504665beb",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "fb19e985d73a67bd78a3f4179d350704411feddce3c8829e93a5ba3504665beb"
+            ],
+            "transcript": [
+              {
+                "text": "令",
+                "pinyin": "lìng",
+                "meaning": "to order; to command",
+                "audio": "fb19e985d73a67bd78a3f4179d350704411feddce3c8829e93a5ba3504665beb",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4EE4",
+      "character": "令",
+      "lessonIds": [
+        "LESSON-C-4EE4"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4ee4-word",
+        "EX-CHAR-char-4ee4-recognize",
+        "EX-CHAR-char-4ee4-write",
+        "EX-CHAR-char-4ee4-familiar",
+        "EX-CHAR-char-4ee4-recall"
+      ]
+    },
+    "audio": {
+      "f6d58ed7b88a0dec585133a8d2c2b3f8af1d3585a5d8f9efa542504c204c3729": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-74781a56e357f476438abf2b36bb42fe1fbb94e976709da00185dcd820978749.mp3",
+          "sha256": "74781a56e357f476438abf2b36bb42fe1fbb94e976709da00185dcd820978749",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "74781a56e357f476438abf2b36bb42fe1fbb94e976709da00185dcd820978749",
+            "text": "才",
+            "words": [
+              {
+                "text": "才",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-96d22c33ffac967832c0d544c2911234f3e130937e0bf9a7016c22fd03fa568c.mp3",
+          "sha256": "96d22c33ffac967832c0d544c2911234f3e130937e0bf9a7016c22fd03fa568c",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "96d22c33ffac967832c0d544c2911234f3e130937e0bf9a7016c22fd03fa568c",
+            "text": "才",
+            "words": [
+              {
+                "text": "才",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "dd20cc1c14e42fbf213a2a1addd13a71eb5565c8aa613adf2630182d8c9f24fa": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/691b001d93dd6859d7630e5f0e40dae5e2277197ee769ea45dbab7181354668c.mp3",
+          "sha256": "691b001d93dd6859d7630e5f0e40dae5e2277197ee769ea45dbab7181354668c",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "691b001d93dd6859d7630e5f0e40dae5e2277197ee769ea45dbab7181354668c",
+            "text": "真是的",
+            "words": [
+              {
+                "text": "真是的",
+                "start": 0.09,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/72d4422ea82bcd1461716a964d3a5bcea4ed2a0afd669cdd41ea5f95108b87a0.mp3",
+          "sha256": "72d4422ea82bcd1461716a964d3a5bcea4ed2a0afd669cdd41ea5f95108b87a0",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "72d4422ea82bcd1461716a964d3a5bcea4ed2a0afd669cdd41ea5f95108b87a0",
+            "text": "真是的",
+            "words": [
+              {
+                "text": "真是的",
+                "start": 0.03,
+                "end": 0.69
+              }
+            ]
+          }
+        }
+      },
+      "7089e8fba84b068eb575bc227d32d7eec5e44e035a6ce8ad4c188f07df13dc0d": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b38255256f3655b448ceb8fee0aa2e767e5a5866f0f2da6044665f869227ec69.mp3",
+          "sha256": "b38255256f3655b448ceb8fee0aa2e767e5a5866f0f2da6044665f869227ec69",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "b38255256f3655b448ceb8fee0aa2e767e5a5866f0f2da6044665f869227ec69",
+            "text": "令人",
+            "words": [
+              {
+                "text": "令人",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/465d1a6cfa20b2ca364d6eec55c44d48c798dcebc4fa09b8abc19e6ddead9c22.mp3",
+          "sha256": "465d1a6cfa20b2ca364d6eec55c44d48c798dcebc4fa09b8abc19e6ddead9c22",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "465d1a6cfa20b2ca364d6eec55c44d48c798dcebc4fa09b8abc19e6ddead9c22",
+            "text": "令人",
+            "words": [
+              {
+                "text": "令人",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "6772945ba41f5c64afaa9527b7c40dba779b2df631de5ba77fd2351baec4c6dc": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b743d88f80e7dac4159c263814b3c6732d61cff8dbfdf0dbcde3949565723d9e.mp3",
+          "sha256": "b743d88f80e7dac4159c263814b3c6732d61cff8dbfdf0dbcde3949565723d9e",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "b743d88f80e7dac4159c263814b3c6732d61cff8dbfdf0dbcde3949565723d9e",
+            "text": "底下",
+            "words": [
+              {
+                "text": "底下",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f6274ff8b7a2ab0ee4c27caf7c33c2148e63b60b587a3d977a017873cf2d4563.mp3",
+          "sha256": "f6274ff8b7a2ab0ee4c27caf7c33c2148e63b60b587a3d977a017873cf2d4563",
+          "byteLength": 18189,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "f6274ff8b7a2ab0ee4c27caf7c33c2148e63b60b587a3d977a017873cf2d4563",
+            "text": "底下",
+            "words": [
+              {
+                "text": "底下",
+                "start": 0.15,
+                "end": 0.75
+              }
+            ]
+          }
+        }
+      },
+      "fb19e985d73a67bd78a3f4179d350704411feddce3c8829e93a5ba3504665beb": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/809455fffa88472251ef57c3567196a4cfd4986e0115a673188e999122afc320.mp3",
+          "sha256": "809455fffa88472251ef57c3567196a4cfd4986e0115a673188e999122afc320",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "809455fffa88472251ef57c3567196a4cfd4986e0115a673188e999122afc320",
+            "text": "令",
+            "words": [
+              {
+                "text": "令",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0101c5b511fd7746f303e2a2402481ac27eb7c840e388fe8093132880fe3b177.mp3",
+          "sha256": "0101c5b511fd7746f303e2a2402481ac27eb7c840e388fe8093132880fe3b177",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "0101c5b511fd7746f303e2a2402481ac27eb7c840e388fe8093132880fe3b177",
+            "text": "令",
+            "words": [
+              {
+                "text": "令",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W1337",
+  "targetId": "W1337",
+  "steps": [
+    {
+      "id": "BANK-W1337-W1337",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1337-W1337",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to yell; to shout",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "喊"
+            },
+            {
+              "value": "hǎn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "han3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "喊",
+            "pinyin": "hǎn",
+            "meaning": "to yell; to shout",
+            "singleWord": true,
+            "audio": "847d59d274a56807e4fc6b138fc3f7002626e5d20ef036a2a55ab8abb02cc128"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "847d59d274a56807e4fc6b138fc3f7002626e5d20ef036a2a55ab8abb02cc128": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d895fb189d34633a70d508e186fd9e7a43b11dd865e056e174b9791b1fde6462.mp3",
+        "sha256": "d895fb189d34633a70d508e186fd9e7a43b11dd865e056e174b9791b1fde6462",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "d895fb189d34633a70d508e186fd9e7a43b11dd865e056e174b9791b1fde6462",
+          "text": "喊",
+          "words": [
+            {
+              "text": "喊",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d847c5dc406007f10b185aadfc6e87b05a04bd19df627ff674ae8ba0826dd0c6.mp3",
+        "sha256": "d847c5dc406007f10b185aadfc6e87b05a04bd19df627ff674ae8ba0826dd0c6",
+        "byteLength": 12429,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "d847c5dc406007f10b185aadfc6e87b05a04bd19df627ff674ae8ba0826dd0c6",
+          "text": "喊",
+          "words": [
+            {
+              "text": "喊",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1337",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1337-W1337",
+      "question_ids": [
+        "BANK-W1337-W1337"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-35",
+    "stepId": "S-U4-35-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-558a"
+    ],
+    "grammarLessonIds": []
+  }
+}

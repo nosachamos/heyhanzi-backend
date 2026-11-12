@@ -1,0 +1,847 @@
+{
+  "id": "EX-CHAR-char-78b3",
+  "revision": 2,
+  "unit": "U6-28-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-28-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "碳",
+  "sourceBlockId": "mandarin-simplified-v1-char-78b3",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-78b3",
+        "text": "碳",
+        "pinyin": "tàn",
+        "meaning": "carbon (chemistry)",
+        "characters": [
+          {
+            "id": "C-78B3",
+            "text": "碳"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-22f2679d849d661cb619779a",
+        "text": "填空",
+        "pinyin": "tián kòng",
+        "meaning": "to fill a job vacancy",
+        "characters": [
+          {
+            "id": "C-586B",
+            "text": "填"
+          },
+          {
+            "id": "C-7A7A",
+            "text": "空"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-6389c439890a3d4a02b2d04c",
+        "text": "桃花",
+        "pinyin": "táo huā",
+        "meaning": "peach blossom",
+        "characters": [
+          {
+            "id": "C-6843",
+            "text": "桃"
+          },
+          {
+            "id": "C-82B1",
+            "text": "花"
+          }
+        ]
+      },
+      {
+        "id": "W0465",
+        "text": "岁",
+        "pinyin": "suì",
+        "meaning": "years old",
+        "characters": [
+          {
+            "id": "C-5C81",
+            "text": "岁"
+          }
+        ]
+      },
+      {
+        "id": "W3965",
+        "text": "二氧化碳",
+        "pinyin": "èryǎnghuàtàn",
+        "meaning": "carbon dioxide CO2",
+        "characters": [
+          {
+            "id": "C-4E8C",
+            "text": "二"
+          },
+          {
+            "id": "C-6C27",
+            "text": "氧"
+          },
+          {
+            "id": "C-5316",
+            "text": "化"
+          },
+          {
+            "id": "C-78B3",
+            "text": "碳"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "9b336288faa278035552da2a1ebb6b181f956b1d432ac58872178b40b1b15228",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-78b3",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "碳",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-78b3-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3965",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "carbon dioxide CO2",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "二氧化碳"
+              },
+              {
+                "value": "èryǎnghuàtàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "er4yang3hua4tan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "二氧化碳",
+              "pinyin": "èryǎnghuàtàn",
+              "meaning": "carbon dioxide CO2",
+              "audio": "2c958a21f2b4d42e5f8a0a291a1eac4953ee9952f9b3507467b37fa27b151015",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-78b3-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-78b3",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "碳",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-78b3",
+                "label": "carbon (chemistry)",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-6389c439890a3d4a02b2d04c",
+                "label": "peach blossom",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0465",
+                "label": "years old",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-78b3-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "碳",
+        "pinyin": "tàn",
+        "meaning": "carbon (chemistry)",
+        "source": "/stroke-data/78b3.json",
+        "reference": {
+          "character": "碳",
+          "sha256": "7619fa4f21b1d44a3d7800e8edcc36d778ab1fb032d9c2abfb0e84a6c056a03f",
+          "medians": [
+            [
+              [
+                147,
+                610
+              ],
+              [
+                207,
+                610
+              ],
+              [
+                354,
+                654
+              ],
+              [
+                417,
+                663
+              ]
+            ],
+            [
+              [
+                300,
+                579
+              ],
+              [
+                274,
+                573
+              ],
+              [
+                268,
+                565
+              ],
+              [
+                214,
+                430
+              ],
+              [
+                151,
+                329
+              ],
+              [
+                34,
+                209
+              ]
+            ],
+            [
+              [
+                160,
+                411
+              ],
+              [
+                190,
+                373
+              ],
+              [
+                221,
+                199
+              ]
+            ],
+            [
+              [
+                220,
+                392
+              ],
+              [
+                235,
+                404
+              ],
+              [
+                324,
+                432
+              ],
+              [
+                345,
+                428
+              ],
+              [
+                356,
+                419
+              ],
+              [
+                365,
+                409
+              ],
+              [
+                347,
+                330
+              ],
+              [
+                343,
+                317
+              ],
+              [
+                320,
+                299
+              ]
+            ],
+            [
+              [
+                241,
+                240
+              ],
+              [
+                254,
+                256
+              ],
+              [
+                312,
+                271
+              ],
+              [
+                358,
+                277
+              ],
+              [
+                380,
+                272
+              ]
+            ],
+            [
+              [
+                614,
+                820
+              ],
+              [
+                650,
+                785
+              ],
+              [
+                638,
+                654
+              ],
+              [
+                620,
+                627
+              ]
+            ],
+            [
+              [
+                479,
+                698
+              ],
+              [
+                501,
+                661
+              ],
+              [
+                496,
+                578
+              ],
+              [
+                534,
+                576
+              ],
+              [
+                580,
+                594
+              ],
+              [
+                709,
+                626
+              ],
+              [
+                748,
+                631
+              ],
+              [
+                760,
+                621
+              ]
+            ],
+            [
+              [
+                791,
+                772
+              ],
+              [
+                818,
+                730
+              ],
+              [
+                790,
+                640
+              ],
+              [
+                780,
+                585
+              ]
+            ],
+            [
+              [
+                422,
+                451
+              ],
+              [
+                460,
+                444
+              ],
+              [
+                493,
+                447
+              ],
+              [
+                759,
+                507
+              ],
+              [
+                827,
+                504
+              ]
+            ],
+            [
+              [
+                511,
+                539
+              ],
+              [
+                526,
+                533
+              ],
+              [
+                536,
+                520
+              ],
+              [
+                538,
+                500
+              ],
+              [
+                499,
+                361
+              ],
+              [
+                472,
+                289
+              ],
+              [
+                399,
+                159
+              ],
+              [
+                358,
+                108
+              ],
+              [
+                289,
+                46
+              ]
+            ],
+            [
+              [
+                506,
+                299
+              ],
+              [
+                559,
+                226
+              ]
+            ],
+            [
+              [
+                792,
+                375
+              ],
+              [
+                809,
+                342
+              ],
+              [
+                729,
+                256
+              ]
+            ],
+            [
+              [
+                634,
+                400
+              ],
+              [
+                666,
+                366
+              ],
+              [
+                666,
+                347
+              ],
+              [
+                654,
+                254
+              ],
+              [
+                622,
+                160
+              ],
+              [
+                593,
+                114
+              ],
+              [
+                539,
+                65
+              ],
+              [
+                486,
+                34
+              ],
+              [
+                438,
+                19
+              ]
+            ],
+            [
+              [
+                678,
+                235
+              ],
+              [
+                684,
+                201
+              ],
+              [
+                716,
+                160
+              ],
+              [
+                759,
+                108
+              ],
+              [
+                835,
+                35
+              ],
+              [
+                846,
+                27
+              ],
+              [
+                950,
+                6
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-78b3-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-22f2679d849d661cb619779a",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to fill a job vacancy",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "填空"
+              },
+              {
+                "value": "tián kòng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tian2kong4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "填空",
+              "pinyin": "tián kòng",
+              "meaning": "to fill a job vacancy",
+              "audio": "f4342eba56319ad3e8ff381bd28eb69a92eb43fc1249d8e16b7d85afa34756fd",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-78b3-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-78b3",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "carbon (chemistry)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "碳"
+              },
+              {
+                "value": "tàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "碳",
+              "pinyin": "tàn",
+              "meaning": "carbon (chemistry)",
+              "audio": "274312485754c1486bb6406842c3d9359c26b32f55dbe53e0400b23e4a416f92",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "274312485754c1486bb6406842c3d9359c26b32f55dbe53e0400b23e4a416f92"
+            ],
+            "transcript": [
+              {
+                "text": "碳",
+                "pinyin": "tàn",
+                "meaning": "carbon (chemistry)",
+                "audio": "274312485754c1486bb6406842c3d9359c26b32f55dbe53e0400b23e4a416f92",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-78B3",
+      "character": "碳",
+      "lessonIds": [
+        "LESSON-C-78B3"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-78b3-word",
+        "EX-CHAR-char-78b3-recognize",
+        "EX-CHAR-char-78b3-write",
+        "EX-CHAR-char-78b3-familiar",
+        "EX-CHAR-char-78b3-recall"
+      ]
+    },
+    "audio": {
+      "274312485754c1486bb6406842c3d9359c26b32f55dbe53e0400b23e4a416f92": {
+        "female": {
+          "url": "/exercise-assets/audio/course-female-4dc08424b35b9f749cf2cd68f869b5538ce79d44c347f5fdf39fc9df31fa586b.mp3",
+          "sha256": "4dc08424b35b9f749cf2cd68f869b5538ce79d44c347f5fdf39fc9df31fa586b",
+          "byteLength": 7533,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "4dc08424b35b9f749cf2cd68f869b5538ce79d44c347f5fdf39fc9df31fa586b",
+            "text": "碳",
+            "words": [
+              {
+                "text": "碳",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-bf2e3a23aae575ebbb59e5ac65b6008d4b46cea74044284c57dd722ab93ec78f.mp3",
+          "sha256": "bf2e3a23aae575ebbb59e5ac65b6008d4b46cea74044284c57dd722ab93ec78f",
+          "byteLength": 8397,
+          "readAlong": {
+            "audioSha256": "bf2e3a23aae575ebbb59e5ac65b6008d4b46cea74044284c57dd722ab93ec78f",
+            "text": "碳",
+            "words": [
+              {
+                "text": "碳",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "f4342eba56319ad3e8ff381bd28eb69a92eb43fc1249d8e16b7d85afa34756fd": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/4cc87d54657aca419eaf782f246268a68a82f5e104bb798cf0669f6fa14b0062.mp3",
+          "sha256": "4cc87d54657aca419eaf782f246268a68a82f5e104bb798cf0669f6fa14b0062",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "4cc87d54657aca419eaf782f246268a68a82f5e104bb798cf0669f6fa14b0062",
+            "text": "填空",
+            "words": [
+              {
+                "text": "填空",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/604e2ee54b9ae247542549804feea12ab6d003d83ca4930f7c09b708b9161be8.mp3",
+          "sha256": "604e2ee54b9ae247542549804feea12ab6d003d83ca4930f7c09b708b9161be8",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "604e2ee54b9ae247542549804feea12ab6d003d83ca4930f7c09b708b9161be8",
+            "text": "填空",
+            "words": [
+              {
+                "text": "填空",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "8c7b9856e88db4c286b955238fb6dcd7a1073a8b2ea23389ed5ac2844e997eb2": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/17b895391db1a1952b6c67fcee08ace98e79b129695db1db91db5bd42ffbc377.mp3",
+          "sha256": "17b895391db1a1952b6c67fcee08ace98e79b129695db1db91db5bd42ffbc377",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "17b895391db1a1952b6c67fcee08ace98e79b129695db1db91db5bd42ffbc377",
+            "text": "桃花",
+            "words": [
+              {
+                "text": "桃花",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0a85088408b38cafa5dcde0e7b3d352ed9e2ce843851799dd9aad9511f3e6f96.mp3",
+          "sha256": "0a85088408b38cafa5dcde0e7b3d352ed9e2ce843851799dd9aad9511f3e6f96",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "0a85088408b38cafa5dcde0e7b3d352ed9e2ce843851799dd9aad9511f3e6f96",
+            "text": "桃花",
+            "words": [
+              {
+                "text": "桃花",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "97036a3b0a78f88e5afd73e39d70e6f5c0ee548afddc8bfd5ba787554b530728": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-d2915f33d5f82e93fd5dfe79202fa24d7cfa625422004213d2f56880ab199207.mp3",
+          "sha256": "d2915f33d5f82e93fd5dfe79202fa24d7cfa625422004213d2f56880ab199207",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "d2915f33d5f82e93fd5dfe79202fa24d7cfa625422004213d2f56880ab199207",
+            "text": "岁",
+            "words": [
+              {
+                "text": "岁",
+                "start": 0.28,
+                "end": 0.38
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-dfef446af9d7dc1a1cd0977a17872210dab06ba603ad79d87c8d9973959db606.mp3",
+          "sha256": "dfef446af9d7dc1a1cd0977a17872210dab06ba603ad79d87c8d9973959db606",
+          "byteLength": 7821,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "dfef446af9d7dc1a1cd0977a17872210dab06ba603ad79d87c8d9973959db606",
+            "text": "岁",
+            "words": [
+              {
+                "text": "岁",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "2c958a21f2b4d42e5f8a0a291a1eac4953ee9952f9b3507467b37fa27b151015": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f434701d4e10c5802d4cfbd724c0efd3577a4bf559ca167bebf310436ba6712a.mp3",
+          "sha256": "f434701d4e10c5802d4cfbd724c0efd3577a4bf559ca167bebf310436ba6712a",
+          "byteLength": 15597,
+          "readAlong": {
+            "audioSha256": "f434701d4e10c5802d4cfbd724c0efd3577a4bf559ca167bebf310436ba6712a",
+            "text": "二氧化碳",
+            "words": [
+              {
+                "text": "二氧化碳",
+                "start": 0.21,
+                "end": 0.8699999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/45d8881ff2fe32576002bb8e3b7fc968dcbe07db1efccac88564bd7507f80b5d.mp3",
+          "sha256": "45d8881ff2fe32576002bb8e3b7fc968dcbe07db1efccac88564bd7507f80b5d",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "45d8881ff2fe32576002bb8e3b7fc968dcbe07db1efccac88564bd7507f80b5d",
+            "text": "二氧化碳",
+            "words": [
+              {
+                "text": "二氧化碳",
+                "start": 0.21,
+                "end": 0.8699999999999999
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,725 @@
+{
+  "id": "EX-CHAR-char-96ea",
+  "revision": 2,
+  "unit": "U14",
+  "stage": "ST-HSK1",
+  "after": "S-U14-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "雪",
+  "sourceBlockId": "mandarin-simplified-v1-char-96ea",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-623f",
+        "text": "房",
+        "pinyin": "fáng",
+        "meaning": "house; room",
+        "characters": [
+          {
+            "id": "C-623F",
+            "text": "房"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-96ea",
+        "text": "雪",
+        "pinyin": "xuě",
+        "meaning": "snow; (literary) to wipe away (a humiliation etc)",
+        "characters": [
+          {
+            "id": "C-96EA",
+            "text": "雪"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-50caefc26b135aea51eaa7fa",
+        "text": "下雪",
+        "pinyin": "xià xuě",
+        "meaning": "to snow",
+        "characters": [
+          {
+            "id": "C-4E0B",
+            "text": "下"
+          },
+          {
+            "id": "C-96EA",
+            "text": "雪"
+          }
+        ]
+      },
+      {
+        "id": "W0923",
+        "text": "市",
+        "pinyin": "shì",
+        "meaning": "market; city",
+        "characters": [
+          {
+            "id": "C-5E02",
+            "text": "市"
+          }
+        ]
+      },
+      {
+        "id": "W1617",
+        "text": "前后",
+        "pinyin": "qiánhòu",
+        "meaning": "around; from beginning to end",
+        "characters": [
+          {
+            "id": "C-524D",
+            "text": "前"
+          },
+          {
+            "id": "C-540E",
+            "text": "后"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "82de15c4dbd72be8d5f460de8e9631181a94b22547e0757703b9849e1abd2a02",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-96ea",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "雪",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-96ea-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-50caefc26b135aea51eaa7fa",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to snow",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "下雪"
+              },
+              {
+                "value": "xià xuě",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xia4xue3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "下雪",
+              "pinyin": "xià xuě",
+              "meaning": "to snow",
+              "audio": "ee0dbdfa2636f1d5aee9f125a339af07276eb25b948d4c851dafd24c58e9cb76",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-96ea-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-96ea",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "雪",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0923",
+                "label": "market; city",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-96ea",
+                "label": "snow; (literary) to wipe away (a humiliation etc)",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1617",
+                "label": "around; from beginning to end",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-96ea-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "雪",
+        "pinyin": "xuě",
+        "meaning": "snow; (literary) to wipe away (a humiliation etc)",
+        "source": "/stroke-data/96ea.json",
+        "reference": {
+          "character": "雪",
+          "sha256": "0c908b79cd086add3c78a2915c23c1eb24e94666582198a426719051da7217da",
+          "medians": [
+            [
+              [
+                359,
+                737
+              ],
+              [
+                395,
+                728
+              ],
+              [
+                449,
+                730
+              ],
+              [
+                630,
+                762
+              ],
+              [
+                685,
+                762
+              ]
+            ],
+            [
+              [
+                225,
+                610
+              ],
+              [
+                233,
+                595
+              ],
+              [
+                234,
+                568
+              ],
+              [
+                213,
+                516
+              ],
+              [
+                179,
+                460
+              ],
+              [
+                172,
+                407
+              ]
+            ],
+            [
+              [
+                265,
+                582
+              ],
+              [
+                284,
+                568
+              ],
+              [
+                679,
+                632
+              ],
+              [
+                760,
+                637
+              ],
+              [
+                792,
+                629
+              ],
+              [
+                808,
+                618
+              ],
+              [
+                821,
+                595
+              ],
+              [
+                738,
+                511
+              ]
+            ],
+            [
+              [
+                477,
+                706
+              ],
+              [
+                510,
+                679
+              ],
+              [
+                508,
+                493
+              ],
+              [
+                497,
+                362
+              ],
+              [
+                501,
+                320
+              ]
+            ],
+            [
+              [
+                323,
+                501
+              ],
+              [
+                379,
+                473
+              ],
+              [
+                396,
+                454
+              ]
+            ],
+            [
+              [
+                308,
+                388
+              ],
+              [
+                353,
+                369
+              ],
+              [
+                379,
+                346
+              ]
+            ],
+            [
+              [
+                586,
+                534
+              ],
+              [
+                653,
+                510
+              ],
+              [
+                675,
+                492
+              ]
+            ],
+            [
+              [
+                578,
+                429
+              ],
+              [
+                649,
+                394
+              ],
+              [
+                661,
+                381
+              ]
+            ],
+            [
+              [
+                317,
+                246
+              ],
+              [
+                373,
+                240
+              ],
+              [
+                633,
+                282
+              ],
+              [
+                672,
+                280
+              ],
+              [
+                712,
+                243
+              ],
+              [
+                667,
+                89
+              ],
+              [
+                641,
+                72
+              ]
+            ],
+            [
+              [
+                288,
+                134
+              ],
+              [
+                335,
+                125
+              ],
+              [
+                538,
+                155
+              ],
+              [
+                566,
+                157
+              ],
+              [
+                606,
+                149
+              ]
+            ],
+            [
+              [
+                296,
+                11
+              ],
+              [
+                327,
+                3
+              ],
+              [
+                624,
+                40
+              ],
+              [
+                684,
+                38
+              ],
+              [
+                708,
+                28
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-96ea-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-PRIMARY-char-623f",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "house; room",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "房"
+              },
+              {
+                "value": "fáng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "fang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "房",
+              "pinyin": "fáng",
+              "meaning": "house; room",
+              "audio": "a77632dc17169f796d1088090e54b594a095093fcf290986d62fac8915a15f71",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-96ea-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-96ea",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "snow; (literary) to wipe away (a humiliation etc)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "雪"
+              },
+              {
+                "value": "xuě",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xue3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "雪",
+              "pinyin": "xuě",
+              "meaning": "snow; (literary) to wipe away (a humiliation etc)",
+              "audio": "ccb817352cdd9c7a28a7638479e62c536ce5eee48cc556f439f747b97fea3486",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "ccb817352cdd9c7a28a7638479e62c536ce5eee48cc556f439f747b97fea3486"
+            ],
+            "transcript": [
+              {
+                "text": "雪",
+                "pinyin": "xuě",
+                "meaning": "snow; (literary) to wipe away (a humiliation etc)",
+                "audio": "ccb817352cdd9c7a28a7638479e62c536ce5eee48cc556f439f747b97fea3486",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-96EA",
+      "character": "雪",
+      "lessonIds": [
+        "LESSON-C-96EA"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-96ea-word",
+        "EX-CHAR-char-96ea-recognize",
+        "EX-CHAR-char-96ea-write",
+        "EX-CHAR-char-96ea-familiar",
+        "EX-CHAR-char-96ea-recall"
+      ]
+    },
+    "audio": {
+      "a77632dc17169f796d1088090e54b594a095093fcf290986d62fac8915a15f71": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-b79ef19097a460726f5e89379a245e079e34594d50ea6c74e6cf53223caeaa90.mp3",
+          "sha256": "b79ef19097a460726f5e89379a245e079e34594d50ea6c74e6cf53223caeaa90",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "b79ef19097a460726f5e89379a245e079e34594d50ea6c74e6cf53223caeaa90",
+            "text": "房",
+            "words": [
+              {
+                "text": "房",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-965b97b2b8fe9762986b638dc81083812971c00bec2e9d243a7ce03791c51796.mp3",
+          "sha256": "965b97b2b8fe9762986b638dc81083812971c00bec2e9d243a7ce03791c51796",
+          "byteLength": 20205,
+          "readAlong": {
+            "audioSha256": "965b97b2b8fe9762986b638dc81083812971c00bec2e9d243a7ce03791c51796",
+            "text": "房",
+            "words": [
+              {
+                "text": "房",
+                "start": 0.8099999999999999,
+                "end": 0.8699999999999999
+              }
+            ]
+          }
+        }
+      },
+      "ccb817352cdd9c7a28a7638479e62c536ce5eee48cc556f439f747b97fea3486": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2a23590497c5a7bb03fe2aaa2fb91f1613df6f94bbd7c9c94cdc102c15649a71.mp3",
+          "sha256": "2a23590497c5a7bb03fe2aaa2fb91f1613df6f94bbd7c9c94cdc102c15649a71",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "2a23590497c5a7bb03fe2aaa2fb91f1613df6f94bbd7c9c94cdc102c15649a71",
+            "text": "雪",
+            "words": [
+              {
+                "text": "雪",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/51d5be16ad9ef034e29d312100f00e5fb7f476055ccf315266830af30848b365.mp3",
+          "sha256": "51d5be16ad9ef034e29d312100f00e5fb7f476055ccf315266830af30848b365",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "51d5be16ad9ef034e29d312100f00e5fb7f476055ccf315266830af30848b365",
+            "text": "雪",
+            "words": [
+              {
+                "text": "雪",
+                "start": 0.18,
+                "end": 0.32
+              }
+            ]
+          }
+        }
+      },
+      "ee0dbdfa2636f1d5aee9f125a339af07276eb25b948d4c851dafd24c58e9cb76": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/fb7a14800ab216d8ffa5ffc00d53cb39cfaf238348f5dd7b0a76d55280569fd2.mp3",
+          "sha256": "fb7a14800ab216d8ffa5ffc00d53cb39cfaf238348f5dd7b0a76d55280569fd2",
+          "byteLength": 17901,
+          "readAlong": {
+            "audioSha256": "fb7a14800ab216d8ffa5ffc00d53cb39cfaf238348f5dd7b0a76d55280569fd2",
+            "text": "下雪",
+            "words": [
+              {
+                "text": "下雪",
+                "start": 0.09,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/889bc9a7db1a3e22eeb7e21ed17f51390f4827a93b2e5f3c0f74dbb73009f856.mp3",
+          "sha256": "889bc9a7db1a3e22eeb7e21ed17f51390f4827a93b2e5f3c0f74dbb73009f856",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "889bc9a7db1a3e22eeb7e21ed17f51390f4827a93b2e5f3c0f74dbb73009f856",
+            "text": "下雪",
+            "words": [
+              {
+                "text": "下雪",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "c8d978d832d56902530a63505f9bcca6dd0e87bb80e0b49bdb90589d2f981635": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/aeb559a4ec1cc1c142c4b27469643509ff424c9c4ac35a9db20fd88c4f8db270.mp3",
+          "sha256": "aeb559a4ec1cc1c142c4b27469643509ff424c9c4ac35a9db20fd88c4f8db270",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "aeb559a4ec1cc1c142c4b27469643509ff424c9c4ac35a9db20fd88c4f8db270",
+            "text": "市",
+            "words": [
+              {
+                "text": "市",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/bdc98e75ff7f5f64b4e86ea4d142837d13bfb3eed0e872a219e7acf47acd386d.mp3",
+          "sha256": "bdc98e75ff7f5f64b4e86ea4d142837d13bfb3eed0e872a219e7acf47acd386d",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "bdc98e75ff7f5f64b4e86ea4d142837d13bfb3eed0e872a219e7acf47acd386d",
+            "text": "市",
+            "words": [
+              {
+                "text": "市",
+                "start": 0.32,
+                "end": 0.4
+              }
+            ]
+          }
+        }
+      },
+      "2cec496d042ebfe7a567c9be132d3507d2113dbac8da2b99567e89f2f21d2481": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1d5674cf7ea7af66c14cea4c0f016c28d609fd5623b4f3d238c26ced07c6bc0b.mp3",
+          "sha256": "1d5674cf7ea7af66c14cea4c0f016c28d609fd5623b4f3d238c26ced07c6bc0b",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "1d5674cf7ea7af66c14cea4c0f016c28d609fd5623b4f3d238c26ced07c6bc0b",
+            "text": "前后",
+            "words": [
+              {
+                "text": "前后",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4ace208b412f7745cad76df2383f38f3257e01f99b9d2b02e61f1c5bcfb9b0c1.mp3",
+          "sha256": "4ace208b412f7745cad76df2383f38f3257e01f99b9d2b02e61f1c5bcfb9b0c1",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "4ace208b412f7745cad76df2383f38f3257e01f99b9d2b02e61f1c5bcfb9b0c1",
+            "text": "前后",
+            "words": [
+              {
+                "text": "前后",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

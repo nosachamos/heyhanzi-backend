@@ -1,0 +1,627 @@
+{
+  "id": "EX-CHAR-char-6b20",
+  "revision": 2,
+  "unit": "U5-42",
+  "stage": "ST-HSK5",
+  "after": "S-U5-42-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "欠",
+  "sourceBlockId": "mandarin-simplified-v1-char-6b20",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-cdc4c260a9fc583c8c59fb17",
+        "text": "收听",
+        "pinyin": "shōutīng",
+        "meaning": "to listen to (a radio broadcast)",
+        "characters": [
+          {
+            "id": "C-6536",
+            "text": "收"
+          },
+          {
+            "id": "C-542C",
+            "text": "听"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ce4c87c6ddb2c25c224e7756",
+        "text": "拖欠",
+        "pinyin": "tuō qiàn",
+        "meaning": "in arrears",
+        "characters": [
+          {
+            "id": "C-62D6",
+            "text": "拖"
+          },
+          {
+            "id": "C-6B20",
+            "text": "欠"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f8f517fc60683ad3297be468",
+        "text": "为人",
+        "pinyin": "wéi rén",
+        "meaning": "to conduct oneself",
+        "characters": [
+          {
+            "id": "C-4E3A",
+            "text": "为"
+          },
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      },
+      {
+        "id": "W2794",
+        "text": "描述",
+        "pinyin": "miáoshù",
+        "meaning": "to describe; description",
+        "characters": [
+          {
+            "id": "C-63CF",
+            "text": "描"
+          },
+          {
+            "id": "C-8FF0",
+            "text": "述"
+          }
+        ]
+      },
+      {
+        "id": "W2890",
+        "text": "欠",
+        "pinyin": "qiàn",
+        "meaning": "to owe; to lack",
+        "characters": [
+          {
+            "id": "C-6B20",
+            "text": "欠"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "7b698747b292154167028d7ab3905b1977656726d1b8078a3837f1d3961af04c",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6b20",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "欠",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6b20-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-ce4c87c6ddb2c25c224e7756",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "in arrears",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "拖欠"
+              },
+              {
+                "value": "tuō qiàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tuo1qian4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "拖欠",
+              "pinyin": "tuō qiàn",
+              "meaning": "in arrears",
+              "audio": "31f9ba2ae49b14a656aa22354b9c5e1958ef78620ac5247fc19ab49c86537738",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6b20-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W2890",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "欠",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W2794",
+                "label": "to describe; description",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-cdc4c260a9fc583c8c59fb17",
+                "label": "to listen to (a radio broadcast)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W2890",
+                "label": "to owe; to lack",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6b20-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "欠",
+        "pinyin": "qiàn",
+        "meaning": "to owe; to lack",
+        "source": "/stroke-data/6b20.json",
+        "reference": {
+          "character": "欠",
+          "sha256": "3100d78203b0ca6b20193224bb94fbc0bf7ee6626522c1609b939f8f5416b66c",
+          "medians": [
+            [
+              [
+                409,
+                812
+              ],
+              [
+                445,
+                767
+              ],
+              [
+                398,
+                631
+              ],
+              [
+                351,
+                545
+              ],
+              [
+                316,
+                495
+              ],
+              [
+                273,
+                445
+              ],
+              [
+                215,
+                393
+              ]
+            ],
+            [
+              [
+                384,
+                544
+              ],
+              [
+                643,
+                611
+              ],
+              [
+                683,
+                618
+              ],
+              [
+                724,
+                612
+              ],
+              [
+                750,
+                587
+              ],
+              [
+                716,
+                534
+              ],
+              [
+                659,
+                464
+              ]
+            ],
+            [
+              [
+                466,
+                458
+              ],
+              [
+                504,
+                411
+              ],
+              [
+                501,
+                360
+              ],
+              [
+                478,
+                256
+              ],
+              [
+                433,
+                168
+              ],
+              [
+                395,
+                126
+              ],
+              [
+                319,
+                75
+              ],
+              [
+                241,
+                42
+              ],
+              [
+                153,
+                22
+              ]
+            ],
+            [
+              [
+                527,
+                304
+              ],
+              [
+                531,
+                273
+              ],
+              [
+                619,
+                163
+              ],
+              [
+                680,
+                96
+              ],
+              [
+                740,
+                46
+              ],
+              [
+                749,
+                40
+              ],
+              [
+                898,
+                14
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6b20-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-f8f517fc60683ad3297be468",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to conduct oneself",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "为人"
+              },
+              {
+                "value": "wéi rén",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wei2ren2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "为人",
+              "pinyin": "wéi rén",
+              "meaning": "to conduct oneself",
+              "audio": "a28cc10548d5b010139b8919a7ea97b728ea1272a8cd0d8d30f48833422e4ccd",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6b20-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W2890",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to owe; to lack",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "欠"
+              },
+              {
+                "value": "qiàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qian4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "欠",
+              "pinyin": "qiàn",
+              "meaning": "to owe; to lack",
+              "audio": "b3133ebe2c77c18865cb266d720c708ec61e3e39e8fed94d6154f7bba39899c4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "b3133ebe2c77c18865cb266d720c708ec61e3e39e8fed94d6154f7bba39899c4"
+            ],
+            "transcript": [
+              {
+                "text": "欠",
+                "pinyin": "qiàn",
+                "meaning": "to owe; to lack",
+                "audio": "b3133ebe2c77c18865cb266d720c708ec61e3e39e8fed94d6154f7bba39899c4",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6B20",
+      "character": "欠",
+      "lessonIds": [
+        "LESSON-C-6B20"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6b20-word",
+        "EX-CHAR-char-6b20-recognize",
+        "EX-CHAR-char-6b20-write",
+        "EX-CHAR-char-6b20-familiar",
+        "EX-CHAR-char-6b20-recall"
+      ]
+    },
+    "audio": {
+      "3f58a83b547a3402c515ae9d35a6d35c43e51895b65ec2712b62b2b7f5925212": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f23335928ec3b1c98e7f0a8ce3c5d27de0eb8dbea41616b812c6b327dbd0f48f.mp3",
+          "sha256": "f23335928ec3b1c98e7f0a8ce3c5d27de0eb8dbea41616b812c6b327dbd0f48f",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "f23335928ec3b1c98e7f0a8ce3c5d27de0eb8dbea41616b812c6b327dbd0f48f",
+            "text": "收听",
+            "words": [
+              {
+                "text": "收听",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/45e157b9a83d16a7247e5e2ccde23188b8003e17778d2b965e6afe132a7fcfe3.mp3",
+          "sha256": "45e157b9a83d16a7247e5e2ccde23188b8003e17778d2b965e6afe132a7fcfe3",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "45e157b9a83d16a7247e5e2ccde23188b8003e17778d2b965e6afe132a7fcfe3",
+            "text": "收听",
+            "words": [
+              {
+                "text": "收听",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "31f9ba2ae49b14a656aa22354b9c5e1958ef78620ac5247fc19ab49c86537738": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8ab181b8ced0ef0bc7949953d3159510ad18fae67a105d751e3c76eb8ddce453.mp3",
+          "sha256": "8ab181b8ced0ef0bc7949953d3159510ad18fae67a105d751e3c76eb8ddce453",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "8ab181b8ced0ef0bc7949953d3159510ad18fae67a105d751e3c76eb8ddce453",
+            "text": "拖欠",
+            "words": [
+              {
+                "text": "拖欠",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/04095577d928ee406c3d40a1f1ed6fed867bc3e57d4872553b4b3d8d85a82e99.mp3",
+          "sha256": "04095577d928ee406c3d40a1f1ed6fed867bc3e57d4872553b4b3d8d85a82e99",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "04095577d928ee406c3d40a1f1ed6fed867bc3e57d4872553b4b3d8d85a82e99",
+            "text": "拖欠",
+            "words": [
+              {
+                "text": "拖欠",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "a28cc10548d5b010139b8919a7ea97b728ea1272a8cd0d8d30f48833422e4ccd": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d060c2d6ec894edb367180bea6fe597a7985d1f58d389ebfc1e5312d5d937d63.mp3",
+          "sha256": "d060c2d6ec894edb367180bea6fe597a7985d1f58d389ebfc1e5312d5d937d63",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "d060c2d6ec894edb367180bea6fe597a7985d1f58d389ebfc1e5312d5d937d63",
+            "text": "为人",
+            "words": [
+              {
+                "text": "为人",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/06d2885d4476f50d0c8971bf41ba833947c6f4fa8a65d2b2465b43ea7e73faf7.mp3",
+          "sha256": "06d2885d4476f50d0c8971bf41ba833947c6f4fa8a65d2b2465b43ea7e73faf7",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "06d2885d4476f50d0c8971bf41ba833947c6f4fa8a65d2b2465b43ea7e73faf7",
+            "text": "为人",
+            "words": [
+              {
+                "text": "为人",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "04f6c019fea393b1bc81fac0b6a1df60323a756151732de8d1ba2c647559f8e9": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-45e4b085b8a354673e35d828a407be8697bdf073b17aaac55540d13642308cd5.mp3",
+          "sha256": "45e4b085b8a354673e35d828a407be8697bdf073b17aaac55540d13642308cd5",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "45e4b085b8a354673e35d828a407be8697bdf073b17aaac55540d13642308cd5",
+            "text": "描述",
+            "words": [
+              {
+                "text": "描述",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4cad2221d7585cfba8332a39b37e0478ae8b3e59b3df19125ef273f06288b64d.mp3",
+          "sha256": "4cad2221d7585cfba8332a39b37e0478ae8b3e59b3df19125ef273f06288b64d",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "4cad2221d7585cfba8332a39b37e0478ae8b3e59b3df19125ef273f06288b64d",
+            "text": "描述",
+            "words": [
+              {
+                "text": "描述",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "b3133ebe2c77c18865cb266d720c708ec61e3e39e8fed94d6154f7bba39899c4": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6dc40d8609c2beb097c80c72cf701c517a4589cb5ea9226aa5582936c3837c4f.mp3",
+          "sha256": "6dc40d8609c2beb097c80c72cf701c517a4589cb5ea9226aa5582936c3837c4f",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "6dc40d8609c2beb097c80c72cf701c517a4589cb5ea9226aa5582936c3837c4f",
+            "text": "欠",
+            "words": [
+              {
+                "text": "欠",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3905748fda79e4292213333977f9b4f9e3334b6bfa69cdb5e40361a118a90669.mp3",
+          "sha256": "3905748fda79e4292213333977f9b4f9e3334b6bfa69cdb5e40361a118a90669",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "3905748fda79e4292213333977f9b4f9e3334b6bfa69cdb5e40361a118a90669",
+            "text": "欠",
+            "words": [
+              {
+                "text": "欠",
+                "start": 0.24,
+                "end": 0.36
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

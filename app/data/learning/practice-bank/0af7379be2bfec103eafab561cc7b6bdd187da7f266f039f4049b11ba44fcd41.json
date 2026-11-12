@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0271",
+  "targetId": "W0271",
+  "steps": [
+    {
+      "id": "BANK-W0271-W0271",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0271-W0271",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "expensive",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "贵"
+            },
+            {
+              "value": "guì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gui4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "贵",
+            "pinyin": "guì",
+            "meaning": "expensive",
+            "singleWord": true,
+            "audio": "da3d51b00ce81578fae2d815f228152bf343816b3d57b6aee456739c25ec127a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "da3d51b00ce81578fae2d815f228152bf343816b3d57b6aee456739c25ec127a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-da7ab8f02edaa1626bfb68bcf4e331ab6d79eb6fef3f94aae71929f2167bf193.mp3",
+        "sha256": "da7ab8f02edaa1626bfb68bcf4e331ab6d79eb6fef3f94aae71929f2167bf193",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "da7ab8f02edaa1626bfb68bcf4e331ab6d79eb6fef3f94aae71929f2167bf193",
+          "text": "贵",
+          "words": [
+            {
+              "text": "贵",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-887ee1f3cc30ef571051298cf3907fd07318e6a091023db0dfb85dea883bfc86.mp3",
+        "sha256": "887ee1f3cc30ef571051298cf3907fd07318e6a091023db0dfb85dea883bfc86",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "887ee1f3cc30ef571051298cf3907fd07318e6a091023db0dfb85dea883bfc86",
+          "text": "贵",
+          "words": [
+            {
+              "text": "贵",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0271",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0271-W0271",
+      "question_ids": [
+        "BANK-W0271-W0271"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U05-P02",
+    "stepId": "S-U05-words-r4-46",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8d35"
+    ],
+    "grammarLessonIds": []
+  }
+}

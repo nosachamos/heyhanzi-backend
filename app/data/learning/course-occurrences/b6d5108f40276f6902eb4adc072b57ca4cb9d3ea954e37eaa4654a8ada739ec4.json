@@ -1,0 +1,599 @@
+{
+  "id": "EX-CHAR-warmup-bu",
+  "revision": 2,
+  "unit": "WU01",
+  "stage": "ST-WARMUP",
+  "after": "S-WU01-required-speaking",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "不",
+  "sourceBlockId": "mandarin-simplified-v1-warmup-bu",
+  "sourceLevelId": "warmup",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Write the character",
+    "Connect meaning and sound",
+    "Use the whole word",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-warmup-bu",
+        "text": "不",
+        "pinyin": "bù",
+        "meaning": "not; no",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-1a00c5ab222f01fa929b42dc",
+        "text": "不好",
+        "pinyin": "bù hǎo",
+        "meaning": "not good",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-597D",
+            "text": "好"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-1ee08111114b7f7b91028dac",
+        "text": "人人",
+        "pinyin": "rén rén",
+        "meaning": "everyone",
+        "characters": [
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      },
+      {
+        "id": "W0001",
+        "text": "我",
+        "pinyin": "wǒ",
+        "meaning": "I; me",
+        "characters": [
+          {
+            "id": "C-6211",
+            "text": "我"
+          }
+        ]
+      },
+      {
+        "id": "W0005",
+        "text": "人",
+        "pinyin": "rén",
+        "meaning": "person; people",
+        "characters": [
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "28fe96b76add93fecd157ff310be02a3195a485e36b6c9e69f62e858c236cb19",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-warmup-bu",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "不",
+    "variant": "lesson-movement-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-warmup-bu-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "不",
+        "pinyin": "bù",
+        "meaning": "not; no",
+        "source": "/stroke-data/4e0d.json",
+        "reference": {
+          "character": "不",
+          "sha256": "cb5c77f7baec76498818f198340ce36720b05fd94373e42fc1f6e21e3128d05c",
+          "medians": [
+            [
+              [
+                187,
+                667
+              ],
+              [
+                251,
+                651
+              ],
+              [
+                473,
+                690
+              ],
+              [
+                771,
+                730
+              ],
+              [
+                840,
+                720
+              ],
+              [
+                868,
+                709
+              ],
+              [
+                879,
+                698
+              ]
+            ],
+            [
+              [
+                568,
+                677
+              ],
+              [
+                601,
+                633
+              ],
+              [
+                527,
+                510
+              ],
+              [
+                451,
+                416
+              ],
+              [
+                369,
+                331
+              ],
+              [
+                300,
+                273
+              ],
+              [
+                168,
+                187
+              ],
+              [
+                115,
+                161
+              ]
+            ],
+            [
+              [
+                459,
+                548
+              ],
+              [
+                477,
+                527
+              ],
+              [
+                506,
+                472
+              ],
+              [
+                509,
+                231
+              ],
+              [
+                498,
+                73
+              ],
+              [
+                503,
+                -13
+              ]
+            ],
+            [
+              [
+                632,
+                417
+              ],
+              [
+                751,
+                340
+              ],
+              [
+                825,
+                284
+              ],
+              [
+                863,
+                245
+              ],
+              [
+                884,
+                200
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-warmup-bu-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-warmup-bu",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "不",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-1ee08111114b7f7b91028dac",
+                "label": "everyone",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-warmup-bu",
+                "label": "not; no",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0005",
+                "label": "person; people",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-warmup-bu-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-1a00c5ab222f01fa929b42dc",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "not good",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "不好"
+              },
+              {
+                "value": "bù hǎo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu4hao3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "不好",
+              "pinyin": "bù hǎo",
+              "meaning": "not good",
+              "audio": "3f6cc91ad5939b4f0b35767abae2330a2d34298e573f2660fc7422f5451a1fd2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-warmup-bu-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0001",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "I; me",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "我"
+              },
+              {
+                "value": "wǒ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wo3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "我",
+              "pinyin": "wǒ",
+              "meaning": "I; me",
+              "audio": "364fba3bd2447ba14bf6e73be5f61e90209a109abbfe24e2f287e738f69f1113",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-warmup-bu-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-warmup-bu",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "not; no",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "不"
+              },
+              {
+                "value": "bù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "不",
+              "pinyin": "bù",
+              "meaning": "not; no",
+              "audio": "50ba7522835181a848c6884bdca0d6078d74020fda5cf5ddb4a238c7e44d2b93",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "50ba7522835181a848c6884bdca0d6078d74020fda5cf5ddb4a238c7e44d2b93"
+            ],
+            "transcript": [
+              {
+                "text": "不",
+                "pinyin": "bù",
+                "meaning": "not; no",
+                "audio": "50ba7522835181a848c6884bdca0d6078d74020fda5cf5ddb4a238c7e44d2b93",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4E0D",
+      "character": "不",
+      "lessonIds": [
+        "LESSON-C-4E0D"
+      ],
+      "profile": "movement-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-warmup-bu-write",
+        "EX-CHAR-warmup-bu-recognize",
+        "EX-CHAR-warmup-bu-word",
+        "EX-CHAR-warmup-bu-familiar",
+        "EX-CHAR-warmup-bu-recall"
+      ]
+    },
+    "audio": {
+      "50ba7522835181a848c6884bdca0d6078d74020fda5cf5ddb4a238c7e44d2b93": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-cec7354c5d2df3885a27e810c95523eca4da05eab4ff46b95ec526da499c04c5.mp3",
+          "sha256": "cec7354c5d2df3885a27e810c95523eca4da05eab4ff46b95ec526da499c04c5",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "cec7354c5d2df3885a27e810c95523eca4da05eab4ff46b95ec526da499c04c5",
+            "text": "不",
+            "words": [
+              {
+                "text": "不",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b088920f3d2499526d36ae60fae905cb34f97b0e7deb7df3669d4a7a8f518e45.mp3",
+          "sha256": "b088920f3d2499526d36ae60fae905cb34f97b0e7deb7df3669d4a7a8f518e45",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "b088920f3d2499526d36ae60fae905cb34f97b0e7deb7df3669d4a7a8f518e45",
+            "text": "不",
+            "words": [
+              {
+                "text": "不",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "3f6cc91ad5939b4f0b35767abae2330a2d34298e573f2660fc7422f5451a1fd2": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3386081c40f8548e1b6c20a1c6f03583e6b8ec9a61c0823658b9a33ce2cf70d3.mp3",
+          "sha256": "3386081c40f8548e1b6c20a1c6f03583e6b8ec9a61c0823658b9a33ce2cf70d3",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "3386081c40f8548e1b6c20a1c6f03583e6b8ec9a61c0823658b9a33ce2cf70d3",
+            "text": "不好",
+            "words": [
+              {
+                "text": "不好",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8606f622dbdbe7658d1c7e03260b9d93fecbf230cf95486404f5bb807a637045.mp3",
+          "sha256": "8606f622dbdbe7658d1c7e03260b9d93fecbf230cf95486404f5bb807a637045",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "8606f622dbdbe7658d1c7e03260b9d93fecbf230cf95486404f5bb807a637045",
+            "text": "不好",
+            "words": [
+              {
+                "text": "不好",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "11642a76b7c0631155dd25ff1325a5dac85c7fc9e861ebcc38e2ef34999b0e23": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/61cfd6679527ffc0d063ab9a27cc237eafd0bd0519f6732d7d6e67460c60d05e.mp3",
+          "sha256": "61cfd6679527ffc0d063ab9a27cc237eafd0bd0519f6732d7d6e67460c60d05e",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "61cfd6679527ffc0d063ab9a27cc237eafd0bd0519f6732d7d6e67460c60d05e",
+            "text": "人人",
+            "words": [
+              {
+                "text": "人人",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/65ac25e065b69e942f77001494b5032baf6c6e18a32a9ee586c04b4f50a237f7.mp3",
+          "sha256": "65ac25e065b69e942f77001494b5032baf6c6e18a32a9ee586c04b4f50a237f7",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "65ac25e065b69e942f77001494b5032baf6c6e18a32a9ee586c04b4f50a237f7",
+            "text": "人人",
+            "words": [
+              {
+                "text": "人人",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "364fba3bd2447ba14bf6e73be5f61e90209a109abbfe24e2f287e738f69f1113": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-575949392a3da138bdb989045704169d874e01830383523545eaac0f018c14e8.mp3",
+          "sha256": "575949392a3da138bdb989045704169d874e01830383523545eaac0f018c14e8",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "575949392a3da138bdb989045704169d874e01830383523545eaac0f018c14e8",
+            "text": "我",
+            "words": [
+              {
+                "text": "我",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6efd1f8879421b5b21e6a404f5f7f1250bf5fd84a341444ee526348b26255b2c.mp3",
+          "sha256": "6efd1f8879421b5b21e6a404f5f7f1250bf5fd84a341444ee526348b26255b2c",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "6efd1f8879421b5b21e6a404f5f7f1250bf5fd84a341444ee526348b26255b2c",
+            "text": "我",
+            "words": [
+              {
+                "text": "我",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "8fe6eb551d60df945dbf1dcd0b8671d30b40f7768b980264c54d7f068c10fca9": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-617b3e01fa12f00c1ceb8dedf6ed29df15f1380fb6d62a83d8f0a915d46d77d0.mp3",
+          "sha256": "617b3e01fa12f00c1ceb8dedf6ed29df15f1380fb6d62a83d8f0a915d46d77d0",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "617b3e01fa12f00c1ceb8dedf6ed29df15f1380fb6d62a83d8f0a915d46d77d0",
+            "text": "人",
+            "words": [
+              {
+                "text": "人",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ea2ad60c2235ed572c045a64b0de12eb0d67a12f248984732c5c5614b8ccf8db.mp3",
+          "sha256": "ea2ad60c2235ed572c045a64b0de12eb0d67a12f248984732c5c5614b8ccf8db",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "ea2ad60c2235ed572c045a64b0de12eb0d67a12f248984732c5c5614b8ccf8db",
+            "text": "人",
+            "words": [
+              {
+                "text": "人",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

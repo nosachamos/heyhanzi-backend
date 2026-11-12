@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0812",
+  "targetId": "W0812",
+  "steps": [
+    {
+      "id": "BANK-W0812-W0812",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0812-W0812",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to check tickets",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "检票"
+            },
+            {
+              "value": "jiǎnpiào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jian3piao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "检票",
+            "pinyin": "jiǎnpiào",
+            "meaning": "to check tickets",
+            "singleWord": true,
+            "audio": "cce339b5e850cffa2c905a00578a733e01fa3756bfe2fe6815b7f842f000418b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "cce339b5e850cffa2c905a00578a733e01fa3756bfe2fe6815b7f842f000418b": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/44ad1be247312231e5c6ead34e6e8f45c3b686fe5146ab07dd0cb68dc3bb8383.mp3",
+        "sha256": "44ad1be247312231e5c6ead34e6e8f45c3b686fe5146ab07dd0cb68dc3bb8383",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "44ad1be247312231e5c6ead34e6e8f45c3b686fe5146ab07dd0cb68dc3bb8383",
+          "text": "检票",
+          "words": [
+            {
+              "text": "检票",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9d54be2789c556e8486a59253479b6608bc2abbea821785d58d17a5ea0e31d50.mp3",
+        "sha256": "9d54be2789c556e8486a59253479b6608bc2abbea821785d58d17a5ea0e31d50",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "9d54be2789c556e8486a59253479b6608bc2abbea821785d58d17a5ea0e31d50",
+          "text": "检票",
+          "words": [
+            {
+              "text": "检票",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0812",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0812-W0812",
+      "question_ids": [
+        "BANK-W0812-W0812"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-10",
+    "stepId": "S-U3-10-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-68c0"
+    ],
+    "grammarLessonIds": []
+  }
+}

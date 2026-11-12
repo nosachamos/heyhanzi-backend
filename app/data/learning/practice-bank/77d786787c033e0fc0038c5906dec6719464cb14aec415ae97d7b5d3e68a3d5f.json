@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4401",
+  "targetId": "W4401",
+  "steps": [
+    {
+      "id": "BANK-W4401-W4401",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4401-W4401",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "coach; bus",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "客车"
+            },
+            {
+              "value": "kèchē",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ke4che1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "客车",
+            "pinyin": "kèchē",
+            "meaning": "coach; bus",
+            "singleWord": true,
+            "audio": "b1c9f847e821f470efdfc8653bf53f58b78ed46a24e075cd6257b647b1388290"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b1c9f847e821f470efdfc8653bf53f58b78ed46a24e075cd6257b647b1388290": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2b5a7ec341eca88ec54b1460904ac3bbe8ed2b003e7a8f07b621d05a29ede34c.mp3",
+        "sha256": "2b5a7ec341eca88ec54b1460904ac3bbe8ed2b003e7a8f07b621d05a29ede34c",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "2b5a7ec341eca88ec54b1460904ac3bbe8ed2b003e7a8f07b621d05a29ede34c",
+          "text": "客车",
+          "words": [
+            {
+              "text": "客车",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/273b2ea35435ce8d77805648ab9c3eafc48b103855998232eed5c3ddbc9cbe6d.mp3",
+        "sha256": "273b2ea35435ce8d77805648ab9c3eafc48b103855998232eed5c3ddbc9cbe6d",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "273b2ea35435ce8d77805648ab9c3eafc48b103855998232eed5c3ddbc9cbe6d",
+          "text": "客车",
+          "words": [
+            {
+              "text": "客车",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4401",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4401-W4401",
+      "question_ids": [
+        "BANK-W4401-W4401"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-18-P01",
+    "stepId": "S-U6-18-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8f66"
+    ],
+    "grammarLessonIds": []
+  }
+}

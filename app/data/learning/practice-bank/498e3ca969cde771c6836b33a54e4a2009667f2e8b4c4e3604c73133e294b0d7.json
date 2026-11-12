@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1033",
+  "targetId": "W1033",
+  "steps": [
+    {
+      "id": "BANK-W1033-W1033",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1033-W1033",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "how; what kind",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "怎样"
+            },
+            {
+              "value": "zěnyàng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zen3yang4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "怎样",
+            "pinyin": "zěnyàng",
+            "meaning": "how; what kind",
+            "singleWord": true,
+            "audio": "017b9bb60e950867aef5aed71b0e78449d381f48e678c28ee4d37d7bb5165640"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "017b9bb60e950867aef5aed71b0e78449d381f48e678c28ee4d37d7bb5165640": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-db27d752dec9029284f05207e966090a633776fe178ac0289245fc0744922e95.mp3",
+        "sha256": "db27d752dec9029284f05207e966090a633776fe178ac0289245fc0744922e95",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "db27d752dec9029284f05207e966090a633776fe178ac0289245fc0744922e95",
+          "text": "怎样",
+          "words": [
+            {
+              "text": "怎样",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-00072325103f6ac5eaa2473209703f34bc57bb32eca1bd747378f59ff3994e88.mp3",
+        "sha256": "00072325103f6ac5eaa2473209703f34bc57bb32eca1bd747378f59ff3994e88",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "00072325103f6ac5eaa2473209703f34bc57bb32eca1bd747378f59ff3994e88",
+          "text": "怎样",
+          "words": [
+            {
+              "text": "怎样",
+              "start": 0.03,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1033",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1033-W1033",
+      "question_ids": [
+        "BANK-W1033-W1033"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-22",
+    "stepId": "S-U3-22-words-r4-8",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6837"
+    ],
+    "grammarLessonIds": []
+  }
+}

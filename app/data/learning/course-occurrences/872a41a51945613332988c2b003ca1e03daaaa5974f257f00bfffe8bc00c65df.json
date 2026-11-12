@@ -1,0 +1,799 @@
+{
+  "id": "EX-CHAR-char-8c28",
+  "revision": 2,
+  "unit": "U5-44-P02",
+  "stage": "ST-HSK5",
+  "after": "S-U5-44-P02-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "谨",
+  "sourceBlockId": "mandarin-simplified-v1-char-8c28",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-8c28",
+        "text": "谨",
+        "pinyin": "jǐn",
+        "meaning": "cautious; careful",
+        "characters": [
+          {
+            "id": "C-8C28",
+            "text": "谨"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-601a7a4f61db43dfd7c422b6",
+        "text": "严谨",
+        "pinyin": "yán jǐn",
+        "meaning": "rigorous",
+        "characters": [
+          {
+            "id": "C-4E25",
+            "text": "严"
+          },
+          {
+            "id": "C-8C28",
+            "text": "谨"
+          }
+        ]
+      },
+      {
+        "id": "W3115",
+        "text": "损害",
+        "pinyin": "sǔnhài",
+        "meaning": "harm; to damage",
+        "characters": [
+          {
+            "id": "C-635F",
+            "text": "损"
+          },
+          {
+            "id": "C-5BB3",
+            "text": "害"
+          }
+        ]
+      },
+      {
+        "id": "W3252",
+        "text": "闲",
+        "pinyin": "xián",
+        "meaning": "free; unoccupied",
+        "characters": [
+          {
+            "id": "C-95F2",
+            "text": "闲"
+          }
+        ]
+      },
+      {
+        "id": "W3310",
+        "text": "形式",
+        "pinyin": "xíngshì",
+        "meaning": "outer appearance; form",
+        "characters": [
+          {
+            "id": "C-5F62",
+            "text": "形"
+          },
+          {
+            "id": "C-5F0F",
+            "text": "式"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "428bb1bf8a8fa1464e160674ef99e7cd878dfaeea7d0add14c62466dc68b87c8",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8c28",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "谨",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8c28-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-601a7a4f61db43dfd7c422b6",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "rigorous",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "严谨"
+              },
+              {
+                "value": "yán jǐn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yan2jin3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "严谨",
+              "pinyin": "yán jǐn",
+              "meaning": "rigorous",
+              "audio": "00b800e76e8b8dc98166aec014f3590ad68c1b4a07bae15230866ded364a6a48",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8c28-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-8c28",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "谨",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W3115",
+                "label": "harm; to damage",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W3310",
+                "label": "outer appearance; form",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-8c28",
+                "label": "cautious; careful",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8c28-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "谨",
+        "pinyin": "jǐn",
+        "meaning": "cautious; careful",
+        "source": "/stroke-data/8c28.json",
+        "reference": {
+          "character": "谨",
+          "sha256": "b2f7faf98992c24fc6e778c6ed434945c896e2e8f3e5a4872086ad53933254e1",
+          "medians": [
+            [
+              [
+                231,
+                786
+              ],
+              [
+                321,
+                730
+              ],
+              [
+                344,
+                693
+              ]
+            ],
+            [
+              [
+                52,
+                473
+              ],
+              [
+                91,
+                466
+              ],
+              [
+                134,
+                474
+              ],
+              [
+                245,
+                518
+              ],
+              [
+                266,
+                519
+              ],
+              [
+                292,
+                507
+              ],
+              [
+                250,
+                187
+              ],
+              [
+                248,
+                146
+              ],
+              [
+                255,
+                121
+              ],
+              [
+                300,
+                139
+              ],
+              [
+                404,
+                242
+              ]
+            ],
+            [
+              [
+                391,
+                651
+              ],
+              [
+                416,
+                643
+              ],
+              [
+                451,
+                643
+              ],
+              [
+                776,
+                694
+              ],
+              [
+                846,
+                700
+              ],
+              [
+                885,
+                692
+              ]
+            ],
+            [
+              [
+                487,
+                762
+              ],
+              [
+                508,
+                756
+              ],
+              [
+                530,
+                736
+              ],
+              [
+                560,
+                521
+              ]
+            ],
+            [
+              [
+                697,
+                842
+              ],
+              [
+                729,
+                798
+              ],
+              [
+                684,
+                608
+              ],
+              [
+                664,
+                589
+              ]
+            ],
+            [
+              [
+                575,
+                541
+              ],
+              [
+                595,
+                551
+              ],
+              [
+                650,
+                562
+              ],
+              [
+                696,
+                563
+              ],
+              [
+                715,
+                556
+              ]
+            ],
+            [
+              [
+                428,
+                446
+              ],
+              [
+                448,
+                431
+              ],
+              [
+                461,
+                410
+              ],
+              [
+                492,
+                286
+              ]
+            ],
+            [
+              [
+                475,
+                447
+              ],
+              [
+                497,
+                436
+              ],
+              [
+                763,
+                488
+              ],
+              [
+                784,
+                480
+              ],
+              [
+                803,
+                450
+              ],
+              [
+                779,
+                397
+              ],
+              [
+                753,
+                386
+              ]
+            ],
+            [
+              [
+                509,
+                307
+              ],
+              [
+                524,
+                317
+              ],
+              [
+                737,
+                355
+              ],
+              [
+                802,
+                349
+              ]
+            ],
+            [
+              [
+                485,
+                216
+              ],
+              [
+                535,
+                218
+              ],
+              [
+                712,
+                251
+              ],
+              [
+                755,
+                253
+              ],
+              [
+                778,
+                246
+              ]
+            ],
+            [
+              [
+                478,
+                120
+              ],
+              [
+                513,
+                119
+              ],
+              [
+                706,
+                152
+              ],
+              [
+                750,
+                154
+              ],
+              [
+                773,
+                147
+              ]
+            ],
+            [
+              [
+                587,
+                525
+              ],
+              [
+                620,
+                508
+              ],
+              [
+                628,
+                473
+              ],
+              [
+                625,
+                74
+              ],
+              [
+                610,
+                56
+              ]
+            ],
+            [
+              [
+                362,
+                19
+              ],
+              [
+                416,
+                10
+              ],
+              [
+                567,
+                30
+              ],
+              [
+                809,
+                48
+              ],
+              [
+                868,
+                43
+              ],
+              [
+                910,
+                28
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8c28-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3252",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "free; unoccupied",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "闲"
+              },
+              {
+                "value": "xián",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xian2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "闲",
+              "pinyin": "xián",
+              "meaning": "free; unoccupied",
+              "audio": "350ceb1aa8eb12c69ea222dce1f6713b60f5fc2a0f14fa0740614b3b98ba2ada",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8c28-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-8c28",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "cautious; careful",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "谨"
+              },
+              {
+                "value": "jǐn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jin3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "谨",
+              "pinyin": "jǐn",
+              "meaning": "cautious; careful",
+              "audio": "425c339b8e2ce92adf9a217a6671ef44f2f27ee824ee9402a749d5b0ce20ed10",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "425c339b8e2ce92adf9a217a6671ef44f2f27ee824ee9402a749d5b0ce20ed10"
+            ],
+            "transcript": [
+              {
+                "text": "谨",
+                "pinyin": "jǐn",
+                "meaning": "cautious; careful",
+                "audio": "425c339b8e2ce92adf9a217a6671ef44f2f27ee824ee9402a749d5b0ce20ed10",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8C28",
+      "character": "谨",
+      "lessonIds": [
+        "LESSON-C-8C28"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8c28-word",
+        "EX-CHAR-char-8c28-recognize",
+        "EX-CHAR-char-8c28-write",
+        "EX-CHAR-char-8c28-familiar",
+        "EX-CHAR-char-8c28-recall"
+      ]
+    },
+    "audio": {
+      "425c339b8e2ce92adf9a217a6671ef44f2f27ee824ee9402a749d5b0ce20ed10": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-e332ad1ed2245ca24b072c9fc621df3268ceab77c7d777cda7943c6971179985.mp3",
+          "sha256": "e332ad1ed2245ca24b072c9fc621df3268ceab77c7d777cda7943c6971179985",
+          "byteLength": 8685,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "e332ad1ed2245ca24b072c9fc621df3268ceab77c7d777cda7943c6971179985",
+            "text": "谨",
+            "words": [
+              {
+                "text": "谨",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-b2f1f6d5bbf7d7fa55e0869fc12b1bfc3604610ebd1f04a65165657f6a18baff.mp3",
+          "sha256": "b2f1f6d5bbf7d7fa55e0869fc12b1bfc3604610ebd1f04a65165657f6a18baff",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "b2f1f6d5bbf7d7fa55e0869fc12b1bfc3604610ebd1f04a65165657f6a18baff",
+            "text": "谨",
+            "words": [
+              {
+                "text": "谨",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "00b800e76e8b8dc98166aec014f3590ad68c1b4a07bae15230866ded364a6a48": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/66b7a32d5a5673fcebc859f0db47e4b1992e4afa09a1bd8acff6e1cb9f96c628.mp3",
+          "sha256": "66b7a32d5a5673fcebc859f0db47e4b1992e4afa09a1bd8acff6e1cb9f96c628",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "66b7a32d5a5673fcebc859f0db47e4b1992e4afa09a1bd8acff6e1cb9f96c628",
+            "text": "严谨",
+            "words": [
+              {
+                "text": "严谨",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/72dd0bdaa210332cbc0afd985bb3fe418ba5692484563ade0aa727370f8228f5.mp3",
+          "sha256": "72dd0bdaa210332cbc0afd985bb3fe418ba5692484563ade0aa727370f8228f5",
+          "byteLength": 17901,
+          "readAlong": {
+            "audioSha256": "72dd0bdaa210332cbc0afd985bb3fe418ba5692484563ade0aa727370f8228f5",
+            "text": "严谨",
+            "words": [
+              {
+                "text": "严谨",
+                "start": 0.21,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "7f230265a8af0bebd9e40e25f0b1731b927a87de99d7cb2c3d4d0b3bee05c70d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-dd0524bb3baaa05563df0e8ef847ebc1b773245499114906af6414bc3977e9c3.mp3",
+          "sha256": "dd0524bb3baaa05563df0e8ef847ebc1b773245499114906af6414bc3977e9c3",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "dd0524bb3baaa05563df0e8ef847ebc1b773245499114906af6414bc3977e9c3",
+            "text": "损害",
+            "words": [
+              {
+                "text": "损害",
+                "start": 0.27,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-47c7ae37df9a23cce2475a74de6d20e21c16f6e285d5bedc40e459ad73dd0acc.mp3",
+          "sha256": "47c7ae37df9a23cce2475a74de6d20e21c16f6e285d5bedc40e459ad73dd0acc",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "47c7ae37df9a23cce2475a74de6d20e21c16f6e285d5bedc40e459ad73dd0acc",
+            "text": "损害",
+            "words": [
+              {
+                "text": "损害",
+                "start": 0.21,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "350ceb1aa8eb12c69ea222dce1f6713b60f5fc2a0f14fa0740614b3b98ba2ada": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-63ac00b6db938a3220372e732dbee30c5a137d2eb7a90b7611e3e5e21acd046d.mp3",
+          "sha256": "63ac00b6db938a3220372e732dbee30c5a137d2eb7a90b7611e3e5e21acd046d",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "63ac00b6db938a3220372e732dbee30c5a137d2eb7a90b7611e3e5e21acd046d",
+            "text": "闲",
+            "words": [
+              {
+                "text": "闲",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-41d687f36dbf5bad6fa20c2469a4966de226f26d46590b83c1339e168c6ecae2.mp3",
+          "sha256": "41d687f36dbf5bad6fa20c2469a4966de226f26d46590b83c1339e168c6ecae2",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "41d687f36dbf5bad6fa20c2469a4966de226f26d46590b83c1339e168c6ecae2",
+            "text": "闲",
+            "words": [
+              {
+                "text": "闲",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "27c9a98069fb61227d221fe9ce1dca37b555c86083c6e6f91a0fa8b9e190f889": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/285c248c2f19d457c4030bc6745451900c9ac2a3209edc1f447360ef58a3bd03.mp3",
+          "sha256": "285c248c2f19d457c4030bc6745451900c9ac2a3209edc1f447360ef58a3bd03",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "285c248c2f19d457c4030bc6745451900c9ac2a3209edc1f447360ef58a3bd03",
+            "text": "形式",
+            "words": [
+              {
+                "text": "形式",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/25fcac49777279a55166dccd433f7e0e22fc0b1b5122a29bf5831ed5208681c3.mp3",
+          "sha256": "25fcac49777279a55166dccd433f7e0e22fc0b1b5122a29bf5831ed5208681c3",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "25fcac49777279a55166dccd433f7e0e22fc0b1b5122a29bf5831ed5208681c3",
+            "text": "形式",
+            "words": [
+              {
+                "text": "形式",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

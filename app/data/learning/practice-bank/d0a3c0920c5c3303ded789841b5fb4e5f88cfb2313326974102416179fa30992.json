@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1325",
+  "targetId": "W1325",
+  "steps": [
+    {
+      "id": "BANK-W1325-W1325",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1325-W1325",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "broadcast; broadcasting",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "广播"
+            },
+            {
+              "value": "guǎngbō",
+              "mode": "pinyin"
+            },
+            {
+              "value": "guang3bo1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "广播",
+            "pinyin": "guǎngbō",
+            "meaning": "broadcast; broadcasting",
+            "singleWord": true,
+            "audio": "1af9490b5efc918ada9df2e42d59a3066ef3daf7d9038c61bf7e20599ab9f9cd"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1af9490b5efc918ada9df2e42d59a3066ef3daf7d9038c61bf7e20599ab9f9cd": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7d32cc37a2569feae15ee30879c5e9a76cc621d0c72d7a7ab06da6e53f7321ee.mp3",
+        "sha256": "7d32cc37a2569feae15ee30879c5e9a76cc621d0c72d7a7ab06da6e53f7321ee",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "7d32cc37a2569feae15ee30879c5e9a76cc621d0c72d7a7ab06da6e53f7321ee",
+          "text": "广播",
+          "words": [
+            {
+              "text": "广播",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/32158f4e688118ffdead3df0886367d6502f7c341f2e48cbd0f7d95f2925ad5e.mp3",
+        "sha256": "32158f4e688118ffdead3df0886367d6502f7c341f2e48cbd0f7d95f2925ad5e",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "32158f4e688118ffdead3df0886367d6502f7c341f2e48cbd0f7d95f2925ad5e",
+          "text": "广播",
+          "words": [
+            {
+              "text": "广播",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1325",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1325-W1325",
+      "question_ids": [
+        "BANK-W1325-W1325"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-27",
+    "stepId": "S-U4-27-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e7f"
+    ],
+    "grammarLessonIds": []
+  }
+}

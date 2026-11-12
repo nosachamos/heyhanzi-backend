@@ -1,0 +1,801 @@
+{
+  "id": "EX-CHAR-char-71ac",
+  "revision": 2,
+  "unit": "U5-05-P01",
+  "stage": "ST-HSK5",
+  "after": "S-U5-05-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "熬",
+  "sourceBlockId": "mandarin-simplified-v1-char-71ac",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole expression",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-CHAR-AOCAI",
+        "text": "熬菜",
+        "pinyin": "āo cài",
+        "meaning": "cook vegetables in water",
+        "characters": [
+          {
+            "id": "C-71AC",
+            "text": "熬"
+          },
+          {
+            "id": "C-83DC",
+            "text": "菜"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f64ad7599e48a6dc6ae3b92b",
+        "text": "法庭",
+        "pinyin": "fǎ tíng",
+        "meaning": "court of law",
+        "characters": [
+          {
+            "id": "C-6CD5",
+            "text": "法"
+          },
+          {
+            "id": "C-5EAD",
+            "text": "庭"
+          }
+        ]
+      },
+      {
+        "id": "W1131",
+        "text": "车速",
+        "pinyin": "chēsù",
+        "meaning": "vehicle speed",
+        "characters": [
+          {
+            "id": "C-8F66",
+            "text": "车"
+          },
+          {
+            "id": "C-901F",
+            "text": "速"
+          }
+        ]
+      },
+      {
+        "id": "W2320",
+        "text": "独特",
+        "pinyin": "dútè",
+        "meaning": "unique; distinctive",
+        "characters": [
+          {
+            "id": "C-72EC",
+            "text": "独"
+          },
+          {
+            "id": "C-7279",
+            "text": "特"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "cd30588f9e015c7bec49839ec0c21a93b0dd5eef4441cf3906e49c129bdb6626",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-71ac",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "熬",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-71ac-word",
+        "kind": "check",
+        "title": "Use the whole expression",
+        "questions": [
+          {
+            "id": "word-use-NB-CHAR-AOCAI",
+            "kind": "text",
+            "prompt": "Which Chinese expression matches this meaning?",
+            "label": "Recall the expression",
+            "context": "cook vegetables in water",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Expression recall",
+            "accepted": [
+              {
+                "value": "熬菜"
+              },
+              {
+                "value": "āo cài",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ao1cai4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "熬菜",
+              "pinyin": "āo cài",
+              "meaning": "cook vegetables in water",
+              "audio": "8ed3eb4f9c70c000e6cf85fa6a374a0199484c77aa83f36de5df04ad5fc17382",
+              "singleWord": true,
+              "focus": "熬"
+            },
+            "hint": "Recall the complete expression, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-71ac-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-CHAR-AOCAI",
+            "kind": "choice",
+            "prompt": "What does this expression mean as a whole?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written expression meaning",
+            "display": {
+              "text": "熬菜",
+              "meaning": "",
+              "focus": "熬"
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-f64ad7599e48a6dc6ae3b92b",
+                "label": "court of law",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-CHAR-AOCAI",
+                "label": "cook vegetables in water",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the expression."
+              },
+              {
+                "id": "W2320",
+                "label": "unique; distinctive",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-71ac-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "熬",
+        "pinyin": "āo",
+        "meaning": "to simmer; to boil slowly",
+        "source": "/stroke-data/71ac.json",
+        "reference": {
+          "character": "熬",
+          "sha256": "651b0e9c348c52e389d97e788ea183745578182443390e56f24412363502655f",
+          "medians": [
+            [
+              [
+                240,
+                634
+              ],
+              [
+                249,
+                629
+              ],
+              [
+                291,
+                629
+              ],
+              [
+                428,
+                656
+              ],
+              [
+                492,
+                675
+              ],
+              [
+                525,
+                674
+              ]
+            ],
+            [
+              [
+                231,
+                531
+              ],
+              [
+                265,
+                526
+              ],
+              [
+                460,
+                568
+              ],
+              [
+                509,
+                568
+              ]
+            ],
+            [
+              [
+                366,
+                795
+              ],
+              [
+                394,
+                774
+              ],
+              [
+                405,
+                755
+              ],
+              [
+                391,
+                503
+              ],
+              [
+                386,
+                487
+              ],
+              [
+                375,
+                478
+              ]
+            ],
+            [
+              [
+                147,
+                411
+              ],
+              [
+                172,
+                405
+              ],
+              [
+                204,
+                407
+              ],
+              [
+                421,
+                466
+              ],
+              [
+                469,
+                473
+              ],
+              [
+                492,
+                470
+              ]
+            ],
+            [
+              [
+                376,
+                376
+              ],
+              [
+                426,
+                372
+              ],
+              [
+                446,
+                359
+              ],
+              [
+                459,
+                340
+              ],
+              [
+                430,
+                264
+              ],
+              [
+                415,
+                239
+              ],
+              [
+                384,
+                218
+              ],
+              [
+                317,
+                273
+              ]
+            ],
+            [
+              [
+                354,
+                418
+              ],
+              [
+                350,
+                397
+              ],
+              [
+                313,
+                335
+              ],
+              [
+                269,
+                280
+              ],
+              [
+                224,
+                240
+              ],
+              [
+                159,
+                200
+              ]
+            ],
+            [
+              [
+                618,
+                808
+              ],
+              [
+                641,
+                794
+              ],
+              [
+                654,
+                776
+              ],
+              [
+                641,
+                717
+              ],
+              [
+                612,
+                627
+              ],
+              [
+                566,
+                528
+              ],
+              [
+                536,
+                485
+              ]
+            ],
+            [
+              [
+                600,
+                550
+              ],
+              [
+                662,
+                555
+              ],
+              [
+                790,
+                597
+              ],
+              [
+                829,
+                595
+              ]
+            ],
+            [
+              [
+                680,
+                531
+              ],
+              [
+                707,
+                512
+              ],
+              [
+                712,
+                502
+              ],
+              [
+                695,
+                431
+              ],
+              [
+                657,
+                336
+              ],
+              [
+                625,
+                293
+              ],
+              [
+                591,
+                263
+              ],
+              [
+                549,
+                235
+              ],
+              [
+                502,
+                216
+              ]
+            ],
+            [
+              [
+                551,
+                439
+              ],
+              [
+                568,
+                435
+              ],
+              [
+                590,
+                418
+              ],
+              [
+                703,
+                299
+              ],
+              [
+                790,
+                233
+              ],
+              [
+                809,
+                225
+              ],
+              [
+                927,
+                215
+              ]
+            ],
+            [
+              [
+                219,
+                160
+              ],
+              [
+                209,
+                95
+              ],
+              [
+                178,
+                20
+              ],
+              [
+                172,
+                -9
+              ]
+            ],
+            [
+              [
+                379,
+                131
+              ],
+              [
+                426,
+                71
+              ],
+              [
+                438,
+                27
+              ]
+            ],
+            [
+              [
+                552,
+                136
+              ],
+              [
+                613,
+                74
+              ],
+              [
+                624,
+                43
+              ]
+            ],
+            [
+              [
+                731,
+                154
+              ],
+              [
+                842,
+                61
+              ],
+              [
+                871,
+                -9
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-71ac-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1131",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "vehicle speed",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "车速"
+              },
+              {
+                "value": "chēsù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "che1su4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "车速",
+              "pinyin": "chēsù",
+              "meaning": "vehicle speed",
+              "audio": "eb4c0f8f88713f3a93ae691ade539048792094ac345d51524cb578db783222da",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-71ac-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-CHAR-AOCAI",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the expression.",
+            "label": "Recall the expression",
+            "context": "cook vegetables in water",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "熬菜"
+              },
+              {
+                "value": "āo cài",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ao1cai4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "熬菜",
+              "pinyin": "āo cài",
+              "meaning": "cook vegetables in water",
+              "audio": "8ed3eb4f9c70c000e6cf85fa6a374a0199484c77aa83f36de5df04ad5fc17382",
+              "singleWord": true,
+              "focus": "熬"
+            },
+            "hint": "Recall the complete expression, including every syllable and tone.",
+            "audio": [
+              "8ed3eb4f9c70c000e6cf85fa6a374a0199484c77aa83f36de5df04ad5fc17382"
+            ],
+            "transcript": [
+              {
+                "text": "熬菜",
+                "pinyin": "āo cài",
+                "meaning": "cook vegetables in water",
+                "audio": "8ed3eb4f9c70c000e6cf85fa6a374a0199484c77aa83f36de5df04ad5fc17382",
+                "singleWord": true,
+                "focus": "熬"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-71AC",
+      "character": "熬",
+      "lessonIds": [
+        "LESSON-C-71AC"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-71ac-word",
+        "EX-CHAR-char-71ac-recognize",
+        "EX-CHAR-char-71ac-write",
+        "EX-CHAR-char-71ac-familiar",
+        "EX-CHAR-char-71ac-recall"
+      ]
+    },
+    "audio": {
+      "8ed3eb4f9c70c000e6cf85fa6a374a0199484c77aa83f36de5df04ad5fc17382": {
+        "female": {
+          "url": "/exercise-assets/audio/course-female-1083b9265765a653716fbfeda8485e5db7a4a18f9e1a05fb4ceb4f0b5b1769b4.mp3",
+          "sha256": "1083b9265765a653716fbfeda8485e5db7a4a18f9e1a05fb4ceb4f0b5b1769b4",
+          "byteLength": 10989,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "1083b9265765a653716fbfeda8485e5db7a4a18f9e1a05fb4ceb4f0b5b1769b4",
+            "text": "熬菜",
+            "words": [
+              {
+                "text": "熬",
+                "start": 0.15,
+                "end": 0.21
+              },
+              {
+                "text": "菜",
+                "start": 0.32999999999999996,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-221dbeebae54923041bf6aa8cd64a705b1504ed12e3e4b1443a5da5c5bfdd615.mp3",
+          "sha256": "221dbeebae54923041bf6aa8cd64a705b1504ed12e3e4b1443a5da5c5bfdd615",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "221dbeebae54923041bf6aa8cd64a705b1504ed12e3e4b1443a5da5c5bfdd615",
+            "text": "熬菜",
+            "words": [
+              {
+                "text": "熬",
+                "start": 0.15,
+                "end": 0.21
+              },
+              {
+                "text": "菜",
+                "start": 0.32999999999999996,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "60d27d7903abfa348a666897e8b2d9f0fdd9eea306aa86d686666e68253e2274": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f5768d678a73e9e14fa0c533c548cdffd3daea76185135aecd0f3cc35e7ac088.mp3",
+          "sha256": "f5768d678a73e9e14fa0c533c548cdffd3daea76185135aecd0f3cc35e7ac088",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "f5768d678a73e9e14fa0c533c548cdffd3daea76185135aecd0f3cc35e7ac088",
+            "text": "法庭",
+            "words": [
+              {
+                "text": "法庭",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/fd39527ec9296fba2592e3243550f48747c00df8212ee7c03ef7952c3f5c7210.mp3",
+          "sha256": "fd39527ec9296fba2592e3243550f48747c00df8212ee7c03ef7952c3f5c7210",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "fd39527ec9296fba2592e3243550f48747c00df8212ee7c03ef7952c3f5c7210",
+            "text": "法庭",
+            "words": [
+              {
+                "text": "法庭",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "eb4c0f8f88713f3a93ae691ade539048792094ac345d51524cb578db783222da": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e88054733908c577e4d131f28f775fc46894b1bf21c123d5d73105c521f5d573.mp3",
+          "sha256": "e88054733908c577e4d131f28f775fc46894b1bf21c123d5d73105c521f5d573",
+          "byteLength": 19341,
+          "readAlong": {
+            "audioSha256": "e88054733908c577e4d131f28f775fc46894b1bf21c123d5d73105c521f5d573",
+            "text": "车速",
+            "words": [
+              {
+                "text": "车速",
+                "start": 0.69,
+                "end": 0.99
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/53d130acf6d333fae92b42809d7390dc2d93799db4a1ca33e8e5f072ef40ab5b.mp3",
+          "sha256": "53d130acf6d333fae92b42809d7390dc2d93799db4a1ca33e8e5f072ef40ab5b",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "53d130acf6d333fae92b42809d7390dc2d93799db4a1ca33e8e5f072ef40ab5b",
+            "text": "车速",
+            "words": [
+              {
+                "text": "车速",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "efd0fadf03c37143e64ef783cf9d72994753d5737aa162f1fcd8f587ca917e2a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-878bf66c3408366e20350ddad61bbc36c187c98a8ada9c76e39419c9712f7b9a.mp3",
+          "sha256": "878bf66c3408366e20350ddad61bbc36c187c98a8ada9c76e39419c9712f7b9a",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "878bf66c3408366e20350ddad61bbc36c187c98a8ada9c76e39419c9712f7b9a",
+            "text": "独特",
+            "words": [
+              {
+                "text": "独特",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-adf95e1431d0e4c6b9f89090949063085ad9f1a78758cadb0c52b3c68ea33482.mp3",
+          "sha256": "adf95e1431d0e4c6b9f89090949063085ad9f1a78758cadb0c52b3c68ea33482",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "adf95e1431d0e4c6b9f89090949063085ad9f1a78758cadb0c52b3c68ea33482",
+            "text": "独特",
+            "words": [
+              {
+                "text": "独特",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

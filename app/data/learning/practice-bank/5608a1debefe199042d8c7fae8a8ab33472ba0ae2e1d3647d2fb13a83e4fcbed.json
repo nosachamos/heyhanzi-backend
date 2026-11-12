@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2710",
+  "targetId": "W2710",
+  "steps": [
+    {
+      "id": "BANK-W2710-W2710",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2710-W2710",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "husband (informal)",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "老公"
+            },
+            {
+              "value": "lǎogōng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "lao3gong1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "老公",
+            "pinyin": "lǎogōng",
+            "meaning": "husband (informal)",
+            "singleWord": true,
+            "audio": "66b28c895ec6083191fb8d9541536b1a479decc78187c2c3ae5acc0a93f8c2b0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "66b28c895ec6083191fb8d9541536b1a479decc78187c2c3ae5acc0a93f8c2b0": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-129d46d7454c80c6b5488a604ce86bd2af8424658892c4ed569c489120a0d076.mp3",
+        "sha256": "129d46d7454c80c6b5488a604ce86bd2af8424658892c4ed569c489120a0d076",
+        "byteLength": 17901,
+        "readAlong": {
+          "audioSha256": "129d46d7454c80c6b5488a604ce86bd2af8424658892c4ed569c489120a0d076",
+          "text": "老公",
+          "words": [
+            {
+              "text": "老公",
+              "start": 0.39,
+              "end": 0.69
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-4a224395fc8f4b0c0655d84545751af2952c438eb891469dfb8c628191e25641.mp3",
+        "sha256": "4a224395fc8f4b0c0655d84545751af2952c438eb891469dfb8c628191e25641",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "4a224395fc8f4b0c0655d84545751af2952c438eb891469dfb8c628191e25641",
+          "text": "老公",
+          "words": [
+            {
+              "text": "老公",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2710",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2710-W2710",
+      "question_ids": [
+        "BANK-W2710-W2710"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-02",
+    "stepId": "S-U3-02-words-r4-5",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5a46"
+    ],
+    "grammarLessonIds": []
+  }
+}

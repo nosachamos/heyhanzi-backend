@@ -1,0 +1,811 @@
+{
+  "id": "EX-CHAR-char-724c",
+  "revision": 2,
+  "unit": "U4-10-P01",
+  "stage": "ST-HSK4",
+  "after": "S-U4-10-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "牌",
+  "sourceBlockId": "mandarin-simplified-v1-char-724c",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-724c",
+        "text": "牌",
+        "pinyin": "pái",
+        "meaning": "signboard; plaque; plate; tablet; brand; trademark",
+        "characters": [
+          {
+            "id": "C-724C",
+            "text": "牌"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-2a1afdfd6012ba6cddf14fa7",
+        "text": "青少年",
+        "pinyin": "qīng shào nián",
+        "meaning": "adolescent",
+        "characters": [
+          {
+            "id": "C-9752",
+            "text": "青"
+          },
+          {
+            "id": "C-5C11",
+            "text": "少"
+          },
+          {
+            "id": "C-5E74",
+            "text": "年"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-c996033cf0d0b50508cdc69c",
+        "text": "找零",
+        "pinyin": "zhǎo líng",
+        "meaning": "to give change",
+        "characters": [
+          {
+            "id": "C-627E",
+            "text": "找"
+          },
+          {
+            "id": "C-96F6",
+            "text": "零"
+          }
+        ]
+      },
+      {
+        "id": "W4381",
+        "text": "看不起",
+        "pinyin": "kànbuqǐ",
+        "meaning": "to look down upon; to despise",
+        "characters": [
+          {
+            "id": "C-770B",
+            "text": "看"
+          },
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-8D77",
+            "text": "起"
+          }
+        ]
+      },
+      {
+        "id": "W5188",
+        "text": "银牌",
+        "pinyin": "yínpái",
+        "meaning": "silver medal",
+        "characters": [
+          {
+            "id": "C-94F6",
+            "text": "银"
+          },
+          {
+            "id": "C-724C",
+            "text": "牌"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "333a53d5fff45fb9431e13131b6df468c57dcc5ce1c070746ec0f0b041846130",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-724c",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "牌",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-724c-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W5188",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "silver medal",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "银牌"
+              },
+              {
+                "value": "yínpái",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yin2pai2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "银牌",
+              "pinyin": "yínpái",
+              "meaning": "silver medal",
+              "audio": "04d091323efb6676af54bf5d1a4b07541ec9e37922cf29c1ecaefd95e0d47989",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-724c-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-724c",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "牌",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W4381",
+                "label": "to look down upon; to despise",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-724c",
+                "label": "signboard; plaque",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-2a1afdfd6012ba6cddf14fa7",
+                "label": "adolescent",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-724c-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "牌",
+        "pinyin": "pái",
+        "meaning": "signboard; plaque",
+        "source": "/stroke-data/724c.json",
+        "reference": {
+          "character": "牌",
+          "sha256": "2efea30e4f181281ca2835f7772d260cd73050007333c2d71d03d9ae6bb632c5",
+          "medians": [
+            [
+              [
+                158,
+                709
+              ],
+              [
+                189,
+                681
+              ],
+              [
+                196,
+                666
+              ],
+              [
+                194,
+                474
+              ],
+              [
+                181,
+                354
+              ],
+              [
+                161,
+                270
+              ],
+              [
+                135,
+                199
+              ],
+              [
+                106,
+                138
+              ],
+              [
+                55,
+                58
+              ]
+            ],
+            [
+              [
+                326,
+                798
+              ],
+              [
+                351,
+                775
+              ],
+              [
+                359,
+                757
+              ],
+              [
+                334,
+                576
+              ],
+              [
+                319,
+                564
+              ]
+            ],
+            [
+              [
+                226,
+                499
+              ],
+              [
+                239,
+                515
+              ],
+              [
+                310,
+                535
+              ],
+              [
+                349,
+                538
+              ],
+              [
+                368,
+                532
+              ]
+            ],
+            [
+              [
+                207,
+                365
+              ],
+              [
+                222,
+                375
+              ],
+              [
+                309,
+                398
+              ],
+              [
+                327,
+                396
+              ],
+              [
+                348,
+                381
+              ],
+              [
+                323,
+                110
+              ],
+              [
+                333,
+                48
+              ]
+            ],
+            [
+              [
+                599,
+                857
+              ],
+              [
+                621,
+                841
+              ],
+              [
+                632,
+                824
+              ],
+              [
+                595,
+                757
+              ],
+              [
+                552,
+                696
+              ],
+              [
+                528,
+                681
+              ]
+            ],
+            [
+              [
+                435,
+                668
+              ],
+              [
+                459,
+                646
+              ],
+              [
+                467,
+                625
+              ],
+              [
+                501,
+                419
+              ]
+            ],
+            [
+              [
+                487,
+                663
+              ],
+              [
+                508,
+                654
+              ],
+              [
+                714,
+                698
+              ],
+              [
+                771,
+                700
+              ],
+              [
+                794,
+                691
+              ],
+              [
+                815,
+                664
+              ],
+              [
+                775,
+                513
+              ],
+              [
+                753,
+                457
+              ],
+              [
+                755,
+                436
+              ]
+            ],
+            [
+              [
+                533,
+                544
+              ],
+              [
+                699,
+                577
+              ],
+              [
+                725,
+                573
+              ]
+            ],
+            [
+              [
+                520,
+                432
+              ],
+              [
+                535,
+                444
+              ],
+              [
+                672,
+                472
+              ],
+              [
+                708,
+                469
+              ],
+              [
+                719,
+                453
+              ]
+            ],
+            [
+              [
+                600,
+                654
+              ],
+              [
+                622,
+                641
+              ],
+              [
+                629,
+                628
+              ],
+              [
+                599,
+                466
+              ],
+              [
+                562,
+                376
+              ],
+              [
+                539,
+                338
+              ],
+              [
+                491,
+                286
+              ]
+            ],
+            [
+              [
+                398,
+                264
+              ],
+              [
+                446,
+                257
+              ],
+              [
+                642,
+                291
+              ],
+              [
+                850,
+                315
+              ],
+              [
+                910,
+                311
+              ],
+              [
+                943,
+                300
+              ]
+            ],
+            [
+              [
+                663,
+                397
+              ],
+              [
+                693,
+                374
+              ],
+              [
+                702,
+                347
+              ],
+              [
+                695,
+                -65
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-724c-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-c996033cf0d0b50508cdc69c",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to give change",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "找零"
+              },
+              {
+                "value": "zhǎo líng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhao3ling2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "找零",
+              "pinyin": "zhǎo líng",
+              "meaning": "to give change",
+              "audio": "2232b0e0a5919b6b54a260be6c07abfb303f54216220977039fae5973566ae22",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-724c-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-724c",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "signboard; plaque",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "牌"
+              },
+              {
+                "value": "pái",
+                "mode": "pinyin"
+              },
+              {
+                "value": "pai2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "牌",
+              "pinyin": "pái",
+              "meaning": "signboard; plaque",
+              "audio": "6c1c5bbe7ec63f1d51a977243f1cdeb81e87bcefec1448b260ce4f0d5cc27029",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "6c1c5bbe7ec63f1d51a977243f1cdeb81e87bcefec1448b260ce4f0d5cc27029"
+            ],
+            "transcript": [
+              {
+                "text": "牌",
+                "pinyin": "pái",
+                "meaning": "signboard; plaque",
+                "audio": "6c1c5bbe7ec63f1d51a977243f1cdeb81e87bcefec1448b260ce4f0d5cc27029",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-724C",
+      "character": "牌",
+      "lessonIds": [
+        "LESSON-C-724C"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-724c-word",
+        "EX-CHAR-char-724c-recognize",
+        "EX-CHAR-char-724c-write",
+        "EX-CHAR-char-724c-familiar",
+        "EX-CHAR-char-724c-recall"
+      ]
+    },
+    "audio": {
+      "6c1c5bbe7ec63f1d51a977243f1cdeb81e87bcefec1448b260ce4f0d5cc27029": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/876732c5c9f7f1e056d76f50d526823eb3197a0f84adcb8fda4a68730b73a7d9.mp3",
+          "sha256": "876732c5c9f7f1e056d76f50d526823eb3197a0f84adcb8fda4a68730b73a7d9",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "876732c5c9f7f1e056d76f50d526823eb3197a0f84adcb8fda4a68730b73a7d9",
+            "text": "牌",
+            "words": [
+              {
+                "text": "牌",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c98c42f121a4449c0243a9dd0eb656ca31998f9d46e928089955851562cf5e50.mp3",
+          "sha256": "c98c42f121a4449c0243a9dd0eb656ca31998f9d46e928089955851562cf5e50",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "c98c42f121a4449c0243a9dd0eb656ca31998f9d46e928089955851562cf5e50",
+            "text": "牌",
+            "words": [
+              {
+                "text": "牌",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "2be8b16e658025bdc52625a21d988860e409331b703b53c45a1b78f2e3939205": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/529b0afcdd7ea1771a0703e0801f0ce5331ac9b8015d42cfc37f72e276283458.mp3",
+          "sha256": "529b0afcdd7ea1771a0703e0801f0ce5331ac9b8015d42cfc37f72e276283458",
+          "byteLength": 17037,
+          "readAlong": {
+            "audioSha256": "529b0afcdd7ea1771a0703e0801f0ce5331ac9b8015d42cfc37f72e276283458",
+            "text": "青少年",
+            "words": [
+              {
+                "text": "青少年",
+                "start": 0.27,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/bc53fcf7c3b1f2d3e773a7b68e6dac86c2ef4978cb0a9e45be4407c017500167.mp3",
+          "sha256": "bc53fcf7c3b1f2d3e773a7b68e6dac86c2ef4978cb0a9e45be4407c017500167",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "bc53fcf7c3b1f2d3e773a7b68e6dac86c2ef4978cb0a9e45be4407c017500167",
+            "text": "青少年",
+            "words": [
+              {
+                "text": "青少年",
+                "start": 0.21,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "2232b0e0a5919b6b54a260be6c07abfb303f54216220977039fae5973566ae22": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/4f17aaf73df2fab472b8b9e5af1f105dfe08e566d902e956b1950e55334e0604.mp3",
+          "sha256": "4f17aaf73df2fab472b8b9e5af1f105dfe08e566d902e956b1950e55334e0604",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "4f17aaf73df2fab472b8b9e5af1f105dfe08e566d902e956b1950e55334e0604",
+            "text": "找零",
+            "words": [
+              {
+                "text": "找零",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/300abc30f9f9805264cefacf8304894a518a991c421a72cadc9caf3d489dd2a8.mp3",
+          "sha256": "300abc30f9f9805264cefacf8304894a518a991c421a72cadc9caf3d489dd2a8",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "300abc30f9f9805264cefacf8304894a518a991c421a72cadc9caf3d489dd2a8",
+            "text": "找零",
+            "words": [
+              {
+                "text": "找零",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "38c77cca84c1602dbcb30a0738d369b607820c47e8f531040d79735a7dbf259b": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/21bf801315fa14db77c6c99c70db18143330f604245bf566d71329af74e31c6e.mp3",
+          "sha256": "21bf801315fa14db77c6c99c70db18143330f604245bf566d71329af74e31c6e",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "21bf801315fa14db77c6c99c70db18143330f604245bf566d71329af74e31c6e",
+            "text": "看不起",
+            "words": [
+              {
+                "text": "看不起",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/77b6743901e4191bc36b4806c3e138e1103ff5f40e492b264a07289243f208e2.mp3",
+          "sha256": "77b6743901e4191bc36b4806c3e138e1103ff5f40e492b264a07289243f208e2",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "77b6743901e4191bc36b4806c3e138e1103ff5f40e492b264a07289243f208e2",
+            "text": "看不起",
+            "words": [
+              {
+                "text": "看不起",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "04d091323efb6676af54bf5d1a4b07541ec9e37922cf29c1ecaefd95e0d47989": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/fa728390f91fffea982981a9938ede9700faf911798d0b2f37e18a02289fce08.mp3",
+          "sha256": "fa728390f91fffea982981a9938ede9700faf911798d0b2f37e18a02289fce08",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "fa728390f91fffea982981a9938ede9700faf911798d0b2f37e18a02289fce08",
+            "text": "银牌",
+            "words": [
+              {
+                "text": "银牌",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e8005202aa1babafa62aed59903651e7b0d10e9c8ef5d6f1d9c18c000e7f34ea.mp3",
+          "sha256": "e8005202aa1babafa62aed59903651e7b0d10e9c8ef5d6f1d9c18c000e7f34ea",
+          "byteLength": 17613,
+          "readAlong": {
+            "audioSha256": "e8005202aa1babafa62aed59903651e7b0d10e9c8ef5d6f1d9c18c000e7f34ea",
+            "text": "银牌",
+            "words": [
+              {
+                "text": "银牌",
+                "start": 0.39,
+                "end": 0.75
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

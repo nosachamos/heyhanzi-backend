@@ -1,0 +1,789 @@
+{
+  "id": "EX-CHAR-char-7d2b",
+  "revision": 2,
+  "unit": "U5-45",
+  "stage": "ST-HSK5",
+  "after": "S-U5-45-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "紫",
+  "sourceBlockId": "mandarin-simplified-v1-char-7d2b",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-6a927713aa6c65c7454cfff0",
+        "text": "电梯",
+        "pinyin": "diàntī",
+        "meaning": "elevator; escalator",
+        "characters": [
+          {
+            "id": "C-7535",
+            "text": "电"
+          },
+          {
+            "id": "C-68AF",
+            "text": "梯"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ef7db1da89e56035440fd08d",
+        "text": "紫色",
+        "pinyin": "zǐ sè",
+        "meaning": "purple",
+        "characters": [
+          {
+            "id": "C-7D2B",
+            "text": "紫"
+          },
+          {
+            "id": "C-8272",
+            "text": "色"
+          }
+        ]
+      },
+      {
+        "id": "W0385",
+        "text": "店",
+        "pinyin": "diàn",
+        "meaning": "shop; store",
+        "characters": [
+          {
+            "id": "C-5E97",
+            "text": "店"
+          }
+        ]
+      },
+      {
+        "id": "W1850",
+        "text": "小说",
+        "pinyin": "xiǎoshuō",
+        "meaning": "novel; fiction",
+        "characters": [
+          {
+            "id": "C-5C0F",
+            "text": "小"
+          },
+          {
+            "id": "C-8BF4",
+            "text": "说"
+          }
+        ]
+      },
+      {
+        "id": "W3590",
+        "text": "紫",
+        "pinyin": "zǐ",
+        "meaning": "purple; violet",
+        "characters": [
+          {
+            "id": "C-7D2B",
+            "text": "紫"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "6bb1ce0138ad6723033db4865b2a42c814db06b84603d4066c009e8911cc006c",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7d2b",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "紫",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7d2b-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-ef7db1da89e56035440fd08d",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "purple",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "紫色"
+              },
+              {
+                "value": "zǐ sè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zi3se4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "紫色",
+              "pinyin": "zǐ sè",
+              "meaning": "purple",
+              "audio": "3fef24321d9b2aafff0d2874ed7b44b90c1f521f98b9c072d2a910d467cfae47",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7d2b-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W3590",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "紫",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-6a927713aa6c65c7454cfff0",
+                "label": "elevator; escalator",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1850",
+                "label": "novel; fiction",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W3590",
+                "label": "purple; violet",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7d2b-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "紫",
+        "pinyin": "zǐ",
+        "meaning": "purple; violet",
+        "source": "/stroke-data/7d2b.json",
+        "reference": {
+          "character": "紫",
+          "sha256": "07b0dfb6033227eecd83995c49d65fd1cc87712c0bdb6f4dab49e48b7011ee9c",
+          "medians": [
+            [
+              [
+                337,
+                801
+              ],
+              [
+                376,
+                771
+              ],
+              [
+                376,
+                584
+              ],
+              [
+                372,
+                568
+              ],
+              [
+                363,
+                560
+              ]
+            ],
+            [
+              [
+                403,
+                654
+              ],
+              [
+                423,
+                678
+              ],
+              [
+                462,
+                688
+              ],
+              [
+                498,
+                686
+              ]
+            ],
+            [
+              [
+                208,
+                676
+              ],
+              [
+                244,
+                643
+              ],
+              [
+                259,
+                545
+              ],
+              [
+                245,
+                531
+              ]
+            ],
+            [
+              [
+                161,
+                494
+              ],
+              [
+                171,
+                487
+              ],
+              [
+                211,
+                480
+              ],
+              [
+                398,
+                544
+              ],
+              [
+                498,
+                585
+              ]
+            ],
+            [
+              [
+                735,
+                777
+              ],
+              [
+                743,
+                737
+              ],
+              [
+                606,
+                652
+              ],
+              [
+                602,
+                641
+              ]
+            ],
+            [
+              [
+                555,
+                838
+              ],
+              [
+                589,
+                793
+              ],
+              [
+                575,
+                707
+              ],
+              [
+                579,
+                596
+              ],
+              [
+                593,
+                555
+              ],
+              [
+                619,
+                534
+              ],
+              [
+                652,
+                525
+              ],
+              [
+                739,
+                522
+              ],
+              [
+                808,
+                531
+              ],
+              [
+                846,
+                545
+              ],
+              [
+                858,
+                565
+              ],
+              [
+                867,
+                667
+              ]
+            ],
+            [
+              [
+                443,
+                540
+              ],
+              [
+                456,
+                526
+              ],
+              [
+                456,
+                504
+              ],
+              [
+                362,
+                402
+              ],
+              [
+                343,
+                370
+              ],
+              [
+                386,
+                360
+              ],
+              [
+                445,
+                359
+              ],
+              [
+                475,
+                371
+              ]
+            ],
+            [
+              [
+                588,
+                497
+              ],
+              [
+                600,
+                456
+              ],
+              [
+                547,
+                400
+              ],
+              [
+                406,
+                285
+              ],
+              [
+                397,
+                253
+              ],
+              [
+                429,
+                248
+              ],
+              [
+                566,
+                278
+              ],
+              [
+                652,
+                283
+              ]
+            ],
+            [
+              [
+                618,
+                357
+              ],
+              [
+                682,
+                291
+              ],
+              [
+                696,
+                253
+              ]
+            ],
+            [
+              [
+                490,
+                241
+              ],
+              [
+                516,
+                221
+              ],
+              [
+                520,
+                73
+              ],
+              [
+                513,
+                22
+              ],
+              [
+                498,
+                -3
+              ],
+              [
+                407,
+                39
+              ]
+            ],
+            [
+              [
+                299,
+                171
+              ],
+              [
+                278,
+                114
+              ],
+              [
+                230,
+                28
+              ]
+            ],
+            [
+              [
+                649,
+                177
+              ],
+              [
+                761,
+                99
+              ],
+              [
+                782,
+                70
+              ],
+              [
+                794,
+                37
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7d2b-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0385",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "shop; store",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "店"
+              },
+              {
+                "value": "diàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "dian4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "店",
+              "pinyin": "diàn",
+              "meaning": "shop; store",
+              "audio": "a63f55464932fbbfa9c31283e908f025ffadc689efa2b873a6846f73f3dbd834",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7d2b-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W3590",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "purple; violet",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "紫"
+              },
+              {
+                "value": "zǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zi3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "紫",
+              "pinyin": "zǐ",
+              "meaning": "purple; violet",
+              "audio": "19a9577aa09e47c38275b131062496c1ab4beaf96d84079cd165cd5cec137956",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "19a9577aa09e47c38275b131062496c1ab4beaf96d84079cd165cd5cec137956"
+            ],
+            "transcript": [
+              {
+                "text": "紫",
+                "pinyin": "zǐ",
+                "meaning": "purple; violet",
+                "audio": "19a9577aa09e47c38275b131062496c1ab4beaf96d84079cd165cd5cec137956",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7D2B",
+      "character": "紫",
+      "lessonIds": [
+        "LESSON-C-7D2B"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7d2b-word",
+        "EX-CHAR-char-7d2b-recognize",
+        "EX-CHAR-char-7d2b-write",
+        "EX-CHAR-char-7d2b-familiar",
+        "EX-CHAR-char-7d2b-recall"
+      ]
+    },
+    "audio": {
+      "2d3c4a42cc0e9ef86bd0cc09221549e7e543f476dee6f8d644a4f3b65216592c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5052f9b53b74acd59d4d08ddb2cb603c196e2181cae830a5daafd536b0080a9f.mp3",
+          "sha256": "5052f9b53b74acd59d4d08ddb2cb603c196e2181cae830a5daafd536b0080a9f",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "5052f9b53b74acd59d4d08ddb2cb603c196e2181cae830a5daafd536b0080a9f",
+            "text": "电梯",
+            "words": [
+              {
+                "text": "电梯",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/974876a387327135b4ba67625166a55551a7891daabe49c3f1e37dd910f78890.mp3",
+          "sha256": "974876a387327135b4ba67625166a55551a7891daabe49c3f1e37dd910f78890",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "974876a387327135b4ba67625166a55551a7891daabe49c3f1e37dd910f78890",
+            "text": "电梯",
+            "words": [
+              {
+                "text": "电梯",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "3fef24321d9b2aafff0d2874ed7b44b90c1f521f98b9c072d2a910d467cfae47": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6dc56785f0a1961bf53c8957fc724d3fd62847acc8365a5d6d42b40a214b8544.mp3",
+          "sha256": "6dc56785f0a1961bf53c8957fc724d3fd62847acc8365a5d6d42b40a214b8544",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "6dc56785f0a1961bf53c8957fc724d3fd62847acc8365a5d6d42b40a214b8544",
+            "text": "紫色",
+            "words": [
+              {
+                "text": "紫色",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e26c1568104656509c04307f853f0442c01b0b5f7fbe8a28fc258a23c9d1610f.mp3",
+          "sha256": "e26c1568104656509c04307f853f0442c01b0b5f7fbe8a28fc258a23c9d1610f",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "e26c1568104656509c04307f853f0442c01b0b5f7fbe8a28fc258a23c9d1610f",
+            "text": "紫色",
+            "words": [
+              {
+                "text": "紫色",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "a63f55464932fbbfa9c31283e908f025ffadc689efa2b873a6846f73f3dbd834": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-871c1f408f01898f0ac364c48fc33bf4b4f8fdafd407724ff2b4ae53fd8b0968.mp3",
+          "sha256": "871c1f408f01898f0ac364c48fc33bf4b4f8fdafd407724ff2b4ae53fd8b0968",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "871c1f408f01898f0ac364c48fc33bf4b4f8fdafd407724ff2b4ae53fd8b0968",
+            "text": "店",
+            "words": [
+              {
+                "text": "店",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-54263547fab8eea3cbf9f98da1cd7bd0c5b7c8eb6b2e3129740a24f84f1ff076.mp3",
+          "sha256": "54263547fab8eea3cbf9f98da1cd7bd0c5b7c8eb6b2e3129740a24f84f1ff076",
+          "byteLength": 8109,
+          "qualityWarning": "too-fast",
+          "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+          "readAlong": {
+            "audioSha256": "54263547fab8eea3cbf9f98da1cd7bd0c5b7c8eb6b2e3129740a24f84f1ff076",
+            "text": "店",
+            "words": [
+              {
+                "text": "店",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "13e35af7ab9ead96def0e72afc3e5fd12bc29681a9d97f03a83c9661cadbb5cd": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-97879a291fe34afbc48443afe084efe811ecd34b38eff5b39574dc1bb4ad6687.mp3",
+          "sha256": "97879a291fe34afbc48443afe084efe811ecd34b38eff5b39574dc1bb4ad6687",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "97879a291fe34afbc48443afe084efe811ecd34b38eff5b39574dc1bb4ad6687",
+            "text": "小说",
+            "words": [
+              {
+                "text": "小说",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c59fb8f4d17636614f9221a2d40f6ac6d6020e88fd3d722893d7d4fc01b00b4c.mp3",
+          "sha256": "c59fb8f4d17636614f9221a2d40f6ac6d6020e88fd3d722893d7d4fc01b00b4c",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "c59fb8f4d17636614f9221a2d40f6ac6d6020e88fd3d722893d7d4fc01b00b4c",
+            "text": "小说",
+            "words": [
+              {
+                "text": "小说",
+                "start": 0.21,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "19a9577aa09e47c38275b131062496c1ab4beaf96d84079cd165cd5cec137956": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/663d8490472b7075a439fb7db03aba1980edee3a7d935b8bb608601ac7d80388.mp3",
+          "sha256": "663d8490472b7075a439fb7db03aba1980edee3a7d935b8bb608601ac7d80388",
+          "byteLength": 12429,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "663d8490472b7075a439fb7db03aba1980edee3a7d935b8bb608601ac7d80388",
+            "text": "紫",
+            "words": [
+              {
+                "text": "紫",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d2b52c1a94fa470232877bdb7680a74bdbbd250e095224bfa71e0fed6839835c.mp3",
+          "sha256": "d2b52c1a94fa470232877bdb7680a74bdbbd250e095224bfa71e0fed6839835c",
+          "byteLength": 10989,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "d2b52c1a94fa470232877bdb7680a74bdbbd250e095224bfa71e0fed6839835c",
+            "text": "紫",
+            "words": [
+              {
+                "text": "紫",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

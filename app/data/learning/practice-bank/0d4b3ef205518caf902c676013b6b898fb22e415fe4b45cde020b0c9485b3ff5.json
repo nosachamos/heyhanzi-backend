@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0501",
+  "targetId": "W0501",
+  "steps": [
+    {
+      "id": "BANK-W0501-W0501",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0501-W0501",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "this side; here",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "这边"
+            },
+            {
+              "value": "zhèbiān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhe4bian1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "这边",
+            "pinyin": "zhèbiān",
+            "meaning": "this side; here",
+            "singleWord": true,
+            "audio": "37801dc812a9d377dbf6773d3aab11f42ee40774b030bac7a4eb4c9c81d27f96"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "37801dc812a9d377dbf6773d3aab11f42ee40774b030bac7a4eb4c9c81d27f96": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a01d1e196685e9280287162e90de4b21ba589609bbeef018b07119c92a1f631b.mp3",
+        "sha256": "a01d1e196685e9280287162e90de4b21ba589609bbeef018b07119c92a1f631b",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "a01d1e196685e9280287162e90de4b21ba589609bbeef018b07119c92a1f631b",
+          "text": "这边",
+          "words": [
+            {
+              "text": "这边",
+              "start": 0.09,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a71f967acc72ebedfc34c77b9358a8ba58a6a9be93285251a68b55a5449e877f.mp3",
+        "sha256": "a71f967acc72ebedfc34c77b9358a8ba58a6a9be93285251a68b55a5449e877f",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "a71f967acc72ebedfc34c77b9358a8ba58a6a9be93285251a68b55a5449e877f",
+          "text": "这边",
+          "words": [
+            {
+              "text": "这边",
+              "start": 0.03,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0501",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0501-W0501",
+      "question_ids": [
+        "BANK-W0501-W0501"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U06",
+    "stepId": "S-U06-working-word-2",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8fb9"
+    ],
+    "grammarLessonIds": []
+  }
+}

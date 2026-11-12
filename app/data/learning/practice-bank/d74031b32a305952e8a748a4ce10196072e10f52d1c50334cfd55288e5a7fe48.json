@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1051",
+  "targetId": "W1051",
+  "steps": [
+    {
+      "id": "BANK-W1051-W1051",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1051-W1051",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "bicycle; bike",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "自行车"
+            },
+            {
+              "value": "zìxíngchē",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zi4xing2che1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "自行车",
+            "pinyin": "zìxíngchē",
+            "meaning": "bicycle; bike",
+            "singleWord": true,
+            "audio": "b75b6cd4c1bc14b0ab43d6b6a85ee63f4c0414a98e7b0cb4f853b003c40a8984"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b75b6cd4c1bc14b0ab43d6b6a85ee63f4c0414a98e7b0cb4f853b003c40a8984": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-9f3cd1eb631ec551ad21ab6b5be1b166ef6947bfc2e95bd571597442fbd91f0b.mp3",
+        "sha256": "9f3cd1eb631ec551ad21ab6b5be1b166ef6947bfc2e95bd571597442fbd91f0b",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "9f3cd1eb631ec551ad21ab6b5be1b166ef6947bfc2e95bd571597442fbd91f0b",
+          "text": "自行车",
+          "words": [
+            {
+              "text": "自行车",
+              "start": 0.09,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-544d0a2b39dc4a825bd58101f6fa54ca1ec9ad96a4be7333cbb4f1fbca15318a.mp3",
+        "sha256": "544d0a2b39dc4a825bd58101f6fa54ca1ec9ad96a4be7333cbb4f1fbca15318a",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "544d0a2b39dc4a825bd58101f6fa54ca1ec9ad96a4be7333cbb4f1fbca15318a",
+          "text": "自行车",
+          "words": [
+            {
+              "text": "自行车",
+              "start": 0.15,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1051",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1051-W1051",
+      "question_ids": [
+        "BANK-W1051-W1051"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-10",
+    "stepId": "S-U3-10-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-81ea"
+    ],
+    "grammarLessonIds": []
+  }
+}

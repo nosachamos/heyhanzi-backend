@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1099",
+  "targetId": "W1099",
+  "steps": [
+    {
+      "id": "BANK-W1099-W1099",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1099-W1099",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "doctoral degree; person with a doctorate",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "博士"
+            },
+            {
+              "value": "bóshì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bo2shi4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "博士",
+            "pinyin": "bóshì",
+            "meaning": "doctoral degree; person with a doctorate",
+            "singleWord": true,
+            "audio": "5061bc659fd5e8ad175464ebaba3f62f73fb1225c57d6b76538e2a57b9259f27"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5061bc659fd5e8ad175464ebaba3f62f73fb1225c57d6b76538e2a57b9259f27": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3af1ef1dbb3f8a57a1884c040af3805aec76d2d97972bee086913506e3f04b2a.mp3",
+        "sha256": "3af1ef1dbb3f8a57a1884c040af3805aec76d2d97972bee086913506e3f04b2a",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "3af1ef1dbb3f8a57a1884c040af3805aec76d2d97972bee086913506e3f04b2a",
+          "text": "博士",
+          "words": [
+            {
+              "text": "博士",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/604c5f5c238376513ecf670f46fd6ff7df9db04e07e03d72d17b1e38b26e86f3.mp3",
+        "sha256": "604c5f5c238376513ecf670f46fd6ff7df9db04e07e03d72d17b1e38b26e86f3",
+        "byteLength": 16461,
+        "readAlong": {
+          "audioSha256": "604c5f5c238376513ecf670f46fd6ff7df9db04e07e03d72d17b1e38b26e86f3",
+          "text": "博士",
+          "words": [
+            {
+              "text": "博士",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1099",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1099-W1099",
+      "question_ids": [
+        "BANK-W1099-W1099"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-19",
+    "stepId": "S-U4-19-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-535a"
+    ],
+    "grammarLessonIds": []
+  }
+}

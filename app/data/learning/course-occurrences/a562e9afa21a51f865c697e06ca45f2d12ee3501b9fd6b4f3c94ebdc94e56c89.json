@@ -1,0 +1,779 @@
+{
+  "id": "EX-CHAR-char-75db",
+  "revision": 2,
+  "unit": "U4-14",
+  "stage": "ST-HSK4",
+  "after": "S-U4-14-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "痛",
+  "sourceBlockId": "mandarin-simplified-v1-char-75db",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5802",
+        "text": "堂",
+        "pinyin": "táng",
+        "meaning": "(main) hall; large room for a specific purpose",
+        "characters": [
+          {
+            "id": "C-5802",
+            "text": "堂"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-74fd26cd71518dcc8cb6044a",
+        "text": "疼痛",
+        "pinyin": "téngtòng",
+        "meaning": "pain; (of a body part) to be painful; to be sore; to hurt",
+        "characters": [
+          {
+            "id": "C-75BC",
+            "text": "疼"
+          },
+          {
+            "id": "C-75DB",
+            "text": "痛"
+          }
+        ]
+      },
+      {
+        "id": "W0490",
+        "text": "雪",
+        "pinyin": "xuě",
+        "meaning": "snow",
+        "characters": [
+          {
+            "id": "C-96EA",
+            "text": "雪"
+          }
+        ]
+      },
+      {
+        "id": "W0922",
+        "text": "声音",
+        "pinyin": "shēngyīn",
+        "meaning": "sound; voice",
+        "characters": [
+          {
+            "id": "C-58F0",
+            "text": "声"
+          },
+          {
+            "id": "C-97F3",
+            "text": "音"
+          }
+        ]
+      },
+      {
+        "id": "W1787",
+        "text": "痛",
+        "pinyin": "tòng",
+        "meaning": "ache; pain",
+        "characters": [
+          {
+            "id": "C-75DB",
+            "text": "痛"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "ae41ba7b6cf86e8bba3faed7f60087ed4900a4d32912c89cbdb0f4c3af5a8aca",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-75db",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "痛",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-75db-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-74fd26cd71518dcc8cb6044a",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "pain; (of a body part) to be painful",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "疼痛"
+              },
+              {
+                "value": "téngtòng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "teng2tong4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "疼痛",
+              "pinyin": "téngtòng",
+              "meaning": "pain; (of a body part) to be painful",
+              "audio": "5df08e061f2dd3737a4973e3d5a671ece7d150b11e90e7afd424cca17ca1561c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-75db-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W1787",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "痛",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1787",
+                "label": "ache; pain",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0922",
+                "label": "sound; voice",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0490",
+                "label": "snow",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-75db-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "痛",
+        "pinyin": "tòng",
+        "meaning": "ache; pain",
+        "source": "/stroke-data/75db.json",
+        "reference": {
+          "character": "痛",
+          "sha256": "041bdd7352deb08d88e280cbcb55499cb17bb05c8e89ae1283ecce531fbf57aa",
+          "medians": [
+            [
+              [
+                517,
+                853
+              ],
+              [
+                590,
+                811
+              ],
+              [
+                617,
+                774
+              ]
+            ],
+            [
+              [
+                387,
+                673
+              ],
+              [
+                413,
+                659
+              ],
+              [
+                501,
+                667
+              ],
+              [
+                757,
+                717
+              ],
+              [
+                803,
+                715
+              ]
+            ],
+            [
+              [
+                317,
+                693
+              ],
+              [
+                346,
+                664
+              ],
+              [
+                352,
+                625
+              ],
+              [
+                329,
+                452
+              ],
+              [
+                290,
+                296
+              ],
+              [
+                261,
+                216
+              ],
+              [
+                211,
+                116
+              ],
+              [
+                145,
+                20
+              ],
+              [
+                105,
+                -22
+              ]
+            ],
+            [
+              [
+                155,
+                578
+              ],
+              [
+                220,
+                517
+              ],
+              [
+                232,
+                494
+              ]
+            ],
+            [
+              [
+                79,
+                298
+              ],
+              [
+                130,
+                290
+              ],
+              [
+                264,
+                357
+              ],
+              [
+                275,
+                370
+              ]
+            ],
+            [
+              [
+                454,
+                573
+              ],
+              [
+                492,
+                560
+              ],
+              [
+                538,
+                568
+              ],
+              [
+                596,
+                591
+              ],
+              [
+                669,
+                610
+              ],
+              [
+                688,
+                607
+              ],
+              [
+                702,
+                597
+              ],
+              [
+                711,
+                582
+              ],
+              [
+                698,
+                561
+              ],
+              [
+                624,
+                491
+              ],
+              [
+                615,
+                492
+              ]
+            ],
+            [
+              [
+                547,
+                495
+              ],
+              [
+                594,
+                472
+              ],
+              [
+                621,
+                445
+              ]
+            ],
+            [
+              [
+                406,
+                396
+              ],
+              [
+                433,
+                365
+              ],
+              [
+                436,
+                290
+              ],
+              [
+                425,
+                168
+              ],
+              [
+                403,
+                42
+              ]
+            ],
+            [
+              [
+                457,
+                388
+              ],
+              [
+                473,
+                378
+              ],
+              [
+                541,
+                387
+              ],
+              [
+                742,
+                430
+              ],
+              [
+                768,
+                423
+              ],
+              [
+                788,
+                405
+              ],
+              [
+                794,
+                395
+              ],
+              [
+                802,
+                104
+              ],
+              [
+                794,
+                42
+              ],
+              [
+                786,
+                26
+              ],
+              [
+                769,
+                27
+              ],
+              [
+                678,
+                52
+              ]
+            ],
+            [
+              [
+                504,
+                267
+              ],
+              [
+                646,
+                295
+              ],
+              [
+                674,
+                297
+              ],
+              [
+                695,
+                291
+              ]
+            ],
+            [
+              [
+                492,
+                175
+              ],
+              [
+                547,
+                179
+              ],
+              [
+                665,
+                202
+              ],
+              [
+                711,
+                196
+              ]
+            ],
+            [
+              [
+                564,
+                376
+              ],
+              [
+                599,
+                354
+              ],
+              [
+                591,
+                24
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-75db-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-PRIMARY-char-5802",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "(main) hall; large room for a specific purpose",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "堂"
+              },
+              {
+                "value": "táng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "堂",
+              "pinyin": "táng",
+              "meaning": "(main) hall; large room for a specific purpose",
+              "audio": "6ca232205e99390c0de945440cab15a77efef5ccb0882b26834ed448c392a70f",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-75db-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W1787",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "ache; pain",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "痛"
+              },
+              {
+                "value": "tòng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tong4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "痛",
+              "pinyin": "tòng",
+              "meaning": "ache; pain",
+              "audio": "0fbd2f6e5d2094a3bd0adb88e026c2070071152924b2d38c6fdf004063158260",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "0fbd2f6e5d2094a3bd0adb88e026c2070071152924b2d38c6fdf004063158260"
+            ],
+            "transcript": [
+              {
+                "text": "痛",
+                "pinyin": "tòng",
+                "meaning": "ache; pain",
+                "audio": "0fbd2f6e5d2094a3bd0adb88e026c2070071152924b2d38c6fdf004063158260",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-75DB",
+      "character": "痛",
+      "lessonIds": [
+        "LESSON-C-75DB"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-75db-word",
+        "EX-CHAR-char-75db-recognize",
+        "EX-CHAR-char-75db-write",
+        "EX-CHAR-char-75db-familiar",
+        "EX-CHAR-char-75db-recall"
+      ]
+    },
+    "audio": {
+      "6ca232205e99390c0de945440cab15a77efef5ccb0882b26834ed448c392a70f": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-1cd22fadedf1184fda9a970479081611dec50054e2371baf69678d649c163315.mp3",
+          "sha256": "1cd22fadedf1184fda9a970479081611dec50054e2371baf69678d649c163315",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "1cd22fadedf1184fda9a970479081611dec50054e2371baf69678d649c163315",
+            "text": "堂",
+            "words": [
+              {
+                "text": "堂",
+                "start": 0.14,
+                "end": 0.26
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-1caa8ab5d81628059ff0169036bb221c0ad9f7fa2dd76233b0cff03d702d36ac.mp3",
+          "sha256": "1caa8ab5d81628059ff0169036bb221c0ad9f7fa2dd76233b0cff03d702d36ac",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "1caa8ab5d81628059ff0169036bb221c0ad9f7fa2dd76233b0cff03d702d36ac",
+            "text": "堂",
+            "words": [
+              {
+                "text": "堂",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "5df08e061f2dd3737a4973e3d5a671ece7d150b11e90e7afd424cca17ca1561c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-d3c0134a181aca1e1fc50cbb40aa2eed36a5601971443368555045beb8c0cf46.mp3",
+          "sha256": "d3c0134a181aca1e1fc50cbb40aa2eed36a5601971443368555045beb8c0cf46",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "d3c0134a181aca1e1fc50cbb40aa2eed36a5601971443368555045beb8c0cf46",
+            "text": "疼痛",
+            "words": [
+              {
+                "text": "疼痛",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-9daeff9652289676cf2b3a5dc0f5cdc09c768ca5ee2b2ddc6b9fa0198826e75a.mp3",
+          "sha256": "9daeff9652289676cf2b3a5dc0f5cdc09c768ca5ee2b2ddc6b9fa0198826e75a",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "9daeff9652289676cf2b3a5dc0f5cdc09c768ca5ee2b2ddc6b9fa0198826e75a",
+            "text": "疼痛",
+            "words": [
+              {
+                "text": "疼痛",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "ccb817352cdd9c7a28a7638479e62c536ce5eee48cc556f439f747b97fea3486": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2a23590497c5a7bb03fe2aaa2fb91f1613df6f94bbd7c9c94cdc102c15649a71.mp3",
+          "sha256": "2a23590497c5a7bb03fe2aaa2fb91f1613df6f94bbd7c9c94cdc102c15649a71",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "2a23590497c5a7bb03fe2aaa2fb91f1613df6f94bbd7c9c94cdc102c15649a71",
+            "text": "雪",
+            "words": [
+              {
+                "text": "雪",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/51d5be16ad9ef034e29d312100f00e5fb7f476055ccf315266830af30848b365.mp3",
+          "sha256": "51d5be16ad9ef034e29d312100f00e5fb7f476055ccf315266830af30848b365",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "51d5be16ad9ef034e29d312100f00e5fb7f476055ccf315266830af30848b365",
+            "text": "雪",
+            "words": [
+              {
+                "text": "雪",
+                "start": 0.18,
+                "end": 0.32
+              }
+            ]
+          }
+        }
+      },
+      "31fe8979beb69d87d8ad632d37d87b5599a677ade21dac26cd4df3377a4e5f12": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b680fc3392986d0e5f71a5f64f644aaa8e8ed8a3b1efd7a8397bd14a258c0b7d.mp3",
+          "sha256": "b680fc3392986d0e5f71a5f64f644aaa8e8ed8a3b1efd7a8397bd14a258c0b7d",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "b680fc3392986d0e5f71a5f64f644aaa8e8ed8a3b1efd7a8397bd14a258c0b7d",
+            "text": "声音",
+            "words": [
+              {
+                "text": "声音",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-70a74e4699b31ff782034235fe6f5ea485751ee6fdf6056ae8f3099c3ed5c5ca.mp3",
+          "sha256": "70a74e4699b31ff782034235fe6f5ea485751ee6fdf6056ae8f3099c3ed5c5ca",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "70a74e4699b31ff782034235fe6f5ea485751ee6fdf6056ae8f3099c3ed5c5ca",
+            "text": "声音",
+            "words": [
+              {
+                "text": "声音",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "0fbd2f6e5d2094a3bd0adb88e026c2070071152924b2d38c6fdf004063158260": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-7d65b901573b09e5cad00acf3c522e9958b60b106469d9250d6a3a8fa924d9b3.mp3",
+          "sha256": "7d65b901573b09e5cad00acf3c522e9958b60b106469d9250d6a3a8fa924d9b3",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "7d65b901573b09e5cad00acf3c522e9958b60b106469d9250d6a3a8fa924d9b3",
+            "text": "痛",
+            "words": [
+              {
+                "text": "痛",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-22472c370ec2dcb6b35963f244eef49cc8358a8d9855add947ffc868e1d5882c.mp3",
+          "sha256": "22472c370ec2dcb6b35963f244eef49cc8358a8d9855add947ffc868e1d5882c",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "22472c370ec2dcb6b35963f244eef49cc8358a8d9855add947ffc868e1d5882c",
+            "text": "痛",
+            "words": [
+              {
+                "text": "痛",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

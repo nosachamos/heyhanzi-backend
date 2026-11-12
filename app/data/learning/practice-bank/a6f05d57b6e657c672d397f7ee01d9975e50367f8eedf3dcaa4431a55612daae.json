@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5000",
+  "targetId": "W5000",
+  "steps": [
+    {
+      "id": "BANK-W5000-W5000",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5000-W5000",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "civilized; civilization",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "文明"
+            },
+            {
+              "value": "wénmíng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wen2ming2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "文明",
+            "pinyin": "wénmíng",
+            "meaning": "civilized; civilization",
+            "singleWord": true,
+            "audio": "fe3300dd266fe15d8917a90659de758857dba6a460ccc418e498a43f1844eecc"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "fe3300dd266fe15d8917a90659de758857dba6a460ccc418e498a43f1844eecc": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/286e692e200c26470ed7f443c7e1c32da175ca034e3e445a46aaf3f41263114d.mp3",
+        "sha256": "286e692e200c26470ed7f443c7e1c32da175ca034e3e445a46aaf3f41263114d",
+        "byteLength": 15309,
+        "readAlong": {
+          "audioSha256": "286e692e200c26470ed7f443c7e1c32da175ca034e3e445a46aaf3f41263114d",
+          "text": "文明",
+          "words": [
+            {
+              "text": "文明",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/17cd5551a213f1be5e9c6c535d7148ecab0272029c62af2621370c70e905fa4b.mp3",
+        "sha256": "17cd5551a213f1be5e9c6c535d7148ecab0272029c62af2621370c70e905fa4b",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "17cd5551a213f1be5e9c6c535d7148ecab0272029c62af2621370c70e905fa4b",
+          "text": "文明",
+          "words": [
+            {
+              "text": "文明",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5000",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5000-W5000",
+      "question_ids": [
+        "BANK-W5000-W5000"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-35",
+    "stepId": "S-U6-35-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-660e"
+    ],
+    "grammarLessonIds": []
+  }
+}

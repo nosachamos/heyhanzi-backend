@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1544",
+  "targetId": "W1544",
+  "steps": [
+    {
+      "id": "BANK-W1544-W1544",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1544-W1544",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "dream",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "梦"
+            },
+            {
+              "value": "mèng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "meng4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "梦",
+            "pinyin": "mèng",
+            "meaning": "dream",
+            "singleWord": true,
+            "audio": "b71ca26f8a44923cab3011d7936d7a3b9a5027808fde09f408247bbf6dc3d689"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b71ca26f8a44923cab3011d7936d7a3b9a5027808fde09f408247bbf6dc3d689": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f147aaa65fc0e7fe8bda472ebe7c2cae26e1a49a791d55fa8491694a6b5433c2.mp3",
+        "sha256": "f147aaa65fc0e7fe8bda472ebe7c2cae26e1a49a791d55fa8491694a6b5433c2",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "f147aaa65fc0e7fe8bda472ebe7c2cae26e1a49a791d55fa8491694a6b5433c2",
+          "text": "梦",
+          "words": [
+            {
+              "text": "梦",
+              "start": 0.16,
+              "end": 0.3
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a8857c3669076b4817a189d4b28273595bbf98ce8469807adde9bea0f843511f.mp3",
+        "sha256": "a8857c3669076b4817a189d4b28273595bbf98ce8469807adde9bea0f843511f",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "a8857c3669076b4817a189d4b28273595bbf98ce8469807adde9bea0f843511f",
+          "text": "梦",
+          "words": [
+            {
+              "text": "梦",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1544",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1544-W1544",
+      "question_ids": [
+        "BANK-W1544-W1544"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-24",
+    "stepId": "S-U4-24-words-r4-8",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6001"
+    ],
+    "grammarLessonIds": []
+  }
+}

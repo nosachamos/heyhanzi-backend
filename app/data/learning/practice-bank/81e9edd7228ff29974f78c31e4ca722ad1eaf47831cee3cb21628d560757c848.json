@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W0423",
+  "targetId": "W0423",
+  "steps": [
+    {
+      "id": "BANK-W0423-W0423",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0423-W0423",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "inside",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "里"
+            },
+            {
+              "value": "lǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "li3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "里",
+            "pinyin": "lǐ",
+            "meaning": "inside",
+            "singleWord": true,
+            "audio": "390c71259536f7be3082ec1de93cea2a0640d4a2f5a07b2a882dae71342bfb92"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "390c71259536f7be3082ec1de93cea2a0640d4a2f5a07b2a882dae71342bfb92": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-08fecf423a5880e46f0922a5987175156e9788964d0523c074cf0f236f8b5a73.mp3",
+        "sha256": "08fecf423a5880e46f0922a5987175156e9788964d0523c074cf0f236f8b5a73",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "08fecf423a5880e46f0922a5987175156e9788964d0523c074cf0f236f8b5a73",
+          "text": "里",
+          "words": [
+            {
+              "text": "里",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-a487ad5465bdf62292688cb6e88eff62bbd3bfb9ca1e27d37a9d3d1fd5ba6163.mp3",
+        "sha256": "a487ad5465bdf62292688cb6e88eff62bbd3bfb9ca1e27d37a9d3d1fd5ba6163",
+        "byteLength": 10989,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "a487ad5465bdf62292688cb6e88eff62bbd3bfb9ca1e27d37a9d3d1fd5ba6163",
+          "text": "里",
+          "words": [
+            {
+              "text": "里",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0423",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0423-W0423",
+      "question_ids": [
+        "BANK-W0423-W0423"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U06",
+    "stepId": "S-U06-words-r4-37",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-91cc"
+    ],
+    "grammarLessonIds": []
+  }
+}

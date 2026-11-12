@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0010",
+  "targetId": "W0010",
+  "steps": [
+    {
+      "id": "BANK-W0010-W0010",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0010-W0010",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to learn; to study",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "学"
+            },
+            {
+              "value": "xué",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xue2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "学",
+            "pinyin": "xué",
+            "meaning": "to learn; to study",
+            "singleWord": true,
+            "audio": "67e91e06e3a16b9fc8d3ab04cb7f09b5063bf56a76753706f5d0338ed5dde7a2"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "67e91e06e3a16b9fc8d3ab04cb7f09b5063bf56a76753706f5d0338ed5dde7a2": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-91dacb9260223e3a8dde5c9fd6308b2dda299da63f94e0e28c8962b9484c1509.mp3",
+        "sha256": "91dacb9260223e3a8dde5c9fd6308b2dda299da63f94e0e28c8962b9484c1509",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "91dacb9260223e3a8dde5c9fd6308b2dda299da63f94e0e28c8962b9484c1509",
+          "text": "学",
+          "words": [
+            {
+              "text": "学",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d4686cf5047748fc9b5e1c86e0ea394b7218ad58591255dc7ca37e175ee57d44.mp3",
+        "sha256": "d4686cf5047748fc9b5e1c86e0ea394b7218ad58591255dc7ca37e175ee57d44",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "d4686cf5047748fc9b5e1c86e0ea394b7218ad58591255dc7ca37e175ee57d44",
+          "text": "学",
+          "words": [
+            {
+              "text": "学",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0010",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0010-W0010",
+      "question_ids": [
+        "BANK-W0010-W0010"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU03",
+    "stepId": "S-WU03-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-xue"
+    ],
+    "grammarLessonIds": []
+  }
+}

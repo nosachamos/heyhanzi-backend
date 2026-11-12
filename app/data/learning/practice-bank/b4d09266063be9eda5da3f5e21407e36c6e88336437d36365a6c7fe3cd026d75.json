@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0101",
+  "targetId": "W0101",
+  "steps": [
+    {
+      "id": "BANK-W0101-W0101",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0101-W0101",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "bread",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "面包"
+            },
+            {
+              "value": "miànbāo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "mian4bao1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "面包",
+            "pinyin": "miànbāo",
+            "meaning": "bread",
+            "singleWord": true,
+            "audio": "f078207344d5b600c2cd26ad3150930c7db7100695c7fb981dbffbe2fdb1e87f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f078207344d5b600c2cd26ad3150930c7db7100695c7fb981dbffbe2fdb1e87f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-9cf9145493dcc561919e4ad31eec4571d6db3079312b0755c98b1f648e183c78.mp3",
+        "sha256": "9cf9145493dcc561919e4ad31eec4571d6db3079312b0755c98b1f648e183c78",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "9cf9145493dcc561919e4ad31eec4571d6db3079312b0755c98b1f648e183c78",
+          "text": "面包",
+          "words": [
+            {
+              "text": "面包",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2fdd2ad64eb9f2712721f03493002bb0cc88a5245797f82cf6bc3e5ea557f847.mp3",
+        "sha256": "2fdd2ad64eb9f2712721f03493002bb0cc88a5245797f82cf6bc3e5ea557f847",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "2fdd2ad64eb9f2712721f03493002bb0cc88a5245797f82cf6bc3e5ea557f847",
+          "text": "面包",
+          "words": [
+            {
+              "text": "面包",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0101",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0101-W0101",
+      "question_ids": [
+        "BANK-W0101-W0101"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U08-P01",
+    "stepId": "S-U08-words-r4-19",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5305"
+    ],
+    "grammarLessonIds": []
+  }
+}

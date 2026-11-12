@@ -1,0 +1,613 @@
+{
+  "id": "EX-CHAR-char-4e91",
+  "revision": 2,
+  "unit": "U4-26",
+  "stage": "ST-HSK4",
+  "after": "S-U4-26-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "云",
+  "sourceBlockId": "mandarin-simplified-v1-char-4e91",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-4e91",
+        "text": "云",
+        "pinyin": "yún",
+        "meaning": "cloud; (classical) to say",
+        "characters": [
+          {
+            "id": "C-4E91",
+            "text": "云"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-029e915bddf062cce320890c",
+        "text": "不耐烦",
+        "pinyin": "bú nàifán",
+        "meaning": "impatient; to lose patience",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-8010",
+            "text": "耐"
+          },
+          {
+            "id": "C-70E6",
+            "text": "烦"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-210aca179f20ca77bea5f181",
+        "text": "多云",
+        "pinyin": "duō yún",
+        "meaning": "(meteorology) cloudy",
+        "characters": [
+          {
+            "id": "C-591A",
+            "text": "多"
+          },
+          {
+            "id": "C-4E91",
+            "text": "云"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ea17bc84c4ba94160a7258bf",
+        "text": "出面",
+        "pinyin": "chū miàn",
+        "meaning": "to step forth",
+        "characters": [
+          {
+            "id": "C-51FA",
+            "text": "出"
+          },
+          {
+            "id": "C-9762",
+            "text": "面"
+          }
+        ]
+      },
+      {
+        "id": "W1804",
+        "text": "网页",
+        "pinyin": "wǎngyè",
+        "meaning": "web page",
+        "characters": [
+          {
+            "id": "C-7F51",
+            "text": "网"
+          },
+          {
+            "id": "C-9875",
+            "text": "页"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "7d270612735427df7388cf6f3680504daf6d2a6e3b71a439ec27630a2c84c7d2",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4e91",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "云",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4e91-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-210aca179f20ca77bea5f181",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "(meteorology) cloudy",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "多云"
+              },
+              {
+                "value": "duō yún",
+                "mode": "pinyin"
+              },
+              {
+                "value": "duo1yun2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "多云",
+              "pinyin": "duō yún",
+              "meaning": "(meteorology) cloudy",
+              "audio": "3e87a7bf6c4f9332d6fc1df47f61a200183616c9631785d12eaaee4e078720c2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e91-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-4e91",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "云",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-4e91",
+                "label": "cloud; (classical) to say",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-029e915bddf062cce320890c",
+                "label": "impatient; to lose patience",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1804",
+                "label": "web page",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e91-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "云",
+        "pinyin": "yún",
+        "meaning": "cloud; (classical) to say",
+        "source": "/stroke-data/4e91.json",
+        "reference": {
+          "character": "云",
+          "sha256": "91b5f4b22bf97eccd2490c21dbf0dd4b25b85a45ff5bfeaea52d45a45e51222e",
+          "medians": [
+            [
+              [
+                342,
+                641
+              ],
+              [
+                365,
+                634
+              ],
+              [
+                416,
+                634
+              ],
+              [
+                645,
+                684
+              ],
+              [
+                699,
+                684
+              ]
+            ],
+            [
+              [
+                143,
+                398
+              ],
+              [
+                197,
+                389
+              ],
+              [
+                410,
+                428
+              ],
+              [
+                775,
+                472
+              ],
+              [
+                816,
+                473
+              ],
+              [
+                890,
+                455
+              ]
+            ],
+            [
+              [
+                521,
+                398
+              ],
+              [
+                496,
+                391
+              ],
+              [
+                475,
+                374
+              ],
+              [
+                421,
+                274
+              ],
+              [
+                344,
+                172
+              ],
+              [
+                325,
+                121
+              ],
+              [
+                374,
+                120
+              ],
+              [
+                575,
+                163
+              ],
+              [
+                652,
+                176
+              ],
+              [
+                700,
+                176
+              ]
+            ],
+            [
+              [
+                642,
+                281
+              ],
+              [
+                776,
+                136
+              ],
+              [
+                796,
+                97
+              ],
+              [
+                804,
+                61
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4e91-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-ea17bc84c4ba94160a7258bf",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to step forth",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "出面"
+              },
+              {
+                "value": "chū miàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chu1mian4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "出面",
+              "pinyin": "chū miàn",
+              "meaning": "to step forth",
+              "audio": "4f794c1da25a1ca7577c32012f0245c6ac4b3e45e4963425c6ee3f9f21aca7ce",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e91-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-4e91",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "cloud; (classical) to say",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "云"
+              },
+              {
+                "value": "yún",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yun2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "云",
+              "pinyin": "yún",
+              "meaning": "cloud; (classical) to say",
+              "audio": "d917cf2332c323c3e02637f5635bd4332a6d18b53d14327214345ab5be5b03a9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "d917cf2332c323c3e02637f5635bd4332a6d18b53d14327214345ab5be5b03a9"
+            ],
+            "transcript": [
+              {
+                "text": "云",
+                "pinyin": "yún",
+                "meaning": "cloud; (classical) to say",
+                "audio": "d917cf2332c323c3e02637f5635bd4332a6d18b53d14327214345ab5be5b03a9",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4E91",
+      "character": "云",
+      "lessonIds": [
+        "LESSON-C-4E91"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4e91-word",
+        "EX-CHAR-char-4e91-recognize",
+        "EX-CHAR-char-4e91-write",
+        "EX-CHAR-char-4e91-familiar",
+        "EX-CHAR-char-4e91-recall"
+      ]
+    },
+    "audio": {
+      "d917cf2332c323c3e02637f5635bd4332a6d18b53d14327214345ab5be5b03a9": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-81d3381a68c6dcf5e28542c07f4319bd0892ce7fdb15d32fc026b8d04a6ee6a0.mp3",
+          "sha256": "81d3381a68c6dcf5e28542c07f4319bd0892ce7fdb15d32fc026b8d04a6ee6a0",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "81d3381a68c6dcf5e28542c07f4319bd0892ce7fdb15d32fc026b8d04a6ee6a0",
+            "text": "云",
+            "words": [
+              {
+                "text": "云",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-a1db816672a3a15c3bd111e3ecb82c064407057de5f0fb14490c58fb0c6fa83d.mp3",
+          "sha256": "a1db816672a3a15c3bd111e3ecb82c064407057de5f0fb14490c58fb0c6fa83d",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "a1db816672a3a15c3bd111e3ecb82c064407057de5f0fb14490c58fb0c6fa83d",
+            "text": "云",
+            "words": [
+              {
+                "text": "云",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "1fd9732b5161cc237e16ca3770096a128cc19a7e99b40aed45f244b46dee969e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ed2dc9c8b40c3886aa7eeebc4f64f17e315064fd30e4270071d229209e4c8c63.mp3",
+          "sha256": "ed2dc9c8b40c3886aa7eeebc4f64f17e315064fd30e4270071d229209e4c8c63",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "ed2dc9c8b40c3886aa7eeebc4f64f17e315064fd30e4270071d229209e4c8c63",
+            "text": "不耐烦",
+            "words": [
+              {
+                "text": "不耐烦",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f0d3b85144c97702544b57b1824a4af99d601b4e18f945c9a15d811c9b9f62c3.mp3",
+          "sha256": "f0d3b85144c97702544b57b1824a4af99d601b4e18f945c9a15d811c9b9f62c3",
+          "byteLength": 12141,
+          "qualityWarning": "too-fast",
+          "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+          "readAlong": {
+            "audioSha256": "f0d3b85144c97702544b57b1824a4af99d601b4e18f945c9a15d811c9b9f62c3",
+            "text": "不耐烦",
+            "words": [
+              {
+                "text": "不耐烦",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "3e87a7bf6c4f9332d6fc1df47f61a200183616c9631785d12eaaee4e078720c2": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ce373c78fb05eca67bc61bbdc8253c3b8d139e8d57d7a014e4b2f9d9621c673f.mp3",
+          "sha256": "ce373c78fb05eca67bc61bbdc8253c3b8d139e8d57d7a014e4b2f9d9621c673f",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "ce373c78fb05eca67bc61bbdc8253c3b8d139e8d57d7a014e4b2f9d9621c673f",
+            "text": "多云",
+            "words": [
+              {
+                "text": "多云",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/25428370746f3b286361d14640133218b8439f4c56ecb9461f1fdde497564afe.mp3",
+          "sha256": "25428370746f3b286361d14640133218b8439f4c56ecb9461f1fdde497564afe",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "25428370746f3b286361d14640133218b8439f4c56ecb9461f1fdde497564afe",
+            "text": "多云",
+            "words": [
+              {
+                "text": "多云",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "4f794c1da25a1ca7577c32012f0245c6ac4b3e45e4963425c6ee3f9f21aca7ce": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/cd01f638d6a466e75c437aba288383da538c6beee1ae2b0c30e746769c5ae5f4.mp3",
+          "sha256": "cd01f638d6a466e75c437aba288383da538c6beee1ae2b0c30e746769c5ae5f4",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "cd01f638d6a466e75c437aba288383da538c6beee1ae2b0c30e746769c5ae5f4",
+            "text": "出面",
+            "words": [
+              {
+                "text": "出面",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9a782493d3a829db49a98945747a5e0eca59e7c375ed10c09f9c3fe9da018b3a.mp3",
+          "sha256": "9a782493d3a829db49a98945747a5e0eca59e7c375ed10c09f9c3fe9da018b3a",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "9a782493d3a829db49a98945747a5e0eca59e7c375ed10c09f9c3fe9da018b3a",
+            "text": "出面",
+            "words": [
+              {
+                "text": "出面",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "d9f1e888bcde18fadc87ff079ecf01e1b3ee0e46b11ec3fb4f7a06863873c783": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-87a53af9fecdb29845846ba982292db7a48aa846c683f0afcd34c5785c730739.mp3",
+          "sha256": "87a53af9fecdb29845846ba982292db7a48aa846c683f0afcd34c5785c730739",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "87a53af9fecdb29845846ba982292db7a48aa846c683f0afcd34c5785c730739",
+            "text": "网页",
+            "words": [
+              {
+                "text": "网页",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f80728c7181f02a3e7c2e8cd0b8b7f895652b2c868f3d808ec3cfac3de93efa6.mp3",
+          "sha256": "f80728c7181f02a3e7c2e8cd0b8b7f895652b2c868f3d808ec3cfac3de93efa6",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "f80728c7181f02a3e7c2e8cd0b8b7f895652b2c868f3d808ec3cfac3de93efa6",
+            "text": "网页",
+            "words": [
+              {
+                "text": "网页",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

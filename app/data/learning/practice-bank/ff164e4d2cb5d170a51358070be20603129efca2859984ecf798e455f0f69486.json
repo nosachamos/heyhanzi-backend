@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0245",
+  "targetId": "W0245",
+  "steps": [
+    {
+      "id": "BANK-W0245-W0245",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0245-W0245",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "clear; distinct",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "清楚"
+            },
+            {
+              "value": "qīngchu",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qing1chu5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "清楚",
+            "pinyin": "qīngchu",
+            "meaning": "clear; distinct",
+            "singleWord": true,
+            "audio": "7ab3dbfdb20967fb849af287d2520c858f3ade004336571293690527c66c00bf"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7ab3dbfdb20967fb849af287d2520c858f3ade004336571293690527c66c00bf": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-467c8751f22fdeb7c470e0944704ec17c564452b00217dd63f6a3d099735ce52.mp3",
+        "sha256": "467c8751f22fdeb7c470e0944704ec17c564452b00217dd63f6a3d099735ce52",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "467c8751f22fdeb7c470e0944704ec17c564452b00217dd63f6a3d099735ce52",
+          "text": "清楚",
+          "words": [
+            {
+              "text": "清楚",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-285a3d9696339c2040aaa1e62bd585ae1cf8417aa6db4858af7f5b47398dd56d.mp3",
+        "sha256": "285a3d9696339c2040aaa1e62bd585ae1cf8417aa6db4858af7f5b47398dd56d",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "285a3d9696339c2040aaa1e62bd585ae1cf8417aa6db4858af7f5b47398dd56d",
+          "text": "清楚",
+          "words": [
+            {
+              "text": "清楚",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0245",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0245-W0245",
+      "question_ids": [
+        "BANK-W0245-W0245"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U21",
+    "stepId": "S-U21-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-695a"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2131",
+  "targetId": "W2131",
+  "steps": [
+    {
+      "id": "BANK-W2131-W2131",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2131-W2131",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "goods; merchandise",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "产品"
+            },
+            {
+              "value": "chǎnpǐn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chan3pin3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "产品",
+            "pinyin": "chǎnpǐn",
+            "meaning": "goods; merchandise",
+            "singleWord": true,
+            "audio": "0151810ad66a950c1b7d14e88ebfc9327acf0d1821c04bd7305db02417aec778"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "0151810ad66a950c1b7d14e88ebfc9327acf0d1821c04bd7305db02417aec778": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-65da425b35851121418711f844fe232e6620bccbf47ebc1c272ea096842a8155.mp3",
+        "sha256": "65da425b35851121418711f844fe232e6620bccbf47ebc1c272ea096842a8155",
+        "byteLength": 14733,
+        "readAlong": {
+          "audioSha256": "65da425b35851121418711f844fe232e6620bccbf47ebc1c272ea096842a8155",
+          "text": "产品",
+          "words": [
+            {
+              "text": "产品",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c589542f1e8c87af0007c7bf60a3eecc204ab47c681e667d7a29c63df1eecd60.mp3",
+        "sha256": "c589542f1e8c87af0007c7bf60a3eecc204ab47c681e667d7a29c63df1eecd60",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "c589542f1e8c87af0007c7bf60a3eecc204ab47c681e667d7a29c63df1eecd60",
+          "text": "产品",
+          "words": [
+            {
+              "text": "产品",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2131",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2131-W2131",
+      "question_ids": [
+        "BANK-W2131-W2131"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-32-P01",
+    "stepId": "S-U5-32-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4ea7"
+    ],
+    "grammarLessonIds": []
+  }
+}

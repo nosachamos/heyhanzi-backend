@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2051",
+  "targetId": "W2051",
+  "steps": [
+    {
+      "id": "BANK-W2051-W2051",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2051-W2051",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "security guard; security",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "保安"
+            },
+            {
+              "value": "bǎo'ān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bao3an1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "保安",
+            "pinyin": "bǎo'ān",
+            "meaning": "security guard; security",
+            "singleWord": true,
+            "audio": "7692dc6d2927d22e6e87b705b871b1471193d1ba75a7aef0de1615f1381f997c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7692dc6d2927d22e6e87b705b871b1471193d1ba75a7aef0de1615f1381f997c": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/fb7c9b90e26bd3a295d5f55e2a8ac3a726033a1a733225d295215aa308ad3d74.mp3",
+        "sha256": "fb7c9b90e26bd3a295d5f55e2a8ac3a726033a1a733225d295215aa308ad3d74",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "fb7c9b90e26bd3a295d5f55e2a8ac3a726033a1a733225d295215aa308ad3d74",
+          "text": "保安",
+          "words": [
+            {
+              "text": "保安",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/66be69c358516def5848951b0d4ac553402b3463a56b832d82d2d88349c3ba1e.mp3",
+        "sha256": "66be69c358516def5848951b0d4ac553402b3463a56b832d82d2d88349c3ba1e",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "66be69c358516def5848951b0d4ac553402b3463a56b832d82d2d88349c3ba1e",
+          "text": "保安",
+          "words": [
+            {
+              "text": "保安",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2051",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2051-W2051",
+      "question_ids": [
+        "BANK-W2051-W2051"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-21",
+    "stepId": "S-U5-21-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8f9e"
+    ],
+    "grammarLessonIds": []
+  }
+}

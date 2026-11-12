@@ -1,0 +1,769 @@
+{
+  "id": "EX-CHAR-char-6625",
+  "revision": 2,
+  "unit": "U3-17",
+  "stage": "ST-HSK3",
+  "after": "S-U3-17-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "春",
+  "sourceBlockId": "mandarin-simplified-v1-char-6625",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-6625",
+        "text": "春",
+        "pinyin": "chūn",
+        "meaning": "spring (season); gay",
+        "characters": [
+          {
+            "id": "C-6625",
+            "text": "春"
+          }
+        ]
+      },
+      {
+        "id": "W0698",
+        "text": "春天",
+        "pinyin": "chūntiān",
+        "meaning": "spring",
+        "characters": [
+          {
+            "id": "C-6625",
+            "text": "春"
+          },
+          {
+            "id": "C-5929",
+            "text": "天"
+          }
+        ]
+      },
+      {
+        "id": "W1039",
+        "text": "照相",
+        "pinyin": "zhàoxiàng",
+        "meaning": "to take a photograph",
+        "characters": [
+          {
+            "id": "C-7167",
+            "text": "照"
+          },
+          {
+            "id": "C-76F8",
+            "text": "相"
+          }
+        ]
+      },
+      {
+        "id": "W1164",
+        "text": "错误",
+        "pinyin": "cuòwù",
+        "meaning": "mistaken; false",
+        "characters": [
+          {
+            "id": "C-9519",
+            "text": "错"
+          },
+          {
+            "id": "C-8BEF",
+            "text": "误"
+          }
+        ]
+      },
+      {
+        "id": "W2033",
+        "text": "爱护",
+        "pinyin": "àihù",
+        "meaning": "to cherish; to treasure",
+        "characters": [
+          {
+            "id": "C-7231",
+            "text": "爱"
+          },
+          {
+            "id": "C-62A4",
+            "text": "护"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "6b370b77a4f4b18c1d91ba90e619a5612ef858212f413823fdb6d78c724f97e4",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6625",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "春",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6625-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0698",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "spring",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "春天"
+              },
+              {
+                "value": "chūntiān",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chun1tian1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "春天",
+              "pinyin": "chūntiān",
+              "meaning": "spring",
+              "audio": "024f318a0fad402c94a97c1dd0d6da27ae673a49a0317853ad5a558026d0266a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6625-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6625",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "春",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1164",
+                "label": "mistaken; false",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-6625",
+                "label": "spring (season); gay",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1039",
+                "label": "to take a photograph",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6625-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "春",
+        "pinyin": "chūn",
+        "meaning": "spring (season); gay",
+        "source": "/stroke-data/6625.json",
+        "reference": {
+          "character": "春",
+          "sha256": "4c6e8c14458df6c75cec99fca545422b85ecc26515143092e092539f604cd441",
+          "medians": [
+            [
+              [
+                317,
+                690
+              ],
+              [
+                326,
+                685
+              ],
+              [
+                392,
+                683
+              ],
+              [
+                632,
+                731
+              ],
+              [
+                687,
+                732
+              ]
+            ],
+            [
+              [
+                302,
+                572
+              ],
+              [
+                343,
+                565
+              ],
+              [
+                397,
+                568
+              ],
+              [
+                491,
+                582
+              ],
+              [
+                625,
+                615
+              ],
+              [
+                668,
+                612
+              ]
+            ],
+            [
+              [
+                119,
+                429
+              ],
+              [
+                143,
+                418
+              ],
+              [
+                195,
+                417
+              ],
+              [
+                368,
+                451
+              ],
+              [
+                773,
+                506
+              ],
+              [
+                809,
+                504
+              ],
+              [
+                868,
+                485
+              ]
+            ],
+            [
+              [
+                455,
+                830
+              ],
+              [
+                481,
+                809
+              ],
+              [
+                495,
+                787
+              ],
+              [
+                494,
+                777
+              ],
+              [
+                460,
+                589
+              ],
+              [
+                432,
+                497
+              ],
+              [
+                410,
+                448
+              ],
+              [
+                340,
+                337
+              ],
+              [
+                284,
+                278
+              ],
+              [
+                246,
+                244
+              ],
+              [
+                195,
+                211
+              ],
+              [
+                112,
+                171
+              ]
+            ],
+            [
+              [
+                566,
+                452
+              ],
+              [
+                593,
+                444
+              ],
+              [
+                725,
+                326
+              ],
+              [
+                796,
+                278
+              ],
+              [
+                867,
+                263
+              ],
+              [
+                984,
+                251
+              ]
+            ],
+            [
+              [
+                337,
+                290
+              ],
+              [
+                357,
+                277
+              ],
+              [
+                371,
+                250
+              ],
+              [
+                374,
+                171
+              ],
+              [
+                360,
+                32
+              ],
+              [
+                363,
+                -20
+              ]
+            ],
+            [
+              [
+                382,
+                291
+              ],
+              [
+                393,
+                282
+              ],
+              [
+                414,
+                280
+              ],
+              [
+                585,
+                319
+              ],
+              [
+                611,
+                307
+              ],
+              [
+                623,
+                293
+              ],
+              [
+                629,
+                284
+              ],
+              [
+                626,
+                225
+              ],
+              [
+                635,
+                65
+              ],
+              [
+                635,
+                42
+              ],
+              [
+                621,
+                6
+              ],
+              [
+                624,
+                -54
+              ]
+            ],
+            [
+              [
+                397,
+                138
+              ],
+              [
+                412,
+                150
+              ],
+              [
+                477,
+                162
+              ],
+              [
+                515,
+                164
+              ],
+              [
+                538,
+                158
+              ]
+            ],
+            [
+              [
+                390,
+                11
+              ],
+              [
+                408,
+                26
+              ],
+              [
+                517,
+                42
+              ],
+              [
+                574,
+                39
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6625-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2033",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to cherish; to treasure",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "爱护"
+              },
+              {
+                "value": "àihù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ai4hu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "爱护",
+              "pinyin": "àihù",
+              "meaning": "to cherish; to treasure",
+              "audio": "18224df044d2db9f56caf2f86285838be479166150f46229ebf559eec227a121",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6625-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6625",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "spring (season); gay",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "春"
+              },
+              {
+                "value": "chūn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chun1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "春",
+              "pinyin": "chūn",
+              "meaning": "spring (season); gay",
+              "audio": "a83afd33b4831d912c7da4d2765e6ae413199648dde5b170d6c6671aa6721a5f",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "a83afd33b4831d912c7da4d2765e6ae413199648dde5b170d6c6671aa6721a5f"
+            ],
+            "transcript": [
+              {
+                "text": "春",
+                "pinyin": "chūn",
+                "meaning": "spring (season); gay",
+                "audio": "a83afd33b4831d912c7da4d2765e6ae413199648dde5b170d6c6671aa6721a5f",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6625",
+      "character": "春",
+      "lessonIds": [
+        "LESSON-C-6625"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6625-word",
+        "EX-CHAR-char-6625-recognize",
+        "EX-CHAR-char-6625-write",
+        "EX-CHAR-char-6625-familiar",
+        "EX-CHAR-char-6625-recall"
+      ]
+    },
+    "audio": {
+      "a83afd33b4831d912c7da4d2765e6ae413199648dde5b170d6c6671aa6721a5f": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-d9a77f8ef87a0df9ada5a5082b020d8a97f2cda5c049d2a3c9948fe2abf5fd82.mp3",
+          "sha256": "d9a77f8ef87a0df9ada5a5082b020d8a97f2cda5c049d2a3c9948fe2abf5fd82",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "d9a77f8ef87a0df9ada5a5082b020d8a97f2cda5c049d2a3c9948fe2abf5fd82",
+            "text": "春",
+            "words": [
+              {
+                "text": "春",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-3633e1bfb804be57345938776e0ccc73d578e58b0a9f623a3335dc4001f7e399.mp3",
+          "sha256": "3633e1bfb804be57345938776e0ccc73d578e58b0a9f623a3335dc4001f7e399",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "3633e1bfb804be57345938776e0ccc73d578e58b0a9f623a3335dc4001f7e399",
+            "text": "春",
+            "words": [
+              {
+                "text": "春",
+                "start": 0.22,
+                "end": 0.34
+              }
+            ]
+          }
+        }
+      },
+      "024f318a0fad402c94a97c1dd0d6da27ae673a49a0317853ad5a558026d0266a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-9f4b68963fc56df2186e66c275595917579cf0aa6c93397916729571a4389dab.mp3",
+          "sha256": "9f4b68963fc56df2186e66c275595917579cf0aa6c93397916729571a4389dab",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "9f4b68963fc56df2186e66c275595917579cf0aa6c93397916729571a4389dab",
+            "text": "春天",
+            "words": [
+              {
+                "text": "春天",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-89d45e3a6469844b154d6adfdb532f3d7e489bbfe439b93e3ae0b9ba5fec90e1.mp3",
+          "sha256": "89d45e3a6469844b154d6adfdb532f3d7e489bbfe439b93e3ae0b9ba5fec90e1",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "89d45e3a6469844b154d6adfdb532f3d7e489bbfe439b93e3ae0b9ba5fec90e1",
+            "text": "春天",
+            "words": [
+              {
+                "text": "春天",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "3d0a4c7d5c469c5d08625b22aa9ec36147b2bc5aaa94d4a37e861f7d8e4deafd": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b6614ca7dd2cd807b295481800a8f68c0f48ad28e2438d7bd1e9b51d3f4a127a.mp3",
+          "sha256": "b6614ca7dd2cd807b295481800a8f68c0f48ad28e2438d7bd1e9b51d3f4a127a",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "b6614ca7dd2cd807b295481800a8f68c0f48ad28e2438d7bd1e9b51d3f4a127a",
+            "text": "照相",
+            "words": [
+              {
+                "text": "照相",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b60ee7d100dc4111fd047f292c906a5db09a104335f79113234ab59ad6881c7a.mp3",
+          "sha256": "b60ee7d100dc4111fd047f292c906a5db09a104335f79113234ab59ad6881c7a",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "b60ee7d100dc4111fd047f292c906a5db09a104335f79113234ab59ad6881c7a",
+            "text": "照相",
+            "words": [
+              {
+                "text": "照相",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "dbd94f587ce8ea61c2d7638cda1cbcecfd1f600fd374fc80ff5b8e1f79de6716": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c0f8d4d14a35078be8fceeb43207bc2362e56f14329d3dc45a3062b99e60f61a.mp3",
+          "sha256": "c0f8d4d14a35078be8fceeb43207bc2362e56f14329d3dc45a3062b99e60f61a",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "c0f8d4d14a35078be8fceeb43207bc2362e56f14329d3dc45a3062b99e60f61a",
+            "text": "错误",
+            "words": [
+              {
+                "text": "错误",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-e347dd47e0fb2114faeeca92c6889697f4914bc56c0daabe3e2a6f7e51bb0459.mp3",
+          "sha256": "e347dd47e0fb2114faeeca92c6889697f4914bc56c0daabe3e2a6f7e51bb0459",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "e347dd47e0fb2114faeeca92c6889697f4914bc56c0daabe3e2a6f7e51bb0459",
+            "text": "错误",
+            "words": [
+              {
+                "text": "错误",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "18224df044d2db9f56caf2f86285838be479166150f46229ebf559eec227a121": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-d3695548ce4d20c5d0d1cf8d56479bbbf9a90a1768b61c23c39abdb176c2f4d1.mp3",
+          "sha256": "d3695548ce4d20c5d0d1cf8d56479bbbf9a90a1768b61c23c39abdb176c2f4d1",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "d3695548ce4d20c5d0d1cf8d56479bbbf9a90a1768b61c23c39abdb176c2f4d1",
+            "text": "爱护",
+            "words": [
+              {
+                "text": "爱护",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-bfb6c2535f239462c1d67a81c9c7823e2b69d3d16867d440ce9da7e4e40ee971.mp3",
+          "sha256": "bfb6c2535f239462c1d67a81c9c7823e2b69d3d16867d440ce9da7e4e40ee971",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "bfb6c2535f239462c1d67a81c9c7823e2b69d3d16867d440ce9da7e4e40ee971",
+            "text": "爱护",
+            "words": [
+              {
+                "text": "爱护",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

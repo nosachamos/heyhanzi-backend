@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2586",
+  "targetId": "W2586",
+  "steps": [
+    {
+      "id": "BANK-W2586-W2586",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2586-W2586",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "driver's license",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "驾照"
+            },
+            {
+              "value": "jiàzhào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jia4zhao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "驾照",
+            "pinyin": "jiàzhào",
+            "meaning": "driver's license",
+            "singleWord": true,
+            "audio": "a943dd77c4e52359ffcce35d4d764e587b77c12a884d4e55bf31fc1811d83dde"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a943dd77c4e52359ffcce35d4d764e587b77c12a884d4e55bf31fc1811d83dde": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1d71f8f4855b6e790ec3cc2a0b50cb5bcb59c7e18b079b40bf312d70057e9899.mp3",
+        "sha256": "1d71f8f4855b6e790ec3cc2a0b50cb5bcb59c7e18b079b40bf312d70057e9899",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "1d71f8f4855b6e790ec3cc2a0b50cb5bcb59c7e18b079b40bf312d70057e9899",
+          "text": "驾照",
+          "words": [
+            {
+              "text": "驾照",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b1a823f6293cc2257335f923288946d9f556d229fadfa851589c1a4b977574cf.mp3",
+        "sha256": "b1a823f6293cc2257335f923288946d9f556d229fadfa851589c1a4b977574cf",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "b1a823f6293cc2257335f923288946d9f556d229fadfa851589c1a4b977574cf",
+          "text": "驾照",
+          "words": [
+            {
+              "text": "驾照",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2586",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2586-W2586",
+      "question_ids": [
+        "BANK-W2586-W2586"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-16-P01",
+    "stepId": "S-U5-16-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-80e1"
+    ],
+    "grammarLessonIds": []
+  }
+}

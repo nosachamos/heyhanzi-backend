@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1234",
+  "targetId": "W1234",
+  "steps": [
+    {
+      "id": "BANK-W1234-W1234",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1234-W1234",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "child",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "儿童"
+            },
+            {
+              "value": "értóng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "er2tong2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "儿童",
+            "pinyin": "értóng",
+            "meaning": "child",
+            "singleWord": true,
+            "audio": "8faf76eb802a7e424719853e4846a16340993f6b9a0684025180b577521b9749"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8faf76eb802a7e424719853e4846a16340993f6b9a0684025180b577521b9749": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2f10cb8169b21330d2cad6ac2ad89a54b03b6f37c491462d89431361c4f1cca7.mp3",
+        "sha256": "2f10cb8169b21330d2cad6ac2ad89a54b03b6f37c491462d89431361c4f1cca7",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "2f10cb8169b21330d2cad6ac2ad89a54b03b6f37c491462d89431361c4f1cca7",
+          "text": "儿童",
+          "words": [
+            {
+              "text": "儿童",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-63b834085dafbb83f94baf8ceced6fd9b98c8875ddbc02e9d1567c653c59bd88.mp3",
+        "sha256": "63b834085dafbb83f94baf8ceced6fd9b98c8875ddbc02e9d1567c653c59bd88",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "63b834085dafbb83f94baf8ceced6fd9b98c8875ddbc02e9d1567c653c59bd88",
+          "text": "儿童",
+          "words": [
+            {
+              "text": "儿童",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1234",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1234-W1234",
+      "question_ids": [
+        "BANK-W1234-W1234"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-03",
+    "stepId": "S-U4-03-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7ae5"
+    ],
+    "grammarLessonIds": []
+  }
+}

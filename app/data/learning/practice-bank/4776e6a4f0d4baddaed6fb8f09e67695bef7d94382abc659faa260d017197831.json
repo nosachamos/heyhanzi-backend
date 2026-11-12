@@ -1,0 +1,92 @@
+{
+  "id": "BANK-C-5065",
+  "targetId": "C-5065",
+  "steps": [
+    {
+      "id": "BANK-C-5065-C-5065",
+      "kind": "check",
+      "title": "Recall a familiar character",
+      "questions": [
+        {
+          "id": "BANK-C-5065-C-5065",
+          "kind": "text",
+          "prompt": "Recall the introduced character. Type the Hanzi; handwriting is practised separately.",
+          "label": "Retrieve the character",
+          "context": "First character of the familiar word meaning: health; healthy",
+          "contextLanguage": "en",
+          "resultDomain": "Typed character-form retrieval",
+          "rule": "word",
+          "accepted": [
+            {
+              "value": "健"
+            }
+          ],
+          "model": {
+            "text": "健康",
+            "pinyin": "jiànkāng",
+            "meaning": "health; healthy",
+            "audio": "75e94c8d8aefd714921292eccc27fce356cbde985b580477227fc779df561db1",
+            "singleWord": true,
+            "focus": "健"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "75e94c8d8aefd714921292eccc27fce356cbde985b580477227fc779df561db1": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-362d8393b2f80fa0e37a81444bce11b0187fe91063c2feef871712a1fa9e70e6.mp3",
+        "sha256": "362d8393b2f80fa0e37a81444bce11b0187fe91063c2feef871712a1fa9e70e6",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "362d8393b2f80fa0e37a81444bce11b0187fe91063c2feef871712a1fa9e70e6",
+          "text": "健康",
+          "words": [
+            {
+              "text": "健康",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-72fab4ec3ec2efe8130dc0c61da90145a5831709bdb3cef433f4d901d99c5195.mp3",
+        "sha256": "72fab4ec3ec2efe8130dc0c61da90145a5831709bdb3cef433f4d901d99c5195",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "72fab4ec3ec2efe8130dc0c61da90145a5831709bdb3cef433f4d901d99c5195",
+          "text": "健康",
+          "words": [
+            {
+              "text": "健康",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "C-5065",
+      "facet_id": "typed-character-form-retrieval",
+      "part_id": "BANK-C-5065-C-5065",
+      "question_ids": [
+        "BANK-C-5065-C-5065"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U25",
+    "stepId": "S-U25-characters-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5eb7"
+    ],
+    "grammarLessonIds": []
+  }
+}

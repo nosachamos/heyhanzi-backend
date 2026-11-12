@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1710",
+  "targetId": "W1710",
+  "steps": [
+    {
+      "id": "BANK-W1710-W1710",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1710-W1710",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "video",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "视频"
+            },
+            {
+              "value": "shìpín",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shi4pin2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "视频",
+            "pinyin": "shìpín",
+            "meaning": "video",
+            "singleWord": true,
+            "audio": "3f3e5593f5b9e6e8333eca6d9ebf034bc84c133f6a536d125ff9723135abbf6d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3f3e5593f5b9e6e8333eca6d9ebf034bc84c133f6a536d125ff9723135abbf6d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-dde4f4ec2036a184666d341f63368fc1a97e07f1fee07a9d9ea2f3e564f0208d.mp3",
+        "sha256": "dde4f4ec2036a184666d341f63368fc1a97e07f1fee07a9d9ea2f3e564f0208d",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "dde4f4ec2036a184666d341f63368fc1a97e07f1fee07a9d9ea2f3e564f0208d",
+          "text": "视频",
+          "words": [
+            {
+              "text": "视频",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b6c391f2bd419cd56b7aca2ffdc0a8448144182af32ac32a1ec13b4ef8d0d997.mp3",
+        "sha256": "b6c391f2bd419cd56b7aca2ffdc0a8448144182af32ac32a1ec13b4ef8d0d997",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "b6c391f2bd419cd56b7aca2ffdc0a8448144182af32ac32a1ec13b4ef8d0d997",
+          "text": "视频",
+          "words": [
+            {
+              "text": "视频",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1710",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1710-W1710",
+      "question_ids": [
+        "BANK-W1710-W1710"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-27",
+    "stepId": "S-U4-27-words-r4-9",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9891"
+    ],
+    "grammarLessonIds": []
+  }
+}

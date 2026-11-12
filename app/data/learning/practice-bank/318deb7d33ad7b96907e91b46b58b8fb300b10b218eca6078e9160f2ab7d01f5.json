@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W0483",
+  "targetId": "W0483",
+  "steps": [
+    {
+      "id": "BANK-W0483-W0483",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0483-W0483",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "Mr.; sir; gentleman",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "先生"
+            },
+            {
+              "value": "xiānsheng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xian1sheng5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "先生",
+            "pinyin": "xiānsheng",
+            "meaning": "Mr.; sir; gentleman",
+            "singleWord": true,
+            "audio": "b1ef60eb30a307f80d87c04938ace4156957ba2eddc709c2c811203d8545b26e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b1ef60eb30a307f80d87c04938ace4156957ba2eddc709c2c811203d8545b26e": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0b109de6f902d08302feb570394a60a7eed00f4071436e6bdb9032c2bd0092e5.mp3",
+        "sha256": "0b109de6f902d08302feb570394a60a7eed00f4071436e6bdb9032c2bd0092e5",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "0b109de6f902d08302feb570394a60a7eed00f4071436e6bdb9032c2bd0092e5",
+          "text": "先生",
+          "words": [
+            {
+              "text": "先生",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/8a7c18b83872a2743ed8a7f69d38970bac6e4e13a2cddacb899763a34b0b92c9.mp3",
+        "sha256": "8a7c18b83872a2743ed8a7f69d38970bac6e4e13a2cddacb899763a34b0b92c9",
+        "byteLength": 10989,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "8a7c18b83872a2743ed8a7f69d38970bac6e4e13a2cddacb899763a34b0b92c9",
+          "text": "先生",
+          "words": [
+            {
+              "text": "先生",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0483",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0483-W0483",
+      "question_ids": [
+        "BANK-W0483-W0483"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U02",
+    "stepId": "S-U02-words-r4-41",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5148"
+    ],
+    "grammarLessonIds": []
+  }
+}

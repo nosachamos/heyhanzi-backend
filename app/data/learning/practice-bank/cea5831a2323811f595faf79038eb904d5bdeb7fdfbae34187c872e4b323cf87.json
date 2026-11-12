@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0603",
+  "targetId": "W0603",
+  "steps": [
+    {
+      "id": "BANK-W0603-W0603",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0603-W0603",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "foreign country",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "外国"
+            },
+            {
+              "value": "wàiguó",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wai4guo2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "外国",
+            "pinyin": "wàiguó",
+            "meaning": "foreign country",
+            "singleWord": true,
+            "audio": "db31c15503b9ab7bc4287af0d46a104f3e67654f77e2ead251d5e1379b403cc5"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "db31c15503b9ab7bc4287af0d46a104f3e67654f77e2ead251d5e1379b403cc5": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e3c3235d2b8d8332ce6ed821d09cba8f685dc1decba2ba38561553b4776ee87f.mp3",
+        "sha256": "e3c3235d2b8d8332ce6ed821d09cba8f685dc1decba2ba38561553b4776ee87f",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "e3c3235d2b8d8332ce6ed821d09cba8f685dc1decba2ba38561553b4776ee87f",
+          "text": "外国",
+          "words": [
+            {
+              "text": "外国",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/6b1868c1582ef17b8a22e5581e2f7d8ab329abce8768bd7f6308d73f93a3ed16.mp3",
+        "sha256": "6b1868c1582ef17b8a22e5581e2f7d8ab329abce8768bd7f6308d73f93a3ed16",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "6b1868c1582ef17b8a22e5581e2f7d8ab329abce8768bd7f6308d73f93a3ed16",
+          "text": "外国",
+          "words": [
+            {
+              "text": "外国",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0603",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0603-W0603",
+      "question_ids": [
+        "BANK-W0603-W0603"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U16",
+    "stepId": "S-U16-words-r4-18",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5916"
+    ],
+    "grammarLessonIds": []
+  }
+}

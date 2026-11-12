@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1486",
+  "targetId": "W1486",
+  "steps": [
+    {
+      "id": "BANK-W1486-W1486",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1486-W1486",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "express delivery",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "快递"
+            },
+            {
+              "value": "kuàidì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "kuai4di4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "快递",
+            "pinyin": "kuàidì",
+            "meaning": "express delivery",
+            "singleWord": true,
+            "audio": "66f2172e1c92665c8970439def3fa9691dd427ad3ab2cc9b24eb5ea9be3c49bd"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "66f2172e1c92665c8970439def3fa9691dd427ad3ab2cc9b24eb5ea9be3c49bd": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8b8fa1131a470fbe0b7edb8a5942ee7296c6fde060e42645ea9de3a2d2781d00.mp3",
+        "sha256": "8b8fa1131a470fbe0b7edb8a5942ee7296c6fde060e42645ea9de3a2d2781d00",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "8b8fa1131a470fbe0b7edb8a5942ee7296c6fde060e42645ea9de3a2d2781d00",
+          "text": "快递",
+          "words": [
+            {
+              "text": "快递",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/43dc7707a1e90577f410b0279c0f60d39215f560435a1c8601477d120b6244a6.mp3",
+        "sha256": "43dc7707a1e90577f410b0279c0f60d39215f560435a1c8601477d120b6244a6",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "43dc7707a1e90577f410b0279c0f60d39215f560435a1c8601477d120b6244a6",
+          "text": "快递",
+          "words": [
+            {
+              "text": "快递",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1486",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1486-W1486",
+      "question_ids": [
+        "BANK-W1486-W1486"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-28",
+    "stepId": "S-U4-28-words-r4-6",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9012"
+    ],
+    "grammarLessonIds": []
+  }
+}

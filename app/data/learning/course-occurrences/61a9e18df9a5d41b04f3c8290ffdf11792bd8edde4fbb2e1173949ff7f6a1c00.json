@@ -1,0 +1,841 @@
+{
+  "id": "EX-CHAR-char-8d56",
+  "revision": 2,
+  "unit": "U6-02",
+  "stage": "ST-HSK6",
+  "after": "S-U6-02-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "赖",
+  "sourceBlockId": "mandarin-simplified-v1-char-8d56",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-5c193225748e587647aa3572",
+        "text": "她们",
+        "pinyin": "tāmen",
+        "meaning": "they; them (females)",
+        "characters": [
+          {
+            "id": "C-5979",
+            "text": "她"
+          },
+          {
+            "id": "C-4EEC",
+            "text": "们"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-9a3cb260d609318857917575",
+        "text": "圆形",
+        "pinyin": "yuán xíng",
+        "meaning": "circular",
+        "characters": [
+          {
+            "id": "C-5706",
+            "text": "圆"
+          },
+          {
+            "id": "C-5F62",
+            "text": "形"
+          }
+        ]
+      },
+      {
+        "id": "W3201",
+        "text": "危害",
+        "pinyin": "wēihài",
+        "meaning": "to harm; to jeopardize",
+        "characters": [
+          {
+            "id": "C-5371",
+            "text": "危"
+          },
+          {
+            "id": "C-5BB3",
+            "text": "害"
+          }
+        ]
+      },
+      {
+        "id": "W4429",
+        "text": "赖",
+        "pinyin": "lài",
+        "meaning": "to depend on; to hang on in a place",
+        "characters": [
+          {
+            "id": "C-8D56",
+            "text": "赖"
+          }
+        ]
+      },
+      {
+        "id": "W5148",
+        "text": "依赖",
+        "pinyin": "yīlài",
+        "meaning": "to depend on; to be dependent on",
+        "characters": [
+          {
+            "id": "C-4F9D",
+            "text": "依"
+          },
+          {
+            "id": "C-8D56",
+            "text": "赖"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "75af8bdac19f803ef01e6f0bd7889dd12d3e80ed8a8470c7ea3c2f28ca4c2549",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8d56",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "赖",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8d56-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W5148",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to depend on; to be dependent on",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "依赖"
+              },
+              {
+                "value": "yīlài",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yi1lai4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "依赖",
+              "pinyin": "yīlài",
+              "meaning": "to depend on; to be dependent on",
+              "audio": "ab9834df01a6d525c6a0708d6a76c729a48d9084102975da9263874e426ce5d3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8d56-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W4429",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "赖",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-5c193225748e587647aa3572",
+                "label": "they; them (females)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W4429",
+                "label": "to depend on; to hang on in a place",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W3201",
+                "label": "to harm; to jeopardize",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8d56-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "赖",
+        "pinyin": "lài",
+        "meaning": "to depend on; to hang on in a place",
+        "source": "/stroke-data/8d56.json",
+        "reference": {
+          "character": "赖",
+          "sha256": "7f6d1253d8a031e6aa71466a16269395439161a22af182711eeb864554a45222",
+          "medians": [
+            [
+              [
+                208,
+                601
+              ],
+              [
+                218,
+                596
+              ],
+              [
+                258,
+                597
+              ],
+              [
+                405,
+                632
+              ],
+              [
+                441,
+                631
+              ]
+            ],
+            [
+              [
+                156,
+                474
+              ],
+              [
+                189,
+                440
+              ],
+              [
+                216,
+                327
+              ]
+            ],
+            [
+              [
+                198,
+                477
+              ],
+              [
+                219,
+                468
+              ],
+              [
+                358,
+                498
+              ],
+              [
+                407,
+                516
+              ],
+              [
+                437,
+                515
+              ],
+              [
+                468,
+                491
+              ],
+              [
+                445,
+                422
+              ],
+              [
+                430,
+                417
+              ]
+            ],
+            [
+              [
+                234,
+                340
+              ],
+              [
+                249,
+                352
+              ],
+              [
+                365,
+                378
+              ],
+              [
+                418,
+                387
+              ],
+              [
+                472,
+                382
+              ]
+            ],
+            [
+              [
+                285,
+                803
+              ],
+              [
+                312,
+                782
+              ],
+              [
+                334,
+                754
+              ],
+              [
+                335,
+                744
+              ],
+              [
+                331,
+                343
+              ],
+              [
+                326,
+                186
+              ],
+              [
+                314,
+                78
+              ],
+              [
+                317,
+                -6
+              ]
+            ],
+            [
+              [
+                306,
+                342
+              ],
+              [
+                282,
+                274
+              ],
+              [
+                244,
+                225
+              ],
+              [
+                193,
+                169
+              ],
+              [
+                95,
+                89
+              ]
+            ],
+            [
+              [
+                376,
+                283
+              ],
+              [
+                440,
+                244
+              ],
+              [
+                461,
+                214
+              ]
+            ],
+            [
+              [
+                631,
+                827
+              ],
+              [
+                643,
+                820
+              ],
+              [
+                658,
+                797
+              ],
+              [
+                649,
+                759
+              ],
+              [
+                582,
+                637
+              ],
+              [
+                534,
+                580
+              ]
+            ],
+            [
+              [
+                635,
+                678
+              ],
+              [
+                690,
+                699
+              ],
+              [
+                705,
+                697
+              ],
+              [
+                735,
+                707
+              ],
+              [
+                768,
+                693
+              ],
+              [
+                709,
+                589
+              ],
+              [
+                658,
+                521
+              ]
+            ],
+            [
+              [
+                541,
+                522
+              ],
+              [
+                567,
+                494
+              ],
+              [
+                572,
+                452
+              ],
+              [
+                572,
+                365
+              ],
+              [
+                558,
+                262
+              ],
+              [
+                560,
+                207
+              ]
+            ],
+            [
+              [
+                594,
+                505
+              ],
+              [
+                607,
+                500
+              ],
+              [
+                643,
+                503
+              ],
+              [
+                770,
+                538
+              ],
+              [
+                791,
+                533
+              ],
+              [
+                813,
+                509
+              ],
+              [
+                818,
+                502
+              ],
+              [
+                813,
+                434
+              ],
+              [
+                817,
+                267
+              ],
+              [
+                811,
+                205
+              ]
+            ],
+            [
+              [
+                640,
+                455
+              ],
+              [
+                659,
+                447
+              ],
+              [
+                689,
+                419
+              ],
+              [
+                681,
+                264
+              ],
+              [
+                658,
+                154
+              ],
+              [
+                634,
+                105
+              ],
+              [
+                606,
+                73
+              ],
+              [
+                536,
+                30
+              ],
+              [
+                471,
+                10
+              ]
+            ],
+            [
+              [
+                729,
+                164
+              ],
+              [
+                829,
+                73
+              ],
+              [
+                855,
+                33
+              ],
+              [
+                864,
+                -1
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8d56-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-9a3cb260d609318857917575",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "circular",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "圆形"
+              },
+              {
+                "value": "yuán xíng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yuan2xing2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "圆形",
+              "pinyin": "yuán xíng",
+              "meaning": "circular",
+              "audio": "16ac55c84ec0582d93db1feca4c6d8e2ab7f7f54a1b591731380d9b14650ddfc",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8d56-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W4429",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to depend on; to hang on in a place",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "赖"
+              },
+              {
+                "value": "lài",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lai4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "赖",
+              "pinyin": "lài",
+              "meaning": "to depend on; to hang on in a place",
+              "audio": "ceffc1530e65d855cdeb476d7f7f3fa63fb949afa6bad8aeb5156278fe09f04a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "ceffc1530e65d855cdeb476d7f7f3fa63fb949afa6bad8aeb5156278fe09f04a"
+            ],
+            "transcript": [
+              {
+                "text": "赖",
+                "pinyin": "lài",
+                "meaning": "to depend on; to hang on in a place",
+                "audio": "ceffc1530e65d855cdeb476d7f7f3fa63fb949afa6bad8aeb5156278fe09f04a",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8D56",
+      "character": "赖",
+      "lessonIds": [
+        "LESSON-C-8D56"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8d56-word",
+        "EX-CHAR-char-8d56-recognize",
+        "EX-CHAR-char-8d56-write",
+        "EX-CHAR-char-8d56-familiar",
+        "EX-CHAR-char-8d56-recall"
+      ]
+    },
+    "audio": {
+      "8750fd77984446d7dff9c27cfeebbb515ea99890610dee504f79aba897596513": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1de67fba5d99b26e127e7d856e22fd4e5ef93b2aee0e8af633059ddf659dae4d.mp3",
+          "sha256": "1de67fba5d99b26e127e7d856e22fd4e5ef93b2aee0e8af633059ddf659dae4d",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "1de67fba5d99b26e127e7d856e22fd4e5ef93b2aee0e8af633059ddf659dae4d",
+            "text": "她们",
+            "words": [
+              {
+                "text": "她们",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-a996108d1f2ed0bbfa522a3eddaa2cc034a51fe99566e6475bb33ffcc27beed4.mp3",
+          "sha256": "a996108d1f2ed0bbfa522a3eddaa2cc034a51fe99566e6475bb33ffcc27beed4",
+          "byteLength": 16461,
+          "readAlong": {
+            "audioSha256": "a996108d1f2ed0bbfa522a3eddaa2cc034a51fe99566e6475bb33ffcc27beed4",
+            "text": "她们",
+            "words": [
+              {
+                "text": "她们",
+                "start": 0.09,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "16ac55c84ec0582d93db1feca4c6d8e2ab7f7f54a1b591731380d9b14650ddfc": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a84796085649a767a325daaf1b9a9fad2dcd80a0e02917edb71e9882fd1d7070.mp3",
+          "sha256": "a84796085649a767a325daaf1b9a9fad2dcd80a0e02917edb71e9882fd1d7070",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "a84796085649a767a325daaf1b9a9fad2dcd80a0e02917edb71e9882fd1d7070",
+            "text": "圆形",
+            "words": [
+              {
+                "text": "圆形",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/4423486231bf2958ca0066e7dd604122e841fd2965cbd226aad5ae2bd7862f49.mp3",
+          "sha256": "4423486231bf2958ca0066e7dd604122e841fd2965cbd226aad5ae2bd7862f49",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "4423486231bf2958ca0066e7dd604122e841fd2965cbd226aad5ae2bd7862f49",
+            "text": "圆形",
+            "words": [
+              {
+                "text": "圆形",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "3b2b127827aa302b324118bf727c01c38643670dcbbb92dcef5442e965dfd224": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8bd7c952dc85fb0506f32c0f32e7c135972b7159a2deb9eb9782362ee41f59f3.mp3",
+          "sha256": "8bd7c952dc85fb0506f32c0f32e7c135972b7159a2deb9eb9782362ee41f59f3",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "8bd7c952dc85fb0506f32c0f32e7c135972b7159a2deb9eb9782362ee41f59f3",
+            "text": "危害",
+            "words": [
+              {
+                "text": "危害",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c32314d6f9099aef6f74d68d51368afeaab4e30efd20822afc2bc1132fedbb52.mp3",
+          "sha256": "c32314d6f9099aef6f74d68d51368afeaab4e30efd20822afc2bc1132fedbb52",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "c32314d6f9099aef6f74d68d51368afeaab4e30efd20822afc2bc1132fedbb52",
+            "text": "危害",
+            "words": [
+              {
+                "text": "危害",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "ceffc1530e65d855cdeb476d7f7f3fa63fb949afa6bad8aeb5156278fe09f04a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f73ec6158bb0f24e3eb963c15f69105dd277cd39fc2eba8aed2ab18115363152.mp3",
+          "sha256": "f73ec6158bb0f24e3eb963c15f69105dd277cd39fc2eba8aed2ab18115363152",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "f73ec6158bb0f24e3eb963c15f69105dd277cd39fc2eba8aed2ab18115363152",
+            "text": "赖",
+            "words": [
+              {
+                "text": "赖",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/db8c29dc4ea679896bfb4a249ddca1327279d1e6e20197fcaf8a6e01caa8c675.mp3",
+          "sha256": "db8c29dc4ea679896bfb4a249ddca1327279d1e6e20197fcaf8a6e01caa8c675",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "db8c29dc4ea679896bfb4a249ddca1327279d1e6e20197fcaf8a6e01caa8c675",
+            "text": "赖",
+            "words": [
+              {
+                "text": "赖",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "ab9834df01a6d525c6a0708d6a76c729a48d9084102975da9263874e426ce5d3": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b3ddd0cd487cbd9e38dab0966e021a0485eafd7f383449bb66583d0f37f27ef9.mp3",
+          "sha256": "b3ddd0cd487cbd9e38dab0966e021a0485eafd7f383449bb66583d0f37f27ef9",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "b3ddd0cd487cbd9e38dab0966e021a0485eafd7f383449bb66583d0f37f27ef9",
+            "text": "依赖",
+            "words": [
+              {
+                "text": "依赖",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-cf11d1db5629af530b45480b265fc42bfeefd24dceb43df2a35f2ed5209f2aed.mp3",
+          "sha256": "cf11d1db5629af530b45480b265fc42bfeefd24dceb43df2a35f2ed5209f2aed",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "cf11d1db5629af530b45480b265fc42bfeefd24dceb43df2a35f2ed5209f2aed",
+            "text": "依赖",
+            "words": [
+              {
+                "text": "依赖",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

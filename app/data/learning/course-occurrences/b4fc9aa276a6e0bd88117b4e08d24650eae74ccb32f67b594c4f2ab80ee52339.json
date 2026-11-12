@@ -1,0 +1,709 @@
+{
+  "id": "EX-CHAR-char-5c06",
+  "revision": 2,
+  "unit": "U18",
+  "stage": "ST-HSK2",
+  "after": "S-U18-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "将",
+  "sourceBlockId": "mandarin-simplified-v1-char-5c06",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-63692d0a2dee651d4f856be5",
+        "text": "前头",
+        "pinyin": "qián tou",
+        "meaning": "at the head",
+        "characters": [
+          {
+            "id": "C-524D",
+            "text": "前"
+          },
+          {
+            "id": "C-5934",
+            "text": "头"
+          }
+        ]
+      },
+      {
+        "id": "W0390",
+        "text": "读书",
+        "pinyin": "dúshū",
+        "meaning": "to read a book; to study",
+        "characters": [
+          {
+            "id": "C-8BFB",
+            "text": "读"
+          },
+          {
+            "id": "C-4E66",
+            "text": "书"
+          }
+        ]
+      },
+      {
+        "id": "W0591",
+        "text": "生日",
+        "pinyin": "shēngrì",
+        "meaning": "birthday",
+        "characters": [
+          {
+            "id": "C-751F",
+            "text": "生"
+          },
+          {
+            "id": "C-65E5",
+            "text": "日"
+          }
+        ]
+      },
+      {
+        "id": "W1402",
+        "text": "将",
+        "pinyin": "jiāng",
+        "meaning": "will; going to",
+        "characters": [
+          {
+            "id": "C-5C06",
+            "text": "将"
+          }
+        ]
+      },
+      {
+        "id": "W1403",
+        "text": "将要",
+        "pinyin": "jiāngyào",
+        "meaning": "will; shall",
+        "characters": [
+          {
+            "id": "C-5C06",
+            "text": "将"
+          },
+          {
+            "id": "C-8981",
+            "text": "要"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "c42fc9d39c270404e1777f971220681c3215f89e7960863852f1fa1741436235",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5c06",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "将",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5c06-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1403",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "will; shall",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "将要"
+              },
+              {
+                "value": "jiāngyào",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jiang1yao4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "将要",
+              "pinyin": "jiāngyào",
+              "meaning": "will; shall",
+              "audio": "f8be5edb210945ab8f59341732d7b8094d7556f6a6ba55ae8602caea752eae3d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5c06-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W1402",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "将",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-63692d0a2dee651d4f856be5",
+                "label": "at the head",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1402",
+                "label": "will; going to",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0591",
+                "label": "birthday",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5c06-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "将",
+        "pinyin": "jiāng",
+        "meaning": "will; going to",
+        "source": "/stroke-data/5c06.json",
+        "reference": {
+          "character": "将",
+          "sha256": "7a95e269c47a36038e61027d18fa001be448ebb48260e0e5e3dda37187c58452",
+          "medians": [
+            [
+              [
+                165,
+                635
+              ],
+              [
+                246,
+                563
+              ],
+              [
+                263,
+                524
+              ]
+            ],
+            [
+              [
+                77,
+                242
+              ],
+              [
+                89,
+                238
+              ],
+              [
+                137,
+                244
+              ],
+              [
+                288,
+                367
+              ],
+              [
+                301,
+                371
+              ],
+              [
+                322,
+                398
+              ]
+            ],
+            [
+              [
+                313,
+                796
+              ],
+              [
+                364,
+                742
+              ],
+              [
+                355,
+                319
+              ],
+              [
+                338,
+                97
+              ],
+              [
+                339,
+                11
+              ]
+            ],
+            [
+              [
+                606,
+                824
+              ],
+              [
+                627,
+                789
+              ],
+              [
+                618,
+                766
+              ],
+              [
+                541,
+                667
+              ],
+              [
+                445,
+                584
+              ]
+            ],
+            [
+              [
+                591,
+                686
+              ],
+              [
+                649,
+                691
+              ],
+              [
+                717,
+                706
+              ],
+              [
+                749,
+                704
+              ],
+              [
+                767,
+                693
+              ],
+              [
+                722,
+                615
+              ],
+              [
+                638,
+                521
+              ],
+              [
+                531,
+                432
+              ],
+              [
+                461,
+                395
+              ]
+            ],
+            [
+              [
+                496,
+                592
+              ],
+              [
+                508,
+                592
+              ],
+              [
+                549,
+                551
+              ],
+              [
+                560,
+                531
+              ]
+            ],
+            [
+              [
+                432,
+                340
+              ],
+              [
+                484,
+                335
+              ],
+              [
+                638,
+                366
+              ],
+              [
+                811,
+                392
+              ],
+              [
+                865,
+                394
+              ],
+              [
+                920,
+                382
+              ]
+            ],
+            [
+              [
+                680,
+                490
+              ],
+              [
+                714,
+                461
+              ],
+              [
+                729,
+                437
+              ],
+              [
+                726,
+                61
+              ],
+              [
+                708,
+                21
+              ],
+              [
+                672,
+                30
+              ],
+              [
+                599,
+                65
+              ]
+            ],
+            [
+              [
+                485,
+                263
+              ],
+              [
+                554,
+                206
+              ],
+              [
+                575,
+                165
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5c06-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0390",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to read a book; to study",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "读书"
+              },
+              {
+                "value": "dúshū",
+                "mode": "pinyin"
+              },
+              {
+                "value": "du2shu1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "读书",
+              "pinyin": "dúshū",
+              "meaning": "to read a book; to study",
+              "audio": "19a70ff0805101b125dca3fb35c3979fb4b3822799621418e9688446e5e8a3c6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5c06-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W1402",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "will; going to",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "将"
+              },
+              {
+                "value": "jiāng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jiang1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "将",
+              "pinyin": "jiāng",
+              "meaning": "will; going to",
+              "audio": "97203195787d230298fc21cf1549905c9394b1395b7c2597ea5fbce7a0c32799",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "97203195787d230298fc21cf1549905c9394b1395b7c2597ea5fbce7a0c32799"
+            ],
+            "transcript": [
+              {
+                "text": "将",
+                "pinyin": "jiāng",
+                "meaning": "will; going to",
+                "audio": "97203195787d230298fc21cf1549905c9394b1395b7c2597ea5fbce7a0c32799",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5C06",
+      "character": "将",
+      "lessonIds": [
+        "LESSON-C-5C06"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5c06-word",
+        "EX-CHAR-char-5c06-recognize",
+        "EX-CHAR-char-5c06-write",
+        "EX-CHAR-char-5c06-familiar",
+        "EX-CHAR-char-5c06-recall"
+      ]
+    },
+    "audio": {
+      "b39313ca6ea781361e1aba4de1c4d764e0d75827a12db362cb8d5d5ba7e5798c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/18296f30b017e6cb24a8a2d917c3aa8d854de182a6f5f39efa1a5db7d64b6a18.mp3",
+          "sha256": "18296f30b017e6cb24a8a2d917c3aa8d854de182a6f5f39efa1a5db7d64b6a18",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "18296f30b017e6cb24a8a2d917c3aa8d854de182a6f5f39efa1a5db7d64b6a18",
+            "text": "前头",
+            "words": [
+              {
+                "text": "前头",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0477fb92f0ba5dc867cd86b2233621b973277bc2f407ab2f8f2d1c2db7606913.mp3",
+          "sha256": "0477fb92f0ba5dc867cd86b2233621b973277bc2f407ab2f8f2d1c2db7606913",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "0477fb92f0ba5dc867cd86b2233621b973277bc2f407ab2f8f2d1c2db7606913",
+            "text": "前头",
+            "words": [
+              {
+                "text": "前头",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "19a70ff0805101b125dca3fb35c3979fb4b3822799621418e9688446e5e8a3c6": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-e91ca9b385d59c582957c78008222bbfb49cd51058920a29546ac9bedca073a7.mp3",
+          "sha256": "e91ca9b385d59c582957c78008222bbfb49cd51058920a29546ac9bedca073a7",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "e91ca9b385d59c582957c78008222bbfb49cd51058920a29546ac9bedca073a7",
+            "text": "读书",
+            "words": [
+              {
+                "text": "读书",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b825801d84554232359eb269e3b71744615b0ae329f8eb6bd95948b872fa0ad8.mp3",
+          "sha256": "b825801d84554232359eb269e3b71744615b0ae329f8eb6bd95948b872fa0ad8",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "b825801d84554232359eb269e3b71744615b0ae329f8eb6bd95948b872fa0ad8",
+            "text": "读书",
+            "words": [
+              {
+                "text": "读书",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "f1e012760850edc23392fe5ce720f76cf47e7b9d86d5a6279b92b483c09c843d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-a449b69bc43736ed927c9519e16971657c60f2063a46817637a5c1887e7ddf87.mp3",
+          "sha256": "a449b69bc43736ed927c9519e16971657c60f2063a46817637a5c1887e7ddf87",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "a449b69bc43736ed927c9519e16971657c60f2063a46817637a5c1887e7ddf87",
+            "text": "生日",
+            "words": [
+              {
+                "text": "生日",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-5d6ac4ffa42363eb902d332cbf3be5985204d9df5ccbd5e32e8af4b7a56ba65d.mp3",
+          "sha256": "5d6ac4ffa42363eb902d332cbf3be5985204d9df5ccbd5e32e8af4b7a56ba65d",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "5d6ac4ffa42363eb902d332cbf3be5985204d9df5ccbd5e32e8af4b7a56ba65d",
+            "text": "生日",
+            "words": [
+              {
+                "text": "生日",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "97203195787d230298fc21cf1549905c9394b1395b7c2597ea5fbce7a0c32799": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c9700a5fced7e4738e49a687f9b47ea3828ef2e5c950fba599679ffd5d1a47fa.mp3",
+          "sha256": "c9700a5fced7e4738e49a687f9b47ea3828ef2e5c950fba599679ffd5d1a47fa",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "c9700a5fced7e4738e49a687f9b47ea3828ef2e5c950fba599679ffd5d1a47fa",
+            "text": "将",
+            "words": [
+              {
+                "text": "将",
+                "start": 0.2,
+                "end": 0.3
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6e34d4a093dbb44ce16b40ba5b6cca46bcde1d99f87ccee4eb06518bd1942624.mp3",
+          "sha256": "6e34d4a093dbb44ce16b40ba5b6cca46bcde1d99f87ccee4eb06518bd1942624",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "6e34d4a093dbb44ce16b40ba5b6cca46bcde1d99f87ccee4eb06518bd1942624",
+            "text": "将",
+            "words": [
+              {
+                "text": "将",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "f8be5edb210945ab8f59341732d7b8094d7556f6a6ba55ae8602caea752eae3d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-327f3b4e80e54ecf39b231e711f2339b9c0b1fb11d577357846a57586438587c.mp3",
+          "sha256": "327f3b4e80e54ecf39b231e711f2339b9c0b1fb11d577357846a57586438587c",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "327f3b4e80e54ecf39b231e711f2339b9c0b1fb11d577357846a57586438587c",
+            "text": "将要",
+            "words": [
+              {
+                "text": "将要",
+                "start": 0.2,
+                "end": 0.52
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c99f0be8e8c3799dd2be498c82e321e4357332a2784ebd8a9ec50f5ff3c1de07.mp3",
+          "sha256": "c99f0be8e8c3799dd2be498c82e321e4357332a2784ebd8a9ec50f5ff3c1de07",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "c99f0be8e8c3799dd2be498c82e321e4357332a2784ebd8a9ec50f5ff3c1de07",
+            "text": "将要",
+            "words": [
+              {
+                "text": "将要",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

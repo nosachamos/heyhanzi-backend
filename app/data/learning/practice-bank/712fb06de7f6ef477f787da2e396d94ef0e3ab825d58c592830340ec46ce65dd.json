@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W2300",
+  "targetId": "W2300",
+  "steps": [
+    {
+      "id": "BANK-W2300-W2300",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2300-W2300",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "light refreshments; pastry",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "点心"
+            },
+            {
+              "value": "diǎnxin",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dian3xin5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "点心",
+            "pinyin": "diǎnxin",
+            "meaning": "light refreshments; pastry",
+            "singleWord": true,
+            "audio": "2c3a54c2acf28b25184c7bb43307d50b2835ff1ead3685ae506ca4c4efda5175"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2c3a54c2acf28b25184c7bb43307d50b2835ff1ead3685ae506ca4c4efda5175": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-fb6c54689fdb5b0ba7bee8a531a21708939297a035dcc4056c48ae1836fb9f74.mp3",
+        "sha256": "fb6c54689fdb5b0ba7bee8a531a21708939297a035dcc4056c48ae1836fb9f74",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "fb6c54689fdb5b0ba7bee8a531a21708939297a035dcc4056c48ae1836fb9f74",
+          "text": "点心",
+          "words": [
+            {
+              "text": "点心",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c253cf897318492fecb26d82d142491f5be682c7d5a8e053f64f0d62225bb048.mp3",
+        "sha256": "c253cf897318492fecb26d82d142491f5be682c7d5a8e053f64f0d62225bb048",
+        "byteLength": 9261,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "c253cf897318492fecb26d82d142491f5be682c7d5a8e053f64f0d62225bb048",
+          "text": "点心",
+          "words": [
+            {
+              "text": "点心",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2300",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2300-W2300",
+      "question_ids": [
+        "BANK-W2300-W2300"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-08",
+    "stepId": "S-U5-08-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5fc3"
+    ],
+    "grammarLessonIds": []
+  }
+}

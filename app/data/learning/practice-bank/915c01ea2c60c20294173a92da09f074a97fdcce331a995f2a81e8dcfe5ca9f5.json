@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2827",
+  "targetId": "W2827",
+  "steps": [
+    {
+      "id": "BANK-W2827-W2827",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2827-W2827",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "peasant; farmer",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "农民"
+            },
+            {
+              "value": "nóngmín",
+              "mode": "pinyin"
+            },
+            {
+              "value": "nong2min2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "农民",
+            "pinyin": "nóngmín",
+            "meaning": "peasant; farmer",
+            "singleWord": true,
+            "audio": "46d26035abf29786ac62af2679e3c46c41eafe78e5dce75fe4ca99deb1f88c20"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "46d26035abf29786ac62af2679e3c46c41eafe78e5dce75fe4ca99deb1f88c20": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-68d721d5b3b0cf21f363c0cad12a086794b018b3778e01873cefd4e094b6715d.mp3",
+        "sha256": "68d721d5b3b0cf21f363c0cad12a086794b018b3778e01873cefd4e094b6715d",
+        "byteLength": 17325,
+        "readAlong": {
+          "audioSha256": "68d721d5b3b0cf21f363c0cad12a086794b018b3778e01873cefd4e094b6715d",
+          "text": "农民",
+          "words": [
+            {
+              "text": "农民",
+              "start": 0.27,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-753b86a6fa32edb7fb99b1050f793c0488536c4735fb87b1264528731ac1fc23.mp3",
+        "sha256": "753b86a6fa32edb7fb99b1050f793c0488536c4735fb87b1264528731ac1fc23",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "753b86a6fa32edb7fb99b1050f793c0488536c4735fb87b1264528731ac1fc23",
+          "text": "农民",
+          "words": [
+            {
+              "text": "农民",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2827",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2827-W2827",
+      "question_ids": [
+        "BANK-W2827-W2827"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-32-P01",
+    "stepId": "S-U5-32-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-519c"
+    ],
+    "grammarLessonIds": []
+  }
+}

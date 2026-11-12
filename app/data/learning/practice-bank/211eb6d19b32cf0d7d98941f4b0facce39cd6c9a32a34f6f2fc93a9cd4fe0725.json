@@ -1,0 +1,72 @@
+{
+  "id": "BANK-K-HSK1-speak",
+  "targetId": "K-HSK1-speak",
+  "steps": [
+    {
+      "id": "BANK-K-HSK1-speak-K-HSK1-speak-perform",
+      "kind": "check",
+      "title": "Use the skill in context",
+      "questions": [
+        {
+          "id": "BANK-K-HSK1-speak-K-HSK1-speak-perform",
+          "kind": "production",
+          "response": "spoken",
+          "prompt": "Greet the partner, correct their mistaken identification of you, and identify the man beside you with the familiar name.",
+          "promptLanguage": "en",
+          "context": "A new partner guesses that you are Xiaowang. You are not Xiaowang; the man standing beside you is Xiaowang. Greet the partner, correct the mistaken identification and identify that man with the familiar name.\nFamiliar meanings available: hello; hi; I; me; be; person; people; not; familiar address for a younger person surnamed Wang; be called; call or name someone; ask someone to act.",
+          "contextLanguage": "en",
+          "label": "Take your speaking turn",
+          "resultDomain": "Self-reviewed speaking practice",
+          "rubric": [
+            {
+              "id": "r1",
+              "text": "I identified the named man."
+            },
+            {
+              "id": "r2",
+              "text": "My correction negated the mistaken identity."
+            }
+          ]
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {},
+  "coverage": [
+    {
+      "target_id": "K-HSK1-speak",
+      "facet_id": "K-HSK1-speak-situated-performance",
+      "part_id": "BANK-K-HSK1-speak-K-HSK1-speak-perform",
+      "question_ids": [
+        "BANK-K-HSK1-speak-K-HSK1-speak-perform"
+      ],
+      "evidence": "self-reviewed",
+      "scope": "Give a greeting and identify oneself or another person using the introduced familiar name; correct a mistaken identification with the learned naming and negation frames.",
+      "stage_outcome_mastery": false
+    }
+  ],
+  "remediation": {
+    "unitId": "U01",
+    "stepId": "S-U01-skill-K-HSK1-speak",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-hao",
+      "mandarin-simplified-v1-warmup-wo",
+      "mandarin-simplified-v1-warmup-shi",
+      "mandarin-simplified-v1-warmup-ren",
+      "mandarin-simplified-v1-warmup-bu",
+      "mandarin-simplified-v1-char-738b",
+      "mandarin-simplified-v1-char-8c22",
+      "mandarin-simplified-v1-warmup-hen",
+      "mandarin-simplified-v1-warmup-hao",
+      "mandarin-simplified-v1-warmup-xue",
+      "mandarin-simplified-v1-warmup-zhongwen",
+      "mandarin-simplified-v1-warmup-ta-she",
+      "mandarin-simplified-v1-warmup-ta-he"
+    ],
+    "grammarLessonIds": [
+      "EX-GRAM-G-identity",
+      "EX-GRAM-G-negation-bu"
+    ]
+  }
+}

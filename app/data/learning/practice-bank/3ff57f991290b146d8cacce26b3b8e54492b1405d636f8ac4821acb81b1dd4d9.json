@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3285",
+  "targetId": "W3285",
+  "steps": [
+    {
+      "id": "BANK-W3285-W3285",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3285-W3285",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "sales volume",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "销量"
+            },
+            {
+              "value": "xiāoliàng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xiao1liang4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "销量",
+            "pinyin": "xiāoliàng",
+            "meaning": "sales volume",
+            "singleWord": true,
+            "audio": "8044a86f9e786bf0f3827c5f1da221484241960f87fd3e93cc71b169ec7cb259"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8044a86f9e786bf0f3827c5f1da221484241960f87fd3e93cc71b169ec7cb259": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/dde82f31e4c02e4a5b2e852fb92a5187a17dd2efce6948c575b88bbad44579d4.mp3",
+        "sha256": "dde82f31e4c02e4a5b2e852fb92a5187a17dd2efce6948c575b88bbad44579d4",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "dde82f31e4c02e4a5b2e852fb92a5187a17dd2efce6948c575b88bbad44579d4",
+          "text": "销量",
+          "words": [
+            {
+              "text": "销量",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/fd6542f27e24bbe65f5689ef074093a708ac559777cac3fd410422e2271829c3.mp3",
+        "sha256": "fd6542f27e24bbe65f5689ef074093a708ac559777cac3fd410422e2271829c3",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "fd6542f27e24bbe65f5689ef074093a708ac559777cac3fd410422e2271829c3",
+          "text": "销量",
+          "words": [
+            {
+              "text": "销量",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3285",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3285-W3285",
+      "question_ids": [
+        "BANK-W3285-W3285"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-11",
+    "stepId": "S-U5-11-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9500"
+    ],
+    "grammarLessonIds": []
+  }
+}

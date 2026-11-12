@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5102",
+  "targetId": "W5102",
+  "steps": [
+    {
+      "id": "BANK-W5102-W5102",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5102-W5102",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "learning; knowledge",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "学问"
+            },
+            {
+              "value": "xuéwen",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xue2wen5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "学问",
+            "pinyin": "xuéwen",
+            "meaning": "learning; knowledge",
+            "singleWord": true,
+            "audio": "7c8154837a8d858b61d1acc78e9c57d0701734a692d116c74404bc116f3c6bd7"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7c8154837a8d858b61d1acc78e9c57d0701734a692d116c74404bc116f3c6bd7": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-b69029cf8480b5aa1739771ac92f66b7cd72818b53f06b8b68505a0c2b4eee41.mp3",
+        "sha256": "b69029cf8480b5aa1739771ac92f66b7cd72818b53f06b8b68505a0c2b4eee41",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "b69029cf8480b5aa1739771ac92f66b7cd72818b53f06b8b68505a0c2b4eee41",
+          "text": "学问",
+          "words": [
+            {
+              "text": "学问",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-a8747cfc8ba3abfb894518b6e055896c867b12f1fdef13ed381a313ff70c3429.mp3",
+        "sha256": "a8747cfc8ba3abfb894518b6e055896c867b12f1fdef13ed381a313ff70c3429",
+        "byteLength": 15885,
+        "readAlong": {
+          "audioSha256": "a8747cfc8ba3abfb894518b6e055896c867b12f1fdef13ed381a313ff70c3429",
+          "text": "学问",
+          "words": [
+            {
+              "text": "学问",
+              "start": 0.15,
+              "end": 0.6299999999999999
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5102",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5102-W5102",
+      "question_ids": [
+        "BANK-W5102-W5102"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-20",
+    "stepId": "S-U6-20-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-95ee"
+    ],
+    "grammarLessonIds": []
+  }
+}

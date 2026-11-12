@@ -1,0 +1,22 @@
+# Core runtime; lock transitive dependencies too.
+fastapi==0.141.1
+uvicorn==0.34.0
+SQLAlchemy==2.0.39
+asyncpg==0.30.0
+psycopg2-binary==2.9.10
+alembic==1.15.1
+pydantic==2.10.6
+structlog==25.2.0
+python-dotenv>=1.0,<2
+# SSM is used by deployment scripts, never fetched on a request path.
+boto3==1.41.5
+argon2-cffi==25.1.0
+Authlib==1.9.1
+cryptography==50.0.1
+httpx==0.28.1
+email-validator>=2.2,<3
+
+# Security floors for locked transitive TLS, DNS and JWT dependencies.
+certifi>=2026.10.19
+dnspython>=2.9.0
+joserfc>=1.7.6

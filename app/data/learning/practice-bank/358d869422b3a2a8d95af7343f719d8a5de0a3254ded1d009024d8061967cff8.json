@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1238",
+  "targetId": "W1238",
+  "steps": [
+    {
+      "id": "BANK-W1238-W1238",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1238-W1238",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "law",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "法律"
+            },
+            {
+              "value": "fǎlǜ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fa3lü4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "法律",
+            "pinyin": "fǎlǜ",
+            "meaning": "law",
+            "singleWord": true,
+            "audio": "dac64f4f7359c062fa563a33b36ed1aa78d96a465d4d2ad73526796ae0e68705"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "dac64f4f7359c062fa563a33b36ed1aa78d96a465d4d2ad73526796ae0e68705": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-51ad4c626482ab90ef4a66c95341e09f7af5d1d6427037a40549288c60777af1.mp3",
+        "sha256": "51ad4c626482ab90ef4a66c95341e09f7af5d1d6427037a40549288c60777af1",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "51ad4c626482ab90ef4a66c95341e09f7af5d1d6427037a40549288c60777af1",
+          "text": "法律",
+          "words": [
+            {
+              "text": "法律",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-985270c6f155428afb27827815c31840986c54d468c5f5a1ccb31e4ea6ddbdff.mp3",
+        "sha256": "985270c6f155428afb27827815c31840986c54d468c5f5a1ccb31e4ea6ddbdff",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "985270c6f155428afb27827815c31840986c54d468c5f5a1ccb31e4ea6ddbdff",
+          "text": "法律",
+          "words": [
+            {
+              "text": "法律",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1238",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1238-W1238",
+      "question_ids": [
+        "BANK-W1238-W1238"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-30",
+    "stepId": "S-U4-30-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5f8b"
+    ],
+    "grammarLessonIds": []
+  }
+}

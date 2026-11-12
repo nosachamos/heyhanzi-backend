@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2503",
+  "targetId": "W2503",
+  "steps": [
+    {
+      "id": "BANK-W2503-W2503",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2503-W2503",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "contract; agreement",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "合同"
+            },
+            {
+              "value": "hétóng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "he2tong2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "合同",
+            "pinyin": "hétóng",
+            "meaning": "contract; agreement",
+            "singleWord": true,
+            "audio": "b41612df5439bf8ebe91fd8ec416060e6dc092be653c2ad4890d55970a55aa44"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b41612df5439bf8ebe91fd8ec416060e6dc092be653c2ad4890d55970a55aa44": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-19cfb92af5dc79b843affe627bce55246d896472f96a9a783bbc7115fa744945.mp3",
+        "sha256": "19cfb92af5dc79b843affe627bce55246d896472f96a9a783bbc7115fa744945",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "19cfb92af5dc79b843affe627bce55246d896472f96a9a783bbc7115fa744945",
+          "text": "合同",
+          "words": [
+            {
+              "text": "合同",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-5bbfdb3f69caea20c5a7fa9eff9f3f2ab400da8a76e7e7e482c96c378f3799e3.mp3",
+        "sha256": "5bbfdb3f69caea20c5a7fa9eff9f3f2ab400da8a76e7e7e482c96c378f3799e3",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "5bbfdb3f69caea20c5a7fa9eff9f3f2ab400da8a76e7e7e482c96c378f3799e3",
+          "text": "合同",
+          "words": [
+            {
+              "text": "合同",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2503",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2503-W2503",
+      "question_ids": [
+        "BANK-W2503-W2503"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-22",
+    "stepId": "S-U5-22-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5408"
+    ],
+    "grammarLessonIds": []
+  }
+}

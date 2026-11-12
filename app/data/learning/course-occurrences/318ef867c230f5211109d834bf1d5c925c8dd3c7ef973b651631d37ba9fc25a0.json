@@ -1,0 +1,643 @@
+{
+  "id": "EX-CHAR-char-5c3a",
+  "revision": 2,
+  "unit": "U5-19",
+  "stage": "ST-HSK5",
+  "after": "S-U5-19-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "尺",
+  "sourceBlockId": "mandarin-simplified-v1-char-5c3a",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5c3a",
+        "text": "尺",
+        "pinyin": "chǐ",
+        "meaning": "a Chinese foot; one-third of a meter",
+        "characters": [
+          {
+            "id": "C-5C3A",
+            "text": "尺"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-0e2fa8ba891241d559604268",
+        "text": "拿到",
+        "pinyin": "ná dào",
+        "meaning": "to get",
+        "characters": [
+          {
+            "id": "C-62FF",
+            "text": "拿"
+          },
+          {
+            "id": "C-5230",
+            "text": "到"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-3a6f3adf457148a8087c1c2f",
+        "text": "尺度",
+        "pinyin": "chǐ dù",
+        "meaning": "scale",
+        "characters": [
+          {
+            "id": "C-5C3A",
+            "text": "尺"
+          },
+          {
+            "id": "C-5EA6",
+            "text": "度"
+          }
+        ]
+      },
+      {
+        "id": "W0841",
+        "text": "课本",
+        "pinyin": "kèběn",
+        "meaning": "textbook",
+        "characters": [
+          {
+            "id": "C-8BFE",
+            "text": "课"
+          },
+          {
+            "id": "C-672C",
+            "text": "本"
+          }
+        ]
+      },
+      {
+        "id": "W4124",
+        "text": "国产",
+        "pinyin": "guóchǎn",
+        "meaning": "domestically produced",
+        "characters": [
+          {
+            "id": "C-56FD",
+            "text": "国"
+          },
+          {
+            "id": "C-4EA7",
+            "text": "产"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "b00ea77ae4146ccfa37c6abea1c3d1f720b44c8982732d06ccf6dac45e391da7",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5c3a",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "尺",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5c3a-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-3a6f3adf457148a8087c1c2f",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "scale",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "尺度"
+              },
+              {
+                "value": "chǐ dù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chi3du4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "尺度",
+              "pinyin": "chǐ dù",
+              "meaning": "scale",
+              "audio": "8cb9c1878607cea4752eeea2cbe17f047e4833edc4a10dcdfe7c7e77eb466216",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5c3a-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5c3a",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "尺",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-5c3a",
+                "label": "a Chinese foot; one-third of a meter",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0841",
+                "label": "textbook",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W4124",
+                "label": "domestically produced",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5c3a-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "尺",
+        "pinyin": "chǐ",
+        "meaning": "a Chinese foot; one-third of a meter",
+        "source": "/stroke-data/5c3a.json",
+        "reference": {
+          "character": "尺",
+          "sha256": "4412ae25379c8ac20cd2a6353c6a5b4802b66426f0d36039c3eb6193138b30c4",
+          "medians": [
+            [
+              [
+                379,
+                691
+              ],
+              [
+                389,
+                682
+              ],
+              [
+                409,
+                682
+              ],
+              [
+                507,
+                702
+              ],
+              [
+                612,
+                732
+              ],
+              [
+                636,
+                735
+              ],
+              [
+                660,
+                726
+              ],
+              [
+                685,
+                698
+              ],
+              [
+                686,
+                684
+              ],
+              [
+                643,
+                574
+              ],
+              [
+                612,
+                555
+              ]
+            ],
+            [
+              [
+                367,
+                462
+              ],
+              [
+                392,
+                485
+              ],
+              [
+                608,
+                525
+              ],
+              [
+                653,
+                524
+              ],
+              [
+                679,
+                516
+              ]
+            ],
+            [
+              [
+                304,
+                704
+              ],
+              [
+                332,
+                683
+              ],
+              [
+                347,
+                651
+              ],
+              [
+                341,
+                512
+              ],
+              [
+                313,
+                332
+              ],
+              [
+                269,
+                222
+              ],
+              [
+                240,
+                174
+              ],
+              [
+                203,
+                128
+              ],
+              [
+                148,
+                77
+              ],
+              [
+                94,
+                46
+              ]
+            ],
+            [
+              [
+                376,
+                451
+              ],
+              [
+                401,
+                445
+              ],
+              [
+                414,
+                433
+              ],
+              [
+                596,
+                214
+              ],
+              [
+                710,
+                111
+              ],
+              [
+                759,
+                90
+              ],
+              [
+                936,
+                51
+              ],
+              [
+                963,
+                51
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5c3a-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-0e2fa8ba891241d559604268",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to get",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "拿到"
+              },
+              {
+                "value": "ná dào",
+                "mode": "pinyin"
+              },
+              {
+                "value": "na2dao4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "拿到",
+              "pinyin": "ná dào",
+              "meaning": "to get",
+              "audio": "751819bf45aeeedd5ae9991e690ce668c2cefd7737f746e77935cf3364a356e9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5c3a-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5c3a",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "a Chinese foot; one-third of a meter",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "尺"
+              },
+              {
+                "value": "chǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chi3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "尺",
+              "pinyin": "chǐ",
+              "meaning": "a Chinese foot; one-third of a meter",
+              "audio": "dbd89250ff19ba570dac26e9b2a25d3deb6f447a250d862e0b39e51c81c959a2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "dbd89250ff19ba570dac26e9b2a25d3deb6f447a250d862e0b39e51c81c959a2"
+            ],
+            "transcript": [
+              {
+                "text": "尺",
+                "pinyin": "chǐ",
+                "meaning": "a Chinese foot; one-third of a meter",
+                "audio": "dbd89250ff19ba570dac26e9b2a25d3deb6f447a250d862e0b39e51c81c959a2",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5C3A",
+      "character": "尺",
+      "lessonIds": [
+        "LESSON-C-5C3A"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5c3a-word",
+        "EX-CHAR-char-5c3a-recognize",
+        "EX-CHAR-char-5c3a-write",
+        "EX-CHAR-char-5c3a-familiar",
+        "EX-CHAR-char-5c3a-recall"
+      ]
+    },
+    "audio": {
+      "dbd89250ff19ba570dac26e9b2a25d3deb6f447a250d862e0b39e51c81c959a2": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5d91217fcac40cd7f5d2ebdaca3709961ad180d57de574a2b794dc7286938a90.mp3",
+          "sha256": "5d91217fcac40cd7f5d2ebdaca3709961ad180d57de574a2b794dc7286938a90",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "5d91217fcac40cd7f5d2ebdaca3709961ad180d57de574a2b794dc7286938a90",
+            "text": "尺",
+            "words": [
+              {
+                "text": "尺",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/bababc622ce70d13eb58972011adb8e2ddc81177d63f1de33155f56139803b14.mp3",
+          "sha256": "bababc622ce70d13eb58972011adb8e2ddc81177d63f1de33155f56139803b14",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "bababc622ce70d13eb58972011adb8e2ddc81177d63f1de33155f56139803b14",
+            "text": "尺",
+            "words": [
+              {
+                "text": "尺",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "751819bf45aeeedd5ae9991e690ce668c2cefd7737f746e77935cf3364a356e9": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-62207dbd711f6eaf3d7441d08952c797476554e74e1e2af7b054d58ef87b86ac.mp3",
+          "sha256": "62207dbd711f6eaf3d7441d08952c797476554e74e1e2af7b054d58ef87b86ac",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "62207dbd711f6eaf3d7441d08952c797476554e74e1e2af7b054d58ef87b86ac",
+            "text": "拿到",
+            "words": [
+              {
+                "text": "拿到",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-7a8fd705a76fd381d98c3674cf7c9d1d72c2616ff5c0e42b1334301138ee5cc6.mp3",
+          "sha256": "7a8fd705a76fd381d98c3674cf7c9d1d72c2616ff5c0e42b1334301138ee5cc6",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "7a8fd705a76fd381d98c3674cf7c9d1d72c2616ff5c0e42b1334301138ee5cc6",
+            "text": "拿到",
+            "words": [
+              {
+                "text": "拿到",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "8cb9c1878607cea4752eeea2cbe17f047e4833edc4a10dcdfe7c7e77eb466216": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/44632d48cfbf4be6b9794dbc05d8f0373d46445873cb467994027e8f2a81fa52.mp3",
+          "sha256": "44632d48cfbf4be6b9794dbc05d8f0373d46445873cb467994027e8f2a81fa52",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "44632d48cfbf4be6b9794dbc05d8f0373d46445873cb467994027e8f2a81fa52",
+            "text": "尺度",
+            "words": [
+              {
+                "text": "尺度",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/06f549507d77f72dd77ac9bc726451814e37d907bdd32126a9ded08318282c51.mp3",
+          "sha256": "06f549507d77f72dd77ac9bc726451814e37d907bdd32126a9ded08318282c51",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "06f549507d77f72dd77ac9bc726451814e37d907bdd32126a9ded08318282c51",
+            "text": "尺度",
+            "words": [
+              {
+                "text": "尺度",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "901a72ba8c7da31211bba1ad8da26115ed1c529fb84859f53d746aaf931f7511": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-d2e58914cbfeb95ad6b139a0efd100a39969f4a9090992a22ef7cd198275d11e.mp3",
+          "sha256": "d2e58914cbfeb95ad6b139a0efd100a39969f4a9090992a22ef7cd198275d11e",
+          "byteLength": 16461,
+          "readAlong": {
+            "audioSha256": "d2e58914cbfeb95ad6b139a0efd100a39969f4a9090992a22ef7cd198275d11e",
+            "text": "课本",
+            "words": [
+              {
+                "text": "课本",
+                "start": 0.44999999999999996,
+                "end": 0.75
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-7276e62e59c8d6e70195e5c6574a55b94e5413ce557bf8a0645e8f5e78bec335.mp3",
+          "sha256": "7276e62e59c8d6e70195e5c6574a55b94e5413ce557bf8a0645e8f5e78bec335",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "7276e62e59c8d6e70195e5c6574a55b94e5413ce557bf8a0645e8f5e78bec335",
+            "text": "课本",
+            "words": [
+              {
+                "text": "课本",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "77d756fa7bd9e1b1e89e7c2730be9965079bd8487352a5caa54a4cb0da5ac56e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/24bce578dca162fff6d9b8dce42ceb37c30219108498b0e23b6c89fde5de7006.mp3",
+          "sha256": "24bce578dca162fff6d9b8dce42ceb37c30219108498b0e23b6c89fde5de7006",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "24bce578dca162fff6d9b8dce42ceb37c30219108498b0e23b6c89fde5de7006",
+            "text": "国产",
+            "words": [
+              {
+                "text": "国产",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b5969cfe1d0a7215c518a6c21e40b0f7e42068353a704da58cd8b7d7c7c4ab36.mp3",
+          "sha256": "b5969cfe1d0a7215c518a6c21e40b0f7e42068353a704da58cd8b7d7c7c4ab36",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "b5969cfe1d0a7215c518a6c21e40b0f7e42068353a704da58cd8b7d7c7c4ab36",
+            "text": "国产",
+            "words": [
+              {
+                "text": "国产",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

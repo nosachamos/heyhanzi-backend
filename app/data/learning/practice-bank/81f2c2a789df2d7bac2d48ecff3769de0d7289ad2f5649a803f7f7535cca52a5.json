@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0987",
+  "targetId": "W0987",
+  "steps": [
+    {
+      "id": "BANK-W0987-W0987",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0987-W0987",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "shoe",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "鞋"
+            },
+            {
+              "value": "xié",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xie2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "鞋",
+            "pinyin": "xié",
+            "meaning": "shoe",
+            "singleWord": true,
+            "audio": "7f6f324eae8d31dd19cf484e5673ed2144407f39ed98dfac7f6e9bf45f0007e1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7f6f324eae8d31dd19cf484e5673ed2144407f39ed98dfac7f6e9bf45f0007e1": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d4bc546cfa77712054385a66d2c819cdb3038e15c238e2ed09d28cdd6c03e214.mp3",
+        "sha256": "d4bc546cfa77712054385a66d2c819cdb3038e15c238e2ed09d28cdd6c03e214",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "d4bc546cfa77712054385a66d2c819cdb3038e15c238e2ed09d28cdd6c03e214",
+          "text": "鞋",
+          "words": [
+            {
+              "text": "鞋",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-282b80d7f3069187416955a0f332d07c289e679aec6053ee5da594719d8d2ac4.mp3",
+        "sha256": "282b80d7f3069187416955a0f332d07c289e679aec6053ee5da594719d8d2ac4",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "282b80d7f3069187416955a0f332d07c289e679aec6053ee5da594719d8d2ac4",
+          "text": "鞋",
+          "words": [
+            {
+              "text": "鞋",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0987",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0987-W0987",
+      "question_ids": [
+        "BANK-W0987-W0987"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-08",
+    "stepId": "S-U3-08-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-978b"
+    ],
+    "grammarLessonIds": []
+  }
+}

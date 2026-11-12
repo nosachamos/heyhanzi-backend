@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0008",
+  "targetId": "W0008",
+  "steps": [
+    {
+      "id": "BANK-W0008-W0008",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0008-W0008",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "not",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "不"
+            },
+            {
+              "value": "bù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bu4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "不",
+            "pinyin": "bù",
+            "meaning": "not",
+            "singleWord": true,
+            "audio": "50ba7522835181a848c6884bdca0d6078d74020fda5cf5ddb4a238c7e44d2b93"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "50ba7522835181a848c6884bdca0d6078d74020fda5cf5ddb4a238c7e44d2b93": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-cec7354c5d2df3885a27e810c95523eca4da05eab4ff46b95ec526da499c04c5.mp3",
+        "sha256": "cec7354c5d2df3885a27e810c95523eca4da05eab4ff46b95ec526da499c04c5",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "cec7354c5d2df3885a27e810c95523eca4da05eab4ff46b95ec526da499c04c5",
+          "text": "不",
+          "words": [
+            {
+              "text": "不",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b088920f3d2499526d36ae60fae905cb34f97b0e7deb7df3669d4a7a8f518e45.mp3",
+        "sha256": "b088920f3d2499526d36ae60fae905cb34f97b0e7deb7df3669d4a7a8f518e45",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "b088920f3d2499526d36ae60fae905cb34f97b0e7deb7df3669d4a7a8f518e45",
+          "text": "不",
+          "words": [
+            {
+              "text": "不",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0008",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0008-W0008",
+      "question_ids": [
+        "BANK-W0008-W0008"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU01",
+    "stepId": "S-WU01-words-r4-18",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-bu"
+    ],
+    "grammarLessonIds": []
+  }
+}

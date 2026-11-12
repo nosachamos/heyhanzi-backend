@@ -1,0 +1,621 @@
+{
+  "id": "EX-CHAR-char-4e3a",
+  "revision": 2,
+  "unit": "U07",
+  "stage": "ST-HSK1",
+  "after": "S-U07-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "为",
+  "sourceBlockId": "mandarin-simplified-v1-char-4e3a",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7238",
+        "text": "爸",
+        "pinyin": "bà",
+        "meaning": "father; dad",
+        "characters": [
+          {
+            "id": "C-7238",
+            "text": "爸"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-e8eae514df5091bad92e6175",
+        "text": "有一点儿",
+        "pinyin": "yǒu yī diǎn r",
+        "meaning": "a little; slightly",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          },
+          {
+            "id": "C-4E00",
+            "text": "一"
+          },
+          {
+            "id": "C-70B9",
+            "text": "点"
+          },
+          {
+            "id": "C-513F",
+            "text": "儿"
+          }
+        ]
+      },
+      {
+        "id": "W1808",
+        "text": "为",
+        "pinyin": "wéi",
+        "meaning": "to act as; to be",
+        "characters": [
+          {
+            "id": "C-4E3A",
+            "text": "为"
+          }
+        ]
+      },
+      {
+        "id": "W2084",
+        "text": "便",
+        "pinyin": "biàn",
+        "meaning": "then; as a result",
+        "characters": [
+          {
+            "id": "C-4FBF",
+            "text": "便"
+          }
+        ]
+      },
+      {
+        "id": "W4713",
+        "text": "人为",
+        "pinyin": "rénwéi",
+        "meaning": "artificial; man-made",
+        "characters": [
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          },
+          {
+            "id": "C-4E3A",
+            "text": "为"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "aa6768d5168aca3ea1d54f0a21674a799c41a443735790ef4bf88d134a12bef7",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4e3a",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "为",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4e3a-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W4713",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "artificial; man-made",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "人为"
+              },
+              {
+                "value": "rénwéi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ren2wei2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "人为",
+              "pinyin": "rénwéi",
+              "meaning": "artificial; man-made",
+              "audio": "fa8101edfaa53236ad17710300709e35c681013d15b758684247da3693f4bc50",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e3a-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W1808",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "为",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-7238",
+                "label": "father; dad",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1808",
+                "label": "to act as; to be",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-e8eae514df5091bad92e6175",
+                "label": "a little; slightly",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e3a-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "为",
+        "pinyin": "wéi",
+        "meaning": "to act as; to be",
+        "source": "/stroke-data/4e3a.json",
+        "reference": {
+          "character": "为",
+          "sha256": "a12b3e445b4439d4e1fbff66837425e281685b6cf89a5d51d7e39a883cb55837",
+          "medians": [
+            [
+              [
+                308,
+                751
+              ],
+              [
+                383,
+                685
+              ],
+              [
+                406,
+                637
+              ]
+            ],
+            [
+              [
+                568,
+                828
+              ],
+              [
+                597,
+                773
+              ],
+              [
+                585,
+                732
+              ],
+              [
+                492,
+                498
+              ],
+              [
+                424,
+                374
+              ],
+              [
+                377,
+                298
+              ],
+              [
+                285,
+                187
+              ],
+              [
+                207,
+                112
+              ],
+              [
+                113,
+                44
+              ]
+            ],
+            [
+              [
+                203,
+                495
+              ],
+              [
+                266,
+                479
+              ],
+              [
+                720,
+                562
+              ],
+              [
+                751,
+                559
+              ],
+              [
+                777,
+                539
+              ],
+              [
+                782,
+                532
+              ],
+              [
+                746,
+                249
+              ],
+              [
+                721,
+                153
+              ],
+              [
+                697,
+                94
+              ],
+              [
+                671,
+                60
+              ],
+              [
+                646,
+                45
+              ],
+              [
+                526,
+                114
+              ]
+            ],
+            [
+              [
+                480,
+                365
+              ],
+              [
+                555,
+                303
+              ],
+              [
+                581,
+                260
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4e3a-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2084",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "then; as a result",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "便"
+              },
+              {
+                "value": "biàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bian4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "便",
+              "pinyin": "biàn",
+              "meaning": "then; as a result",
+              "audio": "a254fa87ea579ab6bd73b092470d4a5660df727a98ec55f6ffbe82211b795251",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e3a-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W1808",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to act as; to be",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "为"
+              },
+              {
+                "value": "wéi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wei2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "为",
+              "pinyin": "wéi",
+              "meaning": "to act as; to be",
+              "audio": "ced78c8122cd23828f2660c13355028e1d845a613797348f093f2b48897f43a9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "ced78c8122cd23828f2660c13355028e1d845a613797348f093f2b48897f43a9"
+            ],
+            "transcript": [
+              {
+                "text": "为",
+                "pinyin": "wéi",
+                "meaning": "to act as; to be",
+                "audio": "ced78c8122cd23828f2660c13355028e1d845a613797348f093f2b48897f43a9",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4E3A",
+      "character": "为",
+      "lessonIds": [
+        "LESSON-C-4E3A"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4e3a-word",
+        "EX-CHAR-char-4e3a-recognize",
+        "EX-CHAR-char-4e3a-write",
+        "EX-CHAR-char-4e3a-familiar",
+        "EX-CHAR-char-4e3a-recall"
+      ]
+    },
+    "audio": {
+      "4534f05d06497b210531047a431fdf559d68294078fccafeecfde7f5919ed129": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-f7395b7e688f6ed7c3b42c5bae476d8f30dd902469e05c07791465cdf5ae5d2c.mp3",
+          "sha256": "f7395b7e688f6ed7c3b42c5bae476d8f30dd902469e05c07791465cdf5ae5d2c",
+          "byteLength": 8973,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "f7395b7e688f6ed7c3b42c5bae476d8f30dd902469e05c07791465cdf5ae5d2c",
+            "text": "爸",
+            "words": [
+              {
+                "text": "爸",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-97482b894758ad5f615210ee15efc105aad9a0899a5c90f31dcb0aadda3d0a16.mp3",
+          "sha256": "97482b894758ad5f615210ee15efc105aad9a0899a5c90f31dcb0aadda3d0a16",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "97482b894758ad5f615210ee15efc105aad9a0899a5c90f31dcb0aadda3d0a16",
+            "text": "爸",
+            "words": [
+              {
+                "text": "爸",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "243ba1ecf122e05f692d7e5cd15c416d61c1b4924cfae3ab0beef02fdddd74ae": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f362cb2b8b29d48e52e98b8a7eff17689be7614e234104cde348670ca2ec917c.mp3",
+          "sha256": "f362cb2b8b29d48e52e98b8a7eff17689be7614e234104cde348670ca2ec917c",
+          "byteLength": 15597,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "f362cb2b8b29d48e52e98b8a7eff17689be7614e234104cde348670ca2ec917c",
+            "text": "有一点儿",
+            "words": [
+              {
+                "text": "有一点儿",
+                "start": 0.09,
+                "end": 0.75
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/8d7bb1ef10d4dfa4fdf3814a63de9736e404b98a00ac2f293c2ddea190d5c174.mp3",
+          "sha256": "8d7bb1ef10d4dfa4fdf3814a63de9736e404b98a00ac2f293c2ddea190d5c174",
+          "byteLength": 12429,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "8d7bb1ef10d4dfa4fdf3814a63de9736e404b98a00ac2f293c2ddea190d5c174",
+            "text": "有一点儿",
+            "words": [
+              {
+                "text": "有一点儿",
+                "start": 0.09,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "ced78c8122cd23828f2660c13355028e1d845a613797348f093f2b48897f43a9": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f5f366ebe07793533a55e5f45f4db558efcbfdda93f8e03d78de659aae7f0d2d.mp3",
+          "sha256": "f5f366ebe07793533a55e5f45f4db558efcbfdda93f8e03d78de659aae7f0d2d",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "f5f366ebe07793533a55e5f45f4db558efcbfdda93f8e03d78de659aae7f0d2d",
+            "text": "为",
+            "words": [
+              {
+                "text": "为",
+                "start": 0.2,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4f9ca9bad5fce4cef456a19c54db841ef360f52c79c159d92ad22f7c481e35cc.mp3",
+          "sha256": "4f9ca9bad5fce4cef456a19c54db841ef360f52c79c159d92ad22f7c481e35cc",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "4f9ca9bad5fce4cef456a19c54db841ef360f52c79c159d92ad22f7c481e35cc",
+            "text": "为",
+            "words": [
+              {
+                "text": "为",
+                "start": 0.18,
+                "end": 0.26
+              }
+            ]
+          }
+        }
+      },
+      "a254fa87ea579ab6bd73b092470d4a5660df727a98ec55f6ffbe82211b795251": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c365f8c2d55def21b0615f49f6e9ccb74eebc45979668adfa3d0ba4a02861cb2.mp3",
+          "sha256": "c365f8c2d55def21b0615f49f6e9ccb74eebc45979668adfa3d0ba4a02861cb2",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "c365f8c2d55def21b0615f49f6e9ccb74eebc45979668adfa3d0ba4a02861cb2",
+            "text": "便",
+            "words": [
+              {
+                "text": "便",
+                "start": 0.22,
+                "end": 0.32
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-bc5a0bd14d07e70bfa1bdc5858be616d9baf1ca853971bd8b8ca3cb130e30a95.mp3",
+          "sha256": "bc5a0bd14d07e70bfa1bdc5858be616d9baf1ca853971bd8b8ca3cb130e30a95",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "bc5a0bd14d07e70bfa1bdc5858be616d9baf1ca853971bd8b8ca3cb130e30a95",
+            "text": "便",
+            "words": [
+              {
+                "text": "便",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "fa8101edfaa53236ad17710300709e35c681013d15b758684247da3693f4bc50": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-30c9aa00283f92f48db02de80d8a830ab5278677aefdfc0aa0163506ae58248b.mp3",
+          "sha256": "30c9aa00283f92f48db02de80d8a830ab5278677aefdfc0aa0163506ae58248b",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "30c9aa00283f92f48db02de80d8a830ab5278677aefdfc0aa0163506ae58248b",
+            "text": "人为",
+            "words": [
+              {
+                "text": "人为",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-450a59af01bccea1fac2ff2dc67cdc15754ce1ee5073c58b0428449c77f03abf.mp3",
+          "sha256": "450a59af01bccea1fac2ff2dc67cdc15754ce1ee5073c58b0428449c77f03abf",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "450a59af01bccea1fac2ff2dc67cdc15754ce1ee5073c58b0428449c77f03abf",
+            "text": "人为",
+            "words": [
+              {
+                "text": "人为",
+                "start": 0.2,
+                "end": 0.72
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

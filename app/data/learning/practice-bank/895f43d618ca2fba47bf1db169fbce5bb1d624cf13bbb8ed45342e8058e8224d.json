@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1950",
+  "targetId": "W1950",
+  "steps": [
+    {
+      "id": "BANK-W1950-W1950",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1950-W1950",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "breakfast",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "早餐"
+            },
+            {
+              "value": "zǎocān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zao3can1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "早餐",
+            "pinyin": "zǎocān",
+            "meaning": "breakfast",
+            "singleWord": true,
+            "audio": "ba1a53f86dc1683dc509ae78fe019a722c078ce46d82e3acd935b1ea7887450d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ba1a53f86dc1683dc509ae78fe019a722c078ce46d82e3acd935b1ea7887450d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-6ae562f3c1bf9a0c91019aeae833cd84a49972f8ef1e70a9ebc0ac7ec97f8b96.mp3",
+        "sha256": "6ae562f3c1bf9a0c91019aeae833cd84a49972f8ef1e70a9ebc0ac7ec97f8b96",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "6ae562f3c1bf9a0c91019aeae833cd84a49972f8ef1e70a9ebc0ac7ec97f8b96",
+          "text": "早餐",
+          "words": [
+            {
+              "text": "早餐",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-8a11435c96be7d69d60be5e1199286515b1b9a995c10831a27fe6adbb5983b72.mp3",
+        "sha256": "8a11435c96be7d69d60be5e1199286515b1b9a995c10831a27fe6adbb5983b72",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "8a11435c96be7d69d60be5e1199286515b1b9a995c10831a27fe6adbb5983b72",
+          "text": "早餐",
+          "words": [
+            {
+              "text": "早餐",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1950",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1950-W1950",
+      "question_ids": [
+        "BANK-W1950-W1950"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-09",
+    "stepId": "S-U4-09-words-r4-22",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9910"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1578",
+  "targetId": "W1578",
+  "steps": [
+    {
+      "id": "BANK-W1578-W1578",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1578-W1578",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "woman; the female sex",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "女性"
+            },
+            {
+              "value": "nǚxìng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "nü3xing4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "女性",
+            "pinyin": "nǚxìng",
+            "meaning": "woman; the female sex",
+            "singleWord": true,
+            "audio": "6fc7a213f99eb5991e46f188a2d2a3fd09f8bd43c9158277ad28db5630eb6c52"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "6fc7a213f99eb5991e46f188a2d2a3fd09f8bd43c9158277ad28db5630eb6c52": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/72324d30f72a62d43444ac066f75e94a3f2dc8e29347f80eb5c24b772a97d008.mp3",
+        "sha256": "72324d30f72a62d43444ac066f75e94a3f2dc8e29347f80eb5c24b772a97d008",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "72324d30f72a62d43444ac066f75e94a3f2dc8e29347f80eb5c24b772a97d008",
+          "text": "女性",
+          "words": [
+            {
+              "text": "女性",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9cd56002b225771746cf21dcfc2d81630019d09df017b18e935283d0ceffd452.mp3",
+        "sha256": "9cd56002b225771746cf21dcfc2d81630019d09df017b18e935283d0ceffd452",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "9cd56002b225771746cf21dcfc2d81630019d09df017b18e935283d0ceffd452",
+          "text": "女性",
+          "words": [
+            {
+              "text": "女性",
+              "start": 0.09,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1578",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1578-W1578",
+      "question_ids": [
+        "BANK-W1578-W1578"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-03",
+    "stepId": "S-U4-03-words-r4-14",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6027"
+    ],
+    "grammarLessonIds": []
+  }
+}

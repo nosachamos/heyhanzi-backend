@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4906",
+  "targetId": "W4906",
+  "steps": [
+    {
+      "id": "BANK-W4906-W4906",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4906-W4906",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "field; farm",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "田"
+            },
+            {
+              "value": "tián",
+              "mode": "pinyin"
+            },
+            {
+              "value": "tian2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "田",
+            "pinyin": "tián",
+            "meaning": "field; farm",
+            "singleWord": true,
+            "audio": "a9c083b80def003e3e7f69ad20615f4c3b7efc1892c8f3ae9c55413868e78794"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a9c083b80def003e3e7f69ad20615f4c3b7efc1892c8f3ae9c55413868e78794": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-828d9b62da6b19e526cf2e816aa160609759c6de6b575ac91515309b34d23c64.mp3",
+        "sha256": "828d9b62da6b19e526cf2e816aa160609759c6de6b575ac91515309b34d23c64",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "828d9b62da6b19e526cf2e816aa160609759c6de6b575ac91515309b34d23c64",
+          "text": "田",
+          "words": [
+            {
+              "text": "田",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3c4031b53c24d2bc29f80ac0f3e12abed2834623df41de772968677652540023.mp3",
+        "sha256": "3c4031b53c24d2bc29f80ac0f3e12abed2834623df41de772968677652540023",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "3c4031b53c24d2bc29f80ac0f3e12abed2834623df41de772968677652540023",
+          "text": "田",
+          "words": [
+            {
+              "text": "田",
+              "start": 0.22,
+              "end": 0.34
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4906",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4906-W4906",
+      "question_ids": [
+        "BANK-W4906-W4906"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-29-P01",
+    "stepId": "S-U6-29-words-r4-17",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7530"
+    ],
+    "grammarLessonIds": []
+  }
+}

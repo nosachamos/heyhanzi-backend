@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W-ZHUNMAMA",
+  "targetId": "W-ZHUNMAMA",
+  "steps": [
+    {
+      "id": "BANK-W-ZHUNMAMA-W-ZHUNMAMA",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W-ZHUNMAMA-W-ZHUNMAMA",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "expectant mother",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "准妈妈"
+            },
+            {
+              "value": "zhǔnmāma",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhun3ma1ma5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "准妈妈",
+            "pinyin": "zhǔnmāma",
+            "meaning": "expectant mother",
+            "singleWord": true,
+            "audio": "c89a68fd5ecae924c0ba7472fc999262eb881047a10db523d7da57978a755c94"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c89a68fd5ecae924c0ba7472fc999262eb881047a10db523d7da57978a755c94": {
+      "male": {
+        "url": "/exercise-assets/audio/course-male-bf109c0606825e4e7693d54b564aa5a666ccdc506fe6a9935c5c833d2b479133.mp3",
+        "sha256": "bf109c0606825e4e7693d54b564aa5a666ccdc506fe6a9935c5c833d2b479133",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "bf109c0606825e4e7693d54b564aa5a666ccdc506fe6a9935c5c833d2b479133",
+          "text": "准妈妈",
+          "words": [
+            {
+              "text": "准妈妈",
+              "start": 0.09,
+              "end": 0.69
+            }
+          ]
+        }
+      },
+      "female": {
+        "url": "/exercise-assets/audio/course-female-bb624829b778818487c81a21852597ecc07ec740d0cf43d009c7bb8e4a41b364.mp3",
+        "sha256": "bb624829b778818487c81a21852597ecc07ec740d0cf43d009c7bb8e4a41b364",
+        "byteLength": 16749,
+        "readAlong": {
+          "audioSha256": "bb624829b778818487c81a21852597ecc07ec740d0cf43d009c7bb8e4a41b364",
+          "text": "准妈妈",
+          "words": [
+            {
+              "text": "准妈妈",
+              "start": 0.15,
+              "end": 0.75
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W-ZHUNMAMA",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W-ZHUNMAMA-W-ZHUNMAMA",
+      "question_ids": [
+        "BANK-W-ZHUNMAMA-W-ZHUNMAMA"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-47-P01",
+    "stepId": "S-U6-47-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8bf8"
+    ],
+    "grammarLessonIds": []
+  }
+}

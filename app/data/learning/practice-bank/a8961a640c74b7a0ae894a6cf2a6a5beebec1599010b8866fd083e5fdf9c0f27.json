@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0211",
+  "targetId": "W0211",
+  "steps": [
+    {
+      "id": "BANK-W0211-W0211",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0211-W0211",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "rapid; quick; soon (before an imminent event)",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "快"
+            },
+            {
+              "value": "kuài",
+              "mode": "pinyin"
+            },
+            {
+              "value": "kuai4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "快",
+            "pinyin": "kuài",
+            "meaning": "rapid; quick; soon (before an imminent event)",
+            "singleWord": true,
+            "audio": "e106b8cc877fa4534f99b269622e7f3fcc890ad49f7fb5fcb893dcd3e13f55fe"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e106b8cc877fa4534f99b269622e7f3fcc890ad49f7fb5fcb893dcd3e13f55fe": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-bdeb205de2275d1ba9508eb4bf705c21ba7baba6957254fa2114e1bcef778943.mp3",
+        "sha256": "bdeb205de2275d1ba9508eb4bf705c21ba7baba6957254fa2114e1bcef778943",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "bdeb205de2275d1ba9508eb4bf705c21ba7baba6957254fa2114e1bcef778943",
+          "text": "快",
+          "words": [
+            {
+              "text": "快",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-399973d47c2afaa2e74f89966c3532c5d12b643f5d17215cfb568cab5be2d0ab.mp3",
+        "sha256": "399973d47c2afaa2e74f89966c3532c5d12b643f5d17215cfb568cab5be2d0ab",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "399973d47c2afaa2e74f89966c3532c5d12b643f5d17215cfb568cab5be2d0ab",
+          "text": "快",
+          "words": [
+            {
+              "text": "快",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0211",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0211-W0211",
+      "question_ids": [
+        "BANK-W0211-W0211"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U18",
+    "stepId": "S-U18-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5feb"
+    ],
+    "grammarLessonIds": []
+  }
+}

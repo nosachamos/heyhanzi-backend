@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2522",
+  "targetId": "W2522",
+  "steps": [
+    {
+      "id": "BANK-W2522-W2522",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2522-W2522",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "call charge",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "话费"
+            },
+            {
+              "value": "huàfèi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hua4fei4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "话费",
+            "pinyin": "huàfèi",
+            "meaning": "call charge",
+            "singleWord": true,
+            "audio": "7f8b98eb8912b7c22ff6aaf68c482970093631ec67351cd3a921cec685dabe4b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7f8b98eb8912b7c22ff6aaf68c482970093631ec67351cd3a921cec685dabe4b": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5fe1224c494b2eab18589675dd2d3bd1d6501e862b406758d04fe92c3a278072.mp3",
+        "sha256": "5fe1224c494b2eab18589675dd2d3bd1d6501e862b406758d04fe92c3a278072",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "5fe1224c494b2eab18589675dd2d3bd1d6501e862b406758d04fe92c3a278072",
+          "text": "话费",
+          "words": [
+            {
+              "text": "话费",
+              "start": 0.09,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/bbecd4e392f8fba62fb60ee495a55f13d7aabbb0fda76927db33e95dc27060a1.mp3",
+        "sha256": "bbecd4e392f8fba62fb60ee495a55f13d7aabbb0fda76927db33e95dc27060a1",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "bbecd4e392f8fba62fb60ee495a55f13d7aabbb0fda76927db33e95dc27060a1",
+          "text": "话费",
+          "words": [
+            {
+              "text": "话费",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2522",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2522-W2522",
+      "question_ids": [
+        "BANK-W2522-W2522"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-30-P01",
+    "stepId": "S-U5-30-P01-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8d39"
+    ],
+    "grammarLessonIds": []
+  }
+}

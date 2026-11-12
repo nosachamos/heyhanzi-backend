@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0903",
+  "targetId": "W0903",
+  "steps": [
+    {
+      "id": "BANK-W0903-W0903",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0903-W0903",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "the year before last",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "前年"
+            },
+            {
+              "value": "qiánnián",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qian2nian2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "前年",
+            "pinyin": "qiánnián",
+            "meaning": "the year before last",
+            "singleWord": true,
+            "audio": "0e95a40c8a5ecf774e9005ea90b983632eb2345e960e53ee916df7b492a541b1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "0e95a40c8a5ecf774e9005ea90b983632eb2345e960e53ee916df7b492a541b1": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8db8351ef47482e9ff3ef87cbfa55a0f4203bd5330946d5ee03f2044a4ad7b05.mp3",
+        "sha256": "8db8351ef47482e9ff3ef87cbfa55a0f4203bd5330946d5ee03f2044a4ad7b05",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "8db8351ef47482e9ff3ef87cbfa55a0f4203bd5330946d5ee03f2044a4ad7b05",
+          "text": "前年",
+          "words": [
+            {
+              "text": "前年",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d1cb0f712f2b2b6381a0ffd19e881b5fd8d6eddffee4be7f79311985f9ea120c.mp3",
+        "sha256": "d1cb0f712f2b2b6381a0ffd19e881b5fd8d6eddffee4be7f79311985f9ea120c",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "d1cb0f712f2b2b6381a0ffd19e881b5fd8d6eddffee4be7f79311985f9ea120c",
+          "text": "前年",
+          "words": [
+            {
+              "text": "前年",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0903",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0903-W0903",
+      "question_ids": [
+        "BANK-W0903-W0903"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-04-P01",
+    "stepId": "S-U3-04-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e74"
+    ],
+    "grammarLessonIds": []
+  }
+}

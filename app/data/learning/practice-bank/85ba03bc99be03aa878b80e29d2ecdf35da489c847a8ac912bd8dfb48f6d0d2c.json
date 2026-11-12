@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1538",
+  "targetId": "W1538",
+  "steps": [
+    {
+      "id": "BANK-W1538-W1538",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1538-W1538",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "hat; cap",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "帽子"
+            },
+            {
+              "value": "màozi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "mao4zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "帽子",
+            "pinyin": "màozi",
+            "meaning": "hat; cap",
+            "singleWord": true,
+            "audio": "d783d103e1e97d3b25cdae4e698349c3aa705b45852773b698dce24a94e07e61"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d783d103e1e97d3b25cdae4e698349c3aa705b45852773b698dce24a94e07e61": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1d229965fed08bea7d83f25496beaa22c0bd5de4eb60c3884d1d52f7090770fd.mp3",
+        "sha256": "1d229965fed08bea7d83f25496beaa22c0bd5de4eb60c3884d1d52f7090770fd",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "1d229965fed08bea7d83f25496beaa22c0bd5de4eb60c3884d1d52f7090770fd",
+          "text": "帽子",
+          "words": [
+            {
+              "text": "帽子",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-10e0f43d54eae756a709258254cf9ee6e87450655e19381ebab0fc998effa44f.mp3",
+        "sha256": "10e0f43d54eae756a709258254cf9ee6e87450655e19381ebab0fc998effa44f",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "10e0f43d54eae756a709258254cf9ee6e87450655e19381ebab0fc998effa44f",
+          "text": "帽子",
+          "words": [
+            {
+              "text": "帽子",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1538",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1538-W1538",
+      "question_ids": [
+        "BANK-W1538-W1538"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-10-P01",
+    "stepId": "S-U4-10-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e3d"
+    ],
+    "grammarLessonIds": []
+  }
+}

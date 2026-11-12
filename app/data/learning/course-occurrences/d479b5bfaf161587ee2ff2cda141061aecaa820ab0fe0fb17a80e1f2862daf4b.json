@@ -1,0 +1,673 @@
+{
+  "id": "EX-CHAR-char-575b",
+  "revision": 2,
+  "unit": "U6-31-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-31-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "坛",
+  "sourceBlockId": "mandarin-simplified-v1-char-575b",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-575b",
+        "text": "坛",
+        "pinyin": "tán",
+        "meaning": "altar; platform; rostrum",
+        "characters": [
+          {
+            "id": "C-575B",
+            "text": "坛"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-1e22642fc9cd1d4c6084dd07",
+        "text": "论坛",
+        "pinyin": "lùntán",
+        "meaning": "forum (for discussion)",
+        "characters": [
+          {
+            "id": "C-8BBA",
+            "text": "论"
+          },
+          {
+            "id": "C-575B",
+            "text": "坛"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-690e5a30ee20e39b178f0ae5",
+        "text": "上月",
+        "pinyin": "shàng yuè",
+        "meaning": "last month",
+        "characters": [
+          {
+            "id": "C-4E0A",
+            "text": "上"
+          },
+          {
+            "id": "C-6708",
+            "text": "月"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-dc1d866fb90ea954aca9ade1",
+        "text": "要害",
+        "pinyin": "yào hài",
+        "meaning": "crucial",
+        "characters": [
+          {
+            "id": "C-8981",
+            "text": "要"
+          },
+          {
+            "id": "C-5BB3",
+            "text": "害"
+          }
+        ]
+      },
+      {
+        "id": "W3068",
+        "text": "首次",
+        "pinyin": "shǒucì",
+        "meaning": "first; first time",
+        "characters": [
+          {
+            "id": "C-9996",
+            "text": "首"
+          },
+          {
+            "id": "C-6B21",
+            "text": "次"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "8e9137a6dbc0e7f0a42a66c046c8580f772ddd49e792df04f796f7154ed9e1de",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-575b",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "坛",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-575b-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-1e22642fc9cd1d4c6084dd07",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "forum (for discussion)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "论坛"
+              },
+              {
+                "value": "lùntán",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lun4tan2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "论坛",
+              "pinyin": "lùntán",
+              "meaning": "forum (for discussion)",
+              "audio": "7c2bf89bb03079b23b388346d2eaad10cf3b7802622e1a73e3a08f9f11d1cd51",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-575b-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-575b",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "坛",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-dc1d866fb90ea954aca9ade1",
+                "label": "crucial",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-575b",
+                "label": "altar; platform",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-690e5a30ee20e39b178f0ae5",
+                "label": "last month",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-575b-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "坛",
+        "pinyin": "tán",
+        "meaning": "altar; platform",
+        "source": "/stroke-data/575b.json",
+        "reference": {
+          "character": "坛",
+          "sha256": "4e1930b8976e3230fcf7cd1c66f3e91f5137ee11da1d33b43dbc70ac3f8d0234",
+          "medians": [
+            [
+              [
+                127,
+                496
+              ],
+              [
+                150,
+                492
+              ],
+              [
+                199,
+                497
+              ],
+              [
+                329,
+                539
+              ],
+              [
+                370,
+                547
+              ],
+              [
+                394,
+                545
+              ]
+            ],
+            [
+              [
+                243,
+                791
+              ],
+              [
+                294,
+                745
+              ],
+              [
+                281,
+                312
+              ],
+              [
+                264,
+                288
+              ]
+            ],
+            [
+              [
+                83,
+                210
+              ],
+              [
+                142,
+                200
+              ],
+              [
+                392,
+                322
+              ]
+            ],
+            [
+              [
+                509,
+                611
+              ],
+              [
+                520,
+                606
+              ],
+              [
+                572,
+                606
+              ],
+              [
+                728,
+                645
+              ],
+              [
+                788,
+                648
+              ]
+            ],
+            [
+              [
+                401,
+                413
+              ],
+              [
+                430,
+                407
+              ],
+              [
+                469,
+                410
+              ],
+              [
+                642,
+                447
+              ],
+              [
+                840,
+                474
+              ],
+              [
+                884,
+                470
+              ],
+              [
+                922,
+                458
+              ]
+            ],
+            [
+              [
+                571,
+                407
+              ],
+              [
+                600,
+                385
+              ],
+              [
+                605,
+                369
+              ],
+              [
+                554,
+                272
+              ],
+              [
+                504,
+                193
+              ],
+              [
+                491,
+                182
+              ],
+              [
+                473,
+                134
+              ],
+              [
+                509,
+                130
+              ],
+              [
+                630,
+                161
+              ],
+              [
+                762,
+                186
+              ],
+              [
+                771,
+                177
+              ]
+            ],
+            [
+              [
+                728,
+                308
+              ],
+              [
+                829,
+                171
+              ],
+              [
+                851,
+                119
+              ],
+              [
+                852,
+                74
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-575b-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3068",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "first; first time",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "首次"
+              },
+              {
+                "value": "shǒucì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shou3ci4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "首次",
+              "pinyin": "shǒucì",
+              "meaning": "first; first time",
+              "audio": "cdcd4c2ca70a2dee165933b6b59e7dac2b58e74da49e02f68658d9a043928d8b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-575b-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-575b",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "altar; platform",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "坛"
+              },
+              {
+                "value": "tán",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tan2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "坛",
+              "pinyin": "tán",
+              "meaning": "altar; platform",
+              "audio": "0731ea2e5cfc77f66d3afd3482c7cd20b918ab858309d3e1df1b8b37a66ab08d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "0731ea2e5cfc77f66d3afd3482c7cd20b918ab858309d3e1df1b8b37a66ab08d"
+            ],
+            "transcript": [
+              {
+                "text": "坛",
+                "pinyin": "tán",
+                "meaning": "altar; platform",
+                "audio": "0731ea2e5cfc77f66d3afd3482c7cd20b918ab858309d3e1df1b8b37a66ab08d",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-575B",
+      "character": "坛",
+      "lessonIds": [
+        "LESSON-C-575B"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-575b-word",
+        "EX-CHAR-char-575b-recognize",
+        "EX-CHAR-char-575b-write",
+        "EX-CHAR-char-575b-familiar",
+        "EX-CHAR-char-575b-recall"
+      ]
+    },
+    "audio": {
+      "0731ea2e5cfc77f66d3afd3482c7cd20b918ab858309d3e1df1b8b37a66ab08d": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-0055fc9d54b6ec348f049f0982014d45efad9beeaea66f7e5dd0b0322a59dbc8.mp3",
+          "sha256": "0055fc9d54b6ec348f049f0982014d45efad9beeaea66f7e5dd0b0322a59dbc8",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "0055fc9d54b6ec348f049f0982014d45efad9beeaea66f7e5dd0b0322a59dbc8",
+            "text": "坛",
+            "words": [
+              {
+                "text": "坛",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-ece7b756ad3fa8349e5591009f846e4eb9d0faee9ca41e506c8d3fd8e12de76e.mp3",
+          "sha256": "ece7b756ad3fa8349e5591009f846e4eb9d0faee9ca41e506c8d3fd8e12de76e",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "ece7b756ad3fa8349e5591009f846e4eb9d0faee9ca41e506c8d3fd8e12de76e",
+            "text": "坛",
+            "words": [
+              {
+                "text": "坛",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "7c2bf89bb03079b23b388346d2eaad10cf3b7802622e1a73e3a08f9f11d1cd51": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-392405f869cc1ce58f3d0a4bbe85584e21dff716f0cb2bb6f0d5a4b4e6e30e27.mp3",
+          "sha256": "392405f869cc1ce58f3d0a4bbe85584e21dff716f0cb2bb6f0d5a4b4e6e30e27",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "392405f869cc1ce58f3d0a4bbe85584e21dff716f0cb2bb6f0d5a4b4e6e30e27",
+            "text": "论坛",
+            "words": [
+              {
+                "text": "论坛",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-49460945fc4a88c972f5de72e9b954ac8f72cc9393f40c5fbd59ec525aba85bb.mp3",
+          "sha256": "49460945fc4a88c972f5de72e9b954ac8f72cc9393f40c5fbd59ec525aba85bb",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "49460945fc4a88c972f5de72e9b954ac8f72cc9393f40c5fbd59ec525aba85bb",
+            "text": "论坛",
+            "words": [
+              {
+                "text": "论坛",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "148bb2bd55e6f759df48a4b90f8a1aaf02545e084e38a87dcad64f0d5123df22": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7b7d441a2f58a0444a8ef21d9b7f86621526e6d3f0952bedfb1ec89cee135cc4.mp3",
+          "sha256": "7b7d441a2f58a0444a8ef21d9b7f86621526e6d3f0952bedfb1ec89cee135cc4",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "7b7d441a2f58a0444a8ef21d9b7f86621526e6d3f0952bedfb1ec89cee135cc4",
+            "text": "上月",
+            "words": [
+              {
+                "text": "上月",
+                "start": 0.26,
+                "end": 0.7000000000000001
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3e8f9c750b2fb4fa9649c91861fd692d22126c205846dc90ae74a9400eacd6e1.mp3",
+          "sha256": "3e8f9c750b2fb4fa9649c91861fd692d22126c205846dc90ae74a9400eacd6e1",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "3e8f9c750b2fb4fa9649c91861fd692d22126c205846dc90ae74a9400eacd6e1",
+            "text": "上月",
+            "words": [
+              {
+                "text": "上月",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "b48c47f69ba56cbb7b347749449cd9396415d62f3561a84c6af9b2731ce94005": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/acad57508ba31ed317ccbb53ef3842405718c692912f35a2cc02aeb7ab6b529a.mp3",
+          "sha256": "acad57508ba31ed317ccbb53ef3842405718c692912f35a2cc02aeb7ab6b529a",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "acad57508ba31ed317ccbb53ef3842405718c692912f35a2cc02aeb7ab6b529a",
+            "text": "要害",
+            "words": [
+              {
+                "text": "要害",
+                "start": 0.39,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b356f5e1e11660eb18f4dd3e3a62ad9b399010b60b1349f202e52c1b8a87e7c9.mp3",
+          "sha256": "b356f5e1e11660eb18f4dd3e3a62ad9b399010b60b1349f202e52c1b8a87e7c9",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "b356f5e1e11660eb18f4dd3e3a62ad9b399010b60b1349f202e52c1b8a87e7c9",
+            "text": "要害",
+            "words": [
+              {
+                "text": "要害",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "cdcd4c2ca70a2dee165933b6b59e7dac2b58e74da49e02f68658d9a043928d8b": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a3260ef8aa6a2f972f8bd162123f0a5dafe8efedd3842ed3d769cd9f00d1c296.mp3",
+          "sha256": "a3260ef8aa6a2f972f8bd162123f0a5dafe8efedd3842ed3d769cd9f00d1c296",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "a3260ef8aa6a2f972f8bd162123f0a5dafe8efedd3842ed3d769cd9f00d1c296",
+            "text": "首次",
+            "words": [
+              {
+                "text": "首次",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/eb39387b1b99cb272d07dddc23f605bf55f05dce55a2b1b719e9945655c384bf.mp3",
+          "sha256": "eb39387b1b99cb272d07dddc23f605bf55f05dce55a2b1b719e9945655c384bf",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "eb39387b1b99cb272d07dddc23f605bf55f05dce55a2b1b719e9945655c384bf",
+            "text": "首次",
+            "words": [
+              {
+                "text": "首次",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

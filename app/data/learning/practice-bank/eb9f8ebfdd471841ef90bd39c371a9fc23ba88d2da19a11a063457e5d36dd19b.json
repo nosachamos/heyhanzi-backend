@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0393",
+  "targetId": "W0393",
+  "steps": [
+    {
+      "id": "BANK-W0393-W0393",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0393-W0393",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "son",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "儿子"
+            },
+            {
+              "value": "érzi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "er2zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "儿子",
+            "pinyin": "érzi",
+            "meaning": "son",
+            "singleWord": true,
+            "audio": "423751cc2d969d9321c1956a013a3178cf42cf0326bd609694a98b0c05d910e8"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "423751cc2d969d9321c1956a013a3178cf42cf0326bd609694a98b0c05d910e8": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7c5434d1911e81a0b64631ecc206b3cf44524e6eed37d46f71b2ee184d592cd3.mp3",
+        "sha256": "7c5434d1911e81a0b64631ecc206b3cf44524e6eed37d46f71b2ee184d592cd3",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "7c5434d1911e81a0b64631ecc206b3cf44524e6eed37d46f71b2ee184d592cd3",
+          "text": "儿子",
+          "words": [
+            {
+              "text": "儿子",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/616b7493422b104e981be02c8d2a9d3c77ca4bf5a78b6f6ba5f5ae6adb9e8d1d.mp3",
+        "sha256": "616b7493422b104e981be02c8d2a9d3c77ca4bf5a78b6f6ba5f5ae6adb9e8d1d",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "616b7493422b104e981be02c8d2a9d3c77ca4bf5a78b6f6ba5f5ae6adb9e8d1d",
+          "text": "儿子",
+          "words": [
+            {
+              "text": "儿子",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0393",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0393-W0393",
+      "question_ids": [
+        "BANK-W0393-W0393"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U04",
+    "stepId": "S-U04-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-513f"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "id": "BANK-W0030",
+  "targetId": "W0030",
+  "steps": [
+    {
+      "id": "BANK-W0030-W0030",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0030-W0030",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "of; ’s",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "的"
+            },
+            {
+              "value": "de",
+              "mode": "pinyin"
+            },
+            {
+              "value": "de5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "的",
+            "pinyin": "de",
+            "meaning": "of; ’s",
+            "singleWord": true,
+            "audio": "bda436099e942c6cf4b9d1250f2cd9f0c5ed1d3ffab99f43e219abcbf5324cab"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "bda436099e942c6cf4b9d1250f2cd9f0c5ed1d3ffab99f43e219abcbf5324cab": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-4b2c467bab20d2c70bdafc657f37f1bee5a5dbc7083eb71222215f4d02f66b62.mp3",
+        "sha256": "4b2c467bab20d2c70bdafc657f37f1bee5a5dbc7083eb71222215f4d02f66b62",
+        "byteLength": 8973,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "4b2c467bab20d2c70bdafc657f37f1bee5a5dbc7083eb71222215f4d02f66b62",
+          "text": "的",
+          "words": [
+            {
+              "text": "的",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-bc9de007b848d16c698da0a6c23224dfb7c407d0e12ccc47b4a4782f71b379b3.mp3",
+        "sha256": "bc9de007b848d16c698da0a6c23224dfb7c407d0e12ccc47b4a4782f71b379b3",
+        "byteLength": 9549,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "bc9de007b848d16c698da0a6c23224dfb7c407d0e12ccc47b4a4782f71b379b3",
+          "text": "的",
+          "words": [
+            {
+              "text": "的",
+              "start": 0.115,
+              "end": 0.525
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0030",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0030-W0030",
+      "question_ids": [
+        "BANK-W0030-W0030"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU02",
+    "stepId": "S-WU02-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-de"
+    ],
+    "grammarLessonIds": []
+  }
+}

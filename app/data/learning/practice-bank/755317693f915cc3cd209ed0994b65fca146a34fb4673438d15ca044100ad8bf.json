@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4417",
+  "targetId": "W4417",
+  "steps": [
+    {
+      "id": "BANK-W4417-W4417",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4417-W4417",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "accountant; accountancy",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "会计"
+            },
+            {
+              "value": "kuàijì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "kuai4ji4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "会计",
+            "pinyin": "kuàijì",
+            "meaning": "accountant; accountancy",
+            "singleWord": true,
+            "audio": "36098fc593a3bd5c2b7c2180ab007a16cb614528c176706a79023c58bf16b09e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "36098fc593a3bd5c2b7c2180ab007a16cb614528c176706a79023c58bf16b09e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-35bc9d454033ffbb552afc3f72add4cb35e9ef11f7dd648743483c24cc76dda1.mp3",
+        "sha256": "35bc9d454033ffbb552afc3f72add4cb35e9ef11f7dd648743483c24cc76dda1",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "35bc9d454033ffbb552afc3f72add4cb35e9ef11f7dd648743483c24cc76dda1",
+          "text": "会计",
+          "words": [
+            {
+              "text": "会计",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/course-male-a763be7cdfb6097c006c93bc23dd051505f049338fdf6e6fce67b4125d3da217.mp3",
+        "sha256": "a763be7cdfb6097c006c93bc23dd051505f049338fdf6e6fce67b4125d3da217",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "a763be7cdfb6097c006c93bc23dd051505f049338fdf6e6fce67b4125d3da217",
+          "text": "会计",
+          "words": [
+            {
+              "text": "会计",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4417",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4417-W4417",
+      "question_ids": [
+        "BANK-W4417-W4417"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-12",
+    "stepId": "S-U6-12-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8ba1"
+    ],
+    "grammarLessonIds": []
+  }
+}

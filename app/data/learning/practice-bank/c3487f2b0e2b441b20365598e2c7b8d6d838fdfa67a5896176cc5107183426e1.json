@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1044",
+  "targetId": "W1044",
+  "steps": [
+    {
+      "id": "BANK-W1044-W1044",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1044-W1044",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "within; among",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "中"
+            },
+            {
+              "value": "zhōng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhong1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "中",
+            "pinyin": "zhōng",
+            "meaning": "within; among",
+            "singleWord": true,
+            "audio": "5040ac6de91bb36690c5f7692e1b355a2e083d8b4a056707cc8332088893bd0c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5040ac6de91bb36690c5f7692e1b355a2e083d8b4a056707cc8332088893bd0c": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-0c44f57d8d6a08ebf06bdf7d5839a04a669acad55b7598f02f3c14a3f57f4b38.mp3",
+        "sha256": "0c44f57d8d6a08ebf06bdf7d5839a04a669acad55b7598f02f3c14a3f57f4b38",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "0c44f57d8d6a08ebf06bdf7d5839a04a669acad55b7598f02f3c14a3f57f4b38",
+          "text": "中",
+          "words": [
+            {
+              "text": "中",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-236d84fa0fa87ed60fbeb43ea9644f3fd05873a1253ef71bce9b5850b3704ff9.mp3",
+        "sha256": "236d84fa0fa87ed60fbeb43ea9644f3fd05873a1253ef71bce9b5850b3704ff9",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "236d84fa0fa87ed60fbeb43ea9644f3fd05873a1253ef71bce9b5850b3704ff9",
+          "text": "中",
+          "words": [
+            {
+              "text": "中",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1044",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1044-W1044",
+      "question_ids": [
+        "BANK-W1044-W1044"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-11",
+    "stepId": "S-U3-11-words-r4-16",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-zhongwen"
+    ],
+    "grammarLessonIds": []
+  }
+}

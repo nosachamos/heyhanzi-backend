@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4110",
+  "targetId": "W4110",
+  "steps": [
+    {
+      "id": "BANK-W4110-W4110",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4110-W4110",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "official; administrator",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "官员"
+            },
+            {
+              "value": "guānyuán",
+              "mode": "pinyin"
+            },
+            {
+              "value": "guan1yuan2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "官员",
+            "pinyin": "guānyuán",
+            "meaning": "official; administrator",
+            "singleWord": true,
+            "audio": "8b8acb6c31b18c33d143b237201a17d4cf7a750df3c6629cad779398ddc3d3cf"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8b8acb6c31b18c33d143b237201a17d4cf7a750df3c6629cad779398ddc3d3cf": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/53483f306cdfc9a97d1b107b4ed396496e8db8c7edb406561c9d8c9338f3e615.mp3",
+        "sha256": "53483f306cdfc9a97d1b107b4ed396496e8db8c7edb406561c9d8c9338f3e615",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "53483f306cdfc9a97d1b107b4ed396496e8db8c7edb406561c9d8c9338f3e615",
+          "text": "官员",
+          "words": [
+            {
+              "text": "官员",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/070cfdc08d35c0b591cff874e639b6473e0e154fa5ff528ff400991592839ab5.mp3",
+        "sha256": "070cfdc08d35c0b591cff874e639b6473e0e154fa5ff528ff400991592839ab5",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "070cfdc08d35c0b591cff874e639b6473e0e154fa5ff528ff400991592839ab5",
+          "text": "官员",
+          "words": [
+            {
+              "text": "官员",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4110",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4110-W4110",
+      "question_ids": [
+        "BANK-W4110-W4110"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-35-P01",
+    "stepId": "S-U6-35-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8c10"
+    ],
+    "grammarLessonIds": []
+  }
+}

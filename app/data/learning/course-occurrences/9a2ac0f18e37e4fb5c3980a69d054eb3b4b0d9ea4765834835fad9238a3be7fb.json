@@ -1,0 +1,787 @@
+{
+  "id": "EX-CHAR-char-667a",
+  "revision": 2,
+  "unit": "U5-30",
+  "stage": "ST-HSK5",
+  "after": "S-U5-30-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "智",
+  "sourceBlockId": "mandarin-simplified-v1-char-667a",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-667a",
+        "text": "智",
+        "pinyin": "zhì",
+        "meaning": "(literary) wise; wisdom",
+        "characters": [
+          {
+            "id": "C-667A",
+            "text": "智"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-978bb4da02b7d20e132882bf",
+        "text": "机智",
+        "pinyin": "jī zhì",
+        "meaning": "resourceful",
+        "characters": [
+          {
+            "id": "C-673A",
+            "text": "机"
+          },
+          {
+            "id": "C-667A",
+            "text": "智"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-aba86a42ea5384b73735197f",
+        "text": "专科",
+        "pinyin": "zhuānkē",
+        "meaning": "specialized subject; branch (of medicine)",
+        "characters": [
+          {
+            "id": "C-4E13",
+            "text": "专"
+          },
+          {
+            "id": "C-79D1",
+            "text": "科"
+          }
+        ]
+      },
+      {
+        "id": "W0610",
+        "text": "洗",
+        "pinyin": "xǐ",
+        "meaning": "to wash; to bathe",
+        "characters": [
+          {
+            "id": "C-6D17",
+            "text": "洗"
+          }
+        ]
+      },
+      {
+        "id": "W1431",
+        "text": "仅",
+        "pinyin": "jǐn",
+        "meaning": "barely; only",
+        "characters": [
+          {
+            "id": "C-4EC5",
+            "text": "仅"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "c9b437cea50b9a8b37fffcebd78bc60dcc60901df7a28c406991032738c78680",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-667a",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "智",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-667a-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-978bb4da02b7d20e132882bf",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "resourceful",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "机智"
+              },
+              {
+                "value": "jī zhì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ji1zhi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "机智",
+              "pinyin": "jī zhì",
+              "meaning": "resourceful",
+              "audio": "d34a1d0e7a424c498b70e6513268a276b75bad8dccbe989d3c678a0016135689",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-667a-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-667a",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "智",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-aba86a42ea5384b73735197f",
+                "label": "specialized subject; branch (of medicine)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-667a",
+                "label": "(literary) wise; wisdom",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1431",
+                "label": "barely; only",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-667a-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "智",
+        "pinyin": "zhì",
+        "meaning": "(literary) wise; wisdom",
+        "source": "/stroke-data/667a.json",
+        "reference": {
+          "character": "智",
+          "sha256": "c0c327f2bf09bdb2c1845660e63cd55ed34b5ea0e4a46fc1dccde20a10c75f63",
+          "medians": [
+            [
+              [
+                299,
+                830
+              ],
+              [
+                322,
+                796
+              ],
+              [
+                293,
+                729
+              ],
+              [
+                245,
+                657
+              ],
+              [
+                178,
+                598
+              ]
+            ],
+            [
+              [
+                294,
+                687
+              ],
+              [
+                404,
+                700
+              ],
+              [
+                476,
+                725
+              ],
+              [
+                529,
+                727
+              ]
+            ],
+            [
+              [
+                108,
+                521
+              ],
+              [
+                168,
+                515
+              ],
+              [
+                446,
+                574
+              ],
+              [
+                489,
+                581
+              ],
+              [
+                534,
+                576
+              ]
+            ],
+            [
+              [
+                359,
+                667
+              ],
+              [
+                391,
+                640
+              ],
+              [
+                360,
+                522
+              ],
+              [
+                336,
+                467
+              ],
+              [
+                311,
+                428
+              ],
+              [
+                249,
+                361
+              ],
+              [
+                206,
+                333
+              ],
+              [
+                146,
+                308
+              ]
+            ],
+            [
+              [
+                414,
+                498
+              ],
+              [
+                470,
+                450
+              ],
+              [
+                488,
+                425
+              ]
+            ],
+            [
+              [
+                560,
+                656
+              ],
+              [
+                585,
+                633
+              ],
+              [
+                591,
+                617
+              ],
+              [
+                624,
+                442
+              ]
+            ],
+            [
+              [
+                616,
+                652
+              ],
+              [
+                629,
+                641
+              ],
+              [
+                747,
+                666
+              ],
+              [
+                779,
+                668
+              ],
+              [
+                789,
+                662
+              ],
+              [
+                810,
+                636
+              ],
+              [
+                779,
+                545
+              ],
+              [
+                751,
+                529
+              ]
+            ],
+            [
+              [
+                645,
+                471
+              ],
+              [
+                660,
+                483
+              ],
+              [
+                722,
+                495
+              ],
+              [
+                794,
+                501
+              ],
+              [
+                819,
+                492
+              ]
+            ],
+            [
+              [
+                358,
+                357
+              ],
+              [
+                383,
+                331
+              ],
+              [
+                391,
+                311
+              ],
+              [
+                393,
+                227
+              ],
+              [
+                378,
+                71
+              ],
+              [
+                380,
+                20
+              ]
+            ],
+            [
+              [
+                411,
+                346
+              ],
+              [
+                431,
+                335
+              ],
+              [
+                456,
+                338
+              ],
+              [
+                621,
+                376
+              ],
+              [
+                647,
+                361
+              ],
+              [
+                666,
+                340
+              ],
+              [
+                661,
+                65
+              ],
+              [
+                651,
+                43
+              ],
+              [
+                616,
+                53
+              ],
+              [
+                599,
+                74
+              ]
+            ],
+            [
+              [
+                420,
+                196
+              ],
+              [
+                431,
+                206
+              ],
+              [
+                507,
+                218
+              ],
+              [
+                568,
+                222
+              ],
+              [
+                590,
+                215
+              ]
+            ],
+            [
+              [
+                407,
+                53
+              ],
+              [
+                424,
+                66
+              ],
+              [
+                445,
+                71
+              ],
+              [
+                590,
+                81
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-667a-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0610",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to wash; to bathe",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "洗"
+              },
+              {
+                "value": "xǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xi3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "洗",
+              "pinyin": "xǐ",
+              "meaning": "to wash; to bathe",
+              "audio": "288d282050ec1207f415b3e1d731fe3618a2cd7a31a1be3d0bd3d2464d082b2e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-667a-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-667a",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "(literary) wise; wisdom",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "智"
+              },
+              {
+                "value": "zhì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "智",
+              "pinyin": "zhì",
+              "meaning": "(literary) wise; wisdom",
+              "audio": "503231e700105446ac0a1f4ae95683343b57ca09acff218d35b6423270b61af6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "503231e700105446ac0a1f4ae95683343b57ca09acff218d35b6423270b61af6"
+            ],
+            "transcript": [
+              {
+                "text": "智",
+                "pinyin": "zhì",
+                "meaning": "(literary) wise; wisdom",
+                "audio": "503231e700105446ac0a1f4ae95683343b57ca09acff218d35b6423270b61af6",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-667A",
+      "character": "智",
+      "lessonIds": [
+        "LESSON-C-667A"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-667a-word",
+        "EX-CHAR-char-667a-recognize",
+        "EX-CHAR-char-667a-write",
+        "EX-CHAR-char-667a-familiar",
+        "EX-CHAR-char-667a-recall"
+      ]
+    },
+    "audio": {
+      "503231e700105446ac0a1f4ae95683343b57ca09acff218d35b6423270b61af6": {
+        "female": {
+          "url": "/exercise-assets/audio/course-female-6ad38d9b7ecb7d7dbd962ade00765aa06f8d10362c7b457710bd1da448b26145.mp3",
+          "sha256": "6ad38d9b7ecb7d7dbd962ade00765aa06f8d10362c7b457710bd1da448b26145",
+          "byteLength": 9549,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "6ad38d9b7ecb7d7dbd962ade00765aa06f8d10362c7b457710bd1da448b26145",
+            "text": "智",
+            "words": [
+              {
+                "text": "智",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-5b878f7f9f886a4bd8ba642f477550c55b1c6edee321b17eb145afd3ff57ced1.mp3",
+          "sha256": "5b878f7f9f886a4bd8ba642f477550c55b1c6edee321b17eb145afd3ff57ced1",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "5b878f7f9f886a4bd8ba642f477550c55b1c6edee321b17eb145afd3ff57ced1",
+            "text": "智",
+            "words": [
+              {
+                "text": "智",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "d34a1d0e7a424c498b70e6513268a276b75bad8dccbe989d3c678a0016135689": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c2803c9261df81a749476fe9a1abed845f198e86f0c910be0adbacb5def0ab01.mp3",
+          "sha256": "c2803c9261df81a749476fe9a1abed845f198e86f0c910be0adbacb5def0ab01",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "c2803c9261df81a749476fe9a1abed845f198e86f0c910be0adbacb5def0ab01",
+            "text": "机智",
+            "words": [
+              {
+                "text": "机智",
+                "start": 0.22,
+                "end": 0.56
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0d947372cb6b338f8bf54e241aae8fb47d46fc0c7fec44a012b98c12045acff1.mp3",
+          "sha256": "0d947372cb6b338f8bf54e241aae8fb47d46fc0c7fec44a012b98c12045acff1",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "0d947372cb6b338f8bf54e241aae8fb47d46fc0c7fec44a012b98c12045acff1",
+            "text": "机智",
+            "words": [
+              {
+                "text": "机智",
+                "start": 0.18,
+                "end": 0.62
+              }
+            ]
+          }
+        }
+      },
+      "46bb87b638e83699925e45f9c4aa285266f7930d269a2c4510c133c08de82fb7": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9a1efc4192d34e0dd6195a689fcf53adaea1b76bf6be39af8522888365691c2f.mp3",
+          "sha256": "9a1efc4192d34e0dd6195a689fcf53adaea1b76bf6be39af8522888365691c2f",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "9a1efc4192d34e0dd6195a689fcf53adaea1b76bf6be39af8522888365691c2f",
+            "text": "专科",
+            "words": [
+              {
+                "text": "专科",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c44098311650af2e863193d9ff4e7d9451e89ac4fc71b642192421de94c08cbd.mp3",
+          "sha256": "c44098311650af2e863193d9ff4e7d9451e89ac4fc71b642192421de94c08cbd",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "c44098311650af2e863193d9ff4e7d9451e89ac4fc71b642192421de94c08cbd",
+            "text": "专科",
+            "words": [
+              {
+                "text": "专科",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "288d282050ec1207f415b3e1d731fe3618a2cd7a31a1be3d0bd3d2464d082b2e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-e9f1e7264bdc0ce77e9cc91152b0b7c5ba628c08c0680ee5bea90e7885b9bdaf.mp3",
+          "sha256": "e9f1e7264bdc0ce77e9cc91152b0b7c5ba628c08c0680ee5bea90e7885b9bdaf",
+          "byteLength": 19053,
+          "readAlong": {
+            "audioSha256": "e9f1e7264bdc0ce77e9cc91152b0b7c5ba628c08c0680ee5bea90e7885b9bdaf",
+            "text": "洗",
+            "words": [
+              {
+                "text": "洗",
+                "start": 0.44999999999999996,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c5a4609f15ff153af9f2de0f887222fa9537c65ac48e1a3eb161eb7e82a046be.mp3",
+          "sha256": "c5a4609f15ff153af9f2de0f887222fa9537c65ac48e1a3eb161eb7e82a046be",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "c5a4609f15ff153af9f2de0f887222fa9537c65ac48e1a3eb161eb7e82a046be",
+            "text": "洗",
+            "words": [
+              {
+                "text": "洗",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "e6530cb1a76c795832b878248dd1ea0a4c4cf80210e825a95c93df3aac884968": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f99aa2e26a474ae1240249c9d9b031d2491ed8465d8e1d277cdfd96ad4dae417.mp3",
+          "sha256": "f99aa2e26a474ae1240249c9d9b031d2491ed8465d8e1d277cdfd96ad4dae417",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "f99aa2e26a474ae1240249c9d9b031d2491ed8465d8e1d277cdfd96ad4dae417",
+            "text": "仅",
+            "words": [
+              {
+                "text": "仅",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-833319a8177a2e68e7a495eb644e83c5461ba7cdd670de83268ca6d852363dad.mp3",
+          "sha256": "833319a8177a2e68e7a495eb644e83c5461ba7cdd670de83268ca6d852363dad",
+          "byteLength": 11565,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "833319a8177a2e68e7a495eb644e83c5461ba7cdd670de83268ca6d852363dad",
+            "text": "仅",
+            "words": [
+              {
+                "text": "仅",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W0298",
+  "targetId": "W0298",
+  "steps": [
+    {
+      "id": "BANK-W0298-W0298",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0298-W0298",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "if",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "的话"
+            },
+            {
+              "value": "dehuà",
+              "mode": "pinyin"
+            },
+            {
+              "value": "de5hua4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "的话",
+            "pinyin": "dehuà",
+            "meaning": "if",
+            "singleWord": true,
+            "audio": "eb568fd2b357df4d421af4ca99940704698c8f50d5301ab7cd8fff4536964cdb"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "eb568fd2b357df4d421af4ca99940704698c8f50d5301ab7cd8fff4536964cdb": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-36cde9078228fc0078472d3ebcbd51c94a64dc0192e8b21270a2fb327c7c45cc.mp3",
+        "sha256": "36cde9078228fc0078472d3ebcbd51c94a64dc0192e8b21270a2fb327c7c45cc",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "36cde9078228fc0078472d3ebcbd51c94a64dc0192e8b21270a2fb327c7c45cc",
+          "text": "的话",
+          "words": [
+            {
+              "text": "的话",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-57de4e563ec66538eda7ce5871af666c3dab5efc37f19e2028b33ab364871790.mp3",
+        "sha256": "57de4e563ec66538eda7ce5871af666c3dab5efc37f19e2028b33ab364871790",
+        "byteLength": 8685,
+        "qualityWarning": "too-fast",
+        "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+        "readAlong": {
+          "audioSha256": "57de4e563ec66538eda7ce5871af666c3dab5efc37f19e2028b33ab364871790",
+          "text": "的话",
+          "words": [
+            {
+              "text": "的话",
+              "start": 0.03,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0298",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0298-W0298",
+      "question_ids": [
+        "BANK-W0298-W0298"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U26",
+    "stepId": "S-U26-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8bdd"
+    ],
+    "grammarLessonIds": []
+  }
+}

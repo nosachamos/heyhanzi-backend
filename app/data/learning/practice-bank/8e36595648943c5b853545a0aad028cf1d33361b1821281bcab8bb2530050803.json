@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5300",
+  "targetId": "W5300",
+  "steps": [
+    {
+      "id": "BANK-W5300-W5300",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5300-W5300",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "regular; according to standards",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "正规"
+            },
+            {
+              "value": "zhèngguī",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zheng4gui1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "正规",
+            "pinyin": "zhèngguī",
+            "meaning": "regular; according to standards",
+            "singleWord": true,
+            "audio": "90ea7c21c636c86f385ec0d62141d43610d15e8973bb85e6c130d19ac2765673"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "90ea7c21c636c86f385ec0d62141d43610d15e8973bb85e6c130d19ac2765673": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3ffa1ccf48cf8e78a5fd66f9b384352fafe4f86161628f3cb770ac27c91c2f04.mp3",
+        "sha256": "3ffa1ccf48cf8e78a5fd66f9b384352fafe4f86161628f3cb770ac27c91c2f04",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "3ffa1ccf48cf8e78a5fd66f9b384352fafe4f86161628f3cb770ac27c91c2f04",
+          "text": "正规",
+          "words": [
+            {
+              "text": "正规",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c7d06e3a480084314d3be4f8376ebd016ad4764cb93635a2302c5d49ad3089ae.mp3",
+        "sha256": "c7d06e3a480084314d3be4f8376ebd016ad4764cb93635a2302c5d49ad3089ae",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "c7d06e3a480084314d3be4f8376ebd016ad4764cb93635a2302c5d49ad3089ae",
+          "text": "正规",
+          "words": [
+            {
+              "text": "正规",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5300",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5300-W5300",
+      "question_ids": [
+        "BANK-W5300-W5300"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-45",
+    "stepId": "S-U6-45-words-r4-30",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-89c4"
+    ],
+    "grammarLessonIds": []
+  }
+}

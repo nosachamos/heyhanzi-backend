@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0508",
+  "targetId": "W0508",
+  "steps": [
+    {
+      "id": "BANK-W0508-W0508",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0508-W0508",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "noon; midday",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "中午"
+            },
+            {
+              "value": "zhōngwǔ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhong1wu3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "中午",
+            "pinyin": "zhōngwǔ",
+            "meaning": "noon; midday",
+            "singleWord": true,
+            "audio": "fbc0be9d624ed8b5fc48f717f136e3caf3ff0987a9d9a89f6ff1a3f2971a8a70"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "fbc0be9d624ed8b5fc48f717f136e3caf3ff0987a9d9a89f6ff1a3f2971a8a70": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-687ac8e8cddd44cc653888e1c92dfb660868ce0484aa3d1071586deb8c3b908c.mp3",
+        "sha256": "687ac8e8cddd44cc653888e1c92dfb660868ce0484aa3d1071586deb8c3b908c",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "687ac8e8cddd44cc653888e1c92dfb660868ce0484aa3d1071586deb8c3b908c",
+          "text": "中午",
+          "words": [
+            {
+              "text": "中午",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-190ea490aa5bb6924d216d7cf33da0f6f9d6adf5e957b262e15ef7f99dda0fa8.mp3",
+        "sha256": "190ea490aa5bb6924d216d7cf33da0f6f9d6adf5e957b262e15ef7f99dda0fa8",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "190ea490aa5bb6924d216d7cf33da0f6f9d6adf5e957b262e15ef7f99dda0fa8",
+          "text": "中午",
+          "words": [
+            {
+              "text": "中午",
+              "start": 0.18,
+              "end": 0.5
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0508",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0508-W0508",
+      "question_ids": [
+        "BANK-W0508-W0508"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U13",
+    "stepId": "S-U13-words-r4-28",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5348"
+    ],
+    "grammarLessonIds": []
+  }
+}

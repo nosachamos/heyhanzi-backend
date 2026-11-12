@@ -1,0 +1,681 @@
+{
+  "id": "EX-CHAR-char-963f",
+  "revision": 2,
+  "unit": "U3-01",
+  "stage": "ST-HSK3",
+  "after": "S-U3-01-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "阿",
+  "sourceBlockId": "mandarin-simplified-v1-char-963f",
+  "sourceLevelId": "hsk-3",
+  "deferred": true,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-a48f67c9378025e9572c3e85",
+        "text": "公然",
+        "pinyin": "gōng rán",
+        "meaning": "openly",
+        "characters": [
+          {
+            "id": "C-516C",
+            "text": "公"
+          },
+          {
+            "id": "C-7136",
+            "text": "然"
+          }
+        ]
+      },
+      {
+        "id": "W0091",
+        "text": "呢",
+        "pinyin": "ne",
+        "meaning": "what about ...?; marks a contextually recoverable follow-up",
+        "characters": [
+          {
+            "id": "C-5462",
+            "text": "呢"
+          }
+        ]
+      },
+      {
+        "id": "W0439",
+        "text": "那儿",
+        "pinyin": "nàr",
+        "meaning": "there",
+        "characters": [
+          {
+            "id": "C-90A3",
+            "text": "那"
+          },
+          {
+            "id": "C-513F",
+            "text": "儿"
+          }
+        ]
+      },
+      {
+        "id": "W0645",
+        "text": "阿姨",
+        "pinyin": "āyí",
+        "meaning": "maternal aunt; term of address for a woman of one's mother's generation",
+        "characters": [
+          {
+            "id": "C-963F",
+            "text": "阿"
+          },
+          {
+            "id": "C-59E8",
+            "text": "姨"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "b2b058e3c7665307b719a55efae30df350021f1c47f648438cf653bec18c43c5",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-963f",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "阿",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-963f-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0645",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "maternal aunt; term of address for a woman of one's mother's generation",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "阿姨"
+              },
+              {
+                "value": "āyí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "a1yi2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "阿姨",
+              "pinyin": "āyí",
+              "meaning": "maternal aunt; term of address for a woman of one's mother's generation",
+              "audio": "933f80ba7b876ed155dade329666642bced101e7860126436d1daf1024a9d136",
+              "singleWord": true,
+              "focus": "阿"
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-963f-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0645",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "阿姨",
+              "meaning": "",
+              "focus": "阿"
+            },
+            "choices": [
+              {
+                "id": "W0645",
+                "label": "maternal aunt; term of address for a woman of one's mother's generation",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0439",
+                "label": "there",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-a48f67c9378025e9572c3e85",
+                "label": "openly",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-963f-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "阿",
+        "pinyin": "ā",
+        "meaning": "prefix used before monosyllabic names, kinship terms etc to indicate familiarity",
+        "source": "/stroke-data/963f.json",
+        "reference": {
+          "character": "阿",
+          "sha256": "7bd3b33e04baef661d2819410375f9c56bd1b994c1473e7ada58bc45afdbd28b",
+          "medians": [
+            [
+              [
+                227,
+                701
+              ],
+              [
+                239,
+                692
+              ],
+              [
+                323,
+                723
+              ],
+              [
+                343,
+                725
+              ],
+              [
+                355,
+                724
+              ],
+              [
+                369,
+                711
+              ],
+              [
+                322,
+                604
+              ],
+              [
+                314,
+                571
+              ],
+              [
+                316,
+                558
+              ],
+              [
+                373,
+                461
+              ],
+              [
+                379,
+                435
+              ],
+              [
+                376,
+                406
+              ],
+              [
+                371,
+                398
+              ],
+              [
+                333,
+                400
+              ],
+              [
+                254,
+                429
+              ]
+            ],
+            [
+              [
+                150,
+                726
+              ],
+              [
+                191,
+                679
+              ],
+              [
+                198,
+                585
+              ],
+              [
+                197,
+                266
+              ],
+              [
+                190,
+                173
+              ],
+              [
+                174,
+                82
+              ],
+              [
+                174,
+                14
+              ]
+            ],
+            [
+              [
+                426,
+                628
+              ],
+              [
+                455,
+                621
+              ],
+              [
+                492,
+                624
+              ],
+              [
+                639,
+                653
+              ],
+              [
+                859,
+                680
+              ],
+              [
+                939,
+                663
+              ]
+            ],
+            [
+              [
+                432,
+                499
+              ],
+              [
+                457,
+                477
+              ],
+              [
+                462,
+                465
+              ],
+              [
+                493,
+                299
+              ]
+            ],
+            [
+              [
+                486,
+                494
+              ],
+              [
+                498,
+                487
+              ],
+              [
+                600,
+                513
+              ],
+              [
+                620,
+                509
+              ],
+              [
+                631,
+                499
+              ],
+              [
+                640,
+                488
+              ],
+              [
+                617,
+                401
+              ],
+              [
+                592,
+                383
+              ]
+            ],
+            [
+              [
+                512,
+                332
+              ],
+              [
+                522,
+                342
+              ],
+              [
+                584,
+                355
+              ],
+              [
+                642,
+                347
+              ]
+            ],
+            [
+              [
+                724,
+                633
+              ],
+              [
+                765,
+                607
+              ],
+              [
+                768,
+                596
+              ],
+              [
+                771,
+                88
+              ],
+              [
+                763,
+                63
+              ],
+              [
+                745,
+                38
+              ],
+              [
+                693,
+                55
+              ],
+              [
+                629,
+                89
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-963f-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0091",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "what about ...?; marks a contextually recoverable follow-up",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "呢"
+              },
+              {
+                "value": "ne",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ne5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "呢",
+              "pinyin": "ne",
+              "meaning": "what about ...?; marks a contextually recoverable follow-up",
+              "audio": "53eb670c6f7180be07ed8a24b51ad3b9e64f2d10a9b6cfe73aee5859b0a98c7e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-963f-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0645",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "maternal aunt; term of address for a woman of one's mother's generation",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "阿姨"
+              },
+              {
+                "value": "āyí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "a1yi2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "阿姨",
+              "pinyin": "āyí",
+              "meaning": "maternal aunt; term of address for a woman of one's mother's generation",
+              "audio": "933f80ba7b876ed155dade329666642bced101e7860126436d1daf1024a9d136",
+              "singleWord": true,
+              "focus": "阿"
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "933f80ba7b876ed155dade329666642bced101e7860126436d1daf1024a9d136"
+            ],
+            "transcript": [
+              {
+                "text": "阿姨",
+                "pinyin": "āyí",
+                "meaning": "maternal aunt; term of address for a woman of one's mother's generation",
+                "audio": "933f80ba7b876ed155dade329666642bced101e7860126436d1daf1024a9d136",
+                "singleWord": true,
+                "focus": "阿"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-963F",
+      "character": "阿",
+      "lessonIds": [
+        "LESSON-C-963F"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-963f-word",
+        "EX-CHAR-char-963f-recognize",
+        "EX-CHAR-char-963f-write",
+        "EX-CHAR-char-963f-familiar",
+        "EX-CHAR-char-963f-recall"
+      ]
+    },
+    "audio": {
+      "c638618424df6918f8ff7717ebd43fb2214b42ab7fbd4ea00e79e4f44e622613": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c01427524145323bd4983dc4067b7ea6b740e3f0d64b8ca550882a9505c70b2b.mp3",
+          "sha256": "c01427524145323bd4983dc4067b7ea6b740e3f0d64b8ca550882a9505c70b2b",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "c01427524145323bd4983dc4067b7ea6b740e3f0d64b8ca550882a9505c70b2b",
+            "text": "公然",
+            "words": [
+              {
+                "text": "公然",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9611ebf092789492c05ec7122d0c9465aa0afb533a4a767c54803bbd1e142b39.mp3",
+          "sha256": "9611ebf092789492c05ec7122d0c9465aa0afb533a4a767c54803bbd1e142b39",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "9611ebf092789492c05ec7122d0c9465aa0afb533a4a767c54803bbd1e142b39",
+            "text": "公然",
+            "words": [
+              {
+                "text": "公然",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "53eb670c6f7180be07ed8a24b51ad3b9e64f2d10a9b6cfe73aee5859b0a98c7e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-a6dfbbfbc8730ca495ad6b17e3ba843b99ca9fefde918e689c5503687369ab65.mp3",
+          "sha256": "a6dfbbfbc8730ca495ad6b17e3ba843b99ca9fefde918e689c5503687369ab65",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "a6dfbbfbc8730ca495ad6b17e3ba843b99ca9fefde918e689c5503687369ab65",
+            "text": "呢",
+            "words": [
+              {
+                "text": "呢",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c9d42e4d85fb275039248c0e25d4e08ddb2315a86ae56acbefe69d0c42b652ce.mp3",
+          "sha256": "c9d42e4d85fb275039248c0e25d4e08ddb2315a86ae56acbefe69d0c42b652ce",
+          "byteLength": 12429,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "c9d42e4d85fb275039248c0e25d4e08ddb2315a86ae56acbefe69d0c42b652ce",
+            "text": "呢",
+            "words": [
+              {
+                "text": "呢",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "5dc092781f55c172cf963c062c4107dbdce6d7155941bb41fd329d8e039b437b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-05f663ba9949bf27d4f07d795b3285e97e090464ed946f67ffdf569f650360b7.mp3",
+          "sha256": "05f663ba9949bf27d4f07d795b3285e97e090464ed946f67ffdf569f650360b7",
+          "byteLength": 11277,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "05f663ba9949bf27d4f07d795b3285e97e090464ed946f67ffdf569f650360b7",
+            "text": "那儿",
+            "words": [
+              {
+                "text": "那儿",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ec52ee77291b3608def28e862f581201def9b34f9f3eb64cb2dd47ddfced5474.mp3",
+          "sha256": "ec52ee77291b3608def28e862f581201def9b34f9f3eb64cb2dd47ddfced5474",
+          "byteLength": 9261,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "ec52ee77291b3608def28e862f581201def9b34f9f3eb64cb2dd47ddfced5474",
+            "text": "那儿",
+            "words": [
+              {
+                "text": "那儿",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "933f80ba7b876ed155dade329666642bced101e7860126436d1daf1024a9d136": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0e8a4c1e4fcef83df63db3e413df67de85c9f4e8a6e5ec3bbb465c5bc45b686d.mp3",
+          "sha256": "0e8a4c1e4fcef83df63db3e413df67de85c9f4e8a6e5ec3bbb465c5bc45b686d",
+          "byteLength": 21069,
+          "readAlong": {
+            "audioSha256": "0e8a4c1e4fcef83df63db3e413df67de85c9f4e8a6e5ec3bbb465c5bc45b686d",
+            "text": "阿姨",
+            "words": [
+              {
+                "text": "阿姨",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/46066082971e0fdb7e3043e3854c97482b72da7375ac949211b17d4fc9827797.mp3",
+          "sha256": "46066082971e0fdb7e3043e3854c97482b72da7375ac949211b17d4fc9827797",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "46066082971e0fdb7e3043e3854c97482b72da7375ac949211b17d4fc9827797",
+            "text": "阿姨",
+            "words": [
+              {
+                "text": "阿姨",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

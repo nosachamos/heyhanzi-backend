@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0524",
+  "targetId": "W0524",
+  "steps": [
+    {
+      "id": "BANK-W0524-W0524",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0524-W0524",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "bed",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "床"
+            },
+            {
+              "value": "chuáng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chuang2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "床",
+            "pinyin": "chuáng",
+            "meaning": "bed",
+            "singleWord": true,
+            "audio": "fc55b0f260382784c128c37cb37887285555049c43e0ccaee98746ba2f521f01"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "fc55b0f260382784c128c37cb37887285555049c43e0ccaee98746ba2f521f01": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-4ec0b92f19d7debd5796c577d37889848f4cb27bfa475865c974107d0f940196.mp3",
+        "sha256": "4ec0b92f19d7debd5796c577d37889848f4cb27bfa475865c974107d0f940196",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "4ec0b92f19d7debd5796c577d37889848f4cb27bfa475865c974107d0f940196",
+          "text": "床",
+          "words": [
+            {
+              "text": "床",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-648bbefc38910d8b788d68bf974190c6d7160a7aa59598c2bb397b55cd9d6d32.mp3",
+        "sha256": "648bbefc38910d8b788d68bf974190c6d7160a7aa59598c2bb397b55cd9d6d32",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "648bbefc38910d8b788d68bf974190c6d7160a7aa59598c2bb397b55cd9d6d32",
+          "text": "床",
+          "words": [
+            {
+              "text": "床",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0524",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0524-W0524",
+      "question_ids": [
+        "BANK-W0524-W0524"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U23-P01",
+    "stepId": "S-U23-words-r4-7",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8f7b"
+    ],
+    "grammarLessonIds": []
+  }
+}

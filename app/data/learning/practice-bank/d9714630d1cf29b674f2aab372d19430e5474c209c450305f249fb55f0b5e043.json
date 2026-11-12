@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1659",
+  "targetId": "W1659",
+  "steps": [
+    {
+      "id": "BANK-W1659-W1659",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1659-W1659",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "date",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "日期"
+            },
+            {
+              "value": "rìqī",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ri4qi1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "日期",
+            "pinyin": "rìqī",
+            "meaning": "date",
+            "singleWord": true,
+            "audio": "d3d0e8cbefcb3bb70a326cea403166e4fdf92233be8948baedb5a83cef33cf0b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d3d0e8cbefcb3bb70a326cea403166e4fdf92233be8948baedb5a83cef33cf0b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-87678fc16d9cd8bf817eeff44e7a5dd4fc7ff0b1111960a3dbb91985c61f66e9.mp3",
+        "sha256": "87678fc16d9cd8bf817eeff44e7a5dd4fc7ff0b1111960a3dbb91985c61f66e9",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "87678fc16d9cd8bf817eeff44e7a5dd4fc7ff0b1111960a3dbb91985c61f66e9",
+          "text": "日期",
+          "words": [
+            {
+              "text": "日期",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-9ee54fd05f5a4863fc9e4eb2b48faf20e56e3422d536bdc1fff83becf2671857.mp3",
+        "sha256": "9ee54fd05f5a4863fc9e4eb2b48faf20e56e3422d536bdc1fff83becf2671857",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "9ee54fd05f5a4863fc9e4eb2b48faf20e56e3422d536bdc1fff83becf2671857",
+          "text": "日期",
+          "words": [
+            {
+              "text": "日期",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1659",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1659-W1659",
+      "question_ids": [
+        "BANK-W1659-W1659"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-05-P01",
+    "stepId": "S-U4-05-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-65e5"
+    ],
+    "grammarLessonIds": []
+  }
+}

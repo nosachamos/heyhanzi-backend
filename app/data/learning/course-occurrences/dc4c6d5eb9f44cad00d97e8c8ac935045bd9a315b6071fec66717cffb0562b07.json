@@ -1,0 +1,621 @@
+{
+  "id": "EX-CHAR-char-5df2",
+  "revision": 2,
+  "unit": "U15",
+  "stage": "ST-HSK1",
+  "after": "S-U15-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "已",
+  "sourceBlockId": "mandarin-simplified-v1-char-5df2",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5df2",
+        "text": "已",
+        "pinyin": "yǐ",
+        "meaning": "already; (bound form) to stop; to cease; to end",
+        "characters": [
+          {
+            "id": "C-5DF2",
+            "text": "已"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-0abf8569d2d01f51e4b1e0be",
+        "text": "不得已",
+        "pinyin": "bù dé yǐ",
+        "meaning": "to act against one's will",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-5F97",
+            "text": "得"
+          },
+          {
+            "id": "C-5DF2",
+            "text": "已"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-b6eff82d93e2f169ab2a9ad5",
+        "text": "冷水",
+        "pinyin": "lěng shuǐ",
+        "meaning": "cold water",
+        "characters": [
+          {
+            "id": "C-51B7",
+            "text": "冷"
+          },
+          {
+            "id": "C-6C34",
+            "text": "水"
+          }
+        ]
+      },
+      {
+        "id": "W0010",
+        "text": "学",
+        "pinyin": "xué",
+        "meaning": "to learn; to study",
+        "characters": [
+          {
+            "id": "C-5B66",
+            "text": "学"
+          }
+        ]
+      },
+      {
+        "id": "W1686",
+        "text": "生意",
+        "pinyin": "shēngyi",
+        "meaning": "business",
+        "characters": [
+          {
+            "id": "C-751F",
+            "text": "生"
+          },
+          {
+            "id": "C-610F",
+            "text": "意"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "c6fb8d1bda698f649f4214440e4283d0fc6f48f9060e0720046b2819d3dff40e",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5df2",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "已",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5df2-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-0abf8569d2d01f51e4b1e0be",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to act against one's will",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "不得已"
+              },
+              {
+                "value": "bù dé yǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu4de2yi3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "不得已",
+              "pinyin": "bù dé yǐ",
+              "meaning": "to act against one's will",
+              "audio": "09cd3fd037f7a7b773becde127f52b854ea9b7e9aa971705f400f9bf79e74673",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5df2-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5df2",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "已",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0010",
+                "label": "to learn; to study",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5df2",
+                "label": "already; (bound form) to stop",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1686",
+                "label": "business",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5df2-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "已",
+        "pinyin": "yǐ",
+        "meaning": "already; (bound form) to stop",
+        "source": "/stroke-data/5df2.json",
+        "reference": {
+          "character": "已",
+          "sha256": "4a4e98934cb5946c02715dea40277e2f7846258fd70a5bec0169acfdc0d8ec8d",
+          "medians": [
+            [
+              [
+                284,
+                696
+              ],
+              [
+                328,
+                693
+              ],
+              [
+                554,
+                749
+              ],
+              [
+                589,
+                742
+              ],
+              [
+                615,
+                717
+              ],
+              [
+                616,
+                700
+              ],
+              [
+                566,
+                555
+              ],
+              [
+                538,
+                537
+              ]
+            ],
+            [
+              [
+                294,
+                438
+              ],
+              [
+                318,
+                454
+              ],
+              [
+                522,
+                501
+              ],
+              [
+                585,
+                505
+              ],
+              [
+                610,
+                497
+              ]
+            ],
+            [
+              [
+                231,
+                575
+              ],
+              [
+                258,
+                546
+              ],
+              [
+                273,
+                517
+              ],
+              [
+                258,
+                421
+              ],
+              [
+                252,
+                297
+              ],
+              [
+                265,
+                167
+              ],
+              [
+                287,
+                128
+              ],
+              [
+                348,
+                88
+              ],
+              [
+                431,
+                68
+              ],
+              [
+                575,
+                62
+              ],
+              [
+                699,
+                71
+              ],
+              [
+                771,
+                85
+              ],
+              [
+                825,
+                104
+              ],
+              [
+                856,
+                125
+              ],
+              [
+                855,
+                313
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5df2-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-b6eff82d93e2f169ab2a9ad5",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "cold water",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "冷水"
+              },
+              {
+                "value": "lěng shuǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "leng3shui3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "冷水",
+              "pinyin": "lěng shuǐ",
+              "meaning": "cold water",
+              "audio": "ffae1b37fc69296ff4ed7c47aae363ae3e1cece4ef8279f11a8e1f86bde3ff9a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5df2-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5df2",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "already; (bound form) to stop",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "已"
+              },
+              {
+                "value": "yǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yi3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "已",
+              "pinyin": "yǐ",
+              "meaning": "already; (bound form) to stop",
+              "audio": "44d7a8d5cf53736c77f7df4185c4755be9b7939777efe4841ed7a5bd667d822f",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "44d7a8d5cf53736c77f7df4185c4755be9b7939777efe4841ed7a5bd667d822f"
+            ],
+            "transcript": [
+              {
+                "text": "已",
+                "pinyin": "yǐ",
+                "meaning": "already; (bound form) to stop",
+                "audio": "44d7a8d5cf53736c77f7df4185c4755be9b7939777efe4841ed7a5bd667d822f",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5DF2",
+      "character": "已",
+      "lessonIds": [
+        "LESSON-C-5DF2"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5df2-word",
+        "EX-CHAR-char-5df2-recognize",
+        "EX-CHAR-char-5df2-write",
+        "EX-CHAR-char-5df2-familiar",
+        "EX-CHAR-char-5df2-recall"
+      ]
+    },
+    "audio": {
+      "44d7a8d5cf53736c77f7df4185c4755be9b7939777efe4841ed7a5bd667d822f": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ea538fac745e5ff9df834ee83b86056d4d0a9597917776da59b65fe1acf1693e.mp3",
+          "sha256": "ea538fac745e5ff9df834ee83b86056d4d0a9597917776da59b65fe1acf1693e",
+          "byteLength": 11565,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "ea538fac745e5ff9df834ee83b86056d4d0a9597917776da59b65fe1acf1693e",
+            "text": "已",
+            "words": [
+              {
+                "text": "已",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-103416b18beee313bdcdbfc562cd95e70f54dac3a473d913ac42d54984a4091e.mp3",
+          "sha256": "103416b18beee313bdcdbfc562cd95e70f54dac3a473d913ac42d54984a4091e",
+          "byteLength": 13005,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "103416b18beee313bdcdbfc562cd95e70f54dac3a473d913ac42d54984a4091e",
+            "text": "已",
+            "words": [
+              {
+                "text": "已",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "09cd3fd037f7a7b773becde127f52b854ea9b7e9aa971705f400f9bf79e74673": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/897740b71204c80ed4181ab69487fceea31cb4a3c7fb82908c3cf3f2476c7135.mp3",
+          "sha256": "897740b71204c80ed4181ab69487fceea31cb4a3c7fb82908c3cf3f2476c7135",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "897740b71204c80ed4181ab69487fceea31cb4a3c7fb82908c3cf3f2476c7135",
+            "text": "不得已",
+            "words": [
+              {
+                "text": "不得已",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2ccff35c4d0e540e5d5cb25a229a9ee8b98781664aa1145455d489da8425bcdd.mp3",
+          "sha256": "2ccff35c4d0e540e5d5cb25a229a9ee8b98781664aa1145455d489da8425bcdd",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "2ccff35c4d0e540e5d5cb25a229a9ee8b98781664aa1145455d489da8425bcdd",
+            "text": "不得已",
+            "words": [
+              {
+                "text": "不得已",
+                "start": 0.03,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "ffae1b37fc69296ff4ed7c47aae363ae3e1cece4ef8279f11a8e1f86bde3ff9a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-d473426758e9e77af019728b181450f0851991b8696ef089046c1d6c5c32bc53.mp3",
+          "sha256": "d473426758e9e77af019728b181450f0851991b8696ef089046c1d6c5c32bc53",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "d473426758e9e77af019728b181450f0851991b8696ef089046c1d6c5c32bc53",
+            "text": "冷水",
+            "words": [
+              {
+                "text": "冷水",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6b1629f6282b7038e4482fb42c69e91c2f45963ad423c32d866793bf550dd4b0.mp3",
+          "sha256": "6b1629f6282b7038e4482fb42c69e91c2f45963ad423c32d866793bf550dd4b0",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "6b1629f6282b7038e4482fb42c69e91c2f45963ad423c32d866793bf550dd4b0",
+            "text": "冷水",
+            "words": [
+              {
+                "text": "冷水",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "67e91e06e3a16b9fc8d3ab04cb7f09b5063bf56a76753706f5d0338ed5dde7a2": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-91dacb9260223e3a8dde5c9fd6308b2dda299da63f94e0e28c8962b9484c1509.mp3",
+          "sha256": "91dacb9260223e3a8dde5c9fd6308b2dda299da63f94e0e28c8962b9484c1509",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "91dacb9260223e3a8dde5c9fd6308b2dda299da63f94e0e28c8962b9484c1509",
+            "text": "学",
+            "words": [
+              {
+                "text": "学",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d4686cf5047748fc9b5e1c86e0ea394b7218ad58591255dc7ca37e175ee57d44.mp3",
+          "sha256": "d4686cf5047748fc9b5e1c86e0ea394b7218ad58591255dc7ca37e175ee57d44",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "d4686cf5047748fc9b5e1c86e0ea394b7218ad58591255dc7ca37e175ee57d44",
+            "text": "学",
+            "words": [
+              {
+                "text": "学",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "c5f810614521c6a1ae8e1cdc4896b309515d747337df5addfde84787c15bbc0a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ec41566dc27c94d93caf821ae26007ee08a323331042d5a0f9410d786cc060b8.mp3",
+          "sha256": "ec41566dc27c94d93caf821ae26007ee08a323331042d5a0f9410d786cc060b8",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "ec41566dc27c94d93caf821ae26007ee08a323331042d5a0f9410d786cc060b8",
+            "text": "生意",
+            "words": [
+              {
+                "text": "生意",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-7293afaed092831c5a90b0c45e37448e29afd20cb48aee1e9a2611b6bd4ff32f.mp3",
+          "sha256": "7293afaed092831c5a90b0c45e37448e29afd20cb48aee1e9a2611b6bd4ff32f",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "7293afaed092831c5a90b0c45e37448e29afd20cb48aee1e9a2611b6bd4ff32f",
+            "text": "生意",
+            "words": [
+              {
+                "text": "生意",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,771 @@
+{
+  "id": "EX-CHAR-char-7edc",
+  "revision": 2,
+  "unit": "U5-30",
+  "stage": "ST-HSK5",
+  "after": "S-U5-30-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "络",
+  "sourceBlockId": "mandarin-simplified-v1-char-7edc",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7edc",
+        "text": "络",
+        "pinyin": "luò",
+        "meaning": "net; network; to connect",
+        "characters": [
+          {
+            "id": "C-7EDC",
+            "text": "络"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-274088877cf9f716613870b7",
+        "text": "走过",
+        "pinyin": "zǒu guò",
+        "meaning": "to walk past",
+        "characters": [
+          {
+            "id": "C-8D70",
+            "text": "走"
+          },
+          {
+            "id": "C-8FC7",
+            "text": "过"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-7208b629ac8f91dbc554b696",
+        "text": "联络",
+        "pinyin": "lián luò",
+        "meaning": "to contact",
+        "characters": [
+          {
+            "id": "C-8054",
+            "text": "联"
+          },
+          {
+            "id": "C-7EDC",
+            "text": "络"
+          }
+        ]
+      },
+      {
+        "id": "W2821",
+        "text": "年代",
+        "pinyin": "niándài",
+        "meaning": "a decade of a century; age",
+        "characters": [
+          {
+            "id": "C-5E74",
+            "text": "年"
+          },
+          {
+            "id": "C-4EE3",
+            "text": "代"
+          }
+        ]
+      },
+      {
+        "id": "W4467",
+        "text": "流程",
+        "pinyin": "liúchéng",
+        "meaning": "process; workflow",
+        "characters": [
+          {
+            "id": "C-6D41",
+            "text": "流"
+          },
+          {
+            "id": "C-7A0B",
+            "text": "程"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "0ae5424b9dee8e1d8530e09d484e38a325ff7f2efcdd12311f1b3c17bcb26ac9",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7edc",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "络",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7edc-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-7208b629ac8f91dbc554b696",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to contact",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "联络"
+              },
+              {
+                "value": "lián luò",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lian2luo4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "联络",
+              "pinyin": "lián luò",
+              "meaning": "to contact",
+              "audio": "d493b8c237b2f58bf3a62064967c74ccfac09ddd51caacde194c19d5ae689d41",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7edc-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7edc",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "络",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-274088877cf9f716613870b7",
+                "label": "to walk past",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-7edc",
+                "label": "net; network",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W4467",
+                "label": "process; workflow",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7edc-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "络",
+        "pinyin": "luò",
+        "meaning": "net; network",
+        "source": "/stroke-data/7edc.json",
+        "reference": {
+          "character": "络",
+          "sha256": "81d59d50b7181d040702af8861e81805299903ca2b07185c37301ceec4974c8f",
+          "medians": [
+            [
+              [
+                271,
+                797
+              ],
+              [
+                295,
+                770
+              ],
+              [
+                302,
+                750
+              ],
+              [
+                261,
+                662
+              ],
+              [
+                178,
+                517
+              ],
+              [
+                171,
+                491
+              ],
+              [
+                196,
+                486
+              ],
+              [
+                250,
+                489
+              ],
+              [
+                311,
+                500
+              ]
+            ],
+            [
+              [
+                372,
+                628
+              ],
+              [
+                393,
+                592
+              ],
+              [
+                332,
+                493
+              ],
+              [
+                229,
+                360
+              ],
+              [
+                225,
+                323
+              ],
+              [
+                254,
+                321
+              ],
+              [
+                387,
+                369
+              ]
+            ],
+            [
+              [
+                112,
+                131
+              ],
+              [
+                137,
+                126
+              ],
+              [
+                169,
+                129
+              ],
+              [
+                375,
+                257
+              ]
+            ],
+            [
+              [
+                579,
+                829
+              ],
+              [
+                602,
+                809
+              ],
+              [
+                614,
+                786
+              ],
+              [
+                590,
+                730
+              ],
+              [
+                555,
+                661
+              ],
+              [
+                511,
+                595
+              ],
+              [
+                457,
+                521
+              ],
+              [
+                410,
+                474
+              ]
+            ],
+            [
+              [
+                556,
+                616
+              ],
+              [
+                636,
+                636
+              ],
+              [
+                684,
+                656
+              ],
+              [
+                730,
+                654
+              ],
+              [
+                744,
+                640
+              ],
+              [
+                687,
+                511
+              ],
+              [
+                619,
+                412
+              ],
+              [
+                583,
+                374
+              ],
+              [
+                522,
+                326
+              ],
+              [
+                447,
+                288
+              ],
+              [
+                412,
+                279
+              ]
+            ],
+            [
+              [
+                497,
+                537
+              ],
+              [
+                510,
+                540
+              ],
+              [
+                533,
+                529
+              ],
+              [
+                681,
+                397
+              ],
+              [
+                752,
+                346
+              ],
+              [
+                813,
+                312
+              ],
+              [
+                844,
+                304
+              ],
+              [
+                984,
+                307
+              ]
+            ],
+            [
+              [
+                448,
+                243
+              ],
+              [
+                474,
+                221
+              ],
+              [
+                484,
+                203
+              ],
+              [
+                520,
+                20
+              ]
+            ],
+            [
+              [
+                513,
+                212
+              ],
+              [
+                525,
+                227
+              ],
+              [
+                703,
+                263
+              ],
+              [
+                733,
+                259
+              ],
+              [
+                765,
+                227
+              ],
+              [
+                730,
+                137
+              ],
+              [
+                702,
+                120
+              ]
+            ],
+            [
+              [
+                540,
+                56
+              ],
+              [
+                552,
+                69
+              ],
+              [
+                693,
+                91
+              ],
+              [
+                738,
+                90
+              ],
+              [
+                763,
+                82
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7edc-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2821",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "a decade of a century; age",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "年代"
+              },
+              {
+                "value": "niándài",
+                "mode": "pinyin"
+              },
+              {
+                "value": "nian2dai4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "年代",
+              "pinyin": "niándài",
+              "meaning": "a decade of a century; age",
+              "audio": "e935d87f58cf56e6cffc08081621d1118fd776aa70e4a7ead5cad85e6bc096b6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7edc-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7edc",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "net; network",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "络"
+              },
+              {
+                "value": "luò",
+                "mode": "pinyin"
+              },
+              {
+                "value": "luo4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "络",
+              "pinyin": "luò",
+              "meaning": "net; network",
+              "audio": "7dedb05995ff3237650d74867719432cd9c3c92067fe20ef4ed7537ce4bfe4c4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "7dedb05995ff3237650d74867719432cd9c3c92067fe20ef4ed7537ce4bfe4c4"
+            ],
+            "transcript": [
+              {
+                "text": "络",
+                "pinyin": "luò",
+                "meaning": "net; network",
+                "audio": "7dedb05995ff3237650d74867719432cd9c3c92067fe20ef4ed7537ce4bfe4c4",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7EDC",
+      "character": "络",
+      "lessonIds": [
+        "LESSON-C-7EDC"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7edc-word",
+        "EX-CHAR-char-7edc-recognize",
+        "EX-CHAR-char-7edc-write",
+        "EX-CHAR-char-7edc-familiar",
+        "EX-CHAR-char-7edc-recall"
+      ]
+    },
+    "audio": {
+      "7dedb05995ff3237650d74867719432cd9c3c92067fe20ef4ed7537ce4bfe4c4": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-70fc457130c925f32b3c23dfbec8f39a00580e413d5d27bdd499d07d0d65abf1.mp3",
+          "sha256": "70fc457130c925f32b3c23dfbec8f39a00580e413d5d27bdd499d07d0d65abf1",
+          "byteLength": 7245,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "70fc457130c925f32b3c23dfbec8f39a00580e413d5d27bdd499d07d0d65abf1",
+            "text": "络",
+            "words": [
+              {
+                "text": "络",
+                "start": 0.14,
+                "end": 0.24
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-2bf626370f9db2edaee60ca25060c585f6ebf144bf6f82aed4bce187abdfffcf.mp3",
+          "sha256": "2bf626370f9db2edaee60ca25060c585f6ebf144bf6f82aed4bce187abdfffcf",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "2bf626370f9db2edaee60ca25060c585f6ebf144bf6f82aed4bce187abdfffcf",
+            "text": "络",
+            "words": [
+              {
+                "text": "络",
+                "start": 0.18,
+                "end": 0.28
+              }
+            ]
+          }
+        }
+      },
+      "892a5ac8b70f968777d0903860a65fed0cc54f5948ddf8df03a1e834af729f3e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-88d1801db7e712e45dd81b171b15f495c0b521d9d73d8555d76b8a4217915d44.mp3",
+          "sha256": "88d1801db7e712e45dd81b171b15f495c0b521d9d73d8555d76b8a4217915d44",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "88d1801db7e712e45dd81b171b15f495c0b521d9d73d8555d76b8a4217915d44",
+            "text": "走过",
+            "words": [
+              {
+                "text": "走过",
+                "start": 0.14,
+                "end": 0.5
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-39ee008e6d94137575b88e4f5bbc16ddd0a5eb3e95a9706b31fe844dce7f1e21.mp3",
+          "sha256": "39ee008e6d94137575b88e4f5bbc16ddd0a5eb3e95a9706b31fe844dce7f1e21",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "39ee008e6d94137575b88e4f5bbc16ddd0a5eb3e95a9706b31fe844dce7f1e21",
+            "text": "走过",
+            "words": [
+              {
+                "text": "走过",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "d493b8c237b2f58bf3a62064967c74ccfac09ddd51caacde194c19d5ae689d41": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c59fb87dff55a0003a7a8307d21f1fc27ea84753b171d2e769d56a20934d4166.mp3",
+          "sha256": "c59fb87dff55a0003a7a8307d21f1fc27ea84753b171d2e769d56a20934d4166",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "c59fb87dff55a0003a7a8307d21f1fc27ea84753b171d2e769d56a20934d4166",
+            "text": "联络",
+            "words": [
+              {
+                "text": "联络",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/ab03cf37e378e930740170f82f5daeb8c2249a3febf111a2b0e0729b1664ceef.mp3",
+          "sha256": "ab03cf37e378e930740170f82f5daeb8c2249a3febf111a2b0e0729b1664ceef",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "ab03cf37e378e930740170f82f5daeb8c2249a3febf111a2b0e0729b1664ceef",
+            "text": "联络",
+            "words": [
+              {
+                "text": "联络",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "e935d87f58cf56e6cffc08081621d1118fd776aa70e4a7ead5cad85e6bc096b6": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6435d84ae6db77a1d75bf0bf1b4f0d8dcc9d1a1e0d8d624207e254a82f8c27cf.mp3",
+          "sha256": "6435d84ae6db77a1d75bf0bf1b4f0d8dcc9d1a1e0d8d624207e254a82f8c27cf",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "6435d84ae6db77a1d75bf0bf1b4f0d8dcc9d1a1e0d8d624207e254a82f8c27cf",
+            "text": "年代",
+            "words": [
+              {
+                "text": "年代",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a67a4132491027fa491243404ec784e2c2a0882e1828309e8bdea279f91ad03d.mp3",
+          "sha256": "a67a4132491027fa491243404ec784e2c2a0882e1828309e8bdea279f91ad03d",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "a67a4132491027fa491243404ec784e2c2a0882e1828309e8bdea279f91ad03d",
+            "text": "年代",
+            "words": [
+              {
+                "text": "年代",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "48035167007097c9ddd054d4c6c2cb1f7df240e243f41edfa5475b66385a4bb2": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f7d1a70afd7398d84de76ae0deda627bf5a79f0f0d133888b3c488a25425ebe8.mp3",
+          "sha256": "f7d1a70afd7398d84de76ae0deda627bf5a79f0f0d133888b3c488a25425ebe8",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "f7d1a70afd7398d84de76ae0deda627bf5a79f0f0d133888b3c488a25425ebe8",
+            "text": "流程",
+            "words": [
+              {
+                "text": "流程",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-7d28ac491afa4bc5ce0acb11a6467001965a9433b636f3e753ebc8da8e6d7d9b.mp3",
+          "sha256": "7d28ac491afa4bc5ce0acb11a6467001965a9433b636f3e753ebc8da8e6d7d9b",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "7d28ac491afa4bc5ce0acb11a6467001965a9433b636f3e753ebc8da8e6d7d9b",
+            "text": "流程",
+            "words": [
+              {
+                "text": "流程",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

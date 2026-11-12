@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0105",
+  "targetId": "W0105",
+  "steps": [
+    {
+      "id": "BANK-W0105-W0105",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0105-W0105",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "want to; think",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "想"
+            },
+            {
+              "value": "xiǎng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xiang3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "想",
+            "pinyin": "xiǎng",
+            "meaning": "want to; think",
+            "singleWord": true,
+            "audio": "0f7888a867fcf48892fc19934077db46ab08aef906f027d1d74d145f2b123d27"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "0f7888a867fcf48892fc19934077db46ab08aef906f027d1d74d145f2b123d27": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f1ffcab31d639caddcc68d66b7b37ac43bc1f713af71edaf28c963da23f3e528.mp3",
+        "sha256": "f1ffcab31d639caddcc68d66b7b37ac43bc1f713af71edaf28c963da23f3e528",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "f1ffcab31d639caddcc68d66b7b37ac43bc1f713af71edaf28c963da23f3e528",
+          "text": "想",
+          "words": [
+            {
+              "text": "想",
+              "start": 0.44999999999999996,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c39ef8c4ccb3ec7f85b8e64886fe7cebac72b9a59439a326402631a8706f303b.mp3",
+        "sha256": "c39ef8c4ccb3ec7f85b8e64886fe7cebac72b9a59439a326402631a8706f303b",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "c39ef8c4ccb3ec7f85b8e64886fe7cebac72b9a59439a326402631a8706f303b",
+          "text": "想",
+          "words": [
+            {
+              "text": "想",
+              "start": 0.24,
+              "end": 0.36
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0105",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0105-W0105",
+      "question_ids": [
+        "BANK-W0105-W0105"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U09",
+    "stepId": "S-U09-words-r4-7",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-60f3"
+    ],
+    "grammarLessonIds": []
+  }
+}

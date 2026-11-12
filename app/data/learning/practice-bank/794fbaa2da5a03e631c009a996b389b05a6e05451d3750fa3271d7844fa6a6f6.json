@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1186",
+  "targetId": "W1186",
+  "steps": [
+    {
+      "id": "BANK-W1186-W1186",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1186-W1186",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "bag",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "袋子"
+            },
+            {
+              "value": "dàizi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dai4zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "袋子",
+            "pinyin": "dàizi",
+            "meaning": "bag",
+            "singleWord": true,
+            "audio": "1e55483b8ea0f93842b78d15c11e07b004b4e83118ea5c34c687a14ffa0a45db"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1e55483b8ea0f93842b78d15c11e07b004b4e83118ea5c34c687a14ffa0a45db": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-cbe5e6a722abade7d77ef715266680bc283b88f037483785a36f7a809365364e.mp3",
+        "sha256": "cbe5e6a722abade7d77ef715266680bc283b88f037483785a36f7a809365364e",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "cbe5e6a722abade7d77ef715266680bc283b88f037483785a36f7a809365364e",
+          "text": "袋子",
+          "words": [
+            {
+              "text": "袋子",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-6efaaaefbf0bec64fab5f718bd43fb4cb76eb3e6578abbebfa17e077ab207b95.mp3",
+        "sha256": "6efaaaefbf0bec64fab5f718bd43fb4cb76eb3e6578abbebfa17e077ab207b95",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "6efaaaefbf0bec64fab5f718bd43fb4cb76eb3e6578abbebfa17e077ab207b95",
+          "text": "袋子",
+          "words": [
+            {
+              "text": "袋子",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1186",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1186-W1186",
+      "question_ids": [
+        "BANK-W1186-W1186"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-04",
+    "stepId": "S-U4-04-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-888b"
+    ],
+    "grammarLessonIds": []
+  }
+}

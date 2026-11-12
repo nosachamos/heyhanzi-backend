@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3570",
+  "targetId": "W3570",
+  "steps": [
+    {
+      "id": "BANK-W3570-W3570",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3570-W3570",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "address",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "住址"
+            },
+            {
+              "value": "zhùzhǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhu4zhi3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "住址",
+            "pinyin": "zhùzhǐ",
+            "meaning": "address",
+            "singleWord": true,
+            "audio": "def14a2c3702de334d8250c37c2574b0f42cf79d0301609a269d034f31b262f1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "def14a2c3702de334d8250c37c2574b0f42cf79d0301609a269d034f31b262f1": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-6c3a42ce8a0ee3264c7e7cca8b462283154adccb3122274076200eef31c0b091.mp3",
+        "sha256": "6c3a42ce8a0ee3264c7e7cca8b462283154adccb3122274076200eef31c0b091",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "6c3a42ce8a0ee3264c7e7cca8b462283154adccb3122274076200eef31c0b091",
+          "text": "住址",
+          "words": [
+            {
+              "text": "住址",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-67c1cf4fd756090606c07bca557ab39a935e7dc0edba127c10f57c11a61b056a.mp3",
+        "sha256": "67c1cf4fd756090606c07bca557ab39a935e7dc0edba127c10f57c11a61b056a",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "67c1cf4fd756090606c07bca557ab39a935e7dc0edba127c10f57c11a61b056a",
+          "text": "住址",
+          "words": [
+            {
+              "text": "住址",
+              "start": 0.16,
+              "end": 0.56
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3570",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3570-W3570",
+      "question_ids": [
+        "BANK-W3570-W3570"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-16-P02",
+    "stepId": "S-U5-16-words-r4-29",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5740"
+    ],
+    "grammarLessonIds": []
+  }
+}

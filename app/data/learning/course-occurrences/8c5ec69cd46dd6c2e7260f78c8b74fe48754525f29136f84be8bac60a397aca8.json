@@ -1,0 +1,771 @@
+{
+  "id": "EX-CHAR-char-888b",
+  "revision": 1,
+  "unit": "U4-04",
+  "stage": "ST-HSK4",
+  "after": "S-U4-04-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "袋",
+  "sourceBlockId": "mandarin-simplified-v1-char-888b",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-888b",
+        "text": "袋",
+        "pinyin": "dài",
+        "meaning": "pouch; bag",
+        "characters": [
+          {
+            "id": "C-888B",
+            "text": "袋"
+          }
+        ]
+      },
+      {
+        "id": "W1186",
+        "text": "袋子",
+        "pinyin": "dàizi",
+        "meaning": "bag",
+        "characters": [
+          {
+            "id": "C-888B",
+            "text": "袋"
+          },
+          {
+            "id": "C-5B50",
+            "text": "子"
+          }
+        ]
+      },
+      {
+        "id": "W2581",
+        "text": "家务",
+        "pinyin": "jiāwù",
+        "meaning": "household duties; housework",
+        "characters": [
+          {
+            "id": "C-5BB6",
+            "text": "家"
+          },
+          {
+            "id": "C-52A1",
+            "text": "务"
+          }
+        ]
+      },
+      {
+        "id": "W3892",
+        "text": "当天",
+        "pinyin": "dàngtiān",
+        "meaning": "the same day",
+        "characters": [
+          {
+            "id": "C-5F53",
+            "text": "当"
+          },
+          {
+            "id": "C-5929",
+            "text": "天"
+          }
+        ]
+      },
+      {
+        "id": "W5404",
+        "text": "足以",
+        "pinyin": "zúyǐ",
+        "meaning": "sufficient to...; so much so that",
+        "characters": [
+          {
+            "id": "C-8DB3",
+            "text": "足"
+          },
+          {
+            "id": "C-4EE5",
+            "text": "以"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "406b285547af7ea50f1c52d787ae47ba9c8e6afc0f2485216be5400658237bc6",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-888b",
+    "revision": 1,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "袋",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-888b-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1186",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "bag",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "袋子"
+              },
+              {
+                "value": "dàizi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "dai4zi5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "袋子",
+              "pinyin": "dàizi",
+              "meaning": "bag",
+              "audio": "1e55483b8ea0f93842b78d15c11e07b004b4e83118ea5c34c687a14ffa0a45db",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-888b-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-888b",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "袋",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-888b",
+                "label": "pouch; bag",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W5404",
+                "label": "sufficient to...; so much so that",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W2581",
+                "label": "household duties; housework",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-888b-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "袋",
+        "pinyin": "dài",
+        "meaning": "pouch; bag",
+        "source": "/stroke-data/888b.json",
+        "reference": {
+          "character": "袋",
+          "sha256": "be8c2bffc2241eeee9021be916bee19390ec1c85dd4b5decec650664227aabb5",
+          "medians": [
+            [
+              [
+                318,
+                801
+              ],
+              [
+                338,
+                780
+              ],
+              [
+                346,
+                759
+              ],
+              [
+                318,
+                703
+              ],
+              [
+                269,
+                629
+              ],
+              [
+                199,
+                543
+              ],
+              [
+                123,
+                473
+              ]
+            ],
+            [
+              [
+                316,
+                646
+              ],
+              [
+                319,
+                567
+              ],
+              [
+                307,
+                447
+              ],
+              [
+                312,
+                393
+              ]
+            ],
+            [
+              [
+                398,
+                609
+              ],
+              [
+                466,
+                615
+              ],
+              [
+                646,
+                678
+              ],
+              [
+                702,
+                687
+              ]
+            ],
+            [
+              [
+                451,
+                837
+              ],
+              [
+                504,
+                801
+              ],
+              [
+                541,
+                699
+              ],
+              [
+                612,
+                597
+              ],
+              [
+                673,
+                535
+              ],
+              [
+                743,
+                484
+              ],
+              [
+                796,
+                461
+              ],
+              [
+                839,
+                458
+              ],
+              [
+                849,
+                494
+              ],
+              [
+                854,
+                583
+              ]
+            ],
+            [
+              [
+                661,
+                817
+              ],
+              [
+                735,
+                785
+              ],
+              [
+                769,
+                749
+              ]
+            ],
+            [
+              [
+                434,
+                499
+              ],
+              [
+                489,
+                475
+              ],
+              [
+                515,
+                444
+              ]
+            ],
+            [
+              [
+                268,
+                339
+              ],
+              [
+                339,
+                339
+              ],
+              [
+                497,
+                375
+              ],
+              [
+                612,
+                409
+              ],
+              [
+                656,
+                413
+              ]
+            ],
+            [
+              [
+                457,
+                320
+              ],
+              [
+                445,
+                320
+              ],
+              [
+                423,
+                307
+              ],
+              [
+                376,
+                235
+              ],
+              [
+                283,
+                136
+              ],
+              [
+                181,
+                63
+              ],
+              [
+                149,
+                46
+              ],
+              [
+                136,
+                46
+              ],
+              [
+                131,
+                39
+              ]
+            ],
+            [
+              [
+                420,
+                236
+              ],
+              [
+                407,
+                44
+              ],
+              [
+                413,
+                1
+              ],
+              [
+                444,
+                8
+              ],
+              [
+                475,
+                24
+              ],
+              [
+                572,
+                86
+              ]
+            ],
+            [
+              [
+                770,
+                322
+              ],
+              [
+                733,
+                334
+              ],
+              [
+                620,
+                228
+              ],
+              [
+                610,
+                230
+              ]
+            ],
+            [
+              [
+                471,
+                313
+              ],
+              [
+                489,
+                289
+              ],
+              [
+                613,
+                190
+              ],
+              [
+                718,
+                119
+              ],
+              [
+                786,
+                82
+              ],
+              [
+                870,
+                67
+              ],
+              [
+                986,
+                63
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-888b-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3892",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "the same day",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "当天"
+              },
+              {
+                "value": "dàngtiān",
+                "mode": "pinyin"
+              },
+              {
+                "value": "dang4tian1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "当天",
+              "pinyin": "dàngtiān",
+              "meaning": "the same day",
+              "audio": "a1e2181f5f4d6501c866732f4e95cff805857735cdcf67d720c9178875946fd1",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-888b-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-888b",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "pouch; bag",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "袋"
+              },
+              {
+                "value": "dài",
+                "mode": "pinyin"
+              },
+              {
+                "value": "dai4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "袋",
+              "pinyin": "dài",
+              "meaning": "pouch; bag",
+              "audio": "5913dec6bd35a6a4554c37e2610cf8c6734c1e34d601982d5a2885961c94292f",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "5913dec6bd35a6a4554c37e2610cf8c6734c1e34d601982d5a2885961c94292f"
+            ],
+            "transcript": [
+              {
+                "text": "袋",
+                "pinyin": "dài",
+                "meaning": "pouch; bag",
+                "audio": "5913dec6bd35a6a4554c37e2610cf8c6734c1e34d601982d5a2885961c94292f",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-888B",
+      "character": "袋",
+      "lessonIds": [
+        "LESSON-C-888B"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-888b-word",
+        "EX-CHAR-char-888b-recognize",
+        "EX-CHAR-char-888b-write",
+        "EX-CHAR-char-888b-familiar",
+        "EX-CHAR-char-888b-recall"
+      ]
+    },
+    "audio": {
+      "5913dec6bd35a6a4554c37e2610cf8c6734c1e34d601982d5a2885961c94292f": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b5ff5db7d6922dcc82a8ab10b3201b00ff38f8d38cd6e87cb58a7d5bd8ea5961.mp3",
+          "sha256": "b5ff5db7d6922dcc82a8ab10b3201b00ff38f8d38cd6e87cb58a7d5bd8ea5961",
+          "byteLength": 7533,
+          "qualityWarning": "too-fast",
+          "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+          "readAlong": {
+            "audioSha256": "b5ff5db7d6922dcc82a8ab10b3201b00ff38f8d38cd6e87cb58a7d5bd8ea5961",
+            "text": "袋",
+            "words": [
+              {
+                "text": "袋",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b87e6ea7dee43266102b4acb1f4023e65f98ceae79fea0590c093c26bc591b59.mp3",
+          "sha256": "b87e6ea7dee43266102b4acb1f4023e65f98ceae79fea0590c093c26bc591b59",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "b87e6ea7dee43266102b4acb1f4023e65f98ceae79fea0590c093c26bc591b59",
+            "text": "袋",
+            "words": [
+              {
+                "text": "袋",
+                "start": 0.14,
+                "end": 0.26
+              }
+            ]
+          }
+        }
+      },
+      "1e55483b8ea0f93842b78d15c11e07b004b4e83118ea5c34c687a14ffa0a45db": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-cbe5e6a722abade7d77ef715266680bc283b88f037483785a36f7a809365364e.mp3",
+          "sha256": "cbe5e6a722abade7d77ef715266680bc283b88f037483785a36f7a809365364e",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "cbe5e6a722abade7d77ef715266680bc283b88f037483785a36f7a809365364e",
+            "text": "袋子",
+            "words": [
+              {
+                "text": "袋子",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6efaaaefbf0bec64fab5f718bd43fb4cb76eb3e6578abbebfa17e077ab207b95.mp3",
+          "sha256": "6efaaaefbf0bec64fab5f718bd43fb4cb76eb3e6578abbebfa17e077ab207b95",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "6efaaaefbf0bec64fab5f718bd43fb4cb76eb3e6578abbebfa17e077ab207b95",
+            "text": "袋子",
+            "words": [
+              {
+                "text": "袋子",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "2583a00f10878817cf06a9b7a601f09deee199f7605c214dbb7579426eeda843": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-cf932a112c637aa0d786966d4f67c5213ffc43b6640b9222636fc1d81121b88e.mp3",
+          "sha256": "cf932a112c637aa0d786966d4f67c5213ffc43b6640b9222636fc1d81121b88e",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "cf932a112c637aa0d786966d4f67c5213ffc43b6640b9222636fc1d81121b88e",
+            "text": "家务",
+            "words": [
+              {
+                "text": "家务",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8e2125dba4eb830aa55b8379fcd9fdd1d37338aa8f8c0f67919da6d715f9bb2b.mp3",
+          "sha256": "8e2125dba4eb830aa55b8379fcd9fdd1d37338aa8f8c0f67919da6d715f9bb2b",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "8e2125dba4eb830aa55b8379fcd9fdd1d37338aa8f8c0f67919da6d715f9bb2b",
+            "text": "家务",
+            "words": [
+              {
+                "text": "家务",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "a1e2181f5f4d6501c866732f4e95cff805857735cdcf67d720c9178875946fd1": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-98c1cbe245db939a33506d8fa04c16b160cbb022ce2d2e5863fe51b949954e78.mp3",
+          "sha256": "98c1cbe245db939a33506d8fa04c16b160cbb022ce2d2e5863fe51b949954e78",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "98c1cbe245db939a33506d8fa04c16b160cbb022ce2d2e5863fe51b949954e78",
+            "text": "当天",
+            "words": [
+              {
+                "text": "当天",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-9eb303ceea6627e3b464def977522588c557ae646569059784fae0df9c8abfed.mp3",
+          "sha256": "9eb303ceea6627e3b464def977522588c557ae646569059784fae0df9c8abfed",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "9eb303ceea6627e3b464def977522588c557ae646569059784fae0df9c8abfed",
+            "text": "当天",
+            "words": [
+              {
+                "text": "当天",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "ef8eb811d0d24ef41feb8d5f669371cfaaecbbff0d9d12a2dee12bb823a0ae9c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2493aea7cac9eba40bb39b91dafe967b5cbc431aab01a647315d2432b66268fe.mp3",
+          "sha256": "2493aea7cac9eba40bb39b91dafe967b5cbc431aab01a647315d2432b66268fe",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "2493aea7cac9eba40bb39b91dafe967b5cbc431aab01a647315d2432b66268fe",
+            "text": "足以",
+            "words": [
+              {
+                "text": "足以",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-183870f138d3c6f53e26f0c8ac3c0acf90296a8867bc42a8a553d1e42574aac9.mp3",
+          "sha256": "183870f138d3c6f53e26f0c8ac3c0acf90296a8867bc42a8a553d1e42574aac9",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "183870f138d3c6f53e26f0c8ac3c0acf90296a8867bc42a8a553d1e42574aac9",
+            "text": "足以",
+            "words": [
+              {
+                "text": "足以",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

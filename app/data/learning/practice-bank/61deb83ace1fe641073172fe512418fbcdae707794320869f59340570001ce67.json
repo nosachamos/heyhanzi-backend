@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0120",
+  "targetId": "W0120",
+  "steps": [
+    {
+      "id": "BANK-W0120-W0120",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0120-W0120",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "computer",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "电脑"
+            },
+            {
+              "value": "diànnǎo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dian4nao3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "电脑",
+            "pinyin": "diànnǎo",
+            "meaning": "computer",
+            "singleWord": true,
+            "audio": "efe292344e745d3a8393c0a1ec4998569811c04b3c64478645988c15eb498891"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "efe292344e745d3a8393c0a1ec4998569811c04b3c64478645988c15eb498891": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-42deff718d457aef654444407fdf6e1880a96410cc1b9ce28101d02591b092cd.mp3",
+        "sha256": "42deff718d457aef654444407fdf6e1880a96410cc1b9ce28101d02591b092cd",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "42deff718d457aef654444407fdf6e1880a96410cc1b9ce28101d02591b092cd",
+          "text": "电脑",
+          "words": [
+            {
+              "text": "电脑",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d9fac40fc75c18b44cc8a7845353d8bbb2a9928d13a1b11cc02b1415e6a0d328.mp3",
+        "sha256": "d9fac40fc75c18b44cc8a7845353d8bbb2a9928d13a1b11cc02b1415e6a0d328",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "d9fac40fc75c18b44cc8a7845353d8bbb2a9928d13a1b11cc02b1415e6a0d328",
+          "text": "电脑",
+          "words": [
+            {
+              "text": "电脑",
+              "start": 0.09,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0120",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0120-W0120",
+      "question_ids": [
+        "BANK-W0120-W0120"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U07",
+    "stepId": "S-U07-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8111"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0036",
+  "targetId": "W0036",
+  "steps": [
+    {
+      "id": "BANK-W0036-W0036",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0036-W0036",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "dad; father",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "爸爸"
+            },
+            {
+              "value": "bàba",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ba4ba5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "爸爸",
+            "pinyin": "bàba",
+            "meaning": "dad; father",
+            "singleWord": true,
+            "audio": "b29cff7a751be28e5aa5e485c7a8da59044f4ac32b6fcc1b12b748be204b9c01"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b29cff7a751be28e5aa5e485c7a8da59044f4ac32b6fcc1b12b748be204b9c01": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2bbca957425d29e8f8a13a69a11d0da0f0c99928611a100fe59f6b43c1b79597.mp3",
+        "sha256": "2bbca957425d29e8f8a13a69a11d0da0f0c99928611a100fe59f6b43c1b79597",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "2bbca957425d29e8f8a13a69a11d0da0f0c99928611a100fe59f6b43c1b79597",
+          "text": "爸爸",
+          "words": [
+            {
+              "text": "爸爸",
+              "start": 0.15,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3578071bd2fc934a47aaa573167a537ceca5ed528a90c406de784ae933ea7617.mp3",
+        "sha256": "3578071bd2fc934a47aaa573167a537ceca5ed528a90c406de784ae933ea7617",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "3578071bd2fc934a47aaa573167a537ceca5ed528a90c406de784ae933ea7617",
+          "text": "爸爸",
+          "words": [
+            {
+              "text": "爸爸",
+              "start": 0.09,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0036",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0036-W0036",
+      "question_ids": [
+        "BANK-W0036-W0036"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U04",
+    "stepId": "S-U04-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7238"
+    ],
+    "grammarLessonIds": []
+  }
+}

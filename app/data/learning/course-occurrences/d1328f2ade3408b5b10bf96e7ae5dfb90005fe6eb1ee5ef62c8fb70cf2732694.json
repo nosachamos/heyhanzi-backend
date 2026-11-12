@@ -1,0 +1,711 @@
+{
+  "id": "EX-CHAR-char-8f7b",
+  "revision": 2,
+  "unit": "U23-P01",
+  "stage": "ST-HSK2",
+  "after": "S-U23-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "轻",
+  "sourceBlockId": "mandarin-simplified-v1-char-8f7b",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-afd0069549f44a19c330be87",
+        "text": "近视",
+        "pinyin": "jìnshì",
+        "meaning": "myopic; nearsighted; (figuratively) shortsighted",
+        "characters": [
+          {
+            "id": "C-8FD1",
+            "text": "近"
+          },
+          {
+            "id": "C-89C6",
+            "text": "视"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-b0f532911ad4dcd4d591af69",
+        "text": "回想",
+        "pinyin": "huí xiǎng",
+        "meaning": "to think back",
+        "characters": [
+          {
+            "id": "C-56DE",
+            "text": "回"
+          },
+          {
+            "id": "C-60F3",
+            "text": "想"
+          }
+        ]
+      },
+      {
+        "id": "W0160",
+        "text": "经常",
+        "pinyin": "jīngcháng",
+        "meaning": "often; regularly",
+        "characters": [
+          {
+            "id": "C-7ECF",
+            "text": "经"
+          },
+          {
+            "id": "C-5E38",
+            "text": "常"
+          }
+        ]
+      },
+      {
+        "id": "W0270",
+        "text": "年轻",
+        "pinyin": "niánqīng",
+        "meaning": "young",
+        "characters": [
+          {
+            "id": "C-5E74",
+            "text": "年"
+          },
+          {
+            "id": "C-8F7B",
+            "text": "轻"
+          }
+        ]
+      },
+      {
+        "id": "W1625",
+        "text": "轻",
+        "pinyin": "qīng",
+        "meaning": "light; easy",
+        "characters": [
+          {
+            "id": "C-8F7B",
+            "text": "轻"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "e16d2aaa23b94aed57b0a8224b0c00e30d8ae8d1c40f80b10579be07574879a6",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8f7b",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "轻",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8f7b-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0270",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "young",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "年轻"
+              },
+              {
+                "value": "niánqīng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "nian2qing1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "年轻",
+              "pinyin": "niánqīng",
+              "meaning": "young",
+              "audio": "375f2bdde22ded9b53b842f03b70d2b2867156116024b253f011d6a308e146d6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8f7b-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W1625",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "轻",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-afd0069549f44a19c330be87",
+                "label": "myopic; nearsighted",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0160",
+                "label": "often; regularly",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1625",
+                "label": "light; easy",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8f7b-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "轻",
+        "pinyin": "qīng",
+        "meaning": "light; easy",
+        "source": "/stroke-data/8f7b.json",
+        "reference": {
+          "character": "轻",
+          "sha256": "cc1696bdbf195fd96d03bb1ed08b791bfe7f03d9fd6d73a0be67b1ff3f193550",
+          "medians": [
+            [
+              [
+                156,
+                610
+              ],
+              [
+                219,
+                608
+              ],
+              [
+                319,
+                631
+              ],
+              [
+                395,
+                656
+              ],
+              [
+                436,
+                654
+              ]
+            ],
+            [
+              [
+                324,
+                823
+              ],
+              [
+                352,
+                770
+              ],
+              [
+                280,
+                576
+              ],
+              [
+                204,
+                409
+              ],
+              [
+                193,
+                368
+              ],
+              [
+                239,
+                367
+              ],
+              [
+                408,
+                410
+              ],
+              [
+                436,
+                404
+              ]
+            ],
+            [
+              [
+                317,
+                499
+              ],
+              [
+                345,
+                462
+              ],
+              [
+                327,
+                84
+              ],
+              [
+                338,
+                6
+              ]
+            ],
+            [
+              [
+                85,
+                197
+              ],
+              [
+                140,
+                180
+              ],
+              [
+                448,
+                305
+              ]
+            ],
+            [
+              [
+                512,
+                661
+              ],
+              [
+                560,
+                659
+              ],
+              [
+                700,
+                691
+              ],
+              [
+                724,
+                690
+              ],
+              [
+                750,
+                679
+              ],
+              [
+                720,
+                619
+              ],
+              [
+                641,
+                524
+              ],
+              [
+                557,
+                449
+              ],
+              [
+                469,
+                396
+              ]
+            ],
+            [
+              [
+                671,
+                513
+              ],
+              [
+                690,
+                515
+              ],
+              [
+                776,
+                469
+              ],
+              [
+                815,
+                439
+              ],
+              [
+                838,
+                404
+              ]
+            ],
+            [
+              [
+                502,
+                334
+              ],
+              [
+                511,
+                329
+              ],
+              [
+                569,
+                327
+              ],
+              [
+                736,
+                357
+              ],
+              [
+                789,
+                354
+              ]
+            ],
+            [
+              [
+                611,
+                309
+              ],
+              [
+                638,
+                282
+              ],
+              [
+                628,
+                127
+              ],
+              [
+                610,
+                116
+              ]
+            ],
+            [
+              [
+                398,
+                72
+              ],
+              [
+                454,
+                63
+              ],
+              [
+                584,
+                82
+              ],
+              [
+                838,
+                104
+              ],
+              [
+                915,
+                83
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8f7b-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-b0f532911ad4dcd4d591af69",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to think back",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "回想"
+              },
+              {
+                "value": "huí xiǎng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hui2xiang3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "回想",
+              "pinyin": "huí xiǎng",
+              "meaning": "to think back",
+              "audio": "5cb8861ffe154472f2d8b911df13dbc5222ab45dbc96c3fcb148427b00b89f03",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8f7b-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W1625",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "light; easy",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "轻"
+              },
+              {
+                "value": "qīng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qing1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "轻",
+              "pinyin": "qīng",
+              "meaning": "light; easy",
+              "audio": "773fbcac835b2a2ba17c05f3cb84e3a4d5e04bd939a829c01c80c2164a7cf11c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "773fbcac835b2a2ba17c05f3cb84e3a4d5e04bd939a829c01c80c2164a7cf11c"
+            ],
+            "transcript": [
+              {
+                "text": "轻",
+                "pinyin": "qīng",
+                "meaning": "light; easy",
+                "audio": "773fbcac835b2a2ba17c05f3cb84e3a4d5e04bd939a829c01c80c2164a7cf11c",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8F7B",
+      "character": "轻",
+      "lessonIds": [
+        "LESSON-C-8F7B"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8f7b-word",
+        "EX-CHAR-char-8f7b-recognize",
+        "EX-CHAR-char-8f7b-write",
+        "EX-CHAR-char-8f7b-familiar",
+        "EX-CHAR-char-8f7b-recall"
+      ]
+    },
+    "audio": {
+      "46a5f4dcb59494c47205aa2bcc0e43763851e4494e1f83eaae2e9592f4ac283c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/02dc0576cde579884bbe65ebe444b5512d196243da685bf04d8f3c41711183a1.mp3",
+          "sha256": "02dc0576cde579884bbe65ebe444b5512d196243da685bf04d8f3c41711183a1",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "02dc0576cde579884bbe65ebe444b5512d196243da685bf04d8f3c41711183a1",
+            "text": "近视",
+            "words": [
+              {
+                "text": "近视",
+                "start": 0.21,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2f80219cba5fc8a89e84505dff3428860daa71158d00587a3a26471ab0d93183.mp3",
+          "sha256": "2f80219cba5fc8a89e84505dff3428860daa71158d00587a3a26471ab0d93183",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "2f80219cba5fc8a89e84505dff3428860daa71158d00587a3a26471ab0d93183",
+            "text": "近视",
+            "words": [
+              {
+                "text": "近视",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "5cb8861ffe154472f2d8b911df13dbc5222ab45dbc96c3fcb148427b00b89f03": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5aa006530308d5d3b1c7f094d9500d3d5ef9cb08226c610d8b3230adcc9988f3.mp3",
+          "sha256": "5aa006530308d5d3b1c7f094d9500d3d5ef9cb08226c610d8b3230adcc9988f3",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "5aa006530308d5d3b1c7f094d9500d3d5ef9cb08226c610d8b3230adcc9988f3",
+            "text": "回想",
+            "words": [
+              {
+                "text": "回想",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/082a2ff5d2353578dd1d3d8eb1d6e5d1bfc832ae5839cba70df62365ee30a869.mp3",
+          "sha256": "082a2ff5d2353578dd1d3d8eb1d6e5d1bfc832ae5839cba70df62365ee30a869",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "082a2ff5d2353578dd1d3d8eb1d6e5d1bfc832ae5839cba70df62365ee30a869",
+            "text": "回想",
+            "words": [
+              {
+                "text": "回想",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "4e2c107649715fdff121ddc4516a9eb1da84ebfa98fee396d03d8b3a1c6d0be6": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ca0f01fa50cc47c6f64b7fd1cc28a6136296fa2fd23954ef6237a32da74ad565.mp3",
+          "sha256": "ca0f01fa50cc47c6f64b7fd1cc28a6136296fa2fd23954ef6237a32da74ad565",
+          "byteLength": 15597,
+          "readAlong": {
+            "audioSha256": "ca0f01fa50cc47c6f64b7fd1cc28a6136296fa2fd23954ef6237a32da74ad565",
+            "text": "经常",
+            "words": [
+              {
+                "text": "经常",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-105049ff2b84615b60cfbc2ef6c67b1617a1f2decf6d9d8829f32923ce5119f5.mp3",
+          "sha256": "105049ff2b84615b60cfbc2ef6c67b1617a1f2decf6d9d8829f32923ce5119f5",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "105049ff2b84615b60cfbc2ef6c67b1617a1f2decf6d9d8829f32923ce5119f5",
+            "text": "经常",
+            "words": [
+              {
+                "text": "经常",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "375f2bdde22ded9b53b842f03b70d2b2867156116024b253f011d6a308e146d6": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-8800f2d8e3032f57dfaf171db4c020f9c5a4a6bba5b3df33c8afab7008342148.mp3",
+          "sha256": "8800f2d8e3032f57dfaf171db4c020f9c5a4a6bba5b3df33c8afab7008342148",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "8800f2d8e3032f57dfaf171db4c020f9c5a4a6bba5b3df33c8afab7008342148",
+            "text": "年轻",
+            "words": [
+              {
+                "text": "年轻",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4137e91bca8f1194f298912f1b295a413a9ed320ee5cd0fbdbe08a29e28db65f.mp3",
+          "sha256": "4137e91bca8f1194f298912f1b295a413a9ed320ee5cd0fbdbe08a29e28db65f",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "4137e91bca8f1194f298912f1b295a413a9ed320ee5cd0fbdbe08a29e28db65f",
+            "text": "年轻",
+            "words": [
+              {
+                "text": "年轻",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "773fbcac835b2a2ba17c05f3cb84e3a4d5e04bd939a829c01c80c2164a7cf11c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2fddff27337e9bcef6e53700bd8122c1e849d3491244f46fc9f8b720c218dfe3.mp3",
+          "sha256": "2fddff27337e9bcef6e53700bd8122c1e849d3491244f46fc9f8b720c218dfe3",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "2fddff27337e9bcef6e53700bd8122c1e849d3491244f46fc9f8b720c218dfe3",
+            "text": "轻",
+            "words": [
+              {
+                "text": "轻",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-da8708588088ed0e34da5d2add24c795b9d1e46312d1c42fb65b7cc35599c592.mp3",
+          "sha256": "da8708588088ed0e34da5d2add24c795b9d1e46312d1c42fb65b7cc35599c592",
+          "byteLength": 8685,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "da8708588088ed0e34da5d2add24c795b9d1e46312d1c42fb65b7cc35599c592",
+            "text": "轻",
+            "words": [
+              {
+                "text": "轻",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

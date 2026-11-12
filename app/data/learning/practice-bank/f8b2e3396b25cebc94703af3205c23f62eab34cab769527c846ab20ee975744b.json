@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0224",
+  "targetId": "W0224",
+  "steps": [
+    {
+      "id": "BANK-W0224-W0224",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0224-W0224",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "train",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "火车"
+            },
+            {
+              "value": "huǒchē",
+              "mode": "pinyin"
+            },
+            {
+              "value": "huo3che1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "火车",
+            "pinyin": "huǒchē",
+            "meaning": "train",
+            "singleWord": true,
+            "audio": "56b014c4df44898324fb3da7301b358eb40e5a2f4f1eece9b5d60aed491a4214"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "56b014c4df44898324fb3da7301b358eb40e5a2f4f1eece9b5d60aed491a4214": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-afe45a4b536ab951893ee19989b288cc70f118cfb9c2c2d45125d870789d30b0.mp3",
+        "sha256": "afe45a4b536ab951893ee19989b288cc70f118cfb9c2c2d45125d870789d30b0",
+        "byteLength": 18189,
+        "readAlong": {
+          "audioSha256": "afe45a4b536ab951893ee19989b288cc70f118cfb9c2c2d45125d870789d30b0",
+          "text": "火车",
+          "words": [
+            {
+              "text": "火车",
+              "start": 0.15,
+              "end": 0.6299999999999999
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-5598839e1fb41c1f53605e07be8b0b736e837c6779b6c228e3df2516aae36329.mp3",
+        "sha256": "5598839e1fb41c1f53605e07be8b0b736e837c6779b6c228e3df2516aae36329",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "5598839e1fb41c1f53605e07be8b0b736e837c6779b6c228e3df2516aae36329",
+          "text": "火车",
+          "words": [
+            {
+              "text": "火车",
+              "start": 0.14,
+              "end": 0.58
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0224",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0224-W0224",
+      "question_ids": [
+        "BANK-W0224-W0224"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U10",
+    "stepId": "S-U10-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-706b"
+    ],
+    "grammarLessonIds": []
+  }
+}

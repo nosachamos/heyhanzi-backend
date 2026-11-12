@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1700",
+  "targetId": "W1700",
+  "steps": [
+    {
+      "id": "BANK-W1700-W1700",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1700-W1700",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "food",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "食物"
+            },
+            {
+              "value": "shíwù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shi2wu4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "食物",
+            "pinyin": "shíwù",
+            "meaning": "food",
+            "singleWord": true,
+            "audio": "a367f8a1ff829a6446b0912e0c82c54e0eed055a5fef33b309b511b9bfb4ad99"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a367f8a1ff829a6446b0912e0c82c54e0eed055a5fef33b309b511b9bfb4ad99": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ade8bae0c5697ae57b58b773ca4111b8656f528dcd82e6d7e8e44dacb5004961.mp3",
+        "sha256": "ade8bae0c5697ae57b58b773ca4111b8656f528dcd82e6d7e8e44dacb5004961",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "ade8bae0c5697ae57b58b773ca4111b8656f528dcd82e6d7e8e44dacb5004961",
+          "text": "食物",
+          "words": [
+            {
+              "text": "食物",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-69d4013d98a7aa2eabe873a2aeb0752146adc8d363a551ec3e94af6b301e24e1.mp3",
+        "sha256": "69d4013d98a7aa2eabe873a2aeb0752146adc8d363a551ec3e94af6b301e24e1",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "69d4013d98a7aa2eabe873a2aeb0752146adc8d363a551ec3e94af6b301e24e1",
+          "text": "食物",
+          "words": [
+            {
+              "text": "食物",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1700",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1700-W1700",
+      "question_ids": [
+        "BANK-W1700-W1700"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-09",
+    "stepId": "S-U4-09-words-r4-14",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-98df"
+    ],
+    "grammarLessonIds": []
+  }
+}

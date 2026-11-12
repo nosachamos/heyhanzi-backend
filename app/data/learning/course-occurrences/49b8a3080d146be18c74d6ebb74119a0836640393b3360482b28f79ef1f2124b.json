@@ -1,0 +1,725 @@
+{
+  "id": "EX-CHAR-char-996d",
+  "revision": 2,
+  "unit": "U06",
+  "stage": "ST-HSK1",
+  "after": "S-U06-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "饭",
+  "sourceBlockId": "mandarin-simplified-v1-char-996d",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-460933c20a6af332d69f359f",
+        "text": "后边",
+        "pinyin": "hòu bian",
+        "meaning": "behind",
+        "characters": [
+          {
+            "id": "C-540E",
+            "text": "后"
+          },
+          {
+            "id": "C-8FB9",
+            "text": "边"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-b908eb1c53fb1a10e9f400ed",
+        "text": "便饭",
+        "pinyin": "biàn fàn",
+        "meaning": "an ordinary meal",
+        "characters": [
+          {
+            "id": "C-4FBF",
+            "text": "便"
+          },
+          {
+            "id": "C-996D",
+            "text": "饭"
+          }
+        ]
+      },
+      {
+        "id": "W0061",
+        "text": "一些",
+        "pinyin": "yīxiē",
+        "meaning": "some; a few",
+        "characters": [
+          {
+            "id": "C-4E00",
+            "text": "一"
+          },
+          {
+            "id": "C-4E9B",
+            "text": "些"
+          }
+        ]
+      },
+      {
+        "id": "W0394",
+        "text": "饭",
+        "pinyin": "fàn",
+        "meaning": "cooked rice; meal",
+        "characters": [
+          {
+            "id": "C-996D",
+            "text": "饭"
+          }
+        ]
+      },
+      {
+        "id": "W1608",
+        "text": "起到",
+        "pinyin": "qǐdào",
+        "meaning": "to have (an effect); to play (a role)",
+        "characters": [
+          {
+            "id": "C-8D77",
+            "text": "起"
+          },
+          {
+            "id": "C-5230",
+            "text": "到"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "848f739c3ce7dfad23e1ca11d8b54ab308941e3c8609cabbedff13e3057f60a6",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-996d",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "饭",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-996d-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-b908eb1c53fb1a10e9f400ed",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "an ordinary meal",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "便饭"
+              },
+              {
+                "value": "biàn fàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bian4fan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "便饭",
+              "pinyin": "biàn fàn",
+              "meaning": "an ordinary meal",
+              "audio": "bcb5a7238be6c365fcde365895cd58ac3cd45b77e8445ad457b218188c5c2a06",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-996d-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0394",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "饭",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0394",
+                "label": "cooked rice; meal",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1608",
+                "label": "to have (an effect); to play (a role)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0061",
+                "label": "some; a few",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-996d-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "饭",
+        "pinyin": "fàn",
+        "meaning": "cooked rice; meal",
+        "source": "/stroke-data/996d.json",
+        "reference": {
+          "character": "饭",
+          "sha256": "068407580dceb8ac5c53ec8301223acd1354a199f00a0f06c18ae1ec982fe8fb",
+          "medians": [
+            [
+              [
+                271,
+                799
+              ],
+              [
+                288,
+                786
+              ],
+              [
+                311,
+                753
+              ],
+              [
+                256,
+                627
+              ],
+              [
+                155,
+                457
+              ],
+              [
+                91,
+                371
+              ],
+              [
+                50,
+                331
+              ]
+            ],
+            [
+              [
+                255,
+                567
+              ],
+              [
+                367,
+                596
+              ],
+              [
+                396,
+                597
+              ],
+              [
+                419,
+                588
+              ],
+              [
+                371,
+                495
+              ],
+              [
+                337,
+                450
+              ]
+            ],
+            [
+              [
+                234,
+                455
+              ],
+              [
+                256,
+                433
+              ],
+              [
+                270,
+                404
+              ],
+              [
+                269,
+                285
+              ],
+              [
+                253,
+                165
+              ],
+              [
+                258,
+                130
+              ],
+              [
+                297,
+                139
+              ],
+              [
+                405,
+                208
+              ]
+            ],
+            [
+              [
+                826,
+                708
+              ],
+              [
+                809,
+                714
+              ],
+              [
+                756,
+                714
+              ],
+              [
+                718,
+                683
+              ],
+              [
+                631,
+                632
+              ],
+              [
+                599,
+                619
+              ],
+              [
+                591,
+                624
+              ]
+            ],
+            [
+              [
+                518,
+                628
+              ],
+              [
+                555,
+                596
+              ],
+              [
+                558,
+                586
+              ],
+              [
+                553,
+                439
+              ],
+              [
+                527,
+                295
+              ],
+              [
+                502,
+                224
+              ],
+              [
+                464,
+                156
+              ],
+              [
+                399,
+                86
+              ],
+              [
+                346,
+                52
+              ]
+            ],
+            [
+              [
+                577,
+                409
+              ],
+              [
+                670,
+                425
+              ],
+              [
+                733,
+                450
+              ],
+              [
+                756,
+                451
+              ],
+              [
+                797,
+                440
+              ],
+              [
+                759,
+                298
+              ],
+              [
+                726,
+                226
+              ],
+              [
+                693,
+                177
+              ],
+              [
+                600,
+                101
+              ],
+              [
+                536,
+                76
+              ],
+              [
+                509,
+                73
+              ]
+            ],
+            [
+              [
+                586,
+                305
+              ],
+              [
+                620,
+                293
+              ],
+              [
+                730,
+                164
+              ],
+              [
+                844,
+                60
+              ],
+              [
+                977,
+                41
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-996d-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-460933c20a6af332d69f359f",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "behind",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "后边"
+              },
+              {
+                "value": "hòu bian",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hou4bian5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "后边",
+              "pinyin": "hòu bian",
+              "meaning": "behind",
+              "audio": "91abf49837ff23c1825d7cc5aea7ab2ddf830ab3cf6d2071dea97e564a46daf2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-996d-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0394",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "cooked rice; meal",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "饭"
+              },
+              {
+                "value": "fàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "fan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "饭",
+              "pinyin": "fàn",
+              "meaning": "cooked rice; meal",
+              "audio": "562f31336208bc6dd6c2bc7efd447f00604e7a7493125172db582848f94995af",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "562f31336208bc6dd6c2bc7efd447f00604e7a7493125172db582848f94995af"
+            ],
+            "transcript": [
+              {
+                "text": "饭",
+                "pinyin": "fàn",
+                "meaning": "cooked rice; meal",
+                "audio": "562f31336208bc6dd6c2bc7efd447f00604e7a7493125172db582848f94995af",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-996D",
+      "character": "饭",
+      "lessonIds": [
+        "LESSON-C-996D"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-996d-word",
+        "EX-CHAR-char-996d-recognize",
+        "EX-CHAR-char-996d-write",
+        "EX-CHAR-char-996d-familiar",
+        "EX-CHAR-char-996d-recall"
+      ]
+    },
+    "audio": {
+      "91abf49837ff23c1825d7cc5aea7ab2ddf830ab3cf6d2071dea97e564a46daf2": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2ab803babf6319044fdf2e570d3e6f508b27f4ece64ecec721ad75fc6e60a6dc.mp3",
+          "sha256": "2ab803babf6319044fdf2e570d3e6f508b27f4ece64ecec721ad75fc6e60a6dc",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "2ab803babf6319044fdf2e570d3e6f508b27f4ece64ecec721ad75fc6e60a6dc",
+            "text": "后边",
+            "words": [
+              {
+                "text": "后边",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/276216046cad291d3b67d0261e50f2ef59b43695cd568350c177efd6e6ba6753.mp3",
+          "sha256": "276216046cad291d3b67d0261e50f2ef59b43695cd568350c177efd6e6ba6753",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "276216046cad291d3b67d0261e50f2ef59b43695cd568350c177efd6e6ba6753",
+            "text": "后边",
+            "words": [
+              {
+                "text": "后边",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "bcb5a7238be6c365fcde365895cd58ac3cd45b77e8445ad457b218188c5c2a06": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3c62d4d18ed09ee1aad0816041f69f76db8f81832e60fc2d2085760d5004b263.mp3",
+          "sha256": "3c62d4d18ed09ee1aad0816041f69f76db8f81832e60fc2d2085760d5004b263",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "3c62d4d18ed09ee1aad0816041f69f76db8f81832e60fc2d2085760d5004b263",
+            "text": "便饭",
+            "words": [
+              {
+                "text": "便饭",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f953fd4619f9ea6cdc46a4fa622a694a8ba85c9cf796687cd2900d5d99c202a7.mp3",
+          "sha256": "f953fd4619f9ea6cdc46a4fa622a694a8ba85c9cf796687cd2900d5d99c202a7",
+          "byteLength": 16461,
+          "readAlong": {
+            "audioSha256": "f953fd4619f9ea6cdc46a4fa622a694a8ba85c9cf796687cd2900d5d99c202a7",
+            "text": "便饭",
+            "words": [
+              {
+                "text": "便饭",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "117515d58e3f147486b51316df6f6fc0511ceded1c74c4588d22a496ccc59f0c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-be95084585a79e3a13cde4bc80f958b949ead0f8d7df95b0bb7bb4ca9e905067.mp3",
+          "sha256": "be95084585a79e3a13cde4bc80f958b949ead0f8d7df95b0bb7bb4ca9e905067",
+          "byteLength": 15597,
+          "readAlong": {
+            "audioSha256": "be95084585a79e3a13cde4bc80f958b949ead0f8d7df95b0bb7bb4ca9e905067",
+            "text": "一些",
+            "words": [
+              {
+                "text": "一些",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-9cb21053a0b940f74019352e6f30956778b2992df5752458894f42d13e55d391.mp3",
+          "sha256": "9cb21053a0b940f74019352e6f30956778b2992df5752458894f42d13e55d391",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "9cb21053a0b940f74019352e6f30956778b2992df5752458894f42d13e55d391",
+            "text": "一些",
+            "words": [
+              {
+                "text": "一些",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "562f31336208bc6dd6c2bc7efd447f00604e7a7493125172db582848f94995af": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3bde2ccbfc93148784b062622a46c33c7cdc7282394ebb3461622a1701233400.mp3",
+          "sha256": "3bde2ccbfc93148784b062622a46c33c7cdc7282394ebb3461622a1701233400",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "3bde2ccbfc93148784b062622a46c33c7cdc7282394ebb3461622a1701233400",
+            "text": "饭",
+            "words": [
+              {
+                "text": "饭",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ef5191d54c707701b2c84170f4a4d3e6dfcc9507e8f0b4f17932db87d74d0998.mp3",
+          "sha256": "ef5191d54c707701b2c84170f4a4d3e6dfcc9507e8f0b4f17932db87d74d0998",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "ef5191d54c707701b2c84170f4a4d3e6dfcc9507e8f0b4f17932db87d74d0998",
+            "text": "饭",
+            "words": [
+              {
+                "text": "饭",
+                "start": 0.18,
+                "end": 0.26
+              }
+            ]
+          }
+        }
+      },
+      "6b59a386fafb401f9390153482c2da850326f889fe17ad72bc1c72c4eaeb71c4": {
+        "female": {
+          "url": "/exercise-assets/audio/course-female-8a7fe65ecb075da8a965800b95b6b10d619dff5090b685cbaeb653cfc21e05d2.mp3",
+          "sha256": "8a7fe65ecb075da8a965800b95b6b10d619dff5090b685cbaeb653cfc21e05d2",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "8a7fe65ecb075da8a965800b95b6b10d619dff5090b685cbaeb653cfc21e05d2",
+            "text": "起到",
+            "words": [
+              {
+                "text": "起到",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8c8b97c7e45bdc75d871582a0fc65df41fbdaf05c9069e2f0fbe8cc694aa6372.mp3",
+          "sha256": "8c8b97c7e45bdc75d871582a0fc65df41fbdaf05c9069e2f0fbe8cc694aa6372",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "8c8b97c7e45bdc75d871582a0fc65df41fbdaf05c9069e2f0fbe8cc694aa6372",
+            "text": "起到",
+            "words": [
+              {
+                "text": "起到",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3076",
+  "targetId": "W3076",
+  "steps": [
+    {
+      "id": "BANK-W3076-W3076",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3076-W3076",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "vegetables",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "蔬菜"
+            },
+            {
+              "value": "shūcài",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shu1cai4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "蔬菜",
+            "pinyin": "shūcài",
+            "meaning": "vegetables",
+            "singleWord": true,
+            "audio": "0b0bd7e79475f660c9032278feda3fd51c7edf13585ea86bd8981aa20e9ff5cc"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "0b0bd7e79475f660c9032278feda3fd51c7edf13585ea86bd8981aa20e9ff5cc": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-c458f91ca6814bd9f839398d2a68376a6bf3e3dbbb24bbb98d393cc487e875c5.mp3",
+        "sha256": "c458f91ca6814bd9f839398d2a68376a6bf3e3dbbb24bbb98d393cc487e875c5",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "c458f91ca6814bd9f839398d2a68376a6bf3e3dbbb24bbb98d393cc487e875c5",
+          "text": "蔬菜",
+          "words": [
+            {
+              "text": "蔬菜",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-82d3e4010854fa2c7ec8190b3a9cfcf5afa8c548a72e322de1e251f5aa3ddff7.mp3",
+        "sha256": "82d3e4010854fa2c7ec8190b3a9cfcf5afa8c548a72e322de1e251f5aa3ddff7",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "82d3e4010854fa2c7ec8190b3a9cfcf5afa8c548a72e322de1e251f5aa3ddff7",
+          "text": "蔬菜",
+          "words": [
+            {
+              "text": "蔬菜",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3076",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3076-W3076",
+      "question_ids": [
+        "BANK-W3076-W3076"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-09",
+    "stepId": "S-U5-09-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-852c"
+    ],
+    "grammarLessonIds": []
+  }
+}

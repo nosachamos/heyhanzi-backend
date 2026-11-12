@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0110",
+  "targetId": "W0110",
+  "steps": [
+    {
+      "id": "BANK-W0110-W0110",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0110-W0110",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to go; to go to",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "去"
+            },
+            {
+              "value": "qù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qu4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "去",
+            "pinyin": "qù",
+            "meaning": "to go; to go to",
+            "singleWord": true,
+            "audio": "0f4338edbb0384c94d5b38a768073a4da3ba5aee7f4c69dd1f97f4c8f522011b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "0f4338edbb0384c94d5b38a768073a4da3ba5aee7f4c69dd1f97f4c8f522011b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-264257828fb78fa0482f5f44a6b2fc6320e4a22dca3f12da9931e0fc78a591de.mp3",
+        "sha256": "264257828fb78fa0482f5f44a6b2fc6320e4a22dca3f12da9931e0fc78a591de",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "264257828fb78fa0482f5f44a6b2fc6320e4a22dca3f12da9931e0fc78a591de",
+          "text": "去",
+          "words": [
+            {
+              "text": "去",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-bada8708ed666916f6f606866a71d56ae533337b1d17e37a7e550784d744f959.mp3",
+        "sha256": "bada8708ed666916f6f606866a71d56ae533337b1d17e37a7e550784d744f959",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "bada8708ed666916f6f606866a71d56ae533337b1d17e37a7e550784d744f959",
+          "text": "去",
+          "words": [
+            {
+              "text": "去",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0110",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0110-W0110",
+      "question_ids": [
+        "BANK-W0110-W0110"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U09",
+    "stepId": "S-U09-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-53bb"
+    ],
+    "grammarLessonIds": []
+  }
+}

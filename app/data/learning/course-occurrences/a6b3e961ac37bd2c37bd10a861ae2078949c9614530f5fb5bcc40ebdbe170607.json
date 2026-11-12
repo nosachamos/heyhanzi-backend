@@ -1,0 +1,697 @@
+{
+  "id": "EX-CHAR-char-4e71",
+  "revision": 2,
+  "unit": "U4-30",
+  "stage": "ST-HSK4",
+  "after": "S-U4-30-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "乱",
+  "sourceBlockId": "mandarin-simplified-v1-char-4e71",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-521a",
+        "text": "刚",
+        "pinyin": "gāng",
+        "meaning": "(literary) hard; firm; strong; exactly; precisely",
+        "characters": [
+          {
+            "id": "C-521A",
+            "text": "刚"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-741d5ad19f3809af2bd620df",
+        "text": "杂乱无章",
+        "pinyin": "zá luàn wú zhāng",
+        "meaning": "disordered and in a mess (idiom)",
+        "characters": [
+          {
+            "id": "C-6742",
+            "text": "杂"
+          },
+          {
+            "id": "C-4E71",
+            "text": "乱"
+          },
+          {
+            "id": "C-65E0",
+            "text": "无"
+          },
+          {
+            "id": "C-7AE0",
+            "text": "章"
+          }
+        ]
+      },
+      {
+        "id": "W1053",
+        "text": "总",
+        "pinyin": "zǒng",
+        "meaning": "always; invariably",
+        "characters": [
+          {
+            "id": "C-603B",
+            "text": "总"
+          }
+        ]
+      },
+      {
+        "id": "W1532",
+        "text": "乱",
+        "pinyin": "luàn",
+        "meaning": "in confusion or disorder; in a confused state of mind",
+        "characters": [
+          {
+            "id": "C-4E71",
+            "text": "乱"
+          }
+        ]
+      },
+      {
+        "id": "W5083",
+        "text": "心脏",
+        "pinyin": "xīnzàng",
+        "meaning": "heart",
+        "characters": [
+          {
+            "id": "C-5FC3",
+            "text": "心"
+          },
+          {
+            "id": "C-810F",
+            "text": "脏"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "79ccf7fbb53b8ae44381f2545841007a91af3962caa59b02ab6b7936e2b86f2b",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4e71",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "乱",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4e71-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-741d5ad19f3809af2bd620df",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "disordered and in a mess (idiom)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "杂乱无章"
+              },
+              {
+                "value": "zá luàn wú zhāng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "za2luan4wu2zhang1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "杂乱无章",
+              "pinyin": "zá luàn wú zhāng",
+              "meaning": "disordered and in a mess (idiom)",
+              "audio": "ee0cfa0390273c36fcf4dfe240cd4ae43cc6ee46924864b25df10da3dde602c8",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e71-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W1532",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "乱",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-521a",
+                "label": "(literary) hard; firm",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W5083",
+                "label": "heart",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1532",
+                "label": "in confusion or disorder; in a confused state of mind",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e71-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "乱",
+        "pinyin": "luàn",
+        "meaning": "in confusion or disorder; in a confused state of mind",
+        "source": "/stroke-data/4e71.json",
+        "reference": {
+          "character": "乱",
+          "sha256": "259e36cdfa345f88b82fb999d9b2df2dff8b564e9cdf76a76871612798dd4887",
+          "medians": [
+            [
+              [
+                492,
+                722
+              ],
+              [
+                431,
+                730
+              ],
+              [
+                336,
+                665
+              ],
+              [
+                227,
+                613
+              ],
+              [
+                215,
+                615
+              ],
+              [
+                198,
+                602
+              ]
+            ],
+            [
+              [
+                75,
+                448
+              ],
+              [
+                139,
+                443
+              ],
+              [
+                465,
+                511
+              ],
+              [
+                521,
+                504
+              ]
+            ],
+            [
+              [
+                306,
+                626
+              ],
+              [
+                337,
+                611
+              ],
+              [
+                348,
+                594
+              ],
+              [
+                328,
+                343
+              ],
+              [
+                311,
+                324
+              ]
+            ],
+            [
+              [
+                169,
+                294
+              ],
+              [
+                204,
+                257
+              ],
+              [
+                244,
+                68
+              ]
+            ],
+            [
+              [
+                219,
+                294
+              ],
+              [
+                240,
+                286
+              ],
+              [
+                383,
+                322
+              ],
+              [
+                429,
+                318
+              ],
+              [
+                453,
+                293
+              ],
+              [
+                424,
+                198
+              ],
+              [
+                400,
+                180
+              ]
+            ],
+            [
+              [
+                264,
+                110
+              ],
+              [
+                279,
+                125
+              ],
+              [
+                397,
+                151
+              ],
+              [
+                436,
+                153
+              ],
+              [
+                464,
+                146
+              ]
+            ],
+            [
+              [
+                552,
+                798
+              ],
+              [
+                580,
+                783
+              ],
+              [
+                606,
+                749
+              ],
+              [
+                592,
+                600
+              ],
+              [
+                582,
+                321
+              ],
+              [
+                590,
+                173
+              ],
+              [
+                609,
+                117
+              ],
+              [
+                642,
+                86
+              ],
+              [
+                707,
+                64
+              ],
+              [
+                802,
+                61
+              ],
+              [
+                861,
+                69
+              ],
+              [
+                898,
+                82
+              ],
+              [
+                921,
+                104
+              ],
+              [
+                915,
+                245
+              ],
+              [
+                910,
+                257
+              ],
+              [
+                913,
+                283
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4e71-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1053",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "always; invariably",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "总"
+              },
+              {
+                "value": "zǒng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zong3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "总",
+              "pinyin": "zǒng",
+              "meaning": "always; invariably",
+              "audio": "9d298b01b5b3f3d08923723bc3e6ef83e08e517bdb378f540cc533c9acfc5240",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e71-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W1532",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "in confusion or disorder; in a confused state of mind",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "乱"
+              },
+              {
+                "value": "luàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "luan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "乱",
+              "pinyin": "luàn",
+              "meaning": "in confusion or disorder; in a confused state of mind",
+              "audio": "e9b35b73c9aba7dc9349be91dfbf42e134e87fe385f18d9fee863067a5a61c74",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "e9b35b73c9aba7dc9349be91dfbf42e134e87fe385f18d9fee863067a5a61c74"
+            ],
+            "transcript": [
+              {
+                "text": "乱",
+                "pinyin": "luàn",
+                "meaning": "in confusion or disorder; in a confused state of mind",
+                "audio": "e9b35b73c9aba7dc9349be91dfbf42e134e87fe385f18d9fee863067a5a61c74",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4E71",
+      "character": "乱",
+      "lessonIds": [
+        "LESSON-C-4E71"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4e71-word",
+        "EX-CHAR-char-4e71-recognize",
+        "EX-CHAR-char-4e71-write",
+        "EX-CHAR-char-4e71-familiar",
+        "EX-CHAR-char-4e71-recall"
+      ]
+    },
+    "audio": {
+      "ac25758a2062ac19f394d582e7be54cf8445e2cd3485a73caef80f2a298e1507": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-03436da633db044188374b4aa9d7c830f77dcddc66ae83b43368fa73272c70b9.mp3",
+          "sha256": "03436da633db044188374b4aa9d7c830f77dcddc66ae83b43368fa73272c70b9",
+          "byteLength": 8397,
+          "readAlong": {
+            "audioSha256": "03436da633db044188374b4aa9d7c830f77dcddc66ae83b43368fa73272c70b9",
+            "text": "刚",
+            "words": [
+              {
+                "text": "刚",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6f707e2b25728f178920486cd71c8307cf5dc85e18177a2518b773b833bc2c54.mp3",
+          "sha256": "6f707e2b25728f178920486cd71c8307cf5dc85e18177a2518b773b833bc2c54",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "6f707e2b25728f178920486cd71c8307cf5dc85e18177a2518b773b833bc2c54",
+            "text": "刚",
+            "words": [
+              {
+                "text": "刚",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "ee0cfa0390273c36fcf4dfe240cd4ae43cc6ee46924864b25df10da3dde602c8": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9305f3451594f8f01e6a5f62b5a11ab904f720023d84bac776e83496e895fa20.mp3",
+          "sha256": "9305f3451594f8f01e6a5f62b5a11ab904f720023d84bac776e83496e895fa20",
+          "byteLength": 17901,
+          "readAlong": {
+            "audioSha256": "9305f3451594f8f01e6a5f62b5a11ab904f720023d84bac776e83496e895fa20",
+            "text": "杂乱无章",
+            "words": [
+              {
+                "text": "杂乱无章",
+                "start": 0.21,
+                "end": 0.9299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0bbc9ef80e0c9126cae8b415e78abd08f4710bcf94e823185fe70e9a864aaa8a.mp3",
+          "sha256": "0bbc9ef80e0c9126cae8b415e78abd08f4710bcf94e823185fe70e9a864aaa8a",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "0bbc9ef80e0c9126cae8b415e78abd08f4710bcf94e823185fe70e9a864aaa8a",
+            "text": "杂乱无章",
+            "words": [
+              {
+                "text": "杂乱无章",
+                "start": 0.21,
+                "end": 0.8699999999999999
+              }
+            ]
+          }
+        }
+      },
+      "9d298b01b5b3f3d08923723bc3e6ef83e08e517bdb378f540cc533c9acfc5240": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f7c1574f40f4afadf8448334783695752b2a55e18174e80353a394e050a0d8a5.mp3",
+          "sha256": "f7c1574f40f4afadf8448334783695752b2a55e18174e80353a394e050a0d8a5",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "f7c1574f40f4afadf8448334783695752b2a55e18174e80353a394e050a0d8a5",
+            "text": "总",
+            "words": [
+              {
+                "text": "总",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-000dd93898e6a72a0c1fc59670966838ddbfa8cc867ad032c08d2ec01a7dbbf1.mp3",
+          "sha256": "000dd93898e6a72a0c1fc59670966838ddbfa8cc867ad032c08d2ec01a7dbbf1",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "000dd93898e6a72a0c1fc59670966838ddbfa8cc867ad032c08d2ec01a7dbbf1",
+            "text": "总",
+            "words": [
+              {
+                "text": "总",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "e9b35b73c9aba7dc9349be91dfbf42e134e87fe385f18d9fee863067a5a61c74": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-4bc6589ef9145b5c471b9ab42edbba9715be1e8beeff15122d942a291a9e3735.mp3",
+          "sha256": "4bc6589ef9145b5c471b9ab42edbba9715be1e8beeff15122d942a291a9e3735",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "4bc6589ef9145b5c471b9ab42edbba9715be1e8beeff15122d942a291a9e3735",
+            "text": "乱",
+            "words": [
+              {
+                "text": "乱",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-408caca16cd20286a6ce2304d3f17f8a4d12868207b31a06b65f4756ec19a50f.mp3",
+          "sha256": "408caca16cd20286a6ce2304d3f17f8a4d12868207b31a06b65f4756ec19a50f",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "408caca16cd20286a6ce2304d3f17f8a4d12868207b31a06b65f4756ec19a50f",
+            "text": "乱",
+            "words": [
+              {
+                "text": "乱",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "21e1393cdc4666d06c8f084213e3cac2b3eb463410fa16a8ae0f5c9b50bb2848": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1e12c92d4e114e16736d393ab5425f06a3d7c51325fc4b16ca55d91ee8cf639e.mp3",
+          "sha256": "1e12c92d4e114e16736d393ab5425f06a3d7c51325fc4b16ca55d91ee8cf639e",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "1e12c92d4e114e16736d393ab5425f06a3d7c51325fc4b16ca55d91ee8cf639e",
+            "text": "心脏",
+            "words": [
+              {
+                "text": "心脏",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/970fb9e6f772bd4ae072d730883e0caf6014c4ece6534a3ba37a85b73c62d146.mp3",
+          "sha256": "970fb9e6f772bd4ae072d730883e0caf6014c4ece6534a3ba37a85b73c62d146",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "970fb9e6f772bd4ae072d730883e0caf6014c4ece6534a3ba37a85b73c62d146",
+            "text": "心脏",
+            "words": [
+              {
+                "text": "心脏",
+                "start": 0.32999999999999996,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

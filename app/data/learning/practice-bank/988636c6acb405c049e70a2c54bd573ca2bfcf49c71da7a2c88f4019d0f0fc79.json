@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3264",
+  "targetId": "W3264",
+  "steps": [
+    {
+      "id": "BANK-W3264-W3264",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3264-W3264",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "current situation",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "现状"
+            },
+            {
+              "value": "xiànzhuàng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xian4zhuang4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "现状",
+            "pinyin": "xiànzhuàng",
+            "meaning": "current situation",
+            "singleWord": true,
+            "audio": "517ea2d1bca2fd46d92a271b2c7ab372a3faa8cfdffda8662bce4ad1f67de27a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "517ea2d1bca2fd46d92a271b2c7ab372a3faa8cfdffda8662bce4ad1f67de27a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1fbb12d50ee39edbe3bd57fbd219003e28141f37b4e95f45c683b59740cc31b1.mp3",
+        "sha256": "1fbb12d50ee39edbe3bd57fbd219003e28141f37b4e95f45c683b59740cc31b1",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "1fbb12d50ee39edbe3bd57fbd219003e28141f37b4e95f45c683b59740cc31b1",
+          "text": "现状",
+          "words": [
+            {
+              "text": "现状",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-491c7d5c8d9ad3475b3d6303a10ba784d65b898cce023222eee53e9cff5d160c.mp3",
+        "sha256": "491c7d5c8d9ad3475b3d6303a10ba784d65b898cce023222eee53e9cff5d160c",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "491c7d5c8d9ad3475b3d6303a10ba784d65b898cce023222eee53e9cff5d160c",
+          "text": "现状",
+          "words": [
+            {
+              "text": "现状",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3264",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3264-W3264",
+      "question_ids": [
+        "BANK-W3264-W3264"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-06",
+    "stepId": "S-U5-06-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-72b6"
+    ],
+    "grammarLessonIds": []
+  }
+}

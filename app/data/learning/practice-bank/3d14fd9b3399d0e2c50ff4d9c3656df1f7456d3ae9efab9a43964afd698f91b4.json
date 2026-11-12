@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0038",
+  "targetId": "W0038",
+  "steps": [
+    {
+      "id": "BANK-W0038-W0038",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0038-W0038",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "home; family; classifier for businesses or households",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "家"
+            },
+            {
+              "value": "jiā",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jia1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "家",
+            "pinyin": "jiā",
+            "meaning": "home; family; classifier for businesses or households",
+            "singleWord": true,
+            "audio": "5be9dc55010e0fcdae9346e6e05e8d642451682f489da001aad697c0888d385f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5be9dc55010e0fcdae9346e6e05e8d642451682f489da001aad697c0888d385f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-4002dea5110caea03ba428163942481c857eeb3c54b0b1dd2db706c28810c574.mp3",
+        "sha256": "4002dea5110caea03ba428163942481c857eeb3c54b0b1dd2db706c28810c574",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "4002dea5110caea03ba428163942481c857eeb3c54b0b1dd2db706c28810c574",
+          "text": "家",
+          "words": [
+            {
+              "text": "家",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2f35748295f93b9408a509bb6dbfc17c5efcf786db382c47ea16ccb655b38b02.mp3",
+        "sha256": "2f35748295f93b9408a509bb6dbfc17c5efcf786db382c47ea16ccb655b38b02",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "2f35748295f93b9408a509bb6dbfc17c5efcf786db382c47ea16ccb655b38b02",
+          "text": "家",
+          "words": [
+            {
+              "text": "家",
+              "start": 0.22,
+              "end": 0.36
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0038",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0038-W0038",
+      "question_ids": [
+        "BANK-W0038-W0038"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U04",
+    "stepId": "S-U04-words-r4-4",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5988"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2433",
+  "targetId": "W2433",
+  "steps": [
+    {
+      "id": "BANK-W2433-W2433",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2433-W2433",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "engineer",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "工程师"
+            },
+            {
+              "value": "gōngchéngshī",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gong1cheng2shi1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "工程师",
+            "pinyin": "gōngchéngshī",
+            "meaning": "engineer",
+            "singleWord": true,
+            "audio": "64309f6679be4372a300ad9314ad8b9b6df15ab51851e497781db3fe10e8203a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "64309f6679be4372a300ad9314ad8b9b6df15ab51851e497781db3fe10e8203a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-8c258ee1dfd3fe001647024fcad86e205c9145ad5f75a61a22b85d9ac2e686a2.mp3",
+        "sha256": "8c258ee1dfd3fe001647024fcad86e205c9145ad5f75a61a22b85d9ac2e686a2",
+        "byteLength": 16749,
+        "readAlong": {
+          "audioSha256": "8c258ee1dfd3fe001647024fcad86e205c9145ad5f75a61a22b85d9ac2e686a2",
+          "text": "工程师",
+          "words": [
+            {
+              "text": "工程师",
+              "start": 0.21,
+              "end": 0.6299999999999999
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-221461f13175f73c922cb93ac2b1885d63dd9bb755e982d62357f6b45650b978.mp3",
+        "sha256": "221461f13175f73c922cb93ac2b1885d63dd9bb755e982d62357f6b45650b978",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "221461f13175f73c922cb93ac2b1885d63dd9bb755e982d62357f6b45650b978",
+          "text": "工程师",
+          "words": [
+            {
+              "text": "工程师",
+              "start": 0.15,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2433",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2433-W2433",
+      "question_ids": [
+        "BANK-W2433-W2433"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-21",
+    "stepId": "S-U5-21-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7a0b"
+    ],
+    "grammarLessonIds": []
+  }
+}

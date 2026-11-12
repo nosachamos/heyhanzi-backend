@@ -1,0 +1,675 @@
+{
+  "id": "EX-CHAR-char-6cbb",
+  "revision": 2,
+  "unit": "U5-15",
+  "stage": "ST-HSK5",
+  "after": "S-U5-15-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "治",
+  "sourceBlockId": "mandarin-simplified-v1-char-6cbb",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-42db6209fa23467dbe7b1fe9",
+        "text": "失效",
+        "pinyin": "shī xiào",
+        "meaning": "to fail",
+        "characters": [
+          {
+            "id": "C-5931",
+            "text": "失"
+          },
+          {
+            "id": "C-6548",
+            "text": "效"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-bf52d570b87ff2e2a634fb94",
+        "text": "火辣辣",
+        "pinyin": "huǒ là là",
+        "meaning": "scorching hot",
+        "characters": [
+          {
+            "id": "C-706B",
+            "text": "火"
+          },
+          {
+            "id": "C-8FA3",
+            "text": "辣"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f2c36828b4b22a1b106aefef",
+        "text": "整治",
+        "pinyin": "zhěng zhì",
+        "meaning": "to bring under control",
+        "characters": [
+          {
+            "id": "C-6574",
+            "text": "整"
+          },
+          {
+            "id": "C-6CBB",
+            "text": "治"
+          }
+        ]
+      },
+      {
+        "id": "W1428",
+        "text": "节约",
+        "pinyin": "jiéyuē",
+        "meaning": "to economize; to conserve",
+        "characters": [
+          {
+            "id": "C-8282",
+            "text": "节"
+          },
+          {
+            "id": "C-7EA6",
+            "text": "约"
+          }
+        ]
+      },
+      {
+        "id": "W3527",
+        "text": "治",
+        "pinyin": "zhì",
+        "meaning": "to rule; to govern",
+        "characters": [
+          {
+            "id": "C-6CBB",
+            "text": "治"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "836d99a6ccfd1f4f84d77cf0ba75580b4c7ab58d987aaf1d9230dd792ec00bfb",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6cbb",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "治",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6cbb-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-f2c36828b4b22a1b106aefef",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to bring under control",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "整治"
+              },
+              {
+                "value": "zhěng zhì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zheng3zhi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "整治",
+              "pinyin": "zhěng zhì",
+              "meaning": "to bring under control",
+              "audio": "002d9631fcbd09d50298ef3274a0cde4de5faa480febf8485a365bc6e0135a94",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6cbb-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W3527",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "治",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W3527",
+                "label": "to rule; to govern",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-42db6209fa23467dbe7b1fe9",
+                "label": "to fail",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1428",
+                "label": "to economize; to conserve",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6cbb-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "治",
+        "pinyin": "zhì",
+        "meaning": "to rule; to govern",
+        "source": "/stroke-data/6cbb.json",
+        "reference": {
+          "character": "治",
+          "sha256": "4fbf179bdbdebd8f205fedf0f30dd48a1c00edc8f29c60b02c3c5c86654534ba",
+          "medians": [
+            [
+              [
+                233,
+                755
+              ],
+              [
+                329,
+                696
+              ],
+              [
+                357,
+                652
+              ]
+            ],
+            [
+              [
+                126,
+                537
+              ],
+              [
+                212,
+                492
+              ],
+              [
+                244,
+                461
+              ]
+            ],
+            [
+              [
+                193,
+                42
+              ],
+              [
+                179,
+                74
+              ],
+              [
+                176,
+                124
+              ],
+              [
+                309,
+                391
+              ]
+            ],
+            [
+              [
+                571,
+                797
+              ],
+              [
+                606,
+                753
+              ],
+              [
+                601,
+                740
+              ],
+              [
+                544,
+                626
+              ],
+              [
+                435,
+                461
+              ],
+              [
+                428,
+                427
+              ],
+              [
+                480,
+                425
+              ],
+              [
+                609,
+                460
+              ],
+              [
+                774,
+                492
+              ],
+              [
+                790,
+                479
+              ]
+            ],
+            [
+              [
+                725,
+                603
+              ],
+              [
+                842,
+                485
+              ],
+              [
+                860,
+                453
+              ],
+              [
+                868,
+                414
+              ]
+            ],
+            [
+              [
+                405,
+                279
+              ],
+              [
+                428,
+                261
+              ],
+              [
+                445,
+                235
+              ],
+              [
+                492,
+                12
+              ]
+            ],
+            [
+              [
+                459,
+                280
+              ],
+              [
+                488,
+                268
+              ],
+              [
+                715,
+                316
+              ],
+              [
+                749,
+                308
+              ],
+              [
+                778,
+                279
+              ],
+              [
+                742,
+                152
+              ],
+              [
+                716,
+                133
+              ]
+            ],
+            [
+              [
+                509,
+                82
+              ],
+              [
+                523,
+                70
+              ],
+              [
+                706,
+                101
+              ],
+              [
+                761,
+                102
+              ],
+              [
+                785,
+                93
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6cbb-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-bf52d570b87ff2e2a634fb94",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "scorching hot",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "火辣辣"
+              },
+              {
+                "value": "huǒ là là",
+                "mode": "pinyin"
+              },
+              {
+                "value": "huo3la4la4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "火辣辣",
+              "pinyin": "huǒ là là",
+              "meaning": "scorching hot",
+              "audio": "2eeac7ddbb857e9185b5e0bfebf10d311b6f7e5be47d3bea8ebcfc33e96b29ce",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6cbb-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W3527",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to rule; to govern",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "治"
+              },
+              {
+                "value": "zhì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "治",
+              "pinyin": "zhì",
+              "meaning": "to rule; to govern",
+              "audio": "8610cfb0aa2744b7e8e7053657657ce84f99884ba454d2012b7488bd9f548c55",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "8610cfb0aa2744b7e8e7053657657ce84f99884ba454d2012b7488bd9f548c55"
+            ],
+            "transcript": [
+              {
+                "text": "治",
+                "pinyin": "zhì",
+                "meaning": "to rule; to govern",
+                "audio": "8610cfb0aa2744b7e8e7053657657ce84f99884ba454d2012b7488bd9f548c55",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6CBB",
+      "character": "治",
+      "lessonIds": [
+        "LESSON-C-6CBB"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6cbb-word",
+        "EX-CHAR-char-6cbb-recognize",
+        "EX-CHAR-char-6cbb-write",
+        "EX-CHAR-char-6cbb-familiar",
+        "EX-CHAR-char-6cbb-recall"
+      ]
+    },
+    "audio": {
+      "096e7c7aaf845f80c63455a6370176a998ab404a5dbdbcded1dc09153c8cfcaa": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2ec4ca06e6be837aa17c4089977afc9643d5b42222bcaf19dac2d7c54cd6d1a6.mp3",
+          "sha256": "2ec4ca06e6be837aa17c4089977afc9643d5b42222bcaf19dac2d7c54cd6d1a6",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "2ec4ca06e6be837aa17c4089977afc9643d5b42222bcaf19dac2d7c54cd6d1a6",
+            "text": "失效",
+            "words": [
+              {
+                "text": "失效",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b06445261f8ae8c380bc7a54ed238c32ff4aefcb32626a6305bb43c84aeda0e3.mp3",
+          "sha256": "b06445261f8ae8c380bc7a54ed238c32ff4aefcb32626a6305bb43c84aeda0e3",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "b06445261f8ae8c380bc7a54ed238c32ff4aefcb32626a6305bb43c84aeda0e3",
+            "text": "失效",
+            "words": [
+              {
+                "text": "失效",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "2eeac7ddbb857e9185b5e0bfebf10d311b6f7e5be47d3bea8ebcfc33e96b29ce": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c72bc4b264b8a7903bf158b9004b24392756901b54be3cf6f7cfb2f032a72e05.mp3",
+          "sha256": "c72bc4b264b8a7903bf158b9004b24392756901b54be3cf6f7cfb2f032a72e05",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "c72bc4b264b8a7903bf158b9004b24392756901b54be3cf6f7cfb2f032a72e05",
+            "text": "火辣辣",
+            "words": [
+              {
+                "text": "火辣辣",
+                "start": 0.15,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e5c9548a94573564dbcb24923678ee8c5dff9af049862c6d25815dd7698a3cac.mp3",
+          "sha256": "e5c9548a94573564dbcb24923678ee8c5dff9af049862c6d25815dd7698a3cac",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "e5c9548a94573564dbcb24923678ee8c5dff9af049862c6d25815dd7698a3cac",
+            "text": "火辣辣",
+            "words": [
+              {
+                "text": "火辣辣",
+                "start": 0.15,
+                "end": 0.69
+              }
+            ]
+          }
+        }
+      },
+      "002d9631fcbd09d50298ef3274a0cde4de5faa480febf8485a365bc6e0135a94": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/925ec5e26cf7960bba9acbbb2bcdd8455148a1168e6ca01f35600d18b3196341.mp3",
+          "sha256": "925ec5e26cf7960bba9acbbb2bcdd8455148a1168e6ca01f35600d18b3196341",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "925ec5e26cf7960bba9acbbb2bcdd8455148a1168e6ca01f35600d18b3196341",
+            "text": "整治",
+            "words": [
+              {
+                "text": "整治",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5c5db62b68d4a1c7b800864e61d4df8777fd7a2d90f4fac52bb27f927521bd5f.mp3",
+          "sha256": "5c5db62b68d4a1c7b800864e61d4df8777fd7a2d90f4fac52bb27f927521bd5f",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "5c5db62b68d4a1c7b800864e61d4df8777fd7a2d90f4fac52bb27f927521bd5f",
+            "text": "整治",
+            "words": [
+              {
+                "text": "整治",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "f3eb6a9cb9c8f28fae5ec8d2966126b1bc4f53b995e362c33b61b1ae37e08938": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c4c5c21105d2ff7c9d28942840d3f064907005693696d472a954ffbebb8824c3.mp3",
+          "sha256": "c4c5c21105d2ff7c9d28942840d3f064907005693696d472a954ffbebb8824c3",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "c4c5c21105d2ff7c9d28942840d3f064907005693696d472a954ffbebb8824c3",
+            "text": "节约",
+            "words": [
+              {
+                "text": "节约",
+                "start": 0.16,
+                "end": 0.54
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/6f322e8753adf9bc8fd4e3c5161745d966a893f00b48e4492b375cae8eff70b4.mp3",
+          "sha256": "6f322e8753adf9bc8fd4e3c5161745d966a893f00b48e4492b375cae8eff70b4",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "6f322e8753adf9bc8fd4e3c5161745d966a893f00b48e4492b375cae8eff70b4",
+            "text": "节约",
+            "words": [
+              {
+                "text": "节约",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "8610cfb0aa2744b7e8e7053657657ce84f99884ba454d2012b7488bd9f548c55": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/00689811512e04bdc0b84e4616be14b2bf3b2463720b34294a4b2733d5a5259e.mp3",
+          "sha256": "00689811512e04bdc0b84e4616be14b2bf3b2463720b34294a4b2733d5a5259e",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "00689811512e04bdc0b84e4616be14b2bf3b2463720b34294a4b2733d5a5259e",
+            "text": "治",
+            "words": [
+              {
+                "text": "治",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/17db1df4ffc7758ffda9864be1ff827c51f9b7a6440d6195b699a3ddc71f7e19.mp3",
+          "sha256": "17db1df4ffc7758ffda9864be1ff827c51f9b7a6440d6195b699a3ddc71f7e19",
+          "byteLength": 7533,
+          "readAlong": {
+            "audioSha256": "17db1df4ffc7758ffda9864be1ff827c51f9b7a6440d6195b699a3ddc71f7e19",
+            "text": "治",
+            "words": [
+              {
+                "text": "治",
+                "start": 0.14,
+                "end": 0.28
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

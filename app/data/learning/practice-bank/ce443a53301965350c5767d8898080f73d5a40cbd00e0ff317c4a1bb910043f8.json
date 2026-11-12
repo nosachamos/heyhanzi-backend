@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0806",
+  "targetId": "W0806",
+  "steps": [
+    {
+      "id": "BANK-W0806-W0806",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0806-W0806",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "season",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "季节"
+            },
+            {
+              "value": "jìjié",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ji4jie2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "季节",
+            "pinyin": "jìjié",
+            "meaning": "season",
+            "singleWord": true,
+            "audio": "bd52d94021776b166febb461cc4f12e4eae60a855ea88e820ebbb680c649cf96"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "bd52d94021776b166febb461cc4f12e4eae60a855ea88e820ebbb680c649cf96": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-048d2db824329f6b6c793a20572ec22b0e03fdeed934d30a7b56330776977338.mp3",
+        "sha256": "048d2db824329f6b6c793a20572ec22b0e03fdeed934d30a7b56330776977338",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "048d2db824329f6b6c793a20572ec22b0e03fdeed934d30a7b56330776977338",
+          "text": "季节",
+          "words": [
+            {
+              "text": "季节",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-14f076e3f4c63ddecc0064d82083372b8349ab6859709ff00d1e1a53f726f71f.mp3",
+        "sha256": "14f076e3f4c63ddecc0064d82083372b8349ab6859709ff00d1e1a53f726f71f",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "14f076e3f4c63ddecc0064d82083372b8349ab6859709ff00d1e1a53f726f71f",
+          "text": "季节",
+          "words": [
+            {
+              "text": "季节",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0806",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0806-W0806",
+      "question_ids": [
+        "BANK-W0806-W0806"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-04-P01",
+    "stepId": "S-U3-04-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5b63"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0730",
+  "targetId": "W0730",
+  "steps": [
+    {
+      "id": "BANK-W0730-W0730",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0730-W0730",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "section; classifier for stretches or passages",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "段"
+            },
+            {
+              "value": "duàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "duan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "段",
+            "pinyin": "duàn",
+            "meaning": "section; classifier for stretches or passages",
+            "singleWord": true,
+            "audio": "6ed235c0d055d97fd5d94f3a99d02d05573b5bcd5dadda892bfdaacfb4a12d71"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "6ed235c0d055d97fd5d94f3a99d02d05573b5bcd5dadda892bfdaacfb4a12d71": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-8ed4ec26c2852a9af3047275a0b71270ad561b9053386f2ba84cff24bfd4fe7c.mp3",
+        "sha256": "8ed4ec26c2852a9af3047275a0b71270ad561b9053386f2ba84cff24bfd4fe7c",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "8ed4ec26c2852a9af3047275a0b71270ad561b9053386f2ba84cff24bfd4fe7c",
+          "text": "段",
+          "words": [
+            {
+              "text": "段",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-acd65b1c0891f217cf464df9370f08a5ee235c07bb2f9a02843895d3cf907d3b.mp3",
+        "sha256": "acd65b1c0891f217cf464df9370f08a5ee235c07bb2f9a02843895d3cf907d3b",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "acd65b1c0891f217cf464df9370f08a5ee235c07bb2f9a02843895d3cf907d3b",
+          "text": "段",
+          "words": [
+            {
+              "text": "段",
+              "start": 0.12,
+              "end": 0.24
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0730",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0730-W0730",
+      "question_ids": [
+        "BANK-W0730-W0730"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-06-P01",
+    "stepId": "S-U3-06-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6bb5"
+    ],
+    "grammarLessonIds": []
+  }
+}

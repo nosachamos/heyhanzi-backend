@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1660",
+  "targetId": "W1660",
+  "steps": [
+    {
+      "id": "BANK-W1660-W1660",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1660-W1660",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "day; a date",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "日子"
+            },
+            {
+              "value": "rìzi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ri4zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "日子",
+            "pinyin": "rìzi",
+            "meaning": "day; a date",
+            "singleWord": true,
+            "audio": "8cfdc9d089c0ea85f4b0e295c61153dde9bea128329b8a02ce551fcd942fd50a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8cfdc9d089c0ea85f4b0e295c61153dde9bea128329b8a02ce551fcd942fd50a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-dc7df9421ed1b2d26e9052002165f6b5cbb78fc67940f29a398161eb36f09779.mp3",
+        "sha256": "dc7df9421ed1b2d26e9052002165f6b5cbb78fc67940f29a398161eb36f09779",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "dc7df9421ed1b2d26e9052002165f6b5cbb78fc67940f29a398161eb36f09779",
+          "text": "日子",
+          "words": [
+            {
+              "text": "日子",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-000bf5fd3aff838a4ed1fd6488d0e357713fdaa223bfd4c103a17962c81b9496.mp3",
+        "sha256": "000bf5fd3aff838a4ed1fd6488d0e357713fdaa223bfd4c103a17962c81b9496",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "000bf5fd3aff838a4ed1fd6488d0e357713fdaa223bfd4c103a17962c81b9496",
+          "text": "日子",
+          "words": [
+            {
+              "text": "日子",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1660",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1660-W1660",
+      "question_ids": [
+        "BANK-W1660-W1660"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-06",
+    "stepId": "S-U4-06-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-65e5"
+    ],
+    "grammarLessonIds": []
+  }
+}

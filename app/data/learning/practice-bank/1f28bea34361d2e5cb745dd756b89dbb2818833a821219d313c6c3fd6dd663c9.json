@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3148",
+  "targetId": "W3148",
+  "steps": [
+    {
+      "id": "BANK-W3148-W3148",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3148-W3148",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "dessert",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "甜品"
+            },
+            {
+              "value": "tiánpǐn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "tian2pin3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "甜品",
+            "pinyin": "tiánpǐn",
+            "meaning": "dessert",
+            "singleWord": true,
+            "audio": "9f2bb806b676bc7e2ca94b0529392b493bd0af6103015589ca25a2e98662d71f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "9f2bb806b676bc7e2ca94b0529392b493bd0af6103015589ca25a2e98662d71f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-c066aa4d8dce7627dfe8b94fcfb347df437194f64065d029e1d5a1f4eb708476.mp3",
+        "sha256": "c066aa4d8dce7627dfe8b94fcfb347df437194f64065d029e1d5a1f4eb708476",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "c066aa4d8dce7627dfe8b94fcfb347df437194f64065d029e1d5a1f4eb708476",
+          "text": "甜品",
+          "words": [
+            {
+              "text": "甜品",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ab3419745b5ef88188a7668645d81df0649127293c69bc59308496d5f065b479.mp3",
+        "sha256": "ab3419745b5ef88188a7668645d81df0649127293c69bc59308496d5f065b479",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "ab3419745b5ef88188a7668645d81df0649127293c69bc59308496d5f065b479",
+          "text": "甜品",
+          "words": [
+            {
+              "text": "甜品",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3148",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3148-W3148",
+      "question_ids": [
+        "BANK-W3148-W3148"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-08",
+    "stepId": "S-U5-08-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-54c1"
+    ],
+    "grammarLessonIds": []
+  }
+}

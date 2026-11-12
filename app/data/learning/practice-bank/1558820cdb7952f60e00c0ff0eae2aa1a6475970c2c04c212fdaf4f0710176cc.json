@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1942",
+  "targetId": "W1942",
+  "steps": [
+    {
+      "id": "BANK-W1942-W1942",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1942-W1942",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "month",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "月份"
+            },
+            {
+              "value": "yuèfèn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yue4fen4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "月份",
+            "pinyin": "yuèfèn",
+            "meaning": "month",
+            "singleWord": true,
+            "audio": "db5647882dbfc1fa22d9de150c415cbd0dc97f212ec91af297e6ead9f8430a5e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "db5647882dbfc1fa22d9de150c415cbd0dc97f212ec91af297e6ead9f8430a5e": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b363101a661d363122cc16d78737482f8b779124b2104a5e342fa6d123e50cbb.mp3",
+        "sha256": "b363101a661d363122cc16d78737482f8b779124b2104a5e342fa6d123e50cbb",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "b363101a661d363122cc16d78737482f8b779124b2104a5e342fa6d123e50cbb",
+          "text": "月份",
+          "words": [
+            {
+              "text": "月份",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f802ff0665517fb843fe83fd8f13f771f036860ce3d828e4357528f7fc03e5f7.mp3",
+        "sha256": "f802ff0665517fb843fe83fd8f13f771f036860ce3d828e4357528f7fc03e5f7",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "f802ff0665517fb843fe83fd8f13f771f036860ce3d828e4357528f7fc03e5f7",
+          "text": "月份",
+          "words": [
+            {
+              "text": "月份",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1942",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1942-W1942",
+      "question_ids": [
+        "BANK-W1942-W1942"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-06",
+    "stepId": "S-U4-06-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4efd"
+    ],
+    "grammarLessonIds": []
+  }
+}

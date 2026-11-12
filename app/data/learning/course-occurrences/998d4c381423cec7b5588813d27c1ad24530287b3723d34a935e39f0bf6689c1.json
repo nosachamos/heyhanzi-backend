@@ -1,0 +1,761 @@
+{
+  "id": "EX-CHAR-char-8bde",
+  "revision": 2,
+  "unit": "U6-41",
+  "stage": "ST-HSK6",
+  "after": "S-U6-41-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "诞",
+  "sourceBlockId": "mandarin-simplified-v1-char-8bde",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-8bde",
+        "text": "诞",
+        "pinyin": "dàn",
+        "meaning": "birth; birthday",
+        "characters": [
+          {
+            "id": "C-8BDE",
+            "text": "诞"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-1e5f2cf506b8627a3f743c71",
+        "text": "大使馆",
+        "pinyin": "dà shǐ guǎn",
+        "meaning": "embassy",
+        "characters": [
+          {
+            "id": "C-5927",
+            "text": "大"
+          },
+          {
+            "id": "C-4F7F",
+            "text": "使"
+          },
+          {
+            "id": "C-9986",
+            "text": "馆"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-3ad101313fabc2d52d80dd8d",
+        "text": "贸易",
+        "pinyin": "màoyì",
+        "meaning": "(commercial) trade",
+        "characters": [
+          {
+            "id": "C-8D38",
+            "text": "贸"
+          },
+          {
+            "id": "C-6613",
+            "text": "易"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-bd1c1a7239df987f77bf5b5d",
+        "text": "年级",
+        "pinyin": "niánjí",
+        "meaning": "grade; year (in school, college etc)",
+        "characters": [
+          {
+            "id": "C-5E74",
+            "text": "年"
+          },
+          {
+            "id": "C-7EA7",
+            "text": "级"
+          }
+        ]
+      },
+      {
+        "id": "W3883",
+        "text": "诞生",
+        "pinyin": "dànshēng",
+        "meaning": "to be born",
+        "characters": [
+          {
+            "id": "C-8BDE",
+            "text": "诞"
+          },
+          {
+            "id": "C-751F",
+            "text": "生"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "d150592986ae74a9ca4a2600f4e48ec81e56f9923d3f221117a4f710f2922943",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8bde",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "诞",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8bde-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3883",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to be born",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "诞生"
+              },
+              {
+                "value": "dànshēng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "dan4sheng1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "诞生",
+              "pinyin": "dànshēng",
+              "meaning": "to be born",
+              "audio": "84433f1b37cb541ceea573e77b51fd4d6a71df131506fe01413fd0ce5c1f4e40",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bde-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-8bde",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "诞",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-3ad101313fabc2d52d80dd8d",
+                "label": "(commercial) trade",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-8bde",
+                "label": "birth; birthday",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-bd1c1a7239df987f77bf5b5d",
+                "label": "grade; year (in school, college etc)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bde-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "诞",
+        "pinyin": "dàn",
+        "meaning": "birth; birthday",
+        "source": "/stroke-data/8bde.json",
+        "reference": {
+          "character": "诞",
+          "sha256": "a0ec2748dfad9735d11e474c3db6109556382e3cadb84f32225882bb8d34f4c3",
+          "medians": [
+            [
+              [
+                230,
+                775
+              ],
+              [
+                319,
+                715
+              ],
+              [
+                342,
+                678
+              ]
+            ],
+            [
+              [
+                87,
+                458
+              ],
+              [
+                135,
+                457
+              ],
+              [
+                211,
+                498
+              ],
+              [
+                259,
+                505
+              ],
+              [
+                266,
+                498
+              ],
+              [
+                266,
+                473
+              ],
+              [
+                242,
+                182
+              ],
+              [
+                251,
+                146
+              ],
+              [
+                290,
+                158
+              ],
+              [
+                372,
+                231
+              ]
+            ],
+            [
+              [
+                829,
+                670
+              ],
+              [
+                812,
+                674
+              ],
+              [
+                761,
+                669
+              ],
+              [
+                697,
+                614
+              ],
+              [
+                604,
+                557
+              ],
+              [
+                583,
+                554
+              ],
+              [
+                578,
+                543
+              ]
+            ],
+            [
+              [
+                696,
+                583
+              ],
+              [
+                715,
+                571
+              ],
+              [
+                726,
+                549
+              ],
+              [
+                724,
+                296
+              ],
+              [
+                708,
+                282
+              ]
+            ],
+            [
+              [
+                753,
+                412
+              ],
+              [
+                764,
+                423
+              ],
+              [
+                793,
+                432
+              ],
+              [
+                868,
+                448
+              ],
+              [
+                890,
+                446
+              ]
+            ],
+            [
+              [
+                578,
+                423
+              ],
+              [
+                599,
+                407
+              ],
+              [
+                615,
+                380
+              ],
+              [
+                605,
+                270
+              ],
+              [
+                610,
+                243
+              ],
+              [
+                649,
+                241
+              ],
+              [
+                858,
+                275
+              ],
+              [
+                913,
+                262
+              ]
+            ],
+            [
+              [
+                381,
+                555
+              ],
+              [
+                462,
+                582
+              ],
+              [
+                480,
+                582
+              ],
+              [
+                496,
+                571
+              ],
+              [
+                470,
+                485
+              ],
+              [
+                436,
+                406
+              ],
+              [
+                444,
+                397
+              ],
+              [
+                479,
+                392
+              ],
+              [
+                512,
+                376
+              ],
+              [
+                485,
+                271
+              ],
+              [
+                456,
+                205
+              ],
+              [
+                421,
+                142
+              ],
+              [
+                368,
+                78
+              ],
+              [
+                332,
+                47
+              ]
+            ],
+            [
+              [
+                357,
+                291
+              ],
+              [
+                424,
+                279
+              ],
+              [
+                496,
+                233
+              ],
+              [
+                502,
+                223
+              ],
+              [
+                598,
+                155
+              ],
+              [
+                751,
+                67
+              ],
+              [
+                809,
+                51
+              ],
+              [
+                976,
+                54
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8bde-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-1e5f2cf506b8627a3f743c71",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "embassy",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "大使馆"
+              },
+              {
+                "value": "dà shǐ guǎn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "da4shi3guan3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "大使馆",
+              "pinyin": "dà shǐ guǎn",
+              "meaning": "embassy",
+              "audio": "14fe55dad2d5a720f9b1b29d0ca586826cea01a26c37eed686c091c894c3721a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bde-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-8bde",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "birth; birthday",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "诞"
+              },
+              {
+                "value": "dàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "dan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "诞",
+              "pinyin": "dàn",
+              "meaning": "birth; birthday",
+              "audio": "af1e6a0f2170117d0f44d72f5880a391205978b601e8a7749b691ae5d91e5227",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "af1e6a0f2170117d0f44d72f5880a391205978b601e8a7749b691ae5d91e5227"
+            ],
+            "transcript": [
+              {
+                "text": "诞",
+                "pinyin": "dàn",
+                "meaning": "birth; birthday",
+                "audio": "af1e6a0f2170117d0f44d72f5880a391205978b601e8a7749b691ae5d91e5227",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8BDE",
+      "character": "诞",
+      "lessonIds": [
+        "LESSON-C-8BDE"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8bde-word",
+        "EX-CHAR-char-8bde-recognize",
+        "EX-CHAR-char-8bde-write",
+        "EX-CHAR-char-8bde-familiar",
+        "EX-CHAR-char-8bde-recall"
+      ]
+    },
+    "audio": {
+      "af1e6a0f2170117d0f44d72f5880a391205978b601e8a7749b691ae5d91e5227": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-331a2ef46de51c526ec7ff74bff2f5ac0d9625af2b52aa072a5df48607eeeebd.mp3",
+          "sha256": "331a2ef46de51c526ec7ff74bff2f5ac0d9625af2b52aa072a5df48607eeeebd",
+          "byteLength": 10701,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "331a2ef46de51c526ec7ff74bff2f5ac0d9625af2b52aa072a5df48607eeeebd",
+            "text": "诞",
+            "words": [
+              {
+                "text": "诞",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-619607ab2541d62b51774ec33c2300c48aa41915b9cedf2eb83602dcf5059ff5.mp3",
+          "sha256": "619607ab2541d62b51774ec33c2300c48aa41915b9cedf2eb83602dcf5059ff5",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "619607ab2541d62b51774ec33c2300c48aa41915b9cedf2eb83602dcf5059ff5",
+            "text": "诞",
+            "words": [
+              {
+                "text": "诞",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "14fe55dad2d5a720f9b1b29d0ca586826cea01a26c37eed686c091c894c3721a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b6f87c3042cc1af466495cb7ed7e7ecfbfd264b2333a9347be787f4f5e72885f.mp3",
+          "sha256": "b6f87c3042cc1af466495cb7ed7e7ecfbfd264b2333a9347be787f4f5e72885f",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "b6f87c3042cc1af466495cb7ed7e7ecfbfd264b2333a9347be787f4f5e72885f",
+            "text": "大使馆",
+            "words": [
+              {
+                "text": "大使馆",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/50a41a7882eee4f0e12bba39d9a342a3f8300181c8370bda864d63a7c13ea962.mp3",
+          "sha256": "50a41a7882eee4f0e12bba39d9a342a3f8300181c8370bda864d63a7c13ea962",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "50a41a7882eee4f0e12bba39d9a342a3f8300181c8370bda864d63a7c13ea962",
+            "text": "大使馆",
+            "words": [
+              {
+                "text": "大使馆",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "f54f1ce583a9505272eb4d7aefc0b966efcdcb22a08f9dcaa2b13f8caca97cfe": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a8b852071af2e86b321ee26a59cb581b0185ed7c30855fea60b66b8bae1d8630.mp3",
+          "sha256": "a8b852071af2e86b321ee26a59cb581b0185ed7c30855fea60b66b8bae1d8630",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "a8b852071af2e86b321ee26a59cb581b0185ed7c30855fea60b66b8bae1d8630",
+            "text": "贸易",
+            "words": [
+              {
+                "text": "贸易",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/49c79599b15a429f3f9e37a2484a83a7f51638345cafc38e75e713bf212d8727.mp3",
+          "sha256": "49c79599b15a429f3f9e37a2484a83a7f51638345cafc38e75e713bf212d8727",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "49c79599b15a429f3f9e37a2484a83a7f51638345cafc38e75e713bf212d8727",
+            "text": "贸易",
+            "words": [
+              {
+                "text": "贸易",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "ac718cd0d9bf57306276fc3ed14a648b4baf680faa4b8b5f4add1267b31f62ce": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-49190a3e93c1d964d956034bd861b3f88d671fc0a7711abafccab46810f7c40a.mp3",
+          "sha256": "49190a3e93c1d964d956034bd861b3f88d671fc0a7711abafccab46810f7c40a",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "49190a3e93c1d964d956034bd861b3f88d671fc0a7711abafccab46810f7c40a",
+            "text": "年级",
+            "words": [
+              {
+                "text": "年级",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-65a293b55ea0056770f8d89d4d1b6c4fabc75d1c921aabbbadf182f417aebd59.mp3",
+          "sha256": "65a293b55ea0056770f8d89d4d1b6c4fabc75d1c921aabbbadf182f417aebd59",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "65a293b55ea0056770f8d89d4d1b6c4fabc75d1c921aabbbadf182f417aebd59",
+            "text": "年级",
+            "words": [
+              {
+                "text": "年级",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "84433f1b37cb541ceea573e77b51fd4d6a71df131506fe01413fd0ce5c1f4e40": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d899fd437a34e25108ae59637f265a298bba944d8d1d3e53133ef16c6df03428.mp3",
+          "sha256": "d899fd437a34e25108ae59637f265a298bba944d8d1d3e53133ef16c6df03428",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "d899fd437a34e25108ae59637f265a298bba944d8d1d3e53133ef16c6df03428",
+            "text": "诞生",
+            "words": [
+              {
+                "text": "诞生",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/14153cacf22600405d0cc4edf1912fb57923fec11f43568d09f97de15ccb7a3d.mp3",
+          "sha256": "14153cacf22600405d0cc4edf1912fb57923fec11f43568d09f97de15ccb7a3d",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "14153cacf22600405d0cc4edf1912fb57923fec11f43568d09f97de15ccb7a3d",
+            "text": "诞生",
+            "words": [
+              {
+                "text": "诞生",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

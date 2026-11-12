@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1016",
+  "targetId": "W1016",
+  "steps": [
+    {
+      "id": "BANK-W1016-W1016",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1016-W1016",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "mailbox; post office box",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "邮箱"
+            },
+            {
+              "value": "yóuxiāng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "you2xiang1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "邮箱",
+            "pinyin": "yóuxiāng",
+            "meaning": "mailbox; post office box",
+            "singleWord": true,
+            "audio": "70a542df61b2d80faabfa2ee75bb6d231bb6e7e93149a81c98cc2a20b3eb2179"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "70a542df61b2d80faabfa2ee75bb6d231bb6e7e93149a81c98cc2a20b3eb2179": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1cf8a17dae12a7cdec9841e4f553e72b40d040085ca5b47626e677a992e69473.mp3",
+        "sha256": "1cf8a17dae12a7cdec9841e4f553e72b40d040085ca5b47626e677a992e69473",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "1cf8a17dae12a7cdec9841e4f553e72b40d040085ca5b47626e677a992e69473",
+          "text": "邮箱",
+          "words": [
+            {
+              "text": "邮箱",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/ea20a7c635697718ddebbee8bf8f273a52f222d5fde0719317c13a3eefa437f0.mp3",
+        "sha256": "ea20a7c635697718ddebbee8bf8f273a52f222d5fde0719317c13a3eefa437f0",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "ea20a7c635697718ddebbee8bf8f273a52f222d5fde0719317c13a3eefa437f0",
+          "text": "邮箱",
+          "words": [
+            {
+              "text": "邮箱",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1016",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1016-W1016",
+      "question_ids": [
+        "BANK-W1016-W1016"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-03",
+    "stepId": "S-U3-03-words-r4-31",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-90ae"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W3999",
+  "targetId": "W3999",
+  "steps": [
+    {
+      "id": "BANK-W3999-W3999",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3999-W3999",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "lung",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "肺"
+            },
+            {
+              "value": "fèi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fei4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "肺",
+            "pinyin": "fèi",
+            "meaning": "lung",
+            "singleWord": true,
+            "audio": "c8777aacd94e2823dcb4fd3821dd150fec2b982ad9af588d710f6d70c19cf5df"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c8777aacd94e2823dcb4fd3821dd150fec2b982ad9af588d710f6d70c19cf5df": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/739fbc8fd451a653ca467e7250c9f15729d41727e4fee299566afb324eae9ae2.mp3",
+        "sha256": "739fbc8fd451a653ca467e7250c9f15729d41727e4fee299566afb324eae9ae2",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "739fbc8fd451a653ca467e7250c9f15729d41727e4fee299566afb324eae9ae2",
+          "text": "肺",
+          "words": [
+            {
+              "text": "肺",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5b6f2b88f379361e601434242a0aaf7f3bd88f7a6d11ac2b84c2b7e6de4f4ac1.mp3",
+        "sha256": "5b6f2b88f379361e601434242a0aaf7f3bd88f7a6d11ac2b84c2b7e6de4f4ac1",
+        "byteLength": 7533,
+        "qualityWarning": "too-fast",
+        "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+        "readAlong": {
+          "audioSha256": "5b6f2b88f379361e601434242a0aaf7f3bd88f7a6d11ac2b84c2b7e6de4f4ac1",
+          "text": "肺",
+          "words": [
+            {
+              "text": "肺",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3999",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3999-W3999",
+      "question_ids": [
+        "BANK-W3999-W3999"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-16",
+    "stepId": "S-U6-16-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-80ba"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1020",
+  "targetId": "W1020",
+  "steps": [
+    {
+      "id": "BANK-W1020-W1020",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1020-W1020",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "badminton; shuttlecock",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "羽毛球"
+            },
+            {
+              "value": "yǔmáoqiú",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yu3mao2qiu2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "羽毛球",
+            "pinyin": "yǔmáoqiú",
+            "meaning": "badminton; shuttlecock",
+            "singleWord": true,
+            "audio": "f09553b9b7df26a6b9f0048d18d2a30b74a267b388ffb8959326cfaa628d3d01"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f09553b9b7df26a6b9f0048d18d2a30b74a267b388ffb8959326cfaa628d3d01": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7c613379e9b6b4f8dd0e13cbe38104411e4925ddd146ff9dcfd86474ab8780bb.mp3",
+        "sha256": "7c613379e9b6b4f8dd0e13cbe38104411e4925ddd146ff9dcfd86474ab8780bb",
+        "byteLength": 14157,
+        "readAlong": {
+          "audioSha256": "7c613379e9b6b4f8dd0e13cbe38104411e4925ddd146ff9dcfd86474ab8780bb",
+          "text": "羽毛球",
+          "words": [
+            {
+              "text": "羽毛球",
+              "start": 0.15,
+              "end": 0.6299999999999999
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/089826a6287352f41e6ed86e5e4df5b92e8773f6175b4cff524305efafd14ea7.mp3",
+        "sha256": "089826a6287352f41e6ed86e5e4df5b92e8773f6175b4cff524305efafd14ea7",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "089826a6287352f41e6ed86e5e4df5b92e8773f6175b4cff524305efafd14ea7",
+          "text": "羽毛球",
+          "words": [
+            {
+              "text": "羽毛球",
+              "start": 0.15,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1020",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1020-W1020",
+      "question_ids": [
+        "BANK-W1020-W1020"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-12",
+    "stepId": "S-U3-12-words-r4-5",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7fbd"
+    ],
+    "grammarLessonIds": []
+  }
+}

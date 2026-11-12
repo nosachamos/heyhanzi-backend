@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1860",
+  "targetId": "W1860",
+  "steps": [
+    {
+      "id": "BANK-W1860-W1860",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1860-W1860",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "confidence; faith",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "信心"
+            },
+            {
+              "value": "xìnxīn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xin4xin1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "信心",
+            "pinyin": "xìnxīn",
+            "meaning": "confidence; faith",
+            "singleWord": true,
+            "audio": "a54db81b5979df3991af869ac571a7370416827e4508d94e15c92e2ac8fe0468"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a54db81b5979df3991af869ac571a7370416827e4508d94e15c92e2ac8fe0468": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-7b281b5ee9a1d74375c182a6ae124855dc046067a04681c8034c96465e129afb.mp3",
+        "sha256": "7b281b5ee9a1d74375c182a6ae124855dc046067a04681c8034c96465e129afb",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "7b281b5ee9a1d74375c182a6ae124855dc046067a04681c8034c96465e129afb",
+          "text": "信心",
+          "words": [
+            {
+              "text": "信心",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-4f1680b3d84742abc69402a8f0720725afd0e4c89785bfe4db25bd9d5422d32d.mp3",
+        "sha256": "4f1680b3d84742abc69402a8f0720725afd0e4c89785bfe4db25bd9d5422d32d",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "4f1680b3d84742abc69402a8f0720725afd0e4c89785bfe4db25bd9d5422d32d",
+          "text": "信心",
+          "words": [
+            {
+              "text": "信心",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1860",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1860-W1860",
+      "question_ids": [
+        "BANK-W1860-W1860"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-24",
+    "stepId": "S-U4-24-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4fe1"
+    ],
+    "grammarLessonIds": []
+  }
+}

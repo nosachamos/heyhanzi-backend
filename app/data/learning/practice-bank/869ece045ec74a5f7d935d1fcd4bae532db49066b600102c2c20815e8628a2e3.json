@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2000",
+  "targetId": "W2000",
+  "steps": [
+    {
+      "id": "BANK-W2000-W2000",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2000-W2000",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to transmit; to forward",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "转发"
+            },
+            {
+              "value": "zhuǎnfā",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhuan3fa1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "转发",
+            "pinyin": "zhuǎnfā",
+            "meaning": "to transmit; to forward",
+            "singleWord": true,
+            "audio": "0ab6138187d5893610e963526f7ae891b26e01a3aef1e57f2492d8f5c4f51888"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "0ab6138187d5893610e963526f7ae891b26e01a3aef1e57f2492d8f5c4f51888": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-b2fcba5fd958ede91ff597fc832c5524ea292678266923848c8ba4bd0c001ebd.mp3",
+        "sha256": "b2fcba5fd958ede91ff597fc832c5524ea292678266923848c8ba4bd0c001ebd",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "b2fcba5fd958ede91ff597fc832c5524ea292678266923848c8ba4bd0c001ebd",
+          "text": "转发",
+          "words": [
+            {
+              "text": "转发",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2e16d7fc65ba81363916703f0ef9198fa0401419ef6cadae0831f0960fc8cf34.mp3",
+        "sha256": "2e16d7fc65ba81363916703f0ef9198fa0401419ef6cadae0831f0960fc8cf34",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "2e16d7fc65ba81363916703f0ef9198fa0401419ef6cadae0831f0960fc8cf34",
+          "text": "转发",
+          "words": [
+            {
+              "text": "转发",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2000",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2000-W2000",
+      "question_ids": [
+        "BANK-W2000-W2000"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-27",
+    "stepId": "S-U4-27-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8f6c"
+    ],
+    "grammarLessonIds": []
+  }
+}

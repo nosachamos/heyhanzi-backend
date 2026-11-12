@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0442",
+  "targetId": "W0442",
+  "steps": [
+    {
+      "id": "BANK-W0442-W0442",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0442-W0442",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "boyfriend",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "男朋友"
+            },
+            {
+              "value": "nánpéngyou",
+              "mode": "pinyin"
+            },
+            {
+              "value": "nan2peng2you5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "男朋友",
+            "pinyin": "nánpéngyou",
+            "meaning": "boyfriend",
+            "singleWord": true,
+            "audio": "4bcbe5ed70a9e0817303d1ff8536a37f95d42ec1c74ce5deac3d78cf0f4acd90"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "4bcbe5ed70a9e0817303d1ff8536a37f95d42ec1c74ce5deac3d78cf0f4acd90": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b47a262c2e098efff035f9161be3928338626762abe806fe010fb4cfc9fde433.mp3",
+        "sha256": "b47a262c2e098efff035f9161be3928338626762abe806fe010fb4cfc9fde433",
+        "byteLength": 15309,
+        "readAlong": {
+          "audioSha256": "b47a262c2e098efff035f9161be3928338626762abe806fe010fb4cfc9fde433",
+          "text": "男朋友",
+          "words": [
+            {
+              "text": "男朋友",
+              "start": 0.15,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/cc0e2013017b4b351e6677d0219a59384a7ea43d676bbc794333fcca13ed50c8.mp3",
+        "sha256": "cc0e2013017b4b351e6677d0219a59384a7ea43d676bbc794333fcca13ed50c8",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "cc0e2013017b4b351e6677d0219a59384a7ea43d676bbc794333fcca13ed50c8",
+          "text": "男朋友",
+          "words": [
+            {
+              "text": "男朋友",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0442",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0442-W0442",
+      "question_ids": [
+        "BANK-W0442-W0442"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U04",
+    "stepId": "S-U04-words-r4-28",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7537"
+    ],
+    "grammarLessonIds": []
+  }
+}

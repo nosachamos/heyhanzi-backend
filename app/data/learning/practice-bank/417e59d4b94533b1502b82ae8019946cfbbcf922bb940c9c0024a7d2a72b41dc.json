@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0343",
+  "targetId": "W0343",
+  "steps": [
+    {
+      "id": "BANK-W0343-W0343",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0343-W0343",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "Excuse me, may I ask...?",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "请问"
+            },
+            {
+              "value": "qǐngwèn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qing3wen4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "请问",
+            "pinyin": "qǐngwèn",
+            "meaning": "Excuse me, may I ask...?",
+            "singleWord": true,
+            "audio": "a1c15440ad5f46dd2cf9a2b9c0c7ebe0c386b526a98c6a1b244c0e6df3f0f23a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a1c15440ad5f46dd2cf9a2b9c0c7ebe0c386b526a98c6a1b244c0e6df3f0f23a": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/865d64f3e1d0a2210c7d1baf4a9c47b5bbc193bb73c914b7b1b9f3d7d83f006c.mp3",
+        "sha256": "865d64f3e1d0a2210c7d1baf4a9c47b5bbc193bb73c914b7b1b9f3d7d83f006c",
+        "byteLength": 16749,
+        "readAlong": {
+          "audioSha256": "865d64f3e1d0a2210c7d1baf4a9c47b5bbc193bb73c914b7b1b9f3d7d83f006c",
+          "text": "请问",
+          "words": [
+            {
+              "text": "请问",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e50638d2d328c895697411815ac20a7e29eb71f7162477803f6927533685e3e7.mp3",
+        "sha256": "e50638d2d328c895697411815ac20a7e29eb71f7162477803f6927533685e3e7",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "e50638d2d328c895697411815ac20a7e29eb71f7162477803f6927533685e3e7",
+          "text": "请问",
+          "words": [
+            {
+              "text": "请问",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0343",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0343-W0343",
+      "question_ids": [
+        "BANK-W0343-W0343"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U01",
+    "stepId": "S-U01-words-r4-16",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-95ee"
+    ],
+    "grammarLessonIds": []
+  }
+}

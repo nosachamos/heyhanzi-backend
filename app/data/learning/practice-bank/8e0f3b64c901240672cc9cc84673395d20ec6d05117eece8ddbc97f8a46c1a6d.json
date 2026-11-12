@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1868",
+  "targetId": "W1868",
+  "steps": [
+    {
+      "id": "BANK-W1868-W1868",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1868-W1868",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "brothers",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "兄弟"
+            },
+            {
+              "value": "xiōngdì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xiong1di4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "兄弟",
+            "pinyin": "xiōngdì",
+            "meaning": "brothers",
+            "singleWord": true,
+            "audio": "7746c419215a1d8b694b10890adb612c2be7968adec14295f8d102af5cc5a49c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7746c419215a1d8b694b10890adb612c2be7968adec14295f8d102af5cc5a49c": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/21e1085a3ef20d3b4e1f09b42af6c8a08db2109b8bf3952170db36ae6632bc6b.mp3",
+        "sha256": "21e1085a3ef20d3b4e1f09b42af6c8a08db2109b8bf3952170db36ae6632bc6b",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "21e1085a3ef20d3b4e1f09b42af6c8a08db2109b8bf3952170db36ae6632bc6b",
+          "text": "兄弟",
+          "words": [
+            {
+              "text": "兄弟",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f30080152db314127a07c3e33125f6197ba4b6376a6c1a470b743f167fd0f676.mp3",
+        "sha256": "f30080152db314127a07c3e33125f6197ba4b6376a6c1a470b743f167fd0f676",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "f30080152db314127a07c3e33125f6197ba4b6376a6c1a470b743f167fd0f676",
+          "text": "兄弟",
+          "words": [
+            {
+              "text": "兄弟",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1868",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1868-W1868",
+      "question_ids": [
+        "BANK-W1868-W1868"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-03",
+    "stepId": "S-U4-03-words-r4-14",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5144"
+    ],
+    "grammarLessonIds": []
+  }
+}

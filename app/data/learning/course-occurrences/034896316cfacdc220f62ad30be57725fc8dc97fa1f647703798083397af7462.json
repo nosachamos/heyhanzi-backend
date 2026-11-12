@@ -1,0 +1,517 @@
+{
+  "id": "EX-CHAR-char-4e03",
+  "revision": 2,
+  "unit": "U05-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U05-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "七",
+  "sourceBlockId": "mandarin-simplified-v1-char-4e03",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Write the character",
+    "Connect meaning and sound",
+    "Use the whole word",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-4e03",
+        "text": "七",
+        "pinyin": "qī",
+        "meaning": "seven; 7",
+        "characters": [
+          {
+            "id": "C-4E03",
+            "text": "七"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-39a2a65fcf3fc44f75599727",
+        "text": "里边",
+        "pinyin": "lǐ bian",
+        "meaning": "inside",
+        "characters": [
+          {
+            "id": "C-91CC",
+            "text": "里"
+          },
+          {
+            "id": "C-8FB9",
+            "text": "边"
+          }
+        ]
+      },
+      {
+        "id": "W0266",
+        "text": "太",
+        "pinyin": "tài",
+        "meaning": "too; extremely",
+        "characters": [
+          {
+            "id": "C-592A",
+            "text": "太"
+          }
+        ]
+      },
+      {
+        "id": "W0948",
+        "text": "听说",
+        "pinyin": "tīngshuō",
+        "meaning": "to hear; one hears",
+        "characters": [
+          {
+            "id": "C-542C",
+            "text": "听"
+          },
+          {
+            "id": "C-8BF4",
+            "text": "说"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "851d7826d617c35c8e3a484bdbcc5022443ac91b13fa40f6ee1c345c58cb8e75",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4e03",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "七",
+    "variant": "lesson-movement-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4e03-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "七",
+        "pinyin": "qī",
+        "meaning": "seven; 7",
+        "source": "/stroke-data/4e03.json",
+        "reference": {
+          "character": "七",
+          "sha256": "b7ae195b0ffb623cf0ebacff89c836d255c1eb48c6c3978c8138ada05e57f93e",
+          "medians": [
+            [
+              [
+                101,
+                340
+              ],
+              [
+                172,
+                328
+              ],
+              [
+                492,
+                417
+              ],
+              [
+                767,
+                476
+              ],
+              [
+                820,
+                476
+              ],
+              [
+                882,
+                461
+              ]
+            ],
+            [
+              [
+                364,
+                750
+              ],
+              [
+                397,
+                734
+              ],
+              [
+                424,
+                701
+              ],
+              [
+                407,
+                327
+              ],
+              [
+                414,
+                194
+              ],
+              [
+                431,
+                131
+              ],
+              [
+                477,
+                103
+              ],
+              [
+                544,
+                91
+              ],
+              [
+                658,
+                97
+              ],
+              [
+                747,
+                116
+              ],
+              [
+                784,
+                112
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4e03-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-4e03",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "七",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0266",
+                "label": "too; extremely",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-4e03",
+                "label": "seven; 7",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0948",
+                "label": "to hear; one hears",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e03-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-PRIMARY-char-4e03",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "seven; 7",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "七"
+              },
+              {
+                "value": "qī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "七",
+              "pinyin": "qī",
+              "meaning": "seven; 7",
+              "audio": "d3ca51c716ba3cfc6ccb879c2d0215add6637412b46371c21d41c4788e837b26",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e03-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-39a2a65fcf3fc44f75599727",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "inside",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "里边"
+              },
+              {
+                "value": "lǐ bian",
+                "mode": "pinyin"
+              },
+              {
+                "value": "li3bian5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "里边",
+              "pinyin": "lǐ bian",
+              "meaning": "inside",
+              "audio": "50438ad848ffab45a940bd0b09b036655ad5d6986e8e33f2f2c2cbbfc8e60c8b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e03-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-4e03",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "seven; 7",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "七"
+              },
+              {
+                "value": "qī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "七",
+              "pinyin": "qī",
+              "meaning": "seven; 7",
+              "audio": "d3ca51c716ba3cfc6ccb879c2d0215add6637412b46371c21d41c4788e837b26",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "d3ca51c716ba3cfc6ccb879c2d0215add6637412b46371c21d41c4788e837b26"
+            ],
+            "transcript": [
+              {
+                "text": "七",
+                "pinyin": "qī",
+                "meaning": "seven; 7",
+                "audio": "d3ca51c716ba3cfc6ccb879c2d0215add6637412b46371c21d41c4788e837b26",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4E03",
+      "character": "七",
+      "lessonIds": [
+        "LESSON-C-4E03"
+      ],
+      "profile": "movement-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4e03-write",
+        "EX-CHAR-char-4e03-recognize",
+        "EX-CHAR-char-4e03-word",
+        "EX-CHAR-char-4e03-familiar",
+        "EX-CHAR-char-4e03-recall"
+      ]
+    },
+    "audio": {
+      "d3ca51c716ba3cfc6ccb879c2d0215add6637412b46371c21d41c4788e837b26": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-0dc5562cd20039748c829ba82adb69d898fb2ad9c182826bf1617d546444f87e.mp3",
+          "sha256": "0dc5562cd20039748c829ba82adb69d898fb2ad9c182826bf1617d546444f87e",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "0dc5562cd20039748c829ba82adb69d898fb2ad9c182826bf1617d546444f87e",
+            "text": "七",
+            "words": [
+              {
+                "text": "七",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d16da296d3e6174df5dbb579dc5a916a017d14d98a6bd3e86f3c15adaa56262e.mp3",
+          "sha256": "d16da296d3e6174df5dbb579dc5a916a017d14d98a6bd3e86f3c15adaa56262e",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "d16da296d3e6174df5dbb579dc5a916a017d14d98a6bd3e86f3c15adaa56262e",
+            "text": "七",
+            "words": [
+              {
+                "text": "七",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "50438ad848ffab45a940bd0b09b036655ad5d6986e8e33f2f2c2cbbfc8e60c8b": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/446180690778cf2a0603ec494862d78d6df45b06f28c8021a0a12081721ca0d2.mp3",
+          "sha256": "446180690778cf2a0603ec494862d78d6df45b06f28c8021a0a12081721ca0d2",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "446180690778cf2a0603ec494862d78d6df45b06f28c8021a0a12081721ca0d2",
+            "text": "里边",
+            "words": [
+              {
+                "text": "里边",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d46c645b6dd90cc43547ddc1a1db4c274fa234aa5458e5c84ac86801aaf93e40.mp3",
+          "sha256": "d46c645b6dd90cc43547ddc1a1db4c274fa234aa5458e5c84ac86801aaf93e40",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "d46c645b6dd90cc43547ddc1a1db4c274fa234aa5458e5c84ac86801aaf93e40",
+            "text": "里边",
+            "words": [
+              {
+                "text": "里边",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "18232fdd592a0c69a37dbe8a1b9d3b0523a4b868fff17b4679b4768211f1a92d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1e949f21c4bcf59eda6d0c05737e3bacbe93e6f7c49bbcf2b2d3ac245c9f7212.mp3",
+          "sha256": "1e949f21c4bcf59eda6d0c05737e3bacbe93e6f7c49bbcf2b2d3ac245c9f7212",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "1e949f21c4bcf59eda6d0c05737e3bacbe93e6f7c49bbcf2b2d3ac245c9f7212",
+            "text": "太",
+            "words": [
+              {
+                "text": "太",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-be8f24df295d87789f3d4a023d7827a7f399dbac9741ced24592b650862cfcc8.mp3",
+          "sha256": "be8f24df295d87789f3d4a023d7827a7f399dbac9741ced24592b650862cfcc8",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "be8f24df295d87789f3d4a023d7827a7f399dbac9741ced24592b650862cfcc8",
+            "text": "太",
+            "words": [
+              {
+                "text": "太",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "dd45b1a6e0c879f076dc7e59203adaa2d364f5a6ac036a1788df913d86dc56ac": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-717d5d6afaba10766c1a2ec4df81c6ebb3f9973a3ece97960a1e6d0a83990a1f.mp3",
+          "sha256": "717d5d6afaba10766c1a2ec4df81c6ebb3f9973a3ece97960a1e6d0a83990a1f",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "717d5d6afaba10766c1a2ec4df81c6ebb3f9973a3ece97960a1e6d0a83990a1f",
+            "text": "听说",
+            "words": [
+              {
+                "text": "听说",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-58c8d0b8074a2ee1d75a433d068f3cc7a60803763b4f1d25e518c109aff00368.mp3",
+          "sha256": "58c8d0b8074a2ee1d75a433d068f3cc7a60803763b4f1d25e518c109aff00368",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "58c8d0b8074a2ee1d75a433d068f3cc7a60803763b4f1d25e518c109aff00368",
+            "text": "听说",
+            "words": [
+              {
+                "text": "听说",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

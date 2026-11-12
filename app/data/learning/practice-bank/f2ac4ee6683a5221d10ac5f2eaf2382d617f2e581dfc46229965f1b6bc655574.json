@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0960",
+  "targetId": "W0960",
+  "steps": [
+    {
+      "id": "BANK-W0960-W0960",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0960-W0960",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "evening party",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "晚会"
+            },
+            {
+              "value": "wǎnhuì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wan3hui4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "晚会",
+            "pinyin": "wǎnhuì",
+            "meaning": "evening party",
+            "singleWord": true,
+            "audio": "d91e0ff70168aac3ad2a7cb657cbbe9a68b81c6bc5f0dd1104fc4dac758d761c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d91e0ff70168aac3ad2a7cb657cbbe9a68b81c6bc5f0dd1104fc4dac758d761c": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-bc60e16cc1340c80a8c087618631d940b2754be886fbeb41c87ea0eb93ccfc9e.mp3",
+        "sha256": "bc60e16cc1340c80a8c087618631d940b2754be886fbeb41c87ea0eb93ccfc9e",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "bc60e16cc1340c80a8c087618631d940b2754be886fbeb41c87ea0eb93ccfc9e",
+          "text": "晚会",
+          "words": [
+            {
+              "text": "晚会",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-49ac2634db971d302e0ec050f1ab16a43102abd1f1dd8872dc395e13b17afef9.mp3",
+        "sha256": "49ac2634db971d302e0ec050f1ab16a43102abd1f1dd8872dc395e13b17afef9",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "49ac2634db971d302e0ec050f1ab16a43102abd1f1dd8872dc395e13b17afef9",
+          "text": "晚会",
+          "words": [
+            {
+              "text": "晚会",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0960",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0960-W0960",
+      "question_ids": [
+        "BANK-W0960-W0960"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-04-P01",
+    "stepId": "S-U3-04-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4f1a"
+    ],
+    "grammarLessonIds": []
+  }
+}

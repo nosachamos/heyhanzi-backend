@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5240",
+  "targetId": "W5240",
+  "steps": [
+    {
+      "id": "BANK-W5240-W5240",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5240-W5240",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "moonlight",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "月光"
+            },
+            {
+              "value": "yuèguāng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yue4guang1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "月光",
+            "pinyin": "yuèguāng",
+            "meaning": "moonlight",
+            "singleWord": true,
+            "audio": "bd6d90b83732fc6146b7ecfcdfa5ffd013bdcbfba24a48dfb73005087230bc26"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "bd6d90b83732fc6146b7ecfcdfa5ffd013bdcbfba24a48dfb73005087230bc26": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e002594c3028978b555869ce549fd88cf7c2c84522c2835476b311954ee7f697.mp3",
+        "sha256": "e002594c3028978b555869ce549fd88cf7c2c84522c2835476b311954ee7f697",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "e002594c3028978b555869ce549fd88cf7c2c84522c2835476b311954ee7f697",
+          "text": "月光",
+          "words": [
+            {
+              "text": "月光",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/01b3d3ba26621f63e5cd621eb4ea4f15c1343add6c3dc9b2cd4b8bf7e783394b.mp3",
+        "sha256": "01b3d3ba26621f63e5cd621eb4ea4f15c1343add6c3dc9b2cd4b8bf7e783394b",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "01b3d3ba26621f63e5cd621eb4ea4f15c1343add6c3dc9b2cd4b8bf7e783394b",
+          "text": "月光",
+          "words": [
+            {
+              "text": "月光",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5240",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5240-W5240",
+      "question_ids": [
+        "BANK-W5240-W5240"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-28",
+    "stepId": "S-U6-28-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5149"
+    ],
+    "grammarLessonIds": []
+  }
+}

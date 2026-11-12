@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1120",
+  "targetId": "W1120",
+  "steps": [
+    {
+      "id": "BANK-W1120-W1120",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1120-W1120",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "dining hall; dining room",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "餐厅"
+            },
+            {
+              "value": "cāntīng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "can1ting1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "餐厅",
+            "pinyin": "cāntīng",
+            "meaning": "dining hall; dining room",
+            "singleWord": true,
+            "audio": "e2a4b6cf1e05468c76bd13d309484f1c7357585531a64f111cfa41005ed010fc"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e2a4b6cf1e05468c76bd13d309484f1c7357585531a64f111cfa41005ed010fc": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a29e37d02f5b28eba21817633880d21ec83678529fcd0524bf1b486059644b9e.mp3",
+        "sha256": "a29e37d02f5b28eba21817633880d21ec83678529fcd0524bf1b486059644b9e",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "a29e37d02f5b28eba21817633880d21ec83678529fcd0524bf1b486059644b9e",
+          "text": "餐厅",
+          "words": [
+            {
+              "text": "餐厅",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5f3697bab33f6e08ea6554b1ac940d0873128d953ecd5ba2dc12ab3d607817ec.mp3",
+        "sha256": "5f3697bab33f6e08ea6554b1ac940d0873128d953ecd5ba2dc12ab3d607817ec",
+        "byteLength": 15309,
+        "readAlong": {
+          "audioSha256": "5f3697bab33f6e08ea6554b1ac940d0873128d953ecd5ba2dc12ab3d607817ec",
+          "text": "餐厅",
+          "words": [
+            {
+              "text": "餐厅",
+              "start": 0.39,
+              "end": 0.6299999999999999
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1120",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1120-W1120",
+      "question_ids": [
+        "BANK-W1120-W1120"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-09",
+    "stepId": "S-U4-09-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9910"
+    ],
+    "grammarLessonIds": []
+  }
+}

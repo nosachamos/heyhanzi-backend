@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1320",
+  "targetId": "W1320",
+  "steps": [
+    {
+      "id": "BANK-W1320-W1320",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1320-W1320",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to watch; to view",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "观看"
+            },
+            {
+              "value": "guānkàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "guan1kan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "观看",
+            "pinyin": "guānkàn",
+            "meaning": "to watch; to view",
+            "singleWord": true,
+            "audio": "166828760c7ab59fcd35064aaf1a68405749badf764015a0e6a6e950accc1a27"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "166828760c7ab59fcd35064aaf1a68405749badf764015a0e6a6e950accc1a27": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-8b53bd109651aff57e95efe096ff44e786fa831c58ddf36b0691315c521419e8.mp3",
+        "sha256": "8b53bd109651aff57e95efe096ff44e786fa831c58ddf36b0691315c521419e8",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "8b53bd109651aff57e95efe096ff44e786fa831c58ddf36b0691315c521419e8",
+          "text": "观看",
+          "words": [
+            {
+              "text": "观看",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b2a46040b54775d352e9f2198029939a711b4a12b8b1f5b0817bd4e1ad89eb4a.mp3",
+        "sha256": "b2a46040b54775d352e9f2198029939a711b4a12b8b1f5b0817bd4e1ad89eb4a",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "b2a46040b54775d352e9f2198029939a711b4a12b8b1f5b0817bd4e1ad89eb4a",
+          "text": "观看",
+          "words": [
+            {
+              "text": "观看",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1320",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1320-W1320",
+      "question_ids": [
+        "BANK-W1320-W1320"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-28",
+    "stepId": "S-U4-28-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-89c2"
+    ],
+    "grammarLessonIds": []
+  }
+}

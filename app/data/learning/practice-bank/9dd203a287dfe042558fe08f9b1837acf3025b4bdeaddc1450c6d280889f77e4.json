@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4524",
+  "targetId": "W4524",
+  "steps": [
+    {
+      "id": "BANK-W4524-W4524",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4524-W4524",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "face",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "面部"
+            },
+            {
+              "value": "miànbù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "mian4bu4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "面部",
+            "pinyin": "miànbù",
+            "meaning": "face",
+            "singleWord": true,
+            "audio": "624a0f08296767403b08e13cd39011bfd90a8bfda994fad0991068d51e7dcde3"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "624a0f08296767403b08e13cd39011bfd90a8bfda994fad0991068d51e7dcde3": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/48732e1ec9906ed03a197c4a7f591080d1922e94317e1c2ff64cd9dd6e618b24.mp3",
+        "sha256": "48732e1ec9906ed03a197c4a7f591080d1922e94317e1c2ff64cd9dd6e618b24",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "48732e1ec9906ed03a197c4a7f591080d1922e94317e1c2ff64cd9dd6e618b24",
+          "text": "面部",
+          "words": [
+            {
+              "text": "面部",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/749cfca41f8391e85213ec484cceeb67c35cab2e5b6247c095a6902797fe425c.mp3",
+        "sha256": "749cfca41f8391e85213ec484cceeb67c35cab2e5b6247c095a6902797fe425c",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "749cfca41f8391e85213ec484cceeb67c35cab2e5b6247c095a6902797fe425c",
+          "text": "面部",
+          "words": [
+            {
+              "text": "面部",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4524",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4524-W4524",
+      "question_ids": [
+        "BANK-W4524-W4524"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-15",
+    "stepId": "S-U6-15-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-75b2"
+    ],
+    "grammarLessonIds": []
+  }
+}

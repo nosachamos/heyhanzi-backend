@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0303",
+  "targetId": "W0303",
+  "steps": [
+    {
+      "id": "BANK-W0303-W0303",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0303-W0303",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "time; time",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "时间"
+            },
+            {
+              "value": "shíjiān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shi2jian1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "时间",
+            "pinyin": "shíjiān",
+            "meaning": "time; time",
+            "singleWord": true,
+            "audio": "beb17cd02a2bd476b7246ccd470df6898b1f1100a53cdd757526b030e845c3fb"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "beb17cd02a2bd476b7246ccd470df6898b1f1100a53cdd757526b030e845c3fb": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-6691ae4ffd5fd476c453d113d60bb2c561a851304682710ecb92a9eb892f2891.mp3",
+        "sha256": "6691ae4ffd5fd476c453d113d60bb2c561a851304682710ecb92a9eb892f2891",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "6691ae4ffd5fd476c453d113d60bb2c561a851304682710ecb92a9eb892f2891",
+          "text": "时间",
+          "words": [
+            {
+              "text": "时间",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ad185b18cefcf9f150728811d50c97ba984e09bad6dc0705d48887b54f1f3f7a.mp3",
+        "sha256": "ad185b18cefcf9f150728811d50c97ba984e09bad6dc0705d48887b54f1f3f7a",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "ad185b18cefcf9f150728811d50c97ba984e09bad6dc0705d48887b54f1f3f7a",
+          "text": "时间",
+          "words": [
+            {
+              "text": "时间",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0303",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0303-W0303",
+      "question_ids": [
+        "BANK-W0303-W0303"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U09",
+    "stepId": "S-U09-words-r4-21",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-65f6"
+    ],
+    "grammarLessonIds": []
+  }
+}

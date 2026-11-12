@@ -1,0 +1,739 @@
+{
+  "id": "EX-CHAR-char-6843",
+  "revision": 2,
+  "unit": "U5-09",
+  "stage": "ST-HSK5",
+  "after": "S-U5-09-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "桃",
+  "sourceBlockId": "mandarin-simplified-v1-char-6843",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-663233bd1bf4f435aad858e0",
+        "text": "排名",
+        "pinyin": "páimíng",
+        "meaning": "to rank (1st, 2nd etc); ranking",
+        "characters": [
+          {
+            "id": "C-6392",
+            "text": "排"
+          },
+          {
+            "id": "C-540D",
+            "text": "名"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-c922c08daf4057b683ea27a1",
+        "text": "桃树",
+        "pinyin": "táo shù",
+        "meaning": "peach tree",
+        "characters": [
+          {
+            "id": "C-6843",
+            "text": "桃"
+          },
+          {
+            "id": "C-6811",
+            "text": "树"
+          }
+        ]
+      },
+      {
+        "id": "W0799",
+        "text": "鸡",
+        "pinyin": "jī",
+        "meaning": "fowl; chicken",
+        "characters": [
+          {
+            "id": "C-9E21",
+            "text": "鸡"
+          }
+        ]
+      },
+      {
+        "id": "W1690",
+        "text": "师傅",
+        "pinyin": "shīfu",
+        "meaning": "master; qualified worker",
+        "characters": [
+          {
+            "id": "C-5E08",
+            "text": "师"
+          },
+          {
+            "id": "C-5085",
+            "text": "傅"
+          }
+        ]
+      },
+      {
+        "id": "W3126",
+        "text": "桃",
+        "pinyin": "táo",
+        "meaning": "peach",
+        "characters": [
+          {
+            "id": "C-6843",
+            "text": "桃"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "a9f7d5acf96a631a7c95558fb80dc57a921b3bad91a47b3334c9ac18170c5d9f",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6843",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "桃",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6843-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-c922c08daf4057b683ea27a1",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "peach tree",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "桃树"
+              },
+              {
+                "value": "táo shù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tao2shu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "桃树",
+              "pinyin": "táo shù",
+              "meaning": "peach tree",
+              "audio": "8c60e75976dbab37e53c12157d885486fb4124be59dc1dc41de69229e10ba97c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6843-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W3126",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "桃",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1690",
+                "label": "master; qualified worker",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0799",
+                "label": "fowl; chicken",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W3126",
+                "label": "peach",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6843-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "桃",
+        "pinyin": "táo",
+        "meaning": "peach",
+        "source": "/stroke-data/6843.json",
+        "reference": {
+          "character": "桃",
+          "sha256": "bc7e63622d5a6d89c4af7fe616f7340a34ee053ad2c4842a3f14a12f0784bfdf",
+          "medians": [
+            [
+              [
+                111,
+                520
+              ],
+              [
+                182,
+                521
+              ],
+              [
+                338,
+                569
+              ],
+              [
+                398,
+                573
+              ]
+            ],
+            [
+              [
+                257,
+                833
+              ],
+              [
+                309,
+                778
+              ],
+              [
+                287,
+                184
+              ],
+              [
+                271,
+                59
+              ],
+              [
+                271,
+                -30
+              ]
+            ],
+            [
+              [
+                272,
+                515
+              ],
+              [
+                250,
+                424
+              ],
+              [
+                219,
+                365
+              ],
+              [
+                133,
+                232
+              ],
+              [
+                49,
+                134
+              ]
+            ],
+            [
+              [
+                322,
+                443
+              ],
+              [
+                336,
+                426
+              ],
+              [
+                380,
+                400
+              ],
+              [
+                398,
+                366
+              ]
+            ],
+            [
+              [
+                529,
+                691
+              ],
+              [
+                575,
+                653
+              ],
+              [
+                571,
+                416
+              ],
+              [
+                551,
+                264
+              ],
+              [
+                532,
+                205
+              ],
+              [
+                487,
+                132
+              ],
+              [
+                438,
+                88
+              ],
+              [
+                375,
+                54
+              ]
+            ],
+            [
+              [
+                422,
+                522
+              ],
+              [
+                479,
+                492
+              ],
+              [
+                497,
+                465
+              ]
+            ],
+            [
+              [
+                379,
+                285
+              ],
+              [
+                413,
+                285
+              ],
+              [
+                430,
+                292
+              ],
+              [
+                527,
+                360
+              ],
+              [
+                535,
+                367
+              ],
+              [
+                537,
+                382
+              ]
+            ],
+            [
+              [
+                660,
+                781
+              ],
+              [
+                690,
+                765
+              ],
+              [
+                711,
+                733
+              ],
+              [
+                696,
+                593
+              ],
+              [
+                687,
+                394
+              ],
+              [
+                693,
+                204
+              ],
+              [
+                709,
+                140
+              ],
+              [
+                734,
+                111
+              ],
+              [
+                774,
+                95
+              ],
+              [
+                836,
+                90
+              ],
+              [
+                899,
+                99
+              ],
+              [
+                933,
+                123
+              ],
+              [
+                954,
+                251
+              ]
+            ],
+            [
+              [
+                815,
+                624
+              ],
+              [
+                830,
+                589
+              ],
+              [
+                805,
+                560
+              ],
+              [
+                729,
+                500
+              ],
+              [
+                718,
+                485
+              ]
+            ],
+            [
+              [
+                714,
+                377
+              ],
+              [
+                840,
+                309
+              ],
+              [
+                874,
+                264
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6843-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-663233bd1bf4f435aad858e0",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to rank (1st, 2nd etc); ranking",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "排名"
+              },
+              {
+                "value": "páimíng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "pai2ming2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "排名",
+              "pinyin": "páimíng",
+              "meaning": "to rank (1st, 2nd etc); ranking",
+              "audio": "9d5a7eca36670cef9dccfa84b61a9405b420f91baba85dff6a0f6c26715c5c50",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6843-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W3126",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "peach",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "桃"
+              },
+              {
+                "value": "táo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tao2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "桃",
+              "pinyin": "táo",
+              "meaning": "peach",
+              "audio": "6126f4c8e1436f61c308b50a46e9c2c21eda83ab8b0112087fa8d20a5c597a65",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "6126f4c8e1436f61c308b50a46e9c2c21eda83ab8b0112087fa8d20a5c597a65"
+            ],
+            "transcript": [
+              {
+                "text": "桃",
+                "pinyin": "táo",
+                "meaning": "peach",
+                "audio": "6126f4c8e1436f61c308b50a46e9c2c21eda83ab8b0112087fa8d20a5c597a65",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6843",
+      "character": "桃",
+      "lessonIds": [
+        "LESSON-C-6843"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6843-word",
+        "EX-CHAR-char-6843-recognize",
+        "EX-CHAR-char-6843-write",
+        "EX-CHAR-char-6843-familiar",
+        "EX-CHAR-char-6843-recall"
+      ]
+    },
+    "audio": {
+      "9d5a7eca36670cef9dccfa84b61a9405b420f91baba85dff6a0f6c26715c5c50": {
+        "female": {
+          "url": "/exercise-assets/audio/course-female-50ad137cb39f178dd9e2c39387d910064a60f3260aa90d4905229403e3f84b95.mp3",
+          "sha256": "50ad137cb39f178dd9e2c39387d910064a60f3260aa90d4905229403e3f84b95",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "50ad137cb39f178dd9e2c39387d910064a60f3260aa90d4905229403e3f84b95",
+            "text": "排名",
+            "words": [
+              {
+                "text": "排名",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2cbd9a8f7ca439976596cca72cd0afa6a97a3f7820a76928446ec17e00b9513e.mp3",
+          "sha256": "2cbd9a8f7ca439976596cca72cd0afa6a97a3f7820a76928446ec17e00b9513e",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "2cbd9a8f7ca439976596cca72cd0afa6a97a3f7820a76928446ec17e00b9513e",
+            "text": "排名",
+            "words": [
+              {
+                "text": "排名",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "8c60e75976dbab37e53c12157d885486fb4124be59dc1dc41de69229e10ba97c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/89641b32c61c8e774035257693900ada649833d85d07e77c7bd19a2662327dc6.mp3",
+          "sha256": "89641b32c61c8e774035257693900ada649833d85d07e77c7bd19a2662327dc6",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "89641b32c61c8e774035257693900ada649833d85d07e77c7bd19a2662327dc6",
+            "text": "桃树",
+            "words": [
+              {
+                "text": "桃树",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/23e766f6ba7806dfa976ec2f44720d476d11520847907f1a60292d50a49cb9ca.mp3",
+          "sha256": "23e766f6ba7806dfa976ec2f44720d476d11520847907f1a60292d50a49cb9ca",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "23e766f6ba7806dfa976ec2f44720d476d11520847907f1a60292d50a49cb9ca",
+            "text": "桃树",
+            "words": [
+              {
+                "text": "桃树",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "177622413b45ca79a6759a55c12a85b0204c00375345a8300348a638ecc6d38e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/db197e35a46f55e7a9aaf01297e57b26bf34496cc676991c1e2c85edc7191e91.mp3",
+          "sha256": "db197e35a46f55e7a9aaf01297e57b26bf34496cc676991c1e2c85edc7191e91",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "db197e35a46f55e7a9aaf01297e57b26bf34496cc676991c1e2c85edc7191e91",
+            "text": "鸡",
+            "words": [
+              {
+                "text": "鸡",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e4bde47fa54e171a1a2531d564fe8ecc6141b980aaf2e59c62082e6fa3128034.mp3",
+          "sha256": "e4bde47fa54e171a1a2531d564fe8ecc6141b980aaf2e59c62082e6fa3128034",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "e4bde47fa54e171a1a2531d564fe8ecc6141b980aaf2e59c62082e6fa3128034",
+            "text": "鸡",
+            "words": [
+              {
+                "text": "鸡",
+                "start": 0.22,
+                "end": 0.32
+              }
+            ]
+          }
+        }
+      },
+      "a2ff7c2a0aa1d9b8171eef184fb55f8b2ee02982e37743325acc688f1548482c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-67ce3742c99676377bee751286121e4754ba452aa6b87f5cde7e0fe91d60b550.mp3",
+          "sha256": "67ce3742c99676377bee751286121e4754ba452aa6b87f5cde7e0fe91d60b550",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "67ce3742c99676377bee751286121e4754ba452aa6b87f5cde7e0fe91d60b550",
+            "text": "师傅",
+            "words": [
+              {
+                "text": "师傅",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-96ca1c8d22d77dc761a3029690b9682c9cf152fb00a7e663f2d5d0e9ab5d6733.mp3",
+          "sha256": "96ca1c8d22d77dc761a3029690b9682c9cf152fb00a7e663f2d5d0e9ab5d6733",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "96ca1c8d22d77dc761a3029690b9682c9cf152fb00a7e663f2d5d0e9ab5d6733",
+            "text": "师傅",
+            "words": [
+              {
+                "text": "师傅",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "6126f4c8e1436f61c308b50a46e9c2c21eda83ab8b0112087fa8d20a5c597a65": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d922a8f5477937649d1151ac60616b8a07cbc1041e7911ed98b28bb48ebd9539.mp3",
+          "sha256": "d922a8f5477937649d1151ac60616b8a07cbc1041e7911ed98b28bb48ebd9539",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "d922a8f5477937649d1151ac60616b8a07cbc1041e7911ed98b28bb48ebd9539",
+            "text": "桃",
+            "words": [
+              {
+                "text": "桃",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/41b4a275d966ccfe9921e6c1e0ed4a4afd203a1c2cd62dc7c2bff7ab80125b14.mp3",
+          "sha256": "41b4a275d966ccfe9921e6c1e0ed4a4afd203a1c2cd62dc7c2bff7ab80125b14",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "41b4a275d966ccfe9921e6c1e0ed4a4afd203a1c2cd62dc7c2bff7ab80125b14",
+            "text": "桃",
+            "words": [
+              {
+                "text": "桃",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "id": "EX-GRAM-G-hsk4-connectors-p01",
+  "revision": 6,
+  "unit": "U4-39-P01",
+  "stage": "ST-HSK4",
+  "after": "S-U4-39-grammar-1",
+  "activity": "ACT-GRAM",
+  "title": "Connect two actions",
+  "optional": false,
+  "partCount": 3,
+  "partTitles": [
+    "Connect two actions",
+    "Understand the pattern",
+    "Use the pattern"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "W0001",
+        "text": "我",
+        "pinyin": "wǒ",
+        "meaning": "I; me",
+        "characters": [
+          {
+            "id": "C-6211",
+            "text": "我"
+          }
+        ]
+      },
+      {
+        "id": "W0239",
+        "text": "写",
+        "pinyin": "xiě",
+        "meaning": "to write",
+        "characters": [
+          {
+            "id": "C-5199",
+            "text": "写"
+          }
+        ]
+      },
+      {
+        "id": "W0178",
+        "text": "了",
+        "pinyin": "le",
+        "meaning": "aspect or change-of-situation particle; not a past-tense ending",
+        "characters": [
+          {
+            "id": "C-4E86",
+            "text": "了"
+          }
+        ]
+      },
+      {
+        "id": "W0433",
+        "text": "名字",
+        "pinyin": "míngzi",
+        "meaning": "name",
+        "characters": [
+          {
+            "id": "C-540D",
+            "text": "名"
+          },
+          {
+            "id": "C-5B57",
+            "text": "字"
+          }
+        ]
+      },
+      {
+        "id": "W1096",
+        "text": "并",
+        "pinyin": "bìng",
+        "meaning": "and; furthermore",
+        "characters": [
+          {
+            "id": "C-5E76",
+            "text": "并"
+          }
+        ]
+      },
+      {
+        "id": "W0358",
+        "text": "地址",
+        "pinyin": "dìzhǐ",
+        "meaning": "address",
+        "characters": [
+          {
+            "id": "C-5730",
+            "text": "地"
+          },
+          {
+            "id": "C-5740",
+            "text": "址"
+          }
+        ]
+      },
+      {
+        "id": "W-R5-BING-NEG",
+        "text": "并",
+        "pinyin": "bìng",
+        "meaning": "actually; emphasizes a contradiction with a negative predicate",
+        "characters": [
+          {
+            "id": "C-5E76",
+            "text": "并"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [
+        "G-addition-extended",
+        "G-simultaneous"
+      ],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "coverage": [],
+  "sourceStepId": "S-U4-39-grammar-1",
+  "fingerprint": "e55608b3023e70aa7f2082d179cc96fbd8c332a4a4812725149660da947edcdf",
+  "definition": {
+    "id": "ACT-GRAM",
+    "revision": 6,
+    "title": "Connect two actions",
+    "subtitle": "Learn, understand, and use a Mandarin pattern.",
+    "context": "Use the introduced pattern in a bounded sentence. Other wording may be valid Chinese; this task checks this pattern and these words.",
+    "steps": [
+      {
+        "id": "EX-GRAM-G-hsk4-connectors-p01-teach",
+        "kind": "teach",
+        "title": "Connect two actions",
+        "blocks": [
+          {
+            "text": "In formal writing, this connects closely related predicates with the same participant. Its negative-emphasis use is different.",
+            "examples": [
+              {
+                "text": "我写了名字，并写了地址。",
+                "pinyin": "wǒ xiě le míngzi ， bìng xiě le dìzhǐ 。",
+                "meaning": "I wrote the name and also wrote the address.",
+                "audio": "ac29544167dd5398d15cf5d14b934e6f4dd4010ce4c21b89ee7cbe8d1875a521"
+              }
+            ]
+          },
+          {
+            "title": "Words used in this pattern",
+            "examples": [
+              {
+                "text": "并",
+                "pinyin": "bìng",
+                "meaning": "and; furthermore",
+                "singleWord": true,
+                "audio": "565c675bfae0129f61ec6e140c2a2fd5d20be524e2324ba45acf98a4e894079c"
+              },
+              {
+                "text": "并",
+                "pinyin": "bìng",
+                "meaning": "actually; emphasizes a contradiction with a negative predicate",
+                "singleWord": true,
+                "audio": "565c675bfae0129f61ec6e140c2a2fd5d20be524e2324ba45acf98a4e894079c"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EX-GRAM-G-hsk4-connectors-p01-facet-1-meaning",
+        "kind": "check",
+        "title": "Understand the pattern",
+        "questions": [
+          {
+            "id": "EX-GRAM-G-hsk4-connectors-p01-facet-1-meaning",
+            "kind": "choice",
+            "prompt": "Choose the meaning of this sentence.",
+            "label": "Understand the pattern",
+            "display": {
+              "text": "我写了名字，并写了地址。",
+              "pinyin": "wǒ xiě le míngzi ， bìng xiě le dìzhǐ 。",
+              "meaning": "I wrote the name and also wrote the address.",
+              "audio": "ac29544167dd5398d15cf5d14b934e6f4dd4010ce4c21b89ee7cbe8d1875a521"
+            },
+            "resultDomain": "Grammar comprehension",
+            "choices": [
+              {
+                "id": "meaning",
+                "label": "I wrote the name and also wrote the address.",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "In formal writing, this connects closely related predicates with the same participant. Its negative-emphasis use is different."
+              },
+              {
+                "id": "contrast",
+                "label": "I wrote the name but did not write the address.",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "I wrote the name and also wrote the address. In formal writing, this connects closely related predicates with the same participant. Its negative-emphasis use is different."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EX-GRAM-G-hsk4-connectors-p01-facet-1-produce",
+        "kind": "check",
+        "title": "Use the pattern",
+        "questions": [
+          {
+            "id": "EX-GRAM-G-hsk4-connectors-p01-facet-1-produce",
+            "kind": "text",
+            "prompt": "Write this meaning in Chinese using the pattern and words just introduced.",
+            "label": "Use the pattern",
+            "context": "I wrote the name and also wrote the address.",
+            "contextLanguage": "en",
+            "resultDomain": "Constrained grammar use",
+            "accepted": [
+              {
+                "value": "我写了名字，并写了地址。",
+                "mode": "hanzi"
+              },
+              {
+                "value": "wǒ xiě le míngzi ， bìng xiě le dìzhǐ 。",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wo3xie3le5ming2zi5bing4xie3le5di4zhi3",
+                "mode": "pinyin"
+              }
+            ],
+            "rule": "sentence",
+            "pinyin": true,
+            "model": {
+              "text": "我写了名字，并写了地址。",
+              "pinyin": "wǒ xiě le míngzi ， bìng xiě le dìzhǐ 。",
+              "meaning": "I wrote the name and also wrote the address.",
+              "audio": "ac29544167dd5398d15cf5d14b934e6f4dd4010ce4c21b89ee7cbe8d1875a521"
+            },
+            "hint": "In formal writing, this connects closely related predicates with the same participant. Its negative-emphasis use is different."
+          }
+        ]
+      }
+    ],
+    "summary": "You practiced this grammar pattern. This result does not grant mastery of other lessons.",
+    "instanceId": "EX-GRAM-G-hsk4-connectors-p01",
+    "setActivity": {
+      "schema": "course-practice-v1",
+      "partIds": [
+        "EX-GRAM-G-hsk4-connectors-p01-teach",
+        "EX-GRAM-G-hsk4-connectors-p01-facet-1-meaning",
+        "EX-GRAM-G-hsk4-connectors-p01-facet-1-produce"
+      ],
+      "targets": [
+        "G-hsk4-connectors-p01"
+      ],
+      "completion": "checked-practice"
+    },
+    "audio": {
+      "ac29544167dd5398d15cf5d14b934e6f4dd4010ce4c21b89ee7cbe8d1875a521": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-bb6b3c0311ce8045b6da4ba55aedaff9ea14509cfc5c2b88948401293dc01f4e.mp3",
+          "sha256": "bb6b3c0311ce8045b6da4ba55aedaff9ea14509cfc5c2b88948401293dc01f4e",
+          "byteLength": 42669,
+          "readAlong": {
+            "audioSha256": "bb6b3c0311ce8045b6da4ba55aedaff9ea14509cfc5c2b88948401293dc01f4e",
+            "text": "我写了名字，并写了地址。",
+            "words": [
+              {
+                "text": "我",
+                "start": 0.09,
+                "end": 0.15
+              },
+              {
+                "text": "写",
+                "start": 0.51,
+                "end": 0.57
+              },
+              {
+                "text": "了",
+                "start": 0.8099999999999999,
+                "end": 0.8699999999999999
+              },
+              {
+                "text": "名字",
+                "start": 1.05,
+                "end": 1.2899999999999998
+              },
+              {
+                "text": "，"
+              },
+              {
+                "text": "并",
+                "start": 1.7699999999999998,
+                "end": 1.8299999999999998
+              },
+              {
+                "text": "写",
+                "start": 2.1300000000000003,
+                "end": 2.19
+              },
+              {
+                "text": "了",
+                "start": 2.37,
+                "end": 2.43
+              },
+              {
+                "text": "地址",
+                "start": 2.61,
+                "end": 2.79
+              },
+              {
+                "text": "。"
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d140036f16bd77ee09b030bd03f866b603d004f5a2ae2ff08f8c18c3eb5dcc6b.mp3",
+          "sha256": "d140036f16bd77ee09b030bd03f866b603d004f5a2ae2ff08f8c18c3eb5dcc6b",
+          "byteLength": 39501,
+          "readAlong": {
+            "audioSha256": "d140036f16bd77ee09b030bd03f866b603d004f5a2ae2ff08f8c18c3eb5dcc6b",
+            "text": "我写了名字，并写了地址。",
+            "words": [
+              {
+                "text": "我",
+                "start": 0.03,
+                "end": 0.09
+              },
+              {
+                "text": "写",
+                "start": 0.21,
+                "end": 0.27
+              },
+              {
+                "text": "了",
+                "start": 0.44999999999999996,
+                "end": 0.51
+              },
+              {
+                "text": "名字",
+                "start": 0.6299999999999999,
+                "end": 0.8699999999999999
+              },
+              {
+                "text": "，"
+              },
+              {
+                "text": "并",
+                "start": 1.47,
+                "end": 1.53
+              },
+              {
+                "text": "写",
+                "start": 1.89,
+                "end": 1.95
+              },
+              {
+                "text": "了",
+                "start": 2.1300000000000003,
+                "end": 2.19
+              },
+              {
+                "text": "地址",
+                "start": 2.37,
+                "end": 2.61
+              },
+              {
+                "text": "。"
+              }
+            ]
+          }
+        }
+      },
+      "565c675bfae0129f61ec6e140c2a2fd5d20be524e2324ba45acf98a4e894079c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f73649dea448afcdddb17ba9b3a81c04652396bbac1eb949a494bcd3bdafe29a.mp3",
+          "sha256": "f73649dea448afcdddb17ba9b3a81c04652396bbac1eb949a494bcd3bdafe29a",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "f73649dea448afcdddb17ba9b3a81c04652396bbac1eb949a494bcd3bdafe29a",
+            "text": "并",
+            "words": [
+              {
+                "text": "并",
+                "start": 0.18,
+                "end": 0.24
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d0489a62c3365365655a271f61e376250acdb1b1a6ff987ba156696ed899c4bd.mp3",
+          "sha256": "d0489a62c3365365655a271f61e376250acdb1b1a6ff987ba156696ed899c4bd",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "d0489a62c3365365655a271f61e376250acdb1b1a6ff987ba156696ed899c4bd",
+            "text": "并",
+            "words": [
+              {
+                "text": "并",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

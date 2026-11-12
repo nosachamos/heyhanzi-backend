@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0126",
+  "targetId": "W0126",
+  "steps": [
+    {
+      "id": "BANK-W0126-W0126",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0126-W0126",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "question; problem",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "问题"
+            },
+            {
+              "value": "wèntí",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wen4ti2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "问题",
+            "pinyin": "wèntí",
+            "meaning": "question; problem",
+            "singleWord": true,
+            "audio": "3eff36ff6e6c18b13928576ca35d5dd46d97f367dde8e368e370bd885bfa1a63"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3eff36ff6e6c18b13928576ca35d5dd46d97f367dde8e368e370bd885bfa1a63": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-e76b3152c8927e825e2f37e71926fa392e8d8dfeee558191dc999e9a54597353.mp3",
+        "sha256": "e76b3152c8927e825e2f37e71926fa392e8d8dfeee558191dc999e9a54597353",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "e76b3152c8927e825e2f37e71926fa392e8d8dfeee558191dc999e9a54597353",
+          "text": "问题",
+          "words": [
+            {
+              "text": "问题",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3525c6a81444074f9d053be55ca06d23862270d760a2f669778de5581508c46a.mp3",
+        "sha256": "3525c6a81444074f9d053be55ca06d23862270d760a2f669778de5581508c46a",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "3525c6a81444074f9d053be55ca06d23862270d760a2f669778de5581508c46a",
+          "text": "问题",
+          "words": [
+            {
+              "text": "问题",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0126",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0126-W0126",
+      "question_ids": [
+        "BANK-W0126-W0126"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U07",
+    "stepId": "S-U07-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9898"
+    ],
+    "grammarLessonIds": []
+  }
+}

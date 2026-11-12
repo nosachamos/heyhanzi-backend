@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0426",
+  "targetId": "W0426",
+  "steps": [
+    {
+      "id": "BANK-W0426-W0426",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0426-W0426",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "cat",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "猫"
+            },
+            {
+              "value": "māo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "mao1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "猫",
+            "pinyin": "māo",
+            "meaning": "cat",
+            "singleWord": true,
+            "audio": "7dd4cf917743fd0c1e0afe2f299de31412980bb5e11be7821b874a4deff40949"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7dd4cf917743fd0c1e0afe2f299de31412980bb5e11be7821b874a4deff40949": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-6bfb6238eabfeabad34a8fc49af8b5d79a85b89ed471962a28d19dc838809219.mp3",
+        "sha256": "6bfb6238eabfeabad34a8fc49af8b5d79a85b89ed471962a28d19dc838809219",
+        "byteLength": 9837,
+        "readAlong": {
+          "audioSha256": "6bfb6238eabfeabad34a8fc49af8b5d79a85b89ed471962a28d19dc838809219",
+          "text": "猫",
+          "words": [
+            {
+              "text": "猫",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-9f8f2a3a07a16b48f45b28e22e196bd30badc37c867b1cf1465fb1a8234c3278.mp3",
+        "sha256": "9f8f2a3a07a16b48f45b28e22e196bd30badc37c867b1cf1465fb1a8234c3278",
+        "byteLength": 7245,
+        "readAlong": {
+          "audioSha256": "9f8f2a3a07a16b48f45b28e22e196bd30badc37c867b1cf1465fb1a8234c3278",
+          "text": "猫",
+          "words": [
+            {
+              "text": "猫",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0426",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0426-W0426",
+      "question_ids": [
+        "BANK-W0426-W0426"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U04",
+    "stepId": "S-U04-words-r4-18",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-59d0"
+    ],
+    "grammarLessonIds": []
+  }
+}

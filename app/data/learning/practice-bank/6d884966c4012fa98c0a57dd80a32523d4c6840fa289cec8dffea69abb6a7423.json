@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0125",
+  "targetId": "W0125",
+  "steps": [
+    {
+      "id": "BANK-W0125-W0125",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0125-W0125",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "meaning",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "意思"
+            },
+            {
+              "value": "yìsi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yi4si5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "意思",
+            "pinyin": "yìsi",
+            "meaning": "meaning",
+            "singleWord": true,
+            "audio": "3c7f003c0e9b6fe93718a24e8e67909eb328e25a1fe34e2cdf4af05b6ba173e7"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3c7f003c0e9b6fe93718a24e8e67909eb328e25a1fe34e2cdf4af05b6ba173e7": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2b862608625a9f623a51399beac45369c1cb4c7f971c064e577c37690a070722.mp3",
+        "sha256": "2b862608625a9f623a51399beac45369c1cb4c7f971c064e577c37690a070722",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "2b862608625a9f623a51399beac45369c1cb4c7f971c064e577c37690a070722",
+          "text": "意思",
+          "words": [
+            {
+              "text": "意思",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-8a68365f91f6f9fccf2683dc82562e2d4c06cc365fb257b6c7372c654255e829.mp3",
+        "sha256": "8a68365f91f6f9fccf2683dc82562e2d4c06cc365fb257b6c7372c654255e829",
+        "byteLength": 15309,
+        "readAlong": {
+          "audioSha256": "8a68365f91f6f9fccf2683dc82562e2d4c06cc365fb257b6c7372c654255e829",
+          "text": "意思",
+          "words": [
+            {
+              "text": "意思",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0125",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0125-W0125",
+      "question_ids": [
+        "BANK-W0125-W0125"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U11",
+    "stepId": "S-U11-words-r4-7",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-601d"
+    ],
+    "grammarLessonIds": []
+  }
+}

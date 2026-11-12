@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4251",
+  "targetId": "W4251",
+  "steps": [
+    {
+      "id": "BANK-W4251-W4251",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4251-W4251",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "home; homeland",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "家园"
+            },
+            {
+              "value": "jiāyuán",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jia1yuan2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "家园",
+            "pinyin": "jiāyuán",
+            "meaning": "home; homeland",
+            "singleWord": true,
+            "audio": "89f12bfd31182109766f0c74f17818ac25b0693174a8c5a3b4eb7e1eec79ae9f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "89f12bfd31182109766f0c74f17818ac25b0693174a8c5a3b4eb7e1eec79ae9f": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a791b90f40e709fc73c53c8c83f9006d8bc23265d969ba73ff59840b9ea04c0e.mp3",
+        "sha256": "a791b90f40e709fc73c53c8c83f9006d8bc23265d969ba73ff59840b9ea04c0e",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "a791b90f40e709fc73c53c8c83f9006d8bc23265d969ba73ff59840b9ea04c0e",
+          "text": "家园",
+          "words": [
+            {
+              "text": "家园",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/41468106222d371b35bfe7d24f66189a96533801855b6a23ca2c7a95b1370c9d.mp3",
+        "sha256": "41468106222d371b35bfe7d24f66189a96533801855b6a23ca2c7a95b1370c9d",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "41468106222d371b35bfe7d24f66189a96533801855b6a23ca2c7a95b1370c9d",
+          "text": "家园",
+          "words": [
+            {
+              "text": "家园",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4251",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4251-W4251",
+      "question_ids": [
+        "BANK-W4251-W4251"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-04",
+    "stepId": "S-U6-04-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-56ed"
+    ],
+    "grammarLessonIds": []
+  }
+}

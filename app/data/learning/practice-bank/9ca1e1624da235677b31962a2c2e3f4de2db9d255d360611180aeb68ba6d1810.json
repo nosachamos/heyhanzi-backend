@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2071",
+  "targetId": "W2071",
+  "steps": [
+    {
+      "id": "BANK-W2071-W2071",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2071-W2071",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "I; me",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "本人"
+            },
+            {
+              "value": "běnrén",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ben3ren2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "本人",
+            "pinyin": "běnrén",
+            "meaning": "I; me",
+            "singleWord": true,
+            "audio": "8209bdd9006684cb7a8fdb25ac01d94bf22a7129745c959ffd957f0d576c655d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8209bdd9006684cb7a8fdb25ac01d94bf22a7129745c959ffd957f0d576c655d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-fd9098e067dbbb1c078a491a025dc85d7e5d2486a0e6234e5bcab6afd08dfcfa.mp3",
+        "sha256": "fd9098e067dbbb1c078a491a025dc85d7e5d2486a0e6234e5bcab6afd08dfcfa",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "fd9098e067dbbb1c078a491a025dc85d7e5d2486a0e6234e5bcab6afd08dfcfa",
+          "text": "本人",
+          "words": [
+            {
+              "text": "本人",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-e3f1bed8f49f61347446bb1e44ef4538be090207560bd9f73eb5557c861a299a.mp3",
+        "sha256": "e3f1bed8f49f61347446bb1e44ef4538be090207560bd9f73eb5557c861a299a",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "e3f1bed8f49f61347446bb1e44ef4538be090207560bd9f73eb5557c861a299a",
+          "text": "本人",
+          "words": [
+            {
+              "text": "本人",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2071",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2071-W2071",
+      "question_ids": [
+        "BANK-W2071-W2071"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-50",
+    "stepId": "S-U5-50-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-672c"
+    ],
+    "grammarLessonIds": []
+  }
+}

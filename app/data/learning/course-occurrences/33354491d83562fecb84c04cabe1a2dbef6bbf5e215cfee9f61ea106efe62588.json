@@ -1,0 +1,715 @@
+{
+  "id": "EX-CHAR-char-80aa",
+  "revision": 2,
+  "unit": "U6-15",
+  "stage": "ST-HSK6",
+  "after": "S-U6-15-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "肪",
+  "sourceBlockId": "mandarin-simplified-v1-char-80aa",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-80aa",
+        "text": "肪",
+        "pinyin": "fáng",
+        "meaning": "animal fat",
+        "characters": [
+          {
+            "id": "C-80AA",
+            "text": "肪"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-a46f9d1a908b307dd46360f4",
+        "text": "脂肪",
+        "pinyin": "zhīfáng",
+        "meaning": "fat (in the body, in a plant, or in food)",
+        "characters": [
+          {
+            "id": "C-8102",
+            "text": "脂"
+          },
+          {
+            "id": "C-80AA",
+            "text": "肪"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-fc13e06b2b0d5d42c13591ae",
+        "text": "周边",
+        "pinyin": "zhōubiān",
+        "meaning": "periphery; rim; perimeter; surroundings; (computing) (attributive) peripheral",
+        "characters": [
+          {
+            "id": "C-5468",
+            "text": "周"
+          },
+          {
+            "id": "C-8FB9",
+            "text": "边"
+          }
+        ]
+      },
+      {
+        "id": "W0427",
+        "text": "没关系",
+        "pinyin": "méiguānxi",
+        "meaning": "it doesn't matter",
+        "characters": [
+          {
+            "id": "C-6CA1",
+            "text": "没"
+          },
+          {
+            "id": "C-5173",
+            "text": "关"
+          },
+          {
+            "id": "C-7CFB",
+            "text": "系"
+          }
+        ]
+      },
+      {
+        "id": "W3755",
+        "text": "厂商",
+        "pinyin": "chǎngshāng",
+        "meaning": "manufacturer; producer",
+        "characters": [
+          {
+            "id": "C-5382",
+            "text": "厂"
+          },
+          {
+            "id": "C-5546",
+            "text": "商"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "b593e9336a9a2be37603b0993fb15f7d669b4514e1e4e441ac67c5fd9c6b5158",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-80aa",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "肪",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-80aa-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-a46f9d1a908b307dd46360f4",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "fat (in the body, in a plant, or in food)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "脂肪"
+              },
+              {
+                "value": "zhīfáng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhi1fang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "脂肪",
+              "pinyin": "zhīfáng",
+              "meaning": "fat (in the body, in a plant, or in food)",
+              "audio": "de0372b05c5a1559f5cf376e5a496236649134852388ad117cd6a84b8dab6617",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-80aa-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-80aa",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "肪",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-80aa",
+                "label": "animal fat",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-fc13e06b2b0d5d42c13591ae",
+                "label": "periphery; rim",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0427",
+                "label": "it doesn't matter",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-80aa-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "肪",
+        "pinyin": "fáng",
+        "meaning": "animal fat",
+        "source": "/stroke-data/80aa.json",
+        "reference": {
+          "character": "肪",
+          "sha256": "e8e0c89247dba4ef90bca24b27bc3d35d6a66eb1297929348665190b981c52e4",
+          "medians": [
+            [
+              [
+                161,
+                721
+              ],
+              [
+                197,
+                690
+              ],
+              [
+                203,
+                645
+              ],
+              [
+                199,
+                460
+              ],
+              [
+                184,
+                334
+              ],
+              [
+                147,
+                207
+              ],
+              [
+                105,
+                118
+              ],
+              [
+                59,
+                48
+              ]
+            ],
+            [
+              [
+                231,
+                707
+              ],
+              [
+                251,
+                703
+              ],
+              [
+                324,
+                725
+              ],
+              [
+                343,
+                719
+              ],
+              [
+                365,
+                696
+              ],
+              [
+                367,
+                303
+              ],
+              [
+                362,
+                133
+              ],
+              [
+                344,
+                98
+              ],
+              [
+                238,
+                137
+              ]
+            ],
+            [
+              [
+                234,
+                513
+              ],
+              [
+                246,
+                528
+              ],
+              [
+                292,
+                527
+              ]
+            ],
+            [
+              [
+                219,
+                362
+              ],
+              [
+                226,
+                374
+              ],
+              [
+                244,
+                382
+              ],
+              [
+                289,
+                378
+              ]
+            ],
+            [
+              [
+                578,
+                779
+              ],
+              [
+                666,
+                725
+              ],
+              [
+                693,
+                684
+              ]
+            ],
+            [
+              [
+                425,
+                509
+              ],
+              [
+                480,
+                505
+              ],
+              [
+                616,
+                537
+              ],
+              [
+                840,
+                576
+              ],
+              [
+                917,
+                563
+              ]
+            ],
+            [
+              [
+                662,
+                424
+              ],
+              [
+                672,
+                405
+              ],
+              [
+                751,
+                383
+              ],
+              [
+                772,
+                368
+              ],
+              [
+                788,
+                343
+              ],
+              [
+                744,
+                194
+              ],
+              [
+                709,
+                108
+              ],
+              [
+                686,
+                75
+              ],
+              [
+                657,
+                54
+              ],
+              [
+                570,
+                120
+              ]
+            ],
+            [
+              [
+                615,
+                512
+              ],
+              [
+                644,
+                490
+              ],
+              [
+                648,
+                478
+              ],
+              [
+                605,
+                370
+              ],
+              [
+                506,
+                216
+              ],
+              [
+                462,
+                163
+              ],
+              [
+                413,
+                122
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-80aa-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3755",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "manufacturer; producer",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "厂商"
+              },
+              {
+                "value": "chǎngshāng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chang3shang1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "厂商",
+              "pinyin": "chǎngshāng",
+              "meaning": "manufacturer; producer",
+              "audio": "890c3ece461a197f51ad96fdcc778607c67627235fea55a3b9917366e63acb11",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-80aa-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-80aa",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "animal fat",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "肪"
+              },
+              {
+                "value": "fáng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "fang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "肪",
+              "pinyin": "fáng",
+              "meaning": "animal fat",
+              "audio": "a1110b1f50a47fc0d6c86c8b550d2b8fbe705bc374f76975b8d928ba3803e6af",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "a1110b1f50a47fc0d6c86c8b550d2b8fbe705bc374f76975b8d928ba3803e6af"
+            ],
+            "transcript": [
+              {
+                "text": "肪",
+                "pinyin": "fáng",
+                "meaning": "animal fat",
+                "audio": "a1110b1f50a47fc0d6c86c8b550d2b8fbe705bc374f76975b8d928ba3803e6af",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-80AA",
+      "character": "肪",
+      "lessonIds": [
+        "LESSON-C-80AA"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-80aa-word",
+        "EX-CHAR-char-80aa-recognize",
+        "EX-CHAR-char-80aa-write",
+        "EX-CHAR-char-80aa-familiar",
+        "EX-CHAR-char-80aa-recall"
+      ]
+    },
+    "audio": {
+      "a1110b1f50a47fc0d6c86c8b550d2b8fbe705bc374f76975b8d928ba3803e6af": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-b79ef19097a460726f5e89379a245e079e34594d50ea6c74e6cf53223caeaa90.mp3",
+          "sha256": "b79ef19097a460726f5e89379a245e079e34594d50ea6c74e6cf53223caeaa90",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "b79ef19097a460726f5e89379a245e079e34594d50ea6c74e6cf53223caeaa90",
+            "text": "肪",
+            "words": [
+              {
+                "text": "肪",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-09e42a3e6d07606eeb529d0bfa6d9a35334a9657822b4b19e2142cc3e0c472f5.mp3",
+          "sha256": "09e42a3e6d07606eeb529d0bfa6d9a35334a9657822b4b19e2142cc3e0c472f5",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "09e42a3e6d07606eeb529d0bfa6d9a35334a9657822b4b19e2142cc3e0c472f5",
+            "text": "肪",
+            "words": [
+              {
+                "text": "肪",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "de0372b05c5a1559f5cf376e5a496236649134852388ad117cd6a84b8dab6617": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/350827d8d8fb9a87b17511fe86d0f06107cb2a84dfb665ba4e6b089b1dd9aacb.mp3",
+          "sha256": "350827d8d8fb9a87b17511fe86d0f06107cb2a84dfb665ba4e6b089b1dd9aacb",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "350827d8d8fb9a87b17511fe86d0f06107cb2a84dfb665ba4e6b089b1dd9aacb",
+            "text": "脂肪",
+            "words": [
+              {
+                "text": "脂肪",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-bbab47000d9c5d795c47d090876a2d14413753a66da0862560efefb4e46ff369.mp3",
+          "sha256": "bbab47000d9c5d795c47d090876a2d14413753a66da0862560efefb4e46ff369",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "bbab47000d9c5d795c47d090876a2d14413753a66da0862560efefb4e46ff369",
+            "text": "脂肪",
+            "words": [
+              {
+                "text": "脂肪",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "b39053b3fa203a3f948af759f429326ffb99c2757f3c0d672940378d2f279caa": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/4130ba389c1aafa9109e7a0e2067dbceef4f6ab1ec8ad820c3ef25a393d55653.mp3",
+          "sha256": "4130ba389c1aafa9109e7a0e2067dbceef4f6ab1ec8ad820c3ef25a393d55653",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "4130ba389c1aafa9109e7a0e2067dbceef4f6ab1ec8ad820c3ef25a393d55653",
+            "text": "周边",
+            "words": [
+              {
+                "text": "周边",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/cd7d813d5d5a1ceb70b19b8b071ae78eca217964b097d374f4babc79bf98651a.mp3",
+          "sha256": "cd7d813d5d5a1ceb70b19b8b071ae78eca217964b097d374f4babc79bf98651a",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "cd7d813d5d5a1ceb70b19b8b071ae78eca217964b097d374f4babc79bf98651a",
+            "text": "周边",
+            "words": [
+              {
+                "text": "周边",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "821aab252f6fcb5d5c9d868991eee875fe182852d85bd767b2024a40662f8283": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b352c668d8ba4d91c613fe288a99d3e1b6757a43c7ae02959793529f0136c69d.mp3",
+          "sha256": "b352c668d8ba4d91c613fe288a99d3e1b6757a43c7ae02959793529f0136c69d",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "b352c668d8ba4d91c613fe288a99d3e1b6757a43c7ae02959793529f0136c69d",
+            "text": "没关系",
+            "words": [
+              {
+                "text": "没关系",
+                "start": 0.15,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-86ac0e58697c499b7baffc524abd0a9cb948e32c9cd6dc44583310f86add1894.mp3",
+          "sha256": "86ac0e58697c499b7baffc524abd0a9cb948e32c9cd6dc44583310f86add1894",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "86ac0e58697c499b7baffc524abd0a9cb948e32c9cd6dc44583310f86add1894",
+            "text": "没关系",
+            "words": [
+              {
+                "text": "没关系",
+                "start": 0.15,
+                "end": 0.75
+              }
+            ]
+          }
+        }
+      },
+      "890c3ece461a197f51ad96fdcc778607c67627235fea55a3b9917366e63acb11": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/83c353c608bf59da158092ea0d58c89c533cfcf5830ca589c79194ed011c9a83.mp3",
+          "sha256": "83c353c608bf59da158092ea0d58c89c533cfcf5830ca589c79194ed011c9a83",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "83c353c608bf59da158092ea0d58c89c533cfcf5830ca589c79194ed011c9a83",
+            "text": "厂商",
+            "words": [
+              {
+                "text": "厂商",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/6bb96834c5725a25890eb97a85315dafa18d50a5df9abaf1796dfd1029a8cb2b.mp3",
+          "sha256": "6bb96834c5725a25890eb97a85315dafa18d50a5df9abaf1796dfd1029a8cb2b",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "6bb96834c5725a25890eb97a85315dafa18d50a5df9abaf1796dfd1029a8cb2b",
+            "text": "厂商",
+            "words": [
+              {
+                "text": "厂商",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

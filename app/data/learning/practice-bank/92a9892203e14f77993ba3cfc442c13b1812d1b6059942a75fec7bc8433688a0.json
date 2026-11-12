@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0695",
+  "targetId": "W0695",
+  "steps": [
+    {
+      "id": "BANK-W0695-W0695",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0695-W0695",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to leave hospital; to be discharged from hospital",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "出院"
+            },
+            {
+              "value": "chūyuàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chu1yuan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "出院",
+            "pinyin": "chūyuàn",
+            "meaning": "to leave hospital; to be discharged from hospital",
+            "singleWord": true,
+            "audio": "6fc4743fcc441f1304b33f566aeb5baa5e90658585dfd792697dd5db36a1bd77"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "6fc4743fcc441f1304b33f566aeb5baa5e90658585dfd792697dd5db36a1bd77": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-dcb2621352e6849d7cc1ff3153d77fe1da5962b7f90752d21e49b28fcf7f6c91.mp3",
+        "sha256": "dcb2621352e6849d7cc1ff3153d77fe1da5962b7f90752d21e49b28fcf7f6c91",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "dcb2621352e6849d7cc1ff3153d77fe1da5962b7f90752d21e49b28fcf7f6c91",
+          "text": "出院",
+          "words": [
+            {
+              "text": "出院",
+              "start": 0.26,
+              "end": 0.64
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-627c6ed4a8a4b4e993b43c73479e6e7595dd937181cab7c42286323b611f1f5e.mp3",
+        "sha256": "627c6ed4a8a4b4e993b43c73479e6e7595dd937181cab7c42286323b611f1f5e",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "627c6ed4a8a4b4e993b43c73479e6e7595dd937181cab7c42286323b611f1f5e",
+          "text": "出院",
+          "words": [
+            {
+              "text": "出院",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0695",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0695-W0695",
+      "question_ids": [
+        "BANK-W0695-W0695"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-09",
+    "stepId": "S-U3-09-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-51fa"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0035",
+  "targetId": "W0035",
+  "steps": [
+    {
+      "id": "BANK-W0035-W0035",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0035-W0035",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "not have; there is not",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "没有"
+            },
+            {
+              "value": "méiyǒu",
+              "mode": "pinyin"
+            },
+            {
+              "value": "mei2you3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "没有",
+            "pinyin": "méiyǒu",
+            "meaning": "not have; there is not",
+            "singleWord": true,
+            "audio": "0e375b8f9857f770a51dd6c5f7053d42331be79aa9c97cadc4c10532c13ebe17"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "0e375b8f9857f770a51dd6c5f7053d42331be79aa9c97cadc4c10532c13ebe17": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-b5e1d7508863098db08beda65d301e2dd721db748aa2ba31497f119138266622.mp3",
+        "sha256": "b5e1d7508863098db08beda65d301e2dd721db748aa2ba31497f119138266622",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "b5e1d7508863098db08beda65d301e2dd721db748aa2ba31497f119138266622",
+          "text": "没有",
+          "words": [
+            {
+              "text": "没有",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-af530733122a345cc8f46ae49648bdef77f2be4580df052fc39f4380bdfe03f9.mp3",
+        "sha256": "af530733122a345cc8f46ae49648bdef77f2be4580df052fc39f4380bdfe03f9",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "af530733122a345cc8f46ae49648bdef77f2be4580df052fc39f4380bdfe03f9",
+          "text": "没有",
+          "words": [
+            {
+              "text": "没有",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0035",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0035-W0035",
+      "question_ids": [
+        "BANK-W0035-W0035"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U04",
+    "stepId": "S-U04-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6ca1"
+    ],
+    "grammarLessonIds": []
+  }
+}

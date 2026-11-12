@@ -1,0 +1,699 @@
+{
+  "id": "EX-CHAR-char-62bc",
+  "revision": 2,
+  "unit": "U5-10-P01",
+  "stage": "ST-HSK5",
+  "after": "S-U5-10-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "押",
+  "sourceBlockId": "mandarin-simplified-v1-char-62bc",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-62bc",
+        "text": "押",
+        "pinyin": "yā",
+        "meaning": "to mortgage; to pawn",
+        "characters": [
+          {
+            "id": "C-62BC",
+            "text": "押"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-03a1de30e7a8263b3bb16f1a",
+        "text": "黑马",
+        "pinyin": "hēi mǎ",
+        "meaning": "dark horse",
+        "characters": [
+          {
+            "id": "C-9ED1",
+            "text": "黑"
+          },
+          {
+            "id": "C-9A6C",
+            "text": "马"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-a7738477a99166eba5e1409c",
+        "text": "打交道",
+        "pinyin": "dǎ jiāodao",
+        "meaning": "to come into contact with; to have dealings",
+        "characters": [
+          {
+            "id": "C-6253",
+            "text": "打"
+          },
+          {
+            "id": "C-4EA4",
+            "text": "交"
+          },
+          {
+            "id": "C-9053",
+            "text": "道"
+          }
+        ]
+      },
+      {
+        "id": "W0234",
+        "text": "找到",
+        "pinyin": "zhǎodào",
+        "meaning": "to find",
+        "characters": [
+          {
+            "id": "C-627E",
+            "text": "找"
+          },
+          {
+            "id": "C-5230",
+            "text": "到"
+          }
+        ]
+      },
+      {
+        "id": "W3340",
+        "text": "押金",
+        "pinyin": "yājīn",
+        "meaning": "deposit; down payment",
+        "characters": [
+          {
+            "id": "C-62BC",
+            "text": "押"
+          },
+          {
+            "id": "C-91D1",
+            "text": "金"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "763ffb45955dcd7ed65e863d4dde0f43eefe916f6d03f4ba5e9d5f2901a9b9a3",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-62bc",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "押",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-62bc-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3340",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "deposit; down payment",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "押金"
+              },
+              {
+                "value": "yājīn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ya1jin1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "押金",
+              "pinyin": "yājīn",
+              "meaning": "deposit; down payment",
+              "audio": "b8bc88d62fb4f7d5e7c5cb067808dffd4d0209f43e106d2195123aaa814e3bae",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-62bc-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-62bc",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "押",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0234",
+                "label": "to find",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-62bc",
+                "label": "to mortgage; to pawn",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-a7738477a99166eba5e1409c",
+                "label": "to come into contact with; to have dealings",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-62bc-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "押",
+        "pinyin": "yā",
+        "meaning": "to mortgage; to pawn",
+        "source": "/stroke-data/62bc.json",
+        "reference": {
+          "character": "押",
+          "sha256": "903c90250e3afc8a271c0bd382640f60b3f6e36f9f9212ea5b63606eb82efdc7",
+          "medians": [
+            [
+              [
+                100,
+                554
+              ],
+              [
+                165,
+                554
+              ],
+              [
+                340,
+                604
+              ],
+              [
+                385,
+                607
+              ]
+            ],
+            [
+              [
+                266,
+                838
+              ],
+              [
+                282,
+                830
+              ],
+              [
+                313,
+                797
+              ],
+              [
+                303,
+                485
+              ],
+              [
+                307,
+                141
+              ],
+              [
+                301,
+                109
+              ],
+              [
+                286,
+                80
+              ],
+              [
+                256,
+                88
+              ],
+              [
+                182,
+                123
+              ],
+              [
+                180,
+                130
+              ],
+              [
+                169,
+                130
+              ]
+            ],
+            [
+              [
+                58,
+                277
+              ],
+              [
+                76,
+                271
+              ],
+              [
+                105,
+                274
+              ],
+              [
+                227,
+                362
+              ],
+              [
+                394,
+                469
+              ]
+            ],
+            [
+              [
+                424,
+                632
+              ],
+              [
+                445,
+                614
+              ],
+              [
+                461,
+                581
+              ],
+              [
+                508,
+                307
+              ]
+            ],
+            [
+              [
+                471,
+                629
+              ],
+              [
+                494,
+                619
+              ],
+              [
+                597,
+                640
+              ],
+              [
+                773,
+                664
+              ],
+              [
+                810,
+                662
+              ],
+              [
+                834,
+                651
+              ],
+              [
+                858,
+                623
+              ],
+              [
+                814,
+                437
+              ],
+              [
+                785,
+                356
+              ],
+              [
+                754,
+                350
+              ]
+            ],
+            [
+              [
+                535,
+                471
+              ],
+              [
+                578,
+                476
+              ],
+              [
+                701,
+                507
+              ],
+              [
+                740,
+                503
+              ]
+            ],
+            [
+              [
+                530,
+                327
+              ],
+              [
+                548,
+                339
+              ],
+              [
+                730,
+                369
+              ],
+              [
+                753,
+                378
+              ]
+            ],
+            [
+              [
+                595,
+                615
+              ],
+              [
+                640,
+                588
+              ],
+              [
+                635,
+                -64
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-62bc-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-03a1de30e7a8263b3bb16f1a",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "dark horse",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "黑马"
+              },
+              {
+                "value": "hēi mǎ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hei1ma3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "黑马",
+              "pinyin": "hēi mǎ",
+              "meaning": "dark horse",
+              "audio": "42b354855a95db73394be4e7956b36be5cf7d2b9035b5121f55d2d20e5e42095",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-62bc-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-62bc",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to mortgage; to pawn",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "押"
+              },
+              {
+                "value": "yā",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ya1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "押",
+              "pinyin": "yā",
+              "meaning": "to mortgage; to pawn",
+              "audio": "3aaf139b38c45583f15e26e17ce7dd906737622c7cf2d99090ea3e51ceda6557",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "3aaf139b38c45583f15e26e17ce7dd906737622c7cf2d99090ea3e51ceda6557"
+            ],
+            "transcript": [
+              {
+                "text": "押",
+                "pinyin": "yā",
+                "meaning": "to mortgage; to pawn",
+                "audio": "3aaf139b38c45583f15e26e17ce7dd906737622c7cf2d99090ea3e51ceda6557",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-62BC",
+      "character": "押",
+      "lessonIds": [
+        "LESSON-C-62BC"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-62bc-word",
+        "EX-CHAR-char-62bc-recognize",
+        "EX-CHAR-char-62bc-write",
+        "EX-CHAR-char-62bc-familiar",
+        "EX-CHAR-char-62bc-recall"
+      ]
+    },
+    "audio": {
+      "3aaf139b38c45583f15e26e17ce7dd906737622c7cf2d99090ea3e51ceda6557": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-1bfb1c4bf1de0af16e806771ba52cd171f02be100fda9efd9cede2746ba41f7d.mp3",
+          "sha256": "1bfb1c4bf1de0af16e806771ba52cd171f02be100fda9efd9cede2746ba41f7d",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "1bfb1c4bf1de0af16e806771ba52cd171f02be100fda9efd9cede2746ba41f7d",
+            "text": "押",
+            "words": [
+              {
+                "text": "押",
+                "start": 0.18,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-f08242d9f6626ffe2853ba2fd850e8e55f44cd13c3e94164de935bb6944ab7e2.mp3",
+          "sha256": "f08242d9f6626ffe2853ba2fd850e8e55f44cd13c3e94164de935bb6944ab7e2",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "f08242d9f6626ffe2853ba2fd850e8e55f44cd13c3e94164de935bb6944ab7e2",
+            "text": "押",
+            "words": [
+              {
+                "text": "押",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "42b354855a95db73394be4e7956b36be5cf7d2b9035b5121f55d2d20e5e42095": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6b8c89760f02f3f0f92a1654d6534e5752803477599e6e6dce2357070b1fb88a.mp3",
+          "sha256": "6b8c89760f02f3f0f92a1654d6534e5752803477599e6e6dce2357070b1fb88a",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "6b8c89760f02f3f0f92a1654d6534e5752803477599e6e6dce2357070b1fb88a",
+            "text": "黑马",
+            "words": [
+              {
+                "text": "黑马",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5987885d1c80e2c574e91866569f2d374302309bad31925ff9b391b359c92714.mp3",
+          "sha256": "5987885d1c80e2c574e91866569f2d374302309bad31925ff9b391b359c92714",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "5987885d1c80e2c574e91866569f2d374302309bad31925ff9b391b359c92714",
+            "text": "黑马",
+            "words": [
+              {
+                "text": "黑马",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "4a7926d34f2e212c5f0969242bdf666c0da8d91fac6ea112548ea04b93ad472c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/35ad2eea77eae31b8aa4ff94c7c1323f51b29dafdd2e1cfa23b6f175a1f03fb2.mp3",
+          "sha256": "35ad2eea77eae31b8aa4ff94c7c1323f51b29dafdd2e1cfa23b6f175a1f03fb2",
+          "byteLength": 16173,
+          "readAlong": {
+            "audioSha256": "35ad2eea77eae31b8aa4ff94c7c1323f51b29dafdd2e1cfa23b6f175a1f03fb2",
+            "text": "打交道",
+            "words": [
+              {
+                "text": "打交道",
+                "start": 0.21,
+                "end": 0.9299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/72b6e525069a9917b6ed2f08ecd955e82374724f74148be63746db41c6ea051f.mp3",
+          "sha256": "72b6e525069a9917b6ed2f08ecd955e82374724f74148be63746db41c6ea051f",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "72b6e525069a9917b6ed2f08ecd955e82374724f74148be63746db41c6ea051f",
+            "text": "打交道",
+            "words": [
+              {
+                "text": "打交道",
+                "start": 0.09,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "4cf1501595f0df6d6c92e9f213df020cc4a9a17d1d798e15a13ffbb476c3fe89": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-d9466de7f57fdf28e565965485db72ccfc60757d9974f8328c6a114b72f2c7ee.mp3",
+          "sha256": "d9466de7f57fdf28e565965485db72ccfc60757d9974f8328c6a114b72f2c7ee",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "d9466de7f57fdf28e565965485db72ccfc60757d9974f8328c6a114b72f2c7ee",
+            "text": "找到",
+            "words": [
+              {
+                "text": "找到",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4d7d0dce6f4183aafefd3c2bc178f3039a8bb86a625b73087d6f3551e4d494f1.mp3",
+          "sha256": "4d7d0dce6f4183aafefd3c2bc178f3039a8bb86a625b73087d6f3551e4d494f1",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "4d7d0dce6f4183aafefd3c2bc178f3039a8bb86a625b73087d6f3551e4d494f1",
+            "text": "找到",
+            "words": [
+              {
+                "text": "找到",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "b8bc88d62fb4f7d5e7c5cb067808dffd4d0209f43e106d2195123aaa814e3bae": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/68e5528abee3e1a6159da48c4e2390f3cc585f9833772a3db4f379716a9b8032.mp3",
+          "sha256": "68e5528abee3e1a6159da48c4e2390f3cc585f9833772a3db4f379716a9b8032",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "68e5528abee3e1a6159da48c4e2390f3cc585f9833772a3db4f379716a9b8032",
+            "text": "押金",
+            "words": [
+              {
+                "text": "押金",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/fbdc952adf3c6cb924f7f7850cd3a992dfc6506d64963741c9ab3f3fd49b276b.mp3",
+          "sha256": "fbdc952adf3c6cb924f7f7850cd3a992dfc6506d64963741c9ab3f3fd49b276b",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "fbdc952adf3c6cb924f7f7850cd3a992dfc6506d64963741c9ab3f3fd49b276b",
+            "text": "押金",
+            "words": [
+              {
+                "text": "押金",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

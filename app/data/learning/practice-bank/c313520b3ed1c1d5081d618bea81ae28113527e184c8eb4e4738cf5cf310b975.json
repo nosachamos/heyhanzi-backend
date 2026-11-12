@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2305",
+  "targetId": "W2305",
+  "steps": [
+    {
+      "id": "BANK-W2305-W2305",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2305-W2305",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "e-commerce",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "电商"
+            },
+            {
+              "value": "diànshāng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dian4shang1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "电商",
+            "pinyin": "diànshāng",
+            "meaning": "e-commerce",
+            "singleWord": true,
+            "audio": "e23e1d618d0d56e765b91f5ff67096ac2004889aa1feeef2b8cc6b8b1064bd09"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e23e1d618d0d56e765b91f5ff67096ac2004889aa1feeef2b8cc6b8b1064bd09": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/17fba9f0a6863290bb2954ffc9a03aa4e1b9b851e488130dd51ca25bfa3e7d2e.mp3",
+        "sha256": "17fba9f0a6863290bb2954ffc9a03aa4e1b9b851e488130dd51ca25bfa3e7d2e",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "17fba9f0a6863290bb2954ffc9a03aa4e1b9b851e488130dd51ca25bfa3e7d2e",
+          "text": "电商",
+          "words": [
+            {
+              "text": "电商",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/96de280e9fea8bd506547a1103d3d44cb2a14886a774ddcd5621e9427d235006.mp3",
+        "sha256": "96de280e9fea8bd506547a1103d3d44cb2a14886a774ddcd5621e9427d235006",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "96de280e9fea8bd506547a1103d3d44cb2a14886a774ddcd5621e9427d235006",
+          "text": "电商",
+          "words": [
+            {
+              "text": "电商",
+              "start": 0.16,
+              "end": 0.52
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2305",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2305-W2305",
+      "question_ids": [
+        "BANK-W2305-W2305"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-32-P01",
+    "stepId": "S-U5-32-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8363"
+    ],
+    "grammarLessonIds": []
+  }
+}

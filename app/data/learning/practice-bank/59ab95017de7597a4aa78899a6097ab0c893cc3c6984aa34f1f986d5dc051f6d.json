@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0015",
+  "targetId": "W0015",
+  "steps": [
+    {
+      "id": "BANK-W0015-W0015",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0015-W0015",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "we; us",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "我们"
+            },
+            {
+              "value": "wǒmen",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wo3men5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "我们",
+            "pinyin": "wǒmen",
+            "meaning": "we; us",
+            "singleWord": true,
+            "audio": "6a0551f103146a14f85b981e69edca6a37e63489b6c933b5d8103e9428ca1467"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "6a0551f103146a14f85b981e69edca6a37e63489b6c933b5d8103e9428ca1467": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-63108cf2e07cc040dd6214838d2e2a76055f2c9be2a7aa04f255f527b0095b22.mp3",
+        "sha256": "63108cf2e07cc040dd6214838d2e2a76055f2c9be2a7aa04f255f527b0095b22",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "63108cf2e07cc040dd6214838d2e2a76055f2c9be2a7aa04f255f527b0095b22",
+          "text": "我们",
+          "words": [
+            {
+              "text": "我们",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-6fd8ab08425731c86fc30dd9d055d1fdab8f97eb8422c713a65a43a0fe5f0be4.mp3",
+        "sha256": "6fd8ab08425731c86fc30dd9d055d1fdab8f97eb8422c713a65a43a0fe5f0be4",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "6fd8ab08425731c86fc30dd9d055d1fdab8f97eb8422c713a65a43a0fe5f0be4",
+          "text": "我们",
+          "words": [
+            {
+              "text": "我们",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0015",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0015-W0015",
+      "question_ids": [
+        "BANK-W0015-W0015"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U02-P01",
+    "stepId": "S-U02-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4eec"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W2902",
+  "targetId": "W2902",
+  "steps": [
+    {
+      "id": "BANK-W2902-W2902",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2902-W2902",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "friends and relatives",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "亲朋好友"
+            },
+            {
+              "value": "qīnpénghǎoyǒu",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qin1peng2hao3you3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "亲朋好友",
+            "pinyin": "qīnpénghǎoyǒu",
+            "meaning": "friends and relatives",
+            "singleWord": true,
+            "audio": "747e98740dc6185b3f8dba3006ed1932331f8806708ec5726bbaa3301a922759"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "747e98740dc6185b3f8dba3006ed1932331f8806708ec5726bbaa3301a922759": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6216f04d47b932a1c7b30f508be655a3d743551a082ad5e9e352bea76cf2fbb5.mp3",
+        "sha256": "6216f04d47b932a1c7b30f508be655a3d743551a082ad5e9e352bea76cf2fbb5",
+        "byteLength": 19053,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "6216f04d47b932a1c7b30f508be655a3d743551a082ad5e9e352bea76cf2fbb5",
+          "text": "亲朋好友",
+          "words": [
+            {
+              "text": "亲朋好友",
+              "start": 0.15,
+              "end": 0.8699999999999999
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/13976fa1e41393797ca909ee0960e43445c68d0513e85036e47e1a5cd56cebcf.mp3",
+        "sha256": "13976fa1e41393797ca909ee0960e43445c68d0513e85036e47e1a5cd56cebcf",
+        "byteLength": 19341,
+        "readAlong": {
+          "audioSha256": "13976fa1e41393797ca909ee0960e43445c68d0513e85036e47e1a5cd56cebcf",
+          "text": "亲朋好友",
+          "words": [
+            {
+              "text": "亲朋好友",
+              "start": 0.21,
+              "end": 1.05
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2902",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2902-W2902",
+      "question_ids": [
+        "BANK-W2902-W2902"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-02",
+    "stepId": "S-U5-02-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-79f0"
+    ],
+    "grammarLessonIds": []
+  }
+}

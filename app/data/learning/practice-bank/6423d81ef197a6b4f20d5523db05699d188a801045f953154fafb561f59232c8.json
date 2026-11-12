@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3240",
+  "targetId": "W3240",
+  "steps": [
+    {
+      "id": "BANK-W3240-W3240",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3240-W3240",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "Western-style food",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "西餐"
+            },
+            {
+              "value": "xīcān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xi1can1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "西餐",
+            "pinyin": "xīcān",
+            "meaning": "Western-style food",
+            "singleWord": true,
+            "audio": "4341da5c70d58045d89e0f8cde60de5f9cb5d8faf04115f8eb1f277d1db70853"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "4341da5c70d58045d89e0f8cde60de5f9cb5d8faf04115f8eb1f277d1db70853": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-dbeeb097bf22b3b9ae24592feda2325111f49a2445b22f3bfa5e9c3195015bde.mp3",
+        "sha256": "dbeeb097bf22b3b9ae24592feda2325111f49a2445b22f3bfa5e9c3195015bde",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "dbeeb097bf22b3b9ae24592feda2325111f49a2445b22f3bfa5e9c3195015bde",
+          "text": "西餐",
+          "words": [
+            {
+              "text": "西餐",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-82482e78e412bc4937c1b217865dcfbb2f61a0bfb1b5395cd49a3204a2dc69eb.mp3",
+        "sha256": "82482e78e412bc4937c1b217865dcfbb2f61a0bfb1b5395cd49a3204a2dc69eb",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "82482e78e412bc4937c1b217865dcfbb2f61a0bfb1b5395cd49a3204a2dc69eb",
+          "text": "西餐",
+          "words": [
+            {
+              "text": "西餐",
+              "start": 0.27,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3240",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3240-W3240",
+      "question_ids": [
+        "BANK-W3240-W3240"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-08",
+    "stepId": "S-U5-08-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9910"
+    ],
+    "grammarLessonIds": []
+  }
+}

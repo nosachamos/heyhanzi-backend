@@ -1,0 +1,543 @@
+{
+  "id": "EX-CHAR-char-738b",
+  "revision": 2,
+  "unit": "U01",
+  "stage": "ST-HSK1",
+  "after": "S-U01-writing-r4-1",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "王",
+  "sourceBlockId": "mandarin-simplified-v1-char-738b",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Write the character",
+    "Connect meaning and sound",
+    "Use the whole word",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-540d",
+        "text": "名",
+        "pinyin": "míng",
+        "meaning": "name; noun (part of speech)",
+        "characters": [
+          {
+            "id": "C-540D",
+            "text": "名"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-738b",
+        "text": "王",
+        "pinyin": "wáng",
+        "meaning": "king or monarch; best or strongest of its type",
+        "characters": [
+          {
+            "id": "C-738B",
+            "text": "王"
+          }
+        ]
+      },
+      {
+        "id": "W-XIAOWANG",
+        "text": "小王",
+        "pinyin": "xiǎowáng",
+        "meaning": "familiar address for a younger person surnamed Wang",
+        "characters": [
+          {
+            "id": "C-5C0F",
+            "text": "小"
+          },
+          {
+            "id": "C-738B",
+            "text": "王"
+          }
+        ]
+      },
+      {
+        "id": "W4150",
+        "text": "好客",
+        "pinyin": "hàokè",
+        "meaning": "hospitality; to treat guests well",
+        "characters": [
+          {
+            "id": "C-597D",
+            "text": "好"
+          },
+          {
+            "id": "C-5BA2",
+            "text": "客"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "1561eefb48a6c36fabc4d95809e8550bc58f5985040cd63f6c2b0112dc36546b",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-738b",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "王",
+    "variant": "lesson-movement-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-738b-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "王",
+        "pinyin": "wáng",
+        "meaning": "king or monarch; best or strongest of its type",
+        "source": "/stroke-data/738b.json",
+        "reference": {
+          "character": "王",
+          "sha256": "1aca973b5a276e1a7114c0423726a21467a50d191c7da1d27c130bde3d1efa3c",
+          "medians": [
+            [
+              [
+                296,
+                665
+              ],
+              [
+                329,
+                657
+              ],
+              [
+                385,
+                655
+              ],
+              [
+                675,
+                704
+              ],
+              [
+                742,
+                702
+              ]
+            ],
+            [
+              [
+                331,
+                394
+              ],
+              [
+                364,
+                387
+              ],
+              [
+                424,
+                387
+              ],
+              [
+                548,
+                407
+              ],
+              [
+                647,
+                431
+              ],
+              [
+                706,
+                428
+              ]
+            ],
+            [
+              [
+                479,
+                636
+              ],
+              [
+                515,
+                610
+              ],
+              [
+                516,
+                575
+              ],
+              [
+                510,
+                185
+              ],
+              [
+                490,
+                163
+              ]
+            ],
+            [
+              [
+                122,
+                116
+              ],
+              [
+                158,
+                100
+              ],
+              [
+                196,
+                94
+              ],
+              [
+                403,
+                122
+              ],
+              [
+                837,
+                156
+              ],
+              [
+                926,
+                123
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-738b-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-738b",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "王",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-540d",
+                "label": "name; noun (part of speech)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W4150",
+                "label": "hospitality; to treat guests well",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-738b",
+                "label": "king or monarch; best or strongest of its type",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-738b-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W-XIAOWANG",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "familiar address for a younger person surnamed Wang",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "小王"
+              },
+              {
+                "value": "xiǎowáng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiao3wang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "小王",
+              "pinyin": "xiǎowáng",
+              "meaning": "familiar address for a younger person surnamed Wang",
+              "audio": "86f011f296cab368a5b979229b306eb74a0091301889ac9f61a1b630ba7540ca",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-738b-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-PRIMARY-char-540d",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "name; noun (part of speech)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "名"
+              },
+              {
+                "value": "míng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ming2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "名",
+              "pinyin": "míng",
+              "meaning": "name; noun (part of speech)",
+              "audio": "abc1ce90905b2676af84c24e479ffc563f9ec75314bfa62e1f0cda1706f2c69a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-738b-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-738b",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "king or monarch; best or strongest of its type",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "王"
+              },
+              {
+                "value": "wáng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "王",
+              "pinyin": "wáng",
+              "meaning": "king or monarch; best or strongest of its type",
+              "audio": "563a8a7347116a781b8fe054688eac18febab5d5121a6b8e544843a5cdda68ed",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "563a8a7347116a781b8fe054688eac18febab5d5121a6b8e544843a5cdda68ed"
+            ],
+            "transcript": [
+              {
+                "text": "王",
+                "pinyin": "wáng",
+                "meaning": "king or monarch; best or strongest of its type",
+                "audio": "563a8a7347116a781b8fe054688eac18febab5d5121a6b8e544843a5cdda68ed",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-738B",
+      "character": "王",
+      "lessonIds": [
+        "LESSON-C-738B"
+      ],
+      "profile": "movement-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-738b-write",
+        "EX-CHAR-char-738b-recognize",
+        "EX-CHAR-char-738b-word",
+        "EX-CHAR-char-738b-familiar",
+        "EX-CHAR-char-738b-recall"
+      ]
+    },
+    "audio": {
+      "abc1ce90905b2676af84c24e479ffc563f9ec75314bfa62e1f0cda1706f2c69a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-8d758fa668271c9e31baa89b32a98d90d64aa0b10b4e2e5659f816ef1edd74a9.mp3",
+          "sha256": "8d758fa668271c9e31baa89b32a98d90d64aa0b10b4e2e5659f816ef1edd74a9",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "8d758fa668271c9e31baa89b32a98d90d64aa0b10b4e2e5659f816ef1edd74a9",
+            "text": "名",
+            "words": [
+              {
+                "text": "名",
+                "start": 0.27,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-515abdf0696712b168a8ca531a5c28dd53b7f02153d958b5cf9bd3b6c49937be.mp3",
+          "sha256": "515abdf0696712b168a8ca531a5c28dd53b7f02153d958b5cf9bd3b6c49937be",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "515abdf0696712b168a8ca531a5c28dd53b7f02153d958b5cf9bd3b6c49937be",
+            "text": "名",
+            "words": [
+              {
+                "text": "名",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "563a8a7347116a781b8fe054688eac18febab5d5121a6b8e544843a5cdda68ed": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-08cccb622d09c552bdecfd5ae446dfdee4a9d9ff7ddbad185174a73ce49e2039.mp3",
+          "sha256": "08cccb622d09c552bdecfd5ae446dfdee4a9d9ff7ddbad185174a73ce49e2039",
+          "byteLength": 12141,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "08cccb622d09c552bdecfd5ae446dfdee4a9d9ff7ddbad185174a73ce49e2039",
+            "text": "王",
+            "words": [
+              {
+                "text": "王",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-4066c0fd734c889982faf541e0868b537d110fec73630789ff5bc562fff7d4bc.mp3",
+          "sha256": "4066c0fd734c889982faf541e0868b537d110fec73630789ff5bc562fff7d4bc",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "4066c0fd734c889982faf541e0868b537d110fec73630789ff5bc562fff7d4bc",
+            "text": "王",
+            "words": [
+              {
+                "text": "王",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "86f011f296cab368a5b979229b306eb74a0091301889ac9f61a1b630ba7540ca": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-744b0c3d8274027c9cb72821f391764c376632b9be6f1f6f7819a3c8544d5d64.mp3",
+          "sha256": "744b0c3d8274027c9cb72821f391764c376632b9be6f1f6f7819a3c8544d5d64",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "744b0c3d8274027c9cb72821f391764c376632b9be6f1f6f7819a3c8544d5d64",
+            "text": "小王",
+            "words": [
+              {
+                "text": "小王",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-9a5e804660d0a37c34eb151e7beef782c22b7b80ee66b428be176d2f3a0b3426.mp3",
+          "sha256": "9a5e804660d0a37c34eb151e7beef782c22b7b80ee66b428be176d2f3a0b3426",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "9a5e804660d0a37c34eb151e7beef782c22b7b80ee66b428be176d2f3a0b3426",
+            "text": "小王",
+            "words": [
+              {
+                "text": "小王",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "416f3cda3e1b06a33570102d5add2ca1ad215fb0129eb8b1999ecc7d2a776ce7": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-9952c813512886ebed27612872c039872a8cf779130b0be2b2d7b0e6d8706c64.mp3",
+          "sha256": "9952c813512886ebed27612872c039872a8cf779130b0be2b2d7b0e6d8706c64",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "9952c813512886ebed27612872c039872a8cf779130b0be2b2d7b0e6d8706c64",
+            "text": "好客",
+            "words": [
+              {
+                "text": "好客",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-17053dfabf0c868e46cc884f1c027f7c17020d31bb995fd7922cd3318c7f6fa4.mp3",
+          "sha256": "17053dfabf0c868e46cc884f1c027f7c17020d31bb995fd7922cd3318c7f6fa4",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "17053dfabf0c868e46cc884f1c027f7c17020d31bb995fd7922cd3318c7f6fa4",
+            "text": "好客",
+            "words": [
+              {
+                "text": "好客",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4100",
+  "targetId": "W4100",
+  "steps": [
+    {
+      "id": "BANK-W4100-W4100",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4100-W4100",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "malfunction; breakdown",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "故障"
+            },
+            {
+              "value": "gùzhàng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gu4zhang4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "故障",
+            "pinyin": "gùzhàng",
+            "meaning": "malfunction; breakdown",
+            "singleWord": true,
+            "audio": "35d541c4cdfd37a13bf595a01e6d00054635df7e6e0f7e7b0dacfde87eccee41"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "35d541c4cdfd37a13bf595a01e6d00054635df7e6e0f7e7b0dacfde87eccee41": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2b939ea0296ccd1301b3c06b3fd7ce9dc795b1fb22adb49a34c7b5188b73409d.mp3",
+        "sha256": "2b939ea0296ccd1301b3c06b3fd7ce9dc795b1fb22adb49a34c7b5188b73409d",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "2b939ea0296ccd1301b3c06b3fd7ce9dc795b1fb22adb49a34c7b5188b73409d",
+          "text": "故障",
+          "words": [
+            {
+              "text": "故障",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-78156a3fffab59879ca1486b7f326d8bceaa22d45dbeabfe1e1cc4b8a067f5cf.mp3",
+        "sha256": "78156a3fffab59879ca1486b7f326d8bceaa22d45dbeabfe1e1cc4b8a067f5cf",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "78156a3fffab59879ca1486b7f326d8bceaa22d45dbeabfe1e1cc4b8a067f5cf",
+          "text": "故障",
+          "words": [
+            {
+              "text": "故障",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4100",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4100-W4100",
+      "question_ids": [
+        "BANK-W4100-W4100"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-30-P01",
+    "stepId": "S-U6-30-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-969c"
+    ],
+    "grammarLessonIds": []
+  }
+}

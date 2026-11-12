@@ -1,0 +1,721 @@
+{
+  "id": "EX-CHAR-char-8fdc",
+  "revision": 2,
+  "unit": "U06",
+  "stage": "ST-HSK1",
+  "after": "S-U06-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "远",
+  "sourceBlockId": "mandarin-simplified-v1-char-8fdc",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-8d35",
+        "text": "贵",
+        "pinyin": "guì",
+        "meaning": "expensive; (bound form) highly valued; precious",
+        "characters": [
+          {
+            "id": "C-8D35",
+            "text": "贵"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-8345c9c1e29441bd43c67e9c",
+        "text": "多少",
+        "pinyin": "duōshao",
+        "meaning": "how much?; how many?; (phone number, student ID etc) what number?",
+        "characters": [
+          {
+            "id": "C-591A",
+            "text": "多"
+          },
+          {
+            "id": "C-5C11",
+            "text": "少"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-fd5dcf9dacdb3c5050a32129",
+        "text": "边远",
+        "pinyin": "biān yuǎn",
+        "meaning": "remote",
+        "characters": [
+          {
+            "id": "C-8FB9",
+            "text": "边"
+          },
+          {
+            "id": "C-8FDC",
+            "text": "远"
+          }
+        ]
+      },
+      {
+        "id": "W0078",
+        "text": "远",
+        "pinyin": "yuǎn",
+        "meaning": "far; distant",
+        "characters": [
+          {
+            "id": "C-8FDC",
+            "text": "远"
+          }
+        ]
+      },
+      {
+        "id": "W2226",
+        "text": "从前",
+        "pinyin": "cóngqián",
+        "meaning": "previously; formerly",
+        "characters": [
+          {
+            "id": "C-4ECE",
+            "text": "从"
+          },
+          {
+            "id": "C-524D",
+            "text": "前"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "b20f857cb222338494331f4bf0c6e3594ad51441f05582815461e6ab75d942c5",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8fdc",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "远",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8fdc-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-fd5dcf9dacdb3c5050a32129",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "remote",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "边远"
+              },
+              {
+                "value": "biān yuǎn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bian1yuan3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "边远",
+              "pinyin": "biān yuǎn",
+              "meaning": "remote",
+              "audio": "dbd89b993f0e6aa08cfe10da51de8c04df5c68c5bdfa972a23f7a12d8b0f2580",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8fdc-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0078",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "远",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-8d35",
+                "label": "expensive; (bound form) highly valued",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0078",
+                "label": "far; distant",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-8345c9c1e29441bd43c67e9c",
+                "label": "how much?; how many?",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8fdc-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "远",
+        "pinyin": "yuǎn",
+        "meaning": "far; distant",
+        "source": "/stroke-data/8fdc.json",
+        "reference": {
+          "character": "远",
+          "sha256": "5c093d7029c62921d947803c00d941879652e9839655d80f1480fe66fde6506a",
+          "medians": [
+            [
+              [
+                499,
+                663
+              ],
+              [
+                554,
+                660
+              ],
+              [
+                698,
+                703
+              ],
+              [
+                757,
+                707
+              ]
+            ],
+            [
+              [
+                414,
+                480
+              ],
+              [
+                464,
+                473
+              ],
+              [
+                606,
+                501
+              ],
+              [
+                773,
+                543
+              ],
+              [
+                818,
+                547
+              ],
+              [
+                851,
+                541
+              ]
+            ],
+            [
+              [
+                519,
+                423
+              ],
+              [
+                538,
+                394
+              ],
+              [
+                505,
+                316
+              ],
+              [
+                483,
+                281
+              ],
+              [
+                448,
+                243
+              ],
+              [
+                391,
+                203
+              ]
+            ],
+            [
+              [
+                630,
+                483
+              ],
+              [
+                659,
+                459
+              ],
+              [
+                650,
+                329
+              ],
+              [
+                653,
+                268
+              ],
+              [
+                667,
+                227
+              ],
+              [
+                697,
+                203
+              ],
+              [
+                745,
+                189
+              ],
+              [
+                788,
+                188
+              ],
+              [
+                841,
+                198
+              ],
+              [
+                871,
+                215
+              ],
+              [
+                882,
+                226
+              ],
+              [
+                888,
+                360
+              ]
+            ],
+            [
+              [
+                267,
+                782
+              ],
+              [
+                357,
+                728
+              ],
+              [
+                380,
+                692
+              ]
+            ],
+            [
+              [
+                113,
+                483
+              ],
+              [
+                139,
+                480
+              ],
+              [
+                176,
+                486
+              ],
+              [
+                278,
+                520
+              ],
+              [
+                293,
+                520
+              ],
+              [
+                318,
+                501
+              ],
+              [
+                314,
+                462
+              ],
+              [
+                283,
+                399
+              ],
+              [
+                277,
+                368
+              ],
+              [
+                285,
+                334
+              ],
+              [
+                321,
+                263
+              ],
+              [
+                323,
+                218
+              ],
+              [
+                308,
+                206
+              ]
+            ],
+            [
+              [
+                114,
+                162
+              ],
+              [
+                157,
+                147
+              ],
+              [
+                252,
+                178
+              ],
+              [
+                316,
+                179
+              ],
+              [
+                374,
+                164
+              ],
+              [
+                625,
+                65
+              ],
+              [
+                762,
+                33
+              ],
+              [
+                820,
+                33
+              ],
+              [
+                944,
+                59
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8fdc-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2226",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "previously; formerly",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "从前"
+              },
+              {
+                "value": "cóngqián",
+                "mode": "pinyin"
+              },
+              {
+                "value": "cong2qian2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "从前",
+              "pinyin": "cóngqián",
+              "meaning": "previously; formerly",
+              "audio": "c76a2ceacac77f61105c0a7e4c3f23dc47316ce4411aa31dd08b5ea931784b0e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8fdc-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0078",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "far; distant",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "远"
+              },
+              {
+                "value": "yuǎn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yuan3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "远",
+              "pinyin": "yuǎn",
+              "meaning": "far; distant",
+              "audio": "ba7d97ef1462eac66bb5f837d7932f8a6b27dfe8a08546aed35c59e876953b16",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "ba7d97ef1462eac66bb5f837d7932f8a6b27dfe8a08546aed35c59e876953b16"
+            ],
+            "transcript": [
+              {
+                "text": "远",
+                "pinyin": "yuǎn",
+                "meaning": "far; distant",
+                "audio": "ba7d97ef1462eac66bb5f837d7932f8a6b27dfe8a08546aed35c59e876953b16",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8FDC",
+      "character": "远",
+      "lessonIds": [
+        "LESSON-C-8FDC"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8fdc-word",
+        "EX-CHAR-char-8fdc-recognize",
+        "EX-CHAR-char-8fdc-write",
+        "EX-CHAR-char-8fdc-familiar",
+        "EX-CHAR-char-8fdc-recall"
+      ]
+    },
+    "audio": {
+      "da3d51b00ce81578fae2d815f228152bf343816b3d57b6aee456739c25ec127a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-da7ab8f02edaa1626bfb68bcf4e331ab6d79eb6fef3f94aae71929f2167bf193.mp3",
+          "sha256": "da7ab8f02edaa1626bfb68bcf4e331ab6d79eb6fef3f94aae71929f2167bf193",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "da7ab8f02edaa1626bfb68bcf4e331ab6d79eb6fef3f94aae71929f2167bf193",
+            "text": "贵",
+            "words": [
+              {
+                "text": "贵",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-887ee1f3cc30ef571051298cf3907fd07318e6a091023db0dfb85dea883bfc86.mp3",
+          "sha256": "887ee1f3cc30ef571051298cf3907fd07318e6a091023db0dfb85dea883bfc86",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "887ee1f3cc30ef571051298cf3907fd07318e6a091023db0dfb85dea883bfc86",
+            "text": "贵",
+            "words": [
+              {
+                "text": "贵",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "c63dfd05d4d60b82a4d94cd2de5fb87e02c685cbf7e922e1a47c45d7709f7cc4": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-efe47c52fbb0b32be79597725619f898885349daa909e246e31f3228f64eb643.mp3",
+          "sha256": "efe47c52fbb0b32be79597725619f898885349daa909e246e31f3228f64eb643",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "efe47c52fbb0b32be79597725619f898885349daa909e246e31f3228f64eb643",
+            "text": "多少",
+            "words": [
+              {
+                "text": "多少",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-3e6d523c58e63b2ce3a7f0afcdca01ad50e5763359173e50ad5e4f784a3bcb0e.mp3",
+          "sha256": "3e6d523c58e63b2ce3a7f0afcdca01ad50e5763359173e50ad5e4f784a3bcb0e",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "3e6d523c58e63b2ce3a7f0afcdca01ad50e5763359173e50ad5e4f784a3bcb0e",
+            "text": "多少",
+            "words": [
+              {
+                "text": "多少",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "dbd89b993f0e6aa08cfe10da51de8c04df5c68c5bdfa972a23f7a12d8b0f2580": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/09862ca92d703c3c304a7ceb42486c02d2269350fde48ec2521809ed873d5297.mp3",
+          "sha256": "09862ca92d703c3c304a7ceb42486c02d2269350fde48ec2521809ed873d5297",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "09862ca92d703c3c304a7ceb42486c02d2269350fde48ec2521809ed873d5297",
+            "text": "边远",
+            "words": [
+              {
+                "text": "边远",
+                "start": 0.2,
+                "end": 0.62
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1d71fbfe3349659098384ada2f296314b703fcf922226c3044591571a611980f.mp3",
+          "sha256": "1d71fbfe3349659098384ada2f296314b703fcf922226c3044591571a611980f",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "1d71fbfe3349659098384ada2f296314b703fcf922226c3044591571a611980f",
+            "text": "边远",
+            "words": [
+              {
+                "text": "边远",
+                "start": 0.48,
+                "end": 0.88
+              }
+            ]
+          }
+        }
+      },
+      "ba7d97ef1462eac66bb5f837d7932f8a6b27dfe8a08546aed35c59e876953b16": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f3ddecccb9a9cd5963355f754b3f978b160ecc7a6555c36096528305844ec12a.mp3",
+          "sha256": "f3ddecccb9a9cd5963355f754b3f978b160ecc7a6555c36096528305844ec12a",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "f3ddecccb9a9cd5963355f754b3f978b160ecc7a6555c36096528305844ec12a",
+            "text": "远",
+            "words": [
+              {
+                "text": "远",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-1739eda52ee7e5140ee028f886a4bc350c228d947d2ab4da5914c90e41226fa4.mp3",
+          "sha256": "1739eda52ee7e5140ee028f886a4bc350c228d947d2ab4da5914c90e41226fa4",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "1739eda52ee7e5140ee028f886a4bc350c228d947d2ab4da5914c90e41226fa4",
+            "text": "远",
+            "words": [
+              {
+                "text": "远",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "c76a2ceacac77f61105c0a7e4c3f23dc47316ce4411aa31dd08b5ea931784b0e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-8a3c66d09f76e43505162e0f0115907f6b7e835d00b83b2812967c42988a19f7.mp3",
+          "sha256": "8a3c66d09f76e43505162e0f0115907f6b7e835d00b83b2812967c42988a19f7",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "8a3c66d09f76e43505162e0f0115907f6b7e835d00b83b2812967c42988a19f7",
+            "text": "从前",
+            "words": [
+              {
+                "text": "从前",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6df0383b0874cc56724dda8085d56e7e07af58ea7b4afd6ea34738764236d1f0.mp3",
+          "sha256": "6df0383b0874cc56724dda8085d56e7e07af58ea7b4afd6ea34738764236d1f0",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "6df0383b0874cc56724dda8085d56e7e07af58ea7b4afd6ea34738764236d1f0",
+            "text": "从前",
+            "words": [
+              {
+                "text": "从前",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

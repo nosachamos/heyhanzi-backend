@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1814",
+  "targetId": "W1814",
+  "steps": [
+    {
+      "id": "BANK-W1814-W1814",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1814-W1814",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "document; file",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "文件"
+            },
+            {
+              "value": "wénjiàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wen2jian4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "文件",
+            "pinyin": "wénjiàn",
+            "meaning": "document; file",
+            "singleWord": true,
+            "audio": "8aa47a76c61856cb3524b810cfd544abeab2a7fbbd06b502ca18d37a9ed753eb"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8aa47a76c61856cb3524b810cfd544abeab2a7fbbd06b502ca18d37a9ed753eb": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-bd50677e57e925aaf2f7365020fbbc8a7d05f1c379a8355744d809779826244d.mp3",
+        "sha256": "bd50677e57e925aaf2f7365020fbbc8a7d05f1c379a8355744d809779826244d",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "bd50677e57e925aaf2f7365020fbbc8a7d05f1c379a8355744d809779826244d",
+          "text": "文件",
+          "words": [
+            {
+              "text": "文件",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c07681ab756f04e4e55dfab48da8588b26b32f85754e6899d495ed85654c4966.mp3",
+        "sha256": "c07681ab756f04e4e55dfab48da8588b26b32f85754e6899d495ed85654c4966",
+        "byteLength": 9837,
+        "readAlong": {
+          "audioSha256": "c07681ab756f04e4e55dfab48da8588b26b32f85754e6899d495ed85654c4966",
+          "text": "文件",
+          "words": [
+            {
+              "text": "文件",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1814",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1814-W1814",
+      "question_ids": [
+        "BANK-W1814-W1814"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-27",
+    "stepId": "S-U4-27-words-r4-9",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4ef6"
+    ],
+    "grammarLessonIds": []
+  }
+}

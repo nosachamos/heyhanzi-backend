@@ -1,0 +1,797 @@
+{
+  "id": "EX-CHAR-char-64c5",
+  "revision": 2,
+  "unit": "U5-44-P02",
+  "stage": "ST-HSK5",
+  "after": "S-U5-44-P02-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "擅",
+  "sourceBlockId": "mandarin-simplified-v1-char-64c5",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5219",
+        "text": "则",
+        "pinyin": "zé",
+        "meaning": "(literary) (conjunction used to express contrast with a previous clause) but; then; (bound form) standard; norm",
+        "characters": [
+          {
+            "id": "C-5219",
+            "text": "则"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f37fa41472ea0dac268b1047",
+        "text": "擅自",
+        "pinyin": "shàn zì",
+        "meaning": "without permission",
+        "characters": [
+          {
+            "id": "C-64C5",
+            "text": "擅"
+          },
+          {
+            "id": "C-81EA",
+            "text": "自"
+          }
+        ]
+      },
+      {
+        "id": "W1678",
+        "text": "社会",
+        "pinyin": "shèhuì",
+        "meaning": "society",
+        "characters": [
+          {
+            "id": "C-793E",
+            "text": "社"
+          },
+          {
+            "id": "C-4F1A",
+            "text": "会"
+          }
+        ]
+      },
+      {
+        "id": "W4565",
+        "text": "内衣",
+        "pinyin": "nèiyī",
+        "meaning": "undergarment; underwear",
+        "characters": [
+          {
+            "id": "C-5185",
+            "text": "内"
+          },
+          {
+            "id": "C-8863",
+            "text": "衣"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "dbcf7dab6945f11c678d784a753ba08fe75ee7da0e2a070c397da74d38cfc186",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-64c5",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "擅",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-64c5-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-f37fa41472ea0dac268b1047",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "without permission",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "擅自"
+              },
+              {
+                "value": "shàn zì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shan4zi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "擅自",
+              "pinyin": "shàn zì",
+              "meaning": "without permission",
+              "audio": "90174b586a99038dc87afa67616650b844771374e726f1f9adf820846de6e960",
+              "singleWord": true,
+              "focus": "擅"
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-64c5-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-cmn-f37fa41472ea0dac268b1047",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "擅自",
+              "meaning": "",
+              "focus": "擅"
+            },
+            "choices": [
+              {
+                "id": "W4565",
+                "label": "undergarment; underwear",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-f37fa41472ea0dac268b1047",
+                "label": "without permission",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-PRIMARY-char-5219",
+                "label": "(literary) (conjunction used to express contrast with a previous clause) but; then",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-64c5-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "擅",
+        "pinyin": "shàn",
+        "meaning": "without authority; to usurp",
+        "source": "/stroke-data/64c5.json",
+        "reference": {
+          "character": "擅",
+          "sha256": "097494684239a616637f26a2ec442ece10ccbad28f5bafc3a1d9e3e60cb12528",
+          "medians": [
+            [
+              [
+                104,
+                554
+              ],
+              [
+                169,
+                554
+              ],
+              [
+                323,
+                599
+              ],
+              [
+                377,
+                603
+              ]
+            ],
+            [
+              [
+                248,
+                807
+              ],
+              [
+                273,
+                790
+              ],
+              [
+                293,
+                762
+              ],
+              [
+                281,
+                464
+              ],
+              [
+                284,
+                106
+              ],
+              [
+                262,
+                47
+              ],
+              [
+                149,
+                99
+              ]
+            ],
+            [
+              [
+                45,
+                247
+              ],
+              [
+                96,
+                246
+              ],
+              [
+                354,
+                440
+              ]
+            ],
+            [
+              [
+                573,
+                837
+              ],
+              [
+                656,
+                791
+              ],
+              [
+                678,
+                760
+              ]
+            ],
+            [
+              [
+                431,
+                674
+              ],
+              [
+                460,
+                667
+              ],
+              [
+                491,
+                668
+              ],
+              [
+                770,
+                719
+              ],
+              [
+                829,
+                723
+              ],
+              [
+                859,
+                717
+              ]
+            ],
+            [
+              [
+                428,
+                574
+              ],
+              [
+                453,
+                554
+              ],
+              [
+                462,
+                536
+              ],
+              [
+                508,
+                355
+              ]
+            ],
+            [
+              [
+                477,
+                573
+              ],
+              [
+                500,
+                565
+              ],
+              [
+                728,
+                613
+              ],
+              [
+                776,
+                616
+              ],
+              [
+                796,
+                611
+              ],
+              [
+                824,
+                579
+              ],
+              [
+                782,
+                419
+              ],
+              [
+                772,
+                394
+              ],
+              [
+                754,
+                388
+              ]
+            ],
+            [
+              [
+                543,
+                522
+              ],
+              [
+                563,
+                509
+              ],
+              [
+                586,
+                427
+              ]
+            ],
+            [
+              [
+                584,
+                510
+              ],
+              [
+                592,
+                520
+              ],
+              [
+                674,
+                541
+              ],
+              [
+                696,
+                525
+              ],
+              [
+                686,
+                492
+              ],
+              [
+                670,
+                480
+              ]
+            ],
+            [
+              [
+                600,
+                438
+              ],
+              [
+                615,
+                448
+              ],
+              [
+                670,
+                460
+              ],
+              [
+                710,
+                458
+              ]
+            ],
+            [
+              [
+                525,
+                369
+              ],
+              [
+                542,
+                378
+              ],
+              [
+                717,
+                401
+              ],
+              [
+                743,
+                415
+              ]
+            ],
+            [
+              [
+                468,
+                284
+              ],
+              [
+                488,
+                267
+              ],
+              [
+                498,
+                247
+              ],
+              [
+                528,
+                90
+              ]
+            ],
+            [
+              [
+                517,
+                283
+              ],
+              [
+                532,
+                274
+              ],
+              [
+                684,
+                302
+              ],
+              [
+                692,
+                308
+              ],
+              [
+                731,
+                308
+              ],
+              [
+                750,
+                301
+              ],
+              [
+                769,
+                274
+              ],
+              [
+                727,
+                117
+              ]
+            ],
+            [
+              [
+                537,
+                182
+              ],
+              [
+                603,
+                204
+              ],
+              [
+                650,
+                210
+              ],
+              [
+                677,
+                205
+              ]
+            ],
+            [
+              [
+                545,
+                102
+              ],
+              [
+                556,
+                113
+              ],
+              [
+                688,
+                126
+              ],
+              [
+                704,
+                134
+              ]
+            ],
+            [
+              [
+                386,
+                8
+              ],
+              [
+                436,
+                -1
+              ],
+              [
+                551,
+                17
+              ],
+              [
+                847,
+                43
+              ],
+              [
+                919,
+                23
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-64c5-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1678",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "society",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "社会"
+              },
+              {
+                "value": "shèhuì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "she4hui4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "社会",
+              "pinyin": "shèhuì",
+              "meaning": "society",
+              "audio": "bdc1fade26f1afcb8c93c509a3aeeef21a8db02c0f7f13b6ddb139d8e802ff10",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-64c5-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-cmn-f37fa41472ea0dac268b1047",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "without permission",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "擅自"
+              },
+              {
+                "value": "shàn zì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shan4zi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "擅自",
+              "pinyin": "shàn zì",
+              "meaning": "without permission",
+              "audio": "90174b586a99038dc87afa67616650b844771374e726f1f9adf820846de6e960",
+              "singleWord": true,
+              "focus": "擅"
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "90174b586a99038dc87afa67616650b844771374e726f1f9adf820846de6e960"
+            ],
+            "transcript": [
+              {
+                "text": "擅自",
+                "pinyin": "shàn zì",
+                "meaning": "without permission",
+                "audio": "90174b586a99038dc87afa67616650b844771374e726f1f9adf820846de6e960",
+                "singleWord": true,
+                "focus": "擅"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-64C5",
+      "character": "擅",
+      "lessonIds": [
+        "LESSON-C-64C5"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-64c5-word",
+        "EX-CHAR-char-64c5-recognize",
+        "EX-CHAR-char-64c5-write",
+        "EX-CHAR-char-64c5-familiar",
+        "EX-CHAR-char-64c5-recall"
+      ]
+    },
+    "audio": {
+      "3ed36e1505c0c4c34b0f0ece4909f83861fa8f16dfc56a704ae3a4a5a5893a72": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-73c854eea2ab8cfa530d9f2b7f0aabdd582be9ffa19878de8cbd2869c508f470.mp3",
+          "sha256": "73c854eea2ab8cfa530d9f2b7f0aabdd582be9ffa19878de8cbd2869c508f470",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "73c854eea2ab8cfa530d9f2b7f0aabdd582be9ffa19878de8cbd2869c508f470",
+            "text": "则",
+            "words": [
+              {
+                "text": "则",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-5f6bd9c03bee9a6c1ebb02de969b6bf1be1732804e094a7525a2d0d6f596beb4.mp3",
+          "sha256": "5f6bd9c03bee9a6c1ebb02de969b6bf1be1732804e094a7525a2d0d6f596beb4",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "5f6bd9c03bee9a6c1ebb02de969b6bf1be1732804e094a7525a2d0d6f596beb4",
+            "text": "则",
+            "words": [
+              {
+                "text": "则",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "90174b586a99038dc87afa67616650b844771374e726f1f9adf820846de6e960": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9ede8d54e23beb332cfdfe55908273db5ba4262aa019a9c9d1125e256eca534b.mp3",
+          "sha256": "9ede8d54e23beb332cfdfe55908273db5ba4262aa019a9c9d1125e256eca534b",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "9ede8d54e23beb332cfdfe55908273db5ba4262aa019a9c9d1125e256eca534b",
+            "text": "擅自",
+            "words": [
+              {
+                "text": "擅自",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-05d690db96af18a348580af2775b979f122b84a6753265b69298d8b58f8217c5.mp3",
+          "sha256": "05d690db96af18a348580af2775b979f122b84a6753265b69298d8b58f8217c5",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "05d690db96af18a348580af2775b979f122b84a6753265b69298d8b58f8217c5",
+            "text": "擅自",
+            "words": [
+              {
+                "text": "擅自",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "bdc1fade26f1afcb8c93c509a3aeeef21a8db02c0f7f13b6ddb139d8e802ff10": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2e433ef1c51c9136b2557082f6c9a8b91d99bed0bf45ecf0f9864f3daf829e7f.mp3",
+          "sha256": "2e433ef1c51c9136b2557082f6c9a8b91d99bed0bf45ecf0f9864f3daf829e7f",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "2e433ef1c51c9136b2557082f6c9a8b91d99bed0bf45ecf0f9864f3daf829e7f",
+            "text": "社会",
+            "words": [
+              {
+                "text": "社会",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f7424cc5de9ffb25d29e087fc5f630d1ab1e7fbfa3ba9f7a39aa7a7cd8e0b060.mp3",
+          "sha256": "f7424cc5de9ffb25d29e087fc5f630d1ab1e7fbfa3ba9f7a39aa7a7cd8e0b060",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "f7424cc5de9ffb25d29e087fc5f630d1ab1e7fbfa3ba9f7a39aa7a7cd8e0b060",
+            "text": "社会",
+            "words": [
+              {
+                "text": "社会",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "89cbbf088c47be376074bc8c871f958efc00352d25329fe6e0c8817a43756854": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/599f969cf7987f875b3389e182673eec703da2458e2cc95337514531fe1731c2.mp3",
+          "sha256": "599f969cf7987f875b3389e182673eec703da2458e2cc95337514531fe1731c2",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "599f969cf7987f875b3389e182673eec703da2458e2cc95337514531fe1731c2",
+            "text": "内衣",
+            "words": [
+              {
+                "text": "内衣",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e073031d70ec9d58e12c6c61e2778976656445fcf040c3f1d88a7e669f4cbfc4.mp3",
+          "sha256": "e073031d70ec9d58e12c6c61e2778976656445fcf040c3f1d88a7e669f4cbfc4",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "e073031d70ec9d58e12c6c61e2778976656445fcf040c3f1d88a7e669f4cbfc4",
+            "text": "内衣",
+            "words": [
+              {
+                "text": "内衣",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

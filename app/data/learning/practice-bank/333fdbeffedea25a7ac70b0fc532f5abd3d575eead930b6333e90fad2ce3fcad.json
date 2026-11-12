@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1682",
+  "targetId": "W1682",
+  "steps": [
+    {
+      "id": "BANK-W1682-W1682",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1682-W1682",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "identity card; ID",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "身份证"
+            },
+            {
+              "value": "shēnfènzhèng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shen1fen4zheng4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "身份证",
+            "pinyin": "shēnfènzhèng",
+            "meaning": "identity card; ID",
+            "singleWord": true,
+            "audio": "4290bfcc548a93e84abe1dbc02a195dce6fb64963fa0f0f4ef81a87703a2ada5"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "4290bfcc548a93e84abe1dbc02a195dce6fb64963fa0f0f4ef81a87703a2ada5": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ddb49f579d0556ed87180ffb8ff56d383b2047fbb8f6e9aa05014477b1331459.mp3",
+        "sha256": "ddb49f579d0556ed87180ffb8ff56d383b2047fbb8f6e9aa05014477b1331459",
+        "byteLength": 16749,
+        "readAlong": {
+          "audioSha256": "ddb49f579d0556ed87180ffb8ff56d383b2047fbb8f6e9aa05014477b1331459",
+          "text": "身份证",
+          "words": [
+            {
+              "text": "身份证",
+              "start": 0.21,
+              "end": 0.75
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-32be0637590d6a028473e8a4455ea364f9721fb793d880f8692c55cf626eccee.mp3",
+        "sha256": "32be0637590d6a028473e8a4455ea364f9721fb793d880f8692c55cf626eccee",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "32be0637590d6a028473e8a4455ea364f9721fb793d880f8692c55cf626eccee",
+          "text": "身份证",
+          "words": [
+            {
+              "text": "身份证",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1682",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1682-W1682",
+      "question_ids": [
+        "BANK-W1682-W1682"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-30",
+    "stepId": "S-U4-30-words-r4-14",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8bc1"
+    ],
+    "grammarLessonIds": []
+  }
+}

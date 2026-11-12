@@ -1,0 +1,721 @@
+{
+  "id": "EX-CHAR-char-7687",
+  "revision": 2,
+  "unit": "U6-34-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-34-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "皇",
+  "sourceBlockId": "mandarin-simplified-v1-char-7687",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7687",
+        "text": "皇",
+        "pinyin": "huáng",
+        "meaning": "emperor",
+        "characters": [
+          {
+            "id": "C-7687",
+            "text": "皇"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-4874b0990d2dcd597ae69aae",
+        "text": "皇上",
+        "pinyin": "huáng shang",
+        "meaning": "the emperor",
+        "characters": [
+          {
+            "id": "C-7687",
+            "text": "皇"
+          },
+          {
+            "id": "C-4E0A",
+            "text": "上"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-629e9c7e8ddda970810004ad",
+        "text": "甚至于",
+        "pinyin": "shèn zhì yú",
+        "meaning": "so much (that)",
+        "characters": [
+          {
+            "id": "C-751A",
+            "text": "甚"
+          },
+          {
+            "id": "C-81F3",
+            "text": "至"
+          },
+          {
+            "id": "C-4E8E",
+            "text": "于"
+          }
+        ]
+      },
+      {
+        "id": "W0631",
+        "text": "运动",
+        "pinyin": "yùndòng",
+        "meaning": "to move; to exercise",
+        "characters": [
+          {
+            "id": "C-8FD0",
+            "text": "运"
+          },
+          {
+            "id": "C-52A8",
+            "text": "动"
+          }
+        ]
+      },
+      {
+        "id": "W2902",
+        "text": "亲朋好友",
+        "pinyin": "qīnpénghǎoyǒu",
+        "meaning": "friends and relatives",
+        "characters": [
+          {
+            "id": "C-4EB2",
+            "text": "亲"
+          },
+          {
+            "id": "C-670B",
+            "text": "朋"
+          },
+          {
+            "id": "C-597D",
+            "text": "好"
+          },
+          {
+            "id": "C-53CB",
+            "text": "友"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "4bf703fd96c8e40af39b816b07d7932827e0fa59514062c86775e8d2258c37fd",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7687",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "皇",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7687-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-4874b0990d2dcd597ae69aae",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "the emperor",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "皇上"
+              },
+              {
+                "value": "huáng shang",
+                "mode": "pinyin"
+              },
+              {
+                "value": "huang2shang5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "皇上",
+              "pinyin": "huáng shang",
+              "meaning": "the emperor",
+              "audio": "6d92b23519d6b3debddf16279e083b7995f71dcfd7f1ed56ad11a3f45a2dabc8",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7687-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7687",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "皇",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0631",
+                "label": "to move; to exercise",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W2902",
+                "label": "friends and relatives",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-7687",
+                "label": "emperor",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7687-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "皇",
+        "pinyin": "huáng",
+        "meaning": "emperor",
+        "source": "/stroke-data/7687.json",
+        "reference": {
+          "character": "皇",
+          "sha256": "d577ead6c2197285e0a3a8c54475f3edb46de9a0a1a67548ef39834364fc030c",
+          "medians": [
+            [
+              [
+                482,
+                839
+              ],
+              [
+                495,
+                830
+              ],
+              [
+                514,
+                800
+              ],
+              [
+                426,
+                684
+              ],
+              [
+                410,
+                667
+              ],
+              [
+                386,
+                655
+              ]
+            ],
+            [
+              [
+                267,
+                638
+              ],
+              [
+                280,
+                630
+              ],
+              [
+                318,
+                583
+              ],
+              [
+                375,
+                384
+              ]
+            ],
+            [
+              [
+                300,
+                643
+              ],
+              [
+                349,
+                626
+              ],
+              [
+                618,
+                667
+              ],
+              [
+                677,
+                664
+              ],
+              [
+                695,
+                656
+              ],
+              [
+                723,
+                619
+              ],
+              [
+                655,
+                437
+              ],
+              [
+                656,
+                402
+              ]
+            ],
+            [
+              [
+                370,
+                522
+              ],
+              [
+                380,
+                515
+              ],
+              [
+                522,
+                545
+              ],
+              [
+                562,
+                548
+              ],
+              [
+                590,
+                542
+              ]
+            ],
+            [
+              [
+                392,
+                431
+              ],
+              [
+                403,
+                421
+              ],
+              [
+                416,
+                422
+              ],
+              [
+                585,
+                447
+              ],
+              [
+                617,
+                461
+              ]
+            ],
+            [
+              [
+                324,
+                297
+              ],
+              [
+                362,
+                289
+              ],
+              [
+                422,
+                290
+              ],
+              [
+                665,
+                327
+              ],
+              [
+                709,
+                324
+              ]
+            ],
+            [
+              [
+                325,
+                157
+              ],
+              [
+                375,
+                149
+              ],
+              [
+                633,
+                187
+              ],
+              [
+                675,
+                178
+              ]
+            ],
+            [
+              [
+                528,
+                274
+              ],
+              [
+                505,
+                249
+              ],
+              [
+                504,
+                73
+              ],
+              [
+                482,
+                48
+              ]
+            ],
+            [
+              [
+                104,
+                3
+              ],
+              [
+                161,
+                -16
+              ],
+              [
+                447,
+                20
+              ],
+              [
+                839,
+                49
+              ],
+              [
+                867,
+                44
+              ],
+              [
+                927,
+                19
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7687-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-629e9c7e8ddda970810004ad",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "so much (that)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "甚至于"
+              },
+              {
+                "value": "shèn zhì yú",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shen4zhi4yu2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "甚至于",
+              "pinyin": "shèn zhì yú",
+              "meaning": "so much (that)",
+              "audio": "6037d077ba72fdf6eae9ca75f8e358a972a01fbb6a43b29238d95fec5f287d0a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7687-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7687",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "emperor",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "皇"
+              },
+              {
+                "value": "huáng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "huang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "皇",
+              "pinyin": "huáng",
+              "meaning": "emperor",
+              "audio": "dc2f99c4e76e7e7ca5b8840d249c8e3fafaafe7582470f444db70cf6c4399be3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "dc2f99c4e76e7e7ca5b8840d249c8e3fafaafe7582470f444db70cf6c4399be3"
+            ],
+            "transcript": [
+              {
+                "text": "皇",
+                "pinyin": "huáng",
+                "meaning": "emperor",
+                "audio": "dc2f99c4e76e7e7ca5b8840d249c8e3fafaafe7582470f444db70cf6c4399be3",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7687",
+      "character": "皇",
+      "lessonIds": [
+        "LESSON-C-7687"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7687-word",
+        "EX-CHAR-char-7687-recognize",
+        "EX-CHAR-char-7687-write",
+        "EX-CHAR-char-7687-familiar",
+        "EX-CHAR-char-7687-recall"
+      ]
+    },
+    "audio": {
+      "dc2f99c4e76e7e7ca5b8840d249c8e3fafaafe7582470f444db70cf6c4399be3": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-3be067a8b971e680d499ba0d94386f146bb2a7233a59ebee3d56af86d737debe.mp3",
+          "sha256": "3be067a8b971e680d499ba0d94386f146bb2a7233a59ebee3d56af86d737debe",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "3be067a8b971e680d499ba0d94386f146bb2a7233a59ebee3d56af86d737debe",
+            "text": "皇",
+            "words": [
+              {
+                "text": "皇",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-c73f80157fd5381da0e646e9f873c9c30321ff51b2f0a6bac89cb6ce4f19d47d.mp3",
+          "sha256": "c73f80157fd5381da0e646e9f873c9c30321ff51b2f0a6bac89cb6ce4f19d47d",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "c73f80157fd5381da0e646e9f873c9c30321ff51b2f0a6bac89cb6ce4f19d47d",
+            "text": "皇",
+            "words": [
+              {
+                "text": "皇",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "6d92b23519d6b3debddf16279e083b7995f71dcfd7f1ed56ad11a3f45a2dabc8": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ebb64c23c0d94523cdf4b0a713ca84bc02f3b749a70a0a07a2309d5d05331c87.mp3",
+          "sha256": "ebb64c23c0d94523cdf4b0a713ca84bc02f3b749a70a0a07a2309d5d05331c87",
+          "byteLength": 24237,
+          "readAlong": {
+            "audioSha256": "ebb64c23c0d94523cdf4b0a713ca84bc02f3b749a70a0a07a2309d5d05331c87",
+            "text": "皇上",
+            "words": [
+              {
+                "text": "皇上",
+                "start": 1.17,
+                "end": 1.41
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5f8b4c552063dc59babcac643c9798dc24cf1a9e4dac85c14014e873278f68c5.mp3",
+          "sha256": "5f8b4c552063dc59babcac643c9798dc24cf1a9e4dac85c14014e873278f68c5",
+          "byteLength": 17901,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "5f8b4c552063dc59babcac643c9798dc24cf1a9e4dac85c14014e873278f68c5",
+            "text": "皇上",
+            "words": [
+              {
+                "text": "皇上",
+                "start": 0.115,
+                "end": 1.28
+              }
+            ]
+          }
+        }
+      },
+      "6037d077ba72fdf6eae9ca75f8e358a972a01fbb6a43b29238d95fec5f287d0a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/83f98efa74f193776d8b4f4828aaa70e11a29845e71ed11b3f2628de012986f8.mp3",
+          "sha256": "83f98efa74f193776d8b4f4828aaa70e11a29845e71ed11b3f2628de012986f8",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "83f98efa74f193776d8b4f4828aaa70e11a29845e71ed11b3f2628de012986f8",
+            "text": "甚至于",
+            "words": [
+              {
+                "text": "甚至于",
+                "start": 0.15,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/40f489f1e3bb3384d5d03e3ca224e0304235a387d8fed76b76bed0d82d2254de.mp3",
+          "sha256": "40f489f1e3bb3384d5d03e3ca224e0304235a387d8fed76b76bed0d82d2254de",
+          "byteLength": 19629,
+          "readAlong": {
+            "audioSha256": "40f489f1e3bb3384d5d03e3ca224e0304235a387d8fed76b76bed0d82d2254de",
+            "text": "甚至于",
+            "words": [
+              {
+                "text": "甚至于",
+                "start": 0.6299999999999999,
+                "end": 1.17
+              }
+            ]
+          }
+        }
+      },
+      "56f4798f514cbe623009bae0351fe4bc7dd34bf4dc29e749425194e9782cf003": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-71c8f7d2cf7522261bfc25bcfd4c121337e4a794db2f0a038c8888bcf8d0b78b.mp3",
+          "sha256": "71c8f7d2cf7522261bfc25bcfd4c121337e4a794db2f0a038c8888bcf8d0b78b",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "71c8f7d2cf7522261bfc25bcfd4c121337e4a794db2f0a038c8888bcf8d0b78b",
+            "text": "运动",
+            "words": [
+              {
+                "text": "运动",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-dd2ba37decfd7688392b6eb51033c9905027e82b5ef8d57b6de6fd3742295094.mp3",
+          "sha256": "dd2ba37decfd7688392b6eb51033c9905027e82b5ef8d57b6de6fd3742295094",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "dd2ba37decfd7688392b6eb51033c9905027e82b5ef8d57b6de6fd3742295094",
+            "text": "运动",
+            "words": [
+              {
+                "text": "运动",
+                "start": 0.27,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "747e98740dc6185b3f8dba3006ed1932331f8806708ec5726bbaa3301a922759": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6216f04d47b932a1c7b30f508be655a3d743551a082ad5e9e352bea76cf2fbb5.mp3",
+          "sha256": "6216f04d47b932a1c7b30f508be655a3d743551a082ad5e9e352bea76cf2fbb5",
+          "byteLength": 19053,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "6216f04d47b932a1c7b30f508be655a3d743551a082ad5e9e352bea76cf2fbb5",
+            "text": "亲朋好友",
+            "words": [
+              {
+                "text": "亲朋好友",
+                "start": 0.15,
+                "end": 0.8699999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/13976fa1e41393797ca909ee0960e43445c68d0513e85036e47e1a5cd56cebcf.mp3",
+          "sha256": "13976fa1e41393797ca909ee0960e43445c68d0513e85036e47e1a5cd56cebcf",
+          "byteLength": 19341,
+          "readAlong": {
+            "audioSha256": "13976fa1e41393797ca909ee0960e43445c68d0513e85036e47e1a5cd56cebcf",
+            "text": "亲朋好友",
+            "words": [
+              {
+                "text": "亲朋好友",
+                "start": 0.21,
+                "end": 1.05
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

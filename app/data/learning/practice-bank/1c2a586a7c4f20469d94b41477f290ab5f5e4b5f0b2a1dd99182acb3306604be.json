@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0092",
+  "targetId": "W0092",
+  "steps": [
+    {
+      "id": "BANK-W0092-W0092",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0092-W0092",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "or (in alternative questions); had better (preference); still (despite an alternative)",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "还是"
+            },
+            {
+              "value": "háishi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hai2shi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "还是",
+            "pinyin": "háishi",
+            "meaning": "or (in alternative questions); had better (preference); still (despite an alternative)",
+            "singleWord": true,
+            "audio": "3c2edca87b1a73acbf9b0e2f2c7009544425f420845b75508abd1e4f1f1359b3"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3c2edca87b1a73acbf9b0e2f2c7009544425f420845b75508abd1e4f1f1359b3": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-978b1e98398ba84f7dbf4c9edace03906a39faa903b48d45918fa9bdcaa03133.mp3",
+        "sha256": "978b1e98398ba84f7dbf4c9edace03906a39faa903b48d45918fa9bdcaa03133",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "978b1e98398ba84f7dbf4c9edace03906a39faa903b48d45918fa9bdcaa03133",
+          "text": "还是",
+          "words": [
+            {
+              "text": "还是",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-e9e8daf3ca7a10ff4582b3bce416f61f6419fabb9c99d6e3d5d18b75cbf56994.mp3",
+        "sha256": "e9e8daf3ca7a10ff4582b3bce416f61f6419fabb9c99d6e3d5d18b75cbf56994",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "e9e8daf3ca7a10ff4582b3bce416f61f6419fabb9c99d6e3d5d18b75cbf56994",
+          "text": "还是",
+          "words": [
+            {
+              "text": "还是",
+              "start": 0.09,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0092",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0092-W0092",
+      "question_ids": [
+        "BANK-W0092-W0092"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U08-P01",
+    "stepId": "S-U08-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8005"
+    ],
+    "grammarLessonIds": []
+  }
+}

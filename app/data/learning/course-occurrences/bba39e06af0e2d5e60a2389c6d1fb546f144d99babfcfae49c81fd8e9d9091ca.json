@@ -1,0 +1,715 @@
+{
+  "id": "EX-CHAR-char-6ca1",
+  "revision": 2,
+  "unit": "U01",
+  "stage": "ST-HSK1",
+  "after": "S-U01-writing-r4-1",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "没",
+  "sourceBlockId": "mandarin-simplified-v1-char-6ca1",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5462",
+        "text": "呢",
+        "pinyin": "ne",
+        "meaning": "what about…?; marks an ongoing situation",
+        "characters": [
+          {
+            "id": "C-5462",
+            "text": "呢"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-6ca1",
+        "text": "没",
+        "pinyin": "méi",
+        "meaning": "(negative prefix for verbs) have not; not",
+        "characters": [
+          {
+            "id": "C-6CA1",
+            "text": "没"
+          }
+        ]
+      },
+      {
+        "id": "W0005",
+        "text": "人",
+        "pinyin": "rén",
+        "meaning": "person; people",
+        "characters": [
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      },
+      {
+        "id": "W0013",
+        "text": "说",
+        "pinyin": "shuō",
+        "meaning": "speak; say",
+        "characters": [
+          {
+            "id": "C-8BF4",
+            "text": "说"
+          }
+        ]
+      },
+      {
+        "id": "W0081",
+        "text": "有没有",
+        "pinyin": "yǒuméiyǒu",
+        "meaning": "do you have…?; is there…?",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          },
+          {
+            "id": "C-6CA1",
+            "text": "没"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "746cca8a7da3c2cf9b6449bee41ffb39ebe44d40899b7f739fb508bd975f50c5",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6ca1",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "没",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6ca1-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0081",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "do you have…?; is there…?",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "有没有"
+              },
+              {
+                "value": "yǒuméiyǒu",
+                "mode": "pinyin"
+              },
+              {
+                "value": "you3mei2you3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "有没有",
+              "pinyin": "yǒuméiyǒu",
+              "meaning": "do you have…?; is there…?",
+              "audio": "4defcbb3e294f7f3f171d911cb948114a724203baaaddc7e4d36cdec7cb31a4d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6ca1-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6ca1",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "没",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0013",
+                "label": "speak; say",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-6ca1",
+                "label": "(negative prefix for verbs) have not; not",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-PRIMARY-char-5462",
+                "label": "what about…?; marks an ongoing situation",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6ca1-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "没",
+        "pinyin": "méi",
+        "meaning": "(negative prefix for verbs) have not; not",
+        "source": "/stroke-data/6ca1.json",
+        "reference": {
+          "character": "没",
+          "sha256": "4001edb2cf85a59720bc4d6d05e730d532e6828add47c15a34d4340df81480e3",
+          "medians": [
+            [
+              [
+                244,
+                781
+              ],
+              [
+                332,
+                722
+              ],
+              [
+                352,
+                685
+              ]
+            ],
+            [
+              [
+                145,
+                579
+              ],
+              [
+                216,
+                531
+              ],
+              [
+                237,
+                501
+              ]
+            ],
+            [
+              [
+                203,
+                55
+              ],
+              [
+                190,
+                95
+              ],
+              [
+                190,
+                143
+              ],
+              [
+                340,
+                403
+              ]
+            ],
+            [
+              [
+                445,
+                738
+              ],
+              [
+                466,
+                726
+              ],
+              [
+                481,
+                706
+              ],
+              [
+                482,
+                644
+              ],
+              [
+                473,
+                583
+              ],
+              [
+                435,
+                506
+              ],
+              [
+                402,
+                469
+              ],
+              [
+                356,
+                437
+              ]
+            ],
+            [
+              [
+                518,
+                726
+              ],
+              [
+                530,
+                716
+              ],
+              [
+                643,
+                748
+              ],
+              [
+                679,
+                745
+              ],
+              [
+                694,
+                728
+              ],
+              [
+                677,
+                671
+              ],
+              [
+                670,
+                592
+              ],
+              [
+                674,
+                544
+              ],
+              [
+                684,
+                522
+              ],
+              [
+                706,
+                506
+              ],
+              [
+                729,
+                499
+              ],
+              [
+                779,
+                497
+              ],
+              [
+                851,
+                507
+              ],
+              [
+                887,
+                499
+              ]
+            ],
+            [
+              [
+                468,
+                392
+              ],
+              [
+                512,
+                393
+              ],
+              [
+                644,
+                430
+              ],
+              [
+                666,
+                419
+              ],
+              [
+                680,
+                400
+              ],
+              [
+                663,
+                326
+              ],
+              [
+                641,
+                270
+              ],
+              [
+                615,
+                224
+              ],
+              [
+                574,
+                171
+              ],
+              [
+                537,
+                144
+              ],
+              [
+                474,
+                113
+              ],
+              [
+                394,
+                87
+              ],
+              [
+                337,
+                78
+              ]
+            ],
+            [
+              [
+                404,
+                342
+              ],
+              [
+                445,
+                325
+              ],
+              [
+                466,
+                309
+              ],
+              [
+                634,
+                141
+              ],
+              [
+                748,
+                59
+              ],
+              [
+                766,
+                50
+              ],
+              [
+                833,
+                39
+              ],
+              [
+                971,
+                27
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6ca1-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0005",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "person; people",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "人"
+              },
+              {
+                "value": "rén",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ren2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "人",
+              "pinyin": "rén",
+              "meaning": "person; people",
+              "audio": "8fe6eb551d60df945dbf1dcd0b8671d30b40f7768b980264c54d7f068c10fca9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6ca1-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6ca1",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "(negative prefix for verbs) have not; not",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "没"
+              },
+              {
+                "value": "méi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "mei2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "没",
+              "pinyin": "méi",
+              "meaning": "(negative prefix for verbs) have not; not",
+              "audio": "07deddfa236cc5e57b509b9f816de093af351a58380872a8556adc5b096821d8",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "07deddfa236cc5e57b509b9f816de093af351a58380872a8556adc5b096821d8"
+            ],
+            "transcript": [
+              {
+                "text": "没",
+                "pinyin": "méi",
+                "meaning": "(negative prefix for verbs) have not; not",
+                "audio": "07deddfa236cc5e57b509b9f816de093af351a58380872a8556adc5b096821d8",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6CA1",
+      "character": "没",
+      "lessonIds": [
+        "LESSON-C-6CA1"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6ca1-word",
+        "EX-CHAR-char-6ca1-recognize",
+        "EX-CHAR-char-6ca1-write",
+        "EX-CHAR-char-6ca1-familiar",
+        "EX-CHAR-char-6ca1-recall"
+      ]
+    },
+    "audio": {
+      "53eb670c6f7180be07ed8a24b51ad3b9e64f2d10a9b6cfe73aee5859b0a98c7e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-a6dfbbfbc8730ca495ad6b17e3ba843b99ca9fefde918e689c5503687369ab65.mp3",
+          "sha256": "a6dfbbfbc8730ca495ad6b17e3ba843b99ca9fefde918e689c5503687369ab65",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "a6dfbbfbc8730ca495ad6b17e3ba843b99ca9fefde918e689c5503687369ab65",
+            "text": "呢",
+            "words": [
+              {
+                "text": "呢",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c9d42e4d85fb275039248c0e25d4e08ddb2315a86ae56acbefe69d0c42b652ce.mp3",
+          "sha256": "c9d42e4d85fb275039248c0e25d4e08ddb2315a86ae56acbefe69d0c42b652ce",
+          "byteLength": 12429,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "c9d42e4d85fb275039248c0e25d4e08ddb2315a86ae56acbefe69d0c42b652ce",
+            "text": "呢",
+            "words": [
+              {
+                "text": "呢",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "07deddfa236cc5e57b509b9f816de093af351a58380872a8556adc5b096821d8": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c785d8e9fb89fb971fd4d19f5fedd0694fd7755a9a236fedb2d35dd309ca2c2e.mp3",
+          "sha256": "c785d8e9fb89fb971fd4d19f5fedd0694fd7755a9a236fedb2d35dd309ca2c2e",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "c785d8e9fb89fb971fd4d19f5fedd0694fd7755a9a236fedb2d35dd309ca2c2e",
+            "text": "没",
+            "words": [
+              {
+                "text": "没",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f69ef6fe0d433792abc25ce1073b6e603cdb2c2c90e242b8d8bfaa5cc8281ff2.mp3",
+          "sha256": "f69ef6fe0d433792abc25ce1073b6e603cdb2c2c90e242b8d8bfaa5cc8281ff2",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "f69ef6fe0d433792abc25ce1073b6e603cdb2c2c90e242b8d8bfaa5cc8281ff2",
+            "text": "没",
+            "words": [
+              {
+                "text": "没",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "8fe6eb551d60df945dbf1dcd0b8671d30b40f7768b980264c54d7f068c10fca9": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-617b3e01fa12f00c1ceb8dedf6ed29df15f1380fb6d62a83d8f0a915d46d77d0.mp3",
+          "sha256": "617b3e01fa12f00c1ceb8dedf6ed29df15f1380fb6d62a83d8f0a915d46d77d0",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "617b3e01fa12f00c1ceb8dedf6ed29df15f1380fb6d62a83d8f0a915d46d77d0",
+            "text": "人",
+            "words": [
+              {
+                "text": "人",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ea2ad60c2235ed572c045a64b0de12eb0d67a12f248984732c5c5614b8ccf8db.mp3",
+          "sha256": "ea2ad60c2235ed572c045a64b0de12eb0d67a12f248984732c5c5614b8ccf8db",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "ea2ad60c2235ed572c045a64b0de12eb0d67a12f248984732c5c5614b8ccf8db",
+            "text": "人",
+            "words": [
+              {
+                "text": "人",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "92ecad3ebe1265caf44f21731282d8f094525f390560832c342453bae3bdc302": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-305c20c2621e815e5abba8137760754261d82fe95fad057cd92597019bfca811.mp3",
+          "sha256": "305c20c2621e815e5abba8137760754261d82fe95fad057cd92597019bfca811",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "305c20c2621e815e5abba8137760754261d82fe95fad057cd92597019bfca811",
+            "text": "说",
+            "words": [
+              {
+                "text": "说",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-78a798a74ce7883f2d16adf97ef354c1cf0f2a84fbd04041b1f1939745d58353.mp3",
+          "sha256": "78a798a74ce7883f2d16adf97ef354c1cf0f2a84fbd04041b1f1939745d58353",
+          "byteLength": 16173,
+          "readAlong": {
+            "audioSha256": "78a798a74ce7883f2d16adf97ef354c1cf0f2a84fbd04041b1f1939745d58353",
+            "text": "说",
+            "words": [
+              {
+                "text": "说",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "4defcbb3e294f7f3f171d911cb948114a724203baaaddc7e4d36cdec7cb31a4d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-8182463fb1d3c3413826d63d652e188d5498bc0e836c7a3268c16ac10da16174.mp3",
+          "sha256": "8182463fb1d3c3413826d63d652e188d5498bc0e836c7a3268c16ac10da16174",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "8182463fb1d3c3413826d63d652e188d5498bc0e836c7a3268c16ac10da16174",
+            "text": "有没有",
+            "words": [
+              {
+                "text": "有没有",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-bdd750dfa0ed19bcd44e6db710a9ffb2b1c0f3f4425967f7c555456c322ef95f.mp3",
+          "sha256": "bdd750dfa0ed19bcd44e6db710a9ffb2b1c0f3f4425967f7c555456c322ef95f",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "bdd750dfa0ed19bcd44e6db710a9ffb2b1c0f3f4425967f7c555456c322ef95f",
+            "text": "有没有",
+            "words": [
+              {
+                "text": "有没有",
+                "start": 0.09,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

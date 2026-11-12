@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1630",
+  "targetId": "W1630",
+  "steps": [
+    {
+      "id": "BANK-W1630-W1630",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1630-W1630",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "sports team",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "球队"
+            },
+            {
+              "value": "qiúduì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qiu2dui4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "球队",
+            "pinyin": "qiúduì",
+            "meaning": "sports team",
+            "singleWord": true,
+            "audio": "c1407b4e8ac16bdcd4114e734bbbfc84f760ef5c4175ff65ae168a9c8d72d0f1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c1407b4e8ac16bdcd4114e734bbbfc84f760ef5c4175ff65ae168a9c8d72d0f1": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f622b24b948ab41e06bb22a7c9003692b3c84e97a40324d96a3dbff20db91c5c.mp3",
+        "sha256": "f622b24b948ab41e06bb22a7c9003692b3c84e97a40324d96a3dbff20db91c5c",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "f622b24b948ab41e06bb22a7c9003692b3c84e97a40324d96a3dbff20db91c5c",
+          "text": "球队",
+          "words": [
+            {
+              "text": "球队",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-eeb52a5ce8e03b3fc1d16bd476e894baeb8a29fb9e99a2b94dafd7e4b18e72fa.mp3",
+        "sha256": "eeb52a5ce8e03b3fc1d16bd476e894baeb8a29fb9e99a2b94dafd7e4b18e72fa",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "eeb52a5ce8e03b3fc1d16bd476e894baeb8a29fb9e99a2b94dafd7e4b18e72fa",
+          "text": "球队",
+          "words": [
+            {
+              "text": "球队",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1630",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1630-W1630",
+      "question_ids": [
+        "BANK-W1630-W1630"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-18",
+    "stepId": "S-U4-18-words-r4-18",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-961f"
+    ],
+    "grammarLessonIds": []
+  }
+}

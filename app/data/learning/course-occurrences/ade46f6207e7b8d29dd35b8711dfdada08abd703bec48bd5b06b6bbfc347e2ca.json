@@ -1,0 +1,749 @@
+{
+  "id": "EX-CHAR-char-505c",
+  "revision": 2,
+  "unit": "U4-05-P01",
+  "stage": "ST-HSK4",
+  "after": "S-U4-05-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "停",
+  "sourceBlockId": "mandarin-simplified-v1-char-505c",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-29f943bce0ecfe7e79bad2bd",
+        "text": "受理",
+        "pinyin": "shòu lǐ",
+        "meaning": "to accept to hear a case",
+        "characters": [
+          {
+            "id": "C-53D7",
+            "text": "受"
+          },
+          {
+            "id": "C-7406",
+            "text": "理"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-cd18d2a22588ee118e041828",
+        "text": "停留",
+        "pinyin": "tíngliú",
+        "meaning": "to stay for a time; to stop; to remain; to remain (at a stage, level etc)",
+        "characters": [
+          {
+            "id": "C-505C",
+            "text": "停"
+          },
+          {
+            "id": "C-7559",
+            "text": "留"
+          }
+        ]
+      },
+      {
+        "id": "W0927",
+        "text": "收",
+        "pinyin": "shōu",
+        "meaning": "to receive; to accept",
+        "characters": [
+          {
+            "id": "C-6536",
+            "text": "收"
+          }
+        ]
+      },
+      {
+        "id": "W1776",
+        "text": "停",
+        "pinyin": "tíng",
+        "meaning": "to stop; to halt",
+        "characters": [
+          {
+            "id": "C-505C",
+            "text": "停"
+          }
+        ]
+      },
+      {
+        "id": "W3146",
+        "text": "天上",
+        "pinyin": "tiānshàng",
+        "meaning": "the sky; the heavens",
+        "characters": [
+          {
+            "id": "C-5929",
+            "text": "天"
+          },
+          {
+            "id": "C-4E0A",
+            "text": "上"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "5b3ae648e8926b7eef13caa4d0daa7783802f663daaea3e5872d7f5f9cb3a1c3",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-505c",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "停",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-505c-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-cd18d2a22588ee118e041828",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to stay for a time; to stop",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "停留"
+              },
+              {
+                "value": "tíngliú",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ting2liu2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "停留",
+              "pinyin": "tíngliú",
+              "meaning": "to stay for a time; to stop",
+              "audio": "5d9fb66cbceecd5cc117c12dc86351dacc9e6a0348f9eb2972f20345f650f317",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-505c-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W1776",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "停",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-29f943bce0ecfe7e79bad2bd",
+                "label": "to accept to hear a case",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1776",
+                "label": "to stop; to halt",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0927",
+                "label": "to receive; to accept",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-505c-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "停",
+        "pinyin": "tíng",
+        "meaning": "to stop; to halt",
+        "source": "/stroke-data/505c.json",
+        "reference": {
+          "character": "停",
+          "sha256": "9e7a382a14ed576aed09efb62e9e6384d45ca3cc8ebd6ec32b27f207a0126ad6",
+          "medians": [
+            [
+              [
+                275,
+                812
+              ],
+              [
+                292,
+                799
+              ],
+              [
+                312,
+                764
+              ],
+              [
+                270,
+                671
+              ],
+              [
+                172,
+                507
+              ],
+              [
+                111,
+                426
+              ],
+              [
+                63,
+                379
+              ]
+            ],
+            [
+              [
+                240,
+                555
+              ],
+              [
+                259,
+                466
+              ],
+              [
+                252,
+                243
+              ],
+              [
+                238,
+                98
+              ],
+              [
+                244,
+                45
+              ]
+            ],
+            [
+              [
+                561,
+                857
+              ],
+              [
+                632,
+                827
+              ],
+              [
+                661,
+                794
+              ]
+            ],
+            [
+              [
+                441,
+                708
+              ],
+              [
+                465,
+                701
+              ],
+              [
+                516,
+                702
+              ],
+              [
+                722,
+                744
+              ],
+              [
+                790,
+                748
+              ]
+            ],
+            [
+              [
+                464,
+                619
+              ],
+              [
+                491,
+                599
+              ],
+              [
+                500,
+                581
+              ],
+              [
+                528,
+                486
+              ]
+            ],
+            [
+              [
+                518,
+                616
+              ],
+              [
+                534,
+                607
+              ],
+              [
+                655,
+                637
+              ],
+              [
+                695,
+                640
+              ],
+              [
+                725,
+                613
+              ],
+              [
+                708,
+                570
+              ],
+              [
+                684,
+                559
+              ]
+            ],
+            [
+              [
+                545,
+                493
+              ],
+              [
+                560,
+                507
+              ],
+              [
+                665,
+                527
+              ],
+              [
+                731,
+                521
+              ]
+            ],
+            [
+              [
+                379,
+                446
+              ],
+              [
+                392,
+                402
+              ],
+              [
+                360,
+                322
+              ],
+              [
+                351,
+                275
+              ]
+            ],
+            [
+              [
+                424,
+                383
+              ],
+              [
+                627,
+                428
+              ],
+              [
+                823,
+                457
+              ],
+              [
+                856,
+                444
+              ],
+              [
+                871,
+                419
+              ],
+              [
+                810,
+                356
+              ]
+            ],
+            [
+              [
+                448,
+                299
+              ],
+              [
+                483,
+                294
+              ],
+              [
+                701,
+                337
+              ],
+              [
+                739,
+                338
+              ],
+              [
+                779,
+                328
+              ]
+            ],
+            [
+              [
+                601,
+                296
+              ],
+              [
+                626,
+                275
+              ],
+              [
+                629,
+                260
+              ],
+              [
+                629,
+                89
+              ],
+              [
+                621,
+                37
+              ],
+              [
+                605,
+                11
+              ],
+              [
+                560,
+                26
+              ],
+              [
+                495,
+                59
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-505c-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3146",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "the sky; the heavens",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "天上"
+              },
+              {
+                "value": "tiānshàng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tian1shang4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "天上",
+              "pinyin": "tiānshàng",
+              "meaning": "the sky; the heavens",
+              "audio": "24bd8c854a009657bff38ff360748a9d68b59bab22f7002df45c9a6b41aca7c6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-505c-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W1776",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to stop; to halt",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "停"
+              },
+              {
+                "value": "tíng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ting2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "停",
+              "pinyin": "tíng",
+              "meaning": "to stop; to halt",
+              "audio": "ef223dc76361d1f966bccff202dcf3051aa426bfabfef9b4432031b20ab1f3be",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "ef223dc76361d1f966bccff202dcf3051aa426bfabfef9b4432031b20ab1f3be"
+            ],
+            "transcript": [
+              {
+                "text": "停",
+                "pinyin": "tíng",
+                "meaning": "to stop; to halt",
+                "audio": "ef223dc76361d1f966bccff202dcf3051aa426bfabfef9b4432031b20ab1f3be",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-505C",
+      "character": "停",
+      "lessonIds": [
+        "LESSON-C-505C"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-505c-word",
+        "EX-CHAR-char-505c-recognize",
+        "EX-CHAR-char-505c-write",
+        "EX-CHAR-char-505c-familiar",
+        "EX-CHAR-char-505c-recall"
+      ]
+    },
+    "audio": {
+      "4a7de989e2506719312e07420a5a7a534299605afeb68abc50426ec54457422f": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3856e788fda67b990fcafc9fc4f6bae9be42917bfcb598eae7e94873f10a5b8a.mp3",
+          "sha256": "3856e788fda67b990fcafc9fc4f6bae9be42917bfcb598eae7e94873f10a5b8a",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "3856e788fda67b990fcafc9fc4f6bae9be42917bfcb598eae7e94873f10a5b8a",
+            "text": "受理",
+            "words": [
+              {
+                "text": "受理",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3fcd5a1e810bdd12e334a4aef66b1fb09a52a49941812b44bafadfeb0f6f6a8d.mp3",
+          "sha256": "3fcd5a1e810bdd12e334a4aef66b1fb09a52a49941812b44bafadfeb0f6f6a8d",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "3fcd5a1e810bdd12e334a4aef66b1fb09a52a49941812b44bafadfeb0f6f6a8d",
+            "text": "受理",
+            "words": [
+              {
+                "text": "受理",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "5d9fb66cbceecd5cc117c12dc86351dacc9e6a0348f9eb2972f20345f650f317": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-750d1e0ef17f0f95996a7a5c0197ef036f1a90e0169aab8ad666e61632e298f5.mp3",
+          "sha256": "750d1e0ef17f0f95996a7a5c0197ef036f1a90e0169aab8ad666e61632e298f5",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "750d1e0ef17f0f95996a7a5c0197ef036f1a90e0169aab8ad666e61632e298f5",
+            "text": "停留",
+            "words": [
+              {
+                "text": "停留",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-5e083d5640ea157fa85213bc750622e35c245ec83c5824b67ec10927ab5b7fa0.mp3",
+          "sha256": "5e083d5640ea157fa85213bc750622e35c245ec83c5824b67ec10927ab5b7fa0",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "5e083d5640ea157fa85213bc750622e35c245ec83c5824b67ec10927ab5b7fa0",
+            "text": "停留",
+            "words": [
+              {
+                "text": "停留",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "25fb2a51f65891f3c4ae1c9b9e3393bcd979cc05b0133312a67bdeead644e96e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-69eeed2c5ef2a8e81d6b16e9b9c47503003e329a1056d5cecbfdc64bd97d6cab.mp3",
+          "sha256": "69eeed2c5ef2a8e81d6b16e9b9c47503003e329a1056d5cecbfdc64bd97d6cab",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "69eeed2c5ef2a8e81d6b16e9b9c47503003e329a1056d5cecbfdc64bd97d6cab",
+            "text": "收",
+            "words": [
+              {
+                "text": "收",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-bfcf58ac3275831c0577766ac48145f4030e15cfc2083be55d2ed8904a9e29f5.mp3",
+          "sha256": "bfcf58ac3275831c0577766ac48145f4030e15cfc2083be55d2ed8904a9e29f5",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "bfcf58ac3275831c0577766ac48145f4030e15cfc2083be55d2ed8904a9e29f5",
+            "text": "收",
+            "words": [
+              {
+                "text": "收",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "ef223dc76361d1f966bccff202dcf3051aa426bfabfef9b4432031b20ab1f3be": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3006bfd0c917196a4beb0abbc3fc6330f485aed2c96daebaa674e8942818ee61.mp3",
+          "sha256": "3006bfd0c917196a4beb0abbc3fc6330f485aed2c96daebaa674e8942818ee61",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "3006bfd0c917196a4beb0abbc3fc6330f485aed2c96daebaa674e8942818ee61",
+            "text": "停",
+            "words": [
+              {
+                "text": "停",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-3909d8fe018fcdccfff5d04cdfb8d5ea89b05fe3c66d835485fe2257fa11459d.mp3",
+          "sha256": "3909d8fe018fcdccfff5d04cdfb8d5ea89b05fe3c66d835485fe2257fa11459d",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "3909d8fe018fcdccfff5d04cdfb8d5ea89b05fe3c66d835485fe2257fa11459d",
+            "text": "停",
+            "words": [
+              {
+                "text": "停",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "24bd8c854a009657bff38ff360748a9d68b59bab22f7002df45c9a6b41aca7c6": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/bb3c865ac3258fd1a33333736dfe4e6316f671a5ad89929101ab75d9cb93c0ff.mp3",
+          "sha256": "bb3c865ac3258fd1a33333736dfe4e6316f671a5ad89929101ab75d9cb93c0ff",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "bb3c865ac3258fd1a33333736dfe4e6316f671a5ad89929101ab75d9cb93c0ff",
+            "text": "天上",
+            "words": [
+              {
+                "text": "天上",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9cfa4638bb92be631e021730a2851d39778b77751a6ea8fb2c9ca598c66154dc.mp3",
+          "sha256": "9cfa4638bb92be631e021730a2851d39778b77751a6ea8fb2c9ca598c66154dc",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "9cfa4638bb92be631e021730a2851d39778b77751a6ea8fb2c9ca598c66154dc",
+            "text": "天上",
+            "words": [
+              {
+                "text": "天上",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

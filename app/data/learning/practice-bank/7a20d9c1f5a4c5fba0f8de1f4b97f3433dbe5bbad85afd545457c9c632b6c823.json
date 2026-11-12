@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W-USE-0801-5",
+  "targetId": "W-USE-0801-5",
+  "steps": [
+    {
+      "id": "BANK-W-USE-0801-5-W-USE-0801-5",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W-USE-0801-5-W-USE-0801-5",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "classifier for incidents",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "起"
+            },
+            {
+              "value": "qǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qi3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "起",
+            "pinyin": "qǐ",
+            "meaning": "classifier for incidents",
+            "singleWord": true,
+            "audio": "3119b6deac94631e7ee7898386ac7ce950e565a5132a2ffc5a8b2dc9b2d9c572"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3119b6deac94631e7ee7898386ac7ce950e565a5132a2ffc5a8b2dc9b2d9c572": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-bae33af836822aedf5233562692a6b2733eb1657c826a3ed0369e5cd53625431.mp3",
+        "sha256": "bae33af836822aedf5233562692a6b2733eb1657c826a3ed0369e5cd53625431",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "bae33af836822aedf5233562692a6b2733eb1657c826a3ed0369e5cd53625431",
+          "text": "起",
+          "words": [
+            {
+              "text": "起",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-f9bd6a9e49a67cf1f87706fc7d0638ca84265d6ec5c28a07ace1740f5df8690a.mp3",
+        "sha256": "f9bd6a9e49a67cf1f87706fc7d0638ca84265d6ec5c28a07ace1740f5df8690a",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "f9bd6a9e49a67cf1f87706fc7d0638ca84265d6ec5c28a07ace1740f5df8690a",
+          "text": "起",
+          "words": [
+            {
+              "text": "起",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W-USE-0801-5",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W-USE-0801-5-W-USE-0801-5",
+      "question_ids": [
+        "BANK-W-USE-0801-5-W-USE-0801-5"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-34",
+    "stepId": "S-U5-34-r5-word-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e9c"
+    ],
+    "grammarLessonIds": []
+  }
+}

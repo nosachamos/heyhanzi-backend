@@ -1,0 +1,769 @@
+{
+  "id": "EX-CHAR-char-4ff1",
+  "revision": 2,
+  "unit": "U6-19",
+  "stage": "ST-HSK6",
+  "after": "S-U6-19-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "俱",
+  "sourceBlockId": "mandarin-simplified-v1-char-4ff1",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-4ff1",
+        "text": "俱",
+        "pinyin": "jù",
+        "meaning": "(literary) all; both; entirely; without exception; (literary) to be together",
+        "characters": [
+          {
+            "id": "C-4FF1",
+            "text": "俱"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-9928af49bcbd9d0359d30bc6",
+        "text": "与时俱进",
+        "pinyin": "yǔ shí jù jìn",
+        "meaning": "abreast of modern developments",
+        "characters": [
+          {
+            "id": "C-4E0E",
+            "text": "与"
+          },
+          {
+            "id": "C-65F6",
+            "text": "时"
+          },
+          {
+            "id": "C-4FF1",
+            "text": "俱"
+          },
+          {
+            "id": "C-8FDB",
+            "text": "进"
+          }
+        ]
+      },
+      {
+        "id": "W1784",
+        "text": "同时",
+        "pinyin": "tóngshí",
+        "meaning": "at the same time; simultaneously",
+        "characters": [
+          {
+            "id": "C-540C",
+            "text": "同"
+          },
+          {
+            "id": "C-65F6",
+            "text": "时"
+          }
+        ]
+      },
+      {
+        "id": "W4235",
+        "text": "极为",
+        "pinyin": "jíwéi",
+        "meaning": "extremely; exceedingly",
+        "characters": [
+          {
+            "id": "C-6781",
+            "text": "极"
+          },
+          {
+            "id": "C-4E3A",
+            "text": "为"
+          }
+        ]
+      },
+      {
+        "id": "W4440",
+        "text": "老太太",
+        "pinyin": "lǎotàitai",
+        "meaning": "elderly lady; esteemed mother",
+        "characters": [
+          {
+            "id": "C-8001",
+            "text": "老"
+          },
+          {
+            "id": "C-592A",
+            "text": "太"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "e0046f11d1a8431ba2db2aeb0d20fbff5a05f66c8b42528b5fb2da2933c220eb",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4ff1",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "俱",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4ff1-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-9928af49bcbd9d0359d30bc6",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "abreast of modern developments",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "与时俱进"
+              },
+              {
+                "value": "yǔ shí jù jìn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yu3shi2ju4jin4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "与时俱进",
+              "pinyin": "yǔ shí jù jìn",
+              "meaning": "abreast of modern developments",
+              "audio": "598e4a90d4ab98ba4edc9e67767f5d38780dcfb119b36efbe9a99094f09fd807",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ff1-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-4ff1",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "俱",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1784",
+                "label": "at the same time; simultaneously",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W4440",
+                "label": "elderly lady; esteemed mother",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-4ff1",
+                "label": "(literary) all; both",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ff1-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "俱",
+        "pinyin": "jù",
+        "meaning": "(literary) all; both",
+        "source": "/stroke-data/4ff1.json",
+        "reference": {
+          "character": "俱",
+          "sha256": "59ede34632137077bbb15b93989322aa96866133ef336d60862f37d5c2a60a00",
+          "medians": [
+            [
+              [
+                318,
+                788
+              ],
+              [
+                343,
+                763
+              ],
+              [
+                353,
+                736
+              ],
+              [
+                321,
+                670
+              ],
+              [
+                247,
+                551
+              ],
+              [
+                185,
+                466
+              ],
+              [
+                109,
+                378
+              ],
+              [
+                71,
+                347
+              ]
+            ],
+            [
+              [
+                237,
+                489
+              ],
+              [
+                239,
+                458
+              ],
+              [
+                252,
+                430
+              ],
+              [
+                252,
+                383
+              ],
+              [
+                244,
+                213
+              ],
+              [
+                229,
+                109
+              ],
+              [
+                234,
+                24
+              ]
+            ],
+            [
+              [
+                462,
+                727
+              ],
+              [
+                486,
+                701
+              ],
+              [
+                498,
+                668
+              ],
+              [
+                501,
+                298
+              ],
+              [
+                498,
+                278
+              ],
+              [
+                484,
+                266
+              ]
+            ],
+            [
+              [
+                516,
+                717
+              ],
+              [
+                543,
+                706
+              ],
+              [
+                703,
+                743
+              ],
+              [
+                732,
+                735
+              ],
+              [
+                755,
+                702
+              ],
+              [
+                747,
+                636
+              ],
+              [
+                744,
+                316
+              ],
+              [
+                722,
+                300
+              ]
+            ],
+            [
+              [
+                528,
+                571
+              ],
+              [
+                540,
+                584
+              ],
+              [
+                592,
+                598
+              ],
+              [
+                625,
+                603
+              ],
+              [
+                657,
+                598
+              ]
+            ],
+            [
+              [
+                528,
+                463
+              ],
+              [
+                541,
+                474
+              ],
+              [
+                575,
+                482
+              ],
+              [
+                621,
+                488
+              ],
+              [
+                651,
+                483
+              ]
+            ],
+            [
+              [
+                532,
+                354
+              ],
+              [
+                540,
+                366
+              ],
+              [
+                575,
+                373
+              ],
+              [
+                640,
+                381
+              ],
+              [
+                663,
+                374
+              ]
+            ],
+            [
+              [
+                314,
+                229
+              ],
+              [
+                365,
+                219
+              ],
+              [
+                566,
+                248
+              ],
+              [
+                843,
+                275
+              ],
+              [
+                899,
+                274
+              ],
+              [
+                955,
+                257
+              ]
+            ],
+            [
+              [
+                541,
+                147
+              ],
+              [
+                509,
+                143
+              ],
+              [
+                479,
+                103
+              ],
+              [
+                411,
+                42
+              ],
+              [
+                339,
+                1
+              ]
+            ],
+            [
+              [
+                686,
+                178
+              ],
+              [
+                756,
+                117
+              ],
+              [
+                800,
+                68
+              ],
+              [
+                815,
+                42
+              ],
+              [
+                822,
+                6
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4ff1-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4235",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "extremely; exceedingly",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "极为"
+              },
+              {
+                "value": "jíwéi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ji2wei2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "极为",
+              "pinyin": "jíwéi",
+              "meaning": "extremely; exceedingly",
+              "audio": "b4b17d2630d5c20d820346f50f46389b73b96478edf805055474e26e71c000ba",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ff1-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-4ff1",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "(literary) all; both",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "俱"
+              },
+              {
+                "value": "jù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ju4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "俱",
+              "pinyin": "jù",
+              "meaning": "(literary) all; both",
+              "audio": "8a01b777d2d5920fe6316f6e5422a8f5641b4d1a72915e40b552c6f2fd279e1c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "8a01b777d2d5920fe6316f6e5422a8f5641b4d1a72915e40b552c6f2fd279e1c"
+            ],
+            "transcript": [
+              {
+                "text": "俱",
+                "pinyin": "jù",
+                "meaning": "(literary) all; both",
+                "audio": "8a01b777d2d5920fe6316f6e5422a8f5641b4d1a72915e40b552c6f2fd279e1c",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4FF1",
+      "character": "俱",
+      "lessonIds": [
+        "LESSON-C-4FF1"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4ff1-word",
+        "EX-CHAR-char-4ff1-recognize",
+        "EX-CHAR-char-4ff1-write",
+        "EX-CHAR-char-4ff1-familiar",
+        "EX-CHAR-char-4ff1-recall"
+      ]
+    },
+    "audio": {
+      "8a01b777d2d5920fe6316f6e5422a8f5641b4d1a72915e40b552c6f2fd279e1c": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-8000e6f63d31af1db427d1bee6879e68cf9277110f60ce40f4ab2322508433c4.mp3",
+          "sha256": "8000e6f63d31af1db427d1bee6879e68cf9277110f60ce40f4ab2322508433c4",
+          "byteLength": 10989,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "8000e6f63d31af1db427d1bee6879e68cf9277110f60ce40f4ab2322508433c4",
+            "text": "俱",
+            "words": [
+              {
+                "text": "俱",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-a7cdfeaf99417342d6b7071bb307ea37c210bc142b6f776bf083cc473503b37d.mp3",
+          "sha256": "a7cdfeaf99417342d6b7071bb307ea37c210bc142b6f776bf083cc473503b37d",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "a7cdfeaf99417342d6b7071bb307ea37c210bc142b6f776bf083cc473503b37d",
+            "text": "俱",
+            "words": [
+              {
+                "text": "俱",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "598e4a90d4ab98ba4edc9e67767f5d38780dcfb119b36efbe9a99094f09fd807": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3e296aee38d08b5440f3b01bde29b4b08b944e811e7a3a398d4422f412b1a48a.mp3",
+          "sha256": "3e296aee38d08b5440f3b01bde29b4b08b944e811e7a3a398d4422f412b1a48a",
+          "byteLength": 17613,
+          "readAlong": {
+            "audioSha256": "3e296aee38d08b5440f3b01bde29b4b08b944e811e7a3a398d4422f412b1a48a",
+            "text": "与时俱进",
+            "words": [
+              {
+                "text": "与时俱进",
+                "start": 0.21,
+                "end": 0.9299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/ae97aaf61d0543bdd76ad9aa006e490df6e8f66aee936da429cf630227a0273d.mp3",
+          "sha256": "ae97aaf61d0543bdd76ad9aa006e490df6e8f66aee936da429cf630227a0273d",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "ae97aaf61d0543bdd76ad9aa006e490df6e8f66aee936da429cf630227a0273d",
+            "text": "与时俱进",
+            "words": [
+              {
+                "text": "与时俱进",
+                "start": 0.15,
+                "end": 0.75
+              }
+            ]
+          }
+        }
+      },
+      "13dff0ca9513905c2f197c355daf61fc7c605acf4ce7d26cbc0b13a1f21600b5": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ee482ff76847d52d38ff518e0ae32ae88ed5e955b9e54e2684651126e5aaa6fe.mp3",
+          "sha256": "ee482ff76847d52d38ff518e0ae32ae88ed5e955b9e54e2684651126e5aaa6fe",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "ee482ff76847d52d38ff518e0ae32ae88ed5e955b9e54e2684651126e5aaa6fe",
+            "text": "同时",
+            "words": [
+              {
+                "text": "同时",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-64b4f67be9b7ac0606009ba8ab51f4bbe050b09f1b6e2c56b627894a8959293a.mp3",
+          "sha256": "64b4f67be9b7ac0606009ba8ab51f4bbe050b09f1b6e2c56b627894a8959293a",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "64b4f67be9b7ac0606009ba8ab51f4bbe050b09f1b6e2c56b627894a8959293a",
+            "text": "同时",
+            "words": [
+              {
+                "text": "同时",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "b4b17d2630d5c20d820346f50f46389b73b96478edf805055474e26e71c000ba": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7ca2c89562155d3e56a37cc361ebbe77de21e31a6c35357e809ca8aedf365294.mp3",
+          "sha256": "7ca2c89562155d3e56a37cc361ebbe77de21e31a6c35357e809ca8aedf365294",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "7ca2c89562155d3e56a37cc361ebbe77de21e31a6c35357e809ca8aedf365294",
+            "text": "极为",
+            "words": [
+              {
+                "text": "极为",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/39eb953e846e767667f336073028a7d459e053f5ade72d46f871d5ac551178c7.mp3",
+          "sha256": "39eb953e846e767667f336073028a7d459e053f5ade72d46f871d5ac551178c7",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "39eb953e846e767667f336073028a7d459e053f5ade72d46f871d5ac551178c7",
+            "text": "极为",
+            "words": [
+              {
+                "text": "极为",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "c90703b9bf2160657bbec9a43de9088a19171f13122bd4c20af3d9994ee1e098": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-7f2012ee691480a9cc62f7dbe5ea60ffe513944e7cf97268b25309e8c43d80c6.mp3",
+          "sha256": "7f2012ee691480a9cc62f7dbe5ea60ffe513944e7cf97268b25309e8c43d80c6",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "7f2012ee691480a9cc62f7dbe5ea60ffe513944e7cf97268b25309e8c43d80c6",
+            "text": "老太太",
+            "words": [
+              {
+                "text": "老太太",
+                "start": 0.15,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-0a02943a15cbab911a7dec41694a4fcf08ef6643f727f44da8eef686f1866e43.mp3",
+          "sha256": "0a02943a15cbab911a7dec41694a4fcf08ef6643f727f44da8eef686f1866e43",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "0a02943a15cbab911a7dec41694a4fcf08ef6643f727f44da8eef686f1866e43",
+            "text": "老太太",
+            "words": [
+              {
+                "text": "老太太",
+                "start": 0.15,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

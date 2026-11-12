@@ -1,0 +1,799 @@
+{
+  "id": "EX-CHAR-char-6f31",
+  "revision": 2,
+  "unit": "U6-04",
+  "stage": "ST-HSK6",
+  "after": "S-U6-04-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "漱",
+  "sourceBlockId": "mandarin-simplified-v1-char-6f31",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-6f31",
+        "text": "漱",
+        "pinyin": "shù",
+        "meaning": "to rinse one's mouth with water; to gargle",
+        "characters": [
+          {
+            "id": "C-6F31",
+            "text": "漱"
+          }
+        ]
+      },
+      {
+        "id": "W1148",
+        "text": "厨房",
+        "pinyin": "chúfáng",
+        "meaning": "kitchen",
+        "characters": [
+          {
+            "id": "C-53A8",
+            "text": "厨"
+          },
+          {
+            "id": "C-623F",
+            "text": "房"
+          }
+        ]
+      },
+      {
+        "id": "W2785",
+        "text": "门诊",
+        "pinyin": "ménzhěn",
+        "meaning": "outpatient service",
+        "characters": [
+          {
+            "id": "C-95E8",
+            "text": "门"
+          },
+          {
+            "id": "C-8BCA",
+            "text": "诊"
+          }
+        ]
+      },
+      {
+        "id": "W4042",
+        "text": "钢笔",
+        "pinyin": "gāngbǐ",
+        "meaning": "fountain pen",
+        "characters": [
+          {
+            "id": "C-94A2",
+            "text": "钢"
+          },
+          {
+            "id": "C-7B14",
+            "text": "笔"
+          }
+        ]
+      },
+      {
+        "id": "W5018",
+        "text": "洗漱",
+        "pinyin": "xǐshù",
+        "meaning": "to wash the face and rinse the mouth",
+        "characters": [
+          {
+            "id": "C-6D17",
+            "text": "洗"
+          },
+          {
+            "id": "C-6F31",
+            "text": "漱"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "cbe1386bd76bf0182c6439a0aafbeeede55395d33cc45a1f9f63747c310ea4da",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6f31",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "漱",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6f31-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W5018",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to wash the face and rinse the mouth",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "洗漱"
+              },
+              {
+                "value": "xǐshù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xi3shu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "洗漱",
+              "pinyin": "xǐshù",
+              "meaning": "to wash the face and rinse the mouth",
+              "audio": "5bea7f93327d06ef7dafc788f6c8a53e1aec640d92c50e729cacbabdc3519cf7",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6f31-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6f31",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "漱",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1148",
+                "label": "kitchen",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W2785",
+                "label": "outpatient service",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-6f31",
+                "label": "to rinse one's mouth with water; to gargle",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6f31-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "漱",
+        "pinyin": "shù",
+        "meaning": "to rinse one's mouth with water; to gargle",
+        "source": "/stroke-data/6f31.json",
+        "reference": {
+          "character": "漱",
+          "sha256": "21eeb6f2484646c844e2eb624d114c326a81c7ea28357f745db5355198e47650",
+          "medians": [
+            [
+              [
+                173,
+                741
+              ],
+              [
+                254,
+                686
+              ],
+              [
+                271,
+                657
+              ]
+            ],
+            [
+              [
+                101,
+                511
+              ],
+              [
+                171,
+                465
+              ],
+              [
+                189,
+                442
+              ]
+            ],
+            [
+              [
+                155,
+                41
+              ],
+              [
+                142,
+                71
+              ],
+              [
+                138,
+                113
+              ],
+              [
+                245,
+                345
+              ]
+            ],
+            [
+              [
+                312,
+                603
+              ],
+              [
+                332,
+                599
+              ],
+              [
+                391,
+                605
+              ],
+              [
+                475,
+                631
+              ],
+              [
+                536,
+                637
+              ]
+            ],
+            [
+              [
+                261,
+                488
+              ],
+              [
+                292,
+                456
+              ],
+              [
+                320,
+                337
+              ]
+            ],
+            [
+              [
+                295,
+                491
+              ],
+              [
+                317,
+                482
+              ],
+              [
+                490,
+                525
+              ],
+              [
+                524,
+                528
+              ],
+              [
+                552,
+                502
+              ],
+              [
+                531,
+                437
+              ],
+              [
+                513,
+                423
+              ]
+            ],
+            [
+              [
+                336,
+                356
+              ],
+              [
+                345,
+                365
+              ],
+              [
+                504,
+                399
+              ],
+              [
+                559,
+                395
+              ]
+            ],
+            [
+              [
+                379,
+                793
+              ],
+              [
+                427,
+                743
+              ],
+              [
+                419,
+                256
+              ],
+              [
+                403,
+                66
+              ],
+              [
+                405,
+                -10
+              ]
+            ],
+            [
+              [
+                395,
+                353
+              ],
+              [
+                379,
+                292
+              ],
+              [
+                362,
+                262
+              ],
+              [
+                295,
+                165
+              ],
+              [
+                225,
+                86
+              ]
+            ],
+            [
+              [
+                454,
+                301
+              ],
+              [
+                510,
+                258
+              ],
+              [
+                532,
+                225
+              ]
+            ],
+            [
+              [
+                674,
+                759
+              ],
+              [
+                699,
+                744
+              ],
+              [
+                714,
+                725
+              ],
+              [
+                702,
+                660
+              ],
+              [
+                650,
+                511
+              ],
+              [
+                629,
+                463
+              ],
+              [
+                618,
+                454
+              ],
+              [
+                618,
+                445
+              ],
+              [
+                592,
+                406
+              ]
+            ],
+            [
+              [
+                652,
+                472
+              ],
+              [
+                783,
+                518
+              ],
+              [
+                820,
+                517
+              ],
+              [
+                842,
+                498
+              ],
+              [
+                778,
+                396
+              ]
+            ],
+            [
+              [
+                656,
+                392
+              ],
+              [
+                688,
+                359
+              ],
+              [
+                675,
+                278
+              ],
+              [
+                652,
+                200
+              ],
+              [
+                600,
+                123
+              ],
+              [
+                524,
+                62
+              ],
+              [
+                492,
+                48
+              ]
+            ],
+            [
+              [
+                697,
+                250
+              ],
+              [
+                701,
+                230
+              ],
+              [
+                748,
+                168
+              ],
+              [
+                838,
+                68
+              ],
+              [
+                960,
+                36
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6f31-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4042",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "fountain pen",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "钢笔"
+              },
+              {
+                "value": "gāngbǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gang1bi3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "钢笔",
+              "pinyin": "gāngbǐ",
+              "meaning": "fountain pen",
+              "audio": "e0a74ec61b6b50325ce2224b6078e06055fd6c724b94fcc1ca07f295beb76c81",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6f31-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6f31",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to rinse one's mouth with water; to gargle",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "漱"
+              },
+              {
+                "value": "shù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "漱",
+              "pinyin": "shù",
+              "meaning": "to rinse one's mouth with water; to gargle",
+              "audio": "65f6d9796d445623c868703fb9f9571df2b883b115f50d378558856d1fce4f3a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "65f6d9796d445623c868703fb9f9571df2b883b115f50d378558856d1fce4f3a"
+            ],
+            "transcript": [
+              {
+                "text": "漱",
+                "pinyin": "shù",
+                "meaning": "to rinse one's mouth with water; to gargle",
+                "audio": "65f6d9796d445623c868703fb9f9571df2b883b115f50d378558856d1fce4f3a",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6F31",
+      "character": "漱",
+      "lessonIds": [
+        "LESSON-C-6F31"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6f31-word",
+        "EX-CHAR-char-6f31-recognize",
+        "EX-CHAR-char-6f31-write",
+        "EX-CHAR-char-6f31-familiar",
+        "EX-CHAR-char-6f31-recall"
+      ]
+    },
+    "audio": {
+      "65f6d9796d445623c868703fb9f9571df2b883b115f50d378558856d1fce4f3a": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-68b644ce34d71ece97152ecdd5215a35dc181a70e9ce203f1a26fcc6c28f179a.mp3",
+          "sha256": "68b644ce34d71ece97152ecdd5215a35dc181a70e9ce203f1a26fcc6c28f179a",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "68b644ce34d71ece97152ecdd5215a35dc181a70e9ce203f1a26fcc6c28f179a",
+            "text": "漱",
+            "words": [
+              {
+                "text": "漱",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-f768d2d4f2ae293384b71bd11c69d11c918792db6724c6937683e822eef6c26d.mp3",
+          "sha256": "f768d2d4f2ae293384b71bd11c69d11c918792db6724c6937683e822eef6c26d",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "f768d2d4f2ae293384b71bd11c69d11c918792db6724c6937683e822eef6c26d",
+            "text": "漱",
+            "words": [
+              {
+                "text": "漱",
+                "start": 0.39,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "4ff2dd8412b90b36e37989f416fcb996c9f9e16e7d617085b04a6749fe64b21a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-a6530562b501fb74b8a9e8e24d9d352a2b075a0486dfd10c06aedf520b4c4861.mp3",
+          "sha256": "a6530562b501fb74b8a9e8e24d9d352a2b075a0486dfd10c06aedf520b4c4861",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "a6530562b501fb74b8a9e8e24d9d352a2b075a0486dfd10c06aedf520b4c4861",
+            "text": "厨房",
+            "words": [
+              {
+                "text": "厨房",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c8e898018f24bcfbf0310002e67fbd8f7b31da8b64beb165c8fc2ba759a41808.mp3",
+          "sha256": "c8e898018f24bcfbf0310002e67fbd8f7b31da8b64beb165c8fc2ba759a41808",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "c8e898018f24bcfbf0310002e67fbd8f7b31da8b64beb165c8fc2ba759a41808",
+            "text": "厨房",
+            "words": [
+              {
+                "text": "厨房",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "ebbbb2b55c2e305f13113eda39d7850923338516e191999c20eddc67f59e888c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0e6aab86792b36bf3701c977afb1fcf03e92f2e0859ad51d1990331944525a42.mp3",
+          "sha256": "0e6aab86792b36bf3701c977afb1fcf03e92f2e0859ad51d1990331944525a42",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "0e6aab86792b36bf3701c977afb1fcf03e92f2e0859ad51d1990331944525a42",
+            "text": "门诊",
+            "words": [
+              {
+                "text": "门诊",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3cfe9b6e64a3ee86bb4b354ad9720cfbe9c0136ba9f6b540850153a616d6193e.mp3",
+          "sha256": "3cfe9b6e64a3ee86bb4b354ad9720cfbe9c0136ba9f6b540850153a616d6193e",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "3cfe9b6e64a3ee86bb4b354ad9720cfbe9c0136ba9f6b540850153a616d6193e",
+            "text": "门诊",
+            "words": [
+              {
+                "text": "门诊",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "e0a74ec61b6b50325ce2224b6078e06055fd6c724b94fcc1ca07f295beb76c81": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e595f9a4319d0ff897719d268ca9b20be6daeca1095b3ab03f1d94ad8948d37c.mp3",
+          "sha256": "e595f9a4319d0ff897719d268ca9b20be6daeca1095b3ab03f1d94ad8948d37c",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "e595f9a4319d0ff897719d268ca9b20be6daeca1095b3ab03f1d94ad8948d37c",
+            "text": "钢笔",
+            "words": [
+              {
+                "text": "钢笔",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/cdec4a389dea9bf062d86ffa1cf2816c80dadeb6cb0c78d348d66e3cb45bdf9b.mp3",
+          "sha256": "cdec4a389dea9bf062d86ffa1cf2816c80dadeb6cb0c78d348d66e3cb45bdf9b",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "cdec4a389dea9bf062d86ffa1cf2816c80dadeb6cb0c78d348d66e3cb45bdf9b",
+            "text": "钢笔",
+            "words": [
+              {
+                "text": "钢笔",
+                "start": 0.32999999999999996,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "5bea7f93327d06ef7dafc788f6c8a53e1aec640d92c50e729cacbabdc3519cf7": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/541985fd6883063426f3f091591c7dbc15bc326a29821a974e5a8d9c3d636311.mp3",
+          "sha256": "541985fd6883063426f3f091591c7dbc15bc326a29821a974e5a8d9c3d636311",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "541985fd6883063426f3f091591c7dbc15bc326a29821a974e5a8d9c3d636311",
+            "text": "洗漱",
+            "words": [
+              {
+                "text": "洗漱",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e93bb4e553175cde5d0f7d681533d992de289a7850e488b8a15f0d270cf13e2e.mp3",
+          "sha256": "e93bb4e553175cde5d0f7d681533d992de289a7850e488b8a15f0d270cf13e2e",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "e93bb4e553175cde5d0f7d681533d992de289a7850e488b8a15f0d270cf13e2e",
+            "text": "洗漱",
+            "words": [
+              {
+                "text": "洗漱",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

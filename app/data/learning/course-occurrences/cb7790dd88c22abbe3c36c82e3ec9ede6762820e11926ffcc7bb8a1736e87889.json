@@ -1,0 +1,667 @@
+{
+  "id": "EX-CHAR-char-52b3",
+  "revision": 2,
+  "unit": "U5-22",
+  "stage": "ST-HSK5",
+  "after": "S-U5-22-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "劳",
+  "sourceBlockId": "mandarin-simplified-v1-char-52b3",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-1b0fef56c7b576d66ef5c1be",
+        "text": "劳累",
+        "pinyin": "láo lèi",
+        "meaning": "tired",
+        "characters": [
+          {
+            "id": "C-52B3",
+            "text": "劳"
+          },
+          {
+            "id": "C-7D2F",
+            "text": "累"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-3ab255752b4d1b2f95cea742",
+        "text": "宝库",
+        "pinyin": "bǎo kù",
+        "meaning": "treasure-house",
+        "characters": [
+          {
+            "id": "C-5B9D",
+            "text": "宝"
+          },
+          {
+            "id": "C-5E93",
+            "text": "库"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-72b105441617313956683376",
+        "text": "美满",
+        "pinyin": "měi mǎn",
+        "meaning": "happy",
+        "characters": [
+          {
+            "id": "C-7F8E",
+            "text": "美"
+          },
+          {
+            "id": "C-6EE1",
+            "text": "满"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-777cecc206058e8b3c89b7b2",
+        "text": "不大",
+        "pinyin": "bù dà",
+        "meaning": "not very; not often",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-5927",
+            "text": "大"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "26128b99cfa44b23c60fad6e24a2328d9e218f45ca845d76afab1abceeee9e9c",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-52b3",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "劳",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-52b3-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-1b0fef56c7b576d66ef5c1be",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "tired",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "劳累"
+              },
+              {
+                "value": "láo lèi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lao2lei4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "劳累",
+              "pinyin": "láo lèi",
+              "meaning": "tired",
+              "audio": "291bc9f1ec1b74ffbe5394cf907f4301079159c6ecaa88e437358cfb033187c1",
+              "singleWord": true,
+              "focus": "劳"
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-52b3-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-cmn-1b0fef56c7b576d66ef5c1be",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "劳累",
+              "meaning": "",
+              "focus": "劳"
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-3ab255752b4d1b2f95cea742",
+                "label": "treasure-house",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-72b105441617313956683376",
+                "label": "happy",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-1b0fef56c7b576d66ef5c1be",
+                "label": "tired",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-52b3-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "劳",
+        "pinyin": "láo",
+        "meaning": "(bound form) to toil; labor",
+        "source": "/stroke-data/52b3.json",
+        "reference": {
+          "character": "劳",
+          "sha256": "d9bfd12c0ffd049b85473642b509aa9ba3e54b30228542800a681e32066b938d",
+          "medians": [
+            [
+              [
+                241,
+                641
+              ],
+              [
+                278,
+                633
+              ],
+              [
+                309,
+                635
+              ],
+              [
+                474,
+                665
+              ],
+              [
+                732,
+                694
+              ],
+              [
+                766,
+                693
+              ],
+              [
+                820,
+                678
+              ]
+            ],
+            [
+              [
+                361,
+                781
+              ],
+              [
+                400,
+                751
+              ],
+              [
+                428,
+                563
+              ]
+            ],
+            [
+              [
+                601,
+                839
+              ],
+              [
+                618,
+                832
+              ],
+              [
+                640,
+                802
+              ],
+              [
+                606,
+                656
+              ],
+              [
+                579,
+                572
+              ]
+            ],
+            [
+              [
+                245,
+                508
+              ],
+              [
+                254,
+                490
+              ],
+              [
+                255,
+                463
+              ],
+              [
+                210,
+                363
+              ],
+              [
+                204,
+                307
+              ]
+            ],
+            [
+              [
+                287,
+                447
+              ],
+              [
+                302,
+                458
+              ],
+              [
+                612,
+                514
+              ],
+              [
+                752,
+                530
+              ],
+              [
+                792,
+                521
+              ],
+              [
+                810,
+                503
+              ],
+              [
+                818,
+                485
+              ],
+              [
+                722,
+                389
+              ]
+            ],
+            [
+              [
+                300,
+                272
+              ],
+              [
+                354,
+                263
+              ],
+              [
+                654,
+                325
+              ],
+              [
+                684,
+                318
+              ],
+              [
+                701,
+                300
+              ],
+              [
+                684,
+                210
+              ],
+              [
+                661,
+                119
+              ],
+              [
+                623,
+                39
+              ],
+              [
+                607,
+                22
+              ],
+              [
+                585,
+                11
+              ],
+              [
+                555,
+                25
+              ],
+              [
+                488,
+                74
+              ]
+            ],
+            [
+              [
+                474,
+                434
+              ],
+              [
+                498,
+                412
+              ],
+              [
+                508,
+                390
+              ],
+              [
+                475,
+                259
+              ],
+              [
+                415,
+                137
+              ],
+              [
+                360,
+                74
+              ],
+              [
+                320,
+                42
+              ],
+              [
+                266,
+                11
+              ],
+              [
+                210,
+                -11
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-52b3-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-777cecc206058e8b3c89b7b2",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "not very; not often",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "不大"
+              },
+              {
+                "value": "bù dà",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu4da4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "不大",
+              "pinyin": "bù dà",
+              "meaning": "not very; not often",
+              "audio": "fc5244010d28119e2ea7ff02f699ab1f8710d7c020eeb38dc059de459c7e7b9a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-52b3-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-cmn-1b0fef56c7b576d66ef5c1be",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "tired",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "劳累"
+              },
+              {
+                "value": "láo lèi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lao2lei4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "劳累",
+              "pinyin": "láo lèi",
+              "meaning": "tired",
+              "audio": "291bc9f1ec1b74ffbe5394cf907f4301079159c6ecaa88e437358cfb033187c1",
+              "singleWord": true,
+              "focus": "劳"
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "291bc9f1ec1b74ffbe5394cf907f4301079159c6ecaa88e437358cfb033187c1"
+            ],
+            "transcript": [
+              {
+                "text": "劳累",
+                "pinyin": "láo lèi",
+                "meaning": "tired",
+                "audio": "291bc9f1ec1b74ffbe5394cf907f4301079159c6ecaa88e437358cfb033187c1",
+                "singleWord": true,
+                "focus": "劳"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-52B3",
+      "character": "劳",
+      "lessonIds": [
+        "LESSON-C-52B3"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-52b3-word",
+        "EX-CHAR-char-52b3-recognize",
+        "EX-CHAR-char-52b3-write",
+        "EX-CHAR-char-52b3-familiar",
+        "EX-CHAR-char-52b3-recall"
+      ]
+    },
+    "audio": {
+      "291bc9f1ec1b74ffbe5394cf907f4301079159c6ecaa88e437358cfb033187c1": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f1f1476edf4efe39a3d8c1994f8758ab184d38bcdd1318a59312788be007f308.mp3",
+          "sha256": "f1f1476edf4efe39a3d8c1994f8758ab184d38bcdd1318a59312788be007f308",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "f1f1476edf4efe39a3d8c1994f8758ab184d38bcdd1318a59312788be007f308",
+            "text": "劳累",
+            "words": [
+              {
+                "text": "劳累",
+                "start": 0.2,
+                "end": 0.58
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/67dd9ae73c8e402ff5b597019eb5e7b6858bb51445527ff10304ebb313f29a90.mp3",
+          "sha256": "67dd9ae73c8e402ff5b597019eb5e7b6858bb51445527ff10304ebb313f29a90",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "67dd9ae73c8e402ff5b597019eb5e7b6858bb51445527ff10304ebb313f29a90",
+            "text": "劳累",
+            "words": [
+              {
+                "text": "劳累",
+                "start": 0.27,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "be454b9fae2ac6510b4b759718fafc23e2492c20af1400a50110490f26a2bd53": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/53f390b2d2705dca0bf7004dc3ae1908aa97e41200fc750af547d6c73dce22f1.mp3",
+          "sha256": "53f390b2d2705dca0bf7004dc3ae1908aa97e41200fc750af547d6c73dce22f1",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "53f390b2d2705dca0bf7004dc3ae1908aa97e41200fc750af547d6c73dce22f1",
+            "text": "宝库",
+            "words": [
+              {
+                "text": "宝库",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f45e6f445057d7d47f6acfeaedd2d9d4ee410a6069fabbb9fffc8200201edf18.mp3",
+          "sha256": "f45e6f445057d7d47f6acfeaedd2d9d4ee410a6069fabbb9fffc8200201edf18",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "f45e6f445057d7d47f6acfeaedd2d9d4ee410a6069fabbb9fffc8200201edf18",
+            "text": "宝库",
+            "words": [
+              {
+                "text": "宝库",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "bba1d0e377c5611410e6199e5925a7953cc1428cf5697c0f1a74842d3af39390": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8b2aca4c4c10fce7cf16104209fe69964137ee525ff657c29202b96cf5b78186.mp3",
+          "sha256": "8b2aca4c4c10fce7cf16104209fe69964137ee525ff657c29202b96cf5b78186",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "8b2aca4c4c10fce7cf16104209fe69964137ee525ff657c29202b96cf5b78186",
+            "text": "美满",
+            "words": [
+              {
+                "text": "美满",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1d6a55d4665bcaf7e704541e9cdc935cc5937e07f34807cbe2e747b563d3347e.mp3",
+          "sha256": "1d6a55d4665bcaf7e704541e9cdc935cc5937e07f34807cbe2e747b563d3347e",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "1d6a55d4665bcaf7e704541e9cdc935cc5937e07f34807cbe2e747b563d3347e",
+            "text": "美满",
+            "words": [
+              {
+                "text": "美满",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "fc5244010d28119e2ea7ff02f699ab1f8710d7c020eeb38dc059de459c7e7b9a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8a51b00dbab8c6ce574e52daefb719f8d6258a493bc3916e3c342fb444bb4d5f.mp3",
+          "sha256": "8a51b00dbab8c6ce574e52daefb719f8d6258a493bc3916e3c342fb444bb4d5f",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "8a51b00dbab8c6ce574e52daefb719f8d6258a493bc3916e3c342fb444bb4d5f",
+            "text": "不大",
+            "words": [
+              {
+                "text": "不大",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f234f71bbd6a385f06377e6b725c79256d5bded571c4f96ae5a998ce877e95ba.mp3",
+          "sha256": "f234f71bbd6a385f06377e6b725c79256d5bded571c4f96ae5a998ce877e95ba",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "f234f71bbd6a385f06377e6b725c79256d5bded571c4f96ae5a998ce877e95ba",
+            "text": "不大",
+            "words": [
+              {
+                "text": "不大",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

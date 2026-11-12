@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0993",
+  "targetId": "W0993",
+  "steps": [
+    {
+      "id": "BANK-W0993-W0993",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0993-W0993",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "credit card",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "信用卡"
+            },
+            {
+              "value": "xìnyòngkǎ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xin4yong4ka3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "信用卡",
+            "pinyin": "xìnyòngkǎ",
+            "meaning": "credit card",
+            "singleWord": true,
+            "audio": "024d09006fbadaa92780fa985a2f0ef3375e1562abd09bb9d6c2a5e92de5ee50"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "024d09006fbadaa92780fa985a2f0ef3375e1562abd09bb9d6c2a5e92de5ee50": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-8285b898ba21818713aa8b447270a1c235a434fb8a84e3577452ee750716d6d8.mp3",
+        "sha256": "8285b898ba21818713aa8b447270a1c235a434fb8a84e3577452ee750716d6d8",
+        "byteLength": 20781,
+        "readAlong": {
+          "audioSha256": "8285b898ba21818713aa8b447270a1c235a434fb8a84e3577452ee750716d6d8",
+          "text": "信用卡",
+          "words": [
+            {
+              "text": "信用卡",
+              "start": 0.27,
+              "end": 0.8099999999999999
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-25d0c3800b421af5bfdaf6f023f19bba3b81e0886fefffdd487127efac305efa.mp3",
+        "sha256": "25d0c3800b421af5bfdaf6f023f19bba3b81e0886fefffdd487127efac305efa",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "25d0c3800b421af5bfdaf6f023f19bba3b81e0886fefffdd487127efac305efa",
+          "text": "信用卡",
+          "words": [
+            {
+              "text": "信用卡",
+              "start": 0.21,
+              "end": 0.6299999999999999
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0993",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0993-W0993",
+      "question_ids": [
+        "BANK-W0993-W0993"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-20",
+    "stepId": "S-U3-20-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4fe1"
+    ],
+    "grammarLessonIds": []
+  }
+}

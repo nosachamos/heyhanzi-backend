@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1125",
+  "targetId": "W1125",
+  "steps": [
+    {
+      "id": "BANK-W1125-W1125",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1125-W1125",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to search for; to look up",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "查找"
+            },
+            {
+              "value": "cházhǎo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "cha2zhao3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "查找",
+            "pinyin": "cházhǎo",
+            "meaning": "to search for; to look up",
+            "singleWord": true,
+            "audio": "1c0c1360e352c465a58c661bd8da58d9b6a832311133b60f0480c8e88e657af5"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1c0c1360e352c465a58c661bd8da58d9b6a832311133b60f0480c8e88e657af5": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-c22252c802cc4f5294169ff00bbd43a0c039bc7a0b7160659a8e2553596ef272.mp3",
+        "sha256": "c22252c802cc4f5294169ff00bbd43a0c039bc7a0b7160659a8e2553596ef272",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "c22252c802cc4f5294169ff00bbd43a0c039bc7a0b7160659a8e2553596ef272",
+          "text": "查找",
+          "words": [
+            {
+              "text": "查找",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-6213715862506b5968565db93ed064c3d9332a1e6287e51967850cc65cd40974.mp3",
+        "sha256": "6213715862506b5968565db93ed064c3d9332a1e6287e51967850cc65cd40974",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "6213715862506b5968565db93ed064c3d9332a1e6287e51967850cc65cd40974",
+          "text": "查找",
+          "words": [
+            {
+              "text": "查找",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1125",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1125-W1125",
+      "question_ids": [
+        "BANK-W1125-W1125"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-32",
+    "stepId": "S-U4-32-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-67e5"
+    ],
+    "grammarLessonIds": []
+  }
+}

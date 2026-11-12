@@ -1,0 +1,518 @@
+{
+  "id": "BANK-W1324",
+  "targetId": "W1324",
+  "steps": [
+    {
+      "id": "BANK-W1324-W1324",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1324-W1324",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "light; only; completely",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "光"
+            },
+            {
+              "value": "guāng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "guang1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "光",
+            "pinyin": "guāng",
+            "meaning": "light; only; completely",
+            "singleWord": true,
+            "audio": "eef7664f7fc59f2aff38b8dfe3a52109cba75ac9c3256c13a39301f16c9869ad"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1324-W1324-use-light",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1324-W1324-use-light",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 光 fits this context?",
+          "context": "The speaker describes the presence of illumination in this place.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1324-W1324-use-light-meaning",
+              "label": "There is light here.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "As a noun, 光 means light."
+            },
+            {
+              "id": "BANK-W1324-W1324-use-light-contrast-2",
+              "label": "An action has used up everything.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a noun, 光 means light."
+            },
+            {
+              "id": "BANK-W1324-W1324-use-light-contrast-1",
+              "label": "The speaker does nothing except one activity.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a noun, 光 means light."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "这里有光。",
+            "pinyin": "zhèlǐ yǒu guāng 。",
+            "meaning": "",
+            "audio": "30ca64a67cd62adcbe69c44abd7440721dd7b258e7348a4325dd00d0ff7141b2"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1324-W1324-use-only",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1324-W1324-use-only",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 光 fits this context?",
+          "context": "The speaker criticizes someone for talking without acting.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1324-W1324-use-only-contrast-1",
+              "label": "He acts without speaking.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "Before a predicate, 光 means only or merely, often criticizing the absence of another needed activity."
+            },
+            {
+              "id": "BANK-W1324-W1324-use-only-meaning",
+              "label": "He only talks and does not act.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "Before a predicate, 光 means only or merely, often criticizing the absence of another needed activity."
+            },
+            {
+              "id": "BANK-W1324-W1324-use-only-contrast-2",
+              "label": "His words give off light.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "Before a predicate, 光 means only or merely, often criticizing the absence of another needed activity."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "他光说，不做。",
+            "pinyin": "tā guāng shuō ， bù zuò 。",
+            "meaning": "",
+            "audio": "cc6f78ce7a2ca0a1bcb5c8c8c539df4ed7776463ec5fe525e203a2a52b32e783"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1324-W1324-use-completely",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1324-W1324-use-completely",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 光 fits this context?",
+          "context": "The person ate the rice and none remains.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1324-W1324-use-completely-contrast-2",
+              "label": "He ate only a little of the rice.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "After a verb of consuming or using, 光 expresses a complete result with none left. Here 吃 + 光 describes eating all the rice."
+            },
+            {
+              "id": "BANK-W1324-W1324-use-completely-meaning",
+              "label": "He ate all the rice.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "After a verb of consuming or using, 光 expresses a complete result with none left. Here 吃 + 光 describes eating all the rice."
+            },
+            {
+              "id": "BANK-W1324-W1324-use-completely-contrast-1",
+              "label": "He did not eat any rice.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "After a verb of consuming or using, 光 expresses a complete result with none left. Here 吃 + 光 describes eating all the rice."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "他把饭吃光了。",
+            "pinyin": "tā bǎ fàn chī guāng le 。",
+            "meaning": "",
+            "audio": "fdd4854e4347eabfbe0def0987b58ee4617c6e8b1f61d672bacf527a769927ed"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "eef7664f7fc59f2aff38b8dfe3a52109cba75ac9c3256c13a39301f16c9869ad": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ca8ccde95ef683909a54cb2aa34ecc0403dd9320494e2e203cde24b29679f73b.mp3",
+        "sha256": "ca8ccde95ef683909a54cb2aa34ecc0403dd9320494e2e203cde24b29679f73b",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "ca8ccde95ef683909a54cb2aa34ecc0403dd9320494e2e203cde24b29679f73b",
+          "text": "光",
+          "words": [
+            {
+              "text": "光",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-32354ae83350bf2da0108940a1ecff36e50290fd2e6c55d8de43d25c5bed3e43.mp3",
+        "sha256": "32354ae83350bf2da0108940a1ecff36e50290fd2e6c55d8de43d25c5bed3e43",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "32354ae83350bf2da0108940a1ecff36e50290fd2e6c55d8de43d25c5bed3e43",
+          "text": "光",
+          "words": [
+            {
+              "text": "光",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    },
+    "30ca64a67cd62adcbe69c44abd7440721dd7b258e7348a4325dd00d0ff7141b2": {
+      "male": {
+        "url": "/exercise-assets/audio/course-male-2bd2e5720fe73e5bbca591dae5046240377e73122aed577c99f31233284094d4.mp3",
+        "sha256": "2bd2e5720fe73e5bbca591dae5046240377e73122aed577c99f31233284094d4",
+        "byteLength": 17901,
+        "readAlong": {
+          "audioSha256": "2bd2e5720fe73e5bbca591dae5046240377e73122aed577c99f31233284094d4",
+          "text": "这里有光。",
+          "words": [
+            {
+              "text": "这里",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            },
+            {
+              "text": "有",
+              "start": 0.51,
+              "end": 0.57
+            },
+            {
+              "text": "光",
+              "start": 0.8099999999999999,
+              "end": 0.8699999999999999
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      },
+      "female": {
+        "url": "/exercise-assets/audio/course-female-eadb79f10ac031afd39e7299de9028c5028fbed018e4aeb32fd46a9c7f5edaa9.mp3",
+        "sha256": "eadb79f10ac031afd39e7299de9028c5028fbed018e4aeb32fd46a9c7f5edaa9",
+        "byteLength": 21933,
+        "readAlong": {
+          "audioSha256": "eadb79f10ac031afd39e7299de9028c5028fbed018e4aeb32fd46a9c7f5edaa9",
+          "text": "这里有光。",
+          "words": [
+            {
+              "text": "这里",
+              "start": 0.09,
+              "end": 0.39
+            },
+            {
+              "text": "有",
+              "start": 0.75,
+              "end": 0.8099999999999999
+            },
+            {
+              "text": "光",
+              "start": 1.17,
+              "end": 1.23
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      }
+    },
+    "cc6f78ce7a2ca0a1bcb5c8c8c539df4ed7776463ec5fe525e203a2a52b32e783": {
+      "male": {
+        "url": "/exercise-assets/audio/course-male-053807831f2add986c341a6cce8444fb3b94d8253307aedd45767343fcd7dc7a.mp3",
+        "sha256": "053807831f2add986c341a6cce8444fb3b94d8253307aedd45767343fcd7dc7a",
+        "byteLength": 23085,
+        "readAlong": {
+          "audioSha256": "053807831f2add986c341a6cce8444fb3b94d8253307aedd45767343fcd7dc7a",
+          "text": "他光说，不做。",
+          "words": [
+            {
+              "text": "他",
+              "start": 0.03,
+              "end": 0.09
+            },
+            {
+              "text": "光",
+              "start": 0.27,
+              "end": 0.32999999999999996
+            },
+            {
+              "text": "说",
+              "start": 0.44999999999999996,
+              "end": 0.51
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "不",
+              "start": 1.1099999999999999,
+              "end": 1.17
+            },
+            {
+              "text": "做",
+              "start": 1.3499999999999999,
+              "end": 1.41
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      },
+      "female": {
+        "url": "/exercise-assets/audio/course-female-2143f81933f4f5a667acb888af938b2f99be9119f66d90e6c7cb0638fb4437d8.mp3",
+        "sha256": "2143f81933f4f5a667acb888af938b2f99be9119f66d90e6c7cb0638fb4437d8",
+        "byteLength": 25389,
+        "readAlong": {
+          "audioSha256": "2143f81933f4f5a667acb888af938b2f99be9119f66d90e6c7cb0638fb4437d8",
+          "text": "他光说，不做。",
+          "words": [
+            {
+              "text": "他",
+              "start": 0.09,
+              "end": 0.15
+            },
+            {
+              "text": "光",
+              "start": 0.32999999999999996,
+              "end": 0.39
+            },
+            {
+              "text": "说",
+              "start": 0.51,
+              "end": 0.57
+            },
+            {
+              "text": "，"
+            },
+            {
+              "text": "不",
+              "start": 1.17,
+              "end": 1.23
+            },
+            {
+              "text": "做",
+              "start": 1.3499999999999999,
+              "end": 1.41
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      }
+    },
+    "fdd4854e4347eabfbe0def0987b58ee4617c6e8b1f61d672bacf527a769927ed": {
+      "male": {
+        "url": "/exercise-assets/audio/course-male-920de4bd73ad94e804233a0edd303304a900cdb95a85e5f3b393893fa4dd34a5.mp3",
+        "sha256": "920de4bd73ad94e804233a0edd303304a900cdb95a85e5f3b393893fa4dd34a5",
+        "byteLength": 20205,
+        "readAlong": {
+          "audioSha256": "920de4bd73ad94e804233a0edd303304a900cdb95a85e5f3b393893fa4dd34a5",
+          "text": "他把饭吃光了。",
+          "words": [
+            {
+              "text": "他",
+              "start": 0.03,
+              "end": 0.09
+            },
+            {
+              "text": "把",
+              "start": 0.21,
+              "end": 0.27
+            },
+            {
+              "text": "饭",
+              "start": 0.44999999999999996,
+              "end": 0.51
+            },
+            {
+              "text": "吃",
+              "start": 0.69,
+              "end": 0.75
+            },
+            {
+              "text": "光",
+              "start": 0.9299999999999999,
+              "end": 0.99
+            },
+            {
+              "text": "了",
+              "start": 1.17,
+              "end": 1.23
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      },
+      "female": {
+        "url": "/exercise-assets/audio/course-female-66a2ab941750edcd6e2370be6f597b2461c2eb6644b3905fa4408a90dbb73c91.mp3",
+        "sha256": "66a2ab941750edcd6e2370be6f597b2461c2eb6644b3905fa4408a90dbb73c91",
+        "byteLength": 25389,
+        "readAlong": {
+          "audioSha256": "66a2ab941750edcd6e2370be6f597b2461c2eb6644b3905fa4408a90dbb73c91",
+          "text": "他把饭吃光了。",
+          "words": [
+            {
+              "text": "他",
+              "start": 0.09,
+              "end": 0.15
+            },
+            {
+              "text": "把",
+              "start": 0.32999999999999996,
+              "end": 0.39
+            },
+            {
+              "text": "饭",
+              "start": 0.69,
+              "end": 0.75
+            },
+            {
+              "text": "吃",
+              "start": 1.05,
+              "end": 1.1099999999999999
+            },
+            {
+              "text": "光",
+              "start": 1.2899999999999998,
+              "end": 1.3499999999999999
+            },
+            {
+              "text": "了",
+              "start": 1.47,
+              "end": 1.53
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1324",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1324-W1324",
+      "question_ids": [
+        "BANK-W1324-W1324"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W1324",
+      "facet_id": "lexical-use-light",
+      "part_id": "BANK-W1324-W1324-use-light",
+      "question_ids": [
+        "BANK-W1324-W1324-use-light"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1324",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W1324",
+      "facet_id": "lexical-use-only",
+      "part_id": "BANK-W1324-W1324-use-only",
+      "question_ids": [
+        "BANK-W1324-W1324-use-only"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1324",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W1324",
+      "facet_id": "lexical-use-completely",
+      "part_id": "BANK-W1324-W1324-use-completely",
+      "question_ids": [
+        "BANK-W1324-W1324-use-completely"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1324",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-36-P01",
+    "stepId": "S-U4-36-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5bcc",
+      "mandarin-simplified-v1-char-91cc",
+      "mandarin-simplified-v1-warmup-you",
+      "mandarin-simplified-v1-warmup-ta-he",
+      "mandarin-simplified-v1-warmup-shuo",
+      "mandarin-simplified-v1-warmup-bu",
+      "mandarin-simplified-v1-char-505a",
+      "mandarin-simplified-v1-char-628a",
+      "mandarin-simplified-v1-char-996d",
+      "mandarin-simplified-v1-char-5403",
+      "mandarin-simplified-v1-char-4e86"
+    ],
+    "grammarLessonIds": []
+  }
+}

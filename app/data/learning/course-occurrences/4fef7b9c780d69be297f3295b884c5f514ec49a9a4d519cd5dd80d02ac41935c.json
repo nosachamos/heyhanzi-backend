@@ -1,0 +1,801 @@
+{
+  "id": "EX-CHAR-char-60f3",
+  "revision": 2,
+  "unit": "U09",
+  "stage": "ST-HSK1",
+  "after": "S-U09-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "想",
+  "sourceBlockId": "mandarin-simplified-v1-char-60f3",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-60f3",
+        "text": "想",
+        "pinyin": "xiǎng",
+        "meaning": "to think (about); to think of; to devise",
+        "characters": [
+          {
+            "id": "C-60F3",
+            "text": "想"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-5bc758487629186664db0405",
+        "text": "一下",
+        "pinyin": "yíxià",
+        "meaning": "(after a verb) a bit; a little (indicating brief duration, or softening the tone, or suggesting giving something a try); all at once; suddenly",
+        "characters": [
+          {
+            "id": "C-4E00",
+            "text": "一"
+          },
+          {
+            "id": "C-4E0B",
+            "text": "下"
+          }
+        ]
+      },
+      {
+        "id": "W0107",
+        "text": "想要",
+        "pinyin": "xiǎngyào",
+        "meaning": "want; would like",
+        "characters": [
+          {
+            "id": "C-60F3",
+            "text": "想"
+          },
+          {
+            "id": "C-8981",
+            "text": "要"
+          }
+        ]
+      },
+      {
+        "id": "W2692",
+        "text": "客服",
+        "pinyin": "kèfú",
+        "meaning": "customer service",
+        "characters": [
+          {
+            "id": "C-5BA2",
+            "text": "客"
+          },
+          {
+            "id": "C-670D",
+            "text": "服"
+          }
+        ]
+      },
+      {
+        "id": "W3357",
+        "text": "要不",
+        "pinyin": "yàobù",
+        "meaning": "otherwise; or else",
+        "characters": [
+          {
+            "id": "C-8981",
+            "text": "要"
+          },
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "5cfb3a891463edbdcb38b3541c8172708cdec67fa0daf7b9e05dedb579f773c9",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-60f3",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "想",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-60f3-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0107",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "want; would like",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "想要"
+              },
+              {
+                "value": "xiǎngyào",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiang3yao4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "想要",
+              "pinyin": "xiǎngyào",
+              "meaning": "want; would like",
+              "audio": "cdebd5fa08c5a4a2a6adbd8beea9926ea62e0a7840844f74281d9d3acd1e1a80",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-60f3-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-60f3",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "想",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W2692",
+                "label": "customer service",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-60f3",
+                "label": "to think (about); to think of",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-5bc758487629186664db0405",
+                "label": "(after a verb) a bit; a little (indicating brief duration, or softening the tone, or suggesting giving something a try)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-60f3-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "想",
+        "pinyin": "xiǎng",
+        "meaning": "to think (about); to think of",
+        "source": "/stroke-data/60f3.json",
+        "reference": {
+          "character": "想",
+          "sha256": "086ceab65404b0461de540e51747bdd2e946b8746df6933b8781f897651b7081",
+          "medians": [
+            [
+              [
+                157,
+                594
+              ],
+              [
+                182,
+                588
+              ],
+              [
+                219,
+                590
+              ],
+              [
+                423,
+                637
+              ],
+              [
+                473,
+                639
+              ]
+            ],
+            [
+              [
+                324,
+                838
+              ],
+              [
+                364,
+                793
+              ],
+              [
+                356,
+                497
+              ],
+              [
+                342,
+                350
+              ],
+              [
+                342,
+                272
+              ]
+            ],
+            [
+              [
+                333,
+                584
+              ],
+              [
+                325,
+                578
+              ],
+              [
+                310,
+                522
+              ],
+              [
+                267,
+                459
+              ],
+              [
+                229,
+                410
+              ],
+              [
+                129,
+                313
+              ]
+            ],
+            [
+              [
+                378,
+                530
+              ],
+              [
+                391,
+                515
+              ],
+              [
+                436,
+                488
+              ],
+              [
+                453,
+                455
+              ]
+            ],
+            [
+              [
+                515,
+                716
+              ],
+              [
+                540,
+                688
+              ],
+              [
+                543,
+                676
+              ],
+              [
+                547,
+                472
+              ],
+              [
+                539,
+                352
+              ],
+              [
+                545,
+                313
+              ]
+            ],
+            [
+              [
+                572,
+                699
+              ],
+              [
+                581,
+                693
+              ],
+              [
+                726,
+                729
+              ],
+              [
+                747,
+                718
+              ],
+              [
+                765,
+                695
+              ],
+              [
+                759,
+                628
+              ],
+              [
+                762,
+                386
+              ],
+              [
+                755,
+                317
+              ]
+            ],
+            [
+              [
+                576,
+                568
+              ],
+              [
+                584,
+                581
+              ],
+              [
+                619,
+                591
+              ],
+              [
+                666,
+                599
+              ],
+              [
+                696,
+                594
+              ]
+            ],
+            [
+              [
+                570,
+                459
+              ],
+              [
+                584,
+                470
+              ],
+              [
+                639,
+                481
+              ],
+              [
+                678,
+                485
+              ],
+              [
+                699,
+                479
+              ]
+            ],
+            [
+              [
+                571,
+                339
+              ],
+              [
+                583,
+                352
+              ],
+              [
+                704,
+                366
+              ],
+              [
+                721,
+                377
+              ]
+            ],
+            [
+              [
+                242,
+                227
+              ],
+              [
+                221,
+                135
+              ],
+              [
+                187,
+                67
+              ],
+              [
+                177,
+                32
+              ]
+            ],
+            [
+              [
+                333,
+                202
+              ],
+              [
+                345,
+                186
+              ],
+              [
+                374,
+                108
+              ],
+              [
+                419,
+                58
+              ],
+              [
+                490,
+                20
+              ],
+              [
+                602,
+                -4
+              ],
+              [
+                709,
+                -2
+              ],
+              [
+                747,
+                20
+              ],
+              [
+                731,
+                81
+              ],
+              [
+                696,
+                173
+              ]
+            ],
+            [
+              [
+                476,
+                254
+              ],
+              [
+                543,
+                203
+              ],
+              [
+                565,
+                171
+              ]
+            ],
+            [
+              [
+                750,
+                262
+              ],
+              [
+                846,
+                208
+              ],
+              [
+                866,
+                185
+              ],
+              [
+                881,
+                155
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-60f3-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3357",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "otherwise; or else",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "要不"
+              },
+              {
+                "value": "yàobù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yao4bu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "要不",
+              "pinyin": "yàobù",
+              "meaning": "otherwise; or else",
+              "audio": "164ca47c18d6cacc0a070df32f7dced5fdc5c82826c3f150b054ec050c2488b7",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-60f3-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-60f3",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to think (about); to think of",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "想"
+              },
+              {
+                "value": "xiǎng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiang3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "想",
+              "pinyin": "xiǎng",
+              "meaning": "to think (about); to think of",
+              "audio": "0f7888a867fcf48892fc19934077db46ab08aef906f027d1d74d145f2b123d27",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "0f7888a867fcf48892fc19934077db46ab08aef906f027d1d74d145f2b123d27"
+            ],
+            "transcript": [
+              {
+                "text": "想",
+                "pinyin": "xiǎng",
+                "meaning": "to think (about); to think of",
+                "audio": "0f7888a867fcf48892fc19934077db46ab08aef906f027d1d74d145f2b123d27",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-60F3",
+      "character": "想",
+      "lessonIds": [
+        "LESSON-C-60F3"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-60f3-word",
+        "EX-CHAR-char-60f3-recognize",
+        "EX-CHAR-char-60f3-write",
+        "EX-CHAR-char-60f3-familiar",
+        "EX-CHAR-char-60f3-recall"
+      ]
+    },
+    "audio": {
+      "0f7888a867fcf48892fc19934077db46ab08aef906f027d1d74d145f2b123d27": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f1ffcab31d639caddcc68d66b7b37ac43bc1f713af71edaf28c963da23f3e528.mp3",
+          "sha256": "f1ffcab31d639caddcc68d66b7b37ac43bc1f713af71edaf28c963da23f3e528",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "f1ffcab31d639caddcc68d66b7b37ac43bc1f713af71edaf28c963da23f3e528",
+            "text": "想",
+            "words": [
+              {
+                "text": "想",
+                "start": 0.44999999999999996,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c39ef8c4ccb3ec7f85b8e64886fe7cebac72b9a59439a326402631a8706f303b.mp3",
+          "sha256": "c39ef8c4ccb3ec7f85b8e64886fe7cebac72b9a59439a326402631a8706f303b",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "c39ef8c4ccb3ec7f85b8e64886fe7cebac72b9a59439a326402631a8706f303b",
+            "text": "想",
+            "words": [
+              {
+                "text": "想",
+                "start": 0.24,
+                "end": 0.36
+              }
+            ]
+          }
+        }
+      },
+      "1c9c7e9e4380d8a5eedee1012894e19c533b6b6ff7646828d2511525f2dcbd40": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/427aeefb19cc41b06d6ac2a03883e33329f29e9113205b4689943ff48f0ecb1d.mp3",
+          "sha256": "427aeefb19cc41b06d6ac2a03883e33329f29e9113205b4689943ff48f0ecb1d",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "427aeefb19cc41b06d6ac2a03883e33329f29e9113205b4689943ff48f0ecb1d",
+            "text": "一下",
+            "words": [
+              {
+                "text": "一下",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2a4843cbac95fd1f831a4aa81c046dc1bed08c2c9bee87b38d7a50d64c71612d.mp3",
+          "sha256": "2a4843cbac95fd1f831a4aa81c046dc1bed08c2c9bee87b38d7a50d64c71612d",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "2a4843cbac95fd1f831a4aa81c046dc1bed08c2c9bee87b38d7a50d64c71612d",
+            "text": "一下",
+            "words": [
+              {
+                "text": "一下",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "cdebd5fa08c5a4a2a6adbd8beea9926ea62e0a7840844f74281d9d3acd1e1a80": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2da820a5256721e0ecd47fcc31ffbd64a7a495ff41e7cd1214d62ef8949f9e54.mp3",
+          "sha256": "2da820a5256721e0ecd47fcc31ffbd64a7a495ff41e7cd1214d62ef8949f9e54",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "2da820a5256721e0ecd47fcc31ffbd64a7a495ff41e7cd1214d62ef8949f9e54",
+            "text": "想要",
+            "words": [
+              {
+                "text": "想要",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-a66344f438a52a1bcd3a769511b94401a1b1f80f378785c35f365f334be1fe4b.mp3",
+          "sha256": "a66344f438a52a1bcd3a769511b94401a1b1f80f378785c35f365f334be1fe4b",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "a66344f438a52a1bcd3a769511b94401a1b1f80f378785c35f365f334be1fe4b",
+            "text": "想要",
+            "words": [
+              {
+                "text": "想要",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "f50682b5fc13a168436b0a0131f38291f99fa2ece50cc0209db24ab780b071c6": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ed854602912216471619daee54fcb93cf435f06fdbbbf16004136059fac204a3.mp3",
+          "sha256": "ed854602912216471619daee54fcb93cf435f06fdbbbf16004136059fac204a3",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "ed854602912216471619daee54fcb93cf435f06fdbbbf16004136059fac204a3",
+            "text": "客服",
+            "words": [
+              {
+                "text": "客服",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-e91647837abcf0a10b5e002da0a32ff26a375aa51124812c36e4564d504c6c40.mp3",
+          "sha256": "e91647837abcf0a10b5e002da0a32ff26a375aa51124812c36e4564d504c6c40",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "e91647837abcf0a10b5e002da0a32ff26a375aa51124812c36e4564d504c6c40",
+            "text": "客服",
+            "words": [
+              {
+                "text": "客服",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "164ca47c18d6cacc0a070df32f7dced5fdc5c82826c3f150b054ec050c2488b7": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-893e1e0b47cc68a1543ea601e9f448f765d67d3189ff7032c63dc7bf8357b158.mp3",
+          "sha256": "893e1e0b47cc68a1543ea601e9f448f765d67d3189ff7032c63dc7bf8357b158",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "893e1e0b47cc68a1543ea601e9f448f765d67d3189ff7032c63dc7bf8357b158",
+            "text": "要不",
+            "words": [
+              {
+                "text": "要不",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d1d0ede9b02e2d82a3fa5d02c75bd7d5d3bd11027085120cc30a395c0b090e3d.mp3",
+          "sha256": "d1d0ede9b02e2d82a3fa5d02c75bd7d5d3bd11027085120cc30a395c0b090e3d",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "d1d0ede9b02e2d82a3fa5d02c75bd7d5d3bd11027085120cc30a395c0b090e3d",
+            "text": "要不",
+            "words": [
+              {
+                "text": "要不",
+                "start": 0.18,
+                "end": 0.56
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

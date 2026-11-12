@@ -1,0 +1,799 @@
+{
+  "id": "EX-CHAR-char-96c4",
+  "revision": 2,
+  "unit": "U6-35",
+  "stage": "ST-HSK6",
+  "after": "S-U6-35-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "雄",
+  "sourceBlockId": "mandarin-simplified-v1-char-96c4",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-96c4",
+        "text": "雄",
+        "pinyin": "xióng",
+        "meaning": "male; staminate",
+        "characters": [
+          {
+            "id": "C-96C4",
+            "text": "雄"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-4a369ccc8e8afe24c1e76871",
+        "text": "两侧",
+        "pinyin": "liǎng cè",
+        "meaning": "two sides",
+        "characters": [
+          {
+            "id": "C-4E24",
+            "text": "两"
+          },
+          {
+            "id": "C-4FA7",
+            "text": "侧"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-4fdec4e77c506bd8651eea67",
+        "text": "跳远",
+        "pinyin": "tiàoyuǎn",
+        "meaning": "long jump (athletics)",
+        "characters": [
+          {
+            "id": "C-8DF3",
+            "text": "跳"
+          },
+          {
+            "id": "C-8FDC",
+            "text": "远"
+          }
+        ]
+      },
+      {
+        "id": "W1802",
+        "text": "网购",
+        "pinyin": "wǎnggòu",
+        "meaning": "Internet shopping; to purchase online",
+        "characters": [
+          {
+            "id": "C-7F51",
+            "text": "网"
+          },
+          {
+            "id": "C-8D2D",
+            "text": "购"
+          }
+        ]
+      },
+      {
+        "id": "W5198",
+        "text": "英雄",
+        "pinyin": "yīngxióng",
+        "meaning": "hero",
+        "characters": [
+          {
+            "id": "C-82F1",
+            "text": "英"
+          },
+          {
+            "id": "C-96C4",
+            "text": "雄"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "b144bba53801fd199c314968a114755d7a5e1b82a134b978d791b60becd7c3e6",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-96c4",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "雄",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-96c4-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W5198",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "hero",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "英雄"
+              },
+              {
+                "value": "yīngxióng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ying1xiong2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "英雄",
+              "pinyin": "yīngxióng",
+              "meaning": "hero",
+              "audio": "e5ad6e298cd4d702ea88f6a05166a676db9454bbe7b6e219f7248bebad138916",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-96c4-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-96c4",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "雄",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-4fdec4e77c506bd8651eea67",
+                "label": "long jump (athletics)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-96c4",
+                "label": "male; staminate",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-4a369ccc8e8afe24c1e76871",
+                "label": "two sides",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-96c4-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "雄",
+        "pinyin": "xióng",
+        "meaning": "male; staminate",
+        "source": "/stroke-data/96c4.json",
+        "reference": {
+          "character": "雄",
+          "sha256": "dcd699856736ce1571435583f9a6b5aba5188fe9f19f1de7d3ea783d2092047e",
+          "medians": [
+            [
+              [
+                148,
+                569
+              ],
+              [
+                178,
+                564
+              ],
+              [
+                218,
+                568
+              ],
+              [
+                396,
+                616
+              ],
+              [
+                448,
+                619
+              ]
+            ],
+            [
+              [
+                308,
+                819
+              ],
+              [
+                333,
+                801
+              ],
+              [
+                352,
+                772
+              ],
+              [
+                327,
+                658
+              ],
+              [
+                296,
+                555
+              ],
+              [
+                245,
+                433
+              ],
+              [
+                197,
+                340
+              ],
+              [
+                125,
+                222
+              ],
+              [
+                61,
+                144
+              ]
+            ],
+            [
+              [
+                341,
+                460
+              ],
+              [
+                368,
+                429
+              ],
+              [
+                365,
+                417
+              ],
+              [
+                328,
+                334
+              ],
+              [
+                269,
+                227
+              ],
+              [
+                264,
+                205
+              ],
+              [
+                302,
+                207
+              ],
+              [
+                413,
+                247
+              ],
+              [
+                416,
+                256
+              ]
+            ],
+            [
+              [
+                408,
+                328
+              ],
+              [
+                452,
+                256
+              ],
+              [
+                461,
+                214
+              ]
+            ],
+            [
+              [
+                600,
+                843
+              ],
+              [
+                625,
+                821
+              ],
+              [
+                636,
+                802
+              ],
+              [
+                615,
+                746
+              ],
+              [
+                573,
+                659
+              ],
+              [
+                514,
+                561
+              ],
+              [
+                469,
+                497
+              ],
+              [
+                434,
+                462
+              ]
+            ],
+            [
+              [
+                524,
+                535
+              ],
+              [
+                529,
+                507
+              ],
+              [
+                550,
+                466
+              ],
+              [
+                553,
+                406
+              ],
+              [
+                549,
+                170
+              ],
+              [
+                537,
+                63
+              ],
+              [
+                544,
+                -7
+              ]
+            ],
+            [
+              [
+                685,
+                742
+              ],
+              [
+                764,
+                686
+              ],
+              [
+                779,
+                652
+              ]
+            ],
+            [
+              [
+                616,
+                549
+              ],
+              [
+                637,
+                544
+              ],
+              [
+                686,
+                547
+              ],
+              [
+                831,
+                589
+              ],
+              [
+                884,
+                591
+              ]
+            ],
+            [
+              [
+                641,
+                420
+              ],
+              [
+                710,
+                431
+              ],
+              [
+                804,
+                458
+              ],
+              [
+                845,
+                463
+              ],
+              [
+                868,
+                457
+              ]
+            ],
+            [
+              [
+                631,
+                299
+              ],
+              [
+                661,
+                301
+              ],
+              [
+                809,
+                339
+              ],
+              [
+                844,
+                344
+              ],
+              [
+                876,
+                339
+              ]
+            ],
+            [
+              [
+                721,
+                532
+              ],
+              [
+                741,
+                517
+              ],
+              [
+                746,
+                505
+              ],
+              [
+                745,
+                210
+              ],
+              [
+                730,
+                187
+              ]
+            ],
+            [
+              [
+                581,
+                129
+              ],
+              [
+                596,
+                141
+              ],
+              [
+                848,
+                176
+              ],
+              [
+                883,
+                177
+              ],
+              [
+                941,
+                162
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-96c4-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1802",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "Internet shopping; to purchase online",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "网购"
+              },
+              {
+                "value": "wǎnggòu",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wang3gou4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "网购",
+              "pinyin": "wǎnggòu",
+              "meaning": "Internet shopping; to purchase online",
+              "audio": "ac782c6c4789f430b8e269be6866e2c391c49e686e5e9ab5cf1bfdde7ed65cf1",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-96c4-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-96c4",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "male; staminate",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "雄"
+              },
+              {
+                "value": "xióng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiong2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "雄",
+              "pinyin": "xióng",
+              "meaning": "male; staminate",
+              "audio": "1b0a8d7a8f437eeedffe9c228932369f3a058e13170c398b81f7dea5f1488e11",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "1b0a8d7a8f437eeedffe9c228932369f3a058e13170c398b81f7dea5f1488e11"
+            ],
+            "transcript": [
+              {
+                "text": "雄",
+                "pinyin": "xióng",
+                "meaning": "male; staminate",
+                "audio": "1b0a8d7a8f437eeedffe9c228932369f3a058e13170c398b81f7dea5f1488e11",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-96C4",
+      "character": "雄",
+      "lessonIds": [
+        "LESSON-C-96C4"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-96c4-word",
+        "EX-CHAR-char-96c4-recognize",
+        "EX-CHAR-char-96c4-write",
+        "EX-CHAR-char-96c4-familiar",
+        "EX-CHAR-char-96c4-recall"
+      ]
+    },
+    "audio": {
+      "1b0a8d7a8f437eeedffe9c228932369f3a058e13170c398b81f7dea5f1488e11": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-9839acaa3b76856f6de09b933c776fa9c4b10e420f6e9dadcc7dc4d39728bed9.mp3",
+          "sha256": "9839acaa3b76856f6de09b933c776fa9c4b10e420f6e9dadcc7dc4d39728bed9",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "9839acaa3b76856f6de09b933c776fa9c4b10e420f6e9dadcc7dc4d39728bed9",
+            "text": "雄",
+            "words": [
+              {
+                "text": "雄",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-9d16927bd374db1e4f9b4fe2d2f34c15f609a59f0f601a4586bed8eec451e4a1.mp3",
+          "sha256": "9d16927bd374db1e4f9b4fe2d2f34c15f609a59f0f601a4586bed8eec451e4a1",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "9d16927bd374db1e4f9b4fe2d2f34c15f609a59f0f601a4586bed8eec451e4a1",
+            "text": "雄",
+            "words": [
+              {
+                "text": "雄",
+                "start": 0.32,
+                "end": 0.48
+              }
+            ]
+          }
+        }
+      },
+      "5e67eea2d3f2f2e67422a3b634c95438f854b8018dcce9360b89d8183e0aab39": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e61d01be42510b5b3fb60ed92694ce1e4aff3890dd087e07e9612b5b1155a93a.mp3",
+          "sha256": "e61d01be42510b5b3fb60ed92694ce1e4aff3890dd087e07e9612b5b1155a93a",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "e61d01be42510b5b3fb60ed92694ce1e4aff3890dd087e07e9612b5b1155a93a",
+            "text": "两侧",
+            "words": [
+              {
+                "text": "两侧",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/ca392f78fed33905af7546291cb9222278c00047d43dff3e38c89dc5edfebc0d.mp3",
+          "sha256": "ca392f78fed33905af7546291cb9222278c00047d43dff3e38c89dc5edfebc0d",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "ca392f78fed33905af7546291cb9222278c00047d43dff3e38c89dc5edfebc0d",
+            "text": "两侧",
+            "words": [
+              {
+                "text": "两侧",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "9ce60408f641fd2c5773fc48462b31e5e1869ecb553b0e589dccc8120699f28f": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/86bed49c5acd92350b75603d5ba8391324a074cdb36acd7cbe00ea7082db3c4b.mp3",
+          "sha256": "86bed49c5acd92350b75603d5ba8391324a074cdb36acd7cbe00ea7082db3c4b",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "86bed49c5acd92350b75603d5ba8391324a074cdb36acd7cbe00ea7082db3c4b",
+            "text": "跳远",
+            "words": [
+              {
+                "text": "跳远",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e80841aa86855b8603d1edc517e33ab5ee921808ccbf9f2c066b5fda1dfebb20.mp3",
+          "sha256": "e80841aa86855b8603d1edc517e33ab5ee921808ccbf9f2c066b5fda1dfebb20",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "e80841aa86855b8603d1edc517e33ab5ee921808ccbf9f2c066b5fda1dfebb20",
+            "text": "跳远",
+            "words": [
+              {
+                "text": "跳远",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "ac782c6c4789f430b8e269be6866e2c391c49e686e5e9ab5cf1bfdde7ed65cf1": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7fd6e41dba6d2af8de46686172caa38f913a3e7a027c599c703c5be6cbe27654.mp3",
+          "sha256": "7fd6e41dba6d2af8de46686172caa38f913a3e7a027c599c703c5be6cbe27654",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "7fd6e41dba6d2af8de46686172caa38f913a3e7a027c599c703c5be6cbe27654",
+            "text": "网购",
+            "words": [
+              {
+                "text": "网购",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/002fef60c9d4db96ca1d9b6e09faab92b5d2950fd0e620d4d26984b4317802e6.mp3",
+          "sha256": "002fef60c9d4db96ca1d9b6e09faab92b5d2950fd0e620d4d26984b4317802e6",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "002fef60c9d4db96ca1d9b6e09faab92b5d2950fd0e620d4d26984b4317802e6",
+            "text": "网购",
+            "words": [
+              {
+                "text": "网购",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "e5ad6e298cd4d702ea88f6a05166a676db9454bbe7b6e219f7248bebad138916": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ba3e4ef34ab6a2617fedae27d425ca8fa723fd773701568a40ba8c3355e41e71.mp3",
+          "sha256": "ba3e4ef34ab6a2617fedae27d425ca8fa723fd773701568a40ba8c3355e41e71",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "ba3e4ef34ab6a2617fedae27d425ca8fa723fd773701568a40ba8c3355e41e71",
+            "text": "英雄",
+            "words": [
+              {
+                "text": "英雄",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d03aba904685dbb009d89af334a7429410a5cba5e8abbdc08dda6df55032df51.mp3",
+          "sha256": "d03aba904685dbb009d89af334a7429410a5cba5e8abbdc08dda6df55032df51",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "d03aba904685dbb009d89af334a7429410a5cba5e8abbdc08dda6df55032df51",
+            "text": "英雄",
+            "words": [
+              {
+                "text": "英雄",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

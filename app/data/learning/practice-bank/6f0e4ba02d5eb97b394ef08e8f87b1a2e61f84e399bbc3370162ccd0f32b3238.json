@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0012",
+  "targetId": "W0012",
+  "steps": [
+    {
+      "id": "BANK-W0012-W0012",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0012-W0012",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to see; to look at",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "看"
+            },
+            {
+              "value": "kàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "kan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "看",
+            "pinyin": "kàn",
+            "meaning": "to see; to look at",
+            "singleWord": true,
+            "audio": "c4c4280a2d3b1fa2b6482c933af28674e18683a837a1aaf775aa006a38cd3058"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c4c4280a2d3b1fa2b6482c933af28674e18683a837a1aaf775aa006a38cd3058": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f1f558d0015a95a8234a96a84dd6bb98d16cef4bee32f1b49e1ae5e7136eb4fb.mp3",
+        "sha256": "f1f558d0015a95a8234a96a84dd6bb98d16cef4bee32f1b49e1ae5e7136eb4fb",
+        "byteLength": 9837,
+        "readAlong": {
+          "audioSha256": "f1f558d0015a95a8234a96a84dd6bb98d16cef4bee32f1b49e1ae5e7136eb4fb",
+          "text": "看",
+          "words": [
+            {
+              "text": "看",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-453f4366ccc44cadd7978443f660f776f12d82cbfbf8c74791a4f3e8b0c54585.mp3",
+        "sha256": "453f4366ccc44cadd7978443f660f776f12d82cbfbf8c74791a4f3e8b0c54585",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "453f4366ccc44cadd7978443f660f776f12d82cbfbf8c74791a4f3e8b0c54585",
+          "text": "看",
+          "words": [
+            {
+              "text": "看",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0012",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0012-W0012",
+      "question_ids": [
+        "BANK-W0012-W0012"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU04",
+    "stepId": "S-WU04-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-kan"
+    ],
+    "grammarLessonIds": []
+  }
+}

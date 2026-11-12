@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4990",
+  "targetId": "W4990",
+  "steps": [
+    {
+      "id": "BANK-W4990-W4990",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4990-W4990",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "minor",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "未成年人"
+            },
+            {
+              "value": "wèichéngniánrén",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wei4cheng2nian2ren2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "未成年人",
+            "pinyin": "wèichéngniánrén",
+            "meaning": "minor",
+            "singleWord": true,
+            "audio": "d6ea086e7159af4395573f597e4a6dde01d80a167877a9fb6cb957b3212019dc"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d6ea086e7159af4395573f597e4a6dde01d80a167877a9fb6cb957b3212019dc": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b02622317ed1281c55b1d7e729fcb0a48b5e46a0e05d64186378acdc02268b5a.mp3",
+        "sha256": "b02622317ed1281c55b1d7e729fcb0a48b5e46a0e05d64186378acdc02268b5a",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "b02622317ed1281c55b1d7e729fcb0a48b5e46a0e05d64186378acdc02268b5a",
+          "text": "未成年人",
+          "words": [
+            {
+              "text": "未成年人",
+              "start": 0.15,
+              "end": 0.75
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d134adb75fd2c195fd406865dd7716f83ea02e5054a2c9721ee9737314ea1b98.mp3",
+        "sha256": "d134adb75fd2c195fd406865dd7716f83ea02e5054a2c9721ee9737314ea1b98",
+        "byteLength": 17613,
+        "readAlong": {
+          "audioSha256": "d134adb75fd2c195fd406865dd7716f83ea02e5054a2c9721ee9737314ea1b98",
+          "text": "未成年人",
+          "words": [
+            {
+              "text": "未成年人",
+              "start": 0.15,
+              "end": 0.9299999999999999
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4990",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4990-W4990",
+      "question_ids": [
+        "BANK-W4990-W4990"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-02",
+    "stepId": "S-U6-02-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5ab3"
+    ],
+    "grammarLessonIds": []
+  }
+}

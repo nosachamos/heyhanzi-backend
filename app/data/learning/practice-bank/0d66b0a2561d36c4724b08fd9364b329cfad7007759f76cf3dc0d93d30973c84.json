@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5050",
+  "targetId": "W5050",
+  "steps": [
+    {
+      "id": "BANK-W5050-W5050",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5050-W5050",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "perfume; cologne",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "香水"
+            },
+            {
+              "value": "xiāngshuǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xiang1shui3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "香水",
+            "pinyin": "xiāngshuǐ",
+            "meaning": "perfume; cologne",
+            "singleWord": true,
+            "audio": "ad638b7333e18cbed0f8bd989820d7e9f9d0f3361af083bc90dc054b4ca65b5c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ad638b7333e18cbed0f8bd989820d7e9f9d0f3361af083bc90dc054b4ca65b5c": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3ec91645643ecd31d30ea1253e5b6b8bca08eb86f9d690c6561aa978050eef2c.mp3",
+        "sha256": "3ec91645643ecd31d30ea1253e5b6b8bca08eb86f9d690c6561aa978050eef2c",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "3ec91645643ecd31d30ea1253e5b6b8bca08eb86f9d690c6561aa978050eef2c",
+          "text": "香水",
+          "words": [
+            {
+              "text": "香水",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/965d9b4fd1d1d2d762cc68317a72ef22a936613fdaebf63efbabe9cf12a3bfd4.mp3",
+        "sha256": "965d9b4fd1d1d2d762cc68317a72ef22a936613fdaebf63efbabe9cf12a3bfd4",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "965d9b4fd1d1d2d762cc68317a72ef22a936613fdaebf63efbabe9cf12a3bfd4",
+          "text": "香水",
+          "words": [
+            {
+              "text": "香水",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5050",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5050-W5050",
+      "question_ids": [
+        "BANK-W5050-W5050"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-11",
+    "stepId": "S-U6-11-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9999"
+    ],
+    "grammarLessonIds": []
+  }
+}

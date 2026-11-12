@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0724",
+  "targetId": "W0724",
+  "steps": [
+    {
+      "id": "BANK-W0724-W0724",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0724-W0724",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "winter",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "冬天"
+            },
+            {
+              "value": "dōngtiān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dong1tian1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "冬天",
+            "pinyin": "dōngtiān",
+            "meaning": "winter",
+            "singleWord": true,
+            "audio": "777872f60a1d6fc45731cb5a1e3f27743d7477d9100501bff3f1e04e7dc10ead"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "777872f60a1d6fc45731cb5a1e3f27743d7477d9100501bff3f1e04e7dc10ead": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-3cc46246fdf61f6152d86cafbfaeb8c85368d67c3c29bc977cd990f02b4ac920.mp3",
+        "sha256": "3cc46246fdf61f6152d86cafbfaeb8c85368d67c3c29bc977cd990f02b4ac920",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "3cc46246fdf61f6152d86cafbfaeb8c85368d67c3c29bc977cd990f02b4ac920",
+          "text": "冬天",
+          "words": [
+            {
+              "text": "冬天",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-90139d57f2f92650cc5b65adcaa6c250b7d799aca9f8c55b0d7267b523f346a4.mp3",
+        "sha256": "90139d57f2f92650cc5b65adcaa6c250b7d799aca9f8c55b0d7267b523f346a4",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "90139d57f2f92650cc5b65adcaa6c250b7d799aca9f8c55b0d7267b523f346a4",
+          "text": "冬天",
+          "words": [
+            {
+              "text": "冬天",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0724",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0724-W0724",
+      "question_ids": [
+        "BANK-W0724-W0724"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-17",
+    "stepId": "S-U3-17-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-51ac"
+    ],
+    "grammarLessonIds": []
+  }
+}

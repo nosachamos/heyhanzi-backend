@@ -1,0 +1,190 @@
+{
+  "id": "BANK-G-negation-meiyou",
+  "targetId": "G-negation-meiyou",
+  "steps": [
+    {
+      "id": "BANK-G-negation-meiyou-EX-GRAM-G-negation-meiyou-facet-1-meaning",
+      "kind": "check",
+      "title": "Understand the pattern",
+      "questions": [
+        {
+          "id": "BANK-G-negation-meiyou-EX-GRAM-G-negation-meiyou-facet-1-meaning",
+          "kind": "choice",
+          "prompt": "Choose the meaning of this sentence.",
+          "label": "Understand the pattern",
+          "display": {
+            "text": "我没有新书。",
+            "pinyin": "wǒ méiyǒu xīn shū 。",
+            "meaning": "I do not have a new book.",
+            "audio": "77714162f74965bac9dfe21886014df0b0fc6acff56af5c95ed463f5eebd22ae"
+          },
+          "resultDomain": "Grammar comprehension",
+          "choices": [
+            {
+              "id": "BANK-G-negation-meiyou-EX-GRAM-G-negation-meiyou-facet-1-meaning-c1",
+              "label": "I have a new book.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "I do not have a new book. Negate 有 with 没有. Do not use 不有. The thing that is absent still follows the verb."
+            },
+            {
+              "id": "BANK-G-negation-meiyou-EX-GRAM-G-negation-meiyou-facet-1-meaning-c2",
+              "label": "I do not have a new book.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "Negate 有 with 没有. Do not use 不有. The thing that is absent still follows the verb."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BANK-G-negation-meiyou-EX-GRAM-G-negation-meiyou-facet-1-produce",
+      "kind": "check",
+      "title": "Use the pattern",
+      "questions": [
+        {
+          "id": "BANK-G-negation-meiyou-EX-GRAM-G-negation-meiyou-facet-1-produce",
+          "kind": "text",
+          "prompt": "Write this meaning in Chinese using the pattern and words just introduced.",
+          "label": "Use the pattern",
+          "context": "I do not have a new book.",
+          "contextLanguage": "en",
+          "resultDomain": "Constrained grammar use",
+          "accepted": [
+            {
+              "value": "我没有新书。",
+              "mode": "hanzi"
+            },
+            {
+              "value": "wǒ méiyǒu xīn shū 。",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wo3mei2you3xin1shu1",
+              "mode": "pinyin"
+            }
+          ],
+          "rule": "sentence",
+          "pinyin": true,
+          "model": {
+            "text": "我没有新书。",
+            "pinyin": "wǒ méiyǒu xīn shū 。",
+            "meaning": "I do not have a new book.",
+            "audio": "77714162f74965bac9dfe21886014df0b0fc6acff56af5c95ed463f5eebd22ae"
+          },
+          "hint": "Negate 有 with 没有. Do not use 不有. The thing that is absent still follows the verb."
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "77714162f74965bac9dfe21886014df0b0fc6acff56af5c95ed463f5eebd22ae": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-021174018a6291c5449d73382fb4f0ab9e5673fc16cf868d114b70d991803776.mp3",
+        "sha256": "021174018a6291c5449d73382fb4f0ab9e5673fc16cf868d114b70d991803776",
+        "byteLength": 23949,
+        "readAlong": {
+          "audioSha256": "021174018a6291c5449d73382fb4f0ab9e5673fc16cf868d114b70d991803776",
+          "text": "我没有新书。",
+          "words": [
+            {
+              "text": "我",
+              "start": 0.15,
+              "end": 0.21
+            },
+            {
+              "text": "没有",
+              "start": 0.57,
+              "end": 0.8099999999999999
+            },
+            {
+              "text": "新",
+              "start": 1.05,
+              "end": 1.1099999999999999
+            },
+            {
+              "text": "书",
+              "start": 1.23,
+              "end": 1.2899999999999998
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c79a2d9f8a6eb4bd52c0fc15bfd05bb6d3caef9bc015ccbc7c344449540f29a5.mp3",
+        "sha256": "c79a2d9f8a6eb4bd52c0fc15bfd05bb6d3caef9bc015ccbc7c344449540f29a5",
+        "byteLength": 16173,
+        "qualityWarning": "too-fast",
+        "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+        "readAlong": {
+          "audioSha256": "c79a2d9f8a6eb4bd52c0fc15bfd05bb6d3caef9bc015ccbc7c344449540f29a5",
+          "text": "我没有新书。",
+          "words": [
+            {
+              "text": "我",
+              "start": 0.09,
+              "end": 0.15
+            },
+            {
+              "text": "没有",
+              "start": 0.27,
+              "end": 0.51
+            },
+            {
+              "text": "新",
+              "start": 0.6299999999999999,
+              "end": 0.69
+            },
+            {
+              "text": "书",
+              "start": 0.8099999999999999,
+              "end": 0.8699999999999999
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "G-negation-meiyou",
+      "facet_id": "EX-GRAM-G-negation-meiyou-facet-1",
+      "part_id": "BANK-G-negation-meiyou-EX-GRAM-G-negation-meiyou-facet-1-meaning",
+      "question_ids": [
+        "BANK-G-negation-meiyou-EX-GRAM-G-negation-meiyou-facet-1-meaning"
+      ],
+      "evidence": "checked",
+      "source_ref": "EX-GRAM-G-negation-meiyou"
+    },
+    {
+      "target_id": "G-negation-meiyou",
+      "facet_id": "EX-GRAM-G-negation-meiyou-facet-1",
+      "part_id": "BANK-G-negation-meiyou-EX-GRAM-G-negation-meiyou-facet-1-produce",
+      "question_ids": [
+        "BANK-G-negation-meiyou-EX-GRAM-G-negation-meiyou-facet-1-produce"
+      ],
+      "evidence": "checked",
+      "source_ref": "EX-GRAM-G-negation-meiyou"
+    }
+  ],
+  "remediation": {
+    "unitId": "U04",
+    "stepId": "S-U04-grammar-r4-G-negation-meiyou",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-wo",
+      "mandarin-simplified-v1-char-6ca1",
+      "mandarin-simplified-v1-char-65b0",
+      "mandarin-simplified-v1-char-4e66"
+    ],
+    "grammarLessonIds": [
+      "EX-GRAM-G-negation-meiyou"
+    ]
+  }
+}

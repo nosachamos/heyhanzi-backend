@@ -1,0 +1,711 @@
+{
+  "id": "EX-CHAR-char-547d",
+  "revision": 2,
+  "unit": "U4-26",
+  "stage": "ST-HSK4",
+  "after": "S-U4-26-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "命",
+  "sourceBlockId": "mandarin-simplified-v1-char-547d",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7ecf",
+        "text": "经",
+        "pinyin": "jīng",
+        "meaning": "classics; sacred book",
+        "characters": [
+          {
+            "id": "C-7ECF",
+            "text": "经"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-b51703d7c478f862ab17281e",
+        "text": "要命",
+        "pinyin": "yào mìng",
+        "meaning": "extremely",
+        "characters": [
+          {
+            "id": "C-8981",
+            "text": "要"
+          },
+          {
+            "id": "C-547D",
+            "text": "命"
+          }
+        ]
+      },
+      {
+        "id": "W0109",
+        "text": "准备",
+        "pinyin": "zhǔnbèi",
+        "meaning": "prepare; be preparing/intending to",
+        "characters": [
+          {
+            "id": "C-51C6",
+            "text": "准"
+          },
+          {
+            "id": "C-5907",
+            "text": "备"
+          }
+        ]
+      },
+      {
+        "id": "W0729",
+        "text": "短裤",
+        "pinyin": "duǎnkù",
+        "meaning": "short pants; shorts",
+        "characters": [
+          {
+            "id": "C-77ED",
+            "text": "短"
+          },
+          {
+            "id": "C-88E4",
+            "text": "裤"
+          }
+        ]
+      },
+      {
+        "id": "W2802",
+        "text": "命",
+        "pinyin": "mìng",
+        "meaning": "life; fate",
+        "characters": [
+          {
+            "id": "C-547D",
+            "text": "命"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "d67decb9e1e341605870d7ed0b9f5847602ce55beab7ae1cf57578499b4ba27c",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-547d",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "命",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-547d-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-b51703d7c478f862ab17281e",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "extremely",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "要命"
+              },
+              {
+                "value": "yào mìng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yao4ming4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "要命",
+              "pinyin": "yào mìng",
+              "meaning": "extremely",
+              "audio": "30f227c2c9442ce53913e960743825a2436f074ed37f4642d1044952bb3cf115",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-547d-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W2802",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "命",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0729",
+                "label": "short pants; shorts",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W2802",
+                "label": "life; fate",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-PRIMARY-char-7ecf",
+                "label": "classics; sacred book",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-547d-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "命",
+        "pinyin": "mìng",
+        "meaning": "life; fate",
+        "source": "/stroke-data/547d.json",
+        "reference": {
+          "character": "命",
+          "sha256": "bc6dd1c7a7176fe49eb1e8b0189755e7a6217ac78d644c144c4f8491ceda30b2",
+          "medians": [
+            [
+              [
+                468,
+                836
+              ],
+              [
+                482,
+                823
+              ],
+              [
+                498,
+                792
+              ],
+              [
+                445,
+                698
+              ],
+              [
+                366,
+                597
+              ],
+              [
+                282,
+                512
+              ],
+              [
+                227,
+                467
+              ],
+              [
+                160,
+                421
+              ],
+              [
+                79,
+                377
+              ]
+            ],
+            [
+              [
+                528,
+                748
+              ],
+              [
+                527,
+                739
+              ],
+              [
+                645,
+                621
+              ],
+              [
+                718,
+                556
+              ],
+              [
+                785,
+                509
+              ],
+              [
+                960,
+                488
+              ]
+            ],
+            [
+              [
+                376,
+                536
+              ],
+              [
+                399,
+                530
+              ],
+              [
+                435,
+                531
+              ],
+              [
+                541,
+                559
+              ],
+              [
+                601,
+                562
+              ]
+            ],
+            [
+              [
+                207,
+                404
+              ],
+              [
+                232,
+                381
+              ],
+              [
+                237,
+                369
+              ],
+              [
+                261,
+                203
+              ]
+            ],
+            [
+              [
+                264,
+                397
+              ],
+              [
+                273,
+                391
+              ],
+              [
+                374,
+                415
+              ],
+              [
+                393,
+                410
+              ],
+              [
+                412,
+                390
+              ],
+              [
+                410,
+                379
+              ],
+              [
+                388,
+                299
+              ],
+              [
+                370,
+                286
+              ]
+            ],
+            [
+              [
+                278,
+                228
+              ],
+              [
+                291,
+                243
+              ],
+              [
+                351,
+                258
+              ],
+              [
+                416,
+                256
+              ]
+            ],
+            [
+              [
+                544,
+                423
+              ],
+              [
+                557,
+                412
+              ],
+              [
+                700,
+                443
+              ],
+              [
+                721,
+                427
+              ],
+              [
+                715,
+                321
+              ],
+              [
+                704,
+                269
+              ],
+              [
+                687,
+                231
+              ],
+              [
+                662,
+                208
+              ],
+              [
+                584,
+                248
+              ]
+            ],
+            [
+              [
+                481,
+                430
+              ],
+              [
+                501,
+                415
+              ],
+              [
+                515,
+                386
+              ],
+              [
+                511,
+                -50
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-547d-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0109",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "prepare; be preparing/intending to",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "准备"
+              },
+              {
+                "value": "zhǔnbèi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhun3bei4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "准备",
+              "pinyin": "zhǔnbèi",
+              "meaning": "prepare; be preparing/intending to",
+              "audio": "6df68f2c1cd1abb61a6e8d9dd3fbd62e5217aac7878837e71d72a69f85790c88",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-547d-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W2802",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "life; fate",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "命"
+              },
+              {
+                "value": "mìng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ming4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "命",
+              "pinyin": "mìng",
+              "meaning": "life; fate",
+              "audio": "38ff440690a46eafcad1dd5297b1081d69e14c5d7ff55bb67a413b910d94f42e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "38ff440690a46eafcad1dd5297b1081d69e14c5d7ff55bb67a413b910d94f42e"
+            ],
+            "transcript": [
+              {
+                "text": "命",
+                "pinyin": "mìng",
+                "meaning": "life; fate",
+                "audio": "38ff440690a46eafcad1dd5297b1081d69e14c5d7ff55bb67a413b910d94f42e",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-547D",
+      "character": "命",
+      "lessonIds": [
+        "LESSON-C-547D"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-547d-word",
+        "EX-CHAR-char-547d-recognize",
+        "EX-CHAR-char-547d-write",
+        "EX-CHAR-char-547d-familiar",
+        "EX-CHAR-char-547d-recall"
+      ]
+    },
+    "audio": {
+      "6e497ca7626a5a2c4ac60665220a6c7790b02eab7bd2cd651eab8845e71c1d51": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-a4758377fdd73714a7e56a0c608bef8b4d2298cb4828c53a37a6fb1fda94eb35.mp3",
+          "sha256": "a4758377fdd73714a7e56a0c608bef8b4d2298cb4828c53a37a6fb1fda94eb35",
+          "byteLength": 6669,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "a4758377fdd73714a7e56a0c608bef8b4d2298cb4828c53a37a6fb1fda94eb35",
+            "text": "经",
+            "words": [
+              {
+                "text": "经",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-8be85b3d039e0687716b7a079a9ed72082d0e56e84863170f3403ecf1b513771.mp3",
+          "sha256": "8be85b3d039e0687716b7a079a9ed72082d0e56e84863170f3403ecf1b513771",
+          "byteLength": 7245,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "8be85b3d039e0687716b7a079a9ed72082d0e56e84863170f3403ecf1b513771",
+            "text": "经",
+            "words": [
+              {
+                "text": "经",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "30f227c2c9442ce53913e960743825a2436f074ed37f4642d1044952bb3cf115": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/406a0c38981c19e7c40e8a19e6d6d977c54cea90aea33ab5d04f4d9c27eaed53.mp3",
+          "sha256": "406a0c38981c19e7c40e8a19e6d6d977c54cea90aea33ab5d04f4d9c27eaed53",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "406a0c38981c19e7c40e8a19e6d6d977c54cea90aea33ab5d04f4d9c27eaed53",
+            "text": "要命",
+            "words": [
+              {
+                "text": "要命",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/911acadb6f012d16eeeec9d2a197ddb13fc842e27038a35bcedf972d206f951a.mp3",
+          "sha256": "911acadb6f012d16eeeec9d2a197ddb13fc842e27038a35bcedf972d206f951a",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "911acadb6f012d16eeeec9d2a197ddb13fc842e27038a35bcedf972d206f951a",
+            "text": "要命",
+            "words": [
+              {
+                "text": "要命",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "6df68f2c1cd1abb61a6e8d9dd3fbd62e5217aac7878837e71d72a69f85790c88": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5fffdfc5a2ab98a5ed53cb7c0e2c6f9e8f6b7c282196f27846d005b32155d7e5.mp3",
+          "sha256": "5fffdfc5a2ab98a5ed53cb7c0e2c6f9e8f6b7c282196f27846d005b32155d7e5",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "5fffdfc5a2ab98a5ed53cb7c0e2c6f9e8f6b7c282196f27846d005b32155d7e5",
+            "text": "准备",
+            "words": [
+              {
+                "text": "准备",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-38f6e18701a47fa4cf2091f68bfb6223c6a21422eff5a7d3ddba406afe9203de.mp3",
+          "sha256": "38f6e18701a47fa4cf2091f68bfb6223c6a21422eff5a7d3ddba406afe9203de",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "38f6e18701a47fa4cf2091f68bfb6223c6a21422eff5a7d3ddba406afe9203de",
+            "text": "准备",
+            "words": [
+              {
+                "text": "准备",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "d12e195ae80ad37c28108deb124a7102bdc59495718212dbc53c4d60624e3613": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/18133cbe76452e36995d594b7299d24ec401add75f5c1fb257777ec541c8be2f.mp3",
+          "sha256": "18133cbe76452e36995d594b7299d24ec401add75f5c1fb257777ec541c8be2f",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "18133cbe76452e36995d594b7299d24ec401add75f5c1fb257777ec541c8be2f",
+            "text": "短裤",
+            "words": [
+              {
+                "text": "短裤",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5391b8b164a1ffb7c1b91b9a9e35e6cbb1e84946fb0ae6e49b18fa1bf099cc99.mp3",
+          "sha256": "5391b8b164a1ffb7c1b91b9a9e35e6cbb1e84946fb0ae6e49b18fa1bf099cc99",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "5391b8b164a1ffb7c1b91b9a9e35e6cbb1e84946fb0ae6e49b18fa1bf099cc99",
+            "text": "短裤",
+            "words": [
+              {
+                "text": "短裤",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "38ff440690a46eafcad1dd5297b1081d69e14c5d7ff55bb67a413b910d94f42e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5a293bca9358bc49311cdd1aa5f1c8b5458998670235abd66a4e88530ca4837f.mp3",
+          "sha256": "5a293bca9358bc49311cdd1aa5f1c8b5458998670235abd66a4e88530ca4837f",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "5a293bca9358bc49311cdd1aa5f1c8b5458998670235abd66a4e88530ca4837f",
+            "text": "命",
+            "words": [
+              {
+                "text": "命",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/05515cde202ec148c6b0bd72a71a18a3a6c78ce99f274af43e0508b62ca529d5.mp3",
+          "sha256": "05515cde202ec148c6b0bd72a71a18a3a6c78ce99f274af43e0508b62ca529d5",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "05515cde202ec148c6b0bd72a71a18a3a6c78ce99f274af43e0508b62ca529d5",
+            "text": "命",
+            "words": [
+              {
+                "text": "命",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

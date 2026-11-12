@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3920",
+  "targetId": "W3920",
+  "steps": [
+    {
+      "id": "BANK-W3920-W3920",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3920-W3920",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "electric power source",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "电源"
+            },
+            {
+              "value": "diànyuán",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dian4yuan2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "电源",
+            "pinyin": "diànyuán",
+            "meaning": "electric power source",
+            "singleWord": true,
+            "audio": "56af13a1a6fd1f33a536965be2f5e780de45e5e27db888e196eb17d666cbd32a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "56af13a1a6fd1f33a536965be2f5e780de45e5e27db888e196eb17d666cbd32a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-e3602134844f9a69226fbd327d1d2613d69528608a723349716d4bfa4c181999.mp3",
+        "sha256": "e3602134844f9a69226fbd327d1d2613d69528608a723349716d4bfa4c181999",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "e3602134844f9a69226fbd327d1d2613d69528608a723349716d4bfa4c181999",
+          "text": "电源",
+          "words": [
+            {
+              "text": "电源",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-de83abce559a36a550e7af804b6be205d5cf412501e3b7dea57f5a3b29fb3f9d.mp3",
+        "sha256": "de83abce559a36a550e7af804b6be205d5cf412501e3b7dea57f5a3b29fb3f9d",
+        "byteLength": 15309,
+        "readAlong": {
+          "audioSha256": "de83abce559a36a550e7af804b6be205d5cf412501e3b7dea57f5a3b29fb3f9d",
+          "text": "电源",
+          "words": [
+            {
+              "text": "电源",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3920",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3920-W3920",
+      "question_ids": [
+        "BANK-W3920-W3920"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-30-P01",
+    "stepId": "S-U6-30-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6e90"
+    ],
+    "grammarLessonIds": []
+  }
+}

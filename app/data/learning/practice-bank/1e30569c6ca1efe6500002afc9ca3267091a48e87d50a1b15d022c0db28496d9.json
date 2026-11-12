@@ -1,0 +1,69 @@
+{
+  "id": "BANK-K-WARMUP-speak",
+  "targetId": "K-WARMUP-speak",
+  "steps": [
+    {
+      "id": "BANK-K-WARMUP-speak-K-WARMUP-speak-perform",
+      "kind": "check",
+      "title": "Use the skill in context",
+      "questions": [
+        {
+          "id": "BANK-K-WARMUP-speak-K-WARMUP-speak-perform",
+          "kind": "production",
+          "response": "spoken",
+          "prompt": "Greet the familiar partner and confirm that it is you with the short identity reply already introduced.",
+          "promptLanguage": "en",
+          "context": "A familiar partner hears you arrive and asks whether it is you. Greet them and confirm that you are the person they expected. Use the already taught short identity reply; no personal name or nationality is needed.\nFamiliar meanings available: hello; hi; I; me; be.",
+          "contextLanguage": "en",
+          "label": "Take your speaking turn",
+          "resultDomain": "Self-reviewed speaking practice",
+          "rubric": [
+            {
+              "id": "r1",
+              "text": "I gave a greeting and an identification."
+            },
+            {
+              "id": "r2",
+              "text": "I replayed or repeated my own turn and chose one sound to practise."
+            }
+          ]
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {},
+  "coverage": [
+    {
+      "target_id": "K-WARMUP-speak",
+      "facet_id": "K-WARMUP-speak-situated-performance",
+      "part_id": "BANK-K-WARMUP-speak-K-WARMUP-speak-perform",
+      "question_ids": [
+        "BANK-K-WARMUP-speak-K-WARMUP-speak-perform"
+      ],
+      "evidence": "self-reviewed",
+      "scope": "Produce a comprehensible greeting and identification with lexical tones.",
+      "stage_outcome_mastery": false
+    }
+  ],
+  "remediation": {
+    "unitId": "WU01",
+    "stepId": "S-WU01-skill-K-WARMUP-speak",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-hao",
+      "mandarin-simplified-v1-warmup-wo",
+      "mandarin-simplified-v1-warmup-shi",
+      "mandarin-simplified-v1-warmup-ta-he",
+      "mandarin-simplified-v1-warmup-hao",
+      "mandarin-simplified-v1-warmup-bu",
+      "mandarin-simplified-v1-warmup-ni",
+      "mandarin-simplified-v1-warmup-ma",
+      "mandarin-simplified-v1-warmup-ta-she",
+      "mandarin-simplified-v1-warmup-ren",
+      "mandarin-simplified-v1-warmup-hao"
+    ],
+    "grammarLessonIds": [
+      "EX-GRAM-G-warmup-identity"
+    ]
+  }
+}

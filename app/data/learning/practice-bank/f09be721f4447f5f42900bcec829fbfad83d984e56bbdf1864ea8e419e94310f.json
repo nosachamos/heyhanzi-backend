@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0400",
+  "targetId": "W0400",
+  "steps": [
+    {
+      "id": "BANK-W0400-W0400",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0400-W0400",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "older brother",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "哥哥"
+            },
+            {
+              "value": "gēge",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ge1ge5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "哥哥",
+            "pinyin": "gēge",
+            "meaning": "older brother",
+            "singleWord": true,
+            "audio": "cfe3a78ef242b6bab20eb86f54c5edbff38e35e053cb296c469fc5a73eb21b41"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "cfe3a78ef242b6bab20eb86f54c5edbff38e35e053cb296c469fc5a73eb21b41": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d5a3894396e532c561f40531e53a37f84cabf352c8578ecc3deca167da4ff2c6.mp3",
+        "sha256": "d5a3894396e532c561f40531e53a37f84cabf352c8578ecc3deca167da4ff2c6",
+        "byteLength": 17613,
+        "readAlong": {
+          "audioSha256": "d5a3894396e532c561f40531e53a37f84cabf352c8578ecc3deca167da4ff2c6",
+          "text": "哥哥",
+          "words": [
+            {
+              "text": "哥哥",
+              "start": 0.15,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ff5df7b7dfc1d731e66eafcf04421e14724917cebe06fbf54c758a45610ac98c.mp3",
+        "sha256": "ff5df7b7dfc1d731e66eafcf04421e14724917cebe06fbf54c758a45610ac98c",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "ff5df7b7dfc1d731e66eafcf04421e14724917cebe06fbf54c758a45610ac98c",
+          "text": "哥哥",
+          "words": [
+            {
+              "text": "哥哥",
+              "start": 0.09,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0400",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0400-W0400",
+      "question_ids": [
+        "BANK-W0400-W0400"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U04",
+    "stepId": "S-U04-words-r4-14",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-54e5"
+    ],
+    "grammarLessonIds": []
+  }
+}

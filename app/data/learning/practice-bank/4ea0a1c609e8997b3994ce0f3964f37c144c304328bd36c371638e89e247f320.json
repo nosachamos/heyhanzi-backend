@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3892",
+  "targetId": "W3892",
+  "steps": [
+    {
+      "id": "BANK-W3892-W3892",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3892-W3892",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "the same day",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "当天"
+            },
+            {
+              "value": "dàngtiān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dang4tian1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "当天",
+            "pinyin": "dàngtiān",
+            "meaning": "the same day",
+            "singleWord": true,
+            "audio": "a1e2181f5f4d6501c866732f4e95cff805857735cdcf67d720c9178875946fd1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a1e2181f5f4d6501c866732f4e95cff805857735cdcf67d720c9178875946fd1": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-98c1cbe245db939a33506d8fa04c16b160cbb022ce2d2e5863fe51b949954e78.mp3",
+        "sha256": "98c1cbe245db939a33506d8fa04c16b160cbb022ce2d2e5863fe51b949954e78",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "98c1cbe245db939a33506d8fa04c16b160cbb022ce2d2e5863fe51b949954e78",
+          "text": "当天",
+          "words": [
+            {
+              "text": "当天",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-9eb303ceea6627e3b464def977522588c557ae646569059784fae0df9c8abfed.mp3",
+        "sha256": "9eb303ceea6627e3b464def977522588c557ae646569059784fae0df9c8abfed",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "9eb303ceea6627e3b464def977522588c557ae646569059784fae0df9c8abfed",
+          "text": "当天",
+          "words": [
+            {
+              "text": "当天",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3892",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3892-W3892",
+      "question_ids": [
+        "BANK-W3892-W3892"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-07-P01",
+    "stepId": "S-U6-07-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5f53"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,543 @@
+{
+  "id": "EX-CHAR-char-4e60",
+  "revision": 2,
+  "unit": "U02-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U02-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "习",
+  "sourceBlockId": "mandarin-simplified-v1-char-4e60",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Write the character",
+    "Connect meaning and sound",
+    "Use the whole word",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-1a00c5ab222f01fa929b42dc",
+        "text": "不好",
+        "pinyin": "bù hǎo",
+        "meaning": "not good",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-597D",
+            "text": "好"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-af9ce12f03c1aff2405d8f78",
+        "text": "一生",
+        "pinyin": "yìshēng",
+        "meaning": "all one's life; throughout one's life",
+        "characters": [
+          {
+            "id": "C-4E00",
+            "text": "一"
+          },
+          {
+            "id": "C-751F",
+            "text": "生"
+          }
+        ]
+      },
+      {
+        "id": "W0291",
+        "text": "学习",
+        "pinyin": "xuéxí",
+        "meaning": "to learn; to study",
+        "characters": [
+          {
+            "id": "C-5B66",
+            "text": "学"
+          },
+          {
+            "id": "C-4E60",
+            "text": "习"
+          }
+        ]
+      },
+      {
+        "id": "W0343",
+        "text": "请问",
+        "pinyin": "qǐngwèn",
+        "meaning": "Excuse me, may I ask...?",
+        "characters": [
+          {
+            "id": "C-8BF7",
+            "text": "请"
+          },
+          {
+            "id": "C-95EE",
+            "text": "问"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "6f4add97f488044e03508f2732a21a3c0dcad5d62aa47925d5901a61001d9bad",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4e60",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "习",
+    "variant": "lesson-movement-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4e60-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "习",
+        "pinyin": "xí",
+        "meaning": "(bound form) to practice; to study",
+        "source": "/stroke-data/4e60.json",
+        "reference": {
+          "character": "习",
+          "sha256": "2ef4950a90bc35c27d53930c5e02135bbcd9c708cb10bc04cdd1276189ce295c",
+          "medians": [
+            [
+              [
+                264,
+                703
+              ],
+              [
+                331,
+                696
+              ],
+              [
+                645,
+                752
+              ],
+              [
+                688,
+                742
+              ],
+              [
+                725,
+                706
+              ],
+              [
+                695,
+                342
+              ],
+              [
+                678,
+                250
+              ],
+              [
+                644,
+                145
+              ],
+              [
+                615,
+                105
+              ],
+              [
+                595,
+                92
+              ],
+              [
+                481,
+                154
+              ],
+              [
+                467,
+                155
+              ],
+              [
+                442,
+                169
+              ]
+            ],
+            [
+              [
+                313,
+                597
+              ],
+              [
+                400,
+                543
+              ],
+              [
+                418,
+                514
+              ]
+            ],
+            [
+              [
+                215,
+                277
+              ],
+              [
+                242,
+                271
+              ],
+              [
+                284,
+                273
+              ],
+              [
+                535,
+                450
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4e60-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0291",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "学习",
+              "meaning": "",
+              "focus": "习"
+            },
+            "choices": [
+              {
+                "id": "W0291",
+                "label": "to learn; to study",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0343",
+                "label": "Excuse me, may I ask...?",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-af9ce12f03c1aff2405d8f78",
+                "label": "all one's life; throughout one's life",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e60-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0291",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to learn; to study",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "学习"
+              },
+              {
+                "value": "xuéxí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xue2xi2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "学习",
+              "pinyin": "xuéxí",
+              "meaning": "to learn; to study",
+              "audio": "6bf8df5ed7614ee60fe4d11f05ce0b1c8d4ca3820158ab59c1c668a1d2846055",
+              "singleWord": true,
+              "focus": "习"
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e60-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-1a00c5ab222f01fa929b42dc",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "not good",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "不好"
+              },
+              {
+                "value": "bù hǎo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu4hao3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "不好",
+              "pinyin": "bù hǎo",
+              "meaning": "not good",
+              "audio": "3f6cc91ad5939b4f0b35767abae2330a2d34298e573f2660fc7422f5451a1fd2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e60-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0291",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to learn; to study",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "学习"
+              },
+              {
+                "value": "xuéxí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xue2xi2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "学习",
+              "pinyin": "xuéxí",
+              "meaning": "to learn; to study",
+              "audio": "6bf8df5ed7614ee60fe4d11f05ce0b1c8d4ca3820158ab59c1c668a1d2846055",
+              "singleWord": true,
+              "focus": "习"
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "6bf8df5ed7614ee60fe4d11f05ce0b1c8d4ca3820158ab59c1c668a1d2846055"
+            ],
+            "transcript": [
+              {
+                "text": "学习",
+                "pinyin": "xuéxí",
+                "meaning": "to learn; to study",
+                "audio": "6bf8df5ed7614ee60fe4d11f05ce0b1c8d4ca3820158ab59c1c668a1d2846055",
+                "singleWord": true,
+                "focus": "习"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4E60",
+      "character": "习",
+      "lessonIds": [
+        "LESSON-C-4E60"
+      ],
+      "profile": "movement-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4e60-write",
+        "EX-CHAR-char-4e60-recognize",
+        "EX-CHAR-char-4e60-word",
+        "EX-CHAR-char-4e60-familiar",
+        "EX-CHAR-char-4e60-recall"
+      ]
+    },
+    "audio": {
+      "3f6cc91ad5939b4f0b35767abae2330a2d34298e573f2660fc7422f5451a1fd2": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3386081c40f8548e1b6c20a1c6f03583e6b8ec9a61c0823658b9a33ce2cf70d3.mp3",
+          "sha256": "3386081c40f8548e1b6c20a1c6f03583e6b8ec9a61c0823658b9a33ce2cf70d3",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "3386081c40f8548e1b6c20a1c6f03583e6b8ec9a61c0823658b9a33ce2cf70d3",
+            "text": "不好",
+            "words": [
+              {
+                "text": "不好",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8606f622dbdbe7658d1c7e03260b9d93fecbf230cf95486404f5bb807a637045.mp3",
+          "sha256": "8606f622dbdbe7658d1c7e03260b9d93fecbf230cf95486404f5bb807a637045",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "8606f622dbdbe7658d1c7e03260b9d93fecbf230cf95486404f5bb807a637045",
+            "text": "不好",
+            "words": [
+              {
+                "text": "不好",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "c51dbc973a1c3f2bc893e174524d071a7d09f76da8b3e46b5fbe62a5dd0e4ae7": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0615d7407d8b7b718b6ff337bd7e3c5904537845a189374963778de4b7a78f7f.mp3",
+          "sha256": "0615d7407d8b7b718b6ff337bd7e3c5904537845a189374963778de4b7a78f7f",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "0615d7407d8b7b718b6ff337bd7e3c5904537845a189374963778de4b7a78f7f",
+            "text": "一生",
+            "words": [
+              {
+                "text": "一生",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3a4455a709368f05d9ab513b84d81ed2dabb67b8b305282571a72f4ec8d1d02b.mp3",
+          "sha256": "3a4455a709368f05d9ab513b84d81ed2dabb67b8b305282571a72f4ec8d1d02b",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "3a4455a709368f05d9ab513b84d81ed2dabb67b8b305282571a72f4ec8d1d02b",
+            "text": "一生",
+            "words": [
+              {
+                "text": "一生",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "6bf8df5ed7614ee60fe4d11f05ce0b1c8d4ca3820158ab59c1c668a1d2846055": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-03d36e3a9157c8b50a8e942adf8b4a09d5850ba5e3a03831282c838bb94cd695.mp3",
+          "sha256": "03d36e3a9157c8b50a8e942adf8b4a09d5850ba5e3a03831282c838bb94cd695",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "03d36e3a9157c8b50a8e942adf8b4a09d5850ba5e3a03831282c838bb94cd695",
+            "text": "学习",
+            "words": [
+              {
+                "text": "学习",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4d93cf6772cd873c3a8999db1a6fd02eb8e66b99836a5ea081a996fef5cacc81.mp3",
+          "sha256": "4d93cf6772cd873c3a8999db1a6fd02eb8e66b99836a5ea081a996fef5cacc81",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "4d93cf6772cd873c3a8999db1a6fd02eb8e66b99836a5ea081a996fef5cacc81",
+            "text": "学习",
+            "words": [
+              {
+                "text": "学习",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "a1c15440ad5f46dd2cf9a2b9c0c7ebe0c386b526a98c6a1b244c0e6df3f0f23a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/865d64f3e1d0a2210c7d1baf4a9c47b5bbc193bb73c914b7b1b9f3d7d83f006c.mp3",
+          "sha256": "865d64f3e1d0a2210c7d1baf4a9c47b5bbc193bb73c914b7b1b9f3d7d83f006c",
+          "byteLength": 16749,
+          "readAlong": {
+            "audioSha256": "865d64f3e1d0a2210c7d1baf4a9c47b5bbc193bb73c914b7b1b9f3d7d83f006c",
+            "text": "请问",
+            "words": [
+              {
+                "text": "请问",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e50638d2d328c895697411815ac20a7e29eb71f7162477803f6927533685e3e7.mp3",
+          "sha256": "e50638d2d328c895697411815ac20a7e29eb71f7162477803f6927533685e3e7",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "e50638d2d328c895697411815ac20a7e29eb71f7162477803f6927533685e3e7",
+            "text": "请问",
+            "words": [
+              {
+                "text": "请问",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

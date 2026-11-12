@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0023",
+  "targetId": "W0023",
+  "steps": [
+    {
+      "id": "BANK-W0023-W0023",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0023-W0023",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "good",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "好"
+            },
+            {
+              "value": "hǎo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hao3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "好",
+            "pinyin": "hǎo",
+            "meaning": "good",
+            "singleWord": true,
+            "audio": "c7be596b84c19af9adad9242f84af08b00fde86f52f7ecf64b4e7df54efa5886"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c7be596b84c19af9adad9242f84af08b00fde86f52f7ecf64b4e7df54efa5886": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-b7ed6bdb5b8fcd2970ec2a578c9a5b7261367fc757267dc4cd0c3c79e36da21c.mp3",
+        "sha256": "b7ed6bdb5b8fcd2970ec2a578c9a5b7261367fc757267dc4cd0c3c79e36da21c",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "b7ed6bdb5b8fcd2970ec2a578c9a5b7261367fc757267dc4cd0c3c79e36da21c",
+          "text": "好",
+          "words": [
+            {
+              "text": "好",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-87fbe54ed9711905d6c0828714b4c31811132386f6894bc4e6334f3c455db142.mp3",
+        "sha256": "87fbe54ed9711905d6c0828714b4c31811132386f6894bc4e6334f3c455db142",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "87fbe54ed9711905d6c0828714b4c31811132386f6894bc4e6334f3c455db142",
+          "text": "好",
+          "words": [
+            {
+              "text": "好",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0023",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0023-W0023",
+      "question_ids": [
+        "BANK-W0023-W0023"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU01",
+    "stepId": "S-WU01-working-word-2",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-hao"
+    ],
+    "grammarLessonIds": []
+  }
+}

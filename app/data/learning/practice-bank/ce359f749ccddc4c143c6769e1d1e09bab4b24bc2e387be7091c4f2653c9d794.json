@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1229",
+  "targetId": "W1229",
+  "steps": [
+    {
+      "id": "BANK-W1229-W1229",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1229-W1229",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "counter for meals and certain actions",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "顿"
+            },
+            {
+              "value": "dùn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dun4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "顿",
+            "pinyin": "dùn",
+            "meaning": "counter for meals and certain actions",
+            "singleWord": true,
+            "audio": "074ecf508895fae368f4a1a5af2ae165a104ed7b5134b107e848ca6c4bc7f596"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "074ecf508895fae368f4a1a5af2ae165a104ed7b5134b107e848ca6c4bc7f596": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-3cb10609c530dc2aa9de3d2e27d7e8ecc00ba7cf36c61b6cb18ec8887b2c0678.mp3",
+        "sha256": "3cb10609c530dc2aa9de3d2e27d7e8ecc00ba7cf36c61b6cb18ec8887b2c0678",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "3cb10609c530dc2aa9de3d2e27d7e8ecc00ba7cf36c61b6cb18ec8887b2c0678",
+          "text": "顿",
+          "words": [
+            {
+              "text": "顿",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-5294d4c150ff74ba2dc36dc9f785efb66331e8d5bf5d7ee6c520f77cf8447bb5.mp3",
+        "sha256": "5294d4c150ff74ba2dc36dc9f785efb66331e8d5bf5d7ee6c520f77cf8447bb5",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "5294d4c150ff74ba2dc36dc9f785efb66331e8d5bf5d7ee6c520f77cf8447bb5",
+          "text": "顿",
+          "words": [
+            {
+              "text": "顿",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1229",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1229-W1229",
+      "question_ids": [
+        "BANK-W1229-W1229"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-09",
+    "stepId": "S-U4-09-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-70e4"
+    ],
+    "grammarLessonIds": []
+  }
+}

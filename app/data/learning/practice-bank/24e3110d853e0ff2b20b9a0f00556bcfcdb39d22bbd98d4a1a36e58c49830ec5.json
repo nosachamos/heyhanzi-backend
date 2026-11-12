@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1825",
+  "targetId": "W1825",
+  "steps": [
+    {
+      "id": "BANK-W1825-W1825",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1825-W1825",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "tomato",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "西红柿"
+            },
+            {
+              "value": "xīhóngshì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xi1hong2shi4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "西红柿",
+            "pinyin": "xīhóngshì",
+            "meaning": "tomato",
+            "singleWord": true,
+            "audio": "1186f22200aad9de5d854c5f3c30fd2bf89048543f3c8dcdab51a640271f788c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1186f22200aad9de5d854c5f3c30fd2bf89048543f3c8dcdab51a640271f788c": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/53b3f8b94b72865fe910285cc4409c32a37c7823e3f07373d32114c9260154e5.mp3",
+        "sha256": "53b3f8b94b72865fe910285cc4409c32a37c7823e3f07373d32114c9260154e5",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "53b3f8b94b72865fe910285cc4409c32a37c7823e3f07373d32114c9260154e5",
+          "text": "西红柿",
+          "words": [
+            {
+              "text": "西红柿",
+              "start": 0.21,
+              "end": 0.69
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/150618f172c08093d813e07a99a5e2e3bf3768e9852ae73743ea036d04d10ce2.mp3",
+        "sha256": "150618f172c08093d813e07a99a5e2e3bf3768e9852ae73743ea036d04d10ce2",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "150618f172c08093d813e07a99a5e2e3bf3768e9852ae73743ea036d04d10ce2",
+          "text": "西红柿",
+          "words": [
+            {
+              "text": "西红柿",
+              "start": 0.15,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1825",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1825-W1825",
+      "question_ids": [
+        "BANK-W1825-W1825"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-08",
+    "stepId": "S-U4-08-words-r4-15",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-67ff"
+    ],
+    "grammarLessonIds": []
+  }
+}

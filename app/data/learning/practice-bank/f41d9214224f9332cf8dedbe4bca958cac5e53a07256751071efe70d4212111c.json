@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2303",
+  "targetId": "W2303",
+  "steps": [
+    {
+      "id": "BANK-W2303-W2303",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2303-W2303",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "electrically powered",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "电动"
+            },
+            {
+              "value": "diàndòng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dian4dong4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "电动",
+            "pinyin": "diàndòng",
+            "meaning": "electrically powered",
+            "singleWord": true,
+            "audio": "250a872a6101bb234798fbcec2501a98a5fcd79b1cc77ec0e4645fc6ab43e731"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "250a872a6101bb234798fbcec2501a98a5fcd79b1cc77ec0e4645fc6ab43e731": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e10c2bfc2efed6078a9a2c40318e8e60c66ebc961bb6aeb78284bf2521a064fe.mp3",
+        "sha256": "e10c2bfc2efed6078a9a2c40318e8e60c66ebc961bb6aeb78284bf2521a064fe",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "e10c2bfc2efed6078a9a2c40318e8e60c66ebc961bb6aeb78284bf2521a064fe",
+          "text": "电动",
+          "words": [
+            {
+              "text": "电动",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/91fd86542f5861136c583b39ce76b1851e1133c14d8299b5af4d4b0618712a72.mp3",
+        "sha256": "91fd86542f5861136c583b39ce76b1851e1133c14d8299b5af4d4b0618712a72",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "91fd86542f5861136c583b39ce76b1851e1133c14d8299b5af4d4b0618712a72",
+          "text": "电动",
+          "words": [
+            {
+              "text": "电动",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2303",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2303-W2303",
+      "question_ids": [
+        "BANK-W2303-W2303"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-30-P01",
+    "stepId": "S-U5-30-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7248"
+    ],
+    "grammarLessonIds": []
+  }
+}

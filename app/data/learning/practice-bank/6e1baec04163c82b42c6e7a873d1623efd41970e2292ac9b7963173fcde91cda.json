@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3812",
+  "targetId": "W3812",
+  "steps": [
+    {
+      "id": "BANK-W3812-W3812",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3812-W3812",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "only if; only when",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "除非"
+            },
+            {
+              "value": "chúfēi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chu2fei1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "除非",
+            "pinyin": "chúfēi",
+            "meaning": "only if; only when",
+            "singleWord": true,
+            "audio": "d4ab424745c1944e88c7123974e44bac04c69393db2426dc4a738682ab41db1c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d4ab424745c1944e88c7123974e44bac04c69393db2426dc4a738682ab41db1c": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-951242e19a1ddee3118f9eab0701abb588dd7a7a0abd826cabf08c7ef5f69169.mp3",
+        "sha256": "951242e19a1ddee3118f9eab0701abb588dd7a7a0abd826cabf08c7ef5f69169",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "951242e19a1ddee3118f9eab0701abb588dd7a7a0abd826cabf08c7ef5f69169",
+          "text": "除非",
+          "words": [
+            {
+              "text": "除非",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-0f3048542e9c4f011d334ba8affec237327293f772aff21e5fab9238889dce13.mp3",
+        "sha256": "0f3048542e9c4f011d334ba8affec237327293f772aff21e5fab9238889dce13",
+        "byteLength": 9837,
+        "readAlong": {
+          "audioSha256": "0f3048542e9c4f011d334ba8affec237327293f772aff21e5fab9238889dce13",
+          "text": "除非",
+          "words": [
+            {
+              "text": "除非",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3812",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3812-W3812",
+      "question_ids": [
+        "BANK-W3812-W3812"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-34-P01",
+    "stepId": "S-U6-34-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9664"
+    ],
+    "grammarLessonIds": []
+  }
+}

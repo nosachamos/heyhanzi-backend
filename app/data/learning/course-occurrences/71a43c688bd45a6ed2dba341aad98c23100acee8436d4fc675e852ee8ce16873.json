@@ -1,0 +1,817 @@
+{
+  "id": "EX-CHAR-char-94fe",
+  "revision": 2,
+  "unit": "U6-10",
+  "stage": "ST-HSK6",
+  "after": "S-U6-10-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "链",
+  "sourceBlockId": "mandarin-simplified-v1-char-94fe",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-94fe",
+        "text": "链",
+        "pinyin": "liàn",
+        "meaning": "chain; cable (unit of length: 100 fathoms, about 185 m)",
+        "characters": [
+          {
+            "id": "C-94FE",
+            "text": "链"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-039ca6714b822c4eac439b38",
+        "text": "从事",
+        "pinyin": "cóngshì",
+        "meaning": "to engage in; to work in (an occupation or field)",
+        "characters": [
+          {
+            "id": "C-4ECE",
+            "text": "从"
+          },
+          {
+            "id": "C-4E8B",
+            "text": "事"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-adc88fecf44a1ce2d4d14dc7",
+        "text": "对付",
+        "pinyin": "duì fu",
+        "meaning": "to handle",
+        "characters": [
+          {
+            "id": "C-5BF9",
+            "text": "对"
+          },
+          {
+            "id": "C-4ED8",
+            "text": "付"
+          }
+        ]
+      },
+      {
+        "id": "W0361",
+        "text": "银行",
+        "pinyin": "yínháng",
+        "meaning": "bank",
+        "characters": [
+          {
+            "id": "C-94F6",
+            "text": "银"
+          },
+          {
+            "id": "C-884C",
+            "text": "行"
+          }
+        ]
+      },
+      {
+        "id": "W5052",
+        "text": "项链",
+        "pinyin": "xiàngliàn",
+        "meaning": "necklace",
+        "characters": [
+          {
+            "id": "C-9879",
+            "text": "项"
+          },
+          {
+            "id": "C-94FE",
+            "text": "链"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "e9b6c6121e0d441acad7bbe03e442aeb52a344b16a9d21632b801a63630019af",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-94fe",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "链",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-94fe-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W5052",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "necklace",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "项链"
+              },
+              {
+                "value": "xiàngliàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiang4lian4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "项链",
+              "pinyin": "xiàngliàn",
+              "meaning": "necklace",
+              "audio": "d46c96f1f3ab45ab33576d67f3787f7d91e49eb170d6d5be82f5470b78840e72",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-94fe-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-94fe",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "链",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-039ca6714b822c4eac439b38",
+                "label": "to engage in; to work in (an occupation or field)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-94fe",
+                "label": "chain; cable (unit of length: 100 fathoms, about 185 m)",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-adc88fecf44a1ce2d4d14dc7",
+                "label": "to handle",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-94fe-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "链",
+        "pinyin": "liàn",
+        "meaning": "chain; cable (unit of length: 100 fathoms, about 185 m)",
+        "source": "/stroke-data/94fe.json",
+        "reference": {
+          "character": "链",
+          "sha256": "21f56803a409000806153d1047e7da27a78177f0a490a0c0382135a8a5c24e42",
+          "medians": [
+            [
+              [
+                249,
+                788
+              ],
+              [
+                270,
+                769
+              ],
+              [
+                280,
+                744
+              ],
+              [
+                235,
+                640
+              ],
+              [
+                190,
+                559
+              ],
+              [
+                128,
+                467
+              ],
+              [
+                82,
+                407
+              ],
+              [
+                46,
+                373
+              ]
+            ],
+            [
+              [
+                237,
+                592
+              ],
+              [
+                262,
+                606
+              ],
+              [
+                317,
+                622
+              ],
+              [
+                370,
+                627
+              ]
+            ],
+            [
+              [
+                165,
+                468
+              ],
+              [
+                219,
+                469
+              ],
+              [
+                296,
+                497
+              ],
+              [
+                348,
+                504
+              ]
+            ],
+            [
+              [
+                106,
+                311
+              ],
+              [
+                164,
+                313
+              ],
+              [
+                293,
+                358
+              ],
+              [
+                341,
+                364
+              ]
+            ],
+            [
+              [
+                192,
+                447
+              ],
+              [
+                225,
+                421
+              ],
+              [
+                232,
+                405
+              ],
+              [
+                236,
+                288
+              ],
+              [
+                224,
+                148
+              ],
+              [
+                229,
+                126
+              ],
+              [
+                272,
+                145
+              ],
+              [
+                339,
+                200
+              ]
+            ],
+            [
+              [
+                545,
+                606
+              ],
+              [
+                580,
+                600
+              ],
+              [
+                622,
+                602
+              ],
+              [
+                779,
+                642
+              ],
+              [
+                837,
+                643
+              ]
+            ],
+            [
+              [
+                661,
+                795
+              ],
+              [
+                680,
+                770
+              ],
+              [
+                690,
+                743
+              ],
+              [
+                641,
+                580
+              ],
+              [
+                574,
+                404
+              ],
+              [
+                621,
+                400
+              ],
+              [
+                756,
+                425
+              ],
+              [
+                827,
+                431
+              ],
+              [
+                854,
+                424
+              ]
+            ],
+            [
+              [
+                509,
+                280
+              ],
+              [
+                562,
+                273
+              ],
+              [
+                734,
+                301
+              ],
+              [
+                849,
+                312
+              ],
+              [
+                894,
+                307
+              ],
+              [
+                925,
+                296
+              ]
+            ],
+            [
+              [
+                689,
+                534
+              ],
+              [
+                718,
+                504
+              ],
+              [
+                711,
+                124
+              ]
+            ],
+            [
+              [
+                408,
+                682
+              ],
+              [
+                460,
+                633
+              ],
+              [
+                475,
+                605
+              ]
+            ],
+            [
+              [
+                334,
+                433
+              ],
+              [
+                366,
+                436
+              ],
+              [
+                415,
+                457
+              ],
+              [
+                438,
+                457
+              ],
+              [
+                458,
+                442
+              ],
+              [
+                453,
+                398
+              ],
+              [
+                425,
+                332
+              ],
+              [
+                427,
+                309
+              ],
+              [
+                463,
+                234
+              ],
+              [
+                462,
+                198
+              ],
+              [
+                452,
+                192
+              ]
+            ],
+            [
+              [
+                356,
+                181
+              ],
+              [
+                375,
+                171
+              ],
+              [
+                446,
+                172
+              ],
+              [
+                488,
+                158
+              ],
+              [
+                695,
+                60
+              ],
+              [
+                756,
+                40
+              ],
+              [
+                789,
+                39
+              ],
+              [
+                940,
+                58
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-94fe-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0361",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "bank",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "银行"
+              },
+              {
+                "value": "yínháng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yin2hang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "银行",
+              "pinyin": "yínháng",
+              "meaning": "bank",
+              "audio": "0894fc6a5106ecbac583b1ce1e3b4a9087783de4ea67707fcd122b287a7e1404",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-94fe-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-94fe",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "chain; cable (unit of length: 100 fathoms, about 185 m)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "链"
+              },
+              {
+                "value": "liàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lian4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "链",
+              "pinyin": "liàn",
+              "meaning": "chain; cable (unit of length: 100 fathoms, about 185 m)",
+              "audio": "887dafa7202e0a3526010db5165b1b535ba6fcb9abf61e7a65f2818d0be617d6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "887dafa7202e0a3526010db5165b1b535ba6fcb9abf61e7a65f2818d0be617d6"
+            ],
+            "transcript": [
+              {
+                "text": "链",
+                "pinyin": "liàn",
+                "meaning": "chain; cable (unit of length: 100 fathoms, about 185 m)",
+                "audio": "887dafa7202e0a3526010db5165b1b535ba6fcb9abf61e7a65f2818d0be617d6",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-94FE",
+      "character": "链",
+      "lessonIds": [
+        "LESSON-C-94FE"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-94fe-word",
+        "EX-CHAR-char-94fe-recognize",
+        "EX-CHAR-char-94fe-write",
+        "EX-CHAR-char-94fe-familiar",
+        "EX-CHAR-char-94fe-recall"
+      ]
+    },
+    "audio": {
+      "887dafa7202e0a3526010db5165b1b535ba6fcb9abf61e7a65f2818d0be617d6": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-0a9eb1dcb4928d2aeee1e5de9935ce4707e36841a230d10052f994443355b0d1.mp3",
+          "sha256": "0a9eb1dcb4928d2aeee1e5de9935ce4707e36841a230d10052f994443355b0d1",
+          "byteLength": 7245,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "0a9eb1dcb4928d2aeee1e5de9935ce4707e36841a230d10052f994443355b0d1",
+            "text": "链",
+            "words": [
+              {
+                "text": "链",
+                "start": 0.14,
+                "end": 0.24
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-8683d3625e36b15ed7cca78ee9fbe16829da6b67492f4e3782ea3e9835f0ca37.mp3",
+          "sha256": "8683d3625e36b15ed7cca78ee9fbe16829da6b67492f4e3782ea3e9835f0ca37",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "8683d3625e36b15ed7cca78ee9fbe16829da6b67492f4e3782ea3e9835f0ca37",
+            "text": "链",
+            "words": [
+              {
+                "text": "链",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "55dfb5764079cc4dc2887b4c154a179d4030594657da0724c214c8a712fc0419": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f96b62fdd6f85f29ce74e22109e2aa142100b7ab851fddef7a8e563f0f470aed.mp3",
+          "sha256": "f96b62fdd6f85f29ce74e22109e2aa142100b7ab851fddef7a8e563f0f470aed",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "f96b62fdd6f85f29ce74e22109e2aa142100b7ab851fddef7a8e563f0f470aed",
+            "text": "从事",
+            "words": [
+              {
+                "text": "从事",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/4135bdf2adde190430ea5d7d0e4a18e577632510b3f94ce1aaa54689a365413d.mp3",
+          "sha256": "4135bdf2adde190430ea5d7d0e4a18e577632510b3f94ce1aaa54689a365413d",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "4135bdf2adde190430ea5d7d0e4a18e577632510b3f94ce1aaa54689a365413d",
+            "text": "从事",
+            "words": [
+              {
+                "text": "从事",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "94793a9036d53d6a1784224a714f1a39d11ae87dafba94e4473d05239638f5b3": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/4257416d2c962afffbca73d9260267eef8dbb87b67033a1c621675c64ebac2e0.mp3",
+          "sha256": "4257416d2c962afffbca73d9260267eef8dbb87b67033a1c621675c64ebac2e0",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "4257416d2c962afffbca73d9260267eef8dbb87b67033a1c621675c64ebac2e0",
+            "text": "对付",
+            "words": [
+              {
+                "text": "对付",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/efa0d973ede4c76e6d179ee9ca3d4897d4479f096e6225e53c1eddae967a834b.mp3",
+          "sha256": "efa0d973ede4c76e6d179ee9ca3d4897d4479f096e6225e53c1eddae967a834b",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "efa0d973ede4c76e6d179ee9ca3d4897d4479f096e6225e53c1eddae967a834b",
+            "text": "对付",
+            "words": [
+              {
+                "text": "对付",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "0894fc6a5106ecbac583b1ce1e3b4a9087783de4ea67707fcd122b287a7e1404": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-bc459502c84c76dcdf166e2e8e740945fe5bad13915bc4a1602eb06ea98b6cb8.mp3",
+          "sha256": "bc459502c84c76dcdf166e2e8e740945fe5bad13915bc4a1602eb06ea98b6cb8",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "bc459502c84c76dcdf166e2e8e740945fe5bad13915bc4a1602eb06ea98b6cb8",
+            "text": "银行",
+            "words": [
+              {
+                "text": "银行",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-246048c5d313247e843306aae5609ba2ed0e104062146b92ebb87104bafbe574.mp3",
+          "sha256": "246048c5d313247e843306aae5609ba2ed0e104062146b92ebb87104bafbe574",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "246048c5d313247e843306aae5609ba2ed0e104062146b92ebb87104bafbe574",
+            "text": "银行",
+            "words": [
+              {
+                "text": "银行",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "d46c96f1f3ab45ab33576d67f3787f7d91e49eb170d6d5be82f5470b78840e72": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0364ba1957f368001d8505c8fcf9647f22650851020acd5a7ff3b1184ff7ded0.mp3",
+          "sha256": "0364ba1957f368001d8505c8fcf9647f22650851020acd5a7ff3b1184ff7ded0",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "0364ba1957f368001d8505c8fcf9647f22650851020acd5a7ff3b1184ff7ded0",
+            "text": "项链",
+            "words": [
+              {
+                "text": "项链",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/963a79baa29b99bf9fe1ec2aadf84ec9c7748746196b9ba15e635b681d3eace0.mp3",
+          "sha256": "963a79baa29b99bf9fe1ec2aadf84ec9c7748746196b9ba15e635b681d3eace0",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "963a79baa29b99bf9fe1ec2aadf84ec9c7748746196b9ba15e635b681d3eace0",
+            "text": "项链",
+            "words": [
+              {
+                "text": "项链",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

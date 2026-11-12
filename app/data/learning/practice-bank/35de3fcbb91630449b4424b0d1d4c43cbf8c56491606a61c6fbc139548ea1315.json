@@ -1,0 +1,92 @@
+{
+  "id": "BANK-C-5496",
+  "targetId": "C-5496",
+  "steps": [
+    {
+      "id": "BANK-C-5496-C-5496",
+      "kind": "check",
+      "title": "Recall a familiar character",
+      "questions": [
+        {
+          "id": "BANK-C-5496-C-5496",
+          "kind": "text",
+          "prompt": "Recall the introduced character. Type the Hanzi; handwriting is practised separately.",
+          "label": "Retrieve the character",
+          "context": "First character of the familiar word meaning: coffee",
+          "contextLanguage": "en",
+          "resultDomain": "Typed character-form retrieval",
+          "rule": "word",
+          "accepted": [
+            {
+              "value": "咖"
+            }
+          ],
+          "model": {
+            "text": "咖啡",
+            "pinyin": "kāfēi",
+            "meaning": "coffee",
+            "audio": "b96634975300558bc525f725d8fffd301efb2d497330b1286f496fbaa18baa91",
+            "singleWord": true,
+            "focus": "咖"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b96634975300558bc525f725d8fffd301efb2d497330b1286f496fbaa18baa91": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-68a05bf5a075b5bbe4d823f50e20b51f6b7cc74b4d85265b6b5d1f4e5f793470.mp3",
+        "sha256": "68a05bf5a075b5bbe4d823f50e20b51f6b7cc74b4d85265b6b5d1f4e5f793470",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "68a05bf5a075b5bbe4d823f50e20b51f6b7cc74b4d85265b6b5d1f4e5f793470",
+          "text": "咖啡",
+          "words": [
+            {
+              "text": "咖啡",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-9e7f794bd37f9aa686014f87d40663702d36504092cd4774212c769b047b1ef5.mp3",
+        "sha256": "9e7f794bd37f9aa686014f87d40663702d36504092cd4774212c769b047b1ef5",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "9e7f794bd37f9aa686014f87d40663702d36504092cd4774212c769b047b1ef5",
+          "text": "咖啡",
+          "words": [
+            {
+              "text": "咖啡",
+              "start": 0.09,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "C-5496",
+      "facet_id": "typed-character-form-retrieval",
+      "part_id": "BANK-C-5496-C-5496",
+      "question_ids": [
+        "BANK-C-5496-C-5496"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U05-P01",
+    "stepId": "S-U05-characters-r4-33",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5561"
+    ],
+    "grammarLessonIds": []
+  }
+}

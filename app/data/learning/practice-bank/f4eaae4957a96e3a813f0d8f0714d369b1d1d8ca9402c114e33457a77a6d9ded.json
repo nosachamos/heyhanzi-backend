@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2200",
+  "targetId": "W2200",
+  "steps": [
+    {
+      "id": "BANK-W2200-W2200",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2200-W2200",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to attend; to participate",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "出席"
+            },
+            {
+              "value": "chūxí",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chu1xi2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "出席",
+            "pinyin": "chūxí",
+            "meaning": "to attend; to participate",
+            "singleWord": true,
+            "audio": "ab1a745df27333cc397f9efb4a0b6cc06ab4bde21d6d424b03341860c301edf6"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ab1a745df27333cc397f9efb4a0b6cc06ab4bde21d6d424b03341860c301edf6": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-c6dbcd5ab36b9d938683b5846155c393c0c35251ff27937d0703c7fc3816962a.mp3",
+        "sha256": "c6dbcd5ab36b9d938683b5846155c393c0c35251ff27937d0703c7fc3816962a",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "c6dbcd5ab36b9d938683b5846155c393c0c35251ff27937d0703c7fc3816962a",
+          "text": "出席",
+          "words": [
+            {
+              "text": "出席",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-50d5b44b099900c119c8a2a45753cff7f3a1c264c279aa220d5eeba0ce6cf329.mp3",
+        "sha256": "50d5b44b099900c119c8a2a45753cff7f3a1c264c279aa220d5eeba0ce6cf329",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "50d5b44b099900c119c8a2a45753cff7f3a1c264c279aa220d5eeba0ce6cf329",
+          "text": "出席",
+          "words": [
+            {
+              "text": "出席",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2200",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2200-W2200",
+      "question_ids": [
+        "BANK-W2200-W2200"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-40",
+    "stepId": "S-U5-40-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e2d"
+    ],
+    "grammarLessonIds": []
+  }
+}

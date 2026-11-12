@@ -1,0 +1,751 @@
+{
+  "id": "EX-CHAR-char-7248",
+  "revision": 2,
+  "unit": "U5-30-P01",
+  "stage": "ST-HSK5",
+  "after": "S-U5-30-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "版",
+  "sourceBlockId": "mandarin-simplified-v1-char-7248",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7248",
+        "text": "版",
+        "pinyin": "bǎn",
+        "meaning": "a register; block of printing",
+        "characters": [
+          {
+            "id": "C-7248",
+            "text": "版"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-0626c60b01b81e64cb54e44b",
+        "text": "组合",
+        "pinyin": "zǔhé",
+        "meaning": "to assemble; to combine; to compose; combination; association; set; compilation",
+        "characters": [
+          {
+            "id": "C-7EC4",
+            "text": "组"
+          },
+          {
+            "id": "C-5408",
+            "text": "合"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-415d194f841a85aa9d169e11",
+        "text": "听从",
+        "pinyin": "tīng cóng",
+        "meaning": "to listen and obey",
+        "characters": [
+          {
+            "id": "C-542C",
+            "text": "听"
+          },
+          {
+            "id": "C-4ECE",
+            "text": "从"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ca3a645a9566f3aff5225b5a",
+        "text": "柿子",
+        "pinyin": "shì zi",
+        "meaning": "persimmon",
+        "characters": [
+          {
+            "id": "C-67FF",
+            "text": "柿"
+          },
+          {
+            "id": "C-5B50",
+            "text": "子"
+          }
+        ]
+      },
+      {
+        "id": "W3635",
+        "text": "版本",
+        "pinyin": "bǎnběn",
+        "meaning": "version; edition",
+        "characters": [
+          {
+            "id": "C-7248",
+            "text": "版"
+          },
+          {
+            "id": "C-672C",
+            "text": "本"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "7f3d527b7005bece0ce1029648762d46d81c9648b51c5766f2a68a568715e16a",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7248",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "版",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7248-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3635",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "version; edition",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "版本"
+              },
+              {
+                "value": "bǎnběn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ban3ben3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "版本",
+              "pinyin": "bǎnběn",
+              "meaning": "version; edition",
+              "audio": "688269521294ad8014968d9c3fbc2974c6f17f6832141c19d7e80ece2155d5a6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7248-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7248",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "版",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-7248",
+                "label": "a register; block of printing",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-0626c60b01b81e64cb54e44b",
+                "label": "to assemble; to combine",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-415d194f841a85aa9d169e11",
+                "label": "to listen and obey",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7248-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "版",
+        "pinyin": "bǎn",
+        "meaning": "a register; block of printing",
+        "source": "/stroke-data/7248.json",
+        "reference": {
+          "character": "版",
+          "sha256": "ce0fd709617a61ca066dd4b5580fa4718eac68fdb26eab23901c51ec64129b69",
+          "medians": [
+            [
+              [
+                172,
+                661
+              ],
+              [
+                204,
+                635
+              ],
+              [
+                213,
+                616
+              ],
+              [
+                209,
+                478
+              ],
+              [
+                193,
+                316
+              ],
+              [
+                172,
+                236
+              ],
+              [
+                140,
+                156
+              ],
+              [
+                102,
+                84
+              ],
+              [
+                71,
+                42
+              ]
+            ],
+            [
+              [
+                350,
+                794
+              ],
+              [
+                388,
+                754
+              ],
+              [
+                372,
+                594
+              ],
+              [
+                365,
+                569
+              ],
+              [
+                353,
+                559
+              ]
+            ],
+            [
+              [
+                244,
+                489
+              ],
+              [
+                261,
+                504
+              ],
+              [
+                338,
+                526
+              ],
+              [
+                412,
+                536
+              ]
+            ],
+            [
+              [
+                225,
+                344
+              ],
+              [
+                240,
+                355
+              ],
+              [
+                323,
+                376
+              ],
+              [
+                342,
+                374
+              ],
+              [
+                365,
+                357
+              ],
+              [
+                342,
+                78
+              ],
+              [
+                353,
+                16
+              ]
+            ],
+            [
+              [
+                811,
+                729
+              ],
+              [
+                794,
+                735
+              ],
+              [
+                742,
+                734
+              ],
+              [
+                680,
+                689
+              ],
+              [
+                594,
+                644
+              ],
+              [
+                593,
+                635
+              ]
+            ],
+            [
+              [
+                511,
+                658
+              ],
+              [
+                535,
+                641
+              ],
+              [
+                550,
+                621
+              ],
+              [
+                548,
+                503
+              ],
+              [
+                532,
+                359
+              ],
+              [
+                501,
+                248
+              ],
+              [
+                470,
+                176
+              ],
+              [
+                429,
+                106
+              ],
+              [
+                403,
+                74
+              ]
+            ],
+            [
+              [
+                576,
+                444
+              ],
+              [
+                588,
+                453
+              ],
+              [
+                742,
+                494
+              ],
+              [
+                763,
+                487
+              ],
+              [
+                781,
+                467
+              ],
+              [
+                755,
+                339
+              ],
+              [
+                722,
+                258
+              ],
+              [
+                679,
+                191
+              ],
+              [
+                637,
+                153
+              ],
+              [
+                576,
+                119
+              ],
+              [
+                511,
+                95
+              ],
+              [
+                472,
+                88
+              ]
+            ],
+            [
+              [
+                566,
+                388
+              ],
+              [
+                609,
+                342
+              ],
+              [
+                670,
+                245
+              ],
+              [
+                724,
+                176
+              ],
+              [
+                791,
+                109
+              ],
+              [
+                826,
+                86
+              ],
+              [
+                958,
+                54
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7248-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-ca3a645a9566f3aff5225b5a",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "persimmon",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "柿子"
+              },
+              {
+                "value": "shì zi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shi4zi5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "柿子",
+              "pinyin": "shì zi",
+              "meaning": "persimmon",
+              "audio": "a925c03b84e9756027c83496f1553a3c30216f1f9f1c6f1d196aaefb4b32ac50",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7248-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7248",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "a register; block of printing",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "版"
+              },
+              {
+                "value": "bǎn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ban3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "版",
+              "pinyin": "bǎn",
+              "meaning": "a register; block of printing",
+              "audio": "19f1bbe76c07e4643ba2025ef1280ead80216a280f73bd1fc41c2649deb061b6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "19f1bbe76c07e4643ba2025ef1280ead80216a280f73bd1fc41c2649deb061b6"
+            ],
+            "transcript": [
+              {
+                "text": "版",
+                "pinyin": "bǎn",
+                "meaning": "a register; block of printing",
+                "audio": "19f1bbe76c07e4643ba2025ef1280ead80216a280f73bd1fc41c2649deb061b6",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7248",
+      "character": "版",
+      "lessonIds": [
+        "LESSON-C-7248"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7248-word",
+        "EX-CHAR-char-7248-recognize",
+        "EX-CHAR-char-7248-write",
+        "EX-CHAR-char-7248-familiar",
+        "EX-CHAR-char-7248-recall"
+      ]
+    },
+    "audio": {
+      "19f1bbe76c07e4643ba2025ef1280ead80216a280f73bd1fc41c2649deb061b6": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1ffa42b6935a1d1317ae6af00269f516f61cbd19da0bc56fec11bdfea2bf6d2f.mp3",
+          "sha256": "1ffa42b6935a1d1317ae6af00269f516f61cbd19da0bc56fec11bdfea2bf6d2f",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "1ffa42b6935a1d1317ae6af00269f516f61cbd19da0bc56fec11bdfea2bf6d2f",
+            "text": "版",
+            "words": [
+              {
+                "text": "版",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-df81f26b1e90d18d3529554bafa0b8f6514e7dfb5ebe68832997fd634e755b20.mp3",
+          "sha256": "df81f26b1e90d18d3529554bafa0b8f6514e7dfb5ebe68832997fd634e755b20",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "df81f26b1e90d18d3529554bafa0b8f6514e7dfb5ebe68832997fd634e755b20",
+            "text": "版",
+            "words": [
+              {
+                "text": "版",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "6403dd6afc0840d3a6019107c4e802a73231237ba23876f462e961e4c5073806": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d3cf72a9d011ea30e78d7e46818e82bf2ec270d97492b3b7bf1d8254871516e8.mp3",
+          "sha256": "d3cf72a9d011ea30e78d7e46818e82bf2ec270d97492b3b7bf1d8254871516e8",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "d3cf72a9d011ea30e78d7e46818e82bf2ec270d97492b3b7bf1d8254871516e8",
+            "text": "组合",
+            "words": [
+              {
+                "text": "组合",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a4e9440b40452a5cecb7756908bcf2c17f46d09ae176582f05b7a7c7cc17962c.mp3",
+          "sha256": "a4e9440b40452a5cecb7756908bcf2c17f46d09ae176582f05b7a7c7cc17962c",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "a4e9440b40452a5cecb7756908bcf2c17f46d09ae176582f05b7a7c7cc17962c",
+            "text": "组合",
+            "words": [
+              {
+                "text": "组合",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "9fc71ee3678e3ee8a439af5cb0985367d94b182498b600b7b3b57c4a5113be7a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d6e240584d90751c4116a0e32d0a0dec78e1297acb5382eb278657c19f5483ff.mp3",
+          "sha256": "d6e240584d90751c4116a0e32d0a0dec78e1297acb5382eb278657c19f5483ff",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "d6e240584d90751c4116a0e32d0a0dec78e1297acb5382eb278657c19f5483ff",
+            "text": "听从",
+            "words": [
+              {
+                "text": "听从",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5b2e912560506627356938aede766006f2e0267c0f581ba061cfcd9204c1fdfb.mp3",
+          "sha256": "5b2e912560506627356938aede766006f2e0267c0f581ba061cfcd9204c1fdfb",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "5b2e912560506627356938aede766006f2e0267c0f581ba061cfcd9204c1fdfb",
+            "text": "听从",
+            "words": [
+              {
+                "text": "听从",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "a925c03b84e9756027c83496f1553a3c30216f1f9f1c6f1d196aaefb4b32ac50": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/171c92160ce8646539823bfc3c66351a3b45a88900a226331112c3b518862c45.mp3",
+          "sha256": "171c92160ce8646539823bfc3c66351a3b45a88900a226331112c3b518862c45",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "171c92160ce8646539823bfc3c66351a3b45a88900a226331112c3b518862c45",
+            "text": "柿子",
+            "words": [
+              {
+                "text": "柿子",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/77aab90d96303ba9c84788fb65c770629dcc0cbec02a16f59eee070f7997f342.mp3",
+          "sha256": "77aab90d96303ba9c84788fb65c770629dcc0cbec02a16f59eee070f7997f342",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "77aab90d96303ba9c84788fb65c770629dcc0cbec02a16f59eee070f7997f342",
+            "text": "柿子",
+            "words": [
+              {
+                "text": "柿子",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "688269521294ad8014968d9c3fbc2974c6f17f6832141c19d7e80ece2155d5a6": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-8ca007e60d3844936173dbd0d0f6ec0758e5227877548c1117a948fcf4b9e606.mp3",
+          "sha256": "8ca007e60d3844936173dbd0d0f6ec0758e5227877548c1117a948fcf4b9e606",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "8ca007e60d3844936173dbd0d0f6ec0758e5227877548c1117a948fcf4b9e606",
+            "text": "版本",
+            "words": [
+              {
+                "text": "版本",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c80fda4155a6e3f77927d78fbfc1840b7442eefda0775b47950b8fbfe9fb8582.mp3",
+          "sha256": "c80fda4155a6e3f77927d78fbfc1840b7442eefda0775b47950b8fbfe9fb8582",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "c80fda4155a6e3f77927d78fbfc1840b7442eefda0775b47950b8fbfe9fb8582",
+            "text": "版本",
+            "words": [
+              {
+                "text": "版本",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

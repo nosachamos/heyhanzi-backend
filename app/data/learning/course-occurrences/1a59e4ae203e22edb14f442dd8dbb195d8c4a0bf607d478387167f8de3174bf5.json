@@ -1,0 +1,729 @@
+{
+  "id": "EX-CHAR-warmup-kan",
+  "revision": 2,
+  "unit": "WU04",
+  "stage": "ST-WARMUP",
+  "after": "S-WU04-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "看",
+  "sourceBlockId": "mandarin-simplified-v1-warmup-kan",
+  "sourceLevelId": "warmup",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-warmup-kan",
+        "text": "看",
+        "pinyin": "kàn",
+        "meaning": "to look; to read",
+        "characters": [
+          {
+            "id": "C-770B",
+            "text": "看"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-21dabaf09fddc9b26c53f0eb",
+        "text": "好在",
+        "pinyin": "hǎo zài",
+        "meaning": "luckily",
+        "characters": [
+          {
+            "id": "C-597D",
+            "text": "好"
+          },
+          {
+            "id": "C-5728",
+            "text": "在"
+          }
+        ]
+      },
+      {
+        "id": "W0005",
+        "text": "人",
+        "pinyin": "rén",
+        "meaning": "person; people",
+        "characters": [
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      },
+      {
+        "id": "W0033",
+        "text": "有",
+        "pinyin": "yǒu",
+        "meaning": "have; there is/are",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          }
+        ]
+      },
+      {
+        "id": "W4384",
+        "text": "看好",
+        "pinyin": "kànhǎo",
+        "meaning": "to regard as having good prospects",
+        "characters": [
+          {
+            "id": "C-770B",
+            "text": "看"
+          },
+          {
+            "id": "C-597D",
+            "text": "好"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "a2b8df00ac9d5195a8f3b54e6a741eae43244d012cda1734c893495272d93e61",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-warmup-kan",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "看",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-warmup-kan-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W4384",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to regard as having good prospects",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "看好"
+              },
+              {
+                "value": "kànhǎo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "kan4hao3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "看好",
+              "pinyin": "kànhǎo",
+              "meaning": "to regard as having good prospects",
+              "audio": "cb1720c35f708c8325ce62f6068c5b0cd0189f4fa376a0807f5c72961634a29f",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-warmup-kan-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-warmup-kan",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "看",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-21dabaf09fddc9b26c53f0eb",
+                "label": "luckily",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0033",
+                "label": "have; there is/are",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-warmup-kan",
+                "label": "to look; to read",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-warmup-kan-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "看",
+        "pinyin": "kàn",
+        "meaning": "to look; to read",
+        "source": "/stroke-data/770b.json",
+        "reference": {
+          "character": "看",
+          "sha256": "ccc410b744d693bfcabe779c6cb29db0c49f577d42e2fb2ce121f6450fafdee0",
+          "medians": [
+            [
+              [
+                670,
+                784
+              ],
+              [
+                605,
+                805
+              ],
+              [
+                499,
+                761
+              ],
+              [
+                389,
+                730
+              ],
+              [
+                293,
+                713
+              ]
+            ],
+            [
+              [
+                309,
+                602
+              ],
+              [
+                334,
+                595
+              ],
+              [
+                388,
+                595
+              ],
+              [
+                646,
+                648
+              ],
+              [
+                691,
+                648
+              ]
+            ],
+            [
+              [
+                115,
+                437
+              ],
+              [
+                167,
+                429
+              ],
+              [
+                515,
+                490
+              ],
+              [
+                793,
+                521
+              ],
+              [
+                851,
+                515
+              ],
+              [
+                888,
+                504
+              ]
+            ],
+            [
+              [
+                451,
+                723
+              ],
+              [
+                483,
+                697
+              ],
+              [
+                481,
+                687
+              ],
+              [
+                410,
+                484
+              ],
+              [
+                349,
+                355
+              ],
+              [
+                277,
+                243
+              ],
+              [
+                231,
+                188
+              ],
+              [
+                148,
+                106
+              ],
+              [
+                80,
+                56
+              ]
+            ],
+            [
+              [
+                395,
+                374
+              ],
+              [
+                406,
+                327
+              ],
+              [
+                409,
+                264
+              ],
+              [
+                407,
+                160
+              ],
+              [
+                393,
+                37
+              ],
+              [
+                396,
+                -4
+              ]
+            ],
+            [
+              [
+                428,
+                367
+              ],
+              [
+                437,
+                359
+              ],
+              [
+                456,
+                358
+              ],
+              [
+                629,
+                399
+              ],
+              [
+                655,
+                386
+              ],
+              [
+                673,
+                367
+              ],
+              [
+                687,
+                67
+              ],
+              [
+                675,
+                31
+              ],
+              [
+                613,
+                43
+              ]
+            ],
+            [
+              [
+                438,
+                235
+              ],
+              [
+                448,
+                245
+              ],
+              [
+                523,
+                262
+              ],
+              [
+                556,
+                267
+              ],
+              [
+                591,
+                262
+              ]
+            ],
+            [
+              [
+                434,
+                133
+              ],
+              [
+                447,
+                144
+              ],
+              [
+                527,
+                159
+              ],
+              [
+                573,
+                165
+              ],
+              [
+                595,
+                158
+              ]
+            ],
+            [
+              [
+                426,
+                31
+              ],
+              [
+                440,
+                45
+              ],
+              [
+                477,
+                52
+              ],
+              [
+                584,
+                67
+              ],
+              [
+                632,
+                64
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-warmup-kan-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0005",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "person; people",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "人"
+              },
+              {
+                "value": "rén",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ren2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "人",
+              "pinyin": "rén",
+              "meaning": "person; people",
+              "audio": "8fe6eb551d60df945dbf1dcd0b8671d30b40f7768b980264c54d7f068c10fca9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-warmup-kan-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-warmup-kan",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to look; to read",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "看"
+              },
+              {
+                "value": "kàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "kan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "看",
+              "pinyin": "kàn",
+              "meaning": "to look; to read",
+              "audio": "c4c4280a2d3b1fa2b6482c933af28674e18683a837a1aaf775aa006a38cd3058",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "c4c4280a2d3b1fa2b6482c933af28674e18683a837a1aaf775aa006a38cd3058"
+            ],
+            "transcript": [
+              {
+                "text": "看",
+                "pinyin": "kàn",
+                "meaning": "to look; to read",
+                "audio": "c4c4280a2d3b1fa2b6482c933af28674e18683a837a1aaf775aa006a38cd3058",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-770B",
+      "character": "看",
+      "lessonIds": [
+        "LESSON-C-770B"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-warmup-kan-word",
+        "EX-CHAR-warmup-kan-recognize",
+        "EX-CHAR-warmup-kan-write",
+        "EX-CHAR-warmup-kan-familiar",
+        "EX-CHAR-warmup-kan-recall"
+      ]
+    },
+    "audio": {
+      "c4c4280a2d3b1fa2b6482c933af28674e18683a837a1aaf775aa006a38cd3058": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f1f558d0015a95a8234a96a84dd6bb98d16cef4bee32f1b49e1ae5e7136eb4fb.mp3",
+          "sha256": "f1f558d0015a95a8234a96a84dd6bb98d16cef4bee32f1b49e1ae5e7136eb4fb",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "f1f558d0015a95a8234a96a84dd6bb98d16cef4bee32f1b49e1ae5e7136eb4fb",
+            "text": "看",
+            "words": [
+              {
+                "text": "看",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-453f4366ccc44cadd7978443f660f776f12d82cbfbf8c74791a4f3e8b0c54585.mp3",
+          "sha256": "453f4366ccc44cadd7978443f660f776f12d82cbfbf8c74791a4f3e8b0c54585",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "453f4366ccc44cadd7978443f660f776f12d82cbfbf8c74791a4f3e8b0c54585",
+            "text": "看",
+            "words": [
+              {
+                "text": "看",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "99c292830d9ef4b07d980fe5ea13243f30d6192cc5ec9d05c5af3c2a9c8291d0": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/28e0910e361644cf4eacc91077546bbbbde7ae97073a043ada2dd35aad81b265.mp3",
+          "sha256": "28e0910e361644cf4eacc91077546bbbbde7ae97073a043ada2dd35aad81b265",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "28e0910e361644cf4eacc91077546bbbbde7ae97073a043ada2dd35aad81b265",
+            "text": "好在",
+            "words": [
+              {
+                "text": "好在",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/67c3cf647662aff0288c05a58444569455da1920d77a4e7e55c5e2f61a73d957.mp3",
+          "sha256": "67c3cf647662aff0288c05a58444569455da1920d77a4e7e55c5e2f61a73d957",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "67c3cf647662aff0288c05a58444569455da1920d77a4e7e55c5e2f61a73d957",
+            "text": "好在",
+            "words": [
+              {
+                "text": "好在",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "8fe6eb551d60df945dbf1dcd0b8671d30b40f7768b980264c54d7f068c10fca9": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-617b3e01fa12f00c1ceb8dedf6ed29df15f1380fb6d62a83d8f0a915d46d77d0.mp3",
+          "sha256": "617b3e01fa12f00c1ceb8dedf6ed29df15f1380fb6d62a83d8f0a915d46d77d0",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "617b3e01fa12f00c1ceb8dedf6ed29df15f1380fb6d62a83d8f0a915d46d77d0",
+            "text": "人",
+            "words": [
+              {
+                "text": "人",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ea2ad60c2235ed572c045a64b0de12eb0d67a12f248984732c5c5614b8ccf8db.mp3",
+          "sha256": "ea2ad60c2235ed572c045a64b0de12eb0d67a12f248984732c5c5614b8ccf8db",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "ea2ad60c2235ed572c045a64b0de12eb0d67a12f248984732c5c5614b8ccf8db",
+            "text": "人",
+            "words": [
+              {
+                "text": "人",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "e05bdf8932363c5c3cef391f352fc9d20839a80952e08cb92fff972633062a8b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-006758fa30a194d8f67506ae5e63dff8d045cfc05ad0d17642833d19d7dc39fd.mp3",
+          "sha256": "006758fa30a194d8f67506ae5e63dff8d045cfc05ad0d17642833d19d7dc39fd",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "006758fa30a194d8f67506ae5e63dff8d045cfc05ad0d17642833d19d7dc39fd",
+            "text": "有",
+            "words": [
+              {
+                "text": "有",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-553fab5233f8379d701937dad0b7be93570ae6dbbc092eb9e2a1596c1a06ea6c.mp3",
+          "sha256": "553fab5233f8379d701937dad0b7be93570ae6dbbc092eb9e2a1596c1a06ea6c",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "553fab5233f8379d701937dad0b7be93570ae6dbbc092eb9e2a1596c1a06ea6c",
+            "text": "有",
+            "words": [
+              {
+                "text": "有",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "cb1720c35f708c8325ce62f6068c5b0cd0189f4fa376a0807f5c72961634a29f": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9bbf74f5dd80a427c45b1ca5d5876aff477bec28d5c70ef73915df3deae0ea4d.mp3",
+          "sha256": "9bbf74f5dd80a427c45b1ca5d5876aff477bec28d5c70ef73915df3deae0ea4d",
+          "byteLength": 17901,
+          "readAlong": {
+            "audioSha256": "9bbf74f5dd80a427c45b1ca5d5876aff477bec28d5c70ef73915df3deae0ea4d",
+            "text": "看好",
+            "words": [
+              {
+                "text": "看好",
+                "start": 0.09,
+                "end": 0.8099999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/70afc1c3e346507986227befcdb52c162b89db4958f2e2b45740a6eb39b7c1f3.mp3",
+          "sha256": "70afc1c3e346507986227befcdb52c162b89db4958f2e2b45740a6eb39b7c1f3",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "70afc1c3e346507986227befcdb52c162b89db4958f2e2b45740a6eb39b7c1f3",
+            "text": "看好",
+            "words": [
+              {
+                "text": "看好",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

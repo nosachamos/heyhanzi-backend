@@ -1,0 +1,621 @@
+{
+  "id": "EX-CHAR-char-53f6",
+  "revision": 2,
+  "unit": "U4-08",
+  "stage": "ST-HSK4",
+  "after": "S-U4-08-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "叶",
+  "sourceBlockId": "mandarin-simplified-v1-char-53f6",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-53f6",
+        "text": "叶",
+        "pinyin": "yè",
+        "meaning": "leaf",
+        "characters": [
+          {
+            "id": "C-53F6",
+            "text": "叶"
+          }
+        ]
+      },
+      {
+        "id": "W0388",
+        "text": "电影院",
+        "pinyin": "diànyǐngyuàn",
+        "meaning": "cinema; movie theater",
+        "characters": [
+          {
+            "id": "C-7535",
+            "text": "电"
+          },
+          {
+            "id": "C-5F71",
+            "text": "影"
+          },
+          {
+            "id": "C-9662",
+            "text": "院"
+          }
+        ]
+      },
+      {
+        "id": "W0776",
+        "text": "过节",
+        "pinyin": "guòjié",
+        "meaning": "to celebrate a festival",
+        "characters": [
+          {
+            "id": "C-8FC7",
+            "text": "过"
+          },
+          {
+            "id": "C-8282",
+            "text": "节"
+          }
+        ]
+      },
+      {
+        "id": "W1124",
+        "text": "茶叶",
+        "pinyin": "cháyè",
+        "meaning": "tea; tea leaves",
+        "characters": [
+          {
+            "id": "C-8336",
+            "text": "茶"
+          },
+          {
+            "id": "C-53F6",
+            "text": "叶"
+          }
+        ]
+      },
+      {
+        "id": "W3778",
+        "text": "成交",
+        "pinyin": "chéngjiāo",
+        "meaning": "to complete a contract; to reach a deal",
+        "characters": [
+          {
+            "id": "C-6210",
+            "text": "成"
+          },
+          {
+            "id": "C-4EA4",
+            "text": "交"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "243dcb25dfaba6eebe6163846d5ea99423d38097550dfc064665da641421cade",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-53f6",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "叶",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-53f6-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1124",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "tea; tea leaves",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "茶叶"
+              },
+              {
+                "value": "cháyè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "cha2ye4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "茶叶",
+              "pinyin": "cháyè",
+              "meaning": "tea; tea leaves",
+              "audio": "1eb106704dec57de68bfbdb9306cdb46579258f29b0037404bf27565d2ef1ca0",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-53f6-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-53f6",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "叶",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-53f6",
+                "label": "leaf",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0388",
+                "label": "cinema; movie theater",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W3778",
+                "label": "to complete a contract; to reach a deal",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-53f6-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "叶",
+        "pinyin": "yè",
+        "meaning": "leaf",
+        "source": "/stroke-data/53f6.json",
+        "reference": {
+          "character": "叶",
+          "sha256": "3e9621e87cfa86373d6de0fb6bba80edd85984a4aebfd607b7888cf732e69a55",
+          "medians": [
+            [
+              [
+                105,
+                556
+              ],
+              [
+                134,
+                532
+              ],
+              [
+                142,
+                518
+              ],
+              [
+                184,
+                280
+              ]
+            ],
+            [
+              [
+                172,
+                533
+              ],
+              [
+                190,
+                548
+              ],
+              [
+                286,
+                578
+              ],
+              [
+                309,
+                579
+              ],
+              [
+                328,
+                566
+              ],
+              [
+                338,
+                555
+              ],
+              [
+                315,
+                434
+              ],
+              [
+                290,
+                414
+              ]
+            ],
+            [
+              [
+                200,
+                344
+              ],
+              [
+                214,
+                362
+              ],
+              [
+                267,
+                379
+              ],
+              [
+                333,
+                391
+              ],
+              [
+                362,
+                387
+              ]
+            ],
+            [
+              [
+                387,
+                434
+              ],
+              [
+                441,
+                427
+              ],
+              [
+                604,
+                458
+              ],
+              [
+                840,
+                492
+              ],
+              [
+                935,
+                475
+              ]
+            ],
+            [
+              [
+                580,
+                811
+              ],
+              [
+                608,
+                803
+              ],
+              [
+                646,
+                768
+              ],
+              [
+                637,
+                563
+              ],
+              [
+                635,
+                -60
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-53f6-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0776",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to celebrate a festival",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "过节"
+              },
+              {
+                "value": "guòjié",
+                "mode": "pinyin"
+              },
+              {
+                "value": "guo4jie2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "过节",
+              "pinyin": "guòjié",
+              "meaning": "to celebrate a festival",
+              "audio": "80389f7509a51176eab4a43eed12fc3cbd84f9a8f3151570f08b446ce8fbff43",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-53f6-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-53f6",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "leaf",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "叶"
+              },
+              {
+                "value": "yè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ye4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "叶",
+              "pinyin": "yè",
+              "meaning": "leaf",
+              "audio": "f80126f7adbf3336ed1ab934a5828830f72cdf0aa3931433d0c298176e70859c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "f80126f7adbf3336ed1ab934a5828830f72cdf0aa3931433d0c298176e70859c"
+            ],
+            "transcript": [
+              {
+                "text": "叶",
+                "pinyin": "yè",
+                "meaning": "leaf",
+                "audio": "f80126f7adbf3336ed1ab934a5828830f72cdf0aa3931433d0c298176e70859c",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-53F6",
+      "character": "叶",
+      "lessonIds": [
+        "LESSON-C-53F6"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-53f6-word",
+        "EX-CHAR-char-53f6-recognize",
+        "EX-CHAR-char-53f6-write",
+        "EX-CHAR-char-53f6-familiar",
+        "EX-CHAR-char-53f6-recall"
+      ]
+    },
+    "audio": {
+      "f80126f7adbf3336ed1ab934a5828830f72cdf0aa3931433d0c298176e70859c": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-70e9194bae05feb29d1597dfa90baff5d9bec7e3f434383a0531057db5baa564.mp3",
+          "sha256": "70e9194bae05feb29d1597dfa90baff5d9bec7e3f434383a0531057db5baa564",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "70e9194bae05feb29d1597dfa90baff5d9bec7e3f434383a0531057db5baa564",
+            "text": "叶",
+            "words": [
+              {
+                "text": "叶",
+                "start": 0.22,
+                "end": 0.32
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-45e23b5301758669fe841301167f032f49fb0c46b19b5384c43e846af2bfddb2.mp3",
+          "sha256": "45e23b5301758669fe841301167f032f49fb0c46b19b5384c43e846af2bfddb2",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "45e23b5301758669fe841301167f032f49fb0c46b19b5384c43e846af2bfddb2",
+            "text": "叶",
+            "words": [
+              {
+                "text": "叶",
+                "start": 0.22,
+                "end": 0.3
+              }
+            ]
+          }
+        }
+      },
+      "d876b8ad31fdd5b23fad80f226159d2b50ecce509c615d88c923ea6056b9a8fa": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8c07e8bf56b427836dba3068b070e9053add1c9259748d02ada87f80479f68bb.mp3",
+          "sha256": "8c07e8bf56b427836dba3068b070e9053add1c9259748d02ada87f80479f68bb",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "8c07e8bf56b427836dba3068b070e9053add1c9259748d02ada87f80479f68bb",
+            "text": "电影院",
+            "words": [
+              {
+                "text": "电影院",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b143403eddee7b5041560178cd994caaa0143f95b94fc6f9b37d1bb1380f0fca.mp3",
+          "sha256": "b143403eddee7b5041560178cd994caaa0143f95b94fc6f9b37d1bb1380f0fca",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "b143403eddee7b5041560178cd994caaa0143f95b94fc6f9b37d1bb1380f0fca",
+            "text": "电影院",
+            "words": [
+              {
+                "text": "电影院",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "80389f7509a51176eab4a43eed12fc3cbd84f9a8f3151570f08b446ce8fbff43": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-523e4ac2405c678ff03790074a2c021d87985a64903fd3a55350f4761be280b8.mp3",
+          "sha256": "523e4ac2405c678ff03790074a2c021d87985a64903fd3a55350f4761be280b8",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "523e4ac2405c678ff03790074a2c021d87985a64903fd3a55350f4761be280b8",
+            "text": "过节",
+            "words": [
+              {
+                "text": "过节",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b6c0fe3d18a93191a9fa7d14a15ea4f0b0645a4dadadf8e35fef8d3485ab2de9.mp3",
+          "sha256": "b6c0fe3d18a93191a9fa7d14a15ea4f0b0645a4dadadf8e35fef8d3485ab2de9",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "b6c0fe3d18a93191a9fa7d14a15ea4f0b0645a4dadadf8e35fef8d3485ab2de9",
+            "text": "过节",
+            "words": [
+              {
+                "text": "过节",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "1eb106704dec57de68bfbdb9306cdb46579258f29b0037404bf27565d2ef1ca0": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-844a9bbf1826b372f66f75977ac44b381c745234868b72a60f49c1314f05759c.mp3",
+          "sha256": "844a9bbf1826b372f66f75977ac44b381c745234868b72a60f49c1314f05759c",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "844a9bbf1826b372f66f75977ac44b381c745234868b72a60f49c1314f05759c",
+            "text": "茶叶",
+            "words": [
+              {
+                "text": "茶叶",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c39303bb588e8df5dd64dffcd99b79085422ffdc4c572e32bc285b9ce1c907b2.mp3",
+          "sha256": "c39303bb588e8df5dd64dffcd99b79085422ffdc4c572e32bc285b9ce1c907b2",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "c39303bb588e8df5dd64dffcd99b79085422ffdc4c572e32bc285b9ce1c907b2",
+            "text": "茶叶",
+            "words": [
+              {
+                "text": "茶叶",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "3cafcf5663fc4da1593a705a4d3b398fb715a63b90fcffd05c668474d2623259": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f507859c79654dcb64061395de92f32cdd35348c3da504ee19a06b15f58299db.mp3",
+          "sha256": "f507859c79654dcb64061395de92f32cdd35348c3da504ee19a06b15f58299db",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "f507859c79654dcb64061395de92f32cdd35348c3da504ee19a06b15f58299db",
+            "text": "成交",
+            "words": [
+              {
+                "text": "成交",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1ba67d72ed2de0a7c6989f729eb66aa0e145ff8e0308b5b7175fb5e47d741132.mp3",
+          "sha256": "1ba67d72ed2de0a7c6989f729eb66aa0e145ff8e0308b5b7175fb5e47d741132",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "1ba67d72ed2de0a7c6989f729eb66aa0e145ff8e0308b5b7175fb5e47d741132",
+            "text": "成交",
+            "words": [
+              {
+                "text": "成交",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

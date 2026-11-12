@@ -1,0 +1,789 @@
+{
+  "id": "EX-CHAR-char-773c",
+  "revision": 2,
+  "unit": "U17-P01",
+  "stage": "ST-HSK2",
+  "after": "S-U17-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "眼",
+  "sourceBlockId": "mandarin-simplified-v1-char-773c",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-773c",
+        "text": "眼",
+        "pinyin": "yǎn",
+        "meaning": "eye; a look; a glance",
+        "characters": [
+          {
+            "id": "C-773C",
+            "text": "眼"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-1f951e12b2fbc751f77921bf",
+        "text": "看到",
+        "pinyin": "kàn dào",
+        "meaning": "to see; to notice",
+        "characters": [
+          {
+            "id": "C-770B",
+            "text": "看"
+          },
+          {
+            "id": "C-5230",
+            "text": "到"
+          }
+        ]
+      },
+      {
+        "id": "W0397",
+        "text": "非常",
+        "pinyin": "fēicháng",
+        "meaning": "very; extremely",
+        "characters": [
+          {
+            "id": "C-975E",
+            "text": "非"
+          },
+          {
+            "id": "C-5E38",
+            "text": "常"
+          }
+        ]
+      },
+      {
+        "id": "W1100",
+        "text": "不便",
+        "pinyin": "bùbiàn",
+        "meaning": "inconvenient; inappropriate",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-4FBF",
+            "text": "便"
+          }
+        ]
+      },
+      {
+        "id": "W1889",
+        "text": "眼前",
+        "pinyin": "yǎnqián",
+        "meaning": "before one's eyes; now",
+        "characters": [
+          {
+            "id": "C-773C",
+            "text": "眼"
+          },
+          {
+            "id": "C-524D",
+            "text": "前"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "420139b5a3a5fac7d7b3f22344e9f1259596774f29a76586d1a0c9917ea26480",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-773c",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "眼",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-773c-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1889",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "before one's eyes; now",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "眼前"
+              },
+              {
+                "value": "yǎnqián",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yan3qian2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "眼前",
+              "pinyin": "yǎnqián",
+              "meaning": "before one's eyes; now",
+              "audio": "6ef55e12cc44ef9e57df73c09b8ab71b74105f61f1dbbd65a70e46ff86bdc350",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-773c-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-773c",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "眼",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1100",
+                "label": "inconvenient; inappropriate",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-773c",
+                "label": "eye; a look",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0397",
+                "label": "very; extremely",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-773c-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "眼",
+        "pinyin": "yǎn",
+        "meaning": "eye; a look",
+        "source": "/stroke-data/773c.json",
+        "reference": {
+          "character": "眼",
+          "sha256": "6dd3ebd6825d788268a8fe0fc1bc2479df7eb371973903bf969f352ef7946c3b",
+          "medians": [
+            [
+              [
+                135,
+                729
+              ],
+              [
+                160,
+                703
+              ],
+              [
+                167,
+                683
+              ],
+              [
+                173,
+                581
+              ],
+              [
+                168,
+                355
+              ],
+              [
+                155,
+                220
+              ],
+              [
+                160,
+                153
+              ]
+            ],
+            [
+              [
+                189,
+                715
+              ],
+              [
+                210,
+                711
+              ],
+              [
+                294,
+                740
+              ],
+              [
+                325,
+                731
+              ],
+              [
+                342,
+                716
+              ],
+              [
+                337,
+                534
+              ],
+              [
+                341,
+                255
+              ],
+              [
+                330,
+                203
+              ],
+              [
+                332,
+                158
+              ]
+            ],
+            [
+              [
+                190,
+                522
+              ],
+              [
+                228,
+                542
+              ],
+              [
+                285,
+                543
+              ]
+            ],
+            [
+              [
+                188,
+                373
+              ],
+              [
+                204,
+                387
+              ],
+              [
+                228,
+                394
+              ],
+              [
+                284,
+                395
+              ]
+            ],
+            [
+              [
+                191,
+                197
+              ],
+              [
+                200,
+                209
+              ],
+              [
+                276,
+                218
+              ],
+              [
+                293,
+                227
+              ]
+            ],
+            [
+              [
+                524,
+                743
+              ],
+              [
+                542,
+                737
+              ],
+              [
+                564,
+                740
+              ],
+              [
+                696,
+                772
+              ],
+              [
+                716,
+                769
+              ],
+              [
+                733,
+                753
+              ],
+              [
+                743,
+                738
+              ],
+              [
+                722,
+                640
+              ],
+              [
+                713,
+                558
+              ],
+              [
+                698,
+                520
+              ],
+              [
+                684,
+                518
+              ]
+            ],
+            [
+              [
+                523,
+                607
+              ],
+              [
+                535,
+                620
+              ],
+              [
+                570,
+                630
+              ],
+              [
+                615,
+                639
+              ],
+              [
+                645,
+                635
+              ]
+            ],
+            [
+              [
+                528,
+                507
+              ],
+              [
+                556,
+                507
+              ],
+              [
+                642,
+                528
+              ],
+              [
+                655,
+                528
+              ],
+              [
+                662,
+                520
+              ]
+            ],
+            [
+              [
+                450,
+                764
+              ],
+              [
+                489,
+                725
+              ],
+              [
+                498,
+                638
+              ],
+              [
+                503,
+                481
+              ],
+              [
+                486,
+                128
+              ],
+              [
+                492,
+                101
+              ],
+              [
+                541,
+                118
+              ],
+              [
+                650,
+                201
+              ]
+            ],
+            [
+              [
+                774,
+                481
+              ],
+              [
+                790,
+                447
+              ],
+              [
+                686,
+                355
+              ],
+              [
+                678,
+                357
+              ]
+            ],
+            [
+              [
+                526,
+                507
+              ],
+              [
+                535,
+                468
+              ],
+              [
+                548,
+                451
+              ],
+              [
+                706,
+                281
+              ],
+              [
+                793,
+                205
+              ],
+              [
+                837,
+                187
+              ],
+              [
+                992,
+                164
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-773c-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-1f951e12b2fbc751f77921bf",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to see; to notice",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "看到"
+              },
+              {
+                "value": "kàn dào",
+                "mode": "pinyin"
+              },
+              {
+                "value": "kan4dao4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "看到",
+              "pinyin": "kàn dào",
+              "meaning": "to see; to notice",
+              "audio": "11483f61e58128e94b64832879e73d2cb0ddd651f8947f88bb43c548132a1ac1",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-773c-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-773c",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "eye; a look",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "眼"
+              },
+              {
+                "value": "yǎn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yan3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "眼",
+              "pinyin": "yǎn",
+              "meaning": "eye; a look",
+              "audio": "9e9ff044c08a0752c76e91a91f9ecb302d1dab6368040484109e4502754a0037",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "9e9ff044c08a0752c76e91a91f9ecb302d1dab6368040484109e4502754a0037"
+            ],
+            "transcript": [
+              {
+                "text": "眼",
+                "pinyin": "yǎn",
+                "meaning": "eye; a look",
+                "audio": "9e9ff044c08a0752c76e91a91f9ecb302d1dab6368040484109e4502754a0037",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-773C",
+      "character": "眼",
+      "lessonIds": [
+        "LESSON-C-773C"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-773c-word",
+        "EX-CHAR-char-773c-recognize",
+        "EX-CHAR-char-773c-write",
+        "EX-CHAR-char-773c-familiar",
+        "EX-CHAR-char-773c-recall"
+      ]
+    },
+    "audio": {
+      "9e9ff044c08a0752c76e91a91f9ecb302d1dab6368040484109e4502754a0037": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-07ffd068f5ffb4e6d64a09f9fd4beadbe98636620d5bd4f030dab6c950ac5008.mp3",
+          "sha256": "07ffd068f5ffb4e6d64a09f9fd4beadbe98636620d5bd4f030dab6c950ac5008",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "07ffd068f5ffb4e6d64a09f9fd4beadbe98636620d5bd4f030dab6c950ac5008",
+            "text": "眼",
+            "words": [
+              {
+                "text": "眼",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-9106c1e33d6f2e4a2a3c0dc9b4aaf6d8cb981efebe46d49046a6c7157b240fbb.mp3",
+          "sha256": "9106c1e33d6f2e4a2a3c0dc9b4aaf6d8cb981efebe46d49046a6c7157b240fbb",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "9106c1e33d6f2e4a2a3c0dc9b4aaf6d8cb981efebe46d49046a6c7157b240fbb",
+            "text": "眼",
+            "words": [
+              {
+                "text": "眼",
+                "start": 0.2,
+                "end": 0.28
+              }
+            ]
+          }
+        }
+      },
+      "11483f61e58128e94b64832879e73d2cb0ddd651f8947f88bb43c548132a1ac1": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-252661d242d8277ee297ae0c41a8cca1931185c63fe7184f7b35a07e50157758.mp3",
+          "sha256": "252661d242d8277ee297ae0c41a8cca1931185c63fe7184f7b35a07e50157758",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "252661d242d8277ee297ae0c41a8cca1931185c63fe7184f7b35a07e50157758",
+            "text": "看到",
+            "words": [
+              {
+                "text": "看到",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-89377298aca5592090e2f1eaee35a4909f91195925896b8e19985e2b450fa5d5.mp3",
+          "sha256": "89377298aca5592090e2f1eaee35a4909f91195925896b8e19985e2b450fa5d5",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "89377298aca5592090e2f1eaee35a4909f91195925896b8e19985e2b450fa5d5",
+            "text": "看到",
+            "words": [
+              {
+                "text": "看到",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "8c93ef3b4c91b16729e51f6aee7aec61c5ae1c5ebda5306a664a17d71b63a6b5": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-8f819bcebe502e492dd543eb62c03c9cce093a079c479d9f902295346b8dd7ea.mp3",
+          "sha256": "8f819bcebe502e492dd543eb62c03c9cce093a079c479d9f902295346b8dd7ea",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "8f819bcebe502e492dd543eb62c03c9cce093a079c479d9f902295346b8dd7ea",
+            "text": "非常",
+            "words": [
+              {
+                "text": "非常",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-48fe7247c6be1c934b2d3463ee5f0a27d34dae7337cbc88325aae0c9dfdc36ad.mp3",
+          "sha256": "48fe7247c6be1c934b2d3463ee5f0a27d34dae7337cbc88325aae0c9dfdc36ad",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "48fe7247c6be1c934b2d3463ee5f0a27d34dae7337cbc88325aae0c9dfdc36ad",
+            "text": "非常",
+            "words": [
+              {
+                "text": "非常",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "b27b7b7032db5880a86e1a9a309184ac7a8400aa285959ae11180ae29d9e578e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b7715e2d47086b889c196040cc891463bb751034c0692faed1402e7dc19441e5.mp3",
+          "sha256": "b7715e2d47086b889c196040cc891463bb751034c0692faed1402e7dc19441e5",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "b7715e2d47086b889c196040cc891463bb751034c0692faed1402e7dc19441e5",
+            "text": "不便",
+            "words": [
+              {
+                "text": "不便",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-70d19df7b4d796f4a385ac2379dd5e08e62ba1f80a3be70e004f5e2ea876491f.mp3",
+          "sha256": "70d19df7b4d796f4a385ac2379dd5e08e62ba1f80a3be70e004f5e2ea876491f",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "70d19df7b4d796f4a385ac2379dd5e08e62ba1f80a3be70e004f5e2ea876491f",
+            "text": "不便",
+            "words": [
+              {
+                "text": "不便",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "6ef55e12cc44ef9e57df73c09b8ab71b74105f61f1dbbd65a70e46ff86bdc350": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2078c8a8d29a95dc29d2edf658a4e1964ca969e34237bcc25801bd801dc1558d.mp3",
+          "sha256": "2078c8a8d29a95dc29d2edf658a4e1964ca969e34237bcc25801bd801dc1558d",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "2078c8a8d29a95dc29d2edf658a4e1964ca969e34237bcc25801bd801dc1558d",
+            "text": "眼前",
+            "words": [
+              {
+                "text": "眼前",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-fae473aff773580c7a7568f7cd0669868fccb58df9a14a9c203126e333cc7ddb.mp3",
+          "sha256": "fae473aff773580c7a7568f7cd0669868fccb58df9a14a9c203126e333cc7ddb",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "fae473aff773580c7a7568f7cd0669868fccb58df9a14a9c203126e333cc7ddb",
+            "text": "眼前",
+            "words": [
+              {
+                "text": "眼前",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

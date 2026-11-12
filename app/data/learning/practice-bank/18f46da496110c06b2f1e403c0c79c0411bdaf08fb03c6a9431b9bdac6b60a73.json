@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0641",
+  "targetId": "W0641",
+  "steps": [
+    {
+      "id": "BANK-W0641-W0641",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0641-W0641",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "good person",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "好人"
+            },
+            {
+              "value": "hǎorén",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hao3ren2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "好人",
+            "pinyin": "hǎorén",
+            "meaning": "good person",
+            "singleWord": true,
+            "audio": "8b7f0c7eba6485f4668e2fbc5199e773c07c937266c02df831e4b4f1ae072a7e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8b7f0c7eba6485f4668e2fbc5199e773c07c937266c02df831e4b4f1ae072a7e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-6b7f79672a6953303c700cbf54e5c6ecc4fec679b0049eb1ee8ccdb8ab9822bf.mp3",
+        "sha256": "6b7f79672a6953303c700cbf54e5c6ecc4fec679b0049eb1ee8ccdb8ab9822bf",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "6b7f79672a6953303c700cbf54e5c6ecc4fec679b0049eb1ee8ccdb8ab9822bf",
+          "text": "好人",
+          "words": [
+            {
+              "text": "好人",
+              "start": 0.27,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-08ceb9654529e4bcabe621fb38913dd7c0c5a1a5370c769416a7207e0bc7558c.mp3",
+        "sha256": "08ceb9654529e4bcabe621fb38913dd7c0c5a1a5370c769416a7207e0bc7558c",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "08ceb9654529e4bcabe621fb38913dd7c0c5a1a5370c769416a7207e0bc7558c",
+          "text": "好人",
+          "words": [
+            {
+              "text": "好人",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0641",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0641-W0641",
+      "question_ids": [
+        "BANK-W0641-W0641"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU01",
+    "stepId": "S-WU01-working-word-2",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-hao"
+    ],
+    "grammarLessonIds": []
+  }
+}

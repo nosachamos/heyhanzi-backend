@@ -1,0 +1,745 @@
+{
+  "id": "EX-CHAR-char-997a",
+  "revision": 2,
+  "unit": "U08-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U08-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "饺",
+  "sourceBlockId": "mandarin-simplified-v1-char-997a",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-997a",
+        "text": "饺",
+        "pinyin": "jiǎo",
+        "meaning": "dumplings with meat filling",
+        "characters": [
+          {
+            "id": "C-997A",
+            "text": "饺"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-115130a288d429eff516f146",
+        "text": "一个",
+        "pinyin": "yī ge",
+        "meaning": "one; a",
+        "characters": [
+          {
+            "id": "C-4E00",
+            "text": "一"
+          },
+          {
+            "id": "C-4E2A",
+            "text": "个"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-211daa7ca11f3e6a81799c32",
+        "text": "没事儿",
+        "pinyin": "méi shì r",
+        "meaning": "all right; no problem; to have nothing to do",
+        "characters": [
+          {
+            "id": "C-6CA1",
+            "text": "没"
+          },
+          {
+            "id": "C-4E8B",
+            "text": "事"
+          },
+          {
+            "id": "C-513F",
+            "text": "儿"
+          }
+        ]
+      },
+      {
+        "id": "W0266",
+        "text": "太",
+        "pinyin": "tài",
+        "meaning": "too; extremely",
+        "characters": [
+          {
+            "id": "C-592A",
+            "text": "太"
+          }
+        ]
+      },
+      {
+        "id": "W0415",
+        "text": "饺子",
+        "pinyin": "jiǎozi",
+        "meaning": "dumpling; pot-sticker",
+        "characters": [
+          {
+            "id": "C-997A",
+            "text": "饺"
+          },
+          {
+            "id": "C-5B50",
+            "text": "子"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "6b796e4b3d677d1c88fc683991f4f59f01d02ae5ff3b3412d545ec831354e159",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-997a",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "饺",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-997a-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0415",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "dumpling; pot-sticker",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "饺子"
+              },
+              {
+                "value": "jiǎozi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jiao3zi5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "饺子",
+              "pinyin": "jiǎozi",
+              "meaning": "dumpling; pot-sticker",
+              "audio": "5db51c1514f44f1acc5c295259166479e76543e4c7bd4f39d5dabd4bd5fd8c26",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-997a-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-997a",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "饺",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-997a",
+                "label": "dumplings with meat filling",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-211daa7ca11f3e6a81799c32",
+                "label": "all right; no problem",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-115130a288d429eff516f146",
+                "label": "one; a",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-997a-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "饺",
+        "pinyin": "jiǎo",
+        "meaning": "dumplings with meat filling",
+        "source": "/stroke-data/997a.json",
+        "reference": {
+          "character": "饺",
+          "sha256": "88229c24d24909d46a3e4b56d03d88fc5510b723dd462c1a2b3c942ee89ae25e",
+          "medians": [
+            [
+              [
+                277,
+                793
+              ],
+              [
+                300,
+                779
+              ],
+              [
+                314,
+                762
+              ],
+              [
+                313,
+                753
+              ],
+              [
+                296,
+                687
+              ],
+              [
+                254,
+                586
+              ],
+              [
+                210,
+                502
+              ],
+              [
+                172,
+                448
+              ],
+              [
+                96,
+                361
+              ],
+              [
+                65,
+                335
+              ]
+            ],
+            [
+              [
+                270,
+                565
+              ],
+              [
+                379,
+                595
+              ],
+              [
+                407,
+                597
+              ],
+              [
+                432,
+                587
+              ],
+              [
+                382,
+                499
+              ],
+              [
+                345,
+                450
+              ]
+            ],
+            [
+              [
+                247,
+                434
+              ],
+              [
+                276,
+                402
+              ],
+              [
+                283,
+                384
+              ],
+              [
+                285,
+                265
+              ],
+              [
+                272,
+                146
+              ],
+              [
+                272,
+                127
+              ],
+              [
+                280,
+                110
+              ],
+              [
+                318,
+                123
+              ],
+              [
+                425,
+                201
+              ]
+            ],
+            [
+              [
+                601,
+                817
+              ],
+              [
+                689,
+                774
+              ],
+              [
+                718,
+                739
+              ]
+            ],
+            [
+              [
+                513,
+                612
+              ],
+              [
+                536,
+                606
+              ],
+              [
+                598,
+                611
+              ],
+              [
+                777,
+                659
+              ],
+              [
+                845,
+                666
+              ]
+            ],
+            [
+              [
+                542,
+                521
+              ],
+              [
+                559,
+                490
+              ],
+              [
+                471,
+                400
+              ],
+              [
+                461,
+                398
+              ],
+              [
+                459,
+                390
+              ]
+            ],
+            [
+              [
+                694,
+                541
+              ],
+              [
+                791,
+                503
+              ],
+              [
+                814,
+                476
+              ]
+            ],
+            [
+              [
+                680,
+                417
+              ],
+              [
+                710,
+                390
+              ],
+              [
+                700,
+                332
+              ],
+              [
+                669,
+                248
+              ],
+              [
+                621,
+                176
+              ],
+              [
+                564,
+                128
+              ],
+              [
+                513,
+                101
+              ],
+              [
+                454,
+                79
+              ],
+              [
+                401,
+                71
+              ]
+            ],
+            [
+              [
+                507,
+                345
+              ],
+              [
+                552,
+                317
+              ],
+              [
+                669,
+                177
+              ],
+              [
+                731,
+                119
+              ],
+              [
+                792,
+                73
+              ],
+              [
+                953,
+                47
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-997a-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0266",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "too; extremely",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "太"
+              },
+              {
+                "value": "tài",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tai4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "太",
+              "pinyin": "tài",
+              "meaning": "too; extremely",
+              "audio": "18232fdd592a0c69a37dbe8a1b9d3b0523a4b868fff17b4679b4768211f1a92d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-997a-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-997a",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "dumplings with meat filling",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "饺"
+              },
+              {
+                "value": "jiǎo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jiao3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "饺",
+              "pinyin": "jiǎo",
+              "meaning": "dumplings with meat filling",
+              "audio": "96088b67323037f9bd479ddab6aaf41495ee5349d57ee79cb27a6e58eb9a0772",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "96088b67323037f9bd479ddab6aaf41495ee5349d57ee79cb27a6e58eb9a0772"
+            ],
+            "transcript": [
+              {
+                "text": "饺",
+                "pinyin": "jiǎo",
+                "meaning": "dumplings with meat filling",
+                "audio": "96088b67323037f9bd479ddab6aaf41495ee5349d57ee79cb27a6e58eb9a0772",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-997A",
+      "character": "饺",
+      "lessonIds": [
+        "LESSON-C-997A"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-997a-word",
+        "EX-CHAR-char-997a-recognize",
+        "EX-CHAR-char-997a-write",
+        "EX-CHAR-char-997a-familiar",
+        "EX-CHAR-char-997a-recall"
+      ]
+    },
+    "audio": {
+      "96088b67323037f9bd479ddab6aaf41495ee5349d57ee79cb27a6e58eb9a0772": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-ba36ad902edc9cbe1170672128d83bc2c09f9dd072ac4afa019886f20b11305a.mp3",
+          "sha256": "ba36ad902edc9cbe1170672128d83bc2c09f9dd072ac4afa019886f20b11305a",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "ba36ad902edc9cbe1170672128d83bc2c09f9dd072ac4afa019886f20b11305a",
+            "text": "饺",
+            "words": [
+              {
+                "text": "饺",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-831199442d831f6366f98876b939e83385e96608fb7ee512d63126dfd9c82d7d.mp3",
+          "sha256": "831199442d831f6366f98876b939e83385e96608fb7ee512d63126dfd9c82d7d",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "831199442d831f6366f98876b939e83385e96608fb7ee512d63126dfd9c82d7d",
+            "text": "饺",
+            "words": [
+              {
+                "text": "饺",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "b139867e631d0c454f181edbfe4372eea9837a6f83751634d64547dc0af54d36": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/fbf0770c62c668f564a034662d56b0d358323521bf5f3871ddd03142b86f93cf.mp3",
+          "sha256": "fbf0770c62c668f564a034662d56b0d358323521bf5f3871ddd03142b86f93cf",
+          "byteLength": 11565,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "fbf0770c62c668f564a034662d56b0d358323521bf5f3871ddd03142b86f93cf",
+            "text": "一个",
+            "words": [
+              {
+                "text": "一个",
+                "start": 0.155,
+                "end": 0.655
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/97b82bb1410c7f4d58bbc2b39620db5586a4e22bc07739ecf21491adc5282c5c.mp3",
+          "sha256": "97b82bb1410c7f4d58bbc2b39620db5586a4e22bc07739ecf21491adc5282c5c",
+          "byteLength": 12429,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "97b82bb1410c7f4d58bbc2b39620db5586a4e22bc07739ecf21491adc5282c5c",
+            "text": "一个",
+            "words": [
+              {
+                "text": "一个",
+                "start": 0.125,
+                "end": 0.735
+              }
+            ]
+          }
+        }
+      },
+      "49eecbf37a3672016fc637eb37c3c938d19e8d4d60233a70442decba6e12276e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/06500c98830d7b07f062e6617222a6ce5f3efb159747ff1992143a819b163de9.mp3",
+          "sha256": "06500c98830d7b07f062e6617222a6ce5f3efb159747ff1992143a819b163de9",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "06500c98830d7b07f062e6617222a6ce5f3efb159747ff1992143a819b163de9",
+            "text": "没事儿",
+            "words": [
+              {
+                "text": "没事儿",
+                "start": 0.09,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/708398dc6cbbe4ed248340079aa2b6528d957390a6d0708335f86348412d4d89.mp3",
+          "sha256": "708398dc6cbbe4ed248340079aa2b6528d957390a6d0708335f86348412d4d89",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "708398dc6cbbe4ed248340079aa2b6528d957390a6d0708335f86348412d4d89",
+            "text": "没事儿",
+            "words": [
+              {
+                "text": "没事儿",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "18232fdd592a0c69a37dbe8a1b9d3b0523a4b868fff17b4679b4768211f1a92d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1e949f21c4bcf59eda6d0c05737e3bacbe93e6f7c49bbcf2b2d3ac245c9f7212.mp3",
+          "sha256": "1e949f21c4bcf59eda6d0c05737e3bacbe93e6f7c49bbcf2b2d3ac245c9f7212",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "1e949f21c4bcf59eda6d0c05737e3bacbe93e6f7c49bbcf2b2d3ac245c9f7212",
+            "text": "太",
+            "words": [
+              {
+                "text": "太",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-be8f24df295d87789f3d4a023d7827a7f399dbac9741ced24592b650862cfcc8.mp3",
+          "sha256": "be8f24df295d87789f3d4a023d7827a7f399dbac9741ced24592b650862cfcc8",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "be8f24df295d87789f3d4a023d7827a7f399dbac9741ced24592b650862cfcc8",
+            "text": "太",
+            "words": [
+              {
+                "text": "太",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "5db51c1514f44f1acc5c295259166479e76543e4c7bd4f39d5dabd4bd5fd8c26": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-33b1083c4b20299de4c2f2f4e64afa9498a6e3d2fcccfa2280205d5555277004.mp3",
+          "sha256": "33b1083c4b20299de4c2f2f4e64afa9498a6e3d2fcccfa2280205d5555277004",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "33b1083c4b20299de4c2f2f4e64afa9498a6e3d2fcccfa2280205d5555277004",
+            "text": "饺子",
+            "words": [
+              {
+                "text": "饺子",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-570d20cbb022c1cf04753fe4965b05319b35f1946a0af2b0fd572a3d45feb45d.mp3",
+          "sha256": "570d20cbb022c1cf04753fe4965b05319b35f1946a0af2b0fd572a3d45feb45d",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "570d20cbb022c1cf04753fe4965b05319b35f1946a0af2b0fd572a3d45feb45d",
+            "text": "饺子",
+            "words": [
+              {
+                "text": "饺子",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

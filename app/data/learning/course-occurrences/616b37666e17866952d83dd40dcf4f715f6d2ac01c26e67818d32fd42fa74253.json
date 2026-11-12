@@ -1,0 +1,777 @@
+{
+  "id": "EX-CHAR-char-638f",
+  "revision": 2,
+  "unit": "U6-09",
+  "stage": "ST-HSK6",
+  "after": "S-U6-09-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "掏",
+  "sourceBlockId": "mandarin-simplified-v1-char-638f",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-638f",
+        "text": "掏",
+        "pinyin": "tāo",
+        "meaning": "to fish out (from pocket); to scoop",
+        "characters": [
+          {
+            "id": "C-638F",
+            "text": "掏"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-88f9",
+        "text": "裹",
+        "pinyin": "guǒ",
+        "meaning": "to wrap around; bundle; parcel; package",
+        "characters": [
+          {
+            "id": "C-88F9",
+            "text": "裹"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-bce63131efee22bb11c3b99d",
+        "text": "掏钱",
+        "pinyin": "tāo qián",
+        "meaning": "to fork out",
+        "characters": [
+          {
+            "id": "C-638F",
+            "text": "掏"
+          },
+          {
+            "id": "C-94B1",
+            "text": "钱"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-dce77310bbe10924c9ba52bc",
+        "text": "小路",
+        "pinyin": "xiǎo lù",
+        "meaning": "minor road",
+        "characters": [
+          {
+            "id": "C-5C0F",
+            "text": "小"
+          },
+          {
+            "id": "C-8DEF",
+            "text": "路"
+          }
+        ]
+      },
+      {
+        "id": "W-USE-0266-3",
+        "text": "有些",
+        "pinyin": "yǒuxiē",
+        "meaning": "somewhat",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          },
+          {
+            "id": "C-4E9B",
+            "text": "些"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "d809a7c6fe1803e685cd9d3f5129aaee7b1187eebd5bb7ef79f904df019e7b4a",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-638f",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "掏",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-638f-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-bce63131efee22bb11c3b99d",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to fork out",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "掏钱"
+              },
+              {
+                "value": "tāo qián",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tao1qian2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "掏钱",
+              "pinyin": "tāo qián",
+              "meaning": "to fork out",
+              "audio": "caba2f3921f8f5f96c912cab200ee8b6e86cc175d22107203d0500ec049a8411",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-638f-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-638f",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "掏",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-638f",
+                "label": "to fish out (from pocket); to scoop",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-PRIMARY-char-88f9",
+                "label": "to wrap around; bundle",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W-USE-0266-3",
+                "label": "somewhat",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-638f-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "掏",
+        "pinyin": "tāo",
+        "meaning": "to fish out (from pocket); to scoop",
+        "source": "/stroke-data/638f.json",
+        "reference": {
+          "character": "掏",
+          "sha256": "9ecfd140558929586ee2f287d87c8e58653ee13f27ec45060a9b533635dc881f",
+          "medians": [
+            [
+              [
+                131,
+                524
+              ],
+              [
+                191,
+                523
+              ],
+              [
+                330,
+                564
+              ],
+              [
+                378,
+                565
+              ]
+            ],
+            [
+              [
+                260,
+                810
+              ],
+              [
+                285,
+                794
+              ],
+              [
+                305,
+                768
+              ],
+              [
+                291,
+                442
+              ],
+              [
+                292,
+                121
+              ],
+              [
+                286,
+                91
+              ],
+              [
+                271,
+                63
+              ],
+              [
+                165,
+                107
+              ]
+            ],
+            [
+              [
+                48,
+                211
+              ],
+              [
+                95,
+                208
+              ],
+              [
+                374,
+                434
+              ]
+            ],
+            [
+              [
+                562,
+                806
+              ],
+              [
+                575,
+                795
+              ],
+              [
+                590,
+                767
+              ],
+              [
+                592,
+                759
+              ],
+              [
+                582,
+                739
+              ],
+              [
+                540,
+                669
+              ],
+              [
+                472,
+                581
+              ],
+              [
+                403,
+                517
+              ]
+            ],
+            [
+              [
+                502,
+                577
+              ],
+              [
+                784,
+                635
+              ],
+              [
+                806,
+                632
+              ],
+              [
+                847,
+                600
+              ],
+              [
+                848,
+                369
+              ],
+              [
+                841,
+                216
+              ],
+              [
+                828,
+                127
+              ],
+              [
+                806,
+                54
+              ],
+              [
+                785,
+                21
+              ],
+              [
+                766,
+                4
+              ],
+              [
+                664,
+                66
+              ]
+            ],
+            [
+              [
+                518,
+                506
+              ],
+              [
+                490,
+                503
+              ],
+              [
+                425,
+                397
+              ],
+              [
+                414,
+                394
+              ],
+              [
+                416,
+                384
+              ]
+            ],
+            [
+              [
+                489,
+                445
+              ],
+              [
+                575,
+                453
+              ],
+              [
+                581,
+                459
+              ],
+              [
+                662,
+                479
+              ],
+              [
+                692,
+                477
+              ]
+            ],
+            [
+              [
+                383,
+                321
+              ],
+              [
+                404,
+                315
+              ],
+              [
+                450,
+                317
+              ],
+              [
+                685,
+                362
+              ],
+              [
+                723,
+                365
+              ],
+              [
+                751,
+                360
+              ]
+            ],
+            [
+              [
+                529,
+                429
+              ],
+              [
+                556,
+                406
+              ],
+              [
+                558,
+                398
+              ],
+              [
+                557,
+                217
+              ],
+              [
+                542,
+                194
+              ]
+            ],
+            [
+              [
+                415,
+                268
+              ],
+              [
+                435,
+                235
+              ],
+              [
+                425,
+                147
+              ],
+              [
+                459,
+                145
+              ],
+              [
+                615,
+                188
+              ],
+              [
+                670,
+                195
+              ],
+              [
+                685,
+                184
+              ]
+            ],
+            [
+              [
+                665,
+                302
+              ],
+              [
+                694,
+                278
+              ],
+              [
+                721,
+                119
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-638f-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-dce77310bbe10924c9ba52bc",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "minor road",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "小路"
+              },
+              {
+                "value": "xiǎo lù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiao3lu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "小路",
+              "pinyin": "xiǎo lù",
+              "meaning": "minor road",
+              "audio": "ba43b68b51d589a1ad601d29192ef00a9e99d0e5ad4d529fb58df387e66d93e2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-638f-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-638f",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to fish out (from pocket); to scoop",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "掏"
+              },
+              {
+                "value": "tāo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tao1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "掏",
+              "pinyin": "tāo",
+              "meaning": "to fish out (from pocket); to scoop",
+              "audio": "ff7d1abe1072aa4ae937d5db3816d500835d0f39db9db6eb03ae113358173335",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "ff7d1abe1072aa4ae937d5db3816d500835d0f39db9db6eb03ae113358173335"
+            ],
+            "transcript": [
+              {
+                "text": "掏",
+                "pinyin": "tāo",
+                "meaning": "to fish out (from pocket); to scoop",
+                "audio": "ff7d1abe1072aa4ae937d5db3816d500835d0f39db9db6eb03ae113358173335",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-638F",
+      "character": "掏",
+      "lessonIds": [
+        "LESSON-C-638F"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-638f-word",
+        "EX-CHAR-char-638f-recognize",
+        "EX-CHAR-char-638f-write",
+        "EX-CHAR-char-638f-familiar",
+        "EX-CHAR-char-638f-recall"
+      ]
+    },
+    "audio": {
+      "ff7d1abe1072aa4ae937d5db3816d500835d0f39db9db6eb03ae113358173335": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f3d0d1dde75c20c0b76dd206bfee3d58fdcd03f62d3aff8016456f0b33f36617.mp3",
+          "sha256": "f3d0d1dde75c20c0b76dd206bfee3d58fdcd03f62d3aff8016456f0b33f36617",
+          "byteLength": 17901,
+          "readAlong": {
+            "audioSha256": "f3d0d1dde75c20c0b76dd206bfee3d58fdcd03f62d3aff8016456f0b33f36617",
+            "text": "掏",
+            "words": [
+              {
+                "text": "掏",
+                "start": 0.75,
+                "end": 0.8099999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/50514e65cc9435923f0fa679a41738f59bda2c4482819cdf87ee7adafff9620f.mp3",
+          "sha256": "50514e65cc9435923f0fa679a41738f59bda2c4482819cdf87ee7adafff9620f",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "50514e65cc9435923f0fa679a41738f59bda2c4482819cdf87ee7adafff9620f",
+            "text": "掏",
+            "words": [
+              {
+                "text": "掏",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "a60c85ce5b6fbe4eccadc96e88f5d894df6f44a74da075d0ee2dcd77218089e7": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-72a1080e93159c8c14cb63c01f9847ed4f05fa95a58596e687089dec0d9c0a71.mp3",
+          "sha256": "72a1080e93159c8c14cb63c01f9847ed4f05fa95a58596e687089dec0d9c0a71",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "72a1080e93159c8c14cb63c01f9847ed4f05fa95a58596e687089dec0d9c0a71",
+            "text": "裹",
+            "words": [
+              {
+                "text": "裹",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-cbc35545b288a66f669121a72aa1dcd5e079650eaa76e9a1f4e7d6000ec50499.mp3",
+          "sha256": "cbc35545b288a66f669121a72aa1dcd5e079650eaa76e9a1f4e7d6000ec50499",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "cbc35545b288a66f669121a72aa1dcd5e079650eaa76e9a1f4e7d6000ec50499",
+            "text": "裹",
+            "words": [
+              {
+                "text": "裹",
+                "start": 0.12,
+                "end": 0.22
+              }
+            ]
+          }
+        }
+      },
+      "caba2f3921f8f5f96c912cab200ee8b6e86cc175d22107203d0500ec049a8411": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e563d977a25a8f4d284ce5e607873b24ba646b252308de3e9cd0a7817dbe23b1.mp3",
+          "sha256": "e563d977a25a8f4d284ce5e607873b24ba646b252308de3e9cd0a7817dbe23b1",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "e563d977a25a8f4d284ce5e607873b24ba646b252308de3e9cd0a7817dbe23b1",
+            "text": "掏钱",
+            "words": [
+              {
+                "text": "掏钱",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/506211276ceaecd7696e440affea71140c22e35de54b142676adcc061b7d1fdb.mp3",
+          "sha256": "506211276ceaecd7696e440affea71140c22e35de54b142676adcc061b7d1fdb",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "506211276ceaecd7696e440affea71140c22e35de54b142676adcc061b7d1fdb",
+            "text": "掏钱",
+            "words": [
+              {
+                "text": "掏钱",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "ba43b68b51d589a1ad601d29192ef00a9e99d0e5ad4d529fb58df387e66d93e2": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-e42acbf188fd190c0830b992bb295663a50b0b2245a4d2965bac8444ba648f72.mp3",
+          "sha256": "e42acbf188fd190c0830b992bb295663a50b0b2245a4d2965bac8444ba648f72",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "e42acbf188fd190c0830b992bb295663a50b0b2245a4d2965bac8444ba648f72",
+            "text": "小路",
+            "words": [
+              {
+                "text": "小路",
+                "start": 0.21,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-05fbc674154a8b294ab5edf15765d22fa81a0bc86a667066d844aa74ee101b55.mp3",
+          "sha256": "05fbc674154a8b294ab5edf15765d22fa81a0bc86a667066d844aa74ee101b55",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "05fbc674154a8b294ab5edf15765d22fa81a0bc86a667066d844aa74ee101b55",
+            "text": "小路",
+            "words": [
+              {
+                "text": "小路",
+                "start": 0.2,
+                "end": 0.5
+              }
+            ]
+          }
+        }
+      },
+      "524057b90512d2838a51c473d568bafc7af8fc5568b3ea927f35c6787cd1593c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-06e01ce40586b3524db6a9c1fd1dfe3cdfd54ade31a5736fbb80279ea4cec7d4.mp3",
+          "sha256": "06e01ce40586b3524db6a9c1fd1dfe3cdfd54ade31a5736fbb80279ea4cec7d4",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "06e01ce40586b3524db6a9c1fd1dfe3cdfd54ade31a5736fbb80279ea4cec7d4",
+            "text": "有些",
+            "words": [
+              {
+                "text": "有些",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-088c050c2c11213b7e9d2264baa00587f4576056f864548f9adb5aa4b5266711.mp3",
+          "sha256": "088c050c2c11213b7e9d2264baa00587f4576056f864548f9adb5aa4b5266711",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "088c050c2c11213b7e9d2264baa00587f4576056f864548f9adb5aa4b5266711",
+            "text": "有些",
+            "words": [
+              {
+                "text": "有些",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

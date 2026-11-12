@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1391",
+  "targetId": "W1391",
+  "steps": [
+    {
+      "id": "BANK-W1391-W1391",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1391-W1391",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "parent; guardian",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "家长"
+            },
+            {
+              "value": "jiāzhǎng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jia1zhang3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "家长",
+            "pinyin": "jiāzhǎng",
+            "meaning": "parent; guardian",
+            "singleWord": true,
+            "audio": "be1e0d1e049559337bab661715532541fc1bb2e394295f3ac0e00d260665eb13"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "be1e0d1e049559337bab661715532541fc1bb2e394295f3ac0e00d260665eb13": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f967bd62369395fd3917240c818d41f21052d2abdc6ed16c70c68030bcf41b08.mp3",
+        "sha256": "f967bd62369395fd3917240c818d41f21052d2abdc6ed16c70c68030bcf41b08",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "f967bd62369395fd3917240c818d41f21052d2abdc6ed16c70c68030bcf41b08",
+          "text": "家长",
+          "words": [
+            {
+              "text": "家长",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-97170f583c1950f3b3e57977e225db33daaa1fd936753ffd43a837ea5462cc91.mp3",
+        "sha256": "97170f583c1950f3b3e57977e225db33daaa1fd936753ffd43a837ea5462cc91",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "97170f583c1950f3b3e57977e225db33daaa1fd936753ffd43a837ea5462cc91",
+          "text": "家长",
+          "words": [
+            {
+              "text": "家长",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1391",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1391-W1391",
+      "question_ids": [
+        "BANK-W1391-W1391"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-02",
+    "stepId": "S-U4-02-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-957f"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2060",
+  "targetId": "W2060",
+  "steps": [
+    {
+      "id": "BANK-W2060-W2060",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2060-W2060",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to report; report",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "报道"
+            },
+            {
+              "value": "bàodào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bao4dao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "报道",
+            "pinyin": "bàodào",
+            "meaning": "to report; report",
+            "singleWord": true,
+            "audio": "1bfc1d4b69be8e8db34bdb4283cf9da0043c5911333605238661645dacaa14df"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1bfc1d4b69be8e8db34bdb4283cf9da0043c5911333605238661645dacaa14df": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ff52842d562a6ee086a3a6da1414eec16f1190ab5783fbf0eafb21c2698d1202.mp3",
+        "sha256": "ff52842d562a6ee086a3a6da1414eec16f1190ab5783fbf0eafb21c2698d1202",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "ff52842d562a6ee086a3a6da1414eec16f1190ab5783fbf0eafb21c2698d1202",
+          "text": "报道",
+          "words": [
+            {
+              "text": "报道",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d70b87533e6c35400edb62d98471e5e7122524a60949dab84cab11586e5b27f6.mp3",
+        "sha256": "d70b87533e6c35400edb62d98471e5e7122524a60949dab84cab11586e5b27f6",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "d70b87533e6c35400edb62d98471e5e7122524a60949dab84cab11586e5b27f6",
+          "text": "报道",
+          "words": [
+            {
+              "text": "报道",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2060",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2060-W2060",
+      "question_ids": [
+        "BANK-W2060-W2060"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-31-P01",
+    "stepId": "S-U5-31-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-62a5"
+    ],
+    "grammarLessonIds": []
+  }
+}

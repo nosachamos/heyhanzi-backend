@@ -1,0 +1,707 @@
+{
+  "id": "EX-CHAR-char-5561",
+  "revision": 2,
+  "unit": "U05-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U05-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "啡",
+  "sourceBlockId": "mandarin-simplified-v1-char-5561",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-623f",
+        "text": "房",
+        "pinyin": "fáng",
+        "meaning": "house; room",
+        "characters": [
+          {
+            "id": "C-623F",
+            "text": "房"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-07ebf75bb164c7bdaa78a66a",
+        "text": "非常",
+        "pinyin": "fēicháng",
+        "meaning": "very; really; unusual; extraordinary",
+        "characters": [
+          {
+            "id": "C-975E",
+            "text": "非"
+          },
+          {
+            "id": "C-5E38",
+            "text": "常"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-9b8da4fd1a866ad36494b99f",
+        "text": "学说",
+        "pinyin": "xué shuō",
+        "meaning": "theory; doctrine",
+        "characters": [
+          {
+            "id": "C-5B66",
+            "text": "学"
+          },
+          {
+            "id": "C-8BF4",
+            "text": "说"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-b2825762e64a7c0b9c0730c3",
+        "text": "咖啡",
+        "pinyin": "kāfēi",
+        "meaning": "(loanword) coffee",
+        "characters": [
+          {
+            "id": "C-5496",
+            "text": "咖"
+          },
+          {
+            "id": "C-5561",
+            "text": "啡"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "1a355dcb59d1a6913d8a914b7e2635da4ccba29dc80ea28b1be67968f7532cd4",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5561",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "啡",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5561-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-b2825762e64a7c0b9c0730c3",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "(loanword) coffee",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "咖啡"
+              },
+              {
+                "value": "kāfēi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ka1fei1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "咖啡",
+              "pinyin": "kāfēi",
+              "meaning": "(loanword) coffee",
+              "audio": "b96634975300558bc525f725d8fffd301efb2d497330b1286f496fbaa18baa91",
+              "singleWord": true,
+              "focus": "啡"
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5561-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-cmn-b2825762e64a7c0b9c0730c3",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "咖啡",
+              "meaning": "",
+              "focus": "啡"
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-623f",
+                "label": "house; room",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-b2825762e64a7c0b9c0730c3",
+                "label": "(loanword) coffee",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-07ebf75bb164c7bdaa78a66a",
+                "label": "very; really",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5561-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "啡",
+        "pinyin": "fēi",
+        "meaning": "(bound form) component of the word for coffee",
+        "source": "/stroke-data/5561.json",
+        "reference": {
+          "character": "啡",
+          "sha256": "8d3b40d09edac0ba6f25025d044715cde41e3fa4afdbfe1f250813199b6eaebe",
+          "medians": [
+            [
+              [
+                75,
+                568
+              ],
+              [
+                102,
+                544
+              ],
+              [
+                107,
+                525
+              ],
+              [
+                145,
+                291
+              ]
+            ],
+            [
+              [
+                132,
+                539
+              ],
+              [
+                148,
+                552
+              ],
+              [
+                236,
+                581
+              ],
+              [
+                261,
+                584
+              ],
+              [
+                280,
+                571
+              ],
+              [
+                289,
+                556
+              ],
+              [
+                268,
+                445
+              ],
+              [
+                247,
+                434
+              ]
+            ],
+            [
+              [
+                161,
+                370
+              ],
+              [
+                177,
+                383
+              ],
+              [
+                246,
+                402
+              ],
+              [
+                283,
+                405
+              ],
+              [
+                305,
+                400
+              ]
+            ],
+            [
+              [
+                482,
+                730
+              ],
+              [
+                519,
+                689
+              ],
+              [
+                524,
+                629
+              ],
+              [
+                523,
+                303
+              ],
+              [
+                520,
+                222
+              ],
+              [
+                506,
+                110
+              ],
+              [
+                512,
+                28
+              ]
+            ],
+            [
+              [
+                348,
+                527
+              ],
+              [
+                375,
+                522
+              ],
+              [
+                415,
+                525
+              ],
+              [
+                484,
+                538
+              ],
+              [
+                497,
+                550
+              ]
+            ],
+            [
+              [
+                336,
+                387
+              ],
+              [
+                397,
+                387
+              ],
+              [
+                481,
+                408
+              ],
+              [
+                497,
+                421
+              ]
+            ],
+            [
+              [
+                283,
+                219
+              ],
+              [
+                336,
+                209
+              ],
+              [
+                475,
+                274
+              ],
+              [
+                487,
+                293
+              ]
+            ],
+            [
+              [
+                637,
+                796
+              ],
+              [
+                690,
+                742
+              ],
+              [
+                685,
+                608
+              ],
+              [
+                687,
+                255
+              ],
+              [
+                672,
+                57
+              ],
+              [
+                676,
+                -25
+              ]
+            ],
+            [
+              [
+                715,
+                563
+              ],
+              [
+                729,
+                579
+              ],
+              [
+                800,
+                595
+              ],
+              [
+                851,
+                602
+              ],
+              [
+                886,
+                595
+              ]
+            ],
+            [
+              [
+                713,
+                423
+              ],
+              [
+                726,
+                435
+              ],
+              [
+                812,
+                453
+              ],
+              [
+                838,
+                455
+              ],
+              [
+                866,
+                447
+              ]
+            ],
+            [
+              [
+                711,
+                274
+              ],
+              [
+                728,
+                287
+              ],
+              [
+                882,
+                303
+              ],
+              [
+                910,
+                300
+              ],
+              [
+                940,
+                288
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5561-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-9b8da4fd1a866ad36494b99f",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "theory; doctrine",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "学说"
+              },
+              {
+                "value": "xué shuō",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xue2shuo1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "学说",
+              "pinyin": "xué shuō",
+              "meaning": "theory; doctrine",
+              "audio": "238ae2ae616ed5fb28cf6a684ad491b502e6fde46458924fe74433931519fbb5",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5561-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-cmn-b2825762e64a7c0b9c0730c3",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "(loanword) coffee",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "咖啡"
+              },
+              {
+                "value": "kāfēi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ka1fei1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "咖啡",
+              "pinyin": "kāfēi",
+              "meaning": "(loanword) coffee",
+              "audio": "b96634975300558bc525f725d8fffd301efb2d497330b1286f496fbaa18baa91",
+              "singleWord": true,
+              "focus": "啡"
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "b96634975300558bc525f725d8fffd301efb2d497330b1286f496fbaa18baa91"
+            ],
+            "transcript": [
+              {
+                "text": "咖啡",
+                "pinyin": "kāfēi",
+                "meaning": "(loanword) coffee",
+                "audio": "b96634975300558bc525f725d8fffd301efb2d497330b1286f496fbaa18baa91",
+                "singleWord": true,
+                "focus": "啡"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5561",
+      "character": "啡",
+      "lessonIds": [
+        "LESSON-C-5561"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5561-word",
+        "EX-CHAR-char-5561-recognize",
+        "EX-CHAR-char-5561-write",
+        "EX-CHAR-char-5561-familiar",
+        "EX-CHAR-char-5561-recall"
+      ]
+    },
+    "audio": {
+      "a77632dc17169f796d1088090e54b594a095093fcf290986d62fac8915a15f71": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-b79ef19097a460726f5e89379a245e079e34594d50ea6c74e6cf53223caeaa90.mp3",
+          "sha256": "b79ef19097a460726f5e89379a245e079e34594d50ea6c74e6cf53223caeaa90",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "b79ef19097a460726f5e89379a245e079e34594d50ea6c74e6cf53223caeaa90",
+            "text": "房",
+            "words": [
+              {
+                "text": "房",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-965b97b2b8fe9762986b638dc81083812971c00bec2e9d243a7ce03791c51796.mp3",
+          "sha256": "965b97b2b8fe9762986b638dc81083812971c00bec2e9d243a7ce03791c51796",
+          "byteLength": 20205,
+          "readAlong": {
+            "audioSha256": "965b97b2b8fe9762986b638dc81083812971c00bec2e9d243a7ce03791c51796",
+            "text": "房",
+            "words": [
+              {
+                "text": "房",
+                "start": 0.8099999999999999,
+                "end": 0.8699999999999999
+              }
+            ]
+          }
+        }
+      },
+      "8c93ef3b4c91b16729e51f6aee7aec61c5ae1c5ebda5306a664a17d71b63a6b5": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-8f819bcebe502e492dd543eb62c03c9cce093a079c479d9f902295346b8dd7ea.mp3",
+          "sha256": "8f819bcebe502e492dd543eb62c03c9cce093a079c479d9f902295346b8dd7ea",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "8f819bcebe502e492dd543eb62c03c9cce093a079c479d9f902295346b8dd7ea",
+            "text": "非常",
+            "words": [
+              {
+                "text": "非常",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-48fe7247c6be1c934b2d3463ee5f0a27d34dae7337cbc88325aae0c9dfdc36ad.mp3",
+          "sha256": "48fe7247c6be1c934b2d3463ee5f0a27d34dae7337cbc88325aae0c9dfdc36ad",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "48fe7247c6be1c934b2d3463ee5f0a27d34dae7337cbc88325aae0c9dfdc36ad",
+            "text": "非常",
+            "words": [
+              {
+                "text": "非常",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "238ae2ae616ed5fb28cf6a684ad491b502e6fde46458924fe74433931519fbb5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c2049b92d098241900c85bf3feabf27efe0390b3b6a7f64a32fb743b69730c88.mp3",
+          "sha256": "c2049b92d098241900c85bf3feabf27efe0390b3b6a7f64a32fb743b69730c88",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "c2049b92d098241900c85bf3feabf27efe0390b3b6a7f64a32fb743b69730c88",
+            "text": "学说",
+            "words": [
+              {
+                "text": "学说",
+                "start": 0.3,
+                "end": 0.64
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/610e87cdd5d78f5cb2aaa8d5fa2540393666fd6cf4398cb5cc24293b6ffe6805.mp3",
+          "sha256": "610e87cdd5d78f5cb2aaa8d5fa2540393666fd6cf4398cb5cc24293b6ffe6805",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "610e87cdd5d78f5cb2aaa8d5fa2540393666fd6cf4398cb5cc24293b6ffe6805",
+            "text": "学说",
+            "words": [
+              {
+                "text": "学说",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "b96634975300558bc525f725d8fffd301efb2d497330b1286f496fbaa18baa91": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-68a05bf5a075b5bbe4d823f50e20b51f6b7cc74b4d85265b6b5d1f4e5f793470.mp3",
+          "sha256": "68a05bf5a075b5bbe4d823f50e20b51f6b7cc74b4d85265b6b5d1f4e5f793470",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "68a05bf5a075b5bbe4d823f50e20b51f6b7cc74b4d85265b6b5d1f4e5f793470",
+            "text": "咖啡",
+            "words": [
+              {
+                "text": "咖啡",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-9e7f794bd37f9aa686014f87d40663702d36504092cd4774212c769b047b1ef5.mp3",
+          "sha256": "9e7f794bd37f9aa686014f87d40663702d36504092cd4774212c769b047b1ef5",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "9e7f794bd37f9aa686014f87d40663702d36504092cd4774212c769b047b1ef5",
+            "text": "咖啡",
+            "words": [
+              {
+                "text": "咖啡",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2709",
+  "targetId": "W2709",
+  "steps": [
+    {
+      "id": "BANK-W2709-W2709",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2709-W2709",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "boss; proprietor",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "老板"
+            },
+            {
+              "value": "lǎobǎn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "lao3ban3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "老板",
+            "pinyin": "lǎobǎn",
+            "meaning": "boss; proprietor",
+            "singleWord": true,
+            "audio": "537c1a4166137b18ea4b40c0755c8feb145e7655c73ea8cc425d253c159b65b7"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "537c1a4166137b18ea4b40c0755c8feb145e7655c73ea8cc425d253c159b65b7": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a6e42d3da777a7dcdffcf8b6e751622adf042de53afaccd60a113fa37b9b5ed8.mp3",
+        "sha256": "a6e42d3da777a7dcdffcf8b6e751622adf042de53afaccd60a113fa37b9b5ed8",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "a6e42d3da777a7dcdffcf8b6e751622adf042de53afaccd60a113fa37b9b5ed8",
+          "text": "老板",
+          "words": [
+            {
+              "text": "老板",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-55524b297090af09c3e1e5e2275691aba0e570950f457860e653576f311d2eb1.mp3",
+        "sha256": "55524b297090af09c3e1e5e2275691aba0e570950f457860e653576f311d2eb1",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "55524b297090af09c3e1e5e2275691aba0e570950f457860e653576f311d2eb1",
+          "text": "老板",
+          "words": [
+            {
+              "text": "老板",
+              "start": 0.09,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2709",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2709-W2709",
+      "question_ids": [
+        "BANK-W2709-W2709"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-22",
+    "stepId": "S-U5-22-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-677f"
+    ],
+    "grammarLessonIds": []
+  }
+}

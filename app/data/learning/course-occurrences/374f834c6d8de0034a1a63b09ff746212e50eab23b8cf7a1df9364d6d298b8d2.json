@@ -1,0 +1,691 @@
+{
+  "id": "EX-CHAR-char-886c",
+  "revision": 2,
+  "unit": "U3-06-P01",
+  "stage": "ST-HSK3",
+  "after": "S-U3-06-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "衬",
+  "sourceBlockId": "mandarin-simplified-v1-char-886c",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-886c",
+        "text": "衬",
+        "pinyin": "chèn",
+        "meaning": "(of garments) against the skin; to line",
+        "characters": [
+          {
+            "id": "C-886C",
+            "text": "衬"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-0412a66554c8e6033d0c20c2",
+        "text": "衬衣",
+        "pinyin": "chèn yī",
+        "meaning": "shirt",
+        "characters": [
+          {
+            "id": "C-886C",
+            "text": "衬"
+          },
+          {
+            "id": "C-8863",
+            "text": "衣"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-439c0c5d08f2f8ac8bfabee3",
+        "text": "大楼",
+        "pinyin": "dà lóu",
+        "meaning": "building (a relatively large, multistory one)",
+        "characters": [
+          {
+            "id": "C-5927",
+            "text": "大"
+          },
+          {
+            "id": "C-697C",
+            "text": "楼"
+          }
+        ]
+      },
+      {
+        "id": "W1085",
+        "text": "笔试",
+        "pinyin": "bǐshì",
+        "meaning": "written examination; paper test",
+        "characters": [
+          {
+            "id": "C-7B14",
+            "text": "笔"
+          },
+          {
+            "id": "C-8BD5",
+            "text": "试"
+          }
+        ]
+      },
+      {
+        "id": "W2644",
+        "text": "进一步",
+        "pinyin": "jìnyībù",
+        "meaning": "to go a step further; more",
+        "characters": [
+          {
+            "id": "C-8FDB",
+            "text": "进"
+          },
+          {
+            "id": "C-4E00",
+            "text": "一"
+          },
+          {
+            "id": "C-6B65",
+            "text": "步"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "919a7bd560c1eeb6681764d49886ed2c276c1c6fe672cd801e24d80ca6f99d76",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-886c",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "衬",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-886c-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-0412a66554c8e6033d0c20c2",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "shirt",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "衬衣"
+              },
+              {
+                "value": "chèn yī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chen4yi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "衬衣",
+              "pinyin": "chèn yī",
+              "meaning": "shirt",
+              "audio": "fd6ee31df86356e7cd9dd08e124962c261696cfcd408adfee3a512666969642b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-886c-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-886c",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "衬",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-886c",
+                "label": "(of garments) against the skin; to line",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1085",
+                "label": "written examination; paper test",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W2644",
+                "label": "to go a step further; more",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-886c-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "衬",
+        "pinyin": "chèn",
+        "meaning": "(of garments) against the skin; to line",
+        "source": "/stroke-data/886c.json",
+        "reference": {
+          "character": "衬",
+          "sha256": "4c77113461d44f03ad395c2fa1ba6c971c7a125b63f1e00cb191385916e06e8e",
+          "medians": [
+            [
+              [
+                291,
+                791
+              ],
+              [
+                386,
+                742
+              ],
+              [
+                418,
+                702
+              ]
+            ],
+            [
+              [
+                96,
+                520
+              ],
+              [
+                143,
+                508
+              ],
+              [
+                163,
+                509
+              ],
+              [
+                258,
+                535
+              ],
+              [
+                324,
+                561
+              ],
+              [
+                369,
+                556
+              ],
+              [
+                359,
+                522
+              ],
+              [
+                334,
+                477
+              ],
+              [
+                245,
+                349
+              ],
+              [
+                122,
+                221
+              ],
+              [
+                63,
+                180
+              ]
+            ],
+            [
+              [
+                280,
+                351
+              ],
+              [
+                288,
+                318
+              ],
+              [
+                303,
+                293
+              ],
+              [
+                301,
+                145
+              ],
+              [
+                292,
+                63
+              ],
+              [
+                297,
+                2
+              ]
+            ],
+            [
+              [
+                418,
+                432
+              ],
+              [
+                427,
+                408
+              ],
+              [
+                381,
+                361
+              ],
+              [
+                373,
+                363
+              ]
+            ],
+            [
+              [
+                350,
+                353
+              ],
+              [
+                403,
+                302
+              ],
+              [
+                417,
+                281
+              ]
+            ],
+            [
+              [
+                490,
+                489
+              ],
+              [
+                546,
+                483
+              ],
+              [
+                841,
+                530
+              ],
+              [
+                899,
+                525
+              ],
+              [
+                933,
+                513
+              ]
+            ],
+            [
+              [
+                700,
+                769
+              ],
+              [
+                717,
+                761
+              ],
+              [
+                750,
+                728
+              ],
+              [
+                744,
+                550
+              ],
+              [
+                755,
+                110
+              ],
+              [
+                734,
+                58
+              ],
+              [
+                585,
+                109
+              ]
+            ],
+            [
+              [
+                510,
+                394
+              ],
+              [
+                522,
+                377
+              ],
+              [
+                586,
+                326
+              ],
+              [
+                613,
+                273
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-886c-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-439c0c5d08f2f8ac8bfabee3",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "building (a relatively large, multistory one)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "大楼"
+              },
+              {
+                "value": "dà lóu",
+                "mode": "pinyin"
+              },
+              {
+                "value": "da4lou2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "大楼",
+              "pinyin": "dà lóu",
+              "meaning": "building (a relatively large, multistory one)",
+              "audio": "ec65e47a639e0e986dfe5fca499e617356a280e4f747deecd0af856eb43010e9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-886c-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-886c",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "(of garments) against the skin; to line",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "衬"
+              },
+              {
+                "value": "chèn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chen4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "衬",
+              "pinyin": "chèn",
+              "meaning": "(of garments) against the skin; to line",
+              "audio": "526a532b0087c9096f8df531ab1f6d26161e5c8387fbb83d4b36b26051399caa",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "526a532b0087c9096f8df531ab1f6d26161e5c8387fbb83d4b36b26051399caa"
+            ],
+            "transcript": [
+              {
+                "text": "衬",
+                "pinyin": "chèn",
+                "meaning": "(of garments) against the skin; to line",
+                "audio": "526a532b0087c9096f8df531ab1f6d26161e5c8387fbb83d4b36b26051399caa",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-886C",
+      "character": "衬",
+      "lessonIds": [
+        "LESSON-C-886C"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-886c-word",
+        "EX-CHAR-char-886c-recognize",
+        "EX-CHAR-char-886c-write",
+        "EX-CHAR-char-886c-familiar",
+        "EX-CHAR-char-886c-recall"
+      ]
+    },
+    "audio": {
+      "526a532b0087c9096f8df531ab1f6d26161e5c8387fbb83d4b36b26051399caa": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-d01e972e766dd919a99f8452b8c5954cf9fbe68c0e48135f6fc98fde39aba792.mp3",
+          "sha256": "d01e972e766dd919a99f8452b8c5954cf9fbe68c0e48135f6fc98fde39aba792",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "d01e972e766dd919a99f8452b8c5954cf9fbe68c0e48135f6fc98fde39aba792",
+            "text": "衬",
+            "words": [
+              {
+                "text": "衬",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-e23b2b55bc75903cca4f87a71919cf57e6799a9fdc02e21f48402c9c32b8a42d.mp3",
+          "sha256": "e23b2b55bc75903cca4f87a71919cf57e6799a9fdc02e21f48402c9c32b8a42d",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "e23b2b55bc75903cca4f87a71919cf57e6799a9fdc02e21f48402c9c32b8a42d",
+            "text": "衬",
+            "words": [
+              {
+                "text": "衬",
+                "start": 0.2,
+                "end": 0.3
+              }
+            ]
+          }
+        }
+      },
+      "fd6ee31df86356e7cd9dd08e124962c261696cfcd408adfee3a512666969642b": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/46e192569909bd3b37bf03feeb2fa6ba4f4df6fdd7cadcb8927cf6985dbfd3d9.mp3",
+          "sha256": "46e192569909bd3b37bf03feeb2fa6ba4f4df6fdd7cadcb8927cf6985dbfd3d9",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "46e192569909bd3b37bf03feeb2fa6ba4f4df6fdd7cadcb8927cf6985dbfd3d9",
+            "text": "衬衣",
+            "words": [
+              {
+                "text": "衬衣",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/31d61176b6cfc9b5d56cbf8bccb75140dc1b468a69fdf1e8e585535624e685b0.mp3",
+          "sha256": "31d61176b6cfc9b5d56cbf8bccb75140dc1b468a69fdf1e8e585535624e685b0",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "31d61176b6cfc9b5d56cbf8bccb75140dc1b468a69fdf1e8e585535624e685b0",
+            "text": "衬衣",
+            "words": [
+              {
+                "text": "衬衣",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "ec65e47a639e0e986dfe5fca499e617356a280e4f747deecd0af856eb43010e9": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/04e59489a47ac2dd431bd2a20980d8353c581a4f6d39a94849db2ba1d8dbcc0b.mp3",
+          "sha256": "04e59489a47ac2dd431bd2a20980d8353c581a4f6d39a94849db2ba1d8dbcc0b",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "04e59489a47ac2dd431bd2a20980d8353c581a4f6d39a94849db2ba1d8dbcc0b",
+            "text": "大楼",
+            "words": [
+              {
+                "text": "大楼",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/adec276a541c7c7481506dcdc84e05654670604f4e05d68f93be9cecdd0fd3af.mp3",
+          "sha256": "adec276a541c7c7481506dcdc84e05654670604f4e05d68f93be9cecdd0fd3af",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "adec276a541c7c7481506dcdc84e05654670604f4e05d68f93be9cecdd0fd3af",
+            "text": "大楼",
+            "words": [
+              {
+                "text": "大楼",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "435b370d88b19a23875d4b762a97dff60254008f49aa11a0512c1cec9c269a7b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ce915ed0532e1b568de460ba8f8a0bfed4f56ce4ab2253fca69d2011acddd025.mp3",
+          "sha256": "ce915ed0532e1b568de460ba8f8a0bfed4f56ce4ab2253fca69d2011acddd025",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "ce915ed0532e1b568de460ba8f8a0bfed4f56ce4ab2253fca69d2011acddd025",
+            "text": "笔试",
+            "words": [
+              {
+                "text": "笔试",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-e72add2298bb3ad23b83b2f30d4179b4e93b5c13d37ee48f5c7b7d50e3ab73e8.mp3",
+          "sha256": "e72add2298bb3ad23b83b2f30d4179b4e93b5c13d37ee48f5c7b7d50e3ab73e8",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "e72add2298bb3ad23b83b2f30d4179b4e93b5c13d37ee48f5c7b7d50e3ab73e8",
+            "text": "笔试",
+            "words": [
+              {
+                "text": "笔试",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "1a4fe1a24ecfc751f3b638fe09114dcefb77d4dfcb828e3e200a71fe15c0fc99": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-917ab3d05813a48308bbf00e3864a82262a5fbbaec91f382da38a913dc6a5d28.mp3",
+          "sha256": "917ab3d05813a48308bbf00e3864a82262a5fbbaec91f382da38a913dc6a5d28",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "917ab3d05813a48308bbf00e3864a82262a5fbbaec91f382da38a913dc6a5d28",
+            "text": "进一步",
+            "words": [
+              {
+                "text": "进一步",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-9feecc6d1881f32ba3f1ce73219f8dfd3773af6e011b4799c99eca6b2fe097a2.mp3",
+          "sha256": "9feecc6d1881f32ba3f1ce73219f8dfd3773af6e011b4799c99eca6b2fe097a2",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "9feecc6d1881f32ba3f1ce73219f8dfd3773af6e011b4799c99eca6b2fe097a2",
+            "text": "进一步",
+            "words": [
+              {
+                "text": "进一步",
+                "start": 0.21,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2711",
+  "targetId": "W2711",
+  "steps": [
+    {
+      "id": "BANK-W2711-W2711",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2711-W2711",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "mother's mother; maternal grandmother",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "姥姥"
+            },
+            {
+              "value": "lǎolao",
+              "mode": "pinyin"
+            },
+            {
+              "value": "lao3lao5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "姥姥",
+            "pinyin": "lǎolao",
+            "meaning": "mother's mother; maternal grandmother",
+            "singleWord": true,
+            "audio": "911bb6bb91e39331077ccb5a34ffcacd8a52990daeaca3b428f6d2d36c3d9926"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "911bb6bb91e39331077ccb5a34ffcacd8a52990daeaca3b428f6d2d36c3d9926": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5f9e5f0c2694b5b2f5cb5ae3a0699169967bd40fc0ad7fb4e74cd7049383da9f.mp3",
+        "sha256": "5f9e5f0c2694b5b2f5cb5ae3a0699169967bd40fc0ad7fb4e74cd7049383da9f",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "5f9e5f0c2694b5b2f5cb5ae3a0699169967bd40fc0ad7fb4e74cd7049383da9f",
+          "text": "姥姥",
+          "words": [
+            {
+              "text": "姥姥",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/16534d77e253b0045e8567d83d5ae405332b53a6bea87bbf598751331239cd0d.mp3",
+        "sha256": "16534d77e253b0045e8567d83d5ae405332b53a6bea87bbf598751331239cd0d",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "16534d77e253b0045e8567d83d5ae405332b53a6bea87bbf598751331239cd0d",
+          "text": "姥姥",
+          "words": [
+            {
+              "text": "姥姥",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2711",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2711-W2711",
+      "question_ids": [
+        "BANK-W2711-W2711"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-01",
+    "stepId": "S-U5-01-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-59e5"
+    ],
+    "grammarLessonIds": []
+  }
+}

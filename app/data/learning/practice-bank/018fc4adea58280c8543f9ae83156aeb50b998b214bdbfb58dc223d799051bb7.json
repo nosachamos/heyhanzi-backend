@@ -1,0 +1,159 @@
+{
+  "id": "BANK-W2084",
+  "targetId": "W2084",
+  "steps": [
+    {
+      "id": "BANK-W2084-W2084",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2084-W2084",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "then; as a result",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "便"
+            },
+            {
+              "value": "biàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bian4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "便",
+            "pinyin": "biàn",
+            "meaning": "then; as a result",
+            "singleWord": true,
+            "audio": "a254fa87ea579ab6bd73b092470d4a5660df727a98ec55f6ffbe82211b795251"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W2084-W2084-use-consequence",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W2084-W2084-use-consequence",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 便 fits this context?",
+          "context": "A stated condition is met, and the following action happens as a consequence.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W2084-W2084-use-consequence-meaning",
+              "label": "Then; as a result.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "便 can connect a preceding event or condition with what follows: then or as a result. It expresses a consequence rather than describing something as casual."
+            },
+            {
+              "id": "BANK-W2084-W2084-use-consequence-contrast-2",
+              "label": "A description of informal clothing.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "便 can connect a preceding event or condition with what follows: then or as a result. It expresses a consequence rather than describing something as casual."
+            },
+            {
+              "id": "BANK-W2084-W2084-use-consequence-contrast-1",
+              "label": "Despite that condition not being met.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "便 can connect a preceding event or condition with what follows: then or as a result. It expresses a consequence rather than describing something as casual."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "便",
+            "pinyin": "biàn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "a254fa87ea579ab6bd73b092470d4a5660df727a98ec55f6ffbe82211b795251"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a254fa87ea579ab6bd73b092470d4a5660df727a98ec55f6ffbe82211b795251": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-c365f8c2d55def21b0615f49f6e9ccb74eebc45979668adfa3d0ba4a02861cb2.mp3",
+        "sha256": "c365f8c2d55def21b0615f49f6e9ccb74eebc45979668adfa3d0ba4a02861cb2",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "c365f8c2d55def21b0615f49f6e9ccb74eebc45979668adfa3d0ba4a02861cb2",
+          "text": "便",
+          "words": [
+            {
+              "text": "便",
+              "start": 0.22,
+              "end": 0.32
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-bc5a0bd14d07e70bfa1bdc5858be616d9baf1ca853971bd8b8ca3cb130e30a95.mp3",
+        "sha256": "bc5a0bd14d07e70bfa1bdc5858be616d9baf1ca853971bd8b8ca3cb130e30a95",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "bc5a0bd14d07e70bfa1bdc5858be616d9baf1ca853971bd8b8ca3cb130e30a95",
+          "text": "便",
+          "words": [
+            {
+              "text": "便",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2084",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2084-W2084",
+      "question_ids": [
+        "BANK-W2084-W2084"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W2084",
+      "facet_id": "lexical-use-consequence",
+      "part_id": "BANK-W2084-W2084-use-consequence",
+      "question_ids": [
+        "BANK-W2084-W2084-use-consequence"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W2084",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-24-P01",
+    "stepId": "S-U5-24-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4fbf"
+    ],
+    "grammarLessonIds": []
+  }
+}

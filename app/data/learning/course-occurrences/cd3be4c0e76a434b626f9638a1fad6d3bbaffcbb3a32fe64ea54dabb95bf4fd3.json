@@ -1,0 +1,123 @@
+{
+  "id": "EX-CORE-WU04-required-retrieval",
+  "revision": 1,
+  "unit": "WU04",
+  "stage": "ST-WARMUP",
+  "after": "S-WU04-required-retrieval",
+  "activity": "ACT-RECALL",
+  "title": "Recall familiar material",
+  "optional": false,
+  "partCount": 1,
+  "partTitles": [
+    "Retrieve and use familiar material"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "W-R5-REPEAT",
+        "text": "请再说一遍",
+        "pinyin": "qǐngzàishuōyībiàn",
+        "meaning": "please say it once more",
+        "characters": [
+          {
+            "id": "C-8BF7",
+            "text": "请"
+          },
+          {
+            "id": "C-518D",
+            "text": "再"
+          },
+          {
+            "id": "C-8BF4",
+            "text": "说"
+          },
+          {
+            "id": "C-4E00",
+            "text": "一"
+          },
+          {
+            "id": "C-904D",
+            "text": "遍"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "K-SOUND-repair",
+      "facet_id": "K-SOUND-repair-situated-performance",
+      "part_id": "EX-CORE-WU04-required-retrieval-group-1-K-SOUND-repair",
+      "question_ids": [
+        "EX-CORE-WU04-required-retrieval-review-K-SOUND-repair-perform"
+      ],
+      "evidence": "self-reviewed",
+      "scope": "Request repetition with the explicitly taught whole chunk; distinguish a sound-production problem from a missing word. Grammar inside the chunk is analyzed later.",
+      "stage_outcome_mastery": false,
+      "encounter_group": 1
+    }
+  ],
+  "sourceStepId": "S-WU04-required-retrieval",
+  "encounter_groups": [
+    [
+      "K-SOUND-repair"
+    ]
+  ],
+  "fingerprint": "cfda4b4b6473ac6011e82a1f90423e651bfc103581ac33093238ceaa2b3dc83d",
+  "definition": {
+    "id": "ACT-RECALL",
+    "instanceId": "EX-CORE-WU04-required-retrieval",
+    "revision": 1,
+    "title": "Recall familiar material",
+    "subtitle": "Read and speak here",
+    "context": "Use a few familiar words in a short exchange, then demonstrate understanding of a micro-story.",
+    "steps": [
+      {
+        "id": "EX-CORE-WU04-required-retrieval-group-1-K-SOUND-repair",
+        "kind": "check",
+        "title": "Retrieve and use familiar material",
+        "questions": [
+          {
+            "id": "EX-CORE-WU04-required-retrieval-review-K-SOUND-repair-perform",
+            "kind": "production",
+            "response": "spoken",
+            "prompt": "Your partner spoke while you were distracted. Ask them to repeat using the taught whole chunk, pause, then acknowledge the repeated message.",
+            "promptLanguage": "en",
+            "context": "Your partner spoke while you were distracted; you did not hear the message. Its content is unspecified. Ask for repetition with the taught chunk, wait, then acknowledge hearing the repeated turn without inventing its content.\nFamiliar meanings available: please say it once more.",
+            "contextLanguage": "en",
+            "label": "Take your speaking turn",
+            "resultDomain": "Self-reviewed speaking practice",
+            "rubric": [
+              {
+                "id": "r1",
+                "text": "I used the taught repetition-request chunk for the missed message."
+              },
+              {
+                "id": "r2",
+                "text": "I left a turn for the partner and distinguished missing sound from an unknown word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your results distinguish checked answers from self-reviewed practice. Unsampled material and unassessed proficiency remain separate.",
+    "setActivity": {
+      "schema": "course-practice-v1",
+      "partIds": [
+        "EX-CORE-WU04-required-retrieval-group-1-K-SOUND-repair"
+      ],
+      "targets": [
+        "K-SOUND-repair"
+      ],
+      "completion": "unassessed-practice"
+    },
+    "audio": {}
+  }
+}

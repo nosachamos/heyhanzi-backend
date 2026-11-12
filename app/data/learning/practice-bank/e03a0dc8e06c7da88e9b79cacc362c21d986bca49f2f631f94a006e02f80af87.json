@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0413",
+  "targetId": "W0413",
+  "steps": [
+    {
+      "id": "BANK-W0413-W0413",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0413-W0413",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "egg; hen's egg",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "鸡蛋"
+            },
+            {
+              "value": "jīdàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ji1dan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "鸡蛋",
+            "pinyin": "jīdàn",
+            "meaning": "egg; hen's egg",
+            "singleWord": true,
+            "audio": "545abc478ff69cac48986c70749902cbdda340b0859d372174fb781c6124401d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "545abc478ff69cac48986c70749902cbdda340b0859d372174fb781c6124401d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-c15a64c580f747abe3aa2e761399484e866477501999ea442e9f7784082f4d35.mp3",
+        "sha256": "c15a64c580f747abe3aa2e761399484e866477501999ea442e9f7784082f4d35",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "c15a64c580f747abe3aa2e761399484e866477501999ea442e9f7784082f4d35",
+          "text": "鸡蛋",
+          "words": [
+            {
+              "text": "鸡蛋",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-5cae22dd60915ac7ffa8b5d0ba0dcf6df816ac5e5ea86a1386874a6055ca3508.mp3",
+        "sha256": "5cae22dd60915ac7ffa8b5d0ba0dcf6df816ac5e5ea86a1386874a6055ca3508",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "5cae22dd60915ac7ffa8b5d0ba0dcf6df816ac5e5ea86a1386874a6055ca3508",
+          "text": "鸡蛋",
+          "words": [
+            {
+              "text": "鸡蛋",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0413",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0413-W0413",
+      "question_ids": [
+        "BANK-W0413-W0413"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U08-P01",
+    "stepId": "S-U08-words-r4-25",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-86cb"
+    ],
+    "grammarLessonIds": []
+  }
+}

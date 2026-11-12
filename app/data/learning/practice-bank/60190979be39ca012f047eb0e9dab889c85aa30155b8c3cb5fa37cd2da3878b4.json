@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0953",
+  "targetId": "W0953",
+  "steps": [
+    {
+      "id": "BANK-W0953-W0953",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0953-W0953",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "leg",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "腿"
+            },
+            {
+              "value": "tuǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "tui3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "腿",
+            "pinyin": "tuǐ",
+            "meaning": "leg",
+            "singleWord": true,
+            "audio": "a3a0534772cd02028566be32903d2286d21552aed5daea057ba430b4dcc431f0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a3a0534772cd02028566be32903d2286d21552aed5daea057ba430b4dcc431f0": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a2972bed42c5ebe070bcfdd6c047fc461721cd262632bc9e55ba0acf4f8a134c.mp3",
+        "sha256": "a2972bed42c5ebe070bcfdd6c047fc461721cd262632bc9e55ba0acf4f8a134c",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "a2972bed42c5ebe070bcfdd6c047fc461721cd262632bc9e55ba0acf4f8a134c",
+          "text": "腿",
+          "words": [
+            {
+              "text": "腿",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-936cdb3d1b45c174d60533d9f93fd5910d366bb81ba42a553ae65d630ebdb5d6.mp3",
+        "sha256": "936cdb3d1b45c174d60533d9f93fd5910d366bb81ba42a553ae65d630ebdb5d6",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "936cdb3d1b45c174d60533d9f93fd5910d366bb81ba42a553ae65d630ebdb5d6",
+          "text": "腿",
+          "words": [
+            {
+              "text": "腿",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0953",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0953-W0953",
+      "question_ids": [
+        "BANK-W0953-W0953"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-09",
+    "stepId": "S-U3-09-words-r4-14",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-817f"
+    ],
+    "grammarLessonIds": []
+  }
+}

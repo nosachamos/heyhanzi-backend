@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W2100",
+  "targetId": "W2100",
+  "steps": [
+    {
+      "id": "BANK-W2100-W2100",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2100-W2100",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "unfavorable; disadvantageous",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "不利"
+            },
+            {
+              "value": "bùlì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bu4li4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "不利",
+            "pinyin": "bùlì",
+            "meaning": "unfavorable; disadvantageous",
+            "singleWord": true,
+            "audio": "a22aa36bc0c386436f14498832afca83ff0c8c04817557b3ce45f8a9a984b7e0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a22aa36bc0c386436f14498832afca83ff0c8c04817557b3ce45f8a9a984b7e0": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d36accb85846dfa28926a41b0caa21a16243c9fb939d1afe56b699e1893b2ba5.mp3",
+        "sha256": "d36accb85846dfa28926a41b0caa21a16243c9fb939d1afe56b699e1893b2ba5",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "d36accb85846dfa28926a41b0caa21a16243c9fb939d1afe56b699e1893b2ba5",
+          "text": "不利",
+          "words": [
+            {
+              "text": "不利",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/course-male-f5a2a26dcc3d633c781c46d25c5a174f1029f63153ff75bf23be0345e34cd8ca.mp3",
+        "sha256": "f5a2a26dcc3d633c781c46d25c5a174f1029f63153ff75bf23be0345e34cd8ca",
+        "byteLength": 9261,
+        "qualityWarning": "too-fast",
+        "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+        "readAlong": {
+          "audioSha256": "f5a2a26dcc3d633c781c46d25c5a174f1029f63153ff75bf23be0345e34cd8ca",
+          "text": "不利",
+          "words": [
+            {
+              "text": "不利",
+              "start": 0.09,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2100",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2100-W2100",
+      "question_ids": [
+        "BANK-W2100-W2100"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-45-P01",
+    "stepId": "S-U5-45-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5229"
+    ],
+    "grammarLessonIds": []
+  }
+}

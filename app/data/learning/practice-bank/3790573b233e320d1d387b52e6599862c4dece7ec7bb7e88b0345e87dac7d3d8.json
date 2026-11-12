@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1305",
+  "targetId": "W1305",
+  "steps": [
+    {
+      "id": "BANK-W1305-W1305",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1305-W1305",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "highway; road",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "公路"
+            },
+            {
+              "value": "gōnglù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gong1lu4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "公路",
+            "pinyin": "gōnglù",
+            "meaning": "highway; road",
+            "singleWord": true,
+            "audio": "81c9162471b709c39aef46f270b5d3bcaebf887915fcfb793dca6b86624dffcf"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "81c9162471b709c39aef46f270b5d3bcaebf887915fcfb793dca6b86624dffcf": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-de9fec3e0c03c0035b2ed1c693f08ae42396f0b9ecbd90ab9afadcac7f89c9f1.mp3",
+        "sha256": "de9fec3e0c03c0035b2ed1c693f08ae42396f0b9ecbd90ab9afadcac7f89c9f1",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "de9fec3e0c03c0035b2ed1c693f08ae42396f0b9ecbd90ab9afadcac7f89c9f1",
+          "text": "公路",
+          "words": [
+            {
+              "text": "公路",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-577884c0c54f0164dde73c4d96b34866898069c5122e579acb0204006a17b95a.mp3",
+        "sha256": "577884c0c54f0164dde73c4d96b34866898069c5122e579acb0204006a17b95a",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "577884c0c54f0164dde73c4d96b34866898069c5122e579acb0204006a17b95a",
+          "text": "公路",
+          "words": [
+            {
+              "text": "公路",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1305",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1305-W1305",
+      "question_ids": [
+        "BANK-W1305-W1305"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-17",
+    "stepId": "S-U4-17-words-r4-4",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8def"
+    ],
+    "grammarLessonIds": []
+  }
+}

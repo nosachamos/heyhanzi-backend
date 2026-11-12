@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0507",
+  "targetId": "W0507",
+  "steps": [
+    {
+      "id": "BANK-W0507-W0507",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0507-W0507",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "China",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "中国"
+            },
+            {
+              "value": "Zhōngguó",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhong1guo2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "中国",
+            "pinyin": "Zhōngguó",
+            "meaning": "China",
+            "singleWord": true,
+            "audio": "a704ef3748386b6a8e4329f6331963088d05d85248e1a5471aaeccb3b82e1028"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a704ef3748386b6a8e4329f6331963088d05d85248e1a5471aaeccb3b82e1028": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1a741ddd151d7db13b94ad3703037b11d2c9c632c5f7b9e1bd69f829b091fe4c.mp3",
+        "sha256": "1a741ddd151d7db13b94ad3703037b11d2c9c632c5f7b9e1bd69f829b091fe4c",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "1a741ddd151d7db13b94ad3703037b11d2c9c632c5f7b9e1bd69f829b091fe4c",
+          "text": "中国",
+          "words": [
+            {
+              "text": "中国",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-420a4fab8f41c4539d745d449567b4d45f0a214ba1cb075aa142604b7e8229cc.mp3",
+        "sha256": "420a4fab8f41c4539d745d449567b4d45f0a214ba1cb075aa142604b7e8229cc",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "420a4fab8f41c4539d745d449567b4d45f0a214ba1cb075aa142604b7e8229cc",
+          "text": "中国",
+          "words": [
+            {
+              "text": "中国",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0507",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0507-W0507",
+      "question_ids": [
+        "BANK-W0507-W0507"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U02",
+    "stepId": "S-U02-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-56fd"
+    ],
+    "grammarLessonIds": []
+  }
+}

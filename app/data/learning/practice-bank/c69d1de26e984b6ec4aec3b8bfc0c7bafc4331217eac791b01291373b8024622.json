@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2552",
+  "targetId": "W2552",
+  "steps": [
+    {
+      "id": "BANK-W2552-W2552",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2552-W2552",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "disease; sickness",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "疾病"
+            },
+            {
+              "value": "jíbìng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ji2bing4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "疾病",
+            "pinyin": "jíbìng",
+            "meaning": "disease; sickness",
+            "singleWord": true,
+            "audio": "249039e70caf9616d413cd74543987e770541bfef9e27c697836f75f5b4b4bc7"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "249039e70caf9616d413cd74543987e770541bfef9e27c697836f75f5b4b4bc7": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1125ca338ce0b9e9c575cdfb12f34cff22281ecb251888dc717ee153c78f7be9.mp3",
+        "sha256": "1125ca338ce0b9e9c575cdfb12f34cff22281ecb251888dc717ee153c78f7be9",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "1125ca338ce0b9e9c575cdfb12f34cff22281ecb251888dc717ee153c78f7be9",
+          "text": "疾病",
+          "words": [
+            {
+              "text": "疾病",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-62aae656b7b859546bfc4e6eba1670f0b7af2be06592f84e1a25381e52eb5b29.mp3",
+        "sha256": "62aae656b7b859546bfc4e6eba1670f0b7af2be06592f84e1a25381e52eb5b29",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "62aae656b7b859546bfc4e6eba1670f0b7af2be06592f84e1a25381e52eb5b29",
+          "text": "疾病",
+          "words": [
+            {
+              "text": "疾病",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2552",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2552-W2552",
+      "question_ids": [
+        "BANK-W2552-W2552"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-15",
+    "stepId": "S-U5-15-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-75be"
+    ],
+    "grammarLessonIds": []
+  }
+}

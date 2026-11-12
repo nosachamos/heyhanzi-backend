@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1719",
+  "targetId": "W1719",
+  "steps": [
+    {
+      "id": "BANK-W1719-W1719",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1719-W1719",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "capital",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "首都"
+            },
+            {
+              "value": "shǒudū",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shou3du1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "首都",
+            "pinyin": "shǒudū",
+            "meaning": "capital",
+            "singleWord": true,
+            "audio": "a86b76597db5eb8912ccdafc100a2c93cf85d124453e83997fbb0976d7ad5fb0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a86b76597db5eb8912ccdafc100a2c93cf85d124453e83997fbb0976d7ad5fb0": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3c88f0f33bc2820ba4fd7c28b70bfc377f5b85f36afd7bc2ca3635a6ac2e2397.mp3",
+        "sha256": "3c88f0f33bc2820ba4fd7c28b70bfc377f5b85f36afd7bc2ca3635a6ac2e2397",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "3c88f0f33bc2820ba4fd7c28b70bfc377f5b85f36afd7bc2ca3635a6ac2e2397",
+          "text": "首都",
+          "words": [
+            {
+              "text": "首都",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/34164a89968a004eb061ef1ff7333a5138e880a230b5af21f12a4ff870d02576.mp3",
+        "sha256": "34164a89968a004eb061ef1ff7333a5138e880a230b5af21f12a4ff870d02576",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "34164a89968a004eb061ef1ff7333a5138e880a230b5af21f12a4ff870d02576",
+          "text": "首都",
+          "words": [
+            {
+              "text": "首都",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1719",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1719-W1719",
+      "question_ids": [
+        "BANK-W1719-W1719"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-29",
+    "stepId": "S-U4-29-words-r4-9",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4f9b"
+    ],
+    "grammarLessonIds": []
+  }
+}

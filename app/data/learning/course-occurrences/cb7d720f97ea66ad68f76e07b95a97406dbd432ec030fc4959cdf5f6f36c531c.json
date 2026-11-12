@@ -1,0 +1,773 @@
+{
+  "id": "EX-CHAR-char-865a",
+  "revision": 2,
+  "unit": "U5-24-P01",
+  "stage": "ST-HSK5",
+  "after": "S-U5-24-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "虚",
+  "sourceBlockId": "mandarin-simplified-v1-char-865a",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-6155",
+        "text": "慕",
+        "pinyin": "mù",
+        "meaning": "to admire",
+        "characters": [
+          {
+            "id": "C-6155",
+            "text": "慕"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-865a",
+        "text": "虚",
+        "pinyin": "xū",
+        "meaning": "emptiness; void",
+        "characters": [
+          {
+            "id": "C-865A",
+            "text": "虚"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-5df0beaade201e5813ad9fe6",
+        "text": "流量",
+        "pinyin": "liúliàng",
+        "meaning": "flow rate; throughput of passengers; volume of traffic; (hydrology) discharge",
+        "characters": [
+          {
+            "id": "C-6D41",
+            "text": "流"
+          },
+          {
+            "id": "C-91CF",
+            "text": "量"
+          }
+        ]
+      },
+      {
+        "id": "W1481",
+        "text": "恐怕",
+        "pinyin": "kǒngpà",
+        "meaning": "probably; I'm afraid that",
+        "characters": [
+          {
+            "id": "C-6050",
+            "text": "恐"
+          },
+          {
+            "id": "C-6015",
+            "text": "怕"
+          }
+        ]
+      },
+      {
+        "id": "W3324",
+        "text": "虚心",
+        "pinyin": "xūxīn",
+        "meaning": "open-minded; humble",
+        "characters": [
+          {
+            "id": "C-865A",
+            "text": "虚"
+          },
+          {
+            "id": "C-5FC3",
+            "text": "心"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "811894a95cfb18621dd710d407bdc57a4cc17ae67fcc4929533ace8a8077888e",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-865a",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "虚",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-865a-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3324",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "open-minded; humble",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "虚心"
+              },
+              {
+                "value": "xūxīn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xu1xin1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "虚心",
+              "pinyin": "xūxīn",
+              "meaning": "open-minded; humble",
+              "audio": "ae9509176996f7f3191a70038b06dd39a0339f329a9cacae85d2d88eea4f8252",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-865a-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-865a",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "虚",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-865a",
+                "label": "emptiness; void",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-PRIMARY-char-6155",
+                "label": "to admire",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1481",
+                "label": "probably; I'm afraid that",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-865a-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "虚",
+        "pinyin": "xū",
+        "meaning": "emptiness; void",
+        "source": "/stroke-data/865a.json",
+        "reference": {
+          "character": "虚",
+          "sha256": "d1611eac48d545532e6a1ac3a8417fcfee435067665469398f139233c2bac398",
+          "medians": [
+            [
+              [
+                485,
+                846
+              ],
+              [
+                504,
+                832
+              ],
+              [
+                521,
+                808
+              ],
+              [
+                517,
+                689
+              ],
+              [
+                501,
+                677
+              ]
+            ],
+            [
+              [
+                551,
+                750
+              ],
+              [
+                567,
+                762
+              ],
+              [
+                654,
+                785
+              ],
+              [
+                717,
+                791
+              ]
+            ],
+            [
+              [
+                316,
+                629
+              ],
+              [
+                339,
+                617
+              ],
+              [
+                559,
+                661
+              ],
+              [
+                707,
+                682
+              ],
+              [
+                739,
+                673
+              ],
+              [
+                761,
+                646
+              ],
+              [
+                701,
+                564
+              ]
+            ],
+            [
+              [
+                244,
+                648
+              ],
+              [
+                279,
+                614
+              ],
+              [
+                283,
+                596
+              ],
+              [
+                271,
+                460
+              ],
+              [
+                242,
+                286
+              ],
+              [
+                218,
+                209
+              ],
+              [
+                173,
+                109
+              ],
+              [
+                117,
+                22
+              ],
+              [
+                85,
+                -14
+              ]
+            ],
+            [
+              [
+                368,
+                495
+              ],
+              [
+                412,
+                492
+              ],
+              [
+                446,
+                497
+              ],
+              [
+                560,
+                531
+              ],
+              [
+                644,
+                545
+              ]
+            ],
+            [
+              [
+                478,
+                612
+              ],
+              [
+                500,
+                585
+              ],
+              [
+                499,
+                478
+              ],
+              [
+                505,
+                448
+              ],
+              [
+                518,
+                427
+              ],
+              [
+                539,
+                415
+              ],
+              [
+                608,
+                408
+              ],
+              [
+                686,
+                427
+              ],
+              [
+                710,
+                449
+              ],
+              [
+                710,
+                523
+              ]
+            ],
+            [
+              [
+                418,
+                334
+              ],
+              [
+                438,
+                316
+              ],
+              [
+                455,
+                287
+              ],
+              [
+                460,
+                76
+              ],
+              [
+                448,
+                69
+              ]
+            ],
+            [
+              [
+                564,
+                356
+              ],
+              [
+                603,
+                321
+              ],
+              [
+                588,
+                100
+              ],
+              [
+                586,
+                90
+              ],
+              [
+                571,
+                77
+              ]
+            ],
+            [
+              [
+                300,
+                229
+              ],
+              [
+                366,
+                175
+              ],
+              [
+                378,
+                146
+              ]
+            ],
+            [
+              [
+                740,
+                314
+              ],
+              [
+                759,
+                281
+              ],
+              [
+                681,
+                198
+              ],
+              [
+                651,
+                175
+              ]
+            ],
+            [
+              [
+                270,
+                33
+              ],
+              [
+                322,
+                22
+              ],
+              [
+                512,
+                46
+              ],
+              [
+                753,
+                64
+              ],
+              [
+                787,
+                63
+              ],
+              [
+                859,
+                42
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-865a-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-5df0beaade201e5813ad9fe6",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "flow rate; throughput of passengers",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "流量"
+              },
+              {
+                "value": "liúliàng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "liu2liang4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "流量",
+              "pinyin": "liúliàng",
+              "meaning": "flow rate; throughput of passengers",
+              "audio": "71120d5ae17d3b8c4521a701bf7e6cd08b2d5ff7ceefcd1a6954d111488ddf27",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-865a-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-865a",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "emptiness; void",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "虚"
+              },
+              {
+                "value": "xū",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xu1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "虚",
+              "pinyin": "xū",
+              "meaning": "emptiness; void",
+              "audio": "1198e4f9a668c6f1426893596b591afd7fb3608291ae226698d7ca7077bb2e6e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "1198e4f9a668c6f1426893596b591afd7fb3608291ae226698d7ca7077bb2e6e"
+            ],
+            "transcript": [
+              {
+                "text": "虚",
+                "pinyin": "xū",
+                "meaning": "emptiness; void",
+                "audio": "1198e4f9a668c6f1426893596b591afd7fb3608291ae226698d7ca7077bb2e6e",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-865A",
+      "character": "虚",
+      "lessonIds": [
+        "LESSON-C-865A"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-865a-word",
+        "EX-CHAR-char-865a-recognize",
+        "EX-CHAR-char-865a-write",
+        "EX-CHAR-char-865a-familiar",
+        "EX-CHAR-char-865a-recall"
+      ]
+    },
+    "audio": {
+      "2c3d5f9414de71b24faeec512df849d534082d014feb8d350c0742d52e819aef": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-cfaa5f6f67631848ad6703d02755bc4e0e47a6f4584608e071dbc6f45fe397e7.mp3",
+          "sha256": "cfaa5f6f67631848ad6703d02755bc4e0e47a6f4584608e071dbc6f45fe397e7",
+          "byteLength": 8397,
+          "readAlong": {
+            "audioSha256": "cfaa5f6f67631848ad6703d02755bc4e0e47a6f4584608e071dbc6f45fe397e7",
+            "text": "慕",
+            "words": [
+              {
+                "text": "慕",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-81321f0f6f1e25948063b8d3b89afc7128434d2910e0613521d0563a5c053508.mp3",
+          "sha256": "81321f0f6f1e25948063b8d3b89afc7128434d2910e0613521d0563a5c053508",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "81321f0f6f1e25948063b8d3b89afc7128434d2910e0613521d0563a5c053508",
+            "text": "慕",
+            "words": [
+              {
+                "text": "慕",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "1198e4f9a668c6f1426893596b591afd7fb3608291ae226698d7ca7077bb2e6e": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-ce12a47d91225bebcd3a13231b9990cc9bc8796d9caf35a5e6fbb4530fd0b313.mp3",
+          "sha256": "ce12a47d91225bebcd3a13231b9990cc9bc8796d9caf35a5e6fbb4530fd0b313",
+          "byteLength": 10413,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "ce12a47d91225bebcd3a13231b9990cc9bc8796d9caf35a5e6fbb4530fd0b313",
+            "text": "虚",
+            "words": [
+              {
+                "text": "虚",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-9e7002734a8b2ff9ee13afbdd7c19be6807e2ed2299c75a28a8dbc166fbcfedd.mp3",
+          "sha256": "9e7002734a8b2ff9ee13afbdd7c19be6807e2ed2299c75a28a8dbc166fbcfedd",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "9e7002734a8b2ff9ee13afbdd7c19be6807e2ed2299c75a28a8dbc166fbcfedd",
+            "text": "虚",
+            "words": [
+              {
+                "text": "虚",
+                "start": 0.27,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "71120d5ae17d3b8c4521a701bf7e6cd08b2d5ff7ceefcd1a6954d111488ddf27": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/949058a8d7b11ba391d3bbbc78df76e2423293992187751d587a4b767cd50083.mp3",
+          "sha256": "949058a8d7b11ba391d3bbbc78df76e2423293992187751d587a4b767cd50083",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "949058a8d7b11ba391d3bbbc78df76e2423293992187751d587a4b767cd50083",
+            "text": "流量",
+            "words": [
+              {
+                "text": "流量",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f9635debb1d3a77b2c7d1d90ab11007d60b4d0a05e768805d9dadbc7437585f3.mp3",
+          "sha256": "f9635debb1d3a77b2c7d1d90ab11007d60b4d0a05e768805d9dadbc7437585f3",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "f9635debb1d3a77b2c7d1d90ab11007d60b4d0a05e768805d9dadbc7437585f3",
+            "text": "流量",
+            "words": [
+              {
+                "text": "流量",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "55a792237c267914b3afdfce77528792884984e559e490ad673153640a529806": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/fc1a6ca36a8675e8c4231e8be00c76bf156c0d533bb21ccba40a24099e14f53f.mp3",
+          "sha256": "fc1a6ca36a8675e8c4231e8be00c76bf156c0d533bb21ccba40a24099e14f53f",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "fc1a6ca36a8675e8c4231e8be00c76bf156c0d533bb21ccba40a24099e14f53f",
+            "text": "恐怕",
+            "words": [
+              {
+                "text": "恐怕",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c6f8fecf23f86a83d110465f1bed307ffff39f6c47565433cb9184c16a1aa81e.mp3",
+          "sha256": "c6f8fecf23f86a83d110465f1bed307ffff39f6c47565433cb9184c16a1aa81e",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "c6f8fecf23f86a83d110465f1bed307ffff39f6c47565433cb9184c16a1aa81e",
+            "text": "恐怕",
+            "words": [
+              {
+                "text": "恐怕",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "ae9509176996f7f3191a70038b06dd39a0339f329a9cacae85d2d88eea4f8252": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/870c9780b57132bc913e70b8931501e36095f5c5f8051167391757e69ebb2e4d.mp3",
+          "sha256": "870c9780b57132bc913e70b8931501e36095f5c5f8051167391757e69ebb2e4d",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "870c9780b57132bc913e70b8931501e36095f5c5f8051167391757e69ebb2e4d",
+            "text": "虚心",
+            "words": [
+              {
+                "text": "虚心",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/4527aa3b6c831bd774b25352934e1e6eccb5d8cf87fdd376b145945312755b19.mp3",
+          "sha256": "4527aa3b6c831bd774b25352934e1e6eccb5d8cf87fdd376b145945312755b19",
+          "byteLength": 11565,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "4527aa3b6c831bd774b25352934e1e6eccb5d8cf87fdd376b145945312755b19",
+            "text": "虚心",
+            "words": [
+              {
+                "text": "虚心",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

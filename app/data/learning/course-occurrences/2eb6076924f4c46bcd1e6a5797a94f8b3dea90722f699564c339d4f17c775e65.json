@@ -1,0 +1,917 @@
+{
+  "id": "EX-CHAR-char-7e41",
+  "revision": 2,
+  "unit": "U5-32-P01",
+  "stage": "ST-HSK5",
+  "after": "S-U5-32-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "繁",
+  "sourceBlockId": "mandarin-simplified-v1-char-7e41",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7e41",
+        "text": "繁",
+        "pinyin": "fán",
+        "meaning": "complicated; many",
+        "characters": [
+          {
+            "id": "C-7E41",
+            "text": "繁"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-aba86a42ea5384b73735197f",
+        "text": "专科",
+        "pinyin": "zhuānkē",
+        "meaning": "specialized subject; branch (of medicine)",
+        "characters": [
+          {
+            "id": "C-4E13",
+            "text": "专"
+          },
+          {
+            "id": "C-79D1",
+            "text": "科"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d3b846bb38078155cced6b3d",
+        "text": "繁体字",
+        "pinyin": "fán tǐ zì",
+        "meaning": "traditional Chinese character",
+        "characters": [
+          {
+            "id": "C-7E41",
+            "text": "繁"
+          },
+          {
+            "id": "C-4F53",
+            "text": "体"
+          },
+          {
+            "id": "C-5B57",
+            "text": "字"
+          }
+        ]
+      },
+      {
+        "id": "W2801",
+        "text": "明星",
+        "pinyin": "míngxīng",
+        "meaning": "star; celebrity",
+        "characters": [
+          {
+            "id": "C-660E",
+            "text": "明"
+          },
+          {
+            "id": "C-661F",
+            "text": "星"
+          }
+        ]
+      },
+      {
+        "id": "W3665",
+        "text": "本土",
+        "pinyin": "běntǔ",
+        "meaning": "one's native country; native",
+        "characters": [
+          {
+            "id": "C-672C",
+            "text": "本"
+          },
+          {
+            "id": "C-571F",
+            "text": "土"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "57ff14c8717ec410677f7a0211bc5244bb91183e6356e6df75f7a8ecdfa551c0",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7e41",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "繁",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7e41-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-d3b846bb38078155cced6b3d",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "traditional Chinese character",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "繁体字"
+              },
+              {
+                "value": "fán tǐ zì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "fan2ti3zi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "繁体字",
+              "pinyin": "fán tǐ zì",
+              "meaning": "traditional Chinese character",
+              "audio": "37e23ad6d7b2a2027c63832427c83b0571f177d0f3c3127b8a1c08e88fa435e7",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7e41-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7e41",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "繁",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W2801",
+                "label": "star; celebrity",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-aba86a42ea5384b73735197f",
+                "label": "specialized subject; branch (of medicine)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-7e41",
+                "label": "complicated; many",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7e41-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "繁",
+        "pinyin": "fán",
+        "meaning": "complicated; many",
+        "source": "/stroke-data/7e41.json",
+        "reference": {
+          "character": "繁",
+          "sha256": "6792aafc3767910dac8b2706e5438f9753263708f6dc98e47571dd8b5346f351",
+          "medians": [
+            [
+              [
+                287,
+                829
+              ],
+              [
+                305,
+                802
+              ],
+              [
+                278,
+                742
+              ],
+              [
+                239,
+                692
+              ],
+              [
+                204,
+                664
+              ]
+            ],
+            [
+              [
+                302,
+                740
+              ],
+              [
+                383,
+                751
+              ],
+              [
+                458,
+                771
+              ],
+              [
+                495,
+                771
+              ]
+            ],
+            [
+              [
+                262,
+                689
+              ],
+              [
+                271,
+                687
+              ],
+              [
+                279,
+                672
+              ],
+              [
+                276,
+                626
+              ],
+              [
+                222,
+                476
+              ],
+              [
+                239,
+                469
+              ],
+              [
+                309,
+                482
+              ],
+              [
+                373,
+                485
+              ],
+              [
+                445,
+                483
+              ],
+              [
+                467,
+                471
+              ]
+            ],
+            [
+              [
+                302,
+                678
+              ],
+              [
+                313,
+                669
+              ],
+              [
+                430,
+                694
+              ],
+              [
+                472,
+                687
+              ],
+              [
+                409,
+                441
+              ]
+            ],
+            [
+              [
+                335,
+                653
+              ],
+              [
+                349,
+                645
+              ],
+              [
+                376,
+                610
+              ]
+            ],
+            [
+              [
+                88,
+                568
+              ],
+              [
+                96,
+                561
+              ],
+              [
+                137,
+                554
+              ],
+              [
+                458,
+                600
+              ],
+              [
+                492,
+                601
+              ],
+              [
+                507,
+                595
+              ]
+            ],
+            [
+              [
+                318,
+                565
+              ],
+              [
+                344,
+                528
+              ],
+              [
+                348,
+                510
+              ]
+            ],
+            [
+              [
+                628,
+                828
+              ],
+              [
+                656,
+                793
+              ],
+              [
+                646,
+                766
+              ],
+              [
+                597,
+                673
+              ],
+              [
+                530,
+                588
+              ]
+            ],
+            [
+              [
+                624,
+                670
+              ],
+              [
+                744,
+                688
+              ],
+              [
+                835,
+                711
+              ],
+              [
+                861,
+                709
+              ]
+            ],
+            [
+              [
+                705,
+                655
+              ],
+              [
+                728,
+                634
+              ],
+              [
+                727,
+                628
+              ],
+              [
+                708,
+                575
+              ],
+              [
+                671,
+                513
+              ],
+              [
+                615,
+                467
+              ],
+              [
+                562,
+                446
+              ],
+              [
+                554,
+                448
+              ],
+              [
+                548,
+                441
+              ]
+            ],
+            [
+              [
+                565,
+                604
+              ],
+              [
+                585,
+                601
+              ],
+              [
+                703,
+                485
+              ],
+              [
+                791,
+                422
+              ],
+              [
+                833,
+                414
+              ],
+              [
+                928,
+                412
+              ]
+            ],
+            [
+              [
+                492,
+                453
+              ],
+              [
+                497,
+                412
+              ],
+              [
+                390,
+                328
+              ],
+              [
+                375,
+                302
+              ],
+              [
+                397,
+                290
+              ],
+              [
+                469,
+                287
+              ],
+              [
+                475,
+                282
+              ],
+              [
+                502,
+                291
+              ]
+            ],
+            [
+              [
+                606,
+                391
+              ],
+              [
+                614,
+                352
+              ],
+              [
+                499,
+                261
+              ],
+              [
+                412,
+                203
+              ],
+              [
+                400,
+                175
+              ],
+              [
+                425,
+                170
+              ],
+              [
+                583,
+                203
+              ],
+              [
+                642,
+                210
+              ],
+              [
+                650,
+                204
+              ]
+            ],
+            [
+              [
+                634,
+                261
+              ],
+              [
+                692,
+                196
+              ],
+              [
+                700,
+                168
+              ]
+            ],
+            [
+              [
+                504,
+                171
+              ],
+              [
+                525,
+                153
+              ],
+              [
+                531,
+                132
+              ],
+              [
+                532,
+                27
+              ],
+              [
+                520,
+                -12
+              ],
+              [
+                511,
+                -24
+              ],
+              [
+                505,
+                -23
+              ],
+              [
+                419,
+                19
+              ]
+            ],
+            [
+              [
+                334,
+                111
+              ],
+              [
+                311,
+                59
+              ],
+              [
+                267,
+                -8
+              ]
+            ],
+            [
+              [
+                650,
+                116
+              ],
+              [
+                731,
+                61
+              ],
+              [
+                752,
+                33
+              ],
+              [
+                763,
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7e41-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3665",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "one's native country; native",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "本土"
+              },
+              {
+                "value": "běntǔ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ben3tu3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "本土",
+              "pinyin": "běntǔ",
+              "meaning": "one's native country; native",
+              "audio": "cb88915fb32d35960fe26b38b8677d293ffb10ef32cc6aa86215219c728bb8c6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7e41-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7e41",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "complicated; many",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "繁"
+              },
+              {
+                "value": "fán",
+                "mode": "pinyin"
+              },
+              {
+                "value": "fan2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "繁",
+              "pinyin": "fán",
+              "meaning": "complicated; many",
+              "audio": "cb723b07949eed44f75f31396e0eaa09661b847ad35798427c5748bf18093780",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "cb723b07949eed44f75f31396e0eaa09661b847ad35798427c5748bf18093780"
+            ],
+            "transcript": [
+              {
+                "text": "繁",
+                "pinyin": "fán",
+                "meaning": "complicated; many",
+                "audio": "cb723b07949eed44f75f31396e0eaa09661b847ad35798427c5748bf18093780",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7E41",
+      "character": "繁",
+      "lessonIds": [
+        "LESSON-C-7E41"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7e41-word",
+        "EX-CHAR-char-7e41-recognize",
+        "EX-CHAR-char-7e41-write",
+        "EX-CHAR-char-7e41-familiar",
+        "EX-CHAR-char-7e41-recall"
+      ]
+    },
+    "audio": {
+      "cb723b07949eed44f75f31396e0eaa09661b847ad35798427c5748bf18093780": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-a437187ee7f1ab3e384b2d3b2d0b2703c0713f9220111a0e54d8875684d3a584.mp3",
+          "sha256": "a437187ee7f1ab3e384b2d3b2d0b2703c0713f9220111a0e54d8875684d3a584",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "a437187ee7f1ab3e384b2d3b2d0b2703c0713f9220111a0e54d8875684d3a584",
+            "text": "繁",
+            "words": [
+              {
+                "text": "繁",
+                "start": 0.2,
+                "end": 0.26
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-5f4ade2c5e94bbf12e95ee1f7434c582bdaa04403402c7be6ee87d6cf8e570f1.mp3",
+          "sha256": "5f4ade2c5e94bbf12e95ee1f7434c582bdaa04403402c7be6ee87d6cf8e570f1",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "5f4ade2c5e94bbf12e95ee1f7434c582bdaa04403402c7be6ee87d6cf8e570f1",
+            "text": "繁",
+            "words": [
+              {
+                "text": "繁",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "46bb87b638e83699925e45f9c4aa285266f7930d269a2c4510c133c08de82fb7": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9a1efc4192d34e0dd6195a689fcf53adaea1b76bf6be39af8522888365691c2f.mp3",
+          "sha256": "9a1efc4192d34e0dd6195a689fcf53adaea1b76bf6be39af8522888365691c2f",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "9a1efc4192d34e0dd6195a689fcf53adaea1b76bf6be39af8522888365691c2f",
+            "text": "专科",
+            "words": [
+              {
+                "text": "专科",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c44098311650af2e863193d9ff4e7d9451e89ac4fc71b642192421de94c08cbd.mp3",
+          "sha256": "c44098311650af2e863193d9ff4e7d9451e89ac4fc71b642192421de94c08cbd",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "c44098311650af2e863193d9ff4e7d9451e89ac4fc71b642192421de94c08cbd",
+            "text": "专科",
+            "words": [
+              {
+                "text": "专科",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "37e23ad6d7b2a2027c63832427c83b0571f177d0f3c3127b8a1c08e88fa435e7": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0e41623ef1edd74597e30a0dad02972591642c4007f84e645df61d48e6abb330.mp3",
+          "sha256": "0e41623ef1edd74597e30a0dad02972591642c4007f84e645df61d48e6abb330",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "0e41623ef1edd74597e30a0dad02972591642c4007f84e645df61d48e6abb330",
+            "text": "繁体字",
+            "words": [
+              {
+                "text": "繁体字",
+                "start": 0.15,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/ff9baf4aac56be01a6146e3e99a9920f1fa282aab9897c484a104b4723392447.mp3",
+          "sha256": "ff9baf4aac56be01a6146e3e99a9920f1fa282aab9897c484a104b4723392447",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "ff9baf4aac56be01a6146e3e99a9920f1fa282aab9897c484a104b4723392447",
+            "text": "繁体字",
+            "words": [
+              {
+                "text": "繁体字",
+                "start": 0.21,
+                "end": 0.69
+              }
+            ]
+          }
+        }
+      },
+      "ffd3f356423f8f1f355872c4c1dae82cfae37115c0b35b248610104ca4b648c4": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f5258b49a19dbd03efb1e4c1d2b8fade8a733ecc5e5227f89a07c5aaec069ae3.mp3",
+          "sha256": "f5258b49a19dbd03efb1e4c1d2b8fade8a733ecc5e5227f89a07c5aaec069ae3",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "f5258b49a19dbd03efb1e4c1d2b8fade8a733ecc5e5227f89a07c5aaec069ae3",
+            "text": "明星",
+            "words": [
+              {
+                "text": "明星",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5fecc613af915c5b59b4a4ff9f745a94064b26215c2af8e36f163597680544ea.mp3",
+          "sha256": "5fecc613af915c5b59b4a4ff9f745a94064b26215c2af8e36f163597680544ea",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "5fecc613af915c5b59b4a4ff9f745a94064b26215c2af8e36f163597680544ea",
+            "text": "明星",
+            "words": [
+              {
+                "text": "明星",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "cb88915fb32d35960fe26b38b8677d293ffb10ef32cc6aa86215219c728bb8c6": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-a64ae0c824395b33401a4561b8d65459b3f2f227cc4036c4f0f34c34a9ead809.mp3",
+          "sha256": "a64ae0c824395b33401a4561b8d65459b3f2f227cc4036c4f0f34c34a9ead809",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "a64ae0c824395b33401a4561b8d65459b3f2f227cc4036c4f0f34c34a9ead809",
+            "text": "本土",
+            "words": [
+              {
+                "text": "本土",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-18c036b0eeab74a22157af540d93a6c029e9ef454c974058fdbd7977af259585.mp3",
+          "sha256": "18c036b0eeab74a22157af540d93a6c029e9ef454c974058fdbd7977af259585",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "18c036b0eeab74a22157af540d93a6c029e9ef454c974058fdbd7977af259585",
+            "text": "本土",
+            "words": [
+              {
+                "text": "本土",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

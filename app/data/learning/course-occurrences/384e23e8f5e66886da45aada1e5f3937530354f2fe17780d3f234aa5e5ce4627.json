@@ -1,0 +1,651 @@
+{
+  "id": "EX-CHAR-char-4ea4",
+  "revision": 2,
+  "unit": "U19",
+  "stage": "ST-HSK2",
+  "after": "S-U19-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "交",
+  "sourceBlockId": "mandarin-simplified-v1-char-4ea4",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-4ea4",
+        "text": "交",
+        "pinyin": "jiāo",
+        "meaning": "to hand over; to deliver; to pay (money); to turn over; to make friends",
+        "characters": [
+          {
+            "id": "C-4EA4",
+            "text": "交"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d4089d07ede2d5dbd2ba2eed",
+        "text": "冷气",
+        "pinyin": "lěng qì",
+        "meaning": "cold air",
+        "characters": [
+          {
+            "id": "C-51B7",
+            "text": "冷"
+          },
+          {
+            "id": "C-6C14",
+            "text": "气"
+          }
+        ]
+      },
+      {
+        "id": "W0312",
+        "text": "同意",
+        "pinyin": "tóngyì",
+        "meaning": "to agree; to consent",
+        "characters": [
+          {
+            "id": "C-540C",
+            "text": "同"
+          },
+          {
+            "id": "C-610F",
+            "text": "意"
+          }
+        ]
+      },
+      {
+        "id": "W0539",
+        "text": "公交车",
+        "pinyin": "gōngjiāochē",
+        "meaning": "public transport vehicle; town bus",
+        "characters": [
+          {
+            "id": "C-516C",
+            "text": "公"
+          },
+          {
+            "id": "C-4EA4",
+            "text": "交"
+          },
+          {
+            "id": "C-8F66",
+            "text": "车"
+          }
+        ]
+      },
+      {
+        "id": "W2424",
+        "text": "个人",
+        "pinyin": "gèrén",
+        "meaning": "an individual; oneself",
+        "characters": [
+          {
+            "id": "C-4E2A",
+            "text": "个"
+          },
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "5edbc016c1e61c3962692eda58bf4d0c903bd7457be2a0bf4d08d3485fff2b26",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4ea4",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "交",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4ea4-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0539",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "public transport vehicle; town bus",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "公交车"
+              },
+              {
+                "value": "gōngjiāochē",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gong1jiao1che1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "公交车",
+              "pinyin": "gōngjiāochē",
+              "meaning": "public transport vehicle; town bus",
+              "audio": "a52bed11d51c7238e693e0f79f25c2d4c76f6b6d31b5abe97017a163af8177b8",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ea4-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-4ea4",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "交",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-4ea4",
+                "label": "to hand over; to deliver",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W2424",
+                "label": "an individual; oneself",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0312",
+                "label": "to agree; to consent",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ea4-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "交",
+        "pinyin": "jiāo",
+        "meaning": "to hand over; to deliver",
+        "source": "/stroke-data/4ea4.json",
+        "reference": {
+          "character": "交",
+          "sha256": "8a1b1573a2cfd4df0d02a84d25228530f7de687d945a6f001df42d7f72f89523",
+          "medians": [
+            [
+              [
+                419,
+                824
+              ],
+              [
+                510,
+                774
+              ],
+              [
+                533,
+                748
+              ]
+            ],
+            [
+              [
+                199,
+                617
+              ],
+              [
+                225,
+                611
+              ],
+              [
+                270,
+                613
+              ],
+              [
+                468,
+                653
+              ],
+              [
+                725,
+                689
+              ],
+              [
+                775,
+                683
+              ],
+              [
+                813,
+                671
+              ]
+            ],
+            [
+              [
+                351,
+                556
+              ],
+              [
+                364,
+                538
+              ],
+              [
+                368,
+                512
+              ],
+              [
+                326,
+                452
+              ],
+              [
+                268,
+                397
+              ],
+              [
+                188,
+                352
+              ]
+            ],
+            [
+              [
+                554,
+                573
+              ],
+              [
+                679,
+                513
+              ],
+              [
+                724,
+                466
+              ]
+            ],
+            [
+              [
+                540,
+                434
+              ],
+              [
+                572,
+                398
+              ],
+              [
+                552,
+                335
+              ],
+              [
+                503,
+                239
+              ],
+              [
+                440,
+                161
+              ],
+              [
+                360,
+                103
+              ],
+              [
+                307,
+                81
+              ],
+              [
+                221,
+                58
+              ],
+              [
+                140,
+                52
+              ]
+            ],
+            [
+              [
+                320,
+                353
+              ],
+              [
+                372,
+                330
+              ],
+              [
+                568,
+                142
+              ],
+              [
+                691,
+                54
+              ],
+              [
+                760,
+                34
+              ],
+              [
+                932,
+                23
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4ea4-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-d4089d07ede2d5dbd2ba2eed",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "cold air",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "冷气"
+              },
+              {
+                "value": "lěng qì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "leng3qi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "冷气",
+              "pinyin": "lěng qì",
+              "meaning": "cold air",
+              "audio": "dd37300ec011b67393db1828edfda34eb8e8c4ef12dfaf76bd4862dc97e9c259",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4ea4-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-4ea4",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to hand over; to deliver",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "交"
+              },
+              {
+                "value": "jiāo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jiao1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "交",
+              "pinyin": "jiāo",
+              "meaning": "to hand over; to deliver",
+              "audio": "59790a8c0a3ce0743deaf83ff177e203a585f43a72f28c11760dce8664cf8101",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "59790a8c0a3ce0743deaf83ff177e203a585f43a72f28c11760dce8664cf8101"
+            ],
+            "transcript": [
+              {
+                "text": "交",
+                "pinyin": "jiāo",
+                "meaning": "to hand over; to deliver",
+                "audio": "59790a8c0a3ce0743deaf83ff177e203a585f43a72f28c11760dce8664cf8101",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4EA4",
+      "character": "交",
+      "lessonIds": [
+        "LESSON-C-4EA4"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4ea4-word",
+        "EX-CHAR-char-4ea4-recognize",
+        "EX-CHAR-char-4ea4-write",
+        "EX-CHAR-char-4ea4-familiar",
+        "EX-CHAR-char-4ea4-recall"
+      ]
+    },
+    "audio": {
+      "59790a8c0a3ce0743deaf83ff177e203a585f43a72f28c11760dce8664cf8101": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f6dd089640268620615858714cfde806f38b65c07d2609fc8bd60c8d3486b4d7.mp3",
+          "sha256": "f6dd089640268620615858714cfde806f38b65c07d2609fc8bd60c8d3486b4d7",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "f6dd089640268620615858714cfde806f38b65c07d2609fc8bd60c8d3486b4d7",
+            "text": "交",
+            "words": [
+              {
+                "text": "交",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c8c72c5d2fe5b844bb05a2006cb46131c9faf3d052aa8d146572a0922c320163.mp3",
+          "sha256": "c8c72c5d2fe5b844bb05a2006cb46131c9faf3d052aa8d146572a0922c320163",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "c8c72c5d2fe5b844bb05a2006cb46131c9faf3d052aa8d146572a0922c320163",
+            "text": "交",
+            "words": [
+              {
+                "text": "交",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "dd37300ec011b67393db1828edfda34eb8e8c4ef12dfaf76bd4862dc97e9c259": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ae6f67937a23bcee3425cb4e116ee418cd89673a96d0c3b3b042dc3090cff172.mp3",
+          "sha256": "ae6f67937a23bcee3425cb4e116ee418cd89673a96d0c3b3b042dc3090cff172",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "ae6f67937a23bcee3425cb4e116ee418cd89673a96d0c3b3b042dc3090cff172",
+            "text": "冷气",
+            "words": [
+              {
+                "text": "冷气",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/47c4a8234b9c12708ea2113bb9d06acc533583dba548548e49b8b0dde1f10d12.mp3",
+          "sha256": "47c4a8234b9c12708ea2113bb9d06acc533583dba548548e49b8b0dde1f10d12",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "47c4a8234b9c12708ea2113bb9d06acc533583dba548548e49b8b0dde1f10d12",
+            "text": "冷气",
+            "words": [
+              {
+                "text": "冷气",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "cf7ebab054c4582cc5b298c38c5b62f5fb3eb71a9e8d00535ef463cb62751b30": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-6402df71d5f58a3e45014a055a9f4fedce231e45cf986c00ca0207225e74a961.mp3",
+          "sha256": "6402df71d5f58a3e45014a055a9f4fedce231e45cf986c00ca0207225e74a961",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "6402df71d5f58a3e45014a055a9f4fedce231e45cf986c00ca0207225e74a961",
+            "text": "同意",
+            "words": [
+              {
+                "text": "同意",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-5519254c2a8f10e752f25bac9994548a56c75c61330cafe32015b5f076962d80.mp3",
+          "sha256": "5519254c2a8f10e752f25bac9994548a56c75c61330cafe32015b5f076962d80",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "5519254c2a8f10e752f25bac9994548a56c75c61330cafe32015b5f076962d80",
+            "text": "同意",
+            "words": [
+              {
+                "text": "同意",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "a52bed11d51c7238e693e0f79f25c2d4c76f6b6d31b5abe97017a163af8177b8": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/af6b415638bf65f012b9b314916c72ec39f1a06b9dccfe5a14cab3b05d5de6e1.mp3",
+          "sha256": "af6b415638bf65f012b9b314916c72ec39f1a06b9dccfe5a14cab3b05d5de6e1",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "af6b415638bf65f012b9b314916c72ec39f1a06b9dccfe5a14cab3b05d5de6e1",
+            "text": "公交车",
+            "words": [
+              {
+                "text": "公交车",
+                "start": 0.15,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/801ee3a032864fc2b07286cb21436e1609a3ef00ae1042f60c465ba5c226fc14.mp3",
+          "sha256": "801ee3a032864fc2b07286cb21436e1609a3ef00ae1042f60c465ba5c226fc14",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "801ee3a032864fc2b07286cb21436e1609a3ef00ae1042f60c465ba5c226fc14",
+            "text": "公交车",
+            "words": [
+              {
+                "text": "公交车",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "31be8480957d0aba92faf03c11b28e947c1d3237adb1e67731a46b27538cc6b6": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3d3358277a54f52d46fb1b80e6f950c9cbc7af5821d4537124b2700b6558401d.mp3",
+          "sha256": "3d3358277a54f52d46fb1b80e6f950c9cbc7af5821d4537124b2700b6558401d",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "3d3358277a54f52d46fb1b80e6f950c9cbc7af5821d4537124b2700b6558401d",
+            "text": "个人",
+            "words": [
+              {
+                "text": "个人",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-018df00f20f4a6140005d0a8d0e3dafac6b4559aabaa39753f265ba6df833eb9.mp3",
+          "sha256": "018df00f20f4a6140005d0a8d0e3dafac6b4559aabaa39753f265ba6df833eb9",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "018df00f20f4a6140005d0a8d0e3dafac6b4559aabaa39753f265ba6df833eb9",
+            "text": "个人",
+            "words": [
+              {
+                "text": "个人",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W2016",
+  "targetId": "W2016",
+  "steps": [
+    {
+      "id": "BANK-W2016-W2016",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2016-W2016",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "group",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "组"
+            },
+            {
+              "value": "zǔ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zu3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "组",
+            "pinyin": "zǔ",
+            "meaning": "group",
+            "singleWord": true,
+            "audio": "e938bfea1d51bedc6c9157f014b0099326c8ac6ceb76d21a7785145e31240f8e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e938bfea1d51bedc6c9157f014b0099326c8ac6ceb76d21a7785145e31240f8e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-e0906ca7b3cc24e7c338ca19f0f468a061bfc831c2be7b00cb9c2b13d74f48ac.mp3",
+        "sha256": "e0906ca7b3cc24e7c338ca19f0f468a061bfc831c2be7b00cb9c2b13d74f48ac",
+        "byteLength": 11853,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "e0906ca7b3cc24e7c338ca19f0f468a061bfc831c2be7b00cb9c2b13d74f48ac",
+          "text": "组",
+          "words": [
+            {
+              "text": "组",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-e26218f8a8b56d105c9e96ae179cd204ec36bbe0a717738e3d5e69299e55f380.mp3",
+        "sha256": "e26218f8a8b56d105c9e96ae179cd204ec36bbe0a717738e3d5e69299e55f380",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "e26218f8a8b56d105c9e96ae179cd204ec36bbe0a717738e3d5e69299e55f380",
+          "text": "组",
+          "words": [
+            {
+              "text": "组",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2016",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2016-W2016",
+      "question_ids": [
+        "BANK-W2016-W2016"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-31",
+    "stepId": "S-U4-31-words-r4-21",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7591"
+    ],
+    "grammarLessonIds": []
+  }
+}

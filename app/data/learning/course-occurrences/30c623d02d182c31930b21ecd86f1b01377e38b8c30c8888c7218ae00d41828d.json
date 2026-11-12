@@ -1,0 +1,573 @@
+{
+  "id": "EX-CHAR-char-4e09",
+  "revision": 2,
+  "unit": "U05-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U05-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "三",
+  "sourceBlockId": "mandarin-simplified-v1-char-4e09",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-4e09",
+        "text": "三",
+        "pinyin": "sān",
+        "meaning": "three; 3",
+        "characters": [
+          {
+            "id": "C-4E09",
+            "text": "三"
+          }
+        ]
+      },
+      {
+        "id": "W0035",
+        "text": "没有",
+        "pinyin": "méiyǒu",
+        "meaning": "not have; there is not",
+        "characters": [
+          {
+            "id": "C-6CA1",
+            "text": "没"
+          },
+          {
+            "id": "C-6709",
+            "text": "有"
+          }
+        ]
+      },
+      {
+        "id": "W0702",
+        "text": "大人",
+        "pinyin": "dàren",
+        "meaning": "adult; grownup",
+        "characters": [
+          {
+            "id": "C-5927",
+            "text": "大"
+          },
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      },
+      {
+        "id": "W0881",
+        "text": "男人",
+        "pinyin": "nánrén",
+        "meaning": "a man; a male",
+        "characters": [
+          {
+            "id": "C-7537",
+            "text": "男"
+          },
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      },
+      {
+        "id": "W5254",
+        "text": "再三",
+        "pinyin": "zàisān",
+        "meaning": "over and over again; again and again",
+        "characters": [
+          {
+            "id": "C-518D",
+            "text": "再"
+          },
+          {
+            "id": "C-4E09",
+            "text": "三"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "8438e06c8cced1b0551db902bc6589156eac37d6db13cc7dc238d719285e5504",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-4e09",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "三",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-4e09-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W5254",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "over and over again; again and again",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "再三"
+              },
+              {
+                "value": "zàisān",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zai4san1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "再三",
+              "pinyin": "zàisān",
+              "meaning": "over and over again; again and again",
+              "audio": "9592dd777dee1246e632ded581b66497e15e9f28c2467ed99f243c7f96dd1302",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e09-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-4e09",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "三",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0702",
+                "label": "adult; grownup",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0035",
+                "label": "not have; there is not",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-4e09",
+                "label": "three; 3",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e09-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "三",
+        "pinyin": "sān",
+        "meaning": "three; 3",
+        "source": "/stroke-data/4e09.json",
+        "reference": {
+          "character": "三",
+          "sha256": "d96a0d2f93cfa6c821608f23882e339a18eb02bae5f8dd5ff3bf6bb595b229ff",
+          "medians": [
+            [
+              [
+                316,
+                655
+              ],
+              [
+                367,
+                645
+              ],
+              [
+                416,
+                648
+              ],
+              [
+                660,
+                692
+              ],
+              [
+                722,
+                692
+              ]
+            ],
+            [
+              [
+                331,
+                407
+              ],
+              [
+                375,
+                405
+              ],
+              [
+                628,
+                443
+              ],
+              [
+                657,
+                443
+              ],
+              [
+                700,
+                432
+              ]
+            ],
+            [
+              [
+                127,
+                152
+              ],
+              [
+                158,
+                142
+              ],
+              [
+                195,
+                139
+              ],
+              [
+                500,
+                178
+              ],
+              [
+                846,
+                204
+              ],
+              [
+                881,
+                200
+              ],
+              [
+                955,
+                174
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-4e09-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0881",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "a man; a male",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "男人"
+              },
+              {
+                "value": "nánrén",
+                "mode": "pinyin"
+              },
+              {
+                "value": "nan2ren2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "男人",
+              "pinyin": "nánrén",
+              "meaning": "a man; a male",
+              "audio": "30f7612293c8cdbbc5bbb0454043991246d27b9ac36d07e31cabdecb853344b9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-4e09-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-4e09",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "three; 3",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "三"
+              },
+              {
+                "value": "sān",
+                "mode": "pinyin"
+              },
+              {
+                "value": "san1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "三",
+              "pinyin": "sān",
+              "meaning": "three; 3",
+              "audio": "c8df7fe625728e4197407e2b9a49c6defdfd4b812bc902d8eb7c4bbfadc18897",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "c8df7fe625728e4197407e2b9a49c6defdfd4b812bc902d8eb7c4bbfadc18897"
+            ],
+            "transcript": [
+              {
+                "text": "三",
+                "pinyin": "sān",
+                "meaning": "three; 3",
+                "audio": "c8df7fe625728e4197407e2b9a49c6defdfd4b812bc902d8eb7c4bbfadc18897",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-4E09",
+      "character": "三",
+      "lessonIds": [
+        "LESSON-C-4E09"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-4e09-word",
+        "EX-CHAR-char-4e09-recognize",
+        "EX-CHAR-char-4e09-write",
+        "EX-CHAR-char-4e09-familiar",
+        "EX-CHAR-char-4e09-recall"
+      ]
+    },
+    "audio": {
+      "c8df7fe625728e4197407e2b9a49c6defdfd4b812bc902d8eb7c4bbfadc18897": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3070171734cf83f604d89577cffcfdab259a026e4ca3ea7575b0f3ba8669867a.mp3",
+          "sha256": "3070171734cf83f604d89577cffcfdab259a026e4ca3ea7575b0f3ba8669867a",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "3070171734cf83f604d89577cffcfdab259a026e4ca3ea7575b0f3ba8669867a",
+            "text": "三",
+            "words": [
+              {
+                "text": "三",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b4edde6ba5d9725a639dd041851d4857667a78d6d5952d195fed521299c42e29.mp3",
+          "sha256": "b4edde6ba5d9725a639dd041851d4857667a78d6d5952d195fed521299c42e29",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "b4edde6ba5d9725a639dd041851d4857667a78d6d5952d195fed521299c42e29",
+            "text": "三",
+            "words": [
+              {
+                "text": "三",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "0e375b8f9857f770a51dd6c5f7053d42331be79aa9c97cadc4c10532c13ebe17": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b5e1d7508863098db08beda65d301e2dd721db748aa2ba31497f119138266622.mp3",
+          "sha256": "b5e1d7508863098db08beda65d301e2dd721db748aa2ba31497f119138266622",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "b5e1d7508863098db08beda65d301e2dd721db748aa2ba31497f119138266622",
+            "text": "没有",
+            "words": [
+              {
+                "text": "没有",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-af530733122a345cc8f46ae49648bdef77f2be4580df052fc39f4380bdfe03f9.mp3",
+          "sha256": "af530733122a345cc8f46ae49648bdef77f2be4580df052fc39f4380bdfe03f9",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "af530733122a345cc8f46ae49648bdef77f2be4580df052fc39f4380bdfe03f9",
+            "text": "没有",
+            "words": [
+              {
+                "text": "没有",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "b5842f5bfe8c10a8c87bfd2a810192fd755a23c615f4f7c7d3425d8cd4c0e79f": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-907554cbc3c056b5c55f4e7bddcb0ac370b49a61c88b63d1efb121efe46c3073.mp3",
+          "sha256": "907554cbc3c056b5c55f4e7bddcb0ac370b49a61c88b63d1efb121efe46c3073",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "907554cbc3c056b5c55f4e7bddcb0ac370b49a61c88b63d1efb121efe46c3073",
+            "text": "大人",
+            "words": [
+              {
+                "text": "大人",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c5773cd1860bcb56488a931ac4d75ce3a31308c3b8ba3191efcd006e16be164d.mp3",
+          "sha256": "c5773cd1860bcb56488a931ac4d75ce3a31308c3b8ba3191efcd006e16be164d",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "c5773cd1860bcb56488a931ac4d75ce3a31308c3b8ba3191efcd006e16be164d",
+            "text": "大人",
+            "words": [
+              {
+                "text": "大人",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "30f7612293c8cdbbc5bbb0454043991246d27b9ac36d07e31cabdecb853344b9": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8cf638791563072812144f9e48934841d0266978396f3215a770b9055e087f49.mp3",
+          "sha256": "8cf638791563072812144f9e48934841d0266978396f3215a770b9055e087f49",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "8cf638791563072812144f9e48934841d0266978396f3215a770b9055e087f49",
+            "text": "男人",
+            "words": [
+              {
+                "text": "男人",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/894ee58ee3067017e90801f053a9e2bbabac54287be98c66a76907ac5963d68f.mp3",
+          "sha256": "894ee58ee3067017e90801f053a9e2bbabac54287be98c66a76907ac5963d68f",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "894ee58ee3067017e90801f053a9e2bbabac54287be98c66a76907ac5963d68f",
+            "text": "男人",
+            "words": [
+              {
+                "text": "男人",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "9592dd777dee1246e632ded581b66497e15e9f28c2467ed99f243c7f96dd1302": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-e9df84a7cdcef5f29c1d61201833c64139187327599e17293a7acf138a0e654e.mp3",
+          "sha256": "e9df84a7cdcef5f29c1d61201833c64139187327599e17293a7acf138a0e654e",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "e9df84a7cdcef5f29c1d61201833c64139187327599e17293a7acf138a0e654e",
+            "text": "再三",
+            "words": [
+              {
+                "text": "再三",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-5fa05b204edc6b009a184eb0b593c0e9198a8ad56cafd1f442e759439cd0f5d7.mp3",
+          "sha256": "5fa05b204edc6b009a184eb0b593c0e9198a8ad56cafd1f442e759439cd0f5d7",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "5fa05b204edc6b009a184eb0b593c0e9198a8ad56cafd1f442e759439cd0f5d7",
+            "text": "再三",
+            "words": [
+              {
+                "text": "再三",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

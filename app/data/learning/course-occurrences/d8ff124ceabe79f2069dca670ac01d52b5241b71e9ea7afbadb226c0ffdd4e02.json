@@ -1,0 +1,737 @@
+{
+  "id": "EX-CHAR-char-5bb3",
+  "revision": 2,
+  "unit": "U3-15-P01",
+  "stage": "ST-HSK3",
+  "after": "S-U3-15-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "害",
+  "sourceBlockId": "mandarin-simplified-v1-char-5bb3",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-4c77508654e65fde084910d0",
+        "text": "语文",
+        "pinyin": "yǔwén",
+        "meaning": "literature and language; (PRC) Chinese (as a school subject)",
+        "characters": [
+          {
+            "id": "C-8BED",
+            "text": "语"
+          },
+          {
+            "id": "C-6587",
+            "text": "文"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-dc1d866fb90ea954aca9ade1",
+        "text": "要害",
+        "pinyin": "yào hài",
+        "meaning": "crucial",
+        "characters": [
+          {
+            "id": "C-8981",
+            "text": "要"
+          },
+          {
+            "id": "C-5BB3",
+            "text": "害"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f4ee849618b4039b50cf023c",
+        "text": "话题",
+        "pinyin": "huàtí",
+        "meaning": "subject (of a talk or conversation); topic",
+        "characters": [
+          {
+            "id": "C-8BDD",
+            "text": "话"
+          },
+          {
+            "id": "C-9898",
+            "text": "题"
+          }
+        ]
+      },
+      {
+        "id": "W0060",
+        "text": "钱",
+        "pinyin": "qián",
+        "meaning": "money",
+        "characters": [
+          {
+            "id": "C-94B1",
+            "text": "钱"
+          }
+        ]
+      },
+      {
+        "id": "W4137",
+        "text": "害",
+        "pinyin": "hài",
+        "meaning": "to do harm to; to cause trouble to",
+        "characters": [
+          {
+            "id": "C-5BB3",
+            "text": "害"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "753ca5b1a1699c8032035516c9c38e37fa10e4e9b08733d3f3273297c269edb1",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5bb3",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "害",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5bb3-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-dc1d866fb90ea954aca9ade1",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "crucial",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "要害"
+              },
+              {
+                "value": "yào hài",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yao4hai4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "要害",
+              "pinyin": "yào hài",
+              "meaning": "crucial",
+              "audio": "b48c47f69ba56cbb7b347749449cd9396415d62f3561a84c6af9b2731ce94005",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5bb3-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W4137",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "害",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0060",
+                "label": "money",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-f4ee849618b4039b50cf023c",
+                "label": "subject (of a talk or conversation); topic",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W4137",
+                "label": "to do harm to; to cause trouble to",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5bb3-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "害",
+        "pinyin": "hài",
+        "meaning": "to do harm to; to cause trouble to",
+        "source": "/stroke-data/5bb3.json",
+        "reference": {
+          "character": "害",
+          "sha256": "2a5d8bde830eadf46dae547b6d8909a78bd0d4478df67b74c46a86f427cd5d3f",
+          "medians": [
+            [
+              [
+                473,
+                852
+              ],
+              [
+                550,
+                804
+              ],
+              [
+                570,
+                777
+              ]
+            ],
+            [
+              [
+                241,
+                701
+              ],
+              [
+                253,
+                669
+              ],
+              [
+                246,
+                639
+              ],
+              [
+                210,
+                565
+              ],
+              [
+                200,
+                503
+              ]
+            ],
+            [
+              [
+                281,
+                640
+              ],
+              [
+                301,
+                654
+              ],
+              [
+                444,
+                682
+              ],
+              [
+                727,
+                722
+              ],
+              [
+                769,
+                723
+              ],
+              [
+                807,
+                707
+              ],
+              [
+                825,
+                681
+              ],
+              [
+                758,
+                600
+              ]
+            ],
+            [
+              [
+                358,
+                539
+              ],
+              [
+                385,
+                532
+              ],
+              [
+                446,
+                534
+              ],
+              [
+                557,
+                551
+              ],
+              [
+                644,
+                573
+              ],
+              [
+                685,
+                569
+              ]
+            ],
+            [
+              [
+                343,
+                426
+              ],
+              [
+                391,
+                418
+              ],
+              [
+                618,
+                458
+              ],
+              [
+                679,
+                453
+              ]
+            ],
+            [
+              [
+                186,
+                285
+              ],
+              [
+                227,
+                276
+              ],
+              [
+                259,
+                278
+              ],
+              [
+                446,
+                311
+              ],
+              [
+                794,
+                347
+              ],
+              [
+                830,
+                345
+              ],
+              [
+                887,
+                329
+              ]
+            ],
+            [
+              [
+                479,
+                628
+              ],
+              [
+                507,
+                611
+              ],
+              [
+                520,
+                593
+              ],
+              [
+                521,
+                460
+              ],
+              [
+                509,
+                243
+              ]
+            ],
+            [
+              [
+                310,
+                198
+              ],
+              [
+                341,
+                174
+              ],
+              [
+                350,
+                154
+              ],
+              [
+                392,
+                -32
+              ]
+            ],
+            [
+              [
+                373,
+                195
+              ],
+              [
+                396,
+                183
+              ],
+              [
+                562,
+                207
+              ],
+              [
+                640,
+                225
+              ],
+              [
+                679,
+                223
+              ],
+              [
+                716,
+                186
+              ],
+              [
+                685,
+                102
+              ],
+              [
+                650,
+                69
+              ]
+            ],
+            [
+              [
+                409,
+                24
+              ],
+              [
+                423,
+                12
+              ],
+              [
+                638,
+                39
+              ],
+              [
+                699,
+                40
+              ],
+              [
+                724,
+                29
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5bb3-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-4c77508654e65fde084910d0",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "literature and language; (PRC) Chinese (as a school subject)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "语文"
+              },
+              {
+                "value": "yǔwén",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yu3wen2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "语文",
+              "pinyin": "yǔwén",
+              "meaning": "literature and language; (PRC) Chinese (as a school subject)",
+              "audio": "ec24e00665b26d70c96b448bf4463a9fe6d42406291f51d391b1d8b9686adf6e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5bb3-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W4137",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to do harm to; to cause trouble to",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "害"
+              },
+              {
+                "value": "hài",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hai4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "害",
+              "pinyin": "hài",
+              "meaning": "to do harm to; to cause trouble to",
+              "audio": "7d25b6fb5af2bbc057ae568c6c065378e8570ee96c337ba1c82dd6998d8f5c6a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "7d25b6fb5af2bbc057ae568c6c065378e8570ee96c337ba1c82dd6998d8f5c6a"
+            ],
+            "transcript": [
+              {
+                "text": "害",
+                "pinyin": "hài",
+                "meaning": "to do harm to; to cause trouble to",
+                "audio": "7d25b6fb5af2bbc057ae568c6c065378e8570ee96c337ba1c82dd6998d8f5c6a",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5BB3",
+      "character": "害",
+      "lessonIds": [
+        "LESSON-C-5BB3"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5bb3-word",
+        "EX-CHAR-char-5bb3-recognize",
+        "EX-CHAR-char-5bb3-write",
+        "EX-CHAR-char-5bb3-familiar",
+        "EX-CHAR-char-5bb3-recall"
+      ]
+    },
+    "audio": {
+      "ec24e00665b26d70c96b448bf4463a9fe6d42406291f51d391b1d8b9686adf6e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c77f27ff858029e006f0ebfe21e517dfe59c53c20cab7e771ce6914a5740ef3a.mp3",
+          "sha256": "c77f27ff858029e006f0ebfe21e517dfe59c53c20cab7e771ce6914a5740ef3a",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "c77f27ff858029e006f0ebfe21e517dfe59c53c20cab7e771ce6914a5740ef3a",
+            "text": "语文",
+            "words": [
+              {
+                "text": "语文",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d6fc3d3845470d46dd255f5a4df3a4f7a8578292a82ec29843c92e2d899beb20.mp3",
+          "sha256": "d6fc3d3845470d46dd255f5a4df3a4f7a8578292a82ec29843c92e2d899beb20",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "d6fc3d3845470d46dd255f5a4df3a4f7a8578292a82ec29843c92e2d899beb20",
+            "text": "语文",
+            "words": [
+              {
+                "text": "语文",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "b48c47f69ba56cbb7b347749449cd9396415d62f3561a84c6af9b2731ce94005": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/acad57508ba31ed317ccbb53ef3842405718c692912f35a2cc02aeb7ab6b529a.mp3",
+          "sha256": "acad57508ba31ed317ccbb53ef3842405718c692912f35a2cc02aeb7ab6b529a",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "acad57508ba31ed317ccbb53ef3842405718c692912f35a2cc02aeb7ab6b529a",
+            "text": "要害",
+            "words": [
+              {
+                "text": "要害",
+                "start": 0.39,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b356f5e1e11660eb18f4dd3e3a62ad9b399010b60b1349f202e52c1b8a87e7c9.mp3",
+          "sha256": "b356f5e1e11660eb18f4dd3e3a62ad9b399010b60b1349f202e52c1b8a87e7c9",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "b356f5e1e11660eb18f4dd3e3a62ad9b399010b60b1349f202e52c1b8a87e7c9",
+            "text": "要害",
+            "words": [
+              {
+                "text": "要害",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "a02145f886e77b88c56cc8cabced6f3b67e0636c35bc68d325ed18fea94af3f5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2b9d2891a7ea1ee50f6b222cc5da651529dd5307ff00c3dfcd637e0550f63b3e.mp3",
+          "sha256": "2b9d2891a7ea1ee50f6b222cc5da651529dd5307ff00c3dfcd637e0550f63b3e",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "2b9d2891a7ea1ee50f6b222cc5da651529dd5307ff00c3dfcd637e0550f63b3e",
+            "text": "话题",
+            "words": [
+              {
+                "text": "话题",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5db593454f0f2e0d315709e6a5ae983aa5e8def67e7a2af58ac66fee22e5ca27.mp3",
+          "sha256": "5db593454f0f2e0d315709e6a5ae983aa5e8def67e7a2af58ac66fee22e5ca27",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "5db593454f0f2e0d315709e6a5ae983aa5e8def67e7a2af58ac66fee22e5ca27",
+            "text": "话题",
+            "words": [
+              {
+                "text": "话题",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "f5e03e31208d3e9b5cf9e10a0d118270d6b7c4b23c40262c85bd65a7d34f7f89": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5ebc721c0cc74819cf239f1d8ed210ea64106d25ba0d6338430528f55ff27db4.mp3",
+          "sha256": "5ebc721c0cc74819cf239f1d8ed210ea64106d25ba0d6338430528f55ff27db4",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "5ebc721c0cc74819cf239f1d8ed210ea64106d25ba0d6338430528f55ff27db4",
+            "text": "钱",
+            "words": [
+              {
+                "text": "钱",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c3e6356781a5dc008973148243f939ec2533278afe632570f89322a74c60af03.mp3",
+          "sha256": "c3e6356781a5dc008973148243f939ec2533278afe632570f89322a74c60af03",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "c3e6356781a5dc008973148243f939ec2533278afe632570f89322a74c60af03",
+            "text": "钱",
+            "words": [
+              {
+                "text": "钱",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "7d25b6fb5af2bbc057ae568c6c065378e8570ee96c337ba1c82dd6998d8f5c6a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f95545cb2e1527d67fc22f9b840b9a9e8d568f91fc965b6a4d0261a35e274d1a.mp3",
+          "sha256": "f95545cb2e1527d67fc22f9b840b9a9e8d568f91fc965b6a4d0261a35e274d1a",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "f95545cb2e1527d67fc22f9b840b9a9e8d568f91fc965b6a4d0261a35e274d1a",
+            "text": "害",
+            "words": [
+              {
+                "text": "害",
+                "start": 0.16,
+                "end": 0.26
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/6a86930d9df24ff949a72c371103a0dbf23bf2de41f2ec726fede137309929da.mp3",
+          "sha256": "6a86930d9df24ff949a72c371103a0dbf23bf2de41f2ec726fede137309929da",
+          "byteLength": 7533,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "6a86930d9df24ff949a72c371103a0dbf23bf2de41f2ec726fede137309929da",
+            "text": "害",
+            "words": [
+              {
+                "text": "害",
+                "start": 0.085,
+                "end": 0.335
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

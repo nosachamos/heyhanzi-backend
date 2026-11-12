@@ -1,0 +1,707 @@
+{
+  "id": "EX-CHAR-char-59d3",
+  "revision": 2,
+  "unit": "U20",
+  "stage": "ST-HSK2",
+  "after": "S-U20-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "姓",
+  "sourceBlockId": "mandarin-simplified-v1-char-59d3",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-59d3",
+        "text": "姓",
+        "pinyin": "xìng",
+        "meaning": "family name; surname; to be surnamed ...",
+        "characters": [
+          {
+            "id": "C-59D3",
+            "text": "姓"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-6c49",
+        "text": "汉",
+        "pinyin": "hàn",
+        "meaning": "man",
+        "characters": [
+          {
+            "id": "C-6C49",
+            "text": "汉"
+          }
+        ]
+      },
+      {
+        "id": "W0178",
+        "text": "了",
+        "pinyin": "le",
+        "meaning": "aspect or change-of-situation particle; not a past-tense ending",
+        "characters": [
+          {
+            "id": "C-4E86",
+            "text": "了"
+          }
+        ]
+      },
+      {
+        "id": "W0617",
+        "text": "姓名",
+        "pinyin": "xìngmíng",
+        "meaning": "full name",
+        "characters": [
+          {
+            "id": "C-59D3",
+            "text": "姓"
+          },
+          {
+            "id": "C-540D",
+            "text": "名"
+          }
+        ]
+      },
+      {
+        "id": "W1093",
+        "text": "表现",
+        "pinyin": "biǎoxiàn",
+        "meaning": "to show; to show off",
+        "characters": [
+          {
+            "id": "C-8868",
+            "text": "表"
+          },
+          {
+            "id": "C-73B0",
+            "text": "现"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "ff9d95c38d7ce7fe6e1cbeb62019bc06adef399e548cb6435d5b02dea147eebc",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-59d3",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "姓",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-59d3-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0617",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "full name",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "姓名"
+              },
+              {
+                "value": "xìngmíng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xing4ming2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "姓名",
+              "pinyin": "xìngmíng",
+              "meaning": "full name",
+              "audio": "caf1bfe2228d852bff77a9b52748161e80c2642032011ffd36014f86983892ba",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-59d3-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-59d3",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "姓",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1093",
+                "label": "to show; to show off",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-59d3",
+                "label": "family name; surname",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-PRIMARY-char-6c49",
+                "label": "man",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-59d3-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "姓",
+        "pinyin": "xìng",
+        "meaning": "family name; surname",
+        "source": "/stroke-data/59d3.json",
+        "reference": {
+          "character": "姓",
+          "sha256": "cb1c1a542e3cb23b77764bc88148b804876081c559aa7eaf4b8393af842e2d55",
+          "medians": [
+            [
+              [
+                274,
+                787
+              ],
+              [
+                300,
+                769
+              ],
+              [
+                320,
+                734
+              ],
+              [
+                265,
+                463
+              ],
+              [
+                213,
+                285
+              ],
+              [
+                233,
+                265
+              ],
+              [
+                392,
+                183
+              ],
+              [
+                417,
+                159
+              ],
+              [
+                431,
+                124
+              ]
+            ],
+            [
+              [
+                378,
+                507
+              ],
+              [
+                397,
+                493
+              ],
+              [
+                413,
+                469
+              ],
+              [
+                392,
+                364
+              ],
+              [
+                361,
+                272
+              ],
+              [
+                311,
+                191
+              ],
+              [
+                275,
+                153
+              ],
+              [
+                221,
+                113
+              ],
+              [
+                153,
+                81
+              ]
+            ],
+            [
+              [
+                45,
+                401
+              ],
+              [
+                99,
+                381
+              ],
+              [
+                192,
+                412
+              ],
+              [
+                347,
+                448
+              ],
+              [
+                369,
+                464
+              ]
+            ],
+            [
+              [
+                523,
+                576
+              ],
+              [
+                549,
+                554
+              ],
+              [
+                552,
+                543
+              ],
+              [
+                541,
+                500
+              ],
+              [
+                511,
+                430
+              ],
+              [
+                460,
+                364
+              ]
+            ],
+            [
+              [
+                547,
+                452
+              ],
+              [
+                604,
+                453
+              ],
+              [
+                658,
+                463
+              ],
+              [
+                802,
+                503
+              ],
+              [
+                843,
+                501
+              ]
+            ],
+            [
+              [
+                546,
+                283
+              ],
+              [
+                607,
+                278
+              ],
+              [
+                784,
+                315
+              ],
+              [
+                824,
+                314
+              ]
+            ],
+            [
+              [
+                642,
+                776
+              ],
+              [
+                685,
+                739
+              ],
+              [
+                690,
+                703
+              ],
+              [
+                679,
+                147
+              ],
+              [
+                678,
+                130
+              ],
+              [
+                659,
+                109
+              ]
+            ],
+            [
+              [
+                450,
+                69
+              ],
+              [
+                506,
+                60
+              ],
+              [
+                634,
+                80
+              ],
+              [
+                880,
+                104
+              ],
+              [
+                960,
+                86
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-59d3-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0178",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "aspect or change-of-situation particle; not a past-tense ending",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "了"
+              },
+              {
+                "value": "le",
+                "mode": "pinyin"
+              },
+              {
+                "value": "le5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "了",
+              "pinyin": "le",
+              "meaning": "aspect or change-of-situation particle; not a past-tense ending",
+              "audio": "90e3611d8b6518d478d1242948ff62d4fa8f51abdebc5a7fcc8a631a7665ece6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-59d3-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-59d3",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "family name; surname",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "姓"
+              },
+              {
+                "value": "xìng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xing4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "姓",
+              "pinyin": "xìng",
+              "meaning": "family name; surname",
+              "audio": "89155d240580999fce43705c52748cf69668fd70ac24fcd39eca173238cfec62",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "89155d240580999fce43705c52748cf69668fd70ac24fcd39eca173238cfec62"
+            ],
+            "transcript": [
+              {
+                "text": "姓",
+                "pinyin": "xìng",
+                "meaning": "family name; surname",
+                "audio": "89155d240580999fce43705c52748cf69668fd70ac24fcd39eca173238cfec62",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-59D3",
+      "character": "姓",
+      "lessonIds": [
+        "LESSON-C-59D3"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-59d3-word",
+        "EX-CHAR-char-59d3-recognize",
+        "EX-CHAR-char-59d3-write",
+        "EX-CHAR-char-59d3-familiar",
+        "EX-CHAR-char-59d3-recall"
+      ]
+    },
+    "audio": {
+      "89155d240580999fce43705c52748cf69668fd70ac24fcd39eca173238cfec62": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/89b66cb349cc3154d75cc07d577a27411c84e656cd19e4cec6de2ae9c6dd6499.mp3",
+          "sha256": "89b66cb349cc3154d75cc07d577a27411c84e656cd19e4cec6de2ae9c6dd6499",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "89b66cb349cc3154d75cc07d577a27411c84e656cd19e4cec6de2ae9c6dd6499",
+            "text": "姓",
+            "words": [
+              {
+                "text": "姓",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/befb87b18e8e1317a2d855719c0105a8962425699a057a359cae70fa69088bd2.mp3",
+          "sha256": "befb87b18e8e1317a2d855719c0105a8962425699a057a359cae70fa69088bd2",
+          "byteLength": 7245,
+          "readAlong": {
+            "audioSha256": "befb87b18e8e1317a2d855719c0105a8962425699a057a359cae70fa69088bd2",
+            "text": "姓",
+            "words": [
+              {
+                "text": "姓",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "ecd9f38af9799845a54ecf96da61534ae8449670cff5636e0dff1319723115d4": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-0c270c0a30aec37ec40de14f863f99648cb832440dca0eb129faa8f401c9e055.mp3",
+          "sha256": "0c270c0a30aec37ec40de14f863f99648cb832440dca0eb129faa8f401c9e055",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "0c270c0a30aec37ec40de14f863f99648cb832440dca0eb129faa8f401c9e055",
+            "text": "汉",
+            "words": [
+              {
+                "text": "汉",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-390330378427f18cc0ff8bc0d0845eea0c9d70baddb1c1a408f351bbf8aa2ea4.mp3",
+          "sha256": "390330378427f18cc0ff8bc0d0845eea0c9d70baddb1c1a408f351bbf8aa2ea4",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "390330378427f18cc0ff8bc0d0845eea0c9d70baddb1c1a408f351bbf8aa2ea4",
+            "text": "汉",
+            "words": [
+              {
+                "text": "汉",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "90e3611d8b6518d478d1242948ff62d4fa8f51abdebc5a7fcc8a631a7665ece6": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2c0c613a7701ea8765caf0c5954fba77b314e5a5cbfe1e11e24396ff93be4e05.mp3",
+          "sha256": "2c0c613a7701ea8765caf0c5954fba77b314e5a5cbfe1e11e24396ff93be4e05",
+          "byteLength": 7821,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "2c0c613a7701ea8765caf0c5954fba77b314e5a5cbfe1e11e24396ff93be4e05",
+            "text": "了",
+            "words": [
+              {
+                "text": "了",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-7150fa1c330e63cf12fedb82ce25841d196cc2e5f5362e53b7d0f435a1e528dd.mp3",
+          "sha256": "7150fa1c330e63cf12fedb82ce25841d196cc2e5f5362e53b7d0f435a1e528dd",
+          "byteLength": 9549,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "7150fa1c330e63cf12fedb82ce25841d196cc2e5f5362e53b7d0f435a1e528dd",
+            "text": "了",
+            "words": [
+              {
+                "text": "了",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "caf1bfe2228d852bff77a9b52748161e80c2642032011ffd36014f86983892ba": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-7dbdc32719c0ca041035f044260852b917bb692ab5f0c027a81f505d323c9a53.mp3",
+          "sha256": "7dbdc32719c0ca041035f044260852b917bb692ab5f0c027a81f505d323c9a53",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "7dbdc32719c0ca041035f044260852b917bb692ab5f0c027a81f505d323c9a53",
+            "text": "姓名",
+            "words": [
+              {
+                "text": "姓名",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-fa2a9f13b210d2dae03f79907c04c06d65ffc896a15b9eaffb1559e4ba51fed7.mp3",
+          "sha256": "fa2a9f13b210d2dae03f79907c04c06d65ffc896a15b9eaffb1559e4ba51fed7",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "fa2a9f13b210d2dae03f79907c04c06d65ffc896a15b9eaffb1559e4ba51fed7",
+            "text": "姓名",
+            "words": [
+              {
+                "text": "姓名",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "771e6a203e86724378096eeb21b38e2cbac693a5fef3d3a9f11b16390e03ad97": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c19fccefd4b409e3c516f69d535f871cea84f5902895499ed12cc8aa6799d986.mp3",
+          "sha256": "c19fccefd4b409e3c516f69d535f871cea84f5902895499ed12cc8aa6799d986",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "c19fccefd4b409e3c516f69d535f871cea84f5902895499ed12cc8aa6799d986",
+            "text": "表现",
+            "words": [
+              {
+                "text": "表现",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-3e5ef3cf7f4de93aa3bd092db3c42cb669c7037ac14068f106e522acc8024066.mp3",
+          "sha256": "3e5ef3cf7f4de93aa3bd092db3c42cb669c7037ac14068f106e522acc8024066",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "3e5ef3cf7f4de93aa3bd092db3c42cb669c7037ac14068f106e522acc8024066",
+            "text": "表现",
+            "words": [
+              {
+                "text": "表现",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

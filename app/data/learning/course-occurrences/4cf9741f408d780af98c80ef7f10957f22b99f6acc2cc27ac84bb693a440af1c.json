@@ -1,0 +1,803 @@
+{
+  "id": "EX-CHAR-char-798f",
+  "revision": 2,
+  "unit": "U4-24",
+  "stage": "ST-HSK4",
+  "after": "S-U4-24-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "福",
+  "sourceBlockId": "mandarin-simplified-v1-char-798f",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-79faa1be8d1ba6d851bc9ee8",
+        "text": "福气",
+        "pinyin": "fú qi",
+        "meaning": "good fortune",
+        "characters": [
+          {
+            "id": "C-798F",
+            "text": "福"
+          },
+          {
+            "id": "C-6C14",
+            "text": "气"
+          }
+        ]
+      },
+      {
+        "id": "W0501",
+        "text": "这边",
+        "pinyin": "zhèbiān",
+        "meaning": "this side; here",
+        "characters": [
+          {
+            "id": "C-8FD9",
+            "text": "这"
+          },
+          {
+            "id": "C-8FB9",
+            "text": "边"
+          }
+        ]
+      },
+      {
+        "id": "W1890",
+        "text": "演员",
+        "pinyin": "yǎnyuán",
+        "meaning": "actor; actress",
+        "characters": [
+          {
+            "id": "C-6F14",
+            "text": "演"
+          },
+          {
+            "id": "C-5458",
+            "text": "员"
+          }
+        ]
+      },
+      {
+        "id": "W2391",
+        "text": "福",
+        "pinyin": "fú",
+        "meaning": "good fortune; happiness",
+        "characters": [
+          {
+            "id": "C-798F",
+            "text": "福"
+          }
+        ]
+      },
+      {
+        "id": "W4895",
+        "text": "体操",
+        "pinyin": "tǐcāo",
+        "meaning": "gymnastic; gymnastics",
+        "characters": [
+          {
+            "id": "C-4F53",
+            "text": "体"
+          },
+          {
+            "id": "C-64CD",
+            "text": "操"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "1fe5acc62bda0a7c65f86d3f8ddf20945b6cb332a7ea1aaf4d90c253b1ceaf71",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-798f",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "福",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-798f-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-79faa1be8d1ba6d851bc9ee8",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "good fortune",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "福气"
+              },
+              {
+                "value": "fú qi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "fu2qi5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "福气",
+              "pinyin": "fú qi",
+              "meaning": "good fortune",
+              "audio": "f5542c8443ecc62845d6626544e47238b3986631164ee061df0f29c76aa99005",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-798f-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W2391",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "福",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W2391",
+                "label": "good fortune; happiness",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1890",
+                "label": "actor; actress",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0501",
+                "label": "this side; here",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-798f-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "福",
+        "pinyin": "fú",
+        "meaning": "good fortune; happiness",
+        "source": "/stroke-data/798f.json",
+        "reference": {
+          "character": "福",
+          "sha256": "cda362e8324ddf192842ca3f6c5b5c97c28e90a4eb96730856c81159ce839385",
+          "medians": [
+            [
+              [
+                269,
+                816
+              ],
+              [
+                364,
+                767
+              ],
+              [
+                393,
+                726
+              ]
+            ],
+            [
+              [
+                81,
+                524
+              ],
+              [
+                139,
+                511
+              ],
+              [
+                223,
+                532
+              ],
+              [
+                307,
+                563
+              ],
+              [
+                351,
+                558
+              ],
+              [
+                324,
+                493
+              ],
+              [
+                242,
+                377
+              ],
+              [
+                178,
+                304
+              ],
+              [
+                121,
+                250
+              ],
+              [
+                39,
+                191
+              ]
+            ],
+            [
+              [
+                269,
+                371
+              ],
+              [
+                287,
+                312
+              ],
+              [
+                284,
+                197
+              ],
+              [
+                272,
+                75
+              ],
+              [
+                277,
+                14
+              ]
+            ],
+            [
+              [
+                335,
+                396
+              ],
+              [
+                376,
+                355
+              ],
+              [
+                386,
+                336
+              ]
+            ],
+            [
+              [
+                529,
+                740
+              ],
+              [
+                552,
+                734
+              ],
+              [
+                601,
+                736
+              ],
+              [
+                748,
+                774
+              ],
+              [
+                797,
+                774
+              ]
+            ],
+            [
+              [
+                499,
+                619
+              ],
+              [
+                529,
+                594
+              ],
+              [
+                564,
+                446
+              ]
+            ],
+            [
+              [
+                557,
+                615
+              ],
+              [
+                569,
+                606
+              ],
+              [
+                724,
+                642
+              ],
+              [
+                752,
+                636
+              ],
+              [
+                775,
+                610
+              ],
+              [
+                753,
+                546
+              ],
+              [
+                727,
+                528
+              ]
+            ],
+            [
+              [
+                581,
+                468
+              ],
+              [
+                592,
+                477
+              ],
+              [
+                718,
+                501
+              ],
+              [
+                764,
+                504
+              ],
+              [
+                787,
+                496
+              ]
+            ],
+            [
+              [
+                432,
+                380
+              ],
+              [
+                460,
+                358
+              ],
+              [
+                480,
+                324
+              ],
+              [
+                505,
+                117
+              ],
+              [
+                520,
+                65
+              ]
+            ],
+            [
+              [
+                486,
+                375
+              ],
+              [
+                495,
+                366
+              ],
+              [
+                520,
+                358
+              ],
+              [
+                819,
+                414
+              ],
+              [
+                840,
+                411
+              ],
+              [
+                862,
+                397
+              ],
+              [
+                877,
+                379
+              ],
+              [
+                876,
+                369
+              ],
+              [
+                851,
+                169
+              ],
+              [
+                842,
+                123
+              ],
+              [
+                822,
+                87
+              ],
+              [
+                823,
+                30
+              ]
+            ],
+            [
+              [
+                553,
+                224
+              ],
+              [
+                716,
+                258
+              ],
+              [
+                763,
+                253
+              ]
+            ],
+            [
+              [
+                633,
+                353
+              ],
+              [
+                661,
+                330
+              ],
+              [
+                661,
+                166
+              ],
+              [
+                645,
+                142
+              ]
+            ],
+            [
+              [
+                540,
+                92
+              ],
+              [
+                551,
+                104
+              ],
+              [
+                571,
+                108
+              ],
+              [
+                771,
+                132
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-798f-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4895",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "gymnastic; gymnastics",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "体操"
+              },
+              {
+                "value": "tǐcāo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ti3cao1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "体操",
+              "pinyin": "tǐcāo",
+              "meaning": "gymnastic; gymnastics",
+              "audio": "76fc43d1bc3ce920b65d0dfa0a3d703c44b6822dfb0ef67fd0a082507377838e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-798f-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W2391",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "good fortune; happiness",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "福"
+              },
+              {
+                "value": "fú",
+                "mode": "pinyin"
+              },
+              {
+                "value": "fu2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "福",
+              "pinyin": "fú",
+              "meaning": "good fortune; happiness",
+              "audio": "6ec5dc782394e21d4956dcd116d3069467db23712a7225dcc3f1394ce8af3d14",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "6ec5dc782394e21d4956dcd116d3069467db23712a7225dcc3f1394ce8af3d14"
+            ],
+            "transcript": [
+              {
+                "text": "福",
+                "pinyin": "fú",
+                "meaning": "good fortune; happiness",
+                "audio": "6ec5dc782394e21d4956dcd116d3069467db23712a7225dcc3f1394ce8af3d14",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-798F",
+      "character": "福",
+      "lessonIds": [
+        "LESSON-C-798F"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-798f-word",
+        "EX-CHAR-char-798f-recognize",
+        "EX-CHAR-char-798f-write",
+        "EX-CHAR-char-798f-familiar",
+        "EX-CHAR-char-798f-recall"
+      ]
+    },
+    "audio": {
+      "f5542c8443ecc62845d6626544e47238b3986631164ee061df0f29c76aa99005": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/de5ef2e5bea79ab285088775c3aa8e8f053369dd8f84806374a0a141b1b8909a.mp3",
+          "sha256": "de5ef2e5bea79ab285088775c3aa8e8f053369dd8f84806374a0a141b1b8909a",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "de5ef2e5bea79ab285088775c3aa8e8f053369dd8f84806374a0a141b1b8909a",
+            "text": "福气",
+            "words": [
+              {
+                "text": "福气",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/03ebc356fdd53255c539d1b795ad030132d6ccd34a6c5e22d73ed76ddeb89f10.mp3",
+          "sha256": "03ebc356fdd53255c539d1b795ad030132d6ccd34a6c5e22d73ed76ddeb89f10",
+          "byteLength": 15885,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "03ebc356fdd53255c539d1b795ad030132d6ccd34a6c5e22d73ed76ddeb89f10",
+            "text": "福气",
+            "words": [
+              {
+                "text": "福气",
+                "start": 0.115,
+                "end": 1.015
+              }
+            ]
+          }
+        }
+      },
+      "37801dc812a9d377dbf6773d3aab11f42ee40774b030bac7a4eb4c9c81d27f96": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a01d1e196685e9280287162e90de4b21ba589609bbeef018b07119c92a1f631b.mp3",
+          "sha256": "a01d1e196685e9280287162e90de4b21ba589609bbeef018b07119c92a1f631b",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "a01d1e196685e9280287162e90de4b21ba589609bbeef018b07119c92a1f631b",
+            "text": "这边",
+            "words": [
+              {
+                "text": "这边",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a71f967acc72ebedfc34c77b9358a8ba58a6a9be93285251a68b55a5449e877f.mp3",
+          "sha256": "a71f967acc72ebedfc34c77b9358a8ba58a6a9be93285251a68b55a5449e877f",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "a71f967acc72ebedfc34c77b9358a8ba58a6a9be93285251a68b55a5449e877f",
+            "text": "这边",
+            "words": [
+              {
+                "text": "这边",
+                "start": 0.03,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "529706415818cfe6e2f2d5e4864678ef0ef510000369f206fc37852930c800aa": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-65fad223435e47b12d8b16f614285e7ace4a879409f043895921bc4943e47783.mp3",
+          "sha256": "65fad223435e47b12d8b16f614285e7ace4a879409f043895921bc4943e47783",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "65fad223435e47b12d8b16f614285e7ace4a879409f043895921bc4943e47783",
+            "text": "演员",
+            "words": [
+              {
+                "text": "演员",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-51690b9b4f5a0263f7d0b7c88cc35cf5069588ae55a45b86c2dfbe0d9a23d391.mp3",
+          "sha256": "51690b9b4f5a0263f7d0b7c88cc35cf5069588ae55a45b86c2dfbe0d9a23d391",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "51690b9b4f5a0263f7d0b7c88cc35cf5069588ae55a45b86c2dfbe0d9a23d391",
+            "text": "演员",
+            "words": [
+              {
+                "text": "演员",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "6ec5dc782394e21d4956dcd116d3069467db23712a7225dcc3f1394ce8af3d14": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f40fa5a9ae402c9f271b3b2e6b31d07082c6549eb11f1e54d8552f2eb0d1ab04.mp3",
+          "sha256": "f40fa5a9ae402c9f271b3b2e6b31d07082c6549eb11f1e54d8552f2eb0d1ab04",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "f40fa5a9ae402c9f271b3b2e6b31d07082c6549eb11f1e54d8552f2eb0d1ab04",
+            "text": "福",
+            "words": [
+              {
+                "text": "福",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c4b7c7ad4381e1a5a643214990abdde570c58df6a1a091925efcfc9d53bb2ba7.mp3",
+          "sha256": "c4b7c7ad4381e1a5a643214990abdde570c58df6a1a091925efcfc9d53bb2ba7",
+          "byteLength": 8397,
+          "readAlong": {
+            "audioSha256": "c4b7c7ad4381e1a5a643214990abdde570c58df6a1a091925efcfc9d53bb2ba7",
+            "text": "福",
+            "words": [
+              {
+                "text": "福",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "76fc43d1bc3ce920b65d0dfa0a3d703c44b6822dfb0ef67fd0a082507377838e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-841be101156808ed40df4e844620054c35214ab65efe4836a00b0da7fcd9ce87.mp3",
+          "sha256": "841be101156808ed40df4e844620054c35214ab65efe4836a00b0da7fcd9ce87",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "841be101156808ed40df4e844620054c35214ab65efe4836a00b0da7fcd9ce87",
+            "text": "体操",
+            "words": [
+              {
+                "text": "体操",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b7c2aa911fe024dce408637d9b921464fa394ba3077463c648eca94c121efde7.mp3",
+          "sha256": "b7c2aa911fe024dce408637d9b921464fa394ba3077463c648eca94c121efde7",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "b7c2aa911fe024dce408637d9b921464fa394ba3077463c648eca94c121efde7",
+            "text": "体操",
+            "words": [
+              {
+                "text": "体操",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

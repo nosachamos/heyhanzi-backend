@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2015",
+  "targetId": "W2015",
+  "steps": [
+    {
+      "id": "BANK-W2015-W2015",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2015-W2015",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to hire; to rent",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "租"
+            },
+            {
+              "value": "zū",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zu1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "租",
+            "pinyin": "zū",
+            "meaning": "to hire; to rent",
+            "singleWord": true,
+            "audio": "57f689e92ff22bfef8d302373ba1009f8d946ba670bc1978add19da02cab90fe"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "57f689e92ff22bfef8d302373ba1009f8d946ba670bc1978add19da02cab90fe": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f54a44e744b76514238a6b6b609a3b5075fc805da5f12b061f8894bc0aaf596e.mp3",
+        "sha256": "f54a44e744b76514238a6b6b609a3b5075fc805da5f12b061f8894bc0aaf596e",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "f54a44e744b76514238a6b6b609a3b5075fc805da5f12b061f8894bc0aaf596e",
+          "text": "租",
+          "words": [
+            {
+              "text": "租",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-121a6622158f13104035d1cce2c57c94566f0ad2b07f71827eaae1488d2f707d.mp3",
+        "sha256": "121a6622158f13104035d1cce2c57c94566f0ad2b07f71827eaae1488d2f707d",
+        "byteLength": 8109,
+        "readAlong": {
+          "audioSha256": "121a6622158f13104035d1cce2c57c94566f0ad2b07f71827eaae1488d2f707d",
+          "text": "租",
+          "words": [
+            {
+              "text": "租",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2015",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2015-W2015",
+      "question_ids": [
+        "BANK-W2015-W2015"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-04",
+    "stepId": "S-U4-04-words-r4-40",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-79df"
+    ],
+    "grammarLessonIds": []
+  }
+}

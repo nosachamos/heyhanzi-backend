@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W1364",
+  "targetId": "W1364",
+  "steps": [
+    {
+      "id": "BANK-W1364-W1364",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1364-W1364",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "goods; money",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "货"
+            },
+            {
+              "value": "huò",
+              "mode": "pinyin"
+            },
+            {
+              "value": "huo4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "货",
+            "pinyin": "huò",
+            "meaning": "goods; money",
+            "singleWord": true,
+            "audio": "c566edc4270d0f3dcab5ac4ca93d33cf62134abf04c9d02f3e087951b3213747"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c566edc4270d0f3dcab5ac4ca93d33cf62134abf04c9d02f3e087951b3213747": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ec5d083a26505a969b8a5057c1b2ef92133c2384b756d9fb07283f7da8f17cb1.mp3",
+        "sha256": "ec5d083a26505a969b8a5057c1b2ef92133c2384b756d9fb07283f7da8f17cb1",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "ec5d083a26505a969b8a5057c1b2ef92133c2384b756d9fb07283f7da8f17cb1",
+          "text": "货",
+          "words": [
+            {
+              "text": "货",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3f9392f87b26925b4b02d208baddafc879c64c6017bff031a6be8d4a65cdf390.mp3",
+        "sha256": "3f9392f87b26925b4b02d208baddafc879c64c6017bff031a6be8d4a65cdf390",
+        "byteLength": 8109,
+        "qualityWarning": "too-fast",
+        "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+        "readAlong": {
+          "audioSha256": "3f9392f87b26925b4b02d208baddafc879c64c6017bff031a6be8d4a65cdf390",
+          "text": "货",
+          "words": [
+            {
+              "text": "货",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1364",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1364-W1364",
+      "question_ids": [
+        "BANK-W1364-W1364"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-12",
+    "stepId": "S-U4-12-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8d27"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "id": "BANK-W0451",
+  "targetId": "W0451",
+  "steps": [
+    {
+      "id": "BANK-W0451-W0451",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0451-W0451",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "hot",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "热"
+            },
+            {
+              "value": "rè",
+              "mode": "pinyin"
+            },
+            {
+              "value": "re4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "热",
+            "pinyin": "rè",
+            "meaning": "hot",
+            "singleWord": true,
+            "audio": "ca86f4232a609fe675d8e6b86febea53b22f951500cd56d1f4a9469d689def94"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W0451-W0451-use-hot-state",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W0451-W0451-use-hot-state",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 热 fits this context?",
+          "context": "After being active in warm weather, the speaker feels uncomfortably warm.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W0451-W0451-use-hot-state-meaning",
+              "label": "The speaker feels hot.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "热 describes a high temperature or a person feeling hot. Here it describes a state rather than an action of warming something up."
+            },
+            {
+              "id": "BANK-W0451-W0451-use-hot-state-contrast-1",
+              "label": "The speaker feels cold.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "热 describes a high temperature or a person feeling hot. Here it describes a state rather than an action of warming something up."
+            },
+            {
+              "id": "BANK-W0451-W0451-use-hot-state-contrast-2",
+              "label": "The speaker is warming an object up.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "热 describes a high temperature or a person feeling hot. Here it describes a state rather than an action of warming something up."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "我很热。",
+            "pinyin": "wǒ hěn rè 。",
+            "meaning": "",
+            "audio": "1e522ea722f82b8890e76cc0433c47afcb425d605a94a83cd217602da65da455"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ca86f4232a609fe675d8e6b86febea53b22f951500cd56d1f4a9469d689def94": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2a2bf32aab3ec53760ac6cb2d32cbf7556476841d8f8beb8d10b29a1399b992a.mp3",
+        "sha256": "2a2bf32aab3ec53760ac6cb2d32cbf7556476841d8f8beb8d10b29a1399b992a",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "2a2bf32aab3ec53760ac6cb2d32cbf7556476841d8f8beb8d10b29a1399b992a",
+          "text": "热",
+          "words": [
+            {
+              "text": "热",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d1f278bf3592b2b3d1b6c9b6a7a94b5292c37b163b4d17e3ba39e74d78d6025b.mp3",
+        "sha256": "d1f278bf3592b2b3d1b6c9b6a7a94b5292c37b163b4d17e3ba39e74d78d6025b",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "d1f278bf3592b2b3d1b6c9b6a7a94b5292c37b163b4d17e3ba39e74d78d6025b",
+          "text": "热",
+          "words": [
+            {
+              "text": "热",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    },
+    "1e522ea722f82b8890e76cc0433c47afcb425d605a94a83cd217602da65da455": {
+      "male": {
+        "url": "/exercise-assets/audio/course-male-8cd339e6a7763fae6129ec1021c2d3bb3209ba4e820e89bcb8f3566f3514112f.mp3",
+        "sha256": "8cd339e6a7763fae6129ec1021c2d3bb3209ba4e820e89bcb8f3566f3514112f",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "8cd339e6a7763fae6129ec1021c2d3bb3209ba4e820e89bcb8f3566f3514112f",
+          "text": "我很热。",
+          "words": [
+            {
+              "text": "我",
+              "start": 0.09,
+              "end": 0.15
+            },
+            {
+              "text": "很",
+              "start": 0.32999999999999996,
+              "end": 0.39
+            },
+            {
+              "text": "热",
+              "start": 0.57,
+              "end": 0.6299999999999999
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      },
+      "female": {
+        "url": "/exercise-assets/audio/course-female-9e741ea6610fc41d547b855f02b956826353d096923471dded6126da2841e1fd.mp3",
+        "sha256": "9e741ea6610fc41d547b855f02b956826353d096923471dded6126da2841e1fd",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "9e741ea6610fc41d547b855f02b956826353d096923471dded6126da2841e1fd",
+          "text": "我很热。",
+          "words": [
+            {
+              "text": "我",
+              "start": 0.09,
+              "end": 0.15
+            },
+            {
+              "text": "很",
+              "start": 0.27,
+              "end": 0.32999999999999996
+            },
+            {
+              "text": "热",
+              "start": 0.51,
+              "end": 0.57
+            },
+            {
+              "text": "。"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0451",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0451-W0451",
+      "question_ids": [
+        "BANK-W0451-W0451"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W0451",
+      "facet_id": "lexical-use-hot-state",
+      "part_id": "BANK-W0451-W0451-use-hot-state",
+      "question_ids": [
+        "BANK-W0451-W0451-use-hot-state"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W0451",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U03",
+    "stepId": "S-U03-words-r4-24",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-70ed",
+      "mandarin-simplified-v1-warmup-wo",
+      "mandarin-simplified-v1-warmup-hen"
+    ],
+    "grammarLessonIds": []
+  }
+}

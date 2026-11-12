@@ -1,0 +1,105 @@
+{
+  "id": "BANK-W0512",
+  "targetId": "W0512",
+  "steps": [
+    {
+      "id": "BANK-W0512-W0512",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0512-W0512",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "letter; symbol",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "字"
+            },
+            {
+              "value": "zì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zi4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "字",
+            "pinyin": "zì",
+            "meaning": "letter; symbol",
+            "singleWord": true,
+            "audio": "7ed29b340701c0bcf54cc0c64a2963dbdd47356f1daea83a76670c0a3a85cd11"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7ed29b340701c0bcf54cc0c64a2963dbdd47356f1daea83a76670c0a3a85cd11": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-483c0f967dfae11c8001b9b2ef02690387391fa0899b54e4fc1fcbee7c87a2be.mp3",
+        "sha256": "483c0f967dfae11c8001b9b2ef02690387391fa0899b54e4fc1fcbee7c87a2be",
+        "byteLength": 9261,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "483c0f967dfae11c8001b9b2ef02690387391fa0899b54e4fc1fcbee7c87a2be",
+          "text": "字",
+          "words": [
+            {
+              "text": "字",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3ac8f9fcb20c3e8e9fde005110ea1b1e247496e731f0121a6ff2c4ddeff5524c.mp3",
+        "sha256": "3ac8f9fcb20c3e8e9fde005110ea1b1e247496e731f0121a6ff2c4ddeff5524c",
+        "byteLength": 11565,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "3ac8f9fcb20c3e8e9fde005110ea1b1e247496e731f0121a6ff2c4ddeff5524c",
+          "text": "字",
+          "words": [
+            {
+              "text": "字",
+              "start": 0.11,
+              "end": 0.645
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0512",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0512-W0512",
+      "question_ids": [
+        "BANK-W0512-W0512"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U02",
+    "stepId": "S-U02-working-word-2",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5b57"
+    ],
+    "grammarLessonIds": []
+  }
+}

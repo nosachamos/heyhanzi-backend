@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2030",
+  "targetId": "W2030",
+  "steps": [
+    {
+      "id": "BANK-W2030-W2030",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2030-W2030",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "hey!",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "哎"
+            },
+            {
+              "value": "āi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ai1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "哎",
+            "pinyin": "āi",
+            "meaning": "hey!",
+            "singleWord": true,
+            "audio": "75b57d8eadf05affc2a9d68034c56bd7ec186e81b2a2fd0f20ccc8e639a22031"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "75b57d8eadf05affc2a9d68034c56bd7ec186e81b2a2fd0f20ccc8e639a22031": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2e7130f36b2f2d8d1182b7d55969f4be6759c9fd4f6806914220ecc6f725cc75.mp3",
+        "sha256": "2e7130f36b2f2d8d1182b7d55969f4be6759c9fd4f6806914220ecc6f725cc75",
+        "byteLength": 8397,
+        "readAlong": {
+          "audioSha256": "2e7130f36b2f2d8d1182b7d55969f4be6759c9fd4f6806914220ecc6f725cc75",
+          "text": "哎",
+          "words": [
+            {
+              "text": "哎",
+              "start": 0.08,
+              "end": 0.18
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/216474cbf3dac047f15c99fc3b88f396b11b60d0ae53f44445ceab3e2bf21fb9.mp3",
+        "sha256": "216474cbf3dac047f15c99fc3b88f396b11b60d0ae53f44445ceab3e2bf21fb9",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "216474cbf3dac047f15c99fc3b88f396b11b60d0ae53f44445ceab3e2bf21fb9",
+          "text": "哎",
+          "words": [
+            {
+              "text": "哎",
+              "start": 0.12,
+              "end": 0.24
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2030",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2030-W2030",
+      "question_ids": [
+        "BANK-W2030-W2030"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-52",
+    "stepId": "S-U5-52-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-54c8"
+    ],
+    "grammarLessonIds": []
+  }
+}

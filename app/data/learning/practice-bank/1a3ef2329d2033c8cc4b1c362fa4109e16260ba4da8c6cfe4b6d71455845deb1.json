@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0683",
+  "targetId": "W0683",
+  "steps": [
+    {
+      "id": "BANK-W0683-W0683",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0683-W0683",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to research; to check",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "查"
+            },
+            {
+              "value": "chá",
+              "mode": "pinyin"
+            },
+            {
+              "value": "cha2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "查",
+            "pinyin": "chá",
+            "meaning": "to research; to check",
+            "singleWord": true,
+            "audio": "c10fee49f3f1f89b361f12dc0d97a3fdc68122a37c8975594b76c8ac327edd6a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c10fee49f3f1f89b361f12dc0d97a3fdc68122a37c8975594b76c8ac327edd6a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d9f3a25297fb6e54983b59fc37d6446711be015f000c643d4a9056bd9427a641.mp3",
+        "sha256": "d9f3a25297fb6e54983b59fc37d6446711be015f000c643d4a9056bd9427a641",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "d9f3a25297fb6e54983b59fc37d6446711be015f000c643d4a9056bd9427a641",
+          "text": "查",
+          "words": [
+            {
+              "text": "查",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-85412b324c4f4b0274b6e79345464f5ec12109c5c2db637e769eb2a5da16f85e.mp3",
+        "sha256": "85412b324c4f4b0274b6e79345464f5ec12109c5c2db637e769eb2a5da16f85e",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "85412b324c4f4b0274b6e79345464f5ec12109c5c2db637e769eb2a5da16f85e",
+          "text": "查",
+          "words": [
+            {
+              "text": "查",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0683",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0683-W0683",
+      "question_ids": [
+        "BANK-W0683-W0683"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-22",
+    "stepId": "S-U3-22-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-67e5"
+    ],
+    "grammarLessonIds": []
+  }
+}

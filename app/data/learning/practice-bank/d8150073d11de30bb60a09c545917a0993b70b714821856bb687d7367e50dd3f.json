@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2221",
+  "targetId": "W2221",
+  "steps": [
+    {
+      "id": "BANK-W2221-W2221",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2221-W2221",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "before this; before then",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "此前"
+            },
+            {
+              "value": "cǐqián",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ci3qian2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "此前",
+            "pinyin": "cǐqián",
+            "meaning": "before this; before then",
+            "singleWord": true,
+            "audio": "086fc14a0fd155a33fc8b45b96c1dbae0f44f2ec606cbe940fdd6e7e744868c7"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "086fc14a0fd155a33fc8b45b96c1dbae0f44f2ec606cbe940fdd6e7e744868c7": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-b69b2aa0e88defc8a33ee530e1add5e573b65f2ad1450f0a609621ccf2098a9a.mp3",
+        "sha256": "b69b2aa0e88defc8a33ee530e1add5e573b65f2ad1450f0a609621ccf2098a9a",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "b69b2aa0e88defc8a33ee530e1add5e573b65f2ad1450f0a609621ccf2098a9a",
+          "text": "此前",
+          "words": [
+            {
+              "text": "此前",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-a6a1659dc9b22963ad6efed16f13a74cbad998aa54312538bd27896b725f4342.mp3",
+        "sha256": "a6a1659dc9b22963ad6efed16f13a74cbad998aa54312538bd27896b725f4342",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "a6a1659dc9b22963ad6efed16f13a74cbad998aa54312538bd27896b725f4342",
+          "text": "此前",
+          "words": [
+            {
+              "text": "此前",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2221",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2221-W2221",
+      "question_ids": [
+        "BANK-W2221-W2221"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-06",
+    "stepId": "S-U5-06-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6b64"
+    ],
+    "grammarLessonIds": []
+  }
+}

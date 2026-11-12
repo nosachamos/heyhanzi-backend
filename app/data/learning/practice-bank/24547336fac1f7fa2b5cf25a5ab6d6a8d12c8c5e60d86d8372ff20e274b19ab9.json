@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0761",
+  "targetId": "W0761",
+  "steps": [
+    {
+      "id": "BANK-W0761-W0761",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0761-W0761",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "just now; a moment ago",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "刚才"
+            },
+            {
+              "value": "gāngcái",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gang1cai2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "刚才",
+            "pinyin": "gāngcái",
+            "meaning": "just now; a moment ago",
+            "singleWord": true,
+            "audio": "98fe9eeac6b0224ce7906de2613cfce5ea26e61fa960afee4cef560f6cda7208"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "98fe9eeac6b0224ce7906de2613cfce5ea26e61fa960afee4cef560f6cda7208": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1926879e14d9e66981c5f51593ed3116e7ebbce4e5066e2db10ea65fff43be7b.mp3",
+        "sha256": "1926879e14d9e66981c5f51593ed3116e7ebbce4e5066e2db10ea65fff43be7b",
+        "byteLength": 16749,
+        "readAlong": {
+          "audioSha256": "1926879e14d9e66981c5f51593ed3116e7ebbce4e5066e2db10ea65fff43be7b",
+          "text": "刚才",
+          "words": [
+            {
+              "text": "刚才",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-45cd6ba6151964b6f924a9116ab543084cf972a53d535482808d3df9ed450725.mp3",
+        "sha256": "45cd6ba6151964b6f924a9116ab543084cf972a53d535482808d3df9ed450725",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "45cd6ba6151964b6f924a9116ab543084cf972a53d535482808d3df9ed450725",
+          "text": "刚才",
+          "words": [
+            {
+              "text": "刚才",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0761",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0761-W0761",
+      "question_ids": [
+        "BANK-W0761-W0761"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-04-P01",
+    "stepId": "S-U3-04-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-521a"
+    ],
+    "grammarLessonIds": []
+  }
+}

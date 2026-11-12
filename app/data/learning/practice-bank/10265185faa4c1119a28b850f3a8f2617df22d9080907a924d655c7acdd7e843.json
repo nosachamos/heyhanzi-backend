@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1270",
+  "targetId": "W1270",
+  "steps": [
+    {
+      "id": "BANK-W1270-W1270",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1270-W1270",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "dry",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "干"
+            },
+            {
+              "value": "gān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gan1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "干",
+            "pinyin": "gān",
+            "meaning": "dry",
+            "singleWord": true,
+            "audio": "7605d90d809e760be3b84007f39e66ab788858d23936011223c23c0f2f5c2222"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7605d90d809e760be3b84007f39e66ab788858d23936011223c23c0f2f5c2222": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-680af37104fe447789f8b96343447cd876fba1e2582abcab349e067f56b92686.mp3",
+        "sha256": "680af37104fe447789f8b96343447cd876fba1e2582abcab349e067f56b92686",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "680af37104fe447789f8b96343447cd876fba1e2582abcab349e067f56b92686",
+          "text": "干",
+          "words": [
+            {
+              "text": "干",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-33df9f4ce1b20d495c37d937fa6442c1ab6fd4f2d5966a22b9c43f0bdd499858.mp3",
+        "sha256": "33df9f4ce1b20d495c37d937fa6442c1ab6fd4f2d5966a22b9c43f0bdd499858",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "33df9f4ce1b20d495c37d937fa6442c1ab6fd4f2d5966a22b9c43f0bdd499858",
+          "text": "干",
+          "words": [
+            {
+              "text": "干",
+              "start": 0.2,
+              "end": 0.26
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1270",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1270-W1270",
+      "question_ids": [
+        "BANK-W1270-W1270"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-37-P01",
+    "stepId": "S-U4-37-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e72"
+    ],
+    "grammarLessonIds": []
+  }
+}

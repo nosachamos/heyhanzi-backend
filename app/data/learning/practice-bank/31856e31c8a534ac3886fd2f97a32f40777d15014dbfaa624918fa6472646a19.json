@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5061",
+  "targetId": "W5061",
+  "steps": [
+    {
+      "id": "BANK-W5061-W5061",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5061-W5061",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "wheat",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "小麦"
+            },
+            {
+              "value": "xiǎomài",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xiao3mai4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "小麦",
+            "pinyin": "xiǎomài",
+            "meaning": "wheat",
+            "singleWord": true,
+            "audio": "0663d08d1a4b7ba0678be47b891fa4a8dd582d12d164f066b52bb1f2bc5455fe"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "0663d08d1a4b7ba0678be47b891fa4a8dd582d12d164f066b52bb1f2bc5455fe": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/701fa4a5f7a11462befee08f4d58f620d235c6a7624c659fb20de5a31b4a4b38.mp3",
+        "sha256": "701fa4a5f7a11462befee08f4d58f620d235c6a7624c659fb20de5a31b4a4b38",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "701fa4a5f7a11462befee08f4d58f620d235c6a7624c659fb20de5a31b4a4b38",
+          "text": "小麦",
+          "words": [
+            {
+              "text": "小麦",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0323b94a8e1683a6b9f4ec18fd64c72729a33fc0f2d93edfc75eafb07a6e1301.mp3",
+        "sha256": "0323b94a8e1683a6b9f4ec18fd64c72729a33fc0f2d93edfc75eafb07a6e1301",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "0323b94a8e1683a6b9f4ec18fd64c72729a33fc0f2d93edfc75eafb07a6e1301",
+          "text": "小麦",
+          "words": [
+            {
+              "text": "小麦",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5061",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5061-W5061",
+      "question_ids": [
+        "BANK-W5061-W5061"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-09",
+    "stepId": "S-U6-09-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9ea6"
+    ],
+    "grammarLessonIds": []
+  }
+}

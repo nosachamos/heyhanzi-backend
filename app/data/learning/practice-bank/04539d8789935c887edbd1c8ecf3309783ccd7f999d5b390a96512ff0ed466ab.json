@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4151",
+  "targetId": "W4151",
+  "steps": [
+    {
+      "id": "BANK-W4151-W4151",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4151-W4151",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "eager to study; studious",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "好学"
+            },
+            {
+              "value": "hàoxué",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hao4xue2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "好学",
+            "pinyin": "hàoxué",
+            "meaning": "eager to study; studious",
+            "singleWord": true,
+            "audio": "24f86d0070ce1b0e2fbdc98ca7d99c9108171ce88385b83c4eb411ebeab262b2"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "24f86d0070ce1b0e2fbdc98ca7d99c9108171ce88385b83c4eb411ebeab262b2": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1b29e0b04fab22e6c61a7c4a79a444e713fb048fa849e2358dcf12d152612bf8.mp3",
+        "sha256": "1b29e0b04fab22e6c61a7c4a79a444e713fb048fa849e2358dcf12d152612bf8",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "1b29e0b04fab22e6c61a7c4a79a444e713fb048fa849e2358dcf12d152612bf8",
+          "text": "好学",
+          "words": [
+            {
+              "text": "好学",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-e3d068d78e73fab330547ddb5dbf541c5942a6a1440843673635782719fd8174.mp3",
+        "sha256": "e3d068d78e73fab330547ddb5dbf541c5942a6a1440843673635782719fd8174",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "e3d068d78e73fab330547ddb5dbf541c5942a6a1440843673635782719fd8174",
+          "text": "好学",
+          "words": [
+            {
+              "text": "好学",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4151",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4151-W4151",
+      "question_ids": [
+        "BANK-W4151-W4151"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-20",
+    "stepId": "S-U6-20-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-xue"
+    ],
+    "grammarLessonIds": []
+  }
+}

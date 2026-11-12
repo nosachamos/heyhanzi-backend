@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0811",
+  "targetId": "W0811",
+  "steps": [
+    {
+      "id": "BANK-W0811-W0811",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0811-W0811",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "simple; not complicated",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "简单"
+            },
+            {
+              "value": "jiǎndān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jian3dan1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "简单",
+            "pinyin": "jiǎndān",
+            "meaning": "simple; not complicated",
+            "singleWord": true,
+            "audio": "5b722f439fb22732685fb473e6f5088a40752b56e651c2b163ffdb7f9bded5f0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5b722f439fb22732685fb473e6f5088a40752b56e651c2b163ffdb7f9bded5f0": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-58718d16a557c2e6f82304ad950adf1e9c1481518cbce422fe6cae23d0b20ad6.mp3",
+        "sha256": "58718d16a557c2e6f82304ad950adf1e9c1481518cbce422fe6cae23d0b20ad6",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "58718d16a557c2e6f82304ad950adf1e9c1481518cbce422fe6cae23d0b20ad6",
+          "text": "简单",
+          "words": [
+            {
+              "text": "简单",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-64098590c7bac083afeb0318878b0bc8fded257f845d523916e2dc51c47490eb.mp3",
+        "sha256": "64098590c7bac083afeb0318878b0bc8fded257f845d523916e2dc51c47490eb",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "64098590c7bac083afeb0318878b0bc8fded257f845d523916e2dc51c47490eb",
+          "text": "简单",
+          "words": [
+            {
+              "text": "简单",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0811",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0811-W0811",
+      "question_ids": [
+        "BANK-W0811-W0811"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-25-P01",
+    "stepId": "S-U3-25-words-r4-17",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7b80"
+    ],
+    "grammarLessonIds": []
+  }
+}

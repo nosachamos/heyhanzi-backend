@@ -1,0 +1,797 @@
+{
+  "id": "EX-CHAR-char-6012",
+  "revision": 2,
+  "unit": "U6-25",
+  "stage": "ST-HSK6",
+  "after": "S-U6-25-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "怒",
+  "sourceBlockId": "mandarin-simplified-v1-char-6012",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-6012",
+        "text": "怒",
+        "pinyin": "nù",
+        "meaning": "anger; fury",
+        "characters": [
+          {
+            "id": "C-6012",
+            "text": "怒"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-086f783b6b609c0b920e0da8",
+        "text": "恼羞成怒",
+        "pinyin": "nǎo xiū chéng nù",
+        "meaning": "(idiom) to become enraged over a perceived humiliation",
+        "characters": [
+          {
+            "id": "C-607C",
+            "text": "恼"
+          },
+          {
+            "id": "C-7F9E",
+            "text": "羞"
+          },
+          {
+            "id": "C-6210",
+            "text": "成"
+          },
+          {
+            "id": "C-6012",
+            "text": "怒"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-6be73c04124cf5cff4e31a9b",
+        "text": "鼓动",
+        "pinyin": "gǔ dòng",
+        "meaning": "to urge (an activity that may be beneficial, harmful or neutral)",
+        "characters": [
+          {
+            "id": "C-9F13",
+            "text": "鼓"
+          },
+          {
+            "id": "C-52A8",
+            "text": "动"
+          }
+        ]
+      },
+      {
+        "id": "W0031",
+        "text": "东西",
+        "pinyin": "dōngxi",
+        "meaning": "thing; stuff",
+        "characters": [
+          {
+            "id": "C-4E1C",
+            "text": "东"
+          },
+          {
+            "id": "C-897F",
+            "text": "西"
+          }
+        ]
+      },
+      {
+        "id": "W1314",
+        "text": "姑娘",
+        "pinyin": "gūniang",
+        "meaning": "girl; young woman",
+        "characters": [
+          {
+            "id": "C-59D1",
+            "text": "姑"
+          },
+          {
+            "id": "C-5A18",
+            "text": "娘"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "2de37cce4b2c8eedefb4654dc2e2aaf23bb0ef23e11b6a0e386cdb7c92a1839c",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6012",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "怒",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6012-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-086f783b6b609c0b920e0da8",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "(idiom) to become enraged over a perceived humiliation",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "恼羞成怒"
+              },
+              {
+                "value": "nǎo xiū chéng nù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "nao3xiu1cheng2nu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "恼羞成怒",
+              "pinyin": "nǎo xiū chéng nù",
+              "meaning": "(idiom) to become enraged over a perceived humiliation",
+              "audio": "572bd40ba2fc8c2e67a9d9d947185a8d50ed22a5c6cf3151c63d833c46951d77",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6012-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6012",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "怒",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-6be73c04124cf5cff4e31a9b",
+                "label": "to urge (an activity that may be beneficial, harmful or neutral)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0031",
+                "label": "thing; stuff",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-6012",
+                "label": "anger; fury",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6012-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "怒",
+        "pinyin": "nù",
+        "meaning": "anger; fury",
+        "source": "/stroke-data/6012.json",
+        "reference": {
+          "character": "怒",
+          "sha256": "da687801ee444165e149b4ddb77baf769838efc27e5f0e0657564e9b7c1eda7e",
+          "medians": [
+            [
+              [
+                328,
+                837
+              ],
+              [
+                343,
+                829
+              ],
+              [
+                366,
+                790
+              ],
+              [
+                326,
+                631
+              ],
+              [
+                277,
+                499
+              ],
+              [
+                278,
+                489
+              ],
+              [
+                283,
+                479
+              ],
+              [
+                310,
+                462
+              ],
+              [
+                423,
+                402
+              ],
+              [
+                447,
+                382
+              ],
+              [
+                465,
+                351
+              ]
+            ],
+            [
+              [
+                440,
+                666
+              ],
+              [
+                467,
+                629
+              ],
+              [
+                435,
+                525
+              ],
+              [
+                399,
+                455
+              ],
+              [
+                358,
+                403
+              ],
+              [
+                315,
+                369
+              ],
+              [
+                263,
+                340
+              ],
+              [
+                215,
+                323
+              ]
+            ],
+            [
+              [
+                92,
+                564
+              ],
+              [
+                113,
+                552
+              ],
+              [
+                146,
+                545
+              ],
+              [
+                221,
+                569
+              ],
+              [
+                400,
+                610
+              ],
+              [
+                429,
+                627
+              ]
+            ],
+            [
+              [
+                567,
+                668
+              ],
+              [
+                618,
+                671
+              ],
+              [
+                716,
+                704
+              ],
+              [
+                737,
+                697
+              ],
+              [
+                752,
+                681
+              ],
+              [
+                742,
+                623
+              ],
+              [
+                722,
+                565
+              ],
+              [
+                698,
+                510
+              ],
+              [
+                670,
+                470
+              ],
+              [
+                625,
+                434
+              ],
+              [
+                592,
+                418
+              ],
+              [
+                533,
+                397
+              ],
+              [
+                496,
+                391
+              ]
+            ],
+            [
+              [
+                536,
+                601
+              ],
+              [
+                583,
+                579
+              ],
+              [
+                710,
+                459
+              ],
+              [
+                785,
+                410
+              ],
+              [
+                837,
+                397
+              ],
+              [
+                941,
+                383
+              ],
+              [
+                956,
+                386
+              ]
+            ],
+            [
+              [
+                234,
+                249
+              ],
+              [
+                214,
+                175
+              ],
+              [
+                158,
+                61
+              ]
+            ],
+            [
+              [
+                330,
+                255
+              ],
+              [
+                340,
+                240
+              ],
+              [
+                360,
+                172
+              ],
+              [
+                381,
+                136
+              ],
+              [
+                409,
+                105
+              ],
+              [
+                450,
+                76
+              ],
+              [
+                495,
+                55
+              ],
+              [
+                594,
+                30
+              ],
+              [
+                699,
+                24
+              ],
+              [
+                748,
+                44
+              ],
+              [
+                728,
+                105
+              ],
+              [
+                684,
+                191
+              ]
+            ],
+            [
+              [
+                473,
+                297
+              ],
+              [
+                551,
+                248
+              ],
+              [
+                573,
+                214
+              ]
+            ],
+            [
+              [
+                740,
+                301
+              ],
+              [
+                811,
+                261
+              ],
+              [
+                853,
+                229
+              ],
+              [
+                870,
+                207
+              ],
+              [
+                884,
+                172
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6012-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1314",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "girl; young woman",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "姑娘"
+              },
+              {
+                "value": "gūniang",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gu1niang5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "姑娘",
+              "pinyin": "gūniang",
+              "meaning": "girl; young woman",
+              "audio": "e736d338bbb581d10ed104452c89c84db610370950fc9fb5275ba8b6b3e494b3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6012-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6012",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "anger; fury",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "怒"
+              },
+              {
+                "value": "nù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "nu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "怒",
+              "pinyin": "nù",
+              "meaning": "anger; fury",
+              "audio": "91678fb021423eea73953ab1ce6d5a6042a44b5a3369e322e5dcb57aa4acd92e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "91678fb021423eea73953ab1ce6d5a6042a44b5a3369e322e5dcb57aa4acd92e"
+            ],
+            "transcript": [
+              {
+                "text": "怒",
+                "pinyin": "nù",
+                "meaning": "anger; fury",
+                "audio": "91678fb021423eea73953ab1ce6d5a6042a44b5a3369e322e5dcb57aa4acd92e",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6012",
+      "character": "怒",
+      "lessonIds": [
+        "LESSON-C-6012"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6012-word",
+        "EX-CHAR-char-6012-recognize",
+        "EX-CHAR-char-6012-write",
+        "EX-CHAR-char-6012-familiar",
+        "EX-CHAR-char-6012-recall"
+      ]
+    },
+    "audio": {
+      "91678fb021423eea73953ab1ce6d5a6042a44b5a3369e322e5dcb57aa4acd92e": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-e5aa06a54a5befb1288fc24ce624427657d54772e3f060a03b5a00b6628483a5.mp3",
+          "sha256": "e5aa06a54a5befb1288fc24ce624427657d54772e3f060a03b5a00b6628483a5",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "e5aa06a54a5befb1288fc24ce624427657d54772e3f060a03b5a00b6628483a5",
+            "text": "怒",
+            "words": [
+              {
+                "text": "怒",
+                "start": 0.2,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-94f0c0a192a812c4c8aa78e73e4dfa85e00792e6c208984b157e07c09cb576b6.mp3",
+          "sha256": "94f0c0a192a812c4c8aa78e73e4dfa85e00792e6c208984b157e07c09cb576b6",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "94f0c0a192a812c4c8aa78e73e4dfa85e00792e6c208984b157e07c09cb576b6",
+            "text": "怒",
+            "words": [
+              {
+                "text": "怒",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "572bd40ba2fc8c2e67a9d9d947185a8d50ed22a5c6cf3151c63d833c46951d77": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/51cfff9707ea046b18f2ee028e10475c211097739616839f10ba267bfec2cb13.mp3",
+          "sha256": "51cfff9707ea046b18f2ee028e10475c211097739616839f10ba267bfec2cb13",
+          "byteLength": 18477,
+          "readAlong": {
+            "audioSha256": "51cfff9707ea046b18f2ee028e10475c211097739616839f10ba267bfec2cb13",
+            "text": "恼羞成怒",
+            "words": [
+              {
+                "text": "恼羞成怒",
+                "start": 0.21,
+                "end": 0.99
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/26c241e32d2d467e3d05ce3bffdbeb13cbd5e959e8a957a1a1bff849d9979310.mp3",
+          "sha256": "26c241e32d2d467e3d05ce3bffdbeb13cbd5e959e8a957a1a1bff849d9979310",
+          "byteLength": 16173,
+          "readAlong": {
+            "audioSha256": "26c241e32d2d467e3d05ce3bffdbeb13cbd5e959e8a957a1a1bff849d9979310",
+            "text": "恼羞成怒",
+            "words": [
+              {
+                "text": "恼羞成怒",
+                "start": 0.21,
+                "end": 0.9299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "228bb166ac1f29419b68f6e3f20cd658df3ff1f8d5c3c86e52004e1be08311b9": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8fbfeaef72c5484fc75ba1e3c15f6107a6e96bab0ea7fb8d48a04074d226674f.mp3",
+          "sha256": "8fbfeaef72c5484fc75ba1e3c15f6107a6e96bab0ea7fb8d48a04074d226674f",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "8fbfeaef72c5484fc75ba1e3c15f6107a6e96bab0ea7fb8d48a04074d226674f",
+            "text": "鼓动",
+            "words": [
+              {
+                "text": "鼓动",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0d900f1cb6fa314e65e5db7b3599dde801d1bb6535e26d1de6bb9ff2b7230191.mp3",
+          "sha256": "0d900f1cb6fa314e65e5db7b3599dde801d1bb6535e26d1de6bb9ff2b7230191",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "0d900f1cb6fa314e65e5db7b3599dde801d1bb6535e26d1de6bb9ff2b7230191",
+            "text": "鼓动",
+            "words": [
+              {
+                "text": "鼓动",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "9fc3def09a55e9237f347b01faf8f8c06e5087f84ec1a0373d945b384ebadc6b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3684bcb0ea513dcce944e7ae05b28d0381c00aeecade0f0d73226b440eab7638.mp3",
+          "sha256": "3684bcb0ea513dcce944e7ae05b28d0381c00aeecade0f0d73226b440eab7638",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "3684bcb0ea513dcce944e7ae05b28d0381c00aeecade0f0d73226b440eab7638",
+            "text": "东西",
+            "words": [
+              {
+                "text": "东西",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-180b45a7b0c5803fdc766fd62842239e812f1cc997cbf7c2ca14e8ed2d29977d.mp3",
+          "sha256": "180b45a7b0c5803fdc766fd62842239e812f1cc997cbf7c2ca14e8ed2d29977d",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "180b45a7b0c5803fdc766fd62842239e812f1cc997cbf7c2ca14e8ed2d29977d",
+            "text": "东西",
+            "words": [
+              {
+                "text": "东西",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "e736d338bbb581d10ed104452c89c84db610370950fc9fb5275ba8b6b3e494b3": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/433ff8db5dcbca8129af0f4650578311e133c0f6f9a42a22d72af5a355a46257.mp3",
+          "sha256": "433ff8db5dcbca8129af0f4650578311e133c0f6f9a42a22d72af5a355a46257",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "433ff8db5dcbca8129af0f4650578311e133c0f6f9a42a22d72af5a355a46257",
+            "text": "姑娘",
+            "words": [
+              {
+                "text": "姑娘",
+                "start": 0.16,
+                "end": 0.36
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/557e39e26340eea8528b8e21ba1303117bd79524dc14301809d1ea94b310b4c9.mp3",
+          "sha256": "557e39e26340eea8528b8e21ba1303117bd79524dc14301809d1ea94b310b4c9",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "557e39e26340eea8528b8e21ba1303117bd79524dc14301809d1ea94b310b4c9",
+            "text": "姑娘",
+            "words": [
+              {
+                "text": "姑娘",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

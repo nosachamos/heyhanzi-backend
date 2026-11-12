@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1400",
+  "targetId": "W1400",
+  "steps": [
+    {
+      "id": "BANK-W1400-W1400",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1400-W1400",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "gym; fitness club",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "健身房"
+            },
+            {
+              "value": "jiànshēnfáng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jian4shen1fang2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "健身房",
+            "pinyin": "jiànshēnfáng",
+            "meaning": "gym; fitness club",
+            "singleWord": true,
+            "audio": "b25aa2b531d15012ffb5f39627c8da13f1d2f1ab9ecaa056b42e28eb26537a0c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b25aa2b531d15012ffb5f39627c8da13f1d2f1ab9ecaa056b42e28eb26537a0c": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/99bfa13f33061769192953cb3b2a0235834f7d3a0960e4c9abfb75e85b1d3b04.mp3",
+        "sha256": "99bfa13f33061769192953cb3b2a0235834f7d3a0960e4c9abfb75e85b1d3b04",
+        "byteLength": 17901,
+        "readAlong": {
+          "audioSha256": "99bfa13f33061769192953cb3b2a0235834f7d3a0960e4c9abfb75e85b1d3b04",
+          "text": "健身房",
+          "words": [
+            {
+              "text": "健身房",
+              "start": 0.21,
+              "end": 0.6299999999999999
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/6f9b0f9051cb82de692b17eb56a529c8d9270160f01dc5778169fdf726bb4607.mp3",
+        "sha256": "6f9b0f9051cb82de692b17eb56a529c8d9270160f01dc5778169fdf726bb4607",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "6f9b0f9051cb82de692b17eb56a529c8d9270160f01dc5778169fdf726bb4607",
+          "text": "健身房",
+          "words": [
+            {
+              "text": "健身房",
+              "start": 0.21,
+              "end": 0.6299999999999999
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1400",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1400-W1400",
+      "question_ids": [
+        "BANK-W1400-W1400"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-18",
+    "stepId": "S-U4-18-words-r4-14",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5065"
+    ],
+    "grammarLessonIds": []
+  }
+}

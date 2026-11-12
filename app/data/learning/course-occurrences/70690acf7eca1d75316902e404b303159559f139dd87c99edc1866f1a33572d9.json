@@ -1,0 +1,791 @@
+{
+  "id": "EX-CHAR-char-843d",
+  "revision": 2,
+  "unit": "U4-12",
+  "stage": "ST-HSK4",
+  "after": "S-U4-12-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "落",
+  "sourceBlockId": "mandarin-simplified-v1-char-843d",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-843d",
+        "text": "落",
+        "pinyin": "luò",
+        "meaning": "to fall or drop; (of the sun) to set",
+        "characters": [
+          {
+            "id": "C-843D",
+            "text": "落"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-428466ea9a56d86249ff3217",
+        "text": "从早到晚",
+        "pinyin": "cóng zǎo dào wǎn",
+        "meaning": "all day long",
+        "characters": [
+          {
+            "id": "C-4ECE",
+            "text": "从"
+          },
+          {
+            "id": "C-65E9",
+            "text": "早"
+          },
+          {
+            "id": "C-5230",
+            "text": "到"
+          },
+          {
+            "id": "C-665A",
+            "text": "晚"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d06cf41c4c75c0fc3f95262e",
+        "text": "会长",
+        "pinyin": "huì zhǎng",
+        "meaning": "president of a club, committee etc",
+        "characters": [
+          {
+            "id": "C-4F1A",
+            "text": "会"
+          },
+          {
+            "id": "C-957F",
+            "text": "长"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-dd8c43d0e639144b04b12cf5",
+        "text": "冷落",
+        "pinyin": "lěng luò",
+        "meaning": "to neglect; to treat coldly; desolate; deserted",
+        "characters": [
+          {
+            "id": "C-51B7",
+            "text": "冷"
+          },
+          {
+            "id": "C-843D",
+            "text": "落"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-fe6c719597d96c03725410a5",
+        "text": "面试",
+        "pinyin": "miànshì",
+        "meaning": "to be interviewed (as a candidate); interview",
+        "characters": [
+          {
+            "id": "C-9762",
+            "text": "面"
+          },
+          {
+            "id": "C-8BD5",
+            "text": "试"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "6102cbe66dd3a973d0e8aaefbfcad3d46a7ea619275e0d655ff2a7d2e3df615d",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-843d",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "落",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-843d-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-dd8c43d0e639144b04b12cf5",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to neglect; to treat coldly",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "冷落"
+              },
+              {
+                "value": "lěng luò",
+                "mode": "pinyin"
+              },
+              {
+                "value": "leng3luo4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "冷落",
+              "pinyin": "lěng luò",
+              "meaning": "to neglect; to treat coldly",
+              "audio": "6a3d745e877420a2428450b044d57ee26d5ef51c6863eb87c2a8991dffae3dc8",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-843d-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-843d",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "落",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-d06cf41c4c75c0fc3f95262e",
+                "label": "president of a club, committee etc",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-843d",
+                "label": "to fall or drop; (of the sun) to set",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-fe6c719597d96c03725410a5",
+                "label": "to be interviewed (as a candidate); interview",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-843d-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "落",
+        "pinyin": "luò",
+        "meaning": "to fall or drop; (of the sun) to set",
+        "source": "/stroke-data/843d.json",
+        "reference": {
+          "character": "落",
+          "sha256": "ef3aaa9bc47d6fb6a489046c8135b73a9c4d298cd156de56a1bea65968e5052d",
+          "medians": [
+            [
+              [
+                189,
+                677
+              ],
+              [
+                211,
+                670
+              ],
+              [
+                260,
+                668
+              ],
+              [
+                478,
+                699
+              ],
+              [
+                751,
+                723
+              ],
+              [
+                788,
+                720
+              ],
+              [
+                833,
+                704
+              ]
+            ],
+            [
+              [
+                348,
+                779
+              ],
+              [
+                370,
+                769
+              ],
+              [
+                390,
+                749
+              ],
+              [
+                417,
+                603
+              ]
+            ],
+            [
+              [
+                614,
+                832
+              ],
+              [
+                626,
+                827
+              ],
+              [
+                647,
+                793
+              ],
+              [
+                613,
+                689
+              ],
+              [
+                580,
+                611
+              ]
+            ],
+            [
+              [
+                217,
+                593
+              ],
+              [
+                298,
+                545
+              ],
+              [
+                319,
+                513
+              ]
+            ],
+            [
+              [
+                151,
+                452
+              ],
+              [
+                217,
+                417
+              ],
+              [
+                245,
+                390
+              ]
+            ],
+            [
+              [
+                208,
+                19
+              ],
+              [
+                196,
+                52
+              ],
+              [
+                195,
+                102
+              ],
+              [
+                317,
+                316
+              ]
+            ],
+            [
+              [
+                491,
+                628
+              ],
+              [
+                513,
+                596
+              ],
+              [
+                508,
+                576
+              ],
+              [
+                443,
+                491
+              ],
+              [
+                364,
+                411
+              ],
+              [
+                340,
+                395
+              ]
+            ],
+            [
+              [
+                498,
+                517
+              ],
+              [
+                632,
+                541
+              ],
+              [
+                663,
+                537
+              ],
+              [
+                679,
+                526
+              ],
+              [
+                667,
+                498
+              ],
+              [
+                624,
+                438
+              ],
+              [
+                541,
+                345
+              ],
+              [
+                412,
+                238
+              ],
+              [
+                353,
+                198
+              ],
+              [
+                306,
+                175
+              ]
+            ],
+            [
+              [
+                440,
+                457
+              ],
+              [
+                459,
+                456
+              ],
+              [
+                488,
+                443
+              ],
+              [
+                676,
+                301
+              ],
+              [
+                769,
+                253
+              ],
+              [
+                828,
+                247
+              ],
+              [
+                969,
+                252
+              ]
+            ],
+            [
+              [
+                391,
+                198
+              ],
+              [
+                424,
+                176
+              ],
+              [
+                431,
+                160
+              ],
+              [
+                460,
+                -13
+              ]
+            ],
+            [
+              [
+                455,
+                196
+              ],
+              [
+                469,
+                185
+              ],
+              [
+                634,
+                219
+              ],
+              [
+                673,
+                213
+              ],
+              [
+                700,
+                184
+              ],
+              [
+                671,
+                100
+              ],
+              [
+                643,
+                85
+              ]
+            ],
+            [
+              [
+                480,
+                15
+              ],
+              [
+                496,
+                30
+              ],
+              [
+                631,
+                50
+              ],
+              [
+                682,
+                51
+              ],
+              [
+                710,
+                42
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-843d-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-428466ea9a56d86249ff3217",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "all day long",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "从早到晚"
+              },
+              {
+                "value": "cóng zǎo dào wǎn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "cong2zao3dao4wan3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "从早到晚",
+              "pinyin": "cóng zǎo dào wǎn",
+              "meaning": "all day long",
+              "audio": "735e94313ee49879eb2999f879f7b1bef54e87185b64e366f6684ffa99c3b3c2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-843d-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-843d",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to fall or drop; (of the sun) to set",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "落"
+              },
+              {
+                "value": "luò",
+                "mode": "pinyin"
+              },
+              {
+                "value": "luo4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "落",
+              "pinyin": "luò",
+              "meaning": "to fall or drop; (of the sun) to set",
+              "audio": "1163db26be34c65cd8501d6cc9eb29471dd5700dbe34c34bdba2f3f2935dcc0b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "1163db26be34c65cd8501d6cc9eb29471dd5700dbe34c34bdba2f3f2935dcc0b"
+            ],
+            "transcript": [
+              {
+                "text": "落",
+                "pinyin": "luò",
+                "meaning": "to fall or drop; (of the sun) to set",
+                "audio": "1163db26be34c65cd8501d6cc9eb29471dd5700dbe34c34bdba2f3f2935dcc0b",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-843D",
+      "character": "落",
+      "lessonIds": [
+        "LESSON-C-843D"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-843d-word",
+        "EX-CHAR-char-843d-recognize",
+        "EX-CHAR-char-843d-write",
+        "EX-CHAR-char-843d-familiar",
+        "EX-CHAR-char-843d-recall"
+      ]
+    },
+    "audio": {
+      "1163db26be34c65cd8501d6cc9eb29471dd5700dbe34c34bdba2f3f2935dcc0b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-461d14b7b465044642b13d88815a4e98e165cbf3d221f8ca5220e9980ad93e6d.mp3",
+          "sha256": "461d14b7b465044642b13d88815a4e98e165cbf3d221f8ca5220e9980ad93e6d",
+          "byteLength": 7533,
+          "readAlong": {
+            "audioSha256": "461d14b7b465044642b13d88815a4e98e165cbf3d221f8ca5220e9980ad93e6d",
+            "text": "落",
+            "words": [
+              {
+                "text": "落",
+                "start": 0.16,
+                "end": 0.26
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-2d6d1aed35869aff6f7dfd8b9dce9501e110ae544182a0635c11e104c3632cc5.mp3",
+          "sha256": "2d6d1aed35869aff6f7dfd8b9dce9501e110ae544182a0635c11e104c3632cc5",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "2d6d1aed35869aff6f7dfd8b9dce9501e110ae544182a0635c11e104c3632cc5",
+            "text": "落",
+            "words": [
+              {
+                "text": "落",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "735e94313ee49879eb2999f879f7b1bef54e87185b64e366f6684ffa99c3b3c2": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0591f5a85196490a40223a7338a8ff26cec3047fd5a7e21bcacb107ef7700fc1.mp3",
+          "sha256": "0591f5a85196490a40223a7338a8ff26cec3047fd5a7e21bcacb107ef7700fc1",
+          "byteLength": 19341,
+          "readAlong": {
+            "audioSha256": "0591f5a85196490a40223a7338a8ff26cec3047fd5a7e21bcacb107ef7700fc1",
+            "text": "从早到晚",
+            "words": [
+              {
+                "text": "从早到晚",
+                "start": 0.21,
+                "end": 0.99
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/268dab80343c7fe695f1513af9f437d95b01dbba74f88603e0b6b3f6cb265320.mp3",
+          "sha256": "268dab80343c7fe695f1513af9f437d95b01dbba74f88603e0b6b3f6cb265320",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "268dab80343c7fe695f1513af9f437d95b01dbba74f88603e0b6b3f6cb265320",
+            "text": "从早到晚",
+            "words": [
+              {
+                "text": "从早到晚",
+                "start": 0.15,
+                "end": 0.75
+              }
+            ]
+          }
+        }
+      },
+      "486f00681687b476870f0b1f404d831a7827bfc92d4cc860af699df302630c8b": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c3dfee05c0694e247d287fb9f107e0c5b9d39c2faa6ad632dc4800affefcd811.mp3",
+          "sha256": "c3dfee05c0694e247d287fb9f107e0c5b9d39c2faa6ad632dc4800affefcd811",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "c3dfee05c0694e247d287fb9f107e0c5b9d39c2faa6ad632dc4800affefcd811",
+            "text": "会长",
+            "words": [
+              {
+                "text": "会长",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/dc7342a52b9f01179d30cc2a9a11961d642f10f83f09b5d699b45b69dfbd357e.mp3",
+          "sha256": "dc7342a52b9f01179d30cc2a9a11961d642f10f83f09b5d699b45b69dfbd357e",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "dc7342a52b9f01179d30cc2a9a11961d642f10f83f09b5d699b45b69dfbd357e",
+            "text": "会长",
+            "words": [
+              {
+                "text": "会长",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "6a3d745e877420a2428450b044d57ee26d5ef51c6863eb87c2a8991dffae3dc8": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ed8e924ae8ea6d4d2ed5514c108b4ecbce3fee5e7b4de789bc73016d6816a285.mp3",
+          "sha256": "ed8e924ae8ea6d4d2ed5514c108b4ecbce3fee5e7b4de789bc73016d6816a285",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "ed8e924ae8ea6d4d2ed5514c108b4ecbce3fee5e7b4de789bc73016d6816a285",
+            "text": "冷落",
+            "words": [
+              {
+                "text": "冷落",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/bc941f7a53782c20733eaba7bafec888e77e67cd3706aa3b15b5271336baa750.mp3",
+          "sha256": "bc941f7a53782c20733eaba7bafec888e77e67cd3706aa3b15b5271336baa750",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "bc941f7a53782c20733eaba7bafec888e77e67cd3706aa3b15b5271336baa750",
+            "text": "冷落",
+            "words": [
+              {
+                "text": "冷落",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "381a67afff5127c762a6ab67d704e8a30386b9893c063c089fbeebf7a368b7a9": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-31586ca7b7635545049d55ab95f2b263d3e328e442f927c2537bccc14b8c02b1.mp3",
+          "sha256": "31586ca7b7635545049d55ab95f2b263d3e328e442f927c2537bccc14b8c02b1",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "31586ca7b7635545049d55ab95f2b263d3e328e442f927c2537bccc14b8c02b1",
+            "text": "面试",
+            "words": [
+              {
+                "text": "面试",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-1dfe9c9d0bc9f088b6a73e578af5e86ab811115676b91891ffe438316c0b4226.mp3",
+          "sha256": "1dfe9c9d0bc9f088b6a73e578af5e86ab811115676b91891ffe438316c0b4226",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "1dfe9c9d0bc9f088b6a73e578af5e86ab811115676b91891ffe438316c0b4226",
+            "text": "面试",
+            "words": [
+              {
+                "text": "面试",
+                "start": 0.18,
+                "end": 0.56
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

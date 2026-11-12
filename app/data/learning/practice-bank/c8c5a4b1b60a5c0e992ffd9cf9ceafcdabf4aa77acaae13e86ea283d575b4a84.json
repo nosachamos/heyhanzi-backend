@@ -1,0 +1,217 @@
+{
+  "id": "BANK-W5038",
+  "targetId": "W5038",
+  "steps": [
+    {
+      "id": "BANK-W5038-W5038",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5038-W5038",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "thread; line; classifier for a glimmer or trace",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "线"
+            },
+            {
+              "value": "xiàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xian4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "线",
+            "pinyin": "xiàn",
+            "meaning": "thread; line; classifier for a glimmer or trace",
+            "singleWord": true,
+            "audio": "c22b66d6c72566d2d63a02ac78bf8d746e2dc40a6a5ead9a3434756d7deb1140"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W5038-W5038-use-thread-line",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W5038-W5038-use-thread-line",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 线 fits this context?",
+          "context": "A thin length of material is used for sewing.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W5038-W5038-use-thread-line-contrast-1",
+              "label": "A whole outfit.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "线 can name a thread, string or continuous line."
+            },
+            {
+              "id": "BANK-W5038-W5038-use-thread-line-meaning",
+              "label": "A thread.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "线 can name a thread, string or continuous line."
+            },
+            {
+              "id": "BANK-W5038-W5038-use-thread-line-contrast-2",
+              "label": "A full container.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "线 can name a thread, string or continuous line."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "线",
+            "pinyin": "xiàn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "c22b66d6c72566d2d63a02ac78bf8d746e2dc40a6a5ead9a3434756d7deb1140"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W5038-W5038-use-trace-counter",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W5038-W5038-use-trace-counter",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 线 fits this context?",
+          "context": "Someone still has a tiny glimmer of hope.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W5038-W5038-use-trace-counter-contrast-2",
+              "label": "A large guaranteed amount.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a measure, 线 can indicate a very small trace or glimmer of something abstract, rather than a physical piece of thread."
+            },
+            {
+              "id": "BANK-W5038-W5038-use-trace-counter-contrast-1",
+              "label": "A sewing thread that must be cut.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a measure, 线 can indicate a very small trace or glimmer of something abstract, rather than a physical piece of thread."
+            },
+            {
+              "id": "BANK-W5038-W5038-use-trace-counter-meaning",
+              "label": "A small trace or glimmer.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "As a measure, 线 can indicate a very small trace or glimmer of something abstract, rather than a physical piece of thread."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "线",
+            "pinyin": "xiàn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "c22b66d6c72566d2d63a02ac78bf8d746e2dc40a6a5ead9a3434756d7deb1140"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c22b66d6c72566d2d63a02ac78bf8d746e2dc40a6a5ead9a3434756d7deb1140": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-11c10cdb31ef430c731f32f026fa90afb42a66f58cec7e9da6df36725eecb4fd.mp3",
+        "sha256": "11c10cdb31ef430c731f32f026fa90afb42a66f58cec7e9da6df36725eecb4fd",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "11c10cdb31ef430c731f32f026fa90afb42a66f58cec7e9da6df36725eecb4fd",
+          "text": "线",
+          "words": [
+            {
+              "text": "线",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d7dce87a3b1267e624a727ce722327f9193d055cf04da0a1965756f0e1c24b13.mp3",
+        "sha256": "d7dce87a3b1267e624a727ce722327f9193d055cf04da0a1965756f0e1c24b13",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "d7dce87a3b1267e624a727ce722327f9193d055cf04da0a1965756f0e1c24b13",
+          "text": "线",
+          "words": [
+            {
+              "text": "线",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5038",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5038-W5038",
+      "question_ids": [
+        "BANK-W5038-W5038"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W5038",
+      "facet_id": "lexical-use-thread-line",
+      "part_id": "BANK-W5038-W5038-use-thread-line",
+      "question_ids": [
+        "BANK-W5038-W5038-use-thread-line"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W5038",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W5038",
+      "facet_id": "lexical-use-trace-counter",
+      "part_id": "BANK-W5038-W5038-use-trace-counter",
+      "question_ids": [
+        "BANK-W5038-W5038-use-trace-counter"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W5038",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-05",
+    "stepId": "S-U6-05-words-r4-18",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7ebf"
+    ],
+    "grammarLessonIds": []
+  }
+}

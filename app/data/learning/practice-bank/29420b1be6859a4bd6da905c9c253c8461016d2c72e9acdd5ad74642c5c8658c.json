@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1307",
+  "targetId": "W1307",
+  "steps": [
+    {
+      "id": "BANK-W1307-W1307",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1307-W1307",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "wages; pay",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "工资"
+            },
+            {
+              "value": "gōngzī",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gong1zi1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "工资",
+            "pinyin": "gōngzī",
+            "meaning": "wages; pay",
+            "singleWord": true,
+            "audio": "f339450e31c0b4e24e4b15b43e3e3a93abd1947dbaa7016c4fe9c85f6ec0eb54"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f339450e31c0b4e24e4b15b43e3e3a93abd1947dbaa7016c4fe9c85f6ec0eb54": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f02e7246931899cb24c0973592e62d724a5c1d1d8f906317b8753e35074eb7da.mp3",
+        "sha256": "f02e7246931899cb24c0973592e62d724a5c1d1d8f906317b8753e35074eb7da",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "f02e7246931899cb24c0973592e62d724a5c1d1d8f906317b8753e35074eb7da",
+          "text": "工资",
+          "words": [
+            {
+              "text": "工资",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-81a293ae3f9918844df6afc03f9e988ddd58fd92e6a5380567d69adb5b55f501.mp3",
+        "sha256": "81a293ae3f9918844df6afc03f9e988ddd58fd92e6a5380567d69adb5b55f501",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "81a293ae3f9918844df6afc03f9e988ddd58fd92e6a5380567d69adb5b55f501",
+          "text": "工资",
+          "words": [
+            {
+              "text": "工资",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1307",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1307-W1307",
+      "question_ids": [
+        "BANK-W1307-W1307"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-11",
+    "stepId": "S-U4-11-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8d44"
+    ],
+    "grammarLessonIds": []
+  }
+}

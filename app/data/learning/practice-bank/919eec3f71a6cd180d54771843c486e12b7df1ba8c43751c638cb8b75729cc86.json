@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2153",
+  "targetId": "W2153",
+  "steps": [
+    {
+      "id": "BANK-W2153-W2153",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2153-W2153",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "vehicle owner",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "车主"
+            },
+            {
+              "value": "chēzhǔ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "che1zhu3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "车主",
+            "pinyin": "chēzhǔ",
+            "meaning": "vehicle owner",
+            "singleWord": true,
+            "audio": "5754186d25353f02ab98e5a988f47676781027ef9b9ef923bcdfa5fb5638eedc"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5754186d25353f02ab98e5a988f47676781027ef9b9ef923bcdfa5fb5638eedc": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5c540403409223ca1dc2d7e2d67cc457ec2a0f43074fbc84bc978741e349cdcd.mp3",
+        "sha256": "5c540403409223ca1dc2d7e2d67cc457ec2a0f43074fbc84bc978741e349cdcd",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "5c540403409223ca1dc2d7e2d67cc457ec2a0f43074fbc84bc978741e349cdcd",
+          "text": "车主",
+          "words": [
+            {
+              "text": "车主",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-672a1685e4aece7b0d92b2c44778fcc5d5e84a2c7fcc941f1c3edd170dbea15d.mp3",
+        "sha256": "672a1685e4aece7b0d92b2c44778fcc5d5e84a2c7fcc941f1c3edd170dbea15d",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "672a1685e4aece7b0d92b2c44778fcc5d5e84a2c7fcc941f1c3edd170dbea15d",
+          "text": "车主",
+          "words": [
+            {
+              "text": "车主",
+              "start": 0.2,
+              "end": 0.5
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2153",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2153-W2153",
+      "question_ids": [
+        "BANK-W2153-W2153"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-16-P01",
+    "stepId": "S-U5-16-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4e3b"
+    ],
+    "grammarLessonIds": []
+  }
+}

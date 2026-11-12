@@ -1,0 +1,725 @@
+{
+  "id": "EX-CHAR-char-654c",
+  "revision": 2,
+  "unit": "U5-33",
+  "stage": "ST-HSK5",
+  "after": "S-U5-33-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "敌",
+  "sourceBlockId": "mandarin-simplified-v1-char-654c",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-b030387f0b4a043cb96e2cfa",
+        "text": "换货",
+        "pinyin": "huàn huò",
+        "meaning": "to exchange a purchase",
+        "characters": [
+          {
+            "id": "C-6362",
+            "text": "换"
+          },
+          {
+            "id": "C-8D27",
+            "text": "货"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-c1297761d728dd9bca6ec9df",
+        "text": "无敌",
+        "pinyin": "wú dí",
+        "meaning": "unequalled",
+        "characters": [
+          {
+            "id": "C-65E0",
+            "text": "无"
+          },
+          {
+            "id": "C-654C",
+            "text": "敌"
+          }
+        ]
+      },
+      {
+        "id": "W0214",
+        "text": "先",
+        "pinyin": "xiān",
+        "meaning": "first; before something else",
+        "characters": [
+          {
+            "id": "C-5148",
+            "text": "先"
+          }
+        ]
+      },
+      {
+        "id": "W3200",
+        "text": "网络",
+        "pinyin": "wǎngluò",
+        "meaning": "network; Internet",
+        "characters": [
+          {
+            "id": "C-7F51",
+            "text": "网"
+          },
+          {
+            "id": "C-7EDC",
+            "text": "络"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "7d7157872e2b198520ef823dc68388faf553bc6cb10c1de3a69843835ad321c9",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-654c",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "敌",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-654c-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-c1297761d728dd9bca6ec9df",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "unequalled",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "无敌"
+              },
+              {
+                "value": "wú dí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wu2di2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "无敌",
+              "pinyin": "wú dí",
+              "meaning": "unequalled",
+              "audio": "64f855072739a8c932156ea2d23a82a7b8a2c67171082ebbd99a329c0c8d392f",
+              "singleWord": true,
+              "focus": "敌"
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-654c-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-cmn-c1297761d728dd9bca6ec9df",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "无敌",
+              "meaning": "",
+              "focus": "敌"
+            },
+            "choices": [
+              {
+                "id": "W0214",
+                "label": "first; before something else",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-b030387f0b4a043cb96e2cfa",
+                "label": "to exchange a purchase",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-c1297761d728dd9bca6ec9df",
+                "label": "unequalled",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-654c-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "敌",
+        "pinyin": "dí",
+        "meaning": "(bound form) enemy; (bound form) to be a match for",
+        "source": "/stroke-data/654c.json",
+        "reference": {
+          "character": "敌",
+          "sha256": "4023e24f555122dc419abc47ed1e867cd4fe131e581eff4cb1b7d5bdc5155a35",
+          "medians": [
+            [
+              [
+                463,
+                737
+              ],
+              [
+                428,
+                744
+              ],
+              [
+                396,
+                742
+              ],
+              [
+                320,
+                686
+              ],
+              [
+                221,
+                633
+              ],
+              [
+                210,
+                633
+              ],
+              [
+                206,
+                626
+              ],
+              [
+                185,
+                624
+              ],
+              [
+                177,
+                614
+              ]
+            ],
+            [
+              [
+                71,
+                478
+              ],
+              [
+                107,
+                472
+              ],
+              [
+                147,
+                476
+              ],
+              [
+                388,
+                540
+              ],
+              [
+                439,
+                547
+              ],
+              [
+                463,
+                544
+              ]
+            ],
+            [
+              [
+                293,
+                648
+              ],
+              [
+                320,
+                637
+              ],
+              [
+                338,
+                616
+              ],
+              [
+                316,
+                374
+              ],
+              [
+                299,
+                354
+              ]
+            ],
+            [
+              [
+                172,
+                333
+              ],
+              [
+                205,
+                297
+              ],
+              [
+                240,
+                99
+              ]
+            ],
+            [
+              [
+                235,
+                309
+              ],
+              [
+                243,
+                319
+              ],
+              [
+                367,
+                352
+              ],
+              [
+                398,
+                346
+              ],
+              [
+                421,
+                325
+              ],
+              [
+                397,
+                233
+              ],
+              [
+                378,
+                218
+              ]
+            ],
+            [
+              [
+                258,
+                151
+              ],
+              [
+                274,
+                166
+              ],
+              [
+                373,
+                191
+              ],
+              [
+                432,
+                186
+              ]
+            ],
+            [
+              [
+                579,
+                797
+              ],
+              [
+                606,
+                781
+              ],
+              [
+                621,
+                759
+              ],
+              [
+                619,
+                751
+              ],
+              [
+                588,
+                654
+              ],
+              [
+                541,
+                544
+              ],
+              [
+                488,
+                467
+              ]
+            ],
+            [
+              [
+                569,
+                548
+              ],
+              [
+                646,
+                556
+              ],
+              [
+                825,
+                607
+              ],
+              [
+                848,
+                608
+              ],
+              [
+                862,
+                602
+              ]
+            ],
+            [
+              [
+                672,
+                534
+              ],
+              [
+                704,
+                511
+              ],
+              [
+                711,
+                499
+              ],
+              [
+                682,
+                363
+              ],
+              [
+                639,
+                258
+              ],
+              [
+                605,
+                206
+              ],
+              [
+                551,
+                154
+              ],
+              [
+                490,
+                112
+              ],
+              [
+                427,
+                82
+              ]
+            ],
+            [
+              [
+                485,
+                407
+              ],
+              [
+                506,
+                404
+              ],
+              [
+                526,
+                390
+              ],
+              [
+                665,
+                211
+              ],
+              [
+                727,
+                143
+              ],
+              [
+                782,
+                95
+              ],
+              [
+                844,
+                74
+              ],
+              [
+                954,
+                56
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-654c-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3200",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "network; Internet",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "网络"
+              },
+              {
+                "value": "wǎngluò",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wang3luo4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "网络",
+              "pinyin": "wǎngluò",
+              "meaning": "network; Internet",
+              "audio": "ff1bdec9423d288bf538f898251a8eaeca6d6cdd19d5cf201b81ec78746593c4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-654c-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-cmn-c1297761d728dd9bca6ec9df",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "unequalled",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "无敌"
+              },
+              {
+                "value": "wú dí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wu2di2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "无敌",
+              "pinyin": "wú dí",
+              "meaning": "unequalled",
+              "audio": "64f855072739a8c932156ea2d23a82a7b8a2c67171082ebbd99a329c0c8d392f",
+              "singleWord": true,
+              "focus": "敌"
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "64f855072739a8c932156ea2d23a82a7b8a2c67171082ebbd99a329c0c8d392f"
+            ],
+            "transcript": [
+              {
+                "text": "无敌",
+                "pinyin": "wú dí",
+                "meaning": "unequalled",
+                "audio": "64f855072739a8c932156ea2d23a82a7b8a2c67171082ebbd99a329c0c8d392f",
+                "singleWord": true,
+                "focus": "敌"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-654C",
+      "character": "敌",
+      "lessonIds": [
+        "LESSON-C-654C"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-654c-word",
+        "EX-CHAR-char-654c-recognize",
+        "EX-CHAR-char-654c-write",
+        "EX-CHAR-char-654c-familiar",
+        "EX-CHAR-char-654c-recall"
+      ]
+    },
+    "audio": {
+      "f2825583ca796919887ae61050e1cebb3dfaab4e3e3f505bac562b2ce50fc864": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b72d9f507c3a66aae15c621df213d4a7686446ea3731737ddc51fa430a66bfc5.mp3",
+          "sha256": "b72d9f507c3a66aae15c621df213d4a7686446ea3731737ddc51fa430a66bfc5",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "b72d9f507c3a66aae15c621df213d4a7686446ea3731737ddc51fa430a66bfc5",
+            "text": "换货",
+            "words": [
+              {
+                "text": "换货",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d09df43493a6016a1debffa12fd83308b44fc6b363983b6ed87f04747d877813.mp3",
+          "sha256": "d09df43493a6016a1debffa12fd83308b44fc6b363983b6ed87f04747d877813",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "d09df43493a6016a1debffa12fd83308b44fc6b363983b6ed87f04747d877813",
+            "text": "换货",
+            "words": [
+              {
+                "text": "换货",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "64f855072739a8c932156ea2d23a82a7b8a2c67171082ebbd99a329c0c8d392f": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/54f0a4c43c56f33f946b3211e1da08156b0111db73e996ac1d559bc8c5987c33.mp3",
+          "sha256": "54f0a4c43c56f33f946b3211e1da08156b0111db73e996ac1d559bc8c5987c33",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "54f0a4c43c56f33f946b3211e1da08156b0111db73e996ac1d559bc8c5987c33",
+            "text": "无敌",
+            "words": [
+              {
+                "text": "无敌",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/fee02899a363f885a93b6acc836fd8a1f31f8abed7343b02de4657964179bab4.mp3",
+          "sha256": "fee02899a363f885a93b6acc836fd8a1f31f8abed7343b02de4657964179bab4",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "fee02899a363f885a93b6acc836fd8a1f31f8abed7343b02de4657964179bab4",
+            "text": "无敌",
+            "words": [
+              {
+                "text": "无敌",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "532f6c7f2ad26a9557a04381d17435b5609d94f42257de4cc30eee5050a972b9": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-21526bb7e98d63e69c3874c96107dec41044e434e208b7c0b3be6619f0d16917.mp3",
+          "sha256": "21526bb7e98d63e69c3874c96107dec41044e434e208b7c0b3be6619f0d16917",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "21526bb7e98d63e69c3874c96107dec41044e434e208b7c0b3be6619f0d16917",
+            "text": "先",
+            "words": [
+              {
+                "text": "先",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b544f2579bb28b0e20fa27471fbdaf89045aa9d990ea374e5da04193303a46b8.mp3",
+          "sha256": "b544f2579bb28b0e20fa27471fbdaf89045aa9d990ea374e5da04193303a46b8",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "b544f2579bb28b0e20fa27471fbdaf89045aa9d990ea374e5da04193303a46b8",
+            "text": "先",
+            "words": [
+              {
+                "text": "先",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "ff1bdec9423d288bf538f898251a8eaeca6d6cdd19d5cf201b81ec78746593c4": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ad4a736c1bdb42af11a6a8f9a296730e118f52189419051b096182136710c9f9.mp3",
+          "sha256": "ad4a736c1bdb42af11a6a8f9a296730e118f52189419051b096182136710c9f9",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "ad4a736c1bdb42af11a6a8f9a296730e118f52189419051b096182136710c9f9",
+            "text": "网络",
+            "words": [
+              {
+                "text": "网络",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8631dd506923f8fd22b7e441212787c30a2d563736beebaee2c25484c24653a2.mp3",
+          "sha256": "8631dd506923f8fd22b7e441212787c30a2d563736beebaee2c25484c24653a2",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "8631dd506923f8fd22b7e441212787c30a2d563736beebaee2c25484c24653a2",
+            "text": "网络",
+            "words": [
+              {
+                "text": "网络",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

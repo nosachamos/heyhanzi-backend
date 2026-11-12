@@ -1,0 +1,217 @@
+{
+  "id": "BANK-W4733",
+  "targetId": "W4733",
+  "steps": [
+    {
+      "id": "BANK-W4733-W4733",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4733-W4733",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to begin learning; introduction to a subject",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "入门"
+            },
+            {
+              "value": "rùmén",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ru4men2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "入门",
+            "pinyin": "rùmén",
+            "meaning": "to begin learning; introduction to a subject",
+            "singleWord": true,
+            "audio": "28ff99c5c2e65b1d49a0d234ed09ce312ab884a2a88f3fbd191d2ad821a410ec"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W4733-W4733-use-begin-learning",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W4733-W4733-use-begin-learning",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 入门 fits this context?",
+          "context": "A learner is gaining their first basic understanding of a subject.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W4733-W4733-use-begin-learning-meaning",
+              "label": "To begin learning the subject.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "入门 can mean to begin learning a subject and gain an initial understanding of its basics. It does not imply proficiency."
+            },
+            {
+              "id": "BANK-W4733-W4733-use-begin-learning-contrast-1",
+              "label": "To enter through a physical doorway.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "入门 can mean to begin learning a subject and gain an initial understanding of its basics. It does not imply proficiency."
+            },
+            {
+              "id": "BANK-W4733-W4733-use-begin-learning-contrast-2",
+              "label": "To have mastered every advanced topic.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "入门 can mean to begin learning a subject and gain an initial understanding of its basics. It does not imply proficiency."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "入门",
+            "pinyin": "rùmén",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "28ff99c5c2e65b1d49a0d234ed09ce312ab884a2a88f3fbd191d2ad821a410ec"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W4733-W4733-use-introduction",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W4733-W4733-use-introduction",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 入门 fits this context?",
+          "context": "A book introduces a subject to a complete beginner.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W4733-W4733-use-introduction-meaning",
+              "label": "An introduction to the subject.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "As a subject-learning expression, 入门 can also name an introduction or beginner-level material."
+            },
+            {
+              "id": "BANK-W4733-W4733-use-introduction-contrast-1",
+              "label": "The entrance door of a building.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a subject-learning expression, 入门 can also name an introduction or beginner-level material."
+            },
+            {
+              "id": "BANK-W4733-W4733-use-introduction-contrast-2",
+              "label": "An advanced proof requiring expert knowledge.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a subject-learning expression, 入门 can also name an introduction or beginner-level material."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "入门",
+            "pinyin": "rùmén",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "28ff99c5c2e65b1d49a0d234ed09ce312ab884a2a88f3fbd191d2ad821a410ec"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "28ff99c5c2e65b1d49a0d234ed09ce312ab884a2a88f3fbd191d2ad821a410ec": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-29f90a91221dc3a7698cfca40b6e38054de46c5c5446c13d85c8391c3039b00b.mp3",
+        "sha256": "29f90a91221dc3a7698cfca40b6e38054de46c5c5446c13d85c8391c3039b00b",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "29f90a91221dc3a7698cfca40b6e38054de46c5c5446c13d85c8391c3039b00b",
+          "text": "入门",
+          "words": [
+            {
+              "text": "入门",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-8e3979dd20f0b9c40a0c80aaa4d83fdd574b686f0581a7ffa30049bd9cc3a219.mp3",
+        "sha256": "8e3979dd20f0b9c40a0c80aaa4d83fdd574b686f0581a7ffa30049bd9cc3a219",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "8e3979dd20f0b9c40a0c80aaa4d83fdd574b686f0581a7ffa30049bd9cc3a219",
+          "text": "入门",
+          "words": [
+            {
+              "text": "入门",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4733",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4733-W4733",
+      "question_ids": [
+        "BANK-W4733-W4733"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W4733",
+      "facet_id": "lexical-use-begin-learning",
+      "part_id": "BANK-W4733-W4733-use-begin-learning",
+      "question_ids": [
+        "BANK-W4733-W4733-use-begin-learning"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W4733",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W4733",
+      "facet_id": "lexical-use-introduction",
+      "part_id": "BANK-W4733-W4733-use-introduction",
+      "question_ids": [
+        "BANK-W4733-W4733-use-introduction"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W4733",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-20",
+    "stepId": "S-U6-20-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5165"
+    ],
+    "grammarLessonIds": []
+  }
+}

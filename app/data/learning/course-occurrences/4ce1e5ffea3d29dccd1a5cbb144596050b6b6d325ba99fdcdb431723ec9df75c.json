@@ -1,0 +1,697 @@
+{
+  "id": "EX-CHAR-char-8fd8",
+  "revision": 2,
+  "unit": "U08-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U08-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "还",
+  "sourceBlockId": "mandarin-simplified-v1-char-8fd8",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-500e72831c5a2421e6cb170d",
+        "text": "和好",
+        "pinyin": "hé hǎo",
+        "meaning": "to make up; to be on good terms",
+        "characters": [
+          {
+            "id": "C-548C",
+            "text": "和"
+          },
+          {
+            "id": "C-597D",
+            "text": "好"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-cf000584b801811ea7129a89",
+        "text": "上市",
+        "pinyin": "shàngshì",
+        "meaning": "to hit the market (of a new product); to float (a company on the stock market)",
+        "characters": [
+          {
+            "id": "C-4E0A",
+            "text": "上"
+          },
+          {
+            "id": "C-5E02",
+            "text": "市"
+          }
+        ]
+      },
+      {
+        "id": "W0073",
+        "text": "这里",
+        "pinyin": "zhèlǐ",
+        "meaning": "here",
+        "characters": [
+          {
+            "id": "C-8FD9",
+            "text": "这"
+          },
+          {
+            "id": "C-91CC",
+            "text": "里"
+          }
+        ]
+      },
+      {
+        "id": "W0183",
+        "text": "还没",
+        "pinyin": "háiméi",
+        "meaning": "not yet",
+        "characters": [
+          {
+            "id": "C-8FD8",
+            "text": "还"
+          },
+          {
+            "id": "C-6CA1",
+            "text": "没"
+          }
+        ]
+      },
+      {
+        "id": "W0185",
+        "text": "还",
+        "pinyin": "hái",
+        "meaning": "still; also",
+        "characters": [
+          {
+            "id": "C-8FD8",
+            "text": "还"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "c3ffe44182e902a0ffae5a11aad5606237169bec104173949a9330ee080e4962",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8fd8",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "还",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8fd8-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0183",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "not yet",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "还没"
+              },
+              {
+                "value": "háiméi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hai2mei2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "还没",
+              "pinyin": "háiméi",
+              "meaning": "not yet",
+              "audio": "f5bce23effea3e74f04a114f84236ae456d0d23d9694b11abce10422f6279040",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8fd8-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0185",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "还",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0185",
+                "label": "still; also",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-cf000584b801811ea7129a89",
+                "label": "to hit the market (of a new product); to float (a company on the stock market)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-500e72831c5a2421e6cb170d",
+                "label": "to make up; to be on good terms",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8fd8-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "还",
+        "pinyin": "hái",
+        "meaning": "still; also",
+        "source": "/stroke-data/8fd8.json",
+        "reference": {
+          "character": "还",
+          "sha256": "5a55896c5742eff350c0ddbe4f9efc5a150e989dccc7aa39cfaf33a42f5b06e5",
+          "medians": [
+            [
+              [
+                415,
+                638
+              ],
+              [
+                472,
+                628
+              ],
+              [
+                772,
+                683
+              ],
+              [
+                840,
+                676
+              ]
+            ],
+            [
+              [
+                599,
+                620
+              ],
+              [
+                628,
+                593
+              ],
+              [
+                608,
+                544
+              ],
+              [
+                556,
+                455
+              ],
+              [
+                471,
+                349
+              ],
+              [
+                410,
+                293
+              ],
+              [
+                363,
+                261
+              ]
+            ],
+            [
+              [
+                559,
+                530
+              ],
+              [
+                596,
+                464
+              ],
+              [
+                597,
+                321
+              ],
+              [
+                588,
+                198
+              ],
+              [
+                594,
+                138
+              ]
+            ],
+            [
+              [
+                690,
+                433
+              ],
+              [
+                752,
+                397
+              ],
+              [
+                814,
+                351
+              ],
+              [
+                845,
+                298
+              ]
+            ],
+            [
+              [
+                229,
+                776
+              ],
+              [
+                305,
+                732
+              ],
+              [
+                339,
+                688
+              ]
+            ],
+            [
+              [
+                109,
+                450
+              ],
+              [
+                147,
+                449
+              ],
+              [
+                251,
+                491
+              ],
+              [
+                267,
+                491
+              ],
+              [
+                291,
+                476
+              ],
+              [
+                294,
+                453
+              ],
+              [
+                288,
+                429
+              ],
+              [
+                260,
+                368
+              ],
+              [
+                265,
+                333
+              ],
+              [
+                295,
+                280
+              ],
+              [
+                306,
+                240
+              ],
+              [
+                295,
+                193
+              ],
+              [
+                279,
+                182
+              ]
+            ],
+            [
+              [
+                101,
+                132
+              ],
+              [
+                145,
+                122
+              ],
+              [
+                240,
+                157
+              ],
+              [
+                321,
+                155
+              ],
+              [
+                587,
+                60
+              ],
+              [
+                677,
+                37
+              ],
+              [
+                757,
+                25
+              ],
+              [
+                810,
+                26
+              ],
+              [
+                892,
+                45
+              ],
+              [
+                922,
+                58
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8fd8-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0073",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "here",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "这里"
+              },
+              {
+                "value": "zhèlǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhe4li3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "这里",
+              "pinyin": "zhèlǐ",
+              "meaning": "here",
+              "audio": "73d7a971600efb8d5e3185196c367063f51c2777ca442e8ebc4a0b79291f8af4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8fd8-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0185",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "still; also",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "还"
+              },
+              {
+                "value": "hái",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hai2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "还",
+              "pinyin": "hái",
+              "meaning": "still; also",
+              "audio": "1de4388d60f96e39bb4847d3a58bf8b2f4d4e7ed066f5309c42e37145a64e4bc",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "1de4388d60f96e39bb4847d3a58bf8b2f4d4e7ed066f5309c42e37145a64e4bc"
+            ],
+            "transcript": [
+              {
+                "text": "还",
+                "pinyin": "hái",
+                "meaning": "still; also",
+                "audio": "1de4388d60f96e39bb4847d3a58bf8b2f4d4e7ed066f5309c42e37145a64e4bc",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8FD8",
+      "character": "还",
+      "lessonIds": [
+        "LESSON-C-8FD8"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8fd8-word",
+        "EX-CHAR-char-8fd8-recognize",
+        "EX-CHAR-char-8fd8-write",
+        "EX-CHAR-char-8fd8-familiar",
+        "EX-CHAR-char-8fd8-recall"
+      ]
+    },
+    "audio": {
+      "4ef8961781870b5380740f63b479a2189e084f6dc51948342d0fb5e6d6199465": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5b111000f593b85a17138b835564b8e9ea36bc8e0566ec930fafd47c7b5dd674.mp3",
+          "sha256": "5b111000f593b85a17138b835564b8e9ea36bc8e0566ec930fafd47c7b5dd674",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "5b111000f593b85a17138b835564b8e9ea36bc8e0566ec930fafd47c7b5dd674",
+            "text": "和好",
+            "words": [
+              {
+                "text": "和好",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/166c6ddf8dc844f5243518e1e68b624b4cf290f00ad3d267216c5fe4ba93d4f7.mp3",
+          "sha256": "166c6ddf8dc844f5243518e1e68b624b4cf290f00ad3d267216c5fe4ba93d4f7",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "166c6ddf8dc844f5243518e1e68b624b4cf290f00ad3d267216c5fe4ba93d4f7",
+            "text": "和好",
+            "words": [
+              {
+                "text": "和好",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "193b9e0503bdd49ca48bb76f9af63af20a07f2c318a14e1fe7f14f6656731fb5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f1521eeece86026815fbb4e3507f02119d6c424426a83cade625c52c0ae1a3f1.mp3",
+          "sha256": "f1521eeece86026815fbb4e3507f02119d6c424426a83cade625c52c0ae1a3f1",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "f1521eeece86026815fbb4e3507f02119d6c424426a83cade625c52c0ae1a3f1",
+            "text": "上市",
+            "words": [
+              {
+                "text": "上市",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/19c4074977d1a3d8b11bd923fb87e61b2fa8922b5329ca7780bccbc56e7d27ec.mp3",
+          "sha256": "19c4074977d1a3d8b11bd923fb87e61b2fa8922b5329ca7780bccbc56e7d27ec",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "19c4074977d1a3d8b11bd923fb87e61b2fa8922b5329ca7780bccbc56e7d27ec",
+            "text": "上市",
+            "words": [
+              {
+                "text": "上市",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "73d7a971600efb8d5e3185196c367063f51c2777ca442e8ebc4a0b79291f8af4": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f2ecd782b3ef30994bd67aa4541d737761a8729100bc14d9a35997f42bd6bf0b.mp3",
+          "sha256": "f2ecd782b3ef30994bd67aa4541d737761a8729100bc14d9a35997f42bd6bf0b",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "f2ecd782b3ef30994bd67aa4541d737761a8729100bc14d9a35997f42bd6bf0b",
+            "text": "这里",
+            "words": [
+              {
+                "text": "这里",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-fc2d17afd1a698b348a24af9d8d168d6be73d99c83b02b0dd84af0d490ee0339.mp3",
+          "sha256": "fc2d17afd1a698b348a24af9d8d168d6be73d99c83b02b0dd84af0d490ee0339",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "fc2d17afd1a698b348a24af9d8d168d6be73d99c83b02b0dd84af0d490ee0339",
+            "text": "这里",
+            "words": [
+              {
+                "text": "这里",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "f5bce23effea3e74f04a114f84236ae456d0d23d9694b11abce10422f6279040": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-552af2ac35d4564718b12424e6a9e03c70e68e22150adeb983a38b2c10f3332c.mp3",
+          "sha256": "552af2ac35d4564718b12424e6a9e03c70e68e22150adeb983a38b2c10f3332c",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "552af2ac35d4564718b12424e6a9e03c70e68e22150adeb983a38b2c10f3332c",
+            "text": "还没",
+            "words": [
+              {
+                "text": "还没",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d594a1b873d4c53863a4df46997afdff5df9f58a50e578db8806f23738355b42.mp3",
+          "sha256": "d594a1b873d4c53863a4df46997afdff5df9f58a50e578db8806f23738355b42",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "d594a1b873d4c53863a4df46997afdff5df9f58a50e578db8806f23738355b42",
+            "text": "还没",
+            "words": [
+              {
+                "text": "还没",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "1de4388d60f96e39bb4847d3a58bf8b2f4d4e7ed066f5309c42e37145a64e4bc": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-28c98a7e606a7195cca6fb8646dfe15f0413063219aaa5b896b5460c9edd7a47.mp3",
+          "sha256": "28c98a7e606a7195cca6fb8646dfe15f0413063219aaa5b896b5460c9edd7a47",
+          "byteLength": 7245,
+          "readAlong": {
+            "audioSha256": "28c98a7e606a7195cca6fb8646dfe15f0413063219aaa5b896b5460c9edd7a47",
+            "text": "还",
+            "words": [
+              {
+                "text": "还",
+                "start": 0.16,
+                "end": 0.24
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-5d4c5e6625166735b5189f49859b14e196756a50d242f4b5929775fc47dd0dfe.mp3",
+          "sha256": "5d4c5e6625166735b5189f49859b14e196756a50d242f4b5929775fc47dd0dfe",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "5d4c5e6625166735b5189f49859b14e196756a50d242f4b5929775fc47dd0dfe",
+            "text": "还",
+            "words": [
+              {
+                "text": "还",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

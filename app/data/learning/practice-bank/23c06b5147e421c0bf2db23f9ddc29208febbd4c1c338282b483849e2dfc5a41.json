@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3401",
+  "targetId": "W3401",
+  "steps": [
+    {
+      "id": "BANK-W3401-W3401",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3401-W3401",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "a copy of a film; film",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "影片"
+            },
+            {
+              "value": "yǐngpiàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ying3pian4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "影片",
+            "pinyin": "yǐngpiàn",
+            "meaning": "a copy of a film; film",
+            "singleWord": true,
+            "audio": "58b986b96c61bd575b43c4f9c070877e3e80b096b0248258ea96493bea1adeb1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "58b986b96c61bd575b43c4f9c070877e3e80b096b0248258ea96493bea1adeb1": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/049ab54476e9aa87786dcf791ff28e4ebe881ac6579309ce85c01efa8e636d09.mp3",
+        "sha256": "049ab54476e9aa87786dcf791ff28e4ebe881ac6579309ce85c01efa8e636d09",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "049ab54476e9aa87786dcf791ff28e4ebe881ac6579309ce85c01efa8e636d09",
+          "text": "影片",
+          "words": [
+            {
+              "text": "影片",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/da364700d0a17b2566dbbcd04b8d7213e041d1ed66759bddc40687fdf2bf8045.mp3",
+        "sha256": "da364700d0a17b2566dbbcd04b8d7213e041d1ed66759bddc40687fdf2bf8045",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "da364700d0a17b2566dbbcd04b8d7213e041d1ed66759bddc40687fdf2bf8045",
+          "text": "影片",
+          "words": [
+            {
+              "text": "影片",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3401",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3401-W3401",
+      "question_ids": [
+        "BANK-W3401-W3401"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-27",
+    "stepId": "S-U5-27-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8e48"
+    ],
+    "grammarLessonIds": []
+  }
+}

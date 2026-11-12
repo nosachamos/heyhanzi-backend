@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5390",
+  "targetId": "W5390",
+  "steps": [
+    {
+      "id": "BANK-W5390-W5390",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5390-W5390",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "subtitles; captions",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "字幕"
+            },
+            {
+              "value": "zìmù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zi4mu4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "字幕",
+            "pinyin": "zìmù",
+            "meaning": "subtitles; captions",
+            "singleWord": true,
+            "audio": "f4d513b9eec075645ec5f5d2ebe86166b9f934eaffd0981fc1b76c7dc17abe9c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f4d513b9eec075645ec5f5d2ebe86166b9f934eaffd0981fc1b76c7dc17abe9c": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2d4255cd111962a95828456dfe41389b4ad4ccb519d6fa0572c78b9dc1f98b53.mp3",
+        "sha256": "2d4255cd111962a95828456dfe41389b4ad4ccb519d6fa0572c78b9dc1f98b53",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "2d4255cd111962a95828456dfe41389b4ad4ccb519d6fa0572c78b9dc1f98b53",
+          "text": "字幕",
+          "words": [
+            {
+              "text": "字幕",
+              "start": 0.09,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5ca4a9638764e8f2b20d290fee4f6b1245870c81c5218dbb574ec38f1d241567.mp3",
+        "sha256": "5ca4a9638764e8f2b20d290fee4f6b1245870c81c5218dbb574ec38f1d241567",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "5ca4a9638764e8f2b20d290fee4f6b1245870c81c5218dbb574ec38f1d241567",
+          "text": "字幕",
+          "words": [
+            {
+              "text": "字幕",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5390",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5390-W5390",
+      "question_ids": [
+        "BANK-W5390-W5390"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-26",
+    "stepId": "S-U6-26-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-594f"
+    ],
+    "grammarLessonIds": []
+  }
+}

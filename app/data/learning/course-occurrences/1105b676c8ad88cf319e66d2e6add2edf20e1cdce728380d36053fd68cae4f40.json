@@ -1,0 +1,739 @@
+{
+  "id": "EX-CHAR-char-8c08",
+  "revision": 2,
+  "unit": "U4-28",
+  "stage": "ST-HSK4",
+  "after": "S-U4-28-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "谈",
+  "sourceBlockId": "mandarin-simplified-v1-char-8c08",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-a5ccbb66643ff7bb7947bf09",
+        "text": "交谈",
+        "pinyin": "jiāotán",
+        "meaning": "to discuss; to converse; chat; discussion",
+        "characters": [
+          {
+            "id": "C-4EA4",
+            "text": "交"
+          },
+          {
+            "id": "C-8C08",
+            "text": "谈"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-a823d494d5d431f70971472d",
+        "text": "出动",
+        "pinyin": "chū dòng",
+        "meaning": "to start out on a trip",
+        "characters": [
+          {
+            "id": "C-51FA",
+            "text": "出"
+          },
+          {
+            "id": "C-52A8",
+            "text": "动"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-bf44d17c8612e79c1dfd91d4",
+        "text": "合同",
+        "pinyin": "hé tong",
+        "meaning": "contract",
+        "characters": [
+          {
+            "id": "C-5408",
+            "text": "合"
+          },
+          {
+            "id": "C-540C",
+            "text": "同"
+          }
+        ]
+      },
+      {
+        "id": "W1756",
+        "text": "谈",
+        "pinyin": "tán",
+        "meaning": "to speak; to talk",
+        "characters": [
+          {
+            "id": "C-8C08",
+            "text": "谈"
+          }
+        ]
+      },
+      {
+        "id": "W2864",
+        "text": "评价",
+        "pinyin": "píngjià",
+        "meaning": "to evaluate; to assess",
+        "characters": [
+          {
+            "id": "C-8BC4",
+            "text": "评"
+          },
+          {
+            "id": "C-4EF7",
+            "text": "价"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "07398040d33842221238bfc0260c80ffdf50dad45980c87327afb042cda4fcd6",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8c08",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "谈",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8c08-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-a5ccbb66643ff7bb7947bf09",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to discuss; to converse",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "交谈"
+              },
+              {
+                "value": "jiāotán",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jiao1tan2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "交谈",
+              "pinyin": "jiāotán",
+              "meaning": "to discuss; to converse",
+              "audio": "7036a6657812f80c922c6b379fb26bfcb417f848d721e86c4bd70591a570dbb4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8c08-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W1756",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "谈",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1756",
+                "label": "to speak; to talk",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-a823d494d5d431f70971472d",
+                "label": "to start out on a trip",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-bf44d17c8612e79c1dfd91d4",
+                "label": "contract",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8c08-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "谈",
+        "pinyin": "tán",
+        "meaning": "to speak; to talk",
+        "source": "/stroke-data/8c08.json",
+        "reference": {
+          "character": "谈",
+          "sha256": "eccd965c7c1370e3aca7d6d8334f989ee3313e9454c0d4a6877d299819c639b4",
+          "medians": [
+            [
+              [
+                233,
+                784
+              ],
+              [
+                324,
+                723
+              ],
+              [
+                350,
+                683
+              ]
+            ],
+            [
+              [
+                67,
+                460
+              ],
+              [
+                102,
+                454
+              ],
+              [
+                142,
+                461
+              ],
+              [
+                258,
+                511
+              ],
+              [
+                294,
+                510
+              ],
+              [
+                303,
+                496
+              ],
+              [
+                266,
+                199
+              ],
+              [
+                268,
+                172
+              ],
+              [
+                276,
+                157
+              ],
+              [
+                309,
+                165
+              ],
+              [
+                404,
+                246
+              ]
+            ],
+            [
+              [
+                459,
+                654
+              ],
+              [
+                518,
+                603
+              ],
+              [
+                531,
+                578
+              ]
+            ],
+            [
+              [
+                820,
+                741
+              ],
+              [
+                835,
+                719
+              ],
+              [
+                838,
+                698
+              ],
+              [
+                718,
+                612
+              ]
+            ],
+            [
+              [
+                605,
+                813
+              ],
+              [
+                653,
+                771
+              ],
+              [
+                647,
+                661
+              ],
+              [
+                626,
+                546
+              ],
+              [
+                602,
+                500
+              ],
+              [
+                563,
+                456
+              ],
+              [
+                529,
+                434
+              ],
+              [
+                453,
+                409
+              ]
+            ],
+            [
+              [
+                657,
+                552
+              ],
+              [
+                682,
+                549
+              ],
+              [
+                747,
+                513
+              ],
+              [
+                783,
+                467
+              ]
+            ],
+            [
+              [
+                440,
+                321
+              ],
+              [
+                491,
+                278
+              ],
+              [
+                507,
+                250
+              ]
+            ],
+            [
+              [
+                804,
+                409
+              ],
+              [
+                819,
+                387
+              ],
+              [
+                822,
+                366
+              ],
+              [
+                702,
+                280
+              ]
+            ],
+            [
+              [
+                596,
+                407
+              ],
+              [
+                630,
+                370
+              ],
+              [
+                627,
+                324
+              ],
+              [
+                612,
+                244
+              ],
+              [
+                580,
+                170
+              ],
+              [
+                527,
+                105
+              ],
+              [
+                485,
+                75
+              ],
+              [
+                433,
+                48
+              ],
+              [
+                380,
+                34
+              ]
+            ],
+            [
+              [
+                644,
+                250
+              ],
+              [
+                649,
+                232
+              ],
+              [
+                675,
+                199
+              ],
+              [
+                815,
+                58
+              ],
+              [
+                843,
+                46
+              ],
+              [
+                965,
+                25
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8c08-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2864",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to evaluate; to assess",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "评价"
+              },
+              {
+                "value": "píngjià",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ping2jia4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "评价",
+              "pinyin": "píngjià",
+              "meaning": "to evaluate; to assess",
+              "audio": "248cd7a2cb157884cab7f80ed11978bfadcd865c22225184adcc7e62685d8075",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8c08-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W1756",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to speak; to talk",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "谈"
+              },
+              {
+                "value": "tán",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tan2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "谈",
+              "pinyin": "tán",
+              "meaning": "to speak; to talk",
+              "audio": "36a21c91428696a425e216a77ea9b06a466bb4852faac1f87d08f72068c721de",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "36a21c91428696a425e216a77ea9b06a466bb4852faac1f87d08f72068c721de"
+            ],
+            "transcript": [
+              {
+                "text": "谈",
+                "pinyin": "tán",
+                "meaning": "to speak; to talk",
+                "audio": "36a21c91428696a425e216a77ea9b06a466bb4852faac1f87d08f72068c721de",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8C08",
+      "character": "谈",
+      "lessonIds": [
+        "LESSON-C-8C08"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8c08-word",
+        "EX-CHAR-char-8c08-recognize",
+        "EX-CHAR-char-8c08-write",
+        "EX-CHAR-char-8c08-familiar",
+        "EX-CHAR-char-8c08-recall"
+      ]
+    },
+    "audio": {
+      "7036a6657812f80c922c6b379fb26bfcb417f848d721e86c4bd70591a570dbb4": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d29245713ec00e6de6e3e7a3abe4a835303b267d4ba7604944f6f605640bea6f.mp3",
+          "sha256": "d29245713ec00e6de6e3e7a3abe4a835303b267d4ba7604944f6f605640bea6f",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "d29245713ec00e6de6e3e7a3abe4a835303b267d4ba7604944f6f605640bea6f",
+            "text": "交谈",
+            "words": [
+              {
+                "text": "交谈",
+                "start": 0.2,
+                "end": 0.72
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/46f45f05668c1f21879b3b81313e9b4d7fcc1fece6e4efe54b7a4759612bbdbd.mp3",
+          "sha256": "46f45f05668c1f21879b3b81313e9b4d7fcc1fece6e4efe54b7a4759612bbdbd",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "46f45f05668c1f21879b3b81313e9b4d7fcc1fece6e4efe54b7a4759612bbdbd",
+            "text": "交谈",
+            "words": [
+              {
+                "text": "交谈",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "a1896e2f99a70fc9f0cdb1f1ed5b1ca48f6c6bb609a5479d5d09d5f1eca33c42": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e3cca0bf4b091ebb6a89831c05c9cd761c57e26dff8ccb1141553365831849fa.mp3",
+          "sha256": "e3cca0bf4b091ebb6a89831c05c9cd761c57e26dff8ccb1141553365831849fa",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "e3cca0bf4b091ebb6a89831c05c9cd761c57e26dff8ccb1141553365831849fa",
+            "text": "出动",
+            "words": [
+              {
+                "text": "出动",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/aeab4b20be5e4d3a4a94152711323620a631ba18ef01fb3b26bf4b4f33968d7c.mp3",
+          "sha256": "aeab4b20be5e4d3a4a94152711323620a631ba18ef01fb3b26bf4b4f33968d7c",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "aeab4b20be5e4d3a4a94152711323620a631ba18ef01fb3b26bf4b4f33968d7c",
+            "text": "出动",
+            "words": [
+              {
+                "text": "出动",
+                "start": 0.24,
+                "end": 0.7000000000000001
+              }
+            ]
+          }
+        }
+      },
+      "7a52862ad3298534fb9bf214998acf35cfd4d9ae10795f9932cc704d211c6476": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/19cfb92af5dc79b843affe627bce55246d896472f96a9a783bbc7115fa744945.mp3",
+          "sha256": "19cfb92af5dc79b843affe627bce55246d896472f96a9a783bbc7115fa744945",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "19cfb92af5dc79b843affe627bce55246d896472f96a9a783bbc7115fa744945",
+            "text": "合同",
+            "words": [
+              {
+                "text": "合同",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5bbfdb3f69caea20c5a7fa9eff9f3f2ab400da8a76e7e7e482c96c378f3799e3.mp3",
+          "sha256": "5bbfdb3f69caea20c5a7fa9eff9f3f2ab400da8a76e7e7e482c96c378f3799e3",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "5bbfdb3f69caea20c5a7fa9eff9f3f2ab400da8a76e7e7e482c96c378f3799e3",
+            "text": "合同",
+            "words": [
+              {
+                "text": "合同",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "36a21c91428696a425e216a77ea9b06a466bb4852faac1f87d08f72068c721de": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ec9dd04ad1916f99b318f7c4d0d394c42d6ce9f7a290b2930255d4905db440d8.mp3",
+          "sha256": "ec9dd04ad1916f99b318f7c4d0d394c42d6ce9f7a290b2930255d4905db440d8",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "ec9dd04ad1916f99b318f7c4d0d394c42d6ce9f7a290b2930255d4905db440d8",
+            "text": "谈",
+            "words": [
+              {
+                "text": "谈",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-e29a2dd3c8915be7aa882b303a4b8bdd6c560fc348cbf33ec8d02743c6b22d4b.mp3",
+          "sha256": "e29a2dd3c8915be7aa882b303a4b8bdd6c560fc348cbf33ec8d02743c6b22d4b",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "e29a2dd3c8915be7aa882b303a4b8bdd6c560fc348cbf33ec8d02743c6b22d4b",
+            "text": "谈",
+            "words": [
+              {
+                "text": "谈",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "248cd7a2cb157884cab7f80ed11978bfadcd865c22225184adcc7e62685d8075": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c0ad21861fc003374793b1147fa80b536b0e9fa91974efe568043b7a66b2e3c5.mp3",
+          "sha256": "c0ad21861fc003374793b1147fa80b536b0e9fa91974efe568043b7a66b2e3c5",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "c0ad21861fc003374793b1147fa80b536b0e9fa91974efe568043b7a66b2e3c5",
+            "text": "评价",
+            "words": [
+              {
+                "text": "评价",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-3cd7473a2d456dc5bd3e84625e1dc7da690716da0a53063b87db0f741c624356.mp3",
+          "sha256": "3cd7473a2d456dc5bd3e84625e1dc7da690716da0a53063b87db0f741c624356",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "3cd7473a2d456dc5bd3e84625e1dc7da690716da0a53063b87db0f741c624356",
+            "text": "评价",
+            "words": [
+              {
+                "text": "评价",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2256",
+  "targetId": "W2256",
+  "steps": [
+    {
+      "id": "BANK-W2256-W2256",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2256-W2256",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "the masses; the great bulk of the population",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "大众"
+            },
+            {
+              "value": "dàzhòng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "da4zhong4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "大众",
+            "pinyin": "dàzhòng",
+            "meaning": "the masses; the great bulk of the population",
+            "singleWord": true,
+            "audio": "be9a853105a9021b603e862ffc6382a27b0e8a7f360fc859ce852dbfcaaaee4a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "be9a853105a9021b603e862ffc6382a27b0e8a7f360fc859ce852dbfcaaaee4a": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/96d88e49e19b4e4376e17175386b6448a044b924803a8d5838c62c08cd3fe0d9.mp3",
+        "sha256": "96d88e49e19b4e4376e17175386b6448a044b924803a8d5838c62c08cd3fe0d9",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "96d88e49e19b4e4376e17175386b6448a044b924803a8d5838c62c08cd3fe0d9",
+          "text": "大众",
+          "words": [
+            {
+              "text": "大众",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/354a8ae153ab8685a08f5211167723e757a4c802aeef336b05acd5b7d9f6429c.mp3",
+        "sha256": "354a8ae153ab8685a08f5211167723e757a4c802aeef336b05acd5b7d9f6429c",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "354a8ae153ab8685a08f5211167723e757a4c802aeef336b05acd5b7d9f6429c",
+          "text": "大众",
+          "words": [
+            {
+              "text": "大众",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2256",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2256-W2256",
+      "question_ids": [
+        "BANK-W2256-W2256"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-33",
+    "stepId": "S-U5-33-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4f17"
+    ],
+    "grammarLessonIds": []
+  }
+}

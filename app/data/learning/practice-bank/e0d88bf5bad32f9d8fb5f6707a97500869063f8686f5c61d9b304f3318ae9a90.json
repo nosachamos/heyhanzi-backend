@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5083",
+  "targetId": "W5083",
+  "steps": [
+    {
+      "id": "BANK-W5083-W5083",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5083-W5083",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "heart",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "心脏"
+            },
+            {
+              "value": "xīnzàng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xin1zang4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "心脏",
+            "pinyin": "xīnzàng",
+            "meaning": "heart",
+            "singleWord": true,
+            "audio": "21e1393cdc4666d06c8f084213e3cac2b3eb463410fa16a8ae0f5c9b50bb2848"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "21e1393cdc4666d06c8f084213e3cac2b3eb463410fa16a8ae0f5c9b50bb2848": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1e12c92d4e114e16736d393ab5425f06a3d7c51325fc4b16ca55d91ee8cf639e.mp3",
+        "sha256": "1e12c92d4e114e16736d393ab5425f06a3d7c51325fc4b16ca55d91ee8cf639e",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "1e12c92d4e114e16736d393ab5425f06a3d7c51325fc4b16ca55d91ee8cf639e",
+          "text": "心脏",
+          "words": [
+            {
+              "text": "心脏",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/970fb9e6f772bd4ae072d730883e0caf6014c4ece6534a3ba37a85b73c62d146.mp3",
+        "sha256": "970fb9e6f772bd4ae072d730883e0caf6014c4ece6534a3ba37a85b73c62d146",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "970fb9e6f772bd4ae072d730883e0caf6014c4ece6534a3ba37a85b73c62d146",
+          "text": "心脏",
+          "words": [
+            {
+              "text": "心脏",
+              "start": 0.32999999999999996,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5083",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5083-W5083",
+      "question_ids": [
+        "BANK-W5083-W5083"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-15",
+    "stepId": "S-U6-15-words-r4-15",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-810f"
+    ],
+    "grammarLessonIds": []
+  }
+}

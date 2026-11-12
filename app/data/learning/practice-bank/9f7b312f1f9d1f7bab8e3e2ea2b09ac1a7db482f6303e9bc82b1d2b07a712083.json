@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3811",
+  "targetId": "W3811",
+  "steps": [
+    {
+      "id": "BANK-W3811-W3811",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3811-W3811",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "remove; exclude; except; not including",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "除"
+            },
+            {
+              "value": "chú",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chu2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "除",
+            "pinyin": "chú",
+            "meaning": "remove; exclude; except; not including",
+            "singleWord": true,
+            "audio": "66c9c1b1fa025e3f22abddd51cfd75657f90433fd0fd9cb5c17654635bc20fac"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "66c9c1b1fa025e3f22abddd51cfd75657f90433fd0fd9cb5c17654635bc20fac": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c861fb375b4964a9cea3333dcf3281ee2948ac3c0c0ddc96f56e665f5c1c5183.mp3",
+        "sha256": "c861fb375b4964a9cea3333dcf3281ee2948ac3c0c0ddc96f56e665f5c1c5183",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "c861fb375b4964a9cea3333dcf3281ee2948ac3c0c0ddc96f56e665f5c1c5183",
+          "text": "除",
+          "words": [
+            {
+              "text": "除",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c8976973682cf10348dd26118804d4f8e4d72404c0b67c3f89a939fced52ea4b.mp3",
+        "sha256": "c8976973682cf10348dd26118804d4f8e4d72404c0b67c3f89a939fced52ea4b",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "c8976973682cf10348dd26118804d4f8e4d72404c0b67c3f89a939fced52ea4b",
+          "text": "除",
+          "words": [
+            {
+              "text": "除",
+              "start": 0.26,
+              "end": 0.36
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3811",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3811-W3811",
+      "question_ids": [
+        "BANK-W3811-W3811"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-47-P01",
+    "stepId": "S-U6-47-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8bf8"
+    ],
+    "grammarLessonIds": []
+  }
+}

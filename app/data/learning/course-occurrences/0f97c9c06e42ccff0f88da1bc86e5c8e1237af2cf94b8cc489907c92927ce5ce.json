@@ -1,0 +1,687 @@
+{
+  "id": "EX-CHAR-char-6d3b",
+  "revision": 2,
+  "unit": "U25",
+  "stage": "ST-HSK2",
+  "after": "S-U25-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "活",
+  "sourceBlockId": "mandarin-simplified-v1-char-6d3b",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-1e17c7b0afaf0032f35f79a5",
+        "text": "听说",
+        "pinyin": "tīngshuō",
+        "meaning": "to hear (something said); one hears (that)",
+        "characters": [
+          {
+            "id": "C-542C",
+            "text": "听"
+          },
+          {
+            "id": "C-8BF4",
+            "text": "说"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-3d407dfe4f05f0bfba365173",
+        "text": "开门",
+        "pinyin": "kāi mén",
+        "meaning": "to open the door",
+        "characters": [
+          {
+            "id": "C-5F00",
+            "text": "开"
+          },
+          {
+            "id": "C-95E8",
+            "text": "门"
+          }
+        ]
+      },
+      {
+        "id": "W0292",
+        "text": "生活",
+        "pinyin": "shēnghuó",
+        "meaning": "to live; life",
+        "characters": [
+          {
+            "id": "C-751F",
+            "text": "生"
+          },
+          {
+            "id": "C-6D3B",
+            "text": "活"
+          }
+        ]
+      },
+      {
+        "id": "W1360",
+        "text": "活",
+        "pinyin": "huó",
+        "meaning": "to live; alive",
+        "characters": [
+          {
+            "id": "C-6D3B",
+            "text": "活"
+          }
+        ]
+      },
+      {
+        "id": "W4331",
+        "text": "经商",
+        "pinyin": "jīngshāng",
+        "meaning": "to trade; to carry out commercial activities",
+        "characters": [
+          {
+            "id": "C-7ECF",
+            "text": "经"
+          },
+          {
+            "id": "C-5546",
+            "text": "商"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "fc26b4a67c19862ef6b63b8c8c49fc6b8447cd830e7b6ce519a7a4a4e05f62b9",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6d3b",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "活",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6d3b-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0292",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to live; life",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "生活"
+              },
+              {
+                "value": "shēnghuó",
+                "mode": "pinyin"
+              },
+              {
+                "value": "sheng1huo2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "生活",
+              "pinyin": "shēnghuó",
+              "meaning": "to live; life",
+              "audio": "d516a0b78c0c4a3998e82806a7804b15adbaab512916eec29d071cb64e3b3ce8",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6d3b-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W1360",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "活",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1360",
+                "label": "to live; alive",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-3d407dfe4f05f0bfba365173",
+                "label": "to open the door",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-1e17c7b0afaf0032f35f79a5",
+                "label": "to hear (something said); one hears (that)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6d3b-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "活",
+        "pinyin": "huó",
+        "meaning": "to live; alive",
+        "source": "/stroke-data/6d3b.json",
+        "reference": {
+          "character": "活",
+          "sha256": "23263283883e761e05ba1056e7aa17323919be543e4eacaab63987398fc727cc",
+          "medians": [
+            [
+              [
+                234,
+                751
+              ],
+              [
+                322,
+                697
+              ],
+              [
+                349,
+                656
+              ]
+            ],
+            [
+              [
+                130,
+                554
+              ],
+              [
+                206,
+                495
+              ],
+              [
+                221,
+                469
+              ]
+            ],
+            [
+              [
+                200,
+                39
+              ],
+              [
+                188,
+                70
+              ],
+              [
+                186,
+                122
+              ],
+              [
+                320,
+                374
+              ]
+            ],
+            [
+              [
+                679,
+                791
+              ],
+              [
+                689,
+                777
+              ],
+              [
+                697,
+                739
+              ],
+              [
+                593,
+                671
+              ],
+              [
+                453,
+                599
+              ]
+            ],
+            [
+              [
+                321,
+                425
+              ],
+              [
+                378,
+                418
+              ],
+              [
+                526,
+                447
+              ],
+              [
+                848,
+                491
+              ],
+              [
+                932,
+                474
+              ]
+            ],
+            [
+              [
+                574,
+                627
+              ],
+              [
+                605,
+                617
+              ],
+              [
+                619,
+                598
+              ],
+              [
+                582,
+                319
+              ],
+              [
+                562,
+                293
+              ]
+            ],
+            [
+              [
+                426,
+                275
+              ],
+              [
+                453,
+                251
+              ],
+              [
+                463,
+                232
+              ],
+              [
+                504,
+                20
+              ]
+            ],
+            [
+              [
+                479,
+                273
+              ],
+              [
+                514,
+                263
+              ],
+              [
+                646,
+                283
+              ],
+              [
+                724,
+                303
+              ],
+              [
+                765,
+                302
+              ],
+              [
+                802,
+                266
+              ],
+              [
+                761,
+                147
+              ],
+              [
+                734,
+                132
+              ]
+            ],
+            [
+              [
+                524,
+                62
+              ],
+              [
+                537,
+                77
+              ],
+              [
+                713,
+                100
+              ],
+              [
+                767,
+                98
+              ],
+              [
+                795,
+                89
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6d3b-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4331",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to trade; to carry out commercial activities",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "经商"
+              },
+              {
+                "value": "jīngshāng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jing1shang1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "经商",
+              "pinyin": "jīngshāng",
+              "meaning": "to trade; to carry out commercial activities",
+              "audio": "a063ad57b28dd047827f8f10ebae32bef08808f0305c49c50837860d07525111",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6d3b-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W1360",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to live; alive",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "活"
+              },
+              {
+                "value": "huó",
+                "mode": "pinyin"
+              },
+              {
+                "value": "huo2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "活",
+              "pinyin": "huó",
+              "meaning": "to live; alive",
+              "audio": "d36985486449f04fc3a21bbebd75021f0817bca4b16c369792a34607670f4ba6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "d36985486449f04fc3a21bbebd75021f0817bca4b16c369792a34607670f4ba6"
+            ],
+            "transcript": [
+              {
+                "text": "活",
+                "pinyin": "huó",
+                "meaning": "to live; alive",
+                "audio": "d36985486449f04fc3a21bbebd75021f0817bca4b16c369792a34607670f4ba6",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6D3B",
+      "character": "活",
+      "lessonIds": [
+        "LESSON-C-6D3B"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6d3b-word",
+        "EX-CHAR-char-6d3b-recognize",
+        "EX-CHAR-char-6d3b-write",
+        "EX-CHAR-char-6d3b-familiar",
+        "EX-CHAR-char-6d3b-recall"
+      ]
+    },
+    "audio": {
+      "dd45b1a6e0c879f076dc7e59203adaa2d364f5a6ac036a1788df913d86dc56ac": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-717d5d6afaba10766c1a2ec4df81c6ebb3f9973a3ece97960a1e6d0a83990a1f.mp3",
+          "sha256": "717d5d6afaba10766c1a2ec4df81c6ebb3f9973a3ece97960a1e6d0a83990a1f",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "717d5d6afaba10766c1a2ec4df81c6ebb3f9973a3ece97960a1e6d0a83990a1f",
+            "text": "听说",
+            "words": [
+              {
+                "text": "听说",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-58c8d0b8074a2ee1d75a433d068f3cc7a60803763b4f1d25e518c109aff00368.mp3",
+          "sha256": "58c8d0b8074a2ee1d75a433d068f3cc7a60803763b4f1d25e518c109aff00368",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "58c8d0b8074a2ee1d75a433d068f3cc7a60803763b4f1d25e518c109aff00368",
+            "text": "听说",
+            "words": [
+              {
+                "text": "听说",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "5fd614be7b5869cea55bdd13dc70d7ee8147e317f88293a459988c1971875420": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c106ef80660efc1cc53e2802a2b8d710bf666ed79e373e8a440808ac147f55a7.mp3",
+          "sha256": "c106ef80660efc1cc53e2802a2b8d710bf666ed79e373e8a440808ac147f55a7",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "c106ef80660efc1cc53e2802a2b8d710bf666ed79e373e8a440808ac147f55a7",
+            "text": "开门",
+            "words": [
+              {
+                "text": "开门",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-0a11d4d58e8e3da74e1db604eb30270fbfadd993667b0c1d809f597ac5173ddb.mp3",
+          "sha256": "0a11d4d58e8e3da74e1db604eb30270fbfadd993667b0c1d809f597ac5173ddb",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "0a11d4d58e8e3da74e1db604eb30270fbfadd993667b0c1d809f597ac5173ddb",
+            "text": "开门",
+            "words": [
+              {
+                "text": "开门",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "d516a0b78c0c4a3998e82806a7804b15adbaab512916eec29d071cb64e3b3ce8": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-805c9fff01fe1f7dbc6428aae8f37e699d0865faa7df70b8376f1c15789064ce.mp3",
+          "sha256": "805c9fff01fe1f7dbc6428aae8f37e699d0865faa7df70b8376f1c15789064ce",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "805c9fff01fe1f7dbc6428aae8f37e699d0865faa7df70b8376f1c15789064ce",
+            "text": "生活",
+            "words": [
+              {
+                "text": "生活",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8d972a83681ce296e0d7c903a1aa5e6412cb9801ce4df3ad8d3d0998aa58a2a7.mp3",
+          "sha256": "8d972a83681ce296e0d7c903a1aa5e6412cb9801ce4df3ad8d3d0998aa58a2a7",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "8d972a83681ce296e0d7c903a1aa5e6412cb9801ce4df3ad8d3d0998aa58a2a7",
+            "text": "生活",
+            "words": [
+              {
+                "text": "生活",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "d36985486449f04fc3a21bbebd75021f0817bca4b16c369792a34607670f4ba6": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/bc039cfe88cace9f71a5e93a5c8533d51e76303c0953e8d7f417dca0a66db7f8.mp3",
+          "sha256": "bc039cfe88cace9f71a5e93a5c8533d51e76303c0953e8d7f417dca0a66db7f8",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "bc039cfe88cace9f71a5e93a5c8533d51e76303c0953e8d7f417dca0a66db7f8",
+            "text": "活",
+            "words": [
+              {
+                "text": "活",
+                "start": 0.2,
+                "end": 0.32
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/ec3178ec27bac6867421cfc0603e819e1fa24a3ff9e03f87125d5aed059251aa.mp3",
+          "sha256": "ec3178ec27bac6867421cfc0603e819e1fa24a3ff9e03f87125d5aed059251aa",
+          "byteLength": 10125,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "ec3178ec27bac6867421cfc0603e819e1fa24a3ff9e03f87125d5aed059251aa",
+            "text": "活",
+            "words": [
+              {
+                "text": "活",
+                "start": 0.105,
+                "end": 0.545
+              }
+            ]
+          }
+        }
+      },
+      "a063ad57b28dd047827f8f10ebae32bef08808f0305c49c50837860d07525111": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f54a1c60d526f428bfdf9d1f04174189911e75b1191e5e23048419bad5c27ddc.mp3",
+          "sha256": "f54a1c60d526f428bfdf9d1f04174189911e75b1191e5e23048419bad5c27ddc",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "f54a1c60d526f428bfdf9d1f04174189911e75b1191e5e23048419bad5c27ddc",
+            "text": "经商",
+            "words": [
+              {
+                "text": "经商",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e142b5f2f2d83ee503b6bc43af59fd33c2fdca9331a1b6c347023c6a068d9db1.mp3",
+          "sha256": "e142b5f2f2d83ee503b6bc43af59fd33c2fdca9331a1b6c347023c6a068d9db1",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "e142b5f2f2d83ee503b6bc43af59fd33c2fdca9331a1b6c347023c6a068d9db1",
+            "text": "经商",
+            "words": [
+              {
+                "text": "经商",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

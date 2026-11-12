@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1941",
+  "targetId": "W1941",
+  "steps": [
+    {
+      "id": "BANK-W1941-W1941",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1941-W1941",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to read",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "阅读"
+            },
+            {
+              "value": "yuèdú",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yue4du2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "阅读",
+            "pinyin": "yuèdú",
+            "meaning": "to read",
+            "singleWord": true,
+            "audio": "b0185aca181ae75f22a5ce86c3b9e22b1df07e1fa0d42842822e4956114718cf"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b0185aca181ae75f22a5ce86c3b9e22b1df07e1fa0d42842822e4956114718cf": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-4867cfe7e26f96c261a8139e366e63cc0a08367de51b3dc155ed6ef151422648.mp3",
+        "sha256": "4867cfe7e26f96c261a8139e366e63cc0a08367de51b3dc155ed6ef151422648",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "4867cfe7e26f96c261a8139e366e63cc0a08367de51b3dc155ed6ef151422648",
+          "text": "阅读",
+          "words": [
+            {
+              "text": "阅读",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ee19e00891bad9309fad165bb1f041610f061f17bdbffd33c7680468228dc757.mp3",
+        "sha256": "ee19e00891bad9309fad165bb1f041610f061f17bdbffd33c7680468228dc757",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "ee19e00891bad9309fad165bb1f041610f061f17bdbffd33c7680468228dc757",
+          "text": "阅读",
+          "words": [
+            {
+              "text": "阅读",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1941",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1941-W1941",
+      "question_ids": [
+        "BANK-W1941-W1941"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-20",
+    "stepId": "S-U4-20-words-r4-14",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9605"
+    ],
+    "grammarLessonIds": []
+  }
+}

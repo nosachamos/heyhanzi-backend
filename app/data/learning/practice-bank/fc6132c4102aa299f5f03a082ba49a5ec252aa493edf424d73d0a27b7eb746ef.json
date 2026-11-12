@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2026",
+  "targetId": "W2026",
+  "steps": [
+    {
+      "id": "BANK-W2026-W2026",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2026-W2026",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "seat",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "座位"
+            },
+            {
+              "value": "zuòwèi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zuo4wei4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "座位",
+            "pinyin": "zuòwèi",
+            "meaning": "seat",
+            "singleWord": true,
+            "audio": "af0e83d74a63267c771d417bfc750ffb0ca619c2a5d7decc0f35597a5e92edcf"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "af0e83d74a63267c771d417bfc750ffb0ca619c2a5d7decc0f35597a5e92edcf": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a7903c37ee2f4ba05323b86b1f13342eaf3e288c6c7066bb46a088e7c81db4d2.mp3",
+        "sha256": "a7903c37ee2f4ba05323b86b1f13342eaf3e288c6c7066bb46a088e7c81db4d2",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "a7903c37ee2f4ba05323b86b1f13342eaf3e288c6c7066bb46a088e7c81db4d2",
+          "text": "座位",
+          "words": [
+            {
+              "text": "座位",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-f64967d9f130f55eb9209eecec463e05accb5dd6973081e9b559a46c287edd19.mp3",
+        "sha256": "f64967d9f130f55eb9209eecec463e05accb5dd6973081e9b559a46c287edd19",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "f64967d9f130f55eb9209eecec463e05accb5dd6973081e9b559a46c287edd19",
+          "text": "座位",
+          "words": [
+            {
+              "text": "座位",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2026",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2026-W2026",
+      "question_ids": [
+        "BANK-W2026-W2026"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-16",
+    "stepId": "S-U4-16-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5ea7"
+    ],
+    "grammarLessonIds": []
+  }
+}

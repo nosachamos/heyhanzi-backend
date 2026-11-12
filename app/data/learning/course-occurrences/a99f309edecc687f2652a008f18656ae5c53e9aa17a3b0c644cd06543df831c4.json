@@ -1,0 +1,747 @@
+{
+  "id": "EX-CHAR-char-7b49",
+  "revision": 2,
+  "unit": "U17-P01",
+  "stage": "ST-HSK2",
+  "after": "S-U17-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "等",
+  "sourceBlockId": "mandarin-simplified-v1-char-7b49",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7b49",
+        "text": "等",
+        "pinyin": "děng",
+        "meaning": "to wait for; to await; by the time; when; till",
+        "characters": [
+          {
+            "id": "C-7B49",
+            "text": "等"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-128b03297994365bcc5a0bd1",
+        "text": "多边",
+        "pinyin": "duō biān",
+        "meaning": "multilateral",
+        "characters": [
+          {
+            "id": "C-591A",
+            "text": "多"
+          },
+          {
+            "id": "C-8FB9",
+            "text": "边"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-988579b21fa3f9c41175c4fb",
+        "text": "穿着",
+        "pinyin": "chuān zhuó",
+        "meaning": "clothing; outfit",
+        "characters": [
+          {
+            "id": "C-7A7F",
+            "text": "穿"
+          },
+          {
+            "id": "C-7740",
+            "text": "着"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-cb422fc2422e9fdfe824d686",
+        "text": "面子",
+        "pinyin": "miànzi",
+        "meaning": "outer surface; the outside of something; social prestige; face",
+        "characters": [
+          {
+            "id": "C-9762",
+            "text": "面"
+          },
+          {
+            "id": "C-5B50",
+            "text": "子"
+          }
+        ]
+      },
+      {
+        "id": "W2288",
+        "text": "等候",
+        "pinyin": "děnghòu",
+        "meaning": "to wait; to wait for",
+        "characters": [
+          {
+            "id": "C-7B49",
+            "text": "等"
+          },
+          {
+            "id": "C-5019",
+            "text": "候"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "72f52cb31e30aa478d2dfdff036a5868ab05c6000a2e143c95a04ffa970a101b",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7b49",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "等",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7b49-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W2288",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to wait; to wait for",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "等候"
+              },
+              {
+                "value": "děnghòu",
+                "mode": "pinyin"
+              },
+              {
+                "value": "deng3hou4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "等候",
+              "pinyin": "děnghòu",
+              "meaning": "to wait; to wait for",
+              "audio": "a572f724999813251a5d4c9b5a5872cfe0aefd55640c0184520963400eca84c1",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7b49-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7b49",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "等",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-cb422fc2422e9fdfe824d686",
+                "label": "outer surface; the outside of something",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-988579b21fa3f9c41175c4fb",
+                "label": "clothing; outfit",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-7b49",
+                "label": "to wait for; to await",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7b49-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "等",
+        "pinyin": "děng",
+        "meaning": "to wait for; to await",
+        "source": "/stroke-data/7b49.json",
+        "reference": {
+          "character": "等",
+          "sha256": "c9ee94cfd61374c12d2c0a8cc870045b79a5df3c4a5980f5cf25d646b72d90e0",
+          "medians": [
+            [
+              [
+                311,
+                834
+              ],
+              [
+                334,
+                801
+              ],
+              [
+                309,
+                740
+              ],
+              [
+                283,
+                695
+              ],
+              [
+                245,
+                649
+              ],
+              [
+                190,
+                602
+              ]
+            ],
+            [
+              [
+                336,
+                730
+              ],
+              [
+                357,
+                741
+              ],
+              [
+                455,
+                756
+              ],
+              [
+                506,
+                753
+              ]
+            ],
+            [
+              [
+                349,
+                687
+              ],
+              [
+                390,
+                651
+              ],
+              [
+                401,
+                632
+              ]
+            ],
+            [
+              [
+                596,
+                862
+              ],
+              [
+                620,
+                828
+              ],
+              [
+                600,
+                776
+              ],
+              [
+                572,
+                729
+              ],
+              [
+                518,
+                678
+              ]
+            ],
+            [
+              [
+                621,
+                762
+              ],
+              [
+                779,
+                794
+              ],
+              [
+                816,
+                791
+              ]
+            ],
+            [
+              [
+                612,
+                699
+              ],
+              [
+                677,
+                663
+              ],
+              [
+                702,
+                629
+              ]
+            ],
+            [
+              [
+                358,
+                546
+              ],
+              [
+                416,
+                540
+              ],
+              [
+                545,
+                562
+              ],
+              [
+                636,
+                586
+              ],
+              [
+                676,
+                580
+              ]
+            ],
+            [
+              [
+                479,
+                654
+              ],
+              [
+                514,
+                622
+              ],
+              [
+                510,
+                477
+              ],
+              [
+                495,
+                455
+              ]
+            ],
+            [
+              [
+                115,
+                393
+              ],
+              [
+                168,
+                384
+              ],
+              [
+                441,
+                428
+              ],
+              [
+                814,
+                467
+              ],
+              [
+                870,
+                460
+              ],
+              [
+                903,
+                448
+              ]
+            ],
+            [
+              [
+                218,
+                264
+              ],
+              [
+                272,
+                257
+              ],
+              [
+                453,
+                290
+              ],
+              [
+                709,
+                320
+              ],
+              [
+                746,
+                317
+              ],
+              [
+                791,
+                304
+              ]
+            ],
+            [
+              [
+                551,
+                418
+              ],
+              [
+                580,
+                398
+              ],
+              [
+                592,
+                380
+              ],
+              [
+                594,
+                81
+              ],
+              [
+                587,
+                31
+              ],
+              [
+                566,
+                -7
+              ],
+              [
+                520,
+                9
+              ],
+              [
+                468,
+                38
+              ]
+            ],
+            [
+              [
+                347,
+                221
+              ],
+              [
+                407,
+                166
+              ],
+              [
+                425,
+                125
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7b49-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-128b03297994365bcc5a0bd1",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "multilateral",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "多边"
+              },
+              {
+                "value": "duō biān",
+                "mode": "pinyin"
+              },
+              {
+                "value": "duo1bian1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "多边",
+              "pinyin": "duō biān",
+              "meaning": "multilateral",
+              "audio": "06708f72a42b23549b1badda16cda122faa8b70eb849ece2e90c7752f3f90ceb",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7b49-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7b49",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to wait for; to await",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "等"
+              },
+              {
+                "value": "děng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "deng3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "等",
+              "pinyin": "děng",
+              "meaning": "to wait for; to await",
+              "audio": "23dcf7e383fa9df4dbd023e9a7356177dab3ed94f65d47cfcb829717088681df",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "23dcf7e383fa9df4dbd023e9a7356177dab3ed94f65d47cfcb829717088681df"
+            ],
+            "transcript": [
+              {
+                "text": "等",
+                "pinyin": "děng",
+                "meaning": "to wait for; to await",
+                "audio": "23dcf7e383fa9df4dbd023e9a7356177dab3ed94f65d47cfcb829717088681df",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7B49",
+      "character": "等",
+      "lessonIds": [
+        "LESSON-C-7B49"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7b49-word",
+        "EX-CHAR-char-7b49-recognize",
+        "EX-CHAR-char-7b49-write",
+        "EX-CHAR-char-7b49-familiar",
+        "EX-CHAR-char-7b49-recall"
+      ]
+    },
+    "audio": {
+      "23dcf7e383fa9df4dbd023e9a7356177dab3ed94f65d47cfcb829717088681df": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-fe7ad036ff4fa05ae2ab489b921a7b18693548a291d46428da3a0161e5683493.mp3",
+          "sha256": "fe7ad036ff4fa05ae2ab489b921a7b18693548a291d46428da3a0161e5683493",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "fe7ad036ff4fa05ae2ab489b921a7b18693548a291d46428da3a0161e5683493",
+            "text": "等",
+            "words": [
+              {
+                "text": "等",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b1a2811418785b20559795ee7bb0476e6ce956ada22904872680e721b9d88a9a.mp3",
+          "sha256": "b1a2811418785b20559795ee7bb0476e6ce956ada22904872680e721b9d88a9a",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "b1a2811418785b20559795ee7bb0476e6ce956ada22904872680e721b9d88a9a",
+            "text": "等",
+            "words": [
+              {
+                "text": "等",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "06708f72a42b23549b1badda16cda122faa8b70eb849ece2e90c7752f3f90ceb": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1565d4d0bce1f2b5ef2296811a34d5f048063bacc8025fc820cfe3028175085e.mp3",
+          "sha256": "1565d4d0bce1f2b5ef2296811a34d5f048063bacc8025fc820cfe3028175085e",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "1565d4d0bce1f2b5ef2296811a34d5f048063bacc8025fc820cfe3028175085e",
+            "text": "多边",
+            "words": [
+              {
+                "text": "多边",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/df13aacbea7cd800372b751fe16db46414f8bb366847bbaef764660a7b2a92b6.mp3",
+          "sha256": "df13aacbea7cd800372b751fe16db46414f8bb366847bbaef764660a7b2a92b6",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "df13aacbea7cd800372b751fe16db46414f8bb366847bbaef764660a7b2a92b6",
+            "text": "多边",
+            "words": [
+              {
+                "text": "多边",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "37aab949203f5e159374df5e3d52f9d3631156c484935970c333bf067f44c92b": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6edc77b7c544606f9c15fcfa9d0b51b2792d5cdc5eac9bfa46e7a76fd6953b3f.mp3",
+          "sha256": "6edc77b7c544606f9c15fcfa9d0b51b2792d5cdc5eac9bfa46e7a76fd6953b3f",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "6edc77b7c544606f9c15fcfa9d0b51b2792d5cdc5eac9bfa46e7a76fd6953b3f",
+            "text": "穿着",
+            "words": [
+              {
+                "text": "穿着",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1584e77eb0e48dcf1209aa411c14239e96542a9ad2a3c3c8e6bd88177f823382.mp3",
+          "sha256": "1584e77eb0e48dcf1209aa411c14239e96542a9ad2a3c3c8e6bd88177f823382",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "1584e77eb0e48dcf1209aa411c14239e96542a9ad2a3c3c8e6bd88177f823382",
+            "text": "穿着",
+            "words": [
+              {
+                "text": "穿着",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "cf7bc5ebc9506ecb905b78ab85062ae9b986307247b65bad33ddfd5ca76206dd": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c6924f35f19feb6eba557f7497807a03cd531a9be8a8664d2cb70c1b5955ea86.mp3",
+          "sha256": "c6924f35f19feb6eba557f7497807a03cd531a9be8a8664d2cb70c1b5955ea86",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "c6924f35f19feb6eba557f7497807a03cd531a9be8a8664d2cb70c1b5955ea86",
+            "text": "面子",
+            "words": [
+              {
+                "text": "面子",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/30d54231d9b279564a8a2b677eb46447fc335e2ea3a7de8b4bf7da5ad2d13f65.mp3",
+          "sha256": "30d54231d9b279564a8a2b677eb46447fc335e2ea3a7de8b4bf7da5ad2d13f65",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "30d54231d9b279564a8a2b677eb46447fc335e2ea3a7de8b4bf7da5ad2d13f65",
+            "text": "面子",
+            "words": [
+              {
+                "text": "面子",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "a572f724999813251a5d4c9b5a5872cfe0aefd55640c0184520963400eca84c1": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/768c98b2b1a8c2c0dfdba41ce7a5cb6195095ddacf63c1eabf3bdbe795a26eef.mp3",
+          "sha256": "768c98b2b1a8c2c0dfdba41ce7a5cb6195095ddacf63c1eabf3bdbe795a26eef",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "768c98b2b1a8c2c0dfdba41ce7a5cb6195095ddacf63c1eabf3bdbe795a26eef",
+            "text": "等候",
+            "words": [
+              {
+                "text": "等候",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/943fe0c240f74a338e0458fd4c5fcd7e1fc4d1451fa804a53be49ef7db8a8d79.mp3",
+          "sha256": "943fe0c240f74a338e0458fd4c5fcd7e1fc4d1451fa804a53be49ef7db8a8d79",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "943fe0c240f74a338e0458fd4c5fcd7e1fc4d1451fa804a53be49ef7db8a8d79",
+            "text": "等候",
+            "words": [
+              {
+                "text": "等候",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

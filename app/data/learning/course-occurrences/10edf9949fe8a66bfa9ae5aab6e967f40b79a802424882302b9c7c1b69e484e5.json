@@ -1,0 +1,725 @@
+{
+  "id": "EX-CHAR-char-9634",
+  "revision": 2,
+  "unit": "U23-P01",
+  "stage": "ST-HSK2",
+  "after": "S-U23-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "阴",
+  "sourceBlockId": "mandarin-simplified-v1-char-9634",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-9634",
+        "text": "阴",
+        "pinyin": "yīn",
+        "meaning": "overcast (weather); cloudy",
+        "characters": [
+          {
+            "id": "C-9634",
+            "text": "阴"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-566a928c826357436bfc6371",
+        "text": "后头",
+        "pinyin": "hòu tou",
+        "meaning": "the back",
+        "characters": [
+          {
+            "id": "C-540E",
+            "text": "后"
+          },
+          {
+            "id": "C-5934",
+            "text": "头"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-e1d7adf0e62100b47bae64a6",
+        "text": "阴影",
+        "pinyin": "yīn yǐng",
+        "meaning": "(literally and figuratively) shadow",
+        "characters": [
+          {
+            "id": "C-9634",
+            "text": "阴"
+          },
+          {
+            "id": "C-5F71",
+            "text": "影"
+          }
+        ]
+      },
+      {
+        "id": "W0438",
+        "text": "那个",
+        "pinyin": "nàge",
+        "meaning": "that one; that thing",
+        "characters": [
+          {
+            "id": "C-90A3",
+            "text": "那"
+          },
+          {
+            "id": "C-4E2A",
+            "text": "个"
+          }
+        ]
+      },
+      {
+        "id": "W1217",
+        "text": "动作",
+        "pinyin": "dòngzuò",
+        "meaning": "movement; motion",
+        "characters": [
+          {
+            "id": "C-52A8",
+            "text": "动"
+          },
+          {
+            "id": "C-4F5C",
+            "text": "作"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "980db9c54f60a6092edcba511a8b3dc89fed31f9baecb178be22eb771782c2ce",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-9634",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "阴",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-9634-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-e1d7adf0e62100b47bae64a6",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "(literally and figuratively) shadow",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "阴影"
+              },
+              {
+                "value": "yīn yǐng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yin1ying3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "阴影",
+              "pinyin": "yīn yǐng",
+              "meaning": "(literally and figuratively) shadow",
+              "audio": "7c4eb7c7587331794514d611246471e99861a8461eacda04858ad4e82a46706a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9634-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-9634",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "阴",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-566a928c826357436bfc6371",
+                "label": "the back",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-9634",
+                "label": "overcast (weather); cloudy",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1217",
+                "label": "movement; motion",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9634-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "阴",
+        "pinyin": "yīn",
+        "meaning": "overcast (weather); cloudy",
+        "source": "/stroke-data/9634.json",
+        "reference": {
+          "character": "阴",
+          "sha256": "140fcc3a18897c4317720c33fbbcd67e53a3f9e42410ed302e25d698348851c1",
+          "medians": [
+            [
+              [
+                245,
+                681
+              ],
+              [
+                266,
+                673
+              ],
+              [
+                337,
+                702
+              ],
+              [
+                372,
+                708
+              ],
+              [
+                381,
+                708
+              ],
+              [
+                396,
+                692
+              ],
+              [
+                385,
+                658
+              ],
+              [
+                355,
+                610
+              ],
+              [
+                338,
+                546
+              ],
+              [
+                342,
+                528
+              ],
+              [
+                401,
+                420
+              ],
+              [
+                408,
+                394
+              ],
+              [
+                401,
+                360
+              ],
+              [
+                397,
+                353
+              ],
+              [
+                370,
+                353
+              ],
+              [
+                288,
+                378
+              ]
+            ],
+            [
+              [
+                171,
+                703
+              ],
+              [
+                210,
+                663
+              ],
+              [
+                216,
+                647
+              ],
+              [
+                218,
+                591
+              ],
+              [
+                211,
+                245
+              ],
+              [
+                186,
+                69
+              ],
+              [
+                187,
+                8
+              ]
+            ],
+            [
+              [
+                512,
+                681
+              ],
+              [
+                542,
+                655
+              ],
+              [
+                552,
+                633
+              ],
+              [
+                553,
+                488
+              ],
+              [
+                539,
+                344
+              ],
+              [
+                525,
+                276
+              ],
+              [
+                489,
+                174
+              ],
+              [
+                453,
+                101
+              ],
+              [
+                407,
+                30
+              ]
+            ],
+            [
+              [
+                580,
+                670
+              ],
+              [
+                591,
+                662
+              ],
+              [
+                608,
+                661
+              ],
+              [
+                739,
+                696
+              ],
+              [
+                758,
+                689
+              ],
+              [
+                786,
+                661
+              ],
+              [
+                783,
+                575
+              ],
+              [
+                797,
+                157
+              ],
+              [
+                793,
+                60
+              ],
+              [
+                776,
+                32
+              ],
+              [
+                657,
+                77
+              ]
+            ],
+            [
+              [
+                578,
+                443
+              ],
+              [
+                593,
+                456
+              ],
+              [
+                643,
+                467
+              ],
+              [
+                685,
+                472
+              ],
+              [
+                708,
+                465
+              ]
+            ],
+            [
+              [
+                551,
+                286
+              ],
+              [
+                569,
+                298
+              ],
+              [
+                652,
+                313
+              ],
+              [
+                681,
+                316
+              ],
+              [
+                715,
+                309
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-9634-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0438",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "that one; that thing",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "那个"
+              },
+              {
+                "value": "nàge",
+                "mode": "pinyin"
+              },
+              {
+                "value": "na4ge5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "那个",
+              "pinyin": "nàge",
+              "meaning": "that one; that thing",
+              "audio": "7aea97925709d52d5b2bf6d0992471a83b78807876625d10777c0b2f4c2feb66",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9634-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-9634",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "overcast (weather); cloudy",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "阴"
+              },
+              {
+                "value": "yīn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yin1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "阴",
+              "pinyin": "yīn",
+              "meaning": "overcast (weather); cloudy",
+              "audio": "4cee886d547ecc396f658cb92cec80b72fc774312717484a6e322ad564284dcf",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "4cee886d547ecc396f658cb92cec80b72fc774312717484a6e322ad564284dcf"
+            ],
+            "transcript": [
+              {
+                "text": "阴",
+                "pinyin": "yīn",
+                "meaning": "overcast (weather); cloudy",
+                "audio": "4cee886d547ecc396f658cb92cec80b72fc774312717484a6e322ad564284dcf",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-9634",
+      "character": "阴",
+      "lessonIds": [
+        "LESSON-C-9634"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-9634-word",
+        "EX-CHAR-char-9634-recognize",
+        "EX-CHAR-char-9634-write",
+        "EX-CHAR-char-9634-familiar",
+        "EX-CHAR-char-9634-recall"
+      ]
+    },
+    "audio": {
+      "4cee886d547ecc396f658cb92cec80b72fc774312717484a6e322ad564284dcf": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/de94fe6c132916f8577ad9c95dadb71c6bcdec0c2b8063cc226ba8dc5056b226.mp3",
+          "sha256": "de94fe6c132916f8577ad9c95dadb71c6bcdec0c2b8063cc226ba8dc5056b226",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "de94fe6c132916f8577ad9c95dadb71c6bcdec0c2b8063cc226ba8dc5056b226",
+            "text": "阴",
+            "words": [
+              {
+                "text": "阴",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/18565274f095a72ed2d1c817e99bece8ddf7017c61bb3b0c6c62df4beed9e43d.mp3",
+          "sha256": "18565274f095a72ed2d1c817e99bece8ddf7017c61bb3b0c6c62df4beed9e43d",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "18565274f095a72ed2d1c817e99bece8ddf7017c61bb3b0c6c62df4beed9e43d",
+            "text": "阴",
+            "words": [
+              {
+                "text": "阴",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "c7ec5668529e50471f05348bf0da4ca1322ec0f1e9ec4285c0c10a489ec99d21": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/980dfbb144dd3a70d9fecb317e1d87f0424fe1985c227e51ee8f46ce594be824.mp3",
+          "sha256": "980dfbb144dd3a70d9fecb317e1d87f0424fe1985c227e51ee8f46ce594be824",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "980dfbb144dd3a70d9fecb317e1d87f0424fe1985c227e51ee8f46ce594be824",
+            "text": "后头",
+            "words": [
+              {
+                "text": "后头",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5339481f315b002824e0bba845dea2c0d23437128dc52a8de72360f46dc768b7.mp3",
+          "sha256": "5339481f315b002824e0bba845dea2c0d23437128dc52a8de72360f46dc768b7",
+          "byteLength": 10125,
+          "qualityWarning": "too-fast",
+          "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+          "readAlong": {
+            "audioSha256": "5339481f315b002824e0bba845dea2c0d23437128dc52a8de72360f46dc768b7",
+            "text": "后头",
+            "words": [
+              {
+                "text": "后头",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "7c4eb7c7587331794514d611246471e99861a8461eacda04858ad4e82a46706a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/490ac8c0d3726daf2d3cb02c536b3f57ea4b849232266ed27dd960f26647cde7.mp3",
+          "sha256": "490ac8c0d3726daf2d3cb02c536b3f57ea4b849232266ed27dd960f26647cde7",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "490ac8c0d3726daf2d3cb02c536b3f57ea4b849232266ed27dd960f26647cde7",
+            "text": "阴影",
+            "words": [
+              {
+                "text": "阴影",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/546f0881ebd8720ff27e3925ee4a9e59eb8d9945b3ade0013365ac5ec770e63d.mp3",
+          "sha256": "546f0881ebd8720ff27e3925ee4a9e59eb8d9945b3ade0013365ac5ec770e63d",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "546f0881ebd8720ff27e3925ee4a9e59eb8d9945b3ade0013365ac5ec770e63d",
+            "text": "阴影",
+            "words": [
+              {
+                "text": "阴影",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "7aea97925709d52d5b2bf6d0992471a83b78807876625d10777c0b2f4c2feb66": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ca4f1299917714dd82d0d7457e03ce6089f80936b6aa71e4286901a3ec4c83db.mp3",
+          "sha256": "ca4f1299917714dd82d0d7457e03ce6089f80936b6aa71e4286901a3ec4c83db",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "ca4f1299917714dd82d0d7457e03ce6089f80936b6aa71e4286901a3ec4c83db",
+            "text": "那个",
+            "words": [
+              {
+                "text": "那个",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-fedf3f4779f75f6f58162b76a5f9be961b5b30f8e7905b497b4380a233cf78ef.mp3",
+          "sha256": "fedf3f4779f75f6f58162b76a5f9be961b5b30f8e7905b497b4380a233cf78ef",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "fedf3f4779f75f6f58162b76a5f9be961b5b30f8e7905b497b4380a233cf78ef",
+            "text": "那个",
+            "words": [
+              {
+                "text": "那个",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "49e627ef3a76b9ec717bc59b9bbd42e9ce8c9505f726971d28ab07839373ae9e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-9d3c555c3fd6c39825cdbbc6791fa1993507a2e43cc8f8f6223f4469bc94cd9c.mp3",
+          "sha256": "9d3c555c3fd6c39825cdbbc6791fa1993507a2e43cc8f8f6223f4469bc94cd9c",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "9d3c555c3fd6c39825cdbbc6791fa1993507a2e43cc8f8f6223f4469bc94cd9c",
+            "text": "动作",
+            "words": [
+              {
+                "text": "动作",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-2e42f2f882f9fcd7ffdf875fa669a3ecfefe09ebd369dd2b1992136dd0a8f8f3.mp3",
+          "sha256": "2e42f2f882f9fcd7ffdf875fa669a3ecfefe09ebd369dd2b1992136dd0a8f8f3",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "2e42f2f882f9fcd7ffdf875fa669a3ecfefe09ebd369dd2b1992136dd0a8f8f3",
+            "text": "动作",
+            "words": [
+              {
+                "text": "动作",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

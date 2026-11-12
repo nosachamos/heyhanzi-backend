@@ -1,0 +1,105 @@
+{
+  "id": "BANK-W0447",
+  "targetId": "W0447",
+  "steps": [
+    {
+      "id": "BANK-W0447-W0447",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0447-W0447",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "girlfriend",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "女朋友"
+            },
+            {
+              "value": "nǚpéngyou",
+              "mode": "pinyin"
+            },
+            {
+              "value": "nü3peng2you5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "女朋友",
+            "pinyin": "nǚpéngyou",
+            "meaning": "girlfriend",
+            "singleWord": true,
+            "audio": "5cd27c2573f093dc80a063d6f5a697af23625309653ec2991a2d3213000c5f96"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5cd27c2573f093dc80a063d6f5a697af23625309653ec2991a2d3213000c5f96": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b2263ff6525e0f9eca7ede455cbefc697d518c3fb82417478e55d932d06157b8.mp3",
+        "sha256": "b2263ff6525e0f9eca7ede455cbefc697d518c3fb82417478e55d932d06157b8",
+        "byteLength": 15597,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "b2263ff6525e0f9eca7ede455cbefc697d518c3fb82417478e55d932d06157b8",
+          "text": "女朋友",
+          "words": [
+            {
+              "text": "女朋友",
+              "start": 0.145,
+              "end": 1.01
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2c4bac01c3ce7e0cc74091bf136472af4b9c9795c870756cb89eb9c579c77cad.mp3",
+        "sha256": "2c4bac01c3ce7e0cc74091bf136472af4b9c9795c870756cb89eb9c579c77cad",
+        "byteLength": 19629,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "2c4bac01c3ce7e0cc74091bf136472af4b9c9795c870756cb89eb9c579c77cad",
+          "text": "女朋友",
+          "words": [
+            {
+              "text": "女朋友",
+              "start": 0.115,
+              "end": 1.455
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0447",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0447-W0447",
+      "question_ids": [
+        "BANK-W0447-W0447"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U04",
+    "stepId": "S-U04-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5973"
+    ],
+    "grammarLessonIds": []
+  }
+}

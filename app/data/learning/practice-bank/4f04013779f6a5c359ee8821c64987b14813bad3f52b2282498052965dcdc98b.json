@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3990",
+  "targetId": "W3990",
+  "steps": [
+    {
+      "id": "BANK-W3990-W3990",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3990-W3990",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "house price; cost of housing",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "房价"
+            },
+            {
+              "value": "fángjià",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fang2jia4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "房价",
+            "pinyin": "fángjià",
+            "meaning": "house price; cost of housing",
+            "singleWord": true,
+            "audio": "70856e726d0e22f23aebcfb8a5ab015b14ad56425187eeaab8edfa2b8fcfc6eb"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "70856e726d0e22f23aebcfb8a5ab015b14ad56425187eeaab8edfa2b8fcfc6eb": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-85ea293c32db7f70c72fe019bb90ae16e9a9fb8c28f154db953f368cf0d1dc2d.mp3",
+        "sha256": "85ea293c32db7f70c72fe019bb90ae16e9a9fb8c28f154db953f368cf0d1dc2d",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "85ea293c32db7f70c72fe019bb90ae16e9a9fb8c28f154db953f368cf0d1dc2d",
+          "text": "房价",
+          "words": [
+            {
+              "text": "房价",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2d8f7e2c8e299c3f7f43007ec4d1dad9c96f28803ac5af708ccc2b676d41e56d.mp3",
+        "sha256": "2d8f7e2c8e299c3f7f43007ec4d1dad9c96f28803ac5af708ccc2b676d41e56d",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "2d8f7e2c8e299c3f7f43007ec4d1dad9c96f28803ac5af708ccc2b676d41e56d",
+          "text": "房价",
+          "words": [
+            {
+              "text": "房价",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3990",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3990-W3990",
+      "question_ids": [
+        "BANK-W3990-W3990"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-12",
+    "stepId": "S-U6-12-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4ef7"
+    ],
+    "grammarLessonIds": []
+  }
+}

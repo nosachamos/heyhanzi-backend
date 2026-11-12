@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0741",
+  "targetId": "W0741",
+  "steps": [
+    {
+      "id": "BANK-W0741-W0741",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0741-W0741",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "instant noodles",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "方便面"
+            },
+            {
+              "value": "fāngbiànmiàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fang1bian4mian4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "方便面",
+            "pinyin": "fāngbiànmiàn",
+            "meaning": "instant noodles",
+            "singleWord": true,
+            "audio": "8a100d25b048adef8c469df08078c608f940693ec75253020382742935f89a82"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8a100d25b048adef8c469df08078c608f940693ec75253020382742935f89a82": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c35c1ff713682f627ffe58dfcc1056dea73e6a44ac74f35196f4496142460b86.mp3",
+        "sha256": "c35c1ff713682f627ffe58dfcc1056dea73e6a44ac74f35196f4496142460b86",
+        "byteLength": 16173,
+        "readAlong": {
+          "audioSha256": "c35c1ff713682f627ffe58dfcc1056dea73e6a44ac74f35196f4496142460b86",
+          "text": "方便面",
+          "words": [
+            {
+              "text": "方便面",
+              "start": 0.21,
+              "end": 0.69
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3642fa58836a6585fe798564864b9b1c410993b29a14c0fe5936ae4daf19196c.mp3",
+        "sha256": "3642fa58836a6585fe798564864b9b1c410993b29a14c0fe5936ae4daf19196c",
+        "byteLength": 16461,
+        "readAlong": {
+          "audioSha256": "3642fa58836a6585fe798564864b9b1c410993b29a14c0fe5936ae4daf19196c",
+          "text": "方便面",
+          "words": [
+            {
+              "text": "方便面",
+              "start": 0.21,
+              "end": 0.75
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0741",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0741-W0741",
+      "question_ids": [
+        "BANK-W0741-W0741"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-05",
+    "stepId": "S-U3-05-words-r4-9",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-65b9"
+    ],
+    "grammarLessonIds": []
+  }
+}

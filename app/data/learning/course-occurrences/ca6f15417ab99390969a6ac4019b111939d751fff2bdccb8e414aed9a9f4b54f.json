@@ -1,0 +1,809 @@
+{
+  "id": "EX-CHAR-char-55bb",
+  "revision": 2,
+  "unit": "U5-35-P01",
+  "stage": "ST-HSK5",
+  "after": "S-U5-35-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "喻",
+  "sourceBlockId": "mandarin-simplified-v1-char-55bb",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-55bb",
+        "text": "喻",
+        "pinyin": "yù",
+        "meaning": "to describe something as; an analogy",
+        "characters": [
+          {
+            "id": "C-55BB",
+            "text": "喻"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-8bc1",
+        "text": "证",
+        "pinyin": "zhèng",
+        "meaning": "proof; evidence; certificate; to prove",
+        "characters": [
+          {
+            "id": "C-8BC1",
+            "text": "证"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-0dd28e77aab562b766384c53",
+        "text": "中小学",
+        "pinyin": "zhōng xiǎo xué",
+        "meaning": "primary and secondary schools",
+        "characters": [
+          {
+            "id": "C-4E2D",
+            "text": "中"
+          },
+          {
+            "id": "C-5C0F",
+            "text": "小"
+          },
+          {
+            "id": "C-5B66",
+            "text": "学"
+          }
+        ]
+      },
+      {
+        "id": "W1905",
+        "text": "引起",
+        "pinyin": "yǐnqǐ",
+        "meaning": "to give rise to; to lead to",
+        "characters": [
+          {
+            "id": "C-5F15",
+            "text": "引"
+          },
+          {
+            "id": "C-8D77",
+            "text": "起"
+          }
+        ]
+      },
+      {
+        "id": "W2076",
+        "text": "比喻",
+        "pinyin": "bǐyù",
+        "meaning": "to compare; to liken to",
+        "characters": [
+          {
+            "id": "C-6BD4",
+            "text": "比"
+          },
+          {
+            "id": "C-55BB",
+            "text": "喻"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "794585cde299239e2196c45831ae9ba66ed85e2865c8d75182ca1199765d3598",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-55bb",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "喻",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-55bb-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W2076",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to compare; to liken to",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "比喻"
+              },
+              {
+                "value": "bǐyù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bi3yu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "比喻",
+              "pinyin": "bǐyù",
+              "meaning": "to compare; to liken to",
+              "audio": "a5b8744d0c833bf8e29a309a3deafe57c0d53b218dc125cef9a60bb1a1f81a81",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-55bb-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-55bb",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "喻",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-8bc1",
+                "label": "proof; evidence",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-0dd28e77aab562b766384c53",
+                "label": "primary and secondary schools",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-55bb",
+                "label": "to describe something as; an analogy",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-55bb-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "喻",
+        "pinyin": "yù",
+        "meaning": "to describe something as; an analogy",
+        "source": "/stroke-data/55bb.json",
+        "reference": {
+          "character": "喻",
+          "sha256": "926bcf8e06684d732e73d485fcaaffaa5b6687f2bf50b2d522916917165c9c9f",
+          "medians": [
+            [
+              [
+                80,
+                576
+              ],
+              [
+                114,
+                538
+              ],
+              [
+                144,
+                344
+              ]
+            ],
+            [
+              [
+                126,
+                577
+              ],
+              [
+                147,
+                571
+              ],
+              [
+                254,
+                601
+              ],
+              [
+                280,
+                586
+              ],
+              [
+                289,
+                576
+              ],
+              [
+                268,
+                486
+              ],
+              [
+                265,
+                477
+              ],
+              [
+                243,
+                461
+              ]
+            ],
+            [
+              [
+                165,
+                401
+              ],
+              [
+                178,
+                417
+              ],
+              [
+                232,
+                432
+              ],
+              [
+                297,
+                432
+              ]
+            ],
+            [
+              [
+                537,
+                822
+              ],
+              [
+                560,
+                805
+              ],
+              [
+                574,
+                785
+              ],
+              [
+                550,
+                714
+              ],
+              [
+                482,
+                583
+              ],
+              [
+                444,
+                525
+              ],
+              [
+                355,
+                421
+              ],
+              [
+                257,
+                338
+              ]
+            ],
+            [
+              [
+                590,
+                722
+              ],
+              [
+                622,
+                670
+              ],
+              [
+                634,
+                664
+              ],
+              [
+                693,
+                594
+              ],
+              [
+                766,
+                524
+              ],
+              [
+                833,
+                471
+              ],
+              [
+                877,
+                460
+              ],
+              [
+                982,
+                452
+              ]
+            ],
+            [
+              [
+                472,
+                493
+              ],
+              [
+                528,
+                490
+              ],
+              [
+                619,
+                513
+              ],
+              [
+                672,
+                515
+              ]
+            ],
+            [
+              [
+                351,
+                390
+              ],
+              [
+                375,
+                371
+              ],
+              [
+                380,
+                358
+              ],
+              [
+                381,
+                310
+              ],
+              [
+                366,
+                152
+              ],
+              [
+                349,
+                82
+              ],
+              [
+                344,
+                30
+              ]
+            ],
+            [
+              [
+                401,
+                385
+              ],
+              [
+                412,
+                378
+              ],
+              [
+                497,
+                404
+              ],
+              [
+                513,
+                399
+              ],
+              [
+                533,
+                378
+              ],
+              [
+                530,
+                251
+              ],
+              [
+                537,
+                85
+              ],
+              [
+                531,
+                53
+              ],
+              [
+                517,
+                30
+              ],
+              [
+                430,
+                65
+              ]
+            ],
+            [
+              [
+                402,
+                271
+              ],
+              [
+                408,
+                281
+              ],
+              [
+                426,
+                289
+              ],
+              [
+                468,
+                288
+              ]
+            ],
+            [
+              [
+                396,
+                176
+              ],
+              [
+                405,
+                188
+              ],
+              [
+                420,
+                191
+              ],
+              [
+                450,
+                194
+              ],
+              [
+                469,
+                189
+              ]
+            ],
+            [
+              [
+                616,
+                367
+              ],
+              [
+                638,
+                339
+              ],
+              [
+                637,
+                136
+              ]
+            ],
+            [
+              [
+                731,
+                425
+              ],
+              [
+                751,
+                413
+              ],
+              [
+                770,
+                388
+              ],
+              [
+                767,
+                189
+              ],
+              [
+                775,
+                60
+              ],
+              [
+                759,
+                23
+              ],
+              [
+                656,
+                56
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-55bb-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1905",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to give rise to; to lead to",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "引起"
+              },
+              {
+                "value": "yǐnqǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yin3qi3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "引起",
+              "pinyin": "yǐnqǐ",
+              "meaning": "to give rise to; to lead to",
+              "audio": "2f6b542526d90342172fce3d2613fca3875fded1fdaa359622e4e3d377b847a3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-55bb-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-55bb",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to describe something as; an analogy",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "喻"
+              },
+              {
+                "value": "yù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "喻",
+              "pinyin": "yù",
+              "meaning": "to describe something as; an analogy",
+              "audio": "3adfb351bb049045a49e398b688ddfbb7e159142533e592f3c1ef34f25f10cd7",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "3adfb351bb049045a49e398b688ddfbb7e159142533e592f3c1ef34f25f10cd7"
+            ],
+            "transcript": [
+              {
+                "text": "喻",
+                "pinyin": "yù",
+                "meaning": "to describe something as; an analogy",
+                "audio": "3adfb351bb049045a49e398b688ddfbb7e159142533e592f3c1ef34f25f10cd7",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-55BB",
+      "character": "喻",
+      "lessonIds": [
+        "LESSON-C-55BB"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-55bb-word",
+        "EX-CHAR-char-55bb-recognize",
+        "EX-CHAR-char-55bb-write",
+        "EX-CHAR-char-55bb-familiar",
+        "EX-CHAR-char-55bb-recall"
+      ]
+    },
+    "audio": {
+      "3adfb351bb049045a49e398b688ddfbb7e159142533e592f3c1ef34f25f10cd7": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-7c65a3164f444c58aaaf6748cd980009f942c808fd3e27c34042cb3598e6c719.mp3",
+          "sha256": "7c65a3164f444c58aaaf6748cd980009f942c808fd3e27c34042cb3598e6c719",
+          "byteLength": 9261,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "7c65a3164f444c58aaaf6748cd980009f942c808fd3e27c34042cb3598e6c719",
+            "text": "喻",
+            "words": [
+              {
+                "text": "喻",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-c9f2577c331c4b86b7bb735a91d35f24d80a6c675013bc674f65fe58b267ef13.mp3",
+          "sha256": "c9f2577c331c4b86b7bb735a91d35f24d80a6c675013bc674f65fe58b267ef13",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "c9f2577c331c4b86b7bb735a91d35f24d80a6c675013bc674f65fe58b267ef13",
+            "text": "喻",
+            "words": [
+              {
+                "text": "喻",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "5604ed0492dfc903d4cfc838992b25dbba9f4b6bc0e68c24b183ce76fa453567": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e877ea9b37cb12e58d1f9de5af6f054d0ad9460718bd6f0ca62dfe7e49454a7d.mp3",
+          "sha256": "e877ea9b37cb12e58d1f9de5af6f054d0ad9460718bd6f0ca62dfe7e49454a7d",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "e877ea9b37cb12e58d1f9de5af6f054d0ad9460718bd6f0ca62dfe7e49454a7d",
+            "text": "证",
+            "words": [
+              {
+                "text": "证",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1ec8077a35ab599d6f75c75993da9bd726f90bb6d951bbc4ff62874d417b1b40.mp3",
+          "sha256": "1ec8077a35ab599d6f75c75993da9bd726f90bb6d951bbc4ff62874d417b1b40",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "1ec8077a35ab599d6f75c75993da9bd726f90bb6d951bbc4ff62874d417b1b40",
+            "text": "证",
+            "words": [
+              {
+                "text": "证",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "0542ad971d0986cacf04faaf086caaf038abd998b2a8c8ec1456da9d49b8f033": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8bb5012d796bda2f5dfc8f97ae93c6691838ebc70eec733a5deb14344cc2d726.mp3",
+          "sha256": "8bb5012d796bda2f5dfc8f97ae93c6691838ebc70eec733a5deb14344cc2d726",
+          "byteLength": 16749,
+          "readAlong": {
+            "audioSha256": "8bb5012d796bda2f5dfc8f97ae93c6691838ebc70eec733a5deb14344cc2d726",
+            "text": "中小学",
+            "words": [
+              {
+                "text": "中小学",
+                "start": 0.15,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/ac03bd6775a045e282939a3e6b6efb3da1234297f71fb0a974b4df153482bd6e.mp3",
+          "sha256": "ac03bd6775a045e282939a3e6b6efb3da1234297f71fb0a974b4df153482bd6e",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "ac03bd6775a045e282939a3e6b6efb3da1234297f71fb0a974b4df153482bd6e",
+            "text": "中小学",
+            "words": [
+              {
+                "text": "中小学",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "2f6b542526d90342172fce3d2613fca3875fded1fdaa359622e4e3d377b847a3": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b629dfae4c96f4752c726739ee8dfc016afc89f9b9523c7e53d3f8c6f05ed574.mp3",
+          "sha256": "b629dfae4c96f4752c726739ee8dfc016afc89f9b9523c7e53d3f8c6f05ed574",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "b629dfae4c96f4752c726739ee8dfc016afc89f9b9523c7e53d3f8c6f05ed574",
+            "text": "引起",
+            "words": [
+              {
+                "text": "引起",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d416a85533b9c158b82629a20a807510bafa72df571c1224ceda28f250d032d0.mp3",
+          "sha256": "d416a85533b9c158b82629a20a807510bafa72df571c1224ceda28f250d032d0",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "d416a85533b9c158b82629a20a807510bafa72df571c1224ceda28f250d032d0",
+            "text": "引起",
+            "words": [
+              {
+                "text": "引起",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "a5b8744d0c833bf8e29a309a3deafe57c0d53b218dc125cef9a60bb1a1f81a81": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/cabd4b47bb47ab8ab0da7df53b15a28ee1c03274f90c5c63f00626626629fd29.mp3",
+          "sha256": "cabd4b47bb47ab8ab0da7df53b15a28ee1c03274f90c5c63f00626626629fd29",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "cabd4b47bb47ab8ab0da7df53b15a28ee1c03274f90c5c63f00626626629fd29",
+            "text": "比喻",
+            "words": [
+              {
+                "text": "比喻",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/008e4d38d3453eeb397c3e154a9a0417b748f637f4fc570b5bf6815583832eae.mp3",
+          "sha256": "008e4d38d3453eeb397c3e154a9a0417b748f637f4fc570b5bf6815583832eae",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "008e4d38d3453eeb397c3e154a9a0417b748f637f4fc570b5bf6815583832eae",
+            "text": "比喻",
+            "words": [
+              {
+                "text": "比喻",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

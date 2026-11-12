@@ -1,0 +1,69 @@
+{
+  "id": "BANK-K-WARMUP-compose",
+  "targetId": "K-WARMUP-compose",
+  "steps": [
+    {
+      "id": "BANK-K-WARMUP-compose-K-WARMUP-compose-perform",
+      "kind": "check",
+      "title": "Use the skill in context",
+      "questions": [
+        {
+          "id": "BANK-K-WARMUP-compose-K-WARMUP-compose-perform",
+          "kind": "production",
+          "response": "written",
+          "prompt": "Write a short reply confirming that you are the expected person, using the familiar short identity frame.",
+          "promptLanguage": "en",
+          "context": "A familiar partner sends a message asking whether it is you. Write a short reply confirming that you are the person they expected. No new personal name or biographical detail is needed.\nFamiliar meanings available: I; me; be; person; people.",
+          "contextLanguage": "en",
+          "label": "Write your own message",
+          "resultDomain": "Self-reviewed writing practice",
+          "rubric": [
+            {
+              "id": "r1",
+              "text": "My message has a clear person and meaning."
+            },
+            {
+              "id": "r2",
+              "text": "I wrote my own first attempt before viewing a model."
+            }
+          ],
+          "minLength": 1
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {},
+  "coverage": [
+    {
+      "target_id": "K-WARMUP-compose",
+      "facet_id": "K-WARMUP-compose-situated-performance",
+      "part_id": "BANK-K-WARMUP-compose-K-WARMUP-compose-perform",
+      "question_ids": [
+        "BANK-K-WARMUP-compose-K-WARMUP-compose-perform"
+      ],
+      "evidence": "self-reviewed",
+      "scope": "Arrange familiar words into a meaningful short message; handwriting is not required yet.",
+      "stage_outcome_mastery": false
+    }
+  ],
+  "remediation": {
+    "unitId": "WU02",
+    "stepId": "S-WU02-skill-K-WARMUP-compose",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-wo",
+      "mandarin-simplified-v1-warmup-shi",
+      "mandarin-simplified-v1-warmup-ren",
+      "mandarin-simplified-v1-warmup-ta-he",
+      "mandarin-simplified-v1-warmup-hao",
+      "mandarin-simplified-v1-warmup-bu",
+      "mandarin-simplified-v1-warmup-ni",
+      "mandarin-simplified-v1-warmup-ma",
+      "mandarin-simplified-v1-warmup-ta-she",
+      "mandarin-simplified-v1-warmup-hao"
+    ],
+    "grammarLessonIds": [
+      "EX-GRAM-G-warmup-identity"
+    ]
+  }
+}

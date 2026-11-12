@@ -1,0 +1,691 @@
+{
+  "id": "EX-CHAR-char-6270",
+  "revision": 2,
+  "unit": "U4-32",
+  "stage": "ST-HSK4",
+  "after": "S-U4-32-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "扰",
+  "sourceBlockId": "mandarin-simplified-v1-char-6270",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-6270",
+        "text": "扰",
+        "pinyin": "rǎo",
+        "meaning": "to disturb",
+        "characters": [
+          {
+            "id": "C-6270",
+            "text": "扰"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ec4e1b154256cbd5332a85c9",
+        "text": "都会",
+        "pinyin": "dū huì",
+        "meaning": "metropolis",
+        "characters": [
+          {
+            "id": "C-90FD",
+            "text": "都"
+          },
+          {
+            "id": "C-4F1A",
+            "text": "会"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f1756851458f0f078ca4985c",
+        "text": "国有",
+        "pinyin": "guó yǒu",
+        "meaning": "state-owned; owned by the state",
+        "characters": [
+          {
+            "id": "C-56FD",
+            "text": "国"
+          },
+          {
+            "id": "C-6709",
+            "text": "有"
+          }
+        ]
+      },
+      {
+        "id": "W1018",
+        "text": "有名",
+        "pinyin": "yǒumíng",
+        "meaning": "famous; well-known",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          },
+          {
+            "id": "C-540D",
+            "text": "名"
+          }
+        ]
+      },
+      {
+        "id": "W4422",
+        "text": "困扰",
+        "pinyin": "kùnrǎo",
+        "meaning": "to perplex; to disturb",
+        "characters": [
+          {
+            "id": "C-56F0",
+            "text": "困"
+          },
+          {
+            "id": "C-6270",
+            "text": "扰"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "7bec59193806e58c5e63f9c7e884684234f341febcacc8edffb2012df30988e9",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6270",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "扰",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6270-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W4422",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to perplex; to disturb",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "困扰"
+              },
+              {
+                "value": "kùnrǎo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "kun4rao3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "困扰",
+              "pinyin": "kùnrǎo",
+              "meaning": "to perplex; to disturb",
+              "audio": "2d2b36c97fd4b24489c80cf3a59a327d316b9f8e4278499a13951fde81856e6a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6270-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6270",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "扰",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-ec4e1b154256cbd5332a85c9",
+                "label": "metropolis",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-6270",
+                "label": "to disturb",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1018",
+                "label": "famous; well-known",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6270-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "扰",
+        "pinyin": "rǎo",
+        "meaning": "to disturb",
+        "source": "/stroke-data/6270.json",
+        "reference": {
+          "character": "扰",
+          "sha256": "0e2f417494128e752d67a148407cb4816a1e8876f4e9c107c856ec2e9dbc9a77",
+          "medians": [
+            [
+              [
+                131,
+                502
+              ],
+              [
+                183,
+                501
+              ],
+              [
+                349,
+                557
+              ],
+              [
+                402,
+                562
+              ]
+            ],
+            [
+              [
+                264,
+                787
+              ],
+              [
+                289,
+                770
+              ],
+              [
+                309,
+                743
+              ],
+              [
+                299,
+                566
+              ],
+              [
+                300,
+                113
+              ],
+              [
+                293,
+                83
+              ],
+              [
+                277,
+                54
+              ],
+              [
+                161,
+                107
+              ]
+            ],
+            [
+              [
+                70,
+                233
+              ],
+              [
+                113,
+                233
+              ],
+              [
+                210,
+                317
+              ],
+              [
+                377,
+                445
+              ]
+            ],
+            [
+              [
+                426,
+                480
+              ],
+              [
+                476,
+                475
+              ],
+              [
+                706,
+                528
+              ],
+              [
+                770,
+                525
+              ]
+            ],
+            [
+              [
+                561,
+                773
+              ],
+              [
+                600,
+                733
+              ],
+              [
+                579,
+                513
+              ],
+              [
+                562,
+                423
+              ],
+              [
+                525,
+                304
+              ],
+              [
+                487,
+                215
+              ],
+              [
+                434,
+                123
+              ],
+              [
+                372,
+                45
+              ]
+            ],
+            [
+              [
+                618,
+                394
+              ],
+              [
+                653,
+                347
+              ],
+              [
+                642,
+                283
+              ],
+              [
+                638,
+                177
+              ],
+              [
+                644,
+                109
+              ],
+              [
+                653,
+                85
+              ],
+              [
+                668,
+                71
+              ],
+              [
+                719,
+                53
+              ],
+              [
+                799,
+                49
+              ],
+              [
+                864,
+                54
+              ],
+              [
+                922,
+                73
+              ],
+              [
+                932,
+                80
+              ],
+              [
+                932,
+                219
+              ]
+            ],
+            [
+              [
+                717,
+                725
+              ],
+              [
+                801,
+                663
+              ],
+              [
+                816,
+                634
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6270-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-f1756851458f0f078ca4985c",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "state-owned; owned by the state",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "国有"
+              },
+              {
+                "value": "guó yǒu",
+                "mode": "pinyin"
+              },
+              {
+                "value": "guo2you3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "国有",
+              "pinyin": "guó yǒu",
+              "meaning": "state-owned; owned by the state",
+              "audio": "2aa46ea633e320f856a403b015f3c03966b0da541aa747b3259f2168b6699ce2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6270-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6270",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to disturb",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "扰"
+              },
+              {
+                "value": "rǎo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "rao3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "扰",
+              "pinyin": "rǎo",
+              "meaning": "to disturb",
+              "audio": "2b5a504ed71acf367a722427c05db7dfdfb1c1dc95f55cc56f5962bc90bd5679",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "2b5a504ed71acf367a722427c05db7dfdfb1c1dc95f55cc56f5962bc90bd5679"
+            ],
+            "transcript": [
+              {
+                "text": "扰",
+                "pinyin": "rǎo",
+                "meaning": "to disturb",
+                "audio": "2b5a504ed71acf367a722427c05db7dfdfb1c1dc95f55cc56f5962bc90bd5679",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6270",
+      "character": "扰",
+      "lessonIds": [
+        "LESSON-C-6270"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6270-word",
+        "EX-CHAR-char-6270-recognize",
+        "EX-CHAR-char-6270-write",
+        "EX-CHAR-char-6270-familiar",
+        "EX-CHAR-char-6270-recall"
+      ]
+    },
+    "audio": {
+      "2b5a504ed71acf367a722427c05db7dfdfb1c1dc95f55cc56f5962bc90bd5679": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-9bc47749049f56cc11e84aadfa539c22cbbaa162187fd290395b6512357f7042.mp3",
+          "sha256": "9bc47749049f56cc11e84aadfa539c22cbbaa162187fd290395b6512357f7042",
+          "byteLength": 12429,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "9bc47749049f56cc11e84aadfa539c22cbbaa162187fd290395b6512357f7042",
+            "text": "扰",
+            "words": [
+              {
+                "text": "扰",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-3e6092a8ca9626a82ca3cb050d132c9df221282472023971b158fbb8368ddc51.mp3",
+          "sha256": "3e6092a8ca9626a82ca3cb050d132c9df221282472023971b158fbb8368ddc51",
+          "byteLength": 16173,
+          "readAlong": {
+            "audioSha256": "3e6092a8ca9626a82ca3cb050d132c9df221282472023971b158fbb8368ddc51",
+            "text": "扰",
+            "words": [
+              {
+                "text": "扰",
+                "start": 0.57,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "7d10a7b724765af3c083ebd3a53e6abd44e49535df15cdf93c5151b1ad76138e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5e1dffb385e119b1f7331fec5e325b58ffa3159d9a5052878aeb72523e978636.mp3",
+          "sha256": "5e1dffb385e119b1f7331fec5e325b58ffa3159d9a5052878aeb72523e978636",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "5e1dffb385e119b1f7331fec5e325b58ffa3159d9a5052878aeb72523e978636",
+            "text": "都会",
+            "words": [
+              {
+                "text": "都会",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c8c61ec34a35c447219a46ba36b32e9ce093e11957868ba3b668ebe180e9faea.mp3",
+          "sha256": "c8c61ec34a35c447219a46ba36b32e9ce093e11957868ba3b668ebe180e9faea",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "c8c61ec34a35c447219a46ba36b32e9ce093e11957868ba3b668ebe180e9faea",
+            "text": "都会",
+            "words": [
+              {
+                "text": "都会",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "2aa46ea633e320f856a403b015f3c03966b0da541aa747b3259f2168b6699ce2": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/93bb1437799bf94d7b7c7f0e427b4e6ed6779cb4ab7b23e0a4d099cfdd951eed.mp3",
+          "sha256": "93bb1437799bf94d7b7c7f0e427b4e6ed6779cb4ab7b23e0a4d099cfdd951eed",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "93bb1437799bf94d7b7c7f0e427b4e6ed6779cb4ab7b23e0a4d099cfdd951eed",
+            "text": "国有",
+            "words": [
+              {
+                "text": "国有",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/7c21c4193a76b4d8e39c61627f0ce3c427db8bad31d315cd902a7b56340c20a9.mp3",
+          "sha256": "7c21c4193a76b4d8e39c61627f0ce3c427db8bad31d315cd902a7b56340c20a9",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "7c21c4193a76b4d8e39c61627f0ce3c427db8bad31d315cd902a7b56340c20a9",
+            "text": "国有",
+            "words": [
+              {
+                "text": "国有",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "cd655de89fa602fff6da50217588041817487850466956515a8789e271daad7c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8d13361bd05d79ece6d2922d4954cca5e5a4f2095ea93af7829bbcd14fabf8df.mp3",
+          "sha256": "8d13361bd05d79ece6d2922d4954cca5e5a4f2095ea93af7829bbcd14fabf8df",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "8d13361bd05d79ece6d2922d4954cca5e5a4f2095ea93af7829bbcd14fabf8df",
+            "text": "有名",
+            "words": [
+              {
+                "text": "有名",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/17190aba4be6d58ba50076814704dfad4911bdfe11c6082b973d747e28647001.mp3",
+          "sha256": "17190aba4be6d58ba50076814704dfad4911bdfe11c6082b973d747e28647001",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "17190aba4be6d58ba50076814704dfad4911bdfe11c6082b973d747e28647001",
+            "text": "有名",
+            "words": [
+              {
+                "text": "有名",
+                "start": 0.21,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "2d2b36c97fd4b24489c80cf3a59a327d316b9f8e4278499a13951fde81856e6a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/31632f87f422a7889333288a01c5b36f5d9377c0236406c31d1250c54039bcb2.mp3",
+          "sha256": "31632f87f422a7889333288a01c5b36f5d9377c0236406c31d1250c54039bcb2",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "31632f87f422a7889333288a01c5b36f5d9377c0236406c31d1250c54039bcb2",
+            "text": "困扰",
+            "words": [
+              {
+                "text": "困扰",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/61767004c50c9b1f1717ebe8ef0c4f257bcc750e171050a7b58274b66415ccc4.mp3",
+          "sha256": "61767004c50c9b1f1717ebe8ef0c4f257bcc750e171050a7b58274b66415ccc4",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "61767004c50c9b1f1717ebe8ef0c4f257bcc750e171050a7b58274b66415ccc4",
+            "text": "困扰",
+            "words": [
+              {
+                "text": "困扰",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

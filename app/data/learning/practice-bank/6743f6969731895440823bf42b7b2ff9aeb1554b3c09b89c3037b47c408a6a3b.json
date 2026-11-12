@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0390",
+  "targetId": "W0390",
+  "steps": [
+    {
+      "id": "BANK-W0390-W0390",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0390-W0390",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to read a book; to study",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "读书"
+            },
+            {
+              "value": "dúshū",
+              "mode": "pinyin"
+            },
+            {
+              "value": "du2shu1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "读书",
+            "pinyin": "dúshū",
+            "meaning": "to read a book; to study",
+            "singleWord": true,
+            "audio": "19a70ff0805101b125dca3fb35c3979fb4b3822799621418e9688446e5e8a3c6"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "19a70ff0805101b125dca3fb35c3979fb4b3822799621418e9688446e5e8a3c6": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-e91ca9b385d59c582957c78008222bbfb49cd51058920a29546ac9bedca073a7.mp3",
+        "sha256": "e91ca9b385d59c582957c78008222bbfb49cd51058920a29546ac9bedca073a7",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "e91ca9b385d59c582957c78008222bbfb49cd51058920a29546ac9bedca073a7",
+          "text": "读书",
+          "words": [
+            {
+              "text": "读书",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b825801d84554232359eb269e3b71744615b0ae329f8eb6bd95948b872fa0ad8.mp3",
+        "sha256": "b825801d84554232359eb269e3b71744615b0ae329f8eb6bd95948b872fa0ad8",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "b825801d84554232359eb269e3b71744615b0ae329f8eb6bd95948b872fa0ad8",
+          "text": "读书",
+          "words": [
+            {
+              "text": "读书",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0390",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0390-W0390",
+      "question_ids": [
+        "BANK-W0390-W0390"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U02-P01",
+    "stepId": "S-U02-words-r4-25",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8bfb"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2301",
+  "targetId": "W2301",
+  "steps": [
+    {
+      "id": "BANK-W2301-W2301",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2301-W2301",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to like; to upvote",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "点赞"
+            },
+            {
+              "value": "diǎnzàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dian3zan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "点赞",
+            "pinyin": "diǎnzàn",
+            "meaning": "to like; to upvote",
+            "singleWord": true,
+            "audio": "49acbbc62b758bffba474444627e3fad049519826770617cb33bbc2f6a90a401"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "49acbbc62b758bffba474444627e3fad049519826770617cb33bbc2f6a90a401": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9257fef65576bec163a8aeb0dce2057650056d867502408742e16a85cf776e00.mp3",
+        "sha256": "9257fef65576bec163a8aeb0dce2057650056d867502408742e16a85cf776e00",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "9257fef65576bec163a8aeb0dce2057650056d867502408742e16a85cf776e00",
+          "text": "点赞",
+          "words": [
+            {
+              "text": "点赞",
+              "start": 0.03,
+              "end": 0.27
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a038ef792243e12aae5d975fadae592582c11ba515e03ca9a735fa7c6c7e9ad0.mp3",
+        "sha256": "a038ef792243e12aae5d975fadae592582c11ba515e03ca9a735fa7c6c7e9ad0",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "a038ef792243e12aae5d975fadae592582c11ba515e03ca9a735fa7c6c7e9ad0",
+          "text": "点赞",
+          "words": [
+            {
+              "text": "点赞",
+              "start": 0.09,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2301",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2301-W2301",
+      "question_ids": [
+        "BANK-W2301-W2301"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-36",
+    "stepId": "S-U5-36-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8d5e"
+    ],
+    "grammarLessonIds": []
+  }
+}

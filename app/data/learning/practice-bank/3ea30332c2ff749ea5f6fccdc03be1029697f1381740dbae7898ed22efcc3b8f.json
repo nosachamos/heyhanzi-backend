@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0204",
+  "targetId": "W0204",
+  "steps": [
+    {
+      "id": "BANK-W0204-W0204",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0204-W0204",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "wait",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "等"
+            },
+            {
+              "value": "děng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "deng3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "等",
+            "pinyin": "děng",
+            "meaning": "wait",
+            "singleWord": true,
+            "audio": "23dcf7e383fa9df4dbd023e9a7356177dab3ed94f65d47cfcb829717088681df"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "23dcf7e383fa9df4dbd023e9a7356177dab3ed94f65d47cfcb829717088681df": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-fe7ad036ff4fa05ae2ab489b921a7b18693548a291d46428da3a0161e5683493.mp3",
+        "sha256": "fe7ad036ff4fa05ae2ab489b921a7b18693548a291d46428da3a0161e5683493",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "fe7ad036ff4fa05ae2ab489b921a7b18693548a291d46428da3a0161e5683493",
+          "text": "等",
+          "words": [
+            {
+              "text": "等",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b1a2811418785b20559795ee7bb0476e6ce956ada22904872680e721b9d88a9a.mp3",
+        "sha256": "b1a2811418785b20559795ee7bb0476e6ce956ada22904872680e721b9d88a9a",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "b1a2811418785b20559795ee7bb0476e6ce956ada22904872680e721b9d88a9a",
+          "text": "等",
+          "words": [
+            {
+              "text": "等",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0204",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0204-W0204",
+      "question_ids": [
+        "BANK-W0204-W0204"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U17-P01",
+    "stepId": "S-U17-words-r4-9",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7b49"
+    ],
+    "grammarLessonIds": []
+  }
+}

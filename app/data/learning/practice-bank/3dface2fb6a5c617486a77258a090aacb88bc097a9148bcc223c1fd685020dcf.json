@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5212",
+  "targetId": "W5212",
+  "steps": [
+    {
+      "id": "BANK-W5212-W5212",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5212-W5212",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "a tourist",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "游人"
+            },
+            {
+              "value": "yóurén",
+              "mode": "pinyin"
+            },
+            {
+              "value": "you2ren2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "游人",
+            "pinyin": "yóurén",
+            "meaning": "a tourist",
+            "singleWord": true,
+            "audio": "05114e9430f7bd6a7fe91483c97728ee9a5414ed59f0892441fddc0efaf02cc7"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "05114e9430f7bd6a7fe91483c97728ee9a5414ed59f0892441fddc0efaf02cc7": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-757580938b93b36172b56c230257cde7886f9d6f048603a8764115b55be5c8ba.mp3",
+        "sha256": "757580938b93b36172b56c230257cde7886f9d6f048603a8764115b55be5c8ba",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "757580938b93b36172b56c230257cde7886f9d6f048603a8764115b55be5c8ba",
+          "text": "游人",
+          "words": [
+            {
+              "text": "游人",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-8785ed1bb1191b8d54c809697ef6fc57cfa21f2e292c4f2757a69c5ea10c90bd.mp3",
+        "sha256": "8785ed1bb1191b8d54c809697ef6fc57cfa21f2e292c4f2757a69c5ea10c90bd",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "8785ed1bb1191b8d54c809697ef6fc57cfa21f2e292c4f2757a69c5ea10c90bd",
+          "text": "游人",
+          "words": [
+            {
+              "text": "游人",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5212",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5212-W5212",
+      "question_ids": [
+        "BANK-W5212-W5212"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-17",
+    "stepId": "S-U6-17-words-r4-19",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6e38"
+    ],
+    "grammarLessonIds": []
+  }
+}

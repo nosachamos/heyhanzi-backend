@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5022",
+  "targetId": "W5022",
+  "steps": [
+    {
+      "id": "BANK-W5022-W5022",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5022-W5022",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "Chinese opera",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "戏曲"
+            },
+            {
+              "value": "xìqǔ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xi4qu3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "戏曲",
+            "pinyin": "xìqǔ",
+            "meaning": "Chinese opera",
+            "singleWord": true,
+            "audio": "31ca9f90d48e0a415f23ac2c69d8ca4bd67e983683772553fbaa8caceb927f1c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "31ca9f90d48e0a415f23ac2c69d8ca4bd67e983683772553fbaa8caceb927f1c": {
+      "female": {
+        "url": "/exercise-assets/audio/course-female-752dfcc74f4782b34237285b3da0a2c737ec0e54d8174aacd060fba867aaa450.mp3",
+        "sha256": "752dfcc74f4782b34237285b3da0a2c737ec0e54d8174aacd060fba867aaa450",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "752dfcc74f4782b34237285b3da0a2c737ec0e54d8174aacd060fba867aaa450",
+          "text": "戏曲",
+          "words": [
+            {
+              "text": "戏曲",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e585353c752f78540cf97c48908b1da6a1cf0fa4de545e2fbd3630c0043bcb53.mp3",
+        "sha256": "e585353c752f78540cf97c48908b1da6a1cf0fa4de545e2fbd3630c0043bcb53",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "e585353c752f78540cf97c48908b1da6a1cf0fa4de545e2fbd3630c0043bcb53",
+          "text": "戏曲",
+          "words": [
+            {
+              "text": "戏曲",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5022",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5022-W5022",
+      "question_ids": [
+        "BANK-W5022-W5022"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-26",
+    "stepId": "S-U6-26-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-66f2"
+    ],
+    "grammarLessonIds": []
+  }
+}

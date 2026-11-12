@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1027",
+  "targetId": "W1027",
+  "steps": [
+    {
+      "id": "BANK-W1027-W1027",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1027-W1027",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "the moon",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "月亮"
+            },
+            {
+              "value": "yuèliang",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yue4liang5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "月亮",
+            "pinyin": "yuèliang",
+            "meaning": "the moon",
+            "singleWord": true,
+            "audio": "811c76538a222a1fb32ac4794a42171819217d1a7a49c453c3f613973ea95b55"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "811c76538a222a1fb32ac4794a42171819217d1a7a49c453c3f613973ea95b55": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/40a717d34bd5e07ec26e0ea5ea2d43f76ca270ec08df7868821bf1d7415f5897.mp3",
+        "sha256": "40a717d34bd5e07ec26e0ea5ea2d43f76ca270ec08df7868821bf1d7415f5897",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "40a717d34bd5e07ec26e0ea5ea2d43f76ca270ec08df7868821bf1d7415f5897",
+          "text": "月亮",
+          "words": [
+            {
+              "text": "月亮",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0408bbcfae07a34831fe4dacf2e11a1f4cee97b58de111fe92c039b322137386.mp3",
+        "sha256": "0408bbcfae07a34831fe4dacf2e11a1f4cee97b58de111fe92c039b322137386",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "0408bbcfae07a34831fe4dacf2e11a1f4cee97b58de111fe92c039b322137386",
+          "text": "月亮",
+          "words": [
+            {
+              "text": "月亮",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1027",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1027-W1027",
+      "question_ids": [
+        "BANK-W1027-W1027"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-17",
+    "stepId": "S-U3-17-words-r4-26",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6708"
+    ],
+    "grammarLessonIds": []
+  }
+}

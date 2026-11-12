@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0488",
+  "targetId": "W0488",
+  "steps": [
+    {
+      "id": "BANK-W0488-W0488",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0488-W0488",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "Sunday",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "星期日"
+            },
+            {
+              "value": "xīngqīrì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xing1qi1ri4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "星期日",
+            "pinyin": "xīngqīrì",
+            "meaning": "Sunday",
+            "singleWord": true,
+            "audio": "3ffe24d66f0cf2ce5a99d11aaf13d4aa1f97e6b865664e90d746bbfec4c62bb2"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3ffe24d66f0cf2ce5a99d11aaf13d4aa1f97e6b865664e90d746bbfec4c62bb2": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ed541e86645250e37aa6a561751e3176d4d5f09d248d04a523a3f135fc80d340.mp3",
+        "sha256": "ed541e86645250e37aa6a561751e3176d4d5f09d248d04a523a3f135fc80d340",
+        "byteLength": 15885,
+        "readAlong": {
+          "audioSha256": "ed541e86645250e37aa6a561751e3176d4d5f09d248d04a523a3f135fc80d340",
+          "text": "星期日",
+          "words": [
+            {
+              "text": "星期日",
+              "start": 0.21,
+              "end": 0.69
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-a29e373823b989db0f9de293ffc37f82805200d6e95aa15b1d64585b21d2797e.mp3",
+        "sha256": "a29e373823b989db0f9de293ffc37f82805200d6e95aa15b1d64585b21d2797e",
+        "byteLength": 14733,
+        "readAlong": {
+          "audioSha256": "a29e373823b989db0f9de293ffc37f82805200d6e95aa15b1d64585b21d2797e",
+          "text": "星期日",
+          "words": [
+            {
+              "text": "星期日",
+              "start": 0.21,
+              "end": 0.69
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0488",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0488-W0488",
+      "question_ids": [
+        "BANK-W0488-W0488"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U13",
+    "stepId": "S-U13-working-word-2",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-65e5"
+    ],
+    "grammarLessonIds": []
+  }
+}

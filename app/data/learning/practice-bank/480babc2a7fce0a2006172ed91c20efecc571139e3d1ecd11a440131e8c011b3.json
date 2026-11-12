@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0001",
+  "targetId": "W0001",
+  "steps": [
+    {
+      "id": "BANK-W0001-W0001",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0001-W0001",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "I; me",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "我"
+            },
+            {
+              "value": "wǒ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "wo3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "我",
+            "pinyin": "wǒ",
+            "meaning": "I; me",
+            "singleWord": true,
+            "audio": "364fba3bd2447ba14bf6e73be5f61e90209a109abbfe24e2f287e738f69f1113"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "364fba3bd2447ba14bf6e73be5f61e90209a109abbfe24e2f287e738f69f1113": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-575949392a3da138bdb989045704169d874e01830383523545eaac0f018c14e8.mp3",
+        "sha256": "575949392a3da138bdb989045704169d874e01830383523545eaac0f018c14e8",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "575949392a3da138bdb989045704169d874e01830383523545eaac0f018c14e8",
+          "text": "我",
+          "words": [
+            {
+              "text": "我",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-6efd1f8879421b5b21e6a404f5f7f1250bf5fd84a341444ee526348b26255b2c.mp3",
+        "sha256": "6efd1f8879421b5b21e6a404f5f7f1250bf5fd84a341444ee526348b26255b2c",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "6efd1f8879421b5b21e6a404f5f7f1250bf5fd84a341444ee526348b26255b2c",
+          "text": "我",
+          "words": [
+            {
+              "text": "我",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0001",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0001-W0001",
+      "question_ids": [
+        "BANK-W0001-W0001"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU01",
+    "stepId": "S-WU01-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-wo"
+    ],
+    "grammarLessonIds": []
+  }
+}

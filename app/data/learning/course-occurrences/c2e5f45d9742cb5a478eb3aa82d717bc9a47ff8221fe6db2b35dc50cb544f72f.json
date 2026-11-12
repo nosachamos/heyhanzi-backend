@@ -1,0 +1,787 @@
+{
+  "id": "EX-CHAR-char-8dc3",
+  "revision": 2,
+  "unit": "U6-46-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-46-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "跃",
+  "sourceBlockId": "mandarin-simplified-v1-char-8dc3",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-8dc3",
+        "text": "跃",
+        "pinyin": "yuè",
+        "meaning": "to jump; to leap",
+        "characters": [
+          {
+            "id": "C-8DC3",
+            "text": "跃"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-65b5657f7d10a53f641564cd",
+        "text": "惊醒",
+        "pinyin": "jīng xǐng",
+        "meaning": "to rouse",
+        "characters": [
+          {
+            "id": "C-60CA",
+            "text": "惊"
+          },
+          {
+            "id": "C-9192",
+            "text": "醒"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-7f2c8c514beb57ab2525a932",
+        "text": "的话",
+        "pinyin": "dehuà",
+        "meaning": "if (coming after a conditional clause)",
+        "characters": [
+          {
+            "id": "C-7684",
+            "text": "的"
+          },
+          {
+            "id": "C-8BDD",
+            "text": "话"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-df671b7827a0aab98cba182e",
+        "text": "生死",
+        "pinyin": "shēng sǐ",
+        "meaning": "life or death",
+        "characters": [
+          {
+            "id": "C-751F",
+            "text": "生"
+          },
+          {
+            "id": "C-6B7B",
+            "text": "死"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-e813df1514c74804f5f2d656",
+        "text": "跳跃",
+        "pinyin": "tiào yuè",
+        "meaning": "to jump",
+        "characters": [
+          {
+            "id": "C-8DF3",
+            "text": "跳"
+          },
+          {
+            "id": "C-8DC3",
+            "text": "跃"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "40d6e35d385304c62bb57773b2f5250845db873b9089fd0009678436e06591f9",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8dc3",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "跃",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8dc3-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-e813df1514c74804f5f2d656",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to jump",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "跳跃"
+              },
+              {
+                "value": "tiào yuè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tiao4yue4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "跳跃",
+              "pinyin": "tiào yuè",
+              "meaning": "to jump",
+              "audio": "8fa9d0fa9adfbd41a350dd02c4c6f63347cec2dfb2903b3af62e276d24c9b7ae",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8dc3-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-8dc3",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "跃",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-8dc3",
+                "label": "to jump; to leap",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-df671b7827a0aab98cba182e",
+                "label": "life or death",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-7f2c8c514beb57ab2525a932",
+                "label": "if (coming after a conditional clause)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8dc3-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "跃",
+        "pinyin": "yuè",
+        "meaning": "to jump; to leap",
+        "source": "/stroke-data/8dc3.json",
+        "reference": {
+          "character": "跃",
+          "sha256": "6673b33f9d98766344b35c314a32dab5aae00a6ca7392c256dce625b105270e1",
+          "medians": [
+            [
+              [
+                171,
+                719
+              ],
+              [
+                201,
+                694
+              ],
+              [
+                240,
+                518
+              ]
+            ],
+            [
+              [
+                232,
+                694
+              ],
+              [
+                259,
+                709
+              ],
+              [
+                319,
+                723
+              ],
+              [
+                340,
+                734
+              ],
+              [
+                366,
+                740
+              ],
+              [
+                385,
+                737
+              ],
+              [
+                405,
+                717
+              ],
+              [
+                404,
+                708
+              ],
+              [
+                383,
+                620
+              ],
+              [
+                363,
+                604
+              ]
+            ],
+            [
+              [
+                257,
+                539
+              ],
+              [
+                276,
+                552
+              ],
+              [
+                351,
+                575
+              ],
+              [
+                394,
+                580
+              ],
+              [
+                417,
+                576
+              ]
+            ],
+            [
+              [
+                290,
+                535
+              ],
+              [
+                316,
+                517
+              ],
+              [
+                321,
+                480
+              ],
+              [
+                321,
+                261
+              ],
+              [
+                316,
+                242
+              ],
+              [
+                304,
+                231
+              ]
+            ],
+            [
+              [
+                351,
+                397
+              ],
+              [
+                356,
+                408
+              ],
+              [
+                373,
+                419
+              ],
+              [
+                408,
+                428
+              ],
+              [
+                442,
+                426
+              ]
+            ],
+            [
+              [
+                139,
+                424
+              ],
+              [
+                182,
+                387
+              ],
+              [
+                210,
+                212
+              ],
+              [
+                197,
+                197
+              ]
+            ],
+            [
+              [
+                100,
+                148
+              ],
+              [
+                154,
+                137
+              ],
+              [
+                452,
+                269
+              ]
+            ],
+            [
+              [
+                790,
+                721
+              ],
+              [
+                721,
+                725
+              ],
+              [
+                630,
+                658
+              ],
+              [
+                567,
+                623
+              ],
+              [
+                522,
+                606
+              ],
+              [
+                515,
+                597
+              ],
+              [
+                497,
+                596
+              ],
+              [
+                488,
+                587
+              ]
+            ],
+            [
+              [
+                452,
+                396
+              ],
+              [
+                520,
+                397
+              ],
+              [
+                666,
+                432
+              ],
+              [
+                805,
+                457
+              ],
+              [
+                854,
+                459
+              ],
+              [
+                899,
+                450
+              ]
+            ],
+            [
+              [
+                590,
+                615
+              ],
+              [
+                618,
+                601
+              ],
+              [
+                631,
+                584
+              ],
+              [
+                621,
+                428
+              ],
+              [
+                595,
+                321
+              ],
+              [
+                565,
+                255
+              ],
+              [
+                508,
+                173
+              ],
+              [
+                445,
+                114
+              ],
+              [
+                391,
+                81
+              ]
+            ],
+            [
+              [
+                640,
+                386
+              ],
+              [
+                646,
+                347
+              ],
+              [
+                660,
+                325
+              ],
+              [
+                751,
+                196
+              ],
+              [
+                812,
+                129
+              ],
+              [
+                842,
+                105
+              ],
+              [
+                983,
+                66
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8dc3-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-65b5657f7d10a53f641564cd",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to rouse",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "惊醒"
+              },
+              {
+                "value": "jīng xǐng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jing1xing3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "惊醒",
+              "pinyin": "jīng xǐng",
+              "meaning": "to rouse",
+              "audio": "57aa7853067aed097b1e0418cd632c70399693b578922ae9b3ed0c3626378e46",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8dc3-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-8dc3",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to jump; to leap",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "跃"
+              },
+              {
+                "value": "yuè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yue4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "跃",
+              "pinyin": "yuè",
+              "meaning": "to jump; to leap",
+              "audio": "44e744108dcd0164f1a937e2f984b1a362b9569a10e8da893b1c5bb313caeb34",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "44e744108dcd0164f1a937e2f984b1a362b9569a10e8da893b1c5bb313caeb34"
+            ],
+            "transcript": [
+              {
+                "text": "跃",
+                "pinyin": "yuè",
+                "meaning": "to jump; to leap",
+                "audio": "44e744108dcd0164f1a937e2f984b1a362b9569a10e8da893b1c5bb313caeb34",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8DC3",
+      "character": "跃",
+      "lessonIds": [
+        "LESSON-C-8DC3"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8dc3-word",
+        "EX-CHAR-char-8dc3-recognize",
+        "EX-CHAR-char-8dc3-write",
+        "EX-CHAR-char-8dc3-familiar",
+        "EX-CHAR-char-8dc3-recall"
+      ]
+    },
+    "audio": {
+      "44e744108dcd0164f1a937e2f984b1a362b9569a10e8da893b1c5bb313caeb34": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-9031cfcf384b156ab1e38906d3161c4b5055aa4e717f7c538d6f83c9815bca25.mp3",
+          "sha256": "9031cfcf384b156ab1e38906d3161c4b5055aa4e717f7c538d6f83c9815bca25",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "9031cfcf384b156ab1e38906d3161c4b5055aa4e717f7c538d6f83c9815bca25",
+            "text": "跃",
+            "words": [
+              {
+                "text": "跃",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-e8784622c6cb3ba1702f6afbbb9d0e6036798a2c416d3ce018c52aa4ce2be3ac.mp3",
+          "sha256": "e8784622c6cb3ba1702f6afbbb9d0e6036798a2c416d3ce018c52aa4ce2be3ac",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "e8784622c6cb3ba1702f6afbbb9d0e6036798a2c416d3ce018c52aa4ce2be3ac",
+            "text": "跃",
+            "words": [
+              {
+                "text": "跃",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "57aa7853067aed097b1e0418cd632c70399693b578922ae9b3ed0c3626378e46": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/41dd9615907224dec17a0bdeeea9ace6cebc15a46b66226ba2fa6818a66b7946.mp3",
+          "sha256": "41dd9615907224dec17a0bdeeea9ace6cebc15a46b66226ba2fa6818a66b7946",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "41dd9615907224dec17a0bdeeea9ace6cebc15a46b66226ba2fa6818a66b7946",
+            "text": "惊醒",
+            "words": [
+              {
+                "text": "惊醒",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/dad07558f7dd30189c63abef44fb6c5ec52f685120728c9024536e9a56a242f7.mp3",
+          "sha256": "dad07558f7dd30189c63abef44fb6c5ec52f685120728c9024536e9a56a242f7",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "dad07558f7dd30189c63abef44fb6c5ec52f685120728c9024536e9a56a242f7",
+            "text": "惊醒",
+            "words": [
+              {
+                "text": "惊醒",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "eb568fd2b357df4d421af4ca99940704698c8f50d5301ab7cd8fff4536964cdb": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-36cde9078228fc0078472d3ebcbd51c94a64dc0192e8b21270a2fb327c7c45cc.mp3",
+          "sha256": "36cde9078228fc0078472d3ebcbd51c94a64dc0192e8b21270a2fb327c7c45cc",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "36cde9078228fc0078472d3ebcbd51c94a64dc0192e8b21270a2fb327c7c45cc",
+            "text": "的话",
+            "words": [
+              {
+                "text": "的话",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-57de4e563ec66538eda7ce5871af666c3dab5efc37f19e2028b33ab364871790.mp3",
+          "sha256": "57de4e563ec66538eda7ce5871af666c3dab5efc37f19e2028b33ab364871790",
+          "byteLength": 8685,
+          "qualityWarning": "too-fast",
+          "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+          "readAlong": {
+            "audioSha256": "57de4e563ec66538eda7ce5871af666c3dab5efc37f19e2028b33ab364871790",
+            "text": "的话",
+            "words": [
+              {
+                "text": "的话",
+                "start": 0.03,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "d2bd9092c1590a6d61e8e9797b37ccb5ea4df69a1a5e59f4334c7a4226187546": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/01583b4aa5956da0924ebca13b4361ef5f87fec0d42aa6789cc04dc1666e2316.mp3",
+          "sha256": "01583b4aa5956da0924ebca13b4361ef5f87fec0d42aa6789cc04dc1666e2316",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "01583b4aa5956da0924ebca13b4361ef5f87fec0d42aa6789cc04dc1666e2316",
+            "text": "生死",
+            "words": [
+              {
+                "text": "生死",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1fa8de5da3c4f676e886a1fa3efbd3fa10238dce3c38545a0a5beac9b6de78b9.mp3",
+          "sha256": "1fa8de5da3c4f676e886a1fa3efbd3fa10238dce3c38545a0a5beac9b6de78b9",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "1fa8de5da3c4f676e886a1fa3efbd3fa10238dce3c38545a0a5beac9b6de78b9",
+            "text": "生死",
+            "words": [
+              {
+                "text": "生死",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "8fa9d0fa9adfbd41a350dd02c4c6f63347cec2dfb2903b3af62e276d24c9b7ae": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5b8dac88a15af1e0a023a86ac696593ba8153b6e1245c56d2f4f4cde41d2776c.mp3",
+          "sha256": "5b8dac88a15af1e0a023a86ac696593ba8153b6e1245c56d2f4f4cde41d2776c",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "5b8dac88a15af1e0a023a86ac696593ba8153b6e1245c56d2f4f4cde41d2776c",
+            "text": "跳跃",
+            "words": [
+              {
+                "text": "跳跃",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9760865b855527ac62ed53d7bced969c1195abbbc7b44f8f30446489cc4026e4.mp3",
+          "sha256": "9760865b855527ac62ed53d7bced969c1195abbbc7b44f8f30446489cc4026e4",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "9760865b855527ac62ed53d7bced969c1195abbbc7b44f8f30446489cc4026e4",
+            "text": "跳跃",
+            "words": [
+              {
+                "text": "跳跃",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

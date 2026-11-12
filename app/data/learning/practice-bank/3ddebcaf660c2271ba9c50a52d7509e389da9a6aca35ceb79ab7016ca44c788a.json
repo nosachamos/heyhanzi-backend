@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4082",
+  "targetId": "W4082",
+  "steps": [
+    {
+      "id": "BANK-W4082-W4082",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4082-W4082",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "public",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "公众"
+            },
+            {
+              "value": "gōngzhòng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gong1zhong4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "公众",
+            "pinyin": "gōngzhòng",
+            "meaning": "public",
+            "singleWord": true,
+            "audio": "a6ce03a454e41930a2615e138ff8ca0491df7708c9ef834b19a67f00d19b76db"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a6ce03a454e41930a2615e138ff8ca0491df7708c9ef834b19a67f00d19b76db": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5c0025163bc570e16ad6239bd9c64477bd1423f3dccf0eb45a7ecaf7afc4086e.mp3",
+        "sha256": "5c0025163bc570e16ad6239bd9c64477bd1423f3dccf0eb45a7ecaf7afc4086e",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "5c0025163bc570e16ad6239bd9c64477bd1423f3dccf0eb45a7ecaf7afc4086e",
+          "text": "公众",
+          "words": [
+            {
+              "text": "公众",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/953c5643e08d888c713690ac72628947512aeb041d0dd93839e58c4fc2d3dd4e.mp3",
+        "sha256": "953c5643e08d888c713690ac72628947512aeb041d0dd93839e58c4fc2d3dd4e",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "953c5643e08d888c713690ac72628947512aeb041d0dd93839e58c4fc2d3dd4e",
+          "text": "公众",
+          "words": [
+            {
+              "text": "公众",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4082",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4082-W4082",
+      "question_ids": [
+        "BANK-W4082-W4082"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-35-P01",
+    "stepId": "S-U6-35-words-r4-8",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4f17"
+    ],
+    "grammarLessonIds": []
+  }
+}

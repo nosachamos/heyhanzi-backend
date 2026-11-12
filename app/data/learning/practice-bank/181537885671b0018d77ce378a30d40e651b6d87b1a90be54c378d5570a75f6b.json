@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0851",
+  "targetId": "W0851",
+  "steps": [
+    {
+      "id": "BANK-W0851-W0851",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0851-W0851",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "older person",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "老人"
+            },
+            {
+              "value": "lǎorén",
+              "mode": "pinyin"
+            },
+            {
+              "value": "lao3ren2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "老人",
+            "pinyin": "lǎorén",
+            "meaning": "older person",
+            "singleWord": true,
+            "audio": "ffc62f8c8944183e92855052b56b07c586fe696024728e12ec2012b8b1d05522"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ffc62f8c8944183e92855052b56b07c586fe696024728e12ec2012b8b1d05522": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-3af74ec06522bc63aa1f58c034b8b1bd7f61a07daea77166c7ea8aac501eff0e.mp3",
+        "sha256": "3af74ec06522bc63aa1f58c034b8b1bd7f61a07daea77166c7ea8aac501eff0e",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "3af74ec06522bc63aa1f58c034b8b1bd7f61a07daea77166c7ea8aac501eff0e",
+          "text": "老人",
+          "words": [
+            {
+              "text": "老人",
+              "start": 0.32999999999999996,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3b125653cd03286a13ecc0e22fb76e07da09a25d7a62f80e07db847af28fb8ba.mp3",
+        "sha256": "3b125653cd03286a13ecc0e22fb76e07da09a25d7a62f80e07db847af28fb8ba",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "3b125653cd03286a13ecc0e22fb76e07da09a25d7a62f80e07db847af28fb8ba",
+          "text": "老人",
+          "words": [
+            {
+              "text": "老人",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0851",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0851-W0851",
+      "question_ids": [
+        "BANK-W0851-W0851"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-02",
+    "stepId": "S-U3-02-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8001"
+    ],
+    "grammarLessonIds": []
+  }
+}

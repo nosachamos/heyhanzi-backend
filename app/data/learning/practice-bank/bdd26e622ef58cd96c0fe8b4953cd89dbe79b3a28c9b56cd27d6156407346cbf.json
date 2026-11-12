@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1007",
+  "targetId": "W1007",
+  "steps": [
+    {
+      "id": "BANK-W1007-W1007",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1007-W1007",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "that level or higher; that amount or more",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "以上"
+            },
+            {
+              "value": "yǐshàng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yi3shang4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "以上",
+            "pinyin": "yǐshàng",
+            "meaning": "that level or higher; that amount or more",
+            "singleWord": true,
+            "audio": "9090ca9823e4a17b0110402c70d821c6434974934cc38a3f999817aafc6aa828"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "9090ca9823e4a17b0110402c70d821c6434974934cc38a3f999817aafc6aa828": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5459881abfc5713260c2339e61d5b59d79b7ca3d9891fed32579186d89790556.mp3",
+        "sha256": "5459881abfc5713260c2339e61d5b59d79b7ca3d9891fed32579186d89790556",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "5459881abfc5713260c2339e61d5b59d79b7ca3d9891fed32579186d89790556",
+          "text": "以上",
+          "words": [
+            {
+              "text": "以上",
+              "start": 0.28,
+              "end": 0.64
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-edf9ced644ab08bd59e222830c7c231ff0fc201c9df3f56121cc845f2bd0c221.mp3",
+        "sha256": "edf9ced644ab08bd59e222830c7c231ff0fc201c9df3f56121cc845f2bd0c221",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "edf9ced644ab08bd59e222830c7c231ff0fc201c9df3f56121cc845f2bd0c221",
+          "text": "以上",
+          "words": [
+            {
+              "text": "以上",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1007",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1007-W1007",
+      "question_ids": [
+        "BANK-W1007-W1007"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-07",
+    "stepId": "S-U3-07-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4ee5"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "BANK-C-8461",
+  "targetId": "C-8461",
+  "steps": [
+    {
+      "id": "BANK-C-8461-C-8461",
+      "kind": "check",
+      "title": "Recall a familiar character",
+      "questions": [
+        {
+          "id": "BANK-C-8461-C-8461",
+          "kind": "text",
+          "prompt": "Recall the introduced character. Type the Hanzi; handwriting is practised separately.",
+          "label": "Retrieve the character",
+          "context": "First character of the familiar word meaning: grape",
+          "contextLanguage": "en",
+          "resultDomain": "Typed character-form retrieval",
+          "rule": "word",
+          "accepted": [
+            {
+              "value": "葡"
+            }
+          ],
+          "model": {
+            "text": "葡萄",
+            "pinyin": "pútao",
+            "meaning": "grape",
+            "audio": "8d00c557cdf9ce07f10c32e592a0250e65bb53751ad22f7295f36ebc76fab36b",
+            "singleWord": true,
+            "focus": "葡"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8d00c557cdf9ce07f10c32e592a0250e65bb53751ad22f7295f36ebc76fab36b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5164690648b8edf586b0b805f38080f615e81e01ef32fe16b26852f3e9ef85ad.mp3",
+        "sha256": "5164690648b8edf586b0b805f38080f615e81e01ef32fe16b26852f3e9ef85ad",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "5164690648b8edf586b0b805f38080f615e81e01ef32fe16b26852f3e9ef85ad",
+          "text": "葡萄",
+          "words": [
+            {
+              "text": "葡萄",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-9fd2809fdbec0b7aedd53227439bd3be3d7599f081a16f0add219a470b7c38aa.mp3",
+        "sha256": "9fd2809fdbec0b7aedd53227439bd3be3d7599f081a16f0add219a470b7c38aa",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "9fd2809fdbec0b7aedd53227439bd3be3d7599f081a16f0add219a470b7c38aa",
+          "text": "葡萄",
+          "words": [
+            {
+              "text": "葡萄",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "C-8461",
+      "facet_id": "typed-character-form-retrieval",
+      "part_id": "BANK-C-8461-C-8461",
+      "question_ids": [
+        "BANK-C-8461-C-8461"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-08",
+    "stepId": "S-U4-08-characters-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8404"
+    ],
+    "grammarLessonIds": []
+  }
+}

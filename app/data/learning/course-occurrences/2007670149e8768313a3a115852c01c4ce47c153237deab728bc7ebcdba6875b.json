@@ -1,0 +1,727 @@
+{
+  "id": "EX-CHAR-char-6218",
+  "revision": 2,
+  "unit": "U5-40",
+  "stage": "ST-HSK5",
+  "after": "S-U5-40-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "战",
+  "sourceBlockId": "mandarin-simplified-v1-char-6218",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-6218",
+        "text": "战",
+        "pinyin": "zhàn",
+        "meaning": "to fight; fight",
+        "characters": [
+          {
+            "id": "C-6218",
+            "text": "战"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-68e47415919f7069dd9c3dd0",
+        "text": "打球",
+        "pinyin": "dǎ qiú",
+        "meaning": "to play a ball sport",
+        "characters": [
+          {
+            "id": "C-6253",
+            "text": "打"
+          },
+          {
+            "id": "C-7403",
+            "text": "球"
+          }
+        ]
+      },
+      {
+        "id": "W-R5-XIAO-NAME",
+        "text": "小",
+        "pinyin": "xiǎo",
+        "meaning": "familiar prefix before a surname or personal designation",
+        "characters": [
+          {
+            "id": "C-5C0F",
+            "text": "小"
+          }
+        ]
+      },
+      {
+        "id": "W2104",
+        "text": "不得了",
+        "pinyin": "bùdéliǎo",
+        "meaning": "extremely; terribly (after a degree-complement linker)",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-5F97",
+            "text": "得"
+          },
+          {
+            "id": "C-4E86",
+            "text": "了"
+          }
+        ]
+      },
+      {
+        "id": "W3154",
+        "text": "挑战",
+        "pinyin": "tiǎozhàn",
+        "meaning": "to challenge; to take on a challenge",
+        "characters": [
+          {
+            "id": "C-6311",
+            "text": "挑"
+          },
+          {
+            "id": "C-6218",
+            "text": "战"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "b348b6847a2c4cd6c94969c48532b75842109fcf426a5c6305c6907f93468b08",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6218",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "战",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6218-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3154",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to challenge; to take on a challenge",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "挑战"
+              },
+              {
+                "value": "tiǎozhàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tiao3zhan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "挑战",
+              "pinyin": "tiǎozhàn",
+              "meaning": "to challenge; to take on a challenge",
+              "audio": "2e67972fd876d196b44bd5c1019a2cd832b41330406b7fb062f6c75d61c41f15",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6218-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6218",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "战",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W-R5-XIAO-NAME",
+                "label": "familiar prefix before a surname or personal designation",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-68e47415919f7069dd9c3dd0",
+                "label": "to play a ball sport",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-6218",
+                "label": "to fight; fight",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6218-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "战",
+        "pinyin": "zhàn",
+        "meaning": "to fight; fight",
+        "source": "/stroke-data/6218.json",
+        "reference": {
+          "character": "战",
+          "sha256": "9599664d30df7b95ef7adf10662d95d2b14823289ca5b6a476e71a1dedbd2fbf",
+          "medians": [
+            [
+              [
+                248,
+                738
+              ],
+              [
+                286,
+                711
+              ],
+              [
+                296,
+                697
+              ],
+              [
+                297,
+                366
+              ],
+              [
+                280,
+                338
+              ]
+            ],
+            [
+              [
+                330,
+                533
+              ],
+              [
+                338,
+                542
+              ],
+              [
+                370,
+                546
+              ],
+              [
+                441,
+                573
+              ],
+              [
+                487,
+                578
+              ]
+            ],
+            [
+              [
+                124,
+                314
+              ],
+              [
+                157,
+                287
+              ],
+              [
+                204,
+                72
+              ]
+            ],
+            [
+              [
+                190,
+                285
+              ],
+              [
+                207,
+                300
+              ],
+              [
+                323,
+                322
+              ],
+              [
+                382,
+                341
+              ],
+              [
+                416,
+                335
+              ],
+              [
+                443,
+                308
+              ],
+              [
+                410,
+                196
+              ],
+              [
+                384,
+                179
+              ]
+            ],
+            [
+              [
+                226,
+                105
+              ],
+              [
+                238,
+                121
+              ],
+              [
+                370,
+                146
+              ],
+              [
+                427,
+                148
+              ],
+              [
+                450,
+                140
+              ]
+            ],
+            [
+              [
+                474,
+                456
+              ],
+              [
+                544,
+                461
+              ],
+              [
+                745,
+                539
+              ],
+              [
+                782,
+                539
+              ]
+            ],
+            [
+              [
+                528,
+                787
+              ],
+              [
+                562,
+                773
+              ],
+              [
+                589,
+                747
+              ],
+              [
+                605,
+                586
+              ],
+              [
+                646,
+                390
+              ],
+              [
+                694,
+                252
+              ],
+              [
+                755,
+                144
+              ],
+              [
+                824,
+                68
+              ],
+              [
+                882,
+                43
+              ],
+              [
+                908,
+                90
+              ],
+              [
+                944,
+                215
+              ]
+            ],
+            [
+              [
+                811,
+                457
+              ],
+              [
+                830,
+                416
+              ],
+              [
+                790,
+                328
+              ],
+              [
+                726,
+                236
+              ],
+              [
+                672,
+                179
+              ],
+              [
+                622,
+                141
+              ],
+              [
+                564,
+                103
+              ],
+              [
+                480,
+                63
+              ]
+            ],
+            [
+              [
+                725,
+                741
+              ],
+              [
+                798,
+                699
+              ],
+              [
+                825,
+                662
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6218-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2104",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "extremely; terribly (after a degree-complement linker)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "不得了"
+              },
+              {
+                "value": "bùdéliǎo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu4de2liao3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "不得了",
+              "pinyin": "bùdéliǎo",
+              "meaning": "extremely; terribly (after a degree-complement linker)",
+              "audio": "c99d7d04d937fadafafb0103e0ad2185f04fe934ae27ba09b0cc625981d5965c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6218-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6218",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to fight; fight",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "战"
+              },
+              {
+                "value": "zhàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "战",
+              "pinyin": "zhàn",
+              "meaning": "to fight; fight",
+              "audio": "90a41bba25793163af268fc19a9bd5ac44f74d2cd315420214d96cb6b2057f83",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "90a41bba25793163af268fc19a9bd5ac44f74d2cd315420214d96cb6b2057f83"
+            ],
+            "transcript": [
+              {
+                "text": "战",
+                "pinyin": "zhàn",
+                "meaning": "to fight; fight",
+                "audio": "90a41bba25793163af268fc19a9bd5ac44f74d2cd315420214d96cb6b2057f83",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6218",
+      "character": "战",
+      "lessonIds": [
+        "LESSON-C-6218"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6218-word",
+        "EX-CHAR-char-6218-recognize",
+        "EX-CHAR-char-6218-write",
+        "EX-CHAR-char-6218-familiar",
+        "EX-CHAR-char-6218-recall"
+      ]
+    },
+    "audio": {
+      "90a41bba25793163af268fc19a9bd5ac44f74d2cd315420214d96cb6b2057f83": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-c2538e43c85b38fa0ba71e0d9d8db267208cbc01e771fb85573b3ee6fbcab8c4.mp3",
+          "sha256": "c2538e43c85b38fa0ba71e0d9d8db267208cbc01e771fb85573b3ee6fbcab8c4",
+          "byteLength": 8685,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "c2538e43c85b38fa0ba71e0d9d8db267208cbc01e771fb85573b3ee6fbcab8c4",
+            "text": "战",
+            "words": [
+              {
+                "text": "战",
+                "start": 0.14,
+                "end": 0.26
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-93109ef67a03fcbe9665451fc3ed671e8dfb3be26ab898b2ea8a01af9c3dea1c.mp3",
+          "sha256": "93109ef67a03fcbe9665451fc3ed671e8dfb3be26ab898b2ea8a01af9c3dea1c",
+          "byteLength": 19341,
+          "readAlong": {
+            "audioSha256": "93109ef67a03fcbe9665451fc3ed671e8dfb3be26ab898b2ea8a01af9c3dea1c",
+            "text": "战",
+            "words": [
+              {
+                "text": "战",
+                "start": 0.6299999999999999,
+                "end": 0.69
+              }
+            ]
+          }
+        }
+      },
+      "47e0f47bf8bdba6bc96303d781ac99746c7b74e86e8dec06ca2d623b360ef380": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1757f2eda3b34a9f813ed2c726b387596c8b03ada6c0986e5b68d630cd8d5f30.mp3",
+          "sha256": "1757f2eda3b34a9f813ed2c726b387596c8b03ada6c0986e5b68d630cd8d5f30",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "1757f2eda3b34a9f813ed2c726b387596c8b03ada6c0986e5b68d630cd8d5f30",
+            "text": "打球",
+            "words": [
+              {
+                "text": "打球",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-7369e63f657b3130d6019a9f2fad218e5891920619666b68d36d2fe06edbb6d7.mp3",
+          "sha256": "7369e63f657b3130d6019a9f2fad218e5891920619666b68d36d2fe06edbb6d7",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "7369e63f657b3130d6019a9f2fad218e5891920619666b68d36d2fe06edbb6d7",
+            "text": "打球",
+            "words": [
+              {
+                "text": "打球",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "d60bb25498656c1b43c89f960baa817d30fe05feeec6bbf2f77f94f8ce58bbba": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-7d2be9768288f1be48a74975c4da8e4aa5983665d3a1fb948de68d0e0979c265.mp3",
+          "sha256": "7d2be9768288f1be48a74975c4da8e4aa5983665d3a1fb948de68d0e0979c265",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "7d2be9768288f1be48a74975c4da8e4aa5983665d3a1fb948de68d0e0979c265",
+            "text": "小",
+            "words": [
+              {
+                "text": "小",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-24067f0e7ffcdb6ed9104b9eef9d515ccab6cd0a36ae6a5e91df4628554de4cc.mp3",
+          "sha256": "24067f0e7ffcdb6ed9104b9eef9d515ccab6cd0a36ae6a5e91df4628554de4cc",
+          "byteLength": 7245,
+          "readAlong": {
+            "audioSha256": "24067f0e7ffcdb6ed9104b9eef9d515ccab6cd0a36ae6a5e91df4628554de4cc",
+            "text": "小",
+            "words": [
+              {
+                "text": "小",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "c99d7d04d937fadafafb0103e0ad2185f04fe934ae27ba09b0cc625981d5965c": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-618ffc8d842353b2dab84a4c17713ee39cc6abfa0501bd8dd5cb7803378ff282.mp3",
+          "sha256": "618ffc8d842353b2dab84a4c17713ee39cc6abfa0501bd8dd5cb7803378ff282",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "618ffc8d842353b2dab84a4c17713ee39cc6abfa0501bd8dd5cb7803378ff282",
+            "text": "不得了",
+            "words": [
+              {
+                "text": "不得了",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-074e65890ecb996ce8cbe27ac08692e80e4f0175639cff3dad3f299dd6ea6252.mp3",
+          "sha256": "074e65890ecb996ce8cbe27ac08692e80e4f0175639cff3dad3f299dd6ea6252",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "074e65890ecb996ce8cbe27ac08692e80e4f0175639cff3dad3f299dd6ea6252",
+            "text": "不得了",
+            "words": [
+              {
+                "text": "不得了",
+                "start": 0.16,
+                "end": 0.62
+              }
+            ]
+          }
+        }
+      },
+      "2e67972fd876d196b44bd5c1019a2cd832b41330406b7fb062f6c75d61c41f15": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/71a0ee1fa5951c8a71118c7d641ac8a17b1d5ad0bb1df49a577f3004be307fb1.mp3",
+          "sha256": "71a0ee1fa5951c8a71118c7d641ac8a17b1d5ad0bb1df49a577f3004be307fb1",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "71a0ee1fa5951c8a71118c7d641ac8a17b1d5ad0bb1df49a577f3004be307fb1",
+            "text": "挑战",
+            "words": [
+              {
+                "text": "挑战",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5f881189bec1d316631a7a999190e24a9829fabafd84edf805da1a463f02b1ed.mp3",
+          "sha256": "5f881189bec1d316631a7a999190e24a9829fabafd84edf805da1a463f02b1ed",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "5f881189bec1d316631a7a999190e24a9829fabafd84edf805da1a463f02b1ed",
+            "text": "挑战",
+            "words": [
+              {
+                "text": "挑战",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

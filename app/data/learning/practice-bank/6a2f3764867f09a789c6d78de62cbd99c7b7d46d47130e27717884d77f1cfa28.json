@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2247",
+  "targetId": "W2247",
+  "steps": [
+    {
+      "id": "BANK-W2247-W2247",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2247-W2247",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "rice",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "大米"
+            },
+            {
+              "value": "dàmǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "da4mi3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "大米",
+            "pinyin": "dàmǐ",
+            "meaning": "rice",
+            "singleWord": true,
+            "audio": "5aebcdd41c9d1b538d80152fae540f9797969f102917b73c99841b04931f2aad"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5aebcdd41c9d1b538d80152fae540f9797969f102917b73c99841b04931f2aad": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-092b22d66664da9bbe4e012e28020e7d8215512b08cbc00b0f8282f6677fa6d8.mp3",
+        "sha256": "092b22d66664da9bbe4e012e28020e7d8215512b08cbc00b0f8282f6677fa6d8",
+        "byteLength": 15885,
+        "readAlong": {
+          "audioSha256": "092b22d66664da9bbe4e012e28020e7d8215512b08cbc00b0f8282f6677fa6d8",
+          "text": "大米",
+          "words": [
+            {
+              "text": "大米",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3d9ea9eb54a9fac484374c1275bf2404f2806e3d71543169a61086702d217594.mp3",
+        "sha256": "3d9ea9eb54a9fac484374c1275bf2404f2806e3d71543169a61086702d217594",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "3d9ea9eb54a9fac484374c1275bf2404f2806e3d71543169a61086702d217594",
+          "text": "大米",
+          "words": [
+            {
+              "text": "大米",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2247",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2247-W2247",
+      "question_ids": [
+        "BANK-W2247-W2247"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-08",
+    "stepId": "S-U5-08-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7c73"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0458",
+  "targetId": "W0458",
+  "steps": [
+    {
+      "id": "BANK-W0458-W0458",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0458-W0458",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "few; less",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "少"
+            },
+            {
+              "value": "shǎo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shao3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "少",
+            "pinyin": "shǎo",
+            "meaning": "few; less",
+            "singleWord": true,
+            "audio": "b091172f7e9f89391dceb1d60c5c011a379b98570e3f09adf277db7deb70c689"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b091172f7e9f89391dceb1d60c5c011a379b98570e3f09adf277db7deb70c689": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d10a0c918663f11ca878b1babe4952defb03668d2b3116f9002382e94af60ba4.mp3",
+        "sha256": "d10a0c918663f11ca878b1babe4952defb03668d2b3116f9002382e94af60ba4",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "d10a0c918663f11ca878b1babe4952defb03668d2b3116f9002382e94af60ba4",
+          "text": "少",
+          "words": [
+            {
+              "text": "少",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3b0f8551033e22fe7a78e5053f7b52e2800512a20ff53070386c3504c9c6c214.mp3",
+        "sha256": "3b0f8551033e22fe7a78e5053f7b52e2800512a20ff53070386c3504c9c6c214",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "3b0f8551033e22fe7a78e5053f7b52e2800512a20ff53070386c3504c9c6c214",
+          "text": "少",
+          "words": [
+            {
+              "text": "少",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0458",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0458-W0458",
+      "question_ids": [
+        "BANK-W0458-W0458"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U05-P02",
+    "stepId": "S-U05-words-r4-72",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5c11"
+    ],
+    "grammarLessonIds": []
+  }
+}

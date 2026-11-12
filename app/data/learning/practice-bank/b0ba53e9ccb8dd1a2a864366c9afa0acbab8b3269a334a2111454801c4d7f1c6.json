@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1440",
+  "targetId": "W1440",
+  "steps": [
+    {
+      "id": "BANK-W1440-W1440",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1440-W1440",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "Beijing opera",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "京剧"
+            },
+            {
+              "value": "jīngjù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jing1ju4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "京剧",
+            "pinyin": "jīngjù",
+            "meaning": "Beijing opera",
+            "singleWord": true,
+            "audio": "e650983558cf746b96943e3ed489c01ad8186ca4338e54600031316d56f82842"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e650983558cf746b96943e3ed489c01ad8186ca4338e54600031316d56f82842": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/497cca7105e386a8dbd6e9e6d76ad1170948fea0423472f15e473745c4e88080.mp3",
+        "sha256": "497cca7105e386a8dbd6e9e6d76ad1170948fea0423472f15e473745c4e88080",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "497cca7105e386a8dbd6e9e6d76ad1170948fea0423472f15e473745c4e88080",
+          "text": "京剧",
+          "words": [
+            {
+              "text": "京剧",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1edb64255f0565e40aaf031f2f9dc4a182fd15f4feb171670637bfb149f792f8.mp3",
+        "sha256": "1edb64255f0565e40aaf031f2f9dc4a182fd15f4feb171670637bfb149f792f8",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "1edb64255f0565e40aaf031f2f9dc4a182fd15f4feb171670637bfb149f792f8",
+          "text": "京剧",
+          "words": [
+            {
+              "text": "京剧",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1440",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1440-W1440",
+      "question_ids": [
+        "BANK-W1440-W1440"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-25",
+    "stepId": "S-U4-25-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5267"
+    ],
+    "grammarLessonIds": []
+  }
+}

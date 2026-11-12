@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3933",
+  "targetId": "W3933",
+  "steps": [
+    {
+      "id": "BANK-W3933-W3933",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3933-W3933",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "classifier for buildings",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "栋"
+            },
+            {
+              "value": "dòng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dong4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "栋",
+            "pinyin": "dòng",
+            "meaning": "classifier for buildings",
+            "singleWord": true,
+            "audio": "d22ed251b1c712d4af93d039630f7f54e91ae07633a3e8ed7c0479ecd67ed861"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d22ed251b1c712d4af93d039630f7f54e91ae07633a3e8ed7c0479ecd67ed861": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6a84ec4fdbfd37f76117e3a38d27a5181c331a5e3283b3d8498a7792fb5abd90.mp3",
+        "sha256": "6a84ec4fdbfd37f76117e3a38d27a5181c331a5e3283b3d8498a7792fb5abd90",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "6a84ec4fdbfd37f76117e3a38d27a5181c331a5e3283b3d8498a7792fb5abd90",
+          "text": "栋",
+          "words": [
+            {
+              "text": "栋",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a18fa5a62b011388a7bccb61a9062891990ab833c705194e437e802620af56b5.mp3",
+        "sha256": "a18fa5a62b011388a7bccb61a9062891990ab833c705194e437e802620af56b5",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "a18fa5a62b011388a7bccb61a9062891990ab833c705194e437e802620af56b5",
+          "text": "栋",
+          "words": [
+            {
+              "text": "栋",
+              "start": 0.14,
+              "end": 0.24
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3933",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3933-W3933",
+      "question_ids": [
+        "BANK-W3933-W3933"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-13",
+    "stepId": "S-U6-13-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-680b"
+    ],
+    "grammarLessonIds": []
+  }
+}

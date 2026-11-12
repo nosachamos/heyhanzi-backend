@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0854",
+  "targetId": "W0854",
+  "steps": [
+    {
+      "id": "BANK-W0854-W0854",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0854-W0854",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "history",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "历史"
+            },
+            {
+              "value": "lìshǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "li4shi3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "历史",
+            "pinyin": "lìshǐ",
+            "meaning": "history",
+            "singleWord": true,
+            "audio": "47a9ebf393003745d1453c3e1f7f1a058f99e4e73c0c61960633eae4b17344f4"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "47a9ebf393003745d1453c3e1f7f1a058f99e4e73c0c61960633eae4b17344f4": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f24e86757db0fa24fed8c4513c41a09a82b00295f197df54ca626e7ccc2a4958.mp3",
+        "sha256": "f24e86757db0fa24fed8c4513c41a09a82b00295f197df54ca626e7ccc2a4958",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "f24e86757db0fa24fed8c4513c41a09a82b00295f197df54ca626e7ccc2a4958",
+          "text": "历史",
+          "words": [
+            {
+              "text": "历史",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-0e5a02b7706e2aeb52ee62f27770ccb260bb351eaeb0b59b75b7ee0e93af2e23.mp3",
+        "sha256": "0e5a02b7706e2aeb52ee62f27770ccb260bb351eaeb0b59b75b7ee0e93af2e23",
+        "byteLength": 15309,
+        "readAlong": {
+          "audioSha256": "0e5a02b7706e2aeb52ee62f27770ccb260bb351eaeb0b59b75b7ee0e93af2e23",
+          "text": "历史",
+          "words": [
+            {
+              "text": "历史",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0854",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0854-W0854",
+      "question_ids": [
+        "BANK-W0854-W0854"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-16",
+    "stepId": "S-U3-16-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-53f2"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4320",
+  "targetId": "W4320",
+  "steps": [
+    {
+      "id": "BANK-W4320-W4320",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4320-W4320",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "gold",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "金子"
+            },
+            {
+              "value": "jīnzi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jin1zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "金子",
+            "pinyin": "jīnzi",
+            "meaning": "gold",
+            "singleWord": true,
+            "audio": "53c178027b52f7022523dcb2363182cc2e0d0e734ea3ebf04d4592b67c557d62"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "53c178027b52f7022523dcb2363182cc2e0d0e734ea3ebf04d4592b67c557d62": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/319786f8292dd5a71676bc7332f6651db44dd2181a580f1f43f467a2a1f2752f.mp3",
+        "sha256": "319786f8292dd5a71676bc7332f6651db44dd2181a580f1f43f467a2a1f2752f",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "319786f8292dd5a71676bc7332f6651db44dd2181a580f1f43f467a2a1f2752f",
+          "text": "金子",
+          "words": [
+            {
+              "text": "金子",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/8b6eac2845e314e5c96594047bea2fb645789ac15b3f10f4ba6e0d61d48ecb11.mp3",
+        "sha256": "8b6eac2845e314e5c96594047bea2fb645789ac15b3f10f4ba6e0d61d48ecb11",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "8b6eac2845e314e5c96594047bea2fb645789ac15b3f10f4ba6e0d61d48ecb11",
+          "text": "金子",
+          "words": [
+            {
+              "text": "金子",
+              "start": 0.27,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4320",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4320-W4320",
+      "question_ids": [
+        "BANK-W4320-W4320"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-10",
+    "stepId": "S-U6-10-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-91d1"
+    ],
+    "grammarLessonIds": []
+  }
+}

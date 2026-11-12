@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0341",
+  "targetId": "W0341",
+  "steps": [
+    {
+      "id": "BANK-W0341-W0341",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0341-W0341",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "thank you",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "谢谢"
+            },
+            {
+              "value": "xièxie",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xie4xie5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "谢谢",
+            "pinyin": "xièxie",
+            "meaning": "thank you",
+            "singleWord": true,
+            "audio": "77c9dcfb11bca11b415da7602e960e26a88db99372c35891d5ceccad29b06263"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "77c9dcfb11bca11b415da7602e960e26a88db99372c35891d5ceccad29b06263": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ec19315f0bcd75f00a9d51bd6c44c698ca4cc8554a55becc6e68ea2cf647f122.mp3",
+        "sha256": "ec19315f0bcd75f00a9d51bd6c44c698ca4cc8554a55becc6e68ea2cf647f122",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "ec19315f0bcd75f00a9d51bd6c44c698ca4cc8554a55becc6e68ea2cf647f122",
+          "text": "谢谢",
+          "words": [
+            {
+              "text": "谢谢",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d3969b605c8bc874330f91beaa8a279f9a1627a82f209aacb3f0e90fa35b2dbc.mp3",
+        "sha256": "d3969b605c8bc874330f91beaa8a279f9a1627a82f209aacb3f0e90fa35b2dbc",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "d3969b605c8bc874330f91beaa8a279f9a1627a82f209aacb3f0e90fa35b2dbc",
+          "text": "谢谢",
+          "words": [
+            {
+              "text": "谢谢",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0341",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0341-W0341",
+      "question_ids": [
+        "BANK-W0341-W0341"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U01",
+    "stepId": "S-U01-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8c22"
+    ],
+    "grammarLessonIds": []
+  }
+}

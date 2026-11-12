@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0121",
+  "targetId": "W0121",
+  "steps": [
+    {
+      "id": "BANK-W0121-W0121",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0121-W0121",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "know information",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "知道"
+            },
+            {
+              "value": "zhīdào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhi1dao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "知道",
+            "pinyin": "zhīdào",
+            "meaning": "know information",
+            "singleWord": true,
+            "audio": "e67a7d2511fee7f342c4717093d3bf29ab12e4f9bc6863cf250b8bb7e3e97246"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e67a7d2511fee7f342c4717093d3bf29ab12e4f9bc6863cf250b8bb7e3e97246": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-991191d9f9f2dacc9536cd03d155c21b17e87196ff95ca31980a42c086215fc9.mp3",
+        "sha256": "991191d9f9f2dacc9536cd03d155c21b17e87196ff95ca31980a42c086215fc9",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "991191d9f9f2dacc9536cd03d155c21b17e87196ff95ca31980a42c086215fc9",
+          "text": "知道",
+          "words": [
+            {
+              "text": "知道",
+              "start": 0.22,
+              "end": 0.52
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-64ccd490071c3a5f862eb60fa78660fe38016e41018898acfd20dffa9754a59c.mp3",
+        "sha256": "64ccd490071c3a5f862eb60fa78660fe38016e41018898acfd20dffa9754a59c",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "64ccd490071c3a5f862eb60fa78660fe38016e41018898acfd20dffa9754a59c",
+          "text": "知道",
+          "words": [
+            {
+              "text": "知道",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0121",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0121-W0121",
+      "question_ids": [
+        "BANK-W0121-W0121"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U11",
+    "stepId": "S-U11-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9053"
+    ],
+    "grammarLessonIds": []
+  }
+}

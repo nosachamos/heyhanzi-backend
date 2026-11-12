@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0419",
+  "targetId": "W0419",
+  "steps": [
+    {
+      "id": "BANK-W0419-W0419",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0419-W0419",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "subject; course",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "课"
+            },
+            {
+              "value": "kè",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ke4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "课",
+            "pinyin": "kè",
+            "meaning": "subject; course",
+            "singleWord": true,
+            "audio": "21237fd557f1384776e33f3f9d33e3b0e53307d9bda52e92e57c17a090aabfb2"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "21237fd557f1384776e33f3f9d33e3b0e53307d9bda52e92e57c17a090aabfb2": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2bcc4cbf398bbc48230a7b80b1351d5998690109e674d75e76a6ac79230d8c75.mp3",
+        "sha256": "2bcc4cbf398bbc48230a7b80b1351d5998690109e674d75e76a6ac79230d8c75",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "2bcc4cbf398bbc48230a7b80b1351d5998690109e674d75e76a6ac79230d8c75",
+          "text": "课",
+          "words": [
+            {
+              "text": "课",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-93a09082406678fe03add51921f6b9820f4ec31503725fd88a92f11b12045b03.mp3",
+        "sha256": "93a09082406678fe03add51921f6b9820f4ec31503725fd88a92f11b12045b03",
+        "byteLength": 6669,
+        "readAlong": {
+          "audioSha256": "93a09082406678fe03add51921f6b9820f4ec31503725fd88a92f11b12045b03",
+          "text": "课",
+          "words": [
+            {
+              "text": "课",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0419",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0419-W0419",
+      "question_ids": [
+        "BANK-W0419-W0419"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U13",
+    "stepId": "S-U13-words-r4-21",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8bfe"
+    ],
+    "grammarLessonIds": []
+  }
+}

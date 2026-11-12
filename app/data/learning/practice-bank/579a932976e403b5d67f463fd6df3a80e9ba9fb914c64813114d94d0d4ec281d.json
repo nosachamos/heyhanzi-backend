@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W0385",
+  "targetId": "W0385",
+  "steps": [
+    {
+      "id": "BANK-W0385-W0385",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0385-W0385",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "shop; store",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "店"
+            },
+            {
+              "value": "diàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dian4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "店",
+            "pinyin": "diàn",
+            "meaning": "shop; store",
+            "singleWord": true,
+            "audio": "a63f55464932fbbfa9c31283e908f025ffadc689efa2b873a6846f73f3dbd834"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a63f55464932fbbfa9c31283e908f025ffadc689efa2b873a6846f73f3dbd834": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-871c1f408f01898f0ac364c48fc33bf4b4f8fdafd407724ff2b4ae53fd8b0968.mp3",
+        "sha256": "871c1f408f01898f0ac364c48fc33bf4b4f8fdafd407724ff2b4ae53fd8b0968",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "871c1f408f01898f0ac364c48fc33bf4b4f8fdafd407724ff2b4ae53fd8b0968",
+          "text": "店",
+          "words": [
+            {
+              "text": "店",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-54263547fab8eea3cbf9f98da1cd7bd0c5b7c8eb6b2e3129740a24f84f1ff076.mp3",
+        "sha256": "54263547fab8eea3cbf9f98da1cd7bd0c5b7c8eb6b2e3129740a24f84f1ff076",
+        "byteLength": 8109,
+        "qualityWarning": "too-fast",
+        "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+        "readAlong": {
+          "audioSha256": "54263547fab8eea3cbf9f98da1cd7bd0c5b7c8eb6b2e3129740a24f84f1ff076",
+          "text": "店",
+          "words": [
+            {
+              "text": "店",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0385",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0385-W0385",
+      "question_ids": [
+        "BANK-W0385-W0385"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U05-P02",
+    "stepId": "S-U05-P02-r5-word-22",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e97"
+    ],
+    "grammarLessonIds": []
+  }
+}

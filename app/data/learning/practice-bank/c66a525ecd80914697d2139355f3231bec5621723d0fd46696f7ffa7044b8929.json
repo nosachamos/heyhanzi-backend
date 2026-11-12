@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0553",
+  "targetId": "W0553",
+  "steps": [
+    {
+      "id": "BANK-W0553-W0553",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0553-W0553",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "classroom",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "教室"
+            },
+            {
+              "value": "jiàoshì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jiao4shi4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "教室",
+            "pinyin": "jiàoshì",
+            "meaning": "classroom",
+            "singleWord": true,
+            "audio": "272a600ad5a2b510afc71b1b61b3d8cfae924fab93104e07cba8a688d3211367"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "272a600ad5a2b510afc71b1b61b3d8cfae924fab93104e07cba8a688d3211367": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-e5698b95f34392083e813e8ebe4b710470ca277e11f1e827def79407008a76e5.mp3",
+        "sha256": "e5698b95f34392083e813e8ebe4b710470ca277e11f1e827def79407008a76e5",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "e5698b95f34392083e813e8ebe4b710470ca277e11f1e827def79407008a76e5",
+          "text": "教室",
+          "words": [
+            {
+              "text": "教室",
+              "start": 0.16,
+              "end": 0.6
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ef72ec6564c0d9f9a0da772010b21c91d6b05b08c3cf5379e7b8c1a9d304df17.mp3",
+        "sha256": "ef72ec6564c0d9f9a0da772010b21c91d6b05b08c3cf5379e7b8c1a9d304df17",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "ef72ec6564c0d9f9a0da772010b21c91d6b05b08c3cf5379e7b8c1a9d304df17",
+          "text": "教室",
+          "words": [
+            {
+              "text": "教室",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0553",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0553-W0553",
+      "question_ids": [
+        "BANK-W0553-W0553"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U24-P01",
+    "stepId": "S-U24-words-r4-5",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5ba4"
+    ],
+    "grammarLessonIds": []
+  }
+}

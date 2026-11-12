@@ -1,0 +1,623 @@
+{
+  "id": "EX-CHAR-char-957f",
+  "revision": 2,
+  "unit": "U17-P01",
+  "stage": "ST-HSK2",
+  "after": "S-U17-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "长",
+  "sourceBlockId": "mandarin-simplified-v1-char-957f",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-957f",
+        "text": "长",
+        "pinyin": "cháng",
+        "meaning": "long; (bound form) length",
+        "characters": [
+          {
+            "id": "C-957F",
+            "text": "长"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-4cfd6b36b76237ca2cf31f24",
+        "text": "老公",
+        "pinyin": "lǎo gōng",
+        "meaning": "husband (informal)",
+        "characters": [
+          {
+            "id": "C-8001",
+            "text": "老"
+          },
+          {
+            "id": "C-516C",
+            "text": "公"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-4d474ac21b17b4cb241a6fee",
+        "text": "不用说",
+        "pinyin": "bù yòng shuō",
+        "meaning": "needless to say",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-7528",
+            "text": "用"
+          },
+          {
+            "id": "C-8BF4",
+            "text": "说"
+          }
+        ]
+      },
+      {
+        "id": "W0604",
+        "text": "外面",
+        "pinyin": "wàimiàn",
+        "meaning": "outside; surface",
+        "characters": [
+          {
+            "id": "C-5916",
+            "text": "外"
+          },
+          {
+            "id": "C-9762",
+            "text": "面"
+          }
+        ]
+      },
+      {
+        "id": "W2140",
+        "text": "长远",
+        "pinyin": "chángyuǎn",
+        "meaning": "long-term; long-range",
+        "characters": [
+          {
+            "id": "C-957F",
+            "text": "长"
+          },
+          {
+            "id": "C-8FDC",
+            "text": "远"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "5a57f1a55bb47321bd3080856e4c8454da5ecc0e68a4622b67a3d6d05dea8eff",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-957f",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "长",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-957f-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W2140",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "long-term; long-range",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "长远"
+              },
+              {
+                "value": "chángyuǎn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chang2yuan3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "长远",
+              "pinyin": "chángyuǎn",
+              "meaning": "long-term; long-range",
+              "audio": "f74251ecb56e215434edc94d0375a8439d897fe2cfcdde479722e5635f27f1a3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-957f-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-957f",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "长",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0604",
+                "label": "outside; surface",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-957f",
+                "label": "long; (bound form) length",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-4cfd6b36b76237ca2cf31f24",
+                "label": "husband (informal)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-957f-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "长",
+        "pinyin": "cháng",
+        "meaning": "long; (bound form) length",
+        "source": "/stroke-data/957f.json",
+        "reference": {
+          "character": "长",
+          "sha256": "cf97ec808de9c052bd9daab6ede08ece1bdd102b72da31a1e304d391d22c2634",
+          "medians": [
+            [
+              [
+                630,
+                744
+              ],
+              [
+                650,
+                716
+              ],
+              [
+                653,
+                688
+              ],
+              [
+                594,
+                612
+              ],
+              [
+                543,
+                560
+              ],
+              [
+                479,
+                504
+              ],
+              [
+                453,
+                489
+              ]
+            ],
+            [
+              [
+                141,
+                368
+              ],
+              [
+                207,
+                352
+              ],
+              [
+                427,
+                391
+              ],
+              [
+                793,
+                438
+              ],
+              [
+                823,
+                434
+              ],
+              [
+                888,
+                411
+              ]
+            ],
+            [
+              [
+                336,
+                754
+              ],
+              [
+                374,
+                732
+              ],
+              [
+                389,
+                714
+              ],
+              [
+                395,
+                427
+              ],
+              [
+                379,
+                117
+              ],
+              [
+                387,
+                64
+              ],
+              [
+                404,
+                67
+              ],
+              [
+                436,
+                87
+              ],
+              [
+                545,
+                191
+              ]
+            ],
+            [
+              [
+                456,
+                369
+              ],
+              [
+                491,
+                357
+              ],
+              [
+                630,
+                206
+              ],
+              [
+                727,
+                129
+              ],
+              [
+                770,
+                108
+              ],
+              [
+                952,
+                82
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-957f-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-4d474ac21b17b4cb241a6fee",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "needless to say",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "不用说"
+              },
+              {
+                "value": "bù yòng shuō",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu4yong4shuo1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "不用说",
+              "pinyin": "bù yòng shuō",
+              "meaning": "needless to say",
+              "audio": "2bc6414fe2980ceb5fd6e61d78df988787e9997031748f5f2ca44ebca346b270",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-957f-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-957f",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "long; (bound form) length",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "长"
+              },
+              {
+                "value": "cháng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "长",
+              "pinyin": "cháng",
+              "meaning": "long; (bound form) length",
+              "audio": "e760d7a879a8f3a2ce4bc552754ee58457ebb352db3b0353034a68ac2027e482",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "e760d7a879a8f3a2ce4bc552754ee58457ebb352db3b0353034a68ac2027e482"
+            ],
+            "transcript": [
+              {
+                "text": "长",
+                "pinyin": "cháng",
+                "meaning": "long; (bound form) length",
+                "audio": "e760d7a879a8f3a2ce4bc552754ee58457ebb352db3b0353034a68ac2027e482",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-957F",
+      "character": "长",
+      "lessonIds": [
+        "LESSON-C-957F"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-957f-word",
+        "EX-CHAR-char-957f-recognize",
+        "EX-CHAR-char-957f-write",
+        "EX-CHAR-char-957f-familiar",
+        "EX-CHAR-char-957f-recall"
+      ]
+    },
+    "audio": {
+      "e760d7a879a8f3a2ce4bc552754ee58457ebb352db3b0353034a68ac2027e482": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2bd2d9a953fb059b08ce8813a6aab9ab25e1b609fe548095be9938798509118b.mp3",
+          "sha256": "2bd2d9a953fb059b08ce8813a6aab9ab25e1b609fe548095be9938798509118b",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "2bd2d9a953fb059b08ce8813a6aab9ab25e1b609fe548095be9938798509118b",
+            "text": "长",
+            "words": [
+              {
+                "text": "长",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-10fd8bdcf48b23ed142276148918e3301165e4e5e0d847049d179323a518ee6d.mp3",
+          "sha256": "10fd8bdcf48b23ed142276148918e3301165e4e5e0d847049d179323a518ee6d",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "10fd8bdcf48b23ed142276148918e3301165e4e5e0d847049d179323a518ee6d",
+            "text": "长",
+            "words": [
+              {
+                "text": "长",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "66b28c895ec6083191fb8d9541536b1a479decc78187c2c3ae5acc0a93f8c2b0": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-129d46d7454c80c6b5488a604ce86bd2af8424658892c4ed569c489120a0d076.mp3",
+          "sha256": "129d46d7454c80c6b5488a604ce86bd2af8424658892c4ed569c489120a0d076",
+          "byteLength": 17901,
+          "readAlong": {
+            "audioSha256": "129d46d7454c80c6b5488a604ce86bd2af8424658892c4ed569c489120a0d076",
+            "text": "老公",
+            "words": [
+              {
+                "text": "老公",
+                "start": 0.39,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-4a224395fc8f4b0c0655d84545751af2952c438eb891469dfb8c628191e25641.mp3",
+          "sha256": "4a224395fc8f4b0c0655d84545751af2952c438eb891469dfb8c628191e25641",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "4a224395fc8f4b0c0655d84545751af2952c438eb891469dfb8c628191e25641",
+            "text": "老公",
+            "words": [
+              {
+                "text": "老公",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "2bc6414fe2980ceb5fd6e61d78df988787e9997031748f5f2ca44ebca346b270": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/19c28ca9e4c7beb201eeb3e0ded1be80d1e4b4674a6683bbd6e2a6e56e50910c.mp3",
+          "sha256": "19c28ca9e4c7beb201eeb3e0ded1be80d1e4b4674a6683bbd6e2a6e56e50910c",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "19c28ca9e4c7beb201eeb3e0ded1be80d1e4b4674a6683bbd6e2a6e56e50910c",
+            "text": "不用说",
+            "words": [
+              {
+                "text": "不用说",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d29a75bfb779a3a3022b6c971eaad1670c172848c956887dc64ef0ca750b2dc0.mp3",
+          "sha256": "d29a75bfb779a3a3022b6c971eaad1670c172848c956887dc64ef0ca750b2dc0",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "d29a75bfb779a3a3022b6c971eaad1670c172848c956887dc64ef0ca750b2dc0",
+            "text": "不用说",
+            "words": [
+              {
+                "text": "不用说",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "6a03ebe764be50f355ead8b5a27576ae24f0a38383add57702e15fce33165635": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c93538c33423c17c817767fc6577f16e1764124fe27cd8df26d196dc6fc76f4c.mp3",
+          "sha256": "c93538c33423c17c817767fc6577f16e1764124fe27cd8df26d196dc6fc76f4c",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "c93538c33423c17c817767fc6577f16e1764124fe27cd8df26d196dc6fc76f4c",
+            "text": "外面",
+            "words": [
+              {
+                "text": "外面",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8d79f3073d1029171d3ca231687eb4d71a3d806706d36ef93639e60503e2fc24.mp3",
+          "sha256": "8d79f3073d1029171d3ca231687eb4d71a3d806706d36ef93639e60503e2fc24",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "8d79f3073d1029171d3ca231687eb4d71a3d806706d36ef93639e60503e2fc24",
+            "text": "外面",
+            "words": [
+              {
+                "text": "外面",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "f74251ecb56e215434edc94d0375a8439d897fe2cfcdde479722e5635f27f1a3": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d0335b9a4d69d134d78e868fcf1b9e73baad30147bef6aa94e54e059c04df951.mp3",
+          "sha256": "d0335b9a4d69d134d78e868fcf1b9e73baad30147bef6aa94e54e059c04df951",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "d0335b9a4d69d134d78e868fcf1b9e73baad30147bef6aa94e54e059c04df951",
+            "text": "长远",
+            "words": [
+              {
+                "text": "长远",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/71bb92f7b2e3829ad106fdb6256c0645fd26876441f0196efd80b5afc654bc34.mp3",
+          "sha256": "71bb92f7b2e3829ad106fdb6256c0645fd26876441f0196efd80b5afc654bc34",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "71bb92f7b2e3829ad106fdb6256c0645fd26876441f0196efd80b5afc654bc34",
+            "text": "长远",
+            "words": [
+              {
+                "text": "长远",
+                "start": 0.32999999999999996,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

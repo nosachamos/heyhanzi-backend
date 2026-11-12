@@ -1,0 +1,677 @@
+{
+  "id": "EX-CHAR-char-5e8a",
+  "revision": 2,
+  "unit": "U13",
+  "stage": "ST-HSK1",
+  "after": "S-U13-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "床",
+  "sourceBlockId": "mandarin-simplified-v1-char-5e8a",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5e8a",
+        "text": "床",
+        "pinyin": "chuáng",
+        "meaning": "bed; couch",
+        "characters": [
+          {
+            "id": "C-5E8A",
+            "text": "床"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-4b848d5eeb4e2379c974edf3",
+        "text": "少见",
+        "pinyin": "shǎojiàn",
+        "meaning": "rare; seldom seen; (formal) it's a rare pleasure to see you",
+        "characters": [
+          {
+            "id": "C-5C11",
+            "text": "少"
+          },
+          {
+            "id": "C-89C1",
+            "text": "见"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-9973618c623e55ce3894cc86",
+        "text": "上床",
+        "pinyin": "shàng chuáng",
+        "meaning": "to go to bed",
+        "characters": [
+          {
+            "id": "C-4E0A",
+            "text": "上"
+          },
+          {
+            "id": "C-5E8A",
+            "text": "床"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ad76c86e5fdffeda03411880",
+        "text": "那天",
+        "pinyin": "nà tiān",
+        "meaning": "that day",
+        "characters": [
+          {
+            "id": "C-90A3",
+            "text": "那"
+          },
+          {
+            "id": "C-5929",
+            "text": "天"
+          }
+        ]
+      },
+      {
+        "id": "W0415",
+        "text": "饺子",
+        "pinyin": "jiǎozi",
+        "meaning": "dumpling; pot-sticker",
+        "characters": [
+          {
+            "id": "C-997A",
+            "text": "饺"
+          },
+          {
+            "id": "C-5B50",
+            "text": "子"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "fe5400069759833612df6695606b8a17d071bdf99d1e3c953fd05eeb518cc72f",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5e8a",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "床",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5e8a-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-9973618c623e55ce3894cc86",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to go to bed",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "上床"
+              },
+              {
+                "value": "shàng chuáng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shang4chuang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "上床",
+              "pinyin": "shàng chuáng",
+              "meaning": "to go to bed",
+              "audio": "dbcd6fe9cc7b3df6be63ed92c044d690b185bac8733a55d8c941c2aa14e72b03",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5e8a-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5e8a",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "床",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0415",
+                "label": "dumpling; pot-sticker",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5e8a",
+                "label": "bed; couch",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-4b848d5eeb4e2379c974edf3",
+                "label": "rare; seldom seen",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5e8a-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "床",
+        "pinyin": "chuáng",
+        "meaning": "bed; couch",
+        "source": "/stroke-data/5e8a.json",
+        "reference": {
+          "character": "床",
+          "sha256": "5e21ba7371c0f7b1e91df25a904ab49af3655eb851c3ef0fbdb6a39fef89917e",
+          "medians": [
+            [
+              [
+                459,
+                855
+              ],
+              [
+                545,
+                807
+              ],
+              [
+                574,
+                767
+              ]
+            ],
+            [
+              [
+                333,
+                656
+              ],
+              [
+                366,
+                642
+              ],
+              [
+                406,
+                645
+              ],
+              [
+                592,
+                672
+              ],
+              [
+                697,
+                696
+              ],
+              [
+                739,
+                702
+              ],
+              [
+                775,
+                698
+              ]
+            ],
+            [
+              [
+                271,
+                674
+              ],
+              [
+                301,
+                640
+              ],
+              [
+                306,
+                620
+              ],
+              [
+                279,
+                451
+              ],
+              [
+                234,
+                281
+              ],
+              [
+                208,
+                216
+              ],
+              [
+                147,
+                106
+              ],
+              [
+                97,
+                39
+              ],
+              [
+                50,
+                -10
+              ]
+            ],
+            [
+              [
+                355,
+                420
+              ],
+              [
+                409,
+                413
+              ],
+              [
+                708,
+                476
+              ],
+              [
+                755,
+                479
+              ],
+              [
+                789,
+                472
+              ]
+            ],
+            [
+              [
+                517,
+                607
+              ],
+              [
+                544,
+                586
+              ],
+              [
+                566,
+                557
+              ],
+              [
+                549,
+                -50
+              ]
+            ],
+            [
+              [
+                530,
+                407
+              ],
+              [
+                521,
+                397
+              ],
+              [
+                506,
+                349
+              ],
+              [
+                428,
+                238
+              ],
+              [
+                331,
+                144
+              ],
+              [
+                253,
+                94
+              ]
+            ],
+            [
+              [
+                591,
+                384
+              ],
+              [
+                603,
+                359
+              ],
+              [
+                651,
+                302
+              ],
+              [
+                736,
+                212
+              ],
+              [
+                809,
+                147
+              ],
+              [
+                867,
+                128
+              ],
+              [
+                992,
+                108
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5e8a-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-ad76c86e5fdffeda03411880",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "that day",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "那天"
+              },
+              {
+                "value": "nà tiān",
+                "mode": "pinyin"
+              },
+              {
+                "value": "na4tian1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "那天",
+              "pinyin": "nà tiān",
+              "meaning": "that day",
+              "audio": "db549dde5e70677df2d73349eb48093b5eab815ba51b082648c20e3348bbf44b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5e8a-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5e8a",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "bed; couch",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "床"
+              },
+              {
+                "value": "chuáng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chuang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "床",
+              "pinyin": "chuáng",
+              "meaning": "bed; couch",
+              "audio": "fc55b0f260382784c128c37cb37887285555049c43e0ccaee98746ba2f521f01",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "fc55b0f260382784c128c37cb37887285555049c43e0ccaee98746ba2f521f01"
+            ],
+            "transcript": [
+              {
+                "text": "床",
+                "pinyin": "chuáng",
+                "meaning": "bed; couch",
+                "audio": "fc55b0f260382784c128c37cb37887285555049c43e0ccaee98746ba2f521f01",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5E8A",
+      "character": "床",
+      "lessonIds": [
+        "LESSON-C-5E8A"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5e8a-word",
+        "EX-CHAR-char-5e8a-recognize",
+        "EX-CHAR-char-5e8a-write",
+        "EX-CHAR-char-5e8a-familiar",
+        "EX-CHAR-char-5e8a-recall"
+      ]
+    },
+    "audio": {
+      "fc55b0f260382784c128c37cb37887285555049c43e0ccaee98746ba2f521f01": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-4ec0b92f19d7debd5796c577d37889848f4cb27bfa475865c974107d0f940196.mp3",
+          "sha256": "4ec0b92f19d7debd5796c577d37889848f4cb27bfa475865c974107d0f940196",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "4ec0b92f19d7debd5796c577d37889848f4cb27bfa475865c974107d0f940196",
+            "text": "床",
+            "words": [
+              {
+                "text": "床",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-648bbefc38910d8b788d68bf974190c6d7160a7aa59598c2bb397b55cd9d6d32.mp3",
+          "sha256": "648bbefc38910d8b788d68bf974190c6d7160a7aa59598c2bb397b55cd9d6d32",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "648bbefc38910d8b788d68bf974190c6d7160a7aa59598c2bb397b55cd9d6d32",
+            "text": "床",
+            "words": [
+              {
+                "text": "床",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "0b0f3b30b07cddb832a79773fddd546aaf61ab5474a34fbb2c09a6d945c15d01": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b5ac7b1b9ad6058a47ae7d7c813a076ea62e04b1d2fbb31b172176c132a461fc.mp3",
+          "sha256": "b5ac7b1b9ad6058a47ae7d7c813a076ea62e04b1d2fbb31b172176c132a461fc",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "b5ac7b1b9ad6058a47ae7d7c813a076ea62e04b1d2fbb31b172176c132a461fc",
+            "text": "少见",
+            "words": [
+              {
+                "text": "少见",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3008f2cc2c59b58d51aae13b963cc2ffb90cf651d1cb100f286d939e6ca1cddc.mp3",
+          "sha256": "3008f2cc2c59b58d51aae13b963cc2ffb90cf651d1cb100f286d939e6ca1cddc",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "3008f2cc2c59b58d51aae13b963cc2ffb90cf651d1cb100f286d939e6ca1cddc",
+            "text": "少见",
+            "words": [
+              {
+                "text": "少见",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "dbcd6fe9cc7b3df6be63ed92c044d690b185bac8733a55d8c941c2aa14e72b03": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ac993c84ed3240f4bf28582d6399b2e4d6bf78c33e8872c5a4893399eb315e67.mp3",
+          "sha256": "ac993c84ed3240f4bf28582d6399b2e4d6bf78c33e8872c5a4893399eb315e67",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "ac993c84ed3240f4bf28582d6399b2e4d6bf78c33e8872c5a4893399eb315e67",
+            "text": "上床",
+            "words": [
+              {
+                "text": "上床",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/4062a36ec27fa2563f99af1174ba794702609e9a8dcfee9f4fc9857f054088bf.mp3",
+          "sha256": "4062a36ec27fa2563f99af1174ba794702609e9a8dcfee9f4fc9857f054088bf",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "4062a36ec27fa2563f99af1174ba794702609e9a8dcfee9f4fc9857f054088bf",
+            "text": "上床",
+            "words": [
+              {
+                "text": "上床",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "db549dde5e70677df2d73349eb48093b5eab815ba51b082648c20e3348bbf44b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-929f75bc2f58c2b2e346ea92564bb539dcff25433622c705e0d2be0304632626.mp3",
+          "sha256": "929f75bc2f58c2b2e346ea92564bb539dcff25433622c705e0d2be0304632626",
+          "byteLength": 19053,
+          "readAlong": {
+            "audioSha256": "929f75bc2f58c2b2e346ea92564bb539dcff25433622c705e0d2be0304632626",
+            "text": "那天",
+            "words": [
+              {
+                "text": "那天",
+                "start": 0.15,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-83c7aa0919e310b775c909f70ae35b796233b6c553e9c3ff526aa29dc66d9129.mp3",
+          "sha256": "83c7aa0919e310b775c909f70ae35b796233b6c553e9c3ff526aa29dc66d9129",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "83c7aa0919e310b775c909f70ae35b796233b6c553e9c3ff526aa29dc66d9129",
+            "text": "那天",
+            "words": [
+              {
+                "text": "那天",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "5db51c1514f44f1acc5c295259166479e76543e4c7bd4f39d5dabd4bd5fd8c26": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-33b1083c4b20299de4c2f2f4e64afa9498a6e3d2fcccfa2280205d5555277004.mp3",
+          "sha256": "33b1083c4b20299de4c2f2f4e64afa9498a6e3d2fcccfa2280205d5555277004",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "33b1083c4b20299de4c2f2f4e64afa9498a6e3d2fcccfa2280205d5555277004",
+            "text": "饺子",
+            "words": [
+              {
+                "text": "饺子",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-570d20cbb022c1cf04753fe4965b05319b35f1946a0af2b0fd572a3d45feb45d.mp3",
+          "sha256": "570d20cbb022c1cf04753fe4965b05319b35f1946a0af2b0fd572a3d45feb45d",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "570d20cbb022c1cf04753fe4965b05319b35f1946a0af2b0fd572a3d45feb45d",
+            "text": "饺子",
+            "words": [
+              {
+                "text": "饺子",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

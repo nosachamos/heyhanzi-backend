@@ -1,0 +1,735 @@
+{
+  "id": "EX-CHAR-char-6ce1",
+  "revision": 2,
+  "unit": "U6-29-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-29-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "泡",
+  "sourceBlockId": "mandarin-simplified-v1-char-6ce1",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5c4a",
+        "text": "届",
+        "pinyin": "jiè",
+        "meaning": "to arrive at (place or time); period",
+        "characters": [
+          {
+            "id": "C-5C4A",
+            "text": "届"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-6ce1",
+        "text": "泡",
+        "pinyin": "pào",
+        "meaning": "bubble; foam; blister",
+        "characters": [
+          {
+            "id": "C-6CE1",
+            "text": "泡"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-6cdf4942498b7099bdaa5999",
+        "text": "灯泡",
+        "pinyin": "dēng pào",
+        "meaning": "light bulb",
+        "characters": [
+          {
+            "id": "C-706F",
+            "text": "灯"
+          },
+          {
+            "id": "C-6CE1",
+            "text": "泡"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-7ebef33267936f6dc174c28b",
+        "text": "夺冠",
+        "pinyin": "duó guàn",
+        "meaning": "to seize the crown",
+        "characters": [
+          {
+            "id": "C-593A",
+            "text": "夺"
+          },
+          {
+            "id": "C-51A0",
+            "text": "冠"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f4bae39cbc07ca5cdcaac3ed",
+        "text": "相通",
+        "pinyin": "xiāng tōng",
+        "meaning": "interlinked",
+        "characters": [
+          {
+            "id": "C-76F8",
+            "text": "相"
+          },
+          {
+            "id": "C-901A",
+            "text": "通"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "8e66b0c94a74dd72717a5b810a2b37cfbcd39e816cb7d2bb0b264b7319856bb5",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6ce1",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "泡",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6ce1-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-6cdf4942498b7099bdaa5999",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "light bulb",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "灯泡"
+              },
+              {
+                "value": "dēng pào",
+                "mode": "pinyin"
+              },
+              {
+                "value": "deng1pao4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "灯泡",
+              "pinyin": "dēng pào",
+              "meaning": "light bulb",
+              "audio": "2097e1b1be2a369db93f33705d420391fe53166cb8cc5a92426c6235b31131d2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6ce1-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6ce1",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "泡",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-7ebef33267936f6dc174c28b",
+                "label": "to seize the crown",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5c4a",
+                "label": "to arrive at (place or time); period",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-6ce1",
+                "label": "bubble; foam",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6ce1-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "泡",
+        "pinyin": "pào",
+        "meaning": "bubble; foam",
+        "source": "/stroke-data/6ce1.json",
+        "reference": {
+          "character": "泡",
+          "sha256": "d387179b1d72f11436e621afc487e681f40fae72ddee17cded93634c1a81acab",
+          "medians": [
+            [
+              [
+                210,
+                731
+              ],
+              [
+                289,
+                682
+              ],
+              [
+                316,
+                643
+              ]
+            ],
+            [
+              [
+                124,
+                503
+              ],
+              [
+                200,
+                450
+              ],
+              [
+                223,
+                420
+              ]
+            ],
+            [
+              [
+                185,
+                10
+              ],
+              [
+                173,
+                40
+              ],
+              [
+                169,
+                95
+              ],
+              [
+                305,
+                363
+              ]
+            ],
+            [
+              [
+                515,
+                828
+              ],
+              [
+                549,
+                794
+              ],
+              [
+                553,
+                783
+              ],
+              [
+                546,
+                765
+              ],
+              [
+                505,
+                683
+              ],
+              [
+                445,
+                584
+              ],
+              [
+                391,
+                513
+              ],
+              [
+                363,
+                487
+              ]
+            ],
+            [
+              [
+                478,
+                582
+              ],
+              [
+                559,
+                593
+              ],
+              [
+                748,
+                636
+              ],
+              [
+                768,
+                635
+              ],
+              [
+                786,
+                623
+              ],
+              [
+                793,
+                612
+              ],
+              [
+                777,
+                477
+              ],
+              [
+                756,
+                388
+              ],
+              [
+                739,
+                351
+              ],
+              [
+                713,
+                327
+              ],
+              [
+                637,
+                378
+              ]
+            ],
+            [
+              [
+                455,
+                445
+              ],
+              [
+                465,
+                439
+              ],
+              [
+                554,
+                465
+              ],
+              [
+                567,
+                464
+              ],
+              [
+                583,
+                452
+              ],
+              [
+                590,
+                439
+              ],
+              [
+                571,
+                377
+              ],
+              [
+                565,
+                364
+              ],
+              [
+                548,
+                358
+              ]
+            ],
+            [
+              [
+                440,
+                293
+              ],
+              [
+                452,
+                304
+              ],
+              [
+                530,
+                323
+              ],
+              [
+                595,
+                321
+              ]
+            ],
+            [
+              [
+                397,
+                461
+              ],
+              [
+                417,
+                440
+              ],
+              [
+                424,
+                418
+              ],
+              [
+                410,
+                220
+              ],
+              [
+                419,
+                133
+              ],
+              [
+                443,
+                83
+              ],
+              [
+                469,
+                62
+              ],
+              [
+                510,
+                42
+              ],
+              [
+                605,
+                22
+              ],
+              [
+                693,
+                22
+              ],
+              [
+                794,
+                38
+              ],
+              [
+                854,
+                63
+              ],
+              [
+                895,
+                99
+              ],
+              [
+                896,
+                255
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6ce1-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-f4bae39cbc07ca5cdcaac3ed",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "interlinked",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "相通"
+              },
+              {
+                "value": "xiāng tōng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiang1tong1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "相通",
+              "pinyin": "xiāng tōng",
+              "meaning": "interlinked",
+              "audio": "39da84a1819220ab81b778d89da551fa89b0353ed0dec129fdbcdc588d17c0e7",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6ce1-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6ce1",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "bubble; foam",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "泡"
+              },
+              {
+                "value": "pào",
+                "mode": "pinyin"
+              },
+              {
+                "value": "pao4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "泡",
+              "pinyin": "pào",
+              "meaning": "bubble; foam",
+              "audio": "f996554cb24e4616ad0d10dc875fd2de3f29a5dec13886630c43350b0299e30f",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "f996554cb24e4616ad0d10dc875fd2de3f29a5dec13886630c43350b0299e30f"
+            ],
+            "transcript": [
+              {
+                "text": "泡",
+                "pinyin": "pào",
+                "meaning": "bubble; foam",
+                "audio": "f996554cb24e4616ad0d10dc875fd2de3f29a5dec13886630c43350b0299e30f",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6CE1",
+      "character": "泡",
+      "lessonIds": [
+        "LESSON-C-6CE1"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6ce1-word",
+        "EX-CHAR-char-6ce1-recognize",
+        "EX-CHAR-char-6ce1-write",
+        "EX-CHAR-char-6ce1-familiar",
+        "EX-CHAR-char-6ce1-recall"
+      ]
+    },
+    "audio": {
+      "7a92e052824a12d65bf31eae9251865c5f0822b377a08fee9b9b32839976f161": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a8eb54bcd16d7f4380aaf15c56ba05c4f5b5d784ae9980ac38132bdb19263b05.mp3",
+          "sha256": "a8eb54bcd16d7f4380aaf15c56ba05c4f5b5d784ae9980ac38132bdb19263b05",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "a8eb54bcd16d7f4380aaf15c56ba05c4f5b5d784ae9980ac38132bdb19263b05",
+            "text": "届",
+            "words": [
+              {
+                "text": "届",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/645d969cecc57d555102c9fc1040f5aaa101b54114a4559f01e9e82155ea5a69.mp3",
+          "sha256": "645d969cecc57d555102c9fc1040f5aaa101b54114a4559f01e9e82155ea5a69",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "645d969cecc57d555102c9fc1040f5aaa101b54114a4559f01e9e82155ea5a69",
+            "text": "届",
+            "words": [
+              {
+                "text": "届",
+                "start": 0.2,
+                "end": 0.3
+              }
+            ]
+          }
+        }
+      },
+      "f996554cb24e4616ad0d10dc875fd2de3f29a5dec13886630c43350b0299e30f": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9ec14c777cef2ab7e1ab2659d4136d3b49b7d4819a887b2d7d6c88843307909e.mp3",
+          "sha256": "9ec14c777cef2ab7e1ab2659d4136d3b49b7d4819a887b2d7d6c88843307909e",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "9ec14c777cef2ab7e1ab2659d4136d3b49b7d4819a887b2d7d6c88843307909e",
+            "text": "泡",
+            "words": [
+              {
+                "text": "泡",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/98d7938629ce6b70b1d9d88ad460f51ae1ddd88b52eab7a1822f5aabf932affb.mp3",
+          "sha256": "98d7938629ce6b70b1d9d88ad460f51ae1ddd88b52eab7a1822f5aabf932affb",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "98d7938629ce6b70b1d9d88ad460f51ae1ddd88b52eab7a1822f5aabf932affb",
+            "text": "泡",
+            "words": [
+              {
+                "text": "泡",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "2097e1b1be2a369db93f33705d420391fe53166cb8cc5a92426c6235b31131d2": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7ebe91366ab6a82051154b9fabd9fe7ceacd3c1daf3d44d53392c20155c87429.mp3",
+          "sha256": "7ebe91366ab6a82051154b9fabd9fe7ceacd3c1daf3d44d53392c20155c87429",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "7ebe91366ab6a82051154b9fabd9fe7ceacd3c1daf3d44d53392c20155c87429",
+            "text": "灯泡",
+            "words": [
+              {
+                "text": "灯泡",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a5aae3f76385dcd026bcad9a4a2eb66f450264fbf7d62bf5a9cab63f370c75d6.mp3",
+          "sha256": "a5aae3f76385dcd026bcad9a4a2eb66f450264fbf7d62bf5a9cab63f370c75d6",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "a5aae3f76385dcd026bcad9a4a2eb66f450264fbf7d62bf5a9cab63f370c75d6",
+            "text": "灯泡",
+            "words": [
+              {
+                "text": "灯泡",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "01865efef672f0a0696dc8359f2f2b0262217097b35af81227654bb56d83cf1a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/70872b720a12586c1aac2c8e5ed14e77a0932753555c2a6e4f9e890b39ae821b.mp3",
+          "sha256": "70872b720a12586c1aac2c8e5ed14e77a0932753555c2a6e4f9e890b39ae821b",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "70872b720a12586c1aac2c8e5ed14e77a0932753555c2a6e4f9e890b39ae821b",
+            "text": "夺冠",
+            "words": [
+              {
+                "text": "夺冠",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/aaf3877b2dda08e1322e209470309648a1af2e7f17faf22326f9e8500d132841.mp3",
+          "sha256": "aaf3877b2dda08e1322e209470309648a1af2e7f17faf22326f9e8500d132841",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "aaf3877b2dda08e1322e209470309648a1af2e7f17faf22326f9e8500d132841",
+            "text": "夺冠",
+            "words": [
+              {
+                "text": "夺冠",
+                "start": 0.03,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "39da84a1819220ab81b778d89da551fa89b0353ed0dec129fdbcdc588d17c0e7": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/54327f10401930bfabe2ac4f007ec425df3b6d6ce4237f91841f8349c97b691f.mp3",
+          "sha256": "54327f10401930bfabe2ac4f007ec425df3b6d6ce4237f91841f8349c97b691f",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "54327f10401930bfabe2ac4f007ec425df3b6d6ce4237f91841f8349c97b691f",
+            "text": "相通",
+            "words": [
+              {
+                "text": "相通",
+                "start": 0.21,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/6f00af02566e9aa2bed7ee4d8fab0c27400708fc3cbce1989ad6298c7fdfd2fb.mp3",
+          "sha256": "6f00af02566e9aa2bed7ee4d8fab0c27400708fc3cbce1989ad6298c7fdfd2fb",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "6f00af02566e9aa2bed7ee4d8fab0c27400708fc3cbce1989ad6298c7fdfd2fb",
+            "text": "相通",
+            "words": [
+              {
+                "text": "相通",
+                "start": 0.22,
+                "end": 0.58
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0414",
+  "targetId": "W0414",
+  "steps": [
+    {
+      "id": "BANK-W0414-W0414",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0414-W0414",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "family member",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "家人"
+            },
+            {
+              "value": "jiārén",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jia1ren2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "家人",
+            "pinyin": "jiārén",
+            "meaning": "family member",
+            "singleWord": true,
+            "audio": "20de3f3c4c81f7ab7d109025d85e2d1bc11794e13d9acaba76f50001b4215483"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "20de3f3c4c81f7ab7d109025d85e2d1bc11794e13d9acaba76f50001b4215483": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1b76b74d249154e84c2d7a2fda91608e995109cfce848587bfc8930789842976.mp3",
+        "sha256": "1b76b74d249154e84c2d7a2fda91608e995109cfce848587bfc8930789842976",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "1b76b74d249154e84c2d7a2fda91608e995109cfce848587bfc8930789842976",
+          "text": "家人",
+          "words": [
+            {
+              "text": "家人",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b73453ed9e28512d739879af576d9b43871d204f35aff476bc423c723537013d.mp3",
+        "sha256": "b73453ed9e28512d739879af576d9b43871d204f35aff476bc423c723537013d",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "b73453ed9e28512d739879af576d9b43871d204f35aff476bc423c723537013d",
+          "text": "家人",
+          "words": [
+            {
+              "text": "家人",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0414",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0414-W0414",
+      "question_ids": [
+        "BANK-W0414-W0414"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U04",
+    "stepId": "S-U04-words-r4-18",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5bb6"
+    ],
+    "grammarLessonIds": []
+  }
+}

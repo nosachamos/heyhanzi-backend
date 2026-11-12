@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4178",
+  "targetId": "W4178",
+  "steps": [
+    {
+      "id": "BANK-W4178-W4178",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4178-W4178",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "peanut",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "花生"
+            },
+            {
+              "value": "huāshēng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hua1sheng1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "花生",
+            "pinyin": "huāshēng",
+            "meaning": "peanut",
+            "singleWord": true,
+            "audio": "4bdb795c56c77336a33d55eba9a6bd2150b3e8278dfbd51683d32ebf640a2b8b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "4bdb795c56c77336a33d55eba9a6bd2150b3e8278dfbd51683d32ebf640a2b8b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-71fe99b38ac248d2a7dce7008090f422b274f21b42511498199d45c4e8c9309d.mp3",
+        "sha256": "71fe99b38ac248d2a7dce7008090f422b274f21b42511498199d45c4e8c9309d",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "71fe99b38ac248d2a7dce7008090f422b274f21b42511498199d45c4e8c9309d",
+          "text": "花生",
+          "words": [
+            {
+              "text": "花生",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b1fe4d8ddcb27cec10c9e81982b419d167d53750cad862dd6d6556e9bee53922.mp3",
+        "sha256": "b1fe4d8ddcb27cec10c9e81982b419d167d53750cad862dd6d6556e9bee53922",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "b1fe4d8ddcb27cec10c9e81982b419d167d53750cad862dd6d6556e9bee53922",
+          "text": "花生",
+          "words": [
+            {
+              "text": "花生",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4178",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4178-W4178",
+      "question_ids": [
+        "BANK-W4178-W4178"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-09",
+    "stepId": "S-U6-09-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-82b1"
+    ],
+    "grammarLessonIds": []
+  }
+}

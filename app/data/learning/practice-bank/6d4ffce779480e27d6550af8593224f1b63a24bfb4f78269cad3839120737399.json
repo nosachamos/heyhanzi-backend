@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1461",
+  "targetId": "W1461",
+  "steps": [
+    {
+      "id": "BANK-W1461-W1461",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1461-W1461",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "theater",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "剧院"
+            },
+            {
+              "value": "jùyuàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ju4yuan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "剧院",
+            "pinyin": "jùyuàn",
+            "meaning": "theater",
+            "singleWord": true,
+            "audio": "d74c4283422b3baf18b9f9a5a46e9495e6e3309bf52d80def87f6637cb9f08ef"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d74c4283422b3baf18b9f9a5a46e9495e6e3309bf52d80def87f6637cb9f08ef": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b6ada11bf5858e74da8be50fbbec8052edf2dc125fbf81f5c5630416570d1ce6.mp3",
+        "sha256": "b6ada11bf5858e74da8be50fbbec8052edf2dc125fbf81f5c5630416570d1ce6",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "b6ada11bf5858e74da8be50fbbec8052edf2dc125fbf81f5c5630416570d1ce6",
+          "text": "剧院",
+          "words": [
+            {
+              "text": "剧院",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/7066040fd0ec69ad287d6723bc9128b874e917630722cf7b94e3e8c433e707e5.mp3",
+        "sha256": "7066040fd0ec69ad287d6723bc9128b874e917630722cf7b94e3e8c433e707e5",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "7066040fd0ec69ad287d6723bc9128b874e917630722cf7b94e3e8c433e707e5",
+          "text": "剧院",
+          "words": [
+            {
+              "text": "剧院",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1461",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1461-W1461",
+      "question_ids": [
+        "BANK-W1461-W1461"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-25",
+    "stepId": "S-U4-25-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5267"
+    ],
+    "grammarLessonIds": []
+  }
+}

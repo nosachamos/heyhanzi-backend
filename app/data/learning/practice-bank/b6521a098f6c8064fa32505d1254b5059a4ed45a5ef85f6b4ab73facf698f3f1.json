@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0370",
+  "targetId": "W0370",
+  "steps": [
+    {
+      "id": "BANK-W0370-W0370",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0370-W0370",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "baozi; bao",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "包子"
+            },
+            {
+              "value": "bāozi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bao1zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "包子",
+            "pinyin": "bāozi",
+            "meaning": "baozi; bao",
+            "singleWord": true,
+            "audio": "92e172e8b40271aaa539cde3fff5ac11bc2b8db8b3970f30db2baff0e1e542d9"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "92e172e8b40271aaa539cde3fff5ac11bc2b8db8b3970f30db2baff0e1e542d9": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-410223fb4a1eba34074eccb2d77d19bdb5ee3b60c7c96623ba3500d9dc4128f6.mp3",
+        "sha256": "410223fb4a1eba34074eccb2d77d19bdb5ee3b60c7c96623ba3500d9dc4128f6",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "410223fb4a1eba34074eccb2d77d19bdb5ee3b60c7c96623ba3500d9dc4128f6",
+          "text": "包子",
+          "words": [
+            {
+              "text": "包子",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-5aa768f90dbb76bb3bcc21dad2297b959a7b6c6ce2d47a71a324cde97ab7b9f1.mp3",
+        "sha256": "5aa768f90dbb76bb3bcc21dad2297b959a7b6c6ce2d47a71a324cde97ab7b9f1",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "5aa768f90dbb76bb3bcc21dad2297b959a7b6c6ce2d47a71a324cde97ab7b9f1",
+          "text": "包子",
+          "words": [
+            {
+              "text": "包子",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0370",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0370-W0370",
+      "question_ids": [
+        "BANK-W0370-W0370"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U08-P01",
+    "stepId": "S-U08-words-r4-23",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5305"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0650",
+  "targetId": "W0650",
+  "steps": [
+    {
+      "id": "BANK-W0650-W0650",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0650-W0650",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "class; grade",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "班级"
+            },
+            {
+              "value": "bānjí",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ban1ji2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "班级",
+            "pinyin": "bānjí",
+            "meaning": "class; grade",
+            "singleWord": true,
+            "audio": "ede47a65f0df9d4c5746e3061913cf9dfda88dca0b4885ad085c0a7bed5d2512"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ede47a65f0df9d4c5746e3061913cf9dfda88dca0b4885ad085c0a7bed5d2512": {
+      "female": {
+        "url": "/exercise-assets/audio/course-female-062a2228f55e17c6d61e6ea23c8f5dc59dd933883acbe0841776bd4780d01543.mp3",
+        "sha256": "062a2228f55e17c6d61e6ea23c8f5dc59dd933883acbe0841776bd4780d01543",
+        "byteLength": 17325,
+        "readAlong": {
+          "audioSha256": "062a2228f55e17c6d61e6ea23c8f5dc59dd933883acbe0841776bd4780d01543",
+          "text": "班级",
+          "words": [
+            {
+              "text": "班级",
+              "start": 0.51,
+              "end": 0.75
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3f10dca75fe90f8a079e89bee21af5cd20cfa73d363f9faee688283386a931c5.mp3",
+        "sha256": "3f10dca75fe90f8a079e89bee21af5cd20cfa73d363f9faee688283386a931c5",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "3f10dca75fe90f8a079e89bee21af5cd20cfa73d363f9faee688283386a931c5",
+          "text": "班级",
+          "words": [
+            {
+              "text": "班级",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0650",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0650-W0650",
+      "question_ids": [
+        "BANK-W0650-W0650"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-13",
+    "stepId": "S-U3-13-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7ea7"
+    ],
+    "grammarLessonIds": []
+  }
+}

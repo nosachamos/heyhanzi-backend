@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0415",
+  "targetId": "W0415",
+  "steps": [
+    {
+      "id": "BANK-W0415-W0415",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0415-W0415",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "dumpling; pot-sticker",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "饺子"
+            },
+            {
+              "value": "jiǎozi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jiao3zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "饺子",
+            "pinyin": "jiǎozi",
+            "meaning": "dumpling; pot-sticker",
+            "singleWord": true,
+            "audio": "5db51c1514f44f1acc5c295259166479e76543e4c7bd4f39d5dabd4bd5fd8c26"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5db51c1514f44f1acc5c295259166479e76543e4c7bd4f39d5dabd4bd5fd8c26": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-33b1083c4b20299de4c2f2f4e64afa9498a6e3d2fcccfa2280205d5555277004.mp3",
+        "sha256": "33b1083c4b20299de4c2f2f4e64afa9498a6e3d2fcccfa2280205d5555277004",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "33b1083c4b20299de4c2f2f4e64afa9498a6e3d2fcccfa2280205d5555277004",
+          "text": "饺子",
+          "words": [
+            {
+              "text": "饺子",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-570d20cbb022c1cf04753fe4965b05319b35f1946a0af2b0fd572a3d45feb45d.mp3",
+        "sha256": "570d20cbb022c1cf04753fe4965b05319b35f1946a0af2b0fd572a3d45feb45d",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "570d20cbb022c1cf04753fe4965b05319b35f1946a0af2b0fd572a3d45feb45d",
+          "text": "饺子",
+          "words": [
+            {
+              "text": "饺子",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0415",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0415-W0415",
+      "question_ids": [
+        "BANK-W0415-W0415"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U08-P01",
+    "stepId": "S-U08-words-r4-25",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-997a"
+    ],
+    "grammarLessonIds": []
+  }
+}

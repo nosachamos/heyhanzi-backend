@@ -1,0 +1,217 @@
+{
+  "id": "BANK-W0164",
+  "targetId": "W0164",
+  "steps": [
+    {
+      "id": "BANK-W0164-W0164",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0164-W0164",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "work; job",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "工作"
+            },
+            {
+              "value": "gōngzuò",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gong1zuo4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "工作",
+            "pinyin": "gōngzuò",
+            "meaning": "work; job",
+            "singleWord": true,
+            "audio": "aafeb7c7e12f35df1a04a8b8fa3bb23ebab36e74f20d0bce9bceadd962215a5d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W0164-W0164-use-work-action",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W0164-W0164-use-work-action",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 工作 fits this context?",
+          "context": "The speaker describes what an employee does during their working hours.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W0164-W0164-use-work-action-contrast-2",
+              "label": "The employee owns a company.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "工作 can be a verb meaning to work or do a job."
+            },
+            {
+              "id": "BANK-W0164-W0164-use-work-action-meaning",
+              "label": "The employee works.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "工作 can be a verb meaning to work or do a job."
+            },
+            {
+              "id": "BANK-W0164-W0164-use-work-action-contrast-1",
+              "label": "The employee takes a holiday.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "工作 can be a verb meaning to work or do a job."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "工作",
+            "pinyin": "gōngzuò",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "aafeb7c7e12f35df1a04a8b8fa3bb23ebab36e74f20d0bce9bceadd962215a5d"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W0164-W0164-use-work-job",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W0164-W0164-use-work-job",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 工作 fits this context?",
+          "context": "The speaker says that a person has found employment.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W0164-W0164-use-work-job-meaning",
+              "label": "The person has found a job.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "工作 can also name work, a job or an employment task. In an employment context, 有工作 means having a job; it does not itself say that someone is working right now."
+            },
+            {
+              "id": "BANK-W0164-W0164-use-work-job-contrast-1",
+              "label": "The person is currently operating a machine.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "工作 can also name work, a job or an employment task. In an employment context, 有工作 means having a job; it does not itself say that someone is working right now."
+            },
+            {
+              "id": "BANK-W0164-W0164-use-work-job-contrast-2",
+              "label": "The person has found a workplace building.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "工作 can also name work, a job or an employment task. In an employment context, 有工作 means having a job; it does not itself say that someone is working right now."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "工作",
+            "pinyin": "gōngzuò",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "aafeb7c7e12f35df1a04a8b8fa3bb23ebab36e74f20d0bce9bceadd962215a5d"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "aafeb7c7e12f35df1a04a8b8fa3bb23ebab36e74f20d0bce9bceadd962215a5d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5cd4abbcfa6cceb95f49f4056cf81151c10d905822ace552dd1556a53eafa61f.mp3",
+        "sha256": "5cd4abbcfa6cceb95f49f4056cf81151c10d905822ace552dd1556a53eafa61f",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "5cd4abbcfa6cceb95f49f4056cf81151c10d905822ace552dd1556a53eafa61f",
+          "text": "工作",
+          "words": [
+            {
+              "text": "工作",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-65d10b93d6fe355e03ce883e306cada7e46a604fbb29f69ff8b412def92623f7.mp3",
+        "sha256": "65d10b93d6fe355e03ce883e306cada7e46a604fbb29f69ff8b412def92623f7",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "65d10b93d6fe355e03ce883e306cada7e46a604fbb29f69ff8b412def92623f7",
+          "text": "工作",
+          "words": [
+            {
+              "text": "工作",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0164",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0164-W0164",
+      "question_ids": [
+        "BANK-W0164-W0164"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W0164",
+      "facet_id": "lexical-use-work-action",
+      "part_id": "BANK-W0164-W0164-use-work-action",
+      "question_ids": [
+        "BANK-W0164-W0164-use-work-action"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W0164",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W0164",
+      "facet_id": "lexical-use-work-job",
+      "part_id": "BANK-W0164-W0164-use-work-job",
+      "question_ids": [
+        "BANK-W0164-W0164-use-work-job"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W0164",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U13",
+    "stepId": "S-U13-words-r4-7",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4f5c"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0581",
+  "targetId": "W0581",
+  "steps": [
+    {
+      "id": "BANK-W0581-W0581",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0581-W0581",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "ticket; ballot",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "票"
+            },
+            {
+              "value": "piào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "piao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "票",
+            "pinyin": "piào",
+            "meaning": "ticket; ballot",
+            "singleWord": true,
+            "audio": "77a3b759e2ebcbef6eefa39da756f77387e36e5696b307090b655e1bc28e47ee"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "77a3b759e2ebcbef6eefa39da756f77387e36e5696b307090b655e1bc28e47ee": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-40b349860014f616adabd1a902318204d69855e5ae302b4aca93741319392ff7.mp3",
+        "sha256": "40b349860014f616adabd1a902318204d69855e5ae302b4aca93741319392ff7",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "40b349860014f616adabd1a902318204d69855e5ae302b4aca93741319392ff7",
+          "text": "票",
+          "words": [
+            {
+              "text": "票",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-7f3250b9723fa04638a9747094bcf5c6c351e94ec2d302214f6f468101a8d527.mp3",
+        "sha256": "7f3250b9723fa04638a9747094bcf5c6c351e94ec2d302214f6f468101a8d527",
+        "byteLength": 8109,
+        "readAlong": {
+          "audioSha256": "7f3250b9723fa04638a9747094bcf5c6c351e94ec2d302214f6f468101a8d527",
+          "text": "票",
+          "words": [
+            {
+              "text": "票",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0581",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0581-W0581",
+      "question_ids": [
+        "BANK-W0581-W0581"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U19",
+    "stepId": "S-U19-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7968"
+    ],
+    "grammarLessonIds": []
+  }
+}

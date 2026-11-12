@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1300",
+  "targetId": "W1300",
+  "steps": [
+    {
+      "id": "BANK-W1300-W1300",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1300-W1300",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "factory",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "工厂"
+            },
+            {
+              "value": "gōngchǎng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gong1chang3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "工厂",
+            "pinyin": "gōngchǎng",
+            "meaning": "factory",
+            "singleWord": true,
+            "audio": "b93851978d31043e2b6b2fd0cf9465545aaa8ae20bd39637c56511c8c37bd33a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b93851978d31043e2b6b2fd0cf9465545aaa8ae20bd39637c56511c8c37bd33a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-900596d56fb77031b9f95fcb4c1f2a625d6a13d4001d49933ca3fb0089f92f95.mp3",
+        "sha256": "900596d56fb77031b9f95fcb4c1f2a625d6a13d4001d49933ca3fb0089f92f95",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "900596d56fb77031b9f95fcb4c1f2a625d6a13d4001d49933ca3fb0089f92f95",
+          "text": "工厂",
+          "words": [
+            {
+              "text": "工厂",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-8b6159277f8216c8c32c40bcf87c04273710f2c0545d04752c13ffc6814a8140.mp3",
+        "sha256": "8b6159277f8216c8c32c40bcf87c04273710f2c0545d04752c13ffc6814a8140",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "8b6159277f8216c8c32c40bcf87c04273710f2c0545d04752c13ffc6814a8140",
+          "text": "工厂",
+          "words": [
+            {
+              "text": "工厂",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1300",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1300-W1300",
+      "question_ids": [
+        "BANK-W1300-W1300"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-29",
+    "stepId": "S-U4-29-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5382"
+    ],
+    "grammarLessonIds": []
+  }
+}

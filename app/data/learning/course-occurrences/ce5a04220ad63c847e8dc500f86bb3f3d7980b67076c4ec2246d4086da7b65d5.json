@@ -1,0 +1,609 @@
+{
+  "id": "EX-CHAR-char-7259",
+  "revision": 2,
+  "unit": "U3-03",
+  "stage": "ST-HSK3",
+  "after": "S-U3-03-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "牙",
+  "sourceBlockId": "mandarin-simplified-v1-char-7259",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7259",
+        "text": "牙",
+        "pinyin": "yá",
+        "meaning": "tooth; ivory",
+        "characters": [
+          {
+            "id": "C-7259",
+            "text": "牙"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-5f7f0e945486531727ff1506",
+        "text": "牙疼",
+        "pinyin": "yá téng",
+        "meaning": "toothache",
+        "characters": [
+          {
+            "id": "C-7259",
+            "text": "牙"
+          },
+          {
+            "id": "C-75BC",
+            "text": "疼"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-6da0ebb094773b9215eac473",
+        "text": "一体",
+        "pinyin": "yī tǐ",
+        "meaning": "an integral whole",
+        "characters": [
+          {
+            "id": "C-4E00",
+            "text": "一"
+          },
+          {
+            "id": "C-4F53",
+            "text": "体"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d6c9af2eb5ce914c63627419",
+        "text": "前边",
+        "pinyin": "qián bian",
+        "meaning": "front",
+        "characters": [
+          {
+            "id": "C-524D",
+            "text": "前"
+          },
+          {
+            "id": "C-8FB9",
+            "text": "边"
+          }
+        ]
+      },
+      {
+        "id": "W1341",
+        "text": "好好",
+        "pinyin": "hǎohǎo",
+        "meaning": "in good condition; well; carefully; properly",
+        "characters": [
+          {
+            "id": "C-597D",
+            "text": "好"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "98d4bd9bab9d5fb30a768a307d613115f10be9885bd196e6255fd2f1bdec33b0",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7259",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "牙",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7259-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-5f7f0e945486531727ff1506",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "toothache",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "牙疼"
+              },
+              {
+                "value": "yá téng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ya2teng2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "牙疼",
+              "pinyin": "yá téng",
+              "meaning": "toothache",
+              "audio": "b6c00aa2c01c25b142009007375b624eb9c850847937e7a86a818c6908d02cba",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7259-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7259",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "牙",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-6da0ebb094773b9215eac473",
+                "label": "an integral whole",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-7259",
+                "label": "tooth; ivory",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1341",
+                "label": "in good condition; well",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7259-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "牙",
+        "pinyin": "yá",
+        "meaning": "tooth; ivory",
+        "source": "/stroke-data/7259.json",
+        "reference": {
+          "character": "牙",
+          "sha256": "46d4d9880621a320e04a9af78f2e241542c2b96b1380e83ed2822b19e821d714",
+          "medians": [
+            [
+              [
+                377,
+                717
+              ],
+              [
+                400,
+                711
+              ],
+              [
+                439,
+                713
+              ],
+              [
+                657,
+                765
+              ],
+              [
+                702,
+                763
+              ]
+            ],
+            [
+              [
+                281,
+                635
+              ],
+              [
+                310,
+                604
+              ],
+              [
+                283,
+                450
+              ],
+              [
+                297,
+                446
+              ],
+              [
+                499,
+                491
+              ],
+              [
+                728,
+                528
+              ],
+              [
+                790,
+                529
+              ],
+              [
+                853,
+                516
+              ]
+            ],
+            [
+              [
+                539,
+                698
+              ],
+              [
+                569,
+                683
+              ],
+              [
+                580,
+                663
+              ],
+              [
+                580,
+                69
+              ],
+              [
+                571,
+                32
+              ],
+              [
+                554,
+                8
+              ],
+              [
+                509,
+                21
+              ],
+              [
+                429,
+                65
+              ]
+            ],
+            [
+              [
+                543,
+                471
+              ],
+              [
+                466,
+                355
+              ],
+              [
+                371,
+                253
+              ],
+              [
+                241,
+                153
+              ],
+              [
+                141,
+                105
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7259-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-d6c9af2eb5ce914c63627419",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "front",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "前边"
+              },
+              {
+                "value": "qián bian",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qian2bian5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "前边",
+              "pinyin": "qián bian",
+              "meaning": "front",
+              "audio": "d6e5666eee559ca9ebea75ab5f488d62a09e14e8600a8375d361a31c1b6aa8f1",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7259-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7259",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "tooth; ivory",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "牙"
+              },
+              {
+                "value": "yá",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ya2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "牙",
+              "pinyin": "yá",
+              "meaning": "tooth; ivory",
+              "audio": "1de76d9d782b5c6688d04aee6f16dceb174effaca2bc259291ac1baceaf119d1",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "1de76d9d782b5c6688d04aee6f16dceb174effaca2bc259291ac1baceaf119d1"
+            ],
+            "transcript": [
+              {
+                "text": "牙",
+                "pinyin": "yá",
+                "meaning": "tooth; ivory",
+                "audio": "1de76d9d782b5c6688d04aee6f16dceb174effaca2bc259291ac1baceaf119d1",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7259",
+      "character": "牙",
+      "lessonIds": [
+        "LESSON-C-7259"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7259-word",
+        "EX-CHAR-char-7259-recognize",
+        "EX-CHAR-char-7259-write",
+        "EX-CHAR-char-7259-familiar",
+        "EX-CHAR-char-7259-recall"
+      ]
+    },
+    "audio": {
+      "1de76d9d782b5c6688d04aee6f16dceb174effaca2bc259291ac1baceaf119d1": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/cb1a68f17e0870c2d83a41ba4909ab276d021dd8030014e596f73d68d2cb40ce.mp3",
+          "sha256": "cb1a68f17e0870c2d83a41ba4909ab276d021dd8030014e596f73d68d2cb40ce",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "cb1a68f17e0870c2d83a41ba4909ab276d021dd8030014e596f73d68d2cb40ce",
+            "text": "牙",
+            "words": [
+              {
+                "text": "牙",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a0bdf06580b09353f353baf53230cc6dba2c023a665e3854a3ba540276b26389.mp3",
+          "sha256": "a0bdf06580b09353f353baf53230cc6dba2c023a665e3854a3ba540276b26389",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "a0bdf06580b09353f353baf53230cc6dba2c023a665e3854a3ba540276b26389",
+            "text": "牙",
+            "words": [
+              {
+                "text": "牙",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "b6c00aa2c01c25b142009007375b624eb9c850847937e7a86a818c6908d02cba": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1c5c0dbd58b9558c852bd3aa38f4bbedd59392a3787ee7188691957a6147e79f.mp3",
+          "sha256": "1c5c0dbd58b9558c852bd3aa38f4bbedd59392a3787ee7188691957a6147e79f",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "1c5c0dbd58b9558c852bd3aa38f4bbedd59392a3787ee7188691957a6147e79f",
+            "text": "牙疼",
+            "words": [
+              {
+                "text": "牙疼",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f6b7cc0746e83d3416c173e6d4398df62fd7cec02d893281e74e7e9a64a65622.mp3",
+          "sha256": "f6b7cc0746e83d3416c173e6d4398df62fd7cec02d893281e74e7e9a64a65622",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "f6b7cc0746e83d3416c173e6d4398df62fd7cec02d893281e74e7e9a64a65622",
+            "text": "牙疼",
+            "words": [
+              {
+                "text": "牙疼",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "ebb5f0dd01098d9f3649303079004819de143c82482ef0d6759a1ecd26daeac0": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8c95a0c47027654bdefe36aca753d3f9a8f3d4ad406d2e6cf454251a199539bb.mp3",
+          "sha256": "8c95a0c47027654bdefe36aca753d3f9a8f3d4ad406d2e6cf454251a199539bb",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "8c95a0c47027654bdefe36aca753d3f9a8f3d4ad406d2e6cf454251a199539bb",
+            "text": "一体",
+            "words": [
+              {
+                "text": "一体",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0ba8c96147d55ccd9259c55ba6093a96bd027182c23b02c07efa8b1ca54811f8.mp3",
+          "sha256": "0ba8c96147d55ccd9259c55ba6093a96bd027182c23b02c07efa8b1ca54811f8",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "0ba8c96147d55ccd9259c55ba6093a96bd027182c23b02c07efa8b1ca54811f8",
+            "text": "一体",
+            "words": [
+              {
+                "text": "一体",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "d6e5666eee559ca9ebea75ab5f488d62a09e14e8600a8375d361a31c1b6aa8f1": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5eb8826593a81bd3ec57bf1fd836e1b35814ac00ea802af273cf92b2d2b062f2.mp3",
+          "sha256": "5eb8826593a81bd3ec57bf1fd836e1b35814ac00ea802af273cf92b2d2b062f2",
+          "byteLength": 14445,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "5eb8826593a81bd3ec57bf1fd836e1b35814ac00ea802af273cf92b2d2b062f2",
+            "text": "前边",
+            "words": [
+              {
+                "text": "前边",
+                "start": 0.3,
+                "end": 0.72
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0ad6c17598d15c4d08c2b41414079893503dd4384893cbfdab01be17ad65250f.mp3",
+          "sha256": "0ad6c17598d15c4d08c2b41414079893503dd4384893cbfdab01be17ad65250f",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "0ad6c17598d15c4d08c2b41414079893503dd4384893cbfdab01be17ad65250f",
+            "text": "前边",
+            "words": [
+              {
+                "text": "前边",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "296f4162576e9b746cd1b8d848592ef8230b54c94791ded3416d51a35c8a5031": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-9051e66d708a68c839000791d9ef11fd9f000ab1c8fc4925f7ff00ce4f1a42be.mp3",
+          "sha256": "9051e66d708a68c839000791d9ef11fd9f000ab1c8fc4925f7ff00ce4f1a42be",
+          "byteLength": 32013,
+          "readAlong": {
+            "audioSha256": "9051e66d708a68c839000791d9ef11fd9f000ab1c8fc4925f7ff00ce4f1a42be",
+            "text": "好好",
+            "words": [
+              {
+                "text": "好好",
+                "start": 0.15,
+                "end": 1.8299999999999998
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-0e30700a49cce86022f405a93d22a680df5b05bfbab7440d141dea76424fc755.mp3",
+          "sha256": "0e30700a49cce86022f405a93d22a680df5b05bfbab7440d141dea76424fc755",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "0e30700a49cce86022f405a93d22a680df5b05bfbab7440d141dea76424fc755",
+            "text": "好好",
+            "words": [
+              {
+                "text": "好好",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

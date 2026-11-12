@@ -1,0 +1,657 @@
+{
+  "id": "EX-CHAR-char-5947",
+  "revision": 2,
+  "unit": "U3-25-P01",
+  "stage": "ST-HSK3",
+  "after": "S-U3-25-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "奇",
+  "sourceBlockId": "mandarin-simplified-v1-char-5947",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-CHAR-JISHU",
+        "text": "奇数",
+        "pinyin": "jīshù",
+        "meaning": "odd number",
+        "characters": [
+          {
+            "id": "C-5947",
+            "text": "奇"
+          },
+          {
+            "id": "C-6570",
+            "text": "数"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-6d228bbcda6f4badb9c451f6",
+        "text": "飞船",
+        "pinyin": "fēi chuán",
+        "meaning": "spacecraft",
+        "characters": [
+          {
+            "id": "C-98DE",
+            "text": "飞"
+          },
+          {
+            "id": "C-8239",
+            "text": "船"
+          }
+        ]
+      },
+      {
+        "id": "W0302",
+        "text": "只有",
+        "pinyin": "zhǐyǒu",
+        "meaning": "only if",
+        "characters": [
+          {
+            "id": "C-53EA",
+            "text": "只"
+          },
+          {
+            "id": "C-6709",
+            "text": "有"
+          }
+        ]
+      },
+      {
+        "id": "W4280",
+        "text": "讲解",
+        "pinyin": "jiǎngjiě",
+        "meaning": "to explain",
+        "characters": [
+          {
+            "id": "C-8BB2",
+            "text": "讲"
+          },
+          {
+            "id": "C-89E3",
+            "text": "解"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "db8dc541ba9293ced8e5b304869d06ecbf55960a504d5b0482955d488fad7114",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5947",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "奇",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5947-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-CHAR-JISHU",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "odd number",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "奇数"
+              },
+              {
+                "value": "jīshù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ji1shu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "奇数",
+              "pinyin": "jīshù",
+              "meaning": "odd number",
+              "audio": "33aae9e15e9cae756a0f37033cd9b5725cd0428b898167a991645ad5ee7e593d",
+              "singleWord": true,
+              "focus": "奇"
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5947-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-CHAR-JISHU",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "奇数",
+              "meaning": "",
+              "focus": "奇"
+            },
+            "choices": [
+              {
+                "id": "W4280",
+                "label": "to explain",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0302",
+                "label": "only if",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-CHAR-JISHU",
+                "label": "odd number",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5947-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "奇",
+        "pinyin": "jī",
+        "meaning": "odd (number)",
+        "source": "/stroke-data/5947.json",
+        "reference": {
+          "character": "奇",
+          "sha256": "ff1c00f6cf7f2e1549e3499b7eab2624576e939ab19b3f717e121dd19a578375",
+          "medians": [
+            [
+              [
+                339,
+                683
+              ],
+              [
+                409,
+                675
+              ],
+              [
+                491,
+                687
+              ],
+              [
+                664,
+                726
+              ],
+              [
+                723,
+                726
+              ]
+            ],
+            [
+              [
+                490,
+                841
+              ],
+              [
+                518,
+                814
+              ],
+              [
+                510,
+                737
+              ],
+              [
+                493,
+                681
+              ],
+              [
+                449,
+                593
+              ],
+              [
+                405,
+                538
+              ],
+              [
+                360,
+                496
+              ]
+            ],
+            [
+              [
+                565,
+                639
+              ],
+              [
+                642,
+                597
+              ],
+              [
+                676,
+                549
+              ]
+            ],
+            [
+              [
+                115,
+                414
+              ],
+              [
+                160,
+                405
+              ],
+              [
+                190,
+                407
+              ],
+              [
+                449,
+                452
+              ],
+              [
+                857,
+                495
+              ],
+              [
+                895,
+                491
+              ],
+              [
+                947,
+                475
+              ]
+            ],
+            [
+              [
+                274,
+                343
+              ],
+              [
+                303,
+                319
+              ],
+              [
+                336,
+                143
+              ]
+            ],
+            [
+              [
+                337,
+                322
+              ],
+              [
+                356,
+                334
+              ],
+              [
+                447,
+                356
+              ],
+              [
+                483,
+                358
+              ],
+              [
+                507,
+                333
+              ],
+              [
+                505,
+                323
+              ],
+              [
+                485,
+                265
+              ],
+              [
+                461,
+                249
+              ]
+            ],
+            [
+              [
+                355,
+                190
+              ],
+              [
+                365,
+                203
+              ],
+              [
+                448,
+                220
+              ],
+              [
+                495,
+                222
+              ],
+              [
+                518,
+                215
+              ]
+            ],
+            [
+              [
+                627,
+                448
+              ],
+              [
+                664,
+                422
+              ],
+              [
+                672,
+                402
+              ],
+              [
+                667,
+                24
+              ],
+              [
+                660,
+                0
+              ],
+              [
+                643,
+                -22
+              ],
+              [
+                597,
+                -10
+              ],
+              [
+                516,
+                30
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5947-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-6d228bbcda6f4badb9c451f6",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "spacecraft",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "飞船"
+              },
+              {
+                "value": "fēi chuán",
+                "mode": "pinyin"
+              },
+              {
+                "value": "fei1chuan2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "飞船",
+              "pinyin": "fēi chuán",
+              "meaning": "spacecraft",
+              "audio": "863a15451607c3d0168f0a336a68fbb4ce49c782f65a8ee7cba1b033bbe361d6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5947-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-CHAR-JISHU",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "odd number",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "奇数"
+              },
+              {
+                "value": "jīshù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ji1shu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "奇数",
+              "pinyin": "jīshù",
+              "meaning": "odd number",
+              "audio": "33aae9e15e9cae756a0f37033cd9b5725cd0428b898167a991645ad5ee7e593d",
+              "singleWord": true,
+              "focus": "奇"
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "33aae9e15e9cae756a0f37033cd9b5725cd0428b898167a991645ad5ee7e593d"
+            ],
+            "transcript": [
+              {
+                "text": "奇数",
+                "pinyin": "jīshù",
+                "meaning": "odd number",
+                "audio": "33aae9e15e9cae756a0f37033cd9b5725cd0428b898167a991645ad5ee7e593d",
+                "singleWord": true,
+                "focus": "奇"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5947",
+      "character": "奇",
+      "lessonIds": [
+        "LESSON-C-5947"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5947-word",
+        "EX-CHAR-char-5947-recognize",
+        "EX-CHAR-char-5947-write",
+        "EX-CHAR-char-5947-familiar",
+        "EX-CHAR-char-5947-recall"
+      ]
+    },
+    "audio": {
+      "33aae9e15e9cae756a0f37033cd9b5725cd0428b898167a991645ad5ee7e593d": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-f0e3adce7ea0c0776bdfcb5dc3957fc28948f0efc2a9988542b433dad4a230e1.mp3",
+          "sha256": "f0e3adce7ea0c0776bdfcb5dc3957fc28948f0efc2a9988542b433dad4a230e1",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "f0e3adce7ea0c0776bdfcb5dc3957fc28948f0efc2a9988542b433dad4a230e1",
+            "text": "奇数",
+            "words": [
+              {
+                "text": "奇数",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-d3dc823c74741276a4c22457b2845aa8a1a6dcdf8bca504e1ec3279ed9b69b9f.mp3",
+          "sha256": "d3dc823c74741276a4c22457b2845aa8a1a6dcdf8bca504e1ec3279ed9b69b9f",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "d3dc823c74741276a4c22457b2845aa8a1a6dcdf8bca504e1ec3279ed9b69b9f",
+            "text": "奇数",
+            "words": [
+              {
+                "text": "奇数",
+                "start": 0.18,
+                "end": 0.52
+              }
+            ]
+          }
+        }
+      },
+      "863a15451607c3d0168f0a336a68fbb4ce49c782f65a8ee7cba1b033bbe361d6": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/dad83dc4930c99503ccc512bdca52d3c833cb3b42877c98895a38d6f33fef0df.mp3",
+          "sha256": "dad83dc4930c99503ccc512bdca52d3c833cb3b42877c98895a38d6f33fef0df",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "dad83dc4930c99503ccc512bdca52d3c833cb3b42877c98895a38d6f33fef0df",
+            "text": "飞船",
+            "words": [
+              {
+                "text": "飞船",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a575d24db1238defe46695f0556fdfb654c5b0c3f8c1d00d29ea089c3d99c7bc.mp3",
+          "sha256": "a575d24db1238defe46695f0556fdfb654c5b0c3f8c1d00d29ea089c3d99c7bc",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "a575d24db1238defe46695f0556fdfb654c5b0c3f8c1d00d29ea089c3d99c7bc",
+            "text": "飞船",
+            "words": [
+              {
+                "text": "飞船",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "c0d3b86279ceacc4bdcd3b6717940e07590ad543084a86db92733bb092300c81": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-8e2cd95032edda4cb8518e37355073521b39afbf672289e761834a5eb036b054.mp3",
+          "sha256": "8e2cd95032edda4cb8518e37355073521b39afbf672289e761834a5eb036b054",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "8e2cd95032edda4cb8518e37355073521b39afbf672289e761834a5eb036b054",
+            "text": "只有",
+            "words": [
+              {
+                "text": "只有",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ef9fcf61e0859b22d60c272fcfe0b318f04a3a2a968a39c97cf37d084d03a393.mp3",
+          "sha256": "ef9fcf61e0859b22d60c272fcfe0b318f04a3a2a968a39c97cf37d084d03a393",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "ef9fcf61e0859b22d60c272fcfe0b318f04a3a2a968a39c97cf37d084d03a393",
+            "text": "只有",
+            "words": [
+              {
+                "text": "只有",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "ef09a70c182a01a8c799b64d8a4fde3e15e9926bb10026619923558f4a8a8e93": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2c870ab324f3bf825be6bc98283857a69d6924cf1fc38c869b9786df757d3649.mp3",
+          "sha256": "2c870ab324f3bf825be6bc98283857a69d6924cf1fc38c869b9786df757d3649",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "2c870ab324f3bf825be6bc98283857a69d6924cf1fc38c869b9786df757d3649",
+            "text": "讲解",
+            "words": [
+              {
+                "text": "讲解",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/103f47de957b75d45ac83fcfad62df1e64b2cfc01d8caee0a72dac08a3ec7c5f.mp3",
+          "sha256": "103f47de957b75d45ac83fcfad62df1e64b2cfc01d8caee0a72dac08a3ec7c5f",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "103f47de957b75d45ac83fcfad62df1e64b2cfc01d8caee0a72dac08a3ec7c5f",
+            "text": "讲解",
+            "words": [
+              {
+                "text": "讲解",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

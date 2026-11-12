@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1128",
+  "targetId": "W1128",
+  "steps": [
+    {
+      "id": "BANK-W1128-W1128",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1128-W1128",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "factory; yard",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "厂"
+            },
+            {
+              "value": "chǎng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chang3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "厂",
+            "pinyin": "chǎng",
+            "meaning": "factory; yard",
+            "singleWord": true,
+            "audio": "046b84d65fcb9f96848e218fe13cce34b0623a16fd069f181eacbc3e2afd2902"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "046b84d65fcb9f96848e218fe13cce34b0623a16fd069f181eacbc3e2afd2902": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d83f936b0837ca629381267242d6ed096bdcd6395a018ebdba4f2d9d4ac87f31.mp3",
+        "sha256": "d83f936b0837ca629381267242d6ed096bdcd6395a018ebdba4f2d9d4ac87f31",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "d83f936b0837ca629381267242d6ed096bdcd6395a018ebdba4f2d9d4ac87f31",
+          "text": "厂",
+          "words": [
+            {
+              "text": "厂",
+              "start": 0.22,
+              "end": 0.3
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/6210e1e85bea318c7a6f5a15176fc71f3b0947ea12a73d512b39da861ba6504e.mp3",
+        "sha256": "6210e1e85bea318c7a6f5a15176fc71f3b0947ea12a73d512b39da861ba6504e",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "6210e1e85bea318c7a6f5a15176fc71f3b0947ea12a73d512b39da861ba6504e",
+          "text": "厂",
+          "words": [
+            {
+              "text": "厂",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1128",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1128-W1128",
+      "question_ids": [
+        "BANK-W1128-W1128"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-29",
+    "stepId": "S-U4-29-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5382"
+    ],
+    "grammarLessonIds": []
+  }
+}

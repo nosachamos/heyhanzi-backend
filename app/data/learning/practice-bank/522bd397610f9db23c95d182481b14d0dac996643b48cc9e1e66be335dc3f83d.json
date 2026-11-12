@@ -1,0 +1,217 @@
+{
+  "id": "BANK-W2004",
+  "targetId": "W2004",
+  "steps": [
+    {
+      "id": "BANK-W2004-W2004",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2004-W2004",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "accurate; certain",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "准"
+            },
+            {
+              "value": "zhǔn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhun3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "准",
+            "pinyin": "zhǔn",
+            "meaning": "accurate; certain",
+            "singleWord": true,
+            "audio": "59366dfb3af118735086e4b16d12355ca428479cf6f8c552cdfa2549ca247f45"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W2004-W2004-use-accurate",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W2004-W2004-use-accurate",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 准 fits this context?",
+          "context": "A measurement agrees closely with the true value.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W2004-W2004-use-accurate-contrast-1",
+              "label": "The measurement is inaccurate.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "准 can describe an accurate measurement, judgment or prediction."
+            },
+            {
+              "id": "BANK-W2004-W2004-use-accurate-contrast-2",
+              "label": "Permission is being requested.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "准 can describe an accurate measurement, judgment or prediction."
+            },
+            {
+              "id": "BANK-W2004-W2004-use-accurate-meaning",
+              "label": "The measurement is accurate.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "准 can describe an accurate measurement, judgment or prediction."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "准",
+            "pinyin": "zhǔn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "59366dfb3af118735086e4b16d12355ca428479cf6f8c552cdfa2549ca247f45"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W2004-W2004-use-certain",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W2004-W2004-use-certain",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 准 fits this context?",
+          "context": "The speaker expresses a firm expectation about an outcome.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W2004-W2004-use-certain-meaning",
+              "label": "The outcome is regarded as certain.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "准 can express certainty that something will happen or is true. Here it evaluates confidence, rather than granting permission."
+            },
+            {
+              "id": "BANK-W2004-W2004-use-certain-contrast-2",
+              "label": "The speaker has no expectation about the outcome.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "准 can express certainty that something will happen or is true. Here it evaluates confidence, rather than granting permission."
+            },
+            {
+              "id": "BANK-W2004-W2004-use-certain-contrast-1",
+              "label": "The speaker grants permission.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "准 can express certainty that something will happen or is true. Here it evaluates confidence, rather than granting permission."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "准",
+            "pinyin": "zhǔn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "59366dfb3af118735086e4b16d12355ca428479cf6f8c552cdfa2549ca247f45"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "59366dfb3af118735086e4b16d12355ca428479cf6f8c552cdfa2549ca247f45": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-0581ff853f939a70587c866a9ad162a01a4d4a19ec7e2eb821ce271d2b431713.mp3",
+        "sha256": "0581ff853f939a70587c866a9ad162a01a4d4a19ec7e2eb821ce271d2b431713",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "0581ff853f939a70587c866a9ad162a01a4d4a19ec7e2eb821ce271d2b431713",
+          "text": "准",
+          "words": [
+            {
+              "text": "准",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-a7ad1a4b7535039b58dbd701367f921097be71ba9f92caea5f10f2db5d10877b.mp3",
+        "sha256": "a7ad1a4b7535039b58dbd701367f921097be71ba9f92caea5f10f2db5d10877b",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "a7ad1a4b7535039b58dbd701367f921097be71ba9f92caea5f10f2db5d10877b",
+          "text": "准",
+          "words": [
+            {
+              "text": "准",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2004",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2004-W2004",
+      "question_ids": [
+        "BANK-W2004-W2004"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W2004",
+      "facet_id": "lexical-use-accurate",
+      "part_id": "BANK-W2004-W2004-use-accurate",
+      "question_ids": [
+        "BANK-W2004-W2004-use-accurate"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W2004",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W2004",
+      "facet_id": "lexical-use-certain",
+      "part_id": "BANK-W2004-W2004-use-certain",
+      "question_ids": [
+        "BANK-W2004-W2004-use-certain"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W2004",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-31",
+    "stepId": "S-U4-31-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-51c6"
+    ],
+    "grammarLessonIds": []
+  }
+}

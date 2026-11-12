@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1208",
+  "targetId": "W1208",
+  "steps": [
+    {
+      "id": "BANK-W1208-W1208",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1208-W1208",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to nod",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "点头"
+            },
+            {
+              "value": "diǎntóu",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dian3tou2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "点头",
+            "pinyin": "diǎntóu",
+            "meaning": "to nod",
+            "singleWord": true,
+            "audio": "297f8627d470b5fcc9388d76d65926bbb20da2fe90c1649f1cd978e070f4ade3"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "297f8627d470b5fcc9388d76d65926bbb20da2fe90c1649f1cd978e070f4ade3": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2092391cb299b4004416862504c7fb308fb3dc71fbb92d46d7c3b748e3f59fde.mp3",
+        "sha256": "2092391cb299b4004416862504c7fb308fb3dc71fbb92d46d7c3b748e3f59fde",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "2092391cb299b4004416862504c7fb308fb3dc71fbb92d46d7c3b748e3f59fde",
+          "text": "点头",
+          "words": [
+            {
+              "text": "点头",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-e272996659a43869e77caeab358b35f01fb68640288af9931261e682ec0b6e33.mp3",
+        "sha256": "e272996659a43869e77caeab358b35f01fb68640288af9931261e682ec0b6e33",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "e272996659a43869e77caeab358b35f01fb68640288af9931261e682ec0b6e33",
+          "text": "点头",
+          "words": [
+            {
+              "text": "点头",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1208",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1208-W1208",
+      "question_ids": [
+        "BANK-W1208-W1208"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-32",
+    "stepId": "S-U4-32-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5934"
+    ],
+    "grammarLessonIds": []
+  }
+}

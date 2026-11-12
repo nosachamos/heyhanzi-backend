@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0509",
+  "targetId": "W0509",
+  "steps": [
+    {
+      "id": "BANK-W0509-W0509",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0509-W0509",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "middle school",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "中学"
+            },
+            {
+              "value": "zhōngxué",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhong1xue2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "中学",
+            "pinyin": "zhōngxué",
+            "meaning": "middle school",
+            "singleWord": true,
+            "audio": "9b50957dbe79c786ba3632a0d22c1ed65a7c1f555eb1dd3c979fd1e6b118e19d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "9b50957dbe79c786ba3632a0d22c1ed65a7c1f555eb1dd3c979fd1e6b118e19d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-46b8ac77e016fe24b3b099a604c350a4a929d0ac8804f5b56d3656edf3a13e0f.mp3",
+        "sha256": "46b8ac77e016fe24b3b099a604c350a4a929d0ac8804f5b56d3656edf3a13e0f",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "46b8ac77e016fe24b3b099a604c350a4a929d0ac8804f5b56d3656edf3a13e0f",
+          "text": "中学",
+          "words": [
+            {
+              "text": "中学",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-9c9ef6714a978af22a7b663df6f701a9c781c24ccdc6d5326d71c493181fddc3.mp3",
+        "sha256": "9c9ef6714a978af22a7b663df6f701a9c781c24ccdc6d5326d71c493181fddc3",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "9c9ef6714a978af22a7b663df6f701a9c781c24ccdc6d5326d71c493181fddc3",
+          "text": "中学",
+          "words": [
+            {
+              "text": "中学",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0509",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0509-W0509",
+      "question_ids": [
+        "BANK-W0509-W0509"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U02",
+    "stepId": "S-U02-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-zhongwen"
+    ],
+    "grammarLessonIds": []
+  }
+}

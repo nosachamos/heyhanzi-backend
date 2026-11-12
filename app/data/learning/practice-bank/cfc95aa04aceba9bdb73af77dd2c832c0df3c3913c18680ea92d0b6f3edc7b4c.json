@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4014",
+  "targetId": "W4014",
+  "steps": [
+    {
+      "id": "BANK-W4014-W4014",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4014-W4014",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "lady; madam",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "夫人"
+            },
+            {
+              "value": "fūrén",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fu1ren2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "夫人",
+            "pinyin": "fūrén",
+            "meaning": "lady; madam",
+            "singleWord": true,
+            "audio": "b6cba0f7383c3d8849d607db1fd8e80803ebccd35404e1f3891425350499886a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b6cba0f7383c3d8849d607db1fd8e80803ebccd35404e1f3891425350499886a": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/be8768d6b8eeb1b2f49c7f61c8f0d2740df27486be91482f94cff6bfaf3a30ac.mp3",
+        "sha256": "be8768d6b8eeb1b2f49c7f61c8f0d2740df27486be91482f94cff6bfaf3a30ac",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "be8768d6b8eeb1b2f49c7f61c8f0d2740df27486be91482f94cff6bfaf3a30ac",
+          "text": "夫人",
+          "words": [
+            {
+              "text": "夫人",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/7a0d4cc4a86f6e15299ecdb200cc1c040fad69db67555485b8509be7bf784008.mp3",
+        "sha256": "7a0d4cc4a86f6e15299ecdb200cc1c040fad69db67555485b8509be7bf784008",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "7a0d4cc4a86f6e15299ecdb200cc1c040fad69db67555485b8509be7bf784008",
+          "text": "夫人",
+          "words": [
+            {
+              "text": "夫人",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4014",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4014-W4014",
+      "question_ids": [
+        "BANK-W4014-W4014"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-03",
+    "stepId": "S-U6-03-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-592b"
+    ],
+    "grammarLessonIds": []
+  }
+}

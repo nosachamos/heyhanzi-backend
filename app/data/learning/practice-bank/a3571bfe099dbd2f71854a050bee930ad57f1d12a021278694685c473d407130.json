@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1227",
+  "targetId": "W1227",
+  "steps": [
+    {
+      "id": "BANK-W1227-W1227",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1227-W1227",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "team member",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "队员"
+            },
+            {
+              "value": "duìyuán",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dui4yuan2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "队员",
+            "pinyin": "duìyuán",
+            "meaning": "team member",
+            "singleWord": true,
+            "audio": "b77b9ed9752768a885f098178dd4984472cb205fa143bf76c9e12cf51d6aaee6"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b77b9ed9752768a885f098178dd4984472cb205fa143bf76c9e12cf51d6aaee6": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-0bff8efc8c494d82882b15933c242f7b5b2b3cc0043961f67af4e61a706f55ba.mp3",
+        "sha256": "0bff8efc8c494d82882b15933c242f7b5b2b3cc0043961f67af4e61a706f55ba",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "0bff8efc8c494d82882b15933c242f7b5b2b3cc0043961f67af4e61a706f55ba",
+          "text": "队员",
+          "words": [
+            {
+              "text": "队员",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2486986c379bf266b9562513e620b474a728e4fc03e870d01601929c0d571838.mp3",
+        "sha256": "2486986c379bf266b9562513e620b474a728e4fc03e870d01601929c0d571838",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "2486986c379bf266b9562513e620b474a728e4fc03e870d01601929c0d571838",
+          "text": "队员",
+          "words": [
+            {
+              "text": "队员",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1227",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1227-W1227",
+      "question_ids": [
+        "BANK-W1227-W1227"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-18",
+    "stepId": "S-U4-18-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-961f"
+    ],
+    "grammarLessonIds": []
+  }
+}

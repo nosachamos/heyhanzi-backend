@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1562",
+  "targetId": "W1562",
+  "steps": [
+    {
+      "id": "BANK-W1562-W1562",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1562-W1562",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "don't tell me ...; could it be that...?",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "难道"
+            },
+            {
+              "value": "nándào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "nan2dao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "难道",
+            "pinyin": "nándào",
+            "meaning": "don't tell me ...; could it be that...?",
+            "singleWord": true,
+            "audio": "563dac3c15dc4b8a1cd3e144ba03866a98dd7f04f37afa7079055b327c29d758"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "563dac3c15dc4b8a1cd3e144ba03866a98dd7f04f37afa7079055b327c29d758": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f71784fac9468a48e0bfbd04911ada3ff7fd37e110dda78b73041e48cb00e49b.mp3",
+        "sha256": "f71784fac9468a48e0bfbd04911ada3ff7fd37e110dda78b73041e48cb00e49b",
+        "byteLength": 14157,
+        "readAlong": {
+          "audioSha256": "f71784fac9468a48e0bfbd04911ada3ff7fd37e110dda78b73041e48cb00e49b",
+          "text": "难道",
+          "words": [
+            {
+              "text": "难道",
+              "start": 0.27,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c967bbf9d668249c5c0a543b891f828a23471a26b5dda89c8d2f16e5c70ea161.mp3",
+        "sha256": "c967bbf9d668249c5c0a543b891f828a23471a26b5dda89c8d2f16e5c70ea161",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "c967bbf9d668249c5c0a543b891f828a23471a26b5dda89c8d2f16e5c70ea161",
+          "text": "难道",
+          "words": [
+            {
+              "text": "难道",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1562",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1562-W1562",
+      "question_ids": [
+        "BANK-W1562-W1562"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-23-P01",
+    "stepId": "S-U4-23-words-r4-19",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-96be"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3088",
+  "targetId": "W3088",
+  "steps": [
+    {
+      "id": "BANK-W3088-W3088",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3088-W3088",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "data",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "数据"
+            },
+            {
+              "value": "shùjù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shu4ju4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "数据",
+            "pinyin": "shùjù",
+            "meaning": "data",
+            "singleWord": true,
+            "audio": "7a7238bfd79780fc8b0c55cbc811b70c949c1fd888ba91901b722ad41be4734e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7a7238bfd79780fc8b0c55cbc811b70c949c1fd888ba91901b722ad41be4734e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-7da066a31c58dda69bddea9d15778effa96d8a6681a7b232823e8413e6175651.mp3",
+        "sha256": "7da066a31c58dda69bddea9d15778effa96d8a6681a7b232823e8413e6175651",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "7da066a31c58dda69bddea9d15778effa96d8a6681a7b232823e8413e6175651",
+          "text": "数据",
+          "words": [
+            {
+              "text": "数据",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ba34744cc1e2f3fa822a992696b4f75251300c6f7b0bfdc770247290a737055a.mp3",
+        "sha256": "ba34744cc1e2f3fa822a992696b4f75251300c6f7b0bfdc770247290a737055a",
+        "byteLength": 9837,
+        "readAlong": {
+          "audioSha256": "ba34744cc1e2f3fa822a992696b4f75251300c6f7b0bfdc770247290a737055a",
+          "text": "数据",
+          "words": [
+            {
+              "text": "数据",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3088",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3088-W3088",
+      "question_ids": [
+        "BANK-W3088-W3088"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-35-P02",
+    "stepId": "S-U5-35-words-r4-25",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6570"
+    ],
+    "grammarLessonIds": []
+  }
+}

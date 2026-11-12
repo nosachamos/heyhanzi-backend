@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0945",
+  "targetId": "W0945",
+  "steps": [
+    {
+      "id": "BANK-W0945-W0945",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0945-W0945",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "gym; gymnasium",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "体育馆"
+            },
+            {
+              "value": "tǐyùguǎn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ti3yu4guan3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "体育馆",
+            "pinyin": "tǐyùguǎn",
+            "meaning": "gym; gymnasium",
+            "singleWord": true,
+            "audio": "12766c065d537842c8d990c124d2839f1609acef2b5b5f4e1a39ca16561fb99e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "12766c065d537842c8d990c124d2839f1609acef2b5b5f4e1a39ca16561fb99e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a0f93fdfd0aae05c78ed2ccf4b909cc2f1822279dca0b6c8569ef70eb02f7213.mp3",
+        "sha256": "a0f93fdfd0aae05c78ed2ccf4b909cc2f1822279dca0b6c8569ef70eb02f7213",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "a0f93fdfd0aae05c78ed2ccf4b909cc2f1822279dca0b6c8569ef70eb02f7213",
+          "text": "体育馆",
+          "words": [
+            {
+              "text": "体育馆",
+              "start": 0.21,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-89c7e705beaabe51d81e283cbfc6830fd0a9a203ca33442401fe45835bb3cf76.mp3",
+        "sha256": "89c7e705beaabe51d81e283cbfc6830fd0a9a203ca33442401fe45835bb3cf76",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "89c7e705beaabe51d81e283cbfc6830fd0a9a203ca33442401fe45835bb3cf76",
+          "text": "体育馆",
+          "words": [
+            {
+              "text": "体育馆",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0945",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0945-W0945",
+      "question_ids": [
+        "BANK-W0945-W0945"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-12",
+    "stepId": "S-U3-12-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-80b2"
+    ],
+    "grammarLessonIds": []
+  }
+}

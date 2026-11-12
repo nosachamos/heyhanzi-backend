@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1073",
+  "targetId": "W1073",
+  "steps": [
+    {
+      "id": "BANK-W1073-W1073",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1073-W1073",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to hold; to carry",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "抱"
+            },
+            {
+              "value": "bào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "抱",
+            "pinyin": "bào",
+            "meaning": "to hold; to carry",
+            "singleWord": true,
+            "audio": "c2d30680d1b6552b8f933e813fe02b333a77ba71fb06bd3d581ad1db6270545d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c2d30680d1b6552b8f933e813fe02b333a77ba71fb06bd3d581ad1db6270545d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-90046b5291228c85e1b71dd3f5bdf75819cba9cb4c325eb4fbe9d1d42d157e6a.mp3",
+        "sha256": "90046b5291228c85e1b71dd3f5bdf75819cba9cb4c325eb4fbe9d1d42d157e6a",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "90046b5291228c85e1b71dd3f5bdf75819cba9cb4c325eb4fbe9d1d42d157e6a",
+          "text": "抱",
+          "words": [
+            {
+              "text": "抱",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-045c85082f5ad31fa1af207ecb4a031b58c2d83487897c39f8267fad293a80b8.mp3",
+        "sha256": "045c85082f5ad31fa1af207ecb4a031b58c2d83487897c39f8267fad293a80b8",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "045c85082f5ad31fa1af207ecb4a031b58c2d83487897c39f8267fad293a80b8",
+          "text": "抱",
+          "words": [
+            {
+              "text": "抱",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1073",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1073-W1073",
+      "question_ids": [
+        "BANK-W1073-W1073"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-35",
+    "stepId": "S-U4-35-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-62b1"
+    ],
+    "grammarLessonIds": []
+  }
+}

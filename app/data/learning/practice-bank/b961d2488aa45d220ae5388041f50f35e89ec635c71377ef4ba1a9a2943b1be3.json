@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0908",
+  "targetId": "W0908",
+  "steps": [
+    {
+      "id": "BANK-W0908-W0908",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0908-W0908",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "stadium; sports ground",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "球场"
+            },
+            {
+              "value": "qiúchǎng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qiu2chang3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "球场",
+            "pinyin": "qiúchǎng",
+            "meaning": "stadium; sports ground",
+            "singleWord": true,
+            "audio": "ad89fffaa7af46c0cac6a05a95de13fa67984dc96522116f82ddd64aa44a7125"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ad89fffaa7af46c0cac6a05a95de13fa67984dc96522116f82ddd64aa44a7125": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a35b576f0422666689d19e1d8c01140d2b96def6e434d1e524e44c14e5fea90b.mp3",
+        "sha256": "a35b576f0422666689d19e1d8c01140d2b96def6e434d1e524e44c14e5fea90b",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "a35b576f0422666689d19e1d8c01140d2b96def6e434d1e524e44c14e5fea90b",
+          "text": "球场",
+          "words": [
+            {
+              "text": "球场",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-dc10d648c0c3d3fe047be4efc56a3edcba6eed303bbf6c0e77b4f145cd66f7c6.mp3",
+        "sha256": "dc10d648c0c3d3fe047be4efc56a3edcba6eed303bbf6c0e77b4f145cd66f7c6",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "dc10d648c0c3d3fe047be4efc56a3edcba6eed303bbf6c0e77b4f145cd66f7c6",
+          "text": "球场",
+          "words": [
+            {
+              "text": "球场",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0908",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0908-W0908",
+      "question_ids": [
+        "BANK-W0908-W0908"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-12",
+    "stepId": "S-U3-12-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-573a"
+    ],
+    "grammarLessonIds": []
+  }
+}

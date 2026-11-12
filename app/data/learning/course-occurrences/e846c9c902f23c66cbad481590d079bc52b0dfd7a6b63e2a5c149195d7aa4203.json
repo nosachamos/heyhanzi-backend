@@ -1,0 +1,785 @@
+{
+  "id": "EX-CHAR-char-8f86",
+  "revision": 2,
+  "unit": "U3-06-P01",
+  "stage": "ST-HSK3",
+  "after": "S-U3-06-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "辆",
+  "sourceBlockId": "mandarin-simplified-v1-char-8f86",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-03db52383807123879872299",
+        "text": "冰箱",
+        "pinyin": "bīngxiāng",
+        "meaning": "refrigerator; (old) icebox",
+        "characters": [
+          {
+            "id": "C-51B0",
+            "text": "冰"
+          },
+          {
+            "id": "C-7BB1",
+            "text": "箱"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d854aba79cf85b99b468cbe4",
+        "text": "看上",
+        "pinyin": "kàn shàng",
+        "meaning": "to take a liking to; to choose",
+        "characters": [
+          {
+            "id": "C-770B",
+            "text": "看"
+          },
+          {
+            "id": "C-4E0A",
+            "text": "上"
+          }
+        ]
+      },
+      {
+        "id": "W0859",
+        "text": "辆",
+        "pinyin": "liàng",
+        "meaning": "classifier for vehicles",
+        "characters": [
+          {
+            "id": "C-8F86",
+            "text": "辆"
+          }
+        ]
+      },
+      {
+        "id": "W2151",
+        "text": "车辆",
+        "pinyin": "chēliàng",
+        "meaning": "vehicle",
+        "characters": [
+          {
+            "id": "C-8F66",
+            "text": "车"
+          },
+          {
+            "id": "C-8F86",
+            "text": "辆"
+          }
+        ]
+      },
+      {
+        "id": "W4171",
+        "text": "后者",
+        "pinyin": "hòuzhě",
+        "meaning": "the latter",
+        "characters": [
+          {
+            "id": "C-540E",
+            "text": "后"
+          },
+          {
+            "id": "C-8005",
+            "text": "者"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "4c6ebf4bed32e44e99bdfaf3a624b67d026644730ffbe2cdaea0c2f547b1e4d1",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8f86",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "辆",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8f86-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W2151",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "vehicle",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "车辆"
+              },
+              {
+                "value": "chēliàng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "che1liang4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "车辆",
+              "pinyin": "chēliàng",
+              "meaning": "vehicle",
+              "audio": "020d00db58e762f954293eede6fbb8024fe063912e9f901efb49724a0372980e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8f86-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0859",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "辆",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0859",
+                "label": "classifier for vehicles",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-03db52383807123879872299",
+                "label": "refrigerator; (old) icebox",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-d854aba79cf85b99b468cbe4",
+                "label": "to take a liking to; to choose",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8f86-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "辆",
+        "pinyin": "liàng",
+        "meaning": "classifier for vehicles",
+        "source": "/stroke-data/8f86.json",
+        "reference": {
+          "character": "辆",
+          "sha256": "aa691352ccf460723c26f1b93aaa340ec8c4cd22b29325c11d0de4aadad02791",
+          "medians": [
+            [
+              [
+                156,
+                610
+              ],
+              [
+                205,
+                606
+              ],
+              [
+                243,
+                612
+              ],
+              [
+                388,
+                653
+              ],
+              [
+                434,
+                655
+              ]
+            ],
+            [
+              [
+                296,
+                818
+              ],
+              [
+                325,
+                765
+              ],
+              [
+                254,
+                568
+              ],
+              [
+                186,
+                413
+              ],
+              [
+                176,
+                376
+              ],
+              [
+                200,
+                372
+              ],
+              [
+                231,
+                377
+              ],
+              [
+                378,
+                413
+              ],
+              [
+                415,
+                408
+              ]
+            ],
+            [
+              [
+                301,
+                519
+              ],
+              [
+                328,
+                482
+              ],
+              [
+                319,
+                202
+              ],
+              [
+                307,
+                52
+              ],
+              [
+                318,
+                -26
+              ]
+            ],
+            [
+              [
+                80,
+                188
+              ],
+              [
+                135,
+                176
+              ],
+              [
+                423,
+                313
+              ]
+            ],
+            [
+              [
+                494,
+                620
+              ],
+              [
+                549,
+                613
+              ],
+              [
+                773,
+                662
+              ],
+              [
+                803,
+                664
+              ],
+              [
+                839,
+                657
+              ]
+            ],
+            [
+              [
+                447,
+                445
+              ],
+              [
+                473,
+                419
+              ],
+              [
+                482,
+                362
+              ],
+              [
+                484,
+                291
+              ],
+              [
+                468,
+                142
+              ],
+              [
+                471,
+                96
+              ]
+            ],
+            [
+              [
+                502,
+                430
+              ],
+              [
+                518,
+                424
+              ],
+              [
+                665,
+                460
+              ],
+              [
+                832,
+                487
+              ],
+              [
+                846,
+                484
+              ],
+              [
+                871,
+                464
+              ],
+              [
+                870,
+                218
+              ],
+              [
+                852,
+                107
+              ],
+              [
+                830,
+                72
+              ],
+              [
+                748,
+                101
+              ],
+              [
+                729,
+                115
+              ]
+            ],
+            [
+              [
+                562,
+                589
+              ],
+              [
+                594,
+                566
+              ],
+              [
+                592,
+                423
+              ],
+              [
+                566,
+                314
+              ],
+              [
+                542,
+                264
+              ],
+              [
+                518,
+                233
+              ]
+            ],
+            [
+              [
+                599,
+                332
+              ],
+              [
+                601,
+                318
+              ],
+              [
+                621,
+                300
+              ],
+              [
+                635,
+                272
+              ]
+            ],
+            [
+              [
+                687,
+                615
+              ],
+              [
+                718,
+                596
+              ],
+              [
+                721,
+                588
+              ],
+              [
+                721,
+                433
+              ],
+              [
+                709,
+                358
+              ],
+              [
+                691,
+                295
+              ],
+              [
+                662,
+                230
+              ],
+              [
+                626,
+                172
+              ]
+            ],
+            [
+              [
+                725,
+                323
+              ],
+              [
+                735,
+                304
+              ],
+              [
+                777,
+                266
+              ],
+              [
+                796,
+                217
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8f86-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4171",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "the latter",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "后者"
+              },
+              {
+                "value": "hòuzhě",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hou4zhe3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "后者",
+              "pinyin": "hòuzhě",
+              "meaning": "the latter",
+              "audio": "44f7b85ab9dcd1a95149a232a168edb6e33d1a651cc04c6fdf6d37f14fa66278",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8f86-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0859",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "classifier for vehicles",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "辆"
+              },
+              {
+                "value": "liàng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "liang4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "辆",
+              "pinyin": "liàng",
+              "meaning": "classifier for vehicles",
+              "audio": "13657dbd48342b9ff88bc5937a9705eefec3d3d6bc594ea03d075a08c2367954",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "13657dbd48342b9ff88bc5937a9705eefec3d3d6bc594ea03d075a08c2367954"
+            ],
+            "transcript": [
+              {
+                "text": "辆",
+                "pinyin": "liàng",
+                "meaning": "classifier for vehicles",
+                "audio": "13657dbd48342b9ff88bc5937a9705eefec3d3d6bc594ea03d075a08c2367954",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8F86",
+      "character": "辆",
+      "lessonIds": [
+        "LESSON-C-8F86"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8f86-word",
+        "EX-CHAR-char-8f86-recognize",
+        "EX-CHAR-char-8f86-write",
+        "EX-CHAR-char-8f86-familiar",
+        "EX-CHAR-char-8f86-recall"
+      ]
+    },
+    "audio": {
+      "72b61ebf6b2af26c01dfe4728809c43525eddcb7bcfa282feb7f1795ca2ec1cd": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5f01f91507f5a60de1116c4dd05f2ad3fd2cd26db58d3d231d8bf10f693cd0ba.mp3",
+          "sha256": "5f01f91507f5a60de1116c4dd05f2ad3fd2cd26db58d3d231d8bf10f693cd0ba",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "5f01f91507f5a60de1116c4dd05f2ad3fd2cd26db58d3d231d8bf10f693cd0ba",
+            "text": "冰箱",
+            "words": [
+              {
+                "text": "冰箱",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-00eee9397da933b4ac4e96fe19b86b33f936d5394af6b68720bff35bdd9181ce.mp3",
+          "sha256": "00eee9397da933b4ac4e96fe19b86b33f936d5394af6b68720bff35bdd9181ce",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "00eee9397da933b4ac4e96fe19b86b33f936d5394af6b68720bff35bdd9181ce",
+            "text": "冰箱",
+            "words": [
+              {
+                "text": "冰箱",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "fe3b9c7082bab1cb4416893c0b58ab48a7a38a857aafd54e1ec52a76a96f550d": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d6d0cdac7e42bb0ebd205f4c0f067d08d8a31f982c834c0a3bb5a96890fdc543.mp3",
+          "sha256": "d6d0cdac7e42bb0ebd205f4c0f067d08d8a31f982c834c0a3bb5a96890fdc543",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "d6d0cdac7e42bb0ebd205f4c0f067d08d8a31f982c834c0a3bb5a96890fdc543",
+            "text": "看上",
+            "words": [
+              {
+                "text": "看上",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/426302bcd54a6520b701510eaa41986815c041744bcf09c736a9d17115c827a1.mp3",
+          "sha256": "426302bcd54a6520b701510eaa41986815c041744bcf09c736a9d17115c827a1",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "426302bcd54a6520b701510eaa41986815c041744bcf09c736a9d17115c827a1",
+            "text": "看上",
+            "words": [
+              {
+                "text": "看上",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "13657dbd48342b9ff88bc5937a9705eefec3d3d6bc594ea03d075a08c2367954": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-6737938aaab5f524a91923f4e5ae5dc13bafc3436e1eed50dfc20568c8a78ac9.mp3",
+          "sha256": "6737938aaab5f524a91923f4e5ae5dc13bafc3436e1eed50dfc20568c8a78ac9",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "6737938aaab5f524a91923f4e5ae5dc13bafc3436e1eed50dfc20568c8a78ac9",
+            "text": "辆",
+            "words": [
+              {
+                "text": "辆",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ac81bf2e14158102c29eb48e8ad52f7a87afe1b31244f2ba38d6c8e22c19a77e.mp3",
+          "sha256": "ac81bf2e14158102c29eb48e8ad52f7a87afe1b31244f2ba38d6c8e22c19a77e",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "ac81bf2e14158102c29eb48e8ad52f7a87afe1b31244f2ba38d6c8e22c19a77e",
+            "text": "辆",
+            "words": [
+              {
+                "text": "辆",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "020d00db58e762f954293eede6fbb8024fe063912e9f901efb49724a0372980e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-10716ff8829eb8088dca9aa68ce7dfcd250c432c53a6b7be559a2fdf7c52fa4a.mp3",
+          "sha256": "10716ff8829eb8088dca9aa68ce7dfcd250c432c53a6b7be559a2fdf7c52fa4a",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "10716ff8829eb8088dca9aa68ce7dfcd250c432c53a6b7be559a2fdf7c52fa4a",
+            "text": "车辆",
+            "words": [
+              {
+                "text": "车辆",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-3479929f26716b0f78ba072bbac1a7b8eb7625dac4a10eddc2c980d0694a5085.mp3",
+          "sha256": "3479929f26716b0f78ba072bbac1a7b8eb7625dac4a10eddc2c980d0694a5085",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "3479929f26716b0f78ba072bbac1a7b8eb7625dac4a10eddc2c980d0694a5085",
+            "text": "车辆",
+            "words": [
+              {
+                "text": "车辆",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "44f7b85ab9dcd1a95149a232a168edb6e33d1a651cc04c6fdf6d37f14fa66278": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/87b7c91d48dc78e455559d2233c74360ee1b456cced0259ba0b849ce282db040.mp3",
+          "sha256": "87b7c91d48dc78e455559d2233c74360ee1b456cced0259ba0b849ce282db040",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "87b7c91d48dc78e455559d2233c74360ee1b456cced0259ba0b849ce282db040",
+            "text": "后者",
+            "words": [
+              {
+                "text": "后者",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c69c018978fb08dcaa728f84445aabd35188da05016b72b4d1abf1f9bdaec1e6.mp3",
+          "sha256": "c69c018978fb08dcaa728f84445aabd35188da05016b72b4d1abf1f9bdaec1e6",
+          "byteLength": 17037,
+          "readAlong": {
+            "audioSha256": "c69c018978fb08dcaa728f84445aabd35188da05016b72b4d1abf1f9bdaec1e6",
+            "text": "后者",
+            "words": [
+              {
+                "text": "后者",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2099",
+  "targetId": "W2099",
+  "steps": [
+    {
+      "id": "BANK-W2099-W2099",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2099-W2099",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "museum",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "博物馆"
+            },
+            {
+              "value": "bówùguǎn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bo2wu4guan3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "博物馆",
+            "pinyin": "bówùguǎn",
+            "meaning": "museum",
+            "singleWord": true,
+            "audio": "4e027cfad983e944eb704f9a0d4788d244bacde74f1e69c2ac604aa92a362d05"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "4e027cfad983e944eb704f9a0d4788d244bacde74f1e69c2ac604aa92a362d05": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-0470d79216284717f09b5d2e90bb469c7d2533e1f88708de969e0ad73a676a1c.mp3",
+        "sha256": "0470d79216284717f09b5d2e90bb469c7d2533e1f88708de969e0ad73a676a1c",
+        "byteLength": 14157,
+        "readAlong": {
+          "audioSha256": "0470d79216284717f09b5d2e90bb469c7d2533e1f88708de969e0ad73a676a1c",
+          "text": "博物馆",
+          "words": [
+            {
+              "text": "博物馆",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c0353b197cd3311210ce336e80086c40eb5f47aaec871c17d60177ac75f42cff.mp3",
+        "sha256": "c0353b197cd3311210ce336e80086c40eb5f47aaec871c17d60177ac75f42cff",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "c0353b197cd3311210ce336e80086c40eb5f47aaec871c17d60177ac75f42cff",
+          "text": "博物馆",
+          "words": [
+            {
+              "text": "博物馆",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2099",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2099-W2099",
+      "question_ids": [
+        "BANK-W2099-W2099"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-26",
+    "stepId": "S-U5-26-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-535a"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1147",
+  "targetId": "W1147",
+  "steps": [
+    {
+      "id": "BANK-W1147-W1147",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1147-W1147",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to rent",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "出租"
+            },
+            {
+              "value": "chūzū",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chu1zu1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "出租",
+            "pinyin": "chūzū",
+            "meaning": "to rent",
+            "singleWord": true,
+            "audio": "7638f3f8e0eb47d401192bbaea4771ce7212cc5c2753dedd7f6e37dafd2a479b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7638f3f8e0eb47d401192bbaea4771ce7212cc5c2753dedd7f6e37dafd2a479b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1653a48ab15a3ad0e2c6b168a8f41f5cbfd3ae8c6abfb4cdfdd9f1ddd0626420.mp3",
+        "sha256": "1653a48ab15a3ad0e2c6b168a8f41f5cbfd3ae8c6abfb4cdfdd9f1ddd0626420",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "1653a48ab15a3ad0e2c6b168a8f41f5cbfd3ae8c6abfb4cdfdd9f1ddd0626420",
+          "text": "出租",
+          "words": [
+            {
+              "text": "出租",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c9b4f48cafaab2a70c52aa28516de432ccc31ebd41a4c397750e1e49aee8cbc3.mp3",
+        "sha256": "c9b4f48cafaab2a70c52aa28516de432ccc31ebd41a4c397750e1e49aee8cbc3",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "c9b4f48cafaab2a70c52aa28516de432ccc31ebd41a4c397750e1e49aee8cbc3",
+          "text": "出租",
+          "words": [
+            {
+              "text": "出租",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1147",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1147-W1147",
+      "question_ids": [
+        "BANK-W1147-W1147"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-04",
+    "stepId": "S-U4-04-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-79df"
+    ],
+    "grammarLessonIds": []
+  }
+}

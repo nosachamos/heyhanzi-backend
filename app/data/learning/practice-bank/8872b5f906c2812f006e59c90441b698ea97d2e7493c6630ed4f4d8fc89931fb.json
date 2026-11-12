@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4000",
+  "targetId": "W4000",
+  "steps": [
+    {
+      "id": "BANK-W4000-W4000",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4000-W4000",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "pneumonia; inflammation of the lungs",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "肺炎"
+            },
+            {
+              "value": "fèiyán",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fei4yan2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "肺炎",
+            "pinyin": "fèiyán",
+            "meaning": "pneumonia; inflammation of the lungs",
+            "singleWord": true,
+            "audio": "064494751bb3714a3a76a2f9169bfe46546090ceed8d12a5222bed2ab4d9a18b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "064494751bb3714a3a76a2f9169bfe46546090ceed8d12a5222bed2ab4d9a18b": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c4fc786b2bec996965033d4957d7630c59bae1dce3e807afc47f7bd3f3dc7635.mp3",
+        "sha256": "c4fc786b2bec996965033d4957d7630c59bae1dce3e807afc47f7bd3f3dc7635",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "c4fc786b2bec996965033d4957d7630c59bae1dce3e807afc47f7bd3f3dc7635",
+          "text": "肺炎",
+          "words": [
+            {
+              "text": "肺炎",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b8b0adc7fcafe00efcca3cdcf1af578f11d0fbce4e76b5ff66585e4f347bfcfd.mp3",
+        "sha256": "b8b0adc7fcafe00efcca3cdcf1af578f11d0fbce4e76b5ff66585e4f347bfcfd",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "b8b0adc7fcafe00efcca3cdcf1af578f11d0fbce4e76b5ff66585e4f347bfcfd",
+          "text": "肺炎",
+          "words": [
+            {
+              "text": "肺炎",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4000",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4000-W4000",
+      "question_ids": [
+        "BANK-W4000-W4000"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-14",
+    "stepId": "S-U6-14-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-708e"
+    ],
+    "grammarLessonIds": []
+  }
+}

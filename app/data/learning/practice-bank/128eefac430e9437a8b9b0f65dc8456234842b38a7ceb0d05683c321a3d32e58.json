@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3302",
+  "targetId": "W3302",
+  "steps": [
+    {
+      "id": "BANK-W3302-W3302",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3302-W3302",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "envelope",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "信封"
+            },
+            {
+              "value": "xìnfēng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xin4feng1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "信封",
+            "pinyin": "xìnfēng",
+            "meaning": "envelope",
+            "singleWord": true,
+            "audio": "2bb933da631239d61fd978e9e107623f5087f8af3bcd8a04b8df354240bcdb78"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2bb933da631239d61fd978e9e107623f5087f8af3bcd8a04b8df354240bcdb78": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-be7018e78ba3e99b26dc2d56b44fded49c333ced037a41589d890810490df935.mp3",
+        "sha256": "be7018e78ba3e99b26dc2d56b44fded49c333ced037a41589d890810490df935",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "be7018e78ba3e99b26dc2d56b44fded49c333ced037a41589d890810490df935",
+          "text": "信封",
+          "words": [
+            {
+              "text": "信封",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ac6a734ea52488a93a4a6910c232b552e3ccc7391f6bca4aa7e36f027e4ac402.mp3",
+        "sha256": "ac6a734ea52488a93a4a6910c232b552e3ccc7391f6bca4aa7e36f027e4ac402",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "ac6a734ea52488a93a4a6910c232b552e3ccc7391f6bca4aa7e36f027e4ac402",
+          "text": "信封",
+          "words": [
+            {
+              "text": "信封",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3302",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3302-W3302",
+      "question_ids": [
+        "BANK-W3302-W3302"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-31",
+    "stepId": "S-U5-31-words-r4-17",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4fe1"
+    ],
+    "grammarLessonIds": []
+  }
+}

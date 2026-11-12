@@ -1,0 +1,217 @@
+{
+  "id": "BANK-W1680",
+  "targetId": "W1680",
+  "steps": [
+    {
+      "id": "BANK-W1680-W1680",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1680-W1680",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "body; classifier for a suit of clothing",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "身"
+            },
+            {
+              "value": "shēn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shen1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "身",
+            "pinyin": "shēn",
+            "meaning": "body; classifier for a suit of clothing",
+            "singleWord": true,
+            "audio": "7e4a15fb5ac631f1939ef436b8b64c968013863eb8867771309bae8b8db8d21f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1680-W1680-use-body",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1680-W1680-use-body",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 身 fits this context?",
+          "context": "The speaker refers to a person’s body.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1680-W1680-use-body-meaning",
+              "label": "A body.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "身 can name a body or oneself as a physical person."
+            },
+            {
+              "id": "BANK-W1680-W1680-use-body-contrast-2",
+              "label": "A written form.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "身 can name a body or oneself as a physical person."
+            },
+            {
+              "id": "BANK-W1680-W1680-use-body-contrast-1",
+              "label": "A row of seats.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "身 can name a body or oneself as a physical person."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "身",
+            "pinyin": "shēn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "7e4a15fb5ac631f1939ef436b8b64c968013863eb8867771309bae8b8db8d21f"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1680-W1680-use-outfit",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1680-W1680-use-outfit",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 身 fits this context?",
+          "context": "One person wears a complete set of clothing, considered as one outfit.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1680-W1680-use-outfit-contrast-2",
+              "label": "One separate thread.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a clothing measure, 身 counts a complete outfit worn on the body, rather than each separate garment."
+            },
+            {
+              "id": "BANK-W1680-W1680-use-outfit-contrast-1",
+              "label": "One body part.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "As a clothing measure, 身 counts a complete outfit worn on the body, rather than each separate garment."
+            },
+            {
+              "id": "BANK-W1680-W1680-use-outfit-meaning",
+              "label": "One whole outfit.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "As a clothing measure, 身 counts a complete outfit worn on the body, rather than each separate garment."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "身",
+            "pinyin": "shēn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "7e4a15fb5ac631f1939ef436b8b64c968013863eb8867771309bae8b8db8d21f"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7e4a15fb5ac631f1939ef436b8b64c968013863eb8867771309bae8b8db8d21f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-015ee85f200ec5e653e1999bcaa68add70440d8d868512f6c6a22bba5bf1649a.mp3",
+        "sha256": "015ee85f200ec5e653e1999bcaa68add70440d8d868512f6c6a22bba5bf1649a",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "015ee85f200ec5e653e1999bcaa68add70440d8d868512f6c6a22bba5bf1649a",
+          "text": "身",
+          "words": [
+            {
+              "text": "身",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-f9575515271b21029aeb72cb4dcc507a212328740b347537b2f0d3923cf2ae5c.mp3",
+        "sha256": "f9575515271b21029aeb72cb4dcc507a212328740b347537b2f0d3923cf2ae5c",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "f9575515271b21029aeb72cb4dcc507a212328740b347537b2f0d3923cf2ae5c",
+          "text": "身",
+          "words": [
+            {
+              "text": "身",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1680",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1680-W1680",
+      "question_ids": [
+        "BANK-W1680-W1680"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W1680",
+      "facet_id": "lexical-use-body",
+      "part_id": "BANK-W1680-W1680-use-body",
+      "question_ids": [
+        "BANK-W1680-W1680-use-body"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1680",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W1680",
+      "facet_id": "lexical-use-outfit",
+      "part_id": "BANK-W1680-W1680-use-outfit",
+      "question_ids": [
+        "BANK-W1680-W1680-use-outfit"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1680",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-12",
+    "stepId": "S-U4-12-words-r4-7",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8eab"
+    ],
+    "grammarLessonIds": []
+  }
+}

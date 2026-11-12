@@ -1,0 +1,88 @@
+{
+  "id": "BANK-K-HSK2-interact",
+  "targetId": "K-HSK2-interact",
+  "steps": [
+    {
+      "id": "BANK-K-HSK2-interact-K-HSK2-interact-perform",
+      "kind": "check",
+      "title": "Use the skill in context",
+      "questions": [
+        {
+          "id": "BANK-K-HSK2-interact-K-HSK2-interact-perform",
+          "kind": "production",
+          "response": "spoken",
+          "prompt": "Ask a partner about the familiar trip. After their reply, request one clarification and suggest a practical next step.",
+          "promptLanguage": "en",
+          "context": "You are arranging a meeting. The partner says they have visited Beijing before, but you miss whether they want to meet today or tomorrow. Ask about their experience, request repetition of the missed meeting time, then propose meeting after that time is clarified. Do not invent their answer.\nFamiliar meanings available: to meet; to see each other; before; formerly; please say it once more.",
+          "contextLanguage": "en",
+          "label": "Take your speaking turn",
+          "resultDomain": "Self-reviewed speaking practice",
+          "rubric": [
+            {
+              "id": "r1",
+              "text": "My follow-up depends on the partner’s reply."
+            },
+            {
+              "id": "r2",
+              "text": "I asked for clarification before assuming the missing fact."
+            }
+          ]
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {},
+  "coverage": [
+    {
+      "target_id": "K-HSK2-interact",
+      "facet_id": "K-HSK2-interact-situated-performance",
+      "part_id": "BANK-K-HSK2-interact-K-HSK2-interact-perform",
+      "question_ids": [
+        "BANK-K-HSK2-interact-K-HSK2-interact-perform"
+      ],
+      "evidence": "self-reviewed",
+      "scope": "Ask and answer about a familiar experience and request repetition when the other turn is unclear.",
+      "stage_outcome_mastery": false
+    }
+  ],
+  "remediation": {
+    "unitId": "U17-P01",
+    "stepId": "S-U17-skill-K-HSK2-interact",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9762",
+      "mandarin-simplified-v1-char-4ee5",
+      "mandarin-simplified-v1-char-904d",
+      "mandarin-simplified-v1-warmup-wo",
+      "mandarin-simplified-v1-char-53bb",
+      "mandarin-simplified-v1-char-66fe",
+      "mandarin-simplified-v1-char-56fd",
+      "mandarin-simplified-v1-char-6ca1",
+      "mandarin-simplified-v1-warmup-zai",
+      "mandarin-simplified-v1-char-4f4f",
+      "mandarin-simplified-v1-char-6ca1",
+      "mandarin-simplified-v1-char-66fe",
+      "mandarin-simplified-v1-char-65c5",
+      "mandarin-simplified-v1-char-5e08",
+      "mandarin-simplified-v1-char-54ea",
+      "mandarin-simplified-v1-char-8c01",
+      "mandarin-simplified-v1-char-6821",
+      "mandarin-simplified-v1-warmup-ni",
+      "mandarin-simplified-v1-warmup-kan",
+      "mandarin-simplified-v1-char-4e48",
+      "mandarin-simplified-v1-warmup-you",
+      "mandarin-simplified-v1-char-51e0",
+      "mandarin-simplified-v1-char-672c",
+      "mandarin-simplified-v1-char-4e66",
+      "mandarin-simplified-v1-char-5c11",
+      "mandarin-simplified-v1-char-54ea",
+      "mandarin-simplified-v1-char-600e",
+      "mandarin-simplified-v1-char-4e3a",
+      "mandarin-simplified-v1-char-5019"
+    ],
+    "grammarLessonIds": [
+      "EX-GRAM-G-experience-guo",
+      "EX-GRAM-G-wh-questions"
+    ]
+  }
+}

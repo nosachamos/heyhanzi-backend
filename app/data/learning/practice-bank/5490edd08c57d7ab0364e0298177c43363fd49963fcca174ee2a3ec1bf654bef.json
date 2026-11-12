@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0396",
+  "targetId": "W0396",
+  "steps": [
+    {
+      "id": "BANK-W0396-W0396",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0396-W0396",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "room",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "房间"
+            },
+            {
+              "value": "fángjiān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fang2jian1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "房间",
+            "pinyin": "fángjiān",
+            "meaning": "room",
+            "singleWord": true,
+            "audio": "c76e1fb33842888441d41cc61874a68069aae864204995bdca5e6b48a5df779a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c76e1fb33842888441d41cc61874a68069aae864204995bdca5e6b48a5df779a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1ae19bab816607854282df0a2046390b02974abe629acae61fc9ebf03413e996.mp3",
+        "sha256": "1ae19bab816607854282df0a2046390b02974abe629acae61fc9ebf03413e996",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "1ae19bab816607854282df0a2046390b02974abe629acae61fc9ebf03413e996",
+          "text": "房间",
+          "words": [
+            {
+              "text": "房间",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-a1e607bcedc6cac1fbbe6b87f0f46da2d168b8115b94269359172f0a4add956d.mp3",
+        "sha256": "a1e607bcedc6cac1fbbe6b87f0f46da2d168b8115b94269359172f0a4add956d",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "a1e607bcedc6cac1fbbe6b87f0f46da2d168b8115b94269359172f0a4add956d",
+          "text": "房间",
+          "words": [
+            {
+              "text": "房间",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0396",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0396-W0396",
+      "question_ids": [
+        "BANK-W0396-W0396"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U06",
+    "stepId": "S-U06-words-r4-31",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-95f4"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,729 @@
+{
+  "id": "EX-CHAR-char-68c0",
+  "revision": 2,
+  "unit": "U3-10",
+  "stage": "ST-HSK3",
+  "after": "S-U3-10-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "检",
+  "sourceBlockId": "mandarin-simplified-v1-char-68c0",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-68c0",
+        "text": "检",
+        "pinyin": "jiǎn",
+        "meaning": "to check; to examine",
+        "characters": [
+          {
+            "id": "C-68C0",
+            "text": "检"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-c15a10c098b21ea375cb2085",
+        "text": "检票",
+        "pinyin": "jiǎnpiào",
+        "meaning": "to inspect a ticket; to examine a ballot",
+        "characters": [
+          {
+            "id": "C-68C0",
+            "text": "检"
+          },
+          {
+            "id": "C-7968",
+            "text": "票"
+          }
+        ]
+      },
+      {
+        "id": "W0278",
+        "text": "安静",
+        "pinyin": "ānjìng",
+        "meaning": "quiet; peaceful",
+        "characters": [
+          {
+            "id": "C-5B89",
+            "text": "安"
+          },
+          {
+            "id": "C-9759",
+            "text": "静"
+          }
+        ]
+      },
+      {
+        "id": "W0349",
+        "text": "想起",
+        "pinyin": "xiǎngqǐ",
+        "meaning": "recall; bring to mind",
+        "characters": [
+          {
+            "id": "C-60F3",
+            "text": "想"
+          },
+          {
+            "id": "C-8D77",
+            "text": "起"
+          }
+        ]
+      },
+      {
+        "id": "W1195",
+        "text": "道路",
+        "pinyin": "dàolù",
+        "meaning": "road; path",
+        "characters": [
+          {
+            "id": "C-9053",
+            "text": "道"
+          },
+          {
+            "id": "C-8DEF",
+            "text": "路"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "b777c910f0dc4e374bf6b80a2dcc01409c6c0c3bf8afcb3a2aada29c457ed801",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-68c0",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "检",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-68c0-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-c15a10c098b21ea375cb2085",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to inspect a ticket; to examine a ballot",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "检票"
+              },
+              {
+                "value": "jiǎnpiào",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jian3piao4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "检票",
+              "pinyin": "jiǎnpiào",
+              "meaning": "to inspect a ticket; to examine a ballot",
+              "audio": "cce339b5e850cffa2c905a00578a733e01fa3756bfe2fe6815b7f842f000418b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-68c0-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-68c0",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "检",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1195",
+                "label": "road; path",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-68c0",
+                "label": "to check; to examine",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0278",
+                "label": "quiet; peaceful",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-68c0-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "检",
+        "pinyin": "jiǎn",
+        "meaning": "to check; to examine",
+        "source": "/stroke-data/68c0.json",
+        "reference": {
+          "character": "检",
+          "sha256": "905d47e813c1258eb2d2b803188dfaab3fa74c5bae13a3ffecba4a56764b072b",
+          "medians": [
+            [
+              [
+                123,
+                512
+              ],
+              [
+                183,
+                510
+              ],
+              [
+                356,
+                558
+              ],
+              [
+                410,
+                561
+              ]
+            ],
+            [
+              [
+                270,
+                802
+              ],
+              [
+                321,
+                748
+              ],
+              [
+                301,
+                199
+              ],
+              [
+                284,
+                43
+              ],
+              [
+                284,
+                -46
+              ]
+            ],
+            [
+              [
+                288,
+                505
+              ],
+              [
+                279,
+                497
+              ],
+              [
+                262,
+                417
+              ],
+              [
+                213,
+                325
+              ],
+              [
+                153,
+                236
+              ],
+              [
+                70,
+                136
+              ]
+            ],
+            [
+              [
+                335,
+                379
+              ],
+              [
+                344,
+                364
+              ],
+              [
+                372,
+                347
+              ],
+              [
+                399,
+                317
+              ]
+            ],
+            [
+              [
+                587,
+                767
+              ],
+              [
+                621,
+                734
+              ],
+              [
+                626,
+                723
+              ],
+              [
+                618,
+                701
+              ],
+              [
+                544,
+                551
+              ],
+              [
+                447,
+                410
+              ],
+              [
+                410,
+                374
+              ]
+            ],
+            [
+              [
+                637,
+                654
+              ],
+              [
+                638,
+                638
+              ],
+              [
+                734,
+                526
+              ],
+              [
+                821,
+                445
+              ],
+              [
+                969,
+                412
+              ]
+            ],
+            [
+              [
+                512,
+                406
+              ],
+              [
+                564,
+                402
+              ],
+              [
+                675,
+                430
+              ],
+              [
+                722,
+                431
+              ]
+            ],
+            [
+              [
+                443,
+                266
+              ],
+              [
+                506,
+                214
+              ],
+              [
+                527,
+                170
+              ]
+            ],
+            [
+              [
+                556,
+                315
+              ],
+              [
+                604,
+                265
+              ],
+              [
+                618,
+                234
+              ]
+            ],
+            [
+              [
+                707,
+                351
+              ],
+              [
+                722,
+                341
+              ],
+              [
+                738,
+                309
+              ],
+              [
+                677,
+                152
+              ],
+              [
+                658,
+                114
+              ],
+              [
+                640,
+                98
+              ]
+            ],
+            [
+              [
+                411,
+                61
+              ],
+              [
+                462,
+                51
+              ],
+              [
+                803,
+                87
+              ],
+              [
+                851,
+                79
+              ],
+              [
+                886,
+                66
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-68c0-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0349",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "recall; bring to mind",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "想起"
+              },
+              {
+                "value": "xiǎngqǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiang3qi3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "想起",
+              "pinyin": "xiǎngqǐ",
+              "meaning": "recall; bring to mind",
+              "audio": "54128f463da1ebeafaab9a92482364e0073ee631c191c86f14d250d128f1b3af",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-68c0-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-68c0",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to check; to examine",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "检"
+              },
+              {
+                "value": "jiǎn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jian3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "检",
+              "pinyin": "jiǎn",
+              "meaning": "to check; to examine",
+              "audio": "2ff884344c085e58213197f464db18cc76a1f6fa6838ef699269d16904459693",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "2ff884344c085e58213197f464db18cc76a1f6fa6838ef699269d16904459693"
+            ],
+            "transcript": [
+              {
+                "text": "检",
+                "pinyin": "jiǎn",
+                "meaning": "to check; to examine",
+                "audio": "2ff884344c085e58213197f464db18cc76a1f6fa6838ef699269d16904459693",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-68C0",
+      "character": "检",
+      "lessonIds": [
+        "LESSON-C-68C0"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-68c0-word",
+        "EX-CHAR-char-68c0-recognize",
+        "EX-CHAR-char-68c0-write",
+        "EX-CHAR-char-68c0-familiar",
+        "EX-CHAR-char-68c0-recall"
+      ]
+    },
+    "audio": {
+      "2ff884344c085e58213197f464db18cc76a1f6fa6838ef699269d16904459693": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-b258bd9677a6f9a221fc33e83aacc199b585fd09e46ea932220312603d08413c.mp3",
+          "sha256": "b258bd9677a6f9a221fc33e83aacc199b585fd09e46ea932220312603d08413c",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "b258bd9677a6f9a221fc33e83aacc199b585fd09e46ea932220312603d08413c",
+            "text": "检",
+            "words": [
+              {
+                "text": "检",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-f0b5401b495376606b3ec882a4ff9c298e1e3eed687fa4547752d69e11d7f8c2.mp3",
+          "sha256": "f0b5401b495376606b3ec882a4ff9c298e1e3eed687fa4547752d69e11d7f8c2",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "f0b5401b495376606b3ec882a4ff9c298e1e3eed687fa4547752d69e11d7f8c2",
+            "text": "检",
+            "words": [
+              {
+                "text": "检",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "cce339b5e850cffa2c905a00578a733e01fa3756bfe2fe6815b7f842f000418b": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/44ad1be247312231e5c6ead34e6e8f45c3b686fe5146ab07dd0cb68dc3bb8383.mp3",
+          "sha256": "44ad1be247312231e5c6ead34e6e8f45c3b686fe5146ab07dd0cb68dc3bb8383",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "44ad1be247312231e5c6ead34e6e8f45c3b686fe5146ab07dd0cb68dc3bb8383",
+            "text": "检票",
+            "words": [
+              {
+                "text": "检票",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9d54be2789c556e8486a59253479b6608bc2abbea821785d58d17a5ea0e31d50.mp3",
+          "sha256": "9d54be2789c556e8486a59253479b6608bc2abbea821785d58d17a5ea0e31d50",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "9d54be2789c556e8486a59253479b6608bc2abbea821785d58d17a5ea0e31d50",
+            "text": "检票",
+            "words": [
+              {
+                "text": "检票",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "32f499a225b837e331bc38a2a03b21da05293565827d4b8247ce12a22c9f3e51": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-55f6703c007776d93c23f07134298c8cfea22eec3afd9bf24fb3b575e1537d65.mp3",
+          "sha256": "55f6703c007776d93c23f07134298c8cfea22eec3afd9bf24fb3b575e1537d65",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "55f6703c007776d93c23f07134298c8cfea22eec3afd9bf24fb3b575e1537d65",
+            "text": "安静",
+            "words": [
+              {
+                "text": "安静",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-5f93ed363fda10e384905b8a353fe8d059a8f11d1207ec7f0394b6bff582f469.mp3",
+          "sha256": "5f93ed363fda10e384905b8a353fe8d059a8f11d1207ec7f0394b6bff582f469",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "5f93ed363fda10e384905b8a353fe8d059a8f11d1207ec7f0394b6bff582f469",
+            "text": "安静",
+            "words": [
+              {
+                "text": "安静",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "54128f463da1ebeafaab9a92482364e0073ee631c191c86f14d250d128f1b3af": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-6ae110c8c83ed4853717461f1315b7b383a45dd55960c636aa6df7b6a12276b1.mp3",
+          "sha256": "6ae110c8c83ed4853717461f1315b7b383a45dd55960c636aa6df7b6a12276b1",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "6ae110c8c83ed4853717461f1315b7b383a45dd55960c636aa6df7b6a12276b1",
+            "text": "想起",
+            "words": [
+              {
+                "text": "想起",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f195f1a43b9a172af788c9afe1ef27c8436e078beb321e3c0c69e26b7c62d54a.mp3",
+          "sha256": "f195f1a43b9a172af788c9afe1ef27c8436e078beb321e3c0c69e26b7c62d54a",
+          "byteLength": 16173,
+          "readAlong": {
+            "audioSha256": "f195f1a43b9a172af788c9afe1ef27c8436e078beb321e3c0c69e26b7c62d54a",
+            "text": "想起",
+            "words": [
+              {
+                "text": "想起",
+                "start": 0.27,
+                "end": 0.69
+              }
+            ]
+          }
+        }
+      },
+      "96fb7c3c410bcaf67e9b52f70928acdf76991fc75c5d421cb35be60a683babdd": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-9b80fc07decd79a8778c29d5a3e785199a8b3270c8947634177caf67326a442b.mp3",
+          "sha256": "9b80fc07decd79a8778c29d5a3e785199a8b3270c8947634177caf67326a442b",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "9b80fc07decd79a8778c29d5a3e785199a8b3270c8947634177caf67326a442b",
+            "text": "道路",
+            "words": [
+              {
+                "text": "道路",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-0e23f7037562a6aac8538ce93d2f3d1cc2c87ff9f22c972f31000d06822e926d.mp3",
+          "sha256": "0e23f7037562a6aac8538ce93d2f3d1cc2c87ff9f22c972f31000d06822e926d",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "0e23f7037562a6aac8538ce93d2f3d1cc2c87ff9f22c972f31000d06822e926d",
+            "text": "道路",
+            "words": [
+              {
+                "text": "道路",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

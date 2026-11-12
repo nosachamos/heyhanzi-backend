@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4111",
+  "targetId": "W4111",
+  "steps": [
+    {
+      "id": "BANK-W4111-W4111",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4111-W4111",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "tubing; pipeline",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "管道"
+            },
+            {
+              "value": "guǎndào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "guan3dao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "管道",
+            "pinyin": "guǎndào",
+            "meaning": "tubing; pipeline",
+            "singleWord": true,
+            "audio": "20177d43a552d7909a007af1665dfc6f0351d48ea5e0f8e16276057f2b5aa4f8"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "20177d43a552d7909a007af1665dfc6f0351d48ea5e0f8e16276057f2b5aa4f8": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-054b139a322eafd0a7d08bd4bfdb24cb0db0112fb2fc9448772c1ac120b25119.mp3",
+        "sha256": "054b139a322eafd0a7d08bd4bfdb24cb0db0112fb2fc9448772c1ac120b25119",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "054b139a322eafd0a7d08bd4bfdb24cb0db0112fb2fc9448772c1ac120b25119",
+          "text": "管道",
+          "words": [
+            {
+              "text": "管道",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-bddaaeef57de77167d2678903c3b6e59c74f716a5976b188b2091f7ba4347796.mp3",
+        "sha256": "bddaaeef57de77167d2678903c3b6e59c74f716a5976b188b2091f7ba4347796",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "bddaaeef57de77167d2678903c3b6e59c74f716a5976b188b2091f7ba4347796",
+          "text": "管道",
+          "words": [
+            {
+              "text": "管道",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4111",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4111-W4111",
+      "question_ids": [
+        "BANK-W4111-W4111"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-04",
+    "stepId": "S-U6-04-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7ba1"
+    ],
+    "grammarLessonIds": []
+  }
+}

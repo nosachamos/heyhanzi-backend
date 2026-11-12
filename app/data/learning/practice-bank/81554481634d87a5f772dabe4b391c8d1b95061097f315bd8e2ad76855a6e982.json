@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W2048",
+  "targetId": "W2048",
+  "steps": [
+    {
+      "id": "BANK-W2048-W2048",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2048-W2048",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "thin; cold in manner",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "薄"
+            },
+            {
+              "value": "báo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bao2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "薄",
+            "pinyin": "báo",
+            "meaning": "thin; cold in manner",
+            "singleWord": true,
+            "audio": "440b308f4bb9f5e41a6d03c63d541e6acf572d37ff6c0b3d7a256f24c5575b8d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "440b308f4bb9f5e41a6d03c63d541e6acf572d37ff6c0b3d7a256f24c5575b8d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-023cca61a042123bce2d9ee7c43fe60f8687c181873837ca75eb48f01f1f7b22.mp3",
+        "sha256": "023cca61a042123bce2d9ee7c43fe60f8687c181873837ca75eb48f01f1f7b22",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "023cca61a042123bce2d9ee7c43fe60f8687c181873837ca75eb48f01f1f7b22",
+          "text": "薄",
+          "words": [
+            {
+              "text": "薄",
+              "start": 0.14,
+              "end": 0.24
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-15147f469ec6b6fe6392905410b514b451318c3e4c96c76cabd01dbef1781cb3.mp3",
+        "sha256": "15147f469ec6b6fe6392905410b514b451318c3e4c96c76cabd01dbef1781cb3",
+        "byteLength": 8685,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "15147f469ec6b6fe6392905410b514b451318c3e4c96c76cabd01dbef1781cb3",
+          "text": "薄",
+          "words": [
+            {
+              "text": "薄",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2048",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2048-W2048",
+      "question_ids": [
+        "BANK-W2048-W2048"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-45-P01",
+    "stepId": "S-U5-45-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8584"
+    ],
+    "grammarLessonIds": []
+  }
+}

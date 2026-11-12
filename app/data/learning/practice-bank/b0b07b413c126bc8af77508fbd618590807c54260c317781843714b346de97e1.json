@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4094",
+  "targetId": "W4094",
+  "steps": [
+    {
+      "id": "BANK-W4094-W4094",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4094-W4094",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "stock market",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "股市"
+            },
+            {
+              "value": "gǔshì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gu3shi4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "股市",
+            "pinyin": "gǔshì",
+            "meaning": "stock market",
+            "singleWord": true,
+            "audio": "bb49def296593a6ea698c60872cf618d5ea43e056e9749bdbadaf5feee3ce684"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "bb49def296593a6ea698c60872cf618d5ea43e056e9749bdbadaf5feee3ce684": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6531a636fe8e5593366604ce9cb5ef3c516a134b462134821111891b967a555b.mp3",
+        "sha256": "6531a636fe8e5593366604ce9cb5ef3c516a134b462134821111891b967a555b",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "6531a636fe8e5593366604ce9cb5ef3c516a134b462134821111891b967a555b",
+          "text": "股市",
+          "words": [
+            {
+              "text": "股市",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/23fdf913b4c177a4ad3510133f899a8fa60004a482889c125ed8187f78355474.mp3",
+        "sha256": "23fdf913b4c177a4ad3510133f899a8fa60004a482889c125ed8187f78355474",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "23fdf913b4c177a4ad3510133f899a8fa60004a482889c125ed8187f78355474",
+          "text": "股市",
+          "words": [
+            {
+              "text": "股市",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4094",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4094-W4094",
+      "question_ids": [
+        "BANK-W4094-W4094"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-33",
+    "stepId": "S-U6-33-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-80a1"
+    ],
+    "grammarLessonIds": []
+  }
+}

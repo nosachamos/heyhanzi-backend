@@ -1,0 +1,797 @@
+{
+  "id": "EX-CHAR-char-7fa4",
+  "revision": 2,
+  "unit": "U5-02",
+  "stage": "ST-HSK5",
+  "after": "S-U5-02-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "群",
+  "sourceBlockId": "mandarin-simplified-v1-char-7fa4",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7fa4",
+        "text": "群",
+        "pinyin": "qún",
+        "meaning": "group; crowd",
+        "characters": [
+          {
+            "id": "C-7FA4",
+            "text": "群"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-b11584ba321407b897bf3b64",
+        "text": "历来",
+        "pinyin": "lì lái",
+        "meaning": "always",
+        "characters": [
+          {
+            "id": "C-5386",
+            "text": "历"
+          },
+          {
+            "id": "C-6765",
+            "text": "来"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d135670f0f3b69fc0db1095c",
+        "text": "空难",
+        "pinyin": "kōng nàn",
+        "meaning": "air crash",
+        "characters": [
+          {
+            "id": "C-7A7A",
+            "text": "空"
+          },
+          {
+            "id": "C-96BE",
+            "text": "难"
+          }
+        ]
+      },
+      {
+        "id": "W0818",
+        "text": "节",
+        "pinyin": "jié",
+        "meaning": "section; counter for lessons or sections",
+        "characters": [
+          {
+            "id": "C-8282",
+            "text": "节"
+          }
+        ]
+      },
+      {
+        "id": "W2947",
+        "text": "人群",
+        "pinyin": "rénqún",
+        "meaning": "crowd",
+        "characters": [
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          },
+          {
+            "id": "C-7FA4",
+            "text": "群"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "116f94f9ad81b0b8c70200671e3d90e6ae0135aa4a32f964aa462c5da9d97128",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7fa4",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "群",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7fa4-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W2947",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "crowd",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "人群"
+              },
+              {
+                "value": "rénqún",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ren2qun2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "人群",
+              "pinyin": "rénqún",
+              "meaning": "crowd",
+              "audio": "d8cac7f031f1aed76d81cb6038ccaa9f95438bf727b5771968f5ad2da46b3708",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7fa4-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7fa4",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "群",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-d135670f0f3b69fc0db1095c",
+                "label": "air crash",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-7fa4",
+                "label": "group; crowd",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0818",
+                "label": "section; counter for lessons or sections",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7fa4-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "群",
+        "pinyin": "qún",
+        "meaning": "group; crowd",
+        "source": "/stroke-data/7fa4.json",
+        "reference": {
+          "character": "群",
+          "sha256": "37aa23f9b56b5d4729de530567e6468d818e47627ae0b36fd866332d54a988ba",
+          "medians": [
+            [
+              [
+                195,
+                713
+              ],
+              [
+                236,
+                711
+              ],
+              [
+                309,
+                724
+              ],
+              [
+                414,
+                754
+              ],
+              [
+                437,
+                747
+              ],
+              [
+                461,
+                723
+              ],
+              [
+                421,
+                556
+              ],
+              [
+                400,
+                535
+              ]
+            ],
+            [
+              [
+                52,
+                567
+              ],
+              [
+                109,
+                560
+              ],
+              [
+                477,
+                635
+              ],
+              [
+                514,
+                630
+              ]
+            ],
+            [
+              [
+                144,
+                457
+              ],
+              [
+                159,
+                454
+              ],
+              [
+                225,
+                466
+              ],
+              [
+                400,
+                508
+              ],
+              [
+                438,
+                510
+              ],
+              [
+                459,
+                502
+              ]
+            ],
+            [
+              [
+                268,
+                696
+              ],
+              [
+                294,
+                678
+              ],
+              [
+                297,
+                663
+              ],
+              [
+                265,
+                511
+              ],
+              [
+                236,
+                422
+              ],
+              [
+                189,
+                322
+              ],
+              [
+                149,
+                258
+              ],
+              [
+                80,
+                178
+              ],
+              [
+                61,
+                164
+              ]
+            ],
+            [
+              [
+                236,
+                351
+              ],
+              [
+                269,
+                131
+              ]
+            ],
+            [
+              [
+                262,
+                351
+              ],
+              [
+                272,
+                344
+              ],
+              [
+                393,
+                376
+              ],
+              [
+                425,
+                373
+              ],
+              [
+                444,
+                352
+              ],
+              [
+                442,
+                342
+              ],
+              [
+                422,
+                265
+              ],
+              [
+                397,
+                251
+              ]
+            ],
+            [
+              [
+                288,
+                186
+              ],
+              [
+                301,
+                197
+              ],
+              [
+                400,
+                219
+              ],
+              [
+                443,
+                223
+              ],
+              [
+                464,
+                216
+              ]
+            ],
+            [
+              [
+                560,
+                794
+              ],
+              [
+                615,
+                746
+              ],
+              [
+                629,
+                722
+              ]
+            ],
+            [
+              [
+                760,
+                850
+              ],
+              [
+                777,
+                835
+              ],
+              [
+                785,
+                818
+              ],
+              [
+                712,
+                710
+              ],
+              [
+                690,
+                689
+              ],
+              [
+                689,
+                680
+              ]
+            ],
+            [
+              [
+                544,
+                597
+              ],
+              [
+                605,
+                594
+              ],
+              [
+                690,
+                613
+              ],
+              [
+                785,
+                644
+              ],
+              [
+                838,
+                647
+              ]
+            ],
+            [
+              [
+                535,
+                449
+              ],
+              [
+                592,
+                446
+              ],
+              [
+                777,
+                489
+              ],
+              [
+                828,
+                485
+              ]
+            ],
+            [
+              [
+                497,
+                300
+              ],
+              [
+                542,
+                294
+              ],
+              [
+                865,
+                350
+              ],
+              [
+                920,
+                347
+              ],
+              [
+                953,
+                336
+              ]
+            ],
+            [
+              [
+                640,
+                573
+              ],
+              [
+                678,
+                556
+              ],
+              [
+                684,
+                539
+              ],
+              [
+                679,
+                -48
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7fa4-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-b11584ba321407b897bf3b64",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "always",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "历来"
+              },
+              {
+                "value": "lì lái",
+                "mode": "pinyin"
+              },
+              {
+                "value": "li4lai2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "历来",
+              "pinyin": "lì lái",
+              "meaning": "always",
+              "audio": "f5d69d598b4bf949a801c1eceeb9d46c1fba4e529ee596446034884deb0cc882",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7fa4-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7fa4",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "group; crowd",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "群"
+              },
+              {
+                "value": "qún",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qun2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "群",
+              "pinyin": "qún",
+              "meaning": "group; crowd",
+              "audio": "b6ff3cdbb153e7ed67aa0e53a1f87fea152d46d83327dbd9f43a3860319459b1",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "b6ff3cdbb153e7ed67aa0e53a1f87fea152d46d83327dbd9f43a3860319459b1"
+            ],
+            "transcript": [
+              {
+                "text": "群",
+                "pinyin": "qún",
+                "meaning": "group; crowd",
+                "audio": "b6ff3cdbb153e7ed67aa0e53a1f87fea152d46d83327dbd9f43a3860319459b1",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7FA4",
+      "character": "群",
+      "lessonIds": [
+        "LESSON-C-7FA4"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7fa4-word",
+        "EX-CHAR-char-7fa4-recognize",
+        "EX-CHAR-char-7fa4-write",
+        "EX-CHAR-char-7fa4-familiar",
+        "EX-CHAR-char-7fa4-recall"
+      ]
+    },
+    "audio": {
+      "b6ff3cdbb153e7ed67aa0e53a1f87fea152d46d83327dbd9f43a3860319459b1": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/45efc49d81038a91e5d3868e8462aed20662c1918b5f311237496314ac2922cf.mp3",
+          "sha256": "45efc49d81038a91e5d3868e8462aed20662c1918b5f311237496314ac2922cf",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "45efc49d81038a91e5d3868e8462aed20662c1918b5f311237496314ac2922cf",
+            "text": "群",
+            "words": [
+              {
+                "text": "群",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/7b44955ac696bf2d19009d22ee454ba63c029146ba96d7eaaa74e0d9475c1382.mp3",
+          "sha256": "7b44955ac696bf2d19009d22ee454ba63c029146ba96d7eaaa74e0d9475c1382",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "7b44955ac696bf2d19009d22ee454ba63c029146ba96d7eaaa74e0d9475c1382",
+            "text": "群",
+            "words": [
+              {
+                "text": "群",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "f5d69d598b4bf949a801c1eceeb9d46c1fba4e529ee596446034884deb0cc882": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/717c68cebccb71b7292043a66fd19a1186aae5d725ad720b9a7862f80a80b862.mp3",
+          "sha256": "717c68cebccb71b7292043a66fd19a1186aae5d725ad720b9a7862f80a80b862",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "717c68cebccb71b7292043a66fd19a1186aae5d725ad720b9a7862f80a80b862",
+            "text": "历来",
+            "words": [
+              {
+                "text": "历来",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/edaf87a588431ed13d82e05c33898cef558bab868083171ca30e6aa816051396.mp3",
+          "sha256": "edaf87a588431ed13d82e05c33898cef558bab868083171ca30e6aa816051396",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "edaf87a588431ed13d82e05c33898cef558bab868083171ca30e6aa816051396",
+            "text": "历来",
+            "words": [
+              {
+                "text": "历来",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "6b8fe23f3986e6cf956966f4ce56ecd0513c64836ca55283a0ece5bc490a7bc2": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e1fd19cc301b96984e24f5662348e5cfd7abd6cb5d372689c71a61f3f37f365a.mp3",
+          "sha256": "e1fd19cc301b96984e24f5662348e5cfd7abd6cb5d372689c71a61f3f37f365a",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "e1fd19cc301b96984e24f5662348e5cfd7abd6cb5d372689c71a61f3f37f365a",
+            "text": "空难",
+            "words": [
+              {
+                "text": "空难",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2dbc263838ff5e97d84117acd2e95bba15b0b03427477063ad437c951312fe86.mp3",
+          "sha256": "2dbc263838ff5e97d84117acd2e95bba15b0b03427477063ad437c951312fe86",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "2dbc263838ff5e97d84117acd2e95bba15b0b03427477063ad437c951312fe86",
+            "text": "空难",
+            "words": [
+              {
+                "text": "空难",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "5e6e7d7c3cc9c0706f66cf1a01d74c02ef51e6a1184bbc0798322dcb143e0d2a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-18259143ef887d6d668a0d39acc9520c070e89eaa99da3d38887f40e72fd31c4.mp3",
+          "sha256": "18259143ef887d6d668a0d39acc9520c070e89eaa99da3d38887f40e72fd31c4",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "18259143ef887d6d668a0d39acc9520c070e89eaa99da3d38887f40e72fd31c4",
+            "text": "节",
+            "words": [
+              {
+                "text": "节",
+                "start": 0.14,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-587a3d5732ea178280b5d1d55bd8d3f3011efb54879f5917d65085fa50f838fe.mp3",
+          "sha256": "587a3d5732ea178280b5d1d55bd8d3f3011efb54879f5917d65085fa50f838fe",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "587a3d5732ea178280b5d1d55bd8d3f3011efb54879f5917d65085fa50f838fe",
+            "text": "节",
+            "words": [
+              {
+                "text": "节",
+                "start": 0.18,
+                "end": 0.3
+              }
+            ]
+          }
+        }
+      },
+      "d8cac7f031f1aed76d81cb6038ccaa9f95438bf727b5771968f5ad2da46b3708": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e08d4efc128ed43fd80570a87302d6e0a0aac77b0671583e27bc8557cff53160.mp3",
+          "sha256": "e08d4efc128ed43fd80570a87302d6e0a0aac77b0671583e27bc8557cff53160",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "e08d4efc128ed43fd80570a87302d6e0a0aac77b0671583e27bc8557cff53160",
+            "text": "人群",
+            "words": [
+              {
+                "text": "人群",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/82f0a811b060dea6e242a0e4017a743bffbc14a39c954b2914524178e93c7bf0.mp3",
+          "sha256": "82f0a811b060dea6e242a0e4017a743bffbc14a39c954b2914524178e93c7bf0",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "82f0a811b060dea6e242a0e4017a743bffbc14a39c954b2914524178e93c7bf0",
+            "text": "人群",
+            "words": [
+              {
+                "text": "人群",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

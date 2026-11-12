@@ -1,0 +1,753 @@
+{
+  "id": "EX-CHAR-char-72fc",
+  "revision": 2,
+  "unit": "U6-29-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-29-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "狼",
+  "sourceBlockId": "mandarin-simplified-v1-char-72fc",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-84b5416bb753252b1077f0d0",
+        "text": "难得一见",
+        "pinyin": "nán dé yī jiàn",
+        "meaning": "rarely seen",
+        "characters": [
+          {
+            "id": "C-96BE",
+            "text": "难"
+          },
+          {
+            "id": "C-5F97",
+            "text": "得"
+          },
+          {
+            "id": "C-4E00",
+            "text": "一"
+          },
+          {
+            "id": "C-89C1",
+            "text": "见"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-9de3501bf60a4f447a6dd3a8",
+        "text": "不会",
+        "pinyin": "bù huì",
+        "meaning": "cannot; will not",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-4F1A",
+            "text": "会"
+          }
+        ]
+      },
+      {
+        "id": "W0418",
+        "text": "看病",
+        "pinyin": "kànbìng",
+        "meaning": "to visit a doctor; to see a patient",
+        "characters": [
+          {
+            "id": "C-770B",
+            "text": "看"
+          },
+          {
+            "id": "C-75C5",
+            "text": "病"
+          }
+        ]
+      },
+      {
+        "id": "W4434",
+        "text": "狼",
+        "pinyin": "láng",
+        "meaning": "wolf",
+        "characters": [
+          {
+            "id": "C-72FC",
+            "text": "狼"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "c646d36e38fa706912b09c9720fbbc91ba498aca329e5c060f6f3cfbc7c8a1c6",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-72fc",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "狼",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-72fc-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W4434",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "wolf",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "狼"
+              },
+              {
+                "value": "láng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "狼",
+              "pinyin": "láng",
+              "meaning": "wolf",
+              "audio": "4b9db957a90e05a7fbbedfdd4eecfc8588c81a9bb7992c42746de4dcec775167",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-72fc-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W4434",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "狼",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W4434",
+                "label": "wolf",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-9de3501bf60a4f447a6dd3a8",
+                "label": "cannot; will not",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-84b5416bb753252b1077f0d0",
+                "label": "rarely seen",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-72fc-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "狼",
+        "pinyin": "láng",
+        "meaning": "wolf",
+        "source": "/stroke-data/72fc.json",
+        "reference": {
+          "character": "狼",
+          "sha256": "64f38f6031ca30daa99b090cca0d24616e16316a88a8e27ac4c2d7800bc7bb9d",
+          "medians": [
+            [
+              [
+                343,
+                758
+              ],
+              [
+                359,
+                738
+              ],
+              [
+                367,
+                711
+              ],
+              [
+                313,
+                617
+              ],
+              [
+                230,
+                518
+              ],
+              [
+                173,
+                470
+              ],
+              [
+                109,
+                430
+              ]
+            ],
+            [
+              [
+                154,
+                678
+              ],
+              [
+                171,
+                656
+              ],
+              [
+                208,
+                635
+              ],
+              [
+                254,
+                595
+              ],
+              [
+                294,
+                539
+              ],
+              [
+                323,
+                465
+              ],
+              [
+                343,
+                327
+              ],
+              [
+                343,
+                261
+              ],
+              [
+                333,
+                166
+              ],
+              [
+                306,
+                71
+              ],
+              [
+                282,
+                44
+              ],
+              [
+                196,
+                88
+              ]
+            ],
+            [
+              [
+                294,
+                446
+              ],
+              [
+                298,
+                439
+              ],
+              [
+                287,
+                381
+              ],
+              [
+                252,
+                326
+              ],
+              [
+                176,
+                239
+              ],
+              [
+                86,
+                171
+              ]
+            ],
+            [
+              [
+                558,
+                837
+              ],
+              [
+                642,
+                791
+              ],
+              [
+                667,
+                759
+              ]
+            ],
+            [
+              [
+                514,
+                651
+              ],
+              [
+                531,
+                654
+              ],
+              [
+                541,
+                646
+              ],
+              [
+                711,
+                687
+              ],
+              [
+                741,
+                682
+              ],
+              [
+                765,
+                662
+              ],
+              [
+                775,
+                648
+              ],
+              [
+                724,
+                443
+              ],
+              [
+                710,
+                425
+              ],
+              [
+                687,
+                437
+              ]
+            ],
+            [
+              [
+                524,
+                515
+              ],
+              [
+                538,
+                527
+              ],
+              [
+                602,
+                545
+              ],
+              [
+                660,
+                547
+              ]
+            ],
+            [
+              [
+                529,
+                386
+              ],
+              [
+                543,
+                406
+              ],
+              [
+                590,
+                419
+              ],
+              [
+                649,
+                431
+              ],
+              [
+                669,
+                420
+              ]
+            ],
+            [
+              [
+                459,
+                668
+              ],
+              [
+                489,
+                637
+              ],
+              [
+                498,
+                605
+              ],
+              [
+                506,
+                315
+              ],
+              [
+                493,
+                97
+              ],
+              [
+                503,
+                63
+              ],
+              [
+                542,
+                75
+              ],
+              [
+                649,
+                153
+              ]
+            ],
+            [
+              [
+                789,
+                400
+              ],
+              [
+                805,
+                379
+              ],
+              [
+                809,
+                361
+              ],
+              [
+                764,
+                315
+              ],
+              [
+                706,
+                268
+              ],
+              [
+                696,
+                269
+              ]
+            ],
+            [
+              [
+                533,
+                378
+              ],
+              [
+                555,
+                376
+              ],
+              [
+                570,
+                363
+              ],
+              [
+                587,
+                336
+              ],
+              [
+                689,
+                232
+              ],
+              [
+                768,
+                162
+              ],
+              [
+                821,
+                124
+              ],
+              [
+                972,
+                108
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-72fc-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0418",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to visit a doctor; to see a patient",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "看病"
+              },
+              {
+                "value": "kànbìng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "kan4bing4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "看病",
+              "pinyin": "kànbìng",
+              "meaning": "to visit a doctor; to see a patient",
+              "audio": "bfc249fd67c017a9a47082f19c724d262a02cd871fc2b28b3a564783927c1926",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-72fc-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W4434",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "wolf",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "狼"
+              },
+              {
+                "value": "láng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "狼",
+              "pinyin": "láng",
+              "meaning": "wolf",
+              "audio": "4b9db957a90e05a7fbbedfdd4eecfc8588c81a9bb7992c42746de4dcec775167",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "4b9db957a90e05a7fbbedfdd4eecfc8588c81a9bb7992c42746de4dcec775167"
+            ],
+            "transcript": [
+              {
+                "text": "狼",
+                "pinyin": "láng",
+                "meaning": "wolf",
+                "audio": "4b9db957a90e05a7fbbedfdd4eecfc8588c81a9bb7992c42746de4dcec775167",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-72FC",
+      "character": "狼",
+      "lessonIds": [
+        "LESSON-C-72FC"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-72fc-word",
+        "EX-CHAR-char-72fc-recognize",
+        "EX-CHAR-char-72fc-write",
+        "EX-CHAR-char-72fc-familiar",
+        "EX-CHAR-char-72fc-recall"
+      ]
+    },
+    "audio": {
+      "f3fe06e5403631bb3690849e1cd223249106aa0027d16e0276def3ecb0439afd": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a53a2a07eb686cbe0a6590f0e2aae7ed8c608e32535fe15f69b365961c6eaccc.mp3",
+          "sha256": "a53a2a07eb686cbe0a6590f0e2aae7ed8c608e32535fe15f69b365961c6eaccc",
+          "byteLength": 18765,
+          "readAlong": {
+            "audioSha256": "a53a2a07eb686cbe0a6590f0e2aae7ed8c608e32535fe15f69b365961c6eaccc",
+            "text": "难得一见",
+            "words": [
+              {
+                "text": "难得一见",
+                "start": 0.27,
+                "end": 0.9299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/6c17b62ebd33b0f8de1139946756455dc870aae76a57486d12c59068cc8a9bc5.mp3",
+          "sha256": "6c17b62ebd33b0f8de1139946756455dc870aae76a57486d12c59068cc8a9bc5",
+          "byteLength": 17325,
+          "readAlong": {
+            "audioSha256": "6c17b62ebd33b0f8de1139946756455dc870aae76a57486d12c59068cc8a9bc5",
+            "text": "难得一见",
+            "words": [
+              {
+                "text": "难得一见",
+                "start": 0.21,
+                "end": 0.9299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "813043c8ea871759624f63fade2994865921247dd78e959f09411e7b3d4f6bed": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8fe0fd632c63c12293b994ffa7f29d8d9b5cad0d10a710e9878d2cb3dfeb65d3.mp3",
+          "sha256": "8fe0fd632c63c12293b994ffa7f29d8d9b5cad0d10a710e9878d2cb3dfeb65d3",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "8fe0fd632c63c12293b994ffa7f29d8d9b5cad0d10a710e9878d2cb3dfeb65d3",
+            "text": "不会",
+            "words": [
+              {
+                "text": "不会",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/7cc6555e8baca4f303500aa363fb7a18f900e780c8cb3ede5d84c55b206285bb.mp3",
+          "sha256": "7cc6555e8baca4f303500aa363fb7a18f900e780c8cb3ede5d84c55b206285bb",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "7cc6555e8baca4f303500aa363fb7a18f900e780c8cb3ede5d84c55b206285bb",
+            "text": "不会",
+            "words": [
+              {
+                "text": "不会",
+                "start": 0.09,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "bfc249fd67c017a9a47082f19c724d262a02cd871fc2b28b3a564783927c1926": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2534ea3a66bdecae98da824efa7ed2cd94447b05f010b9c433bc3b8298099af2.mp3",
+          "sha256": "2534ea3a66bdecae98da824efa7ed2cd94447b05f010b9c433bc3b8298099af2",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "2534ea3a66bdecae98da824efa7ed2cd94447b05f010b9c433bc3b8298099af2",
+            "text": "看病",
+            "words": [
+              {
+                "text": "看病",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-fbd9de88a76c37f6d3c5e28f082038a52ff79b7987ee76a9a1e5fc924f39e6e5.mp3",
+          "sha256": "fbd9de88a76c37f6d3c5e28f082038a52ff79b7987ee76a9a1e5fc924f39e6e5",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "fbd9de88a76c37f6d3c5e28f082038a52ff79b7987ee76a9a1e5fc924f39e6e5",
+            "text": "看病",
+            "words": [
+              {
+                "text": "看病",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "4b9db957a90e05a7fbbedfdd4eecfc8588c81a9bb7992c42746de4dcec775167": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/069e393e92dfd273c14af5b34c0ae0a4ab24dc8c5e29874e48fc2a1ebcac07e5.mp3",
+          "sha256": "069e393e92dfd273c14af5b34c0ae0a4ab24dc8c5e29874e48fc2a1ebcac07e5",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "069e393e92dfd273c14af5b34c0ae0a4ab24dc8c5e29874e48fc2a1ebcac07e5",
+            "text": "狼",
+            "words": [
+              {
+                "text": "狼",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a26bb7b50020336e9e11758a0f57161064442bfcc6fe757e9349fab65d5d4edf.mp3",
+          "sha256": "a26bb7b50020336e9e11758a0f57161064442bfcc6fe757e9349fab65d5d4edf",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "a26bb7b50020336e9e11758a0f57161064442bfcc6fe757e9349fab65d5d4edf",
+            "text": "狼",
+            "words": [
+              {
+                "text": "狼",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

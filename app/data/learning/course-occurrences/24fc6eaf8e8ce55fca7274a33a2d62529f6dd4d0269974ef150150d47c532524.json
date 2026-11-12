@@ -1,0 +1,695 @@
+{
+  "id": "EX-CHAR-char-56f0",
+  "revision": 2,
+  "unit": "U4-14",
+  "stage": "ST-HSK4",
+  "after": "S-U4-14-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "困",
+  "sourceBlockId": "mandarin-simplified-v1-char-56f0",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-56f0",
+        "text": "困",
+        "pinyin": "kùn",
+        "meaning": "to trap; to surround",
+        "characters": [
+          {
+            "id": "C-56F0",
+            "text": "困"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-6c41",
+        "text": "汁",
+        "pinyin": "zhī",
+        "meaning": "juice",
+        "characters": [
+          {
+            "id": "C-6C41",
+            "text": "汁"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-2bcb4447267f691365ec2a07",
+        "text": "火车站",
+        "pinyin": "huǒ chē zhàn",
+        "meaning": "train station",
+        "characters": [
+          {
+            "id": "C-706B",
+            "text": "火"
+          },
+          {
+            "id": "C-8F66",
+            "text": "车"
+          },
+          {
+            "id": "C-7AD9",
+            "text": "站"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-60284a9d90910e328dd7f5c6",
+        "text": "白酒",
+        "pinyin": "báijiǔ",
+        "meaning": "baijiu, a spirit usually distilled from sorghum; (Taiwan) white wine",
+        "characters": [
+          {
+            "id": "C-767D",
+            "text": "白"
+          },
+          {
+            "id": "C-9152",
+            "text": "酒"
+          }
+        ]
+      },
+      {
+        "id": "W1489",
+        "text": "困难",
+        "pinyin": "kùnnan",
+        "meaning": "difficult; challenging",
+        "characters": [
+          {
+            "id": "C-56F0",
+            "text": "困"
+          },
+          {
+            "id": "C-96BE",
+            "text": "难"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "58cd0c1ef236a132ddcca19b5269471ccb075023814084b0de72f074bbc610b7",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-56f0",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "困",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-56f0-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1489",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "difficult; challenging",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "困难"
+              },
+              {
+                "value": "kùnnan",
+                "mode": "pinyin"
+              },
+              {
+                "value": "kun4nan5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "困难",
+              "pinyin": "kùnnan",
+              "meaning": "difficult; challenging",
+              "audio": "96b128c7ca6617e01382afcbb51fc676687e2402868969c2e2c0118ba050f5a2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-56f0-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-56f0",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "困",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-60284a9d90910e328dd7f5c6",
+                "label": "baijiu, a spirit usually distilled from sorghum; (Taiwan) white wine",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-56f0",
+                "label": "to trap; to surround",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-2bcb4447267f691365ec2a07",
+                "label": "train station",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-56f0-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "困",
+        "pinyin": "kùn",
+        "meaning": "to trap; to surround",
+        "source": "/stroke-data/56f0.json",
+        "reference": {
+          "character": "困",
+          "sha256": "fe691ec1d508151777dfd09f5f7ccf7aa57c12a06aa1ce243d491d3a28a587ba",
+          "medians": [
+            [
+              [
+                192,
+                756
+              ],
+              [
+                220,
+                723
+              ],
+              [
+                230,
+                692
+              ],
+              [
+                234,
+                645
+              ],
+              [
+                225,
+                316
+              ],
+              [
+                204,
+                112
+              ],
+              [
+                208,
+                41
+              ]
+            ],
+            [
+              [
+                253,
+                738
+              ],
+              [
+                276,
+                720
+              ],
+              [
+                508,
+                758
+              ],
+              [
+                722,
+                782
+              ],
+              [
+                748,
+                776
+              ],
+              [
+                777,
+                749
+              ],
+              [
+                787,
+                734
+              ],
+              [
+                782,
+                511
+              ],
+              [
+                793,
+                163
+              ],
+              [
+                790,
+                117
+              ],
+              [
+                778,
+                84
+              ],
+              [
+                783,
+                15
+              ]
+            ],
+            [
+              [
+                328,
+                513
+              ],
+              [
+                384,
+                508
+              ],
+              [
+                617,
+                552
+              ],
+              [
+                663,
+                546
+              ]
+            ],
+            [
+              [
+                458,
+                685
+              ],
+              [
+                486,
+                664
+              ],
+              [
+                503,
+                642
+              ],
+              [
+                487,
+                237
+              ],
+              [
+                494,
+                188
+              ]
+            ],
+            [
+              [
+                471,
+                498
+              ],
+              [
+                462,
+                489
+              ],
+              [
+                454,
+                444
+              ],
+              [
+                401,
+                359
+              ],
+              [
+                354,
+                303
+              ],
+              [
+                293,
+                251
+              ]
+            ],
+            [
+              [
+                524,
+                446
+              ],
+              [
+                528,
+                428
+              ],
+              [
+                542,
+                427
+              ],
+              [
+                649,
+                345
+              ],
+              [
+                664,
+                322
+              ],
+              [
+                669,
+                301
+              ]
+            ],
+            [
+              [
+                238,
+                74
+              ],
+              [
+                258,
+                90
+              ],
+              [
+                303,
+                94
+              ],
+              [
+                655,
+                117
+              ],
+              [
+                735,
+                114
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-56f0-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-PRIMARY-char-6c41",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "juice",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "汁"
+              },
+              {
+                "value": "zhī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "汁",
+              "pinyin": "zhī",
+              "meaning": "juice",
+              "audio": "45eda435fe80220c364626a0770f33bc25259aa6092081657a5bdcedd0fe4aa8",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-56f0-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-56f0",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to trap; to surround",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "困"
+              },
+              {
+                "value": "kùn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "kun4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "困",
+              "pinyin": "kùn",
+              "meaning": "to trap; to surround",
+              "audio": "e9800e88c8fa740c31718838d503c3a339e26d5c29adcff9bacbad37fa0b5af2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "e9800e88c8fa740c31718838d503c3a339e26d5c29adcff9bacbad37fa0b5af2"
+            ],
+            "transcript": [
+              {
+                "text": "困",
+                "pinyin": "kùn",
+                "meaning": "to trap; to surround",
+                "audio": "e9800e88c8fa740c31718838d503c3a339e26d5c29adcff9bacbad37fa0b5af2",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-56F0",
+      "character": "困",
+      "lessonIds": [
+        "LESSON-C-56F0"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-56f0-word",
+        "EX-CHAR-char-56f0-recognize",
+        "EX-CHAR-char-56f0-write",
+        "EX-CHAR-char-56f0-familiar",
+        "EX-CHAR-char-56f0-recall"
+      ]
+    },
+    "audio": {
+      "e9800e88c8fa740c31718838d503c3a339e26d5c29adcff9bacbad37fa0b5af2": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1419a55651476acf76f927b99d9dbc1496ab1828e4f027d8a40e60c841252081.mp3",
+          "sha256": "1419a55651476acf76f927b99d9dbc1496ab1828e4f027d8a40e60c841252081",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "1419a55651476acf76f927b99d9dbc1496ab1828e4f027d8a40e60c841252081",
+            "text": "困",
+            "words": [
+              {
+                "text": "困",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-a4c1a39d438bd798aed192c66f813fc6d64322394e982e9c62cf82a24168d12f.mp3",
+          "sha256": "a4c1a39d438bd798aed192c66f813fc6d64322394e982e9c62cf82a24168d12f",
+          "byteLength": 8397,
+          "readAlong": {
+            "audioSha256": "a4c1a39d438bd798aed192c66f813fc6d64322394e982e9c62cf82a24168d12f",
+            "text": "困",
+            "words": [
+              {
+                "text": "困",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "45eda435fe80220c364626a0770f33bc25259aa6092081657a5bdcedd0fe4aa8": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-f7c776092923ae1e2cb02376113facc49fc70c68e95973db246726057a6f3cff.mp3",
+          "sha256": "f7c776092923ae1e2cb02376113facc49fc70c68e95973db246726057a6f3cff",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "f7c776092923ae1e2cb02376113facc49fc70c68e95973db246726057a6f3cff",
+            "text": "汁",
+            "words": [
+              {
+                "text": "汁",
+                "start": 0.14,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-da032f31c30636ed362f8d294e5a97122455df4fc3b9c2bd6533312540140bbb.mp3",
+          "sha256": "da032f31c30636ed362f8d294e5a97122455df4fc3b9c2bd6533312540140bbb",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "da032f31c30636ed362f8d294e5a97122455df4fc3b9c2bd6533312540140bbb",
+            "text": "汁",
+            "words": [
+              {
+                "text": "汁",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "ead11b3d5843b0088d976602e2ae921b6a9e27c68c17b1b5e41ad781800229bf": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/b92584306e24a5dcaf52d1a45767c164a4c399559b45970fb31c17275e5c2ef3.mp3",
+          "sha256": "b92584306e24a5dcaf52d1a45767c164a4c399559b45970fb31c17275e5c2ef3",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "b92584306e24a5dcaf52d1a45767c164a4c399559b45970fb31c17275e5c2ef3",
+            "text": "火车站",
+            "words": [
+              {
+                "text": "火车站",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1aa6329fccf8efae078e05cb3928a18b7d7ca35310d32083863b75f575c13a53.mp3",
+          "sha256": "1aa6329fccf8efae078e05cb3928a18b7d7ca35310d32083863b75f575c13a53",
+          "byteLength": 16461,
+          "readAlong": {
+            "audioSha256": "1aa6329fccf8efae078e05cb3928a18b7d7ca35310d32083863b75f575c13a53",
+            "text": "火车站",
+            "words": [
+              {
+                "text": "火车站",
+                "start": 0.15,
+                "end": 0.75
+              }
+            ]
+          }
+        }
+      },
+      "17078f23541d2aeb1aa9219d7cd55b3822485f0d9bdd16c0aba2529e33d560fb": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/4bf9f1024eb695e57607c0736532a46b17590264b9e1523d6cbc4200b45288c1.mp3",
+          "sha256": "4bf9f1024eb695e57607c0736532a46b17590264b9e1523d6cbc4200b45288c1",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "4bf9f1024eb695e57607c0736532a46b17590264b9e1523d6cbc4200b45288c1",
+            "text": "白酒",
+            "words": [
+              {
+                "text": "白酒",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/90234f7bdf2d5ada3d544a8e33c82e6ca57a1d5c7ecbe4f0f31b32fc07a85c9e.mp3",
+          "sha256": "90234f7bdf2d5ada3d544a8e33c82e6ca57a1d5c7ecbe4f0f31b32fc07a85c9e",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "90234f7bdf2d5ada3d544a8e33c82e6ca57a1d5c7ecbe4f0f31b32fc07a85c9e",
+            "text": "白酒",
+            "words": [
+              {
+                "text": "白酒",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "96b128c7ca6617e01382afcbb51fc676687e2402868969c2e2c0118ba050f5a2": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-da27e33c03f23ada0864ecb49854ca5ef835a57c892789f6c48c81bfbcff02a3.mp3",
+          "sha256": "da27e33c03f23ada0864ecb49854ca5ef835a57c892789f6c48c81bfbcff02a3",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "da27e33c03f23ada0864ecb49854ca5ef835a57c892789f6c48c81bfbcff02a3",
+            "text": "困难",
+            "words": [
+              {
+                "text": "困难",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-718484f26cabd3c5a1b5863df8a7d21693a7daffba14ffbe4b1323f7b381891d.mp3",
+          "sha256": "718484f26cabd3c5a1b5863df8a7d21693a7daffba14ffbe4b1323f7b381891d",
+          "byteLength": 13581,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "718484f26cabd3c5a1b5863df8a7d21693a7daffba14ffbe4b1323f7b381891d",
+            "text": "困难",
+            "words": [
+              {
+                "text": "困难",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

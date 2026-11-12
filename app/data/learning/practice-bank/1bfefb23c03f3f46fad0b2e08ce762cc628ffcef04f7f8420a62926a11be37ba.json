@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0210",
+  "targetId": "W0210",
+  "steps": [
+    {
+      "id": "BANK-W0210-W0210",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0210-W0210",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "next week",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "下个星期"
+            },
+            {
+              "value": "xiàgexīngqī",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xia4ge5xing1qi1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "下个星期",
+            "pinyin": "xiàgexīngqī",
+            "meaning": "next week",
+            "singleWord": true,
+            "audio": "cb43c8afa3ba43399f212344c4ab4802dff52e6812bb550878ab5100e1e5c0a7"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "cb43c8afa3ba43399f212344c4ab4802dff52e6812bb550878ab5100e1e5c0a7": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ce9aa73b2b88d6af03ca5f2a8ebf177d8bc82fabe4dae645267891475ea0ea45.mp3",
+        "sha256": "ce9aa73b2b88d6af03ca5f2a8ebf177d8bc82fabe4dae645267891475ea0ea45",
+        "byteLength": 18189,
+        "readAlong": {
+          "audioSha256": "ce9aa73b2b88d6af03ca5f2a8ebf177d8bc82fabe4dae645267891475ea0ea45",
+          "text": "下个星期",
+          "words": [
+            {
+              "text": "下个星期",
+              "start": 0.09,
+              "end": 0.8699999999999999
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2a3acf67c042c1447ac3322711d4cf830ef174f8f0cf351c4f4da695f603294c.mp3",
+        "sha256": "2a3acf67c042c1447ac3322711d4cf830ef174f8f0cf351c4f4da695f603294c",
+        "byteLength": 18189,
+        "readAlong": {
+          "audioSha256": "2a3acf67c042c1447ac3322711d4cf830ef174f8f0cf351c4f4da695f603294c",
+          "text": "下个星期",
+          "words": [
+            {
+              "text": "下个星期",
+              "start": 0.09,
+              "end": 0.75
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0210",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0210-W0210",
+      "question_ids": [
+        "BANK-W0210-W0210"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U18",
+    "stepId": "S-U18-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5934"
+    ],
+    "grammarLessonIds": []
+  }
+}

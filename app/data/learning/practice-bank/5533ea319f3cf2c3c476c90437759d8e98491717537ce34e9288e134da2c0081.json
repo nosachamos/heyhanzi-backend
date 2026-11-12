@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1844",
+  "targetId": "W1844",
+  "steps": [
+    {
+      "id": "BANK-W1844-W1844",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1844-W1844",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "echo; sound",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "响"
+            },
+            {
+              "value": "xiǎng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xiang3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "响",
+            "pinyin": "xiǎng",
+            "meaning": "echo; sound",
+            "singleWord": true,
+            "audio": "36c86e49e47b2a4c76209117c93882d0e181d0f28334bf62fcec77fe9c9487d3"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "36c86e49e47b2a4c76209117c93882d0e181d0f28334bf62fcec77fe9c9487d3": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5e6945542211bcdf35cbf01b4ff4d1899fe4b690161edbda4fcd60015978a837.mp3",
+        "sha256": "5e6945542211bcdf35cbf01b4ff4d1899fe4b690161edbda4fcd60015978a837",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "5e6945542211bcdf35cbf01b4ff4d1899fe4b690161edbda4fcd60015978a837",
+          "text": "响",
+          "words": [
+            {
+              "text": "响",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-7d110cf9f75b35f1a4a84aafee3c5d8f8f877e62e22f42ccb60ac880bd6a63f0.mp3",
+        "sha256": "7d110cf9f75b35f1a4a84aafee3c5d8f8f877e62e22f42ccb60ac880bd6a63f0",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "7d110cf9f75b35f1a4a84aafee3c5d8f8f877e62e22f42ccb60ac880bd6a63f0",
+          "text": "响",
+          "words": [
+            {
+              "text": "响",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1844",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1844-W1844",
+      "question_ids": [
+        "BANK-W1844-W1844"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-27",
+    "stepId": "S-U4-27-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-54cd"
+    ],
+    "grammarLessonIds": []
+  }
+}

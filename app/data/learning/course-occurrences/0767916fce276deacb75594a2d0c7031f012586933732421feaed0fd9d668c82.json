@@ -1,0 +1,749 @@
+{
+  "id": "EX-CHAR-char-7c97",
+  "revision": 2,
+  "unit": "U4-36-P01",
+  "stage": "ST-HSK4",
+  "after": "S-U4-36-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "粗",
+  "sourceBlockId": "mandarin-simplified-v1-char-7c97",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-6bdb",
+        "text": "毛",
+        "pinyin": "máo",
+        "meaning": "hair; feather",
+        "characters": [
+          {
+            "id": "C-6BDB",
+            "text": "毛"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-7c97",
+        "text": "粗",
+        "pinyin": "cū",
+        "meaning": "(of something long) wide; thick; (of something granular) coarse",
+        "characters": [
+          {
+            "id": "C-7C97",
+            "text": "粗"
+          }
+        ]
+      },
+      {
+        "id": "W0006",
+        "text": "是",
+        "pinyin": "shì",
+        "meaning": "be",
+        "characters": [
+          {
+            "id": "C-662F",
+            "text": "是"
+          }
+        ]
+      },
+      {
+        "id": "W0801",
+        "text": "机会",
+        "pinyin": "jīhuì",
+        "meaning": "opportunity; chance",
+        "characters": [
+          {
+            "id": "C-673A",
+            "text": "机"
+          },
+          {
+            "id": "C-4F1A",
+            "text": "会"
+          }
+        ]
+      },
+      {
+        "id": "W1160",
+        "text": "粗心",
+        "pinyin": "cūxīn",
+        "meaning": "careless; thoughtless",
+        "characters": [
+          {
+            "id": "C-7C97",
+            "text": "粗"
+          },
+          {
+            "id": "C-5FC3",
+            "text": "心"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "4c274c617d5b1c87305ee9194bdd74328221ee52d57a51faf6fbd0e0c2904b69",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7c97",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "粗",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7c97-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1160",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "careless; thoughtless",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "粗心"
+              },
+              {
+                "value": "cūxīn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "cu1xin1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "粗心",
+              "pinyin": "cūxīn",
+              "meaning": "careless; thoughtless",
+              "audio": "e35886db6eafd6da9d39261ae8810964d822a18f472d01ad59c526e25b5f72f7",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7c97-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7c97",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "粗",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-7c97",
+                "label": "(of something long) wide; thick",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0801",
+                "label": "opportunity; chance",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-6bdb",
+                "label": "hair; feather",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7c97-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "粗",
+        "pinyin": "cū",
+        "meaning": "(of something long) wide; thick",
+        "source": "/stroke-data/7c97.json",
+        "reference": {
+          "character": "粗",
+          "sha256": "f9828c838973e084e2ed6ad5830d4d2976629fc333f3c11e93f2712403043e06",
+          "medians": [
+            [
+              [
+                179,
+                619
+              ],
+              [
+                227,
+                556
+              ],
+              [
+                240,
+                510
+              ]
+            ],
+            [
+              [
+                441,
+                651
+              ],
+              [
+                460,
+                623
+              ],
+              [
+                388,
+                538
+              ]
+            ],
+            [
+              [
+                76,
+                388
+              ],
+              [
+                107,
+                381
+              ],
+              [
+                139,
+                382
+              ],
+              [
+                409,
+                449
+              ],
+              [
+                473,
+                457
+              ],
+              [
+                492,
+                453
+              ]
+            ],
+            [
+              [
+                297,
+                824
+              ],
+              [
+                312,
+                814
+              ],
+              [
+                348,
+                769
+              ],
+              [
+                334,
+                275
+              ],
+              [
+                314,
+                58
+              ],
+              [
+                315,
+                -26
+              ]
+            ],
+            [
+              [
+                310,
+                400
+              ],
+              [
+                291,
+                357
+              ],
+              [
+                203,
+                237
+              ],
+              [
+                118,
+                147
+              ],
+              [
+                70,
+                109
+              ]
+            ],
+            [
+              [
+                360,
+                341
+              ],
+              [
+                371,
+                335
+              ],
+              [
+                375,
+                323
+              ],
+              [
+                424,
+                293
+              ],
+              [
+                446,
+                261
+              ]
+            ],
+            [
+              [
+                542,
+                651
+              ],
+              [
+                571,
+                621
+              ],
+              [
+                581,
+                567
+              ],
+              [
+                581,
+                152
+              ],
+              [
+                565,
+                132
+              ]
+            ],
+            [
+              [
+                604,
+                636
+              ],
+              [
+                619,
+                626
+              ],
+              [
+                754,
+                665
+              ],
+              [
+                776,
+                657
+              ],
+              [
+                799,
+                626
+              ],
+              [
+                789,
+                548
+              ],
+              [
+                775,
+                178
+              ],
+              [
+                750,
+                161
+              ]
+            ],
+            [
+              [
+                613,
+                451
+              ],
+              [
+                625,
+                467
+              ],
+              [
+                639,
+                472
+              ],
+              [
+                689,
+                482
+              ],
+              [
+                723,
+                477
+              ]
+            ],
+            [
+              [
+                612,
+                297
+              ],
+              [
+                625,
+                313
+              ],
+              [
+                653,
+                320
+              ],
+              [
+                697,
+                323
+              ],
+              [
+                723,
+                317
+              ]
+            ],
+            [
+              [
+                414,
+                100
+              ],
+              [
+                434,
+                93
+              ],
+              [
+                469,
+                92
+              ],
+              [
+                568,
+                107
+              ],
+              [
+                862,
+                134
+              ],
+              [
+                905,
+                131
+              ],
+              [
+                951,
+                116
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7c97-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0006",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "be",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "是"
+              },
+              {
+                "value": "shì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "是",
+              "pinyin": "shì",
+              "meaning": "be",
+              "audio": "7940c81ffb1e91957744588fa3aeea82d09d9d422020f67f6e9d7f3b4ed610b8",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7c97-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7c97",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "(of something long) wide; thick",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "粗"
+              },
+              {
+                "value": "cū",
+                "mode": "pinyin"
+              },
+              {
+                "value": "cu1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "粗",
+              "pinyin": "cū",
+              "meaning": "(of something long) wide; thick",
+              "audio": "2f94d9035b2aab82e121889bfacc03f5806b271b867a43f480a2914d3c3d12e5",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "2f94d9035b2aab82e121889bfacc03f5806b271b867a43f480a2914d3c3d12e5"
+            ],
+            "transcript": [
+              {
+                "text": "粗",
+                "pinyin": "cū",
+                "meaning": "(of something long) wide; thick",
+                "audio": "2f94d9035b2aab82e121889bfacc03f5806b271b867a43f480a2914d3c3d12e5",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7C97",
+      "character": "粗",
+      "lessonIds": [
+        "LESSON-C-7C97"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7c97-word",
+        "EX-CHAR-char-7c97-recognize",
+        "EX-CHAR-char-7c97-write",
+        "EX-CHAR-char-7c97-familiar",
+        "EX-CHAR-char-7c97-recall"
+      ]
+    },
+    "audio": {
+      "f89fd4a81af7e7a645ff920785be2aed60388f04d6d07da1307ef24bfe9662d5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/cbed55c6d2ecfe773c53591080007c1271ea5e9e085a34b1c170ceeab245f0dd.mp3",
+          "sha256": "cbed55c6d2ecfe773c53591080007c1271ea5e9e085a34b1c170ceeab245f0dd",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "cbed55c6d2ecfe773c53591080007c1271ea5e9e085a34b1c170ceeab245f0dd",
+            "text": "毛",
+            "words": [
+              {
+                "text": "毛",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/63031f6026e88e177a71635703587b832580273ae6e21661af36615cfa6ce094.mp3",
+          "sha256": "63031f6026e88e177a71635703587b832580273ae6e21661af36615cfa6ce094",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "63031f6026e88e177a71635703587b832580273ae6e21661af36615cfa6ce094",
+            "text": "毛",
+            "words": [
+              {
+                "text": "毛",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "2f94d9035b2aab82e121889bfacc03f5806b271b867a43f480a2914d3c3d12e5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f96276e4e059814714af7584339080ad1001d186b89cc3909c333636fc3ffe8d.mp3",
+          "sha256": "f96276e4e059814714af7584339080ad1001d186b89cc3909c333636fc3ffe8d",
+          "byteLength": 10701,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "f96276e4e059814714af7584339080ad1001d186b89cc3909c333636fc3ffe8d",
+            "text": "粗",
+            "words": [
+              {
+                "text": "粗",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/4ff9ce3450ff27ff0b6c49478b5826e51e09c0f075ffafe63b6e8d834410d696.mp3",
+          "sha256": "4ff9ce3450ff27ff0b6c49478b5826e51e09c0f075ffafe63b6e8d834410d696",
+          "byteLength": 10701,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "4ff9ce3450ff27ff0b6c49478b5826e51e09c0f075ffafe63b6e8d834410d696",
+            "text": "粗",
+            "words": [
+              {
+                "text": "粗",
+                "start": 0.11,
+                "end": 0.59
+              }
+            ]
+          }
+        }
+      },
+      "7940c81ffb1e91957744588fa3aeea82d09d9d422020f67f6e9d7f3b4ed610b8": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f30695f82f2c7735b6813ef2c9c71395b631456f0371d01baf7c7ce6bab698f0.mp3",
+          "sha256": "f30695f82f2c7735b6813ef2c9c71395b631456f0371d01baf7c7ce6bab698f0",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "f30695f82f2c7735b6813ef2c9c71395b631456f0371d01baf7c7ce6bab698f0",
+            "text": "是",
+            "words": [
+              {
+                "text": "是",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-bdc98e75ff7f5f64b4e86ea4d142837d13bfb3eed0e872a219e7acf47acd386d.mp3",
+          "sha256": "bdc98e75ff7f5f64b4e86ea4d142837d13bfb3eed0e872a219e7acf47acd386d",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "bdc98e75ff7f5f64b4e86ea4d142837d13bfb3eed0e872a219e7acf47acd386d",
+            "text": "是",
+            "words": [
+              {
+                "text": "是",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "18cf6c14d3cc0273e18b022e8951e19d58e22f244b7e131d4df45b3096223165": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-d8fcfe6c207ebc54d9d7f97848005f36426c7b18cf83282c4ed2e017536d2ed8.mp3",
+          "sha256": "d8fcfe6c207ebc54d9d7f97848005f36426c7b18cf83282c4ed2e017536d2ed8",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "d8fcfe6c207ebc54d9d7f97848005f36426c7b18cf83282c4ed2e017536d2ed8",
+            "text": "机会",
+            "words": [
+              {
+                "text": "机会",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6b230065180b7171505fcec24adb1c86baf579f86d7ee5fce9b67129458dba21.mp3",
+          "sha256": "6b230065180b7171505fcec24adb1c86baf579f86d7ee5fce9b67129458dba21",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "6b230065180b7171505fcec24adb1c86baf579f86d7ee5fce9b67129458dba21",
+            "text": "机会",
+            "words": [
+              {
+                "text": "机会",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "e35886db6eafd6da9d39261ae8810964d822a18f472d01ad59c526e25b5f72f7": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-9db23bdbd73f6e8fefe7138f1d8b95c1f1e6968502e5816c6380c7200015f0ba.mp3",
+          "sha256": "9db23bdbd73f6e8fefe7138f1d8b95c1f1e6968502e5816c6380c7200015f0ba",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "9db23bdbd73f6e8fefe7138f1d8b95c1f1e6968502e5816c6380c7200015f0ba",
+            "text": "粗心",
+            "words": [
+              {
+                "text": "粗心",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-415716b4164a732686d8bac6d3187f42e1dc87f81b6adbefe2eb92e086084217.mp3",
+          "sha256": "415716b4164a732686d8bac6d3187f42e1dc87f81b6adbefe2eb92e086084217",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "415716b4164a732686d8bac6d3187f42e1dc87f81b6adbefe2eb92e086084217",
+            "text": "粗心",
+            "words": [
+              {
+                "text": "粗心",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

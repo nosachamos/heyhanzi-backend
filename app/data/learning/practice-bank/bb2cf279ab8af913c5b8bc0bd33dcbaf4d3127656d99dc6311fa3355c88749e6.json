@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0116",
+  "targetId": "W0116",
+  "steps": [
+    {
+      "id": "BANK-W0116-W0116",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0116-W0116",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "swim",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "游泳"
+            },
+            {
+              "value": "yóuyǒng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "you2yong3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "游泳",
+            "pinyin": "yóuyǒng",
+            "meaning": "swim",
+            "singleWord": true,
+            "audio": "00e9550a00dec5b3dc927c920c1c36f682776f86ce7dcc9dfcb7277996af2a98"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "00e9550a00dec5b3dc927c920c1c36f682776f86ce7dcc9dfcb7277996af2a98": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-53fbd6431b57ae7e709daa7ad3e1adbfccb44e81e7d264319df042c9f136da2e.mp3",
+        "sha256": "53fbd6431b57ae7e709daa7ad3e1adbfccb44e81e7d264319df042c9f136da2e",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "53fbd6431b57ae7e709daa7ad3e1adbfccb44e81e7d264319df042c9f136da2e",
+          "text": "游泳",
+          "words": [
+            {
+              "text": "游泳",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-88e6c49784c1e2ccb73cbf407aa81fc8aec50fb2713d67576527a3ca97eeed62.mp3",
+        "sha256": "88e6c49784c1e2ccb73cbf407aa81fc8aec50fb2713d67576527a3ca97eeed62",
+        "byteLength": 16461,
+        "readAlong": {
+          "audioSha256": "88e6c49784c1e2ccb73cbf407aa81fc8aec50fb2713d67576527a3ca97eeed62",
+          "text": "游泳",
+          "words": [
+            {
+              "text": "游泳",
+              "start": 0.21,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0116",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0116-W0116",
+      "question_ids": [
+        "BANK-W0116-W0116"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U10",
+    "stepId": "S-U10-words-r4-7",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6cf3"
+    ],
+    "grammarLessonIds": []
+  }
+}

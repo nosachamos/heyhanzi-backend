@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0670",
+  "targetId": "W0670",
+  "steps": [
+    {
+      "id": "BANK-W0670-W0670",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0670-W0670",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "ice",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "冰"
+            },
+            {
+              "value": "bīng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bing1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "冰",
+            "pinyin": "bīng",
+            "meaning": "ice",
+            "singleWord": true,
+            "audio": "3fbfdfb32175b07dd5db97f766b0307d344f1eb0bd2f4932cc71f66f7562717e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3fbfdfb32175b07dd5db97f766b0307d344f1eb0bd2f4932cc71f66f7562717e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-82c4d6fe207934ded7cb417b2504e7ccdc892f11a62469591ef721820327caa0.mp3",
+        "sha256": "82c4d6fe207934ded7cb417b2504e7ccdc892f11a62469591ef721820327caa0",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "82c4d6fe207934ded7cb417b2504e7ccdc892f11a62469591ef721820327caa0",
+          "text": "冰",
+          "words": [
+            {
+              "text": "冰",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ac479d2b6c575b62e1cac53f07d73c639ed65c31b9f8091b834801948429eeae.mp3",
+        "sha256": "ac479d2b6c575b62e1cac53f07d73c639ed65c31b9f8091b834801948429eeae",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "ac479d2b6c575b62e1cac53f07d73c639ed65c31b9f8091b834801948429eeae",
+          "text": "冰",
+          "words": [
+            {
+              "text": "冰",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0670",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0670-W0670",
+      "question_ids": [
+        "BANK-W0670-W0670"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-17",
+    "stepId": "S-U3-17-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-51b0"
+    ],
+    "grammarLessonIds": []
+  }
+}

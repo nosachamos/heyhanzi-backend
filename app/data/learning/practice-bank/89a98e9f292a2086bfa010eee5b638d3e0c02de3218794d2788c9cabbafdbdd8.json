@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1108",
+  "targetId": "W1108",
+  "steps": [
+    {
+      "id": "BANK-W1108-W1108",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1108-W1108",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "part; portion",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "部分"
+            },
+            {
+              "value": "bùfen",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bu4fen5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "部分",
+            "pinyin": "bùfen",
+            "meaning": "part; portion",
+            "singleWord": true,
+            "audio": "dfedea0669753d6f7abd4048706311ccc479da69b96e13cd00b0fd96a6fd3f5e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "dfedea0669753d6f7abd4048706311ccc479da69b96e13cd00b0fd96a6fd3f5e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-dad03c77b1c958586d9195ecebf88a1ff424685b52ef0f01f58b8bed4ccfe5fe.mp3",
+        "sha256": "dad03c77b1c958586d9195ecebf88a1ff424685b52ef0f01f58b8bed4ccfe5fe",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "dad03c77b1c958586d9195ecebf88a1ff424685b52ef0f01f58b8bed4ccfe5fe",
+          "text": "部分",
+          "words": [
+            {
+              "text": "部分",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-e228b48bc3ea9151dbf86750172db40c98a12a2a43535869421362d597b8cae9.mp3",
+        "sha256": "e228b48bc3ea9151dbf86750172db40c98a12a2a43535869421362d597b8cae9",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "e228b48bc3ea9151dbf86750172db40c98a12a2a43535869421362d597b8cae9",
+          "text": "部分",
+          "words": [
+            {
+              "text": "部分",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1108",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1108-W1108",
+      "question_ids": [
+        "BANK-W1108-W1108"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-31",
+    "stepId": "S-U4-31-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-90e8"
+    ],
+    "grammarLessonIds": []
+  }
+}

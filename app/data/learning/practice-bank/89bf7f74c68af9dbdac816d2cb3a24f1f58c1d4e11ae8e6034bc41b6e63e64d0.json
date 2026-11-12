@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3099",
+  "targetId": "W3099",
+  "steps": [
+    {
+      "id": "BANK-W3099-W3099",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3099-W3099",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "private; personal",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "私人"
+            },
+            {
+              "value": "sīrén",
+              "mode": "pinyin"
+            },
+            {
+              "value": "si1ren2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "私人",
+            "pinyin": "sīrén",
+            "meaning": "private; personal",
+            "singleWord": true,
+            "audio": "05dcec3dbc04f75ab52e723611a2bdcf5fdbb77990f2cc97a6a10c24b4ce1e7b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "05dcec3dbc04f75ab52e723611a2bdcf5fdbb77990f2cc97a6a10c24b4ce1e7b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-7ff92f49250b2169bc7c43ee2aeb05732ee45c5d839acb18ee4459480058891f.mp3",
+        "sha256": "7ff92f49250b2169bc7c43ee2aeb05732ee45c5d839acb18ee4459480058891f",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "7ff92f49250b2169bc7c43ee2aeb05732ee45c5d839acb18ee4459480058891f",
+          "text": "私人",
+          "words": [
+            {
+              "text": "私人",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-457bc8ab11a2bd5fd224feebd144b44613c752b9a5d03766ce6765577a6f5345.mp3",
+        "sha256": "457bc8ab11a2bd5fd224feebd144b44613c752b9a5d03766ce6765577a6f5345",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "457bc8ab11a2bd5fd224feebd144b44613c752b9a5d03766ce6765577a6f5345",
+          "text": "私人",
+          "words": [
+            {
+              "text": "私人",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3099",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3099-W3099",
+      "question_ids": [
+        "BANK-W3099-W3099"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-33",
+    "stepId": "S-U5-33-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-79c1"
+    ],
+    "grammarLessonIds": []
+  }
+}

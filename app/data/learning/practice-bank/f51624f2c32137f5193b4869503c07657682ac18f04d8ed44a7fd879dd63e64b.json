@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0952",
+  "targetId": "W0952",
+  "steps": [
+    {
+      "id": "BANK-W0952-W0952",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0952-W0952",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "library",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "图书馆"
+            },
+            {
+              "value": "túshūguǎn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "tu2shu1guan3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "图书馆",
+            "pinyin": "túshūguǎn",
+            "meaning": "library",
+            "singleWord": true,
+            "audio": "7becf51d0f5ba541c6e81f4024547b16bbdd2723cc0518bf8f9c99f6257db390"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7becf51d0f5ba541c6e81f4024547b16bbdd2723cc0518bf8f9c99f6257db390": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a52c02e1d000623c4000fbbcde3cff24bdbf589f1ea3fb398493279d0bc5e48d.mp3",
+        "sha256": "a52c02e1d000623c4000fbbcde3cff24bdbf589f1ea3fb398493279d0bc5e48d",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "a52c02e1d000623c4000fbbcde3cff24bdbf589f1ea3fb398493279d0bc5e48d",
+          "text": "图书馆",
+          "words": [
+            {
+              "text": "图书馆",
+              "start": 0.09,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-7b22447a04595adac8234edf683f6cbf4c2a5727ff49a86de5187fa985a30dcb.mp3",
+        "sha256": "7b22447a04595adac8234edf683f6cbf4c2a5727ff49a86de5187fa985a30dcb",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "7b22447a04595adac8234edf683f6cbf4c2a5727ff49a86de5187fa985a30dcb",
+          "text": "图书馆",
+          "words": [
+            {
+              "text": "图书馆",
+              "start": 0.09,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0952",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0952-W0952",
+      "question_ids": [
+        "BANK-W0952-W0952"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-13",
+    "stepId": "S-U3-13-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-56fe"
+    ],
+    "grammarLessonIds": []
+  }
+}

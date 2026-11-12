@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2213",
+  "targetId": "W2213",
+  "steps": [
+    {
+      "id": "BANK-W2213-W2213",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2213-W2213",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "bed sheet",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "床单"
+            },
+            {
+              "value": "chuángdān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chuang2dan1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "床单",
+            "pinyin": "chuángdān",
+            "meaning": "bed sheet",
+            "singleWord": true,
+            "audio": "c9e68cef8e9dd384c2d5b3189f31155d1a2b66b4b91b284c561eae81145e7650"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c9e68cef8e9dd384c2d5b3189f31155d1a2b66b4b91b284c561eae81145e7650": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-e3a8d726f657ceae68574d696259b5eda9afc1f8c0c4a166e12f95fdd537438f.mp3",
+        "sha256": "e3a8d726f657ceae68574d696259b5eda9afc1f8c0c4a166e12f95fdd537438f",
+        "byteLength": 14157,
+        "readAlong": {
+          "audioSha256": "e3a8d726f657ceae68574d696259b5eda9afc1f8c0c4a166e12f95fdd537438f",
+          "text": "床单",
+          "words": [
+            {
+              "text": "床单",
+              "start": 0.27,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-1ced94646fbf03abc30ee6388cc6f07684f2bdae9a2d24efb9833e870c9e19cf.mp3",
+        "sha256": "1ced94646fbf03abc30ee6388cc6f07684f2bdae9a2d24efb9833e870c9e19cf",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "1ced94646fbf03abc30ee6388cc6f07684f2bdae9a2d24efb9833e870c9e19cf",
+          "text": "床单",
+          "words": [
+            {
+              "text": "床单",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2213",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2213-W2213",
+      "question_ids": [
+        "BANK-W2213-W2213"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-03",
+    "stepId": "S-U5-03-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5355"
+    ],
+    "grammarLessonIds": []
+  }
+}

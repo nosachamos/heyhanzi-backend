@@ -1,0 +1,859 @@
+{
+  "id": "EX-CHAR-char-61d2",
+  "revision": 2,
+  "unit": "U4-37-P01",
+  "stage": "ST-HSK4",
+  "after": "S-U4-37-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "懒",
+  "sourceBlockId": "mandarin-simplified-v1-char-61d2",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-1291ccedd59a31f1d681e19e",
+        "text": "懒得",
+        "pinyin": "lǎn de",
+        "meaning": "to not feel like (doing something)",
+        "characters": [
+          {
+            "id": "C-61D2",
+            "text": "懒"
+          },
+          {
+            "id": "C-5F97",
+            "text": "得"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-dd09311bc26c270ac30966ee",
+        "text": "生机",
+        "pinyin": "shēng jī",
+        "meaning": "opportunity to live",
+        "characters": [
+          {
+            "id": "C-751F",
+            "text": "生"
+          },
+          {
+            "id": "C-673A",
+            "text": "机"
+          }
+        ]
+      },
+      {
+        "id": "W1495",
+        "text": "懒",
+        "pinyin": "lǎn",
+        "meaning": "lazy",
+        "characters": [
+          {
+            "id": "C-61D2",
+            "text": "懒"
+          }
+        ]
+      },
+      {
+        "id": "W3546",
+        "text": "中医",
+        "pinyin": "zhōngyī",
+        "meaning": "traditional Chinese medical science; a doctor trained in Chinese medicine",
+        "characters": [
+          {
+            "id": "C-4E2D",
+            "text": "中"
+          },
+          {
+            "id": "C-533B",
+            "text": "医"
+          }
+        ]
+      },
+      {
+        "id": "W5002",
+        "text": "文物",
+        "pinyin": "wénwù",
+        "meaning": "cultural relic; historical relic",
+        "characters": [
+          {
+            "id": "C-6587",
+            "text": "文"
+          },
+          {
+            "id": "C-7269",
+            "text": "物"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "096667827e9b016cccf8212cf99a164a1a4ebc2bfa4f4d7855af8cd82213874d",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-61d2",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "懒",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-61d2-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-1291ccedd59a31f1d681e19e",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to not feel like (doing something)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "懒得"
+              },
+              {
+                "value": "lǎn de",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lan3de5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "懒得",
+              "pinyin": "lǎn de",
+              "meaning": "to not feel like (doing something)",
+              "audio": "8b795a66df9babead34d24084c70ec7e0fc7ad641b4be2ff4c83288d856cf650",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-61d2-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W1495",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "懒",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-dd09311bc26c270ac30966ee",
+                "label": "opportunity to live",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1495",
+                "label": "lazy",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W5002",
+                "label": "cultural relic; historical relic",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-61d2-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "懒",
+        "pinyin": "lǎn",
+        "meaning": "lazy",
+        "source": "/stroke-data/61d2.json",
+        "reference": {
+          "character": "懒",
+          "sha256": "4c0f5a0def3ef2a29eb8d16a40fd411205c18bf1d95bef44fbbded6812b8b89f",
+          "medians": [
+            [
+              [
+                133,
+                566
+              ],
+              [
+                128,
+                486
+              ],
+              [
+                101,
+                375
+              ]
+            ],
+            [
+              [
+                263,
+                639
+              ],
+              [
+                331,
+                592
+              ]
+            ],
+            [
+              [
+                195,
+                813
+              ],
+              [
+                233,
+                775
+              ],
+              [
+                242,
+                754
+              ],
+              [
+                235,
+                342
+              ],
+              [
+                219,
+                121
+              ],
+              [
+                221,
+                42
+              ]
+            ],
+            [
+              [
+                359,
+                647
+              ],
+              [
+                409,
+                644
+              ],
+              [
+                527,
+                680
+              ],
+              [
+                565,
+                681
+              ]
+            ],
+            [
+              [
+                312,
+                537
+              ],
+              [
+                332,
+                520
+              ],
+              [
+                339,
+                505
+              ],
+              [
+                369,
+                368
+              ]
+            ],
+            [
+              [
+                355,
+                533
+              ],
+              [
+                365,
+                526
+              ],
+              [
+                508,
+                562
+              ],
+              [
+                545,
+                563
+              ],
+              [
+                569,
+                539
+              ],
+              [
+                548,
+                476
+              ],
+              [
+                534,
+                469
+              ]
+            ],
+            [
+              [
+                380,
+                420
+              ],
+              [
+                391,
+                413
+              ],
+              [
+                523,
+                443
+              ],
+              [
+                572,
+                438
+              ]
+            ],
+            [
+              [
+                413,
+                804
+              ],
+              [
+                452,
+                767
+              ],
+              [
+                460,
+                747
+              ],
+              [
+                456,
+                304
+              ],
+              [
+                443,
+                139
+              ],
+              [
+                445,
+                58
+              ]
+            ],
+            [
+              [
+                434,
+                384
+              ],
+              [
+                416,
+                317
+              ],
+              [
+                402,
+                291
+              ],
+              [
+                350,
+                218
+              ],
+              [
+                292,
+                153
+              ]
+            ],
+            [
+              [
+                502,
+                357
+              ],
+              [
+                551,
+                318
+              ],
+              [
+                565,
+                292
+              ]
+            ],
+            [
+              [
+                692,
+                820
+              ],
+              [
+                703,
+                815
+              ],
+              [
+                720,
+                791
+              ],
+              [
+                709,
+                750
+              ],
+              [
+                661,
+                647
+              ],
+              [
+                622,
+                593
+              ]
+            ],
+            [
+              [
+                682,
+                653
+              ],
+              [
+                758,
+                676
+              ],
+              [
+                797,
+                667
+              ],
+              [
+                728,
+                534
+              ],
+              [
+                709,
+                516
+              ]
+            ],
+            [
+              [
+                613,
+                516
+              ],
+              [
+                637,
+                490
+              ],
+              [
+                644,
+                460
+              ],
+              [
+                643,
+                340
+              ],
+              [
+                627,
+                251
+              ],
+              [
+                628,
+                192
+              ]
+            ],
+            [
+              [
+                660,
+                502
+              ],
+              [
+                686,
+                498
+              ],
+              [
+                805,
+                526
+              ],
+              [
+                816,
+                522
+              ],
+              [
+                842,
+                494
+              ],
+              [
+                837,
+                394
+              ],
+              [
+                844,
+                242
+              ],
+              [
+                838,
+                189
+              ]
+            ],
+            [
+              [
+                693,
+                451
+              ],
+              [
+                710,
+                445
+              ],
+              [
+                737,
+                419
+              ],
+              [
+                729,
+                245
+              ],
+              [
+                710,
+                159
+              ],
+              [
+                691,
+                113
+              ],
+              [
+                653,
+                70
+              ],
+              [
+                599,
+                36
+              ],
+              [
+                554,
+                22
+              ]
+            ],
+            [
+              [
+                770,
+                150
+              ],
+              [
+                844,
+                77
+              ],
+              [
+                861,
+                50
+              ],
+              [
+                870,
+                18
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-61d2-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3546",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "traditional Chinese medical science; a doctor trained in Chinese medicine",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "中医"
+              },
+              {
+                "value": "zhōngyī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhong1yi1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "中医",
+              "pinyin": "zhōngyī",
+              "meaning": "traditional Chinese medical science; a doctor trained in Chinese medicine",
+              "audio": "69e19316abdd4e434484c041ae14424b997a2703b85e89c9994aad1fb1357495",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-61d2-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W1495",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "lazy",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "懒"
+              },
+              {
+                "value": "lǎn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lan3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "懒",
+              "pinyin": "lǎn",
+              "meaning": "lazy",
+              "audio": "de807204a2ee01d6fd7be702a1b3fc389705cad035980cefa80a91cfa5f7d7e6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "de807204a2ee01d6fd7be702a1b3fc389705cad035980cefa80a91cfa5f7d7e6"
+            ],
+            "transcript": [
+              {
+                "text": "懒",
+                "pinyin": "lǎn",
+                "meaning": "lazy",
+                "audio": "de807204a2ee01d6fd7be702a1b3fc389705cad035980cefa80a91cfa5f7d7e6",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-61D2",
+      "character": "懒",
+      "lessonIds": [
+        "LESSON-C-61D2"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-61d2-word",
+        "EX-CHAR-char-61d2-recognize",
+        "EX-CHAR-char-61d2-write",
+        "EX-CHAR-char-61d2-familiar",
+        "EX-CHAR-char-61d2-recall"
+      ]
+    },
+    "audio": {
+      "8b795a66df9babead34d24084c70ec7e0fc7ad641b4be2ff4c83288d856cf650": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/add915bac202c5be1a32b7f1291c0506b1c2fa028a5d6b555a6c45ad76c1b8ed.mp3",
+          "sha256": "add915bac202c5be1a32b7f1291c0506b1c2fa028a5d6b555a6c45ad76c1b8ed",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "add915bac202c5be1a32b7f1291c0506b1c2fa028a5d6b555a6c45ad76c1b8ed",
+            "text": "懒得",
+            "words": [
+              {
+                "text": "懒得",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/bd1bf360f169115da3235504c1ecacc25241e9fb158ae184f901248665f3f6a5.mp3",
+          "sha256": "bd1bf360f169115da3235504c1ecacc25241e9fb158ae184f901248665f3f6a5",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "bd1bf360f169115da3235504c1ecacc25241e9fb158ae184f901248665f3f6a5",
+            "text": "懒得",
+            "words": [
+              {
+                "text": "懒得",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "2a5f78e1adc9cb6dda9674ee72e7399873b39d7c4c628e69518aad80c910d30e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/92fda03fc6bcd314783a471d934493f420f9f980c33e9ddeb7658697df6d1639.mp3",
+          "sha256": "92fda03fc6bcd314783a471d934493f420f9f980c33e9ddeb7658697df6d1639",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "92fda03fc6bcd314783a471d934493f420f9f980c33e9ddeb7658697df6d1639",
+            "text": "生机",
+            "words": [
+              {
+                "text": "生机",
+                "start": 0.22,
+                "end": 0.66
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/40e837a0281f56d42f0049cec8b8a4bafcd594e37d8da6294cab01f7f4f9536f.mp3",
+          "sha256": "40e837a0281f56d42f0049cec8b8a4bafcd594e37d8da6294cab01f7f4f9536f",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "40e837a0281f56d42f0049cec8b8a4bafcd594e37d8da6294cab01f7f4f9536f",
+            "text": "生机",
+            "words": [
+              {
+                "text": "生机",
+                "start": 0.24,
+                "end": 0.6
+              }
+            ]
+          }
+        }
+      },
+      "de807204a2ee01d6fd7be702a1b3fc389705cad035980cefa80a91cfa5f7d7e6": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6f76ba2962635eec0b49f5b9530245c233731781bad6a62fda415e7973a3f517.mp3",
+          "sha256": "6f76ba2962635eec0b49f5b9530245c233731781bad6a62fda415e7973a3f517",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "6f76ba2962635eec0b49f5b9530245c233731781bad6a62fda415e7973a3f517",
+            "text": "懒",
+            "words": [
+              {
+                "text": "懒",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/bea3b391fd765113f3267d3905f27e37398fe2fdbebc9dba38c314b62dc79488.mp3",
+          "sha256": "bea3b391fd765113f3267d3905f27e37398fe2fdbebc9dba38c314b62dc79488",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "bea3b391fd765113f3267d3905f27e37398fe2fdbebc9dba38c314b62dc79488",
+            "text": "懒",
+            "words": [
+              {
+                "text": "懒",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "69e19316abdd4e434484c041ae14424b997a2703b85e89c9994aad1fb1357495": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/96977d0c9c944665c586515568476abaff09588ea558b4fcefddc47f72da5a42.mp3",
+          "sha256": "96977d0c9c944665c586515568476abaff09588ea558b4fcefddc47f72da5a42",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "96977d0c9c944665c586515568476abaff09588ea558b4fcefddc47f72da5a42",
+            "text": "中医",
+            "words": [
+              {
+                "text": "中医",
+                "start": 0.16,
+                "end": 0.58
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/12df3e1572c984cf3781083e1e740bd25bb71fb4021b21038159d5f5b5b174b3.mp3",
+          "sha256": "12df3e1572c984cf3781083e1e740bd25bb71fb4021b21038159d5f5b5b174b3",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "12df3e1572c984cf3781083e1e740bd25bb71fb4021b21038159d5f5b5b174b3",
+            "text": "中医",
+            "words": [
+              {
+                "text": "中医",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "eea9f834c7aaf6ed7ee4414f46ee07f254ebd9bc75c634bbe710715a0ac44e3a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/86be004bebd013c6915f47cb8d2618c86265d22bdcfd2d56caf4bdab5a6c17ce.mp3",
+          "sha256": "86be004bebd013c6915f47cb8d2618c86265d22bdcfd2d56caf4bdab5a6c17ce",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "86be004bebd013c6915f47cb8d2618c86265d22bdcfd2d56caf4bdab5a6c17ce",
+            "text": "文物",
+            "words": [
+              {
+                "text": "文物",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/4ad1384e9463a839e493e68b808ae6466385eab981f38e9d42088289979fa2af.mp3",
+          "sha256": "4ad1384e9463a839e493e68b808ae6466385eab981f38e9d42088289979fa2af",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "4ad1384e9463a839e493e68b808ae6466385eab981f38e9d42088289979fa2af",
+            "text": "文物",
+            "words": [
+              {
+                "text": "文物",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0559",
+  "targetId": "W0559",
+  "steps": [
+    {
+      "id": "BANK-W0559-W0559",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0559-W0559",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "trousers; pants",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "裤子"
+            },
+            {
+              "value": "kùzi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ku4zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "裤子",
+            "pinyin": "kùzi",
+            "meaning": "trousers; pants",
+            "singleWord": true,
+            "audio": "2199b83e2db2eeb84bdbcf236b78321dcc53383c616d5425c0ff2d46006020b4"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2199b83e2db2eeb84bdbcf236b78321dcc53383c616d5425c0ff2d46006020b4": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f85a19db72c58ffe33e189706cdafea324afc081fba804c18e6375085b39d155.mp3",
+        "sha256": "f85a19db72c58ffe33e189706cdafea324afc081fba804c18e6375085b39d155",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "f85a19db72c58ffe33e189706cdafea324afc081fba804c18e6375085b39d155",
+          "text": "裤子",
+          "words": [
+            {
+              "text": "裤子",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-96804bc6b50cd9cadf67fb3dd475351def58795de1a0d02323b23b4d72e12337.mp3",
+        "sha256": "96804bc6b50cd9cadf67fb3dd475351def58795de1a0d02323b23b4d72e12337",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "96804bc6b50cd9cadf67fb3dd475351def58795de1a0d02323b23b4d72e12337",
+          "text": "裤子",
+          "words": [
+            {
+              "text": "裤子",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0559",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0559-W0559",
+      "question_ids": [
+        "BANK-W0559-W0559"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U23-P01",
+    "stepId": "S-U23-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-88e4"
+    ],
+    "grammarLessonIds": []
+  }
+}

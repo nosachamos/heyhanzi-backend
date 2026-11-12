@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2042",
+  "targetId": "W2042",
+  "steps": [
+    {
+      "id": "BANK-W2042-W2042",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2042-W2042",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "midnight; in the middle of the night",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "半夜"
+            },
+            {
+              "value": "bànyè",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ban4ye4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "半夜",
+            "pinyin": "bànyè",
+            "meaning": "midnight; in the middle of the night",
+            "singleWord": true,
+            "audio": "4601dbd54fc6171f545965cae79911f064429825f770e48a91bca261d89e345e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "4601dbd54fc6171f545965cae79911f064429825f770e48a91bca261d89e345e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-df5aac98b5fc50f04106da72aa413529b382f81ed4c0496f38bc49e6221a7c75.mp3",
+        "sha256": "df5aac98b5fc50f04106da72aa413529b382f81ed4c0496f38bc49e6221a7c75",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "df5aac98b5fc50f04106da72aa413529b382f81ed4c0496f38bc49e6221a7c75",
+          "text": "半夜",
+          "words": [
+            {
+              "text": "半夜",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-79e7b574087cfb95fcb0031691d7537965154f17fccb21098552e5dfa25934ad.mp3",
+        "sha256": "79e7b574087cfb95fcb0031691d7537965154f17fccb21098552e5dfa25934ad",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "79e7b574087cfb95fcb0031691d7537965154f17fccb21098552e5dfa25934ad",
+          "text": "半夜",
+          "words": [
+            {
+              "text": "半夜",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2042",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2042-W2042",
+      "question_ids": [
+        "BANK-W2042-W2042"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-05-P01",
+    "stepId": "S-U5-05-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-591c"
+    ],
+    "grammarLessonIds": []
+  }
+}

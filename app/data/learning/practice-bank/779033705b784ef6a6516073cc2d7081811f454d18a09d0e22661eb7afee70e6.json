@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3122",
+  "targetId": "W3122",
+  "steps": [
+    {
+      "id": "BANK-W3122-W3122",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3122-W3122",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "desk lamp; table lamp",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "台灯"
+            },
+            {
+              "value": "táidēng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "tai2deng1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "台灯",
+            "pinyin": "táidēng",
+            "meaning": "desk lamp; table lamp",
+            "singleWord": true,
+            "audio": "355c19f959685ecac43d7be087ac130a983a47adfe3a48c5d5b5722b24aef3fb"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "355c19f959685ecac43d7be087ac130a983a47adfe3a48c5d5b5722b24aef3fb": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a635b9ecfd9532421591b9d04288cac4faa968f49584b88e29a2aee1331c5703.mp3",
+        "sha256": "a635b9ecfd9532421591b9d04288cac4faa968f49584b88e29a2aee1331c5703",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "a635b9ecfd9532421591b9d04288cac4faa968f49584b88e29a2aee1331c5703",
+          "text": "台灯",
+          "words": [
+            {
+              "text": "台灯",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-510ee1f0dcacc667118a3fec5dd5964cfb8abdfde04a0a32ec0a4d6d0c6f23f9.mp3",
+        "sha256": "510ee1f0dcacc667118a3fec5dd5964cfb8abdfde04a0a32ec0a4d6d0c6f23f9",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "510ee1f0dcacc667118a3fec5dd5964cfb8abdfde04a0a32ec0a4d6d0c6f23f9",
+          "text": "台灯",
+          "words": [
+            {
+              "text": "台灯",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3122",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3122-W3122",
+      "question_ids": [
+        "BANK-W3122-W3122"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-03",
+    "stepId": "S-U5-03-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-53f0"
+    ],
+    "grammarLessonIds": []
+  }
+}

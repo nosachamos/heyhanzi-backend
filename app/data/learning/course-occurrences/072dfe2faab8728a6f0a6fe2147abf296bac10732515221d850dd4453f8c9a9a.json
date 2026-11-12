@@ -1,0 +1,701 @@
+{
+  "id": "EX-CHAR-char-8eab",
+  "revision": 2,
+  "unit": "U17-P01",
+  "stage": "ST-HSK2",
+  "after": "S-U17-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "身",
+  "sourceBlockId": "mandarin-simplified-v1-char-8eab",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-8eab",
+        "text": "身",
+        "pinyin": "shēn",
+        "meaning": "body; life",
+        "characters": [
+          {
+            "id": "C-8EAB",
+            "text": "身"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f082fb3a12683db4bd92f08a",
+        "text": "话语",
+        "pinyin": "huà yǔ",
+        "meaning": "utterance",
+        "characters": [
+          {
+            "id": "C-8BDD",
+            "text": "话"
+          },
+          {
+            "id": "C-8BED",
+            "text": "语"
+          }
+        ]
+      },
+      {
+        "id": "W0433",
+        "text": "名字",
+        "pinyin": "míngzi",
+        "meaning": "name",
+        "characters": [
+          {
+            "id": "C-540D",
+            "text": "名"
+          },
+          {
+            "id": "C-5B57",
+            "text": "字"
+          }
+        ]
+      },
+      {
+        "id": "W0626",
+        "text": "有意思",
+        "pinyin": "yǒuyìsi",
+        "meaning": "interesting; meaningful",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          },
+          {
+            "id": "C-610F",
+            "text": "意"
+          },
+          {
+            "id": "C-601D",
+            "text": "思"
+          }
+        ]
+      },
+      {
+        "id": "W0919",
+        "text": "身高",
+        "pinyin": "shēngāo",
+        "meaning": "height",
+        "characters": [
+          {
+            "id": "C-8EAB",
+            "text": "身"
+          },
+          {
+            "id": "C-9AD8",
+            "text": "高"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "9586008092c6aa32b4b7ad058440f05042950bba2ee3ac98472261817a5272bc",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8eab",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "身",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8eab-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0919",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "height",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "身高"
+              },
+              {
+                "value": "shēngāo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shen1gao1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "身高",
+              "pinyin": "shēngāo",
+              "meaning": "height",
+              "audio": "e35006a42dfaf5b985a8d57bc4abb68642a62b65e1639321850d0d9667ccb785",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8eab-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-8eab",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "身",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0626",
+                "label": "interesting; meaningful",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-8eab",
+                "label": "body; life",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0433",
+                "label": "name",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8eab-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "身",
+        "pinyin": "shēn",
+        "meaning": "body; life",
+        "source": "/stroke-data/8eab.json",
+        "reference": {
+          "character": "身",
+          "sha256": "9ad456866bc1cef70d3b217d9b5e4444f31d3e24c92c36e02b71c767a20aac5c",
+          "medians": [
+            [
+              [
+                474,
+                858
+              ],
+              [
+                485,
+                851
+              ],
+              [
+                500,
+                824
+              ],
+              [
+                406,
+                697
+              ],
+              [
+                391,
+                691
+              ]
+            ],
+            [
+              [
+                332,
+                701
+              ],
+              [
+                361,
+                670
+              ],
+              [
+                369,
+                624
+              ],
+              [
+                368,
+                358
+              ],
+              [
+                352,
+                342
+              ]
+            ],
+            [
+              [
+                389,
+                682
+              ],
+              [
+                409,
+                668
+              ],
+              [
+                427,
+                670
+              ],
+              [
+                512,
+                685
+              ],
+              [
+                605,
+                711
+              ],
+              [
+                631,
+                695
+              ],
+              [
+                645,
+                677
+              ],
+              [
+                644,
+                113
+              ],
+              [
+                634,
+                19
+              ],
+              [
+                618,
+                -4
+              ],
+              [
+                603,
+                -1
+              ],
+              [
+                486,
+                49
+              ]
+            ],
+            [
+              [
+                399,
+                541
+              ],
+              [
+                434,
+                559
+              ],
+              [
+                474,
+                567
+              ],
+              [
+                525,
+                576
+              ],
+              [
+                559,
+                571
+              ]
+            ],
+            [
+              [
+                399,
+                438
+              ],
+              [
+                409,
+                448
+              ],
+              [
+                483,
+                465
+              ],
+              [
+                526,
+                472
+              ],
+              [
+                559,
+                467
+              ]
+            ],
+            [
+              [
+                159,
+                303
+              ],
+              [
+                216,
+                275
+              ],
+              [
+                326,
+                304
+              ],
+              [
+                604,
+                360
+              ],
+              [
+                612,
+                372
+              ]
+            ],
+            [
+              [
+                786,
+                589
+              ],
+              [
+                800,
+                557
+              ],
+              [
+                804,
+                525
+              ],
+              [
+                799,
+                517
+              ],
+              [
+                703,
+                406
+              ],
+              [
+                597,
+                305
+              ],
+              [
+                413,
+                168
+              ],
+              [
+                302,
+                101
+              ],
+              [
+                149,
+                33
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8eab-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-f082fb3a12683db4bd92f08a",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "utterance",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "话语"
+              },
+              {
+                "value": "huà yǔ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hua4yu3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "话语",
+              "pinyin": "huà yǔ",
+              "meaning": "utterance",
+              "audio": "dafe61dadb7903aedc2548c73364ede9a243736b3b9ed471954443646f386afc",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8eab-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-8eab",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "body; life",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "身"
+              },
+              {
+                "value": "shēn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shen1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "身",
+              "pinyin": "shēn",
+              "meaning": "body; life",
+              "audio": "7e4a15fb5ac631f1939ef436b8b64c968013863eb8867771309bae8b8db8d21f",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "7e4a15fb5ac631f1939ef436b8b64c968013863eb8867771309bae8b8db8d21f"
+            ],
+            "transcript": [
+              {
+                "text": "身",
+                "pinyin": "shēn",
+                "meaning": "body; life",
+                "audio": "7e4a15fb5ac631f1939ef436b8b64c968013863eb8867771309bae8b8db8d21f",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8EAB",
+      "character": "身",
+      "lessonIds": [
+        "LESSON-C-8EAB"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8eab-word",
+        "EX-CHAR-char-8eab-recognize",
+        "EX-CHAR-char-8eab-write",
+        "EX-CHAR-char-8eab-familiar",
+        "EX-CHAR-char-8eab-recall"
+      ]
+    },
+    "audio": {
+      "7e4a15fb5ac631f1939ef436b8b64c968013863eb8867771309bae8b8db8d21f": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-015ee85f200ec5e653e1999bcaa68add70440d8d868512f6c6a22bba5bf1649a.mp3",
+          "sha256": "015ee85f200ec5e653e1999bcaa68add70440d8d868512f6c6a22bba5bf1649a",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "015ee85f200ec5e653e1999bcaa68add70440d8d868512f6c6a22bba5bf1649a",
+            "text": "身",
+            "words": [
+              {
+                "text": "身",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f9575515271b21029aeb72cb4dcc507a212328740b347537b2f0d3923cf2ae5c.mp3",
+          "sha256": "f9575515271b21029aeb72cb4dcc507a212328740b347537b2f0d3923cf2ae5c",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "f9575515271b21029aeb72cb4dcc507a212328740b347537b2f0d3923cf2ae5c",
+            "text": "身",
+            "words": [
+              {
+                "text": "身",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "dafe61dadb7903aedc2548c73364ede9a243736b3b9ed471954443646f386afc": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/04997a5327250e9348d12cf141fabb1e7137f7eaa7e63117a4ca534063fff9c0.mp3",
+          "sha256": "04997a5327250e9348d12cf141fabb1e7137f7eaa7e63117a4ca534063fff9c0",
+          "byteLength": 16461,
+          "readAlong": {
+            "audioSha256": "04997a5327250e9348d12cf141fabb1e7137f7eaa7e63117a4ca534063fff9c0",
+            "text": "话语",
+            "words": [
+              {
+                "text": "话语",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/05d8ea32cb851b779b3b97f648784b02eea4dafb79d2cd4df0182d005026f494.mp3",
+          "sha256": "05d8ea32cb851b779b3b97f648784b02eea4dafb79d2cd4df0182d005026f494",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "05d8ea32cb851b779b3b97f648784b02eea4dafb79d2cd4df0182d005026f494",
+            "text": "话语",
+            "words": [
+              {
+                "text": "话语",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "dd1a1dda5dc3aae930826ec2509716c48b8012c129872afb1f2d209d1eddb3ff": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-17341a243247f1862316bef99018bde195146a1bcd71c80e77c2695a6e11c08f.mp3",
+          "sha256": "17341a243247f1862316bef99018bde195146a1bcd71c80e77c2695a6e11c08f",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "17341a243247f1862316bef99018bde195146a1bcd71c80e77c2695a6e11c08f",
+            "text": "名字",
+            "words": [
+              {
+                "text": "名字",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ec40aab2bdc20147f458b049ffd2944e10d5397ccf6538672ec73d23e561437e.mp3",
+          "sha256": "ec40aab2bdc20147f458b049ffd2944e10d5397ccf6538672ec73d23e561437e",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "ec40aab2bdc20147f458b049ffd2944e10d5397ccf6538672ec73d23e561437e",
+            "text": "名字",
+            "words": [
+              {
+                "text": "名字",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "16a8ae5279462fbcbea3397922d086b0dcc9574c02ca6c24c819954dee14ed9b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-20a2343a5cc0208f2222c8ddad38e3326df75a3726774d2505ff303105f5cefe.mp3",
+          "sha256": "20a2343a5cc0208f2222c8ddad38e3326df75a3726774d2505ff303105f5cefe",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "20a2343a5cc0208f2222c8ddad38e3326df75a3726774d2505ff303105f5cefe",
+            "text": "有意思",
+            "words": [
+              {
+                "text": "有意思",
+                "start": 0.15,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c39ac1f08efbaa5d28e8694db08c205fc6735270466ca3e2059fea641d93c1e3.mp3",
+          "sha256": "c39ac1f08efbaa5d28e8694db08c205fc6735270466ca3e2059fea641d93c1e3",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "c39ac1f08efbaa5d28e8694db08c205fc6735270466ca3e2059fea641d93c1e3",
+            "text": "有意思",
+            "words": [
+              {
+                "text": "有意思",
+                "start": 0.15,
+                "end": 0.69
+              }
+            ]
+          }
+        }
+      },
+      "e35006a42dfaf5b985a8d57bc4abb68642a62b65e1639321850d0d9667ccb785": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ee82ee86bddfbf1d06393e7f8323aaabd1e43eef2130bc05a663096653ea165f.mp3",
+          "sha256": "ee82ee86bddfbf1d06393e7f8323aaabd1e43eef2130bc05a663096653ea165f",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "ee82ee86bddfbf1d06393e7f8323aaabd1e43eef2130bc05a663096653ea165f",
+            "text": "身高",
+            "words": [
+              {
+                "text": "身高",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-a9d40db8d95445065e6bfe8b549ed44005fdc0a2e9af0e9ab38e80ee94412b33.mp3",
+          "sha256": "a9d40db8d95445065e6bfe8b549ed44005fdc0a2e9af0e9ab38e80ee94412b33",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "a9d40db8d95445065e6bfe8b549ed44005fdc0a2e9af0e9ab38e80ee94412b33",
+            "text": "身高",
+            "words": [
+              {
+                "text": "身高",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

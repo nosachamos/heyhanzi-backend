@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1501",
+  "targetId": "W1501",
+  "steps": [
+    {
+      "id": "BANK-W1501-W1501",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1501-W1501",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "always",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "老是"
+            },
+            {
+              "value": "lǎoshì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "lao3shi4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "老是",
+            "pinyin": "lǎoshì",
+            "meaning": "always",
+            "singleWord": true,
+            "audio": "722be103f48ccbf3499b70d9976c386f3e2f07803775f3a8e844511e21403bdf"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "722be103f48ccbf3499b70d9976c386f3e2f07803775f3a8e844511e21403bdf": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0c4e435728534192765c1acd207bee9cddbce9713e469da1de4f7cb82d7d8196.mp3",
+        "sha256": "0c4e435728534192765c1acd207bee9cddbce9713e469da1de4f7cb82d7d8196",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "0c4e435728534192765c1acd207bee9cddbce9713e469da1de4f7cb82d7d8196",
+          "text": "老是",
+          "words": [
+            {
+              "text": "老是",
+              "start": 0.16,
+              "end": 0.62
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d02448bd7369d3fa6c866c78129a17ddb5183f5b074105db2139346cbda5abdc.mp3",
+        "sha256": "d02448bd7369d3fa6c866c78129a17ddb5183f5b074105db2139346cbda5abdc",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "d02448bd7369d3fa6c866c78129a17ddb5183f5b074105db2139346cbda5abdc",
+          "text": "老是",
+          "words": [
+            {
+              "text": "老是",
+              "start": 0.12,
+              "end": 0.48
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1501",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1501-W1501",
+      "question_ids": [
+        "BANK-W1501-W1501"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-05-P01",
+    "stepId": "S-U4-05-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8001"
+    ],
+    "grammarLessonIds": []
+  }
+}

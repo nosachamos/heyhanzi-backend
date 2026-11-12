@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1028",
+  "targetId": "W1028",
+  "steps": [
+    {
+      "id": "BANK-W1028-W1028",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1028-W1028",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "sports competition",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "运动会"
+            },
+            {
+              "value": "yùndònghuì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yun4dong4hui4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "运动会",
+            "pinyin": "yùndònghuì",
+            "meaning": "sports competition",
+            "singleWord": true,
+            "audio": "e8f022af4af9bf4c8ec506224b057d6bf197439f5e2404dde41a8a9230edb194"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e8f022af4af9bf4c8ec506224b057d6bf197439f5e2404dde41a8a9230edb194": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-b16ba180b5fbd6542efc53984a9f8ee0d26356dd3abd645155a3572434887889.mp3",
+        "sha256": "b16ba180b5fbd6542efc53984a9f8ee0d26356dd3abd645155a3572434887889",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "b16ba180b5fbd6542efc53984a9f8ee0d26356dd3abd645155a3572434887889",
+          "text": "运动会",
+          "words": [
+            {
+              "text": "运动会",
+              "start": 0.15,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-e6eb77b7a74a8b44019a4baac74a6a51e79c505fa29d17ad642ca4ad7fb4e3eb.mp3",
+        "sha256": "e6eb77b7a74a8b44019a4baac74a6a51e79c505fa29d17ad642ca4ad7fb4e3eb",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "e6eb77b7a74a8b44019a4baac74a6a51e79c505fa29d17ad642ca4ad7fb4e3eb",
+          "text": "运动会",
+          "words": [
+            {
+              "text": "运动会",
+              "start": 0.21,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1028",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1028-W1028",
+      "question_ids": [
+        "BANK-W1028-W1028"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-12",
+    "stepId": "S-U3-12-words-r4-5",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-52a8"
+    ],
+    "grammarLessonIds": []
+  }
+}

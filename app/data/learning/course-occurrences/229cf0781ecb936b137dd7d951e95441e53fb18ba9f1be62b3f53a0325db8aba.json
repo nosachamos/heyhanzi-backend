@@ -1,0 +1,655 @@
+{
+  "id": "EX-CHAR-char-5904",
+  "revision": 2,
+  "unit": "U3-25-P01",
+  "stage": "ST-HSK3",
+  "after": "S-U3-25-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "处",
+  "sourceBlockId": "mandarin-simplified-v1-char-5904",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-0f71d005b8ef1f0e58bd1999",
+        "text": "心目",
+        "pinyin": "xīnmù",
+        "meaning": "mind",
+        "characters": [
+          {
+            "id": "C-5FC3",
+            "text": "心"
+          },
+          {
+            "id": "C-76EE",
+            "text": "目"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-71e843310fa06fa192275215",
+        "text": "虽说",
+        "pinyin": "suī shuō",
+        "meaning": "though",
+        "characters": [
+          {
+            "id": "C-867D",
+            "text": "虽"
+          },
+          {
+            "id": "C-8BF4",
+            "text": "说"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-fd030d39a5bafecdb8f4560b",
+        "text": "处于",
+        "pinyin": "chǔyú",
+        "meaning": "to be in (some state, position, or condition)",
+        "characters": [
+          {
+            "id": "C-5904",
+            "text": "处"
+          },
+          {
+            "id": "C-4E8E",
+            "text": "于"
+          }
+        ]
+      },
+      {
+        "id": "W0620",
+        "text": "药",
+        "pinyin": "yào",
+        "meaning": "medicine; drug",
+        "characters": [
+          {
+            "id": "C-836F",
+            "text": "药"
+          }
+        ]
+      },
+      {
+        "id": "W2203",
+        "text": "处",
+        "pinyin": "chǔ",
+        "meaning": "to reside; to live",
+        "characters": [
+          {
+            "id": "C-5904",
+            "text": "处"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "fe06b046797764d92e02e55961150c0ce70f56109d7056a17ece56266abbfec8",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5904",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "处",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5904-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-fd030d39a5bafecdb8f4560b",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to be in (some state, position, or condition)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "处于"
+              },
+              {
+                "value": "chǔyú",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chu3yu2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "处于",
+              "pinyin": "chǔyú",
+              "meaning": "to be in (some state, position, or condition)",
+              "audio": "e3fb13a106f60f190479fae0e48ef8cfe0925633b2021e51100bdffee74ea0c9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5904-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W2203",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "处",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-0f71d005b8ef1f0e58bd1999",
+                "label": "mind",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W2203",
+                "label": "to reside; to live",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0620",
+                "label": "medicine; drug",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5904-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "处",
+        "pinyin": "chǔ",
+        "meaning": "to reside; to live",
+        "source": "/stroke-data/5904.json",
+        "reference": {
+          "character": "处",
+          "sha256": "66907304aa858176301a115925681dc74c33c5f9dcf27f4b2e45cfea56107a1f",
+          "medians": [
+            [
+              [
+                272,
+                754
+              ],
+              [
+                298,
+                733
+              ],
+              [
+                311,
+                709
+              ],
+              [
+                282,
+                629
+              ],
+              [
+                197,
+                464
+              ],
+              [
+                127,
+                360
+              ],
+              [
+                90,
+                319
+              ]
+            ],
+            [
+              [
+                254,
+                509
+              ],
+              [
+                316,
+                526
+              ],
+              [
+                359,
+                545
+              ],
+              [
+                404,
+                545
+              ],
+              [
+                423,
+                527
+              ],
+              [
+                370,
+                379
+              ],
+              [
+                303,
+                255
+              ],
+              [
+                228,
+                167
+              ],
+              [
+                180,
+                124
+              ],
+              [
+                135,
+                92
+              ],
+              [
+                72,
+                63
+              ]
+            ],
+            [
+              [
+                173,
+                346
+              ],
+              [
+                219,
+                343
+              ],
+              [
+                272,
+                324
+              ],
+              [
+                495,
+                166
+              ],
+              [
+                575,
+                119
+              ],
+              [
+                682,
+                70
+              ],
+              [
+                729,
+                60
+              ],
+              [
+                885,
+                61
+              ],
+              [
+                931,
+                67
+              ]
+            ],
+            [
+              [
+                556,
+                769
+              ],
+              [
+                582,
+                756
+              ],
+              [
+                608,
+                727
+              ],
+              [
+                611,
+                694
+              ],
+              [
+                610,
+                413
+              ],
+              [
+                595,
+                186
+              ]
+            ],
+            [
+              [
+                658,
+                517
+              ],
+              [
+                782,
+                438
+              ],
+              [
+                815,
+                402
+              ],
+              [
+                829,
+                370
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5904-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-71e843310fa06fa192275215",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "though",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "虽说"
+              },
+              {
+                "value": "suī shuō",
+                "mode": "pinyin"
+              },
+              {
+                "value": "sui1shuo1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "虽说",
+              "pinyin": "suī shuō",
+              "meaning": "though",
+              "audio": "a25308800334448ec9f4425d0b6d85cae6ef8204984ec403360d40349e6ff551",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5904-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W2203",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to reside; to live",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "处"
+              },
+              {
+                "value": "chǔ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chu3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "处",
+              "pinyin": "chǔ",
+              "meaning": "to reside; to live",
+              "audio": "a28a559c5785be33e1a730427ec68d3453bcf91dc2299410ac22cc6715bac0f6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "a28a559c5785be33e1a730427ec68d3453bcf91dc2299410ac22cc6715bac0f6"
+            ],
+            "transcript": [
+              {
+                "text": "处",
+                "pinyin": "chǔ",
+                "meaning": "to reside; to live",
+                "audio": "a28a559c5785be33e1a730427ec68d3453bcf91dc2299410ac22cc6715bac0f6",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5904",
+      "character": "处",
+      "lessonIds": [
+        "LESSON-C-5904"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5904-word",
+        "EX-CHAR-char-5904-recognize",
+        "EX-CHAR-char-5904-write",
+        "EX-CHAR-char-5904-familiar",
+        "EX-CHAR-char-5904-recall"
+      ]
+    },
+    "audio": {
+      "ea4d448d4866fc7b4c79d217ff93025f0e92220d9caa8ae3efef43fe970480f8": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/576f65b0f4ce7432fc77a587d5409e10f2da9136af2c8b7371560e87880f14df.mp3",
+          "sha256": "576f65b0f4ce7432fc77a587d5409e10f2da9136af2c8b7371560e87880f14df",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "576f65b0f4ce7432fc77a587d5409e10f2da9136af2c8b7371560e87880f14df",
+            "text": "心目",
+            "words": [
+              {
+                "text": "心目",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/54b7aa453d3c64c22b2f46267f193be040074e1f90e63d0275d6b55d5db7e1a2.mp3",
+          "sha256": "54b7aa453d3c64c22b2f46267f193be040074e1f90e63d0275d6b55d5db7e1a2",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "54b7aa453d3c64c22b2f46267f193be040074e1f90e63d0275d6b55d5db7e1a2",
+            "text": "心目",
+            "words": [
+              {
+                "text": "心目",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "a25308800334448ec9f4425d0b6d85cae6ef8204984ec403360d40349e6ff551": {
+        "female": {
+          "url": "/exercise-assets/audio/course-female-2602782f0f31cc38126a3ff60a4d6da3034077f54966111c8abfc8146e830c64.mp3",
+          "sha256": "2602782f0f31cc38126a3ff60a4d6da3034077f54966111c8abfc8146e830c64",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "2602782f0f31cc38126a3ff60a4d6da3034077f54966111c8abfc8146e830c64",
+            "text": "虽说",
+            "words": [
+              {
+                "text": "虽说",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/76d379797b5e38d978c5b47ab6ced2d4950b5085637a9c42fc13b3143e64503e.mp3",
+          "sha256": "76d379797b5e38d978c5b47ab6ced2d4950b5085637a9c42fc13b3143e64503e",
+          "byteLength": 10701,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "76d379797b5e38d978c5b47ab6ced2d4950b5085637a9c42fc13b3143e64503e",
+            "text": "虽说",
+            "words": [
+              {
+                "text": "虽说",
+                "start": 0.14,
+                "end": 0.725
+              }
+            ]
+          }
+        }
+      },
+      "e3fb13a106f60f190479fae0e48ef8cfe0925633b2021e51100bdffee74ea0c9": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/45dd033ac68c5c7fe20d7d9dbee89508220d71f6217b982cf220e4efd8f375f9.mp3",
+          "sha256": "45dd033ac68c5c7fe20d7d9dbee89508220d71f6217b982cf220e4efd8f375f9",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "45dd033ac68c5c7fe20d7d9dbee89508220d71f6217b982cf220e4efd8f375f9",
+            "text": "处于",
+            "words": [
+              {
+                "text": "处于",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e3d7ecb60515fd2c46af1baf07a3a33dfbc43d1a76a9d7cd1c17031a5d68625d.mp3",
+          "sha256": "e3d7ecb60515fd2c46af1baf07a3a33dfbc43d1a76a9d7cd1c17031a5d68625d",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "e3d7ecb60515fd2c46af1baf07a3a33dfbc43d1a76a9d7cd1c17031a5d68625d",
+            "text": "处于",
+            "words": [
+              {
+                "text": "处于",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "e4b7b4beded0a7fd0012b50a0fe4bfc8e2f73c8ae13806ffe09a32040948878b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-fe4eddce0dc5a73cf2295ee82c993db7599bcc9789128d41454ba9c8daeb2592.mp3",
+          "sha256": "fe4eddce0dc5a73cf2295ee82c993db7599bcc9789128d41454ba9c8daeb2592",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "fe4eddce0dc5a73cf2295ee82c993db7599bcc9789128d41454ba9c8daeb2592",
+            "text": "药",
+            "words": [
+              {
+                "text": "药",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-14641a03a8dd81e2d15549c2d00891eb29a2b2295e7d7d5ff2efd1212a0c14df.mp3",
+          "sha256": "14641a03a8dd81e2d15549c2d00891eb29a2b2295e7d7d5ff2efd1212a0c14df",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "14641a03a8dd81e2d15549c2d00891eb29a2b2295e7d7d5ff2efd1212a0c14df",
+            "text": "药",
+            "words": [
+              {
+                "text": "药",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "a28a559c5785be33e1a730427ec68d3453bcf91dc2299410ac22cc6715bac0f6": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/abda85ae199d86f176f67bf6e20908ecb7cedb99912177676b8bc15839041f0c.mp3",
+          "sha256": "abda85ae199d86f176f67bf6e20908ecb7cedb99912177676b8bc15839041f0c",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "abda85ae199d86f176f67bf6e20908ecb7cedb99912177676b8bc15839041f0c",
+            "text": "处",
+            "words": [
+              {
+                "text": "处",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/aebf30e8bcb8671fb753f3962acb043635f08baf085296206771639e4aeac5f9.mp3",
+          "sha256": "aebf30e8bcb8671fb753f3962acb043635f08baf085296206771639e4aeac5f9",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "aebf30e8bcb8671fb753f3962acb043635f08baf085296206771639e4aeac5f9",
+            "text": "处",
+            "words": [
+              {
+                "text": "处",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

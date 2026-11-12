@@ -1,0 +1,665 @@
+{
+  "id": "EX-CHAR-char-5316",
+  "revision": 2,
+  "unit": "U3-16",
+  "stage": "ST-HSK3",
+  "after": "S-U3-16-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "化",
+  "sourceBlockId": "mandarin-simplified-v1-char-5316",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5316",
+        "text": "化",
+        "pinyin": "huà",
+        "meaning": "to make into; to change into",
+        "characters": [
+          {
+            "id": "C-5316",
+            "text": "化"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-2ddf68de56eb04c2c9fd2d01",
+        "text": "先后",
+        "pinyin": "xiānhòu",
+        "meaning": "early or late; first and last; priority; in succession; one after another",
+        "characters": [
+          {
+            "id": "C-5148",
+            "text": "先"
+          },
+          {
+            "id": "C-540E",
+            "text": "后"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-a10861cd702c102b3c300999",
+        "text": "千变万化",
+        "pinyin": "qiān biàn wàn huà",
+        "meaning": "countless changes",
+        "characters": [
+          {
+            "id": "C-5343",
+            "text": "千"
+          },
+          {
+            "id": "C-53D8",
+            "text": "变"
+          },
+          {
+            "id": "C-4E07",
+            "text": "万"
+          },
+          {
+            "id": "C-5316",
+            "text": "化"
+          }
+        ]
+      },
+      {
+        "id": "W3171",
+        "text": "突出",
+        "pinyin": "tūchū",
+        "meaning": "prominent; outstanding",
+        "characters": [
+          {
+            "id": "C-7A81",
+            "text": "突"
+          },
+          {
+            "id": "C-51FA",
+            "text": "出"
+          }
+        ]
+      },
+      {
+        "id": "W3801",
+        "text": "初步",
+        "pinyin": "chūbù",
+        "meaning": "initial; preliminary",
+        "characters": [
+          {
+            "id": "C-521D",
+            "text": "初"
+          },
+          {
+            "id": "C-6B65",
+            "text": "步"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "89d9d71f62397dd9b5f4011c67460630ec3fff228e64ee457c2364f0a013dbc9",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5316",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "化",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5316-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-a10861cd702c102b3c300999",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "countless changes",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "千变万化"
+              },
+              {
+                "value": "qiān biàn wàn huà",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qian1bian4wan4hua4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "千变万化",
+              "pinyin": "qiān biàn wàn huà",
+              "meaning": "countless changes",
+              "audio": "4fe22e5bce267a161845e1af099c551fda9eaa804ce0397296f40e92965a59b2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5316-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5316",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "化",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-2ddf68de56eb04c2c9fd2d01",
+                "label": "early or late; first and last",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5316",
+                "label": "to make into; to change into",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W3801",
+                "label": "initial; preliminary",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5316-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "化",
+        "pinyin": "huà",
+        "meaning": "to make into; to change into",
+        "source": "/stroke-data/5316.json",
+        "reference": {
+          "character": "化",
+          "sha256": "385c5ce424d904b03571a486f6a031a5c7c0a22a4e69e582a9e17b67805e48e9",
+          "medians": [
+            [
+              [
+                345,
+                784
+              ],
+              [
+                362,
+                769
+              ],
+              [
+                382,
+                734
+              ],
+              [
+                330,
+                634
+              ],
+              [
+                266,
+                534
+              ],
+              [
+                196,
+                442
+              ],
+              [
+                120,
+                357
+              ],
+              [
+                83,
+                327
+              ]
+            ],
+            [
+              [
+                273,
+                494
+              ],
+              [
+                276,
+                465
+              ],
+              [
+                294,
+                433
+              ],
+              [
+                297,
+                388
+              ],
+              [
+                289,
+                194
+              ],
+              [
+                278,
+                94
+              ],
+              [
+                284,
+                41
+              ]
+            ],
+            [
+              [
+                751,
+                668
+              ],
+              [
+                770,
+                638
+              ],
+              [
+                776,
+                611
+              ],
+              [
+                690,
+                509
+              ],
+              [
+                534,
+                367
+              ],
+              [
+                481,
+                325
+              ],
+              [
+                407,
+                282
+              ]
+            ],
+            [
+              [
+                496,
+                758
+              ],
+              [
+                528,
+                740
+              ],
+              [
+                552,
+                705
+              ],
+              [
+                535,
+                549
+              ],
+              [
+                524,
+                283
+              ],
+              [
+                533,
+                177
+              ],
+              [
+                543,
+                144
+              ],
+              [
+                557,
+                122
+              ],
+              [
+                591,
+                99
+              ],
+              [
+                675,
+                81
+              ],
+              [
+                774,
+                84
+              ],
+              [
+                832,
+                93
+              ],
+              [
+                865,
+                105
+              ],
+              [
+                894,
+                131
+              ],
+              [
+                896,
+                287
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5316-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3171",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "prominent; outstanding",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "突出"
+              },
+              {
+                "value": "tūchū",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tu1chu1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "突出",
+              "pinyin": "tūchū",
+              "meaning": "prominent; outstanding",
+              "audio": "e49a9595f4d6239862c5abd8f30936346de3230b0c4793c1ab0164e5e8dd010d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5316-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5316",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to make into; to change into",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "化"
+              },
+              {
+                "value": "huà",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hua4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "化",
+              "pinyin": "huà",
+              "meaning": "to make into; to change into",
+              "audio": "2a1934a868aa3c77b84178f4414837e83a939d0704ad08033c32c95d925f52f4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "2a1934a868aa3c77b84178f4414837e83a939d0704ad08033c32c95d925f52f4"
+            ],
+            "transcript": [
+              {
+                "text": "化",
+                "pinyin": "huà",
+                "meaning": "to make into; to change into",
+                "audio": "2a1934a868aa3c77b84178f4414837e83a939d0704ad08033c32c95d925f52f4",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5316",
+      "character": "化",
+      "lessonIds": [
+        "LESSON-C-5316"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5316-word",
+        "EX-CHAR-char-5316-recognize",
+        "EX-CHAR-char-5316-write",
+        "EX-CHAR-char-5316-familiar",
+        "EX-CHAR-char-5316-recall"
+      ]
+    },
+    "audio": {
+      "2a1934a868aa3c77b84178f4414837e83a939d0704ad08033c32c95d925f52f4": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-c81eb960790ece0e152ab6be4049f7f3e05281c912a0bc1beb0d4f4443159241.mp3",
+          "sha256": "c81eb960790ece0e152ab6be4049f7f3e05281c912a0bc1beb0d4f4443159241",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "c81eb960790ece0e152ab6be4049f7f3e05281c912a0bc1beb0d4f4443159241",
+            "text": "化",
+            "words": [
+              {
+                "text": "化",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-bc7ea778a984ecb9ed1248f6199491e7095c3fd7fa4f94a8fadd27abbdfcc0fa.mp3",
+          "sha256": "bc7ea778a984ecb9ed1248f6199491e7095c3fd7fa4f94a8fadd27abbdfcc0fa",
+          "byteLength": 9549,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "bc7ea778a984ecb9ed1248f6199491e7095c3fd7fa4f94a8fadd27abbdfcc0fa",
+            "text": "化",
+            "words": [
+              {
+                "text": "化",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "856aea6571b47974e37c2eab3b9d97ad3996f8acb715867c5072ae3161bd6b30": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-6e60aafaf599187501631ac2aa5868b41b0d0448076524110eb7373ce8de3101.mp3",
+          "sha256": "6e60aafaf599187501631ac2aa5868b41b0d0448076524110eb7373ce8de3101",
+          "byteLength": 16461,
+          "readAlong": {
+            "audioSha256": "6e60aafaf599187501631ac2aa5868b41b0d0448076524110eb7373ce8de3101",
+            "text": "先后",
+            "words": [
+              {
+                "text": "先后",
+                "start": 0.21,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-51299dcd7ea6c0a35b318a8b7e88233b596f0cbc90614cbd653d31d01c12b4bb.mp3",
+          "sha256": "51299dcd7ea6c0a35b318a8b7e88233b596f0cbc90614cbd653d31d01c12b4bb",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "51299dcd7ea6c0a35b318a8b7e88233b596f0cbc90614cbd653d31d01c12b4bb",
+            "text": "先后",
+            "words": [
+              {
+                "text": "先后",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "4fe22e5bce267a161845e1af099c551fda9eaa804ce0397296f40e92965a59b2": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/20d6b70772841ba37a95fffdecd92d54c3b62b931744c59da0ca93d6728a0fe4.mp3",
+          "sha256": "20d6b70772841ba37a95fffdecd92d54c3b62b931744c59da0ca93d6728a0fe4",
+          "byteLength": 18477,
+          "readAlong": {
+            "audioSha256": "20d6b70772841ba37a95fffdecd92d54c3b62b931744c59da0ca93d6728a0fe4",
+            "text": "千变万化",
+            "words": [
+              {
+                "text": "千变万化",
+                "start": 0.21,
+                "end": 0.99
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/595d33c0aa1d5868b40cfeacbfd17e5be01380bf4ed50a7264d96fb167dfaf54.mp3",
+          "sha256": "595d33c0aa1d5868b40cfeacbfd17e5be01380bf4ed50a7264d96fb167dfaf54",
+          "byteLength": 19917,
+          "readAlong": {
+            "audioSha256": "595d33c0aa1d5868b40cfeacbfd17e5be01380bf4ed50a7264d96fb167dfaf54",
+            "text": "千变万化",
+            "words": [
+              {
+                "text": "千变万化",
+                "start": 0.27,
+                "end": 1.17
+              }
+            ]
+          }
+        }
+      },
+      "e49a9595f4d6239862c5abd8f30936346de3230b0c4793c1ab0164e5e8dd010d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-9a9df58fe485f783f74b9fba3d6967ef40a50a0d6ed218cdf08dafc01a7c1a7e.mp3",
+          "sha256": "9a9df58fe485f783f74b9fba3d6967ef40a50a0d6ed218cdf08dafc01a7c1a7e",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "9a9df58fe485f783f74b9fba3d6967ef40a50a0d6ed218cdf08dafc01a7c1a7e",
+            "text": "突出",
+            "words": [
+              {
+                "text": "突出",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d66333dbcbc475a42cb1510d606469b8a0ca698768aad45b9cdbe270686be45a.mp3",
+          "sha256": "d66333dbcbc475a42cb1510d606469b8a0ca698768aad45b9cdbe270686be45a",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "d66333dbcbc475a42cb1510d606469b8a0ca698768aad45b9cdbe270686be45a",
+            "text": "突出",
+            "words": [
+              {
+                "text": "突出",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "edc978f288266627105ab73a01a8d49a59faa2158f97b31603421c7c2fadcb4e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-7adf473273a3558d25bcdfd7ff9659c25cac483a5354bf3502191abbc02a623c.mp3",
+          "sha256": "7adf473273a3558d25bcdfd7ff9659c25cac483a5354bf3502191abbc02a623c",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "7adf473273a3558d25bcdfd7ff9659c25cac483a5354bf3502191abbc02a623c",
+            "text": "初步",
+            "words": [
+              {
+                "text": "初步",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8f9bde9560e23f0f0cc833f76257efe9c29c41df18618e62e832724a6fec0fcd.mp3",
+          "sha256": "8f9bde9560e23f0f0cc833f76257efe9c29c41df18618e62e832724a6fec0fcd",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "8f9bde9560e23f0f0cc833f76257efe9c29c41df18618e62e832724a6fec0fcd",
+            "text": "初步",
+            "words": [
+              {
+                "text": "初步",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

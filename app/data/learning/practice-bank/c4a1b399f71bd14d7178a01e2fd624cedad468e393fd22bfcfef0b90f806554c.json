@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W-USE-SHUIBEI",
+  "targetId": "W-USE-SHUIBEI",
+  "steps": [
+    {
+      "id": "BANK-W-USE-SHUIBEI-W-USE-SHUIBEI",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W-USE-SHUIBEI-W-USE-SHUIBEI",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "drinking cup",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "水杯"
+            },
+            {
+              "value": "shuǐbēi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shui3bei1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "水杯",
+            "pinyin": "shuǐbēi",
+            "meaning": "drinking cup",
+            "singleWord": true,
+            "audio": "1fa418bf504f0cabbf203ca8df30e028ab944e0173a75edfb0abafaee474633f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1fa418bf504f0cabbf203ca8df30e028ab944e0173a75edfb0abafaee474633f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-0c0e40f6d257c7c24c0274cc4add5e8ce71fe7447c2807456753917cf9be1e11.mp3",
+        "sha256": "0c0e40f6d257c7c24c0274cc4add5e8ce71fe7447c2807456753917cf9be1e11",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "0c0e40f6d257c7c24c0274cc4add5e8ce71fe7447c2807456753917cf9be1e11",
+          "text": "水杯",
+          "words": [
+            {
+              "text": "水杯",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-05b12a9ea601d84c034c0dd0c93a63c4f44f2f20472a1f56235e6073ef4c8ccf.mp3",
+        "sha256": "05b12a9ea601d84c034c0dd0c93a63c4f44f2f20472a1f56235e6073ef4c8ccf",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "05b12a9ea601d84c034c0dd0c93a63c4f44f2f20472a1f56235e6073ef4c8ccf",
+          "text": "水杯",
+          "words": [
+            {
+              "text": "水杯",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W-USE-SHUIBEI",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W-USE-SHUIBEI-W-USE-SHUIBEI",
+      "question_ids": [
+        "BANK-W-USE-SHUIBEI-W-USE-SHUIBEI"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U05-P01",
+    "stepId": "S-U05-words-r4-24",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-676f"
+    ],
+    "grammarLessonIds": []
+  }
+}

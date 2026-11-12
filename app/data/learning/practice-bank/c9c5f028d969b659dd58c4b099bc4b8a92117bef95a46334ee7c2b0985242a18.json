@@ -1,0 +1,68 @@
+{
+  "id": "BANK-K-WARMUP-interact",
+  "targetId": "K-WARMUP-interact",
+  "steps": [
+    {
+      "id": "BANK-K-WARMUP-interact-K-WARMUP-interact-perform",
+      "kind": "check",
+      "title": "Use the skill in context",
+      "questions": [
+        {
+          "id": "BANK-K-WARMUP-interact-K-WARMUP-interact-perform",
+          "kind": "production",
+          "response": "spoken",
+          "prompt": "A partner points to themself. Take a short familiar identification turn, then pause and gesture for help if you cannot express the next idea.",
+          "promptLanguage": "en",
+          "context": "A partner points to themself, then points to you and waits. Identify yourself in your turn. The partner has not made any further request; pause or gesture if you need help.\nFamiliar meanings available: I; me; you.",
+          "contextLanguage": "en",
+          "label": "Take your speaking turn",
+          "resultDomain": "Self-reviewed speaking practice",
+          "rubric": [
+            {
+              "id": "r1",
+              "text": "My turn responded to the partner’s pointing or statement."
+            },
+            {
+              "id": "r2",
+              "text": "I paused or signalled for help without inventing an untaught request."
+            }
+          ]
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {},
+  "coverage": [
+    {
+      "target_id": "K-WARMUP-interact",
+      "facet_id": "K-WARMUP-interact-situated-performance",
+      "part_id": "BANK-K-WARMUP-interact-K-WARMUP-interact-perform",
+      "question_ids": [
+        "BANK-K-WARMUP-interact-K-WARMUP-interact-perform"
+      ],
+      "evidence": "self-reviewed",
+      "scope": "Take a turn; use a pause and a visible request-for-help gesture when a word is missing. Spoken repetition requests follow in WU04.",
+      "stage_outcome_mastery": false
+    }
+  ],
+  "remediation": {
+    "unitId": "WU02",
+    "stepId": "S-WU02-skill-K-WARMUP-interact",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-wo",
+      "mandarin-simplified-v1-warmup-ni",
+      "mandarin-simplified-v1-warmup-ta-he",
+      "mandarin-simplified-v1-warmup-shi",
+      "mandarin-simplified-v1-warmup-hao",
+      "mandarin-simplified-v1-warmup-bu",
+      "mandarin-simplified-v1-warmup-ma",
+      "mandarin-simplified-v1-warmup-ta-she",
+      "mandarin-simplified-v1-warmup-ren",
+      "mandarin-simplified-v1-warmup-hao"
+    ],
+    "grammarLessonIds": [
+      "EX-GRAM-G-warmup-identity"
+    ]
+  }
+}

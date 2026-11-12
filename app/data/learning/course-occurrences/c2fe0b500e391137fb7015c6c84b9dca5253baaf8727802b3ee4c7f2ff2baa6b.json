@@ -1,0 +1,675 @@
+{
+  "id": "EX-CHAR-warmup-you",
+  "revision": 2,
+  "unit": "WU02",
+  "stage": "ST-WARMUP",
+  "after": "S-WU02-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "有",
+  "sourceBlockId": "mandarin-simplified-v1-warmup-you",
+  "sourceLevelId": "warmup",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-warmup-you",
+        "text": "有",
+        "pinyin": "yǒu",
+        "meaning": "to have; there is",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          }
+        ]
+      },
+      {
+        "id": "W0009",
+        "text": "吗",
+        "pinyin": "ma",
+        "meaning": "turns a statement into a yes-or-no question",
+        "characters": [
+          {
+            "id": "C-5417",
+            "text": "吗"
+          }
+        ]
+      },
+      {
+        "id": "W0494",
+        "text": "有的",
+        "pinyin": "yǒude",
+        "meaning": "some; some",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          },
+          {
+            "id": "C-7684",
+            "text": "的"
+          }
+        ]
+      },
+      {
+        "id": "W0641",
+        "text": "好人",
+        "pinyin": "hǎorén",
+        "meaning": "good person",
+        "characters": [
+          {
+            "id": "C-597D",
+            "text": "好"
+          },
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      },
+      {
+        "id": "W4147",
+        "text": "好不",
+        "pinyin": "hǎobù",
+        "meaning": "how very (emphatic construction)",
+        "characters": [
+          {
+            "id": "C-597D",
+            "text": "好"
+          },
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "ed0a3502a09637c0f8a232b2d638c865688a2485447e74d74c7a435b72e746e1",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-warmup-you",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "有",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-warmup-you-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0494",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "some; some",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "有的"
+              },
+              {
+                "value": "yǒude",
+                "mode": "pinyin"
+              },
+              {
+                "value": "you3de5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "有的",
+              "pinyin": "yǒude",
+              "meaning": "some; some",
+              "audio": "e183cea7a8b02ac4789138e0aa360e55c691b8dde32e602a8f2333b4f043cacc",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-warmup-you-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-warmup-you",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "有",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-warmup-you",
+                "label": "to have; there is",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0009",
+                "label": "turns a statement into a yes-or-no question",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W4147",
+                "label": "how very (emphatic construction)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-warmup-you-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "有",
+        "pinyin": "yǒu",
+        "meaning": "to have; there is",
+        "source": "/stroke-data/6709.json",
+        "reference": {
+          "character": "有",
+          "sha256": "3121b212d30170484fdd0387cb1e7ab39295293689bad6d022da2f3277eb05fb",
+          "medians": [
+            [
+              [
+                159,
+                614
+              ],
+              [
+                213,
+                605
+              ],
+              [
+                502,
+                652
+              ],
+              [
+                789,
+                682
+              ],
+              [
+                883,
+                663
+              ]
+            ],
+            [
+              [
+                470,
+                842
+              ],
+              [
+                497,
+                805
+              ],
+              [
+                484,
+                745
+              ],
+              [
+                443,
+                612
+              ],
+              [
+                386,
+                497
+              ],
+              [
+                329,
+                411
+              ],
+              [
+                251,
+                324
+              ],
+              [
+                169,
+                252
+              ],
+              [
+                83,
+                193
+              ]
+            ],
+            [
+              [
+                412,
+                482
+              ],
+              [
+                418,
+                471
+              ],
+              [
+                420,
+                419
+              ],
+              [
+                414,
+                294
+              ],
+              [
+                397,
+                163
+              ],
+              [
+                370,
+                73
+              ],
+              [
+                367,
+                16
+              ]
+            ],
+            [
+              [
+                436,
+                484
+              ],
+              [
+                456,
+                474
+              ],
+              [
+                484,
+                478
+              ],
+              [
+                626,
+                515
+              ],
+              [
+                656,
+                500
+              ],
+              [
+                670,
+                483
+              ],
+              [
+                671,
+                314
+              ],
+              [
+                681,
+                115
+              ],
+              [
+                677,
+                34
+              ],
+              [
+                659,
+                2
+              ],
+              [
+                628,
+                10
+              ],
+              [
+                550,
+                48
+              ]
+            ],
+            [
+              [
+                439,
+                330
+              ],
+              [
+                454,
+                342
+              ],
+              [
+                548,
+                361
+              ],
+              [
+                595,
+                357
+              ]
+            ],
+            [
+              [
+                430,
+                204
+              ],
+              [
+                442,
+                213
+              ],
+              [
+                482,
+                223
+              ],
+              [
+                552,
+                233
+              ],
+              [
+                598,
+                226
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-warmup-you-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0641",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "good person",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "好人"
+              },
+              {
+                "value": "hǎorén",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hao3ren2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "好人",
+              "pinyin": "hǎorén",
+              "meaning": "good person",
+              "audio": "8b7f0c7eba6485f4668e2fbc5199e773c07c937266c02df831e4b4f1ae072a7e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-warmup-you-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-warmup-you",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to have; there is",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "有"
+              },
+              {
+                "value": "yǒu",
+                "mode": "pinyin"
+              },
+              {
+                "value": "you3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "有",
+              "pinyin": "yǒu",
+              "meaning": "to have; there is",
+              "audio": "e05bdf8932363c5c3cef391f352fc9d20839a80952e08cb92fff972633062a8b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "e05bdf8932363c5c3cef391f352fc9d20839a80952e08cb92fff972633062a8b"
+            ],
+            "transcript": [
+              {
+                "text": "有",
+                "pinyin": "yǒu",
+                "meaning": "to have; there is",
+                "audio": "e05bdf8932363c5c3cef391f352fc9d20839a80952e08cb92fff972633062a8b",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6709",
+      "character": "有",
+      "lessonIds": [
+        "LESSON-C-6709"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-warmup-you-word",
+        "EX-CHAR-warmup-you-recognize",
+        "EX-CHAR-warmup-you-write",
+        "EX-CHAR-warmup-you-familiar",
+        "EX-CHAR-warmup-you-recall"
+      ]
+    },
+    "audio": {
+      "e05bdf8932363c5c3cef391f352fc9d20839a80952e08cb92fff972633062a8b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-006758fa30a194d8f67506ae5e63dff8d045cfc05ad0d17642833d19d7dc39fd.mp3",
+          "sha256": "006758fa30a194d8f67506ae5e63dff8d045cfc05ad0d17642833d19d7dc39fd",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "006758fa30a194d8f67506ae5e63dff8d045cfc05ad0d17642833d19d7dc39fd",
+            "text": "有",
+            "words": [
+              {
+                "text": "有",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-553fab5233f8379d701937dad0b7be93570ae6dbbc092eb9e2a1596c1a06ea6c.mp3",
+          "sha256": "553fab5233f8379d701937dad0b7be93570ae6dbbc092eb9e2a1596c1a06ea6c",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "553fab5233f8379d701937dad0b7be93570ae6dbbc092eb9e2a1596c1a06ea6c",
+            "text": "有",
+            "words": [
+              {
+                "text": "有",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "ae48d02074d1e888c29b4b8e85e0fb1fe2466dd81cd4938fc2b0d44cf602a087": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-7395d53ab42d136a266a58a9cbb3dab2a4f2c717bb5b8241e548c4f7d4e7d7e9.mp3",
+          "sha256": "7395d53ab42d136a266a58a9cbb3dab2a4f2c717bb5b8241e548c4f7d4e7d7e9",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "7395d53ab42d136a266a58a9cbb3dab2a4f2c717bb5b8241e548c4f7d4e7d7e9",
+            "text": "吗",
+            "words": [
+              {
+                "text": "吗",
+                "start": 0.32999999999999996,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-09193c75a03e1aa8231dd2a043e98b159f607eef160caed45b5f525c616b0cc9.mp3",
+          "sha256": "09193c75a03e1aa8231dd2a043e98b159f607eef160caed45b5f525c616b0cc9",
+          "byteLength": 7533,
+          "readAlong": {
+            "audioSha256": "09193c75a03e1aa8231dd2a043e98b159f607eef160caed45b5f525c616b0cc9",
+            "text": "吗",
+            "words": [
+              {
+                "text": "吗",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "e183cea7a8b02ac4789138e0aa360e55c691b8dde32e602a8f2333b4f043cacc": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5f25ecd1f8ee1d035bdd24178523db8058db4ace56f2681f891c0f74ce75511e.mp3",
+          "sha256": "5f25ecd1f8ee1d035bdd24178523db8058db4ace56f2681f891c0f74ce75511e",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "5f25ecd1f8ee1d035bdd24178523db8058db4ace56f2681f891c0f74ce75511e",
+            "text": "有的",
+            "words": [
+              {
+                "text": "有的",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-95cd3b906fd1a93bcc76fa4df0f04725180ac8d8063891c70d69d67eb88c80b9.mp3",
+          "sha256": "95cd3b906fd1a93bcc76fa4df0f04725180ac8d8063891c70d69d67eb88c80b9",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "95cd3b906fd1a93bcc76fa4df0f04725180ac8d8063891c70d69d67eb88c80b9",
+            "text": "有的",
+            "words": [
+              {
+                "text": "有的",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "8b7f0c7eba6485f4668e2fbc5199e773c07c937266c02df831e4b4f1ae072a7e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-6b7f79672a6953303c700cbf54e5c6ecc4fec679b0049eb1ee8ccdb8ab9822bf.mp3",
+          "sha256": "6b7f79672a6953303c700cbf54e5c6ecc4fec679b0049eb1ee8ccdb8ab9822bf",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "6b7f79672a6953303c700cbf54e5c6ecc4fec679b0049eb1ee8ccdb8ab9822bf",
+            "text": "好人",
+            "words": [
+              {
+                "text": "好人",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-08ceb9654529e4bcabe621fb38913dd7c0c5a1a5370c769416a7207e0bc7558c.mp3",
+          "sha256": "08ceb9654529e4bcabe621fb38913dd7c0c5a1a5370c769416a7207e0bc7558c",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "08ceb9654529e4bcabe621fb38913dd7c0c5a1a5370c769416a7207e0bc7558c",
+            "text": "好人",
+            "words": [
+              {
+                "text": "好人",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "0c0840e368c19fe6fe4ff9c5b9e6d8faee4dfd93ef9f6196692a56c0398c6a76": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e6defebc366d9acbba6dae915bb724d83e04e54d03e8adf43097c9f3f18cad34.mp3",
+          "sha256": "e6defebc366d9acbba6dae915bb724d83e04e54d03e8adf43097c9f3f18cad34",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "e6defebc366d9acbba6dae915bb724d83e04e54d03e8adf43097c9f3f18cad34",
+            "text": "好不",
+            "words": [
+              {
+                "text": "好不",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/db01ad8fe32587e99afbbabee1532a08b1ed79a81dab90b9b07a098693a0333c.mp3",
+          "sha256": "db01ad8fe32587e99afbbabee1532a08b1ed79a81dab90b9b07a098693a0333c",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "db01ad8fe32587e99afbbabee1532a08b1ed79a81dab90b9b07a098693a0333c",
+            "text": "好不",
+            "words": [
+              {
+                "text": "好不",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

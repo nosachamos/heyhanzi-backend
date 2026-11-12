@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0562",
+  "targetId": "W0562",
+  "steps": [
+    {
+      "id": "BANK-W0562-W0562",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0562-W0562",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "basketball",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "篮球"
+            },
+            {
+              "value": "lánqiú",
+              "mode": "pinyin"
+            },
+            {
+              "value": "lan2qiu2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "篮球",
+            "pinyin": "lánqiú",
+            "meaning": "basketball",
+            "singleWord": true,
+            "audio": "cee9c82de2d89e4368904ce4eb8a77e1765d443dec4705a4c7b8239d96c07fc0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "cee9c82de2d89e4368904ce4eb8a77e1765d443dec4705a4c7b8239d96c07fc0": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-9064534db67de09d86d7a7862f3a5689142165e67dbc99a4deb4dc3af21faadd.mp3",
+        "sha256": "9064534db67de09d86d7a7862f3a5689142165e67dbc99a4deb4dc3af21faadd",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "9064534db67de09d86d7a7862f3a5689142165e67dbc99a4deb4dc3af21faadd",
+          "text": "篮球",
+          "words": [
+            {
+              "text": "篮球",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-db70da427854fa05fdcf43b638e9e2997d3c0b13166be9aa8f9cf3f073ccac1a.mp3",
+        "sha256": "db70da427854fa05fdcf43b638e9e2997d3c0b13166be9aa8f9cf3f073ccac1a",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "db70da427854fa05fdcf43b638e9e2997d3c0b13166be9aa8f9cf3f073ccac1a",
+          "text": "篮球",
+          "words": [
+            {
+              "text": "篮球",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0562",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0562-W0562",
+      "question_ids": [
+        "BANK-W0562-W0562"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U17-P01",
+    "stepId": "S-U17-words-r4-15",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7403"
+    ],
+    "grammarLessonIds": []
+  }
+}

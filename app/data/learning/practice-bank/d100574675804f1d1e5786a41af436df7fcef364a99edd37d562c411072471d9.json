@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2790",
+  "targetId": "W2790",
+  "steps": [
+    {
+      "id": "BANK-W2790-W2790",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2790-W2790",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "secretary",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "秘书"
+            },
+            {
+              "value": "mìshū",
+              "mode": "pinyin"
+            },
+            {
+              "value": "mi4shu1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "秘书",
+            "pinyin": "mìshū",
+            "meaning": "secretary",
+            "singleWord": true,
+            "audio": "feaa2e69af9733de0561ddd7326fae63cccb75e4b7aa6d1cb5ba7e827fb234a4"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "feaa2e69af9733de0561ddd7326fae63cccb75e4b7aa6d1cb5ba7e827fb234a4": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f02a4aa98580a1306cdbf822dc12fd21a16614b737402e6f1d92fd373f010208.mp3",
+        "sha256": "f02a4aa98580a1306cdbf822dc12fd21a16614b737402e6f1d92fd373f010208",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "f02a4aa98580a1306cdbf822dc12fd21a16614b737402e6f1d92fd373f010208",
+          "text": "秘书",
+          "words": [
+            {
+              "text": "秘书",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-480f95988e4e3bb24418cad1b557f9d6f1fbf984f959ea35c63cfbfb2bb8cb8d.mp3",
+        "sha256": "480f95988e4e3bb24418cad1b557f9d6f1fbf984f959ea35c63cfbfb2bb8cb8d",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "480f95988e4e3bb24418cad1b557f9d6f1fbf984f959ea35c63cfbfb2bb8cb8d",
+          "text": "秘书",
+          "words": [
+            {
+              "text": "秘书",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2790",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2790-W2790",
+      "question_ids": [
+        "BANK-W2790-W2790"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-21",
+    "stepId": "S-U5-21-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-79d8"
+    ],
+    "grammarLessonIds": []
+  }
+}

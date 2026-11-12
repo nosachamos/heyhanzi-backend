@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1344",
+  "targetId": "W1344",
+  "steps": [
+    {
+      "id": "BANK-W1344-W1344",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1344-W1344",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "box",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "盒子"
+            },
+            {
+              "value": "hézi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "he2zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "盒子",
+            "pinyin": "hézi",
+            "meaning": "box",
+            "singleWord": true,
+            "audio": "244c15c0345ebae03cd616098f6ca7cf7e4c5b193833ae378bd8ea0d71246237"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "244c15c0345ebae03cd616098f6ca7cf7e4c5b193833ae378bd8ea0d71246237": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-82a2966b9fecd8e651920ceeee807537027526fbd8c14119fd94a6ef38251d2d.mp3",
+        "sha256": "82a2966b9fecd8e651920ceeee807537027526fbd8c14119fd94a6ef38251d2d",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "82a2966b9fecd8e651920ceeee807537027526fbd8c14119fd94a6ef38251d2d",
+          "text": "盒子",
+          "words": [
+            {
+              "text": "盒子",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-bffeffae3011b683cb6d6d03ed5ccc567ba29041a3932b15bc3e27095dd6ba65.mp3",
+        "sha256": "bffeffae3011b683cb6d6d03ed5ccc567ba29041a3932b15bc3e27095dd6ba65",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "bffeffae3011b683cb6d6d03ed5ccc567ba29041a3932b15bc3e27095dd6ba65",
+          "text": "盒子",
+          "words": [
+            {
+              "text": "盒子",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1344",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1344-W1344",
+      "question_ids": [
+        "BANK-W1344-W1344"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-04",
+    "stepId": "S-U4-04-words-r4-18",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-76d2"
+    ],
+    "grammarLessonIds": []
+  }
+}

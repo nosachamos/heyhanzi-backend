@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1485",
+  "targetId": "W1485",
+  "steps": [
+    {
+      "id": "BANK-W1485-W1485",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1485-W1485",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "fast food; snack",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "快餐"
+            },
+            {
+              "value": "kuàicān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "kuai4can1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "快餐",
+            "pinyin": "kuàicān",
+            "meaning": "fast food; snack",
+            "singleWord": true,
+            "audio": "b477f7b44ce50861f6f2a7bf499501de7118e5e711b7e0cf857c9b45495d221e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b477f7b44ce50861f6f2a7bf499501de7118e5e711b7e0cf857c9b45495d221e": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/95e66cacd594730ed07c2554ef41483e1d36006c3e4deb3cb6aa92cc4ba2020e.mp3",
+        "sha256": "95e66cacd594730ed07c2554ef41483e1d36006c3e4deb3cb6aa92cc4ba2020e",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "95e66cacd594730ed07c2554ef41483e1d36006c3e4deb3cb6aa92cc4ba2020e",
+          "text": "快餐",
+          "words": [
+            {
+              "text": "快餐",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/8202b9357bfe714e6e64f6d0a4f7c5ebcdc805e4c3327f63f35eb77bd6c8821c.mp3",
+        "sha256": "8202b9357bfe714e6e64f6d0a4f7c5ebcdc805e4c3327f63f35eb77bd6c8821c",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "8202b9357bfe714e6e64f6d0a4f7c5ebcdc805e4c3327f63f35eb77bd6c8821c",
+          "text": "快餐",
+          "words": [
+            {
+              "text": "快餐",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1485",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1485-W1485",
+      "question_ids": [
+        "BANK-W1485-W1485"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-08",
+    "stepId": "S-U4-08-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9910"
+    ],
+    "grammarLessonIds": []
+  }
+}

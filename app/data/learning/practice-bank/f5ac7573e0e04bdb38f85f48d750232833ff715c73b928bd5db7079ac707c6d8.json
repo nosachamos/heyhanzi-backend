@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1770",
+  "targetId": "W1770",
+  "steps": [
+    {
+      "id": "BANK-W1770-W1770",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1770-W1770",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "temperature",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "体温"
+            },
+            {
+              "value": "tǐwēn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ti3wen1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "体温",
+            "pinyin": "tǐwēn",
+            "meaning": "temperature",
+            "singleWord": true,
+            "audio": "c8a04871ae9f29913b6e2195ff575e4ac636b1400024827d819989f5c0a44ece"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c8a04871ae9f29913b6e2195ff575e4ac636b1400024827d819989f5c0a44ece": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/395c17660774000b1b589acc69459bdd1a95413db32a4c0ea57dceed1b71ab67.mp3",
+        "sha256": "395c17660774000b1b589acc69459bdd1a95413db32a4c0ea57dceed1b71ab67",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "395c17660774000b1b589acc69459bdd1a95413db32a4c0ea57dceed1b71ab67",
+          "text": "体温",
+          "words": [
+            {
+              "text": "体温",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c8f890c56062a27e0cc1769788531a67435bd90cec559f6bfee318f4c501ac10.mp3",
+        "sha256": "c8f890c56062a27e0cc1769788531a67435bd90cec559f6bfee318f4c501ac10",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "c8f890c56062a27e0cc1769788531a67435bd90cec559f6bfee318f4c501ac10",
+          "text": "体温",
+          "words": [
+            {
+              "text": "体温",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1770",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1770-W1770",
+      "question_ids": [
+        "BANK-W1770-W1770"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-26",
+    "stepId": "S-U4-26-words-r4-17",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-571f"
+    ],
+    "grammarLessonIds": []
+  }
+}

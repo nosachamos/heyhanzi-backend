@@ -1,0 +1,731 @@
+{
+  "id": "EX-CHAR-char-632b",
+  "revision": 2,
+  "unit": "U6-24-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-24-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "挫",
+  "sourceBlockId": "mandarin-simplified-v1-char-632b",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-632b",
+        "text": "挫",
+        "pinyin": "cuò",
+        "meaning": "obstructed; to fail",
+        "characters": [
+          {
+            "id": "C-632B",
+            "text": "挫"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-8111",
+        "text": "脑",
+        "pinyin": "nǎo",
+        "meaning": "brain; mind",
+        "characters": [
+          {
+            "id": "C-8111",
+            "text": "脑"
+          }
+        ]
+      },
+      {
+        "id": "W0976",
+        "text": "夏天",
+        "pinyin": "xiàtiān",
+        "meaning": "summer",
+        "characters": [
+          {
+            "id": "C-590F",
+            "text": "夏"
+          },
+          {
+            "id": "C-5929",
+            "text": "天"
+          }
+        ]
+      },
+      {
+        "id": "W3516",
+        "text": "政治",
+        "pinyin": "zhèngzhì",
+        "meaning": "politics; political",
+        "characters": [
+          {
+            "id": "C-653F",
+            "text": "政"
+          },
+          {
+            "id": "C-6CBB",
+            "text": "治"
+          }
+        ]
+      },
+      {
+        "id": "W3849",
+        "text": "挫折",
+        "pinyin": "cuòzhé",
+        "meaning": "setback; reverse",
+        "characters": [
+          {
+            "id": "C-632B",
+            "text": "挫"
+          },
+          {
+            "id": "C-6298",
+            "text": "折"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "b253e8baa808cba695fc6a3c7b1fe173c7d86d41eacd0282f7cca31ab59d6be4",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-632b",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "挫",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-632b-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3849",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "setback; reverse",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "挫折"
+              },
+              {
+                "value": "cuòzhé",
+                "mode": "pinyin"
+              },
+              {
+                "value": "cuo4zhe2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "挫折",
+              "pinyin": "cuòzhé",
+              "meaning": "setback; reverse",
+              "audio": "a12df490c3b611dc71a608a704ae65014c9a612fc618ed21a4bb8d383911d6de",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-632b-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-632b",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "挫",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-632b",
+                "label": "obstructed; to fail",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0976",
+                "label": "summer",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-8111",
+                "label": "brain; mind",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-632b-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "挫",
+        "pinyin": "cuò",
+        "meaning": "obstructed; to fail",
+        "source": "/stroke-data/632b.json",
+        "reference": {
+          "character": "挫",
+          "sha256": "7c0025be8d8785a9bbea1a8858c062da8bc6a9490f5c07e48a50567d5f6453fa",
+          "medians": [
+            [
+              [
+                152,
+                526
+              ],
+              [
+                208,
+                522
+              ],
+              [
+                311,
+                544
+              ],
+              [
+                392,
+                569
+              ],
+              [
+                446,
+                569
+              ]
+            ],
+            [
+              [
+                285,
+                818
+              ],
+              [
+                302,
+                810
+              ],
+              [
+                333,
+                778
+              ],
+              [
+                320,
+                484
+              ],
+              [
+                319,
+                118
+              ],
+              [
+                312,
+                87
+              ],
+              [
+                297,
+                59
+              ],
+              [
+                200,
+                106
+              ]
+            ],
+            [
+              [
+                79,
+                224
+              ],
+              [
+                129,
+                220
+              ],
+              [
+                209,
+                286
+              ],
+              [
+                416,
+                437
+              ]
+            ],
+            [
+              [
+                519,
+                618
+              ],
+              [
+                547,
+                588
+              ],
+              [
+                531,
+                529
+              ],
+              [
+                482,
+                434
+              ],
+              [
+                428,
+                374
+              ]
+            ],
+            [
+              [
+                509,
+                434
+              ],
+              [
+                550,
+                420
+              ],
+              [
+                565,
+                408
+              ],
+              [
+                581,
+                382
+              ]
+            ],
+            [
+              [
+                795,
+                649
+              ],
+              [
+                823,
+                624
+              ],
+              [
+                827,
+                613
+              ],
+              [
+                814,
+                563
+              ],
+              [
+                777,
+                485
+              ],
+              [
+                746,
+                441
+              ],
+              [
+                721,
+                417
+              ]
+            ],
+            [
+              [
+                807,
+                485
+              ],
+              [
+                827,
+                482
+              ],
+              [
+                868,
+                456
+              ],
+              [
+                895,
+                416
+              ]
+            ],
+            [
+              [
+                518,
+                280
+              ],
+              [
+                552,
+                273
+              ],
+              [
+                594,
+                274
+              ],
+              [
+                697,
+                290
+              ],
+              [
+                771,
+                310
+              ],
+              [
+                826,
+                307
+              ]
+            ],
+            [
+              [
+                630,
+                788
+              ],
+              [
+                654,
+                771
+              ],
+              [
+                675,
+                743
+              ],
+              [
+                659,
+                159
+              ],
+              [
+                639,
+                139
+              ]
+            ],
+            [
+              [
+                414,
+                100
+              ],
+              [
+                471,
+                91
+              ],
+              [
+                585,
+                108
+              ],
+              [
+                866,
+                135
+              ],
+              [
+                918,
+                128
+              ],
+              [
+                951,
+                115
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-632b-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3516",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "politics; political",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "政治"
+              },
+              {
+                "value": "zhèngzhì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zheng4zhi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "政治",
+              "pinyin": "zhèngzhì",
+              "meaning": "politics; political",
+              "audio": "45cb19676199fe3ee1e4266015153d810c27d6d9102201419b5fde339105dda5",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-632b-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-632b",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "obstructed; to fail",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "挫"
+              },
+              {
+                "value": "cuò",
+                "mode": "pinyin"
+              },
+              {
+                "value": "cuo4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "挫",
+              "pinyin": "cuò",
+              "meaning": "obstructed; to fail",
+              "audio": "9a5acb9785b560f7552719756d02790564fe00968301f5397ed7c60616f75f54",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "9a5acb9785b560f7552719756d02790564fe00968301f5397ed7c60616f75f54"
+            ],
+            "transcript": [
+              {
+                "text": "挫",
+                "pinyin": "cuò",
+                "meaning": "obstructed; to fail",
+                "audio": "9a5acb9785b560f7552719756d02790564fe00968301f5397ed7c60616f75f54",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-632B",
+      "character": "挫",
+      "lessonIds": [
+        "LESSON-C-632B"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-632b-word",
+        "EX-CHAR-char-632b-recognize",
+        "EX-CHAR-char-632b-write",
+        "EX-CHAR-char-632b-familiar",
+        "EX-CHAR-char-632b-recall"
+      ]
+    },
+    "audio": {
+      "9a5acb9785b560f7552719756d02790564fe00968301f5397ed7c60616f75f54": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-83504b6560ea666aeecdc270a261996e47eb73e623b1e457881a2a7cf7aa73c3.mp3",
+          "sha256": "83504b6560ea666aeecdc270a261996e47eb73e623b1e457881a2a7cf7aa73c3",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "83504b6560ea666aeecdc270a261996e47eb73e623b1e457881a2a7cf7aa73c3",
+            "text": "挫",
+            "words": [
+              {
+                "text": "挫",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-47d2ad912a27b4b644308ade94426cc136237389ca106071ae5a759b7e7a6cd6.mp3",
+          "sha256": "47d2ad912a27b4b644308ade94426cc136237389ca106071ae5a759b7e7a6cd6",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "47d2ad912a27b4b644308ade94426cc136237389ca106071ae5a759b7e7a6cd6",
+            "text": "挫",
+            "words": [
+              {
+                "text": "挫",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "7bd56532dd740b2f7fc69e20b87cc4a4b28095a4d7d72dc899f36a51f64bbe42": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-930dfecc579e59ff350c38f7480423cf3198f74320292ff81414d73959299638.mp3",
+          "sha256": "930dfecc579e59ff350c38f7480423cf3198f74320292ff81414d73959299638",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "930dfecc579e59ff350c38f7480423cf3198f74320292ff81414d73959299638",
+            "text": "脑",
+            "words": [
+              {
+                "text": "脑",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-c0153101c77892706007e6c35758eafd34d8a0711b984402988bb6829e0080ab.mp3",
+          "sha256": "c0153101c77892706007e6c35758eafd34d8a0711b984402988bb6829e0080ab",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "c0153101c77892706007e6c35758eafd34d8a0711b984402988bb6829e0080ab",
+            "text": "脑",
+            "words": [
+              {
+                "text": "脑",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "4ea1889b1a1240c8d738f95ad1412a9bd3c0557d09830905e768931feb6aef4a": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-96a1c056005aeb2f2617209a74f7a8433cf294bdad2b8a6b86cdaff79e3190e2.mp3",
+          "sha256": "96a1c056005aeb2f2617209a74f7a8433cf294bdad2b8a6b86cdaff79e3190e2",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "96a1c056005aeb2f2617209a74f7a8433cf294bdad2b8a6b86cdaff79e3190e2",
+            "text": "夏天",
+            "words": [
+              {
+                "text": "夏天",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8c03f8cf490af2bdef2f51e7a3dc9464f2c80961c71e706e6a0fd1e7880390f9.mp3",
+          "sha256": "8c03f8cf490af2bdef2f51e7a3dc9464f2c80961c71e706e6a0fd1e7880390f9",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "8c03f8cf490af2bdef2f51e7a3dc9464f2c80961c71e706e6a0fd1e7880390f9",
+            "text": "夏天",
+            "words": [
+              {
+                "text": "夏天",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "45cb19676199fe3ee1e4266015153d810c27d6d9102201419b5fde339105dda5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c07d2cd56a8ab06abd5d47a98f23ca199c32a3315578f233d4738de0201bbfe6.mp3",
+          "sha256": "c07d2cd56a8ab06abd5d47a98f23ca199c32a3315578f233d4738de0201bbfe6",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "c07d2cd56a8ab06abd5d47a98f23ca199c32a3315578f233d4738de0201bbfe6",
+            "text": "政治",
+            "words": [
+              {
+                "text": "政治",
+                "start": 0.21,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b87d5ddf85c23012e64e8fcd3cd4858d85a9c56cac7173b53855283e5b67d3d9.mp3",
+          "sha256": "b87d5ddf85c23012e64e8fcd3cd4858d85a9c56cac7173b53855283e5b67d3d9",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "b87d5ddf85c23012e64e8fcd3cd4858d85a9c56cac7173b53855283e5b67d3d9",
+            "text": "政治",
+            "words": [
+              {
+                "text": "政治",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "a12df490c3b611dc71a608a704ae65014c9a612fc618ed21a4bb8d383911d6de": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d30213f07d40630fea3d152aa06c536e20616f18f1c2b6f27bab2dcae83e822c.mp3",
+          "sha256": "d30213f07d40630fea3d152aa06c536e20616f18f1c2b6f27bab2dcae83e822c",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "d30213f07d40630fea3d152aa06c536e20616f18f1c2b6f27bab2dcae83e822c",
+            "text": "挫折",
+            "words": [
+              {
+                "text": "挫折",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/704bc2e92d9c5c2d2298abc32d20d4a4b52ad0d9b093a9d392d10ec7a5ee6579.mp3",
+          "sha256": "704bc2e92d9c5c2d2298abc32d20d4a4b52ad0d9b093a9d392d10ec7a5ee6579",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "704bc2e92d9c5c2d2298abc32d20d4a4b52ad0d9b093a9d392d10ec7a5ee6579",
+            "text": "挫折",
+            "words": [
+              {
+                "text": "挫折",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

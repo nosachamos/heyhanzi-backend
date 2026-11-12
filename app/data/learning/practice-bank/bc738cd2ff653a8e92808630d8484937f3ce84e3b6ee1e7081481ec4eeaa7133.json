@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3500",
+  "targetId": "W3500",
+  "steps": [
+    {
+      "id": "BANK-W3500-W3500",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3500-W3500",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to target; to focus on",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "针对"
+            },
+            {
+              "value": "zhēnduì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhen1dui4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "针对",
+            "pinyin": "zhēnduì",
+            "meaning": "to target; to focus on",
+            "singleWord": true,
+            "audio": "276411372f44068e2e259865ae80aa78cb69835412b4970b12c18ce9790e3dda"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "276411372f44068e2e259865ae80aa78cb69835412b4970b12c18ce9790e3dda": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-58e0971123aa8c18a458d8826ad915ead72da75a7693893355e83c078dc67a35.mp3",
+        "sha256": "58e0971123aa8c18a458d8826ad915ead72da75a7693893355e83c078dc67a35",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "58e0971123aa8c18a458d8826ad915ead72da75a7693893355e83c078dc67a35",
+          "text": "针对",
+          "words": [
+            {
+              "text": "针对",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-6ecfc0e806ca094eabf12228ad4a8be30436bc3e62aa51a58ce9df881afd60b8.mp3",
+        "sha256": "6ecfc0e806ca094eabf12228ad4a8be30436bc3e62aa51a58ce9df881afd60b8",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "6ecfc0e806ca094eabf12228ad4a8be30436bc3e62aa51a58ce9df881afd60b8",
+          "text": "针对",
+          "words": [
+            {
+              "text": "针对",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3500",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3500-W3500",
+      "question_ids": [
+        "BANK-W3500-W3500"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-50",
+    "stepId": "S-U5-50-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9488"
+    ],
+    "grammarLessonIds": []
+  }
+}

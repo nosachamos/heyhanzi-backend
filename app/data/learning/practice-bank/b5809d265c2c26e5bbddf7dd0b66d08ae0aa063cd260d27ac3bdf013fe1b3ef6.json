@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0720",
+  "targetId": "W0720",
+  "steps": [
+    {
+      "id": "BANK-W0720-W0720",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0720-W0720",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "east",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "东"
+            },
+            {
+              "value": "dōng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dong1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "东",
+            "pinyin": "dōng",
+            "meaning": "east",
+            "singleWord": true,
+            "audio": "5bc20b5ace31d36d92844ce4b04fb4540a738977f9e2204253074047a113df42"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5bc20b5ace31d36d92844ce4b04fb4540a738977f9e2204253074047a113df42": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f4f38ae98342b1bcb09551ff0df0a4f25778ec26f0a95d5f51f307770ce771bd.mp3",
+        "sha256": "f4f38ae98342b1bcb09551ff0df0a4f25778ec26f0a95d5f51f307770ce771bd",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "f4f38ae98342b1bcb09551ff0df0a4f25778ec26f0a95d5f51f307770ce771bd",
+          "text": "东",
+          "words": [
+            {
+              "text": "东",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-213d18c207ec5e30b112b62a34110d617ca76990cf674d9ec6cf4154f2a87e26.mp3",
+        "sha256": "213d18c207ec5e30b112b62a34110d617ca76990cf674d9ec6cf4154f2a87e26",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "213d18c207ec5e30b112b62a34110d617ca76990cf674d9ec6cf4154f2a87e26",
+          "text": "东",
+          "words": [
+            {
+              "text": "东",
+              "start": 0.16,
+              "end": 0.26
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0720",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0720-W0720",
+      "question_ids": [
+        "BANK-W0720-W0720"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-10",
+    "stepId": "S-U3-10-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4e1c"
+    ],
+    "grammarLessonIds": []
+  }
+}

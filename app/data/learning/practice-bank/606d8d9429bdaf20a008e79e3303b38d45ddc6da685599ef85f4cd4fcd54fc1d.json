@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4070",
+  "targetId": "W4070",
+  "steps": [
+    {
+      "id": "BANK-W4070-W4070",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4070-W4070",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "post; announcement",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "公告"
+            },
+            {
+              "value": "gōnggào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gong1gao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "公告",
+            "pinyin": "gōnggào",
+            "meaning": "post; announcement",
+            "singleWord": true,
+            "audio": "bf0e8f157a93afdebfb2ecaf7ca6654e51ca44c0b2d30fd292cff1e697e7c900"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "bf0e8f157a93afdebfb2ecaf7ca6654e51ca44c0b2d30fd292cff1e697e7c900": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/32abd5c6113af3f676dc8eaff78d2dc791477552fd6b68e7346ee76c1dc7055f.mp3",
+        "sha256": "32abd5c6113af3f676dc8eaff78d2dc791477552fd6b68e7346ee76c1dc7055f",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "32abd5c6113af3f676dc8eaff78d2dc791477552fd6b68e7346ee76c1dc7055f",
+          "text": "公告",
+          "words": [
+            {
+              "text": "公告",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/a9c8e64e334b4a6fad209edf313a07165e7cd3b6916ae2d81a951a20eac050ff.mp3",
+        "sha256": "a9c8e64e334b4a6fad209edf313a07165e7cd3b6916ae2d81a951a20eac050ff",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "a9c8e64e334b4a6fad209edf313a07165e7cd3b6916ae2d81a951a20eac050ff",
+          "text": "公告",
+          "words": [
+            {
+              "text": "公告",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4070",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4070-W4070",
+      "question_ids": [
+        "BANK-W4070-W4070"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-35-P01",
+    "stepId": "S-U6-35-words-r4-8",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-544a"
+    ],
+    "grammarLessonIds": []
+  }
+}

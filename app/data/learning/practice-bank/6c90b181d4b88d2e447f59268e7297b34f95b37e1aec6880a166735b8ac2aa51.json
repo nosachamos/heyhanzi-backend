@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0119",
+  "targetId": "W0119",
+  "steps": [
+    {
+      "id": "BANK-W0119-W0119",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0119-W0119",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "mobile phone",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "手机"
+            },
+            {
+              "value": "shǒujī",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shou3ji1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "手机",
+            "pinyin": "shǒujī",
+            "meaning": "mobile phone",
+            "singleWord": true,
+            "audio": "71905a965ebdd4b1d1b6c1f10659985c4c30c6f707ae8656be0a6f33d15a66f2"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "71905a965ebdd4b1d1b6c1f10659985c4c30c6f707ae8656be0a6f33d15a66f2": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5a54598dba803a0b5b5137ff13ee4e54f2f3efdd9b8fcac0451f9c3fa277dfca.mp3",
+        "sha256": "5a54598dba803a0b5b5137ff13ee4e54f2f3efdd9b8fcac0451f9c3fa277dfca",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "5a54598dba803a0b5b5137ff13ee4e54f2f3efdd9b8fcac0451f9c3fa277dfca",
+          "text": "手机",
+          "words": [
+            {
+              "text": "手机",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-dd0e6ef714dee260b56341ff05e9c754d3f4ec3cde628e68218bad37fe9e8600.mp3",
+        "sha256": "dd0e6ef714dee260b56341ff05e9c754d3f4ec3cde628e68218bad37fe9e8600",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "dd0e6ef714dee260b56341ff05e9c754d3f4ec3cde628e68218bad37fe9e8600",
+          "text": "手机",
+          "words": [
+            {
+              "text": "手机",
+              "start": 0.21,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0119",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0119-W0119",
+      "question_ids": [
+        "BANK-W0119-W0119"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U07",
+    "stepId": "S-U07-words-r4-10",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-673a"
+    ],
+    "grammarLessonIds": []
+  }
+}

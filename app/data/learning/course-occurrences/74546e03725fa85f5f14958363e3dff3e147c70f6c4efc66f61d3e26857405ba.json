@@ -1,0 +1,769 @@
+{
+  "id": "EX-CHAR-char-9605",
+  "revision": 2,
+  "unit": "U4-20",
+  "stage": "ST-HSK4",
+  "after": "S-U4-20-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "阅",
+  "sourceBlockId": "mandarin-simplified-v1-char-9605",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-9605",
+        "text": "阅",
+        "pinyin": "yuè",
+        "meaning": "to inspect; to review",
+        "characters": [
+          {
+            "id": "C-9605",
+            "text": "阅"
+          }
+        ]
+      },
+      {
+        "id": "W-USE-0685-6",
+        "text": "或",
+        "pinyin": "huò",
+        "meaning": "perhaps (written)",
+        "characters": [
+          {
+            "id": "C-6216",
+            "text": "或"
+          }
+        ]
+      },
+      {
+        "id": "W1032",
+        "text": "怎么办",
+        "pinyin": "zěnmebàn",
+        "meaning": "what's to be done",
+        "characters": [
+          {
+            "id": "C-600E",
+            "text": "怎"
+          },
+          {
+            "id": "C-4E48",
+            "text": "么"
+          },
+          {
+            "id": "C-529E",
+            "text": "办"
+          }
+        ]
+      },
+      {
+        "id": "W1941",
+        "text": "阅读",
+        "pinyin": "yuèdú",
+        "meaning": "to read",
+        "characters": [
+          {
+            "id": "C-9605",
+            "text": "阅"
+          },
+          {
+            "id": "C-8BFB",
+            "text": "读"
+          }
+        ]
+      },
+      {
+        "id": "W3238",
+        "text": "物业",
+        "pinyin": "wùyè",
+        "meaning": "property; real estate",
+        "characters": [
+          {
+            "id": "C-7269",
+            "text": "物"
+          },
+          {
+            "id": "C-4E1A",
+            "text": "业"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "3b7eb617b504c9a98813d336d1ee5b563b79e433f78745708617883843778565",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-9605",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "阅",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-9605-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1941",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to read",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "阅读"
+              },
+              {
+                "value": "yuèdú",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yue4du2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "阅读",
+              "pinyin": "yuèdú",
+              "meaning": "to read",
+              "audio": "b0185aca181ae75f22a5ce86c3b9e22b1df07e1fa0d42842822e4956114718cf",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9605-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-9605",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "阅",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W3238",
+                "label": "property; real estate",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-9605",
+                "label": "to inspect; to review",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W-USE-0685-6",
+                "label": "perhaps (written)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9605-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "阅",
+        "pinyin": "yuè",
+        "meaning": "to inspect; to review",
+        "source": "/stroke-data/9605.json",
+        "reference": {
+          "character": "阅",
+          "sha256": "437dea9dedcc2c0f256220c9da5b15bfba354196fb51e79dfaf894c00b2ef44a",
+          "medians": [
+            [
+              [
+                327,
+                779
+              ],
+              [
+                406,
+                722
+              ],
+              [
+                421,
+                699
+              ]
+            ],
+            [
+              [
+                208,
+                701
+              ],
+              [
+                243,
+                663
+              ],
+              [
+                248,
+                638
+              ],
+              [
+                241,
+                319
+              ],
+              [
+                234,
+                227
+              ],
+              [
+                216,
+                134
+              ],
+              [
+                215,
+                69
+              ]
+            ],
+            [
+              [
+                528,
+                728
+              ],
+              [
+                558,
+                722
+              ],
+              [
+                600,
+                726
+              ],
+              [
+                734,
+                755
+              ],
+              [
+                771,
+                757
+              ],
+              [
+                801,
+                748
+              ],
+              [
+                824,
+                723
+              ],
+              [
+                835,
+                123
+              ],
+              [
+                825,
+                60
+              ],
+              [
+                813,
+                35
+              ],
+              [
+                797,
+                36
+              ],
+              [
+                658,
+                79
+              ]
+            ],
+            [
+              [
+                380,
+                594
+              ],
+              [
+                439,
+                546
+              ],
+              [
+                450,
+                520
+              ]
+            ],
+            [
+              [
+                592,
+                660
+              ],
+              [
+                610,
+                633
+              ],
+              [
+                520,
+                529
+              ]
+            ],
+            [
+              [
+                363,
+                456
+              ],
+              [
+                390,
+                428
+              ],
+              [
+                412,
+                329
+              ],
+              [
+                424,
+                304
+              ]
+            ],
+            [
+              [
+                409,
+                454
+              ],
+              [
+                420,
+                447
+              ],
+              [
+                439,
+                448
+              ],
+              [
+                544,
+                478
+              ],
+              [
+                571,
+                481
+              ],
+              [
+                585,
+                475
+              ],
+              [
+                603,
+                454
+              ],
+              [
+                581,
+                392
+              ],
+              [
+                560,
+                377
+              ]
+            ],
+            [
+              [
+                434,
+                338
+              ],
+              [
+                443,
+                332
+              ],
+              [
+                549,
+                355
+              ],
+              [
+                608,
+                352
+              ]
+            ],
+            [
+              [
+                416,
+                294
+              ],
+              [
+                427,
+                283
+              ],
+              [
+                433,
+                260
+              ],
+              [
+                415,
+                226
+              ],
+              [
+                354,
+                157
+              ],
+              [
+                295,
+                120
+              ]
+            ],
+            [
+              [
+                519,
+                302
+              ],
+              [
+                537,
+                281
+              ],
+              [
+                540,
+                263
+              ],
+              [
+                532,
+                202
+              ],
+              [
+                536,
+                173
+              ],
+              [
+                544,
+                160
+              ],
+              [
+                576,
+                146
+              ],
+              [
+                660,
+                150
+              ],
+              [
+                690,
+                160
+              ],
+              [
+                711,
+                177
+              ],
+              [
+                714,
+                275
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-9605-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1032",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "what's to be done",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "怎么办"
+              },
+              {
+                "value": "zěnmebàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zen3me5ban4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "怎么办",
+              "pinyin": "zěnmebàn",
+              "meaning": "what's to be done",
+              "audio": "3084b4f3dbc313e9ce620e341d280fd5eda38c3d9045cb966d602e0a7958ba34",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-9605-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-9605",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to inspect; to review",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "阅"
+              },
+              {
+                "value": "yuè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yue4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "阅",
+              "pinyin": "yuè",
+              "meaning": "to inspect; to review",
+              "audio": "208ed825e2dc09bbe9a8ba00d76ad18dda168019b5ddeda625dcd06907c348c7",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "208ed825e2dc09bbe9a8ba00d76ad18dda168019b5ddeda625dcd06907c348c7"
+            ],
+            "transcript": [
+              {
+                "text": "阅",
+                "pinyin": "yuè",
+                "meaning": "to inspect; to review",
+                "audio": "208ed825e2dc09bbe9a8ba00d76ad18dda168019b5ddeda625dcd06907c348c7",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-9605",
+      "character": "阅",
+      "lessonIds": [
+        "LESSON-C-9605"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-9605-word",
+        "EX-CHAR-char-9605-recognize",
+        "EX-CHAR-char-9605-write",
+        "EX-CHAR-char-9605-familiar",
+        "EX-CHAR-char-9605-recall"
+      ]
+    },
+    "audio": {
+      "208ed825e2dc09bbe9a8ba00d76ad18dda168019b5ddeda625dcd06907c348c7": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-2e6ec4b4b263173594a400023b3e7e34577673cdf6a6627127ff00aedc85acaa.mp3",
+          "sha256": "2e6ec4b4b263173594a400023b3e7e34577673cdf6a6627127ff00aedc85acaa",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "2e6ec4b4b263173594a400023b3e7e34577673cdf6a6627127ff00aedc85acaa",
+            "text": "阅",
+            "words": [
+              {
+                "text": "阅",
+                "start": 0.18,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-b3670a305419f2a26705777daef72ea57a10e2218c7382759380b405ad3b82e6.mp3",
+          "sha256": "b3670a305419f2a26705777daef72ea57a10e2218c7382759380b405ad3b82e6",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "b3670a305419f2a26705777daef72ea57a10e2218c7382759380b405ad3b82e6",
+            "text": "阅",
+            "words": [
+              {
+                "text": "阅",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "ec9a67bb407f151e90b54dc3685b84f61d356be25d92300ff8f8945608dd678b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3687678b43f824a6fcce07da3b1e212d13247f41e3dc72a89f6b9ea1b9ffa9ec.mp3",
+          "sha256": "3687678b43f824a6fcce07da3b1e212d13247f41e3dc72a89f6b9ea1b9ffa9ec",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "3687678b43f824a6fcce07da3b1e212d13247f41e3dc72a89f6b9ea1b9ffa9ec",
+            "text": "或",
+            "words": [
+              {
+                "text": "或",
+                "start": 0.24,
+                "end": 0.38
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-0f9ca34a1d3e457632ac7b83a829d2bf59675e3ecb7c27a101bc258712bb65f6.mp3",
+          "sha256": "0f9ca34a1d3e457632ac7b83a829d2bf59675e3ecb7c27a101bc258712bb65f6",
+          "byteLength": 8973,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "0f9ca34a1d3e457632ac7b83a829d2bf59675e3ecb7c27a101bc258712bb65f6",
+            "text": "或",
+            "words": [
+              {
+                "text": "或",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "3084b4f3dbc313e9ce620e341d280fd5eda38c3d9045cb966d602e0a7958ba34": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5fa4fd7e2fb1485b5c10edacd75bd9a1c9b6fb9a2b64033ad67994099aca4b50.mp3",
+          "sha256": "5fa4fd7e2fb1485b5c10edacd75bd9a1c9b6fb9a2b64033ad67994099aca4b50",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "5fa4fd7e2fb1485b5c10edacd75bd9a1c9b6fb9a2b64033ad67994099aca4b50",
+            "text": "怎么办",
+            "words": [
+              {
+                "text": "怎么办",
+                "start": 0.27,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ee61c21e2a65a0789fc8bd92795e31f2bd9faea762b21a291d9514b86e5d0a85.mp3",
+          "sha256": "ee61c21e2a65a0789fc8bd92795e31f2bd9faea762b21a291d9514b86e5d0a85",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "ee61c21e2a65a0789fc8bd92795e31f2bd9faea762b21a291d9514b86e5d0a85",
+            "text": "怎么办",
+            "words": [
+              {
+                "text": "怎么办",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "b0185aca181ae75f22a5ce86c3b9e22b1df07e1fa0d42842822e4956114718cf": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-4867cfe7e26f96c261a8139e366e63cc0a08367de51b3dc155ed6ef151422648.mp3",
+          "sha256": "4867cfe7e26f96c261a8139e366e63cc0a08367de51b3dc155ed6ef151422648",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "4867cfe7e26f96c261a8139e366e63cc0a08367de51b3dc155ed6ef151422648",
+            "text": "阅读",
+            "words": [
+              {
+                "text": "阅读",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ee19e00891bad9309fad165bb1f041610f061f17bdbffd33c7680468228dc757.mp3",
+          "sha256": "ee19e00891bad9309fad165bb1f041610f061f17bdbffd33c7680468228dc757",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "ee19e00891bad9309fad165bb1f041610f061f17bdbffd33c7680468228dc757",
+            "text": "阅读",
+            "words": [
+              {
+                "text": "阅读",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "27b17f3dde245d324d148f5d550be52a57d13f63720683a4fa23f862f2a2dc0c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2fb5cfdc8393fa3fa6f38b0b9e3b25f3c5c6ca681ac8b5e6652c90f8bd800703.mp3",
+          "sha256": "2fb5cfdc8393fa3fa6f38b0b9e3b25f3c5c6ca681ac8b5e6652c90f8bd800703",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "2fb5cfdc8393fa3fa6f38b0b9e3b25f3c5c6ca681ac8b5e6652c90f8bd800703",
+            "text": "物业",
+            "words": [
+              {
+                "text": "物业",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/800a573cc35fc655041e27522fece93007360e75be4a91bf64551528a172285d.mp3",
+          "sha256": "800a573cc35fc655041e27522fece93007360e75be4a91bf64551528a172285d",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "800a573cc35fc655041e27522fece93007360e75be4a91bf64551528a172285d",
+            "text": "物业",
+            "words": [
+              {
+                "text": "物业",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

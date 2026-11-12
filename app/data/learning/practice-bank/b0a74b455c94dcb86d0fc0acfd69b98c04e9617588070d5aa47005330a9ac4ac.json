@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1135",
+  "targetId": "W1135",
+  "steps": [
+    {
+      "id": "BANK-W1135-W1135",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1135-W1135",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "passenger",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "乘客"
+            },
+            {
+              "value": "chéngkè",
+              "mode": "pinyin"
+            },
+            {
+              "value": "cheng2ke4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "乘客",
+            "pinyin": "chéngkè",
+            "meaning": "passenger",
+            "singleWord": true,
+            "audio": "3a81debe44ec0e84228eb8920423bc57c444382dac8c16781745e7ed26f252dd"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3a81debe44ec0e84228eb8920423bc57c444382dac8c16781745e7ed26f252dd": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8e83ea58e4483932dc11613ac65622a9cf0d57882efac4a406d52adb75691ba2.mp3",
+        "sha256": "8e83ea58e4483932dc11613ac65622a9cf0d57882efac4a406d52adb75691ba2",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "8e83ea58e4483932dc11613ac65622a9cf0d57882efac4a406d52adb75691ba2",
+          "text": "乘客",
+          "words": [
+            {
+              "text": "乘客",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/6159341b729612f6d6d99d86b85fbe0370e8556289ba1aa34c427cef547e55e8.mp3",
+        "sha256": "6159341b729612f6d6d99d86b85fbe0370e8556289ba1aa34c427cef547e55e8",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "6159341b729612f6d6d99d86b85fbe0370e8556289ba1aa34c427cef547e55e8",
+          "text": "乘客",
+          "words": [
+            {
+              "text": "乘客",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1135",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1135-W1135",
+      "question_ids": [
+        "BANK-W1135-W1135"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-16",
+    "stepId": "S-U4-16-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4e58"
+    ],
+    "grammarLessonIds": []
+  }
+}

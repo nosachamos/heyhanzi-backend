@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W1221",
+  "targetId": "W1221",
+  "steps": [
+    {
+      "id": "BANK-W1221-W1221",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1221-W1221",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "belly; abdomen",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "肚子"
+            },
+            {
+              "value": "dùzi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "du4zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "肚子",
+            "pinyin": "dùzi",
+            "meaning": "belly; abdomen",
+            "singleWord": true,
+            "audio": "af9b88098c11fef61eda000833884489dca4eaabfed9689a2c347be8167aef10"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "af9b88098c11fef61eda000833884489dca4eaabfed9689a2c347be8167aef10": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e226a6a70a1cd255150aa70f591391b3a06ad78f6ed1eab58036d6a4eda635f3.mp3",
+        "sha256": "e226a6a70a1cd255150aa70f591391b3a06ad78f6ed1eab58036d6a4eda635f3",
+        "byteLength": 11853,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "e226a6a70a1cd255150aa70f591391b3a06ad78f6ed1eab58036d6a4eda635f3",
+          "text": "肚子",
+          "words": [
+            {
+              "text": "肚子",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c3389121ba9c3e0962b6144f0b14c2fadfe2f99777de14f6466528d45cd317b9.mp3",
+        "sha256": "c3389121ba9c3e0962b6144f0b14c2fadfe2f99777de14f6466528d45cd317b9",
+        "byteLength": 14157,
+        "readAlong": {
+          "audioSha256": "c3389121ba9c3e0962b6144f0b14c2fadfe2f99777de14f6466528d45cd317b9",
+          "text": "肚子",
+          "words": [
+            {
+              "text": "肚子",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1221",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1221-W1221",
+      "question_ids": [
+        "BANK-W1221-W1221"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-13",
+    "stepId": "S-U4-13-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-809a"
+    ],
+    "grammarLessonIds": []
+  }
+}

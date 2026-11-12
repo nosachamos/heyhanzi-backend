@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W1958",
+  "targetId": "W1958",
+  "steps": [
+    {
+      "id": "BANK-W1958-W1958",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1958-W1958",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "one who ...; person involved in ...",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "者"
+            },
+            {
+              "value": "zhě",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhe3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "者",
+            "pinyin": "zhě",
+            "meaning": "one who ...; person involved in ...",
+            "singleWord": true,
+            "audio": "c015599bc58f29b12bba732b7d65902a95fc34afab242fb91e9c51d0a9f8c00b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c015599bc58f29b12bba732b7d65902a95fc34afab242fb91e9c51d0a9f8c00b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-15b137ee205e6d9b98ef261d911013a4298325a25753e06515fd2d5ce6900c94.mp3",
+        "sha256": "15b137ee205e6d9b98ef261d911013a4298325a25753e06515fd2d5ce6900c94",
+        "byteLength": 12141,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "15b137ee205e6d9b98ef261d911013a4298325a25753e06515fd2d5ce6900c94",
+          "text": "者",
+          "words": [
+            {
+              "text": "者",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2596dd7a1fd39252edd2cff00405d2980a9285631c807a3465ea87c3dd399838.mp3",
+        "sha256": "2596dd7a1fd39252edd2cff00405d2980a9285631c807a3465ea87c3dd399838",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "2596dd7a1fd39252edd2cff00405d2980a9285631c807a3465ea87c3dd399838",
+          "text": "者",
+          "words": [
+            {
+              "text": "者",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1958",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1958-W1958",
+      "question_ids": [
+        "BANK-W1958-W1958"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-39-P01",
+    "stepId": "S-U4-39-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8005"
+    ],
+    "grammarLessonIds": []
+  }
+}

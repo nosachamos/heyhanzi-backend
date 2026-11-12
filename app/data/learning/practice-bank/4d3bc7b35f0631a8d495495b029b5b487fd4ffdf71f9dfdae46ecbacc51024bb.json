@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1001",
+  "targetId": "W1001",
+  "steps": [
+    {
+      "id": "BANK-W1001-W1001",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1001-W1001",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "toothbrush",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "牙刷"
+            },
+            {
+              "value": "yáshuā",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ya2shua1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "牙刷",
+            "pinyin": "yáshuā",
+            "meaning": "toothbrush",
+            "singleWord": true,
+            "audio": "07face5f2e41cd6658dd1a603e61fc6dc38e9bda5dda7209916b81c4f24d27af"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "07face5f2e41cd6658dd1a603e61fc6dc38e9bda5dda7209916b81c4f24d27af": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ab385a4493dc9ad66dfda94d739e9167c0c97a1ea3db0db5526e450ef2911d4a.mp3",
+        "sha256": "ab385a4493dc9ad66dfda94d739e9167c0c97a1ea3db0db5526e450ef2911d4a",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "ab385a4493dc9ad66dfda94d739e9167c0c97a1ea3db0db5526e450ef2911d4a",
+          "text": "牙刷",
+          "words": [
+            {
+              "text": "牙刷",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2cf05e718ce16ea6058c938b1dfbc54a73d9fc9f4acb01b5ad4db5bfd47c211a.mp3",
+        "sha256": "2cf05e718ce16ea6058c938b1dfbc54a73d9fc9f4acb01b5ad4db5bfd47c211a",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "2cf05e718ce16ea6058c938b1dfbc54a73d9fc9f4acb01b5ad4db5bfd47c211a",
+          "text": "牙刷",
+          "words": [
+            {
+              "text": "牙刷",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1001",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1001-W1001",
+      "question_ids": [
+        "BANK-W1001-W1001"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-03",
+    "stepId": "S-U3-03-words-r4-31",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5237"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4245",
+  "targetId": "W4245",
+  "steps": [
+    {
+      "id": "BANK-W4245-W4245",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4245-W4245",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "the daily life of a family",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "家常"
+            },
+            {
+              "value": "jiācháng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jia1chang2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "家常",
+            "pinyin": "jiācháng",
+            "meaning": "the daily life of a family",
+            "singleWord": true,
+            "audio": "f7b86ebff41a8815b50bf516cd4a3896eb8a6e8c9f67d0f211e80781e885ebfe"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f7b86ebff41a8815b50bf516cd4a3896eb8a6e8c9f67d0f211e80781e885ebfe": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-df4ef00f780345aef53bd67b2c1f14654ff0820bca983eeaa1941d8d4355a156.mp3",
+        "sha256": "df4ef00f780345aef53bd67b2c1f14654ff0820bca983eeaa1941d8d4355a156",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "df4ef00f780345aef53bd67b2c1f14654ff0820bca983eeaa1941d8d4355a156",
+          "text": "家常",
+          "words": [
+            {
+              "text": "家常",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c10d95ca7727f4ae78f19d23110a9992996fbcbdf06fd140591275086366dafe.mp3",
+        "sha256": "c10d95ca7727f4ae78f19d23110a9992996fbcbdf06fd140591275086366dafe",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "c10d95ca7727f4ae78f19d23110a9992996fbcbdf06fd140591275086366dafe",
+          "text": "家常",
+          "words": [
+            {
+              "text": "家常",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4245",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4245-W4245",
+      "question_ids": [
+        "BANK-W4245-W4245"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-01",
+    "stepId": "S-U6-01-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e38"
+    ],
+    "grammarLessonIds": []
+  }
+}

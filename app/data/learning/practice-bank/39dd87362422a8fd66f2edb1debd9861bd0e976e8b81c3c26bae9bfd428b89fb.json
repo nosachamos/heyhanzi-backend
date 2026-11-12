@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1903",
+  "targetId": "W1903",
+  "steps": [
+    {
+      "id": "BANK-W1903-W1903",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1903-W1903",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "art",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "艺术"
+            },
+            {
+              "value": "yìshù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yi4shu4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "艺术",
+            "pinyin": "yìshù",
+            "meaning": "art",
+            "singleWord": true,
+            "audio": "7da8e20c7b77d07d8708e93a9b5d9fd48f5761ad9c73a7f3fce56de9ad1895d5"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7da8e20c7b77d07d8708e93a9b5d9fd48f5761ad9c73a7f3fce56de9ad1895d5": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-14023e60d3e6c958f2b01f45c22e20b527a9f5a36af01e04ee523b7abe45e19e.mp3",
+        "sha256": "14023e60d3e6c958f2b01f45c22e20b527a9f5a36af01e04ee523b7abe45e19e",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "14023e60d3e6c958f2b01f45c22e20b527a9f5a36af01e04ee523b7abe45e19e",
+          "text": "艺术",
+          "words": [
+            {
+              "text": "艺术",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-64b9cc2cba29967852f22391550cf3e5dfa173a025703f6396614a6aa1b1078b.mp3",
+        "sha256": "64b9cc2cba29967852f22391550cf3e5dfa173a025703f6396614a6aa1b1078b",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "64b9cc2cba29967852f22391550cf3e5dfa173a025703f6396614a6aa1b1078b",
+          "text": "艺术",
+          "words": [
+            {
+              "text": "艺术",
+              "start": 0.09,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1903",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1903-W1903",
+      "question_ids": [
+        "BANK-W1903-W1903"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-25",
+    "stepId": "S-U4-25-words-r4-6",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-672f"
+    ],
+    "grammarLessonIds": []
+  }
+}

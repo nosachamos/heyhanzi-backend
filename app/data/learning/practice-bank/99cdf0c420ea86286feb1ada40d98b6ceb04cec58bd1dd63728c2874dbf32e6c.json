@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1722",
+  "targetId": "W1722",
+  "steps": [
+    {
+      "id": "BANK-W1722-W1722",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1722-W1722",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "ticket seller",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "售票员"
+            },
+            {
+              "value": "shòupiàoyuán",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shou4piao4yuan2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "售票员",
+            "pinyin": "shòupiàoyuán",
+            "meaning": "ticket seller",
+            "singleWord": true,
+            "audio": "48634f62ba781ddf74afc4230cb191dc811ffc6e435a5fb1ae8c956b3fbae11e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "48634f62ba781ddf74afc4230cb191dc811ffc6e435a5fb1ae8c956b3fbae11e": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a353f7c4afcfc6209af3bf3f51d158032149cdf675191323fd09b3bb9174bb88.mp3",
+        "sha256": "a353f7c4afcfc6209af3bf3f51d158032149cdf675191323fd09b3bb9174bb88",
+        "byteLength": 16173,
+        "readAlong": {
+          "audioSha256": "a353f7c4afcfc6209af3bf3f51d158032149cdf675191323fd09b3bb9174bb88",
+          "text": "售票员",
+          "words": [
+            {
+              "text": "售票员",
+              "start": 0.21,
+              "end": 0.6299999999999999
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3c247f2386976d0f06db723846eec1cf5137ce4f41d8f58acccae5f8b5d80f3d.mp3",
+        "sha256": "3c247f2386976d0f06db723846eec1cf5137ce4f41d8f58acccae5f8b5d80f3d",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "3c247f2386976d0f06db723846eec1cf5137ce4f41d8f58acccae5f8b5d80f3d",
+          "text": "售票员",
+          "words": [
+            {
+              "text": "售票员",
+              "start": 0.09,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1722",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1722-W1722",
+      "question_ids": [
+        "BANK-W1722-W1722"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-15",
+    "stepId": "S-U4-15-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-552e"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0523",
+  "targetId": "W0523",
+  "steps": [
+    {
+      "id": "BANK-W0523-W0523",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0523-W0523",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to go out; to leave home",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "出门"
+            },
+            {
+              "value": "chūmén",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chu1men2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "出门",
+            "pinyin": "chūmén",
+            "meaning": "to go out; to leave home",
+            "singleWord": true,
+            "audio": "384c41acd0dbdb640d1945b0b44bfe179e82167538767387caa26eea7262ac67"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "384c41acd0dbdb640d1945b0b44bfe179e82167538767387caa26eea7262ac67": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-db192329eb104cc2a52b3ea4b126be9c30a06309df5632eff08df40d85063469.mp3",
+        "sha256": "db192329eb104cc2a52b3ea4b126be9c30a06309df5632eff08df40d85063469",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "db192329eb104cc2a52b3ea4b126be9c30a06309df5632eff08df40d85063469",
+          "text": "出门",
+          "words": [
+            {
+              "text": "出门",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3164c5f8dcc5648fed646c9e3c3fc97adb0f033eb4cbbb152f68a2e7de359223.mp3",
+        "sha256": "3164c5f8dcc5648fed646c9e3c3fc97adb0f033eb4cbbb152f68a2e7de359223",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "3164c5f8dcc5648fed646c9e3c3fc97adb0f033eb4cbbb152f68a2e7de359223",
+          "text": "出门",
+          "words": [
+            {
+              "text": "出门",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0523",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0523-W0523",
+      "question_ids": [
+        "BANK-W0523-W0523"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U19",
+    "stepId": "S-U19-words-r4-5",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-95e8"
+    ],
+    "grammarLessonIds": []
+  }
+}

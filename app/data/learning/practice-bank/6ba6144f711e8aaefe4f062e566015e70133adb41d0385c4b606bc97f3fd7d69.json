@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0986",
+  "targetId": "W0986",
+  "steps": [
+    {
+      "id": "BANK-W0986-W0986",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0986-W0986",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "president; headmaster",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "校长"
+            },
+            {
+              "value": "xiàozhǎng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xiao4zhang3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "校长",
+            "pinyin": "xiàozhǎng",
+            "meaning": "president; headmaster",
+            "singleWord": true,
+            "audio": "493e6a7755e491b1880dd0316e690698be27e46253ca8596ff685ff04749fe7b"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "493e6a7755e491b1880dd0316e690698be27e46253ca8596ff685ff04749fe7b": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-4fd4f1bce8897af46593650269095d0b71db57239d635d74f171ecdb2173ab34.mp3",
+        "sha256": "4fd4f1bce8897af46593650269095d0b71db57239d635d74f171ecdb2173ab34",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "4fd4f1bce8897af46593650269095d0b71db57239d635d74f171ecdb2173ab34",
+          "text": "校长",
+          "words": [
+            {
+              "text": "校长",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-4506d14fbfa966a75516f261c9e45020153e62f6960b4ce65ac5fb9a3024e171.mp3",
+        "sha256": "4506d14fbfa966a75516f261c9e45020153e62f6960b4ce65ac5fb9a3024e171",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "4506d14fbfa966a75516f261c9e45020153e62f6960b4ce65ac5fb9a3024e171",
+          "text": "校长",
+          "words": [
+            {
+              "text": "校长",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0986",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0986-W0986",
+      "question_ids": [
+        "BANK-W0986-W0986"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-21",
+    "stepId": "S-U3-21-words-r4-3",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-957f"
+    ],
+    "grammarLessonIds": []
+  }
+}

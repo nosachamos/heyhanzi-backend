@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2365",
+  "targetId": "W2365",
+  "steps": [
+    {
+      "id": "BANK-W2365-W2365",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2365-W2365",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "house; building",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "房屋"
+            },
+            {
+              "value": "fángwū",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fang2wu1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "房屋",
+            "pinyin": "fángwū",
+            "meaning": "house; building",
+            "singleWord": true,
+            "audio": "691a0ef45de3f46e9f24f642e9f65ee2aa976fe841666767592ca1ef87883a6c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "691a0ef45de3f46e9f24f642e9f65ee2aa976fe841666767592ca1ef87883a6c": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-7676ae8c92800d1ca6c52ec55e60a857ccac6701190ff8e917b8df9ae3049707.mp3",
+        "sha256": "7676ae8c92800d1ca6c52ec55e60a857ccac6701190ff8e917b8df9ae3049707",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "7676ae8c92800d1ca6c52ec55e60a857ccac6701190ff8e917b8df9ae3049707",
+          "text": "房屋",
+          "words": [
+            {
+              "text": "房屋",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3d0bd3800df31bddc3c263d43b25bdb7424600ba32627cbfce4f191379d343e4.mp3",
+        "sha256": "3d0bd3800df31bddc3c263d43b25bdb7424600ba32627cbfce4f191379d343e4",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "3d0bd3800df31bddc3c263d43b25bdb7424600ba32627cbfce4f191379d343e4",
+          "text": "房屋",
+          "words": [
+            {
+              "text": "房屋",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2365",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2365-W2365",
+      "question_ids": [
+        "BANK-W2365-W2365"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-04",
+    "stepId": "S-U5-04-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5c4b"
+    ],
+    "grammarLessonIds": []
+  }
+}

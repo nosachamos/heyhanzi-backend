@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2130",
+  "targetId": "W2130",
+  "steps": [
+    {
+      "id": "BANK-W2130-W2130",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2130-W2130",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "output",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "产量"
+            },
+            {
+              "value": "chǎnliàng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chan3liang4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "产量",
+            "pinyin": "chǎnliàng",
+            "meaning": "output",
+            "singleWord": true,
+            "audio": "7fcd7caf4e0ca8e3e5b11954efc2ca46e078a668ab8c4d14d4b407de2914bf6f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7fcd7caf4e0ca8e3e5b11954efc2ca46e078a668ab8c4d14d4b407de2914bf6f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-e3fe46026b140d27988d63884b1d7859e18e3aa28281f73a52cae82ecf95c5cb.mp3",
+        "sha256": "e3fe46026b140d27988d63884b1d7859e18e3aa28281f73a52cae82ecf95c5cb",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "e3fe46026b140d27988d63884b1d7859e18e3aa28281f73a52cae82ecf95c5cb",
+          "text": "产量",
+          "words": [
+            {
+              "text": "产量",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c55c9220ff2d77845c74366c4f86ccad9c145761bb9d2775a1df5f50d0866cba.mp3",
+        "sha256": "c55c9220ff2d77845c74366c4f86ccad9c145761bb9d2775a1df5f50d0866cba",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "c55c9220ff2d77845c74366c4f86ccad9c145761bb9d2775a1df5f50d0866cba",
+          "text": "产量",
+          "words": [
+            {
+              "text": "产量",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2130",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2130-W2130",
+      "question_ids": [
+        "BANK-W2130-W2130"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-32-P01",
+    "stepId": "S-U5-32-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4ea7"
+    ],
+    "grammarLessonIds": []
+  }
+}

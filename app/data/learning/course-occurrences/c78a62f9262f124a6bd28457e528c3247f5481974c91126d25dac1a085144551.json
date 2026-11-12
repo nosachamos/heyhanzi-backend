@@ -1,0 +1,795 @@
+{
+  "id": "EX-CHAR-char-80de",
+  "revision": 2,
+  "unit": "U6-16",
+  "stage": "ST-HSK6",
+  "after": "S-U6-16-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "胞",
+  "sourceBlockId": "mandarin-simplified-v1-char-80de",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-80de",
+        "text": "胞",
+        "pinyin": "bāo",
+        "meaning": "placenta; womb",
+        "characters": [
+          {
+            "id": "C-80DE",
+            "text": "胞"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-4d52b80f121451f421e6503b",
+        "text": "火热",
+        "pinyin": "huǒ rè",
+        "meaning": "burning",
+        "characters": [
+          {
+            "id": "C-706B",
+            "text": "火"
+          },
+          {
+            "id": "C-70ED",
+            "text": "热"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-6ce2c65f4b340a720eff229c",
+        "text": "分担",
+        "pinyin": "fēn dān",
+        "meaning": "to share (a burden, a cost, a responsibility)",
+        "characters": [
+          {
+            "id": "C-5206",
+            "text": "分"
+          },
+          {
+            "id": "C-62C5",
+            "text": "担"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f153e2755dbba7f6069cd029",
+        "text": "同胞",
+        "pinyin": "tóng bāo",
+        "meaning": "born of the same parents",
+        "characters": [
+          {
+            "id": "C-540C",
+            "text": "同"
+          },
+          {
+            "id": "C-80DE",
+            "text": "胞"
+          }
+        ]
+      },
+      {
+        "id": "W1059",
+        "text": "爱情",
+        "pinyin": "àiqíng",
+        "meaning": "romance; love",
+        "characters": [
+          {
+            "id": "C-7231",
+            "text": "爱"
+          },
+          {
+            "id": "C-60C5",
+            "text": "情"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "3346d4fbfceb2c3e99175020adbf7a015315314db9ef326da75538f3f72df186",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-80de",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "胞",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-80de-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-f153e2755dbba7f6069cd029",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "born of the same parents",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "同胞"
+              },
+              {
+                "value": "tóng bāo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tong2bao1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "同胞",
+              "pinyin": "tóng bāo",
+              "meaning": "born of the same parents",
+              "audio": "73f9d4bb6dd298a76ca5fadad0160b2e686eb9b368ae41d7da3d986ba7e5b258",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-80de-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-80de",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "胞",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1059",
+                "label": "romance; love",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-6ce2c65f4b340a720eff229c",
+                "label": "to share (a burden, a cost, a responsibility)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-80de",
+                "label": "placenta; womb",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-80de-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "胞",
+        "pinyin": "bāo",
+        "meaning": "placenta; womb",
+        "source": "/stroke-data/80de.json",
+        "reference": {
+          "character": "胞",
+          "sha256": "92423c412e503f6915c9d15fbacbe33c51350cc3de1ddaa8ff698e4926df7768",
+          "medians": [
+            [
+              [
+                170,
+                685
+              ],
+              [
+                205,
+                655
+              ],
+              [
+                210,
+                631
+              ],
+              [
+                207,
+                452
+              ],
+              [
+                198,
+                348
+              ],
+              [
+                182,
+                268
+              ],
+              [
+                152,
+                175
+              ],
+              [
+                116,
+                97
+              ],
+              [
+                64,
+                15
+              ]
+            ],
+            [
+              [
+                238,
+                673
+              ],
+              [
+                250,
+                667
+              ],
+              [
+                333,
+                692
+              ],
+              [
+                350,
+                687
+              ],
+              [
+                372,
+                665
+              ],
+              [
+                378,
+                435
+              ],
+              [
+                381,
+                171
+              ],
+              [
+                374,
+                89
+              ],
+              [
+                359,
+                68
+              ],
+              [
+                342,
+                71
+              ],
+              [
+                247,
+                113
+              ]
+            ],
+            [
+              [
+                241,
+                464
+              ],
+              [
+                246,
+                475
+              ],
+              [
+                261,
+                484
+              ],
+              [
+                292,
+                490
+              ],
+              [
+                314,
+                486
+              ]
+            ],
+            [
+              [
+                219,
+                313
+              ],
+              [
+                235,
+                328
+              ],
+              [
+                250,
+                332
+              ],
+              [
+                309,
+                334
+              ]
+            ],
+            [
+              [
+                588,
+                830
+              ],
+              [
+                612,
+                806
+              ],
+              [
+                623,
+                783
+              ],
+              [
+                597,
+                728
+              ],
+              [
+                504,
+                584
+              ],
+              [
+                435,
+                511
+              ]
+            ],
+            [
+              [
+                533,
+                581
+              ],
+              [
+                602,
+                587
+              ],
+              [
+                680,
+                611
+              ],
+              [
+                760,
+                627
+              ],
+              [
+                784,
+                623
+              ],
+              [
+                798,
+                610
+              ],
+              [
+                792,
+                478
+              ],
+              [
+                779,
+                398
+              ],
+              [
+                764,
+                351
+              ],
+              [
+                732,
+                311
+              ],
+              [
+                693,
+                329
+              ],
+              [
+                667,
+                350
+              ]
+            ],
+            [
+              [
+                510,
+                442
+              ],
+              [
+                525,
+                440
+              ],
+              [
+                610,
+                463
+              ],
+              [
+                636,
+                440
+              ],
+              [
+                608,
+                345
+              ],
+              [
+                588,
+                332
+              ]
+            ],
+            [
+              [
+                500,
+                285
+              ],
+              [
+                569,
+                306
+              ],
+              [
+                631,
+                302
+              ]
+            ],
+            [
+              [
+                462,
+                455
+              ],
+              [
+                482,
+                432
+              ],
+              [
+                488,
+                415
+              ],
+              [
+                474,
+                234
+              ],
+              [
+                481,
+                137
+              ],
+              [
+                498,
+                90
+              ],
+              [
+                529,
+                62
+              ],
+              [
+                610,
+                33
+              ],
+              [
+                704,
+                28
+              ],
+              [
+                799,
+                41
+              ],
+              [
+                857,
+                62
+              ],
+              [
+                899,
+                95
+              ],
+              [
+                900,
+                231
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-80de-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-4d52b80f121451f421e6503b",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "burning",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "火热"
+              },
+              {
+                "value": "huǒ rè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "huo3re4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "火热",
+              "pinyin": "huǒ rè",
+              "meaning": "burning",
+              "audio": "659babe1357158636716a4e9a7940b7aab4c5fa47c71359624d8223db5ec2004",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-80de-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-80de",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "placenta; womb",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "胞"
+              },
+              {
+                "value": "bāo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bao1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "胞",
+              "pinyin": "bāo",
+              "meaning": "placenta; womb",
+              "audio": "9c25d2cf72e1b85bc4fca4124c125920097a62ea334e16e98fc687d2c8cea9a7",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "9c25d2cf72e1b85bc4fca4124c125920097a62ea334e16e98fc687d2c8cea9a7"
+            ],
+            "transcript": [
+              {
+                "text": "胞",
+                "pinyin": "bāo",
+                "meaning": "placenta; womb",
+                "audio": "9c25d2cf72e1b85bc4fca4124c125920097a62ea334e16e98fc687d2c8cea9a7",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-80DE",
+      "character": "胞",
+      "lessonIds": [
+        "LESSON-C-80DE"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-80de-word",
+        "EX-CHAR-char-80de-recognize",
+        "EX-CHAR-char-80de-write",
+        "EX-CHAR-char-80de-familiar",
+        "EX-CHAR-char-80de-recall"
+      ]
+    },
+    "audio": {
+      "9c25d2cf72e1b85bc4fca4124c125920097a62ea334e16e98fc687d2c8cea9a7": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-12901329bc8d614d66bc37a299ea6cdd2ea414e24eaf7eac00f5241b468b2df3.mp3",
+          "sha256": "12901329bc8d614d66bc37a299ea6cdd2ea414e24eaf7eac00f5241b468b2df3",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "12901329bc8d614d66bc37a299ea6cdd2ea414e24eaf7eac00f5241b468b2df3",
+            "text": "胞",
+            "words": [
+              {
+                "text": "胞",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-a85942572ab51e72436630c498337ac6fe8a374d905ed5e08fd72214bbb36b0b.mp3",
+          "sha256": "a85942572ab51e72436630c498337ac6fe8a374d905ed5e08fd72214bbb36b0b",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "a85942572ab51e72436630c498337ac6fe8a374d905ed5e08fd72214bbb36b0b",
+            "text": "胞",
+            "words": [
+              {
+                "text": "胞",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "659babe1357158636716a4e9a7940b7aab4c5fa47c71359624d8223db5ec2004": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ea48d55cf2fb3148e5f4122ba71eb8df9b8608fe5bea5700b0b41c26798d0184.mp3",
+          "sha256": "ea48d55cf2fb3148e5f4122ba71eb8df9b8608fe5bea5700b0b41c26798d0184",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "ea48d55cf2fb3148e5f4122ba71eb8df9b8608fe5bea5700b0b41c26798d0184",
+            "text": "火热",
+            "words": [
+              {
+                "text": "火热",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/39043d0f9871ebbb31c44d620153005303e6173c1a3ecf225e20500abb781205.mp3",
+          "sha256": "39043d0f9871ebbb31c44d620153005303e6173c1a3ecf225e20500abb781205",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "39043d0f9871ebbb31c44d620153005303e6173c1a3ecf225e20500abb781205",
+            "text": "火热",
+            "words": [
+              {
+                "text": "火热",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "9bd6e45436123610f4c7edbfe28faa25240a81b1d23287334aedbbb72ccf8f8d": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/439a6cb5ca529ab5ee104ac5c78241fa8ea9bf2bd549825085cb109c07a91655.mp3",
+          "sha256": "439a6cb5ca529ab5ee104ac5c78241fa8ea9bf2bd549825085cb109c07a91655",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "439a6cb5ca529ab5ee104ac5c78241fa8ea9bf2bd549825085cb109c07a91655",
+            "text": "分担",
+            "words": [
+              {
+                "text": "分担",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-3f8f1c286d906e1c6f25d866031f66e8bacc8e8e260dcc639f06a7a3548e4c81.mp3",
+          "sha256": "3f8f1c286d906e1c6f25d866031f66e8bacc8e8e260dcc639f06a7a3548e4c81",
+          "byteLength": 10989,
+          "qualityWarning": "too-fast",
+          "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+          "readAlong": {
+            "audioSha256": "3f8f1c286d906e1c6f25d866031f66e8bacc8e8e260dcc639f06a7a3548e4c81",
+            "text": "分担",
+            "words": [
+              {
+                "text": "分担",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "73f9d4bb6dd298a76ca5fadad0160b2e686eb9b368ae41d7da3d986ba7e5b258": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f26bd2f33946fb09478a9838268964a7850e7695a165f9733d2134635acc1e84.mp3",
+          "sha256": "f26bd2f33946fb09478a9838268964a7850e7695a165f9733d2134635acc1e84",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "f26bd2f33946fb09478a9838268964a7850e7695a165f9733d2134635acc1e84",
+            "text": "同胞",
+            "words": [
+              {
+                "text": "同胞",
+                "start": 0.12,
+                "end": 0.46
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b0ce7d7826b82d93b3c71a6f060fdf05904178031f2b1eed875cee0499a07838.mp3",
+          "sha256": "b0ce7d7826b82d93b3c71a6f060fdf05904178031f2b1eed875cee0499a07838",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "b0ce7d7826b82d93b3c71a6f060fdf05904178031f2b1eed875cee0499a07838",
+            "text": "同胞",
+            "words": [
+              {
+                "text": "同胞",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "6a8cc4d0625ed3543b2462259cd98379ba4b52d6dc11e7db862dcf25dcf76154": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c97a8fdcfc92e862e94ac5d74b84197e15b1fc71f3f3cc073d6977d43a4ebb5c.mp3",
+          "sha256": "c97a8fdcfc92e862e94ac5d74b84197e15b1fc71f3f3cc073d6977d43a4ebb5c",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "c97a8fdcfc92e862e94ac5d74b84197e15b1fc71f3f3cc073d6977d43a4ebb5c",
+            "text": "爱情",
+            "words": [
+              {
+                "text": "爱情",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/11c5df98694c709ff187d44f5fa4ce4d41bbee19b44a8049eea014f7a546550c.mp3",
+          "sha256": "11c5df98694c709ff187d44f5fa4ce4d41bbee19b44a8049eea014f7a546550c",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "11c5df98694c709ff187d44f5fa4ce4d41bbee19b44a8049eea014f7a546550c",
+            "text": "爱情",
+            "words": [
+              {
+                "text": "爱情",
+                "start": 0.32999999999999996,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

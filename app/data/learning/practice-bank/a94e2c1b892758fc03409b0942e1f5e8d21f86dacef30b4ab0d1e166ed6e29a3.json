@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0070",
+  "targetId": "W0070",
+  "steps": [
+    {
+      "id": "BANK-W0070-W0070",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0070-W0070",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "table; desk",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "桌子"
+            },
+            {
+              "value": "zhuōzi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhuo1zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "桌子",
+            "pinyin": "zhuōzi",
+            "meaning": "table; desk",
+            "singleWord": true,
+            "audio": "220cb5bfcf2da1764fe2e5739fd88b9ce0c8280b798452205881b30fb0cc7078"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "220cb5bfcf2da1764fe2e5739fd88b9ce0c8280b798452205881b30fb0cc7078": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f277c9da9ad35d7aba24959990ee08d4c9b45647a538315edd146e945d11a655.mp3",
+        "sha256": "f277c9da9ad35d7aba24959990ee08d4c9b45647a538315edd146e945d11a655",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "f277c9da9ad35d7aba24959990ee08d4c9b45647a538315edd146e945d11a655",
+          "text": "桌子",
+          "words": [
+            {
+              "text": "桌子",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-8f8ecf9c0d294d9f58931370435ed08970be0774b8a2551df23ab9a3960446b9.mp3",
+        "sha256": "8f8ecf9c0d294d9f58931370435ed08970be0774b8a2551df23ab9a3960446b9",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "8f8ecf9c0d294d9f58931370435ed08970be0774b8a2551df23ab9a3960446b9",
+          "text": "桌子",
+          "words": [
+            {
+              "text": "桌子",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0070",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0070-W0070",
+      "question_ids": [
+        "BANK-W0070-W0070"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U06",
+    "stepId": "S-U06-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-684c"
+    ],
+    "grammarLessonIds": []
+  }
+}

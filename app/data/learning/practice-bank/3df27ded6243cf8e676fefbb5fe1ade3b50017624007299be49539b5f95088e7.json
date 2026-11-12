@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0381",
+  "targetId": "W0381",
+  "steps": [
+    {
+      "id": "BANK-W0381-W0381",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0381-W0381",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "university; college",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "大学"
+            },
+            {
+              "value": "dàxué",
+              "mode": "pinyin"
+            },
+            {
+              "value": "da4xue2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "大学",
+            "pinyin": "dàxué",
+            "meaning": "university; college",
+            "singleWord": true,
+            "audio": "c140903475b9a37eedc397d91236d7be3f33e38e22bf10250177b2060d06efcf"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c140903475b9a37eedc397d91236d7be3f33e38e22bf10250177b2060d06efcf": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-c33a1cf7c173c7d5103e6ac384a99bc82e6d1b1cfef4ec061a854ad0dc095848.mp3",
+        "sha256": "c33a1cf7c173c7d5103e6ac384a99bc82e6d1b1cfef4ec061a854ad0dc095848",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "c33a1cf7c173c7d5103e6ac384a99bc82e6d1b1cfef4ec061a854ad0dc095848",
+          "text": "大学",
+          "words": [
+            {
+              "text": "大学",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-bea66d4faf50d22d549a8ff60a4c3ae8bffce75f7e13f38e18f1b5bdda913164.mp3",
+        "sha256": "bea66d4faf50d22d549a8ff60a4c3ae8bffce75f7e13f38e18f1b5bdda913164",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "bea66d4faf50d22d549a8ff60a4c3ae8bffce75f7e13f38e18f1b5bdda913164",
+          "text": "大学",
+          "words": [
+            {
+              "text": "大学",
+              "start": 0.09,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0381",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0381-W0381",
+      "question_ids": [
+        "BANK-W0381-W0381"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U02-P01",
+    "stepId": "S-U02-words-r4-23",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5927"
+    ],
+    "grammarLessonIds": []
+  }
+}

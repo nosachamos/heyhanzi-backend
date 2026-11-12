@@ -1,0 +1,599 @@
+{
+  "id": "EX-CHAR-char-5fc3",
+  "revision": 2,
+  "unit": "U3-09",
+  "stage": "ST-HSK3",
+  "after": "S-U3-09-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "心",
+  "sourceBlockId": "mandarin-simplified-v1-char-5fc3",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-0195e5a0e715f13c9a0042a4",
+        "text": "地下",
+        "pinyin": "dìxià",
+        "meaning": "underground; subterranean; covert; clandestine",
+        "characters": [
+          {
+            "id": "C-5730",
+            "text": "地"
+          },
+          {
+            "id": "C-4E0B",
+            "text": "下"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-06ab2bf0e89f924242b18c62",
+        "text": "真心",
+        "pinyin": "zhēn xīn",
+        "meaning": "wholeheartedness",
+        "characters": [
+          {
+            "id": "C-771F",
+            "text": "真"
+          },
+          {
+            "id": "C-5FC3",
+            "text": "心"
+          }
+        ]
+      },
+      {
+        "id": "W0591",
+        "text": "生日",
+        "pinyin": "shēngrì",
+        "meaning": "birthday",
+        "characters": [
+          {
+            "id": "C-751F",
+            "text": "生"
+          },
+          {
+            "id": "C-65E5",
+            "text": "日"
+          }
+        ]
+      },
+      {
+        "id": "W1114",
+        "text": "不如",
+        "pinyin": "bùrú",
+        "meaning": "not equal to; not as good as",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-5982",
+            "text": "如"
+          }
+        ]
+      },
+      {
+        "id": "W1855",
+        "text": "心",
+        "pinyin": "xīn",
+        "meaning": "heart; mind",
+        "characters": [
+          {
+            "id": "C-5FC3",
+            "text": "心"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "f5fddac1ab00ffd3b092f977a3562f1181506e46a4759960cab2e0681019ac7c",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5fc3",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "心",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5fc3-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-06ab2bf0e89f924242b18c62",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "wholeheartedness",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "真心"
+              },
+              {
+                "value": "zhēn xīn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhen1xin1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "真心",
+              "pinyin": "zhēn xīn",
+              "meaning": "wholeheartedness",
+              "audio": "245e4092feacc53d3e562e5aa52e4cc24596e0d87213cb4a9b5d7a0a40d8ad2b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5fc3-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W1855",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "心",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-0195e5a0e715f13c9a0042a4",
+                "label": "underground; subterranean",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1114",
+                "label": "not equal to; not as good as",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W1855",
+                "label": "heart; mind",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5fc3-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "心",
+        "pinyin": "xīn",
+        "meaning": "heart; mind",
+        "source": "/stroke-data/5fc3.json",
+        "reference": {
+          "character": "心",
+          "sha256": "d197b7784945aede96d2c65b9d2d495d2f27630a897d62dad8dbe4684fe7db47",
+          "medians": [
+            [
+              [
+                185,
+                462
+              ],
+              [
+                176,
+                372
+              ],
+              [
+                133,
+                236
+              ]
+            ],
+            [
+              [
+                306,
+                473
+              ],
+              [
+                333,
+                435
+              ],
+              [
+                369,
+                327
+              ],
+              [
+                400,
+                274
+              ],
+              [
+                429,
+                244
+              ],
+              [
+                471,
+                215
+              ],
+              [
+                538,
+                193
+              ],
+              [
+                634,
+                183
+              ],
+              [
+                693,
+                187
+              ],
+              [
+                748,
+                205
+              ],
+              [
+                784,
+                234
+              ],
+              [
+                773,
+                267
+              ],
+              [
+                691,
+                393
+              ]
+            ],
+            [
+              [
+                425,
+                667
+              ],
+              [
+                520,
+                581
+              ],
+              [
+                542,
+                534
+              ]
+            ],
+            [
+              [
+                761,
+                607
+              ],
+              [
+                838,
+                558
+              ],
+              [
+                886,
+                518
+              ],
+              [
+                915,
+                457
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5fc3-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0591",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "birthday",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "生日"
+              },
+              {
+                "value": "shēngrì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "sheng1ri4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "生日",
+              "pinyin": "shēngrì",
+              "meaning": "birthday",
+              "audio": "f1e012760850edc23392fe5ce720f76cf47e7b9d86d5a6279b92b483c09c843d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5fc3-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W1855",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "heart; mind",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "心"
+              },
+              {
+                "value": "xīn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xin1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "心",
+              "pinyin": "xīn",
+              "meaning": "heart; mind",
+              "audio": "4cd97fe32bdbeb42438c29663d4e6f56ec918cf4de8f61d0231a69a66adcf228",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "4cd97fe32bdbeb42438c29663d4e6f56ec918cf4de8f61d0231a69a66adcf228"
+            ],
+            "transcript": [
+              {
+                "text": "心",
+                "pinyin": "xīn",
+                "meaning": "heart; mind",
+                "audio": "4cd97fe32bdbeb42438c29663d4e6f56ec918cf4de8f61d0231a69a66adcf228",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5FC3",
+      "character": "心",
+      "lessonIds": [
+        "LESSON-C-5FC3"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5fc3-word",
+        "EX-CHAR-char-5fc3-recognize",
+        "EX-CHAR-char-5fc3-write",
+        "EX-CHAR-char-5fc3-familiar",
+        "EX-CHAR-char-5fc3-recall"
+      ]
+    },
+    "audio": {
+      "7763398861a53d5ff7a508641e1fe0aa6acd13a517e58c756aa0dd9a8a6634c8": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a332faf66c85f279e7c8c03c7c1255f953261d3cc56895930197dc5ea38bdebf.mp3",
+          "sha256": "a332faf66c85f279e7c8c03c7c1255f953261d3cc56895930197dc5ea38bdebf",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "a332faf66c85f279e7c8c03c7c1255f953261d3cc56895930197dc5ea38bdebf",
+            "text": "地下",
+            "words": [
+              {
+                "text": "地下",
+                "start": 0.18,
+                "end": 0.52
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/23f43b58ee89cf584729ba0c8f90efe41f66ac5fedde479022d2ec1132a26032.mp3",
+          "sha256": "23f43b58ee89cf584729ba0c8f90efe41f66ac5fedde479022d2ec1132a26032",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "23f43b58ee89cf584729ba0c8f90efe41f66ac5fedde479022d2ec1132a26032",
+            "text": "地下",
+            "words": [
+              {
+                "text": "地下",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "245e4092feacc53d3e562e5aa52e4cc24596e0d87213cb4a9b5d7a0a40d8ad2b": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f07c4d133b9f01af7049f596e0156605ccff0a23882d385cac546604312928c1.mp3",
+          "sha256": "f07c4d133b9f01af7049f596e0156605ccff0a23882d385cac546604312928c1",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "f07c4d133b9f01af7049f596e0156605ccff0a23882d385cac546604312928c1",
+            "text": "真心",
+            "words": [
+              {
+                "text": "真心",
+                "start": 0.03,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/ac4a0f2fe58f99250e3d432747b1853bca674919a42dfc6a3982bdc0b341afd9.mp3",
+          "sha256": "ac4a0f2fe58f99250e3d432747b1853bca674919a42dfc6a3982bdc0b341afd9",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "ac4a0f2fe58f99250e3d432747b1853bca674919a42dfc6a3982bdc0b341afd9",
+            "text": "真心",
+            "words": [
+              {
+                "text": "真心",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "f1e012760850edc23392fe5ce720f76cf47e7b9d86d5a6279b92b483c09c843d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-a449b69bc43736ed927c9519e16971657c60f2063a46817637a5c1887e7ddf87.mp3",
+          "sha256": "a449b69bc43736ed927c9519e16971657c60f2063a46817637a5c1887e7ddf87",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "a449b69bc43736ed927c9519e16971657c60f2063a46817637a5c1887e7ddf87",
+            "text": "生日",
+            "words": [
+              {
+                "text": "生日",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-5d6ac4ffa42363eb902d332cbf3be5985204d9df5ccbd5e32e8af4b7a56ba65d.mp3",
+          "sha256": "5d6ac4ffa42363eb902d332cbf3be5985204d9df5ccbd5e32e8af4b7a56ba65d",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "5d6ac4ffa42363eb902d332cbf3be5985204d9df5ccbd5e32e8af4b7a56ba65d",
+            "text": "生日",
+            "words": [
+              {
+                "text": "生日",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "eb900c1e5ca60aee2afd91db7d6ccee85671cd733aea17c5ace871427d5b4bee": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-0627cccb72493aabdbbb0e03c7bcb12ccf717720b6229544dc5cb278eb7f02c3.mp3",
+          "sha256": "0627cccb72493aabdbbb0e03c7bcb12ccf717720b6229544dc5cb278eb7f02c3",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "0627cccb72493aabdbbb0e03c7bcb12ccf717720b6229544dc5cb278eb7f02c3",
+            "text": "不如",
+            "words": [
+              {
+                "text": "不如",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-bfe299333fec5c2b05403220bbcfbd51eb8124c3394bd3d497f9ff9b836485b3.mp3",
+          "sha256": "bfe299333fec5c2b05403220bbcfbd51eb8124c3394bd3d497f9ff9b836485b3",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "bfe299333fec5c2b05403220bbcfbd51eb8124c3394bd3d497f9ff9b836485b3",
+            "text": "不如",
+            "words": [
+              {
+                "text": "不如",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "4cd97fe32bdbeb42438c29663d4e6f56ec918cf4de8f61d0231a69a66adcf228": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9cccbac429b729626653b3dc20d1edc4a18db9f74ecd570b38098343aabe0cdd.mp3",
+          "sha256": "9cccbac429b729626653b3dc20d1edc4a18db9f74ecd570b38098343aabe0cdd",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "9cccbac429b729626653b3dc20d1edc4a18db9f74ecd570b38098343aabe0cdd",
+            "text": "心",
+            "words": [
+              {
+                "text": "心",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d6a7dd612252e4b3085197912370394c65f8b308bd2cbcdb07ce11ce08a73a7f.mp3",
+          "sha256": "d6a7dd612252e4b3085197912370394c65f8b308bd2cbcdb07ce11ce08a73a7f",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "d6a7dd612252e4b3085197912370394c65f8b308bd2cbcdb07ce11ce08a73a7f",
+            "text": "心",
+            "words": [
+              {
+                "text": "心",
+                "start": 0.26,
+                "end": 0.38
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0251",
+  "targetId": "W0251",
+  "steps": [
+    {
+      "id": "BANK-W0251-W0251",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0251-W0251",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to come in",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "进来"
+            },
+            {
+              "value": "jìnlái",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jin4lai2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "进来",
+            "pinyin": "jìnlái",
+            "meaning": "to come in",
+            "singleWord": true,
+            "audio": "fa7010a60cf384b70c304a6770952abd20303340914e9fc120bdcac5fa96d7e1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "fa7010a60cf384b70c304a6770952abd20303340914e9fc120bdcac5fa96d7e1": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-256c54967bfe81db98d2fafbb67fa30566f2a78c2230bab0379bbc972eacb7b1.mp3",
+        "sha256": "256c54967bfe81db98d2fafbb67fa30566f2a78c2230bab0379bbc972eacb7b1",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "256c54967bfe81db98d2fafbb67fa30566f2a78c2230bab0379bbc972eacb7b1",
+          "text": "进来",
+          "words": [
+            {
+              "text": "进来",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-03db5f9e8839fcb4fee650fe2b3ec37bbbe1d7073555724212e09cb36c60f89e.mp3",
+        "sha256": "03db5f9e8839fcb4fee650fe2b3ec37bbbe1d7073555724212e09cb36c60f89e",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "03db5f9e8839fcb4fee650fe2b3ec37bbbe1d7073555724212e09cb36c60f89e",
+          "text": "进来",
+          "words": [
+            {
+              "text": "进来",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0251",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0251-W0251",
+      "question_ids": [
+        "BANK-W0251-W0251"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U22",
+    "stepId": "S-U22-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8fdb"
+    ],
+    "grammarLessonIds": []
+  }
+}

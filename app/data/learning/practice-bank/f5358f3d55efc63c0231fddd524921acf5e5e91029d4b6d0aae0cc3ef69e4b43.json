@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1110",
+  "targetId": "W1110",
+  "steps": [
+    {
+      "id": "BANK-W1110-W1110",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1110-W1110",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "not the only one; not only",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "不光"
+            },
+            {
+              "value": "bùguāng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bu4guang1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "不光",
+            "pinyin": "bùguāng",
+            "meaning": "not the only one; not only",
+            "singleWord": true,
+            "audio": "a378cee61a3150f5661c8738da94ed31ad26afff7dfa320eca495e4b28de0ca4"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a378cee61a3150f5661c8738da94ed31ad26afff7dfa320eca495e4b28de0ca4": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-aa8169e15df72b0de9ca79d743f456b64769b7ff2a743c562848bd20ae8fa5fc.mp3",
+        "sha256": "aa8169e15df72b0de9ca79d743f456b64769b7ff2a743c562848bd20ae8fa5fc",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "aa8169e15df72b0de9ca79d743f456b64769b7ff2a743c562848bd20ae8fa5fc",
+          "text": "不光",
+          "words": [
+            {
+              "text": "不光",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ba4edcb7db5aad757f2ea680b42b5511cf2dd0634e514cc24a48b0b2b3d6435a.mp3",
+        "sha256": "ba4edcb7db5aad757f2ea680b42b5511cf2dd0634e514cc24a48b0b2b3d6435a",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "ba4edcb7db5aad757f2ea680b42b5511cf2dd0634e514cc24a48b0b2b3d6435a",
+          "text": "不光",
+          "words": [
+            {
+              "text": "不光",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1110",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1110-W1110",
+      "question_ids": [
+        "BANK-W1110-W1110"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-39-P01",
+    "stepId": "S-U4-39-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5149"
+    ],
+    "grammarLessonIds": []
+  }
+}

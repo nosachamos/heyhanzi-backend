@@ -1,0 +1,777 @@
+{
+  "id": "EX-CHAR-char-505a",
+  "revision": 2,
+  "unit": "U08-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U08-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "做",
+  "sourceBlockId": "mandarin-simplified-v1-char-505a",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-505a",
+        "text": "做",
+        "pinyin": "zuò",
+        "meaning": "to make; to produce; to write; to compose",
+        "characters": [
+          {
+            "id": "C-505A",
+            "text": "做"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-e868d80435bfa13c18f1f314",
+        "text": "零钱",
+        "pinyin": "língqián",
+        "meaning": "change (of money); small change",
+        "characters": [
+          {
+            "id": "C-96F6",
+            "text": "零"
+          },
+          {
+            "id": "C-94B1",
+            "text": "钱"
+          }
+        ]
+      },
+      {
+        "id": "W0020",
+        "text": "学生",
+        "pinyin": "xuéshēng",
+        "meaning": "student; schoolchild",
+        "characters": [
+          {
+            "id": "C-5B66",
+            "text": "学"
+          },
+          {
+            "id": "C-751F",
+            "text": "生"
+          }
+        ]
+      },
+      {
+        "id": "W0112",
+        "text": "买",
+        "pinyin": "mǎi",
+        "meaning": "to buy; to purchase",
+        "characters": [
+          {
+            "id": "C-4E70",
+            "text": "买"
+          }
+        ]
+      },
+      {
+        "id": "W0180",
+        "text": "做饭",
+        "pinyin": "zuòfàn",
+        "meaning": "to prepare a meal; to cook",
+        "characters": [
+          {
+            "id": "C-505A",
+            "text": "做"
+          },
+          {
+            "id": "C-996D",
+            "text": "饭"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "6e02c4adad2f73edc60858d9517406420a700abc778fb0468b7a1e9100b1056a",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-505a",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "做",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-505a-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0180",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to prepare a meal; to cook",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "做饭"
+              },
+              {
+                "value": "zuòfàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zuo4fan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "做饭",
+              "pinyin": "zuòfàn",
+              "meaning": "to prepare a meal; to cook",
+              "audio": "4e8ecb983864695be86b09041e81b96cc6188762c87e5f128368d8e2492eeae6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-505a-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-505a",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "做",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0112",
+                "label": "to buy; to purchase",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0020",
+                "label": "student; schoolchild",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-505a",
+                "label": "to make; to produce",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-505a-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "做",
+        "pinyin": "zuò",
+        "meaning": "to make; to produce",
+        "source": "/stroke-data/505a.json",
+        "reference": {
+          "character": "做",
+          "sha256": "a79205c7e705e8d28696f67c1145d160d33a085df4eda0bd0e6a89c30415a4d6",
+          "medians": [
+            [
+              [
+                280,
+                775
+              ],
+              [
+                297,
+                761
+              ],
+              [
+                316,
+                729
+              ],
+              [
+                271,
+                639
+              ],
+              [
+                162,
+                476
+              ],
+              [
+                109,
+                411
+              ],
+              [
+                58,
+                366
+              ]
+            ],
+            [
+              [
+                224,
+                513
+              ],
+              [
+                225,
+                482
+              ],
+              [
+                235,
+                465
+              ],
+              [
+                239,
+                431
+              ],
+              [
+                233,
+                227
+              ],
+              [
+                220,
+                99
+              ],
+              [
+                225,
+                38
+              ]
+            ],
+            [
+              [
+                311,
+                503
+              ],
+              [
+                367,
+                502
+              ],
+              [
+                513,
+                545
+              ],
+              [
+                556,
+                548
+              ]
+            ],
+            [
+              [
+                417,
+                767
+              ],
+              [
+                457,
+                727
+              ],
+              [
+                457,
+                719
+              ],
+              [
+                413,
+                378
+              ],
+              [
+                396,
+                360
+              ]
+            ],
+            [
+              [
+                301,
+                340
+              ],
+              [
+                329,
+                305
+              ],
+              [
+                353,
+                137
+              ]
+            ],
+            [
+              [
+                339,
+                342
+              ],
+              [
+                360,
+                333
+              ],
+              [
+                471,
+                355
+              ],
+              [
+                500,
+                338
+              ],
+              [
+                508,
+                329
+              ],
+              [
+                485,
+                244
+              ],
+              [
+                462,
+                228
+              ]
+            ],
+            [
+              [
+                371,
+                176
+              ],
+              [
+                390,
+                189
+              ],
+              [
+                461,
+                202
+              ],
+              [
+                497,
+                203
+              ],
+              [
+                519,
+                196
+              ]
+            ],
+            [
+              [
+                653,
+                783
+              ],
+              [
+                678,
+                766
+              ],
+              [
+                693,
+                745
+              ],
+              [
+                678,
+                676
+              ],
+              [
+                612,
+                505
+              ],
+              [
+                548,
+                398
+              ]
+            ],
+            [
+              [
+                641,
+                513
+              ],
+              [
+                658,
+                521
+              ],
+              [
+                758,
+                539
+              ],
+              [
+                862,
+                572
+              ],
+              [
+                899,
+                571
+              ]
+            ],
+            [
+              [
+                716,
+                503
+              ],
+              [
+                746,
+                484
+              ],
+              [
+                754,
+                471
+              ],
+              [
+                733,
+                345
+              ],
+              [
+                708,
+                271
+              ],
+              [
+                675,
+                211
+              ],
+              [
+                635,
+                161
+              ],
+              [
+                570,
+                106
+              ],
+              [
+                499,
+                69
+              ]
+            ],
+            [
+              [
+                573,
+                365
+              ],
+              [
+                592,
+                361
+              ],
+              [
+                618,
+                339
+              ],
+              [
+                726,
+                187
+              ],
+              [
+                831,
+                78
+              ],
+              [
+                926,
+                52
+              ],
+              [
+                973,
+                46
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-505a-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-e868d80435bfa13c18f1f314",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "change (of money); small change",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "零钱"
+              },
+              {
+                "value": "língqián",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ling2qian2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "零钱",
+              "pinyin": "língqián",
+              "meaning": "change (of money); small change",
+              "audio": "be7b6389d18a20f54085ddab8af049271eb566093c505d5b65741bffe55466aa",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-505a-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-505a",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to make; to produce",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "做"
+              },
+              {
+                "value": "zuò",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zuo4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "做",
+              "pinyin": "zuò",
+              "meaning": "to make; to produce",
+              "audio": "45272496eb40b0783fae069641d22c281077e209fd5b0832547d21541f479b3e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "45272496eb40b0783fae069641d22c281077e209fd5b0832547d21541f479b3e"
+            ],
+            "transcript": [
+              {
+                "text": "做",
+                "pinyin": "zuò",
+                "meaning": "to make; to produce",
+                "audio": "45272496eb40b0783fae069641d22c281077e209fd5b0832547d21541f479b3e",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-505A",
+      "character": "做",
+      "lessonIds": [
+        "LESSON-C-505A"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-505a-word",
+        "EX-CHAR-char-505a-recognize",
+        "EX-CHAR-char-505a-write",
+        "EX-CHAR-char-505a-familiar",
+        "EX-CHAR-char-505a-recall"
+      ]
+    },
+    "audio": {
+      "45272496eb40b0783fae069641d22c281077e209fd5b0832547d21541f479b3e": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b9d4325dc86c2dab0d4ef8751b89a8048af94dc371f468be87853e40fcb74640.mp3",
+          "sha256": "b9d4325dc86c2dab0d4ef8751b89a8048af94dc371f468be87853e40fcb74640",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "b9d4325dc86c2dab0d4ef8751b89a8048af94dc371f468be87853e40fcb74640",
+            "text": "做",
+            "words": [
+              {
+                "text": "做",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-703c3183aca74304ec0f25a2a05d9acd3a9e79f306240fa28492fa0f53f8e06d.mp3",
+          "sha256": "703c3183aca74304ec0f25a2a05d9acd3a9e79f306240fa28492fa0f53f8e06d",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "703c3183aca74304ec0f25a2a05d9acd3a9e79f306240fa28492fa0f53f8e06d",
+            "text": "做",
+            "words": [
+              {
+                "text": "做",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "be7b6389d18a20f54085ddab8af049271eb566093c505d5b65741bffe55466aa": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f1a72e73d3b54f266cd461e005b01a2b35cf376579380e7216c6f9e56558d977.mp3",
+          "sha256": "f1a72e73d3b54f266cd461e005b01a2b35cf376579380e7216c6f9e56558d977",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "f1a72e73d3b54f266cd461e005b01a2b35cf376579380e7216c6f9e56558d977",
+            "text": "零钱",
+            "words": [
+              {
+                "text": "零钱",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/73f3daedd390e0fa2cc0ce79928fd2235301216fd56ffcc7b306817ef4ff5522.mp3",
+          "sha256": "73f3daedd390e0fa2cc0ce79928fd2235301216fd56ffcc7b306817ef4ff5522",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "73f3daedd390e0fa2cc0ce79928fd2235301216fd56ffcc7b306817ef4ff5522",
+            "text": "零钱",
+            "words": [
+              {
+                "text": "零钱",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "3a595882d466c8b7a59f2ff0b72dbf61cb896d106d43e5462367c735b4260cbb": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-a278a1851ff432acc6cdad1fb6578dcff0a3d53ee79ca92eaa401ee69bb23b1e.mp3",
+          "sha256": "a278a1851ff432acc6cdad1fb6578dcff0a3d53ee79ca92eaa401ee69bb23b1e",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "a278a1851ff432acc6cdad1fb6578dcff0a3d53ee79ca92eaa401ee69bb23b1e",
+            "text": "学生",
+            "words": [
+              {
+                "text": "学生",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-3d6b5aa9966ff2b1e895415e187e1f99b1f7ae4ef20763bde54bb03ab7aa04b1.mp3",
+          "sha256": "3d6b5aa9966ff2b1e895415e187e1f99b1f7ae4ef20763bde54bb03ab7aa04b1",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "3d6b5aa9966ff2b1e895415e187e1f99b1f7ae4ef20763bde54bb03ab7aa04b1",
+            "text": "学生",
+            "words": [
+              {
+                "text": "学生",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "b4048434140bc95bc0eaedeaf916088ec0914e9d1ead96ad7a67971ab26386bc": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-8aeb451df87916b328ef63486f259bb58cc984cddf26fd8cb69b927f812ab71b.mp3",
+          "sha256": "8aeb451df87916b328ef63486f259bb58cc984cddf26fd8cb69b927f812ab71b",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "8aeb451df87916b328ef63486f259bb58cc984cddf26fd8cb69b927f812ab71b",
+            "text": "买",
+            "words": [
+              {
+                "text": "买",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-cedab6635c7c1dd6b0c395531947603838f10253e00a21e7439d4a71bcc590e3.mp3",
+          "sha256": "cedab6635c7c1dd6b0c395531947603838f10253e00a21e7439d4a71bcc590e3",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "cedab6635c7c1dd6b0c395531947603838f10253e00a21e7439d4a71bcc590e3",
+            "text": "买",
+            "words": [
+              {
+                "text": "买",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "4e8ecb983864695be86b09041e81b96cc6188762c87e5f128368d8e2492eeae6": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-b9ffda3cc15ab178bfaed2b756b1e005f9be5e132be07b85d0abb0ba8a0298e3.mp3",
+          "sha256": "b9ffda3cc15ab178bfaed2b756b1e005f9be5e132be07b85d0abb0ba8a0298e3",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "b9ffda3cc15ab178bfaed2b756b1e005f9be5e132be07b85d0abb0ba8a0298e3",
+            "text": "做饭",
+            "words": [
+              {
+                "text": "做饭",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-005ef32da0270ab2ded7df8b39dfbb8c7dc758f10aec112f2c46b820907663b1.mp3",
+          "sha256": "005ef32da0270ab2ded7df8b39dfbb8c7dc758f10aec112f2c46b820907663b1",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "005ef32da0270ab2ded7df8b39dfbb8c7dc758f10aec112f2c46b820907663b1",
+            "text": "做饭",
+            "words": [
+              {
+                "text": "做饭",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

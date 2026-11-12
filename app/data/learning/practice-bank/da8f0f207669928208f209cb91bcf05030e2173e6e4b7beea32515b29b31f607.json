@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0059",
+  "targetId": "W0059",
+  "steps": [
+    {
+      "id": "BANK-W0059-W0059",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0059-W0059",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "coffee",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "咖啡"
+            },
+            {
+              "value": "kāfēi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ka1fei1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "咖啡",
+            "pinyin": "kāfēi",
+            "meaning": "coffee",
+            "singleWord": true,
+            "audio": "b96634975300558bc525f725d8fffd301efb2d497330b1286f496fbaa18baa91"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b96634975300558bc525f725d8fffd301efb2d497330b1286f496fbaa18baa91": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-68a05bf5a075b5bbe4d823f50e20b51f6b7cc74b4d85265b6b5d1f4e5f793470.mp3",
+        "sha256": "68a05bf5a075b5bbe4d823f50e20b51f6b7cc74b4d85265b6b5d1f4e5f793470",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "68a05bf5a075b5bbe4d823f50e20b51f6b7cc74b4d85265b6b5d1f4e5f793470",
+          "text": "咖啡",
+          "words": [
+            {
+              "text": "咖啡",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-9e7f794bd37f9aa686014f87d40663702d36504092cd4774212c769b047b1ef5.mp3",
+        "sha256": "9e7f794bd37f9aa686014f87d40663702d36504092cd4774212c769b047b1ef5",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "9e7f794bd37f9aa686014f87d40663702d36504092cd4774212c769b047b1ef5",
+          "text": "咖啡",
+          "words": [
+            {
+              "text": "咖啡",
+              "start": 0.09,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0059",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0059-W0059",
+      "question_ids": [
+        "BANK-W0059-W0059"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U05-P01",
+    "stepId": "S-U05-words-r4-30",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5561"
+    ],
+    "grammarLessonIds": []
+  }
+}

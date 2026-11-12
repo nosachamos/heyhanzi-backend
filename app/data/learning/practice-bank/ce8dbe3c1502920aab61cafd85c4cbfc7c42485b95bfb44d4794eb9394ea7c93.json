@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1972",
+  "targetId": "W1972",
+  "steps": [
+    {
+      "id": "BANK-W1972-W1972",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1972-W1972",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to pay",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "支付"
+            },
+            {
+              "value": "zhīfù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhi1fu4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "支付",
+            "pinyin": "zhīfù",
+            "meaning": "to pay",
+            "singleWord": true,
+            "audio": "d512ed69f0e39719d44985210ac938e3e45a44750ee7a9968901436db4e75ed9"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d512ed69f0e39719d44985210ac938e3e45a44750ee7a9968901436db4e75ed9": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-02f7e42662f5e801b3603818131678d7dc9e58b0e17a1e82b2122da99d6bb0fb.mp3",
+        "sha256": "02f7e42662f5e801b3603818131678d7dc9e58b0e17a1e82b2122da99d6bb0fb",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "02f7e42662f5e801b3603818131678d7dc9e58b0e17a1e82b2122da99d6bb0fb",
+          "text": "支付",
+          "words": [
+            {
+              "text": "支付",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3afcd61ba1be20ddf3d746cc98c5080603ce5952522de311d66ab3ace8e99cc6.mp3",
+        "sha256": "3afcd61ba1be20ddf3d746cc98c5080603ce5952522de311d66ab3ace8e99cc6",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "3afcd61ba1be20ddf3d746cc98c5080603ce5952522de311d66ab3ace8e99cc6",
+          "text": "支付",
+          "words": [
+            {
+              "text": "支付",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1972",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1972-W1972",
+      "question_ids": [
+        "BANK-W1972-W1972"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-11",
+    "stepId": "S-U4-11-words-r4-13",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-652f"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2096",
+  "targetId": "W2096",
+  "steps": [
+    {
+      "id": "BANK-W2096-W2096",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2096-W2096",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "state of an illness; patient's condition",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "病情"
+            },
+            {
+              "value": "bìngqíng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bing4qing2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "病情",
+            "pinyin": "bìngqíng",
+            "meaning": "state of an illness; patient's condition",
+            "singleWord": true,
+            "audio": "a13a019ba83b1764a3ca8fa0f1b1db71143f4c91abacb9cabcf3d39bbd9a0225"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a13a019ba83b1764a3ca8fa0f1b1db71143f4c91abacb9cabcf3d39bbd9a0225": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d935326ea7f3da96bcc55e5810e54c4e006913480cf30aed7a75024e8df856bc.mp3",
+        "sha256": "d935326ea7f3da96bcc55e5810e54c4e006913480cf30aed7a75024e8df856bc",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "d935326ea7f3da96bcc55e5810e54c4e006913480cf30aed7a75024e8df856bc",
+          "text": "病情",
+          "words": [
+            {
+              "text": "病情",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-f0a34d5f9f407f2813858f06d368b4647af32987257609e22e8a88d2c3bbe47e.mp3",
+        "sha256": "f0a34d5f9f407f2813858f06d368b4647af32987257609e22e8a88d2c3bbe47e",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "f0a34d5f9f407f2813858f06d368b4647af32987257609e22e8a88d2c3bbe47e",
+          "text": "病情",
+          "words": [
+            {
+              "text": "病情",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2096",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2096-W2096",
+      "question_ids": [
+        "BANK-W2096-W2096"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-13",
+    "stepId": "S-U5-13-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-60c5"
+    ],
+    "grammarLessonIds": []
+  }
+}

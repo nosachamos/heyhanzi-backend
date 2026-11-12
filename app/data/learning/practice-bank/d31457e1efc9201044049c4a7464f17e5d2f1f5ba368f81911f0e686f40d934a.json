@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1013",
+  "targetId": "W1013",
+  "steps": [
+    {
+      "id": "BANK-W1013-W1013",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1013-W1013",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "mail; post",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "邮件"
+            },
+            {
+              "value": "yóujiàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "you2jian4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "邮件",
+            "pinyin": "yóujiàn",
+            "meaning": "mail; post",
+            "singleWord": true,
+            "audio": "bd074101af0e77baef5b458f70577f763cc7ba4fff702f7a68d6cf9e5876e75c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "bd074101af0e77baef5b458f70577f763cc7ba4fff702f7a68d6cf9e5876e75c": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a0bb173a503a7e1fc621d6f452f556fc07203ed1e4d095e3120e0ea83fc55dec.mp3",
+        "sha256": "a0bb173a503a7e1fc621d6f452f556fc07203ed1e4d095e3120e0ea83fc55dec",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "a0bb173a503a7e1fc621d6f452f556fc07203ed1e4d095e3120e0ea83fc55dec",
+          "text": "邮件",
+          "words": [
+            {
+              "text": "邮件",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-3d02efa8d01deff9f30650e283f0c9d93903a12ac91dc2d6a279674025f9b589.mp3",
+        "sha256": "3d02efa8d01deff9f30650e283f0c9d93903a12ac91dc2d6a279674025f9b589",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "3d02efa8d01deff9f30650e283f0c9d93903a12ac91dc2d6a279674025f9b589",
+          "text": "邮件",
+          "words": [
+            {
+              "text": "邮件",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1013",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1013-W1013",
+      "question_ids": [
+        "BANK-W1013-W1013"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-19",
+    "stepId": "S-U3-19-words-r4-9",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-90ae"
+    ],
+    "grammarLessonIds": []
+  }
+}

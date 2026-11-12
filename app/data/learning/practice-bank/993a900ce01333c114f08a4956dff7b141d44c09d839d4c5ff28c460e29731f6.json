@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0619",
+  "targetId": "W0619",
+  "steps": [
+    {
+      "id": "BANK-W0619-W0619",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0619-W0619",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "eye",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "眼睛"
+            },
+            {
+              "value": "yǎnjing",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yan3jing5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "眼睛",
+            "pinyin": "yǎnjing",
+            "meaning": "eye",
+            "singleWord": true,
+            "audio": "133a6300bf03086f1d9c830ccd69a938488be5b5bb28bf1e421433f4693438c8"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "133a6300bf03086f1d9c830ccd69a938488be5b5bb28bf1e421433f4693438c8": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-e8f603cdc85258e852c2970f48057d4ea64d4c145e796e848c33a5a06d84d424.mp3",
+        "sha256": "e8f603cdc85258e852c2970f48057d4ea64d4c145e796e848c33a5a06d84d424",
+        "byteLength": 15309,
+        "readAlong": {
+          "audioSha256": "e8f603cdc85258e852c2970f48057d4ea64d4c145e796e848c33a5a06d84d424",
+          "text": "眼睛",
+          "words": [
+            {
+              "text": "眼睛",
+              "start": 0.21,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ae203e55365af22d2511661b0ffc84d33b2f3261d7424640389b6be88d4a8184.mp3",
+        "sha256": "ae203e55365af22d2511661b0ffc84d33b2f3261d7424640389b6be88d4a8184",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "ae203e55365af22d2511661b0ffc84d33b2f3261d7424640389b6be88d4a8184",
+          "text": "眼睛",
+          "words": [
+            {
+              "text": "眼睛",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0619",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0619-W0619",
+      "question_ids": [
+        "BANK-W0619-W0619"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U17-P01",
+    "stepId": "S-U17-words-r4-31",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-775b"
+    ],
+    "grammarLessonIds": []
+  }
+}

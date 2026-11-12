@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1030",
+  "targetId": "W1030",
+  "steps": [
+    {
+      "id": "BANK-W1030-W1030",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1030-W1030",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "we, including the listener",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "咱们"
+            },
+            {
+              "value": "zánmen",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zan2men5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "咱们",
+            "pinyin": "zánmen",
+            "meaning": "we, including the listener",
+            "singleWord": true,
+            "audio": "b3cbd366d052368eda1aaf20e04bb143172d7eb28a6ad11adefdbb3bbcdfb14c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b3cbd366d052368eda1aaf20e04bb143172d7eb28a6ad11adefdbb3bbcdfb14c": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-3059b8924fc50ee6de42ee442082b0f692bb73d7c905a2738cd007fdcc71f037.mp3",
+        "sha256": "3059b8924fc50ee6de42ee442082b0f692bb73d7c905a2738cd007fdcc71f037",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "3059b8924fc50ee6de42ee442082b0f692bb73d7c905a2738cd007fdcc71f037",
+          "text": "咱们",
+          "words": [
+            {
+              "text": "咱们",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-997bd885d547354b7b8e4b679f5625d2b239c1885e96f5148daad85e5b640c1c.mp3",
+        "sha256": "997bd885d547354b7b8e4b679f5625d2b239c1885e96f5148daad85e5b640c1c",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "997bd885d547354b7b8e4b679f5625d2b239c1885e96f5148daad85e5b640c1c",
+          "text": "咱们",
+          "words": [
+            {
+              "text": "咱们",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1030",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1030-W1030",
+      "question_ids": [
+        "BANK-W1030-W1030"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-26-P01",
+    "stepId": "S-U3-26-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-54b1"
+    ],
+    "grammarLessonIds": []
+  }
+}

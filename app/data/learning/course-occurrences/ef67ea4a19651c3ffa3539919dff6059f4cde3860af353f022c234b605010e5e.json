@@ -1,0 +1,633 @@
+{
+  "id": "EX-CHAR-char-7531",
+  "revision": 2,
+  "unit": "U4-30",
+  "stage": "ST-HSK4",
+  "after": "S-U4-30-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "由",
+  "sourceBlockId": "mandarin-simplified-v1-char-7531",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-4ecb",
+        "text": "介",
+        "pinyin": "jiè",
+        "meaning": "to introduce; to lie between",
+        "characters": [
+          {
+            "id": "C-4ECB",
+            "text": "介"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-7531",
+        "text": "由",
+        "pinyin": "yóu",
+        "meaning": "to follow; from",
+        "characters": [
+          {
+            "id": "C-7531",
+            "text": "由"
+          }
+        ]
+      },
+      {
+        "id": "W1874",
+        "text": "学院",
+        "pinyin": "xuéyuàn",
+        "meaning": "college; educational institute",
+        "characters": [
+          {
+            "id": "C-5B66",
+            "text": "学"
+          },
+          {
+            "id": "C-9662",
+            "text": "院"
+          }
+        ]
+      },
+      {
+        "id": "W3308",
+        "text": "行人",
+        "pinyin": "xíngrén",
+        "meaning": "pedestrian; traveler on foot",
+        "characters": [
+          {
+            "id": "C-884C",
+            "text": "行"
+          },
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      },
+      {
+        "id": "W3597",
+        "text": "自由",
+        "pinyin": "zìyóu",
+        "meaning": "freedom; liberty",
+        "characters": [
+          {
+            "id": "C-81EA",
+            "text": "自"
+          },
+          {
+            "id": "C-7531",
+            "text": "由"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "bcb9bbe86b36e85c11389150c790d20dc2fd7354ee842b3c0b47e02d35352d78",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7531",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "由",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7531-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W3597",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "freedom; liberty",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "自由"
+              },
+              {
+                "value": "zìyóu",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zi4you2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "自由",
+              "pinyin": "zìyóu",
+              "meaning": "freedom; liberty",
+              "audio": "1e0b8d8e49d2c0d876e96129b0aad0eab601a587304f2b1dcf3c6613fb061916",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7531-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7531",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "由",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-7531",
+                "label": "to follow; from",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-PRIMARY-char-4ecb",
+                "label": "to introduce; to lie between",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W3308",
+                "label": "pedestrian; traveler on foot",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7531-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "由",
+        "pinyin": "yóu",
+        "meaning": "to follow; from",
+        "source": "/stroke-data/7531.json",
+        "reference": {
+          "character": "由",
+          "sha256": "e12dc6e0be37771faca55d4f041b2a21bcefdec44b38a80cf78202241e6495ab",
+          "medians": [
+            [
+              [
+                176,
+                517
+              ],
+              [
+                215,
+                486
+              ],
+              [
+                234,
+                450
+              ],
+              [
+                252,
+                339
+              ],
+              [
+                271,
+                141
+              ],
+              [
+                292,
+                65
+              ]
+            ],
+            [
+              [
+                245,
+                505
+              ],
+              [
+                277,
+                488
+              ],
+              [
+                464,
+                507
+              ],
+              [
+                714,
+                556
+              ],
+              [
+                753,
+                554
+              ],
+              [
+                779,
+                536
+              ],
+              [
+                797,
+                516
+              ],
+              [
+                773,
+                308
+              ],
+              [
+                748,
+                153
+              ],
+              [
+                720,
+                101
+              ],
+              [
+                719,
+                36
+              ]
+            ],
+            [
+              [
+                343,
+                313
+              ],
+              [
+                388,
+                306
+              ],
+              [
+                560,
+                342
+              ],
+              [
+                643,
+                342
+              ]
+            ],
+            [
+              [
+                450,
+                808
+              ],
+              [
+                506,
+                764
+              ],
+              [
+                509,
+                723
+              ],
+              [
+                498,
+                196
+              ],
+              [
+                496,
+                175
+              ],
+              [
+                476,
+                155
+              ]
+            ],
+            [
+              [
+                314,
+                96
+              ],
+              [
+                330,
+                111
+              ],
+              [
+                559,
+                142
+              ],
+              [
+                638,
+                149
+              ],
+              [
+                686,
+                144
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7531-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W1874",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "college; educational institute",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "学院"
+              },
+              {
+                "value": "xuéyuàn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xue2yuan4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "学院",
+              "pinyin": "xuéyuàn",
+              "meaning": "college; educational institute",
+              "audio": "db6cf577e525694e26579ad083fd99e7800bb1ef4d58a003018e558cd84a9a62",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7531-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7531",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to follow; from",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "由"
+              },
+              {
+                "value": "yóu",
+                "mode": "pinyin"
+              },
+              {
+                "value": "you2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "由",
+              "pinyin": "yóu",
+              "meaning": "to follow; from",
+              "audio": "4f98306988769e5ae4f523f4064f909b9d11173b36f80c88c126070460bb8547",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "4f98306988769e5ae4f523f4064f909b9d11173b36f80c88c126070460bb8547"
+            ],
+            "transcript": [
+              {
+                "text": "由",
+                "pinyin": "yóu",
+                "meaning": "to follow; from",
+                "audio": "4f98306988769e5ae4f523f4064f909b9d11173b36f80c88c126070460bb8547",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7531",
+      "character": "由",
+      "lessonIds": [
+        "LESSON-C-7531"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7531-word",
+        "EX-CHAR-char-7531-recognize",
+        "EX-CHAR-char-7531-write",
+        "EX-CHAR-char-7531-familiar",
+        "EX-CHAR-char-7531-recall"
+      ]
+    },
+    "audio": {
+      "a3b0553634947fe92bedaaff12c3459322c4705ece24e4b69d45d38521dfd8a1": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-ff445dc67dade4c600a8cb0c2ead7d05e05f87c66b8efd51f21445ab8faef03f.mp3",
+          "sha256": "ff445dc67dade4c600a8cb0c2ead7d05e05f87c66b8efd51f21445ab8faef03f",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "ff445dc67dade4c600a8cb0c2ead7d05e05f87c66b8efd51f21445ab8faef03f",
+            "text": "介",
+            "words": [
+              {
+                "text": "介",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-ab1cc1e4c03040840521551f28c2a916ae7d05f0a569a43f3837823cac7e04df.mp3",
+          "sha256": "ab1cc1e4c03040840521551f28c2a916ae7d05f0a569a43f3837823cac7e04df",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "ab1cc1e4c03040840521551f28c2a916ae7d05f0a569a43f3837823cac7e04df",
+            "text": "介",
+            "words": [
+              {
+                "text": "介",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "4f98306988769e5ae4f523f4064f909b9d11173b36f80c88c126070460bb8547": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-1a4b5fe700fcaa2d41532f10145297d4063533aded4bacd07e4788690bcdee83.mp3",
+          "sha256": "1a4b5fe700fcaa2d41532f10145297d4063533aded4bacd07e4788690bcdee83",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "1a4b5fe700fcaa2d41532f10145297d4063533aded4bacd07e4788690bcdee83",
+            "text": "由",
+            "words": [
+              {
+                "text": "由",
+                "start": 0.22,
+                "end": 0.32
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-47ca7d921305b334563d857c5434b2b8985af31255ef95d16f5b21a626da8c7c.mp3",
+          "sha256": "47ca7d921305b334563d857c5434b2b8985af31255ef95d16f5b21a626da8c7c",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "47ca7d921305b334563d857c5434b2b8985af31255ef95d16f5b21a626da8c7c",
+            "text": "由",
+            "words": [
+              {
+                "text": "由",
+                "start": 0.26,
+                "end": 0.36
+              }
+            ]
+          }
+        }
+      },
+      "db6cf577e525694e26579ad083fd99e7800bb1ef4d58a003018e558cd84a9a62": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/18320cb728448f0cc9aaf50ec5edaf006ea2f422a8d5939dce55fe34db0b2a89.mp3",
+          "sha256": "18320cb728448f0cc9aaf50ec5edaf006ea2f422a8d5939dce55fe34db0b2a89",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "18320cb728448f0cc9aaf50ec5edaf006ea2f422a8d5939dce55fe34db0b2a89",
+            "text": "学院",
+            "words": [
+              {
+                "text": "学院",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5f9b528161e1627ba6282e514a21a7ccdc02216ea372de4b713235b6fde04540.mp3",
+          "sha256": "5f9b528161e1627ba6282e514a21a7ccdc02216ea372de4b713235b6fde04540",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "5f9b528161e1627ba6282e514a21a7ccdc02216ea372de4b713235b6fde04540",
+            "text": "学院",
+            "words": [
+              {
+                "text": "学院",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "26c3e191ce3d59b83dd26ad5240b951dcd669d3dd338cb8da26a7eeb7c6ea1be": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-46b2819bebf277c8a0a8ff29e46ef982194177bb0078bb30450f09e7a5effe63.mp3",
+          "sha256": "46b2819bebf277c8a0a8ff29e46ef982194177bb0078bb30450f09e7a5effe63",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "46b2819bebf277c8a0a8ff29e46ef982194177bb0078bb30450f09e7a5effe63",
+            "text": "行人",
+            "words": [
+              {
+                "text": "行人",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8e4cf9e8b7efc1da93eb7324740e42ecdb70fbb8f77d652403191ee4889b7083.mp3",
+          "sha256": "8e4cf9e8b7efc1da93eb7324740e42ecdb70fbb8f77d652403191ee4889b7083",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "8e4cf9e8b7efc1da93eb7324740e42ecdb70fbb8f77d652403191ee4889b7083",
+            "text": "行人",
+            "words": [
+              {
+                "text": "行人",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "1e0b8d8e49d2c0d876e96129b0aad0eab601a587304f2b1dcf3c6613fb061916": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5e4bf4011b5ede8d2d64f576d8cfea6667339498d3d2aa34f5705fe8a7f9606e.mp3",
+          "sha256": "5e4bf4011b5ede8d2d64f576d8cfea6667339498d3d2aa34f5705fe8a7f9606e",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "5e4bf4011b5ede8d2d64f576d8cfea6667339498d3d2aa34f5705fe8a7f9606e",
+            "text": "自由",
+            "words": [
+              {
+                "text": "自由",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-9c17b82c3a561beb6b23914d033c3553be96eb66f392b83e448ed5e0c51aaaf5.mp3",
+          "sha256": "9c17b82c3a561beb6b23914d033c3553be96eb66f392b83e448ed5e0c51aaaf5",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "9c17b82c3a561beb6b23914d033c3553be96eb66f392b83e448ed5e0c51aaaf5",
+            "text": "自由",
+            "words": [
+              {
+                "text": "自由",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

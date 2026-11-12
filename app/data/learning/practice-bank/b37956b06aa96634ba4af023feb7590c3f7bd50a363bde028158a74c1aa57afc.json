@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2052",
+  "targetId": "W2052",
+  "steps": [
+    {
+      "id": "BANK-W2052-W2052",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2052-W2052",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "treasured object; treasure",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "宝贝"
+            },
+            {
+              "value": "bǎobèi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bao3bei4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "宝贝",
+            "pinyin": "bǎobèi",
+            "meaning": "treasured object; treasure",
+            "singleWord": true,
+            "audio": "fa20be90fd1ab05f4478a5274b3dcef3f4adc5212b6084bff8a08d932e965811"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "fa20be90fd1ab05f4478a5274b3dcef3f4adc5212b6084bff8a08d932e965811": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-52b699bcd5dbf7f34ccc08218e42c2046e19a0ef3bc7a56493952a2ce030fa21.mp3",
+        "sha256": "52b699bcd5dbf7f34ccc08218e42c2046e19a0ef3bc7a56493952a2ce030fa21",
+        "byteLength": 9837,
+        "readAlong": {
+          "audioSha256": "52b699bcd5dbf7f34ccc08218e42c2046e19a0ef3bc7a56493952a2ce030fa21",
+          "text": "宝贝",
+          "words": [
+            {
+              "text": "宝贝",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-64c98098daac1ed8d1f222b286854e47faa492287ea426232a80fc641ed4a327.mp3",
+        "sha256": "64c98098daac1ed8d1f222b286854e47faa492287ea426232a80fc641ed4a327",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "64c98098daac1ed8d1f222b286854e47faa492287ea426232a80fc641ed4a327",
+          "text": "宝贝",
+          "words": [
+            {
+              "text": "宝贝",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2052",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2052-W2052",
+      "question_ids": [
+        "BANK-W2052-W2052"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-02",
+    "stepId": "S-U5-02-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8d1d"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W-USE-FUWUYUAN",
+  "targetId": "W-USE-FUWUYUAN",
+  "steps": [
+    {
+      "id": "BANK-W-USE-FUWUYUAN-W-USE-FUWUYUAN",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W-USE-FUWUYUAN-W-USE-FUWUYUAN",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "service attendant; server",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "服务员"
+            },
+            {
+              "value": "fúwùyuán",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fu2wu4yuan2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "服务员",
+            "pinyin": "fúwùyuán",
+            "meaning": "service attendant; server",
+            "singleWord": true,
+            "audio": "44c9a15ca88ae34d83b1cc1fc185b7dbda405a2ef1d30ca497790f1db34adb2e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "44c9a15ca88ae34d83b1cc1fc185b7dbda405a2ef1d30ca497790f1db34adb2e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-8f8e99c53f0e11a748ffb43c28e5432cefae2411bc0f062e52f1873a934b7eff.mp3",
+        "sha256": "8f8e99c53f0e11a748ffb43c28e5432cefae2411bc0f062e52f1873a934b7eff",
+        "byteLength": 14157,
+        "readAlong": {
+          "audioSha256": "8f8e99c53f0e11a748ffb43c28e5432cefae2411bc0f062e52f1873a934b7eff",
+          "text": "服务员",
+          "words": [
+            {
+              "text": "服务员",
+              "start": 0.15,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-f00dafa2f7c4a901417d42535fca30289c32d64eb855a1b471fcc3115e4e0a66.mp3",
+        "sha256": "f00dafa2f7c4a901417d42535fca30289c32d64eb855a1b471fcc3115e4e0a66",
+        "byteLength": 15309,
+        "readAlong": {
+          "audioSha256": "f00dafa2f7c4a901417d42535fca30289c32d64eb855a1b471fcc3115e4e0a66",
+          "text": "服务员",
+          "words": [
+            {
+              "text": "服务员",
+              "start": 0.21,
+              "end": 0.69
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W-USE-FUWUYUAN",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W-USE-FUWUYUAN-W-USE-FUWUYUAN",
+      "question_ids": [
+        "BANK-W-USE-FUWUYUAN-W-USE-FUWUYUAN"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-08",
+    "stepId": "S-U4-08-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9910"
+    ],
+    "grammarLessonIds": []
+  }
+}

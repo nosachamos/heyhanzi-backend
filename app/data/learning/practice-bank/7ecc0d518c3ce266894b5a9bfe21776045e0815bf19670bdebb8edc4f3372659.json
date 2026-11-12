@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2418",
+  "targetId": "W2418",
+  "steps": [
+    {
+      "id": "BANK-W2418-W2418",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2418-W2418",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "song lyric; lyrics",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "歌词"
+            },
+            {
+              "value": "gēcí",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ge1ci2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "歌词",
+            "pinyin": "gēcí",
+            "meaning": "song lyric; lyrics",
+            "singleWord": true,
+            "audio": "2d45a116d33b81c6199983045c79e7f033d0e0fc1a5b5501e0dd59319aa86087"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2d45a116d33b81c6199983045c79e7f033d0e0fc1a5b5501e0dd59319aa86087": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-459e651446410552f1dff692782e8f6563818a116a0952627cb173f25936a224.mp3",
+        "sha256": "459e651446410552f1dff692782e8f6563818a116a0952627cb173f25936a224",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "459e651446410552f1dff692782e8f6563818a116a0952627cb173f25936a224",
+          "text": "歌词",
+          "words": [
+            {
+              "text": "歌词",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-90f9c94139c41fa21ba9867832ec8a1d891120c5017af81d2814752dd48ad752.mp3",
+        "sha256": "90f9c94139c41fa21ba9867832ec8a1d891120c5017af81d2814752dd48ad752",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "90f9c94139c41fa21ba9867832ec8a1d891120c5017af81d2814752dd48ad752",
+          "text": "歌词",
+          "words": [
+            {
+              "text": "歌词",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2418",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2418-W2418",
+      "question_ids": [
+        "BANK-W2418-W2418"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-26",
+    "stepId": "S-U5-26-words-02",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8bcd"
+    ],
+    "grammarLessonIds": []
+  }
+}

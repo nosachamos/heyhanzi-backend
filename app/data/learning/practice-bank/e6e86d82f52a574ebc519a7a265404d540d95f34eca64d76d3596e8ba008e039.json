@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1390",
+  "targetId": "W1390",
+  "steps": [
+    {
+      "id": "BANK-W1390-W1390",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1390-W1390",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "gas station",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "加油站"
+            },
+            {
+              "value": "jiāyóuzhàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jia1you2zhan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "加油站",
+            "pinyin": "jiāyóuzhàn",
+            "meaning": "gas station",
+            "singleWord": true,
+            "audio": "039ac69fac8fa3a2d6a5bb2fbc8cfd3c7b1dd2c954b7793a786aa678f35137b3"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "039ac69fac8fa3a2d6a5bb2fbc8cfd3c7b1dd2c954b7793a786aa678f35137b3": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8a7763842773039cf2fc5adc3a3086d4c93a7db133eba76dd0cc1b7637948f53.mp3",
+        "sha256": "8a7763842773039cf2fc5adc3a3086d4c93a7db133eba76dd0cc1b7637948f53",
+        "byteLength": 16461,
+        "readAlong": {
+          "audioSha256": "8a7763842773039cf2fc5adc3a3086d4c93a7db133eba76dd0cc1b7637948f53",
+          "text": "加油站",
+          "words": [
+            {
+              "text": "加油站",
+              "start": 0.21,
+              "end": 0.69
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c40d311d5f929562fe0b2ae33ccebf1a52242777198a54bfb038d617c78f975d.mp3",
+        "sha256": "c40d311d5f929562fe0b2ae33ccebf1a52242777198a54bfb038d617c78f975d",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "c40d311d5f929562fe0b2ae33ccebf1a52242777198a54bfb038d617c78f975d",
+          "text": "加油站",
+          "words": [
+            {
+              "text": "加油站",
+              "start": 0.15,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1390",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1390-W1390",
+      "question_ids": [
+        "BANK-W1390-W1390"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-15",
+    "stepId": "S-U4-15-words-r4-9",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6cb9"
+    ],
+    "grammarLessonIds": []
+  }
+}

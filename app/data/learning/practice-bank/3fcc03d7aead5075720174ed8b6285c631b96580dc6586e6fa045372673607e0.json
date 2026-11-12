@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W4500",
+  "targetId": "W4500",
+  "steps": [
+    {
+      "id": "BANK-W4500-W4500",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4500-W4500",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to bury",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "埋"
+            },
+            {
+              "value": "mái",
+              "mode": "pinyin"
+            },
+            {
+              "value": "mai2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "埋",
+            "pinyin": "mái",
+            "meaning": "to bury",
+            "singleWord": true,
+            "audio": "8eb513d43b87c5b79cbc3caab179ea8e0ba4646d5f77361e64d571bffa17a80f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8eb513d43b87c5b79cbc3caab179ea8e0ba4646d5f77361e64d571bffa17a80f": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/4761700cea26a767e80d667df1199d92746da35405646247a8b204dd5f838486.mp3",
+        "sha256": "4761700cea26a767e80d667df1199d92746da35405646247a8b204dd5f838486",
+        "byteLength": 10413,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "4761700cea26a767e80d667df1199d92746da35405646247a8b204dd5f838486",
+          "text": "埋",
+          "words": [
+            {
+              "text": "埋",
+              "start": 0.2,
+              "end": 0.3
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/6f88662d05c602056840324d9a03f460b3e5b1d3bb5cdb1a82e78daefe59c4cb.mp3",
+        "sha256": "6f88662d05c602056840324d9a03f460b3e5b1d3bb5cdb1a82e78daefe59c4cb",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "6f88662d05c602056840324d9a03f460b3e5b1d3bb5cdb1a82e78daefe59c4cb",
+          "text": "埋",
+          "words": [
+            {
+              "text": "埋",
+              "start": 0.24,
+              "end": 0.34
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4500",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4500-W4500",
+      "question_ids": [
+        "BANK-W4500-W4500"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-44",
+    "stepId": "S-U6-44-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-57cb"
+    ],
+    "grammarLessonIds": []
+  }
+}

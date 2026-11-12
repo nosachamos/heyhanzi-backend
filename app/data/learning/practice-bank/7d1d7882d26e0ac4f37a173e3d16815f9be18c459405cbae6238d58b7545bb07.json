@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2147",
+  "targetId": "W2147",
+  "steps": [
+    {
+      "id": "BANK-W2147-W2147",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2147-W2147",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "noisy; loud",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "吵"
+            },
+            {
+              "value": "chǎo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chao3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "吵",
+            "pinyin": "chǎo",
+            "meaning": "noisy; loud",
+            "singleWord": true,
+            "audio": "29af2033b36565288c661aa0c85476483d1865958866141c325fe03f448aa20c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "29af2033b36565288c661aa0c85476483d1865958866141c325fe03f448aa20c": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-3a5599832af530e2882e073ef94c35a611462ea2520a4ae3cc8ef7a16a3f6ede.mp3",
+        "sha256": "3a5599832af530e2882e073ef94c35a611462ea2520a4ae3cc8ef7a16a3f6ede",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "3a5599832af530e2882e073ef94c35a611462ea2520a4ae3cc8ef7a16a3f6ede",
+          "text": "吵",
+          "words": [
+            {
+              "text": "吵",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-0837be7d5f3420803c4558d4e1dbefa893d29358e21a552af9fed8864a62a72d.mp3",
+        "sha256": "0837be7d5f3420803c4558d4e1dbefa893d29358e21a552af9fed8864a62a72d",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "0837be7d5f3420803c4558d4e1dbefa893d29358e21a552af9fed8864a62a72d",
+          "text": "吵",
+          "words": [
+            {
+              "text": "吵",
+              "start": 0.28,
+              "end": 0.38
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2147",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2147-W2147",
+      "question_ids": [
+        "BANK-W2147-W2147"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-45-P01",
+    "stepId": "S-U5-45-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5435"
+    ],
+    "grammarLessonIds": []
+  }
+}

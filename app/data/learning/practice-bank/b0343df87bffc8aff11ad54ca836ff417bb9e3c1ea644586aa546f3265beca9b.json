@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3539",
+  "targetId": "W3539",
+  "steps": [
+    {
+      "id": "BANK-W3539-W3539",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3539-W3539",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "the Chinese nation",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "中华民族"
+            },
+            {
+              "value": "ZhōnghuáMínzú",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhong1hua2min2zu2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "中华民族",
+            "pinyin": "ZhōnghuáMínzú",
+            "meaning": "the Chinese nation",
+            "singleWord": true,
+            "audio": "c0d1234a5bf221338add6ae7e6eaf92ddd0317383bdf54d9723548e4231faa52"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c0d1234a5bf221338add6ae7e6eaf92ddd0317383bdf54d9723548e4231faa52": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/fa667b3f4fa0ffee8fe528e5022b79c6f91a87db987729a80ccafb0000372ad0.mp3",
+        "sha256": "fa667b3f4fa0ffee8fe528e5022b79c6f91a87db987729a80ccafb0000372ad0",
+        "byteLength": 18189,
+        "readAlong": {
+          "audioSha256": "fa667b3f4fa0ffee8fe528e5022b79c6f91a87db987729a80ccafb0000372ad0",
+          "text": "中华民族",
+          "words": [
+            {
+              "text": "中华民族",
+              "start": 0.15,
+              "end": 0.8699999999999999
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/944f87f2cbab64acb926c3cdbcea14cb960f4423a8fe6fe419821f86f11e4546.mp3",
+        "sha256": "944f87f2cbab64acb926c3cdbcea14cb960f4423a8fe6fe419821f86f11e4546",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "944f87f2cbab64acb926c3cdbcea14cb960f4423a8fe6fe419821f86f11e4546",
+          "text": "中华民族",
+          "words": [
+            {
+              "text": "中华民族",
+              "start": 0.15,
+              "end": 0.69
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3539",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3539-W3539",
+      "question_ids": [
+        "BANK-W3539-W3539"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-20",
+    "stepId": "S-U5-20-words-r4-6",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5e7c"
+    ],
+    "grammarLessonIds": []
+  }
+}

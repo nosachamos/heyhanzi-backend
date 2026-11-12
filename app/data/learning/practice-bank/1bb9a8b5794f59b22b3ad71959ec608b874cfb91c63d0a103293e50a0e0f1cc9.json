@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W4175",
+  "targetId": "W4175",
+  "steps": [
+    {
+      "id": "BANK-W4175-W4175",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4175-W4175",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "household; classifier for households",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "户"
+            },
+            {
+              "value": "hù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hu4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "户",
+            "pinyin": "hù",
+            "meaning": "household; classifier for households",
+            "singleWord": true,
+            "audio": "c9b8ec7ebaa154ae3814925b6046c6be71008f1e95b91395647e36dac7ad92a0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c9b8ec7ebaa154ae3814925b6046c6be71008f1e95b91395647e36dac7ad92a0": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-84fd266c7c2f56566b491f72f7985e48124794c35582a612fa4ffde773eee4ba.mp3",
+        "sha256": "84fd266c7c2f56566b491f72f7985e48124794c35582a612fa4ffde773eee4ba",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "84fd266c7c2f56566b491f72f7985e48124794c35582a612fa4ffde773eee4ba",
+          "text": "户",
+          "words": [
+            {
+              "text": "户",
+              "start": 0.2,
+              "end": 0.3
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c30a8d1e92e3d7574fe91b8055a9dc85c832359af827f755c1ecc74fc7b5398e.mp3",
+        "sha256": "c30a8d1e92e3d7574fe91b8055a9dc85c832359af827f755c1ecc74fc7b5398e",
+        "byteLength": 8397,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "c30a8d1e92e3d7574fe91b8055a9dc85c832359af827f755c1ecc74fc7b5398e",
+          "text": "户",
+          "words": [
+            {
+              "text": "户",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4175",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4175-W4175",
+      "question_ids": [
+        "BANK-W4175-W4175"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-05",
+    "stepId": "S-U6-05-words-r4-2",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6237"
+    ],
+    "grammarLessonIds": []
+  }
+}

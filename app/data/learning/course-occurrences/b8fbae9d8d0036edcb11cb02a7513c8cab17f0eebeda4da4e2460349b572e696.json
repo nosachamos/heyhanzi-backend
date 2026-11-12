@@ -1,0 +1,735 @@
+{
+  "id": "EX-CHAR-char-54c8",
+  "revision": 2,
+  "unit": "U5-52",
+  "stage": "ST-HSK5",
+  "after": "S-U5-52-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "哈",
+  "sourceBlockId": "mandarin-simplified-v1-char-54c8",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-54c8",
+        "text": "哈",
+        "pinyin": "hā",
+        "meaning": "(interj.) ha!; (onom. for laughter)",
+        "characters": [
+          {
+            "id": "C-54C8",
+            "text": "哈"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-4d9dfd6f4043c1372f150c01",
+        "text": "解决",
+        "pinyin": "jiějué",
+        "meaning": "to solve; to resolve; to settle (a problem); to eliminate; to wipe out (an enemy, bandits etc)",
+        "characters": [
+          {
+            "id": "C-89E3",
+            "text": "解"
+          },
+          {
+            "id": "C-51B3",
+            "text": "决"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-6793379ec5c33ea367ce6a47",
+        "text": "哈哈",
+        "pinyin": "hā hā",
+        "meaning": "(onom.) laughing out loud",
+        "characters": [
+          {
+            "id": "C-54C8",
+            "text": "哈"
+          }
+        ]
+      },
+      {
+        "id": "W1817",
+        "text": "污染",
+        "pinyin": "wūrǎn",
+        "meaning": "to pollute; to contaminate",
+        "characters": [
+          {
+            "id": "C-6C61",
+            "text": "污"
+          },
+          {
+            "id": "C-67D3",
+            "text": "染"
+          }
+        ]
+      },
+      {
+        "id": "W2101",
+        "text": "不幸",
+        "pinyin": "bùxìng",
+        "meaning": "misfortune; adversity",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-5E78",
+            "text": "幸"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "276ba474757f8a4e388fb71dd611cd837668d2f4497dd78cacd7e9c34d2ab9c9",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-54c8",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "哈",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-54c8-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-6793379ec5c33ea367ce6a47",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "(onom.) laughing out loud",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "哈哈"
+              },
+              {
+                "value": "hā hā",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ha1ha1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "哈哈",
+              "pinyin": "hā hā",
+              "meaning": "(onom.) laughing out loud",
+              "audio": "874a0dc87400f9b2ea6f285f115a73e086737797bfa6c16e4d9ec242825c935f",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-54c8-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-54c8",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "哈",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-4d9dfd6f4043c1372f150c01",
+                "label": "to solve; to resolve",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-54c8",
+                "label": "(interj.) ha!; (onom. for laughter)",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1817",
+                "label": "to pollute; to contaminate",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-54c8-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "哈",
+        "pinyin": "hā",
+        "meaning": "(interj.) ha!; (onom. for laughter)",
+        "source": "/stroke-data/54c8.json",
+        "reference": {
+          "character": "哈",
+          "sha256": "3bc428a9cce848820dc4f9bcb828d69d7d3ac1d08951969b9c6b0654ea961836",
+          "medians": [
+            [
+              [
+                67,
+                576
+              ],
+              [
+                93,
+                553
+              ],
+              [
+                98,
+                536
+              ],
+              [
+                133,
+                327
+              ]
+            ],
+            [
+              [
+                126,
+                551
+              ],
+              [
+                138,
+                564
+              ],
+              [
+                244,
+                596
+              ],
+              [
+                276,
+                581
+              ],
+              [
+                286,
+                570
+              ],
+              [
+                259,
+                452
+              ],
+              [
+                235,
+                434
+              ]
+            ],
+            [
+              [
+                153,
+                375
+              ],
+              [
+                168,
+                392
+              ],
+              [
+                226,
+                405
+              ],
+              [
+                280,
+                409
+              ],
+              [
+                300,
+                402
+              ]
+            ],
+            [
+              [
+                520,
+                770
+              ],
+              [
+                541,
+                755
+              ],
+              [
+                559,
+                729
+              ],
+              [
+                524,
+                629
+              ],
+              [
+                474,
+                532
+              ],
+              [
+                415,
+                438
+              ],
+              [
+                365,
+                373
+              ],
+              [
+                291,
+                295
+              ],
+              [
+                193,
+                215
+              ]
+            ],
+            [
+              [
+                578,
+                656
+              ],
+              [
+                578,
+                642
+              ],
+              [
+                689,
+                515
+              ],
+              [
+                809,
+                400
+              ],
+              [
+                846,
+                385
+              ],
+              [
+                992,
+                360
+              ]
+            ],
+            [
+              [
+                448,
+                370
+              ],
+              [
+                473,
+                364
+              ],
+              [
+                510,
+                366
+              ],
+              [
+                631,
+                396
+              ],
+              [
+                687,
+                399
+              ]
+            ],
+            [
+              [
+                382,
+                231
+              ],
+              [
+                413,
+                205
+              ],
+              [
+                420,
+                187
+              ],
+              [
+                460,
+                -16
+              ]
+            ],
+            [
+              [
+                445,
+                226
+              ],
+              [
+                456,
+                217
+              ],
+              [
+                474,
+                217
+              ],
+              [
+                665,
+                256
+              ],
+              [
+                695,
+                250
+              ],
+              [
+                727,
+                220
+              ],
+              [
+                702,
+                137
+              ],
+              [
+                670,
+                104
+              ]
+            ],
+            [
+              [
+                476,
+                31
+              ],
+              [
+                493,
+                49
+              ],
+              [
+                659,
+                76
+              ],
+              [
+                714,
+                80
+              ],
+              [
+                745,
+                70
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-54c8-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2101",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "misfortune; adversity",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "不幸"
+              },
+              {
+                "value": "bùxìng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu4xing4",
+                "mode": "pinyin"
+              },
+              {
+                "value": "búxìng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu2xing4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "不幸",
+              "pinyin": "bùxìng",
+              "meaning": "misfortune; adversity",
+              "audio": "e8d7a0965f45125e80a192da6cffad91b2ae3dd93c7b82df3afddfa48ace6d30",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-54c8-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-54c8",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "(interj.) ha!; (onom. for laughter)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "哈"
+              },
+              {
+                "value": "hā",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ha1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "哈",
+              "pinyin": "hā",
+              "meaning": "(interj.) ha!; (onom. for laughter)",
+              "audio": "57512296b1921587fcb26db69eab6f2f5f4f244438a35853c220c40831e0e008",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "57512296b1921587fcb26db69eab6f2f5f4f244438a35853c220c40831e0e008"
+            ],
+            "transcript": [
+              {
+                "text": "哈",
+                "pinyin": "hā",
+                "meaning": "(interj.) ha!; (onom. for laughter)",
+                "audio": "57512296b1921587fcb26db69eab6f2f5f4f244438a35853c220c40831e0e008",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-54C8",
+      "character": "哈",
+      "lessonIds": [
+        "LESSON-C-54C8"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-54c8-word",
+        "EX-CHAR-char-54c8-recognize",
+        "EX-CHAR-char-54c8-write",
+        "EX-CHAR-char-54c8-familiar",
+        "EX-CHAR-char-54c8-recall"
+      ]
+    },
+    "audio": {
+      "57512296b1921587fcb26db69eab6f2f5f4f244438a35853c220c40831e0e008": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/be8cc308bcea40eac8b83f61bfbf51a21b40f06377bdb2d00cf3d073f73134a3.mp3",
+          "sha256": "be8cc308bcea40eac8b83f61bfbf51a21b40f06377bdb2d00cf3d073f73134a3",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "be8cc308bcea40eac8b83f61bfbf51a21b40f06377bdb2d00cf3d073f73134a3",
+            "text": "哈",
+            "words": [
+              {
+                "text": "哈",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c48821a410b9909bfd01dd39b44e663069164d28348b5f122fa7c639a333a728.mp3",
+          "sha256": "c48821a410b9909bfd01dd39b44e663069164d28348b5f122fa7c639a333a728",
+          "byteLength": 8397,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "c48821a410b9909bfd01dd39b44e663069164d28348b5f122fa7c639a333a728",
+            "text": "哈",
+            "words": [
+              {
+                "text": "哈",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "16dc8862798fb60e43b2c3649ea6f3faef4e003ecfd132d6131ff0938be85c16": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2fd69837aec2e630dfaabd910065c37193f832180ea81ebbe51fe69fa545d351.mp3",
+          "sha256": "2fd69837aec2e630dfaabd910065c37193f832180ea81ebbe51fe69fa545d351",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "2fd69837aec2e630dfaabd910065c37193f832180ea81ebbe51fe69fa545d351",
+            "text": "解决",
+            "words": [
+              {
+                "text": "解决",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6a52292e6509e3868a181ce34271b124e54b01e1214e9c60187e386e9233aa7b.mp3",
+          "sha256": "6a52292e6509e3868a181ce34271b124e54b01e1214e9c60187e386e9233aa7b",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "6a52292e6509e3868a181ce34271b124e54b01e1214e9c60187e386e9233aa7b",
+            "text": "解决",
+            "words": [
+              {
+                "text": "解决",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "874a0dc87400f9b2ea6f285f115a73e086737797bfa6c16e4d9ec242825c935f": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3aaa8e5bda1b5f61576661c406832de72eb6bd77b591e914648d5a0a54794878.mp3",
+          "sha256": "3aaa8e5bda1b5f61576661c406832de72eb6bd77b591e914648d5a0a54794878",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "3aaa8e5bda1b5f61576661c406832de72eb6bd77b591e914648d5a0a54794878",
+            "text": "哈哈",
+            "words": [
+              {
+                "text": "哈哈",
+                "start": 0.03,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/75c451c5da5e1d0a4fb670d2ad82049f49dfba31828609c8b6e988000da3fbe2.mp3",
+          "sha256": "75c451c5da5e1d0a4fb670d2ad82049f49dfba31828609c8b6e988000da3fbe2",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "75c451c5da5e1d0a4fb670d2ad82049f49dfba31828609c8b6e988000da3fbe2",
+            "text": "哈哈",
+            "words": [
+              {
+                "text": "哈哈",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "b3df4bd0a65bff3d2c25753799e9ffe6093f7eb3d7a992dd3f72a905ac5816d2": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8aa6beac37d19093b0b2bef83f4e5d995a4a90516eb31d9627f5b48180cb9f93.mp3",
+          "sha256": "8aa6beac37d19093b0b2bef83f4e5d995a4a90516eb31d9627f5b48180cb9f93",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "8aa6beac37d19093b0b2bef83f4e5d995a4a90516eb31d9627f5b48180cb9f93",
+            "text": "污染",
+            "words": [
+              {
+                "text": "污染",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0470e9f0bf31c9be386f5509c87e6a496dec23573ff3fd0a45b966ef9a2bc9ba.mp3",
+          "sha256": "0470e9f0bf31c9be386f5509c87e6a496dec23573ff3fd0a45b966ef9a2bc9ba",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "0470e9f0bf31c9be386f5509c87e6a496dec23573ff3fd0a45b966ef9a2bc9ba",
+            "text": "污染",
+            "words": [
+              {
+                "text": "污染",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "e8d7a0965f45125e80a192da6cffad91b2ae3dd93c7b82df3afddfa48ace6d30": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a70f4fbad82f48106d8bebd16d7ad64096d5534d72a83264da08f3becfbf75ce.mp3",
+          "sha256": "a70f4fbad82f48106d8bebd16d7ad64096d5534d72a83264da08f3becfbf75ce",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "a70f4fbad82f48106d8bebd16d7ad64096d5534d72a83264da08f3becfbf75ce",
+            "text": "不幸",
+            "words": [
+              {
+                "text": "不幸",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/fed8574cf327cde26a50b2328cafe7375045fb6d8151a6e549ac8a1f74d1e039.mp3",
+          "sha256": "fed8574cf327cde26a50b2328cafe7375045fb6d8151a6e549ac8a1f74d1e039",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "fed8574cf327cde26a50b2328cafe7375045fb6d8151a6e549ac8a1f74d1e039",
+            "text": "不幸",
+            "words": [
+              {
+                "text": "不幸",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,711 @@
+{
+  "id": "EX-CHAR-char-8bdd",
+  "revision": 2,
+  "unit": "U02-P01",
+  "stage": "ST-HSK1",
+  "after": "S-U02-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "话",
+  "sourceBlockId": "mandarin-simplified-v1-char-8bdd",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-8bdd",
+        "text": "话",
+        "pinyin": "huà",
+        "meaning": "dialect; language",
+        "characters": [
+          {
+            "id": "C-8BDD",
+            "text": "话"
+          }
+        ]
+      },
+      {
+        "id": "W0298",
+        "text": "的话",
+        "pinyin": "dehuà",
+        "meaning": "if",
+        "characters": [
+          {
+            "id": "C-7684",
+            "text": "的"
+          },
+          {
+            "id": "C-8BDD",
+            "text": "话"
+          }
+        ]
+      },
+      {
+        "id": "W0389",
+        "text": "读",
+        "pinyin": "dú",
+        "meaning": "to read out; to read aloud",
+        "characters": [
+          {
+            "id": "C-8BFB",
+            "text": "读"
+          }
+        ]
+      },
+      {
+        "id": "W0906",
+        "text": "请客",
+        "pinyin": "qǐngkè",
+        "meaning": "to give a dinner party; to entertain guests",
+        "characters": [
+          {
+            "id": "C-8BF7",
+            "text": "请"
+          },
+          {
+            "id": "C-5BA2",
+            "text": "客"
+          }
+        ]
+      },
+      {
+        "id": "W4128",
+        "text": "国王",
+        "pinyin": "guówáng",
+        "meaning": "king",
+        "characters": [
+          {
+            "id": "C-56FD",
+            "text": "国"
+          },
+          {
+            "id": "C-738B",
+            "text": "王"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "badf8e11c95582bed99fe71c6b18ce6ae214a1eae7948496ffbc9dabc9be81a1",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8bdd",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "话",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8bdd-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0298",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "if",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "的话"
+              },
+              {
+                "value": "dehuà",
+                "mode": "pinyin"
+              },
+              {
+                "value": "de5hua4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "的话",
+              "pinyin": "dehuà",
+              "meaning": "if",
+              "audio": "eb568fd2b357df4d421af4ca99940704698c8f50d5301ab7cd8fff4536964cdb",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bdd-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-8bdd",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "话",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-8bdd",
+                "label": "dialect; language",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W0906",
+                "label": "to give a dinner party; to entertain guests",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0389",
+                "label": "to read out; to read aloud",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bdd-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "话",
+        "pinyin": "huà",
+        "meaning": "dialect; language",
+        "source": "/stroke-data/8bdd.json",
+        "reference": {
+          "character": "话",
+          "sha256": "a76b23c54074217c1a280b43f74b7d436f396859fd42b9306373068ac9147d59",
+          "medians": [
+            [
+              [
+                274,
+                791
+              ],
+              [
+                377,
+                724
+              ],
+              [
+                401,
+                684
+              ]
+            ],
+            [
+              [
+                75,
+                456
+              ],
+              [
+                113,
+                452
+              ],
+              [
+                150,
+                458
+              ],
+              [
+                258,
+                506
+              ],
+              [
+                279,
+                509
+              ],
+              [
+                302,
+                497
+              ],
+              [
+                266,
+                192
+              ],
+              [
+                274,
+                151
+              ],
+              [
+                318,
+                165
+              ],
+              [
+                424,
+                259
+              ]
+            ],
+            [
+              [
+                781,
+                709
+              ],
+              [
+                704,
+                714
+              ],
+              [
+                661,
+                681
+              ],
+              [
+                589,
+                639
+              ],
+              [
+                496,
+                596
+              ],
+              [
+                482,
+                597
+              ],
+              [
+                472,
+                587
+              ]
+            ],
+            [
+              [
+                402,
+                428
+              ],
+              [
+                456,
+                424
+              ],
+              [
+                602,
+                455
+              ],
+              [
+                824,
+                491
+              ],
+              [
+                881,
+                491
+              ],
+              [
+                926,
+                479
+              ]
+            ],
+            [
+              [
+                597,
+                617
+              ],
+              [
+                631,
+                600
+              ],
+              [
+                646,
+                582
+              ],
+              [
+                618,
+                310
+              ],
+              [
+                600,
+                285
+              ]
+            ],
+            [
+              [
+                461,
+                266
+              ],
+              [
+                489,
+                243
+              ],
+              [
+                496,
+                228
+              ],
+              [
+                536,
+                40
+              ]
+            ],
+            [
+              [
+                518,
+                263
+              ],
+              [
+                528,
+                255
+              ],
+              [
+                550,
+                255
+              ],
+              [
+                652,
+                271
+              ],
+              [
+                715,
+                289
+              ],
+              [
+                764,
+                288
+              ],
+              [
+                803,
+                254
+              ],
+              [
+                772,
+                162
+              ],
+              [
+                743,
+                141
+              ]
+            ],
+            [
+              [
+                555,
+                74
+              ],
+              [
+                568,
+                89
+              ],
+              [
+                732,
+                111
+              ],
+              [
+                789,
+                111
+              ],
+              [
+                814,
+                101
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8bdd-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4128",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "king",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "国王"
+              },
+              {
+                "value": "guówáng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "guo2wang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "国王",
+              "pinyin": "guówáng",
+              "meaning": "king",
+              "audio": "53aeac5cf51f22027a239d319dd39e81dd79c5be76004e3cec895153b02a5769",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bdd-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-8bdd",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "dialect; language",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "话"
+              },
+              {
+                "value": "huà",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hua4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "话",
+              "pinyin": "huà",
+              "meaning": "dialect; language",
+              "audio": "33ceb95c6ba510244af6ba5ffa4a83262c9d8ed37a197c27cef3d110df207fb7",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "33ceb95c6ba510244af6ba5ffa4a83262c9d8ed37a197c27cef3d110df207fb7"
+            ],
+            "transcript": [
+              {
+                "text": "话",
+                "pinyin": "huà",
+                "meaning": "dialect; language",
+                "audio": "33ceb95c6ba510244af6ba5ffa4a83262c9d8ed37a197c27cef3d110df207fb7",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8BDD",
+      "character": "话",
+      "lessonIds": [
+        "LESSON-C-8BDD"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8bdd-word",
+        "EX-CHAR-char-8bdd-recognize",
+        "EX-CHAR-char-8bdd-write",
+        "EX-CHAR-char-8bdd-familiar",
+        "EX-CHAR-char-8bdd-recall"
+      ]
+    },
+    "audio": {
+      "33ceb95c6ba510244af6ba5ffa4a83262c9d8ed37a197c27cef3d110df207fb7": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-787d49337fbeb72d64747bbf91cc30e8c52907deb65d6001e7a8e56e35edf147.mp3",
+          "sha256": "787d49337fbeb72d64747bbf91cc30e8c52907deb65d6001e7a8e56e35edf147",
+          "byteLength": 9261,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "787d49337fbeb72d64747bbf91cc30e8c52907deb65d6001e7a8e56e35edf147",
+            "text": "话",
+            "words": [
+              {
+                "text": "话",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-5110d17929fa2f2973b5a4a47ec3ed1ae3dbdceef2b153d53159ec6671452fb8.mp3",
+          "sha256": "5110d17929fa2f2973b5a4a47ec3ed1ae3dbdceef2b153d53159ec6671452fb8",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "5110d17929fa2f2973b5a4a47ec3ed1ae3dbdceef2b153d53159ec6671452fb8",
+            "text": "话",
+            "words": [
+              {
+                "text": "话",
+                "start": 0.27,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "eb568fd2b357df4d421af4ca99940704698c8f50d5301ab7cd8fff4536964cdb": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-36cde9078228fc0078472d3ebcbd51c94a64dc0192e8b21270a2fb327c7c45cc.mp3",
+          "sha256": "36cde9078228fc0078472d3ebcbd51c94a64dc0192e8b21270a2fb327c7c45cc",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "36cde9078228fc0078472d3ebcbd51c94a64dc0192e8b21270a2fb327c7c45cc",
+            "text": "的话",
+            "words": [
+              {
+                "text": "的话",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-57de4e563ec66538eda7ce5871af666c3dab5efc37f19e2028b33ab364871790.mp3",
+          "sha256": "57de4e563ec66538eda7ce5871af666c3dab5efc37f19e2028b33ab364871790",
+          "byteLength": 8685,
+          "qualityWarning": "too-fast",
+          "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+          "readAlong": {
+            "audioSha256": "57de4e563ec66538eda7ce5871af666c3dab5efc37f19e2028b33ab364871790",
+            "text": "的话",
+            "words": [
+              {
+                "text": "的话",
+                "start": 0.03,
+                "end": 0.27
+              }
+            ]
+          }
+        }
+      },
+      "3ba1fc1868eb0f6baa72a3ae7dd77faf9d16e0e1c2dfd711092f808b4bce7d81": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-4f29980109ce58b63541d208c91708df8a70e38d389f7678598a0c467d15e9d6.mp3",
+          "sha256": "4f29980109ce58b63541d208c91708df8a70e38d389f7678598a0c467d15e9d6",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "4f29980109ce58b63541d208c91708df8a70e38d389f7678598a0c467d15e9d6",
+            "text": "读",
+            "words": [
+              {
+                "text": "读",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-cae51dd4f7a85f9f60a204ef5f0a04e0c89b03fe3f06c63c5f8c8f5e6d4994c3.mp3",
+          "sha256": "cae51dd4f7a85f9f60a204ef5f0a04e0c89b03fe3f06c63c5f8c8f5e6d4994c3",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "cae51dd4f7a85f9f60a204ef5f0a04e0c89b03fe3f06c63c5f8c8f5e6d4994c3",
+            "text": "读",
+            "words": [
+              {
+                "text": "读",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "5d23ffde123645fdac6effa99b9edbbfe6f48f57e9942e3ad9b8f6390ebcffe5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/46992669e309851dcabd3dcce824ab36397d66f9af96be5c79c1d033d76611eb.mp3",
+          "sha256": "46992669e309851dcabd3dcce824ab36397d66f9af96be5c79c1d033d76611eb",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "46992669e309851dcabd3dcce824ab36397d66f9af96be5c79c1d033d76611eb",
+            "text": "请客",
+            "words": [
+              {
+                "text": "请客",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/36a4919bb8410353087dc691b3ecc3c21b2981e3ee6bb0bfd7350a41fbff506e.mp3",
+          "sha256": "36a4919bb8410353087dc691b3ecc3c21b2981e3ee6bb0bfd7350a41fbff506e",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "36a4919bb8410353087dc691b3ecc3c21b2981e3ee6bb0bfd7350a41fbff506e",
+            "text": "请客",
+            "words": [
+              {
+                "text": "请客",
+                "start": 0.27,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "53aeac5cf51f22027a239d319dd39e81dd79c5be76004e3cec895153b02a5769": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-0c5746c96885c363ff55efb1e9e953a03cddda39c1d318e75921a63396c8dd3d.mp3",
+          "sha256": "0c5746c96885c363ff55efb1e9e953a03cddda39c1d318e75921a63396c8dd3d",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "0c5746c96885c363ff55efb1e9e953a03cddda39c1d318e75921a63396c8dd3d",
+            "text": "国王",
+            "words": [
+              {
+                "text": "国王",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-c5c8bcfe0e02b3ac32e605afbf383117aafa549c6bac82f1b15afb8b9b74bd45.mp3",
+          "sha256": "c5c8bcfe0e02b3ac32e605afbf383117aafa549c6bac82f1b15afb8b9b74bd45",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "c5c8bcfe0e02b3ac32e605afbf383117aafa549c6bac82f1b15afb8b9b74bd45",
+            "text": "国王",
+            "words": [
+              {
+                "text": "国王",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

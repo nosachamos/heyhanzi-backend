@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1010",
+  "targetId": "W1010",
+  "steps": [
+    {
+      "id": "BANK-W1010-W1010",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1010-W1010",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "bank card",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "银行卡"
+            },
+            {
+              "value": "yínhángkǎ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yin2hang2ka3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "银行卡",
+            "pinyin": "yínhángkǎ",
+            "meaning": "bank card",
+            "singleWord": true,
+            "audio": "2f6f85b9836d1afb1c9e72d4426942d58d2b55c6b0e9670e0df96742eb694728"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2f6f85b9836d1afb1c9e72d4426942d58d2b55c6b0e9670e0df96742eb694728": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-853df61abca345a2a6080e5b47ae67952c300afc31b226bdb8b793e271504ccd.mp3",
+        "sha256": "853df61abca345a2a6080e5b47ae67952c300afc31b226bdb8b793e271504ccd",
+        "byteLength": 16749,
+        "readAlong": {
+          "audioSha256": "853df61abca345a2a6080e5b47ae67952c300afc31b226bdb8b793e271504ccd",
+          "text": "银行卡",
+          "words": [
+            {
+              "text": "银行卡",
+              "start": 0.21,
+              "end": 0.69
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-cd1415d0559e540ee74fa1598e43ebeeba4fb2accae6c04a51ca90660790759a.mp3",
+        "sha256": "cd1415d0559e540ee74fa1598e43ebeeba4fb2accae6c04a51ca90660790759a",
+        "byteLength": 17325,
+        "readAlong": {
+          "audioSha256": "cd1415d0559e540ee74fa1598e43ebeeba4fb2accae6c04a51ca90660790759a",
+          "text": "银行卡",
+          "words": [
+            {
+              "text": "银行卡",
+              "start": 0.27,
+              "end": 0.8099999999999999
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1010",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1010-W1010",
+      "question_ids": [
+        "BANK-W1010-W1010"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-20",
+    "stepId": "S-U3-20-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5361"
+    ],
+    "grammarLessonIds": []
+  }
+}

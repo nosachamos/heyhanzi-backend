@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1306",
+  "targetId": "W1306",
+  "steps": [
+    {
+      "id": "BANK-W1306-W1306",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1306-W1306",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "worker",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "工人"
+            },
+            {
+              "value": "gōngrén",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gong1ren2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "工人",
+            "pinyin": "gōngrén",
+            "meaning": "worker",
+            "singleWord": true,
+            "audio": "4a59bbec676d85cce6a66a4bbdf2f4ba8a354dcf052bd4ad2c85173d11d581bf"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "4a59bbec676d85cce6a66a4bbdf2f4ba8a354dcf052bd4ad2c85173d11d581bf": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5e4788cb2a3bb1abace55a4899db8fb312de336974867b2ed7497463d88ba414.mp3",
+        "sha256": "5e4788cb2a3bb1abace55a4899db8fb312de336974867b2ed7497463d88ba414",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "5e4788cb2a3bb1abace55a4899db8fb312de336974867b2ed7497463d88ba414",
+          "text": "工人",
+          "words": [
+            {
+              "text": "工人",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c8a468d70f08454d184827b0016e197aec8c0042fe6919c26df984c44175ece1.mp3",
+        "sha256": "c8a468d70f08454d184827b0016e197aec8c0042fe6919c26df984c44175ece1",
+        "byteLength": 16461,
+        "readAlong": {
+          "audioSha256": "c8a468d70f08454d184827b0016e197aec8c0042fe6919c26df984c44175ece1",
+          "text": "工人",
+          "words": [
+            {
+              "text": "工人",
+              "start": 0.27,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1306",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1306-W1306",
+      "question_ids": [
+        "BANK-W1306-W1306"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-22",
+    "stepId": "S-U4-22-words-r4-6",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5de5"
+    ],
+    "grammarLessonIds": []
+  }
+}

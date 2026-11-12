@@ -1,0 +1,687 @@
+{
+  "id": "EX-CHAR-char-8bba",
+  "revision": 2,
+  "unit": "U4-22",
+  "stage": "ST-HSK4",
+  "after": "S-U4-22-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "论",
+  "sourceBlockId": "mandarin-simplified-v1-char-8bba",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-8bba",
+        "text": "论",
+        "pinyin": "lùn",
+        "meaning": "opinion; view",
+        "characters": [
+          {
+            "id": "C-8BBA",
+            "text": "论"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d5b4bc4432b9329e9bd37cfc",
+        "text": "绿茶",
+        "pinyin": "lǜchá",
+        "meaning": "green tea; (slang) (of a girl) seemingly innocent and charming but actually calculating and manipulative; a girl who has these qualities",
+        "characters": [
+          {
+            "id": "C-7EFF",
+            "text": "绿"
+          },
+          {
+            "id": "C-8336",
+            "text": "茶"
+          }
+        ]
+      },
+      {
+        "id": "W0158",
+        "text": "每天",
+        "pinyin": "měitiān",
+        "meaning": "every day",
+        "characters": [
+          {
+            "id": "C-6BCF",
+            "text": "每"
+          },
+          {
+            "id": "C-5929",
+            "text": "天"
+          }
+        ]
+      },
+      {
+        "id": "W1104",
+        "text": "不论",
+        "pinyin": "bùlùn",
+        "meaning": "whatever; no matter what",
+        "characters": [
+          {
+            "id": "C-4E0D",
+            "text": "不"
+          },
+          {
+            "id": "C-8BBA",
+            "text": "论"
+          }
+        ]
+      },
+      {
+        "id": "W2096",
+        "text": "病情",
+        "pinyin": "bìngqíng",
+        "meaning": "state of an illness; patient's condition",
+        "characters": [
+          {
+            "id": "C-75C5",
+            "text": "病"
+          },
+          {
+            "id": "C-60C5",
+            "text": "情"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "5a3d85d40e084c2c199028fd462144d913212eb0a5988dbedd4e06c1b6f9e618",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8bba",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "论",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8bba-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1104",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "whatever; no matter what",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "不论"
+              },
+              {
+                "value": "bùlùn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu4lun4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "不论",
+              "pinyin": "bùlùn",
+              "meaning": "whatever; no matter what",
+              "audio": "f5b1f572be1eeba3e0336ce1203a8d075de4e411727a604cfcbaef5448676ffd",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bba-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-8bba",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "论",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-d5b4bc4432b9329e9bd37cfc",
+                "label": "green tea; (slang) (of a girl) seemingly innocent and charming but actually calculating and manipulative",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-8bba",
+                "label": "opinion; view",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W2096",
+                "label": "state of an illness; patient's condition",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bba-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "论",
+        "pinyin": "lùn",
+        "meaning": "opinion; view",
+        "source": "/stroke-data/8bba.json",
+        "reference": {
+          "character": "论",
+          "sha256": "d9cc37edc15f02dfa928f82fc122007811ed95e9540377e0b3a9d7c4331fd5f2",
+          "medians": [
+            [
+              [
+                259,
+                774
+              ],
+              [
+                351,
+                719
+              ],
+              [
+                381,
+                676
+              ]
+            ],
+            [
+              [
+                71,
+                429
+              ],
+              [
+                110,
+                423
+              ],
+              [
+                147,
+                428
+              ],
+              [
+                262,
+                474
+              ],
+              [
+                299,
+                471
+              ],
+              [
+                307,
+                462
+              ],
+              [
+                270,
+                150
+              ],
+              [
+                271,
+                133
+              ],
+              [
+                281,
+                115
+              ],
+              [
+                314,
+                124
+              ],
+              [
+                424,
+                219
+              ]
+            ],
+            [
+              [
+                587,
+                777
+              ],
+              [
+                604,
+                764
+              ],
+              [
+                624,
+                731
+              ],
+              [
+                563,
+                599
+              ],
+              [
+                457,
+                435
+              ],
+              [
+                412,
+                377
+              ],
+              [
+                359,
+                327
+              ]
+            ],
+            [
+              [
+                631,
+                653
+              ],
+              [
+                630,
+                639
+              ],
+              [
+                696,
+                560
+              ],
+              [
+                756,
+                492
+              ],
+              [
+                821,
+                432
+              ],
+              [
+                973,
+                396
+              ]
+            ],
+            [
+              [
+                703,
+                389
+              ],
+              [
+                716,
+                353
+              ],
+              [
+                568,
+                247
+              ],
+              [
+                558,
+                246
+              ],
+              [
+                554,
+                231
+              ]
+            ],
+            [
+              [
+                498,
+                374
+              ],
+              [
+                527,
+                337
+              ],
+              [
+                514,
+                182
+              ],
+              [
+                518,
+                112
+              ],
+              [
+                530,
+                73
+              ],
+              [
+                551,
+                54
+              ],
+              [
+                604,
+                35
+              ],
+              [
+                679,
+                31
+              ],
+              [
+                734,
+                38
+              ],
+              [
+                798,
+                60
+              ],
+              [
+                827,
+                86
+              ],
+              [
+                828,
+                215
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8bba-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0158",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "every day",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "每天"
+              },
+              {
+                "value": "měitiān",
+                "mode": "pinyin"
+              },
+              {
+                "value": "mei3tian1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "每天",
+              "pinyin": "měitiān",
+              "meaning": "every day",
+              "audio": "6d0c05b636043be560847df0485724868c7d6bad3d175420e6652c4fcf7273ae",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bba-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-8bba",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "opinion; view",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "论"
+              },
+              {
+                "value": "lùn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lun4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "论",
+              "pinyin": "lùn",
+              "meaning": "opinion; view",
+              "audio": "29d5cd73774489ccf3a554c8f04527a23d8bbb97eb8cf8b9462461e04e49f919",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "29d5cd73774489ccf3a554c8f04527a23d8bbb97eb8cf8b9462461e04e49f919"
+            ],
+            "transcript": [
+              {
+                "text": "论",
+                "pinyin": "lùn",
+                "meaning": "opinion; view",
+                "audio": "29d5cd73774489ccf3a554c8f04527a23d8bbb97eb8cf8b9462461e04e49f919",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8BBA",
+      "character": "论",
+      "lessonIds": [
+        "LESSON-C-8BBA"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8bba-word",
+        "EX-CHAR-char-8bba-recognize",
+        "EX-CHAR-char-8bba-write",
+        "EX-CHAR-char-8bba-familiar",
+        "EX-CHAR-char-8bba-recall"
+      ]
+    },
+    "audio": {
+      "29d5cd73774489ccf3a554c8f04527a23d8bbb97eb8cf8b9462461e04e49f919": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-94141b5680dfe9c996898b84e14deb56d369550524f7fc0b1c04a75658b7140b.mp3",
+          "sha256": "94141b5680dfe9c996898b84e14deb56d369550524f7fc0b1c04a75658b7140b",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "94141b5680dfe9c996898b84e14deb56d369550524f7fc0b1c04a75658b7140b",
+            "text": "论",
+            "words": [
+              {
+                "text": "论",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-10340155539369c669430c0cc7762840d6e75f1c9b4d774a3dc63ce5b2a98c37.mp3",
+          "sha256": "10340155539369c669430c0cc7762840d6e75f1c9b4d774a3dc63ce5b2a98c37",
+          "byteLength": 7533,
+          "readAlong": {
+            "audioSha256": "10340155539369c669430c0cc7762840d6e75f1c9b4d774a3dc63ce5b2a98c37",
+            "text": "论",
+            "words": [
+              {
+                "text": "论",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "ad10ca9a8742c6fe7e217a54210ae1f7592e6880cd0860b4c6cf069d93396694": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1cb4051eb9d1974819f3830ab692ff4539827c4e8f8a7b80d1d9be9c281ff846.mp3",
+          "sha256": "1cb4051eb9d1974819f3830ab692ff4539827c4e8f8a7b80d1d9be9c281ff846",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "1cb4051eb9d1974819f3830ab692ff4539827c4e8f8a7b80d1d9be9c281ff846",
+            "text": "绿茶",
+            "words": [
+              {
+                "text": "绿茶",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/cbd93b9a3231b57bfded8161de84651d05add876064ac1f4f1e59d28efd3e3ce.mp3",
+          "sha256": "cbd93b9a3231b57bfded8161de84651d05add876064ac1f4f1e59d28efd3e3ce",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "cbd93b9a3231b57bfded8161de84651d05add876064ac1f4f1e59d28efd3e3ce",
+            "text": "绿茶",
+            "words": [
+              {
+                "text": "绿茶",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "6d0c05b636043be560847df0485724868c7d6bad3d175420e6652c4fcf7273ae": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-ea05fa32549d5374536ceb905774a24bb8dc85e490500321789f31b070314439.mp3",
+          "sha256": "ea05fa32549d5374536ceb905774a24bb8dc85e490500321789f31b070314439",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "ea05fa32549d5374536ceb905774a24bb8dc85e490500321789f31b070314439",
+            "text": "每天",
+            "words": [
+              {
+                "text": "每天",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-629fe5eb7f7fa069810714bf73b91ac464f230961487641497b00dcd0d4a8069.mp3",
+          "sha256": "629fe5eb7f7fa069810714bf73b91ac464f230961487641497b00dcd0d4a8069",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "629fe5eb7f7fa069810714bf73b91ac464f230961487641497b00dcd0d4a8069",
+            "text": "每天",
+            "words": [
+              {
+                "text": "每天",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "f5b1f572be1eeba3e0336ce1203a8d075de4e411727a604cfcbaef5448676ffd": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-610039259606ea90ab7f091d5cd1b23128fc7869f0ecd33fdee1e69b4ea97373.mp3",
+          "sha256": "610039259606ea90ab7f091d5cd1b23128fc7869f0ecd33fdee1e69b4ea97373",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "610039259606ea90ab7f091d5cd1b23128fc7869f0ecd33fdee1e69b4ea97373",
+            "text": "不论",
+            "words": [
+              {
+                "text": "不论",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f43e188b91f25fe5eb4b95cfcfc71684259b5bad4e2d0c513ecc48c5844da43e.mp3",
+          "sha256": "f43e188b91f25fe5eb4b95cfcfc71684259b5bad4e2d0c513ecc48c5844da43e",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "f43e188b91f25fe5eb4b95cfcfc71684259b5bad4e2d0c513ecc48c5844da43e",
+            "text": "不论",
+            "words": [
+              {
+                "text": "不论",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "a13a019ba83b1764a3ca8fa0f1b1db71143f4c91abacb9cabcf3d39bbd9a0225": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-d935326ea7f3da96bcc55e5810e54c4e006913480cf30aed7a75024e8df856bc.mp3",
+          "sha256": "d935326ea7f3da96bcc55e5810e54c4e006913480cf30aed7a75024e8df856bc",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "d935326ea7f3da96bcc55e5810e54c4e006913480cf30aed7a75024e8df856bc",
+            "text": "病情",
+            "words": [
+              {
+                "text": "病情",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f0a34d5f9f407f2813858f06d368b4647af32987257609e22e8a88d2c3bbe47e.mp3",
+          "sha256": "f0a34d5f9f407f2813858f06d368b4647af32987257609e22e8a88d2c3bbe47e",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "f0a34d5f9f407f2813858f06d368b4647af32987257609e22e8a88d2c3bbe47e",
+            "text": "病情",
+            "words": [
+              {
+                "text": "病情",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

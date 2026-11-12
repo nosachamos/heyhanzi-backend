@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2002",
+  "targetId": "W2002",
+  "steps": [
+    {
+      "id": "BANK-W2002-W2002",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2002-W2002",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to earn; to make a profit",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "赚"
+            },
+            {
+              "value": "zhuàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhuan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "赚",
+            "pinyin": "zhuàn",
+            "meaning": "to earn; to make a profit",
+            "singleWord": true,
+            "audio": "139cec381d8d488ab7469f3c12bc4194c4b0ff9d56d6fd8a1aeb8642836c2b18"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "139cec381d8d488ab7469f3c12bc4194c4b0ff9d56d6fd8a1aeb8642836c2b18": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-b598142af13f1577f10c6c74dc38b2aeaf4b4d81dafe8ad37244c900c70110f0.mp3",
+        "sha256": "b598142af13f1577f10c6c74dc38b2aeaf4b4d81dafe8ad37244c900c70110f0",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "b598142af13f1577f10c6c74dc38b2aeaf4b4d81dafe8ad37244c900c70110f0",
+          "text": "赚",
+          "words": [
+            {
+              "text": "赚",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-57d9b9b00b524dfede98139c08ce2ca9999306fe248183b214a9d0c3fa94e297.mp3",
+        "sha256": "57d9b9b00b524dfede98139c08ce2ca9999306fe248183b214a9d0c3fa94e297",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "57d9b9b00b524dfede98139c08ce2ca9999306fe248183b214a9d0c3fa94e297",
+          "text": "赚",
+          "words": [
+            {
+              "text": "赚",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2002",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2002-W2002",
+      "question_ids": [
+        "BANK-W2002-W2002"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-29",
+    "stepId": "S-U4-29-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8d5a"
+    ],
+    "grammarLessonIds": []
+  }
+}

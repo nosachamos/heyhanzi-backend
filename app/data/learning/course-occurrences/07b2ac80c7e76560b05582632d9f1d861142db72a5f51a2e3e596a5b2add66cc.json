@@ -1,0 +1,591 @@
+{
+  "id": "EX-GRAM-G-location-existence",
+  "revision": 6,
+  "unit": "U06",
+  "stage": "ST-HSK1",
+  "after": "S-U06-grammar",
+  "activity": "ACT-GRAM",
+  "title": "Distinguish where it is from what is there",
+  "optional": false,
+  "partCount": 5,
+  "partTitles": [
+    "Distinguish where it is from what is there",
+    "Understand the pattern",
+    "Use the pattern",
+    "Understand the pattern",
+    "Use the pattern"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "W0034",
+        "text": "书",
+        "pinyin": "shū",
+        "meaning": "book",
+        "characters": [
+          {
+            "id": "C-4E66",
+            "text": "书"
+          }
+        ]
+      },
+      {
+        "id": "W0063",
+        "text": "在",
+        "pinyin": "zài",
+        "meaning": "at; in",
+        "characters": [
+          {
+            "id": "C-5728",
+            "text": "在"
+          }
+        ]
+      },
+      {
+        "id": "W0072",
+        "text": "学校",
+        "pinyin": "xuéxiào",
+        "meaning": "school",
+        "characters": [
+          {
+            "id": "C-5B66",
+            "text": "学"
+          },
+          {
+            "id": "C-6821",
+            "text": "校"
+          }
+        ]
+      },
+      {
+        "id": "W0033",
+        "text": "有",
+        "pinyin": "yǒu",
+        "meaning": "have; there is/are",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          }
+        ]
+      },
+      {
+        "id": "W0070",
+        "text": "桌子",
+        "pinyin": "zhuōzi",
+        "meaning": "table; desk",
+        "characters": [
+          {
+            "id": "C-684C",
+            "text": "桌"
+          },
+          {
+            "id": "C-5B50",
+            "text": "子"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [
+        "G-have",
+        "G-negation-meiyou"
+      ],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "coverage": [],
+  "sourceStepId": "S-U06-grammar",
+  "fingerprint": "424db14f0b3556d8872557f17aff75a1966d702db11d85ee556abe4e3b9aab7a",
+  "definition": {
+    "id": "ACT-GRAM",
+    "revision": 6,
+    "title": "Distinguish where it is from what is there",
+    "subtitle": "Learn, understand, and use a Mandarin pattern.",
+    "context": "Use the introduced pattern in a bounded sentence. Other wording may be valid Chinese; this task checks this pattern and these words.",
+    "steps": [
+      {
+        "id": "EX-GRAM-G-location-existence-teach",
+        "kind": "teach",
+        "title": "Distinguish where it is from what is there",
+        "blocks": [
+          {
+            "text": "Use known thing + 在 + place to locate it. Use place + 有 + thing to introduce what is present there.",
+            "examples": [
+              {
+                "text": "书在学校。",
+                "pinyin": "shū zài xuéxiào 。",
+                "meaning": "The book is at school.",
+                "audio": "895d623bbab25207e7430f35c8b9054e709b4f3e27b0fc3ba380100fb0412920"
+              },
+              {
+                "text": "学校有书。",
+                "pinyin": "xuéxiào yǒu shū 。",
+                "meaning": "There are books at the school.",
+                "audio": "507e1cdf96fe2120f7fde0f4288a75b2957fc6f6b617a4f822f9a05431169991"
+              }
+            ]
+          },
+          {
+            "title": "Words used in this pattern",
+            "examples": [
+              {
+                "text": "在",
+                "pinyin": "zài",
+                "meaning": "at; in",
+                "singleWord": true,
+                "audio": "f5ae41d4be6e4da1c32ae5d557f302a6c5690eb453575668509ac96b84f67291"
+              },
+              {
+                "text": "有",
+                "pinyin": "yǒu",
+                "meaning": "have; there is/are",
+                "singleWord": true,
+                "audio": "e05bdf8932363c5c3cef391f352fc9d20839a80952e08cb92fff972633062a8b"
+              },
+              {
+                "text": "桌子",
+                "pinyin": "zhuōzi",
+                "meaning": "table; desk",
+                "singleWord": true,
+                "audio": "220cb5bfcf2da1764fe2e5739fd88b9ce0c8280b798452205881b30fb0cc7078"
+              },
+              {
+                "text": "书",
+                "pinyin": "shū",
+                "meaning": "book",
+                "singleWord": true,
+                "audio": "d4a6c8ed7412bd44f50bcd45a2db6d86bde4d0e761235731defc150218253ab4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EX-GRAM-G-location-existence-facet-1-meaning",
+        "kind": "check",
+        "title": "Understand the pattern",
+        "questions": [
+          {
+            "id": "EX-GRAM-G-location-existence-facet-1-meaning",
+            "kind": "choice",
+            "prompt": "Choose the meaning of this sentence.",
+            "label": "Understand the pattern",
+            "display": {
+              "text": "书在学校。",
+              "pinyin": "shū zài xuéxiào 。",
+              "meaning": "The book is at school.",
+              "audio": "895d623bbab25207e7430f35c8b9054e709b4f3e27b0fc3ba380100fb0412920"
+            },
+            "resultDomain": "Grammar comprehension",
+            "choices": [
+              {
+                "id": "contrast",
+                "label": "The book is away from the school.",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "The book is at school. Use known thing + 在 + place to locate it. Use place + 有 + thing to introduce what is present there."
+              },
+              {
+                "id": "meaning",
+                "label": "The book is at school.",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "Use known thing + 在 + place to locate it. Use place + 有 + thing to introduce what is present there."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EX-GRAM-G-location-existence-facet-1-produce",
+        "kind": "check",
+        "title": "Use the pattern",
+        "questions": [
+          {
+            "id": "EX-GRAM-G-location-existence-facet-1-produce",
+            "kind": "text",
+            "prompt": "Write this meaning in Chinese using the pattern and words just introduced.",
+            "label": "Use the pattern",
+            "context": "The book is at school.",
+            "contextLanguage": "en",
+            "resultDomain": "Constrained grammar use",
+            "accepted": [
+              {
+                "value": "书在学校。",
+                "mode": "hanzi"
+              },
+              {
+                "value": "shū zài xuéxiào 。",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shu1zai4xue2xiao4",
+                "mode": "pinyin"
+              }
+            ],
+            "rule": "sentence",
+            "pinyin": true,
+            "model": {
+              "text": "书在学校。",
+              "pinyin": "shū zài xuéxiào 。",
+              "meaning": "The book is at school.",
+              "audio": "895d623bbab25207e7430f35c8b9054e709b4f3e27b0fc3ba380100fb0412920"
+            },
+            "hint": "Use known thing + 在 + place to locate it. Use place + 有 + thing to introduce what is present there."
+          }
+        ]
+      },
+      {
+        "id": "EX-GRAM-G-location-existence-facet-2-meaning",
+        "kind": "check",
+        "title": "Understand the pattern",
+        "questions": [
+          {
+            "id": "EX-GRAM-G-location-existence-facet-2-meaning",
+            "kind": "choice",
+            "prompt": "Choose the meaning of this sentence.",
+            "label": "Understand the pattern",
+            "display": {
+              "text": "学校有书。",
+              "pinyin": "xuéxiào yǒu shū 。",
+              "meaning": "There are books at the school.",
+              "audio": "507e1cdf96fe2120f7fde0f4288a75b2957fc6f6b617a4f822f9a05431169991"
+            },
+            "resultDomain": "Grammar comprehension",
+            "choices": [
+              {
+                "id": "contrast",
+                "label": "There are no books at the school.",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "There are books at the school. Use known thing + 在 + place to locate it. Use place + 有 + thing to introduce what is present there."
+              },
+              {
+                "id": "meaning",
+                "label": "There are books at the school.",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "Use known thing + 在 + place to locate it. Use place + 有 + thing to introduce what is present there."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EX-GRAM-G-location-existence-facet-2-produce",
+        "kind": "check",
+        "title": "Use the pattern",
+        "questions": [
+          {
+            "id": "EX-GRAM-G-location-existence-facet-2-produce",
+            "kind": "text",
+            "prompt": "Write this meaning in Chinese using the pattern and words just introduced.",
+            "label": "Use the pattern",
+            "context": "There are books at the school.",
+            "contextLanguage": "en",
+            "resultDomain": "Constrained grammar use",
+            "accepted": [
+              {
+                "value": "学校有书。",
+                "mode": "hanzi"
+              },
+              {
+                "value": "xuéxiào yǒu shū 。",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xue2xiao4you3shu1",
+                "mode": "pinyin"
+              }
+            ],
+            "rule": "sentence",
+            "pinyin": true,
+            "model": {
+              "text": "学校有书。",
+              "pinyin": "xuéxiào yǒu shū 。",
+              "meaning": "There are books at the school.",
+              "audio": "507e1cdf96fe2120f7fde0f4288a75b2957fc6f6b617a4f822f9a05431169991"
+            },
+            "hint": "Use known thing + 在 + place to locate it. Use place + 有 + thing to introduce what is present there."
+          }
+        ]
+      }
+    ],
+    "summary": "You practiced this grammar pattern. This result does not grant mastery of other lessons.",
+    "instanceId": "EX-GRAM-G-location-existence",
+    "setActivity": {
+      "schema": "course-practice-v1",
+      "partIds": [
+        "EX-GRAM-G-location-existence-teach",
+        "EX-GRAM-G-location-existence-facet-1-meaning",
+        "EX-GRAM-G-location-existence-facet-1-produce",
+        "EX-GRAM-G-location-existence-facet-2-meaning",
+        "EX-GRAM-G-location-existence-facet-2-produce"
+      ],
+      "targets": [
+        "G-location-existence"
+      ],
+      "completion": "checked-practice"
+    },
+    "audio": {
+      "895d623bbab25207e7430f35c8b9054e709b4f3e27b0fc3ba380100fb0412920": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-2663dffa788d95b5bbf90d7fafa0036bcd16396161b50ad1356946a2169dd79d.mp3",
+          "sha256": "2663dffa788d95b5bbf90d7fafa0036bcd16396161b50ad1356946a2169dd79d",
+          "byteLength": 19629,
+          "readAlong": {
+            "audioSha256": "2663dffa788d95b5bbf90d7fafa0036bcd16396161b50ad1356946a2169dd79d",
+            "text": "书在学校。",
+            "words": [
+              {
+                "text": "书",
+                "start": 0.15,
+                "end": 0.21
+              },
+              {
+                "text": "在",
+                "start": 0.6299999999999999,
+                "end": 0.69
+              },
+              {
+                "text": "学校",
+                "start": 0.9299999999999999,
+                "end": 1.17
+              },
+              {
+                "text": "。"
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-cc7c530d35f1f73c860bdd51b47816e5c33c020cd49ab6d4ff5bb7e10e057824.mp3",
+          "sha256": "cc7c530d35f1f73c860bdd51b47816e5c33c020cd49ab6d4ff5bb7e10e057824",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "cc7c530d35f1f73c860bdd51b47816e5c33c020cd49ab6d4ff5bb7e10e057824",
+            "text": "书在学校。",
+            "words": [
+              {
+                "text": "书",
+                "start": 0.09,
+                "end": 0.15
+              },
+              {
+                "text": "在",
+                "start": 0.39,
+                "end": 0.44999999999999996
+              },
+              {
+                "text": "学校",
+                "start": 0.57,
+                "end": 0.75
+              },
+              {
+                "text": "。"
+              }
+            ]
+          }
+        }
+      },
+      "507e1cdf96fe2120f7fde0f4288a75b2957fc6f6b617a4f822f9a05431169991": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-c2cabfe09af35291d0b639d8dbcdb06b9e024463fe006dc6ea0148f38042a291.mp3",
+          "sha256": "c2cabfe09af35291d0b639d8dbcdb06b9e024463fe006dc6ea0148f38042a291",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "c2cabfe09af35291d0b639d8dbcdb06b9e024463fe006dc6ea0148f38042a291",
+            "text": "学校有书。",
+            "words": [
+              {
+                "text": "学校",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              },
+              {
+                "text": "有",
+                "start": 0.44999999999999996,
+                "end": 0.51
+              },
+              {
+                "text": "书",
+                "start": 0.6299999999999999,
+                "end": 0.69
+              },
+              {
+                "text": "。"
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-7b975530cc55d3b1f305ed03aacf54156b924f425a3c806d2eeef9eda6ef9841.mp3",
+          "sha256": "7b975530cc55d3b1f305ed03aacf54156b924f425a3c806d2eeef9eda6ef9841",
+          "byteLength": 23949,
+          "readAlong": {
+            "audioSha256": "7b975530cc55d3b1f305ed03aacf54156b924f425a3c806d2eeef9eda6ef9841",
+            "text": "学校有书。",
+            "words": [
+              {
+                "text": "学校",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              },
+              {
+                "text": "有",
+                "start": 0.9299999999999999,
+                "end": 0.99
+              },
+              {
+                "text": "书",
+                "start": 1.23,
+                "end": 1.2899999999999998
+              },
+              {
+                "text": "。"
+              }
+            ]
+          }
+        }
+      },
+      "f5ae41d4be6e4da1c32ae5d557f302a6c5690eb453575668509ac96b84f67291": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-40fe72238deef93dad2cc06e27d85993a1e6c956e7f058e73f0791bb1a0156fc.mp3",
+          "sha256": "40fe72238deef93dad2cc06e27d85993a1e6c956e7f058e73f0791bb1a0156fc",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "40fe72238deef93dad2cc06e27d85993a1e6c956e7f058e73f0791bb1a0156fc",
+            "text": "在",
+            "words": [
+              {
+                "text": "在",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-86477c6ab8672069b7af695f63ecb62edc926d052ef0ed09f596a5b5d7ff305b.mp3",
+          "sha256": "86477c6ab8672069b7af695f63ecb62edc926d052ef0ed09f596a5b5d7ff305b",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "86477c6ab8672069b7af695f63ecb62edc926d052ef0ed09f596a5b5d7ff305b",
+            "text": "在",
+            "words": [
+              {
+                "text": "在",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "e05bdf8932363c5c3cef391f352fc9d20839a80952e08cb92fff972633062a8b": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-006758fa30a194d8f67506ae5e63dff8d045cfc05ad0d17642833d19d7dc39fd.mp3",
+          "sha256": "006758fa30a194d8f67506ae5e63dff8d045cfc05ad0d17642833d19d7dc39fd",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "006758fa30a194d8f67506ae5e63dff8d045cfc05ad0d17642833d19d7dc39fd",
+            "text": "有",
+            "words": [
+              {
+                "text": "有",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-553fab5233f8379d701937dad0b7be93570ae6dbbc092eb9e2a1596c1a06ea6c.mp3",
+          "sha256": "553fab5233f8379d701937dad0b7be93570ae6dbbc092eb9e2a1596c1a06ea6c",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "553fab5233f8379d701937dad0b7be93570ae6dbbc092eb9e2a1596c1a06ea6c",
+            "text": "有",
+            "words": [
+              {
+                "text": "有",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "220cb5bfcf2da1764fe2e5739fd88b9ce0c8280b798452205881b30fb0cc7078": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f277c9da9ad35d7aba24959990ee08d4c9b45647a538315edd146e945d11a655.mp3",
+          "sha256": "f277c9da9ad35d7aba24959990ee08d4c9b45647a538315edd146e945d11a655",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "f277c9da9ad35d7aba24959990ee08d4c9b45647a538315edd146e945d11a655",
+            "text": "桌子",
+            "words": [
+              {
+                "text": "桌子",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-8f8ecf9c0d294d9f58931370435ed08970be0774b8a2551df23ab9a3960446b9.mp3",
+          "sha256": "8f8ecf9c0d294d9f58931370435ed08970be0774b8a2551df23ab9a3960446b9",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "8f8ecf9c0d294d9f58931370435ed08970be0774b8a2551df23ab9a3960446b9",
+            "text": "桌子",
+            "words": [
+              {
+                "text": "桌子",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "d4a6c8ed7412bd44f50bcd45a2db6d86bde4d0e761235731defc150218253ab4": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-af6424d2065762cf6ac5328e54f884bfa9b7bfa87d86456fbc5840f354d09a0a.mp3",
+          "sha256": "af6424d2065762cf6ac5328e54f884bfa9b7bfa87d86456fbc5840f354d09a0a",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "af6424d2065762cf6ac5328e54f884bfa9b7bfa87d86456fbc5840f354d09a0a",
+            "text": "书",
+            "words": [
+              {
+                "text": "书",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b26b78b93bf0fe4bdf92cf14ca6eca86f5b4b8552a2529d5f5f16681c02de5be.mp3",
+          "sha256": "b26b78b93bf0fe4bdf92cf14ca6eca86f5b4b8552a2529d5f5f16681c02de5be",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "b26b78b93bf0fe4bdf92cf14ca6eca86f5b4b8552a2529d5f5f16681c02de5be",
+            "text": "书",
+            "words": [
+              {
+                "text": "书",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0402",
+  "targetId": "W0402",
+  "steps": [
+    {
+      "id": "BANK-W0402-W0402",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0402-W0402",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "dog",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "狗"
+            },
+            {
+              "value": "gǒu",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gou3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "狗",
+            "pinyin": "gǒu",
+            "meaning": "dog",
+            "singleWord": true,
+            "audio": "9bcc02d61c83f440ca042ee1b5b3f91e5ea360ea7986519241ebdcf62d1c9f41"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "9bcc02d61c83f440ca042ee1b5b3f91e5ea360ea7986519241ebdcf62d1c9f41": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a83e2415b741ba2d62f511041f34f489aa90d696c4a67ebea012d5df341e6f60.mp3",
+        "sha256": "a83e2415b741ba2d62f511041f34f489aa90d696c4a67ebea012d5df341e6f60",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "a83e2415b741ba2d62f511041f34f489aa90d696c4a67ebea012d5df341e6f60",
+          "text": "狗",
+          "words": [
+            {
+              "text": "狗",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/4b1bc0c65410d73dd90c1a62d4b7550186789caf101ff298ed61aac40f1e6292.mp3",
+        "sha256": "4b1bc0c65410d73dd90c1a62d4b7550186789caf101ff298ed61aac40f1e6292",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "4b1bc0c65410d73dd90c1a62d4b7550186789caf101ff298ed61aac40f1e6292",
+          "text": "狗",
+          "words": [
+            {
+              "text": "狗",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0402",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0402-W0402",
+      "question_ids": [
+        "BANK-W0402-W0402"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U04",
+    "stepId": "S-U04-words-r4-14",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-72d7"
+    ],
+    "grammarLessonIds": []
+  }
+}

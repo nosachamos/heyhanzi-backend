@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2518",
+  "targetId": "W2518",
+  "steps": [
+    {
+      "id": "BANK-W2518-W2518",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2518-W2518",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "expense; cost",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "花费"
+            },
+            {
+              "value": "huāfèi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hua1fei4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "花费",
+            "pinyin": "huāfèi",
+            "meaning": "expense; cost",
+            "singleWord": true,
+            "audio": "42c12616c55a409d21157568302048a2362da8a612be2e3e28c97644150e05ad"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "42c12616c55a409d21157568302048a2362da8a612be2e3e28c97644150e05ad": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-fcb5bc316ccfef10b3371c32ea052f8277c05b17ead114ce0249b2600660b424.mp3",
+        "sha256": "fcb5bc316ccfef10b3371c32ea052f8277c05b17ead114ce0249b2600660b424",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "fcb5bc316ccfef10b3371c32ea052f8277c05b17ead114ce0249b2600660b424",
+          "text": "花费",
+          "words": [
+            {
+              "text": "花费",
+              "start": 0.16,
+              "end": 0.64
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-984922dab4776df9be4be2f63631428d7b398b62f841eae31b151aa3108ad97c.mp3",
+        "sha256": "984922dab4776df9be4be2f63631428d7b398b62f841eae31b151aa3108ad97c",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "984922dab4776df9be4be2f63631428d7b398b62f841eae31b151aa3108ad97c",
+          "text": "花费",
+          "words": [
+            {
+              "text": "花费",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2518",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2518-W2518",
+      "question_ids": [
+        "BANK-W2518-W2518"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-10-P01",
+    "stepId": "S-U5-10-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8d39"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1167",
+  "targetId": "W1167",
+  "steps": [
+    {
+      "id": "BANK-W1167-W1167",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1167-W1167",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "answer; solution",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "答案"
+            },
+            {
+              "value": "dá'àn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "da2an4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "答案",
+            "pinyin": "dá'àn",
+            "meaning": "answer; solution",
+            "singleWord": true,
+            "audio": "5be672fc23c9ead087f6f3c7a56a5245aa8eb2e923dfcef7e2b4b9516f941c3c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5be672fc23c9ead087f6f3c7a56a5245aa8eb2e923dfcef7e2b4b9516f941c3c": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-c99978658919c7273d7e89b68d8f2ed95a9bdf6abbd1109f1a9b9798be88fe16.mp3",
+        "sha256": "c99978658919c7273d7e89b68d8f2ed95a9bdf6abbd1109f1a9b9798be88fe16",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "c99978658919c7273d7e89b68d8f2ed95a9bdf6abbd1109f1a9b9798be88fe16",
+          "text": "答案",
+          "words": [
+            {
+              "text": "答案",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d5e817cf1424d8a4f8d4e66f1eb3abd14bb0df83fa0b291dd8d393f01cc608e6.mp3",
+        "sha256": "d5e817cf1424d8a4f8d4e66f1eb3abd14bb0df83fa0b291dd8d393f01cc608e6",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "d5e817cf1424d8a4f8d4e66f1eb3abd14bb0df83fa0b291dd8d393f01cc608e6",
+          "text": "答案",
+          "words": [
+            {
+              "text": "答案",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1167",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1167-W1167",
+      "question_ids": [
+        "BANK-W1167-W1167"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-28",
+    "stepId": "S-U4-28-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6848"
+    ],
+    "grammarLessonIds": []
+  }
+}

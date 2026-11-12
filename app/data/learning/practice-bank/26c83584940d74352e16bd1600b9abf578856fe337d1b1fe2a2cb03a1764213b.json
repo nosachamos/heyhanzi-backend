@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2181",
+  "targetId": "W2181",
+  "steps": [
+    {
+      "id": "BANK-W2181-W2181",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2181-W2181",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "wing",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "翅膀"
+            },
+            {
+              "value": "chìbǎng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chi4bang3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "翅膀",
+            "pinyin": "chìbǎng",
+            "meaning": "wing",
+            "singleWord": true,
+            "audio": "bd06c2e24961e58d169a4a645e937b894f07aae32f4b141c5afff75ccb4b49cb"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "bd06c2e24961e58d169a4a645e937b894f07aae32f4b141c5afff75ccb4b49cb": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a1593495bd65b8dc322423be8692c789fe851f77ff9af785c559800e3700b8cd.mp3",
+        "sha256": "a1593495bd65b8dc322423be8692c789fe851f77ff9af785c559800e3700b8cd",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "a1593495bd65b8dc322423be8692c789fe851f77ff9af785c559800e3700b8cd",
+          "text": "翅膀",
+          "words": [
+            {
+              "text": "翅膀",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/8e39e032bca9dee7048ff26a20e91cc476ff8c9039ca0d098f69c185987d7991.mp3",
+        "sha256": "8e39e032bca9dee7048ff26a20e91cc476ff8c9039ca0d098f69c185987d7991",
+        "byteLength": 8109,
+        "readAlong": {
+          "audioSha256": "8e39e032bca9dee7048ff26a20e91cc476ff8c9039ca0d098f69c185987d7991",
+          "text": "翅膀",
+          "words": [
+            {
+              "text": "翅膀",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2181",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2181-W2181",
+      "question_ids": [
+        "BANK-W2181-W2181"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-28",
+    "stepId": "S-U5-28-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8180"
+    ],
+    "grammarLessonIds": []
+  }
+}

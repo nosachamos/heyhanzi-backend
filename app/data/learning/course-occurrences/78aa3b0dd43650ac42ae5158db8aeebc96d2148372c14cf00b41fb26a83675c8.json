@@ -1,0 +1,629 @@
+{
+  "id": "EX-CHAR-char-5409",
+  "revision": 2,
+  "unit": "U6-24-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-24-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "吉",
+  "sourceBlockId": "mandarin-simplified-v1-char-5409",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-53d1",
+        "text": "发",
+        "pinyin": "fā",
+        "meaning": "to send out; to show (one's feeling)",
+        "characters": [
+          {
+            "id": "C-53D1",
+            "text": "发"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-5409",
+        "text": "吉",
+        "pinyin": "jí",
+        "meaning": "lucky; giga- (meaning billion or 10^9)",
+        "characters": [
+          {
+            "id": "C-5409",
+            "text": "吉"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-77a332e86eee67da73e2a3de",
+        "text": "吉他",
+        "pinyin": "jí tā",
+        "meaning": "(loanword) guitar",
+        "characters": [
+          {
+            "id": "C-5409",
+            "text": "吉"
+          },
+          {
+            "id": "C-4ED6",
+            "text": "他"
+          }
+        ]
+      },
+      {
+        "id": "W2266",
+        "text": "单元",
+        "pinyin": "dānyuán",
+        "meaning": "unit; element",
+        "characters": [
+          {
+            "id": "C-5355",
+            "text": "单"
+          },
+          {
+            "id": "C-5143",
+            "text": "元"
+          }
+        ]
+      },
+      {
+        "id": "W2790",
+        "text": "秘书",
+        "pinyin": "mìshū",
+        "meaning": "secretary",
+        "characters": [
+          {
+            "id": "C-79D8",
+            "text": "秘"
+          },
+          {
+            "id": "C-4E66",
+            "text": "书"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "5a5995971c8d6ad799b318d35d7c6ad5532f457962cc6d467385433d4f9464d5",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5409",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "吉",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5409-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-77a332e86eee67da73e2a3de",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "(loanword) guitar",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "吉他"
+              },
+              {
+                "value": "jí tā",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ji2ta1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "吉他",
+              "pinyin": "jí tā",
+              "meaning": "(loanword) guitar",
+              "audio": "f9c0d9af54c579b2503cc0255e367297d31ea5ad2da2dbd5bb6ecea7f0ff6561",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5409-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5409",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "吉",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W2790",
+                "label": "secretary",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5409",
+                "label": "lucky; giga- (meaning billion or 10^9)",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-PRIMARY-char-53d1",
+                "label": "to send out; to show (one's feeling)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5409-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "吉",
+        "pinyin": "jí",
+        "meaning": "lucky; giga- (meaning billion or 10^9)",
+        "source": "/stroke-data/5409.json",
+        "reference": {
+          "character": "吉",
+          "sha256": "692e87d5ee629e1dc4361c36ad8b23c48f8ee59598c50e0e295d56d237775826",
+          "medians": [
+            [
+              [
+                155,
+                554
+              ],
+              [
+                212,
+                544
+              ],
+              [
+                410,
+                576
+              ],
+              [
+                793,
+                615
+              ],
+              [
+                879,
+                593
+              ]
+            ],
+            [
+              [
+                456,
+                812
+              ],
+              [
+                509,
+                770
+              ],
+              [
+                501,
+                441
+              ],
+              [
+                483,
+                417
+              ]
+            ],
+            [
+              [
+                290,
+                376
+              ],
+              [
+                345,
+                369
+              ],
+              [
+                651,
+                408
+              ],
+              [
+                684,
+                407
+              ],
+              [
+                740,
+                391
+              ]
+            ],
+            [
+              [
+                278,
+                247
+              ],
+              [
+                313,
+                217
+              ],
+              [
+                360,
+                -24
+              ]
+            ],
+            [
+              [
+                348,
+                211
+              ],
+              [
+                370,
+                227
+              ],
+              [
+                535,
+                248
+              ],
+              [
+                624,
+                269
+              ],
+              [
+                664,
+                267
+              ],
+              [
+                702,
+                229
+              ],
+              [
+                663,
+                116
+              ],
+              [
+                634,
+                95
+              ]
+            ],
+            [
+              [
+                377,
+                51
+              ],
+              [
+                395,
+                39
+              ],
+              [
+                622,
+                65
+              ],
+              [
+                679,
+                64
+              ],
+              [
+                704,
+                53
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5409-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2266",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "unit; element",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "单元"
+              },
+              {
+                "value": "dānyuán",
+                "mode": "pinyin"
+              },
+              {
+                "value": "dan1yuan2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "单元",
+              "pinyin": "dānyuán",
+              "meaning": "unit; element",
+              "audio": "dcbc1faf06d566e57782294a8ce435c08c0ced158d217fa218d0fdb918438b84",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5409-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5409",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "lucky; giga- (meaning billion or 10^9)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "吉"
+              },
+              {
+                "value": "jí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ji2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "吉",
+              "pinyin": "jí",
+              "meaning": "lucky; giga- (meaning billion or 10^9)",
+              "audio": "38deaffa943bf1e60251b5fb6204f6cd0208a3cd8c5804f1f6fccf231953623f",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "38deaffa943bf1e60251b5fb6204f6cd0208a3cd8c5804f1f6fccf231953623f"
+            ],
+            "transcript": [
+              {
+                "text": "吉",
+                "pinyin": "jí",
+                "meaning": "lucky; giga- (meaning billion or 10^9)",
+                "audio": "38deaffa943bf1e60251b5fb6204f6cd0208a3cd8c5804f1f6fccf231953623f",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5409",
+      "character": "吉",
+      "lessonIds": [
+        "LESSON-C-5409"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5409-word",
+        "EX-CHAR-char-5409-recognize",
+        "EX-CHAR-char-5409-write",
+        "EX-CHAR-char-5409-familiar",
+        "EX-CHAR-char-5409-recall"
+      ]
+    },
+    "audio": {
+      "405f4902384dbaaee37adfeb5ceb11fb97bbbb7e34d0544baa4097a4fda89a85": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-8b00dfffd010cb369553f8ebd35d383c1f5ecc416e6eb2497a0782d9bf0b9b09.mp3",
+          "sha256": "8b00dfffd010cb369553f8ebd35d383c1f5ecc416e6eb2497a0782d9bf0b9b09",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "8b00dfffd010cb369553f8ebd35d383c1f5ecc416e6eb2497a0782d9bf0b9b09",
+            "text": "发",
+            "words": [
+              {
+                "text": "发",
+                "start": 0.16,
+                "end": 0.24
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-34c3023e90494acd4a847b68f5e23ca69d857c88b7b2cbdb4f345785de6a4a10.mp3",
+          "sha256": "34c3023e90494acd4a847b68f5e23ca69d857c88b7b2cbdb4f345785de6a4a10",
+          "byteLength": 8685,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "34c3023e90494acd4a847b68f5e23ca69d857c88b7b2cbdb4f345785de6a4a10",
+            "text": "发",
+            "words": [
+              {
+                "text": "发",
+                "start": 0.12,
+                "end": 0.44
+              }
+            ]
+          }
+        }
+      },
+      "38deaffa943bf1e60251b5fb6204f6cd0208a3cd8c5804f1f6fccf231953623f": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-c466bdae34a738dc4b001ae1d79cfc7619e4d3f6fae75fe0b355f4893e30baa9.mp3",
+          "sha256": "c466bdae34a738dc4b001ae1d79cfc7619e4d3f6fae75fe0b355f4893e30baa9",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "c466bdae34a738dc4b001ae1d79cfc7619e4d3f6fae75fe0b355f4893e30baa9",
+            "text": "吉",
+            "words": [
+              {
+                "text": "吉",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-87895756e3a3ecb83410d5586b3192d800fa51f3c03a73ec32112934cdcc7ea1.mp3",
+          "sha256": "87895756e3a3ecb83410d5586b3192d800fa51f3c03a73ec32112934cdcc7ea1",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "87895756e3a3ecb83410d5586b3192d800fa51f3c03a73ec32112934cdcc7ea1",
+            "text": "吉",
+            "words": [
+              {
+                "text": "吉",
+                "start": 0.22,
+                "end": 0.3
+              }
+            ]
+          }
+        }
+      },
+      "f9c0d9af54c579b2503cc0255e367297d31ea5ad2da2dbd5bb6ecea7f0ff6561": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2eac4740ac89a555154b8a2cad6314fee293cd2e6e41de14e9d232e7cfe33467.mp3",
+          "sha256": "2eac4740ac89a555154b8a2cad6314fee293cd2e6e41de14e9d232e7cfe33467",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "2eac4740ac89a555154b8a2cad6314fee293cd2e6e41de14e9d232e7cfe33467",
+            "text": "吉他",
+            "words": [
+              {
+                "text": "吉他",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1d2a05cd96e2105563242b598b6ba36a614789b51f6a0ef833d912fb5d31a757.mp3",
+          "sha256": "1d2a05cd96e2105563242b598b6ba36a614789b51f6a0ef833d912fb5d31a757",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "1d2a05cd96e2105563242b598b6ba36a614789b51f6a0ef833d912fb5d31a757",
+            "text": "吉他",
+            "words": [
+              {
+                "text": "吉他",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "dcbc1faf06d566e57782294a8ce435c08c0ced158d217fa218d0fdb918438b84": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2497d94197d54804de44b1accffb0d32d1cbe35da7cc1fb7eb072f0a19132fee.mp3",
+          "sha256": "2497d94197d54804de44b1accffb0d32d1cbe35da7cc1fb7eb072f0a19132fee",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "2497d94197d54804de44b1accffb0d32d1cbe35da7cc1fb7eb072f0a19132fee",
+            "text": "单元",
+            "words": [
+              {
+                "text": "单元",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c84e3a336724f086281f5278ed429b495dbf81c0f1c164f548e0498b2b919cec.mp3",
+          "sha256": "c84e3a336724f086281f5278ed429b495dbf81c0f1c164f548e0498b2b919cec",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "c84e3a336724f086281f5278ed429b495dbf81c0f1c164f548e0498b2b919cec",
+            "text": "单元",
+            "words": [
+              {
+                "text": "单元",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "feaa2e69af9733de0561ddd7326fae63cccb75e4b7aa6d1cb5ba7e827fb234a4": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-f02a4aa98580a1306cdbf822dc12fd21a16614b737402e6f1d92fd373f010208.mp3",
+          "sha256": "f02a4aa98580a1306cdbf822dc12fd21a16614b737402e6f1d92fd373f010208",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "f02a4aa98580a1306cdbf822dc12fd21a16614b737402e6f1d92fd373f010208",
+            "text": "秘书",
+            "words": [
+              {
+                "text": "秘书",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-480f95988e4e3bb24418cad1b557f9d6f1fbf984f959ea35c63cfbfb2bb8cb8d.mp3",
+          "sha256": "480f95988e4e3bb24418cad1b557f9d6f1fbf984f959ea35c63cfbfb2bb8cb8d",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "480f95988e4e3bb24418cad1b557f9d6f1fbf984f959ea35c63cfbfb2bb8cb8d",
+            "text": "秘书",
+            "words": [
+              {
+                "text": "秘书",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

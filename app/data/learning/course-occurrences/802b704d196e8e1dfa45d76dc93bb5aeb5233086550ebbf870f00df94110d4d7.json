@@ -1,0 +1,705 @@
+{
+  "id": "EX-CHAR-char-79d1",
+  "revision": 2,
+  "unit": "U4-19",
+  "stage": "ST-HSK4",
+  "after": "S-U4-19-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "科",
+  "sourceBlockId": "mandarin-simplified-v1-char-79d1",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-f236cf7f9922de36658d4189",
+        "text": "远处",
+        "pinyin": "yuǎn chù",
+        "meaning": "distant place",
+        "characters": [
+          {
+            "id": "C-8FDC",
+            "text": "远"
+          },
+          {
+            "id": "C-5904",
+            "text": "处"
+          }
+        ]
+      },
+      {
+        "id": "W0647",
+        "text": "爱人",
+        "pinyin": "àiren",
+        "meaning": "spouse; lover",
+        "characters": [
+          {
+            "id": "C-7231",
+            "text": "爱"
+          },
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      },
+      {
+        "id": "W1081",
+        "text": "本科",
+        "pinyin": "běnkē",
+        "meaning": "undergraduate course; undergraduate",
+        "characters": [
+          {
+            "id": "C-672C",
+            "text": "本"
+          },
+          {
+            "id": "C-79D1",
+            "text": "科"
+          }
+        ]
+      },
+      {
+        "id": "W4393",
+        "text": "科",
+        "pinyin": "kē",
+        "meaning": "branch of study; administrative section",
+        "characters": [
+          {
+            "id": "C-79D1",
+            "text": "科"
+          }
+        ]
+      },
+      {
+        "id": "W5142",
+        "text": "也好",
+        "pinyin": "yěhǎo",
+        "meaning": "that's fine; may as well",
+        "characters": [
+          {
+            "id": "C-4E5F",
+            "text": "也"
+          },
+          {
+            "id": "C-597D",
+            "text": "好"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "3cb2a9101f084e657ddddbee684af23b9a5e782cf8cbd4a3f0d4853fd1001b36",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-79d1",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "科",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-79d1-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1081",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "undergraduate course; undergraduate",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "本科"
+              },
+              {
+                "value": "běnkē",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ben3ke1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "本科",
+              "pinyin": "běnkē",
+              "meaning": "undergraduate course; undergraduate",
+              "audio": "1c3b511fc666e478694ca3bea3198431e949c9641c2fb02b823bbb70e7eabdbd",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-79d1-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W4393",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "科",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W4393",
+                "label": "branch of study; administrative section",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W5142",
+                "label": "that's fine; may as well",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0647",
+                "label": "spouse; lover",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-79d1-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "科",
+        "pinyin": "kē",
+        "meaning": "branch of study; administrative section",
+        "source": "/stroke-data/79d1.json",
+        "reference": {
+          "character": "科",
+          "sha256": "4b29132fb6ddde23f92ec81c18439e9852b8a4e9574998bb4e77ec75ff83560c",
+          "medians": [
+            [
+              [
+                487,
+                739
+              ],
+              [
+                417,
+                747
+              ],
+              [
+                364,
+                709
+              ],
+              [
+                319,
+                686
+              ],
+              [
+                238,
+                650
+              ],
+              [
+                202,
+                643
+              ],
+              [
+                193,
+                634
+              ]
+            ],
+            [
+              [
+                75,
+                482
+              ],
+              [
+                93,
+                476
+              ],
+              [
+                143,
+                476
+              ],
+              [
+                403,
+                545
+              ],
+              [
+                466,
+                556
+              ],
+              [
+                496,
+                552
+              ]
+            ],
+            [
+              [
+                316,
+                660
+              ],
+              [
+                338,
+                645
+              ],
+              [
+                341,
+                634
+              ],
+              [
+                337,
+                278
+              ],
+              [
+                325,
+                132
+              ],
+              [
+                338,
+                51
+              ]
+            ],
+            [
+              [
+                315,
+                496
+              ],
+              [
+                305,
+                486
+              ],
+              [
+                290,
+                428
+              ],
+              [
+                245,
+                358
+              ],
+              [
+                182,
+                282
+              ],
+              [
+                130,
+                233
+              ],
+              [
+                66,
+                187
+              ]
+            ],
+            [
+              [
+                364,
+                461
+              ],
+              [
+                432,
+                423
+              ],
+              [
+                454,
+                392
+              ]
+            ],
+            [
+              [
+                552,
+                684
+              ],
+              [
+                622,
+                647
+              ],
+              [
+                641,
+                623
+              ]
+            ],
+            [
+              [
+                536,
+                524
+              ],
+              [
+                607,
+                487
+              ],
+              [
+                625,
+                468
+              ]
+            ],
+            [
+              [
+                469,
+                349
+              ],
+              [
+                490,
+                343
+              ],
+              [
+                523,
+                344
+              ],
+              [
+                620,
+                368
+              ],
+              [
+                885,
+                412
+              ],
+              [
+                920,
+                411
+              ],
+              [
+                968,
+                399
+              ]
+            ],
+            [
+              [
+                684,
+                820
+              ],
+              [
+                709,
+                814
+              ],
+              [
+                745,
+                780
+              ],
+              [
+                737,
+                614
+              ],
+              [
+                735,
+                -34
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-79d1-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-f236cf7f9922de36658d4189",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "distant place",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "远处"
+              },
+              {
+                "value": "yuǎn chù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yuan3chu4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "远处",
+              "pinyin": "yuǎn chù",
+              "meaning": "distant place",
+              "audio": "4adf7d4b4bfc4dc93ce2ea38b64cabebb2dfe6591ceb0bd8a5d199a724ba2ac6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-79d1-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W4393",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "branch of study; administrative section",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "科"
+              },
+              {
+                "value": "kē",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ke1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "科",
+              "pinyin": "kē",
+              "meaning": "branch of study; administrative section",
+              "audio": "2aac57536ed0ed7a9dd7c2cdf5e6c3290ff2d058ab9103ee1c29c17aeb4a1e61",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "2aac57536ed0ed7a9dd7c2cdf5e6c3290ff2d058ab9103ee1c29c17aeb4a1e61"
+            ],
+            "transcript": [
+              {
+                "text": "科",
+                "pinyin": "kē",
+                "meaning": "branch of study; administrative section",
+                "audio": "2aac57536ed0ed7a9dd7c2cdf5e6c3290ff2d058ab9103ee1c29c17aeb4a1e61",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-79D1",
+      "character": "科",
+      "lessonIds": [
+        "LESSON-C-79D1"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-79d1-word",
+        "EX-CHAR-char-79d1-recognize",
+        "EX-CHAR-char-79d1-write",
+        "EX-CHAR-char-79d1-familiar",
+        "EX-CHAR-char-79d1-recall"
+      ]
+    },
+    "audio": {
+      "4adf7d4b4bfc4dc93ce2ea38b64cabebb2dfe6591ceb0bd8a5d199a724ba2ac6": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a0ba6b66d12d0cbaf7b2dea9028eb537d49a48a8b4c51c272d4c415f0f997ddf.mp3",
+          "sha256": "a0ba6b66d12d0cbaf7b2dea9028eb537d49a48a8b4c51c272d4c415f0f997ddf",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "a0ba6b66d12d0cbaf7b2dea9028eb537d49a48a8b4c51c272d4c415f0f997ddf",
+            "text": "远处",
+            "words": [
+              {
+                "text": "远处",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/7f365d89b06fd46b8b43ac20ab7e926ff3c585ee066e7bf0755e5d7d1cbdf047.mp3",
+          "sha256": "7f365d89b06fd46b8b43ac20ab7e926ff3c585ee066e7bf0755e5d7d1cbdf047",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "7f365d89b06fd46b8b43ac20ab7e926ff3c585ee066e7bf0755e5d7d1cbdf047",
+            "text": "远处",
+            "words": [
+              {
+                "text": "远处",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "29bc495e19a71196e89f043c6d67d7d59e68892a21700a56d22b8589ef91bf11": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-311a2938358125f2a5579d15a409a4853816653aff4cb087e3994b03cb97c8af.mp3",
+          "sha256": "311a2938358125f2a5579d15a409a4853816653aff4cb087e3994b03cb97c8af",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "311a2938358125f2a5579d15a409a4853816653aff4cb087e3994b03cb97c8af",
+            "text": "爱人",
+            "words": [
+              {
+                "text": "爱人",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-e0fbd7b4a613554e87be181ddcbaa14f03ffc4dd4225551034abf38427411fe7.mp3",
+          "sha256": "e0fbd7b4a613554e87be181ddcbaa14f03ffc4dd4225551034abf38427411fe7",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "e0fbd7b4a613554e87be181ddcbaa14f03ffc4dd4225551034abf38427411fe7",
+            "text": "爱人",
+            "words": [
+              {
+                "text": "爱人",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "1c3b511fc666e478694ca3bea3198431e949c9641c2fb02b823bbb70e7eabdbd": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/aeede94eb83406e99bdcc589d52c750735d872f20c659f2439610ca5c63a4d82.mp3",
+          "sha256": "aeede94eb83406e99bdcc589d52c750735d872f20c659f2439610ca5c63a4d82",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "aeede94eb83406e99bdcc589d52c750735d872f20c659f2439610ca5c63a4d82",
+            "text": "本科",
+            "words": [
+              {
+                "text": "本科",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2cbb5a1f824be25bc0787f0f5e3e6643797fb857b50791be87b0f9e922516dae.mp3",
+          "sha256": "2cbb5a1f824be25bc0787f0f5e3e6643797fb857b50791be87b0f9e922516dae",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "2cbb5a1f824be25bc0787f0f5e3e6643797fb857b50791be87b0f9e922516dae",
+            "text": "本科",
+            "words": [
+              {
+                "text": "本科",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "2aac57536ed0ed7a9dd7c2cdf5e6c3290ff2d058ab9103ee1c29c17aeb4a1e61": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6022622a232999327470b5f63bcc5445319f704635ef3529a79ee4e212680efc.mp3",
+          "sha256": "6022622a232999327470b5f63bcc5445319f704635ef3529a79ee4e212680efc",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "6022622a232999327470b5f63bcc5445319f704635ef3529a79ee4e212680efc",
+            "text": "科",
+            "words": [
+              {
+                "text": "科",
+                "start": 0.2,
+                "end": 0.3
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/7ae2aca9713a631007b3bddd7eb6b0d2f2051a9ff407286eab7c4f13b6d76edc.mp3",
+          "sha256": "7ae2aca9713a631007b3bddd7eb6b0d2f2051a9ff407286eab7c4f13b6d76edc",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "7ae2aca9713a631007b3bddd7eb6b0d2f2051a9ff407286eab7c4f13b6d76edc",
+            "text": "科",
+            "words": [
+              {
+                "text": "科",
+                "start": 0.22,
+                "end": 0.3
+              }
+            ]
+          }
+        }
+      },
+      "4ad3ffc79f7ee725c2d6ca14655475bc65119a86925bee05df3b563a08d2f9ff": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/917e820f83365d209dc00fcbb5ed774783b8f4c5366d64241f26e97284bcf267.mp3",
+          "sha256": "917e820f83365d209dc00fcbb5ed774783b8f4c5366d64241f26e97284bcf267",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "917e820f83365d209dc00fcbb5ed774783b8f4c5366d64241f26e97284bcf267",
+            "text": "也好",
+            "words": [
+              {
+                "text": "也好",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2e309956ce7b9436f641dde33847ee6a24d18b948051dfe8893d2a1932415360.mp3",
+          "sha256": "2e309956ce7b9436f641dde33847ee6a24d18b948051dfe8893d2a1932415360",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "2e309956ce7b9436f641dde33847ee6a24d18b948051dfe8893d2a1932415360",
+            "text": "也好",
+            "words": [
+              {
+                "text": "也好",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

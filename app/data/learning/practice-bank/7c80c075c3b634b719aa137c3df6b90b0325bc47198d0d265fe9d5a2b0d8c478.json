@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2551",
+  "targetId": "W2551",
+  "steps": [
+    {
+      "id": "BANK-W2551-W2551",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2551-W2551",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "collection; episode; classifier for episodes",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "集"
+            },
+            {
+              "value": "jí",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ji2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "集",
+            "pinyin": "jí",
+            "meaning": "collection; episode; classifier for episodes",
+            "singleWord": true,
+            "audio": "a6619a66e4e2466fa7bf94571f2eaa6ed9fc08b910b47b9fdf97e0cd980e0bdd"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a6619a66e4e2466fa7bf94571f2eaa6ed9fc08b910b47b9fdf97e0cd980e0bdd": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f740e7999e0216155fde89e9573fdbfddf95facdbe7a2be038415436f0bccb92.mp3",
+        "sha256": "f740e7999e0216155fde89e9573fdbfddf95facdbe7a2be038415436f0bccb92",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "f740e7999e0216155fde89e9573fdbfddf95facdbe7a2be038415436f0bccb92",
+          "text": "集",
+          "words": [
+            {
+              "text": "集",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/3f83eead6beb70a3a83ffe487ef9491b59cf85e81c654a36662590ff9dd187b8.mp3",
+        "sha256": "3f83eead6beb70a3a83ffe487ef9491b59cf85e81c654a36662590ff9dd187b8",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "3f83eead6beb70a3a83ffe487ef9491b59cf85e81c654a36662590ff9dd187b8",
+          "text": "集",
+          "words": [
+            {
+              "text": "集",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2551",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2551-W2551",
+      "question_ids": [
+        "BANK-W2551-W2551"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-10-P01",
+    "stepId": "S-U5-10-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5c4a"
+    ],
+    "grammarLessonIds": []
+  }
+}

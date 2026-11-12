@@ -1,0 +1,92 @@
+{
+  "id": "BANK-C-6628",
+  "targetId": "C-6628",
+  "steps": [
+    {
+      "id": "BANK-C-6628-C-6628",
+      "kind": "check",
+      "title": "Recall a familiar character",
+      "questions": [
+        {
+          "id": "BANK-C-6628-C-6628",
+          "kind": "text",
+          "prompt": "Recall the introduced character. Type the Hanzi; handwriting is practised separately.",
+          "label": "Retrieve the character",
+          "context": "First character of the familiar word meaning: yesterday",
+          "contextLanguage": "en",
+          "resultDomain": "Typed character-form retrieval",
+          "rule": "word",
+          "accepted": [
+            {
+              "value": "昨"
+            }
+          ],
+          "model": {
+            "text": "昨天",
+            "pinyin": "zuótiān",
+            "meaning": "yesterday",
+            "audio": "ac33c093746d73011afeae62822ed2a52bb79743f82c9d909ec60876543bf1da",
+            "singleWord": true,
+            "focus": "昨"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ac33c093746d73011afeae62822ed2a52bb79743f82c9d909ec60876543bf1da": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5232fbd3dc02f0186cd749a7004aea0a5cf0d1640d5c903c0fcd36cf653fe7bc.mp3",
+        "sha256": "5232fbd3dc02f0186cd749a7004aea0a5cf0d1640d5c903c0fcd36cf653fe7bc",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "5232fbd3dc02f0186cd749a7004aea0a5cf0d1640d5c903c0fcd36cf653fe7bc",
+          "text": "昨天",
+          "words": [
+            {
+              "text": "昨天",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b1043852057b3f68e80dc2f6717ec2c247da8e07deada79e80c53bf670d9f912.mp3",
+        "sha256": "b1043852057b3f68e80dc2f6717ec2c247da8e07deada79e80c53bf670d9f912",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "b1043852057b3f68e80dc2f6717ec2c247da8e07deada79e80c53bf670d9f912",
+          "text": "昨天",
+          "words": [
+            {
+              "text": "昨天",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "C-6628",
+      "facet_id": "typed-character-form-retrieval",
+      "part_id": "BANK-C-6628-C-6628",
+      "question_ids": [
+        "BANK-C-6628-C-6628"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U09",
+    "stepId": "S-U09-characters-r4-20",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6628"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,801 @@
+{
+  "id": "EX-CHAR-char-8f91",
+  "revision": 2,
+  "unit": "U5-35-P01",
+  "stage": "ST-HSK5",
+  "after": "S-U5-35-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "辑",
+  "sourceBlockId": "mandarin-simplified-v1-char-8f91",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-8f91",
+        "text": "辑",
+        "pinyin": "jí",
+        "meaning": "to gather up; to collect",
+        "characters": [
+          {
+            "id": "C-8F91",
+            "text": "辑"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-aab3c5efe748094383accef2",
+        "text": "开场白",
+        "pinyin": "kāi chǎng bái",
+        "meaning": "prologue of play",
+        "characters": [
+          {
+            "id": "C-5F00",
+            "text": "开"
+          },
+          {
+            "id": "C-573A",
+            "text": "场"
+          },
+          {
+            "id": "C-767D",
+            "text": "白"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-deae2bf6e776fa57854a7829",
+        "text": "逻辑",
+        "pinyin": "luójí",
+        "meaning": "(loanword) logic",
+        "characters": [
+          {
+            "id": "C-903B",
+            "text": "逻"
+          },
+          {
+            "id": "C-8F91",
+            "text": "辑"
+          }
+        ]
+      },
+      {
+        "id": "W4558",
+        "text": "南美洲",
+        "pinyin": "Nánměizhōu",
+        "meaning": "South America",
+        "characters": [
+          {
+            "id": "C-5357",
+            "text": "南"
+          },
+          {
+            "id": "C-7F8E",
+            "text": "美"
+          },
+          {
+            "id": "C-6D32",
+            "text": "洲"
+          }
+        ]
+      },
+      {
+        "id": "W5388",
+        "text": "自来水",
+        "pinyin": "zìláishuǐ",
+        "meaning": "running water; tap water",
+        "characters": [
+          {
+            "id": "C-81EA",
+            "text": "自"
+          },
+          {
+            "id": "C-6765",
+            "text": "来"
+          },
+          {
+            "id": "C-6C34",
+            "text": "水"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "ae1d49c913534cb10c12a45064acf8373fcb4d0e6206a316783bd0cff3bd9acb",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8f91",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "辑",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8f91-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-deae2bf6e776fa57854a7829",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "(loanword) logic",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "逻辑"
+              },
+              {
+                "value": "luójí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "luo2ji2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "逻辑",
+              "pinyin": "luójí",
+              "meaning": "(loanword) logic",
+              "audio": "9c772c17e6ec8feb9a61188c4d6709cc9453c558d8524359a81f2a4a71acb3ca",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8f91-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-8f91",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "辑",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W4558",
+                "label": "South America",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-aab3c5efe748094383accef2",
+                "label": "prologue of play",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-8f91",
+                "label": "to gather up; to collect",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8f91-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "辑",
+        "pinyin": "jí",
+        "meaning": "to gather up; to collect",
+        "source": "/stroke-data/8f91.json",
+        "reference": {
+          "character": "辑",
+          "sha256": "3bb35933fc24d07d29cdbb92a171ee9942455cd5f94a879fd71ceb7af8e36aa7",
+          "medians": [
+            [
+              [
+                144,
+                641
+              ],
+              [
+                185,
+                637
+              ],
+              [
+                234,
+                642
+              ],
+              [
+                405,
+                689
+              ],
+              [
+                443,
+                687
+              ]
+            ],
+            [
+              [
+                291,
+                835
+              ],
+              [
+                311,
+                807
+              ],
+              [
+                321,
+                778
+              ],
+              [
+                266,
+                619
+              ],
+              [
+                190,
+                442
+              ],
+              [
+                180,
+                407
+              ],
+              [
+                183,
+                398
+              ],
+              [
+                232,
+                400
+              ],
+              [
+                383,
+                442
+              ],
+              [
+                435,
+                441
+              ]
+            ],
+            [
+              [
+                300,
+                536
+              ],
+              [
+                327,
+                500
+              ],
+              [
+                314,
+                84
+              ],
+              [
+                325,
+                12
+              ]
+            ],
+            [
+              [
+                85,
+                235
+              ],
+              [
+                137,
+                219
+              ],
+              [
+                430,
+                333
+              ]
+            ],
+            [
+              [
+                500,
+                776
+              ],
+              [
+                531,
+                746
+              ],
+              [
+                560,
+                626
+              ]
+            ],
+            [
+              [
+                557,
+                756
+              ],
+              [
+                563,
+                765
+              ],
+              [
+                594,
+                773
+              ],
+              [
+                683,
+                794
+              ],
+              [
+                717,
+                796
+              ],
+              [
+                746,
+                767
+              ],
+              [
+                727,
+                720
+              ],
+              [
+                701,
+                704
+              ]
+            ],
+            [
+              [
+                576,
+                663
+              ],
+              [
+                590,
+                656
+              ],
+              [
+                692,
+                678
+              ],
+              [
+                752,
+                674
+              ]
+            ],
+            [
+              [
+                455,
+                561
+              ],
+              [
+                493,
+                553
+              ],
+              [
+                766,
+                606
+              ],
+              [
+                808,
+                611
+              ],
+              [
+                843,
+                606
+              ]
+            ],
+            [
+              [
+                500,
+                531
+              ],
+              [
+                528,
+                508
+              ],
+              [
+                528,
+                286
+              ],
+              [
+                515,
+                274
+              ]
+            ],
+            [
+              [
+                693,
+                559
+              ],
+              [
+                726,
+                544
+              ],
+              [
+                733,
+                521
+              ],
+              [
+                723,
+                -53
+              ]
+            ],
+            [
+              [
+                557,
+                444
+              ],
+              [
+                565,
+                457
+              ],
+              [
+                594,
+                465
+              ],
+              [
+                633,
+                472
+              ],
+              [
+                653,
+                468
+              ]
+            ],
+            [
+              [
+                557,
+                348
+              ],
+              [
+                564,
+                359
+              ],
+              [
+                596,
+                367
+              ],
+              [
+                631,
+                372
+              ],
+              [
+                660,
+                368
+              ]
+            ],
+            [
+              [
+                406,
+                240
+              ],
+              [
+                453,
+                233
+              ],
+              [
+                614,
+                265
+              ],
+              [
+                855,
+                295
+              ],
+              [
+                891,
+                294
+              ],
+              [
+                952,
+                279
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8f91-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W5388",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "running water; tap water",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "自来水"
+              },
+              {
+                "value": "zìláishuǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zi4lai2shui3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "自来水",
+              "pinyin": "zìláishuǐ",
+              "meaning": "running water; tap water",
+              "audio": "efba44a850b6a2b79b57ca22cc19420ee2e35a98b965c48f9e878b95ed91dd40",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8f91-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-8f91",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to gather up; to collect",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "辑"
+              },
+              {
+                "value": "jí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ji2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "辑",
+              "pinyin": "jí",
+              "meaning": "to gather up; to collect",
+              "audio": "32218f5692b5cfd6456ec67654089a432ccf9288f215cc5d6f81133991342da9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "32218f5692b5cfd6456ec67654089a432ccf9288f215cc5d6f81133991342da9"
+            ],
+            "transcript": [
+              {
+                "text": "辑",
+                "pinyin": "jí",
+                "meaning": "to gather up; to collect",
+                "audio": "32218f5692b5cfd6456ec67654089a432ccf9288f215cc5d6f81133991342da9",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8F91",
+      "character": "辑",
+      "lessonIds": [
+        "LESSON-C-8F91"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8f91-word",
+        "EX-CHAR-char-8f91-recognize",
+        "EX-CHAR-char-8f91-write",
+        "EX-CHAR-char-8f91-familiar",
+        "EX-CHAR-char-8f91-recall"
+      ]
+    },
+    "audio": {
+      "32218f5692b5cfd6456ec67654089a432ccf9288f215cc5d6f81133991342da9": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-e937cdeae2087984363bbdb047c00670ece5831d144edc8b47f60a57fe12e770.mp3",
+          "sha256": "e937cdeae2087984363bbdb047c00670ece5831d144edc8b47f60a57fe12e770",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "e937cdeae2087984363bbdb047c00670ece5831d144edc8b47f60a57fe12e770",
+            "text": "辑",
+            "words": [
+              {
+                "text": "辑",
+                "start": 0.22,
+                "end": 0.32
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-67789f531ba73d29bcd70a077b462610188d917ff3b29832c98c0087e7bbef25.mp3",
+          "sha256": "67789f531ba73d29bcd70a077b462610188d917ff3b29832c98c0087e7bbef25",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "67789f531ba73d29bcd70a077b462610188d917ff3b29832c98c0087e7bbef25",
+            "text": "辑",
+            "words": [
+              {
+                "text": "辑",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "4bd316b71e203feaa27b0cfbfae6f27a7493a92002e7d640deaf54c3c0e332bd": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3536d85cd8e1aa5d63d4d8bf1df25fa8b0efbc6107ccc5f10dcf9b47e3b9358c.mp3",
+          "sha256": "3536d85cd8e1aa5d63d4d8bf1df25fa8b0efbc6107ccc5f10dcf9b47e3b9358c",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "3536d85cd8e1aa5d63d4d8bf1df25fa8b0efbc6107ccc5f10dcf9b47e3b9358c",
+            "text": "开场白",
+            "words": [
+              {
+                "text": "开场白",
+                "start": 0.15,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/72b88034e2f6af7fada0954b8335957e9e517ec46fa08e26708b8a3c59e9c3fb.mp3",
+          "sha256": "72b88034e2f6af7fada0954b8335957e9e517ec46fa08e26708b8a3c59e9c3fb",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "72b88034e2f6af7fada0954b8335957e9e517ec46fa08e26708b8a3c59e9c3fb",
+            "text": "开场白",
+            "words": [
+              {
+                "text": "开场白",
+                "start": 0.09,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "9c772c17e6ec8feb9a61188c4d6709cc9453c558d8524359a81f2a4a71acb3ca": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/7f312c563d536c7a4220bab3f7a381017ac2254e12e7e83bd0e0a78fd43ceb46.mp3",
+          "sha256": "7f312c563d536c7a4220bab3f7a381017ac2254e12e7e83bd0e0a78fd43ceb46",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "7f312c563d536c7a4220bab3f7a381017ac2254e12e7e83bd0e0a78fd43ceb46",
+            "text": "逻辑",
+            "words": [
+              {
+                "text": "逻辑",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/cbb8b5bd23dc08eaa72b79600a7cd23e25d44260b6fd3bd271f8af4ade8d0bfc.mp3",
+          "sha256": "cbb8b5bd23dc08eaa72b79600a7cd23e25d44260b6fd3bd271f8af4ade8d0bfc",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "cbb8b5bd23dc08eaa72b79600a7cd23e25d44260b6fd3bd271f8af4ade8d0bfc",
+            "text": "逻辑",
+            "words": [
+              {
+                "text": "逻辑",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "c62d26d544343fb58e8884ad34731c1c4291ad190582640065dc13f08a77b6ba": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/238aa58cdbe1c1b76577e6a20675cc6dd30ad4b8bc21edde901d933c289ca426.mp3",
+          "sha256": "238aa58cdbe1c1b76577e6a20675cc6dd30ad4b8bc21edde901d933c289ca426",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "238aa58cdbe1c1b76577e6a20675cc6dd30ad4b8bc21edde901d933c289ca426",
+            "text": "南美洲",
+            "words": [
+              {
+                "text": "南美洲",
+                "start": 0.21,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/80edc583362125e67d7d505c8b32b6e9aae3fe3298af5716ecce97d669ea3de4.mp3",
+          "sha256": "80edc583362125e67d7d505c8b32b6e9aae3fe3298af5716ecce97d669ea3de4",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "80edc583362125e67d7d505c8b32b6e9aae3fe3298af5716ecce97d669ea3de4",
+            "text": "南美洲",
+            "words": [
+              {
+                "text": "南美洲",
+                "start": 0.21,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "efba44a850b6a2b79b57ca22cc19420ee2e35a98b965c48f9e878b95ed91dd40": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9655a7704b09cb56461909c2eecf6b99388421e4915d321dd4fd474b8faed07e.mp3",
+          "sha256": "9655a7704b09cb56461909c2eecf6b99388421e4915d321dd4fd474b8faed07e",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "9655a7704b09cb56461909c2eecf6b99388421e4915d321dd4fd474b8faed07e",
+            "text": "自来水",
+            "words": [
+              {
+                "text": "自来水",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/fdaf84cc341f4c4abb68355b0504e988dd13038afe9ad7884a9b917d44672623.mp3",
+          "sha256": "fdaf84cc341f4c4abb68355b0504e988dd13038afe9ad7884a9b917d44672623",
+          "byteLength": 14733,
+          "readAlong": {
+            "audioSha256": "fdaf84cc341f4c4abb68355b0504e988dd13038afe9ad7884a9b917d44672623",
+            "text": "自来水",
+            "words": [
+              {
+                "text": "自来水",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

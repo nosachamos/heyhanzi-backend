@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4020",
+  "targetId": "W4020",
+  "steps": [
+    {
+      "id": "BANK-W4020-W4020",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4020-W4020",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "benefit; welfare",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "福利"
+            },
+            {
+              "value": "fúlì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fu2li4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "福利",
+            "pinyin": "fúlì",
+            "meaning": "benefit; welfare",
+            "singleWord": true,
+            "audio": "c95e0a9a432c6cbfe481806f5f53ab066428983a5b788ac9980205b9d3e54b8a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c95e0a9a432c6cbfe481806f5f53ab066428983a5b788ac9980205b9d3e54b8a": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/32da29f32abbef013274dace06fcd64e82333f8d525051e37a94213991b817d4.mp3",
+        "sha256": "32da29f32abbef013274dace06fcd64e82333f8d525051e37a94213991b817d4",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "32da29f32abbef013274dace06fcd64e82333f8d525051e37a94213991b817d4",
+          "text": "福利",
+          "words": [
+            {
+              "text": "福利",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0f7c2ad622deca9fa317ee0aaa3b6f06900cf06738174bba0b67e4697949811f.mp3",
+        "sha256": "0f7c2ad622deca9fa317ee0aaa3b6f06900cf06738174bba0b67e4697949811f",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "0f7c2ad622deca9fa317ee0aaa3b6f06900cf06738174bba0b67e4697949811f",
+          "text": "福利",
+          "words": [
+            {
+              "text": "福利",
+              "start": 0.27,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4020",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4020-W4020",
+      "question_ids": [
+        "BANK-W4020-W4020"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-34-P01",
+    "stepId": "S-U6-34-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-51e1"
+    ],
+    "grammarLessonIds": []
+  }
+}

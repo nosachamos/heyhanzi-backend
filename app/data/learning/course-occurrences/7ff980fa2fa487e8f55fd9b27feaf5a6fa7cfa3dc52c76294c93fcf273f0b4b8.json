@@ -1,0 +1,721 @@
+{
+  "id": "EX-CHAR-char-95f9",
+  "revision": 2,
+  "unit": "U4-36-P01",
+  "stage": "ST-HSK4",
+  "after": "S-U4-36-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "闹",
+  "sourceBlockId": "mandarin-simplified-v1-char-95f9",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-148bd3656875220f3d135768",
+        "text": "闹事",
+        "pinyin": "nào shì",
+        "meaning": "to cause trouble",
+        "characters": [
+          {
+            "id": "C-95F9",
+            "text": "闹"
+          },
+          {
+            "id": "C-4E8B",
+            "text": "事"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-20f20cdc675172a5926e3255",
+        "text": "头疼",
+        "pinyin": "tóu téng",
+        "meaning": "headache",
+        "characters": [
+          {
+            "id": "C-5934",
+            "text": "头"
+          },
+          {
+            "id": "C-75BC",
+            "text": "疼"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d6d0b7d6b4bb7b65e1b31a5b",
+        "text": "出息",
+        "pinyin": "chū xī",
+        "meaning": "to yield interest, profit etc",
+        "characters": [
+          {
+            "id": "C-51FA",
+            "text": "出"
+          },
+          {
+            "id": "C-606F",
+            "text": "息"
+          }
+        ]
+      },
+      {
+        "id": "W0847",
+        "text": "矿泉水",
+        "pinyin": "kuàngquánshuǐ",
+        "meaning": "mineral water",
+        "characters": [
+          {
+            "id": "C-77FF",
+            "text": "矿"
+          },
+          {
+            "id": "C-6CC9",
+            "text": "泉"
+          },
+          {
+            "id": "C-6C34",
+            "text": "水"
+          }
+        ]
+      },
+      {
+        "id": "W2816",
+        "text": "闹",
+        "pinyin": "nào",
+        "meaning": "noisy; cacophonous",
+        "characters": [
+          {
+            "id": "C-95F9",
+            "text": "闹"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "730301d7f9f944cd15205a0e7535aef3635fa7026c1234d20673deb22c41ca99",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-95f9",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "闹",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-95f9-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-148bd3656875220f3d135768",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to cause trouble",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "闹事"
+              },
+              {
+                "value": "nào shì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "nao4shi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "闹事",
+              "pinyin": "nào shì",
+              "meaning": "to cause trouble",
+              "audio": "9b5bfdf11cc1fffb83198ab76754a167b334915986357cca66571edc792a83b5",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-95f9-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W2816",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "闹",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W2816",
+                "label": "noisy; cacophonous",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-d6d0b7d6b4bb7b65e1b31a5b",
+                "label": "to yield interest, profit etc",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-20f20cdc675172a5926e3255",
+                "label": "headache",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-95f9-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "闹",
+        "pinyin": "nào",
+        "meaning": "noisy; cacophonous",
+        "source": "/stroke-data/95f9.json",
+        "reference": {
+          "character": "闹",
+          "sha256": "02dab2043722a2319ccb313da1abf1028f8304ca6fe8fce699a43ada39c25465",
+          "medians": [
+            [
+              [
+                308,
+                781
+              ],
+              [
+                375,
+                722
+              ],
+              [
+                393,
+                695
+              ]
+            ],
+            [
+              [
+                182,
+                701
+              ],
+              [
+                222,
+                655
+              ],
+              [
+                225,
+                586
+              ],
+              [
+                221,
+                326
+              ],
+              [
+                209,
+                188
+              ],
+              [
+                190,
+                80
+              ],
+              [
+                191,
+                42
+              ]
+            ],
+            [
+              [
+                505,
+                733
+              ],
+              [
+                537,
+                725
+              ],
+              [
+                580,
+                729
+              ],
+              [
+                713,
+                758
+              ],
+              [
+                748,
+                760
+              ],
+              [
+                781,
+                749
+              ],
+              [
+                804,
+                722
+              ],
+              [
+                817,
+                229
+              ],
+              [
+                815,
+                82
+              ],
+              [
+                797,
+                31
+              ],
+              [
+                736,
+                42
+              ],
+              [
+                684,
+                65
+              ],
+              [
+                666,
+                67
+              ]
+            ],
+            [
+              [
+                444,
+                623
+              ],
+              [
+                504,
+                585
+              ],
+              [
+                522,
+                557
+              ]
+            ],
+            [
+              [
+                361,
+                489
+              ],
+              [
+                384,
+                482
+              ],
+              [
+                421,
+                482
+              ],
+              [
+                605,
+                522
+              ],
+              [
+                650,
+                519
+              ]
+            ],
+            [
+              [
+                334,
+                391
+              ],
+              [
+                355,
+                364
+              ],
+              [
+                361,
+                340
+              ],
+              [
+                356,
+                220
+              ],
+              [
+                363,
+                193
+              ]
+            ],
+            [
+              [
+                379,
+                378
+              ],
+              [
+                388,
+                369
+              ],
+              [
+                406,
+                367
+              ],
+              [
+                620,
+                402
+              ],
+              [
+                648,
+                393
+              ],
+              [
+                659,
+                374
+              ],
+              [
+                656,
+                252
+              ],
+              [
+                647,
+                220
+              ],
+              [
+                639,
+                209
+              ],
+              [
+                558,
+                235
+              ]
+            ],
+            [
+              [
+                464,
+                467
+              ],
+              [
+                497,
+                447
+              ],
+              [
+                504,
+                436
+              ],
+              [
+                499,
+                22
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-95f9-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0847",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "mineral water",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "矿泉水"
+              },
+              {
+                "value": "kuàngquánshuǐ",
+                "mode": "pinyin"
+              },
+              {
+                "value": "kuang4quan2shui3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "矿泉水",
+              "pinyin": "kuàngquánshuǐ",
+              "meaning": "mineral water",
+              "audio": "49f1ea10343455f3e3a6790cdef1bf0b061d6d7975c4b652c9afe3b33a3c46d3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-95f9-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W2816",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "noisy; cacophonous",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "闹"
+              },
+              {
+                "value": "nào",
+                "mode": "pinyin"
+              },
+              {
+                "value": "nao4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "闹",
+              "pinyin": "nào",
+              "meaning": "noisy; cacophonous",
+              "audio": "49a7ef53390541841a94513d3bb4650ba0f0ce298d53a45c37cbd5aa31825389",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "49a7ef53390541841a94513d3bb4650ba0f0ce298d53a45c37cbd5aa31825389"
+            ],
+            "transcript": [
+              {
+                "text": "闹",
+                "pinyin": "nào",
+                "meaning": "noisy; cacophonous",
+                "audio": "49a7ef53390541841a94513d3bb4650ba0f0ce298d53a45c37cbd5aa31825389",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-95F9",
+      "character": "闹",
+      "lessonIds": [
+        "LESSON-C-95F9"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-95f9-word",
+        "EX-CHAR-char-95f9-recognize",
+        "EX-CHAR-char-95f9-write",
+        "EX-CHAR-char-95f9-familiar",
+        "EX-CHAR-char-95f9-recall"
+      ]
+    },
+    "audio": {
+      "9b5bfdf11cc1fffb83198ab76754a167b334915986357cca66571edc792a83b5": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a225ace0192afbe5ac90fd2e0a2622656050e55aaf276768f367acc8383d78af.mp3",
+          "sha256": "a225ace0192afbe5ac90fd2e0a2622656050e55aaf276768f367acc8383d78af",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "a225ace0192afbe5ac90fd2e0a2622656050e55aaf276768f367acc8383d78af",
+            "text": "闹事",
+            "words": [
+              {
+                "text": "闹事",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/28d454d30c73615bd7b9fca3ed7cdb9897778267d7371dfd9d248ce9b845c422.mp3",
+          "sha256": "28d454d30c73615bd7b9fca3ed7cdb9897778267d7371dfd9d248ce9b845c422",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "28d454d30c73615bd7b9fca3ed7cdb9897778267d7371dfd9d248ce9b845c422",
+            "text": "闹事",
+            "words": [
+              {
+                "text": "闹事",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "57a78a9dde6aac730968a6447e45894f8f2fa7637dc8ef833d98e1ac7b033450": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f51569a0fb71c64e21005c082c1afeb9b0ca518e3ddf53ab813657918d4ed811.mp3",
+          "sha256": "f51569a0fb71c64e21005c082c1afeb9b0ca518e3ddf53ab813657918d4ed811",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "f51569a0fb71c64e21005c082c1afeb9b0ca518e3ddf53ab813657918d4ed811",
+            "text": "头疼",
+            "words": [
+              {
+                "text": "头疼",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/49d27fadfb4150d28bf42dacfe3014996d32319d80048f82720e019f6f76229b.mp3",
+          "sha256": "49d27fadfb4150d28bf42dacfe3014996d32319d80048f82720e019f6f76229b",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "49d27fadfb4150d28bf42dacfe3014996d32319d80048f82720e019f6f76229b",
+            "text": "头疼",
+            "words": [
+              {
+                "text": "头疼",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "5d98b0af2ba0cf770307099f8d34484a3b9bf2973e6e89648a5dee54b6f026fd": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/09a7cf6dcf7622f16d1b7c7f568ea6c45849889b166c91b7a1d9aaad7b394bab.mp3",
+          "sha256": "09a7cf6dcf7622f16d1b7c7f568ea6c45849889b166c91b7a1d9aaad7b394bab",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "09a7cf6dcf7622f16d1b7c7f568ea6c45849889b166c91b7a1d9aaad7b394bab",
+            "text": "出息",
+            "words": [
+              {
+                "text": "出息",
+                "start": 0.18,
+                "end": 0.52
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/ea23216a4e9c7aecb193e79b1757054f6fac2504ed974dab42a81ef71721c320.mp3",
+          "sha256": "ea23216a4e9c7aecb193e79b1757054f6fac2504ed974dab42a81ef71721c320",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "ea23216a4e9c7aecb193e79b1757054f6fac2504ed974dab42a81ef71721c320",
+            "text": "出息",
+            "words": [
+              {
+                "text": "出息",
+                "start": 0.18,
+                "end": 0.64
+              }
+            ]
+          }
+        }
+      },
+      "49f1ea10343455f3e3a6790cdef1bf0b061d6d7975c4b652c9afe3b33a3c46d3": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f94e05b3d885d456519d4163cf678bbfa6a199a5811148b8f481ba1c08fb78f2.mp3",
+          "sha256": "f94e05b3d885d456519d4163cf678bbfa6a199a5811148b8f481ba1c08fb78f2",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "f94e05b3d885d456519d4163cf678bbfa6a199a5811148b8f481ba1c08fb78f2",
+            "text": "矿泉水",
+            "words": [
+              {
+                "text": "矿泉水",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d78c2aaf7676832609da9c14bedfc52fc1d9c945f146710e1d4b7df0f62291ec.mp3",
+          "sha256": "d78c2aaf7676832609da9c14bedfc52fc1d9c945f146710e1d4b7df0f62291ec",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "d78c2aaf7676832609da9c14bedfc52fc1d9c945f146710e1d4b7df0f62291ec",
+            "text": "矿泉水",
+            "words": [
+              {
+                "text": "矿泉水",
+                "start": 0.09,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "49a7ef53390541841a94513d3bb4650ba0f0ce298d53a45c37cbd5aa31825389": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0c323d9875e672520867c7fc20c635939d76c7810e042df63c03a05b63da6955.mp3",
+          "sha256": "0c323d9875e672520867c7fc20c635939d76c7810e042df63c03a05b63da6955",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "0c323d9875e672520867c7fc20c635939d76c7810e042df63c03a05b63da6955",
+            "text": "闹",
+            "words": [
+              {
+                "text": "闹",
+                "start": 0.2,
+                "end": 0.32
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0dcd67f32444d29ba5fd24a0c8af374e4ec519001a20cde80d82e27730d4edd3.mp3",
+          "sha256": "0dcd67f32444d29ba5fd24a0c8af374e4ec519001a20cde80d82e27730d4edd3",
+          "byteLength": 12429,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "0dcd67f32444d29ba5fd24a0c8af374e4ec519001a20cde80d82e27730d4edd3",
+            "text": "闹",
+            "words": [
+              {
+                "text": "闹",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

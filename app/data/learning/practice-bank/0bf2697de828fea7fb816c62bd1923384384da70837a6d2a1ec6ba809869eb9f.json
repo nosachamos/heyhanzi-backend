@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1046",
+  "targetId": "W1046",
+  "steps": [
+    {
+      "id": "BANK-W1046-W1046",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1046-W1046",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "kind; type; counter for kinds",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "种"
+            },
+            {
+              "value": "zhǒng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhong3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "种",
+            "pinyin": "zhǒng",
+            "meaning": "kind; type; counter for kinds",
+            "singleWord": true,
+            "audio": "6775d049c7b3c5a5a1a28af5a4511d1ca07e254bd5dc8abc1f7897d7457e779d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "6775d049c7b3c5a5a1a28af5a4511d1ca07e254bd5dc8abc1f7897d7457e779d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-8acf274cfb1c1163163a78d960328f2dbd3ef96554d8ec844f8e4a728bb0c35e.mp3",
+        "sha256": "8acf274cfb1c1163163a78d960328f2dbd3ef96554d8ec844f8e4a728bb0c35e",
+        "byteLength": 14733,
+        "readAlong": {
+          "audioSha256": "8acf274cfb1c1163163a78d960328f2dbd3ef96554d8ec844f8e4a728bb0c35e",
+          "text": "种",
+          "words": [
+            {
+              "text": "种",
+              "start": 0.21,
+              "end": 0.27
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-567d6dd9003cddf438659a23a55f2e476e56b04d016dab76c0c8c7d6fe318b56.mp3",
+        "sha256": "567d6dd9003cddf438659a23a55f2e476e56b04d016dab76c0c8c7d6fe318b56",
+        "byteLength": 7821,
+        "readAlong": {
+          "audioSha256": "567d6dd9003cddf438659a23a55f2e476e56b04d016dab76c0c8c7d6fe318b56",
+          "text": "种",
+          "words": [
+            {
+              "text": "种",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1046",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1046-W1046",
+      "question_ids": [
+        "BANK-W1046-W1046"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-06-P01",
+    "stepId": "S-U3-06-words-r4-23",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9875"
+    ],
+    "grammarLessonIds": []
+  }
+}

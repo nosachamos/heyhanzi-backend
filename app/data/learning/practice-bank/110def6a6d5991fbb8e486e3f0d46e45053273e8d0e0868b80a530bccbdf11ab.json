@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1850",
+  "targetId": "W1850",
+  "steps": [
+    {
+      "id": "BANK-W1850-W1850",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1850-W1850",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "novel; fiction",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "小说"
+            },
+            {
+              "value": "xiǎoshuō",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xiao3shuo1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "小说",
+            "pinyin": "xiǎoshuō",
+            "meaning": "novel; fiction",
+            "singleWord": true,
+            "audio": "13e35af7ab9ead96def0e72afc3e5fd12bc29681a9d97f03a83c9661cadbb5cd"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "13e35af7ab9ead96def0e72afc3e5fd12bc29681a9d97f03a83c9661cadbb5cd": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-97879a291fe34afbc48443afe084efe811ecd34b38eff5b39574dc1bb4ad6687.mp3",
+        "sha256": "97879a291fe34afbc48443afe084efe811ecd34b38eff5b39574dc1bb4ad6687",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "97879a291fe34afbc48443afe084efe811ecd34b38eff5b39574dc1bb4ad6687",
+          "text": "小说",
+          "words": [
+            {
+              "text": "小说",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c59fb8f4d17636614f9221a2d40f6ac6d6020e88fd3d722893d7d4fc01b00b4c.mp3",
+        "sha256": "c59fb8f4d17636614f9221a2d40f6ac6d6020e88fd3d722893d7d4fc01b00b4c",
+        "byteLength": 14733,
+        "readAlong": {
+          "audioSha256": "c59fb8f4d17636614f9221a2d40f6ac6d6020e88fd3d722893d7d4fc01b00b4c",
+          "text": "小说",
+          "words": [
+            {
+              "text": "小说",
+              "start": 0.21,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1850",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1850-W1850",
+      "question_ids": [
+        "BANK-W1850-W1850"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-25",
+    "stepId": "S-U4-25-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5c0f"
+    ],
+    "grammarLessonIds": []
+  }
+}

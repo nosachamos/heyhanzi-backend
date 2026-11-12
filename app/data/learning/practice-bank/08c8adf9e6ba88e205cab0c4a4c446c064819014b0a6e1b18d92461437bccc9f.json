@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4130",
+  "targetId": "W4130",
+  "steps": [
+    {
+      "id": "BANK-W4130-W4130",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4130-W4130",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "after the event",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "过后"
+            },
+            {
+              "value": "guòhòu",
+              "mode": "pinyin"
+            },
+            {
+              "value": "guo4hou4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "过后",
+            "pinyin": "guòhòu",
+            "meaning": "after the event",
+            "singleWord": true,
+            "audio": "f6077f2650c7869e144cee5c09098172fe1f6f51e605174f2fece8f0336b40ec"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f6077f2650c7869e144cee5c09098172fe1f6f51e605174f2fece8f0336b40ec": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-35973514055363dc2c7530a1157c8184aafd3249f6b43f1c09aabe4a0ff5e14c.mp3",
+        "sha256": "35973514055363dc2c7530a1157c8184aafd3249f6b43f1c09aabe4a0ff5e14c",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "35973514055363dc2c7530a1157c8184aafd3249f6b43f1c09aabe4a0ff5e14c",
+          "text": "过后",
+          "words": [
+            {
+              "text": "过后",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-080936cab85981e1d087c778cc5a060595641b21b55107c0582101c4f77bfa04.mp3",
+        "sha256": "080936cab85981e1d087c778cc5a060595641b21b55107c0582101c4f77bfa04",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "080936cab85981e1d087c778cc5a060595641b21b55107c0582101c4f77bfa04",
+          "text": "过后",
+          "words": [
+            {
+              "text": "过后",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4130",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4130-W4130",
+      "question_ids": [
+        "BANK-W4130-W4130"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-07-P01",
+    "stepId": "S-U6-07-P01-working-word-2",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8fc7"
+    ],
+    "grammarLessonIds": []
+  }
+}

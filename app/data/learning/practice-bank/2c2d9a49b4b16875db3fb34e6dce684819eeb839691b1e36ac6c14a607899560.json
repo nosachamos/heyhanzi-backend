@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1980",
+  "targetId": "W1980",
+  "steps": [
+    {
+      "id": "BANK-W1980-W1980",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1980-W1980",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "occupation; profession",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "职业"
+            },
+            {
+              "value": "zhíyè",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhi2ye4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "职业",
+            "pinyin": "zhíyè",
+            "meaning": "occupation; profession",
+            "singleWord": true,
+            "audio": "22501edd92ef9d8d0f58996b357940443096fce3fcdb52828a1898d2ddcddbcc"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "22501edd92ef9d8d0f58996b357940443096fce3fcdb52828a1898d2ddcddbcc": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-fd2ed347524d66af04a5c0d0cfdc8191d252f2c6e1d751fbe95e404e13ab526c.mp3",
+        "sha256": "fd2ed347524d66af04a5c0d0cfdc8191d252f2c6e1d751fbe95e404e13ab526c",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "fd2ed347524d66af04a5c0d0cfdc8191d252f2c6e1d751fbe95e404e13ab526c",
+          "text": "职业",
+          "words": [
+            {
+              "text": "职业",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-0509464bb23c7760c4ce784578c6f5a8b2181016b397c575444a8790df75edf6.mp3",
+        "sha256": "0509464bb23c7760c4ce784578c6f5a8b2181016b397c575444a8790df75edf6",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "0509464bb23c7760c4ce784578c6f5a8b2181016b397c575444a8790df75edf6",
+          "text": "职业",
+          "words": [
+            {
+              "text": "职业",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1980",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1980-W1980",
+      "question_ids": [
+        "BANK-W1980-W1980"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-22",
+    "stepId": "S-U4-22-words-r4-16",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-804c"
+    ],
+    "grammarLessonIds": []
+  }
+}

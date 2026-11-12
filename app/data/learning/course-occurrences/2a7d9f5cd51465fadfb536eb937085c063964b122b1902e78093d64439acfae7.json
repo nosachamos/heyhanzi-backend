@@ -1,0 +1,745 @@
+{
+  "id": "EX-CHAR-char-80dc",
+  "revision": 2,
+  "unit": "U5-18",
+  "stage": "ST-HSK5",
+  "after": "S-U5-18-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "胜",
+  "sourceBlockId": "mandarin-simplified-v1-char-80dc",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-80dc",
+        "text": "胜",
+        "pinyin": "shèng",
+        "meaning": "to win; to defeat; victory; success",
+        "characters": [
+          {
+            "id": "C-80DC",
+            "text": "胜"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-e25acfd8185de1048292992f",
+        "text": "胜任",
+        "pinyin": "shèng rèn",
+        "meaning": "qualified",
+        "characters": [
+          {
+            "id": "C-80DC",
+            "text": "胜"
+          },
+          {
+            "id": "C-4EFB",
+            "text": "任"
+          }
+        ]
+      },
+      {
+        "id": "W0328",
+        "text": "除了",
+        "pinyin": "chúle",
+        "meaning": "except for; in addition to",
+        "characters": [
+          {
+            "id": "C-9664",
+            "text": "除"
+          },
+          {
+            "id": "C-4E86",
+            "text": "了"
+          }
+        ]
+      },
+      {
+        "id": "W3441",
+        "text": "预测",
+        "pinyin": "yùcè",
+        "meaning": "to forecast; to predict",
+        "characters": [
+          {
+            "id": "C-9884",
+            "text": "预"
+          },
+          {
+            "id": "C-6D4B",
+            "text": "测"
+          }
+        ]
+      },
+      {
+        "id": "W3459",
+        "text": "运用",
+        "pinyin": "yùnyòng",
+        "meaning": "to use; to put to use",
+        "characters": [
+          {
+            "id": "C-8FD0",
+            "text": "运"
+          },
+          {
+            "id": "C-7528",
+            "text": "用"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "86483740dad481777349d7005374b6f8461893f3a514e8cae06e382d3d951a65",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-80dc",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "胜",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-80dc-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-e25acfd8185de1048292992f",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "qualified",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "胜任"
+              },
+              {
+                "value": "shèng rèn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "sheng4ren4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "胜任",
+              "pinyin": "shèng rèn",
+              "meaning": "qualified",
+              "audio": "480cf1f93de441970666ffbebd78de9841e9977015f715ba5acc3051527b784e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-80dc-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-80dc",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "胜",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W3441",
+                "label": "to forecast; to predict",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-80dc",
+                "label": "to win; to defeat",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W3459",
+                "label": "to use; to put to use",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-80dc-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "胜",
+        "pinyin": "shèng",
+        "meaning": "to win; to defeat",
+        "source": "/stroke-data/80dc.json",
+        "reference": {
+          "character": "胜",
+          "sha256": "1dce105542db9b76567751b8854ac8c2a0f9bc871dc9805f6d7dfc00fe129cea",
+          "medians": [
+            [
+              [
+                162,
+                713
+              ],
+              [
+                196,
+                683
+              ],
+              [
+                203,
+                633
+              ],
+              [
+                201,
+                487
+              ],
+              [
+                186,
+                333
+              ],
+              [
+                170,
+                264
+              ],
+              [
+                138,
+                174
+              ],
+              [
+                86,
+                70
+              ],
+              [
+                56,
+                27
+              ]
+            ],
+            [
+              [
+                235,
+                679
+              ],
+              [
+                243,
+                692
+              ],
+              [
+                330,
+                719
+              ],
+              [
+                359,
+                704
+              ],
+              [
+                373,
+                686
+              ],
+              [
+                372,
+                171
+              ],
+              [
+                368,
+                94
+              ],
+              [
+                363,
+                74
+              ],
+              [
+                346,
+                52
+              ],
+              [
+                315,
+                59
+              ],
+              [
+                223,
+                101
+              ]
+            ],
+            [
+              [
+                233,
+                498
+              ],
+              [
+                239,
+                510
+              ],
+              [
+                253,
+                518
+              ],
+              [
+                305,
+                519
+              ]
+            ],
+            [
+              [
+                216,
+                343
+              ],
+              [
+                222,
+                354
+              ],
+              [
+                242,
+                364
+              ],
+              [
+                283,
+                368
+              ],
+              [
+                304,
+                362
+              ]
+            ],
+            [
+              [
+                499,
+                609
+              ],
+              [
+                530,
+                575
+              ],
+              [
+                512,
+                506
+              ],
+              [
+                470,
+                419
+              ],
+              [
+                412,
+                352
+              ]
+            ],
+            [
+              [
+                517,
+                456
+              ],
+              [
+                584,
+                456
+              ],
+              [
+                650,
+                464
+              ],
+              [
+                787,
+                496
+              ],
+              [
+                825,
+                498
+              ],
+              [
+                850,
+                492
+              ]
+            ],
+            [
+              [
+                519,
+                281
+              ],
+              [
+                563,
+                274
+              ],
+              [
+                612,
+                276
+              ],
+              [
+                703,
+                289
+              ],
+              [
+                761,
+                305
+              ],
+              [
+                823,
+                303
+              ]
+            ],
+            [
+              [
+                635,
+                768
+              ],
+              [
+                647,
+                764
+              ],
+              [
+                680,
+                724
+              ],
+              [
+                666,
+                127
+              ],
+              [
+                650,
+                108
+              ]
+            ],
+            [
+              [
+                430,
+                69
+              ],
+              [
+                482,
+                59
+              ],
+              [
+                595,
+                76
+              ],
+              [
+                822,
+                98
+              ],
+              [
+                868,
+                97
+              ],
+              [
+                934,
+                77
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-80dc-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0328",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "except for; in addition to",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "除了"
+              },
+              {
+                "value": "chúle",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chu2le5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "除了",
+              "pinyin": "chúle",
+              "meaning": "except for; in addition to",
+              "audio": "d701cad058c31af04b70701ed916be6a03af4e754edb9a2a01ab29b2e2028f62",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-80dc-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-80dc",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to win; to defeat",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "胜"
+              },
+              {
+                "value": "shèng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "sheng4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "胜",
+              "pinyin": "shèng",
+              "meaning": "to win; to defeat",
+              "audio": "9c931991288be545b6516f08b58a7f6afcf0f2104a1e00e79d71b6876e1ec6a9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "9c931991288be545b6516f08b58a7f6afcf0f2104a1e00e79d71b6876e1ec6a9"
+            ],
+            "transcript": [
+              {
+                "text": "胜",
+                "pinyin": "shèng",
+                "meaning": "to win; to defeat",
+                "audio": "9c931991288be545b6516f08b58a7f6afcf0f2104a1e00e79d71b6876e1ec6a9",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-80DC",
+      "character": "胜",
+      "lessonIds": [
+        "LESSON-C-80DC"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-80dc-word",
+        "EX-CHAR-char-80dc-recognize",
+        "EX-CHAR-char-80dc-write",
+        "EX-CHAR-char-80dc-familiar",
+        "EX-CHAR-char-80dc-recall"
+      ]
+    },
+    "audio": {
+      "9c931991288be545b6516f08b58a7f6afcf0f2104a1e00e79d71b6876e1ec6a9": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/13ff0bb23452c0c1e22d9624912e3353593e1b34826cf7ff084c93311c32d14f.mp3",
+          "sha256": "13ff0bb23452c0c1e22d9624912e3353593e1b34826cf7ff084c93311c32d14f",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "13ff0bb23452c0c1e22d9624912e3353593e1b34826cf7ff084c93311c32d14f",
+            "text": "胜",
+            "words": [
+              {
+                "text": "胜",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/595c4051f9b48ed94c6296b932c63a96e0c17a1826ce1109e3c6496a32769a85.mp3",
+          "sha256": "595c4051f9b48ed94c6296b932c63a96e0c17a1826ce1109e3c6496a32769a85",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "595c4051f9b48ed94c6296b932c63a96e0c17a1826ce1109e3c6496a32769a85",
+            "text": "胜",
+            "words": [
+              {
+                "text": "胜",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "480cf1f93de441970666ffbebd78de9841e9977015f715ba5acc3051527b784e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c69de524d741ae89badc59a9a221aed8a110fdd7682da50fd23daa0d0c937475.mp3",
+          "sha256": "c69de524d741ae89badc59a9a221aed8a110fdd7682da50fd23daa0d0c937475",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "c69de524d741ae89badc59a9a221aed8a110fdd7682da50fd23daa0d0c937475",
+            "text": "胜任",
+            "words": [
+              {
+                "text": "胜任",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/0057db48e08d9d2af37642797ce28d6d9181a40ec78daa4cd2e3e2e55e9be5d5.mp3",
+          "sha256": "0057db48e08d9d2af37642797ce28d6d9181a40ec78daa4cd2e3e2e55e9be5d5",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "0057db48e08d9d2af37642797ce28d6d9181a40ec78daa4cd2e3e2e55e9be5d5",
+            "text": "胜任",
+            "words": [
+              {
+                "text": "胜任",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "d701cad058c31af04b70701ed916be6a03af4e754edb9a2a01ab29b2e2028f62": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5acf7316dc4d919e193fdb804f4a71680efdf5f99f0ced641fe82d0c3c64acbb.mp3",
+          "sha256": "5acf7316dc4d919e193fdb804f4a71680efdf5f99f0ced641fe82d0c3c64acbb",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "5acf7316dc4d919e193fdb804f4a71680efdf5f99f0ced641fe82d0c3c64acbb",
+            "text": "除了",
+            "words": [
+              {
+                "text": "除了",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-5f313a90f67daafc2635a193203e4d2466094b52764b4a782c1bcdd4bbc86c10.mp3",
+          "sha256": "5f313a90f67daafc2635a193203e4d2466094b52764b4a782c1bcdd4bbc86c10",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "5f313a90f67daafc2635a193203e4d2466094b52764b4a782c1bcdd4bbc86c10",
+            "text": "除了",
+            "words": [
+              {
+                "text": "除了",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "add54a340a80d150c96d4039045c6b3940663987e52bfc0f4f68bf6e5485c989": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-9135d4ef04f93cef107904903336dc7697ffcfb01ca50325cf681befa5582461.mp3",
+          "sha256": "9135d4ef04f93cef107904903336dc7697ffcfb01ca50325cf681befa5582461",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "9135d4ef04f93cef107904903336dc7697ffcfb01ca50325cf681befa5582461",
+            "text": "预测",
+            "words": [
+              {
+                "text": "预测",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-b67fbcb4f6b77855ae9f83261bc16b62fb1b774287b622780dc5bedee10460f7.mp3",
+          "sha256": "b67fbcb4f6b77855ae9f83261bc16b62fb1b774287b622780dc5bedee10460f7",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "b67fbcb4f6b77855ae9f83261bc16b62fb1b774287b622780dc5bedee10460f7",
+            "text": "预测",
+            "words": [
+              {
+                "text": "预测",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "34dcf45c33dcdabd8a1cc991460febc47e057a8337f7290fb1f182b996395962": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/536ee29221b47d6543638c89f24283ee2149748d4dd4bbb8481ed232a77bbf72.mp3",
+          "sha256": "536ee29221b47d6543638c89f24283ee2149748d4dd4bbb8481ed232a77bbf72",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "536ee29221b47d6543638c89f24283ee2149748d4dd4bbb8481ed232a77bbf72",
+            "text": "运用",
+            "words": [
+              {
+                "text": "运用",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/bb17ab8b4cb1988b22b9d2874c6a294bb63f3f9aa9d64f6a788f147ae6f10b78.mp3",
+          "sha256": "bb17ab8b4cb1988b22b9d2874c6a294bb63f3f9aa9d64f6a788f147ae6f10b78",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "bb17ab8b4cb1988b22b9d2874c6a294bb63f3f9aa9d64f6a788f147ae6f10b78",
+            "text": "运用",
+            "words": [
+              {
+                "text": "运用",
+                "start": 0.27,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

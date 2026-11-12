@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0418",
+  "targetId": "W0418",
+  "steps": [
+    {
+      "id": "BANK-W0418-W0418",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0418-W0418",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to visit a doctor; to see a patient",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "看病"
+            },
+            {
+              "value": "kànbìng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "kan4bing4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "看病",
+            "pinyin": "kànbìng",
+            "meaning": "to visit a doctor; to see a patient",
+            "singleWord": true,
+            "audio": "bfc249fd67c017a9a47082f19c724d262a02cd871fc2b28b3a564783927c1926"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "bfc249fd67c017a9a47082f19c724d262a02cd871fc2b28b3a564783927c1926": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2534ea3a66bdecae98da824efa7ed2cd94447b05f010b9c433bc3b8298099af2.mp3",
+        "sha256": "2534ea3a66bdecae98da824efa7ed2cd94447b05f010b9c433bc3b8298099af2",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "2534ea3a66bdecae98da824efa7ed2cd94447b05f010b9c433bc3b8298099af2",
+          "text": "看病",
+          "words": [
+            {
+              "text": "看病",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-fbd9de88a76c37f6d3c5e28f082038a52ff79b7987ee76a9a1e5fc924f39e6e5.mp3",
+        "sha256": "fbd9de88a76c37f6d3c5e28f082038a52ff79b7987ee76a9a1e5fc924f39e6e5",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "fbd9de88a76c37f6d3c5e28f082038a52ff79b7987ee76a9a1e5fc924f39e6e5",
+          "text": "看病",
+          "words": [
+            {
+              "text": "看病",
+              "start": 0.09,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0418",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0418-W0418",
+      "question_ids": [
+        "BANK-W0418-W0418"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U12-P01",
+    "stepId": "S-U12-words-r4-21",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-75c5"
+    ],
+    "grammarLessonIds": []
+  }
+}

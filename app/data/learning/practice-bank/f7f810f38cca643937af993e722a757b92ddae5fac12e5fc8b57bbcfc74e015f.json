@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1419",
+  "targetId": "W1419",
+  "steps": [
+    {
+      "id": "BANK-W1419-W1419",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1419-W1419",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "teacher",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "教师"
+            },
+            {
+              "value": "jiàoshī",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jiao4shi1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "教师",
+            "pinyin": "jiàoshī",
+            "meaning": "teacher",
+            "singleWord": true,
+            "audio": "3dcd4fee4c26416c1706f9915c0cd9a91d3ab8a4a3956c12e38278ec0db37983"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3dcd4fee4c26416c1706f9915c0cd9a91d3ab8a4a3956c12e38278ec0db37983": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-3dd6d181e386046dea5566772dee4018a47a13593f3558384596f817fe7fa596.mp3",
+        "sha256": "3dd6d181e386046dea5566772dee4018a47a13593f3558384596f817fe7fa596",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "3dd6d181e386046dea5566772dee4018a47a13593f3558384596f817fe7fa596",
+          "text": "教师",
+          "words": [
+            {
+              "text": "教师",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-10204e29419a4046ca6cf2c21ca50c0c5daa4afd5d1671d0ac5033f908e394e6.mp3",
+        "sha256": "10204e29419a4046ca6cf2c21ca50c0c5daa4afd5d1671d0ac5033f908e394e6",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "10204e29419a4046ca6cf2c21ca50c0c5daa4afd5d1671d0ac5033f908e394e6",
+          "text": "教师",
+          "words": [
+            {
+              "text": "教师",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1419",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1419-W1419",
+      "question_ids": [
+        "BANK-W1419-W1419"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-20",
+    "stepId": "S-U4-20-words-r4-6",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6559"
+    ],
+    "grammarLessonIds": []
+  }
+}

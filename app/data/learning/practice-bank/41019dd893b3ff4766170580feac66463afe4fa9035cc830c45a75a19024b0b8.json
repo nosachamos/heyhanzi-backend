@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3902",
+  "targetId": "W3902",
+  "steps": [
+    {
+      "id": "BANK-W3902-W3902",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3902-W3902",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "lantern",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "灯笼"
+            },
+            {
+              "value": "dēnglong",
+              "mode": "pinyin"
+            },
+            {
+              "value": "deng1long5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "灯笼",
+            "pinyin": "dēnglong",
+            "meaning": "lantern",
+            "singleWord": true,
+            "audio": "9d767b930809d7022bec020ac8f3c85ca1db544ef0630db0fbfb42cedd3a42a5"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "9d767b930809d7022bec020ac8f3c85ca1db544ef0630db0fbfb42cedd3a42a5": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ff953e1abe7c8b8e410cd237ce123b7781ac8a63e6337c72b68545a358398631.mp3",
+        "sha256": "ff953e1abe7c8b8e410cd237ce123b7781ac8a63e6337c72b68545a358398631",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "ff953e1abe7c8b8e410cd237ce123b7781ac8a63e6337c72b68545a358398631",
+          "text": "灯笼",
+          "words": [
+            {
+              "text": "灯笼",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e681defeb3106feb3adfacbff750a76b002e1dea639db31206087aa766346e17.mp3",
+        "sha256": "e681defeb3106feb3adfacbff750a76b002e1dea639db31206087aa766346e17",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "e681defeb3106feb3adfacbff750a76b002e1dea639db31206087aa766346e17",
+          "text": "灯笼",
+          "words": [
+            {
+              "text": "灯笼",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3902",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3902-W3902",
+      "question_ids": [
+        "BANK-W3902-W3902"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-26",
+    "stepId": "S-U6-26-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7b3c"
+    ],
+    "grammarLessonIds": []
+  }
+}

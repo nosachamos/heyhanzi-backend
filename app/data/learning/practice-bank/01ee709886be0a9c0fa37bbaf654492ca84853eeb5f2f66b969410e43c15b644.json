@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1653",
+  "targetId": "W1653",
+  "steps": [
+    {
+      "id": "BANK-W1653-W1653",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1653-W1653",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "mission; assignment",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "任务"
+            },
+            {
+              "value": "rènwu",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ren4wu5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "任务",
+            "pinyin": "rènwu",
+            "meaning": "mission; assignment",
+            "singleWord": true,
+            "audio": "432fa07a5e1b7e153bd3b02394a464d0cc118b5171efee4ca714ff03185c2bc6"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "432fa07a5e1b7e153bd3b02394a464d0cc118b5171efee4ca714ff03185c2bc6": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-b071e2d31e49bb923a3bbef9663883a27da0e98d3c917fc72980dedfd5c3b672.mp3",
+        "sha256": "b071e2d31e49bb923a3bbef9663883a27da0e98d3c917fc72980dedfd5c3b672",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "b071e2d31e49bb923a3bbef9663883a27da0e98d3c917fc72980dedfd5c3b672",
+          "text": "任务",
+          "words": [
+            {
+              "text": "任务",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-117d4507a123b3327729b3efbafd7c65d6feb7508ce8b2b02e42789daddf08d8.mp3",
+        "sha256": "117d4507a123b3327729b3efbafd7c65d6feb7508ce8b2b02e42789daddf08d8",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "117d4507a123b3327729b3efbafd7c65d6feb7508ce8b2b02e42789daddf08d8",
+          "text": "任务",
+          "words": [
+            {
+              "text": "任务",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1653",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1653-W1653",
+      "question_ids": [
+        "BANK-W1653-W1653"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-20",
+    "stepId": "S-U4-20-words-r4-12",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4efb"
+    ],
+    "grammarLessonIds": []
+  }
+}

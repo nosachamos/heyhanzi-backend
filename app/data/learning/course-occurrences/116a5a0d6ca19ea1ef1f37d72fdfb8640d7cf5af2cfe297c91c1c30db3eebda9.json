@@ -1,0 +1,835 @@
+{
+  "id": "EX-CHAR-char-871c",
+  "revision": 2,
+  "unit": "U6-28-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-28-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "蜜",
+  "sourceBlockId": "mandarin-simplified-v1-char-871c",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-871c",
+        "text": "蜜",
+        "pinyin": "mì",
+        "meaning": "honey",
+        "characters": [
+          {
+            "id": "C-871C",
+            "text": "蜜"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-21031a3852769a61e274a252",
+        "text": "执照",
+        "pinyin": "zhí zhào",
+        "meaning": "license",
+        "characters": [
+          {
+            "id": "C-6267",
+            "text": "执"
+          },
+          {
+            "id": "C-7167",
+            "text": "照"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-77d39dd9e891706df4ff677d",
+        "text": "两岸",
+        "pinyin": "liǎng'àn",
+        "meaning": "bilateral; both shores",
+        "characters": [
+          {
+            "id": "C-4E24",
+            "text": "两"
+          },
+          {
+            "id": "C-5CB8",
+            "text": "岸"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-798358fa6853870a9febf6a3",
+        "text": "冲刺",
+        "pinyin": "chōng cì",
+        "meaning": "(sports) to sprint",
+        "characters": [
+          {
+            "id": "C-51B2",
+            "text": "冲"
+          },
+          {
+            "id": "C-523A",
+            "text": "刺"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-9ce573c0e407b606fdc7d38b",
+        "text": "甜蜜",
+        "pinyin": "tián mì",
+        "meaning": "sweet",
+        "characters": [
+          {
+            "id": "C-751C",
+            "text": "甜"
+          },
+          {
+            "id": "C-871C",
+            "text": "蜜"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "4c486e9a674382d0e93c2e6b7313a0bd218a57ad6e831e234346b4fbcf0c5c41",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-871c",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "蜜",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-871c-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-9ce573c0e407b606fdc7d38b",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "sweet",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "甜蜜"
+              },
+              {
+                "value": "tián mì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tian2mi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "甜蜜",
+              "pinyin": "tián mì",
+              "meaning": "sweet",
+              "audio": "8fa84eaeeac3c956e4e244e4d07ee8d00b53487a2b89ed9ef9347e837f0428d7",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-871c-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-871c",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "蜜",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-77d39dd9e891706df4ff677d",
+                "label": "bilateral; both shores",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-21031a3852769a61e274a252",
+                "label": "license",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-871c",
+                "label": "honey",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-871c-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "蜜",
+        "pinyin": "mì",
+        "meaning": "honey",
+        "source": "/stroke-data/871c.json",
+        "reference": {
+          "character": "蜜",
+          "sha256": "d6e1ad0f34415d600693635c176eabf2eb4dfe38549758538a819e2934b7bebb",
+          "medians": [
+            [
+              [
+                453,
+                853
+              ],
+              [
+                535,
+                815
+              ],
+              [
+                558,
+                787
+              ]
+            ],
+            [
+              [
+                242,
+                726
+              ],
+              [
+                252,
+                693
+              ],
+              [
+                248,
+                673
+              ],
+              [
+                198,
+                582
+              ],
+              [
+                192,
+                534
+              ]
+            ],
+            [
+              [
+                281,
+                675
+              ],
+              [
+                293,
+                682
+              ],
+              [
+                330,
+                683
+              ],
+              [
+                583,
+                725
+              ],
+              [
+                716,
+                738
+              ],
+              [
+                759,
+                728
+              ],
+              [
+                771,
+                718
+              ],
+              [
+                781,
+                694
+              ],
+              [
+                698,
+                629
+              ]
+            ],
+            [
+              [
+                264,
+                541
+              ],
+              [
+                248,
+                471
+              ],
+              [
+                228,
+                434
+              ],
+              [
+                221,
+                406
+              ]
+            ],
+            [
+              [
+                341,
+                564
+              ],
+              [
+                374,
+                516
+              ],
+              [
+                440,
+                458
+              ],
+              [
+                505,
+                428
+              ],
+              [
+                576,
+                414
+              ],
+              [
+                651,
+                413
+              ],
+              [
+                684,
+                427
+              ],
+              [
+                674,
+                466
+              ],
+              [
+                652,
+                512
+              ],
+              [
+                643,
+                517
+              ],
+              [
+                645,
+                529
+              ],
+              [
+                637,
+                535
+              ]
+            ],
+            [
+              [
+                422,
+                631
+              ],
+              [
+                465,
+                595
+              ],
+              [
+                484,
+                569
+              ]
+            ],
+            [
+              [
+                591,
+                649
+              ],
+              [
+                604,
+                610
+              ],
+              [
+                551,
+                526
+              ],
+              [
+                497,
+                462
+              ],
+              [
+                422,
+                399
+              ],
+              [
+                342,
+                351
+              ],
+              [
+                240,
+                309
+              ],
+              [
+                205,
+                302
+              ]
+            ],
+            [
+              [
+                726,
+                581
+              ],
+              [
+                816,
+                540
+              ],
+              [
+                847,
+                505
+              ]
+            ],
+            [
+              [
+                292,
+                277
+              ],
+              [
+                317,
+                258
+              ],
+              [
+                327,
+                241
+              ],
+              [
+                359,
+                122
+              ]
+            ],
+            [
+              [
+                341,
+                278
+              ],
+              [
+                361,
+                266
+              ],
+              [
+                540,
+                287
+              ],
+              [
+                654,
+                308
+              ],
+              [
+                681,
+                295
+              ],
+              [
+                699,
+                273
+              ],
+              [
+                675,
+                223
+              ],
+              [
+                647,
+                212
+              ]
+            ],
+            [
+              [
+                375,
+                161
+              ],
+              [
+                385,
+                151
+              ],
+              [
+                398,
+                151
+              ],
+              [
+                631,
+                178
+              ],
+              [
+                680,
+                176
+              ],
+              [
+                699,
+                169
+              ]
+            ],
+            [
+              [
+                467,
+                365
+              ],
+              [
+                507,
+                330
+              ],
+              [
+                502,
+                87
+              ],
+              [
+                487,
+                66
+              ]
+            ],
+            [
+              [
+                246,
+                32
+              ],
+              [
+                300,
+                4
+              ],
+              [
+                665,
+                69
+              ],
+              [
+                693,
+                66
+              ]
+            ],
+            [
+              [
+                672,
+                122
+              ],
+              [
+                761,
+                46
+              ],
+              [
+                779,
+                18
+              ],
+              [
+                786,
+                -14
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-871c-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-798358fa6853870a9febf6a3",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "(sports) to sprint",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "冲刺"
+              },
+              {
+                "value": "chōng cì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chong1ci4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "冲刺",
+              "pinyin": "chōng cì",
+              "meaning": "(sports) to sprint",
+              "audio": "8b0a092b3d354bf664a9a7046452e235bc49fe7ced3d8b04ca8fc74c6e884e94",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-871c-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-871c",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "honey",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "蜜"
+              },
+              {
+                "value": "mì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "mi4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "蜜",
+              "pinyin": "mì",
+              "meaning": "honey",
+              "audio": "572d47addbe0404c31974a249dd7c25b8c13c60a23da1cb0bb65a3d7d9f9e219",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "572d47addbe0404c31974a249dd7c25b8c13c60a23da1cb0bb65a3d7d9f9e219"
+            ],
+            "transcript": [
+              {
+                "text": "蜜",
+                "pinyin": "mì",
+                "meaning": "honey",
+                "audio": "572d47addbe0404c31974a249dd7c25b8c13c60a23da1cb0bb65a3d7d9f9e219",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-871C",
+      "character": "蜜",
+      "lessonIds": [
+        "LESSON-C-871C"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-871c-word",
+        "EX-CHAR-char-871c-recognize",
+        "EX-CHAR-char-871c-write",
+        "EX-CHAR-char-871c-familiar",
+        "EX-CHAR-char-871c-recall"
+      ]
+    },
+    "audio": {
+      "572d47addbe0404c31974a249dd7c25b8c13c60a23da1cb0bb65a3d7d9f9e219": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-a945aac1d4298bb139237658e5320d9922063ea24bf2dc7555274871a7c7924b.mp3",
+          "sha256": "a945aac1d4298bb139237658e5320d9922063ea24bf2dc7555274871a7c7924b",
+          "byteLength": 7245,
+          "readAlong": {
+            "audioSha256": "a945aac1d4298bb139237658e5320d9922063ea24bf2dc7555274871a7c7924b",
+            "text": "蜜",
+            "words": [
+              {
+                "text": "蜜",
+                "start": 0.16,
+                "end": 0.24
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-12637eec98d15d05c39bae62fb7e46ed9217e4725fba1f9437aa444fde0fb5e9.mp3",
+          "sha256": "12637eec98d15d05c39bae62fb7e46ed9217e4725fba1f9437aa444fde0fb5e9",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "12637eec98d15d05c39bae62fb7e46ed9217e4725fba1f9437aa444fde0fb5e9",
+            "text": "蜜",
+            "words": [
+              {
+                "text": "蜜",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "88f36e0197f725db8bd6b92a3d6cbc44a5abb032abbfee63ba1b685db1451512": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e4b93bcbba44765caa0be507ff0c67288d315f5a88c053fbe81cbb0417df8c13.mp3",
+          "sha256": "e4b93bcbba44765caa0be507ff0c67288d315f5a88c053fbe81cbb0417df8c13",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "e4b93bcbba44765caa0be507ff0c67288d315f5a88c053fbe81cbb0417df8c13",
+            "text": "执照",
+            "words": [
+              {
+                "text": "执照",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/79ea681505f6b73967cd38d11f6e0fda9003b69fffbcfc23e9ab65750691226d.mp3",
+          "sha256": "79ea681505f6b73967cd38d11f6e0fda9003b69fffbcfc23e9ab65750691226d",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "79ea681505f6b73967cd38d11f6e0fda9003b69fffbcfc23e9ab65750691226d",
+            "text": "执照",
+            "words": [
+              {
+                "text": "执照",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "7e86f7a1065599edd3c92bad179e46d40f576ae82ff07d7295c38d04dd35a14a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/76a8837f00a65adfed2c0b0294d3d058bdda9a755798b1086898250b50f0b727.mp3",
+          "sha256": "76a8837f00a65adfed2c0b0294d3d058bdda9a755798b1086898250b50f0b727",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "76a8837f00a65adfed2c0b0294d3d058bdda9a755798b1086898250b50f0b727",
+            "text": "两岸",
+            "words": [
+              {
+                "text": "两岸",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/925ce95b329293afbe47a2ab66f24cbb1e1af2459afcf0be09f85e7418acb396.mp3",
+          "sha256": "925ce95b329293afbe47a2ab66f24cbb1e1af2459afcf0be09f85e7418acb396",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "925ce95b329293afbe47a2ab66f24cbb1e1af2459afcf0be09f85e7418acb396",
+            "text": "两岸",
+            "words": [
+              {
+                "text": "两岸",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "8b0a092b3d354bf664a9a7046452e235bc49fe7ced3d8b04ca8fc74c6e884e94": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/fad9a9a0b4fff9bbcacaf5f3e4f223df026dc3ccd7bba49ab97fe95fd1536fa6.mp3",
+          "sha256": "fad9a9a0b4fff9bbcacaf5f3e4f223df026dc3ccd7bba49ab97fe95fd1536fa6",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "fad9a9a0b4fff9bbcacaf5f3e4f223df026dc3ccd7bba49ab97fe95fd1536fa6",
+            "text": "冲刺",
+            "words": [
+              {
+                "text": "冲刺",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/341475dcfa0b2f9823ecb5a3d483436e2c6afaf63c41c5959d310123250703ff.mp3",
+          "sha256": "341475dcfa0b2f9823ecb5a3d483436e2c6afaf63c41c5959d310123250703ff",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "341475dcfa0b2f9823ecb5a3d483436e2c6afaf63c41c5959d310123250703ff",
+            "text": "冲刺",
+            "words": [
+              {
+                "text": "冲刺",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "8fa84eaeeac3c956e4e244e4d07ee8d00b53487a2b89ed9ef9347e837f0428d7": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/72ac3ddd5dd742eb7fe1bb9fc82cda4f21b216a88fbe15e4dc2408492622e305.mp3",
+          "sha256": "72ac3ddd5dd742eb7fe1bb9fc82cda4f21b216a88fbe15e4dc2408492622e305",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "72ac3ddd5dd742eb7fe1bb9fc82cda4f21b216a88fbe15e4dc2408492622e305",
+            "text": "甜蜜",
+            "words": [
+              {
+                "text": "甜蜜",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/52971fca9ed69ab9f2816f2c138946a536d895959048408033a0a3c0cf9904e8.mp3",
+          "sha256": "52971fca9ed69ab9f2816f2c138946a536d895959048408033a0a3c0cf9904e8",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "52971fca9ed69ab9f2816f2c138946a536d895959048408033a0a3c0cf9904e8",
+            "text": "甜蜜",
+            "words": [
+              {
+                "text": "甜蜜",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0002",
+  "targetId": "W0002",
+  "steps": [
+    {
+      "id": "BANK-W0002-W0002",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0002-W0002",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "you",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "你"
+            },
+            {
+              "value": "nǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ni3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "你",
+            "pinyin": "nǐ",
+            "meaning": "you",
+            "singleWord": true,
+            "audio": "b316ac0dd167bd8bef2048818a93b55be5371efb0af3024556cf9b5c93799d4d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b316ac0dd167bd8bef2048818a93b55be5371efb0af3024556cf9b5c93799d4d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-005431e11bb3e8561c027f48ace733d78533f3b8d46a15ec48297ecd6d5fdda3.mp3",
+        "sha256": "005431e11bb3e8561c027f48ace733d78533f3b8d46a15ec48297ecd6d5fdda3",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "005431e11bb3e8561c027f48ace733d78533f3b8d46a15ec48297ecd6d5fdda3",
+          "text": "你",
+          "words": [
+            {
+              "text": "你",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-4a920870d212f2f41fcc0396f1b7f5edc548727f716658319f054daf6f69066c.mp3",
+        "sha256": "4a920870d212f2f41fcc0396f1b7f5edc548727f716658319f054daf6f69066c",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "4a920870d212f2f41fcc0396f1b7f5edc548727f716658319f054daf6f69066c",
+          "text": "你",
+          "words": [
+            {
+              "text": "你",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0002",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0002-W0002",
+      "question_ids": [
+        "BANK-W0002-W0002"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU01",
+    "stepId": "S-WU01-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-ni"
+    ],
+    "grammarLessonIds": []
+  }
+}

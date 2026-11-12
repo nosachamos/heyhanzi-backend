@@ -1,0 +1,647 @@
+{
+  "id": "EX-CHAR-char-67af",
+  "revision": 2,
+  "unit": "U6-24-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-24-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "枯",
+  "sourceBlockId": "mandarin-simplified-v1-char-67af",
+  "sourceLevelId": "hsk-6",
+  "deferred": true,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-5b85f4e078673c2e516fa1f0",
+        "text": "枯燥",
+        "pinyin": "kūzào",
+        "meaning": "dry and dull; uninteresting; tedious",
+        "characters": [
+          {
+            "id": "C-67AF",
+            "text": "枯"
+          },
+          {
+            "id": "C-71E5",
+            "text": "燥"
+          }
+        ]
+      },
+      {
+        "id": "W0568",
+        "text": "绿色",
+        "pinyin": "lǜsè",
+        "meaning": "green",
+        "characters": [
+          {
+            "id": "C-7EFF",
+            "text": "绿"
+          },
+          {
+            "id": "C-8272",
+            "text": "色"
+          }
+        ]
+      },
+      {
+        "id": "W2167",
+        "text": "成年",
+        "pinyin": "chéngnián",
+        "meaning": "to grow to adulthood; fully grown",
+        "characters": [
+          {
+            "id": "C-6210",
+            "text": "成"
+          },
+          {
+            "id": "C-5E74",
+            "text": "年"
+          }
+        ]
+      },
+      {
+        "id": "W4026",
+        "text": "负面",
+        "pinyin": "fùmiàn",
+        "meaning": "negative; the negative side",
+        "characters": [
+          {
+            "id": "C-8D1F",
+            "text": "负"
+          },
+          {
+            "id": "C-9762",
+            "text": "面"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "a9b81a2e65fff91806fcaf41d3a58c34b3b47548baf5cfb2ae1139c0e5d55e95",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-67af",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "枯",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-67af-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-5b85f4e078673c2e516fa1f0",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "dry and dull; uninteresting",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "枯燥"
+              },
+              {
+                "value": "kūzào",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ku1zao4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "枯燥",
+              "pinyin": "kūzào",
+              "meaning": "dry and dull; uninteresting",
+              "audio": "0de13f1a7686ca58b4cc970b46e6e924beb61f3f2025ecb111c55bda6168b136",
+              "singleWord": true,
+              "focus": "枯"
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-67af-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-cmn-5b85f4e078673c2e516fa1f0",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "枯燥",
+              "meaning": "",
+              "focus": "枯"
+            },
+            "choices": [
+              {
+                "id": "W4026",
+                "label": "negative; the negative side",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-5b85f4e078673c2e516fa1f0",
+                "label": "dry and dull; uninteresting",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W2167",
+                "label": "to grow to adulthood; fully grown",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-67af-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "枯",
+        "pinyin": "kū",
+        "meaning": "(of plants) withered; (of wells, rivers etc) dried up",
+        "source": "/stroke-data/67af.json",
+        "reference": {
+          "character": "枯",
+          "sha256": "fbc1f0999d26550892903ba2eab5cc0be560fe14fefba2002b13f52080670315",
+          "medians": [
+            [
+              [
+                108,
+                493
+              ],
+              [
+                170,
+                489
+              ],
+              [
+                379,
+                546
+              ],
+              [
+                437,
+                548
+              ]
+            ],
+            [
+              [
+                273,
+                824
+              ],
+              [
+                309,
+                790
+              ],
+              [
+                324,
+                759
+              ],
+              [
+                309,
+                254
+              ],
+              [
+                291,
+                88
+              ],
+              [
+                291,
+                -1
+              ]
+            ],
+            [
+              [
+                286,
+                486
+              ],
+              [
+                266,
+                407
+              ],
+              [
+                212,
+                316
+              ],
+              [
+                140,
+                219
+              ],
+              [
+                66,
+                138
+              ]
+            ],
+            [
+              [
+                337,
+                430
+              ],
+              [
+                404,
+                380
+              ],
+              [
+                423,
+                349
+              ]
+            ],
+            [
+              [
+                439,
+                472
+              ],
+              [
+                495,
+                465
+              ],
+              [
+                826,
+                533
+              ],
+              [
+                859,
+                535
+              ],
+              [
+                893,
+                528
+              ]
+            ],
+            [
+              [
+                618,
+                804
+              ],
+              [
+                669,
+                759
+              ],
+              [
+                636,
+                357
+              ],
+              [
+                631,
+                320
+              ],
+              [
+                610,
+                300
+              ]
+            ],
+            [
+              [
+                467,
+                279
+              ],
+              [
+                490,
+                261
+              ],
+              [
+                503,
+                237
+              ],
+              [
+                540,
+                36
+              ]
+            ],
+            [
+              [
+                519,
+                277
+              ],
+              [
+                541,
+                265
+              ],
+              [
+                746,
+                304
+              ],
+              [
+                785,
+                298
+              ],
+              [
+                813,
+                267
+              ],
+              [
+                779,
+                171
+              ],
+              [
+                752,
+                159
+              ]
+            ],
+            [
+              [
+                558,
+                109
+              ],
+              [
+                578,
+                97
+              ],
+              [
+                746,
+                123
+              ],
+              [
+                814,
+                113
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-67af-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0568",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "green",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "绿色"
+              },
+              {
+                "value": "lǜsè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lü4se4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "绿色",
+              "pinyin": "lǜsè",
+              "meaning": "green",
+              "audio": "e566c186f29df129d9ea8dbc1289812dabd502d4d0cc7fd2f949a9ccd992ef62",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-67af-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-cmn-5b85f4e078673c2e516fa1f0",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "dry and dull; uninteresting",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "枯燥"
+              },
+              {
+                "value": "kūzào",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ku1zao4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "枯燥",
+              "pinyin": "kūzào",
+              "meaning": "dry and dull; uninteresting",
+              "audio": "0de13f1a7686ca58b4cc970b46e6e924beb61f3f2025ecb111c55bda6168b136",
+              "singleWord": true,
+              "focus": "枯"
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "0de13f1a7686ca58b4cc970b46e6e924beb61f3f2025ecb111c55bda6168b136"
+            ],
+            "transcript": [
+              {
+                "text": "枯燥",
+                "pinyin": "kūzào",
+                "meaning": "dry and dull; uninteresting",
+                "audio": "0de13f1a7686ca58b4cc970b46e6e924beb61f3f2025ecb111c55bda6168b136",
+                "singleWord": true,
+                "focus": "枯"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-67AF",
+      "character": "枯",
+      "lessonIds": [
+        "LESSON-C-67AF"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-67af-word",
+        "EX-CHAR-char-67af-recognize",
+        "EX-CHAR-char-67af-write",
+        "EX-CHAR-char-67af-familiar",
+        "EX-CHAR-char-67af-recall"
+      ]
+    },
+    "audio": {
+      "0de13f1a7686ca58b4cc970b46e6e924beb61f3f2025ecb111c55bda6168b136": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/03d619dcedf46e7684229cdfd5fd0fa426d6c9cdfa1cd1fdf5477118572aa3aa.mp3",
+          "sha256": "03d619dcedf46e7684229cdfd5fd0fa426d6c9cdfa1cd1fdf5477118572aa3aa",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "03d619dcedf46e7684229cdfd5fd0fa426d6c9cdfa1cd1fdf5477118572aa3aa",
+            "text": "枯燥",
+            "words": [
+              {
+                "text": "枯燥",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/fed9c1fda799ea4fb7f3e39af0f80b14f12e2051503a989e3b799137edc7783f.mp3",
+          "sha256": "fed9c1fda799ea4fb7f3e39af0f80b14f12e2051503a989e3b799137edc7783f",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "fed9c1fda799ea4fb7f3e39af0f80b14f12e2051503a989e3b799137edc7783f",
+            "text": "枯燥",
+            "words": [
+              {
+                "text": "枯燥",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "e566c186f29df129d9ea8dbc1289812dabd502d4d0cc7fd2f949a9ccd992ef62": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/e83e987f0f4588b76894f7309456621aef1f142b4e957ad1504d02a3695e9364.mp3",
+          "sha256": "e83e987f0f4588b76894f7309456621aef1f142b4e957ad1504d02a3695e9364",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "e83e987f0f4588b76894f7309456621aef1f142b4e957ad1504d02a3695e9364",
+            "text": "绿色",
+            "words": [
+              {
+                "text": "绿色",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/ced9f9ce8e0491a797f8de427458359b1aa899078b03c66e282750206fefc114.mp3",
+          "sha256": "ced9f9ce8e0491a797f8de427458359b1aa899078b03c66e282750206fefc114",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "ced9f9ce8e0491a797f8de427458359b1aa899078b03c66e282750206fefc114",
+            "text": "绿色",
+            "words": [
+              {
+                "text": "绿色",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "0556b331300dc8f8797020abea84b25d21811416340bd86a45ff9fad8e69c320": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9bd4803f2f917de78df1ce374ca0c0142fd7728be021a5c15de19d5d6002fe5b.mp3",
+          "sha256": "9bd4803f2f917de78df1ce374ca0c0142fd7728be021a5c15de19d5d6002fe5b",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "9bd4803f2f917de78df1ce374ca0c0142fd7728be021a5c15de19d5d6002fe5b",
+            "text": "成年",
+            "words": [
+              {
+                "text": "成年",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/029692c2b88cf04230ceb5942153f3584587949e7eb7e54524d18046569ea09f.mp3",
+          "sha256": "029692c2b88cf04230ceb5942153f3584587949e7eb7e54524d18046569ea09f",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "029692c2b88cf04230ceb5942153f3584587949e7eb7e54524d18046569ea09f",
+            "text": "成年",
+            "words": [
+              {
+                "text": "成年",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "2809bdb0281b95ca1c040eb24c411cc477f95bac9c24785d8fcf243a20c69095": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c604664af649e35b533f72e767633c708d6220d261f3189fd52684f6c661baf8.mp3",
+          "sha256": "c604664af649e35b533f72e767633c708d6220d261f3189fd52684f6c661baf8",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "c604664af649e35b533f72e767633c708d6220d261f3189fd52684f6c661baf8",
+            "text": "负面",
+            "words": [
+              {
+                "text": "负面",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/00aa3fc9bc4ed1b4e7585521ab113ac18558832240c15761589cb51da2012471.mp3",
+          "sha256": "00aa3fc9bc4ed1b4e7585521ab113ac18558832240c15761589cb51da2012471",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "00aa3fc9bc4ed1b4e7585521ab113ac18558832240c15761589cb51da2012471",
+            "text": "负面",
+            "words": [
+              {
+                "text": "负面",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

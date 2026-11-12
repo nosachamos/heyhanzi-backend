@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2486",
+  "targetId": "W2486",
+  "steps": [
+    {
+      "id": "BANK-W2486-W2486",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2486-W2486",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "seafood",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "海鲜"
+            },
+            {
+              "value": "hǎixiān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hai3xian1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "海鲜",
+            "pinyin": "hǎixiān",
+            "meaning": "seafood",
+            "singleWord": true,
+            "audio": "942c9e777ab8194e14e13063f37a938590f405c3a6e5822b44454d6359bfe41a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "942c9e777ab8194e14e13063f37a938590f405c3a6e5822b44454d6359bfe41a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-35994af70d93349a97f34c44847f6e699729937d9e7a42dc8091d6dc8756ac7a.mp3",
+        "sha256": "35994af70d93349a97f34c44847f6e699729937d9e7a42dc8091d6dc8756ac7a",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "35994af70d93349a97f34c44847f6e699729937d9e7a42dc8091d6dc8756ac7a",
+          "text": "海鲜",
+          "words": [
+            {
+              "text": "海鲜",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b77de648682ae3fbb663174a01cce4657c6399f34aa9859acfa0a2334045195a.mp3",
+        "sha256": "b77de648682ae3fbb663174a01cce4657c6399f34aa9859acfa0a2334045195a",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "b77de648682ae3fbb663174a01cce4657c6399f34aa9859acfa0a2334045195a",
+          "text": "海鲜",
+          "words": [
+            {
+              "text": "海鲜",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2486",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2486-W2486",
+      "question_ids": [
+        "BANK-W2486-W2486"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-08",
+    "stepId": "S-U5-08-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9c9c"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1151",
+  "targetId": "W1151",
+  "steps": [
+    {
+      "id": "BANK-W1151-W1151",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1151-W1151",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "window",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "窗户"
+            },
+            {
+              "value": "chuānghu",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chuang1hu5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "窗户",
+            "pinyin": "chuānghu",
+            "meaning": "window",
+            "singleWord": true,
+            "audio": "c0aef6a4f8721e4c042693c1f57e937a67473f4812dfafe10d0861778db9c1a1"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c0aef6a4f8721e4c042693c1f57e937a67473f4812dfafe10d0861778db9c1a1": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-dfa20e1bdf8bebb9623b6a63164bfe29b75c377c9cd2fc316e5d501876f331d0.mp3",
+        "sha256": "dfa20e1bdf8bebb9623b6a63164bfe29b75c377c9cd2fc316e5d501876f331d0",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "dfa20e1bdf8bebb9623b6a63164bfe29b75c377c9cd2fc316e5d501876f331d0",
+          "text": "窗户",
+          "words": [
+            {
+              "text": "窗户",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-0dda26c8e9e89f9e61aa016fae77050363f7825f49474c7e7036e55145e901ed.mp3",
+        "sha256": "0dda26c8e9e89f9e61aa016fae77050363f7825f49474c7e7036e55145e901ed",
+        "byteLength": 14157,
+        "readAlong": {
+          "audioSha256": "0dda26c8e9e89f9e61aa016fae77050363f7825f49474c7e7036e55145e901ed",
+          "text": "窗户",
+          "words": [
+            {
+              "text": "窗户",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1151",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1151-W1151",
+      "question_ids": [
+        "BANK-W1151-W1151"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-04",
+    "stepId": "S-U4-04-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6237"
+    ],
+    "grammarLessonIds": []
+  }
+}

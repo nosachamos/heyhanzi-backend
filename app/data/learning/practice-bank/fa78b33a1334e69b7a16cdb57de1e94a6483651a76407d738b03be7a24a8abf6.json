@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0443",
+  "targetId": "W0443",
+  "steps": [
+    {
+      "id": "BANK-W0443-W0443",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0443-W0443",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "you, used respectfully",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "您"
+            },
+            {
+              "value": "nín",
+              "mode": "pinyin"
+            },
+            {
+              "value": "nin2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "您",
+            "pinyin": "nín",
+            "meaning": "you, used respectfully",
+            "singleWord": true,
+            "audio": "f16b233bd9075387fbef9b385417347443ced956f316fe0b7a7253d5e84e8a20"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f16b233bd9075387fbef9b385417347443ced956f316fe0b7a7253d5e84e8a20": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-6e6f0e01649a54265f7ba0ecdc6ee6348843da3983d8ef65517b9fcdda1cb77a.mp3",
+        "sha256": "6e6f0e01649a54265f7ba0ecdc6ee6348843da3983d8ef65517b9fcdda1cb77a",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "6e6f0e01649a54265f7ba0ecdc6ee6348843da3983d8ef65517b9fcdda1cb77a",
+          "text": "您",
+          "words": [
+            {
+              "text": "您",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-83be0e3bafca927fec9092a45ef9efbfb8cc2b7a9e5c3ff4d47545369da7d61b.mp3",
+        "sha256": "83be0e3bafca927fec9092a45ef9efbfb8cc2b7a9e5c3ff4d47545369da7d61b",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "83be0e3bafca927fec9092a45ef9efbfb8cc2b7a9e5c3ff4d47545369da7d61b",
+          "text": "您",
+          "words": [
+            {
+              "text": "您",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0443",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0443-W0443",
+      "question_ids": [
+        "BANK-W0443-W0443"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U01",
+    "stepId": "S-U01-words-r4-22",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-60a8"
+    ],
+    "grammarLessonIds": []
+  }
+}

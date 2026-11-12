@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0004",
+  "targetId": "W0004",
+  "steps": [
+    {
+      "id": "BANK-W0004-W0004",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0004-W0004",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "she; her",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "她"
+            },
+            {
+              "value": "tā",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ta1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "她",
+            "pinyin": "tā",
+            "meaning": "she; her",
+            "singleWord": true,
+            "audio": "7499fa5d70c67ba525daa687cba4172652be848aec434ba46cc688d09b6a5052"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7499fa5d70c67ba525daa687cba4172652be848aec434ba46cc688d09b6a5052": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-7df34c17bc635344817577300b816cfe41277163b7515adf60f5ee8dfaf52cc9.mp3",
+        "sha256": "7df34c17bc635344817577300b816cfe41277163b7515adf60f5ee8dfaf52cc9",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "7df34c17bc635344817577300b816cfe41277163b7515adf60f5ee8dfaf52cc9",
+          "text": "她",
+          "words": [
+            {
+              "text": "她",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-95e7935f231db3fc5b27fbbb8cbda0f59e248b005f73f88a903e61c10d712bf4.mp3",
+        "sha256": "95e7935f231db3fc5b27fbbb8cbda0f59e248b005f73f88a903e61c10d712bf4",
+        "byteLength": 7245,
+        "readAlong": {
+          "audioSha256": "95e7935f231db3fc5b27fbbb8cbda0f59e248b005f73f88a903e61c10d712bf4",
+          "text": "她",
+          "words": [
+            {
+              "text": "她",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0004",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0004-W0004",
+      "question_ids": [
+        "BANK-W0004-W0004"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU01",
+    "stepId": "S-WU01-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-ta-she"
+    ],
+    "grammarLessonIds": []
+  }
+}

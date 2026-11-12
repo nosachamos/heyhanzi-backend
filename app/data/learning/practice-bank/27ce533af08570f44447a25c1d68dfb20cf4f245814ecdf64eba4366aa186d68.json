@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0063",
+  "targetId": "W0063",
+  "steps": [
+    {
+      "id": "BANK-W0063-W0063",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0063-W0063",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "at; in",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "在"
+            },
+            {
+              "value": "zài",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zai4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "在",
+            "pinyin": "zài",
+            "meaning": "at; in",
+            "singleWord": true,
+            "audio": "f5ae41d4be6e4da1c32ae5d557f302a6c5690eb453575668509ac96b84f67291"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f5ae41d4be6e4da1c32ae5d557f302a6c5690eb453575668509ac96b84f67291": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-40fe72238deef93dad2cc06e27d85993a1e6c956e7f058e73f0791bb1a0156fc.mp3",
+        "sha256": "40fe72238deef93dad2cc06e27d85993a1e6c956e7f058e73f0791bb1a0156fc",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "40fe72238deef93dad2cc06e27d85993a1e6c956e7f058e73f0791bb1a0156fc",
+          "text": "在",
+          "words": [
+            {
+              "text": "在",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-86477c6ab8672069b7af695f63ecb62edc926d052ef0ed09f596a5b5d7ff305b.mp3",
+        "sha256": "86477c6ab8672069b7af695f63ecb62edc926d052ef0ed09f596a5b5d7ff305b",
+        "byteLength": 8685,
+        "readAlong": {
+          "audioSha256": "86477c6ab8672069b7af695f63ecb62edc926d052ef0ed09f596a5b5d7ff305b",
+          "text": "在",
+          "words": [
+            {
+              "text": "在",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0063",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0063-W0063",
+      "question_ids": [
+        "BANK-W0063-W0063"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "WU04",
+    "stepId": "S-WU04-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-warmup-zai"
+    ],
+    "grammarLessonIds": []
+  }
+}

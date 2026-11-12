@@ -1,0 +1,101 @@
+name: Deploy backend to prod
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: heyhanzi-backend-production-deploy
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      TEST_DATABASE_URL: postgresql://postgres:postgres@localhost:5432/postgres?sslmode=disable
+    services:
+      postgres:
+        image: postgres:16-bookworm
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d postgres"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - name: Require manual release from master
+        run: test "$GITHUB_REF" = refs/heads/master && test "$GITHUB_EVENT_NAME" = workflow_dispatch
+      - uses: actions/checkout@v6
+        with:
+          lfs: true
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version-file: .python-version
+          cache: pip
+          cache-dependency-path: requirements*.txt
+      - run: make env dev-requirements
+      - name: Verify behavior, schema and 768 MiB course/auth production container
+        run: make release-preflight release-schema release-container
+      - name: Export verified image
+        run: docker save heyhanzi-backend-release-check:local | gzip > /tmp/heyhanzi-image.tar.gz
+      - uses: actions/upload-artifact@v6
+        with:
+          name: verified-image
+          path: /tmp/heyhanzi-image.tar.gz
+          retention-days: 3
+
+  deploy:
+    needs: verify
+    permissions:
+      contents: read
+      id-token: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: production
+      url: https://heyhanzi-backend.fly.dev
+    env:
+      FLY_API_TOKEN: ${{ secrets.FLY_API_KEY }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          lfs: true
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version-file: .python-version
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: make env
+      - uses: superfly/flyctl-actions/setup-flyctl@ed8efb33836e8b2096c7fd3ba1c8afe303ebbff1
+      - uses: aws-actions/configure-aws-credentials@v6.3.0
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: us-east-1
+          allowed-account-ids: '642022872145'
+      - name: Validate and stage encrypted SSM configuration
+        run: |
+          DEPLOYMENT_TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          export DEPLOYMENT_TIMESTAMP
+          environment/bin/python scripts/stage_production_config.py
+      - uses: actions/download-artifact@v6
+        with:
+          name: verified-image
+          path: /tmp
+      - name: Push the exact verified image
+        run: |
+          gunzip -c /tmp/heyhanzi-image.tar.gz | docker load
+          flyctl auth docker
+          docker tag heyhanzi-backend-release-check:local "registry.fly.io/heyhanzi-backend:$GITHUB_SHA"
+          docker push "registry.fly.io/heyhanzi-backend:$GITHUB_SHA"
+      - name: Deploy one small machine with no automatic standby
+        run: flyctl deploy --app heyhanzi-backend --image "registry.fly.io/heyhanzi-backend:$GITHUB_SHA" --ha=false
+      - name: Verify deployment
+        env:
+          RELEASE_SHA: ${{ github.sha }}
+        run: environment/bin/python scripts/smoke_deployment.py

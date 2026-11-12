@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1394",
+  "targetId": "W1394",
+  "steps": [
+    {
+      "id": "BANK-W1394-W1394",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1394-W1394",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "price",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "价钱"
+            },
+            {
+              "value": "jiàqián",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jia4qian2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "价钱",
+            "pinyin": "jiàqián",
+            "meaning": "price",
+            "singleWord": true,
+            "audio": "bde0e9b95a0208c779b43e19a5303417ee6a354d3e233445e5fdcf9332aa5629"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "bde0e9b95a0208c779b43e19a5303417ee6a354d3e233445e5fdcf9332aa5629": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/c1b61b0c7d0d76cad405dbf9d0162bc565090bbc1d7b16a9f053db3712d9d5a3.mp3",
+        "sha256": "c1b61b0c7d0d76cad405dbf9d0162bc565090bbc1d7b16a9f053db3712d9d5a3",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "c1b61b0c7d0d76cad405dbf9d0162bc565090bbc1d7b16a9f053db3712d9d5a3",
+          "text": "价钱",
+          "words": [
+            {
+              "text": "价钱",
+              "start": 0.09,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/42262b879b83ad193886981cadf6d8eb6d1a0a20e68609aa95a150e554940445.mp3",
+        "sha256": "42262b879b83ad193886981cadf6d8eb6d1a0a20e68609aa95a150e554940445",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "42262b879b83ad193886981cadf6d8eb6d1a0a20e68609aa95a150e554940445",
+          "text": "价钱",
+          "words": [
+            {
+              "text": "价钱",
+              "start": 0.09,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1394",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1394-W1394",
+      "question_ids": [
+        "BANK-W1394-W1394"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-10-P01",
+    "stepId": "S-U4-10-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4ef7"
+    ],
+    "grammarLessonIds": []
+  }
+}

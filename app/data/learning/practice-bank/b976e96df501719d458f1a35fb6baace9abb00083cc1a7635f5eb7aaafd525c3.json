@@ -1,0 +1,159 @@
+{
+  "id": "BANK-W-XUEHUI-SKILL",
+  "targetId": "W-XUEHUI-SKILL",
+  "steps": [
+    {
+      "id": "BANK-W-XUEHUI-SKILL-W-XUEHUI-SKILL",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W-XUEHUI-SKILL-W-XUEHUI-SKILL",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "learn; master (a skill)",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "学会"
+            },
+            {
+              "value": "xuéhuì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xue2hui4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "学会",
+            "pinyin": "xuéhuì",
+            "meaning": "learn; master (a skill)",
+            "singleWord": true,
+            "audio": "6b5d7c0ed8aace0fbdf56fe0edf9a079258f1aa79d952daae759fd4f9bce0acb"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W-XUEHUI-SKILL-W-XUEHUI-SKILL-use-learn-skill",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W-XUEHUI-SKILL-W-XUEHUI-SKILL-use-learn-skill",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 学会 fits this context?",
+          "context": "After practising, a person is now able to perform a skill that they could not do before.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W-XUEHUI-SKILL-W-XUEHUI-SKILL-use-learn-skill-meaning",
+              "label": "The person has learned the skill.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "学会 is a verb meaning to learn how to do something or master a skill. It describes acquiring the ability through learning; it does not name an organization."
+            },
+            {
+              "id": "BANK-W-XUEHUI-SKILL-W-XUEHUI-SKILL-use-learn-skill-contrast-2",
+              "label": "The person is teaching the skill to someone else.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "学会 is a verb meaning to learn how to do something or master a skill. It describes acquiring the ability through learning; it does not name an organization."
+            },
+            {
+              "id": "BANK-W-XUEHUI-SKILL-W-XUEHUI-SKILL-use-learn-skill-contrast-1",
+              "label": "The person has joined an academic association.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "学会 is a verb meaning to learn how to do something or master a skill. It describes acquiring the ability through learning; it does not name an organization."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "学会",
+            "pinyin": "xuéhuì",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "6b5d7c0ed8aace0fbdf56fe0edf9a079258f1aa79d952daae759fd4f9bce0acb"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "6b5d7c0ed8aace0fbdf56fe0edf9a079258f1aa79d952daae759fd4f9bce0acb": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-e7e2a946b5893a47fcad4c2b0bd83da072a3415e5a4616083d20403467997302.mp3",
+        "sha256": "e7e2a946b5893a47fcad4c2b0bd83da072a3415e5a4616083d20403467997302",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "e7e2a946b5893a47fcad4c2b0bd83da072a3415e5a4616083d20403467997302",
+          "text": "学会",
+          "words": [
+            {
+              "text": "学会",
+              "start": 0.26,
+              "end": 0.68
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-db899849cc6b8329744a9a24491082ae7bc8062ab5897750a4e1634b2f836f79.mp3",
+        "sha256": "db899849cc6b8329744a9a24491082ae7bc8062ab5897750a4e1634b2f836f79",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "db899849cc6b8329744a9a24491082ae7bc8062ab5897750a4e1634b2f836f79",
+          "text": "学会",
+          "words": [
+            {
+              "text": "学会",
+              "start": 0.09,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W-XUEHUI-SKILL",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W-XUEHUI-SKILL-W-XUEHUI-SKILL",
+      "question_ids": [
+        "BANK-W-XUEHUI-SKILL-W-XUEHUI-SKILL"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W-XUEHUI-SKILL",
+      "facet_id": "lexical-use-learn-skill",
+      "part_id": "BANK-W-XUEHUI-SKILL-W-XUEHUI-SKILL-use-learn-skill",
+      "question_ids": [
+        "BANK-W-XUEHUI-SKILL-W-XUEHUI-SKILL-use-learn-skill"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W-XUEHUI-SKILL",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U20",
+    "stepId": "S-U20-words-r4-3",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4f1a"
+    ],
+    "grammarLessonIds": []
+  }
+}

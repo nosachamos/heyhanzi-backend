@@ -1,0 +1,777 @@
+{
+  "id": "EX-CHAR-char-6876",
+  "revision": 2,
+  "unit": "U4-04",
+  "stage": "ST-HSK4",
+  "after": "S-U4-04-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "桶",
+  "sourceBlockId": "mandarin-simplified-v1-char-6876",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-6876",
+        "text": "桶",
+        "pinyin": "tǒng",
+        "meaning": "bucket; (trash) can",
+        "characters": [
+          {
+            "id": "C-6876",
+            "text": "桶"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-0ebe3017e2da1e88724e27cd",
+        "text": "垃圾桶",
+        "pinyin": "lā jī tǒng",
+        "meaning": "rubbish bin",
+        "characters": [
+          {
+            "id": "C-5783",
+            "text": "垃"
+          },
+          {
+            "id": "C-573E",
+            "text": "圾"
+          },
+          {
+            "id": "C-6876",
+            "text": "桶"
+          }
+        ]
+      },
+      {
+        "id": "W2108",
+        "text": "步行",
+        "pinyin": "bùxíng",
+        "meaning": "to go on foot; to walk",
+        "characters": [
+          {
+            "id": "C-6B65",
+            "text": "步"
+          },
+          {
+            "id": "C-884C",
+            "text": "行"
+          }
+        ]
+      },
+      {
+        "id": "W5086",
+        "text": "兴起",
+        "pinyin": "xīngqǐ",
+        "meaning": "to rise; to spring up",
+        "characters": [
+          {
+            "id": "C-5174",
+            "text": "兴"
+          },
+          {
+            "id": "C-8D77",
+            "text": "起"
+          }
+        ]
+      },
+      {
+        "id": "W5234",
+        "text": "原先",
+        "pinyin": "yuánxiān",
+        "meaning": "originally; original",
+        "characters": [
+          {
+            "id": "C-539F",
+            "text": "原"
+          },
+          {
+            "id": "C-5148",
+            "text": "先"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "eef560285badcfa80978ce341cf4a351c00e8f801cfce5bd8099e77b5a35db0d",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-6876",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "桶",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-6876-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-0ebe3017e2da1e88724e27cd",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "rubbish bin",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "垃圾桶"
+              },
+              {
+                "value": "lā jī tǒng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "la1ji1tong3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "垃圾桶",
+              "pinyin": "lā jī tǒng",
+              "meaning": "rubbish bin",
+              "audio": "2e6bc43d4359f52d9f1ab25f19fbe24d1e37d808539fa84179dd5b5b37f0c4b4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6876-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-6876",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "桶",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-6876",
+                "label": "bucket; (trash) can",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W5086",
+                "label": "to rise; to spring up",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W5234",
+                "label": "originally; original",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6876-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "桶",
+        "pinyin": "tǒng",
+        "meaning": "bucket; (trash) can",
+        "source": "/stroke-data/6876.json",
+        "reference": {
+          "character": "桶",
+          "sha256": "3e52db681b99b793733f457aa370a27aa252d004a9421af427e8a19a7506fbac",
+          "medians": [
+            [
+              [
+                116,
+                520
+              ],
+              [
+                178,
+                517
+              ],
+              [
+                267,
+                535
+              ],
+              [
+                364,
+                565
+              ],
+              [
+                418,
+                565
+              ]
+            ],
+            [
+              [
+                258,
+                825
+              ],
+              [
+                296,
+                789
+              ],
+              [
+                310,
+                761
+              ],
+              [
+                295,
+                278
+              ],
+              [
+                279,
+                99
+              ],
+              [
+                280,
+                10
+              ]
+            ],
+            [
+              [
+                274,
+                506
+              ],
+              [
+                254,
+                417
+              ],
+              [
+                216,
+                343
+              ],
+              [
+                138,
+                226
+              ],
+              [
+                42,
+                115
+              ]
+            ],
+            [
+              [
+                328,
+                409
+              ],
+              [
+                338,
+                394
+              ],
+              [
+                364,
+                380
+              ],
+              [
+                390,
+                355
+              ]
+            ],
+            [
+              [
+                464,
+                703
+              ],
+              [
+                487,
+                693
+              ],
+              [
+                520,
+                692
+              ],
+              [
+                552,
+                699
+              ],
+              [
+                693,
+                753
+              ],
+              [
+                732,
+                758
+              ],
+              [
+                754,
+                746
+              ],
+              [
+                768,
+                728
+              ],
+              [
+                758,
+                710
+              ],
+              [
+                666,
+                618
+              ],
+              [
+                665,
+                611
+              ],
+              [
+                650,
+                610
+              ]
+            ],
+            [
+              [
+                572,
+                608
+              ],
+              [
+                623,
+                586
+              ],
+              [
+                670,
+                552
+              ]
+            ],
+            [
+              [
+                440,
+                483
+              ],
+              [
+                465,
+                462
+              ],
+              [
+                473,
+                439
+              ],
+              [
+                479,
+                351
+              ],
+              [
+                473,
+                235
+              ],
+              [
+                455,
+                129
+              ],
+              [
+                451,
+                68
+              ]
+            ],
+            [
+              [
+                492,
+                476
+              ],
+              [
+                511,
+                466
+              ],
+              [
+                768,
+                521
+              ],
+              [
+                792,
+                517
+              ],
+              [
+                820,
+                491
+              ],
+              [
+                831,
+                143
+              ],
+              [
+                827,
+                65
+              ],
+              [
+                813,
+                35
+              ],
+              [
+                779,
+                41
+              ],
+              [
+                706,
+                68
+              ]
+            ],
+            [
+              [
+                548,
+                343
+              ],
+              [
+                687,
+                371
+              ],
+              [
+                710,
+                373
+              ],
+              [
+                731,
+                367
+              ]
+            ],
+            [
+              [
+                540,
+                231
+              ],
+              [
+                599,
+                238
+              ],
+              [
+                716,
+                265
+              ],
+              [
+                747,
+                259
+              ]
+            ],
+            [
+              [
+                607,
+                465
+              ],
+              [
+                638,
+                443
+              ],
+              [
+                631,
+                48
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-6876-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W2108",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to go on foot; to walk",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "步行"
+              },
+              {
+                "value": "bùxíng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bu4xing2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "步行",
+              "pinyin": "bùxíng",
+              "meaning": "to go on foot; to walk",
+              "audio": "54c0d73b1193ff012e22e0ed5577701ae1aaf6d4c0c331c6f982245570ea0d79",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-6876-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-6876",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "bucket; (trash) can",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "桶"
+              },
+              {
+                "value": "tǒng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tong3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "桶",
+              "pinyin": "tǒng",
+              "meaning": "bucket; (trash) can",
+              "audio": "abe130bc8eadb773cdca46659f6b9d09afa33fca6b8cd2441611c7950b88d27d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "abe130bc8eadb773cdca46659f6b9d09afa33fca6b8cd2441611c7950b88d27d"
+            ],
+            "transcript": [
+              {
+                "text": "桶",
+                "pinyin": "tǒng",
+                "meaning": "bucket; (trash) can",
+                "audio": "abe130bc8eadb773cdca46659f6b9d09afa33fca6b8cd2441611c7950b88d27d",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-6876",
+      "character": "桶",
+      "lessonIds": [
+        "LESSON-C-6876"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-6876-word",
+        "EX-CHAR-char-6876-recognize",
+        "EX-CHAR-char-6876-write",
+        "EX-CHAR-char-6876-familiar",
+        "EX-CHAR-char-6876-recall"
+      ]
+    },
+    "audio": {
+      "abe130bc8eadb773cdca46659f6b9d09afa33fca6b8cd2441611c7950b88d27d": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/92018ea56da689a504a3ca1f2f9bb80431a4e392ff8cb661de645b28045d06ef.mp3",
+          "sha256": "92018ea56da689a504a3ca1f2f9bb80431a4e392ff8cb661de645b28045d06ef",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "92018ea56da689a504a3ca1f2f9bb80431a4e392ff8cb661de645b28045d06ef",
+            "text": "桶",
+            "words": [
+              {
+                "text": "桶",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/002b0fc68316b6d96b1186e5439af26d859d16ab0d19bfab186ab754592c6592.mp3",
+          "sha256": "002b0fc68316b6d96b1186e5439af26d859d16ab0d19bfab186ab754592c6592",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "002b0fc68316b6d96b1186e5439af26d859d16ab0d19bfab186ab754592c6592",
+            "text": "桶",
+            "words": [
+              {
+                "text": "桶",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "2e6bc43d4359f52d9f1ab25f19fbe24d1e37d808539fa84179dd5b5b37f0c4b4": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/814009d401c5de02da000518bb70025430bb8a7bee145f5e597a7a9364d5b040.mp3",
+          "sha256": "814009d401c5de02da000518bb70025430bb8a7bee145f5e597a7a9364d5b040",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "814009d401c5de02da000518bb70025430bb8a7bee145f5e597a7a9364d5b040",
+            "text": "垃圾桶",
+            "words": [
+              {
+                "text": "垃圾桶",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/ccd23399edd39b7b35df740ece1099d2d53612f00ec0f8a545bea290cbca4cc5.mp3",
+          "sha256": "ccd23399edd39b7b35df740ece1099d2d53612f00ec0f8a545bea290cbca4cc5",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "ccd23399edd39b7b35df740ece1099d2d53612f00ec0f8a545bea290cbca4cc5",
+            "text": "垃圾桶",
+            "words": [
+              {
+                "text": "垃圾桶",
+                "start": 0.15,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        }
+      },
+      "54c0d73b1193ff012e22e0ed5577701ae1aaf6d4c0c331c6f982245570ea0d79": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-82ce1355e7abb88aacdcca1a7f198db4c5248c3d8df737124ee53529f45d0360.mp3",
+          "sha256": "82ce1355e7abb88aacdcca1a7f198db4c5248c3d8df737124ee53529f45d0360",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "82ce1355e7abb88aacdcca1a7f198db4c5248c3d8df737124ee53529f45d0360",
+            "text": "步行",
+            "words": [
+              {
+                "text": "步行",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-1c65a0e50451266665d4609329a5bfb3c86b8ebe4f980c21997ae73fc2994d02.mp3",
+          "sha256": "1c65a0e50451266665d4609329a5bfb3c86b8ebe4f980c21997ae73fc2994d02",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "1c65a0e50451266665d4609329a5bfb3c86b8ebe4f980c21997ae73fc2994d02",
+            "text": "步行",
+            "words": [
+              {
+                "text": "步行",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "927c7c17e2bac7cad9db6819d5b8cbb2c93fc2bf51379c813aee4c696ca8f85e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/aef821f59b6af07c78b0c679e0aeed13cfc2ce1e24d4c4fef92e6472b10a0c62.mp3",
+          "sha256": "aef821f59b6af07c78b0c679e0aeed13cfc2ce1e24d4c4fef92e6472b10a0c62",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "aef821f59b6af07c78b0c679e0aeed13cfc2ce1e24d4c4fef92e6472b10a0c62",
+            "text": "兴起",
+            "words": [
+              {
+                "text": "兴起",
+                "start": 0.27,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/bdfd7b2f86be9a12655ff13172065e30e382c0318ef19072b8de33e82d47479b.mp3",
+          "sha256": "bdfd7b2f86be9a12655ff13172065e30e382c0318ef19072b8de33e82d47479b",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "bdfd7b2f86be9a12655ff13172065e30e382c0318ef19072b8de33e82d47479b",
+            "text": "兴起",
+            "words": [
+              {
+                "text": "兴起",
+                "start": 0.26,
+                "end": 0.62
+              }
+            ]
+          }
+        }
+      },
+      "decfdc4b882c56f102c1815b1319b743b1f4642bde5dd17d82aa1734579ee6fc": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/92844bc27037cbae586ad14b828b03bb7b1fbe12e98071ce831a19f38a077b35.mp3",
+          "sha256": "92844bc27037cbae586ad14b828b03bb7b1fbe12e98071ce831a19f38a077b35",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "92844bc27037cbae586ad14b828b03bb7b1fbe12e98071ce831a19f38a077b35",
+            "text": "原先",
+            "words": [
+              {
+                "text": "原先",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/388a8b393737d1f9d09129fab38505e5a4094edeea9f0b55dfe8ceda01693c44.mp3",
+          "sha256": "388a8b393737d1f9d09129fab38505e5a4094edeea9f0b55dfe8ceda01693c44",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "388a8b393737d1f9d09129fab38505e5a4094edeea9f0b55dfe8ceda01693c44",
+            "text": "原先",
+            "words": [
+              {
+                "text": "原先",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

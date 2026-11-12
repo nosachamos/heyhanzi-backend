@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1363",
+  "targetId": "W1363",
+  "steps": [
+    {
+      "id": "BANK-W1363-W1363",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1363-W1363",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "fire; urgent",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "火"
+            },
+            {
+              "value": "huǒ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "huo3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "火",
+            "pinyin": "huǒ",
+            "meaning": "fire; urgent",
+            "singleWord": true,
+            "audio": "1013b5350e397528ab7095ccb8e8d9dce0553c95e00201bb13cd37b97bc34a8d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1013b5350e397528ab7095ccb8e8d9dce0553c95e00201bb13cd37b97bc34a8d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ebea561448b1451a38d295cad1fc5dbc421fa765c97a01a25aef1eb3d5091c2b.mp3",
+        "sha256": "ebea561448b1451a38d295cad1fc5dbc421fa765c97a01a25aef1eb3d5091c2b",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "ebea561448b1451a38d295cad1fc5dbc421fa765c97a01a25aef1eb3d5091c2b",
+          "text": "火",
+          "words": [
+            {
+              "text": "火",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-4ce5fdf9bd93d274249979bdaebbfceccce9ab5ef05b8f6e8d6d59b25da32df3.mp3",
+        "sha256": "4ce5fdf9bd93d274249979bdaebbfceccce9ab5ef05b8f6e8d6d59b25da32df3",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "4ce5fdf9bd93d274249979bdaebbfceccce9ab5ef05b8f6e8d6d59b25da32df3",
+          "text": "火",
+          "words": [
+            {
+              "text": "火",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1363",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1363-W1363",
+      "question_ids": [
+        "BANK-W1363-W1363"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-26",
+    "stepId": "S-U4-26-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-706b"
+    ],
+    "grammarLessonIds": []
+  }
+}

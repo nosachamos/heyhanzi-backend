@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0362",
+  "targetId": "W0362",
+  "steps": [
+    {
+      "id": "BANK-W0362-W0362",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0362-W0362",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to make a payment",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "付款"
+            },
+            {
+              "value": "fùkuǎn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fu4kuan3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "付款",
+            "pinyin": "fùkuǎn",
+            "meaning": "to make a payment",
+            "singleWord": true,
+            "audio": "08307f792736b576ad20c4c5c5217426ea1e8b47c7373f5fee445176fb09739e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "08307f792736b576ad20c4c5c5217426ea1e8b47c7373f5fee445176fb09739e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ebf34e575a5a1ad5fde0ffa7ad3e08659c5feeaaf70f1e76553567412d63337a.mp3",
+        "sha256": "ebf34e575a5a1ad5fde0ffa7ad3e08659c5feeaaf70f1e76553567412d63337a",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "ebf34e575a5a1ad5fde0ffa7ad3e08659c5feeaaf70f1e76553567412d63337a",
+          "text": "付款",
+          "words": [
+            {
+              "text": "付款",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-44659a31d5816d2164abb080ae7d0820437f2d3a0260613df9f462343ad708a9.mp3",
+        "sha256": "44659a31d5816d2164abb080ae7d0820437f2d3a0260613df9f462343ad708a9",
+        "byteLength": 15309,
+        "readAlong": {
+          "audioSha256": "44659a31d5816d2164abb080ae7d0820437f2d3a0260613df9f462343ad708a9",
+          "text": "付款",
+          "words": [
+            {
+              "text": "付款",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0362",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0362-W0362",
+      "question_ids": [
+        "BANK-W0362-W0362"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U32",
+    "stepId": "S-U32-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6b3e"
+    ],
+    "grammarLessonIds": []
+  }
+}

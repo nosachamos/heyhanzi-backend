@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4920",
+  "targetId": "W4920",
+  "steps": [
+    {
+      "id": "BANK-W4920-W4920",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4920-W4920",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "copper",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "铜"
+            },
+            {
+              "value": "tóng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "tong2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "铜",
+            "pinyin": "tóng",
+            "meaning": "copper",
+            "singleWord": true,
+            "audio": "7f57f2daa651cf853e8f03176bfdac120cde24b9943aca857c7dd6211d3a5276"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7f57f2daa651cf853e8f03176bfdac120cde24b9943aca857c7dd6211d3a5276": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f95414552737a8b5e5e1ca554b4b37b76392d2b178646264afca69734f69d431.mp3",
+        "sha256": "f95414552737a8b5e5e1ca554b4b37b76392d2b178646264afca69734f69d431",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "f95414552737a8b5e5e1ca554b4b37b76392d2b178646264afca69734f69d431",
+          "text": "铜",
+          "words": [
+            {
+              "text": "铜",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/415e1489263a50b3285df85b6cee4e736c7ffa87d8069f099a7256e5edd80470.mp3",
+        "sha256": "415e1489263a50b3285df85b6cee4e736c7ffa87d8069f099a7256e5edd80470",
+        "byteLength": 7533,
+        "readAlong": {
+          "audioSha256": "415e1489263a50b3285df85b6cee4e736c7ffa87d8069f099a7256e5edd80470",
+          "text": "铜",
+          "words": [
+            {
+              "text": "铜",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4920",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4920-W4920",
+      "question_ids": [
+        "BANK-W4920-W4920"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-29-P01",
+    "stepId": "S-U6-29-words-r4-17",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-72ee"
+    ],
+    "grammarLessonIds": []
+  }
+}

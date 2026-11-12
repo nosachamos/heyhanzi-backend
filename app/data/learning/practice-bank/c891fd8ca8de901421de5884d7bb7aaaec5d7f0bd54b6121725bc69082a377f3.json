@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3145",
+  "targetId": "W3145",
+  "steps": [
+    {
+      "id": "BANK-W3145-W3145",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3145-W3145",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "sky",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "天空"
+            },
+            {
+              "value": "tiānkōng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "tian1kong1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "天空",
+            "pinyin": "tiānkōng",
+            "meaning": "sky",
+            "singleWord": true,
+            "audio": "82ea7432fec0d3af3744c2b141df07e03d84df25568c1fc8e04bc265eb7a2637"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "82ea7432fec0d3af3744c2b141df07e03d84df25568c1fc8e04bc265eb7a2637": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5b8d4ef461405a28bbfd59f25a32fbaf1843c75ebb3fe0a9eb0eccee479ba7f7.mp3",
+        "sha256": "5b8d4ef461405a28bbfd59f25a32fbaf1843c75ebb3fe0a9eb0eccee479ba7f7",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "5b8d4ef461405a28bbfd59f25a32fbaf1843c75ebb3fe0a9eb0eccee479ba7f7",
+          "text": "天空",
+          "words": [
+            {
+              "text": "天空",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ce2943bc2f5afba6ba29fca5fd593e65c457706c859d4f75c35cd466c9487902.mp3",
+        "sha256": "ce2943bc2f5afba6ba29fca5fd593e65c457706c859d4f75c35cd466c9487902",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "ce2943bc2f5afba6ba29fca5fd593e65c457706c859d4f75c35cd466c9487902",
+          "text": "天空",
+          "words": [
+            {
+              "text": "天空",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3145",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3145-W3145",
+      "question_ids": [
+        "BANK-W3145-W3145"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-29",
+    "stepId": "S-U5-29-words-r4-22",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7a7a"
+    ],
+    "grammarLessonIds": []
+  }
+}

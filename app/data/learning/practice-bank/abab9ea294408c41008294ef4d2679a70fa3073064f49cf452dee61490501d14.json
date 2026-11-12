@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1207",
+  "targetId": "W1207",
+  "steps": [
+    {
+      "id": "BANK-W1207-W1207",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1207-W1207",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "roll call; to mention somebody by name",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "点名"
+            },
+            {
+              "value": "diǎnmíng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dian3ming2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "点名",
+            "pinyin": "diǎnmíng",
+            "meaning": "roll call; to mention somebody by name",
+            "singleWord": true,
+            "audio": "5cf96aa227f2b6a6cbb7a4e11098b9d594049b94cbd4fd7d300d34a31fdce8b8"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5cf96aa227f2b6a6cbb7a4e11098b9d594049b94cbd4fd7d300d34a31fdce8b8": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-af673eda2a3fa91cead748eb8a9b3a573fb06e88ea18fc80282f2d4205300301.mp3",
+        "sha256": "af673eda2a3fa91cead748eb8a9b3a573fb06e88ea18fc80282f2d4205300301",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "af673eda2a3fa91cead748eb8a9b3a573fb06e88ea18fc80282f2d4205300301",
+          "text": "点名",
+          "words": [
+            {
+              "text": "点名",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-9d93b2c1765f03d4eef7ba90688cf3b7522b309c6eeaded369a96edd3ca048db.mp3",
+        "sha256": "9d93b2c1765f03d4eef7ba90688cf3b7522b309c6eeaded369a96edd3ca048db",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "9d93b2c1765f03d4eef7ba90688cf3b7522b309c6eeaded369a96edd3ca048db",
+          "text": "点名",
+          "words": [
+            {
+              "text": "点名",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1207",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1207-W1207",
+      "question_ids": [
+        "BANK-W1207-W1207"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-38-P01",
+    "stepId": "S-U4-38-P01-working-word-1",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-70b9"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1771",
+  "targetId": "W1771",
+  "steps": [
+    {
+      "id": "BANK-W1771-W1771",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1771-W1771",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "body weight",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "体重"
+            },
+            {
+              "value": "tǐzhòng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ti3zhong4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "体重",
+            "pinyin": "tǐzhòng",
+            "meaning": "body weight",
+            "singleWord": true,
+            "audio": "2fd1b4b417b0a03e6a06d0759e54f3808ac9323c161cece4a098ee34bbd9c41c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2fd1b4b417b0a03e6a06d0759e54f3808ac9323c161cece4a098ee34bbd9c41c": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-49734fd60a021980e16427405ed723bf36cc98e4b3ab43823971af6104271c7b.mp3",
+        "sha256": "49734fd60a021980e16427405ed723bf36cc98e4b3ab43823971af6104271c7b",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "49734fd60a021980e16427405ed723bf36cc98e4b3ab43823971af6104271c7b",
+          "text": "体重",
+          "words": [
+            {
+              "text": "体重",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-26f0fba148842ff670e7dfc078a6da9ef161cff2a2689ecb2b3614d0b54942ba.mp3",
+        "sha256": "26f0fba148842ff670e7dfc078a6da9ef161cff2a2689ecb2b3614d0b54942ba",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "26f0fba148842ff670e7dfc078a6da9ef161cff2a2689ecb2b3614d0b54942ba",
+          "text": "体重",
+          "words": [
+            {
+              "text": "体重",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1771",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1771-W1771",
+      "question_ids": [
+        "BANK-W1771-W1771"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-13",
+    "stepId": "S-U4-13-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-91cd"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0517",
+  "targetId": "W0517",
+  "steps": [
+    {
+      "id": "BANK-W0517-W0517",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0517-W0517",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "book; notebook",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "本子"
+            },
+            {
+              "value": "běnzi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ben3zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "本子",
+            "pinyin": "běnzi",
+            "meaning": "book; notebook",
+            "singleWord": true,
+            "audio": "576f43e75193352db42e24c57d6ffad759c5fbf41f5b63ffc53c0ed158d57883"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "576f43e75193352db42e24c57d6ffad759c5fbf41f5b63ffc53c0ed158d57883": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a17b9186dc74c23d8cdfc20cc1305116d06dd73b4f7617107052da42f59a09fa.mp3",
+        "sha256": "a17b9186dc74c23d8cdfc20cc1305116d06dd73b4f7617107052da42f59a09fa",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "a17b9186dc74c23d8cdfc20cc1305116d06dd73b4f7617107052da42f59a09fa",
+          "text": "本子",
+          "words": [
+            {
+              "text": "本子",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-81137c242defc91289a3867978aaa277ef850bfd739472d3fe00403e24c1ac38.mp3",
+        "sha256": "81137c242defc91289a3867978aaa277ef850bfd739472d3fe00403e24c1ac38",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "81137c242defc91289a3867978aaa277ef850bfd739472d3fe00403e24c1ac38",
+          "text": "本子",
+          "words": [
+            {
+              "text": "本子",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0517",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0517-W0517",
+      "question_ids": [
+        "BANK-W0517-W0517"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U20",
+    "stepId": "S-U20-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-672c"
+    ],
+    "grammarLessonIds": []
+  }
+}

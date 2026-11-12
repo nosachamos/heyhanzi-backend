@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3679",
+  "targetId": "W3679",
+  "steps": [
+    {
+      "id": "BANK-W3679-W3679",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3679-W3679",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "virus",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "病毒"
+            },
+            {
+              "value": "bìngdú",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bing4du2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "病毒",
+            "pinyin": "bìngdú",
+            "meaning": "virus",
+            "singleWord": true,
+            "audio": "7a819a64bde003f39d64b4791c341c017a2aa9df7405faeee27f865cb2801ea2"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7a819a64bde003f39d64b4791c341c017a2aa9df7405faeee27f865cb2801ea2": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-31bd60fb5fd5b76878c3d6dadd46f3907e994e6d5d748b72215380fa71e4f30e.mp3",
+        "sha256": "31bd60fb5fd5b76878c3d6dadd46f3907e994e6d5d748b72215380fa71e4f30e",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "31bd60fb5fd5b76878c3d6dadd46f3907e994e6d5d748b72215380fa71e4f30e",
+          "text": "病毒",
+          "words": [
+            {
+              "text": "病毒",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-e3dc164134005b0bcf9c51fcffd5995517dca1d737e346114246d5a238fb5553.mp3",
+        "sha256": "e3dc164134005b0bcf9c51fcffd5995517dca1d737e346114246d5a238fb5553",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "e3dc164134005b0bcf9c51fcffd5995517dca1d737e346114246d5a238fb5553",
+          "text": "病毒",
+          "words": [
+            {
+              "text": "病毒",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3679",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3679-W3679",
+      "question_ids": [
+        "BANK-W3679-W3679"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-16",
+    "stepId": "S-U6-16-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6bd2"
+    ],
+    "grammarLessonIds": []
+  }
+}

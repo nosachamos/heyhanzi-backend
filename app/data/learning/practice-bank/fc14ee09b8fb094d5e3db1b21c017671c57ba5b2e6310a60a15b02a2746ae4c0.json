@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0032",
+  "targetId": "W0032",
+  "steps": [
+    {
+      "id": "BANK-W0032-W0032",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0032-W0032",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "house",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "房子"
+            },
+            {
+              "value": "fángzi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "fang2zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "房子",
+            "pinyin": "fángzi",
+            "meaning": "house",
+            "singleWord": true,
+            "audio": "401c7a259fbfb89d2dc30b3657e2af10bb88c53b10896147b59615fb98075be2"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "401c7a259fbfb89d2dc30b3657e2af10bb88c53b10896147b59615fb98075be2": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-1f970442bfdbe708a2336ed38880b7e295ab580110df9cdf41ab477ca5e6458e.mp3",
+        "sha256": "1f970442bfdbe708a2336ed38880b7e295ab580110df9cdf41ab477ca5e6458e",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "1f970442bfdbe708a2336ed38880b7e295ab580110df9cdf41ab477ca5e6458e",
+          "text": "房子",
+          "words": [
+            {
+              "text": "房子",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d52d3c0275c0b7e39850bb6f14b4e7909764c194173c1832626e507062d78b33.mp3",
+        "sha256": "d52d3c0275c0b7e39850bb6f14b4e7909764c194173c1832626e507062d78b33",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "d52d3c0275c0b7e39850bb6f14b4e7909764c194173c1832626e507062d78b33",
+          "text": "房子",
+          "words": [
+            {
+              "text": "房子",
+              "start": 0.15,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0032",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0032-W0032",
+      "question_ids": [
+        "BANK-W0032-W0032"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U03",
+    "stepId": "S-U03-words-r4-8",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5b50"
+    ],
+    "grammarLessonIds": []
+  }
+}

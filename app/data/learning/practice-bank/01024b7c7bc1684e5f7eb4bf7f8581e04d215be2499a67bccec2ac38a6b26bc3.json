@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1555",
+  "targetId": "W1555",
+  "steps": [
+    {
+      "id": "BANK-W1555-W1555",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1555-W1555",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "mother and child; parent and subsidiary",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "母子"
+            },
+            {
+              "value": "mǔzǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "mu3zi3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "母子",
+            "pinyin": "mǔzǐ",
+            "meaning": "mother and child; parent and subsidiary",
+            "singleWord": true,
+            "audio": "9c3b6931318d2a0221c2e0c02dc4b62fd15327bfc1d37552d68d5c7e8c8c4a14"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "9c3b6931318d2a0221c2e0c02dc4b62fd15327bfc1d37552d68d5c7e8c8c4a14": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/a87ad370d9ae485df3e16d15ee59000e3e600e8687dab92fbe12471d6ab19b2e.mp3",
+        "sha256": "a87ad370d9ae485df3e16d15ee59000e3e600e8687dab92fbe12471d6ab19b2e",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "a87ad370d9ae485df3e16d15ee59000e3e600e8687dab92fbe12471d6ab19b2e",
+          "text": "母子",
+          "words": [
+            {
+              "text": "母子",
+              "start": 0.22,
+              "end": 0.68
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2955291034c00dd1198dac8d1e2ce1889899e6e2235639d5aa48213b75587072.mp3",
+        "sha256": "2955291034c00dd1198dac8d1e2ce1889899e6e2235639d5aa48213b75587072",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "2955291034c00dd1198dac8d1e2ce1889899e6e2235639d5aa48213b75587072",
+          "text": "母子",
+          "words": [
+            {
+              "text": "母子",
+              "start": 0.16,
+              "end": 0.565
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1555",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1555-W1555",
+      "question_ids": [
+        "BANK-W1555-W1555"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-01",
+    "stepId": "S-U4-01-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8c8c"
+    ],
+    "grammarLessonIds": []
+  }
+}

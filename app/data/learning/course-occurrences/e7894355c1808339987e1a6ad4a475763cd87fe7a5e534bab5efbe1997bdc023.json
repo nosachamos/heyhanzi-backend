@@ -1,0 +1,779 @@
+{
+  "id": "EX-CHAR-char-590f",
+  "revision": 2,
+  "unit": "U3-17",
+  "stage": "ST-HSK3",
+  "after": "S-U3-17-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "夏",
+  "sourceBlockId": "mandarin-simplified-v1-char-590f",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-590f",
+        "text": "夏",
+        "pinyin": "xià",
+        "meaning": "summer",
+        "characters": [
+          {
+            "id": "C-590F",
+            "text": "夏"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-9133cf43ce718622c60707dc",
+        "text": "笑话儿",
+        "pinyin": "xiào hua r",
+        "meaning": "joke",
+        "characters": [
+          {
+            "id": "C-7B11",
+            "text": "笑"
+          },
+          {
+            "id": "C-8BDD",
+            "text": "话"
+          },
+          {
+            "id": "C-513F",
+            "text": "儿"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-fa0f43d3bf47b91e95ce0426",
+        "text": "夏季",
+        "pinyin": "xià jì",
+        "meaning": "summer",
+        "characters": [
+          {
+            "id": "C-590F",
+            "text": "夏"
+          },
+          {
+            "id": "C-5B63",
+            "text": "季"
+          }
+        ]
+      },
+      {
+        "id": "W1395",
+        "text": "假日",
+        "pinyin": "jiàrì",
+        "meaning": "a holiday; a day off",
+        "characters": [
+          {
+            "id": "C-5047",
+            "text": "假"
+          },
+          {
+            "id": "C-65E5",
+            "text": "日"
+          }
+        ]
+      },
+      {
+        "id": "W4806",
+        "text": "十足",
+        "pinyin": "shízú",
+        "meaning": "ample; complete",
+        "characters": [
+          {
+            "id": "C-5341",
+            "text": "十"
+          },
+          {
+            "id": "C-8DB3",
+            "text": "足"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "3b01c86e4b451a44eda2d90810b283934563ce2b6dcb8a61538e74a9eb0d5091",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-590f",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "夏",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-590f-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-fa0f43d3bf47b91e95ce0426",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "summer",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "夏季"
+              },
+              {
+                "value": "xià jì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xia4ji4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "夏季",
+              "pinyin": "xià jì",
+              "meaning": "summer",
+              "audio": "464a3d32ffdea243c5101306e7788b3b692cc209e5fcbf2af3b6efa10f73cdf4",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-590f-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-590f",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "夏",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W1395",
+                "label": "a holiday; a day off",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W4806",
+                "label": "ample; complete",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-590f",
+                "label": "summer",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-590f-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "夏",
+        "pinyin": "xià",
+        "meaning": "summer",
+        "source": "/stroke-data/590f.json",
+        "reference": {
+          "character": "夏",
+          "sha256": "59cc8a5d23c88521e42e1e87525312fc8c6edf7672d5a735cefbe3eb0e36299c",
+          "medians": [
+            [
+              [
+                226,
+                769
+              ],
+              [
+                277,
+                759
+              ],
+              [
+                499,
+                791
+              ],
+              [
+                750,
+                811
+              ],
+              [
+                826,
+                789
+              ]
+            ],
+            [
+              [
+                444,
+                758
+              ],
+              [
+                461,
+                737
+              ],
+              [
+                458,
+                727
+              ],
+              [
+                429,
+                681
+              ],
+              [
+                401,
+                665
+              ]
+            ],
+            [
+              [
+                316,
+                654
+              ],
+              [
+                338,
+                633
+              ],
+              [
+                347,
+                613
+              ],
+              [
+                369,
+                379
+              ]
+            ],
+            [
+              [
+                369,
+                646
+              ],
+              [
+                385,
+                638
+              ],
+              [
+                401,
+                640
+              ],
+              [
+                618,
+                683
+              ],
+              [
+                653,
+                675
+              ],
+              [
+                669,
+                662
+              ],
+              [
+                679,
+                650
+              ],
+              [
+                678,
+                639
+              ],
+              [
+                647,
+                444
+              ],
+              [
+                635,
+                414
+              ],
+              [
+                612,
+                410
+              ]
+            ],
+            [
+              [
+                384,
+                549
+              ],
+              [
+                393,
+                557
+              ],
+              [
+                520,
+                581
+              ],
+              [
+                556,
+                578
+              ]
+            ],
+            [
+              [
+                389,
+                472
+              ],
+              [
+                420,
+                485
+              ],
+              [
+                518,
+                501
+              ],
+              [
+                564,
+                498
+              ]
+            ],
+            [
+              [
+                388,
+                394
+              ],
+              [
+                401,
+                403
+              ],
+              [
+                602,
+                431
+              ]
+            ],
+            [
+              [
+                447,
+                346
+              ],
+              [
+                417,
+                341
+              ],
+              [
+                355,
+                257
+              ],
+              [
+                253,
+                161
+              ],
+              [
+                167,
+                97
+              ],
+              [
+                90,
+                56
+              ]
+            ],
+            [
+              [
+                412,
+                286
+              ],
+              [
+                507,
+                292
+              ],
+              [
+                592,
+                312
+              ],
+              [
+                623,
+                307
+              ],
+              [
+                644,
+                294
+              ],
+              [
+                618,
+                226
+              ],
+              [
+                589,
+                172
+              ],
+              [
+                538,
+                105
+              ],
+              [
+                510,
+                80
+              ],
+              [
+                453,
+                44
+              ],
+              [
+                393,
+                18
+              ],
+              [
+                304,
+                -5
+              ],
+              [
+                263,
+                -7
+              ]
+            ],
+            [
+              [
+                391,
+                229
+              ],
+              [
+                421,
+                220
+              ],
+              [
+                457,
+                197
+              ],
+              [
+                612,
+                61
+              ],
+              [
+                708,
+                3
+              ],
+              [
+                754,
+                -10
+              ],
+              [
+                911,
+                -16
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-590f-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-9133cf43ce718622c60707dc",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "joke",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "笑话儿"
+              },
+              {
+                "value": "xiào hua r",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiao4huar5",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xiao4hua5r",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "笑话儿",
+              "pinyin": "xiào hua r",
+              "meaning": "joke",
+              "audio": "54b141cc56809087e8f0e968fd591e13bf1a4e01af4473dc989e9333c104f774",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-590f-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-590f",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "summer",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "夏"
+              },
+              {
+                "value": "xià",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xia4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "夏",
+              "pinyin": "xià",
+              "meaning": "summer",
+              "audio": "52e90839135e938e5a289a9ed14b9e01f5b42ce49292f989172770adbc71f844",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "52e90839135e938e5a289a9ed14b9e01f5b42ce49292f989172770adbc71f844"
+            ],
+            "transcript": [
+              {
+                "text": "夏",
+                "pinyin": "xià",
+                "meaning": "summer",
+                "audio": "52e90839135e938e5a289a9ed14b9e01f5b42ce49292f989172770adbc71f844",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-590F",
+      "character": "夏",
+      "lessonIds": [
+        "LESSON-C-590F"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-590f-word",
+        "EX-CHAR-char-590f-recognize",
+        "EX-CHAR-char-590f-write",
+        "EX-CHAR-char-590f-familiar",
+        "EX-CHAR-char-590f-recall"
+      ]
+    },
+    "audio": {
+      "52e90839135e938e5a289a9ed14b9e01f5b42ce49292f989172770adbc71f844": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-b5cc2abe8c58df1b8348ba4889b8a82ef29a04f3c1f088a93bb523fe7202c54d.mp3",
+          "sha256": "b5cc2abe8c58df1b8348ba4889b8a82ef29a04f3c1f088a93bb523fe7202c54d",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "b5cc2abe8c58df1b8348ba4889b8a82ef29a04f3c1f088a93bb523fe7202c54d",
+            "text": "夏",
+            "words": [
+              {
+                "text": "夏",
+                "start": 0.22,
+                "end": 0.36
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-0fa4a6dd745a6814703afaa5d53b3824688cacb993a4bee3970db5b550c20ec6.mp3",
+          "sha256": "0fa4a6dd745a6814703afaa5d53b3824688cacb993a4bee3970db5b550c20ec6",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "0fa4a6dd745a6814703afaa5d53b3824688cacb993a4bee3970db5b550c20ec6",
+            "text": "夏",
+            "words": [
+              {
+                "text": "夏",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "54b141cc56809087e8f0e968fd591e13bf1a4e01af4473dc989e9333c104f774": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8c89e4c98a17777c7c5da2e8e0b4fe1c2aee4c9b4744885bd8667ff733693d6f.mp3",
+          "sha256": "8c89e4c98a17777c7c5da2e8e0b4fe1c2aee4c9b4744885bd8667ff733693d6f",
+          "byteLength": 14445,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "8c89e4c98a17777c7c5da2e8e0b4fe1c2aee4c9b4744885bd8667ff733693d6f",
+            "text": "笑话儿",
+            "words": [
+              {
+                "text": "笑话儿",
+                "start": 0.09,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/15a243ad75ef99bf89cd05fcc615feba5166d7fbb998d1bc5009a2d524a47c8e.mp3",
+          "sha256": "15a243ad75ef99bf89cd05fcc615feba5166d7fbb998d1bc5009a2d524a47c8e",
+          "byteLength": 13869,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "15a243ad75ef99bf89cd05fcc615feba5166d7fbb998d1bc5009a2d524a47c8e",
+            "text": "笑话儿",
+            "words": [
+              {
+                "text": "笑话儿",
+                "start": 0.115,
+                "end": 0.95
+              }
+            ]
+          }
+        }
+      },
+      "464a3d32ffdea243c5101306e7788b3b692cc209e5fcbf2af3b6efa10f73cdf4": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/15294d663e808675fc8756b8e820ae762b6541b025a6d5d1d5307acb6cd68882.mp3",
+          "sha256": "15294d663e808675fc8756b8e820ae762b6541b025a6d5d1d5307acb6cd68882",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "15294d663e808675fc8756b8e820ae762b6541b025a6d5d1d5307acb6cd68882",
+            "text": "夏季",
+            "words": [
+              {
+                "text": "夏季",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/b9ae6ac3b771197fc5d4ca757894db4c0199b74844a68c7b08fa4399f4f9b96f.mp3",
+          "sha256": "b9ae6ac3b771197fc5d4ca757894db4c0199b74844a68c7b08fa4399f4f9b96f",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "b9ae6ac3b771197fc5d4ca757894db4c0199b74844a68c7b08fa4399f4f9b96f",
+            "text": "夏季",
+            "words": [
+              {
+                "text": "夏季",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "34bf5ee1b67654901b4cf25884337a9513761953dbc13946c0172b19fcd8928e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/072f31b8290545eb8f510ee94df57132f30e65d619c21fc76cf4b15daa1c2e8b.mp3",
+          "sha256": "072f31b8290545eb8f510ee94df57132f30e65d619c21fc76cf4b15daa1c2e8b",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "072f31b8290545eb8f510ee94df57132f30e65d619c21fc76cf4b15daa1c2e8b",
+            "text": "假日",
+            "words": [
+              {
+                "text": "假日",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/10ae3a0e73edad6d46e742864b79193bc304b750240dbd7c5d5f5e017fdca902.mp3",
+          "sha256": "10ae3a0e73edad6d46e742864b79193bc304b750240dbd7c5d5f5e017fdca902",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "10ae3a0e73edad6d46e742864b79193bc304b750240dbd7c5d5f5e017fdca902",
+            "text": "假日",
+            "words": [
+              {
+                "text": "假日",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "df9a202bcf346f3f0f8635de559d304cbf6f50700498bd1dffb75aa3ed5a1792": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9e68c0e67838cca935675cf6cda2c6a4c4154758ad5d610ad72569ff302bbf17.mp3",
+          "sha256": "9e68c0e67838cca935675cf6cda2c6a4c4154758ad5d610ad72569ff302bbf17",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "9e68c0e67838cca935675cf6cda2c6a4c4154758ad5d610ad72569ff302bbf17",
+            "text": "十足",
+            "words": [
+              {
+                "text": "十足",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/1f0723faa11090028f82316a89c4fe400cd134730c2a6f4e17fe85cd5633e910.mp3",
+          "sha256": "1f0723faa11090028f82316a89c4fe400cd134730c2a6f4e17fe85cd5633e910",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "1f0723faa11090028f82316a89c4fe400cd134730c2a6f4e17fe85cd5633e910",
+            "text": "十足",
+            "words": [
+              {
+                "text": "十足",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

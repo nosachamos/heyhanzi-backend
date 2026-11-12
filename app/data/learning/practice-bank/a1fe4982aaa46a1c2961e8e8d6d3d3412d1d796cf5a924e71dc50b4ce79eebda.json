@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2192",
+  "targetId": "W2192",
+  "steps": [
+    {
+      "id": "BANK-W2192-W2192",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2192-W2192",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "ugly",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "丑"
+            },
+            {
+              "value": "chǒu",
+              "mode": "pinyin"
+            },
+            {
+              "value": "chou3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "丑",
+            "pinyin": "chǒu",
+            "meaning": "ugly",
+            "singleWord": true,
+            "audio": "8cb78cafc89dfbf3b7d4ecddddb0b06e072a88cfd302dc3beb2798ac50e91807"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "8cb78cafc89dfbf3b7d4ecddddb0b06e072a88cfd302dc3beb2798ac50e91807": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6d8f314e5fef010e84acce1427b584f4518e11c99507116adb503cc00357c93a.mp3",
+        "sha256": "6d8f314e5fef010e84acce1427b584f4518e11c99507116adb503cc00357c93a",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "6d8f314e5fef010e84acce1427b584f4518e11c99507116adb503cc00357c93a",
+          "text": "丑",
+          "words": [
+            {
+              "text": "丑",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/be9a3022ccf5aa4ab7f9c3dd1e5a8ba675eb8985200606e690491a2396288f82.mp3",
+        "sha256": "be9a3022ccf5aa4ab7f9c3dd1e5a8ba675eb8985200606e690491a2396288f82",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "be9a3022ccf5aa4ab7f9c3dd1e5a8ba675eb8985200606e690491a2396288f82",
+          "text": "丑",
+          "words": [
+            {
+              "text": "丑",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2192",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2192-W2192",
+      "question_ids": [
+        "BANK-W2192-W2192"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-45-P01",
+    "stepId": "S-U5-45-words-r4-9",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4e11"
+    ],
+    "grammarLessonIds": []
+  }
+}

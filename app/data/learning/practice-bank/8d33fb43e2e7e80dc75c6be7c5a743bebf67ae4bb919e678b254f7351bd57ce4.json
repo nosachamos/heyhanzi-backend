@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1011",
+  "targetId": "W1011",
+  "steps": [
+    {
+      "id": "BANK-W1011-W1011",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1011-W1011",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "drink; beverage",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "饮料"
+            },
+            {
+              "value": "yǐnliào",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yin3liao4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "饮料",
+            "pinyin": "yǐnliào",
+            "meaning": "drink; beverage",
+            "singleWord": true,
+            "audio": "68927b3039d14644debe8fd19bc731cdd7fc0f3a9d38100e5a6e7e413cd79f0c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "68927b3039d14644debe8fd19bc731cdd7fc0f3a9d38100e5a6e7e413cd79f0c": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-71ace851c128c34abec983a7f6c1ee8cfbee3ba0aefea39d83b4775f393e24b6.mp3",
+        "sha256": "71ace851c128c34abec983a7f6c1ee8cfbee3ba0aefea39d83b4775f393e24b6",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "71ace851c128c34abec983a7f6c1ee8cfbee3ba0aefea39d83b4775f393e24b6",
+          "text": "饮料",
+          "words": [
+            {
+              "text": "饮料",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-9002a52727762198cbf2bd446311c258b9981a822c15831ff7b625b9a015cd3c.mp3",
+        "sha256": "9002a52727762198cbf2bd446311c258b9981a822c15831ff7b625b9a015cd3c",
+        "byteLength": 13293,
+        "readAlong": {
+          "audioSha256": "9002a52727762198cbf2bd446311c258b9981a822c15831ff7b625b9a015cd3c",
+          "text": "饮料",
+          "words": [
+            {
+              "text": "饮料",
+              "start": 0.27,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1011",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1011-W1011",
+      "question_ids": [
+        "BANK-W1011-W1011"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-05",
+    "stepId": "S-U3-05-words-r4-27",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6599"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1339",
+  "targetId": "W1339",
+  "steps": [
+    {
+      "id": "BANK-W1339-W1339",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1339-W1339",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "flight; sailing",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "航班"
+            },
+            {
+              "value": "hángbān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hang2ban1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "航班",
+            "pinyin": "hángbān",
+            "meaning": "flight; sailing",
+            "singleWord": true,
+            "audio": "14d567214d73541ca3d37c181f074f094aad47dfac2d627b1ba5fbb286550017"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "14d567214d73541ca3d37c181f074f094aad47dfac2d627b1ba5fbb286550017": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/326c718a3cc41f10c7f62ddd665ced75eab4eb5c5cb23a66b99754b71b33c88f.mp3",
+        "sha256": "326c718a3cc41f10c7f62ddd665ced75eab4eb5c5cb23a66b99754b71b33c88f",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "326c718a3cc41f10c7f62ddd665ced75eab4eb5c5cb23a66b99754b71b33c88f",
+          "text": "航班",
+          "words": [
+            {
+              "text": "航班",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/62f110578762b9fb6b88d5e93af4c5408dea566612b1f163fd479613d0479600.mp3",
+        "sha256": "62f110578762b9fb6b88d5e93af4c5408dea566612b1f163fd479613d0479600",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "62f110578762b9fb6b88d5e93af4c5408dea566612b1f163fd479613d0479600",
+          "text": "航班",
+          "words": [
+            {
+              "text": "航班",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1339",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1339-W1339",
+      "question_ids": [
+        "BANK-W1339-W1339"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-16",
+    "stepId": "S-U4-16-words-04",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-822a"
+    ],
+    "grammarLessonIds": []
+  }
+}

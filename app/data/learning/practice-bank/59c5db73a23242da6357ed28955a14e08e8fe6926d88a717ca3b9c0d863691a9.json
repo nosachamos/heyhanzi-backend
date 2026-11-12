@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W1052",
+  "targetId": "W1052",
+  "steps": [
+    {
+      "id": "BANK-W1052-W1052",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1052-W1052",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "noun suffix",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "子"
+            },
+            {
+              "value": "zi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zi5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "子",
+            "pinyin": "zi",
+            "meaning": "noun suffix",
+            "singleWord": true,
+            "audio": "af7b3bfc68cf3dc028bf0c717da1a4e3c669953c21cb9c01fb56f2c3871ad27d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "af7b3bfc68cf3dc028bf0c717da1a4e3c669953c21cb9c01fb56f2c3871ad27d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-8bf743d74afa9b55a4ba03e9e1c7b37ed2a83fa83200b7ef89fd792fa7f25f4d.mp3",
+        "sha256": "8bf743d74afa9b55a4ba03e9e1c7b37ed2a83fa83200b7ef89fd792fa7f25f4d",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "8bf743d74afa9b55a4ba03e9e1c7b37ed2a83fa83200b7ef89fd792fa7f25f4d",
+          "text": "子",
+          "words": [
+            {
+              "text": "子",
+              "start": 0.22,
+              "end": 0.3
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-004edbf6fe8fa5ff866fb9c8398e10f2e5db87f5ff2937c7a96e5a2c07de6f9c.mp3",
+        "sha256": "004edbf6fe8fa5ff866fb9c8398e10f2e5db87f5ff2937c7a96e5a2c07de6f9c",
+        "byteLength": 13581,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "004edbf6fe8fa5ff866fb9c8398e10f2e5db87f5ff2937c7a96e5a2c07de6f9c",
+          "text": "子",
+          "words": [
+            {
+              "text": "子",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1052",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1052-W1052",
+      "question_ids": [
+        "BANK-W1052-W1052"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-26-P01",
+    "stepId": "S-U3-26-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5b50"
+    ],
+    "grammarLessonIds": []
+  }
+}

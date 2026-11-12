@@ -1,0 +1,669 @@
+{
+  "id": "EX-CHAR-char-65f6",
+  "revision": 2,
+  "unit": "U07",
+  "stage": "ST-HSK1",
+  "after": "S-U07-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "时",
+  "sourceBlockId": "mandarin-simplified-v1-char-65f6",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-115130a288d429eff516f146",
+        "text": "一个",
+        "pinyin": "yī ge",
+        "meaning": "one; a",
+        "characters": [
+          {
+            "id": "C-4E00",
+            "text": "一"
+          },
+          {
+            "id": "C-4E2A",
+            "text": "个"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-152b024dbfddcc96f20f659a",
+        "text": "学时",
+        "pinyin": "xué shí",
+        "meaning": "class hour",
+        "characters": [
+          {
+            "id": "C-5B66",
+            "text": "学"
+          },
+          {
+            "id": "C-65F6",
+            "text": "时"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-d861023d8d3a88af1f5139a0",
+        "text": "弟子",
+        "pinyin": "dì zǐ",
+        "meaning": "disciple",
+        "characters": [
+          {
+            "id": "C-5F1F",
+            "text": "弟"
+          },
+          {
+            "id": "C-5B50",
+            "text": "子"
+          }
+        ]
+      },
+      {
+        "id": "W0380",
+        "text": "大家",
+        "pinyin": "dàjiā",
+        "meaning": "everyone",
+        "characters": [
+          {
+            "id": "C-5927",
+            "text": "大"
+          },
+          {
+            "id": "C-5BB6",
+            "text": "家"
+          }
+        ]
+      },
+      {
+        "id": "W0592",
+        "text": "时",
+        "pinyin": "shí",
+        "meaning": "time",
+        "characters": [
+          {
+            "id": "C-65F6",
+            "text": "时"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "9f6b2a08b72e55fc8915043b073c94de51cebe4aefac545e79b33b164892bef4",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-65f6",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "时",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-65f6-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-152b024dbfddcc96f20f659a",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "class hour",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "学时"
+              },
+              {
+                "value": "xué shí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xue2shi2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "学时",
+              "pinyin": "xué shí",
+              "meaning": "class hour",
+              "audio": "9c3c6aa3e251daa589d9a69859e7c0f63b7c8d6b3dab25269cefee5563ffd1c8",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-65f6-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0592",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "时",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-115130a288d429eff516f146",
+                "label": "one; a",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-d861023d8d3a88af1f5139a0",
+                "label": "disciple",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0592",
+                "label": "time",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-65f6-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "时",
+        "pinyin": "shí",
+        "meaning": "time",
+        "source": "/stroke-data/65f6.json",
+        "reference": {
+          "character": "时",
+          "sha256": "25cbaf7e9523db9942709cf2f10d85e3ef2d5b335d28f32ca4741e2942baad27",
+          "medians": [
+            [
+              [
+                141,
+                689
+              ],
+              [
+                170,
+                652
+              ],
+              [
+                178,
+                600
+              ],
+              [
+                180,
+                464
+              ],
+              [
+                163,
+                228
+              ],
+              [
+                168,
+                160
+              ]
+            ],
+            [
+              [
+                204,
+                667
+              ],
+              [
+                221,
+                662
+              ],
+              [
+                318,
+                689
+              ],
+              [
+                357,
+                664
+              ],
+              [
+                360,
+                338
+              ],
+              [
+                355,
+                225
+              ],
+              [
+                348,
+                201
+              ],
+              [
+                352,
+                155
+              ]
+            ],
+            [
+              [
+                204,
+                427
+              ],
+              [
+                216,
+                441
+              ],
+              [
+                235,
+                449
+              ],
+              [
+                297,
+                451
+              ]
+            ],
+            [
+              [
+                196,
+                194
+              ],
+              [
+                212,
+                211
+              ],
+              [
+                303,
+                222
+              ]
+            ],
+            [
+              [
+                419,
+                524
+              ],
+              [
+                475,
+                515
+              ],
+              [
+                835,
+                576
+              ],
+              [
+                888,
+                577
+              ],
+              [
+                916,
+                569
+              ]
+            ],
+            [
+              [
+                681,
+                805
+              ],
+              [
+                710,
+                787
+              ],
+              [
+                730,
+                762
+              ],
+              [
+                723,
+                587
+              ],
+              [
+                731,
+                104
+              ],
+              [
+                726,
+                73
+              ],
+              [
+                710,
+                40
+              ],
+              [
+                578,
+                91
+              ]
+            ],
+            [
+              [
+                464,
+                392
+              ],
+              [
+                552,
+                324
+              ],
+              [
+                571,
+                286
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-65f6-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0380",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "everyone",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "大家"
+              },
+              {
+                "value": "dàjiā",
+                "mode": "pinyin"
+              },
+              {
+                "value": "da4jia1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "大家",
+              "pinyin": "dàjiā",
+              "meaning": "everyone",
+              "audio": "274636433ab6bbbb46c0d685e925646a8cbafd2bee8dc21a0aea245268c2b388",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-65f6-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0592",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "time",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "时"
+              },
+              {
+                "value": "shí",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shi2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "时",
+              "pinyin": "shí",
+              "meaning": "time",
+              "audio": "213845dd9666fa0f6db82cb65284ca5ab7249c863568fbba2bf499437263ac47",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "213845dd9666fa0f6db82cb65284ca5ab7249c863568fbba2bf499437263ac47"
+            ],
+            "transcript": [
+              {
+                "text": "时",
+                "pinyin": "shí",
+                "meaning": "time",
+                "audio": "213845dd9666fa0f6db82cb65284ca5ab7249c863568fbba2bf499437263ac47",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-65F6",
+      "character": "时",
+      "lessonIds": [
+        "LESSON-C-65F6"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-65f6-word",
+        "EX-CHAR-char-65f6-recognize",
+        "EX-CHAR-char-65f6-write",
+        "EX-CHAR-char-65f6-familiar",
+        "EX-CHAR-char-65f6-recall"
+      ]
+    },
+    "audio": {
+      "b139867e631d0c454f181edbfe4372eea9837a6f83751634d64547dc0af54d36": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/fbf0770c62c668f564a034662d56b0d358323521bf5f3871ddd03142b86f93cf.mp3",
+          "sha256": "fbf0770c62c668f564a034662d56b0d358323521bf5f3871ddd03142b86f93cf",
+          "byteLength": 11565,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "fbf0770c62c668f564a034662d56b0d358323521bf5f3871ddd03142b86f93cf",
+            "text": "一个",
+            "words": [
+              {
+                "text": "一个",
+                "start": 0.155,
+                "end": 0.655
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/97b82bb1410c7f4d58bbc2b39620db5586a4e22bc07739ecf21491adc5282c5c.mp3",
+          "sha256": "97b82bb1410c7f4d58bbc2b39620db5586a4e22bc07739ecf21491adc5282c5c",
+          "byteLength": 12429,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "97b82bb1410c7f4d58bbc2b39620db5586a4e22bc07739ecf21491adc5282c5c",
+            "text": "一个",
+            "words": [
+              {
+                "text": "一个",
+                "start": 0.125,
+                "end": 0.735
+              }
+            ]
+          }
+        }
+      },
+      "9c3c6aa3e251daa589d9a69859e7c0f63b7c8d6b3dab25269cefee5563ffd1c8": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/603a312065d2ec8246888f0ae2da355be2c65dd45458c3854cfbbaa870a5da6b.mp3",
+          "sha256": "603a312065d2ec8246888f0ae2da355be2c65dd45458c3854cfbbaa870a5da6b",
+          "byteLength": 16749,
+          "readAlong": {
+            "audioSha256": "603a312065d2ec8246888f0ae2da355be2c65dd45458c3854cfbbaa870a5da6b",
+            "text": "学时",
+            "words": [
+              {
+                "text": "学时",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5b575a01b0e2c245cfecbd9ea634b2ef0ff10c1245b1116f676835fbf6824632.mp3",
+          "sha256": "5b575a01b0e2c245cfecbd9ea634b2ef0ff10c1245b1116f676835fbf6824632",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "5b575a01b0e2c245cfecbd9ea634b2ef0ff10c1245b1116f676835fbf6824632",
+            "text": "学时",
+            "words": [
+              {
+                "text": "学时",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "878badab8c19c05cbb80e9a17971ec3c6ed4e7ecca56855835e06058ea752e3d": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f24a82cd901d3cecdc071484ef77b0c5e1896d460ac6c94e8422a6dcd557ea70.mp3",
+          "sha256": "f24a82cd901d3cecdc071484ef77b0c5e1896d460ac6c94e8422a6dcd557ea70",
+          "byteLength": 16461,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "f24a82cd901d3cecdc071484ef77b0c5e1896d460ac6c94e8422a6dcd557ea70",
+            "text": "弟子",
+            "words": [
+              {
+                "text": "弟子",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/41afc7657cf38de5ce3e4399d5f9c91969d93303093b63bf807757bf53ce74be.mp3",
+          "sha256": "41afc7657cf38de5ce3e4399d5f9c91969d93303093b63bf807757bf53ce74be",
+          "byteLength": 10701,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "41afc7657cf38de5ce3e4399d5f9c91969d93303093b63bf807757bf53ce74be",
+            "text": "弟子",
+            "words": [
+              {
+                "text": "弟子",
+                "start": 0.145,
+                "end": 0.65
+              }
+            ]
+          }
+        }
+      },
+      "274636433ab6bbbb46c0d685e925646a8cbafd2bee8dc21a0aea245268c2b388": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5bf2fa634918e3a69a9cbddacffe20860da88d059467547f77dcd87338d84000.mp3",
+          "sha256": "5bf2fa634918e3a69a9cbddacffe20860da88d059467547f77dcd87338d84000",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "5bf2fa634918e3a69a9cbddacffe20860da88d059467547f77dcd87338d84000",
+            "text": "大家",
+            "words": [
+              {
+                "text": "大家",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d7a096aca139627da5ae2c8417a4c6be1c513dfa6f660f52be9381c6eba04357.mp3",
+          "sha256": "d7a096aca139627da5ae2c8417a4c6be1c513dfa6f660f52be9381c6eba04357",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "d7a096aca139627da5ae2c8417a4c6be1c513dfa6f660f52be9381c6eba04357",
+            "text": "大家",
+            "words": [
+              {
+                "text": "大家",
+                "start": 0.14,
+                "end": 0.4
+              }
+            ]
+          }
+        }
+      },
+      "213845dd9666fa0f6db82cb65284ca5ab7249c863568fbba2bf499437263ac47": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-218e4763ff9c2173e70c2804a84046c78742a1c23451fed40773c9639e4b904a.mp3",
+          "sha256": "218e4763ff9c2173e70c2804a84046c78742a1c23451fed40773c9639e4b904a",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "218e4763ff9c2173e70c2804a84046c78742a1c23451fed40773c9639e4b904a",
+            "text": "时",
+            "words": [
+              {
+                "text": "时",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d105e4a8c43f9130460b18ac841d526f5f28ddc0f04e5130882443fa7765c802.mp3",
+          "sha256": "d105e4a8c43f9130460b18ac841d526f5f28ddc0f04e5130882443fa7765c802",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "d105e4a8c43f9130460b18ac841d526f5f28ddc0f04e5130882443fa7765c802",
+            "text": "时",
+            "words": [
+              {
+                "text": "时",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

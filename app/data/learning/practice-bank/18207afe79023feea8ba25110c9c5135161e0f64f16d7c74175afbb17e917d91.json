@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0673",
+  "targetId": "W0673",
+  "steps": [
+    {
+      "id": "BANK-W0673-W0673",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0673-W0673",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "sick person; patient",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "病人"
+            },
+            {
+              "value": "bìngrén",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bing4ren2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "病人",
+            "pinyin": "bìngrén",
+            "meaning": "sick person; patient",
+            "singleWord": true,
+            "audio": "1f42258b6f7fc3b1d1988cf1111504eaf937a9109a4294e49dc95973131ae64e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1f42258b6f7fc3b1d1988cf1111504eaf937a9109a4294e49dc95973131ae64e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-07cfb20605b7094e933557cafcdab6d99a304aa74a7511c1fd7e2e1884278013.mp3",
+        "sha256": "07cfb20605b7094e933557cafcdab6d99a304aa74a7511c1fd7e2e1884278013",
+        "byteLength": 12717,
+        "readAlong": {
+          "audioSha256": "07cfb20605b7094e933557cafcdab6d99a304aa74a7511c1fd7e2e1884278013",
+          "text": "病人",
+          "words": [
+            {
+              "text": "病人",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-280c4cd01668a46a59873e9f4454006dfc5153f0d1096c0b13c5ad6966c2e60e.mp3",
+        "sha256": "280c4cd01668a46a59873e9f4454006dfc5153f0d1096c0b13c5ad6966c2e60e",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "280c4cd01668a46a59873e9f4454006dfc5153f0d1096c0b13c5ad6966c2e60e",
+          "text": "病人",
+          "words": [
+            {
+              "text": "病人",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0673",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0673-W0673",
+      "question_ids": [
+        "BANK-W0673-W0673"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-09",
+    "stepId": "S-U3-09-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-75c5"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2254",
+  "targetId": "W2254",
+  "steps": [
+    {
+      "id": "BANK-W2254-W2254",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2254-W2254",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "uncle (familiar address for an older man)",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "大爷"
+            },
+            {
+              "value": "dàye",
+              "mode": "pinyin"
+            },
+            {
+              "value": "da4ye5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "大爷",
+            "pinyin": "dàye",
+            "meaning": "uncle (familiar address for an older man)",
+            "singleWord": true,
+            "audio": "97af619499118694bc3d6d32c139831d63749f0f6b5b9c78cb22dc134cf98c99"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "97af619499118694bc3d6d32c139831d63749f0f6b5b9c78cb22dc134cf98c99": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-84228959b38954df06bb518f9f086131ce7f7798a70ea1f28fb313b7f07845ed.mp3",
+        "sha256": "84228959b38954df06bb518f9f086131ce7f7798a70ea1f28fb313b7f07845ed",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "84228959b38954df06bb518f9f086131ce7f7798a70ea1f28fb313b7f07845ed",
+          "text": "大爷",
+          "words": [
+            {
+              "text": "大爷",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-74e8e53e0deb17a929e6cc76bc91240894b48cc90e803fe84f4ff5f787a66dfe.mp3",
+        "sha256": "74e8e53e0deb17a929e6cc76bc91240894b48cc90e803fe84f4ff5f787a66dfe",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "74e8e53e0deb17a929e6cc76bc91240894b48cc90e803fe84f4ff5f787a66dfe",
+          "text": "大爷",
+          "words": [
+            {
+              "text": "大爷",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2254",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2254-W2254",
+      "question_ids": [
+        "BANK-W2254-W2254"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-01",
+    "stepId": "S-U5-01-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-72ec"
+    ],
+    "grammarLessonIds": []
+  }
+}

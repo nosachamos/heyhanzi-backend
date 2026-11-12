@@ -1,0 +1,739 @@
+{
+  "id": "EX-CHAR-char-7a76",
+  "revision": 2,
+  "unit": "U4-19",
+  "stage": "ST-HSK4",
+  "after": "S-U4-19-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "究",
+  "sourceBlockId": "mandarin-simplified-v1-char-7a76",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-7a76",
+        "text": "究",
+        "pinyin": "jiū",
+        "meaning": "after all; to investigate",
+        "characters": [
+          {
+            "id": "C-7A76",
+            "text": "究"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-0ee9ab88e0ecce5ed942c80e",
+        "text": "功夫",
+        "pinyin": "gōngfu",
+        "meaning": "skill; art",
+        "characters": [
+          {
+            "id": "C-529F",
+            "text": "功"
+          },
+          {
+            "id": "C-592B",
+            "text": "夫"
+          }
+        ]
+      },
+      {
+        "id": "W1883",
+        "text": "研究生",
+        "pinyin": "yánjiūshēng",
+        "meaning": "graduate student; postgraduate student",
+        "characters": [
+          {
+            "id": "C-7814",
+            "text": "研"
+          },
+          {
+            "id": "C-7A76",
+            "text": "究"
+          },
+          {
+            "id": "C-751F",
+            "text": "生"
+          }
+        ]
+      },
+      {
+        "id": "W2437",
+        "text": "公务员",
+        "pinyin": "gōngwùyuán",
+        "meaning": "civil servant; public servant",
+        "characters": [
+          {
+            "id": "C-516C",
+            "text": "公"
+          },
+          {
+            "id": "C-52A1",
+            "text": "务"
+          },
+          {
+            "id": "C-5458",
+            "text": "员"
+          }
+        ]
+      },
+      {
+        "id": "W3160",
+        "text": "通常",
+        "pinyin": "tōngcháng",
+        "meaning": "regular; usual",
+        "characters": [
+          {
+            "id": "C-901A",
+            "text": "通"
+          },
+          {
+            "id": "C-5E38",
+            "text": "常"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "39e82e93efba4b698622831f9f3cf3cad62595bcc416aeb11364a9dbff93b3e4",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-7a76",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "究",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-7a76-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1883",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "graduate student; postgraduate student",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "研究生"
+              },
+              {
+                "value": "yánjiūshēng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yan2jiu1sheng1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "研究生",
+              "pinyin": "yánjiūshēng",
+              "meaning": "graduate student; postgraduate student",
+              "audio": "7418a4c217158988a8c141d851380993cc9a9617bcfbf184db210fc7b07346de",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7a76-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-7a76",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "究",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-0ee9ab88e0ecce5ed942c80e",
+                "label": "skill; art",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-7a76",
+                "label": "after all; to investigate",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W2437",
+                "label": "civil servant; public servant",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7a76-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "究",
+        "pinyin": "jiū",
+        "meaning": "after all; to investigate",
+        "source": "/stroke-data/7a76.json",
+        "reference": {
+          "character": "究",
+          "sha256": "48471441218c2869b452e541c4e1a47b8753381a8ab9d8b8d6da050a035a210b",
+          "medians": [
+            [
+              [
+                437,
+                840
+              ],
+              [
+                532,
+                791
+              ],
+              [
+                561,
+                750
+              ]
+            ],
+            [
+              [
+                245,
+                687
+              ],
+              [
+                254,
+                657
+              ],
+              [
+                250,
+                634
+              ],
+              [
+                199,
+                547
+              ],
+              [
+                188,
+                493
+              ]
+            ],
+            [
+              [
+                286,
+                651
+              ],
+              [
+                301,
+                642
+              ],
+              [
+                323,
+                642
+              ],
+              [
+                466,
+                671
+              ],
+              [
+                593,
+                689
+              ],
+              [
+                732,
+                700
+              ],
+              [
+                771,
+                679
+              ],
+              [
+                781,
+                660
+              ],
+              [
+                719,
+                581
+              ],
+              [
+                708,
+                577
+              ]
+            ],
+            [
+              [
+                382,
+                587
+              ],
+              [
+                394,
+                569
+              ],
+              [
+                397,
+                550
+              ],
+              [
+                329,
+                478
+              ],
+              [
+                259,
+                431
+              ]
+            ],
+            [
+              [
+                561,
+                586
+              ],
+              [
+                632,
+                542
+              ],
+              [
+                663,
+                500
+              ]
+            ],
+            [
+              [
+                426,
+                461
+              ],
+              [
+                452,
+                434
+              ],
+              [
+                457,
+                413
+              ],
+              [
+                425,
+                287
+              ],
+              [
+                383,
+                186
+              ],
+              [
+                331,
+                113
+              ],
+              [
+                286,
+                70
+              ],
+              [
+                229,
+                33
+              ],
+              [
+                161,
+                5
+              ]
+            ],
+            [
+              [
+                237,
+                312
+              ],
+              [
+                290,
+                308
+              ],
+              [
+                556,
+                377
+              ],
+              [
+                586,
+                378
+              ],
+              [
+                615,
+                370
+              ],
+              [
+                629,
+                354
+              ],
+              [
+                584,
+                220
+              ],
+              [
+                576,
+                154
+              ],
+              [
+                580,
+                102
+              ],
+              [
+                590,
+                72
+              ],
+              [
+                610,
+                41
+              ],
+              [
+                648,
+                18
+              ],
+              [
+                682,
+                8
+              ],
+              [
+                728,
+                3
+              ],
+              [
+                801,
+                7
+              ],
+              [
+                868,
+                22
+              ],
+              [
+                911,
+                46
+              ],
+              [
+                913,
+                181
+              ],
+              [
+                908,
+                206
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-7a76-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3160",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "regular; usual",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "通常"
+              },
+              {
+                "value": "tōngcháng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "tong1chang2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "通常",
+              "pinyin": "tōngcháng",
+              "meaning": "regular; usual",
+              "audio": "28c18926e800b91e7431ba82a21be31819f5a13caf9adc77a002d33071aa7d99",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-7a76-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-7a76",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "after all; to investigate",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "究"
+              },
+              {
+                "value": "jiū",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jiu1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "究",
+              "pinyin": "jiū",
+              "meaning": "after all; to investigate",
+              "audio": "a088d5890e9d7ff3930c7b81680ab0adf38c4eddbd12a2557833add0c0927607",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "a088d5890e9d7ff3930c7b81680ab0adf38c4eddbd12a2557833add0c0927607"
+            ],
+            "transcript": [
+              {
+                "text": "究",
+                "pinyin": "jiū",
+                "meaning": "after all; to investigate",
+                "audio": "a088d5890e9d7ff3930c7b81680ab0adf38c4eddbd12a2557833add0c0927607",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-7A76",
+      "character": "究",
+      "lessonIds": [
+        "LESSON-C-7A76"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-7a76-word",
+        "EX-CHAR-char-7a76-recognize",
+        "EX-CHAR-char-7a76-write",
+        "EX-CHAR-char-7a76-familiar",
+        "EX-CHAR-char-7a76-recall"
+      ]
+    },
+    "audio": {
+      "a088d5890e9d7ff3930c7b81680ab0adf38c4eddbd12a2557833add0c0927607": {
+        "female": {
+          "url": "/exercise-assets/audio/course-female-34133ed6736199c144889dceb4be463cb4328dbdcc392727530baae47d7e3627.mp3",
+          "sha256": "34133ed6736199c144889dceb4be463cb4328dbdcc392727530baae47d7e3627",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "34133ed6736199c144889dceb4be463cb4328dbdcc392727530baae47d7e3627",
+            "text": "究",
+            "words": [
+              {
+                "text": "究",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-4acb54ebbc33d65988c4866591466099b9bbcae3083479c423a9c2e559a39594.mp3",
+          "sha256": "4acb54ebbc33d65988c4866591466099b9bbcae3083479c423a9c2e559a39594",
+          "byteLength": 9261,
+          "qualityWarning": "too-fast",
+          "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+          "readAlong": {
+            "audioSha256": "4acb54ebbc33d65988c4866591466099b9bbcae3083479c423a9c2e559a39594",
+            "text": "究",
+            "words": [
+              {
+                "text": "究",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "12570c5d698dca4e6df6f62c979a6c39ef1002c61407a5f7cb8cf16cfac76967": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/171c0b0743f3230799f47c3d27639df3cbc5142888e73514e0c6f86fdc7be7d4.mp3",
+          "sha256": "171c0b0743f3230799f47c3d27639df3cbc5142888e73514e0c6f86fdc7be7d4",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "171c0b0743f3230799f47c3d27639df3cbc5142888e73514e0c6f86fdc7be7d4",
+            "text": "功夫",
+            "words": [
+              {
+                "text": "功夫",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/d4e800611790c6ad6d18b7d9c8a236c2e5772c35469927c1e4dbc8ae8f3a1758.mp3",
+          "sha256": "d4e800611790c6ad6d18b7d9c8a236c2e5772c35469927c1e4dbc8ae8f3a1758",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "d4e800611790c6ad6d18b7d9c8a236c2e5772c35469927c1e4dbc8ae8f3a1758",
+            "text": "功夫",
+            "words": [
+              {
+                "text": "功夫",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "7418a4c217158988a8c141d851380993cc9a9617bcfbf184db210fc7b07346de": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/fdd89a00875a361e5ff094295eb27998a8465709d2b1c8a3c41fb2a9e49e9949.mp3",
+          "sha256": "fdd89a00875a361e5ff094295eb27998a8465709d2b1c8a3c41fb2a9e49e9949",
+          "byteLength": 16749,
+          "readAlong": {
+            "audioSha256": "fdd89a00875a361e5ff094295eb27998a8465709d2b1c8a3c41fb2a9e49e9949",
+            "text": "研究生",
+            "words": [
+              {
+                "text": "研究生",
+                "start": 0.15,
+                "end": 0.69
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/35827670e8a3f8b0ad607a0a0e49e3b6fce2a4ae22375fe1736000cd75eb1ee3.mp3",
+          "sha256": "35827670e8a3f8b0ad607a0a0e49e3b6fce2a4ae22375fe1736000cd75eb1ee3",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "35827670e8a3f8b0ad607a0a0e49e3b6fce2a4ae22375fe1736000cd75eb1ee3",
+            "text": "研究生",
+            "words": [
+              {
+                "text": "研究生",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      },
+      "6df6a93c7186cf8bd1c4c2878e2a3ad4d6d4f90c0598ce17f44c874b07b04d13": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/32e828c30df1b05a01f477ecb64d39a65201d78668522707fe033402564bccb5.mp3",
+          "sha256": "32e828c30df1b05a01f477ecb64d39a65201d78668522707fe033402564bccb5",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "32e828c30df1b05a01f477ecb64d39a65201d78668522707fe033402564bccb5",
+            "text": "公务员",
+            "words": [
+              {
+                "text": "公务员",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/19ccfe7d143abd0f66a84449132c5b3b7df07ea6554246c56445342e34c65304.mp3",
+          "sha256": "19ccfe7d143abd0f66a84449132c5b3b7df07ea6554246c56445342e34c65304",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "19ccfe7d143abd0f66a84449132c5b3b7df07ea6554246c56445342e34c65304",
+            "text": "公务员",
+            "words": [
+              {
+                "text": "公务员",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "28c18926e800b91e7431ba82a21be31819f5a13caf9adc77a002d33071aa7d99": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-bae334cbc4952fbf85606b4debd3a3a6058bd3151a33df28a8fc0f0abbb4321c.mp3",
+          "sha256": "bae334cbc4952fbf85606b4debd3a3a6058bd3151a33df28a8fc0f0abbb4321c",
+          "byteLength": 11277,
+          "readAlong": {
+            "audioSha256": "bae334cbc4952fbf85606b4debd3a3a6058bd3151a33df28a8fc0f0abbb4321c",
+            "text": "通常",
+            "words": [
+              {
+                "text": "通常",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-ea22965be0749554e740ea16e11972fb5f2875a8e6a15910d484b6954f56ebe4.mp3",
+          "sha256": "ea22965be0749554e740ea16e11972fb5f2875a8e6a15910d484b6954f56ebe4",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "ea22965be0749554e740ea16e11972fb5f2875a8e6a15910d484b6954f56ebe4",
+            "text": "通常",
+            "words": [
+              {
+                "text": "通常",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

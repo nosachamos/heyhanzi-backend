@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0026",
+  "targetId": "W0026",
+  "steps": [
+    {
+      "id": "BANK-W0026-W0026",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0026-W0026",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "small; tiny",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "小"
+            },
+            {
+              "value": "xiǎo",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xiao3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "小",
+            "pinyin": "xiǎo",
+            "meaning": "small; tiny",
+            "singleWord": true,
+            "audio": "d60bb25498656c1b43c89f960baa817d30fe05feeec6bbf2f77f94f8ce58bbba"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d60bb25498656c1b43c89f960baa817d30fe05feeec6bbf2f77f94f8ce58bbba": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-7d2be9768288f1be48a74975c4da8e4aa5983665d3a1fb948de68d0e0979c265.mp3",
+        "sha256": "7d2be9768288f1be48a74975c4da8e4aa5983665d3a1fb948de68d0e0979c265",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "7d2be9768288f1be48a74975c4da8e4aa5983665d3a1fb948de68d0e0979c265",
+          "text": "小",
+          "words": [
+            {
+              "text": "小",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-24067f0e7ffcdb6ed9104b9eef9d515ccab6cd0a36ae6a5e91df4628554de4cc.mp3",
+        "sha256": "24067f0e7ffcdb6ed9104b9eef9d515ccab6cd0a36ae6a5e91df4628554de4cc",
+        "byteLength": 7245,
+        "readAlong": {
+          "audioSha256": "24067f0e7ffcdb6ed9104b9eef9d515ccab6cd0a36ae6a5e91df4628554de4cc",
+          "text": "小",
+          "words": [
+            {
+              "text": "小",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0026",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0026-W0026",
+      "question_ids": [
+        "BANK-W0026-W0026"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U02-P01",
+    "stepId": "S-U02-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5c0f"
+    ],
+    "grammarLessonIds": []
+  }
+}

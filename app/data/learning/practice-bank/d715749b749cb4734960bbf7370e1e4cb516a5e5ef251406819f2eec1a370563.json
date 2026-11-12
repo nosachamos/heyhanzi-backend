@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0530",
+  "targetId": "W0530",
+  "steps": [
+    {
+      "id": "BANK-W0530-W0530",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0530-W0530",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "but; yet",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "但"
+            },
+            {
+              "value": "dàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "但",
+            "pinyin": "dàn",
+            "meaning": "but; yet",
+            "singleWord": true,
+            "audio": "a68596c34896f5e933e9c1b7e2d3abd86d23bdfb6127a977bef44fa760e942d8"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "a68596c34896f5e933e9c1b7e2d3abd86d23bdfb6127a977bef44fa760e942d8": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-98b42383c1fd80e641b974e2d01371b185202b74f21da74e5da6a3aa2f06b3aa.mp3",
+        "sha256": "98b42383c1fd80e641b974e2d01371b185202b74f21da74e5da6a3aa2f06b3aa",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "98b42383c1fd80e641b974e2d01371b185202b74f21da74e5da6a3aa2f06b3aa",
+          "text": "但",
+          "words": [
+            {
+              "text": "但",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-6ce739d0729e14bbded899aa222e7a2e6427e5781cf7a96bfc3a877680e43c6a.mp3",
+        "sha256": "6ce739d0729e14bbded899aa222e7a2e6427e5781cf7a96bfc3a877680e43c6a",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "6ce739d0729e14bbded899aa222e7a2e6427e5781cf7a96bfc3a877680e43c6a",
+          "text": "但",
+          "words": [
+            {
+              "text": "但",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0530",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0530-W0530",
+      "question_ids": [
+        "BANK-W0530-W0530"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U25",
+    "stepId": "S-U25-words-r4-19",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4f46"
+    ],
+    "grammarLessonIds": []
+  }
+}

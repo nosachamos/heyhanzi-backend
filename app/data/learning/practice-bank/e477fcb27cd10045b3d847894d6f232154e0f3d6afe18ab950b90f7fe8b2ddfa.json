@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4146",
+  "targetId": "W4146",
+  "steps": [
+    {
+      "id": "BANK-W4146-W4146",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4146-W4146",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "milliliter",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "毫升"
+            },
+            {
+              "value": "háoshēng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "hao2sheng1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "毫升",
+            "pinyin": "háoshēng",
+            "meaning": "milliliter",
+            "singleWord": true,
+            "audio": "799f88386d26c657cea4f719aee11445194a1dc2653530c37dc5e0cc35bdb66a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "799f88386d26c657cea4f719aee11445194a1dc2653530c37dc5e0cc35bdb66a": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/241dd527a64aabfd6035a32d271a6d24bc77f574e3d0150d1e10c6d26bc8d2c1.mp3",
+        "sha256": "241dd527a64aabfd6035a32d271a6d24bc77f574e3d0150d1e10c6d26bc8d2c1",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "241dd527a64aabfd6035a32d271a6d24bc77f574e3d0150d1e10c6d26bc8d2c1",
+          "text": "毫升",
+          "words": [
+            {
+              "text": "毫升",
+              "start": 0.15,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/49a5c84f3ec1542da5e58d3fa3e3f060897bd9e71f7d1674f62bb351e6def18a.mp3",
+        "sha256": "49a5c84f3ec1542da5e58d3fa3e3f060897bd9e71f7d1674f62bb351e6def18a",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "49a5c84f3ec1542da5e58d3fa3e3f060897bd9e71f7d1674f62bb351e6def18a",
+          "text": "毫升",
+          "words": [
+            {
+              "text": "毫升",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4146",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4146-W4146",
+      "question_ids": [
+        "BANK-W4146-W4146"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-10",
+    "stepId": "S-U6-10-words-05",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6beb"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,611 @@
+{
+  "id": "EX-CHAR-char-8f66",
+  "revision": 2,
+  "unit": "U10",
+  "stage": "ST-HSK1",
+  "after": "S-U10-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "车",
+  "sourceBlockId": "mandarin-simplified-v1-char-8f66",
+  "sourceLevelId": "hsk-1",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-4e03",
+        "text": "七",
+        "pinyin": "qī",
+        "meaning": "seven; 7",
+        "characters": [
+          {
+            "id": "C-4E03",
+            "text": "七"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-dc4fd18c5ecaabb5a0a4e3da",
+        "text": "打车",
+        "pinyin": "dǎchē",
+        "meaning": "to take a taxi (in town); to hitch a lift",
+        "characters": [
+          {
+            "id": "C-6253",
+            "text": "打"
+          },
+          {
+            "id": "C-8F66",
+            "text": "车"
+          }
+        ]
+      },
+      {
+        "id": "W0307",
+        "text": "以为",
+        "pinyin": "yǐwéi",
+        "meaning": "think or assume, often with a mistaken belief",
+        "characters": [
+          {
+            "id": "C-4EE5",
+            "text": "以"
+          },
+          {
+            "id": "C-4E3A",
+            "text": "为"
+          }
+        ]
+      },
+      {
+        "id": "W0377",
+        "text": "车",
+        "pinyin": "chē",
+        "meaning": "car; vehicle",
+        "characters": [
+          {
+            "id": "C-8F66",
+            "text": "车"
+          }
+        ]
+      },
+      {
+        "id": "W5214",
+        "text": "有机",
+        "pinyin": "yǒujī",
+        "meaning": "organic",
+        "characters": [
+          {
+            "id": "C-6709",
+            "text": "有"
+          },
+          {
+            "id": "C-673A",
+            "text": "机"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "cab6876cd1d18db5af00898baf7c3e68955c09de68b7290f10b8913a5f4a840b",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8f66",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "车",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8f66-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-dc4fd18c5ecaabb5a0a4e3da",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to take a taxi (in town); to hitch a lift",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "打车"
+              },
+              {
+                "value": "dǎchē",
+                "mode": "pinyin"
+              },
+              {
+                "value": "da3che1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "打车",
+              "pinyin": "dǎchē",
+              "meaning": "to take a taxi (in town); to hitch a lift",
+              "audio": "4ed23324068016993c5938c4da9b662ab0ce33665b873b90fddac62fdb1c0b28",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8f66-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0377",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "车",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0307",
+                "label": "think or assume, often with a mistaken belief",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-4e03",
+                "label": "seven; 7",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0377",
+                "label": "car; vehicle",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8f66-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "车",
+        "pinyin": "chē",
+        "meaning": "car; vehicle",
+        "source": "/stroke-data/8f66.json",
+        "reference": {
+          "character": "车",
+          "sha256": "445d45f4dc99078eefa348afcec7a66fe2d5dbb3c066d619ac1567018d868ee9",
+          "medians": [
+            [
+              [
+                276,
+                638
+              ],
+              [
+                346,
+                625
+              ],
+              [
+                471,
+                638
+              ],
+              [
+                681,
+                676
+              ],
+              [
+                741,
+                672
+              ]
+            ],
+            [
+              [
+                474,
+                831
+              ],
+              [
+                494,
+                802
+              ],
+              [
+                501,
+                777
+              ],
+              [
+                414,
+                579
+              ],
+              [
+                325,
+                415
+              ],
+              [
+                318,
+                388
+              ],
+              [
+                364,
+                382
+              ],
+              [
+                672,
+                426
+              ],
+              [
+                707,
+                427
+              ],
+              [
+                745,
+                417
+              ]
+            ],
+            [
+              [
+                113,
+                210
+              ],
+              [
+                181,
+                190
+              ],
+              [
+                372,
+                219
+              ],
+              [
+                796,
+                258
+              ],
+              [
+                872,
+                243
+              ],
+              [
+                901,
+                232
+              ],
+              [
+                911,
+                221
+              ]
+            ],
+            [
+              [
+                483,
+                518
+              ],
+              [
+                514,
+                480
+              ],
+              [
+                516,
+                268
+              ],
+              [
+                508,
+                32
+              ],
+              [
+                523,
+                -50
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8f66-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W5214",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "organic",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "有机"
+              },
+              {
+                "value": "yǒujī",
+                "mode": "pinyin"
+              },
+              {
+                "value": "you3ji1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "有机",
+              "pinyin": "yǒujī",
+              "meaning": "organic",
+              "audio": "605c2d9337c71622cb057ad620dfdf645af6644bcd3cb3621a95e14bfb69796b",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8f66-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0377",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "car; vehicle",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "车"
+              },
+              {
+                "value": "chē",
+                "mode": "pinyin"
+              },
+              {
+                "value": "che1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "车",
+              "pinyin": "chē",
+              "meaning": "car; vehicle",
+              "audio": "9e7579bde129429349f517944a77eb69e9fbab7643e1b47f28994cbbbf00c1d3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "9e7579bde129429349f517944a77eb69e9fbab7643e1b47f28994cbbbf00c1d3"
+            ],
+            "transcript": [
+              {
+                "text": "车",
+                "pinyin": "chē",
+                "meaning": "car; vehicle",
+                "audio": "9e7579bde129429349f517944a77eb69e9fbab7643e1b47f28994cbbbf00c1d3",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8F66",
+      "character": "车",
+      "lessonIds": [
+        "LESSON-C-8F66"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8f66-word",
+        "EX-CHAR-char-8f66-recognize",
+        "EX-CHAR-char-8f66-write",
+        "EX-CHAR-char-8f66-familiar",
+        "EX-CHAR-char-8f66-recall"
+      ]
+    },
+    "audio": {
+      "d3ca51c716ba3cfc6ccb879c2d0215add6637412b46371c21d41c4788e837b26": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-0dc5562cd20039748c829ba82adb69d898fb2ad9c182826bf1617d546444f87e.mp3",
+          "sha256": "0dc5562cd20039748c829ba82adb69d898fb2ad9c182826bf1617d546444f87e",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "0dc5562cd20039748c829ba82adb69d898fb2ad9c182826bf1617d546444f87e",
+            "text": "七",
+            "words": [
+              {
+                "text": "七",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d16da296d3e6174df5dbb579dc5a916a017d14d98a6bd3e86f3c15adaa56262e.mp3",
+          "sha256": "d16da296d3e6174df5dbb579dc5a916a017d14d98a6bd3e86f3c15adaa56262e",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "d16da296d3e6174df5dbb579dc5a916a017d14d98a6bd3e86f3c15adaa56262e",
+            "text": "七",
+            "words": [
+              {
+                "text": "七",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "4ed23324068016993c5938c4da9b662ab0ce33665b873b90fddac62fdb1c0b28": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1da7c842c9ffb46d2ed536f567b6a287e26b613a13bca40c313ae43c9485e95a.mp3",
+          "sha256": "1da7c842c9ffb46d2ed536f567b6a287e26b613a13bca40c313ae43c9485e95a",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "1da7c842c9ffb46d2ed536f567b6a287e26b613a13bca40c313ae43c9485e95a",
+            "text": "打车",
+            "words": [
+              {
+                "text": "打车",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/ad5183c81a75c178e4eaadb8ccf36db2f3dd58fdbbde94458447f757bb989e5c.mp3",
+          "sha256": "ad5183c81a75c178e4eaadb8ccf36db2f3dd58fdbbde94458447f757bb989e5c",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "ad5183c81a75c178e4eaadb8ccf36db2f3dd58fdbbde94458447f757bb989e5c",
+            "text": "打车",
+            "words": [
+              {
+                "text": "打车",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "f0e85a30ea9f6cadd59af8dfb0097b9907e1f4eb7a2eec08d9f57050e02e4ab5": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-d5c51e42a904c6ef753fa0eb74cb8e777561c313dc08db7a75590237e853c9e2.mp3",
+          "sha256": "d5c51e42a904c6ef753fa0eb74cb8e777561c313dc08db7a75590237e853c9e2",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "d5c51e42a904c6ef753fa0eb74cb8e777561c313dc08db7a75590237e853c9e2",
+            "text": "以为",
+            "words": [
+              {
+                "text": "以为",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-04ec080cd382c60685a57cc694d8f1e759bab3c0ccfe19f578cb52e1a6ca07ca.mp3",
+          "sha256": "04ec080cd382c60685a57cc694d8f1e759bab3c0ccfe19f578cb52e1a6ca07ca",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "04ec080cd382c60685a57cc694d8f1e759bab3c0ccfe19f578cb52e1a6ca07ca",
+            "text": "以为",
+            "words": [
+              {
+                "text": "以为",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "9e7579bde129429349f517944a77eb69e9fbab7643e1b47f28994cbbbf00c1d3": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-0940a04ee9255de0284379a1e4fe91c72eff538bd09c1edb92cd6ada5b5b9de8.mp3",
+          "sha256": "0940a04ee9255de0284379a1e4fe91c72eff538bd09c1edb92cd6ada5b5b9de8",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "0940a04ee9255de0284379a1e4fe91c72eff538bd09c1edb92cd6ada5b5b9de8",
+            "text": "车",
+            "words": [
+              {
+                "text": "车",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-f6810a3f1046daefecaeee85108dbbf25f18525c8daed299b3927a1e16d8d40b.mp3",
+          "sha256": "f6810a3f1046daefecaeee85108dbbf25f18525c8daed299b3927a1e16d8d40b",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "f6810a3f1046daefecaeee85108dbbf25f18525c8daed299b3927a1e16d8d40b",
+            "text": "车",
+            "words": [
+              {
+                "text": "车",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "605c2d9337c71622cb057ad620dfdf645af6644bcd3cb3621a95e14bfb69796b": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8358952342b7d6c619b199e3c9a96238ebecb2cfe108717f824add1c714ff516.mp3",
+          "sha256": "8358952342b7d6c619b199e3c9a96238ebecb2cfe108717f824add1c714ff516",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "8358952342b7d6c619b199e3c9a96238ebecb2cfe108717f824add1c714ff516",
+            "text": "有机",
+            "words": [
+              {
+                "text": "有机",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/5c8db86f1e01ad441d436ec38d84559457a8e75dd0a4e452e1d8920616a19500.mp3",
+          "sha256": "5c8db86f1e01ad441d436ec38d84559457a8e75dd0a4e452e1d8920616a19500",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "5c8db86f1e01ad441d436ec38d84559457a8e75dd0a4e452e1d8920616a19500",
+            "text": "有机",
+            "words": [
+              {
+                "text": "有机",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

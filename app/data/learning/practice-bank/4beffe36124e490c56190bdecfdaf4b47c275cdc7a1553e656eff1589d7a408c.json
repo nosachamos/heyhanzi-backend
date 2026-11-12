@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W0264",
+  "targetId": "W0264",
+  "steps": [
+    {
+      "id": "BANK-W0264-W0264",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0264-W0264",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "most; -est",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "最"
+            },
+            {
+              "value": "zuì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zui4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "最",
+            "pinyin": "zuì",
+            "meaning": "most; -est",
+            "singleWord": true,
+            "audio": "05d379b4efdd329d170057ca944490297e51a19193c1d8dc7c3d54b5efe42534"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "05d379b4efdd329d170057ca944490297e51a19193c1d8dc7c3d54b5efe42534": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d347a59ccdad94f37e371d1c0e6329eaff5b73f8776b73ddebc7594cf78b59c6.mp3",
+        "sha256": "d347a59ccdad94f37e371d1c0e6329eaff5b73f8776b73ddebc7594cf78b59c6",
+        "byteLength": 13581,
+        "readAlong": {
+          "audioSha256": "d347a59ccdad94f37e371d1c0e6329eaff5b73f8776b73ddebc7594cf78b59c6",
+          "text": "最",
+          "words": [
+            {
+              "text": "最",
+              "start": 0.5,
+              "end": 0.64
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-cb9dfae561c4e69059a7c2552d14d5c54f72d9f9db88bb8df2c342382faa8f06.mp3",
+        "sha256": "cb9dfae561c4e69059a7c2552d14d5c54f72d9f9db88bb8df2c342382faa8f06",
+        "byteLength": 10989,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "cb9dfae561c4e69059a7c2552d14d5c54f72d9f9db88bb8df2c342382faa8f06",
+          "text": "最",
+          "words": [
+            {
+              "text": "最",
+              "start": 0.03,
+              "end": 0.09
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0264",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0264-W0264",
+      "question_ids": [
+        "BANK-W0264-W0264"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U23-P01",
+    "stepId": "S-U23-words-r4-3",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8d8a"
+    ],
+    "grammarLessonIds": []
+  }
+}

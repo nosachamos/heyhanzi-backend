@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W4089",
+  "targetId": "W4089",
+  "steps": [
+    {
+      "id": "BANK-W4089-W4089",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W4089-W4089",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "paternal aunt",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "姑姑"
+            },
+            {
+              "value": "gūgu",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gu1gu5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "姑姑",
+            "pinyin": "gūgu",
+            "meaning": "paternal aunt",
+            "singleWord": true,
+            "audio": "6a134340baf5555eb8715ab01ef8db9c5f2ee436839c129ff6429aa9df8818a7"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "6a134340baf5555eb8715ab01ef8db9c5f2ee436839c129ff6429aa9df8818a7": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5a1285cdcad5ab96989d14b4f786def900ad9e7a5aedea96ca93213c1a122a1f.mp3",
+        "sha256": "5a1285cdcad5ab96989d14b4f786def900ad9e7a5aedea96ca93213c1a122a1f",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "5a1285cdcad5ab96989d14b4f786def900ad9e7a5aedea96ca93213c1a122a1f",
+          "text": "姑姑",
+          "words": [
+            {
+              "text": "姑姑",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-783c66a3a604b8f49b4fe0bd7ee9bf42abc46e9404d0e9dd2d68b82cd830490b.mp3",
+        "sha256": "783c66a3a604b8f49b4fe0bd7ee9bf42abc46e9404d0e9dd2d68b82cd830490b",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "783c66a3a604b8f49b4fe0bd7ee9bf42abc46e9404d0e9dd2d68b82cd830490b",
+          "text": "姑姑",
+          "words": [
+            {
+              "text": "姑姑",
+              "start": 0.21,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W4089",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W4089-W4089",
+      "question_ids": [
+        "BANK-W4089-W4089"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-01",
+    "stepId": "S-U6-01-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-59d1"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,657 @@
+{
+  "id": "EX-CHAR-char-8bb0",
+  "revision": 2,
+  "unit": "U20",
+  "stage": "ST-HSK2",
+  "after": "S-U20-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "记",
+  "sourceBlockId": "mandarin-simplified-v1-char-8bb0",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-6210",
+        "text": "成",
+        "pinyin": "chéng",
+        "meaning": "to succeed; to finish",
+        "characters": [
+          {
+            "id": "C-6210",
+            "text": "成"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-4124dde247d726aa875766c8",
+        "text": "下面",
+        "pinyin": "xiàmiàn",
+        "meaning": "below; under",
+        "characters": [
+          {
+            "id": "C-4E0B",
+            "text": "下"
+          },
+          {
+            "id": "C-9762",
+            "text": "面"
+          }
+        ]
+      },
+      {
+        "id": "W0183",
+        "text": "还没",
+        "pinyin": "háiméi",
+        "meaning": "not yet",
+        "characters": [
+          {
+            "id": "C-8FD8",
+            "text": "还"
+          },
+          {
+            "id": "C-6CA1",
+            "text": "没"
+          }
+        ]
+      },
+      {
+        "id": "W0804",
+        "text": "记",
+        "pinyin": "jì",
+        "meaning": "to record; to note",
+        "characters": [
+          {
+            "id": "C-8BB0",
+            "text": "记"
+          }
+        ]
+      },
+      {
+        "id": "W1380",
+        "text": "记者",
+        "pinyin": "jìzhě",
+        "meaning": "reporter; journalist",
+        "characters": [
+          {
+            "id": "C-8BB0",
+            "text": "记"
+          },
+          {
+            "id": "C-8005",
+            "text": "者"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "d40adafe6731bf3bb252a0375f657c8827b65cead844943d8700a3648c3a06f1",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-8bb0",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "记",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-8bb0-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W1380",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "reporter; journalist",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "记者"
+              },
+              {
+                "value": "jìzhě",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ji4zhe3",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "记者",
+              "pinyin": "jìzhě",
+              "meaning": "reporter; journalist",
+              "audio": "3009fe15f0be43213c148ae257a1dd1a5d3e9399ecb37addb1885711b8883958",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bb0-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W0804",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "记",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-6210",
+                "label": "to succeed; to finish",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-cmn-4124dde247d726aa875766c8",
+                "label": "below; under",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W0804",
+                "label": "to record; to note",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bb0-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "记",
+        "pinyin": "jì",
+        "meaning": "to record; to note",
+        "source": "/stroke-data/8bb0.json",
+        "reference": {
+          "character": "记",
+          "sha256": "957600c42a08f063257ac2fd040c83ea951ca19a7097d8df4bb193922c93398b",
+          "medians": [
+            [
+              [
+                267,
+                798
+              ],
+              [
+                368,
+                740
+              ],
+              [
+                398,
+                696
+              ]
+            ],
+            [
+              [
+                80,
+                449
+              ],
+              [
+                127,
+                443
+              ],
+              [
+                264,
+                495
+              ],
+              [
+                301,
+                495
+              ],
+              [
+                311,
+                486
+              ],
+              [
+                272,
+                172
+              ],
+              [
+                278,
+                125
+              ],
+              [
+                325,
+                137
+              ],
+              [
+                419,
+                203
+              ]
+            ],
+            [
+              [
+                519,
+                640
+              ],
+              [
+                575,
+                641
+              ],
+              [
+                738,
+                685
+              ],
+              [
+                765,
+                676
+              ],
+              [
+                786,
+                658
+              ],
+              [
+                792,
+                638
+              ],
+              [
+                747,
+                514
+              ],
+              [
+                714,
+                489
+              ]
+            ],
+            [
+              [
+                570,
+                408
+              ],
+              [
+                581,
+                425
+              ],
+              [
+                706,
+                459
+              ],
+              [
+                761,
+                466
+              ],
+              [
+                793,
+                460
+              ]
+            ],
+            [
+              [
+                490,
+                467
+              ],
+              [
+                526,
+                426
+              ],
+              [
+                527,
+                416
+              ],
+              [
+                513,
+                258
+              ],
+              [
+                521,
+                138
+              ],
+              [
+                541,
+                99
+              ],
+              [
+                576,
+                76
+              ],
+              [
+                633,
+                64
+              ],
+              [
+                756,
+                63
+              ],
+              [
+                840,
+                74
+              ],
+              [
+                899,
+                94
+              ],
+              [
+                921,
+                113
+              ],
+              [
+                927,
+                253
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-8bb0-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0183",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "not yet",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "还没"
+              },
+              {
+                "value": "háiméi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hai2mei2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "还没",
+              "pinyin": "háiméi",
+              "meaning": "not yet",
+              "audio": "f5bce23effea3e74f04a114f84236ae456d0d23d9694b11abce10422f6279040",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-8bb0-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W0804",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to record; to note",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "记"
+              },
+              {
+                "value": "jì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ji4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "记",
+              "pinyin": "jì",
+              "meaning": "to record; to note",
+              "audio": "948b96412c6d6272fdfd800f4ae8c02973321dd44162833ba56897d3065da5b9",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "948b96412c6d6272fdfd800f4ae8c02973321dd44162833ba56897d3065da5b9"
+            ],
+            "transcript": [
+              {
+                "text": "记",
+                "pinyin": "jì",
+                "meaning": "to record; to note",
+                "audio": "948b96412c6d6272fdfd800f4ae8c02973321dd44162833ba56897d3065da5b9",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-8BB0",
+      "character": "记",
+      "lessonIds": [
+        "LESSON-C-8BB0"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-8bb0-word",
+        "EX-CHAR-char-8bb0-recognize",
+        "EX-CHAR-char-8bb0-write",
+        "EX-CHAR-char-8bb0-familiar",
+        "EX-CHAR-char-8bb0-recall"
+      ]
+    },
+    "audio": {
+      "2a806306c72b4b79279f1d904904f2981222f32ddb7f26e901882dba9050d338": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/5184a883afa0eeaddfcce6f26f16626f8f4b19d7e4acc86b9b1c53cafe6fe40f.mp3",
+          "sha256": "5184a883afa0eeaddfcce6f26f16626f8f4b19d7e4acc86b9b1c53cafe6fe40f",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "5184a883afa0eeaddfcce6f26f16626f8f4b19d7e4acc86b9b1c53cafe6fe40f",
+            "text": "成",
+            "words": [
+              {
+                "text": "成",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/4b9c66a1294a2d6e1ce8033c6978b8b8f25f2b7c26c1596b58c209ec2bb8518a.mp3",
+          "sha256": "4b9c66a1294a2d6e1ce8033c6978b8b8f25f2b7c26c1596b58c209ec2bb8518a",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "4b9c66a1294a2d6e1ce8033c6978b8b8f25f2b7c26c1596b58c209ec2bb8518a",
+            "text": "成",
+            "words": [
+              {
+                "text": "成",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "8dd7045d0789e2b23fa9358f61ffc882187dbf2008ffd2bec1a55570533790a5": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5f10b4bec93caef47987378569df9be344696348e1a719087450742fae0c4f21.mp3",
+          "sha256": "5f10b4bec93caef47987378569df9be344696348e1a719087450742fae0c4f21",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "5f10b4bec93caef47987378569df9be344696348e1a719087450742fae0c4f21",
+            "text": "下面",
+            "words": [
+              {
+                "text": "下面",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-2691a3ea7b92ed61c6b5e77ea3df616e436e20a558a4b56a8fae31010857f172.mp3",
+          "sha256": "2691a3ea7b92ed61c6b5e77ea3df616e436e20a558a4b56a8fae31010857f172",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "2691a3ea7b92ed61c6b5e77ea3df616e436e20a558a4b56a8fae31010857f172",
+            "text": "下面",
+            "words": [
+              {
+                "text": "下面",
+                "start": 0.03,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "f5bce23effea3e74f04a114f84236ae456d0d23d9694b11abce10422f6279040": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-552af2ac35d4564718b12424e6a9e03c70e68e22150adeb983a38b2c10f3332c.mp3",
+          "sha256": "552af2ac35d4564718b12424e6a9e03c70e68e22150adeb983a38b2c10f3332c",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "552af2ac35d4564718b12424e6a9e03c70e68e22150adeb983a38b2c10f3332c",
+            "text": "还没",
+            "words": [
+              {
+                "text": "还没",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d594a1b873d4c53863a4df46997afdff5df9f58a50e578db8806f23738355b42.mp3",
+          "sha256": "d594a1b873d4c53863a4df46997afdff5df9f58a50e578db8806f23738355b42",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "d594a1b873d4c53863a4df46997afdff5df9f58a50e578db8806f23738355b42",
+            "text": "还没",
+            "words": [
+              {
+                "text": "还没",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "948b96412c6d6272fdfd800f4ae8c02973321dd44162833ba56897d3065da5b9": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-6115e0141e2944d254c91fc4da06df903bafdf962401f53889f8524d575710c2.mp3",
+          "sha256": "6115e0141e2944d254c91fc4da06df903bafdf962401f53889f8524d575710c2",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "6115e0141e2944d254c91fc4da06df903bafdf962401f53889f8524d575710c2",
+            "text": "记",
+            "words": [
+              {
+                "text": "记",
+                "start": 0.22,
+                "end": 0.3
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-52e401f8e95273d0f14e54950f2ad7cf923431cdd248c2f384b6493107ef176d.mp3",
+          "sha256": "52e401f8e95273d0f14e54950f2ad7cf923431cdd248c2f384b6493107ef176d",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "52e401f8e95273d0f14e54950f2ad7cf923431cdd248c2f384b6493107ef176d",
+            "text": "记",
+            "words": [
+              {
+                "text": "记",
+                "start": 0.22,
+                "end": 0.32
+              }
+            ]
+          }
+        }
+      },
+      "3009fe15f0be43213c148ae257a1dd1a5d3e9399ecb37addb1885711b8883958": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-66cae97053d26ade2e296ba1abd77fc0e984e9338e8b6828b22824ced05e496e.mp3",
+          "sha256": "66cae97053d26ade2e296ba1abd77fc0e984e9338e8b6828b22824ced05e496e",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "66cae97053d26ade2e296ba1abd77fc0e984e9338e8b6828b22824ced05e496e",
+            "text": "记者",
+            "words": [
+              {
+                "text": "记者",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-404217d354ec8aec392fbb61437036a0080fdbcdce42c1cd4925f9de8dbba8fc.mp3",
+          "sha256": "404217d354ec8aec392fbb61437036a0080fdbcdce42c1cd4925f9de8dbba8fc",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "404217d354ec8aec392fbb61437036a0080fdbcdce42c1cd4925f9de8dbba8fc",
+            "text": "记者",
+            "words": [
+              {
+                "text": "记者",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1895",
+  "targetId": "W1895",
+  "steps": [
+    {
+      "id": "BANK-W1895-W1895",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1895-W1895",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "night",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "夜"
+            },
+            {
+              "value": "yè",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ye4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "夜",
+            "pinyin": "yè",
+            "meaning": "night",
+            "singleWord": true,
+            "audio": "63f3c8665aa800c5aecc5ec5b7ffec0bbb0a895c02b55e541e6021991805cf5f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "63f3c8665aa800c5aecc5ec5b7ffec0bbb0a895c02b55e541e6021991805cf5f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f864f9f78d8683a711ffda2baf84875c93697ce0a86eb0198d43f09c399c3de5.mp3",
+        "sha256": "f864f9f78d8683a711ffda2baf84875c93697ce0a86eb0198d43f09c399c3de5",
+        "byteLength": 9837,
+        "readAlong": {
+          "audioSha256": "f864f9f78d8683a711ffda2baf84875c93697ce0a86eb0198d43f09c399c3de5",
+          "text": "夜",
+          "words": [
+            {
+              "text": "夜",
+              "start": 0.26,
+              "end": 0.36
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-ba8280e280c8ca02f11aef09ba08fed9b8995a188061cf62cefa941cb7db4e95.mp3",
+        "sha256": "ba8280e280c8ca02f11aef09ba08fed9b8995a188061cf62cefa941cb7db4e95",
+        "byteLength": 9549,
+        "readAlong": {
+          "audioSha256": "ba8280e280c8ca02f11aef09ba08fed9b8995a188061cf62cefa941cb7db4e95",
+          "text": "夜",
+          "words": [
+            {
+              "text": "夜",
+              "start": 0.2,
+              "end": 0.32
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1895",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1895-W1895",
+      "question_ids": [
+        "BANK-W1895-W1895"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-07",
+    "stepId": "S-U4-07-words-r4-7",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-591c"
+    ],
+    "grammarLessonIds": []
+  }
+}

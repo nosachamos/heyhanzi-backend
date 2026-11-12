@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0369",
+  "targetId": "W0369",
+  "steps": [
+    {
+      "id": "BANK-W0369-W0369",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0369-W0369",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "hundred",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "百"
+            },
+            {
+              "value": "bǎi",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bai3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "百",
+            "pinyin": "bǎi",
+            "meaning": "hundred",
+            "singleWord": true,
+            "audio": "2436b846169621547a23322c2aaf271133cca7bae0604b37d75682b977d61844"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2436b846169621547a23322c2aaf271133cca7bae0604b37d75682b977d61844": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-283c07cf11f7da64daca9fd53397f7c1caf0a4f18d2247624054f4e75dd1cdc4.mp3",
+        "sha256": "283c07cf11f7da64daca9fd53397f7c1caf0a4f18d2247624054f4e75dd1cdc4",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "283c07cf11f7da64daca9fd53397f7c1caf0a4f18d2247624054f4e75dd1cdc4",
+          "text": "百",
+          "words": [
+            {
+              "text": "百",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-5488f38281d47e2d73a0e4ec71b130446fb78a31aa596d0d65564031d7ba8604.mp3",
+        "sha256": "5488f38281d47e2d73a0e4ec71b130446fb78a31aa596d0d65564031d7ba8604",
+        "byteLength": 8109,
+        "readAlong": {
+          "audioSha256": "5488f38281d47e2d73a0e4ec71b130446fb78a31aa596d0d65564031d7ba8604",
+          "text": "百",
+          "words": [
+            {
+              "text": "百",
+              "start": 0.14,
+              "end": 0.22
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0369",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0369-W0369",
+      "question_ids": [
+        "BANK-W0369-W0369"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U05-P02",
+    "stepId": "S-U05-P02-r5-word-22",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-767e"
+    ],
+    "grammarLessonIds": []
+  }
+}

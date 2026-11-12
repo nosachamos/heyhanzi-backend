@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1880",
+  "targetId": "W1880",
+  "steps": [
+    {
+      "id": "BANK-W1880-W1880",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1880-W1880",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "salt",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "盐"
+            },
+            {
+              "value": "yán",
+              "mode": "pinyin"
+            },
+            {
+              "value": "yan2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "盐",
+            "pinyin": "yán",
+            "meaning": "salt",
+            "singleWord": true,
+            "audio": "d7728883e17e0e739484a325b72c8825fec362bf1c0be0b36115b36833ea366c"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "d7728883e17e0e739484a325b72c8825fec362bf1c0be0b36115b36833ea366c": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-4ed5835ae9a7b1c33f8189397bfd50273b40c38aef3e71b117df123f24e4a509.mp3",
+        "sha256": "4ed5835ae9a7b1c33f8189397bfd50273b40c38aef3e71b117df123f24e4a509",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "4ed5835ae9a7b1c33f8189397bfd50273b40c38aef3e71b117df123f24e4a509",
+          "text": "盐",
+          "words": [
+            {
+              "text": "盐",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-430372aa8fa0024f0efe2bef428d4f2421bde35ee3799b0ba6e41cf692b1a28c.mp3",
+        "sha256": "430372aa8fa0024f0efe2bef428d4f2421bde35ee3799b0ba6e41cf692b1a28c",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "430372aa8fa0024f0efe2bef428d4f2421bde35ee3799b0ba6e41cf692b1a28c",
+          "text": "盐",
+          "words": [
+            {
+              "text": "盐",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1880",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1880-W1880",
+      "question_ids": [
+        "BANK-W1880-W1880"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-09",
+    "stepId": "S-U4-09-words-r4-22",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-76d0"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,723 @@
+{
+  "id": "EX-CHAR-char-58f6",
+  "revision": 2,
+  "unit": "U6-12",
+  "stage": "ST-HSK6",
+  "after": "S-U6-12-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "壶",
+  "sourceBlockId": "mandarin-simplified-v1-char-58f6",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-6c49",
+        "text": "汉",
+        "pinyin": "hàn",
+        "meaning": "man",
+        "characters": [
+          {
+            "id": "C-6C49",
+            "text": "汉"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-7814",
+        "text": "研",
+        "pinyin": "yán",
+        "meaning": "to grind; study",
+        "characters": [
+          {
+            "id": "C-7814",
+            "text": "研"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-f29146f1472faa437858d24c",
+        "text": "水壶",
+        "pinyin": "shuǐ hú",
+        "meaning": "kettle",
+        "characters": [
+          {
+            "id": "C-6C34",
+            "text": "水"
+          },
+          {
+            "id": "C-58F6",
+            "text": "壶"
+          }
+        ]
+      },
+      {
+        "id": "W3312",
+        "text": "行驶",
+        "pinyin": "xíngshǐ",
+        "meaning": "to travel along a route",
+        "characters": [
+          {
+            "id": "C-884C",
+            "text": "行"
+          },
+          {
+            "id": "C-9A76",
+            "text": "驶"
+          }
+        ]
+      },
+      {
+        "id": "W4173",
+        "text": "壶",
+        "pinyin": "hú",
+        "meaning": "pot; classifier for bottled liquid",
+        "characters": [
+          {
+            "id": "C-58F6",
+            "text": "壶"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "2cf96b406732c1bbccdee0990ff58831ee5ef9f419ce18f172f2ca20ad987b38",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-58f6",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "壶",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-58f6-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-f29146f1472faa437858d24c",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "kettle",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "水壶"
+              },
+              {
+                "value": "shuǐ hú",
+                "mode": "pinyin"
+              },
+              {
+                "value": "shui3hu2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "水壶",
+              "pinyin": "shuǐ hú",
+              "meaning": "kettle",
+              "audio": "bd478d279e74d619412f4a63cfa7ac4b41ff0ebc141447e0f3a19ea69ca69c5e",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-58f6-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-W4173",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "壶",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W4173",
+                "label": "pot; classifier for bottled liquid",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W3312",
+                "label": "to travel along a route",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-6c49",
+                "label": "man",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-58f6-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "壶",
+        "pinyin": "hú",
+        "meaning": "pot; classifier for bottled liquid",
+        "source": "/stroke-data/58f6.json",
+        "reference": {
+          "character": "壶",
+          "sha256": "755540152cc8ce066e46468a680ec004306cb61471dec307a15c459d7f88a407",
+          "medians": [
+            [
+              [
+                319,
+                671
+              ],
+              [
+                359,
+                663
+              ],
+              [
+                419,
+                666
+              ],
+              [
+                556,
+                689
+              ],
+              [
+                651,
+                712
+              ],
+              [
+                700,
+                709
+              ]
+            ],
+            [
+              [
+                486,
+                817
+              ],
+              [
+                527,
+                779
+              ],
+              [
+                519,
+                618
+              ],
+              [
+                502,
+                592
+              ]
+            ],
+            [
+              [
+                355,
+                558
+              ],
+              [
+                403,
+                549
+              ],
+              [
+                610,
+                584
+              ],
+              [
+                663,
+                577
+              ]
+            ],
+            [
+              [
+                222,
+                474
+              ],
+              [
+                229,
+                459
+              ],
+              [
+                229,
+                422
+              ],
+              [
+                180,
+                336
+              ],
+              [
+                176,
+                286
+              ]
+            ],
+            [
+              [
+                260,
+                446
+              ],
+              [
+                279,
+                432
+              ],
+              [
+                301,
+                433
+              ],
+              [
+                511,
+                472
+              ],
+              [
+                729,
+                497
+              ],
+              [
+                768,
+                495
+              ],
+              [
+                803,
+                477
+              ],
+              [
+                816,
+                456
+              ],
+              [
+                742,
+                364
+              ]
+            ],
+            [
+              [
+                403,
+                388
+              ],
+              [
+                431,
+                354
+              ],
+              [
+                434,
+                328
+              ],
+              [
+                436,
+                108
+              ],
+              [
+                434,
+                80
+              ],
+              [
+                421,
+                70
+              ]
+            ],
+            [
+              [
+                549,
+                421
+              ],
+              [
+                578,
+                383
+              ],
+              [
+                576,
+                122
+              ],
+              [
+                574,
+                100
+              ],
+              [
+                558,
+                84
+              ]
+            ],
+            [
+              [
+                252,
+                249
+              ],
+              [
+                331,
+                185
+              ],
+              [
+                354,
+                142
+              ]
+            ],
+            [
+              [
+                713,
+                322
+              ],
+              [
+                735,
+                287
+              ],
+              [
+                642,
+                189
+              ],
+              [
+                626,
+                179
+              ]
+            ],
+            [
+              [
+                187,
+                30
+              ],
+              [
+                241,
+                18
+              ],
+              [
+                468,
+                47
+              ],
+              [
+                736,
+                66
+              ],
+              [
+                782,
+                62
+              ],
+              [
+                841,
+                44
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-58f6-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-PRIMARY-char-7814",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to grind; study",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "研"
+              },
+              {
+                "value": "yán",
+                "mode": "pinyin"
+              },
+              {
+                "value": "yan2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "研",
+              "pinyin": "yán",
+              "meaning": "to grind; study",
+              "audio": "b42b59bf01660686d16c2b0539124b7967e1a5e7530e96e7dd0a29995bf6953f",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-58f6-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-W4173",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "pot; classifier for bottled liquid",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "壶"
+              },
+              {
+                "value": "hú",
+                "mode": "pinyin"
+              },
+              {
+                "value": "hu2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "壶",
+              "pinyin": "hú",
+              "meaning": "pot; classifier for bottled liquid",
+              "audio": "ef0768b4477c04d4573bd5c95e6acb454ab730d78036a6707f3a8ad2c191556d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "ef0768b4477c04d4573bd5c95e6acb454ab730d78036a6707f3a8ad2c191556d"
+            ],
+            "transcript": [
+              {
+                "text": "壶",
+                "pinyin": "hú",
+                "meaning": "pot; classifier for bottled liquid",
+                "audio": "ef0768b4477c04d4573bd5c95e6acb454ab730d78036a6707f3a8ad2c191556d",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-58F6",
+      "character": "壶",
+      "lessonIds": [
+        "LESSON-C-58F6"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-58f6-word",
+        "EX-CHAR-char-58f6-recognize",
+        "EX-CHAR-char-58f6-write",
+        "EX-CHAR-char-58f6-familiar",
+        "EX-CHAR-char-58f6-recall"
+      ]
+    },
+    "audio": {
+      "ecd9f38af9799845a54ecf96da61534ae8449670cff5636e0dff1319723115d4": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-0c270c0a30aec37ec40de14f863f99648cb832440dca0eb129faa8f401c9e055.mp3",
+          "sha256": "0c270c0a30aec37ec40de14f863f99648cb832440dca0eb129faa8f401c9e055",
+          "byteLength": 8973,
+          "readAlong": {
+            "audioSha256": "0c270c0a30aec37ec40de14f863f99648cb832440dca0eb129faa8f401c9e055",
+            "text": "汉",
+            "words": [
+              {
+                "text": "汉",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-390330378427f18cc0ff8bc0d0845eea0c9d70baddb1c1a408f351bbf8aa2ea4.mp3",
+          "sha256": "390330378427f18cc0ff8bc0d0845eea0c9d70baddb1c1a408f351bbf8aa2ea4",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "390330378427f18cc0ff8bc0d0845eea0c9d70baddb1c1a408f351bbf8aa2ea4",
+            "text": "汉",
+            "words": [
+              {
+                "text": "汉",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "b42b59bf01660686d16c2b0539124b7967e1a5e7530e96e7dd0a29995bf6953f": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-1ae878ef42afc36d80408590f06174bbeaef177adfc49f725bad5660e101836b.mp3",
+          "sha256": "1ae878ef42afc36d80408590f06174bbeaef177adfc49f725bad5660e101836b",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "1ae878ef42afc36d80408590f06174bbeaef177adfc49f725bad5660e101836b",
+            "text": "研",
+            "words": [
+              {
+                "text": "研",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-c1fef43183a59e85ffd21194154df0de8c0313dbbc2bcf73a2485b6a78b21bf0.mp3",
+          "sha256": "c1fef43183a59e85ffd21194154df0de8c0313dbbc2bcf73a2485b6a78b21bf0",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "c1fef43183a59e85ffd21194154df0de8c0313dbbc2bcf73a2485b6a78b21bf0",
+            "text": "研",
+            "words": [
+              {
+                "text": "研",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "bd478d279e74d619412f4a63cfa7ac4b41ff0ebc141447e0f3a19ea69ca69c5e": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/4a52860f96dda30da5a8844a8b25bd6d1a47b7ef690b23cfcb4f2b3a8e063c89.mp3",
+          "sha256": "4a52860f96dda30da5a8844a8b25bd6d1a47b7ef690b23cfcb4f2b3a8e063c89",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "4a52860f96dda30da5a8844a8b25bd6d1a47b7ef690b23cfcb4f2b3a8e063c89",
+            "text": "水壶",
+            "words": [
+              {
+                "text": "水壶",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e55495783fe28c71189dbc98a5a2053c459554f6cd89ac98ffd181bb1aa1a5e1.mp3",
+          "sha256": "e55495783fe28c71189dbc98a5a2053c459554f6cd89ac98ffd181bb1aa1a5e1",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "e55495783fe28c71189dbc98a5a2053c459554f6cd89ac98ffd181bb1aa1a5e1",
+            "text": "水壶",
+            "words": [
+              {
+                "text": "水壶",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "1abc08174d0ac63860cd032b55c32b1b86fa13985cdbb080b152b24299a4c775": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-70ac93d70fcec62d3c5bdafb2dd1ba1bf781e81460894158a9bf0658894e0b96.mp3",
+          "sha256": "70ac93d70fcec62d3c5bdafb2dd1ba1bf781e81460894158a9bf0658894e0b96",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "70ac93d70fcec62d3c5bdafb2dd1ba1bf781e81460894158a9bf0658894e0b96",
+            "text": "行驶",
+            "words": [
+              {
+                "text": "行驶",
+                "start": 0.32,
+                "end": 0.76
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-1a265fb7a601dc58af2cd1548404421077538d54e7437918740cf14b81ae2afb.mp3",
+          "sha256": "1a265fb7a601dc58af2cd1548404421077538d54e7437918740cf14b81ae2afb",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "1a265fb7a601dc58af2cd1548404421077538d54e7437918740cf14b81ae2afb",
+            "text": "行驶",
+            "words": [
+              {
+                "text": "行驶",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "ef0768b4477c04d4573bd5c95e6acb454ab730d78036a6707f3a8ad2c191556d": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/ce63c1cea0d3389ba11d27a4470519fae4fe3ac44748d27b947a575248c7f552.mp3",
+          "sha256": "ce63c1cea0d3389ba11d27a4470519fae4fe3ac44748d27b947a575248c7f552",
+          "byteLength": 11565,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "ce63c1cea0d3389ba11d27a4470519fae4fe3ac44748d27b947a575248c7f552",
+            "text": "壶",
+            "words": [
+              {
+                "text": "壶",
+                "start": 0.26,
+                "end": 0.36
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2dfeb2ba264d295a22059d0d59e4829870a7eb6c0970fec26ea30c73aab7c4c9.mp3",
+          "sha256": "2dfeb2ba264d295a22059d0d59e4829870a7eb6c0970fec26ea30c73aab7c4c9",
+          "byteLength": 8973,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "2dfeb2ba264d295a22059d0d59e4829870a7eb6c0970fec26ea30c73aab7c4c9",
+            "text": "壶",
+            "words": [
+              {
+                "text": "壶",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

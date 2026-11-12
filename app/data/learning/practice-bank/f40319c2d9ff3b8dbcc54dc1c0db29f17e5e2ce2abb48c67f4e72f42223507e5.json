@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W2403",
+  "targetId": "W2403",
+  "steps": [
+    {
+      "id": "BANK-W2403-W2403",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2403-W2403",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "another day; some other time",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "改天"
+            },
+            {
+              "value": "gǎitiān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gai3tian1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "改天",
+            "pinyin": "gǎitiān",
+            "meaning": "another day; some other time",
+            "singleWord": true,
+            "audio": "e494fca2c39d9eba298ceb4823903107ce61eb2445c85e9223cd5c8ce7586c1a"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e494fca2c39d9eba298ceb4823903107ce61eb2445c85e9223cd5c8ce7586c1a": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-dd24d5653943e3dcb3ebec9063935cd6c1bef4750eaea122a2952d13136696ee.mp3",
+        "sha256": "dd24d5653943e3dcb3ebec9063935cd6c1bef4750eaea122a2952d13136696ee",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "dd24d5653943e3dcb3ebec9063935cd6c1bef4750eaea122a2952d13136696ee",
+          "text": "改天",
+          "words": [
+            {
+              "text": "改天",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b5272743f155e803f365d52b58290ed1e4e06653ce583a3f61f1e898abd90ce9.mp3",
+        "sha256": "b5272743f155e803f365d52b58290ed1e4e06653ce583a3f61f1e898abd90ce9",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "b5272743f155e803f365d52b58290ed1e4e06653ce583a3f61f1e898abd90ce9",
+          "text": "改天",
+          "words": [
+            {
+              "text": "改天",
+              "start": 0.03,
+              "end": 0.27
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2403",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2403-W2403",
+      "question_ids": [
+        "BANK-W2403-W2403"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-05-P01",
+    "stepId": "S-U5-05-words-03",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6539"
+    ],
+    "grammarLessonIds": []
+  }
+}

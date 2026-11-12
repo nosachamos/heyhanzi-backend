@@ -1,0 +1,537 @@
+{
+  "id": "EX-CHAR-char-5200",
+  "revision": 2,
+  "unit": "U4-04",
+  "stage": "ST-HSK4",
+  "after": "S-U4-04-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "刀",
+  "sourceBlockId": "mandarin-simplified-v1-char-5200",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Write the character",
+    "Connect meaning and sound",
+    "Use the whole word",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5200",
+        "text": "刀",
+        "pinyin": "dāo",
+        "meaning": "knife; blade; single-edged sword",
+        "characters": [
+          {
+            "id": "C-5200",
+            "text": "刀"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-975e",
+        "text": "非",
+        "pinyin": "fēi",
+        "meaning": "to not be; not; wrong; incorrect",
+        "characters": [
+          {
+            "id": "C-975E",
+            "text": "非"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-ede97f0acd4afa65e5783ba3",
+        "text": "过往",
+        "pinyin": "guò wǎng",
+        "meaning": "to come and go",
+        "characters": [
+          {
+            "id": "C-8FC7",
+            "text": "过"
+          },
+          {
+            "id": "C-5F80",
+            "text": "往"
+          }
+        ]
+      },
+      {
+        "id": "W2694",
+        "text": "客户",
+        "pinyin": "kèhù",
+        "meaning": "client; customer",
+        "characters": [
+          {
+            "id": "C-5BA2",
+            "text": "客"
+          },
+          {
+            "id": "C-6237",
+            "text": "户"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "a72a4139d6b5afc6f4b390fb9ddd646994d94f4c79a946e8641d3428bbda5043",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5200",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "刀",
+    "variant": "lesson-movement-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5200-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "刀",
+        "pinyin": "dāo",
+        "meaning": "knife; blade",
+        "source": "/stroke-data/5200.json",
+        "reference": {
+          "character": "刀",
+          "sha256": "314dc5198a73e48e2cb2f40db466053c86617dc70c164202942be7b2b3067be2",
+          "medians": [
+            [
+              [
+                260,
+                629
+              ],
+              [
+                304,
+                613
+              ],
+              [
+                336,
+                613
+              ],
+              [
+                737,
+                685
+              ],
+              [
+                769,
+                671
+              ],
+              [
+                785,
+                653
+              ],
+              [
+                738,
+                364
+              ],
+              [
+                721,
+                295
+              ],
+              [
+                678,
+                180
+              ],
+              [
+                651,
+                141
+              ],
+              [
+                617,
+                118
+              ],
+              [
+                513,
+                186
+              ]
+            ],
+            [
+              [
+                451,
+                603
+              ],
+              [
+                481,
+                579
+              ],
+              [
+                483,
+                563
+              ],
+              [
+                446,
+                450
+              ],
+              [
+                389,
+                337
+              ],
+              [
+                341,
+                270
+              ],
+              [
+                270,
+                198
+              ],
+              [
+                155,
+                112
+              ],
+              [
+                120,
+                94
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5200-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5200",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "刀",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-ede97f0acd4afa65e5783ba3",
+                "label": "to come and go",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5200",
+                "label": "knife; blade",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W2694",
+                "label": "client; customer",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5200-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-PRIMARY-char-5200",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "knife; blade",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "刀"
+              },
+              {
+                "value": "dāo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "dao1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "刀",
+              "pinyin": "dāo",
+              "meaning": "knife; blade",
+              "audio": "39c2693e3cf43996a60426c4ed7b38df128af925d9cc0d1b392011cbe8347ea7",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5200-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-PRIMARY-char-975e",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to not be; not",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "非"
+              },
+              {
+                "value": "fēi",
+                "mode": "pinyin"
+              },
+              {
+                "value": "fei1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "非",
+              "pinyin": "fēi",
+              "meaning": "to not be; not",
+              "audio": "88f77540a6c49b5facccf920b9ad6f79c7e7900c5dffe576dcb28d9832e383c6",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5200-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5200",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "knife; blade",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "刀"
+              },
+              {
+                "value": "dāo",
+                "mode": "pinyin"
+              },
+              {
+                "value": "dao1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "刀",
+              "pinyin": "dāo",
+              "meaning": "knife; blade",
+              "audio": "39c2693e3cf43996a60426c4ed7b38df128af925d9cc0d1b392011cbe8347ea7",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "39c2693e3cf43996a60426c4ed7b38df128af925d9cc0d1b392011cbe8347ea7"
+            ],
+            "transcript": [
+              {
+                "text": "刀",
+                "pinyin": "dāo",
+                "meaning": "knife; blade",
+                "audio": "39c2693e3cf43996a60426c4ed7b38df128af925d9cc0d1b392011cbe8347ea7",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5200",
+      "character": "刀",
+      "lessonIds": [
+        "LESSON-C-5200"
+      ],
+      "profile": "movement-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5200-write",
+        "EX-CHAR-char-5200-recognize",
+        "EX-CHAR-char-5200-word",
+        "EX-CHAR-char-5200-familiar",
+        "EX-CHAR-char-5200-recall"
+      ]
+    },
+    "audio": {
+      "39c2693e3cf43996a60426c4ed7b38df128af925d9cc0d1b392011cbe8347ea7": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/cf949fd9308b3d54c4d137b6c1f4b00fdde4e422d11b1eca1823751544815f8e.mp3",
+          "sha256": "cf949fd9308b3d54c4d137b6c1f4b00fdde4e422d11b1eca1823751544815f8e",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "cf949fd9308b3d54c4d137b6c1f4b00fdde4e422d11b1eca1823751544815f8e",
+            "text": "刀",
+            "words": [
+              {
+                "text": "刀",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c195f49d7da9bc0131b359d8bf955922621a1a2190720ad68779f472da2be6c0.mp3",
+          "sha256": "c195f49d7da9bc0131b359d8bf955922621a1a2190720ad68779f472da2be6c0",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "c195f49d7da9bc0131b359d8bf955922621a1a2190720ad68779f472da2be6c0",
+            "text": "刀",
+            "words": [
+              {
+                "text": "刀",
+                "start": 0.39,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "88f77540a6c49b5facccf920b9ad6f79c7e7900c5dffe576dcb28d9832e383c6": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-04dc2888037b4f25860158bb5303f1380b37f827d8fa35f2503f511e8d9bb442.mp3",
+          "sha256": "04dc2888037b4f25860158bb5303f1380b37f827d8fa35f2503f511e8d9bb442",
+          "byteLength": 8685,
+          "qualityWarning": "too-fast",
+          "qualitySelectionPolicy": "owner-authorized-fast-pace-review-2026-11-01",
+          "readAlong": {
+            "audioSha256": "04dc2888037b4f25860158bb5303f1380b37f827d8fa35f2503f511e8d9bb442",
+            "text": "非",
+            "words": [
+              {
+                "text": "非",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-f6f62b2f0452a36f0c69c2e8b451ca65af5bb08fb680f1f5d8c1da7db94cd5fa.mp3",
+          "sha256": "f6f62b2f0452a36f0c69c2e8b451ca65af5bb08fb680f1f5d8c1da7db94cd5fa",
+          "byteLength": 8685,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "f6f62b2f0452a36f0c69c2e8b451ca65af5bb08fb680f1f5d8c1da7db94cd5fa",
+            "text": "非",
+            "words": [
+              {
+                "text": "非",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "b27e66b9a093bdf13eaa408c353cbe312d2877a321a6121f4d09bc9d82ea5965": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/449bce92c392a5f6b083e698ec35d88c783a7c510a9a42e050662c63ea623150.mp3",
+          "sha256": "449bce92c392a5f6b083e698ec35d88c783a7c510a9a42e050662c63ea623150",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "449bce92c392a5f6b083e698ec35d88c783a7c510a9a42e050662c63ea623150",
+            "text": "过往",
+            "words": [
+              {
+                "text": "过往",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f9ffd21f8c57a87917ef07b8c1542d6ccc81d607b4c12d5ef6aa8a932e8b345a.mp3",
+          "sha256": "f9ffd21f8c57a87917ef07b8c1542d6ccc81d607b4c12d5ef6aa8a932e8b345a",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "f9ffd21f8c57a87917ef07b8c1542d6ccc81d607b4c12d5ef6aa8a932e8b345a",
+            "text": "过往",
+            "words": [
+              {
+                "text": "过往",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "dda323fce5dec8e0df0b45e5ace92038ab266793661747c349e27661577a3ad1": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-d3fa07ae7cc2c1859f709be42ba23757d4e1788cb464dc98703d45f06826c30d.mp3",
+          "sha256": "d3fa07ae7cc2c1859f709be42ba23757d4e1788cb464dc98703d45f06826c30d",
+          "byteLength": 12717,
+          "readAlong": {
+            "audioSha256": "d3fa07ae7cc2c1859f709be42ba23757d4e1788cb464dc98703d45f06826c30d",
+            "text": "客户",
+            "words": [
+              {
+                "text": "客户",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-da42d9fba451b61b8dc3447a6495a3431cc67682dd8241b86fe892c31d0d9d4f.mp3",
+          "sha256": "da42d9fba451b61b8dc3447a6495a3431cc67682dd8241b86fe892c31d0d9d4f",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "da42d9fba451b61b8dc3447a6495a3431cc67682dd8241b86fe892c31d0d9d4f",
+            "text": "客户",
+            "words": [
+              {
+                "text": "客户",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

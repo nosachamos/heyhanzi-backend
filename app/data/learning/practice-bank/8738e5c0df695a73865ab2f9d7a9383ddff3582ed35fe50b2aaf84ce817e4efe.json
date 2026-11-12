@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3060",
+  "targetId": "W3060",
+  "steps": [
+    {
+      "id": "BANK-W3060-W3060",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3060-W3060",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "experiment; test",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "试验"
+            },
+            {
+              "value": "shìyàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shi4yan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "试验",
+            "pinyin": "shìyàn",
+            "meaning": "experiment; test",
+            "singleWord": true,
+            "audio": "2120ce73bb01e759eb270ed011d50a8bde5dec8e065cbecb84122cfbf43250ae"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "2120ce73bb01e759eb270ed011d50a8bde5dec8e065cbecb84122cfbf43250ae": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1f160ca59125e7bfa4d712a37025b9cb82602a88f381b403c0defd01a32d116f.mp3",
+        "sha256": "1f160ca59125e7bfa4d712a37025b9cb82602a88f381b403c0defd01a32d116f",
+        "byteLength": 11853,
+        "readAlong": {
+          "audioSha256": "1f160ca59125e7bfa4d712a37025b9cb82602a88f381b403c0defd01a32d116f",
+          "text": "试验",
+          "words": [
+            {
+              "text": "试验",
+              "start": 0.09,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9fcb2355c319f08420f36e8b8ee8ad5bc205a6ff2d2bdcd4ec1fd60ff3da53fc.mp3",
+        "sha256": "9fcb2355c319f08420f36e8b8ee8ad5bc205a6ff2d2bdcd4ec1fd60ff3da53fc",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "9fcb2355c319f08420f36e8b8ee8ad5bc205a6ff2d2bdcd4ec1fd60ff3da53fc",
+          "text": "试验",
+          "words": [
+            {
+              "text": "试验",
+              "start": 0.26,
+              "end": 0.52
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3060",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3060-W3060",
+      "question_ids": [
+        "BANK-W3060-W3060"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-20",
+    "stepId": "S-U5-20-working-word-2",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9a8c"
+    ],
+    "grammarLessonIds": []
+  }
+}

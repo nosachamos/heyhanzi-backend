@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1210",
+  "targetId": "W1210",
+  "steps": [
+    {
+      "id": "BANK-W1210-W1210",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1210-W1210",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "TV series; TV drama",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "电视剧"
+            },
+            {
+              "value": "diànshìjù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "dian4shi4ju4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "电视剧",
+            "pinyin": "diànshìjù",
+            "meaning": "TV series; TV drama",
+            "singleWord": true,
+            "audio": "f7263f4421f0f966d7b9336d31c880964c303c1ef373aac2bd1bc2031b996457"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "f7263f4421f0f966d7b9336d31c880964c303c1ef373aac2bd1bc2031b996457": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-f83d7ca041a0ade61ac05169781c83fea0fba8ca085b0673d217205d67255207.mp3",
+        "sha256": "f83d7ca041a0ade61ac05169781c83fea0fba8ca085b0673d217205d67255207",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "f83d7ca041a0ade61ac05169781c83fea0fba8ca085b0673d217205d67255207",
+          "text": "电视剧",
+          "words": [
+            {
+              "text": "电视剧",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-258034f1cdfb901c17c8bfdb0fb63cb637e5b34cbc5998366e0412f1b4757fb4.mp3",
+        "sha256": "258034f1cdfb901c17c8bfdb0fb63cb637e5b34cbc5998366e0412f1b4757fb4",
+        "byteLength": 16461,
+        "readAlong": {
+          "audioSha256": "258034f1cdfb901c17c8bfdb0fb63cb637e5b34cbc5998366e0412f1b4757fb4",
+          "text": "电视剧",
+          "words": [
+            {
+              "text": "电视剧",
+              "start": 0.32999999999999996,
+              "end": 0.8699999999999999
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1210",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1210-W1210",
+      "question_ids": [
+        "BANK-W1210-W1210"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-25",
+    "stepId": "S-U4-25-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5267"
+    ],
+    "grammarLessonIds": []
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "BANK-W0260",
+  "targetId": "W0260",
+  "steps": [
+    {
+      "id": "BANK-W0260-W0260",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0260-W0260",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "to compare; more {adj.} than {noun}",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "比"
+            },
+            {
+              "value": "bǐ",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bi3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "比",
+            "pinyin": "bǐ",
+            "meaning": "to compare; more {adj.} than {noun}",
+            "singleWord": true,
+            "audio": "5b2307f8587b0184dfe3488cf8b16eb27fa5353d625af4ff931c5c72776b32c0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "5b2307f8587b0184dfe3488cf8b16eb27fa5353d625af4ff931c5c72776b32c0": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2e89094f8ea9e7ee171e5d42397203e515f8df1063c5b0d0f10d0fe6a8a91ff0.mp3",
+        "sha256": "2e89094f8ea9e7ee171e5d42397203e515f8df1063c5b0d0f10d0fe6a8a91ff0",
+        "byteLength": 10413,
+        "readAlong": {
+          "audioSha256": "2e89094f8ea9e7ee171e5d42397203e515f8df1063c5b0d0f10d0fe6a8a91ff0",
+          "text": "比",
+          "words": [
+            {
+              "text": "比",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b70daaf29f209fbb721673226c81b9e06a561c4c3757363193e84e9bcaf4b5ec.mp3",
+        "sha256": "b70daaf29f209fbb721673226c81b9e06a561c4c3757363193e84e9bcaf4b5ec",
+        "byteLength": 8397,
+        "qualityWarning": "yellow",
+        "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+        "readAlong": {
+          "audioSha256": "b70daaf29f209fbb721673226c81b9e06a561c4c3757363193e84e9bcaf4b5ec",
+          "text": "比",
+          "words": [
+            {
+              "text": "比",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0260",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0260-W0260",
+      "question_ids": [
+        "BANK-W0260-W0260"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U23-P01",
+    "stepId": "S-U23-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6bd4"
+    ],
+    "grammarLessonIds": []
+  }
+}

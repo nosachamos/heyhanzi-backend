@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0150",
+  "targetId": "W0150",
+  "steps": [
+    {
+      "id": "BANK-W0150-W0150",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0150-W0150",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "give; deliver",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "送"
+            },
+            {
+              "value": "sòng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "song4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "送",
+            "pinyin": "sòng",
+            "meaning": "give; deliver",
+            "singleWord": true,
+            "audio": "507a5d546c484ab376b4bdf38800214b252ff5a7b34c8ff47f6d54a881417870"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "507a5d546c484ab376b4bdf38800214b252ff5a7b34c8ff47f6d54a881417870": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-a998e09273fe7b83997d9c81b05acab38e979955f78f445ece4eb37210948c79.mp3",
+        "sha256": "a998e09273fe7b83997d9c81b05acab38e979955f78f445ece4eb37210948c79",
+        "byteLength": 8973,
+        "readAlong": {
+          "audioSha256": "a998e09273fe7b83997d9c81b05acab38e979955f78f445ece4eb37210948c79",
+          "text": "送",
+          "words": [
+            {
+              "text": "送",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-16b8e03542c422845781c424d34a0b891f115292eee08f6ac9ebdb8a35673a4c.mp3",
+        "sha256": "16b8e03542c422845781c424d34a0b891f115292eee08f6ac9ebdb8a35673a4c",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "16b8e03542c422845781c424d34a0b891f115292eee08f6ac9ebdb8a35673a4c",
+          "text": "送",
+          "words": [
+            {
+              "text": "送",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0150",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0150-W0150",
+      "question_ids": [
+        "BANK-W0150-W0150"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U12-P01",
+    "stepId": "S-U12-words-r4-17",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-9001"
+    ],
+    "grammarLessonIds": []
+  }
+}

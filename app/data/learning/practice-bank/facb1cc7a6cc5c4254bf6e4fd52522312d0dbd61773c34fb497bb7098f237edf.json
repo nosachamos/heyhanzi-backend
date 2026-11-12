@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1292",
+  "targetId": "W1292",
+  "steps": [
+    {
+      "id": "BANK-W1292-W1292",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1292-W1292",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "singing voice",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "歌声"
+            },
+            {
+              "value": "gēshēng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "ge1sheng1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "歌声",
+            "pinyin": "gēshēng",
+            "meaning": "singing voice",
+            "singleWord": true,
+            "audio": "eb1ae59dc363e4150dbae0b8395901dcd86b4ad4a579d030f4932d0710ec86c2"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "eb1ae59dc363e4150dbae0b8395901dcd86b4ad4a579d030f4932d0710ec86c2": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/0f8856272cd0cfa10685669fc5d613e7d8bec4a67cacb04606c74c64257a5ab0.mp3",
+        "sha256": "0f8856272cd0cfa10685669fc5d613e7d8bec4a67cacb04606c74c64257a5ab0",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "0f8856272cd0cfa10685669fc5d613e7d8bec4a67cacb04606c74c64257a5ab0",
+          "text": "歌声",
+          "words": [
+            {
+              "text": "歌声",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/8e87810585155118dca82bec61a07883470ca85125d6ba2d4b15db12abbe8681.mp3",
+        "sha256": "8e87810585155118dca82bec61a07883470ca85125d6ba2d4b15db12abbe8681",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "8e87810585155118dca82bec61a07883470ca85125d6ba2d4b15db12abbe8681",
+          "text": "歌声",
+          "words": [
+            {
+              "text": "歌声",
+              "start": 0.09,
+              "end": 0.32999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1292",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1292-W1292",
+      "question_ids": [
+        "BANK-W1292-W1292"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-25",
+    "stepId": "S-U4-25-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7434"
+    ],
+    "grammarLessonIds": []
+  }
+}

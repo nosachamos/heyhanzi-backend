@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W5304",
+  "targetId": "W5304",
+  "steps": [
+    {
+      "id": "BANK-W5304-W5304",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W5304-W5304",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "symptom",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "症状"
+            },
+            {
+              "value": "zhèngzhuàng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zheng4zhuang4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "症状",
+            "pinyin": "zhèngzhuàng",
+            "meaning": "symptom",
+            "singleWord": true,
+            "audio": "3141f603b337097d114a9cdea2ef85f8bc7a49231b81f5ff754ee90f3316a99f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3141f603b337097d114a9cdea2ef85f8bc7a49231b81f5ff754ee90f3316a99f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2d6713478392bc6224635ee0aedb73affecd14275dfcfc5f63ae6abbae277b19.mp3",
+        "sha256": "2d6713478392bc6224635ee0aedb73affecd14275dfcfc5f63ae6abbae277b19",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "2d6713478392bc6224635ee0aedb73affecd14275dfcfc5f63ae6abbae277b19",
+          "text": "症状",
+          "words": [
+            {
+              "text": "症状",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2f0bdb0775eb9381faff0a964743c9e1491c17c4cb9f85fa47353d46af8da0eb.mp3",
+        "sha256": "2f0bdb0775eb9381faff0a964743c9e1491c17c4cb9f85fa47353d46af8da0eb",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "2f0bdb0775eb9381faff0a964743c9e1491c17c4cb9f85fa47353d46af8da0eb",
+          "text": "症状",
+          "words": [
+            {
+              "text": "症状",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W5304",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W5304-W5304",
+      "question_ids": [
+        "BANK-W5304-W5304"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-16",
+    "stepId": "S-U6-16-words-r4-16",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-75c7"
+    ],
+    "grammarLessonIds": []
+  }
+}

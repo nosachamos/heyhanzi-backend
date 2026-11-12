@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0453",
+  "targetId": "W0453",
+  "steps": [
+    {
+      "id": "BANK-W0453-W0453",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0453-W0453",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "store; shop",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "商店"
+            },
+            {
+              "value": "shāngdiàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shang1dian4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "商店",
+            "pinyin": "shāngdiàn",
+            "meaning": "store; shop",
+            "singleWord": true,
+            "audio": "0f1fcad90e128764f6a1e9de1c3be719097f6627b39f24758d4a2ee8d5ead086"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "0f1fcad90e128764f6a1e9de1c3be719097f6627b39f24758d4a2ee8d5ead086": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-5ab52b8ce75c866f795bdc136a72984fef6c96a5040d8f4ed385b802800ba1f2.mp3",
+        "sha256": "5ab52b8ce75c866f795bdc136a72984fef6c96a5040d8f4ed385b802800ba1f2",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "5ab52b8ce75c866f795bdc136a72984fef6c96a5040d8f4ed385b802800ba1f2",
+          "text": "商店",
+          "words": [
+            {
+              "text": "商店",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-bad412ef965c21f5e81200ca2facd6dfc029f7fb5b6862c4edaa992c923fb637.mp3",
+        "sha256": "bad412ef965c21f5e81200ca2facd6dfc029f7fb5b6862c4edaa992c923fb637",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "bad412ef965c21f5e81200ca2facd6dfc029f7fb5b6862c4edaa992c923fb637",
+          "text": "商店",
+          "words": [
+            {
+              "text": "商店",
+              "start": 0.39,
+              "end": 0.69
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0453",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0453-W0453",
+      "question_ids": [
+        "BANK-W0453-W0453"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U05-P02",
+    "stepId": "S-U05-words-r4-72",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5546"
+    ],
+    "grammarLessonIds": []
+  }
+}

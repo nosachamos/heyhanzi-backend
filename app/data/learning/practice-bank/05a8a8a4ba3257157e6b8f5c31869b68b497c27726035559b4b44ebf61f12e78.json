@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0502",
+  "targetId": "W0502",
+  "steps": [
+    {
+      "id": "BANK-W0502-W0502",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0502-W0502",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "this; this",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "这个"
+            },
+            {
+              "value": "zhège",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zhe4ge5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "这个",
+            "pinyin": "zhège",
+            "meaning": "this; this",
+            "singleWord": true,
+            "audio": "b67de86ebd223312c5acac8c59dc2eede4cd7427f7240e8fb172f78ddf2ec6d7"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "b67de86ebd223312c5acac8c59dc2eede4cd7427f7240e8fb172f78ddf2ec6d7": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-c6d828336e65dcaf5dd47994f6b294eabf3e07eafbc2b7067f8a8c7439d8afab.mp3",
+        "sha256": "c6d828336e65dcaf5dd47994f6b294eabf3e07eafbc2b7067f8a8c7439d8afab",
+        "byteLength": 14445,
+        "readAlong": {
+          "audioSha256": "c6d828336e65dcaf5dd47994f6b294eabf3e07eafbc2b7067f8a8c7439d8afab",
+          "text": "这个",
+          "words": [
+            {
+              "text": "这个",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-6ffc7ae1f7a7bdbb0f4c1aac8d5526efb4acd1b05bac3707b6e7beb11aa3d3bd.mp3",
+        "sha256": "6ffc7ae1f7a7bdbb0f4c1aac8d5526efb4acd1b05bac3707b6e7beb11aa3d3bd",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "6ffc7ae1f7a7bdbb0f4c1aac8d5526efb4acd1b05bac3707b6e7beb11aa3d3bd",
+          "text": "这个",
+          "words": [
+            {
+              "text": "这个",
+              "start": 0.09,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0502",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0502-W0502",
+      "question_ids": [
+        "BANK-W0502-W0502"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U04",
+    "stepId": "S-U04-words-r4-29",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4e2a"
+    ],
+    "grammarLessonIds": []
+  }
+}

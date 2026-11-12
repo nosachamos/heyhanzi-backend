@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0925",
+  "targetId": "W0925",
+  "steps": [
+    {
+      "id": "BANK-W0925-W0925",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0925-W0925",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "room; work unit",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "室"
+            },
+            {
+              "value": "shì",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shi4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "室",
+            "pinyin": "shì",
+            "meaning": "room; work unit",
+            "singleWord": true,
+            "audio": "e90d21a1bb468550d5b77fe25ce3e43d963f0a7039aa3bd8257d95ec92616525"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "e90d21a1bb468550d5b77fe25ce3e43d963f0a7039aa3bd8257d95ec92616525": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-be87b0b65d14f7958fea7766143498864b8ee6747525a493928cb7846fe14883.mp3",
+        "sha256": "be87b0b65d14f7958fea7766143498864b8ee6747525a493928cb7846fe14883",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "be87b0b65d14f7958fea7766143498864b8ee6747525a493928cb7846fe14883",
+          "text": "室",
+          "words": [
+            {
+              "text": "室",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-2d97a9739e99ac1a0808aecef953b1ad9899d57fd1ec0818051373280c172f58.mp3",
+        "sha256": "2d97a9739e99ac1a0808aecef953b1ad9899d57fd1ec0818051373280c172f58",
+        "byteLength": 8109,
+        "readAlong": {
+          "audioSha256": "2d97a9739e99ac1a0808aecef953b1ad9899d57fd1ec0818051373280c172f58",
+          "text": "室",
+          "words": [
+            {
+              "text": "室",
+              "start": 0.3,
+              "end": 0.4
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0925",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0925-W0925",
+      "question_ids": [
+        "BANK-W0925-W0925"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-03",
+    "stepId": "S-U3-03-words-r4-25",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-5ba4"
+    ],
+    "grammarLessonIds": []
+  }
+}

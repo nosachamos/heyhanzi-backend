@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W3052",
+  "targetId": "W3052",
+  "steps": [
+    {
+      "id": "BANK-W3052-W3052",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W3052-W3052",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "accident",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "事故"
+            },
+            {
+              "value": "shìgù",
+              "mode": "pinyin"
+            },
+            {
+              "value": "shi4gu4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "事故",
+            "pinyin": "shìgù",
+            "meaning": "accident",
+            "singleWord": true,
+            "audio": "3df03f11de632409f0c1bdb8f9c0df67a617bbcc137aed98a4c1748a091d284e"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "3df03f11de632409f0c1bdb8f9c0df67a617bbcc137aed98a4c1748a091d284e": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-440a65ecb342c2f8e325dc4979ea1e4831261e866c70d725724cf59b0078909d.mp3",
+        "sha256": "440a65ecb342c2f8e325dc4979ea1e4831261e866c70d725724cf59b0078909d",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "440a65ecb342c2f8e325dc4979ea1e4831261e866c70d725724cf59b0078909d",
+          "text": "事故",
+          "words": [
+            {
+              "text": "事故",
+              "start": 0.15,
+              "end": 0.51
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c133db2e34c7140e2139a2b1107ce944084c72c716adaa7e678624131a2f4f50.mp3",
+        "sha256": "c133db2e34c7140e2139a2b1107ce944084c72c716adaa7e678624131a2f4f50",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "c133db2e34c7140e2139a2b1107ce944084c72c716adaa7e678624131a2f4f50",
+          "text": "事故",
+          "words": [
+            {
+              "text": "事故",
+              "start": 0.39,
+              "end": 0.75
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W3052",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W3052-W3052",
+      "question_ids": [
+        "BANK-W3052-W3052"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-07",
+    "stepId": "S-U5-07-working-word-2",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6545"
+    ],
+    "grammarLessonIds": []
+  }
+}

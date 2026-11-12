@@ -1,0 +1,795 @@
+{
+  "id": "EX-CHAR-char-5f31",
+  "revision": 2,
+  "unit": "U5-45-P02",
+  "stage": "ST-HSK5",
+  "after": "S-U5-45-P02-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "弱",
+  "sourceBlockId": "mandarin-simplified-v1-char-5f31",
+  "sourceLevelId": "hsk-5",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-54f2",
+        "text": "哲",
+        "pinyin": "zhé",
+        "meaning": "wise; a sage",
+        "characters": [
+          {
+            "id": "C-54F2",
+            "text": "哲"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-5957",
+        "text": "套",
+        "pinyin": "tào",
+        "meaning": "to cover; to encase",
+        "characters": [
+          {
+            "id": "C-5957",
+            "text": "套"
+          }
+        ]
+      },
+      {
+        "id": "NB-PRIMARY-char-5f31",
+        "text": "弱",
+        "pinyin": "ruò",
+        "meaning": "weak; feeble; young",
+        "characters": [
+          {
+            "id": "C-5F31",
+            "text": "弱"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-6f616d66b19806e0effb87f8",
+        "text": "微弱",
+        "pinyin": "wēi ruò",
+        "meaning": "weak",
+        "characters": [
+          {
+            "id": "C-5FAE",
+            "text": "微"
+          },
+          {
+            "id": "C-5F31",
+            "text": "弱"
+          }
+        ]
+      },
+      {
+        "id": "W3613",
+        "text": "醉",
+        "pinyin": "zuì",
+        "meaning": "intoxicated",
+        "characters": [
+          {
+            "id": "C-9189",
+            "text": "醉"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "7db78d622890f311b2282f16a5dc0355b69d6b14464ca49e15e14b42f1dc1761",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5f31",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "弱",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5f31-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-6f616d66b19806e0effb87f8",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "weak",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "微弱"
+              },
+              {
+                "value": "wēi ruò",
+                "mode": "pinyin"
+              },
+              {
+                "value": "wei1ruo4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "微弱",
+              "pinyin": "wēi ruò",
+              "meaning": "weak",
+              "audio": "45d5912747ec5546440f2f96eb995186e5e934811f2f32a44d9a3b08fd02b0dc",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5f31-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5f31",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "弱",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-PRIMARY-char-5957",
+                "label": "to cover; to encase",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5f31",
+                "label": "weak; feeble",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-PRIMARY-char-54f2",
+                "label": "wise; a sage",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5f31-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "弱",
+        "pinyin": "ruò",
+        "meaning": "weak; feeble",
+        "source": "/stroke-data/5f31.json",
+        "reference": {
+          "character": "弱",
+          "sha256": "204a23881754cc45f7d509a5ec7d37cf4872f4cfa16f1756a85bd731915c5fd3",
+          "medians": [
+            [
+              [
+                249,
+                704
+              ],
+              [
+                294,
+                702
+              ],
+              [
+                409,
+                730
+              ],
+              [
+                437,
+                716
+              ],
+              [
+                446,
+                703
+              ],
+              [
+                421,
+                628
+              ],
+              [
+                416,
+                617
+              ],
+              [
+                391,
+                602
+              ]
+            ],
+            [
+              [
+                286,
+                559
+              ],
+              [
+                298,
+                553
+              ],
+              [
+                387,
+                575
+              ],
+              [
+                443,
+                573
+              ]
+            ],
+            [
+              [
+                235,
+                578
+              ],
+              [
+                258,
+                549
+              ],
+              [
+                261,
+                534
+              ],
+              [
+                234,
+                429
+              ],
+              [
+                263,
+                425
+              ],
+              [
+                335,
+                443
+              ],
+              [
+                400,
+                449
+              ],
+              [
+                421,
+                445
+              ],
+              [
+                443,
+                420
+              ],
+              [
+                414,
+                174
+              ],
+              [
+                396,
+                111
+              ],
+              [
+                378,
+                78
+              ],
+              [
+                359,
+                57
+              ],
+              [
+                338,
+                47
+              ],
+              [
+                258,
+                93
+              ]
+            ],
+            [
+              [
+                185,
+                342
+              ],
+              [
+                247,
+                303
+              ],
+              [
+                261,
+                278
+              ]
+            ],
+            [
+              [
+                112,
+                146
+              ],
+              [
+                165,
+                148
+              ],
+              [
+                270,
+                214
+              ],
+              [
+                276,
+                223
+              ],
+              [
+                290,
+                226
+              ],
+              [
+                296,
+                236
+              ],
+              [
+                335,
+                261
+              ]
+            ],
+            [
+              [
+                569,
+                736
+              ],
+              [
+                629,
+                736
+              ],
+              [
+                744,
+                766
+              ],
+              [
+                762,
+                760
+              ],
+              [
+                783,
+                737
+              ],
+              [
+                780,
+                727
+              ],
+              [
+                750,
+                646
+              ],
+              [
+                722,
+                628
+              ]
+            ],
+            [
+              [
+                616,
+                566
+              ],
+              [
+                626,
+                580
+              ],
+              [
+                668,
+                592
+              ],
+              [
+                722,
+                603
+              ],
+              [
+                783,
+                601
+              ]
+            ],
+            [
+              [
+                562,
+                604
+              ],
+              [
+                587,
+                578
+              ],
+              [
+                592,
+                559
+              ],
+              [
+                573,
+                456
+              ],
+              [
+                603,
+                452
+              ],
+              [
+                677,
+                468
+              ],
+              [
+                769,
+                475
+              ],
+              [
+                791,
+                471
+              ],
+              [
+                813,
+                444
+              ],
+              [
+                793,
+                192
+              ],
+              [
+                782,
+                122
+              ],
+              [
+                763,
+                75
+              ],
+              [
+                739,
+                43
+              ],
+              [
+                717,
+                26
+              ],
+              [
+                618,
+                85
+              ]
+            ],
+            [
+              [
+                540,
+                367
+              ],
+              [
+                607,
+                333
+              ],
+              [
+                631,
+                302
+              ]
+            ],
+            [
+              [
+                489,
+                175
+              ],
+              [
+                536,
+                171
+              ],
+              [
+                681,
+                254
+              ],
+              [
+                731,
+                289
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5f31-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W3613",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "intoxicated",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "醉"
+              },
+              {
+                "value": "zuì",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zui4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "醉",
+              "pinyin": "zuì",
+              "meaning": "intoxicated",
+              "audio": "e178266e5160e01f7b18ab0248e1ffe22faac2d543ee71bdfa924f79ad20d01a",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5f31-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5f31",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "weak; feeble",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "弱"
+              },
+              {
+                "value": "ruò",
+                "mode": "pinyin"
+              },
+              {
+                "value": "ruo4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "弱",
+              "pinyin": "ruò",
+              "meaning": "weak; feeble",
+              "audio": "de76071a9512319776faa86881b29d11b4e2634b49bc4cc18bd05bd263a81926",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "de76071a9512319776faa86881b29d11b4e2634b49bc4cc18bd05bd263a81926"
+            ],
+            "transcript": [
+              {
+                "text": "弱",
+                "pinyin": "ruò",
+                "meaning": "weak; feeble",
+                "audio": "de76071a9512319776faa86881b29d11b4e2634b49bc4cc18bd05bd263a81926",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5F31",
+      "character": "弱",
+      "lessonIds": [
+        "LESSON-C-5F31"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5f31-word",
+        "EX-CHAR-char-5f31-recognize",
+        "EX-CHAR-char-5f31-write",
+        "EX-CHAR-char-5f31-familiar",
+        "EX-CHAR-char-5f31-recall"
+      ]
+    },
+    "audio": {
+      "db3180ed1a8f7dc315cbc2dcf2a15bf0af05e4a2c47dcdb334af36295feb75b8": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-1aabf363dece63c84d5b9292b0b391c5a7661ea7f4266f17f7927f5a80206880.mp3",
+          "sha256": "1aabf363dece63c84d5b9292b0b391c5a7661ea7f4266f17f7927f5a80206880",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "1aabf363dece63c84d5b9292b0b391c5a7661ea7f4266f17f7927f5a80206880",
+            "text": "哲",
+            "words": [
+              {
+                "text": "哲",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-98484d6a642f50fbdaaa8326b15ef09310485ff989d0bffd5d97497f612c2d7a.mp3",
+          "sha256": "98484d6a642f50fbdaaa8326b15ef09310485ff989d0bffd5d97497f612c2d7a",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "98484d6a642f50fbdaaa8326b15ef09310485ff989d0bffd5d97497f612c2d7a",
+            "text": "哲",
+            "words": [
+              {
+                "text": "哲",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "e14905ad4b6e37b4110c2e69042f2cd5b65ab1dff2a8ec1d4b42dad6ecfb74e3": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-252cb99b6b56ae4c403e2a761e8cd53fa3f8b93c4119eb45470857767e5962bd.mp3",
+          "sha256": "252cb99b6b56ae4c403e2a761e8cd53fa3f8b93c4119eb45470857767e5962bd",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "252cb99b6b56ae4c403e2a761e8cd53fa3f8b93c4119eb45470857767e5962bd",
+            "text": "套",
+            "words": [
+              {
+                "text": "套",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6542fc9adec2f2cb33b9e12655c86d335ddb6509bc6a4b9a9c8a15eb86ac6adb.mp3",
+          "sha256": "6542fc9adec2f2cb33b9e12655c86d335ddb6509bc6a4b9a9c8a15eb86ac6adb",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "6542fc9adec2f2cb33b9e12655c86d335ddb6509bc6a4b9a9c8a15eb86ac6adb",
+            "text": "套",
+            "words": [
+              {
+                "text": "套",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "de76071a9512319776faa86881b29d11b4e2634b49bc4cc18bd05bd263a81926": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f2dc482f767dbb0d38eebe8f3012c937b6e78391cae431f16312949cd0718b0e.mp3",
+          "sha256": "f2dc482f767dbb0d38eebe8f3012c937b6e78391cae431f16312949cd0718b0e",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "f2dc482f767dbb0d38eebe8f3012c937b6e78391cae431f16312949cd0718b0e",
+            "text": "弱",
+            "words": [
+              {
+                "text": "弱",
+                "start": 0.21,
+                "end": 0.27
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/008acc2a5e293f1e4fd977195876cb130bc6b98a5eb0992d311a844d218c21f5.mp3",
+          "sha256": "008acc2a5e293f1e4fd977195876cb130bc6b98a5eb0992d311a844d218c21f5",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "008acc2a5e293f1e4fd977195876cb130bc6b98a5eb0992d311a844d218c21f5",
+            "text": "弱",
+            "words": [
+              {
+                "text": "弱",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "45d5912747ec5546440f2f96eb995186e5e934811f2f32a44d9a3b08fd02b0dc": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8d3d9e63a7d49cb2ebf1cd29e5fdaea49ec5898f8d6cf6fb82faa85c2a137722.mp3",
+          "sha256": "8d3d9e63a7d49cb2ebf1cd29e5fdaea49ec5898f8d6cf6fb82faa85c2a137722",
+          "byteLength": 10413,
+          "readAlong": {
+            "audioSha256": "8d3d9e63a7d49cb2ebf1cd29e5fdaea49ec5898f8d6cf6fb82faa85c2a137722",
+            "text": "微弱",
+            "words": [
+              {
+                "text": "微弱",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/f558110fb53f959512b61a8cc592e99a02ffbe0cdede17b48374992989faaad2.mp3",
+          "sha256": "f558110fb53f959512b61a8cc592e99a02ffbe0cdede17b48374992989faaad2",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "f558110fb53f959512b61a8cc592e99a02ffbe0cdede17b48374992989faaad2",
+            "text": "微弱",
+            "words": [
+              {
+                "text": "微弱",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "e178266e5160e01f7b18ab0248e1ffe22faac2d543ee71bdfa924f79ad20d01a": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/2be1b2ac1984e495ceaf5b94b30a235709fe1bdf8d2066588b86b32712c3426c.mp3",
+          "sha256": "2be1b2ac1984e495ceaf5b94b30a235709fe1bdf8d2066588b86b32712c3426c",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "2be1b2ac1984e495ceaf5b94b30a235709fe1bdf8d2066588b86b32712c3426c",
+            "text": "醉",
+            "words": [
+              {
+                "text": "醉",
+                "start": 0.16,
+                "end": 0.26
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/419d79d3a86975ffcf3a9badb9f34eee6c01a8370c23b63d283f188ca918f246.mp3",
+          "sha256": "419d79d3a86975ffcf3a9badb9f34eee6c01a8370c23b63d283f188ca918f246",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "419d79d3a86975ffcf3a9badb9f34eee6c01a8370c23b63d283f188ca918f246",
+            "text": "醉",
+            "words": [
+              {
+                "text": "醉",
+                "start": 0.18,
+                "end": 0.32
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

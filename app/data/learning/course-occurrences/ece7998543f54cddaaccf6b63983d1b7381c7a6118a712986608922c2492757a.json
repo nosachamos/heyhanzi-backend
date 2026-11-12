@@ -1,0 +1,749 @@
+{
+  "id": "EX-CHAR-char-5eb7",
+  "revision": 2,
+  "unit": "U25",
+  "stage": "ST-HSK2",
+  "after": "S-U25-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "康",
+  "sourceBlockId": "mandarin-simplified-v1-char-5eb7",
+  "sourceLevelId": "hsk-2",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5eb7",
+        "text": "康",
+        "pinyin": "kāng",
+        "meaning": "healthy; peaceful",
+        "characters": [
+          {
+            "id": "C-5EB7",
+            "text": "康"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-2e6221dbe7cd24a5a645fb75",
+        "text": "问候",
+        "pinyin": "wèn hòu",
+        "meaning": "to give one's respects",
+        "characters": [
+          {
+            "id": "C-95EE",
+            "text": "问"
+          },
+          {
+            "id": "C-5019",
+            "text": "候"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-c0be47e75d4cf3b5409e7cc6",
+        "text": "了结",
+        "pinyin": "liǎo jié",
+        "meaning": "to conclude",
+        "characters": [
+          {
+            "id": "C-4E86",
+            "text": "了"
+          },
+          {
+            "id": "C-7ED3",
+            "text": "结"
+          }
+        ]
+      },
+      {
+        "id": "W0293",
+        "text": "健康",
+        "pinyin": "jiànkāng",
+        "meaning": "health; healthy",
+        "characters": [
+          {
+            "id": "C-5065",
+            "text": "健"
+          },
+          {
+            "id": "C-5EB7",
+            "text": "康"
+          }
+        ]
+      },
+      {
+        "id": "W0347",
+        "text": "起来",
+        "pinyin": "qǐlái",
+        "meaning": "come up; start or bring to mind in selected extended uses",
+        "characters": [
+          {
+            "id": "C-8D77",
+            "text": "起"
+          },
+          {
+            "id": "C-6765",
+            "text": "来"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "e2d33a63c3d773dccadd264a12773f6bdcedc6112361c5eb89aa10ced3f5203f",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5eb7",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "康",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5eb7-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-W0293",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "health; healthy",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "健康"
+              },
+              {
+                "value": "jiànkāng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jian4kang1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "健康",
+              "pinyin": "jiànkāng",
+              "meaning": "health; healthy",
+              "audio": "75e94c8d8aefd714921292eccc27fce356cbde985b580477227fc779df561db1",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5eb7-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5eb7",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "康",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-2e6221dbe7cd24a5a645fb75",
+                "label": "to give one's respects",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5eb7",
+                "label": "healthy; peaceful",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-c0be47e75d4cf3b5409e7cc6",
+                "label": "to conclude",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5eb7-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "康",
+        "pinyin": "kāng",
+        "meaning": "healthy; peaceful",
+        "source": "/stroke-data/5eb7.json",
+        "reference": {
+          "character": "康",
+          "sha256": "b9a347601597de15d98745b282a77dae0f87f2a0062e981fe897d5e0847ea991",
+          "medians": [
+            [
+              [
+                462,
+                861
+              ],
+              [
+                545,
+                819
+              ],
+              [
+                573,
+                781
+              ]
+            ],
+            [
+              [
+                311,
+                694
+              ],
+              [
+                340,
+                682
+              ],
+              [
+                447,
+                688
+              ],
+              [
+                704,
+                735
+              ],
+              [
+                771,
+                736
+              ]
+            ],
+            [
+              [
+                237,
+                713
+              ],
+              [
+                262,
+                692
+              ],
+              [
+                279,
+                663
+              ],
+              [
+                254,
+                459
+              ],
+              [
+                235,
+                365
+              ],
+              [
+                201,
+                264
+              ],
+              [
+                158,
+                170
+              ],
+              [
+                100,
+                83
+              ],
+              [
+                57,
+                35
+              ]
+            ],
+            [
+              [
+                378,
+                534
+              ],
+              [
+                435,
+                533
+              ],
+              [
+                572,
+                560
+              ],
+              [
+                655,
+                585
+              ],
+              [
+                691,
+                579
+              ],
+              [
+                715,
+                549
+              ],
+              [
+                674,
+                399
+              ],
+              [
+                650,
+                382
+              ]
+            ],
+            [
+              [
+                304,
+                424
+              ],
+              [
+                356,
+                417
+              ],
+              [
+                613,
+                457
+              ],
+              [
+                816,
+                478
+              ],
+              [
+                888,
+                462
+              ]
+            ],
+            [
+              [
+                377,
+                321
+              ],
+              [
+                413,
+                317
+              ],
+              [
+                663,
+                356
+              ],
+              [
+                696,
+                356
+              ],
+              [
+                717,
+                347
+              ]
+            ],
+            [
+              [
+                494,
+                657
+              ],
+              [
+                528,
+                633
+              ],
+              [
+                537,
+                617
+              ],
+              [
+                536,
+                42
+              ],
+              [
+                522,
+                2
+              ],
+              [
+                409,
+                39
+              ]
+            ],
+            [
+              [
+                313,
+                275
+              ],
+              [
+                379,
+                244
+              ],
+              [
+                411,
+                209
+              ]
+            ],
+            [
+              [
+                234,
+                61
+              ],
+              [
+                290,
+                57
+              ],
+              [
+                463,
+                173
+              ]
+            ],
+            [
+              [
+                798,
+                276
+              ],
+              [
+                762,
+                287
+              ],
+              [
+                666,
+                195
+              ],
+              [
+                657,
+                197
+              ]
+            ],
+            [
+              [
+                566,
+                264
+              ],
+              [
+                576,
+                242
+              ],
+              [
+                670,
+                141
+              ],
+              [
+                763,
+                66
+              ],
+              [
+                817,
+                39
+              ],
+              [
+                942,
+                31
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5eb7-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0347",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "come up; start or bring to mind in selected extended uses",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "起来"
+              },
+              {
+                "value": "qǐlái",
+                "mode": "pinyin"
+              },
+              {
+                "value": "qi3lai2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "起来",
+              "pinyin": "qǐlái",
+              "meaning": "come up; start or bring to mind in selected extended uses",
+              "audio": "b720ecc3da634a8e83a8359b579021020bec3a551cb5de62bf9ed69d9b787333",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5eb7-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5eb7",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "healthy; peaceful",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "康"
+              },
+              {
+                "value": "kāng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "kang1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "康",
+              "pinyin": "kāng",
+              "meaning": "healthy; peaceful",
+              "audio": "0837c7474b1682254c98fe5d1400161361c739fe55757f726fd4cc89f4226e8c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "0837c7474b1682254c98fe5d1400161361c739fe55757f726fd4cc89f4226e8c"
+            ],
+            "transcript": [
+              {
+                "text": "康",
+                "pinyin": "kāng",
+                "meaning": "healthy; peaceful",
+                "audio": "0837c7474b1682254c98fe5d1400161361c739fe55757f726fd4cc89f4226e8c",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5EB7",
+      "character": "康",
+      "lessonIds": [
+        "LESSON-C-5EB7"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5eb7-word",
+        "EX-CHAR-char-5eb7-recognize",
+        "EX-CHAR-char-5eb7-write",
+        "EX-CHAR-char-5eb7-familiar",
+        "EX-CHAR-char-5eb7-recall"
+      ]
+    },
+    "audio": {
+      "0837c7474b1682254c98fe5d1400161361c739fe55757f726fd4cc89f4226e8c": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-acec11fdec5b203fd99c3d28d04cdb59f5aa3cdc6520af1624894228333d3238.mp3",
+          "sha256": "acec11fdec5b203fd99c3d28d04cdb59f5aa3cdc6520af1624894228333d3238",
+          "byteLength": 8685,
+          "readAlong": {
+            "audioSha256": "acec11fdec5b203fd99c3d28d04cdb59f5aa3cdc6520af1624894228333d3238",
+            "text": "康",
+            "words": [
+              {
+                "text": "康",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-939d790dd9fe4c33129c66565d20a1a519624d474b832a8c5760a41b3e530327.mp3",
+          "sha256": "939d790dd9fe4c33129c66565d20a1a519624d474b832a8c5760a41b3e530327",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "939d790dd9fe4c33129c66565d20a1a519624d474b832a8c5760a41b3e530327",
+            "text": "康",
+            "words": [
+              {
+                "text": "康",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "fe8548c01645b331410fccadecf97a03a1fbad02750dc05380ca9a020ab1ec8c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/1e0a3de188e6c4347ab89a32ce943a5c3851e727a2ebb296ae0e9bf5a1767da1.mp3",
+          "sha256": "1e0a3de188e6c4347ab89a32ce943a5c3851e727a2ebb296ae0e9bf5a1767da1",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "1e0a3de188e6c4347ab89a32ce943a5c3851e727a2ebb296ae0e9bf5a1767da1",
+            "text": "问候",
+            "words": [
+              {
+                "text": "问候",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/6886326b3727a62396e1b56dc9b8ba1bc66ddcf97dcc77a9eae986e7da89c84e.mp3",
+          "sha256": "6886326b3727a62396e1b56dc9b8ba1bc66ddcf97dcc77a9eae986e7da89c84e",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "6886326b3727a62396e1b56dc9b8ba1bc66ddcf97dcc77a9eae986e7da89c84e",
+            "text": "问候",
+            "words": [
+              {
+                "text": "问候",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "3ccb57c14005749eb884b2481d68aa12cbc4db03ee6aab42d7f3cbc485d94650": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/baff91bd22f72ffbe90b032d0ce4cc45732ea4bfa42a4bc5270051e5bb7c0dcb.mp3",
+          "sha256": "baff91bd22f72ffbe90b032d0ce4cc45732ea4bfa42a4bc5270051e5bb7c0dcb",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "baff91bd22f72ffbe90b032d0ce4cc45732ea4bfa42a4bc5270051e5bb7c0dcb",
+            "text": "了结",
+            "words": [
+              {
+                "text": "了结",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/210d38e2376c3994e24dba4452f2774c68c2a05526a826c7d8371634e080066a.mp3",
+          "sha256": "210d38e2376c3994e24dba4452f2774c68c2a05526a826c7d8371634e080066a",
+          "byteLength": 15021,
+          "readAlong": {
+            "audioSha256": "210d38e2376c3994e24dba4452f2774c68c2a05526a826c7d8371634e080066a",
+            "text": "了结",
+            "words": [
+              {
+                "text": "了结",
+                "start": 0.21,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "75e94c8d8aefd714921292eccc27fce356cbde985b580477227fc779df561db1": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-362d8393b2f80fa0e37a81444bce11b0187fe91063c2feef871712a1fa9e70e6.mp3",
+          "sha256": "362d8393b2f80fa0e37a81444bce11b0187fe91063c2feef871712a1fa9e70e6",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "362d8393b2f80fa0e37a81444bce11b0187fe91063c2feef871712a1fa9e70e6",
+            "text": "健康",
+            "words": [
+              {
+                "text": "健康",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-72fab4ec3ec2efe8130dc0c61da90145a5831709bdb3cef433f4d901d99c5195.mp3",
+          "sha256": "72fab4ec3ec2efe8130dc0c61da90145a5831709bdb3cef433f4d901d99c5195",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "72fab4ec3ec2efe8130dc0c61da90145a5831709bdb3cef433f4d901d99c5195",
+            "text": "健康",
+            "words": [
+              {
+                "text": "健康",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "b720ecc3da634a8e83a8359b579021020bec3a551cb5de62bf9ed69d9b787333": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-035ac8da14e11a6a9a08a376afabdbb990fa2cd7a3bce6749136aa3a5bdc685e.mp3",
+          "sha256": "035ac8da14e11a6a9a08a376afabdbb990fa2cd7a3bce6749136aa3a5bdc685e",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "035ac8da14e11a6a9a08a376afabdbb990fa2cd7a3bce6749136aa3a5bdc685e",
+            "text": "起来",
+            "words": [
+              {
+                "text": "起来",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-e148afa9ef2331352899643d3b6022e8226733cdae4f2c77c271e3dfac4b0f55.mp3",
+          "sha256": "e148afa9ef2331352899643d3b6022e8226733cdae4f2c77c271e3dfac4b0f55",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "e148afa9ef2331352899643d3b6022e8226733cdae4f2c77c271e3dfac4b0f55",
+            "text": "起来",
+            "words": [
+              {
+                "text": "起来",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

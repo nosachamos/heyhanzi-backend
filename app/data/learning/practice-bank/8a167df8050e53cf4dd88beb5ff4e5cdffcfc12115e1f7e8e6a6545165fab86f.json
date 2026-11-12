@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0422",
+  "targetId": "W0422",
+  "steps": [
+    {
+      "id": "BANK-W0422-W0422",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0422-W0422",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "cold",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "冷"
+            },
+            {
+              "value": "lěng",
+              "mode": "pinyin"
+            },
+            {
+              "value": "leng3",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "冷",
+            "pinyin": "lěng",
+            "meaning": "cold",
+            "singleWord": true,
+            "audio": "7c4a1515c8ec27224195ec131c6b77292daa274cd33ca48bdffaf99a59628241"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "7c4a1515c8ec27224195ec131c6b77292daa274cd33ca48bdffaf99a59628241": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-e5758b39398e86faff79c86ed6b6ee73f07a28f274ab59a2bfb187d779a4ad45.mp3",
+        "sha256": "e5758b39398e86faff79c86ed6b6ee73f07a28f274ab59a2bfb187d779a4ad45",
+        "byteLength": 9837,
+        "readAlong": {
+          "audioSha256": "e5758b39398e86faff79c86ed6b6ee73f07a28f274ab59a2bfb187d779a4ad45",
+          "text": "冷",
+          "words": [
+            {
+              "text": "冷",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-08a39799d4e64e1a1f36b959e8fd7bcb8d1714c6b732a86b19f0e678827c8e25.mp3",
+        "sha256": "08a39799d4e64e1a1f36b959e8fd7bcb8d1714c6b732a86b19f0e678827c8e25",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "08a39799d4e64e1a1f36b959e8fd7bcb8d1714c6b732a86b19f0e678827c8e25",
+          "text": "冷",
+          "words": [
+            {
+              "text": "冷",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0422",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0422-W0422",
+      "question_ids": [
+        "BANK-W0422-W0422"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U03",
+    "stepId": "S-U03-words-r4-20",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-51b7"
+    ],
+    "grammarLessonIds": []
+  }
+}

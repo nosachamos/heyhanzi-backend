@@ -1,0 +1,65 @@
+{
+  "reference": {
+    "format": "audio-reference-v1",
+    "languageTag": "cmn-Hans-CN",
+    "id": "wo-wo3",
+    "version": "3d5f00e4f68824a46d367139387e11d6cd085fa59cad1ec40de036b811698d35",
+    "mimeType": "audio/mpeg",
+    "byteLength": 14157
+  },
+  "text": "我",
+  "reading": {
+    "scheme": "pinyin",
+    "value": "wǒ"
+  },
+  "usage": "isolated-word",
+  "generatedAt": "2026-10-12T20:19:52.708373+00:00",
+  "durationSeconds": 1.0929166666666668,
+  "voiceProfile": {
+    "id": "mandarin-adult-female-v2",
+    "target": "Same female voice and pronunciation as the preceding take, with tempo increased by 30%."
+  },
+  "source": {
+    "type": "synthesized",
+    "model": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+    "modelLicense": "Apache-2.0",
+    "modelUrl": "https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+    "modelWeightsRevision": "29e01c4e8d000f4bcd70751be16fa94bf3d85a18",
+    "codeUrl": "https://github.com/QwenAudio/CosyVoice",
+    "codeRevision": "074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc",
+    "execution": "Local CPU inference, isolated Python 3.11 environment; no synthesis in API request handling",
+    "mode": "instruct2",
+    "seed": 46,
+    "speed": 0.6,
+    "input": "[w][ǒ]。",
+    "instruction": "You are a helpful assistant. 请用尽可能慢地语速说一句话。<|endofprompt|>",
+    "textFrontend": false,
+    "pronunciationOverrides": {
+      "scheme": "CosyVoice 3 pinyin tokens",
+      "value": "[w][ǒ]"
+    },
+    "referenceVoice": {
+      "type": "synthetic",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "speaker": "Serena",
+      "language": "Chinese",
+      "demoUrl": "https://huggingface.co/spaces/Qwen/Qwen3-TTS",
+      "demoSourceRevision": "6ae5dfa536c7109b33606b2332b8f0545d45f228",
+      "runtimeWeightsRevision": "not exposed by hosted demo",
+      "transcript": "银行的门还开着，我还要去那里还钱。",
+      "sha256": "1d4de1dcdb412795fbd4e654dd225d32023aa5262c666e20c1e5a43dd8271cb1",
+      "artifact": "heyhanzi-ui-web/artifacts/audio-comparison/03-readings-qwen.wav"
+    },
+    "originalWavSha256": "cd25e5a5c8192f7cf8221b5979dfec44463f105ba4fea69b2ed9063b01c9d664",
+    "processing": "FFmpeg atempo=1.3 applied to original lossless CosyVoice WAV (pitch-preserving tempo adjustment), then MP3 96 kbps mono. Browser playbackRate remains 1.0.",
+    "tempoMultiplier": 1.3,
+    "previousAudioVersion": "cf3a36ecb102341c0f62fa4de6e7109aee513c203d19a4186b308db5b49b42d8",
+    "processedWavSha256": "ed2645e55ecd8450815542a01cbb0c45beb1eb599160671bb55d2f21ac2d67bf"
+  },
+  "reviewStatus": "awaiting-native-speaker-review",
+  "checks": {
+    "durationSeconds": 1.0929166666666668,
+    "note": "Same source take; pitch-preserving time stretch. Native-speaker review remains pending."
+  },
+  "processedAt": "2026-10-12T20:25:33.180819+00:00"
+}

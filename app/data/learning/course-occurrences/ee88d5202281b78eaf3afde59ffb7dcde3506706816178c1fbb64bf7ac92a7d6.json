@@ -1,0 +1,655 @@
+{
+  "id": "EX-CHAR-char-5e84",
+  "revision": 2,
+  "unit": "U6-17-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-17-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "庄",
+  "sourceBlockId": "mandarin-simplified-v1-char-5e84",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5e84",
+        "text": "庄",
+        "pinyin": "zhuāng",
+        "meaning": "farmstead; village",
+        "characters": [
+          {
+            "id": "C-5E84",
+            "text": "庄"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-289b865c32df53a38301e5f7",
+        "text": "手里",
+        "pinyin": "shǒu lǐ",
+        "meaning": "in hand",
+        "characters": [
+          {
+            "id": "C-624B",
+            "text": "手"
+          },
+          {
+            "id": "C-91CC",
+            "text": "里"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-2d7d24f65ed5ea1c6b77f962",
+        "text": "公安",
+        "pinyin": "gōng'ān",
+        "meaning": "(Ministry of) Public Security; public safety",
+        "characters": [
+          {
+            "id": "C-516C",
+            "text": "公"
+          },
+          {
+            "id": "C-5B89",
+            "text": "安"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-43904219bf0372ae08683d04",
+        "text": "庄园",
+        "pinyin": "zhuāng yuán",
+        "meaning": "feudal land",
+        "characters": [
+          {
+            "id": "C-5E84",
+            "text": "庄"
+          },
+          {
+            "id": "C-56ED",
+            "text": "园"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-e3cc54101eef26a72986fa83",
+        "text": "委员会",
+        "pinyin": "wěi yuán huì",
+        "meaning": "committee",
+        "characters": [
+          {
+            "id": "C-59D4",
+            "text": "委"
+          },
+          {
+            "id": "C-5458",
+            "text": "员"
+          },
+          {
+            "id": "C-4F1A",
+            "text": "会"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "3b20f5e3cd11e7813360669e4df4a37f64dffca741a34d9cb6f4bfdf074e7d68",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5e84",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "庄",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5e84-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-43904219bf0372ae08683d04",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "feudal land",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "庄园"
+              },
+              {
+                "value": "zhuāng yuán",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhuang1yuan2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "庄园",
+              "pinyin": "zhuāng yuán",
+              "meaning": "feudal land",
+              "audio": "e76cd35d871fa5464433694d0c3108f4a1dd01afb5f2b631a0d5763ae9da7e66",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5e84-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5e84",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "庄",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-e3cc54101eef26a72986fa83",
+                "label": "committee",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5e84",
+                "label": "farmstead; village",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-289b865c32df53a38301e5f7",
+                "label": "in hand",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5e84-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "庄",
+        "pinyin": "zhuāng",
+        "meaning": "farmstead; village",
+        "source": "/stroke-data/5e84.json",
+        "reference": {
+          "character": "庄",
+          "sha256": "fcb384ac524fa33ea8d7d18a15b864a6396698a27c5af2f423d6873c3c538441",
+          "medians": [
+            [
+              [
+                475,
+                815
+              ],
+              [
+                570,
+                766
+              ],
+              [
+                602,
+                726
+              ]
+            ],
+            [
+              [
+                338,
+                605
+              ],
+              [
+                356,
+                596
+              ],
+              [
+                447,
+                601
+              ],
+              [
+                724,
+                656
+              ],
+              [
+                771,
+                655
+              ]
+            ],
+            [
+              [
+                259,
+                638
+              ],
+              [
+                281,
+                618
+              ],
+              [
+                297,
+                586
+              ],
+              [
+                278,
+                411
+              ],
+              [
+                250,
+                289
+              ],
+              [
+                215,
+                190
+              ],
+              [
+                171,
+                105
+              ],
+              [
+                117,
+                28
+              ],
+              [
+                85,
+                -6
+              ]
+            ],
+            [
+              [
+                383,
+                321
+              ],
+              [
+                406,
+                314
+              ],
+              [
+                457,
+                313
+              ],
+              [
+                606,
+                338
+              ],
+              [
+                702,
+                362
+              ],
+              [
+                734,
+                365
+              ],
+              [
+                761,
+                359
+              ]
+            ],
+            [
+              [
+                530,
+                513
+              ],
+              [
+                568,
+                483
+              ],
+              [
+                578,
+                462
+              ],
+              [
+                566,
+                131
+              ],
+              [
+                549,
+                109
+              ]
+            ],
+            [
+              [
+                295,
+                65
+              ],
+              [
+                348,
+                55
+              ],
+              [
+                479,
+                74
+              ],
+              [
+                808,
+                105
+              ],
+              [
+                866,
+                98
+              ],
+              [
+                902,
+                84
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5e84-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-2d7d24f65ed5ea1c6b77f962",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "(Ministry of) Public Security; public safety",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "公安"
+              },
+              {
+                "value": "gōng'ān",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gong1an1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "公安",
+              "pinyin": "gōng'ān",
+              "meaning": "(Ministry of) Public Security; public safety",
+              "audio": "9afc4a1e69d8a66e21846150cd8641e3cd24ababea851cfb0b20aa648228ec29",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5e84-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5e84",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "farmstead; village",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "庄"
+              },
+              {
+                "value": "zhuāng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "zhuang1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "庄",
+              "pinyin": "zhuāng",
+              "meaning": "farmstead; village",
+              "audio": "4e8799c470a21e5c6585a59715ca070a63bffe6da49339bfbd14cf48f8f9a39d",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "4e8799c470a21e5c6585a59715ca070a63bffe6da49339bfbd14cf48f8f9a39d"
+            ],
+            "transcript": [
+              {
+                "text": "庄",
+                "pinyin": "zhuāng",
+                "meaning": "farmstead; village",
+                "audio": "4e8799c470a21e5c6585a59715ca070a63bffe6da49339bfbd14cf48f8f9a39d",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5E84",
+      "character": "庄",
+      "lessonIds": [
+        "LESSON-C-5E84"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5e84-word",
+        "EX-CHAR-char-5e84-recognize",
+        "EX-CHAR-char-5e84-write",
+        "EX-CHAR-char-5e84-familiar",
+        "EX-CHAR-char-5e84-recall"
+      ]
+    },
+    "audio": {
+      "4e8799c470a21e5c6585a59715ca070a63bffe6da49339bfbd14cf48f8f9a39d": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-293e9f56092e7547e5cd1bc74c19285362fa9671978b9199e6b7a72381aff51f.mp3",
+          "sha256": "293e9f56092e7547e5cd1bc74c19285362fa9671978b9199e6b7a72381aff51f",
+          "byteLength": 8109,
+          "readAlong": {
+            "audioSha256": "293e9f56092e7547e5cd1bc74c19285362fa9671978b9199e6b7a72381aff51f",
+            "text": "庄",
+            "words": [
+              {
+                "text": "庄",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-540b103bae3a41cd5e69c77ad0b26d8c829c41b461e522f1298438e58c4e6f1e.mp3",
+          "sha256": "540b103bae3a41cd5e69c77ad0b26d8c829c41b461e522f1298438e58c4e6f1e",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "540b103bae3a41cd5e69c77ad0b26d8c829c41b461e522f1298438e58c4e6f1e",
+            "text": "庄",
+            "words": [
+              {
+                "text": "庄",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        }
+      },
+      "703300a6b7738529a02d7ba5d026def455497bf4450c28f0f72cf50aa018c69d": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-fb1cce2790c170403c62982c9c6a9c575d53b2ecc21d9caf7cd2edb8ef51213e.mp3",
+          "sha256": "fb1cce2790c170403c62982c9c6a9c575d53b2ecc21d9caf7cd2edb8ef51213e",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "fb1cce2790c170403c62982c9c6a9c575d53b2ecc21d9caf7cd2edb8ef51213e",
+            "text": "手里",
+            "words": [
+              {
+                "text": "手里",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-27bda1773128d6890c52e040427757773e6ed375acce96f21aaa4e6c29ae2276.mp3",
+          "sha256": "27bda1773128d6890c52e040427757773e6ed375acce96f21aaa4e6c29ae2276",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "27bda1773128d6890c52e040427757773e6ed375acce96f21aaa4e6c29ae2276",
+            "text": "手里",
+            "words": [
+              {
+                "text": "手里",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "9afc4a1e69d8a66e21846150cd8641e3cd24ababea851cfb0b20aa648228ec29": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/aed19787b79fa79788b8bc152c61d6b0df7bd768aa8ff9925881f641123c0b70.mp3",
+          "sha256": "aed19787b79fa79788b8bc152c61d6b0df7bd768aa8ff9925881f641123c0b70",
+          "byteLength": 9837,
+          "readAlong": {
+            "audioSha256": "aed19787b79fa79788b8bc152c61d6b0df7bd768aa8ff9925881f641123c0b70",
+            "text": "公安",
+            "words": [
+              {
+                "text": "公安",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/2baa2887ed45a89ebe188d8409d1662a3d5d001fecb770e79957e864a329e65c.mp3",
+          "sha256": "2baa2887ed45a89ebe188d8409d1662a3d5d001fecb770e79957e864a329e65c",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "2baa2887ed45a89ebe188d8409d1662a3d5d001fecb770e79957e864a329e65c",
+            "text": "公安",
+            "words": [
+              {
+                "text": "公安",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "e76cd35d871fa5464433694d0c3108f4a1dd01afb5f2b631a0d5763ae9da7e66": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/22ac26c41b83791d62b976c2d69ce837d12fa3cf30726e6d4ba62cc66421255b.mp3",
+          "sha256": "22ac26c41b83791d62b976c2d69ce837d12fa3cf30726e6d4ba62cc66421255b",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "22ac26c41b83791d62b976c2d69ce837d12fa3cf30726e6d4ba62cc66421255b",
+            "text": "庄园",
+            "words": [
+              {
+                "text": "庄园",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c9fc9da939e803eabe3b9df61f501d9278a276d02d65d9fb54d85d593b52a93e.mp3",
+          "sha256": "c9fc9da939e803eabe3b9df61f501d9278a276d02d65d9fb54d85d593b52a93e",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "c9fc9da939e803eabe3b9df61f501d9278a276d02d65d9fb54d85d593b52a93e",
+            "text": "庄园",
+            "words": [
+              {
+                "text": "庄园",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "f572cb7c1fec170b9724123783f2e20443f8bee1678e20e12b5c8e1a39ef9b35": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/9c7f9a6e2f761d62780cfec3f6a03f7f95731ff5cddee3547da03aac65c934af.mp3",
+          "sha256": "9c7f9a6e2f761d62780cfec3f6a03f7f95731ff5cddee3547da03aac65c934af",
+          "byteLength": 14157,
+          "readAlong": {
+            "audioSha256": "9c7f9a6e2f761d62780cfec3f6a03f7f95731ff5cddee3547da03aac65c934af",
+            "text": "委员会",
+            "words": [
+              {
+                "text": "委员会",
+                "start": 0.15,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/72934cdd8554abb9bfd1a986371a804a1b6c369c740eeb15ff1c46ac5dbc0bd6.mp3",
+          "sha256": "72934cdd8554abb9bfd1a986371a804a1b6c369c740eeb15ff1c46ac5dbc0bd6",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "72934cdd8554abb9bfd1a986371a804a1b6c369c740eeb15ff1c46ac5dbc0bd6",
+            "text": "委员会",
+            "words": [
+              {
+                "text": "委员会",
+                "start": 0.21,
+                "end": 0.57
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

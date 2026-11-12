@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1014",
+  "targetId": "W1014",
+  "steps": [
+    {
+      "id": "BANK-W1014-W1014",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1014-W1014",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "tourist; visitor",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "游客"
+            },
+            {
+              "value": "yóukè",
+              "mode": "pinyin"
+            },
+            {
+              "value": "you2ke4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "游客",
+            "pinyin": "yóukè",
+            "meaning": "tourist; visitor",
+            "singleWord": true,
+            "audio": "ff6983a3e4dad2936e9055166716e079571536ab5916b7e69c35bbc2c38a636f"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ff6983a3e4dad2936e9055166716e079571536ab5916b7e69c35bbc2c38a636f": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-d21daf90dd049e0ecd2f20e4cca605c7d7f5fc1aae2d02b5a2824bd9f858651d.mp3",
+        "sha256": "d21daf90dd049e0ecd2f20e4cca605c7d7f5fc1aae2d02b5a2824bd9f858651d",
+        "byteLength": 15885,
+        "readAlong": {
+          "audioSha256": "d21daf90dd049e0ecd2f20e4cca605c7d7f5fc1aae2d02b5a2824bd9f858651d",
+          "text": "游客",
+          "words": [
+            {
+              "text": "游客",
+              "start": 0.21,
+              "end": 0.57
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-02bef078afe08b11427c847d4265e06fef49abdc99a23a675ed65655ca03ed3b.mp3",
+        "sha256": "02bef078afe08b11427c847d4265e06fef49abdc99a23a675ed65655ca03ed3b",
+        "byteLength": 14157,
+        "readAlong": {
+          "audioSha256": "02bef078afe08b11427c847d4265e06fef49abdc99a23a675ed65655ca03ed3b",
+          "text": "游客",
+          "words": [
+            {
+              "text": "游客",
+              "start": 0.32999999999999996,
+              "end": 0.57
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1014",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1014-W1014",
+      "question_ids": [
+        "BANK-W1014-W1014"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-10",
+    "stepId": "S-U3-10-words-r4-15",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6e38"
+    ],
+    "grammarLessonIds": []
+  }
+}

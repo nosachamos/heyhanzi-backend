@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1285",
+  "targetId": "W1285",
+  "steps": [
+    {
+      "id": "BANK-W1285-W1285",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1285-W1285",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "piano",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "钢琴"
+            },
+            {
+              "value": "gāngqín",
+              "mode": "pinyin"
+            },
+            {
+              "value": "gang1qin2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "钢琴",
+            "pinyin": "gāngqín",
+            "meaning": "piano",
+            "singleWord": true,
+            "audio": "6672e76d7ff5d414e707e521c6050b8c9005a1b8ddda3f277a899fd3a82b672d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "6672e76d7ff5d414e707e521c6050b8c9005a1b8ddda3f277a899fd3a82b672d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2bb3f0fe886fa11d7d87bd71452eb92afccabc80dfd8f524e35f0eac520ab489.mp3",
+        "sha256": "2bb3f0fe886fa11d7d87bd71452eb92afccabc80dfd8f524e35f0eac520ab489",
+        "byteLength": 13869,
+        "readAlong": {
+          "audioSha256": "2bb3f0fe886fa11d7d87bd71452eb92afccabc80dfd8f524e35f0eac520ab489",
+          "text": "钢琴",
+          "words": [
+            {
+              "text": "钢琴",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-d064885aadf2d742217a14f6a5c0204f8a04ba7f1e180dd100d9ac63b277dea4.mp3",
+        "sha256": "d064885aadf2d742217a14f6a5c0204f8a04ba7f1e180dd100d9ac63b277dea4",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "d064885aadf2d742217a14f6a5c0204f8a04ba7f1e180dd100d9ac63b277dea4",
+          "text": "钢琴",
+          "words": [
+            {
+              "text": "钢琴",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1285",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1285-W1285",
+      "question_ids": [
+        "BANK-W1285-W1285"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-25",
+    "stepId": "S-U4-25-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-7434"
+    ],
+    "grammarLessonIds": []
+  }
+}

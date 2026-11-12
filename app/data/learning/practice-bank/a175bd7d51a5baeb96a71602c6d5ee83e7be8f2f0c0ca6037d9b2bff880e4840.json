@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0156",
+  "targetId": "W0156",
+  "steps": [
+    {
+      "id": "BANK-W0156-W0156",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0156-W0156",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "morning",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "早上"
+            },
+            {
+              "value": "zǎoshang",
+              "mode": "pinyin"
+            },
+            {
+              "value": "zao3shang5",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "早上",
+            "pinyin": "zǎoshang",
+            "meaning": "morning",
+            "singleWord": true,
+            "audio": "98d620e0f4ce73532f1e6b56b217df4b4766a184f381cdb613ceee26fc2535d9"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "98d620e0f4ce73532f1e6b56b217df4b4766a184f381cdb613ceee26fc2535d9": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2fdb20227c370b4d9354d3cd33a178a72a922d44c9ab6296f2b5aa568486de18.mp3",
+        "sha256": "2fdb20227c370b4d9354d3cd33a178a72a922d44c9ab6296f2b5aa568486de18",
+        "byteLength": 10989,
+        "readAlong": {
+          "audioSha256": "2fdb20227c370b4d9354d3cd33a178a72a922d44c9ab6296f2b5aa568486de18",
+          "text": "早上",
+          "words": [
+            {
+              "text": "早上",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-9a5f4f0f34d5adc8b56f1e3a6409bd39b5b553c47c560a6ebfc6e3e236f8a742.mp3",
+        "sha256": "9a5f4f0f34d5adc8b56f1e3a6409bd39b5b553c47c560a6ebfc6e3e236f8a742",
+        "byteLength": 10125,
+        "readAlong": {
+          "audioSha256": "9a5f4f0f34d5adc8b56f1e3a6409bd39b5b553c47c560a6ebfc6e3e236f8a742",
+          "text": "早上",
+          "words": [
+            {
+              "text": "早上",
+              "start": 0.15,
+              "end": 0.39
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0156",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0156-W0156",
+      "question_ids": [
+        "BANK-W0156-W0156"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U13",
+    "stepId": "S-U13-words",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-65e9"
+    ],
+    "grammarLessonIds": []
+  }
+}

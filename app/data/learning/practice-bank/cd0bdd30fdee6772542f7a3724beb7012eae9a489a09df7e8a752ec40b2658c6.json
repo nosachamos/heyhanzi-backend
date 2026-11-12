@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0611",
+  "targetId": "W0611",
+  "steps": [
+    {
+      "id": "BANK-W0611-W0611",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0611-W0611",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "toilet; lavatory",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "洗手间"
+            },
+            {
+              "value": "xǐshǒujiān",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xi3shou3jian1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "洗手间",
+            "pinyin": "xǐshǒujiān",
+            "meaning": "toilet; lavatory",
+            "singleWord": true,
+            "audio": "4cbe71c1f4bf4edcbc0cbe0d4f1eb2229ccf66b7a2d415a697a8982e5d1b080d"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "4cbe71c1f4bf4edcbc0cbe0d4f1eb2229ccf66b7a2d415a697a8982e5d1b080d": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ff1ae3316666f48e5aebd9d3dd4689118e3ec4e94e401744779e6424d3f0e610.mp3",
+        "sha256": "ff1ae3316666f48e5aebd9d3dd4689118e3ec4e94e401744779e6424d3f0e610",
+        "byteLength": 17901,
+        "readAlong": {
+          "audioSha256": "ff1ae3316666f48e5aebd9d3dd4689118e3ec4e94e401744779e6424d3f0e610",
+          "text": "洗手间",
+          "words": [
+            {
+              "text": "洗手间",
+              "start": 0.21,
+              "end": 0.75
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-39a4802a6344ddf7641b5c11ff5982bb8d48d383116cb26fd7cd42dee4ec0ad5.mp3",
+        "sha256": "39a4802a6344ddf7641b5c11ff5982bb8d48d383116cb26fd7cd42dee4ec0ad5",
+        "byteLength": 15021,
+        "readAlong": {
+          "audioSha256": "39a4802a6344ddf7641b5c11ff5982bb8d48d383116cb26fd7cd42dee4ec0ad5",
+          "text": "洗手间",
+          "words": [
+            {
+              "text": "洗手间",
+              "start": 0.21,
+              "end": 0.75
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0611",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0611-W0611",
+      "question_ids": [
+        "BANK-W0611-W0611"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U19",
+    "stepId": "S-U19-words-r4-20",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6d17"
+    ],
+    "grammarLessonIds": []
+  }
+}

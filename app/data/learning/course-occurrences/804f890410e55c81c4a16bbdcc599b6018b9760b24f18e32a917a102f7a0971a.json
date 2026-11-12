@@ -1,0 +1,733 @@
+{
+  "id": "EX-CHAR-char-5bbe",
+  "revision": 2,
+  "unit": "U3-03",
+  "stage": "ST-HSK3",
+  "after": "S-U3-03-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "宾",
+  "sourceBlockId": "mandarin-simplified-v1-char-5bbe",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5bbe",
+        "text": "宾",
+        "pinyin": "bīn",
+        "meaning": "visitor; guest",
+        "characters": [
+          {
+            "id": "C-5BBE",
+            "text": "宾"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-9431fb27efd2ed89b014eb64",
+        "text": "大米",
+        "pinyin": "dàmǐ",
+        "meaning": "(husked) rice",
+        "characters": [
+          {
+            "id": "C-5927",
+            "text": "大"
+          },
+          {
+            "id": "C-7C73",
+            "text": "米"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-9e313b3125b399714d22da8a",
+        "text": "年前",
+        "pinyin": "nián qián",
+        "meaning": "by the end of the year",
+        "characters": [
+          {
+            "id": "C-5E74",
+            "text": "年"
+          },
+          {
+            "id": "C-524D",
+            "text": "前"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-bb0bafa70c665327d7caf651",
+        "text": "来宾",
+        "pinyin": "lái bīn",
+        "meaning": "guest",
+        "characters": [
+          {
+            "id": "C-6765",
+            "text": "来"
+          },
+          {
+            "id": "C-5BBE",
+            "text": "宾"
+          }
+        ]
+      },
+      {
+        "id": "W1845",
+        "text": "想法",
+        "pinyin": "xiǎngfǎ",
+        "meaning": "way of thinking; opinion",
+        "characters": [
+          {
+            "id": "C-60F3",
+            "text": "想"
+          },
+          {
+            "id": "C-6CD5",
+            "text": "法"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "b8c5abdf2dcd46bfb9fa13fcd12ec9d406ef3f9651b64a259493ca4cd11e240d",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5bbe",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "宾",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5bbe-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-bb0bafa70c665327d7caf651",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "guest",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "来宾"
+              },
+              {
+                "value": "lái bīn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "lai2bin1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "来宾",
+              "pinyin": "lái bīn",
+              "meaning": "guest",
+              "audio": "85cd7b47706f1e8dc9af783fb92edf98c2b22216df039b9ae0708a546ae92c54",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5bbe-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5bbe",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "宾",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-9431fb27efd2ed89b014eb64",
+                "label": "(husked) rice",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5bbe",
+                "label": "visitor; guest",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W1845",
+                "label": "way of thinking; opinion",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5bbe-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "宾",
+        "pinyin": "bīn",
+        "meaning": "visitor; guest",
+        "source": "/stroke-data/5bbe.json",
+        "reference": {
+          "character": "宾",
+          "sha256": "3a709badc4d6a46c523b7b3865c6608276516ce3a639d58d377403b3790a90e1",
+          "medians": [
+            [
+              [
+                444,
+                820
+              ],
+              [
+                517,
+                782
+              ],
+              [
+                556,
+                745
+              ]
+            ],
+            [
+              [
+                241,
+                676
+              ],
+              [
+                253,
+                639
+              ],
+              [
+                206,
+                531
+              ],
+              [
+                200,
+                475
+              ]
+            ],
+            [
+              [
+                286,
+                638
+              ],
+              [
+                297,
+                629
+              ],
+              [
+                339,
+                633
+              ],
+              [
+                523,
+                671
+              ],
+              [
+                704,
+                695
+              ],
+              [
+                754,
+                688
+              ],
+              [
+                781,
+                653
+              ],
+              [
+                690,
+                561
+              ]
+            ],
+            [
+              [
+                615,
+                560
+              ],
+              [
+                555,
+                569
+              ],
+              [
+                465,
+                513
+              ],
+              [
+                419,
+                492
+              ],
+              [
+                406,
+                490
+              ],
+              [
+                400,
+                495
+              ]
+            ],
+            [
+              [
+                327,
+                502
+              ],
+              [
+                369,
+                460
+              ],
+              [
+                386,
+                288
+              ],
+              [
+                390,
+                272
+              ],
+              [
+                404,
+                262
+              ]
+            ],
+            [
+              [
+                404,
+                389
+              ],
+              [
+                420,
+                403
+              ],
+              [
+                506,
+                415
+              ],
+              [
+                649,
+                446
+              ],
+              [
+                680,
+                447
+              ],
+              [
+                717,
+                437
+              ]
+            ],
+            [
+              [
+                555,
+                400
+              ],
+              [
+                578,
+                373
+              ],
+              [
+                569,
+                294
+              ],
+              [
+                550,
+                280
+              ]
+            ],
+            [
+              [
+                159,
+                221
+              ],
+              [
+                210,
+                210
+              ],
+              [
+                421,
+                240
+              ],
+              [
+                804,
+                271
+              ],
+              [
+                837,
+                267
+              ],
+              [
+                886,
+                250
+              ]
+            ],
+            [
+              [
+                438,
+                126
+              ],
+              [
+                398,
+                123
+              ],
+              [
+                366,
+                86
+              ],
+              [
+                318,
+                48
+              ],
+              [
+                255,
+                8
+              ],
+              [
+                217,
+                -7
+              ]
+            ],
+            [
+              [
+                562,
+                160
+              ],
+              [
+                671,
+                81
+              ],
+              [
+                707,
+                48
+              ],
+              [
+                727,
+                19
+              ],
+              [
+                740,
+                -18
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5bbe-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-9e313b3125b399714d22da8a",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "by the end of the year",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "年前"
+              },
+              {
+                "value": "nián qián",
+                "mode": "pinyin"
+              },
+              {
+                "value": "nian2qian2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "年前",
+              "pinyin": "nián qián",
+              "meaning": "by the end of the year",
+              "audio": "1583e05084bd73ed2b753bcac1079e979eff3c36f1952ab9e393d2c6a1f5adb1",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5bbe-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5bbe",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "visitor; guest",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "宾"
+              },
+              {
+                "value": "bīn",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bin1",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "宾",
+              "pinyin": "bīn",
+              "meaning": "visitor; guest",
+              "audio": "183830380f4a8b1b73ec25a469f58cf98d5a1936eb8af4f8638d67b1d53ebc07",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "183830380f4a8b1b73ec25a469f58cf98d5a1936eb8af4f8638d67b1d53ebc07"
+            ],
+            "transcript": [
+              {
+                "text": "宾",
+                "pinyin": "bīn",
+                "meaning": "visitor; guest",
+                "audio": "183830380f4a8b1b73ec25a469f58cf98d5a1936eb8af4f8638d67b1d53ebc07",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5BBE",
+      "character": "宾",
+      "lessonIds": [
+        "LESSON-C-5BBE"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5bbe-word",
+        "EX-CHAR-char-5bbe-recognize",
+        "EX-CHAR-char-5bbe-write",
+        "EX-CHAR-char-5bbe-familiar",
+        "EX-CHAR-char-5bbe-recall"
+      ]
+    },
+    "audio": {
+      "183830380f4a8b1b73ec25a469f58cf98d5a1936eb8af4f8638d67b1d53ebc07": {
+        "female": {
+          "url": "/exercise-assets/audio/course-female-5c5e8c991f06d60324b721064c60142c5a401fc2deae702af7227af70bb45baf.mp3",
+          "sha256": "5c5e8c991f06d60324b721064c60142c5a401fc2deae702af7227af70bb45baf",
+          "byteLength": 9549,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-best-available",
+          "readAlong": {
+            "audioSha256": "5c5e8c991f06d60324b721064c60142c5a401fc2deae702af7227af70bb45baf",
+            "text": "宾",
+            "words": [
+              {
+                "text": "宾",
+                "start": 0.14,
+                "end": 0.22
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/course-male-5ada687452e44665efe34ec91fa61964af612dce7e8dae996b1f6a7c2a93e82f.mp3",
+          "sha256": "5ada687452e44665efe34ec91fa61964af612dce7e8dae996b1f6a7c2a93e82f",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "5ada687452e44665efe34ec91fa61964af612dce7e8dae996b1f6a7c2a93e82f",
+            "text": "宾",
+            "words": [
+              {
+                "text": "宾",
+                "start": 0.14,
+                "end": 0.24
+              }
+            ]
+          }
+        }
+      },
+      "5aebcdd41c9d1b538d80152fae540f9797969f102917b73c99841b04931f2aad": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-092b22d66664da9bbe4e012e28020e7d8215512b08cbc00b0f8282f6677fa6d8.mp3",
+          "sha256": "092b22d66664da9bbe4e012e28020e7d8215512b08cbc00b0f8282f6677fa6d8",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "092b22d66664da9bbe4e012e28020e7d8215512b08cbc00b0f8282f6677fa6d8",
+            "text": "大米",
+            "words": [
+              {
+                "text": "大米",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-3d9ea9eb54a9fac484374c1275bf2404f2806e3d71543169a61086702d217594.mp3",
+          "sha256": "3d9ea9eb54a9fac484374c1275bf2404f2806e3d71543169a61086702d217594",
+          "byteLength": 14445,
+          "readAlong": {
+            "audioSha256": "3d9ea9eb54a9fac484374c1275bf2404f2806e3d71543169a61086702d217594",
+            "text": "大米",
+            "words": [
+              {
+                "text": "大米",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "1583e05084bd73ed2b753bcac1079e979eff3c36f1952ab9e393d2c6a1f5adb1": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/cb45f5502954652af36d2c8e1f3044886c8ffc54c8400e12c5001c121378db10.mp3",
+          "sha256": "cb45f5502954652af36d2c8e1f3044886c8ffc54c8400e12c5001c121378db10",
+          "byteLength": 13869,
+          "readAlong": {
+            "audioSha256": "cb45f5502954652af36d2c8e1f3044886c8ffc54c8400e12c5001c121378db10",
+            "text": "年前",
+            "words": [
+              {
+                "text": "年前",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/892d69c21b80c796dc5bf46a48d4984019fb2a49c22cf4d89274fa2b5e1b37fd.mp3",
+          "sha256": "892d69c21b80c796dc5bf46a48d4984019fb2a49c22cf4d89274fa2b5e1b37fd",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "892d69c21b80c796dc5bf46a48d4984019fb2a49c22cf4d89274fa2b5e1b37fd",
+            "text": "年前",
+            "words": [
+              {
+                "text": "年前",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "85cd7b47706f1e8dc9af783fb92edf98c2b22216df039b9ae0708a546ae92c54": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/6a249fd564e58e4ef42f1b4862c615a668c74ece25895146f263733a673ac5d0.mp3",
+          "sha256": "6a249fd564e58e4ef42f1b4862c615a668c74ece25895146f263733a673ac5d0",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "6a249fd564e58e4ef42f1b4862c615a668c74ece25895146f263733a673ac5d0",
+            "text": "来宾",
+            "words": [
+              {
+                "text": "来宾",
+                "start": 0.15,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/abc98f94ff2c20b57d3aeac292f19d10b98e723fd577756da6a576cc17ea1ef6.mp3",
+          "sha256": "abc98f94ff2c20b57d3aeac292f19d10b98e723fd577756da6a576cc17ea1ef6",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "abc98f94ff2c20b57d3aeac292f19d10b98e723fd577756da6a576cc17ea1ef6",
+            "text": "来宾",
+            "words": [
+              {
+                "text": "来宾",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "a14c5d70e294df3f712529f60f8ee308645e2088784bb366743fdb08caf3a211": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-da69d81c17fd2566234b8d9bc820c3608e139c726ae72afefd434d4bccbb5483.mp3",
+          "sha256": "da69d81c17fd2566234b8d9bc820c3608e139c726ae72afefd434d4bccbb5483",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "da69d81c17fd2566234b8d9bc820c3608e139c726ae72afefd434d4bccbb5483",
+            "text": "想法",
+            "words": [
+              {
+                "text": "想法",
+                "start": 0.15,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-694367b9700ff0ec2b46ce7e1b223957dbc49d74035bdf99bca190bbe6bad5bf.mp3",
+          "sha256": "694367b9700ff0ec2b46ce7e1b223957dbc49d74035bdf99bca190bbe6bad5bf",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "694367b9700ff0ec2b46ce7e1b223957dbc49d74035bdf99bca190bbe6bad5bf",
+            "text": "想法",
+            "words": [
+              {
+                "text": "想法",
+                "start": 0.09,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

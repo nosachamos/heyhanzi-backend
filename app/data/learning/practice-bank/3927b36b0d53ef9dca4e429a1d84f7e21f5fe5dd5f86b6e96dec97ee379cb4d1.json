@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1865",
+  "targetId": "W1865",
+  "steps": [
+    {
+      "id": "BANK-W1865-W1865",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1865-W1865",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "sex; gender",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "性别"
+            },
+            {
+              "value": "xìngbié",
+              "mode": "pinyin"
+            },
+            {
+              "value": "xing4bie2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "性别",
+            "pinyin": "xìngbié",
+            "meaning": "sex; gender",
+            "singleWord": true,
+            "audio": "61e7cd2df7fb26d27c77a192a2129878e0d6d2b44299211f70e2b21211352fd0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "61e7cd2df7fb26d27c77a192a2129878e0d6d2b44299211f70e2b21211352fd0": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/8934dfcf2296a1d605a4a00e40011ddde9fc297e8787b6de4143390a35f5628e.mp3",
+        "sha256": "8934dfcf2296a1d605a4a00e40011ddde9fc297e8787b6de4143390a35f5628e",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "8934dfcf2296a1d605a4a00e40011ddde9fc297e8787b6de4143390a35f5628e",
+          "text": "性别",
+          "words": [
+            {
+              "text": "性别",
+              "start": 0.21,
+              "end": 0.39
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/622277c2fe5552d3c6044693708af2e2843f9c6c01cc06623b08329200859852.mp3",
+        "sha256": "622277c2fe5552d3c6044693708af2e2843f9c6c01cc06623b08329200859852",
+        "byteLength": 12141,
+        "readAlong": {
+          "audioSha256": "622277c2fe5552d3c6044693708af2e2843f9c6c01cc06623b08329200859852",
+          "text": "性别",
+          "words": [
+            {
+              "text": "性别",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1865",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1865-W1865",
+      "question_ids": [
+        "BANK-W1865-W1865"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-01",
+    "stepId": "S-U4-01-words-r4-19",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-6027"
+    ],
+    "grammarLessonIds": []
+  }
+}

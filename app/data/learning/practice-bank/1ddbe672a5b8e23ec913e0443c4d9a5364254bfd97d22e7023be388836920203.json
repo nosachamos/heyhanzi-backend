@@ -1,0 +1,275 @@
+{
+  "id": "BANK-W2041",
+  "targetId": "W2041",
+  "steps": [
+    {
+      "id": "BANK-W2041-W2041",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W2041-W2041",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "white; in vain; without payment; free of charge",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "白"
+            },
+            {
+              "value": "bái",
+              "mode": "pinyin"
+            },
+            {
+              "value": "bai2",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "白",
+            "pinyin": "bái",
+            "meaning": "white; in vain; without payment; free of charge",
+            "singleWord": true,
+            "audio": "658f6151c8dab07615dde842a115f6379e3cbf0e54407aefe222f173794d45a9"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W2041-W2041-use-white",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W2041-W2041-use-white",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 白 fits this context?",
+          "context": "The speaker names a color, like that of plain white paper.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W2041-W2041-use-white-contrast-1",
+              "label": "Black.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "白 names the color white."
+            },
+            {
+              "id": "BANK-W2041-W2041-use-white-contrast-2",
+              "label": "Red.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "白 names the color white."
+            },
+            {
+              "id": "BANK-W2041-W2041-use-white-meaning",
+              "label": "White.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "白 names the color white."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "白",
+            "pinyin": "bái",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "658f6151c8dab07615dde842a115f6379e3cbf0e54407aefe222f173794d45a9"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W2041-W2041-use-in-vain",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W2041-W2041-use-in-vain",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 白 fits this context?",
+          "context": "Someone makes an effort but achieves nothing useful.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W2041-W2041-use-in-vain-contrast-1",
+              "label": "The effort achieved its purpose.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "Before an action, 白 can mean in vain: the effort produces no useful result."
+            },
+            {
+              "id": "BANK-W2041-W2041-use-in-vain-meaning",
+              "label": "The effort was in vain.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "Before an action, 白 can mean in vain: the effort produces no useful result."
+            },
+            {
+              "id": "BANK-W2041-W2041-use-in-vain-contrast-2",
+              "label": "The speaker names a color.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "Before an action, 白 can mean in vain: the effort produces no useful result."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "白",
+            "pinyin": "bái",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "658f6151c8dab07615dde842a115f6379e3cbf0e54407aefe222f173794d45a9"
+          }
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W2041-W2041-use-without-payment",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W2041-W2041-use-without-payment",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 白 fits this context?",
+          "context": "Someone receives a service without having to pay for it.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W2041-W2041-use-without-payment-contrast-2",
+              "label": "The service was necessarily unsuccessful.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "白 can also mean without payment or free of charge. Not paying is different from trying unsuccessfully."
+            },
+            {
+              "id": "BANK-W2041-W2041-use-without-payment-meaning",
+              "label": "The service is free of charge.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "白 can also mean without payment or free of charge. Not paying is different from trying unsuccessfully."
+            },
+            {
+              "id": "BANK-W2041-W2041-use-without-payment-contrast-1",
+              "label": "The service is expensive.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "白 can also mean without payment or free of charge. Not paying is different from trying unsuccessfully."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "白",
+            "pinyin": "bái",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "658f6151c8dab07615dde842a115f6379e3cbf0e54407aefe222f173794d45a9"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "658f6151c8dab07615dde842a115f6379e3cbf0e54407aefe222f173794d45a9": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-2f2494776aa0eb2b1b4605db6968a22d464afd919551188a83635f4e9d0e877e.mp3",
+        "sha256": "2f2494776aa0eb2b1b4605db6968a22d464afd919551188a83635f4e9d0e877e",
+        "byteLength": 9261,
+        "readAlong": {
+          "audioSha256": "2f2494776aa0eb2b1b4605db6968a22d464afd919551188a83635f4e9d0e877e",
+          "text": "白",
+          "words": [
+            {
+              "text": "白",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-6e263ff53589efb28654e7513fad567f6b658ffc46c7ca7efe9f93d2055e9691.mp3",
+        "sha256": "6e263ff53589efb28654e7513fad567f6b658ffc46c7ca7efe9f93d2055e9691",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "6e263ff53589efb28654e7513fad567f6b658ffc46c7ca7efe9f93d2055e9691",
+          "text": "白",
+          "words": [
+            {
+              "text": "白",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W2041",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W2041-W2041",
+      "question_ids": [
+        "BANK-W2041-W2041"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W2041",
+      "facet_id": "lexical-use-white",
+      "part_id": "BANK-W2041-W2041-use-white",
+      "question_ids": [
+        "BANK-W2041-W2041-use-white"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W2041",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W2041",
+      "facet_id": "lexical-use-in-vain",
+      "part_id": "BANK-W2041-W2041-use-in-vain",
+      "question_ids": [
+        "BANK-W2041-W2041-use-in-vain"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W2041",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    },
+    {
+      "target_id": "W2041",
+      "facet_id": "lexical-use-without-payment",
+      "part_id": "BANK-W2041-W2041-use-without-payment",
+      "question_ids": [
+        "BANK-W2041-W2041-use-without-payment"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W2041",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U5-24-P01",
+    "stepId": "S-U5-24-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-767d"
+    ],
+    "grammarLessonIds": []
+  }
+}

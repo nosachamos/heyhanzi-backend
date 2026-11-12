@@ -1,0 +1,721 @@
+{
+  "id": "EX-CHAR-char-666f",
+  "revision": 2,
+  "unit": "U4-16",
+  "stage": "ST-HSK4",
+  "after": "S-U4-16-required-composition",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "景",
+  "sourceBlockId": "mandarin-simplified-v1-char-666f",
+  "sourceLevelId": "hsk-4",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-cmn-12e52f76ee7b60ca4f2b7b9c",
+        "text": "景色",
+        "pinyin": "jǐngsè",
+        "meaning": "scenery; landscape; view",
+        "characters": [
+          {
+            "id": "C-666F",
+            "text": "景"
+          },
+          {
+            "id": "C-8272",
+            "text": "色"
+          }
+        ]
+      },
+      {
+        "id": "W0316",
+        "text": "希望",
+        "pinyin": "xīwàng",
+        "meaning": "to hope; a hope",
+        "characters": [
+          {
+            "id": "C-5E0C",
+            "text": "希"
+          },
+          {
+            "id": "C-671B",
+            "text": "望"
+          }
+        ]
+      },
+      {
+        "id": "W2905",
+        "text": "亲人",
+        "pinyin": "qīnrén",
+        "meaning": "one's close relatives",
+        "characters": [
+          {
+            "id": "C-4EB2",
+            "text": "亲"
+          },
+          {
+            "id": "C-4EBA",
+            "text": "人"
+          }
+        ]
+      },
+      {
+        "id": "W3195",
+        "text": "完美",
+        "pinyin": "wánměi",
+        "meaning": "perfect",
+        "characters": [
+          {
+            "id": "C-5B8C",
+            "text": "完"
+          },
+          {
+            "id": "C-7F8E",
+            "text": "美"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "9e09241b5ab750850826063ab2e182534ed5e7e2adf80591393c72bc53c16489",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-666f",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "景",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-666f-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-12e52f76ee7b60ca4f2b7b9c",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "scenery; landscape",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "景色"
+              },
+              {
+                "value": "jǐngsè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jing3se4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "景色",
+              "pinyin": "jǐngsè",
+              "meaning": "scenery; landscape",
+              "audio": "00f8e231dcea1984c8fd210fbf98abe9af3ccdd20bb9ef713986c5f7784a35b0",
+              "singleWord": true,
+              "focus": "景"
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-666f-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-cmn-12e52f76ee7b60ca4f2b7b9c",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "景色",
+              "meaning": "",
+              "focus": "景"
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-12e52f76ee7b60ca4f2b7b9c",
+                "label": "scenery; landscape",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "W2905",
+                "label": "one's close relatives",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W3195",
+                "label": "perfect",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-666f-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "景",
+        "pinyin": "jǐng",
+        "meaning": "(bound form) scenery; circumstance",
+        "source": "/stroke-data/666f.json",
+        "reference": {
+          "character": "景",
+          "sha256": "92807df242a31880c68ee8f081b684e7fa9e7e44304e58f13d9a80abb093f01e",
+          "medians": [
+            [
+              [
+                324,
+                782
+              ],
+              [
+                358,
+                742
+              ],
+              [
+                400,
+                563
+              ]
+            ],
+            [
+              [
+                356,
+                783
+              ],
+              [
+                386,
+                777
+              ],
+              [
+                500,
+                800
+              ],
+              [
+                598,
+                812
+              ],
+              [
+                634,
+                813
+              ],
+              [
+                655,
+                805
+              ],
+              [
+                679,
+                778
+              ],
+              [
+                677,
+                768
+              ],
+              [
+                632,
+                600
+              ],
+              [
+                613,
+                596
+              ]
+            ],
+            [
+              [
+                402,
+                677
+              ],
+              [
+                432,
+                690
+              ],
+              [
+                508,
+                704
+              ],
+              [
+                552,
+                710
+              ],
+              [
+                584,
+                705
+              ]
+            ],
+            [
+              [
+                418,
+                583
+              ],
+              [
+                429,
+                593
+              ],
+              [
+                584,
+                612
+              ],
+              [
+                607,
+                626
+              ]
+            ],
+            [
+              [
+                459,
+                576
+              ],
+              [
+                511,
+                537
+              ],
+              [
+                532,
+                506
+              ]
+            ],
+            [
+              [
+                115,
+                437
+              ],
+              [
+                170,
+                427
+              ],
+              [
+                384,
+                460
+              ],
+              [
+                820,
+                504
+              ],
+              [
+                875,
+                499
+              ],
+              [
+                922,
+                483
+              ]
+            ],
+            [
+              [
+                332,
+                373
+              ],
+              [
+                370,
+                331
+              ],
+              [
+                403,
+                210
+              ]
+            ],
+            [
+              [
+                355,
+                376
+              ],
+              [
+                402,
+                369
+              ],
+              [
+                602,
+                405
+              ],
+              [
+                626,
+                401
+              ],
+              [
+                657,
+                371
+              ],
+              [
+                628,
+                310
+              ],
+              [
+                600,
+                293
+              ]
+            ],
+            [
+              [
+                420,
+                235
+              ],
+              [
+                434,
+                244
+              ],
+              [
+                589,
+                268
+              ],
+              [
+                637,
+                268
+              ],
+              [
+                657,
+                262
+              ]
+            ],
+            [
+              [
+                489,
+                234
+              ],
+              [
+                513,
+                214
+              ],
+              [
+                521,
+                188
+              ],
+              [
+                522,
+                89
+              ],
+              [
+                514,
+                17
+              ],
+              [
+                498,
+                -9
+              ],
+              [
+                400,
+                31
+              ]
+            ],
+            [
+              [
+                327,
+                176
+              ],
+              [
+                294,
+                104
+              ],
+              [
+                248,
+                34
+              ]
+            ],
+            [
+              [
+                627,
+                174
+              ],
+              [
+                745,
+                106
+              ],
+              [
+                771,
+                82
+              ],
+              [
+                793,
+                40
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-666f-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W0316",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to hope; a hope",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "希望"
+              },
+              {
+                "value": "xīwàng",
+                "mode": "pinyin"
+              },
+              {
+                "value": "xi1wang4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "希望",
+              "pinyin": "xīwàng",
+              "meaning": "to hope; a hope",
+              "audio": "bbf77f00499e0c5d4939cbb058cc985d1ee3d89c50d8eebec58f2c770fdd1735",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-666f-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-cmn-12e52f76ee7b60ca4f2b7b9c",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "scenery; landscape",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "景色"
+              },
+              {
+                "value": "jǐngsè",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jing3se4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "景色",
+              "pinyin": "jǐngsè",
+              "meaning": "scenery; landscape",
+              "audio": "00f8e231dcea1984c8fd210fbf98abe9af3ccdd20bb9ef713986c5f7784a35b0",
+              "singleWord": true,
+              "focus": "景"
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "00f8e231dcea1984c8fd210fbf98abe9af3ccdd20bb9ef713986c5f7784a35b0"
+            ],
+            "transcript": [
+              {
+                "text": "景色",
+                "pinyin": "jǐngsè",
+                "meaning": "scenery; landscape",
+                "audio": "00f8e231dcea1984c8fd210fbf98abe9af3ccdd20bb9ef713986c5f7784a35b0",
+                "singleWord": true,
+                "focus": "景"
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-666F",
+      "character": "景",
+      "lessonIds": [
+        "LESSON-C-666F"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-666f-word",
+        "EX-CHAR-char-666f-recognize",
+        "EX-CHAR-char-666f-write",
+        "EX-CHAR-char-666f-familiar",
+        "EX-CHAR-char-666f-recall"
+      ]
+    },
+    "audio": {
+      "00f8e231dcea1984c8fd210fbf98abe9af3ccdd20bb9ef713986c5f7784a35b0": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-526b21d88aba928fa5fed3a1681f0c68efd3e5144e7d3038d9a57c1541259dc6.mp3",
+          "sha256": "526b21d88aba928fa5fed3a1681f0c68efd3e5144e7d3038d9a57c1541259dc6",
+          "byteLength": 13005,
+          "readAlong": {
+            "audioSha256": "526b21d88aba928fa5fed3a1681f0c68efd3e5144e7d3038d9a57c1541259dc6",
+            "text": "景色",
+            "words": [
+              {
+                "text": "景色",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6559921c4bd0e1573c4e81866491b0e7bb937420bdd61fb31f43fa7b77634ec0.mp3",
+          "sha256": "6559921c4bd0e1573c4e81866491b0e7bb937420bdd61fb31f43fa7b77634ec0",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "6559921c4bd0e1573c4e81866491b0e7bb937420bdd61fb31f43fa7b77634ec0",
+            "text": "景色",
+            "words": [
+              {
+                "text": "景色",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "bbf77f00499e0c5d4939cbb058cc985d1ee3d89c50d8eebec58f2c770fdd1735": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-10bfceefad4961e7eb2391190336a2f9e4c24829bde0a4606353102529952b03.mp3",
+          "sha256": "10bfceefad4961e7eb2391190336a2f9e4c24829bde0a4606353102529952b03",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "10bfceefad4961e7eb2391190336a2f9e4c24829bde0a4606353102529952b03",
+            "text": "希望",
+            "words": [
+              {
+                "text": "希望",
+                "start": 0.32,
+                "end": 0.62
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-6094d954d2b338b74a768f076466e61732ef0df9fac0adc57e19d2866ff0198a.mp3",
+          "sha256": "6094d954d2b338b74a768f076466e61732ef0df9fac0adc57e19d2866ff0198a",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "6094d954d2b338b74a768f076466e61732ef0df9fac0adc57e19d2866ff0198a",
+            "text": "希望",
+            "words": [
+              {
+                "text": "希望",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "b52bd689f1cbf100cba525a8f67e76bd7332f5a807ac7563a68ad6e6f6d868fb": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/f55cb671b302acb2433b71c15795fbb9f0b9a6ac43ace304251ec1f3d607aa05.mp3",
+          "sha256": "f55cb671b302acb2433b71c15795fbb9f0b9a6ac43ace304251ec1f3d607aa05",
+          "byteLength": 13293,
+          "readAlong": {
+            "audioSha256": "f55cb671b302acb2433b71c15795fbb9f0b9a6ac43ace304251ec1f3d607aa05",
+            "text": "亲人",
+            "words": [
+              {
+                "text": "亲人",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/e5307b80ded98fbe41b180cc7b87862c284be2ef213db6135a41b00d13b77bea.mp3",
+          "sha256": "e5307b80ded98fbe41b180cc7b87862c284be2ef213db6135a41b00d13b77bea",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "e5307b80ded98fbe41b180cc7b87862c284be2ef213db6135a41b00d13b77bea",
+            "text": "亲人",
+            "words": [
+              {
+                "text": "亲人",
+                "start": 0.27,
+                "end": 0.51
+              }
+            ]
+          }
+        }
+      },
+      "f0950e29d2e3b137a4ccf348379717ca667f35271e49a3ba85b809ec6d3dc123": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-60f6cb8b3a3737f3a30faf84d3fe6922aea71e10a7b4b746d884b543458da02c.mp3",
+          "sha256": "60f6cb8b3a3737f3a30faf84d3fe6922aea71e10a7b4b746d884b543458da02c",
+          "byteLength": 9549,
+          "readAlong": {
+            "audioSha256": "60f6cb8b3a3737f3a30faf84d3fe6922aea71e10a7b4b746d884b543458da02c",
+            "text": "完美",
+            "words": [
+              {
+                "text": "完美",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-a3e3692242537e71cc7aa087fe3a6935a7f15b3dddb38dc87cdc4e6e7b295c86.mp3",
+          "sha256": "a3e3692242537e71cc7aa087fe3a6935a7f15b3dddb38dc87cdc4e6e7b295c86",
+          "byteLength": 11853,
+          "readAlong": {
+            "audioSha256": "a3e3692242537e71cc7aa087fe3a6935a7f15b3dddb38dc87cdc4e6e7b295c86",
+            "text": "完美",
+            "words": [
+              {
+                "text": "完美",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

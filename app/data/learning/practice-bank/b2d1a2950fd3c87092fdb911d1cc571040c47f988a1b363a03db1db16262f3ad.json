@@ -1,0 +1,89 @@
+{
+  "id": "BANK-K-HSK6-compose",
+  "targetId": "K-HSK6-compose",
+  "steps": [
+    {
+      "id": "BANK-K-HSK6-compose-K-HSK6-compose-perform",
+      "kind": "check",
+      "title": "Use the skill in context",
+      "questions": [
+        {
+          "id": "BANK-K-HSK6-compose-K-HSK6-compose-perform",
+          "kind": "production",
+          "response": "written",
+          "prompt": "Write a synthesis of the two familiar accounts of the request for help. Separate what each source states from your interpretation and preserve the remaining uncertainty.",
+          "promptLanguage": "en",
+          "context": "Account A: a companion requested help and received no answer, so A thinks the recipient refused. Account B: the recipient may not have understood the request; B has no confirmation. Both accounts report no answer. Write a synthesis that attributes each interpretation and preserves the unknown intention and understanding.\nFamiliar meanings available: to request help; to appeal; companion; comrade; according to; to act in accordance with; to believe; to think.",
+          "contextLanguage": "en",
+          "label": "Write your own message",
+          "resultDomain": "Self-reviewed writing practice",
+          "rubric": [
+            {
+              "id": "r1",
+              "text": "I attributed both sources accurately."
+            },
+            {
+              "id": "r2",
+              "text": "My synthesis preserves qualifications and labels my interpretation."
+            }
+          ],
+          "minLength": 1
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {},
+  "coverage": [
+    {
+      "target_id": "K-HSK6-compose",
+      "facet_id": "K-HSK6-compose-situated-performance",
+      "part_id": "BANK-K-HSK6-compose-K-HSK6-compose-perform",
+      "question_ids": [
+        "BANK-K-HSK6-compose-K-HSK6-compose-perform"
+      ],
+      "evidence": "self-reviewed",
+      "scope": "Combine two short familiar accounts of a request for help, separating source statements from the writer interpretation.",
+      "stage_outcome_mastery": false
+    }
+  ],
+  "remediation": {
+    "unitId": "U6-02",
+    "stepId": "S-U6-02-skill-K-HSK6-compose",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-62dc",
+      "mandarin-simplified-v1-char-4f34",
+      "mandarin-simplified-v1-char-636e",
+      "mandarin-simplified-v1-char-8ba4",
+      "mandarin-simplified-v1-warmup-wo",
+      "mandarin-simplified-v1-char-89e3",
+      "mandarin-simplified-v1-char-8bae",
+      "mandarin-simplified-v1-char-5df2",
+      "mandarin-simplified-v1-char-59cb",
+      "mandarin-simplified-v1-warmup-ta-he",
+      "mandarin-simplified-v1-char-56de",
+      "mandarin-simplified-v1-char-5988",
+      "mandarin-simplified-v1-char-5f97",
+      "mandarin-simplified-v1-warmup-zhe",
+      "mandarin-simplified-v1-char-672c",
+      "mandarin-simplified-v1-char-4e66",
+      "mandarin-simplified-v1-warmup-hen",
+      "mandarin-simplified-v1-warmup-hao",
+      "mandarin-simplified-v1-char-660e",
+      "mandarin-simplified-v1-warmup-you",
+      "mandarin-simplified-v1-char-8bfe",
+      "mandarin-simplified-v1-char-4ee5",
+      "mandarin-simplified-v1-char-6ca1",
+      "mandarin-simplified-v1-warmup-shi",
+      "mandarin-simplified-v1-char-60f3",
+      "mandarin-simplified-v1-char-9519",
+      "mandarin-simplified-v1-char-4e86",
+      "mandarin-simplified-v1-char-6ca1",
+      "mandarin-simplified-v1-warmup-shuo"
+    ],
+    "grammarLessonIds": [
+      "EX-GRAM-G-hsk5-prepositions-p09",
+      "EX-GRAM-G-opinions-reporting"
+    ]
+  }
+}

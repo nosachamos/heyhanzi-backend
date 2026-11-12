@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W0817",
+  "targetId": "W0817",
+  "steps": [
+    {
+      "id": "BANK-W0817-W0817",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W0817-W0817",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "street",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "街"
+            },
+            {
+              "value": "jiē",
+              "mode": "pinyin"
+            },
+            {
+              "value": "jie1",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "街",
+            "pinyin": "jiē",
+            "meaning": "street",
+            "singleWord": true,
+            "audio": "ce962d783f633f27a0afe0af46fde783667a8f2511f9376189fc3107fc1d9862"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "ce962d783f633f27a0afe0af46fde783667a8f2511f9376189fc3107fc1d9862": {
+      "female": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/db680d2cc4682ca665ef0a02526852839d7ec7bf72c8d55506c07efbb7883459.mp3",
+        "sha256": "db680d2cc4682ca665ef0a02526852839d7ec7bf72c8d55506c07efbb7883459",
+        "byteLength": 11277,
+        "readAlong": {
+          "audioSha256": "db680d2cc4682ca665ef0a02526852839d7ec7bf72c8d55506c07efbb7883459",
+          "text": "街",
+          "words": [
+            {
+              "text": "街",
+              "start": 0.15,
+              "end": 0.21
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/025199793b0d77152004db8121e25f3ec78df60e797a82cba7992687b33649ef.mp3",
+        "sha256": "025199793b0d77152004db8121e25f3ec78df60e797a82cba7992687b33649ef",
+        "byteLength": 8109,
+        "readAlong": {
+          "audioSha256": "025199793b0d77152004db8121e25f3ec78df60e797a82cba7992687b33649ef",
+          "text": "街",
+          "words": [
+            {
+              "text": "街",
+              "start": 0.09,
+              "end": 0.15
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W0817",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W0817-W0817",
+      "question_ids": [
+        "BANK-W0817-W0817"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U3-11",
+    "stepId": "S-U3-11-words-r4-11",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-8857"
+    ],
+    "grammarLessonIds": []
+  }
+}

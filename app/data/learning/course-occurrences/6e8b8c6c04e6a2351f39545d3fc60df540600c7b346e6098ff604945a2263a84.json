@@ -1,0 +1,659 @@
+{
+  "id": "EX-CHAR-char-5408",
+  "revision": 2,
+  "unit": "U3-25-P01",
+  "stage": "ST-HSK3",
+  "after": "S-U3-25-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "合",
+  "sourceBlockId": "mandarin-simplified-v1-char-5408",
+  "sourceLevelId": "hsk-3",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-5408",
+        "text": "合",
+        "pinyin": "hé",
+        "meaning": "to join; to fit; together",
+        "characters": [
+          {
+            "id": "C-5408",
+            "text": "合"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-45ca2f678302fe412f41eed0",
+        "text": "百合",
+        "pinyin": "bǎi hé",
+        "meaning": "(botany) lily",
+        "characters": [
+          {
+            "id": "C-767E",
+            "text": "百"
+          },
+          {
+            "id": "C-5408",
+            "text": "合"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-52afe3e20f15627ec8acd2ef",
+        "text": "等到",
+        "pinyin": "děngdào",
+        "meaning": "to wait until; by the time when (something is ready etc)",
+        "characters": [
+          {
+            "id": "C-7B49",
+            "text": "等"
+          },
+          {
+            "id": "C-5230",
+            "text": "到"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-fe8766976775dae4e6bec122",
+        "text": "交朋友",
+        "pinyin": "jiāo péng you",
+        "meaning": "to make friends",
+        "characters": [
+          {
+            "id": "C-4EA4",
+            "text": "交"
+          },
+          {
+            "id": "C-670B",
+            "text": "朋"
+          },
+          {
+            "id": "C-53CB",
+            "text": "友"
+          }
+        ]
+      },
+      {
+        "id": "W0599",
+        "text": "题",
+        "pinyin": "tí",
+        "meaning": "topic; problem for discussion",
+        "characters": [
+          {
+            "id": "C-9898",
+            "text": "题"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "24651f05cff784a1d7c9138a3b7751206469db667938a89bcd0c1b2f16b3f802",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-5408",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "合",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-5408-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-45ca2f678302fe412f41eed0",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "(botany) lily",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "百合"
+              },
+              {
+                "value": "bǎi hé",
+                "mode": "pinyin"
+              },
+              {
+                "value": "bai3he2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "百合",
+              "pinyin": "bǎi hé",
+              "meaning": "(botany) lily",
+              "audio": "9ba60593bc535af69ffafac5b6fe0450d45e8de95bebfe4edf08664020864cd2",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5408-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-5408",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "合",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "W0599",
+                "label": "topic; problem for discussion",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-5408",
+                "label": "to join; to fit",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              },
+              {
+                "id": "NB-cmn-52afe3e20f15627ec8acd2ef",
+                "label": "to wait until; by the time when (something is ready etc)",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5408-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "合",
+        "pinyin": "hé",
+        "meaning": "to join; to fit",
+        "source": "/stroke-data/5408.json",
+        "reference": {
+          "character": "合",
+          "sha256": "eeef3a0925ac86598df1a0116459472162611a8229477e702184a881c4494d63",
+          "medians": [
+            [
+              [
+                463,
+                798
+              ],
+              [
+                489,
+                769
+              ],
+              [
+                496,
+                750
+              ],
+              [
+                453,
+                663
+              ],
+              [
+                393,
+                577
+              ],
+              [
+                336,
+                508
+              ],
+              [
+                247,
+                420
+              ],
+              [
+                160,
+                352
+              ],
+              [
+                76,
+                302
+              ]
+            ],
+            [
+              [
+                525,
+                697
+              ],
+              [
+                525,
+                684
+              ],
+              [
+                670,
+                534
+              ],
+              [
+                787,
+                435
+              ],
+              [
+                862,
+                419
+              ],
+              [
+                993,
+                404
+              ]
+            ],
+            [
+              [
+                338,
+                409
+              ],
+              [
+                360,
+                402
+              ],
+              [
+                411,
+                403
+              ],
+              [
+                584,
+                439
+              ],
+              [
+                624,
+                436
+              ]
+            ],
+            [
+              [
+                270,
+                266
+              ],
+              [
+                300,
+                243
+              ],
+              [
+                310,
+                222
+              ],
+              [
+                360,
+                -4
+              ]
+            ],
+            [
+              [
+                332,
+                264
+              ],
+              [
+                354,
+                250
+              ],
+              [
+                380,
+                252
+              ],
+              [
+                594,
+                293
+              ],
+              [
+                631,
+                291
+              ],
+              [
+                672,
+                251
+              ],
+              [
+                640,
+                149
+              ],
+              [
+                606,
+                121
+              ]
+            ],
+            [
+              [
+                376,
+                74
+              ],
+              [
+                389,
+                62
+              ],
+              [
+                595,
+                90
+              ],
+              [
+                650,
+                90
+              ],
+              [
+                678,
+                81
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-5408-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-NB-cmn-fe8766976775dae4e6bec122",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "to make friends",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "交朋友"
+              },
+              {
+                "value": "jiāo péng you",
+                "mode": "pinyin"
+              },
+              {
+                "value": "jiao1peng2you5",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "交朋友",
+              "pinyin": "jiāo péng you",
+              "meaning": "to make friends",
+              "audio": "3701142f03b3a9e193473df4f6109dc76eff6891f63d449f5a27e9a23839bb79",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-5408-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-5408",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "to join; to fit",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "合"
+              },
+              {
+                "value": "hé",
+                "mode": "pinyin"
+              },
+              {
+                "value": "he2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "合",
+              "pinyin": "hé",
+              "meaning": "to join; to fit",
+              "audio": "480717d462fbea9ad39d1990f96ee267dbe8f7232eb7105f7c49cb58b004163f",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "480717d462fbea9ad39d1990f96ee267dbe8f7232eb7105f7c49cb58b004163f"
+            ],
+            "transcript": [
+              {
+                "text": "合",
+                "pinyin": "hé",
+                "meaning": "to join; to fit",
+                "audio": "480717d462fbea9ad39d1990f96ee267dbe8f7232eb7105f7c49cb58b004163f",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-5408",
+      "character": "合",
+      "lessonIds": [
+        "LESSON-C-5408"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-5408-word",
+        "EX-CHAR-char-5408-recognize",
+        "EX-CHAR-char-5408-write",
+        "EX-CHAR-char-5408-familiar",
+        "EX-CHAR-char-5408-recall"
+      ]
+    },
+    "audio": {
+      "480717d462fbea9ad39d1990f96ee267dbe8f7232eb7105f7c49cb58b004163f": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-3584042151544123c2dfe476cc1af690e7fac86e2a100c79a02eefd2effba87c.mp3",
+          "sha256": "3584042151544123c2dfe476cc1af690e7fac86e2a100c79a02eefd2effba87c",
+          "byteLength": 12429,
+          "readAlong": {
+            "audioSha256": "3584042151544123c2dfe476cc1af690e7fac86e2a100c79a02eefd2effba87c",
+            "text": "合",
+            "words": [
+              {
+                "text": "合",
+                "start": 0.15,
+                "end": 0.21
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-d9e9690a3d408c69c1332dc99dbfd39ee368052a13967649b97a82ea58335a09.mp3",
+          "sha256": "d9e9690a3d408c69c1332dc99dbfd39ee368052a13967649b97a82ea58335a09",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "d9e9690a3d408c69c1332dc99dbfd39ee368052a13967649b97a82ea58335a09",
+            "text": "合",
+            "words": [
+              {
+                "text": "合",
+                "start": 0.09,
+                "end": 0.15
+              }
+            ]
+          }
+        }
+      },
+      "9ba60593bc535af69ffafac5b6fe0450d45e8de95bebfe4edf08664020864cd2": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/d4e734f2efff8f6a78cc0d299af415366eed0165a2454ec2caf6007c8ca849ea.mp3",
+          "sha256": "d4e734f2efff8f6a78cc0d299af415366eed0165a2454ec2caf6007c8ca849ea",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "d4e734f2efff8f6a78cc0d299af415366eed0165a2454ec2caf6007c8ca849ea",
+            "text": "百合",
+            "words": [
+              {
+                "text": "百合",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c23c82f5a874332663224c0c8b76d9265a2895f36f7281345e7b3369b737e91f.mp3",
+          "sha256": "c23c82f5a874332663224c0c8b76d9265a2895f36f7281345e7b3369b737e91f",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "c23c82f5a874332663224c0c8b76d9265a2895f36f7281345e7b3369b737e91f",
+            "text": "百合",
+            "words": [
+              {
+                "text": "百合",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "56cb2ccdb432343f3ac0c7544b212b0d735e5f9331bd892a73189dc1ca6f1536": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5efcf3473f154c3c8a0e78a2daf1962c7c373fc775d4c582779f6bedcb22a5d1.mp3",
+          "sha256": "5efcf3473f154c3c8a0e78a2daf1962c7c373fc775d4c582779f6bedcb22a5d1",
+          "byteLength": 10989,
+          "readAlong": {
+            "audioSha256": "5efcf3473f154c3c8a0e78a2daf1962c7c373fc775d4c582779f6bedcb22a5d1",
+            "text": "等到",
+            "words": [
+              {
+                "text": "等到",
+                "start": 0.09,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-9f940ead97947ab97ef22dd9457d3d03968f44ad1aefecfd637686283b589d8c.mp3",
+          "sha256": "9f940ead97947ab97ef22dd9457d3d03968f44ad1aefecfd637686283b589d8c",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "9f940ead97947ab97ef22dd9457d3d03968f44ad1aefecfd637686283b589d8c",
+            "text": "等到",
+            "words": [
+              {
+                "text": "等到",
+                "start": 0.09,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "3701142f03b3a9e193473df4f6109dc76eff6891f63d449f5a27e9a23839bb79": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/3af542bbf765f131af430f1382f3d931e73ee478a8bc4a1a810e907d70749216.mp3",
+          "sha256": "3af542bbf765f131af430f1382f3d931e73ee478a8bc4a1a810e907d70749216",
+          "byteLength": 15309,
+          "readAlong": {
+            "audioSha256": "3af542bbf765f131af430f1382f3d931e73ee478a8bc4a1a810e907d70749216",
+            "text": "交朋友",
+            "words": [
+              {
+                "text": "交朋友",
+                "start": 0.09,
+                "end": 0.6299999999999999
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/4a03f6711022950d871a4fbb7ae89cca3958b9349419c7cbe9f1478a09b73fdc.mp3",
+          "sha256": "4a03f6711022950d871a4fbb7ae89cca3958b9349419c7cbe9f1478a09b73fdc",
+          "byteLength": 15885,
+          "readAlong": {
+            "audioSha256": "4a03f6711022950d871a4fbb7ae89cca3958b9349419c7cbe9f1478a09b73fdc",
+            "text": "交朋友",
+            "words": [
+              {
+                "text": "交朋友",
+                "start": 0.27,
+                "end": 0.8699999999999999
+              }
+            ]
+          }
+        }
+      },
+      "d4a641f357659327babf59f47432ec0205af48591cf3e13d24e4aa1f5234ea97": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-18dc36c5f2a7080c1ea99f60f5598e3ee053207a6f743adbaf5e3505c826cfb1.mp3",
+          "sha256": "18dc36c5f2a7080c1ea99f60f5598e3ee053207a6f743adbaf5e3505c826cfb1",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "18dc36c5f2a7080c1ea99f60f5598e3ee053207a6f743adbaf5e3505c826cfb1",
+            "text": "题",
+            "words": [
+              {
+                "text": "题",
+                "start": 0.18,
+                "end": 0.28
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-dfdc605903ea136d6e94a299dd1253054ff543b832c5731370428fc6c8c8a47a.mp3",
+          "sha256": "dfdc605903ea136d6e94a299dd1253054ff543b832c5731370428fc6c8c8a47a",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "dfdc605903ea136d6e94a299dd1253054ff543b832c5731370428fc6c8c8a47a",
+            "text": "题",
+            "words": [
+              {
+                "text": "题",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,677 @@
+{
+  "id": "EX-CHAR-char-81e3",
+  "revision": 2,
+  "unit": "U6-34-P01",
+  "stage": "ST-HSK6",
+  "after": "S-U6-34-P01-compose",
+  "activity": "ACT-CHAR",
+  "title": "Character practice",
+  "optional": false,
+  "embedded": true,
+  "character": "臣",
+  "sourceBlockId": "mandarin-simplified-v1-char-81e3",
+  "sourceLevelId": "hsk-6",
+  "deferred": false,
+  "partCount": 5,
+  "partTitles": [
+    "Use the whole word",
+    "Connect meaning and sound",
+    "Write the character",
+    "A familiar word returns",
+    "Recall the sound and form"
+  ],
+  "preparation": {
+    "words": [
+      {
+        "id": "NB-PRIMARY-char-81e3",
+        "text": "臣",
+        "pinyin": "chén",
+        "meaning": "state official or subject in dynastic China; I, your servant (used in addressing the sovereign)",
+        "characters": [
+          {
+            "id": "C-81E3",
+            "text": "臣"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-03db52383807123879872299",
+        "text": "冰箱",
+        "pinyin": "bīngxiāng",
+        "meaning": "refrigerator; (old) icebox",
+        "characters": [
+          {
+            "id": "C-51B0",
+            "text": "冰"
+          },
+          {
+            "id": "C-7BB1",
+            "text": "箱"
+          }
+        ]
+      },
+      {
+        "id": "NB-cmn-9c4c5c65fdc5fb84bfa8ba4c",
+        "text": "功臣",
+        "pinyin": "gōng chén",
+        "meaning": "meritorious official",
+        "characters": [
+          {
+            "id": "C-529F",
+            "text": "功"
+          },
+          {
+            "id": "C-81E3",
+            "text": "臣"
+          }
+        ]
+      },
+      {
+        "id": "W2494",
+        "text": "好运",
+        "pinyin": "hǎoyùn",
+        "meaning": "good luck",
+        "characters": [
+          {
+            "id": "C-597D",
+            "text": "好"
+          },
+          {
+            "id": "C-8FD0",
+            "text": "运"
+          }
+        ]
+      },
+      {
+        "id": "W4516",
+        "text": "密度",
+        "pinyin": "mìdù",
+        "meaning": "density; concentration",
+        "characters": [
+          {
+            "id": "C-5BC6",
+            "text": "密"
+          },
+          {
+            "id": "C-5EA6",
+            "text": "度"
+          }
+        ]
+      }
+    ],
+    "grammar": {
+      "ids": [],
+      "hint": "",
+      "explanation": ""
+    }
+  },
+  "fingerprint": "0c2a9d86b07592132b198dd6b1d8af79b943eecf0e1efe1d4f9c32e35c515f84",
+  "definition": {
+    "id": "ACT-CHAR",
+    "instanceId": "EX-CHAR-char-81e3",
+    "revision": 2,
+    "title": "Character practice",
+    "subtitle": "",
+    "context": "臣",
+    "variant": "lesson-word-context-first",
+    "steps": [
+      {
+        "id": "EX-CHAR-char-81e3-word",
+        "kind": "check",
+        "title": "Use the whole word",
+        "questions": [
+          {
+            "id": "word-use-NB-cmn-9c4c5c65fdc5fb84bfa8ba4c",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "meritorious official",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "功臣"
+              },
+              {
+                "value": "gōng chén",
+                "mode": "pinyin"
+              },
+              {
+                "value": "gong1chen2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "功臣",
+              "pinyin": "gōng chén",
+              "meaning": "meritorious official",
+              "audio": "8aa393aab3f008dbfd03ae69b410382908296e520d92ed8bba1156ce76af866c",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-81e3-recognize",
+        "kind": "check",
+        "title": "Connect meaning and sound",
+        "questions": [
+          {
+            "id": "meaning-NB-PRIMARY-char-81e3",
+            "kind": "choice",
+            "prompt": "What does this word mean?",
+            "label": "Recognize the meaning",
+            "resultDomain": "Written word meaning",
+            "display": {
+              "text": "臣",
+              "meaning": ""
+            },
+            "choices": [
+              {
+                "id": "NB-cmn-03db52383807123879872299",
+                "label": "refrigerator; (old) icebox",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "W2494",
+                "label": "good luck",
+                "labelLanguage": "en",
+                "correct": false,
+                "feedback": "Think about the whole meaning, then try again."
+              },
+              {
+                "id": "NB-PRIMARY-char-81e3",
+                "label": "state official or subject in dynastic China; I, your servant (used in addressing the sovereign)",
+                "labelLanguage": "en",
+                "correct": true,
+                "feedback": "That matches the word."
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-81e3-write",
+        "kind": "stroke",
+        "title": "Write the character",
+        "character": "臣",
+        "pinyin": "chén",
+        "meaning": "state official or subject in dynastic China; I, your servant (used in addressing the sovereign)",
+        "source": "/stroke-data/81e3.json",
+        "reference": {
+          "character": "臣",
+          "sha256": "8574f90780fe9d097848a577f7e389a99a8fef1fae863a8aa5f818f7fef0ffac",
+          "medians": [
+            [
+              [
+                335,
+                711
+              ],
+              [
+                362,
+                694
+              ],
+              [
+                686,
+                750
+              ],
+              [
+                735,
+                751
+              ],
+              [
+                772,
+                744
+              ]
+            ],
+            [
+              [
+                519,
+                693
+              ],
+              [
+                545,
+                669
+              ],
+              [
+                552,
+                653
+              ],
+              [
+                542,
+                554
+              ],
+              [
+                529,
+                533
+              ],
+              [
+                517,
+                526
+              ]
+            ],
+            [
+              [
+                327,
+                481
+              ],
+              [
+                336,
+                472
+              ],
+              [
+                370,
+                474
+              ],
+              [
+                511,
+                496
+              ],
+              [
+                638,
+                525
+              ],
+              [
+                675,
+                525
+              ],
+              [
+                689,
+                518
+              ],
+              [
+                715,
+                488
+              ],
+              [
+                683,
+                407
+              ],
+              [
+                654,
+                389
+              ]
+            ],
+            [
+              [
+                312,
+                297
+              ],
+              [
+                330,
+                309
+              ],
+              [
+                638,
+                358
+              ],
+              [
+                690,
+                357
+              ],
+              [
+                718,
+                349
+              ]
+            ],
+            [
+              [
+                521,
+                312
+              ],
+              [
+                548,
+                292
+              ],
+              [
+                554,
+                269
+              ],
+              [
+                542,
+                146
+              ],
+              [
+                520,
+                131
+              ]
+            ],
+            [
+              [
+                253,
+                728
+              ],
+              [
+                288,
+                700
+              ],
+              [
+                295,
+                677
+              ],
+              [
+                288,
+                385
+              ],
+              [
+                264,
+                79
+              ],
+              [
+                304,
+                73
+              ],
+              [
+                479,
+                96
+              ],
+              [
+                767,
+                114
+              ],
+              [
+                818,
+                113
+              ],
+              [
+                883,
+                92
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "EX-CHAR-char-81e3-familiar",
+        "kind": "check",
+        "title": "A familiar word returns",
+        "questions": [
+          {
+            "id": "familiar-W4516",
+            "kind": "text",
+            "prompt": "Which Chinese word matches this meaning?",
+            "label": "Recall the word",
+            "context": "density; concentration",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Word recall",
+            "accepted": [
+              {
+                "value": "密度"
+              },
+              {
+                "value": "mìdù",
+                "mode": "pinyin"
+              },
+              {
+                "value": "mi4du4",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "密度",
+              "pinyin": "mìdù",
+              "meaning": "density; concentration",
+              "audio": "b9bb9bbd9fe6b9a15178817e4ba7b6adb0dbadc7c731cb91a487302a4bd28aa3",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone."
+          }
+        ],
+        "sequential": true
+      },
+      {
+        "id": "EX-CHAR-char-81e3-recall",
+        "kind": "check",
+        "title": "Recall the sound and form",
+        "questions": [
+          {
+            "id": "recall-NB-PRIMARY-char-81e3",
+            "kind": "text",
+            "prompt": "Listen and use the meaning to write the word.",
+            "label": "Recall the word",
+            "context": "state official or subject in dynastic China; I, your servant (used in addressing the sovereign)",
+            "contextLanguage": "en",
+            "rule": "word",
+            "pinyin": true,
+            "resultDomain": "Audio-to-form recall",
+            "accepted": [
+              {
+                "value": "臣"
+              },
+              {
+                "value": "chén",
+                "mode": "pinyin"
+              },
+              {
+                "value": "chen2",
+                "mode": "pinyin"
+              }
+            ],
+            "model": {
+              "text": "臣",
+              "pinyin": "chén",
+              "meaning": "state official or subject in dynastic China; I, your servant (used in addressing the sovereign)",
+              "audio": "5ce5e384f288e3a132b9de355d531b2f1f4ef160507faf7b6679bbd1deb25548",
+              "singleWord": true
+            },
+            "hint": "Recall the complete word, including every syllable and tone.",
+            "audio": [
+              "5ce5e384f288e3a132b9de355d531b2f1f4ef160507faf7b6679bbd1deb25548"
+            ],
+            "transcript": [
+              {
+                "text": "臣",
+                "pinyin": "chén",
+                "meaning": "state official or subject in dynastic China; I, your servant (used in addressing the sovereign)",
+                "audio": "5ce5e384f288e3a132b9de355d531b2f1f4ef160507faf7b6679bbd1deb25548",
+                "singleWord": true
+              }
+            ]
+          }
+        ],
+        "sequential": true
+      }
+    ],
+    "summary": "Your required practice is saved for this character.",
+    "setActivity": {
+      "schema": "character-set-v1",
+      "lessonId": "LESSON-C-81E3",
+      "character": "臣",
+      "lessonIds": [
+        "LESSON-C-81E3"
+      ],
+      "profile": "word-context-first",
+      "embedded": true,
+      "partIds": [
+        "EX-CHAR-char-81e3-word",
+        "EX-CHAR-char-81e3-recognize",
+        "EX-CHAR-char-81e3-write",
+        "EX-CHAR-char-81e3-familiar",
+        "EX-CHAR-char-81e3-recall"
+      ]
+    },
+    "audio": {
+      "5ce5e384f288e3a132b9de355d531b2f1f4ef160507faf7b6679bbd1deb25548": {
+        "male": {
+          "url": "/exercise-assets/audio/course-male-eb9f487626a2322e6a969fa4f86b03817afb4760498f1d88195cebcb54c99cf9.mp3",
+          "sha256": "eb9f487626a2322e6a969fa4f86b03817afb4760498f1d88195cebcb54c99cf9",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "eb9f487626a2322e6a969fa4f86b03817afb4760498f1d88195cebcb54c99cf9",
+            "text": "臣",
+            "words": [
+              {
+                "text": "臣",
+                "start": 0.24,
+                "end": 0.34
+              }
+            ]
+          }
+        },
+        "female": {
+          "url": "/exercise-assets/audio/course-female-dc065607ece44e56ae2961aad0fdc87b2f4cd7a595935722828f15b3f38359ab.mp3",
+          "sha256": "dc065607ece44e56ae2961aad0fdc87b2f4cd7a595935722828f15b3f38359ab",
+          "byteLength": 7821,
+          "readAlong": {
+            "audioSha256": "dc065607ece44e56ae2961aad0fdc87b2f4cd7a595935722828f15b3f38359ab",
+            "text": "臣",
+            "words": [
+              {
+                "text": "臣",
+                "start": 0.03,
+                "end": 0.09
+              }
+            ]
+          }
+        }
+      },
+      "72b61ebf6b2af26c01dfe4728809c43525eddcb7bcfa282feb7f1795ca2ec1cd": {
+        "female": {
+          "url": "/exercise-assets/audio/official-female-5f01f91507f5a60de1116c4dd05f2ad3fd2cd26db58d3d231d8bf10f693cd0ba.mp3",
+          "sha256": "5f01f91507f5a60de1116c4dd05f2ad3fd2cd26db58d3d231d8bf10f693cd0ba",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "5f01f91507f5a60de1116c4dd05f2ad3fd2cd26db58d3d231d8bf10f693cd0ba",
+            "text": "冰箱",
+            "words": [
+              {
+                "text": "冰箱",
+                "start": 0.21,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "/exercise-assets/audio/official-male-00eee9397da933b4ac4e96fe19b86b33f936d5394af6b68720bff35bdd9181ce.mp3",
+          "sha256": "00eee9397da933b4ac4e96fe19b86b33f936d5394af6b68720bff35bdd9181ce",
+          "byteLength": 11565,
+          "readAlong": {
+            "audioSha256": "00eee9397da933b4ac4e96fe19b86b33f936d5394af6b68720bff35bdd9181ce",
+            "text": "冰箱",
+            "words": [
+              {
+                "text": "冰箱",
+                "start": 0.15,
+                "end": 0.32999999999999996
+              }
+            ]
+          }
+        }
+      },
+      "8aa393aab3f008dbfd03ae69b410382908296e520d92ed8bba1156ce76af866c": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/04840432490c5893aabd6ae69427c9c36af6c14e7a889243f041c8c388427e29.mp3",
+          "sha256": "04840432490c5893aabd6ae69427c9c36af6c14e7a889243f041c8c388427e29",
+          "byteLength": 11565,
+          "qualityWarning": "yellow",
+          "qualitySelectionPolicy": "owner-authorized-known-quality-exception-2026-11-01",
+          "readAlong": {
+            "audioSha256": "04840432490c5893aabd6ae69427c9c36af6c14e7a889243f041c8c388427e29",
+            "text": "功臣",
+            "words": [
+              {
+                "text": "功臣",
+                "start": 0.21,
+                "end": 0.44999999999999996
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/9043205a408ddd160ead405d2576605dfa4407cac6477e632c3b31ba0837283b.mp3",
+          "sha256": "9043205a408ddd160ead405d2576605dfa4407cac6477e632c3b31ba0837283b",
+          "byteLength": 10701,
+          "readAlong": {
+            "audioSha256": "9043205a408ddd160ead405d2576605dfa4407cac6477e632c3b31ba0837283b",
+            "text": "功臣",
+            "words": [
+              {
+                "text": "功臣",
+                "start": 0.16,
+                "end": 0.56
+              }
+            ]
+          }
+        }
+      },
+      "39e96069bd006f07ff0edea9ae9a8c1ab54e26a0e7d30166064c21abbedee750": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/14cabeda03b656d07098a7644f48404c12d6f7d6b99d016678ab76186ebf01bd.mp3",
+          "sha256": "14cabeda03b656d07098a7644f48404c12d6f7d6b99d016678ab76186ebf01bd",
+          "byteLength": 13581,
+          "readAlong": {
+            "audioSha256": "14cabeda03b656d07098a7644f48404c12d6f7d6b99d016678ab76186ebf01bd",
+            "text": "好运",
+            "words": [
+              {
+                "text": "好运",
+                "start": 0.27,
+                "end": 0.57
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/912964ef2960cddb6ed7cd82d7f23ee5328d82b6899cd464cdf3baf1c16df070.mp3",
+          "sha256": "912964ef2960cddb6ed7cd82d7f23ee5328d82b6899cd464cdf3baf1c16df070",
+          "byteLength": 10125,
+          "readAlong": {
+            "audioSha256": "912964ef2960cddb6ed7cd82d7f23ee5328d82b6899cd464cdf3baf1c16df070",
+            "text": "好运",
+            "words": [
+              {
+                "text": "好运",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      },
+      "b9bb9bbd9fe6b9a15178817e4ba7b6adb0dbadc7c731cb91a487302a4bd28aa3": {
+        "female": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/47a4e2b453fd35ad71fdfe8bcd1739bb1b4abe41fa6ce3475ec883bf112586b1/01b12ab48037c2dcd87a430bf8d63b16cc0be33ffe5ef602eba592bed614d756.mp3",
+          "sha256": "01b12ab48037c2dcd87a430bf8d63b16cc0be33ffe5ef602eba592bed614d756",
+          "byteLength": 12141,
+          "readAlong": {
+            "audioSha256": "01b12ab48037c2dcd87a430bf8d63b16cc0be33ffe5ef602eba592bed614d756",
+            "text": "密度",
+            "words": [
+              {
+                "text": "密度",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        },
+        "male": {
+          "url": "https://dzxcg0bfut03j.cloudfront.net/sentences/d74a42ec22281980e681667b3869f5bb87a8d01dea370f1c910d832f8f44a08f/c2a4b4cab8f10c50872423c895797f32e28e9734c1601c218ac65fd3fd0f68c8.mp3",
+          "sha256": "c2a4b4cab8f10c50872423c895797f32e28e9734c1601c218ac65fd3fd0f68c8",
+          "byteLength": 9261,
+          "readAlong": {
+            "audioSha256": "c2a4b4cab8f10c50872423c895797f32e28e9734c1601c218ac65fd3fd0f68c8",
+            "text": "密度",
+            "words": [
+              {
+                "text": "密度",
+                "start": 0.15,
+                "end": 0.39
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

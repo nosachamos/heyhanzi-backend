@@ -1,0 +1,101 @@
+{
+  "id": "BANK-W1124",
+  "targetId": "W1124",
+  "steps": [
+    {
+      "id": "BANK-W1124-W1124",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1124-W1124",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "tea; tea leaves",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "茶叶"
+            },
+            {
+              "value": "cháyè",
+              "mode": "pinyin"
+            },
+            {
+              "value": "cha2ye4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "茶叶",
+            "pinyin": "cháyè",
+            "meaning": "tea; tea leaves",
+            "singleWord": true,
+            "audio": "1eb106704dec57de68bfbdb9306cdb46579258f29b0037404bf27565d2ef1ca0"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "1eb106704dec57de68bfbdb9306cdb46579258f29b0037404bf27565d2ef1ca0": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-844a9bbf1826b372f66f75977ac44b381c745234868b72a60f49c1314f05759c.mp3",
+        "sha256": "844a9bbf1826b372f66f75977ac44b381c745234868b72a60f49c1314f05759c",
+        "byteLength": 10701,
+        "readAlong": {
+          "audioSha256": "844a9bbf1826b372f66f75977ac44b381c745234868b72a60f49c1314f05759c",
+          "text": "茶叶",
+          "words": [
+            {
+              "text": "茶叶",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-c39303bb588e8df5dd64dffcd99b79085422ffdc4c572e32bc285b9ce1c907b2.mp3",
+        "sha256": "c39303bb588e8df5dd64dffcd99b79085422ffdc4c572e32bc285b9ce1c907b2",
+        "byteLength": 11565,
+        "readAlong": {
+          "audioSha256": "c39303bb588e8df5dd64dffcd99b79085422ffdc4c572e32bc285b9ce1c907b2",
+          "text": "茶叶",
+          "words": [
+            {
+              "text": "茶叶",
+              "start": 0.21,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1124",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1124-W1124",
+      "question_ids": [
+        "BANK-W1124-W1124"
+      ],
+      "evidence": "checked"
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-08",
+    "stepId": "S-U4-08-words-01",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-53f6"
+    ],
+    "grammarLessonIds": []
+  }
+}

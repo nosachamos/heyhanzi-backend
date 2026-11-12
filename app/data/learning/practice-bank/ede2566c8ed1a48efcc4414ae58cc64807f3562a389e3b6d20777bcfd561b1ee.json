@@ -1,0 +1,159 @@
+{
+  "id": "BANK-W1614",
+  "targetId": "W1614",
+  "steps": [
+    {
+      "id": "BANK-W1614-W1614",
+      "kind": "check",
+      "title": "Recall familiar vocabulary",
+      "questions": [
+        {
+          "id": "BANK-W1614-W1614",
+          "kind": "text",
+          "prompt": "Recall the taught Chinese word for this meaning. An unlisted alternative can be compared with the model; it is not automatically wrong Mandarin.",
+          "promptLanguage": "en",
+          "label": "Retrieve the whole word",
+          "context": "by all means; make sure to",
+          "contextLanguage": "en",
+          "rule": "word",
+          "pinyin": true,
+          "accepted": [
+            {
+              "value": "千万"
+            },
+            {
+              "value": "qiānwàn",
+              "mode": "pinyin"
+            },
+            {
+              "value": "qian1wan4",
+              "mode": "pinyin"
+            }
+          ],
+          "model": {
+            "text": "千万",
+            "pinyin": "qiānwàn",
+            "meaning": "by all means; make sure to",
+            "singleWord": true,
+            "audio": "c3f5285e8621d4d04b8c7c5436a8906e02326fd37031e6ef4601527587f5f8cf"
+          },
+          "resultDomain": "Selected lexical-use retrieval"
+        }
+      ],
+      "sequential": true
+    },
+    {
+      "id": "BANK-W1614-W1614-use-strong-advice",
+      "kind": "check",
+      "title": "Recognize a lexical use in context",
+      "questions": [
+        {
+          "id": "BANK-W1614-W1614-use-strong-advice",
+          "kind": "choice",
+          "label": "Recognize the taught lexical use",
+          "prompt": "Which taught meaning of 千万 fits this context?",
+          "context": "Someone strongly urges a friend not to forget an important task.",
+          "contextLanguage": "en",
+          "choices": [
+            {
+              "id": "BANK-W1614-W1614-use-strong-advice-contrast-1",
+              "label": "The number ten million.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "Before advice or a warning, 千万 means by all means or make sure to. In this use it strengthens the instruction; it is not a number."
+            },
+            {
+              "id": "BANK-W1614-W1614-use-strong-advice-contrast-2",
+              "label": "The task is unimportant and may be ignored.",
+              "labelLanguage": "en",
+              "correct": false,
+              "feedback": "Before advice or a warning, 千万 means by all means or make sure to. In this use it strengthens the instruction; it is not a number."
+            },
+            {
+              "id": "BANK-W1614-W1614-use-strong-advice-meaning",
+              "label": "Be sure to follow the advice.",
+              "labelLanguage": "en",
+              "correct": true,
+              "feedback": "Before advice or a warning, 千万 means by all means or make sure to. In this use it strengthens the instruction; it is not a number."
+            }
+          ],
+          "resultDomain": "Contextual lexical meaning; not grammar production",
+          "display": {
+            "text": "千万",
+            "pinyin": "qiānwàn",
+            "meaning": "",
+            "singleWord": true,
+            "audio": "c3f5285e8621d4d04b8c7c5436a8906e02326fd37031e6ef4601527587f5f8cf"
+          }
+        }
+      ],
+      "sequential": true
+    }
+  ],
+  "audio": {
+    "c3f5285e8621d4d04b8c7c5436a8906e02326fd37031e6ef4601527587f5f8cf": {
+      "female": {
+        "url": "/exercise-assets/audio/official-female-ba8e169209a9e31750c4c00fe06c643a3885ada88e0a4aa53974062a1d34760d.mp3",
+        "sha256": "ba8e169209a9e31750c4c00fe06c643a3885ada88e0a4aa53974062a1d34760d",
+        "byteLength": 12429,
+        "readAlong": {
+          "audioSha256": "ba8e169209a9e31750c4c00fe06c643a3885ada88e0a4aa53974062a1d34760d",
+          "text": "千万",
+          "words": [
+            {
+              "text": "千万",
+              "start": 0.21,
+              "end": 0.44999999999999996
+            }
+          ]
+        }
+      },
+      "male": {
+        "url": "/exercise-assets/audio/official-male-b9a6e341a22311ef12068a36de450242703f8dc9d4f3e9e7a5f50371a52ca479.mp3",
+        "sha256": "b9a6e341a22311ef12068a36de450242703f8dc9d4f3e9e7a5f50371a52ca479",
+        "byteLength": 13005,
+        "readAlong": {
+          "audioSha256": "b9a6e341a22311ef12068a36de450242703f8dc9d4f3e9e7a5f50371a52ca479",
+          "text": "千万",
+          "words": [
+            {
+              "text": "千万",
+              "start": 0.27,
+              "end": 0.51
+            }
+          ]
+        }
+      }
+    }
+  },
+  "coverage": [
+    {
+      "target_id": "W1614",
+      "facet_id": "selected-lexical-use-retrieval",
+      "part_id": "BANK-W1614-W1614",
+      "question_ids": [
+        "BANK-W1614-W1614"
+      ],
+      "evidence": "checked"
+    },
+    {
+      "target_id": "W1614",
+      "facet_id": "lexical-use-strong-advice",
+      "part_id": "BANK-W1614-W1614-use-strong-advice",
+      "question_ids": [
+        "BANK-W1614-W1614-use-strong-advice"
+      ],
+      "evidence": "checked",
+      "source_ref": "course-word-W1614",
+      "scope": "Only the explicitly taught meaning in the supplied context; no later syntax production."
+    }
+  ],
+  "remediation": {
+    "unitId": "U4-23-P01",
+    "stepId": "S-U4-23-words-r4-19",
+    "wordDisplays": [
+      "mandarin-simplified-v1-char-4e07"
+    ],
+    "grammarLessonIds": []
+  }
+}
